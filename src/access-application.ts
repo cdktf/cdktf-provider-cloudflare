@@ -44,6 +44,13 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly httpOnlyCookieAttribute?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#id AccessApplication#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#logo_url AccessApplication#logo_url}
   */
   readonly logoUrl?: string;
@@ -134,6 +141,240 @@ export function accessApplicationCorsHeadersToTerraform(struct?: AccessApplicati
   }
 }
 
+export class AccessApplicationCorsHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessApplicationCorsHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowAllHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowAllHeaders = this._allowAllHeaders;
+    }
+    if (this._allowAllMethods !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowAllMethods = this._allowAllMethods;
+    }
+    if (this._allowAllOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowAllOrigins = this._allowAllOrigins;
+    }
+    if (this._allowCredentials !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowCredentials = this._allowCredentials;
+    }
+    if (this._allowedHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedHeaders = this._allowedHeaders;
+    }
+    if (this._allowedMethods !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedMethods = this._allowedMethods;
+    }
+    if (this._allowedOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedOrigins = this._allowedOrigins;
+    }
+    if (this._maxAge !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxAge = this._maxAge;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessApplicationCorsHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowAllHeaders = undefined;
+      this._allowAllMethods = undefined;
+      this._allowAllOrigins = undefined;
+      this._allowCredentials = undefined;
+      this._allowedHeaders = undefined;
+      this._allowedMethods = undefined;
+      this._allowedOrigins = undefined;
+      this._maxAge = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowAllHeaders = value.allowAllHeaders;
+      this._allowAllMethods = value.allowAllMethods;
+      this._allowAllOrigins = value.allowAllOrigins;
+      this._allowCredentials = value.allowCredentials;
+      this._allowedHeaders = value.allowedHeaders;
+      this._allowedMethods = value.allowedMethods;
+      this._allowedOrigins = value.allowedOrigins;
+      this._maxAge = value.maxAge;
+    }
+  }
+
+  // allow_all_headers - computed: false, optional: true, required: false
+  private _allowAllHeaders?: boolean | cdktf.IResolvable; 
+  public get allowAllHeaders() {
+    return this.getBooleanAttribute('allow_all_headers');
+  }
+  public set allowAllHeaders(value: boolean | cdktf.IResolvable) {
+    this._allowAllHeaders = value;
+  }
+  public resetAllowAllHeaders() {
+    this._allowAllHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowAllHeadersInput() {
+    return this._allowAllHeaders;
+  }
+
+  // allow_all_methods - computed: false, optional: true, required: false
+  private _allowAllMethods?: boolean | cdktf.IResolvable; 
+  public get allowAllMethods() {
+    return this.getBooleanAttribute('allow_all_methods');
+  }
+  public set allowAllMethods(value: boolean | cdktf.IResolvable) {
+    this._allowAllMethods = value;
+  }
+  public resetAllowAllMethods() {
+    this._allowAllMethods = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowAllMethodsInput() {
+    return this._allowAllMethods;
+  }
+
+  // allow_all_origins - computed: false, optional: true, required: false
+  private _allowAllOrigins?: boolean | cdktf.IResolvable; 
+  public get allowAllOrigins() {
+    return this.getBooleanAttribute('allow_all_origins');
+  }
+  public set allowAllOrigins(value: boolean | cdktf.IResolvable) {
+    this._allowAllOrigins = value;
+  }
+  public resetAllowAllOrigins() {
+    this._allowAllOrigins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowAllOriginsInput() {
+    return this._allowAllOrigins;
+  }
+
+  // allow_credentials - computed: false, optional: true, required: false
+  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  public get allowCredentials() {
+    return this.getBooleanAttribute('allow_credentials');
+  }
+  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+    this._allowCredentials = value;
+  }
+  public resetAllowCredentials() {
+    this._allowCredentials = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowCredentialsInput() {
+    return this._allowCredentials;
+  }
+
+  // allowed_headers - computed: false, optional: true, required: false
+  private _allowedHeaders?: string[]; 
+  public get allowedHeaders() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_headers'));
+  }
+  public set allowedHeaders(value: string[]) {
+    this._allowedHeaders = value;
+  }
+  public resetAllowedHeaders() {
+    this._allowedHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedHeadersInput() {
+    return this._allowedHeaders;
+  }
+
+  // allowed_methods - computed: false, optional: true, required: false
+  private _allowedMethods?: string[]; 
+  public get allowedMethods() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_methods'));
+  }
+  public set allowedMethods(value: string[]) {
+    this._allowedMethods = value;
+  }
+  public resetAllowedMethods() {
+    this._allowedMethods = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedMethodsInput() {
+    return this._allowedMethods;
+  }
+
+  // allowed_origins - computed: false, optional: true, required: false
+  private _allowedOrigins?: string[]; 
+  public get allowedOrigins() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_origins'));
+  }
+  public set allowedOrigins(value: string[]) {
+    this._allowedOrigins = value;
+  }
+  public resetAllowedOrigins() {
+    this._allowedOrigins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedOriginsInput() {
+    return this._allowedOrigins;
+  }
+
+  // max_age - computed: false, optional: true, required: false
+  private _maxAge?: number; 
+  public get maxAge() {
+    return this.getNumberAttribute('max_age');
+  }
+  public set maxAge(value: number) {
+    this._maxAge = value;
+  }
+  public resetMaxAge() {
+    this._maxAge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAgeInput() {
+    return this._maxAge;
+  }
+}
+
+export class AccessApplicationCorsHeadersList extends cdktf.ComplexList {
+  public internalValue? : AccessApplicationCorsHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessApplicationCorsHeadersOutputReference {
+    return new AccessApplicationCorsHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application cloudflare_access_application}
@@ -178,6 +419,7 @@ export class AccessApplication extends cdktf.TerraformResource {
     this._domain = config.domain;
     this._enableBindingCookie = config.enableBindingCookie;
     this._httpOnlyCookieAttribute = config.httpOnlyCookieAttribute;
+    this._id = config.id;
     this._logoUrl = config.logoUrl;
     this._name = config.name;
     this._sameSiteCookieAttribute = config.sameSiteCookieAttribute;
@@ -186,7 +428,7 @@ export class AccessApplication extends cdktf.TerraformResource {
     this._skipInterstitial = config.skipInterstitial;
     this._type = config.type;
     this._zoneId = config.zoneId;
-    this._corsHeaders = config.corsHeaders;
+    this._corsHeaders.internalValue = config.corsHeaders;
   }
 
   // ==========
@@ -340,8 +582,19 @@ export class AccessApplication extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // logo_url - computed: false, optional: true, required: false
@@ -470,20 +723,19 @@ export class AccessApplication extends cdktf.TerraformResource {
   }
 
   // cors_headers - computed: false, optional: true, required: false
-  private _corsHeaders?: AccessApplicationCorsHeaders[] | cdktf.IResolvable; 
+  private _corsHeaders = new AccessApplicationCorsHeadersList(this, "cors_headers", false);
   public get corsHeaders() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cors_headers');
+    return this._corsHeaders;
   }
-  public set corsHeaders(value: AccessApplicationCorsHeaders[] | cdktf.IResolvable) {
-    this._corsHeaders = value;
+  public putCorsHeaders(value: AccessApplicationCorsHeaders[] | cdktf.IResolvable) {
+    this._corsHeaders.internalValue = value;
   }
   public resetCorsHeaders() {
-    this._corsHeaders = undefined;
+    this._corsHeaders.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get corsHeadersInput() {
-    return this._corsHeaders;
+    return this._corsHeaders.internalValue;
   }
 
   // =========
@@ -501,6 +753,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       domain: cdktf.stringToTerraform(this._domain),
       enable_binding_cookie: cdktf.booleanToTerraform(this._enableBindingCookie),
       http_only_cookie_attribute: cdktf.booleanToTerraform(this._httpOnlyCookieAttribute),
+      id: cdktf.stringToTerraform(this._id),
       logo_url: cdktf.stringToTerraform(this._logoUrl),
       name: cdktf.stringToTerraform(this._name),
       same_site_cookie_attribute: cdktf.stringToTerraform(this._sameSiteCookieAttribute),
@@ -509,7 +762,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       skip_interstitial: cdktf.booleanToTerraform(this._skipInterstitial),
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      cors_headers: cdktf.listMapper(accessApplicationCorsHeadersToTerraform)(this._corsHeaders),
+      cors_headers: cdktf.listMapper(accessApplicationCorsHeadersToTerraform)(this._corsHeaders.internalValue),
     };
   }
 }

@@ -36,6 +36,13 @@ export interface GreTunnelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly healthCheckType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#id GreTunnel#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#interface_address GreTunnel#interface_address}
   */
   readonly interfaceAddress: string;
@@ -94,6 +101,7 @@ export class GreTunnel extends cdktf.TerraformResource {
     this._healthCheckEnabled = config.healthCheckEnabled;
     this._healthCheckTarget = config.healthCheckTarget;
     this._healthCheckType = config.healthCheckType;
+    this._id = config.id;
     this._interfaceAddress = config.interfaceAddress;
     this._mtu = config.mtu;
     this._name = config.name;
@@ -211,8 +219,19 @@ export class GreTunnel extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // interface_address - computed: false, optional: false, required: true
@@ -286,6 +305,7 @@ export class GreTunnel extends cdktf.TerraformResource {
       health_check_enabled: cdktf.booleanToTerraform(this._healthCheckEnabled),
       health_check_target: cdktf.stringToTerraform(this._healthCheckTarget),
       health_check_type: cdktf.stringToTerraform(this._healthCheckType),
+      id: cdktf.stringToTerraform(this._id),
       interface_address: cdktf.stringToTerraform(this._interfaceAddress),
       mtu: cdktf.numberToTerraform(this._mtu),
       name: cdktf.stringToTerraform(this._name),

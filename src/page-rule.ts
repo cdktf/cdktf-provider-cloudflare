@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface PageRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#id PageRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#priority PageRule#priority}
   */
   readonly priority?: number;
@@ -734,6 +741,102 @@ export function pageRuleActionsCacheTtlByStatusToTerraform(struct?: PageRuleActi
   }
 }
 
+export class PageRuleActionsCacheTtlByStatusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PageRuleActionsCacheTtlByStatus | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._codes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codes = this._codes;
+    }
+    if (this._ttl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ttl = this._ttl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PageRuleActionsCacheTtlByStatus | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._codes = undefined;
+      this._ttl = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._codes = value.codes;
+      this._ttl = value.ttl;
+    }
+  }
+
+  // codes - computed: false, optional: false, required: true
+  private _codes?: string; 
+  public get codes() {
+    return this.getStringAttribute('codes');
+  }
+  public set codes(value: string) {
+    this._codes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codesInput() {
+    return this._codes;
+  }
+
+  // ttl - computed: false, optional: false, required: true
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
+  }
+  public set ttl(value: number) {
+    this._ttl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInput() {
+    return this._ttl;
+  }
+}
+
+export class PageRuleActionsCacheTtlByStatusList extends cdktf.ComplexList {
+  public internalValue? : PageRuleActionsCacheTtlByStatus[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PageRuleActionsCacheTtlByStatusOutputReference {
+    return new PageRuleActionsCacheTtlByStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PageRuleActionsForwardingUrl {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#status_code PageRule#status_code}
@@ -847,6 +950,121 @@ export function pageRuleActionsMinifyToTerraform(struct?: PageRuleActionsMinify 
   }
 }
 
+export class PageRuleActionsMinifyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PageRuleActionsMinify | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._css !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.css = this._css;
+    }
+    if (this._html !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.html = this._html;
+    }
+    if (this._js !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.js = this._js;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PageRuleActionsMinify | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._css = undefined;
+      this._html = undefined;
+      this._js = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._css = value.css;
+      this._html = value.html;
+      this._js = value.js;
+    }
+  }
+
+  // css - computed: false, optional: false, required: true
+  private _css?: string; 
+  public get css() {
+    return this.getStringAttribute('css');
+  }
+  public set css(value: string) {
+    this._css = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cssInput() {
+    return this._css;
+  }
+
+  // html - computed: false, optional: false, required: true
+  private _html?: string; 
+  public get html() {
+    return this.getStringAttribute('html');
+  }
+  public set html(value: string) {
+    this._html = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get htmlInput() {
+    return this._html;
+  }
+
+  // js - computed: false, optional: false, required: true
+  private _js?: string; 
+  public get js() {
+    return this.getStringAttribute('js');
+  }
+  public set js(value: string) {
+    this._js = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsInput() {
+    return this._js;
+  }
+}
+
+export class PageRuleActionsMinifyList extends cdktf.ComplexList {
+  public internalValue? : PageRuleActionsMinify[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PageRuleActionsMinifyOutputReference {
+    return new PageRuleActionsMinifyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PageRuleActions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_online PageRule#always_online}
@@ -1211,17 +1429,17 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.cacheKeyFields = this._cacheKeyFields?.internalValue;
     }
-    if (this._cacheTtlByStatus !== undefined) {
+    if (this._cacheTtlByStatus?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cacheTtlByStatus = this._cacheTtlByStatus;
+      internalValueResult.cacheTtlByStatus = this._cacheTtlByStatus?.internalValue;
     }
     if (this._forwardingUrl?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.forwardingUrl = this._forwardingUrl?.internalValue;
     }
-    if (this._minify !== undefined) {
+    if (this._minify?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.minify = this._minify;
+      internalValueResult.minify = this._minify?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1264,9 +1482,9 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
       this._trueClientIpHeader = undefined;
       this._waf = undefined;
       this._cacheKeyFields.internalValue = undefined;
-      this._cacheTtlByStatus = undefined;
+      this._cacheTtlByStatus.internalValue = undefined;
       this._forwardingUrl.internalValue = undefined;
-      this._minify = undefined;
+      this._minify.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1305,9 +1523,9 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
       this._trueClientIpHeader = value.trueClientIpHeader;
       this._waf = value.waf;
       this._cacheKeyFields.internalValue = value.cacheKeyFields;
-      this._cacheTtlByStatus = value.cacheTtlByStatus;
+      this._cacheTtlByStatus.internalValue = value.cacheTtlByStatus;
       this._forwardingUrl.internalValue = value.forwardingUrl;
-      this._minify = value.minify;
+      this._minify.internalValue = value.minify;
     }
   }
 
@@ -1872,20 +2090,19 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // cache_ttl_by_status - computed: false, optional: true, required: false
-  private _cacheTtlByStatus?: PageRuleActionsCacheTtlByStatus[] | cdktf.IResolvable; 
+  private _cacheTtlByStatus = new PageRuleActionsCacheTtlByStatusList(this, "cache_ttl_by_status", true);
   public get cacheTtlByStatus() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cache_ttl_by_status')));
+    return this._cacheTtlByStatus;
   }
-  public set cacheTtlByStatus(value: PageRuleActionsCacheTtlByStatus[] | cdktf.IResolvable) {
-    this._cacheTtlByStatus = value;
+  public putCacheTtlByStatus(value: PageRuleActionsCacheTtlByStatus[] | cdktf.IResolvable) {
+    this._cacheTtlByStatus.internalValue = value;
   }
   public resetCacheTtlByStatus() {
-    this._cacheTtlByStatus = undefined;
+    this._cacheTtlByStatus.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cacheTtlByStatusInput() {
-    return this._cacheTtlByStatus;
+    return this._cacheTtlByStatus.internalValue;
   }
 
   // forwarding_url - computed: false, optional: true, required: false
@@ -1905,20 +2122,19 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // minify - computed: false, optional: true, required: false
-  private _minify?: PageRuleActionsMinify[] | cdktf.IResolvable; 
+  private _minify = new PageRuleActionsMinifyList(this, "minify", false);
   public get minify() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('minify');
+    return this._minify;
   }
-  public set minify(value: PageRuleActionsMinify[] | cdktf.IResolvable) {
-    this._minify = value;
+  public putMinify(value: PageRuleActionsMinify[] | cdktf.IResolvable) {
+    this._minify.internalValue = value;
   }
   public resetMinify() {
-    this._minify = undefined;
+    this._minify.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get minifyInput() {
-    return this._minify;
+    return this._minify.internalValue;
   }
 }
 
@@ -1956,6 +2172,7 @@ export class PageRule extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._priority = config.priority;
     this._status = config.status;
     this._target = config.target;
@@ -1968,8 +2185,19 @@ export class PageRule extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // priority - computed: false, optional: true, required: false
@@ -2049,6 +2277,7 @@ export class PageRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       priority: cdktf.numberToTerraform(this._priority),
       status: cdktf.stringToTerraform(this._status),
       target: cdktf.stringToTerraform(this._target),

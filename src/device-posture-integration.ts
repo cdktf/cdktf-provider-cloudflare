@@ -12,6 +12,13 @@ export interface DevicePostureIntegrationConfig extends cdktf.TerraformMetaArgum
   */
   readonly accountId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#id DevicePostureIntegration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#identifier DevicePostureIntegration#identifier}
   */
   readonly identifier?: string;
@@ -66,6 +73,152 @@ export function devicePostureIntegrationConfigAToTerraform(struct?: DevicePostur
   }
 }
 
+export class DevicePostureIntegrationConfigAOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DevicePostureIntegrationConfigA | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apiUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apiUrl = this._apiUrl;
+    }
+    if (this._authUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authUrl = this._authUrl;
+    }
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DevicePostureIntegrationConfigA | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._apiUrl = undefined;
+      this._authUrl = undefined;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._apiUrl = value.apiUrl;
+      this._authUrl = value.authUrl;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
+    }
+  }
+
+  // api_url - computed: false, optional: true, required: false
+  private _apiUrl?: string; 
+  public get apiUrl() {
+    return this.getStringAttribute('api_url');
+  }
+  public set apiUrl(value: string) {
+    this._apiUrl = value;
+  }
+  public resetApiUrl() {
+    this._apiUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiUrlInput() {
+    return this._apiUrl;
+  }
+
+  // auth_url - computed: false, optional: true, required: false
+  private _authUrl?: string; 
+  public get authUrl() {
+    return this.getStringAttribute('auth_url');
+  }
+  public set authUrl(value: string) {
+    this._authUrl = value;
+  }
+  public resetAuthUrl() {
+    this._authUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authUrlInput() {
+    return this._authUrl;
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
+  }
+}
+
+export class DevicePostureIntegrationConfigAList extends cdktf.ComplexList {
+  public internalValue? : DevicePostureIntegrationConfigA[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DevicePostureIntegrationConfigAOutputReference {
+    return new DevicePostureIntegrationConfigAOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration cloudflare_device_posture_integration}
@@ -102,11 +255,12 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._identifier = config.identifier;
     this._interval = config.interval;
     this._name = config.name;
     this._type = config.type;
-    this._config = config.config;
+    this._config.internalValue = config.config;
   }
 
   // ==========
@@ -127,8 +281,19 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // identifier - computed: false, optional: true, required: false
@@ -190,20 +355,19 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: true, required: false
-  private _config?: DevicePostureIntegrationConfigA[] | cdktf.IResolvable; 
+  private _config = new DevicePostureIntegrationConfigAList(this, "config", false);
   public get config() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('config');
+    return this._config;
   }
-  public set config(value: DevicePostureIntegrationConfigA[] | cdktf.IResolvable) {
-    this._config = value;
+  public putConfig(value: DevicePostureIntegrationConfigA[] | cdktf.IResolvable) {
+    this._config.internalValue = value;
   }
   public resetConfig() {
-    this._config = undefined;
+    this._config.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config;
+    return this._config.internalValue;
   }
 
   // =========
@@ -213,11 +377,12 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       identifier: cdktf.stringToTerraform(this._identifier),
       interval: cdktf.stringToTerraform(this._interval),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      config: cdktf.listMapper(devicePostureIntegrationConfigAToTerraform)(this._config),
+      config: cdktf.listMapper(devicePostureIntegrationConfigAToTerraform)(this._config.internalValue),
     };
   }
 }

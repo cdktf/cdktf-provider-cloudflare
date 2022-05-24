@@ -20,6 +20,13 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#id RateLimit#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#period RateLimit#period}
   */
   readonly period: number;
@@ -691,6 +698,7 @@ export class RateLimit extends cdktf.TerraformResource {
     this._bypassUrlPatterns = config.bypassUrlPatterns;
     this._description = config.description;
     this._disabled = config.disabled;
+    this._id = config.id;
     this._period = config.period;
     this._threshold = config.threshold;
     this._zoneId = config.zoneId;
@@ -752,8 +760,19 @@ export class RateLimit extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // period - computed: false, optional: false, required: true
@@ -849,6 +868,7 @@ export class RateLimit extends cdktf.TerraformResource {
       bypass_url_patterns: cdktf.listMapper(cdktf.stringToTerraform)(this._bypassUrlPatterns),
       description: cdktf.stringToTerraform(this._description),
       disabled: cdktf.booleanToTerraform(this._disabled),
+      id: cdktf.stringToTerraform(this._id),
       period: cdktf.numberToTerraform(this._period),
       threshold: cdktf.numberToTerraform(this._threshold),
       zone_id: cdktf.stringToTerraform(this._zoneId),

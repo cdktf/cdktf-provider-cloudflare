@@ -12,6 +12,13 @@ export interface AccessGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#id AccessGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#name AccessGroup#name}
   */
   readonly name: string;
@@ -41,6 +48,9 @@ export interface AccessGroupConfig extends cdktf.TerraformMetaArguments {
 export interface AccessGroupExcludeAzure {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#id AccessGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string[];
   /**
@@ -60,6 +70,108 @@ export function accessGroupExcludeAzureToTerraform(struct?: AccessGroupExcludeAz
   }
 }
 
+export class AccessGroupExcludeAzureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupExcludeAzure | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExcludeAzure | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string[]; 
+  public get id() {
+    return this.getListAttribute('id');
+  }
+  public set id(value: string[]) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupExcludeAzureList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupExcludeAzure[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupExcludeAzureOutputReference {
+    return new AccessGroupExcludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupExcludeGithub {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#identity_provider_id AccessGroup#identity_provider_id}
@@ -87,6 +199,130 @@ export function accessGroupExcludeGithubToTerraform(struct?: AccessGroupExcludeG
   }
 }
 
+export class AccessGroupExcludeGithubOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupExcludeGithub | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._teams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExcludeGithub | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityProviderId = undefined;
+      this._name = undefined;
+      this._teams = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityProviderId = value.identityProviderId;
+      this._name = value.name;
+      this._teams = value.teams;
+    }
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: string[]; 
+  public get teams() {
+    return this.getListAttribute('teams');
+  }
+  public set teams(value: string[]) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams;
+  }
+}
+
+export class AccessGroupExcludeGithubList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupExcludeGithub[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupExcludeGithubOutputReference {
+    return new AccessGroupExcludeGithubOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupExcludeGsuite {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#email AccessGroup#email}
@@ -109,6 +345,108 @@ export function accessGroupExcludeGsuiteToTerraform(struct?: AccessGroupExcludeG
   }
 }
 
+export class AccessGroupExcludeGsuiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupExcludeGsuite | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExcludeGsuite | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string[]; 
+  public get email() {
+    return this.getListAttribute('email');
+  }
+  public set email(value: string[]) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupExcludeGsuiteList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupExcludeGsuite[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupExcludeGsuiteOutputReference {
+    return new AccessGroupExcludeGsuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupExcludeOkta {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#identity_provider_id AccessGroup#identity_provider_id}
@@ -131,6 +469,108 @@ export function accessGroupExcludeOktaToTerraform(struct?: AccessGroupExcludeOkt
   }
 }
 
+export class AccessGroupExcludeOktaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupExcludeOkta | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExcludeOkta | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityProviderId = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityProviderId = value.identityProviderId;
+      this._name = value.name;
+    }
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string[]; 
+  public get name() {
+    return this.getListAttribute('name');
+  }
+  public set name(value: string[]) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class AccessGroupExcludeOktaList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupExcludeOkta[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupExcludeOktaOutputReference {
+    return new AccessGroupExcludeOktaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupExcludeSaml {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#attribute_name AccessGroup#attribute_name}
@@ -158,6 +598,130 @@ export function accessGroupExcludeSamlToTerraform(struct?: AccessGroupExcludeSam
   }
 }
 
+export class AccessGroupExcludeSamlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupExcludeSaml | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeName = this._attributeName;
+    }
+    if (this._attributeValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeValue = this._attributeValue;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExcludeSaml | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeName = undefined;
+      this._attributeValue = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeName = value.attributeName;
+      this._attributeValue = value.attributeValue;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // attribute_name - computed: false, optional: true, required: false
+  private _attributeName?: string; 
+  public get attributeName() {
+    return this.getStringAttribute('attribute_name');
+  }
+  public set attributeName(value: string) {
+    this._attributeName = value;
+  }
+  public resetAttributeName() {
+    this._attributeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeNameInput() {
+    return this._attributeName;
+  }
+
+  // attribute_value - computed: false, optional: true, required: false
+  private _attributeValue?: string; 
+  public get attributeValue() {
+    return this.getStringAttribute('attribute_value');
+  }
+  public set attributeValue(value: string) {
+    this._attributeValue = value;
+  }
+  public resetAttributeValue() {
+    this._attributeValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeValueInput() {
+    return this._attributeValue;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupExcludeSamlList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupExcludeSaml[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupExcludeSamlOutputReference {
+    return new AccessGroupExcludeSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupExclude {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#any_valid_service_token AccessGroup#any_valid_service_token}
@@ -270,9 +834,466 @@ export function accessGroupExcludeToTerraform(struct?: AccessGroupExclude | cdkt
   }
 }
 
+export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupExclude | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._anyValidServiceToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anyValidServiceToken = this._anyValidServiceToken;
+    }
+    if (this._authMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authMethod = this._authMethod;
+    }
+    if (this._certificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificate = this._certificate;
+    }
+    if (this._commonName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName;
+    }
+    if (this._devicePosture !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.devicePosture = this._devicePosture;
+    }
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._emailDomain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailDomain = this._emailDomain;
+    }
+    if (this._everyone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.everyone = this._everyone;
+    }
+    if (this._geo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.geo = this._geo;
+    }
+    if (this._group !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.group = this._group;
+    }
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    if (this._loginMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loginMethod = this._loginMethod;
+    }
+    if (this._serviceToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceToken = this._serviceToken;
+    }
+    if (this._azure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azure = this._azure?.internalValue;
+    }
+    if (this._github?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.github = this._github?.internalValue;
+    }
+    if (this._gsuite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gsuite = this._gsuite?.internalValue;
+    }
+    if (this._okta?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.okta = this._okta?.internalValue;
+    }
+    if (this._saml?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.saml = this._saml?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExclude | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._anyValidServiceToken = undefined;
+      this._authMethod = undefined;
+      this._certificate = undefined;
+      this._commonName = undefined;
+      this._devicePosture = undefined;
+      this._email = undefined;
+      this._emailDomain = undefined;
+      this._everyone = undefined;
+      this._geo = undefined;
+      this._group = undefined;
+      this._ip = undefined;
+      this._loginMethod = undefined;
+      this._serviceToken = undefined;
+      this._azure.internalValue = undefined;
+      this._github.internalValue = undefined;
+      this._gsuite.internalValue = undefined;
+      this._okta.internalValue = undefined;
+      this._saml.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._anyValidServiceToken = value.anyValidServiceToken;
+      this._authMethod = value.authMethod;
+      this._certificate = value.certificate;
+      this._commonName = value.commonName;
+      this._devicePosture = value.devicePosture;
+      this._email = value.email;
+      this._emailDomain = value.emailDomain;
+      this._everyone = value.everyone;
+      this._geo = value.geo;
+      this._group = value.group;
+      this._ip = value.ip;
+      this._loginMethod = value.loginMethod;
+      this._serviceToken = value.serviceToken;
+      this._azure.internalValue = value.azure;
+      this._github.internalValue = value.github;
+      this._gsuite.internalValue = value.gsuite;
+      this._okta.internalValue = value.okta;
+      this._saml.internalValue = value.saml;
+    }
+  }
+
+  // any_valid_service_token - computed: false, optional: true, required: false
+  private _anyValidServiceToken?: boolean | cdktf.IResolvable; 
+  public get anyValidServiceToken() {
+    return this.getBooleanAttribute('any_valid_service_token');
+  }
+  public set anyValidServiceToken(value: boolean | cdktf.IResolvable) {
+    this._anyValidServiceToken = value;
+  }
+  public resetAnyValidServiceToken() {
+    this._anyValidServiceToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anyValidServiceTokenInput() {
+    return this._anyValidServiceToken;
+  }
+
+  // auth_method - computed: false, optional: true, required: false
+  private _authMethod?: string; 
+  public get authMethod() {
+    return this.getStringAttribute('auth_method');
+  }
+  public set authMethod(value: string) {
+    this._authMethod = value;
+  }
+  public resetAuthMethod() {
+    this._authMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodInput() {
+    return this._authMethod;
+  }
+
+  // certificate - computed: false, optional: true, required: false
+  private _certificate?: boolean | cdktf.IResolvable; 
+  public get certificate() {
+    return this.getBooleanAttribute('certificate');
+  }
+  public set certificate(value: boolean | cdktf.IResolvable) {
+    this._certificate = value;
+  }
+  public resetCertificate() {
+    this._certificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate;
+  }
+
+  // common_name - computed: false, optional: true, required: false
+  private _commonName?: string; 
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+  public set commonName(value: string) {
+    this._commonName = value;
+  }
+  public resetCommonName() {
+    this._commonName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName;
+  }
+
+  // device_posture - computed: false, optional: true, required: false
+  private _devicePosture?: string[]; 
+  public get devicePosture() {
+    return this.getListAttribute('device_posture');
+  }
+  public set devicePosture(value: string[]) {
+    this._devicePosture = value;
+  }
+  public resetDevicePosture() {
+    this._devicePosture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicePostureInput() {
+    return this._devicePosture;
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string[]; 
+  public get email() {
+    return this.getListAttribute('email');
+  }
+  public set email(value: string[]) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // email_domain - computed: false, optional: true, required: false
+  private _emailDomain?: string[]; 
+  public get emailDomain() {
+    return this.getListAttribute('email_domain');
+  }
+  public set emailDomain(value: string[]) {
+    this._emailDomain = value;
+  }
+  public resetEmailDomain() {
+    this._emailDomain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainInput() {
+    return this._emailDomain;
+  }
+
+  // everyone - computed: false, optional: true, required: false
+  private _everyone?: boolean | cdktf.IResolvable; 
+  public get everyone() {
+    return this.getBooleanAttribute('everyone');
+  }
+  public set everyone(value: boolean | cdktf.IResolvable) {
+    this._everyone = value;
+  }
+  public resetEveryone() {
+    this._everyone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get everyoneInput() {
+    return this._everyone;
+  }
+
+  // geo - computed: false, optional: true, required: false
+  private _geo?: string[]; 
+  public get geo() {
+    return this.getListAttribute('geo');
+  }
+  public set geo(value: string[]) {
+    this._geo = value;
+  }
+  public resetGeo() {
+    this._geo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get geoInput() {
+    return this._geo;
+  }
+
+  // group - computed: false, optional: true, required: false
+  private _group?: string[]; 
+  public get group() {
+    return this.getListAttribute('group');
+  }
+  public set group(value: string[]) {
+    this._group = value;
+  }
+  public resetGroup() {
+    this._group = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group;
+  }
+
+  // ip - computed: false, optional: true, required: false
+  private _ip?: string[]; 
+  public get ip() {
+    return this.getListAttribute('ip');
+  }
+  public set ip(value: string[]) {
+    this._ip = value;
+  }
+  public resetIp() {
+    this._ip = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+
+  // login_method - computed: false, optional: true, required: false
+  private _loginMethod?: string[]; 
+  public get loginMethod() {
+    return this.getListAttribute('login_method');
+  }
+  public set loginMethod(value: string[]) {
+    this._loginMethod = value;
+  }
+  public resetLoginMethod() {
+    this._loginMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loginMethodInput() {
+    return this._loginMethod;
+  }
+
+  // service_token - computed: false, optional: true, required: false
+  private _serviceToken?: string[]; 
+  public get serviceToken() {
+    return this.getListAttribute('service_token');
+  }
+  public set serviceToken(value: string[]) {
+    this._serviceToken = value;
+  }
+  public resetServiceToken() {
+    this._serviceToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTokenInput() {
+    return this._serviceToken;
+  }
+
+  // azure - computed: false, optional: true, required: false
+  private _azure = new AccessGroupExcludeAzureList(this, "azure", false);
+  public get azure() {
+    return this._azure;
+  }
+  public putAzure(value: AccessGroupExcludeAzure[] | cdktf.IResolvable) {
+    this._azure.internalValue = value;
+  }
+  public resetAzure() {
+    this._azure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureInput() {
+    return this._azure.internalValue;
+  }
+
+  // github - computed: false, optional: true, required: false
+  private _github = new AccessGroupExcludeGithubList(this, "github", false);
+  public get github() {
+    return this._github;
+  }
+  public putGithub(value: AccessGroupExcludeGithub[] | cdktf.IResolvable) {
+    this._github.internalValue = value;
+  }
+  public resetGithub() {
+    this._github.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubInput() {
+    return this._github.internalValue;
+  }
+
+  // gsuite - computed: false, optional: true, required: false
+  private _gsuite = new AccessGroupExcludeGsuiteList(this, "gsuite", false);
+  public get gsuite() {
+    return this._gsuite;
+  }
+  public putGsuite(value: AccessGroupExcludeGsuite[] | cdktf.IResolvable) {
+    this._gsuite.internalValue = value;
+  }
+  public resetGsuite() {
+    this._gsuite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gsuiteInput() {
+    return this._gsuite.internalValue;
+  }
+
+  // okta - computed: false, optional: true, required: false
+  private _okta = new AccessGroupExcludeOktaList(this, "okta", false);
+  public get okta() {
+    return this._okta;
+  }
+  public putOkta(value: AccessGroupExcludeOkta[] | cdktf.IResolvable) {
+    this._okta.internalValue = value;
+  }
+  public resetOkta() {
+    this._okta.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oktaInput() {
+    return this._okta.internalValue;
+  }
+
+  // saml - computed: false, optional: true, required: false
+  private _saml = new AccessGroupExcludeSamlList(this, "saml", false);
+  public get saml() {
+    return this._saml;
+  }
+  public putSaml(value: AccessGroupExcludeSaml[] | cdktf.IResolvable) {
+    this._saml.internalValue = value;
+  }
+  public resetSaml() {
+    this._saml.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samlInput() {
+    return this._saml.internalValue;
+  }
+}
+
+export class AccessGroupExcludeList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupExclude[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupExcludeOutputReference {
+    return new AccessGroupExcludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupIncludeAzure {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#id AccessGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string[];
   /**
@@ -292,6 +1313,108 @@ export function accessGroupIncludeAzureToTerraform(struct?: AccessGroupIncludeAz
   }
 }
 
+export class AccessGroupIncludeAzureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupIncludeAzure | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupIncludeAzure | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string[]; 
+  public get id() {
+    return this.getListAttribute('id');
+  }
+  public set id(value: string[]) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupIncludeAzureList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupIncludeAzure[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupIncludeAzureOutputReference {
+    return new AccessGroupIncludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupIncludeGithub {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#identity_provider_id AccessGroup#identity_provider_id}
@@ -319,6 +1442,130 @@ export function accessGroupIncludeGithubToTerraform(struct?: AccessGroupIncludeG
   }
 }
 
+export class AccessGroupIncludeGithubOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupIncludeGithub | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._teams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupIncludeGithub | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityProviderId = undefined;
+      this._name = undefined;
+      this._teams = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityProviderId = value.identityProviderId;
+      this._name = value.name;
+      this._teams = value.teams;
+    }
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: string[]; 
+  public get teams() {
+    return this.getListAttribute('teams');
+  }
+  public set teams(value: string[]) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams;
+  }
+}
+
+export class AccessGroupIncludeGithubList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupIncludeGithub[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupIncludeGithubOutputReference {
+    return new AccessGroupIncludeGithubOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupIncludeGsuite {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#email AccessGroup#email}
@@ -341,6 +1588,108 @@ export function accessGroupIncludeGsuiteToTerraform(struct?: AccessGroupIncludeG
   }
 }
 
+export class AccessGroupIncludeGsuiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupIncludeGsuite | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupIncludeGsuite | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string[]; 
+  public get email() {
+    return this.getListAttribute('email');
+  }
+  public set email(value: string[]) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupIncludeGsuiteList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupIncludeGsuite[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupIncludeGsuiteOutputReference {
+    return new AccessGroupIncludeGsuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupIncludeOkta {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#identity_provider_id AccessGroup#identity_provider_id}
@@ -363,6 +1712,108 @@ export function accessGroupIncludeOktaToTerraform(struct?: AccessGroupIncludeOkt
   }
 }
 
+export class AccessGroupIncludeOktaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupIncludeOkta | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupIncludeOkta | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityProviderId = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityProviderId = value.identityProviderId;
+      this._name = value.name;
+    }
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string[]; 
+  public get name() {
+    return this.getListAttribute('name');
+  }
+  public set name(value: string[]) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class AccessGroupIncludeOktaList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupIncludeOkta[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupIncludeOktaOutputReference {
+    return new AccessGroupIncludeOktaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupIncludeSaml {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#attribute_name AccessGroup#attribute_name}
@@ -390,6 +1841,130 @@ export function accessGroupIncludeSamlToTerraform(struct?: AccessGroupIncludeSam
   }
 }
 
+export class AccessGroupIncludeSamlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupIncludeSaml | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeName = this._attributeName;
+    }
+    if (this._attributeValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeValue = this._attributeValue;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupIncludeSaml | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeName = undefined;
+      this._attributeValue = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeName = value.attributeName;
+      this._attributeValue = value.attributeValue;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // attribute_name - computed: false, optional: true, required: false
+  private _attributeName?: string; 
+  public get attributeName() {
+    return this.getStringAttribute('attribute_name');
+  }
+  public set attributeName(value: string) {
+    this._attributeName = value;
+  }
+  public resetAttributeName() {
+    this._attributeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeNameInput() {
+    return this._attributeName;
+  }
+
+  // attribute_value - computed: false, optional: true, required: false
+  private _attributeValue?: string; 
+  public get attributeValue() {
+    return this.getStringAttribute('attribute_value');
+  }
+  public set attributeValue(value: string) {
+    this._attributeValue = value;
+  }
+  public resetAttributeValue() {
+    this._attributeValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeValueInput() {
+    return this._attributeValue;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupIncludeSamlList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupIncludeSaml[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupIncludeSamlOutputReference {
+    return new AccessGroupIncludeSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupInclude {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#any_valid_service_token AccessGroup#any_valid_service_token}
@@ -502,9 +2077,466 @@ export function accessGroupIncludeToTerraform(struct?: AccessGroupInclude | cdkt
   }
 }
 
+export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupInclude | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._anyValidServiceToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anyValidServiceToken = this._anyValidServiceToken;
+    }
+    if (this._authMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authMethod = this._authMethod;
+    }
+    if (this._certificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificate = this._certificate;
+    }
+    if (this._commonName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName;
+    }
+    if (this._devicePosture !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.devicePosture = this._devicePosture;
+    }
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._emailDomain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailDomain = this._emailDomain;
+    }
+    if (this._everyone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.everyone = this._everyone;
+    }
+    if (this._geo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.geo = this._geo;
+    }
+    if (this._group !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.group = this._group;
+    }
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    if (this._loginMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loginMethod = this._loginMethod;
+    }
+    if (this._serviceToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceToken = this._serviceToken;
+    }
+    if (this._azure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azure = this._azure?.internalValue;
+    }
+    if (this._github?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.github = this._github?.internalValue;
+    }
+    if (this._gsuite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gsuite = this._gsuite?.internalValue;
+    }
+    if (this._okta?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.okta = this._okta?.internalValue;
+    }
+    if (this._saml?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.saml = this._saml?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupInclude | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._anyValidServiceToken = undefined;
+      this._authMethod = undefined;
+      this._certificate = undefined;
+      this._commonName = undefined;
+      this._devicePosture = undefined;
+      this._email = undefined;
+      this._emailDomain = undefined;
+      this._everyone = undefined;
+      this._geo = undefined;
+      this._group = undefined;
+      this._ip = undefined;
+      this._loginMethod = undefined;
+      this._serviceToken = undefined;
+      this._azure.internalValue = undefined;
+      this._github.internalValue = undefined;
+      this._gsuite.internalValue = undefined;
+      this._okta.internalValue = undefined;
+      this._saml.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._anyValidServiceToken = value.anyValidServiceToken;
+      this._authMethod = value.authMethod;
+      this._certificate = value.certificate;
+      this._commonName = value.commonName;
+      this._devicePosture = value.devicePosture;
+      this._email = value.email;
+      this._emailDomain = value.emailDomain;
+      this._everyone = value.everyone;
+      this._geo = value.geo;
+      this._group = value.group;
+      this._ip = value.ip;
+      this._loginMethod = value.loginMethod;
+      this._serviceToken = value.serviceToken;
+      this._azure.internalValue = value.azure;
+      this._github.internalValue = value.github;
+      this._gsuite.internalValue = value.gsuite;
+      this._okta.internalValue = value.okta;
+      this._saml.internalValue = value.saml;
+    }
+  }
+
+  // any_valid_service_token - computed: false, optional: true, required: false
+  private _anyValidServiceToken?: boolean | cdktf.IResolvable; 
+  public get anyValidServiceToken() {
+    return this.getBooleanAttribute('any_valid_service_token');
+  }
+  public set anyValidServiceToken(value: boolean | cdktf.IResolvable) {
+    this._anyValidServiceToken = value;
+  }
+  public resetAnyValidServiceToken() {
+    this._anyValidServiceToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anyValidServiceTokenInput() {
+    return this._anyValidServiceToken;
+  }
+
+  // auth_method - computed: false, optional: true, required: false
+  private _authMethod?: string; 
+  public get authMethod() {
+    return this.getStringAttribute('auth_method');
+  }
+  public set authMethod(value: string) {
+    this._authMethod = value;
+  }
+  public resetAuthMethod() {
+    this._authMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodInput() {
+    return this._authMethod;
+  }
+
+  // certificate - computed: false, optional: true, required: false
+  private _certificate?: boolean | cdktf.IResolvable; 
+  public get certificate() {
+    return this.getBooleanAttribute('certificate');
+  }
+  public set certificate(value: boolean | cdktf.IResolvable) {
+    this._certificate = value;
+  }
+  public resetCertificate() {
+    this._certificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate;
+  }
+
+  // common_name - computed: false, optional: true, required: false
+  private _commonName?: string; 
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+  public set commonName(value: string) {
+    this._commonName = value;
+  }
+  public resetCommonName() {
+    this._commonName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName;
+  }
+
+  // device_posture - computed: false, optional: true, required: false
+  private _devicePosture?: string[]; 
+  public get devicePosture() {
+    return this.getListAttribute('device_posture');
+  }
+  public set devicePosture(value: string[]) {
+    this._devicePosture = value;
+  }
+  public resetDevicePosture() {
+    this._devicePosture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicePostureInput() {
+    return this._devicePosture;
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string[]; 
+  public get email() {
+    return this.getListAttribute('email');
+  }
+  public set email(value: string[]) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // email_domain - computed: false, optional: true, required: false
+  private _emailDomain?: string[]; 
+  public get emailDomain() {
+    return this.getListAttribute('email_domain');
+  }
+  public set emailDomain(value: string[]) {
+    this._emailDomain = value;
+  }
+  public resetEmailDomain() {
+    this._emailDomain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainInput() {
+    return this._emailDomain;
+  }
+
+  // everyone - computed: false, optional: true, required: false
+  private _everyone?: boolean | cdktf.IResolvable; 
+  public get everyone() {
+    return this.getBooleanAttribute('everyone');
+  }
+  public set everyone(value: boolean | cdktf.IResolvable) {
+    this._everyone = value;
+  }
+  public resetEveryone() {
+    this._everyone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get everyoneInput() {
+    return this._everyone;
+  }
+
+  // geo - computed: false, optional: true, required: false
+  private _geo?: string[]; 
+  public get geo() {
+    return this.getListAttribute('geo');
+  }
+  public set geo(value: string[]) {
+    this._geo = value;
+  }
+  public resetGeo() {
+    this._geo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get geoInput() {
+    return this._geo;
+  }
+
+  // group - computed: false, optional: true, required: false
+  private _group?: string[]; 
+  public get group() {
+    return this.getListAttribute('group');
+  }
+  public set group(value: string[]) {
+    this._group = value;
+  }
+  public resetGroup() {
+    this._group = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group;
+  }
+
+  // ip - computed: false, optional: true, required: false
+  private _ip?: string[]; 
+  public get ip() {
+    return this.getListAttribute('ip');
+  }
+  public set ip(value: string[]) {
+    this._ip = value;
+  }
+  public resetIp() {
+    this._ip = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+
+  // login_method - computed: false, optional: true, required: false
+  private _loginMethod?: string[]; 
+  public get loginMethod() {
+    return this.getListAttribute('login_method');
+  }
+  public set loginMethod(value: string[]) {
+    this._loginMethod = value;
+  }
+  public resetLoginMethod() {
+    this._loginMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loginMethodInput() {
+    return this._loginMethod;
+  }
+
+  // service_token - computed: false, optional: true, required: false
+  private _serviceToken?: string[]; 
+  public get serviceToken() {
+    return this.getListAttribute('service_token');
+  }
+  public set serviceToken(value: string[]) {
+    this._serviceToken = value;
+  }
+  public resetServiceToken() {
+    this._serviceToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTokenInput() {
+    return this._serviceToken;
+  }
+
+  // azure - computed: false, optional: true, required: false
+  private _azure = new AccessGroupIncludeAzureList(this, "azure", false);
+  public get azure() {
+    return this._azure;
+  }
+  public putAzure(value: AccessGroupIncludeAzure[] | cdktf.IResolvable) {
+    this._azure.internalValue = value;
+  }
+  public resetAzure() {
+    this._azure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureInput() {
+    return this._azure.internalValue;
+  }
+
+  // github - computed: false, optional: true, required: false
+  private _github = new AccessGroupIncludeGithubList(this, "github", false);
+  public get github() {
+    return this._github;
+  }
+  public putGithub(value: AccessGroupIncludeGithub[] | cdktf.IResolvable) {
+    this._github.internalValue = value;
+  }
+  public resetGithub() {
+    this._github.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubInput() {
+    return this._github.internalValue;
+  }
+
+  // gsuite - computed: false, optional: true, required: false
+  private _gsuite = new AccessGroupIncludeGsuiteList(this, "gsuite", false);
+  public get gsuite() {
+    return this._gsuite;
+  }
+  public putGsuite(value: AccessGroupIncludeGsuite[] | cdktf.IResolvable) {
+    this._gsuite.internalValue = value;
+  }
+  public resetGsuite() {
+    this._gsuite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gsuiteInput() {
+    return this._gsuite.internalValue;
+  }
+
+  // okta - computed: false, optional: true, required: false
+  private _okta = new AccessGroupIncludeOktaList(this, "okta", false);
+  public get okta() {
+    return this._okta;
+  }
+  public putOkta(value: AccessGroupIncludeOkta[] | cdktf.IResolvable) {
+    this._okta.internalValue = value;
+  }
+  public resetOkta() {
+    this._okta.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oktaInput() {
+    return this._okta.internalValue;
+  }
+
+  // saml - computed: false, optional: true, required: false
+  private _saml = new AccessGroupIncludeSamlList(this, "saml", false);
+  public get saml() {
+    return this._saml;
+  }
+  public putSaml(value: AccessGroupIncludeSaml[] | cdktf.IResolvable) {
+    this._saml.internalValue = value;
+  }
+  public resetSaml() {
+    this._saml.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samlInput() {
+    return this._saml.internalValue;
+  }
+}
+
+export class AccessGroupIncludeList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupInclude[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupIncludeOutputReference {
+    return new AccessGroupIncludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupRequireAzure {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#id AccessGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string[];
   /**
@@ -524,6 +2556,108 @@ export function accessGroupRequireAzureToTerraform(struct?: AccessGroupRequireAz
   }
 }
 
+export class AccessGroupRequireAzureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupRequireAzure | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequireAzure | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string[]; 
+  public get id() {
+    return this.getListAttribute('id');
+  }
+  public set id(value: string[]) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupRequireAzureList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupRequireAzure[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupRequireAzureOutputReference {
+    return new AccessGroupRequireAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupRequireGithub {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#identity_provider_id AccessGroup#identity_provider_id}
@@ -551,6 +2685,130 @@ export function accessGroupRequireGithubToTerraform(struct?: AccessGroupRequireG
   }
 }
 
+export class AccessGroupRequireGithubOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupRequireGithub | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._teams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequireGithub | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityProviderId = undefined;
+      this._name = undefined;
+      this._teams = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityProviderId = value.identityProviderId;
+      this._name = value.name;
+      this._teams = value.teams;
+    }
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: string[]; 
+  public get teams() {
+    return this.getListAttribute('teams');
+  }
+  public set teams(value: string[]) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams;
+  }
+}
+
+export class AccessGroupRequireGithubList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupRequireGithub[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupRequireGithubOutputReference {
+    return new AccessGroupRequireGithubOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupRequireGsuite {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#email AccessGroup#email}
@@ -573,6 +2831,108 @@ export function accessGroupRequireGsuiteToTerraform(struct?: AccessGroupRequireG
   }
 }
 
+export class AccessGroupRequireGsuiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupRequireGsuite | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequireGsuite | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string[]; 
+  public get email() {
+    return this.getListAttribute('email');
+  }
+  public set email(value: string[]) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupRequireGsuiteList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupRequireGsuite[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupRequireGsuiteOutputReference {
+    return new AccessGroupRequireGsuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupRequireOkta {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#identity_provider_id AccessGroup#identity_provider_id}
@@ -595,6 +2955,108 @@ export function accessGroupRequireOktaToTerraform(struct?: AccessGroupRequireOkt
   }
 }
 
+export class AccessGroupRequireOktaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupRequireOkta | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequireOkta | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityProviderId = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityProviderId = value.identityProviderId;
+      this._name = value.name;
+    }
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string[]; 
+  public get name() {
+    return this.getListAttribute('name');
+  }
+  public set name(value: string[]) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class AccessGroupRequireOktaList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupRequireOkta[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupRequireOktaOutputReference {
+    return new AccessGroupRequireOktaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupRequireSaml {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#attribute_name AccessGroup#attribute_name}
@@ -622,6 +3084,130 @@ export function accessGroupRequireSamlToTerraform(struct?: AccessGroupRequireSam
   }
 }
 
+export class AccessGroupRequireSamlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupRequireSaml | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeName = this._attributeName;
+    }
+    if (this._attributeValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeValue = this._attributeValue;
+    }
+    if (this._identityProviderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityProviderId = this._identityProviderId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequireSaml | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeName = undefined;
+      this._attributeValue = undefined;
+      this._identityProviderId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeName = value.attributeName;
+      this._attributeValue = value.attributeValue;
+      this._identityProviderId = value.identityProviderId;
+    }
+  }
+
+  // attribute_name - computed: false, optional: true, required: false
+  private _attributeName?: string; 
+  public get attributeName() {
+    return this.getStringAttribute('attribute_name');
+  }
+  public set attributeName(value: string) {
+    this._attributeName = value;
+  }
+  public resetAttributeName() {
+    this._attributeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeNameInput() {
+    return this._attributeName;
+  }
+
+  // attribute_value - computed: false, optional: true, required: false
+  private _attributeValue?: string; 
+  public get attributeValue() {
+    return this.getStringAttribute('attribute_value');
+  }
+  public set attributeValue(value: string) {
+    this._attributeValue = value;
+  }
+  public resetAttributeValue() {
+    this._attributeValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeValueInput() {
+    return this._attributeValue;
+  }
+
+  // identity_provider_id - computed: false, optional: true, required: false
+  private _identityProviderId?: string; 
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+  public set identityProviderId(value: string) {
+    this._identityProviderId = value;
+  }
+  public resetIdentityProviderId() {
+    this._identityProviderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdInput() {
+    return this._identityProviderId;
+  }
+}
+
+export class AccessGroupRequireSamlList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupRequireSaml[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupRequireSamlOutputReference {
+    return new AccessGroupRequireSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessGroupRequire {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#any_valid_service_token AccessGroup#any_valid_service_token}
@@ -734,6 +3320,460 @@ export function accessGroupRequireToTerraform(struct?: AccessGroupRequire | cdkt
   }
 }
 
+export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessGroupRequire | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._anyValidServiceToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anyValidServiceToken = this._anyValidServiceToken;
+    }
+    if (this._authMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authMethod = this._authMethod;
+    }
+    if (this._certificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificate = this._certificate;
+    }
+    if (this._commonName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName;
+    }
+    if (this._devicePosture !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.devicePosture = this._devicePosture;
+    }
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._emailDomain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailDomain = this._emailDomain;
+    }
+    if (this._everyone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.everyone = this._everyone;
+    }
+    if (this._geo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.geo = this._geo;
+    }
+    if (this._group !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.group = this._group;
+    }
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    if (this._loginMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loginMethod = this._loginMethod;
+    }
+    if (this._serviceToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceToken = this._serviceToken;
+    }
+    if (this._azure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azure = this._azure?.internalValue;
+    }
+    if (this._github?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.github = this._github?.internalValue;
+    }
+    if (this._gsuite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gsuite = this._gsuite?.internalValue;
+    }
+    if (this._okta?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.okta = this._okta?.internalValue;
+    }
+    if (this._saml?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.saml = this._saml?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequire | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._anyValidServiceToken = undefined;
+      this._authMethod = undefined;
+      this._certificate = undefined;
+      this._commonName = undefined;
+      this._devicePosture = undefined;
+      this._email = undefined;
+      this._emailDomain = undefined;
+      this._everyone = undefined;
+      this._geo = undefined;
+      this._group = undefined;
+      this._ip = undefined;
+      this._loginMethod = undefined;
+      this._serviceToken = undefined;
+      this._azure.internalValue = undefined;
+      this._github.internalValue = undefined;
+      this._gsuite.internalValue = undefined;
+      this._okta.internalValue = undefined;
+      this._saml.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._anyValidServiceToken = value.anyValidServiceToken;
+      this._authMethod = value.authMethod;
+      this._certificate = value.certificate;
+      this._commonName = value.commonName;
+      this._devicePosture = value.devicePosture;
+      this._email = value.email;
+      this._emailDomain = value.emailDomain;
+      this._everyone = value.everyone;
+      this._geo = value.geo;
+      this._group = value.group;
+      this._ip = value.ip;
+      this._loginMethod = value.loginMethod;
+      this._serviceToken = value.serviceToken;
+      this._azure.internalValue = value.azure;
+      this._github.internalValue = value.github;
+      this._gsuite.internalValue = value.gsuite;
+      this._okta.internalValue = value.okta;
+      this._saml.internalValue = value.saml;
+    }
+  }
+
+  // any_valid_service_token - computed: false, optional: true, required: false
+  private _anyValidServiceToken?: boolean | cdktf.IResolvable; 
+  public get anyValidServiceToken() {
+    return this.getBooleanAttribute('any_valid_service_token');
+  }
+  public set anyValidServiceToken(value: boolean | cdktf.IResolvable) {
+    this._anyValidServiceToken = value;
+  }
+  public resetAnyValidServiceToken() {
+    this._anyValidServiceToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anyValidServiceTokenInput() {
+    return this._anyValidServiceToken;
+  }
+
+  // auth_method - computed: false, optional: true, required: false
+  private _authMethod?: string; 
+  public get authMethod() {
+    return this.getStringAttribute('auth_method');
+  }
+  public set authMethod(value: string) {
+    this._authMethod = value;
+  }
+  public resetAuthMethod() {
+    this._authMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodInput() {
+    return this._authMethod;
+  }
+
+  // certificate - computed: false, optional: true, required: false
+  private _certificate?: boolean | cdktf.IResolvable; 
+  public get certificate() {
+    return this.getBooleanAttribute('certificate');
+  }
+  public set certificate(value: boolean | cdktf.IResolvable) {
+    this._certificate = value;
+  }
+  public resetCertificate() {
+    this._certificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate;
+  }
+
+  // common_name - computed: false, optional: true, required: false
+  private _commonName?: string; 
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+  public set commonName(value: string) {
+    this._commonName = value;
+  }
+  public resetCommonName() {
+    this._commonName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName;
+  }
+
+  // device_posture - computed: false, optional: true, required: false
+  private _devicePosture?: string[]; 
+  public get devicePosture() {
+    return this.getListAttribute('device_posture');
+  }
+  public set devicePosture(value: string[]) {
+    this._devicePosture = value;
+  }
+  public resetDevicePosture() {
+    this._devicePosture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicePostureInput() {
+    return this._devicePosture;
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string[]; 
+  public get email() {
+    return this.getListAttribute('email');
+  }
+  public set email(value: string[]) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // email_domain - computed: false, optional: true, required: false
+  private _emailDomain?: string[]; 
+  public get emailDomain() {
+    return this.getListAttribute('email_domain');
+  }
+  public set emailDomain(value: string[]) {
+    this._emailDomain = value;
+  }
+  public resetEmailDomain() {
+    this._emailDomain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainInput() {
+    return this._emailDomain;
+  }
+
+  // everyone - computed: false, optional: true, required: false
+  private _everyone?: boolean | cdktf.IResolvable; 
+  public get everyone() {
+    return this.getBooleanAttribute('everyone');
+  }
+  public set everyone(value: boolean | cdktf.IResolvable) {
+    this._everyone = value;
+  }
+  public resetEveryone() {
+    this._everyone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get everyoneInput() {
+    return this._everyone;
+  }
+
+  // geo - computed: false, optional: true, required: false
+  private _geo?: string[]; 
+  public get geo() {
+    return this.getListAttribute('geo');
+  }
+  public set geo(value: string[]) {
+    this._geo = value;
+  }
+  public resetGeo() {
+    this._geo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get geoInput() {
+    return this._geo;
+  }
+
+  // group - computed: false, optional: true, required: false
+  private _group?: string[]; 
+  public get group() {
+    return this.getListAttribute('group');
+  }
+  public set group(value: string[]) {
+    this._group = value;
+  }
+  public resetGroup() {
+    this._group = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group;
+  }
+
+  // ip - computed: false, optional: true, required: false
+  private _ip?: string[]; 
+  public get ip() {
+    return this.getListAttribute('ip');
+  }
+  public set ip(value: string[]) {
+    this._ip = value;
+  }
+  public resetIp() {
+    this._ip = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+
+  // login_method - computed: false, optional: true, required: false
+  private _loginMethod?: string[]; 
+  public get loginMethod() {
+    return this.getListAttribute('login_method');
+  }
+  public set loginMethod(value: string[]) {
+    this._loginMethod = value;
+  }
+  public resetLoginMethod() {
+    this._loginMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loginMethodInput() {
+    return this._loginMethod;
+  }
+
+  // service_token - computed: false, optional: true, required: false
+  private _serviceToken?: string[]; 
+  public get serviceToken() {
+    return this.getListAttribute('service_token');
+  }
+  public set serviceToken(value: string[]) {
+    this._serviceToken = value;
+  }
+  public resetServiceToken() {
+    this._serviceToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTokenInput() {
+    return this._serviceToken;
+  }
+
+  // azure - computed: false, optional: true, required: false
+  private _azure = new AccessGroupRequireAzureList(this, "azure", false);
+  public get azure() {
+    return this._azure;
+  }
+  public putAzure(value: AccessGroupRequireAzure[] | cdktf.IResolvable) {
+    this._azure.internalValue = value;
+  }
+  public resetAzure() {
+    this._azure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureInput() {
+    return this._azure.internalValue;
+  }
+
+  // github - computed: false, optional: true, required: false
+  private _github = new AccessGroupRequireGithubList(this, "github", false);
+  public get github() {
+    return this._github;
+  }
+  public putGithub(value: AccessGroupRequireGithub[] | cdktf.IResolvable) {
+    this._github.internalValue = value;
+  }
+  public resetGithub() {
+    this._github.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubInput() {
+    return this._github.internalValue;
+  }
+
+  // gsuite - computed: false, optional: true, required: false
+  private _gsuite = new AccessGroupRequireGsuiteList(this, "gsuite", false);
+  public get gsuite() {
+    return this._gsuite;
+  }
+  public putGsuite(value: AccessGroupRequireGsuite[] | cdktf.IResolvable) {
+    this._gsuite.internalValue = value;
+  }
+  public resetGsuite() {
+    this._gsuite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gsuiteInput() {
+    return this._gsuite.internalValue;
+  }
+
+  // okta - computed: false, optional: true, required: false
+  private _okta = new AccessGroupRequireOktaList(this, "okta", false);
+  public get okta() {
+    return this._okta;
+  }
+  public putOkta(value: AccessGroupRequireOkta[] | cdktf.IResolvable) {
+    this._okta.internalValue = value;
+  }
+  public resetOkta() {
+    this._okta.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oktaInput() {
+    return this._okta.internalValue;
+  }
+
+  // saml - computed: false, optional: true, required: false
+  private _saml = new AccessGroupRequireSamlList(this, "saml", false);
+  public get saml() {
+    return this._saml;
+  }
+  public putSaml(value: AccessGroupRequireSaml[] | cdktf.IResolvable) {
+    this._saml.internalValue = value;
+  }
+  public resetSaml() {
+    this._saml.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samlInput() {
+    return this._saml.internalValue;
+  }
+}
+
+export class AccessGroupRequireList extends cdktf.ComplexList {
+  public internalValue? : AccessGroupRequire[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessGroupRequireOutputReference {
+    return new AccessGroupRequireOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group cloudflare_access_group}
@@ -770,11 +3810,12 @@ export class AccessGroup extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._name = config.name;
     this._zoneId = config.zoneId;
-    this._exclude = config.exclude;
-    this._include = config.include;
-    this._require = config.require;
+    this._exclude.internalValue = config.exclude;
+    this._include.internalValue = config.include;
+    this._require.internalValue = config.require;
   }
 
   // ==========
@@ -798,8 +3839,19 @@ export class AccessGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -832,51 +3884,48 @@ export class AccessGroup extends cdktf.TerraformResource {
   }
 
   // exclude - computed: false, optional: true, required: false
-  private _exclude?: AccessGroupExclude[] | cdktf.IResolvable; 
+  private _exclude = new AccessGroupExcludeList(this, "exclude", false);
   public get exclude() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('exclude');
+    return this._exclude;
   }
-  public set exclude(value: AccessGroupExclude[] | cdktf.IResolvable) {
-    this._exclude = value;
+  public putExclude(value: AccessGroupExclude[] | cdktf.IResolvable) {
+    this._exclude.internalValue = value;
   }
   public resetExclude() {
-    this._exclude = undefined;
+    this._exclude.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get excludeInput() {
-    return this._exclude;
+    return this._exclude.internalValue;
   }
 
   // include - computed: false, optional: false, required: true
-  private _include?: AccessGroupInclude[] | cdktf.IResolvable; 
+  private _include = new AccessGroupIncludeList(this, "include", false);
   public get include() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('include');
+    return this._include;
   }
-  public set include(value: AccessGroupInclude[] | cdktf.IResolvable) {
-    this._include = value;
+  public putInclude(value: AccessGroupInclude[] | cdktf.IResolvable) {
+    this._include.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get includeInput() {
-    return this._include;
+    return this._include.internalValue;
   }
 
   // require - computed: false, optional: true, required: false
-  private _require?: AccessGroupRequire[] | cdktf.IResolvable; 
+  private _require = new AccessGroupRequireList(this, "require", false);
   public get require() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('require');
+    return this._require;
   }
-  public set require(value: AccessGroupRequire[] | cdktf.IResolvable) {
-    this._require = value;
+  public putRequire(value: AccessGroupRequire[] | cdktf.IResolvable) {
+    this._require.internalValue = value;
   }
   public resetRequire() {
-    this._require = undefined;
+    this._require.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requireInput() {
-    return this._require;
+    return this._require.internalValue;
   }
 
   // =========
@@ -886,11 +3935,12 @@ export class AccessGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      exclude: cdktf.listMapper(accessGroupExcludeToTerraform)(this._exclude),
-      include: cdktf.listMapper(accessGroupIncludeToTerraform)(this._include),
-      require: cdktf.listMapper(accessGroupRequireToTerraform)(this._require),
+      exclude: cdktf.listMapper(accessGroupExcludeToTerraform)(this._exclude.internalValue),
+      include: cdktf.listMapper(accessGroupIncludeToTerraform)(this._include.internalValue),
+      require: cdktf.listMapper(accessGroupRequireToTerraform)(this._require.internalValue),
     };
   }
 }

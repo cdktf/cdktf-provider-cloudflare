@@ -20,6 +20,13 @@ export interface AccessBookmarkConfig extends cdktf.TerraformMetaArguments {
   */
   readonly domain: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#id AccessBookmark#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#logo_url AccessBookmark#logo_url}
   */
   readonly logoUrl?: string;
@@ -70,6 +77,7 @@ export class AccessBookmark extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._appLauncherVisible = config.appLauncherVisible;
     this._domain = config.domain;
+    this._id = config.id;
     this._logoUrl = config.logoUrl;
     this._name = config.name;
     this._zoneId = config.zoneId;
@@ -125,8 +133,19 @@ export class AccessBookmark extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // logo_url - computed: false, optional: true, required: false
@@ -183,6 +202,7 @@ export class AccessBookmark extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       app_launcher_visible: cdktf.booleanToTerraform(this._appLauncherVisible),
       domain: cdktf.stringToTerraform(this._domain),
+      id: cdktf.stringToTerraform(this._id),
       logo_url: cdktf.stringToTerraform(this._logoUrl),
       name: cdktf.stringToTerraform(this._name),
       zone_id: cdktf.stringToTerraform(this._zoneId),

@@ -12,6 +12,13 @@ export interface WafPackageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly actionMode?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#id WafPackage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#package_id WafPackage#package_id}
   */
   readonly packageId: string;
@@ -60,6 +67,7 @@ export class WafPackage extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._actionMode = config.actionMode;
+    this._id = config.id;
     this._packageId = config.packageId;
     this._sensitivity = config.sensitivity;
     this._zoneId = config.zoneId;
@@ -86,8 +94,19 @@ export class WafPackage extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // package_id - computed: false, optional: false, required: true
@@ -139,6 +158,7 @@ export class WafPackage extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       action_mode: cdktf.stringToTerraform(this._actionMode),
+      id: cdktf.stringToTerraform(this._id),
       package_id: cdktf.stringToTerraform(this._packageId),
       sensitivity: cdktf.stringToTerraform(this._sensitivity),
       zone_id: cdktf.stringToTerraform(this._zoneId),

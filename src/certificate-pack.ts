@@ -20,6 +20,13 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hosts: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#id CertificatePack#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#type CertificatePack#type}
   */
   readonly type: string;
@@ -64,6 +71,69 @@ export function certificatePackValidationErrorsToTerraform(struct?: CertificateP
   }
 }
 
+export class CertificatePackValidationErrorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CertificatePackValidationErrors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CertificatePackValidationErrors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // message - computed: true, optional: false, required: false
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+}
+
+export class CertificatePackValidationErrorsList extends cdktf.ComplexList {
+  public internalValue? : CertificatePackValidationErrors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CertificatePackValidationErrorsOutputReference {
+    return new CertificatePackValidationErrorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CertificatePackValidationRecords {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#cname_name CertificatePack#cname_name}
@@ -111,6 +181,218 @@ export function certificatePackValidationRecordsToTerraform(struct?: Certificate
   }
 }
 
+export class CertificatePackValidationRecordsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CertificatePackValidationRecords | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cnameName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cnameName = this._cnameName;
+    }
+    if (this._cnameTarget !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cnameTarget = this._cnameTarget;
+    }
+    if (this._emails !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emails = this._emails;
+    }
+    if (this._httpBody !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBody = this._httpBody;
+    }
+    if (this._httpUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpUrl = this._httpUrl;
+    }
+    if (this._txtName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.txtName = this._txtName;
+    }
+    if (this._txtValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.txtValue = this._txtValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CertificatePackValidationRecords | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cnameName = undefined;
+      this._cnameTarget = undefined;
+      this._emails = undefined;
+      this._httpBody = undefined;
+      this._httpUrl = undefined;
+      this._txtName = undefined;
+      this._txtValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cnameName = value.cnameName;
+      this._cnameTarget = value.cnameTarget;
+      this._emails = value.emails;
+      this._httpBody = value.httpBody;
+      this._httpUrl = value.httpUrl;
+      this._txtName = value.txtName;
+      this._txtValue = value.txtValue;
+    }
+  }
+
+  // cname_name - computed: true, optional: true, required: false
+  private _cnameName?: string; 
+  public get cnameName() {
+    return this.getStringAttribute('cname_name');
+  }
+  public set cnameName(value: string) {
+    this._cnameName = value;
+  }
+  public resetCnameName() {
+    this._cnameName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cnameNameInput() {
+    return this._cnameName;
+  }
+
+  // cname_target - computed: true, optional: true, required: false
+  private _cnameTarget?: string; 
+  public get cnameTarget() {
+    return this.getStringAttribute('cname_target');
+  }
+  public set cnameTarget(value: string) {
+    this._cnameTarget = value;
+  }
+  public resetCnameTarget() {
+    this._cnameTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cnameTargetInput() {
+    return this._cnameTarget;
+  }
+
+  // emails - computed: true, optional: true, required: false
+  private _emails?: string[]; 
+  public get emails() {
+    return this.getListAttribute('emails');
+  }
+  public set emails(value: string[]) {
+    this._emails = value;
+  }
+  public resetEmails() {
+    this._emails = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailsInput() {
+    return this._emails;
+  }
+
+  // http_body - computed: true, optional: true, required: false
+  private _httpBody?: string; 
+  public get httpBody() {
+    return this.getStringAttribute('http_body');
+  }
+  public set httpBody(value: string) {
+    this._httpBody = value;
+  }
+  public resetHttpBody() {
+    this._httpBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBodyInput() {
+    return this._httpBody;
+  }
+
+  // http_url - computed: true, optional: true, required: false
+  private _httpUrl?: string; 
+  public get httpUrl() {
+    return this.getStringAttribute('http_url');
+  }
+  public set httpUrl(value: string) {
+    this._httpUrl = value;
+  }
+  public resetHttpUrl() {
+    this._httpUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpUrlInput() {
+    return this._httpUrl;
+  }
+
+  // txt_name - computed: true, optional: true, required: false
+  private _txtName?: string; 
+  public get txtName() {
+    return this.getStringAttribute('txt_name');
+  }
+  public set txtName(value: string) {
+    this._txtName = value;
+  }
+  public resetTxtName() {
+    this._txtName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get txtNameInput() {
+    return this._txtName;
+  }
+
+  // txt_value - computed: true, optional: true, required: false
+  private _txtValue?: string; 
+  public get txtValue() {
+    return this.getStringAttribute('txt_value');
+  }
+  public set txtValue(value: string) {
+    this._txtValue = value;
+  }
+  public resetTxtValue() {
+    this._txtValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get txtValueInput() {
+    return this._txtValue;
+  }
+}
+
+export class CertificatePackValidationRecordsList extends cdktf.ComplexList {
+  public internalValue? : CertificatePackValidationRecords[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CertificatePackValidationRecordsOutputReference {
+    return new CertificatePackValidationRecordsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack cloudflare_certificate_pack}
@@ -149,13 +431,14 @@ export class CertificatePack extends cdktf.TerraformResource {
     this._certificateAuthority = config.certificateAuthority;
     this._cloudflareBranding = config.cloudflareBranding;
     this._hosts = config.hosts;
+    this._id = config.id;
     this._type = config.type;
     this._validationMethod = config.validationMethod;
     this._validityDays = config.validityDays;
     this._waitForActiveStatus = config.waitForActiveStatus;
     this._zoneId = config.zoneId;
-    this._validationErrors = config.validationErrors;
-    this._validationRecords = config.validationRecords;
+    this._validationErrors.internalValue = config.validationErrors;
+    this._validationRecords.internalValue = config.validationRecords;
   }
 
   // ==========
@@ -208,8 +491,19 @@ export class CertificatePack extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // type - computed: false, optional: false, required: true
@@ -287,37 +581,35 @@ export class CertificatePack extends cdktf.TerraformResource {
   }
 
   // validation_errors - computed: false, optional: true, required: false
-  private _validationErrors?: CertificatePackValidationErrors[] | cdktf.IResolvable; 
+  private _validationErrors = new CertificatePackValidationErrorsList(this, "validation_errors", false);
   public get validationErrors() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('validation_errors');
+    return this._validationErrors;
   }
-  public set validationErrors(value: CertificatePackValidationErrors[] | cdktf.IResolvable) {
-    this._validationErrors = value;
+  public putValidationErrors(value: CertificatePackValidationErrors[] | cdktf.IResolvable) {
+    this._validationErrors.internalValue = value;
   }
   public resetValidationErrors() {
-    this._validationErrors = undefined;
+    this._validationErrors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get validationErrorsInput() {
-    return this._validationErrors;
+    return this._validationErrors.internalValue;
   }
 
   // validation_records - computed: false, optional: true, required: false
-  private _validationRecords?: CertificatePackValidationRecords[] | cdktf.IResolvable; 
+  private _validationRecords = new CertificatePackValidationRecordsList(this, "validation_records", false);
   public get validationRecords() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('validation_records');
+    return this._validationRecords;
   }
-  public set validationRecords(value: CertificatePackValidationRecords[] | cdktf.IResolvable) {
-    this._validationRecords = value;
+  public putValidationRecords(value: CertificatePackValidationRecords[] | cdktf.IResolvable) {
+    this._validationRecords.internalValue = value;
   }
   public resetValidationRecords() {
-    this._validationRecords = undefined;
+    this._validationRecords.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get validationRecordsInput() {
-    return this._validationRecords;
+    return this._validationRecords.internalValue;
   }
 
   // =========
@@ -329,13 +621,14 @@ export class CertificatePack extends cdktf.TerraformResource {
       certificate_authority: cdktf.stringToTerraform(this._certificateAuthority),
       cloudflare_branding: cdktf.booleanToTerraform(this._cloudflareBranding),
       hosts: cdktf.listMapper(cdktf.stringToTerraform)(this._hosts),
+      id: cdktf.stringToTerraform(this._id),
       type: cdktf.stringToTerraform(this._type),
       validation_method: cdktf.stringToTerraform(this._validationMethod),
       validity_days: cdktf.numberToTerraform(this._validityDays),
       wait_for_active_status: cdktf.booleanToTerraform(this._waitForActiveStatus),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      validation_errors: cdktf.listMapper(certificatePackValidationErrorsToTerraform)(this._validationErrors),
-      validation_records: cdktf.listMapper(certificatePackValidationRecordsToTerraform)(this._validationRecords),
+      validation_errors: cdktf.listMapper(certificatePackValidationErrorsToTerraform)(this._validationErrors.internalValue),
+      validation_records: cdktf.listMapper(certificatePackValidationRecordsToTerraform)(this._validationRecords.internalValue),
     };
   }
 }

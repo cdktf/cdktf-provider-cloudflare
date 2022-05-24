@@ -16,6 +16,13 @@ export interface RulesetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#id Ruleset#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#kind Ruleset#kind}
   */
   readonly kind: string;
@@ -74,6 +81,152 @@ export function rulesetRulesActionParametersHeadersToTerraform(struct?: RulesetR
   }
 }
 
+export class RulesetRulesActionParametersHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._operation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operation = this._operation;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._name = undefined;
+      this._operation = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._name = value.name;
+      this._operation = value.operation;
+      this._value = value.value;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // operation - computed: false, optional: true, required: false
+  private _operation?: string; 
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+  public set operation(value: string) {
+    this._operation = value;
+  }
+  public resetOperation() {
+    this._operation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationInput() {
+    return this._operation;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class RulesetRulesActionParametersHeadersList extends cdktf.ComplexList {
+  public internalValue? : RulesetRulesActionParametersHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RulesetRulesActionParametersHeadersOutputReference {
+    return new RulesetRulesActionParametersHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RulesetRulesActionParametersMatchedData {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#public_key Ruleset#public_key}
@@ -166,6 +319,130 @@ export function rulesetRulesActionParametersOverridesCategoriesToTerraform(struc
   }
 }
 
+export class RulesetRulesActionParametersOverridesCategoriesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersOverridesCategories | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._category !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersOverridesCategories | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._category = undefined;
+      this._enabled = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._category = value.category;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // action - computed: false, optional: true, required: false
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  public resetAction() {
+    this._action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // category - computed: false, optional: true, required: false
+  private _category?: string; 
+  public get category() {
+    return this.getStringAttribute('category');
+  }
+  public set category(value: string) {
+    this._category = value;
+  }
+  public resetCategory() {
+    this._category = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryInput() {
+    return this._category;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+
+export class RulesetRulesActionParametersOverridesCategoriesList extends cdktf.ComplexList {
+  public internalValue? : RulesetRulesActionParametersOverridesCategories[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RulesetRulesActionParametersOverridesCategoriesOutputReference {
+    return new RulesetRulesActionParametersOverridesCategoriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RulesetRulesActionParametersOverridesRules {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action Ruleset#action}
@@ -177,6 +454,9 @@ export interface RulesetRulesActionParametersOverridesRules {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#id Ruleset#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -203,6 +483,174 @@ export function rulesetRulesActionParametersOverridesRulesToTerraform(struct?: R
   }
 }
 
+export class RulesetRulesActionParametersOverridesRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersOverridesRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._scoreThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scoreThreshold = this._scoreThreshold;
+    }
+    if (this._sensitivityLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sensitivityLevel = this._sensitivityLevel;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersOverridesRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._enabled = undefined;
+      this._id = undefined;
+      this._scoreThreshold = undefined;
+      this._sensitivityLevel = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._enabled = value.enabled;
+      this._id = value.id;
+      this._scoreThreshold = value.scoreThreshold;
+      this._sensitivityLevel = value.sensitivityLevel;
+    }
+  }
+
+  // action - computed: false, optional: true, required: false
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  public resetAction() {
+    this._action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // score_threshold - computed: false, optional: true, required: false
+  private _scoreThreshold?: number; 
+  public get scoreThreshold() {
+    return this.getNumberAttribute('score_threshold');
+  }
+  public set scoreThreshold(value: number) {
+    this._scoreThreshold = value;
+  }
+  public resetScoreThreshold() {
+    this._scoreThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scoreThresholdInput() {
+    return this._scoreThreshold;
+  }
+
+  // sensitivity_level - computed: false, optional: true, required: false
+  private _sensitivityLevel?: string; 
+  public get sensitivityLevel() {
+    return this.getStringAttribute('sensitivity_level');
+  }
+  public set sensitivityLevel(value: string) {
+    this._sensitivityLevel = value;
+  }
+  public resetSensitivityLevel() {
+    this._sensitivityLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sensitivityLevelInput() {
+    return this._sensitivityLevel;
+  }
+}
+
+export class RulesetRulesActionParametersOverridesRulesList extends cdktf.ComplexList {
+  public internalValue? : RulesetRulesActionParametersOverridesRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RulesetRulesActionParametersOverridesRulesOutputReference {
+    return new RulesetRulesActionParametersOverridesRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RulesetRulesActionParametersOverrides {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action Ruleset#action}
@@ -261,13 +709,13 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._categories !== undefined) {
+    if (this._categories?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.categories = this._categories;
+      internalValueResult.categories = this._categories?.internalValue;
     }
-    if (this._rules !== undefined) {
+    if (this._rules?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.rules = this._rules;
+      internalValueResult.rules = this._rules?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -277,15 +725,15 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
       this.isEmptyObject = false;
       this._action = undefined;
       this._enabled = undefined;
-      this._categories = undefined;
-      this._rules = undefined;
+      this._categories.internalValue = undefined;
+      this._rules.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._action = value.action;
       this._enabled = value.enabled;
-      this._categories = value.categories;
-      this._rules = value.rules;
+      this._categories.internalValue = value.categories;
+      this._rules.internalValue = value.rules;
     }
   }
 
@@ -322,37 +770,35 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
   }
 
   // categories - computed: false, optional: true, required: false
-  private _categories?: RulesetRulesActionParametersOverridesCategories[] | cdktf.IResolvable; 
+  private _categories = new RulesetRulesActionParametersOverridesCategoriesList(this, "categories", false);
   public get categories() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('categories');
+    return this._categories;
   }
-  public set categories(value: RulesetRulesActionParametersOverridesCategories[] | cdktf.IResolvable) {
-    this._categories = value;
+  public putCategories(value: RulesetRulesActionParametersOverridesCategories[] | cdktf.IResolvable) {
+    this._categories.internalValue = value;
   }
   public resetCategories() {
-    this._categories = undefined;
+    this._categories.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get categoriesInput() {
-    return this._categories;
+    return this._categories.internalValue;
   }
 
   // rules - computed: false, optional: true, required: false
-  private _rules?: RulesetRulesActionParametersOverridesRules[] | cdktf.IResolvable; 
+  private _rules = new RulesetRulesActionParametersOverridesRulesList(this, "rules", false);
   public get rules() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rules');
+    return this._rules;
   }
-  public set rules(value: RulesetRulesActionParametersOverridesRules[] | cdktf.IResolvable) {
-    this._rules = value;
+  public putRules(value: RulesetRulesActionParametersOverridesRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
   }
   public resetRules() {
-    this._rules = undefined;
+    this._rules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
-    return this._rules;
+    return this._rules.internalValue;
   }
 }
 export interface RulesetRulesActionParametersResponse {
@@ -382,6 +828,130 @@ export function rulesetRulesActionParametersResponseToTerraform(struct?: Ruleset
   }
 }
 
+export class RulesetRulesActionParametersResponseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersResponse | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._statusCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusCode = this._statusCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersResponse | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._statusCode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._statusCode = value.statusCode;
+    }
+  }
+
+  // content - computed: false, optional: true, required: false
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  public resetContent() {
+    this._content = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: true, required: false
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  public resetContentType() {
+    this._contentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // status_code - computed: false, optional: true, required: false
+  private _statusCode?: number; 
+  public get statusCode() {
+    return this.getNumberAttribute('status_code');
+  }
+  public set statusCode(value: number) {
+    this._statusCode = value;
+  }
+  public resetStatusCode() {
+    this._statusCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusCodeInput() {
+    return this._statusCode;
+  }
+}
+
+export class RulesetRulesActionParametersResponseList extends cdktf.ComplexList {
+  public internalValue? : RulesetRulesActionParametersResponse[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RulesetRulesActionParametersResponseOutputReference {
+    return new RulesetRulesActionParametersResponseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RulesetRulesActionParametersUriPath {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#expression Ruleset#expression}
@@ -692,6 +1262,9 @@ export class RulesetRulesActionParametersUriOutputReference extends cdktf.Comple
 export interface RulesetRulesActionParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#id Ruleset#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -822,9 +1395,9 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
-    if (this._headers !== undefined) {
+    if (this._headers?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.headers = this._headers;
+      internalValueResult.headers = this._headers?.internalValue;
     }
     if (this._matchedData?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -834,9 +1407,9 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.overrides = this._overrides?.internalValue;
     }
-    if (this._response !== undefined) {
+    if (this._response?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.response = this._response;
+      internalValueResult.response = this._response?.internalValue;
     }
     if (this._uri?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -856,10 +1429,10 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       this._ruleset = undefined;
       this._rulesets = undefined;
       this._version = undefined;
-      this._headers = undefined;
+      this._headers.internalValue = undefined;
       this._matchedData.internalValue = undefined;
       this._overrides.internalValue = undefined;
-      this._response = undefined;
+      this._response.internalValue = undefined;
       this._uri.internalValue = undefined;
     }
     else {
@@ -872,10 +1445,10 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       this._ruleset = value.ruleset;
       this._rulesets = value.rulesets;
       this._version = value.version;
-      this._headers = value.headers;
+      this._headers.internalValue = value.headers;
       this._matchedData.internalValue = value.matchedData;
       this._overrides.internalValue = value.overrides;
-      this._response = value.response;
+      this._response.internalValue = value.response;
       this._uri.internalValue = value.uri;
     }
   }
@@ -1009,20 +1582,19 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: RulesetRulesActionParametersHeaders[] | cdktf.IResolvable; 
+  private _headers = new RulesetRulesActionParametersHeadersList(this, "headers", false);
   public get headers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers');
+    return this._headers;
   }
-  public set headers(value: RulesetRulesActionParametersHeaders[] | cdktf.IResolvable) {
-    this._headers = value;
+  public putHeaders(value: RulesetRulesActionParametersHeaders[] | cdktf.IResolvable) {
+    this._headers.internalValue = value;
   }
   public resetHeaders() {
-    this._headers = undefined;
+    this._headers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headersInput() {
-    return this._headers;
+    return this._headers.internalValue;
   }
 
   // matched_data - computed: false, optional: true, required: false
@@ -1058,20 +1630,19 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   }
 
   // response - computed: false, optional: true, required: false
-  private _response?: RulesetRulesActionParametersResponse[] | cdktf.IResolvable; 
+  private _response = new RulesetRulesActionParametersResponseList(this, "response", false);
   public get response() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response');
+    return this._response;
   }
-  public set response(value: RulesetRulesActionParametersResponse[] | cdktf.IResolvable) {
-    this._response = value;
+  public putResponse(value: RulesetRulesActionParametersResponse[] | cdktf.IResolvable) {
+    this._response.internalValue = value;
   }
   public resetResponse() {
-    this._response = undefined;
+    this._response.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseInput() {
-    return this._response;
+    return this._response.internalValue;
   }
 
   // uri - computed: false, optional: true, required: false
@@ -1507,6 +2078,252 @@ export function rulesetRulesToTerraform(struct?: RulesetRules | cdktf.IResolvabl
   }
 }
 
+export class RulesetRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RulesetRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._actionParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.actionParameters = this._actionParameters?.internalValue;
+    }
+    if (this._exposedCredentialCheck?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exposedCredentialCheck = this._exposedCredentialCheck?.internalValue;
+    }
+    if (this._logging?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logging = this._logging?.internalValue;
+    }
+    if (this._ratelimit?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ratelimit = this._ratelimit?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._description = undefined;
+      this._enabled = undefined;
+      this._expression = undefined;
+      this._actionParameters.internalValue = undefined;
+      this._exposedCredentialCheck.internalValue = undefined;
+      this._logging.internalValue = undefined;
+      this._ratelimit.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._description = value.description;
+      this._enabled = value.enabled;
+      this._expression = value.expression;
+      this._actionParameters.internalValue = value.actionParameters;
+      this._exposedCredentialCheck.internalValue = value.exposedCredentialCheck;
+      this._logging.internalValue = value.logging;
+      this._ratelimit.internalValue = value.ratelimit;
+    }
+  }
+
+  // action - computed: false, optional: true, required: false
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  public resetAction() {
+    this._action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // expression - computed: false, optional: false, required: true
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ref - computed: true, optional: false, required: false
+  public get ref() {
+    return this.getStringAttribute('ref');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+
+  // action_parameters - computed: false, optional: true, required: false
+  private _actionParameters = new RulesetRulesActionParametersOutputReference(this, "action_parameters");
+  public get actionParameters() {
+    return this._actionParameters;
+  }
+  public putActionParameters(value: RulesetRulesActionParameters) {
+    this._actionParameters.internalValue = value;
+  }
+  public resetActionParameters() {
+    this._actionParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionParametersInput() {
+    return this._actionParameters.internalValue;
+  }
+
+  // exposed_credential_check - computed: false, optional: true, required: false
+  private _exposedCredentialCheck = new RulesetRulesExposedCredentialCheckOutputReference(this, "exposed_credential_check");
+  public get exposedCredentialCheck() {
+    return this._exposedCredentialCheck;
+  }
+  public putExposedCredentialCheck(value: RulesetRulesExposedCredentialCheck) {
+    this._exposedCredentialCheck.internalValue = value;
+  }
+  public resetExposedCredentialCheck() {
+    this._exposedCredentialCheck.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exposedCredentialCheckInput() {
+    return this._exposedCredentialCheck.internalValue;
+  }
+
+  // logging - computed: false, optional: true, required: false
+  private _logging = new RulesetRulesLoggingOutputReference(this, "logging");
+  public get logging() {
+    return this._logging;
+  }
+  public putLogging(value: RulesetRulesLogging) {
+    this._logging.internalValue = value;
+  }
+  public resetLogging() {
+    this._logging.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingInput() {
+    return this._logging.internalValue;
+  }
+
+  // ratelimit - computed: false, optional: true, required: false
+  private _ratelimit = new RulesetRulesRatelimitOutputReference(this, "ratelimit");
+  public get ratelimit() {
+    return this._ratelimit;
+  }
+  public putRatelimit(value: RulesetRulesRatelimit) {
+    this._ratelimit.internalValue = value;
+  }
+  public resetRatelimit() {
+    this._ratelimit.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ratelimitInput() {
+    return this._ratelimit.internalValue;
+  }
+}
+
+export class RulesetRulesList extends cdktf.ComplexList {
+  public internalValue? : RulesetRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RulesetRulesOutputReference {
+    return new RulesetRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset cloudflare_ruleset}
@@ -1544,12 +2361,13 @@ export class Ruleset extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._description = config.description;
+    this._id = config.id;
     this._kind = config.kind;
     this._name = config.name;
     this._phase = config.phase;
     this._shareableEntitlementName = config.shareableEntitlementName;
     this._zoneId = config.zoneId;
-    this._rules = config.rules;
+    this._rules.internalValue = config.rules;
   }
 
   // ==========
@@ -1589,8 +2407,19 @@ export class Ruleset extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kind - computed: false, optional: false, required: true
@@ -1665,20 +2494,19 @@ export class Ruleset extends cdktf.TerraformResource {
   }
 
   // rules - computed: false, optional: true, required: false
-  private _rules?: RulesetRules[] | cdktf.IResolvable; 
+  private _rules = new RulesetRulesList(this, "rules", false);
   public get rules() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rules');
+    return this._rules;
   }
-  public set rules(value: RulesetRules[] | cdktf.IResolvable) {
-    this._rules = value;
+  public putRules(value: RulesetRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
   }
   public resetRules() {
-    this._rules = undefined;
+    this._rules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
-    return this._rules;
+    return this._rules.internalValue;
   }
 
   // =========
@@ -1689,12 +2517,13 @@ export class Ruleset extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
       phase: cdktf.stringToTerraform(this._phase),
       shareable_entitlement_name: cdktf.stringToTerraform(this._shareableEntitlementName),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      rules: cdktf.listMapper(rulesetRulesToTerraform)(this._rules),
+      rules: cdktf.listMapper(rulesetRulesToTerraform)(this._rules.internalValue),
     };
   }
 }

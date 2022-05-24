@@ -24,6 +24,13 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fallbackPoolId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#id LoadBalancer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#name LoadBalancer#name}
   */
   readonly name: string;
@@ -96,6 +103,102 @@ export function loadBalancerPopPoolsToTerraform(struct?: LoadBalancerPopPools | 
   }
 }
 
+export class LoadBalancerPopPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerPopPools | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._poolIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolIds = this._poolIds;
+    }
+    if (this._pop !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pop = this._pop;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerPopPools | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._poolIds = undefined;
+      this._pop = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._poolIds = value.poolIds;
+      this._pop = value.pop;
+    }
+  }
+
+  // pool_ids - computed: false, optional: false, required: true
+  private _poolIds?: string[]; 
+  public get poolIds() {
+    return this.getListAttribute('pool_ids');
+  }
+  public set poolIds(value: string[]) {
+    this._poolIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdsInput() {
+    return this._poolIds;
+  }
+
+  // pop - computed: false, optional: false, required: true
+  private _pop?: string; 
+  public get pop() {
+    return this.getStringAttribute('pop');
+  }
+  public set pop(value: string) {
+    this._pop = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get popInput() {
+    return this._pop;
+  }
+}
+
+export class LoadBalancerPopPoolsList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerPopPools[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerPopPoolsOutputReference {
+    return new LoadBalancerPopPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRegionPools {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
@@ -118,6 +221,102 @@ export function loadBalancerRegionPoolsToTerraform(struct?: LoadBalancerRegionPo
   }
 }
 
+export class LoadBalancerRegionPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRegionPools | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._poolIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolIds = this._poolIds;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRegionPools | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._poolIds = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._poolIds = value.poolIds;
+      this._region = value.region;
+    }
+  }
+
+  // pool_ids - computed: false, optional: false, required: true
+  private _poolIds?: string[]; 
+  public get poolIds() {
+    return this.getListAttribute('pool_ids');
+  }
+  public set poolIds(value: string[]) {
+    this._poolIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdsInput() {
+    return this._poolIds;
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class LoadBalancerRegionPoolsList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRegionPools[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRegionPoolsOutputReference {
+    return new LoadBalancerRegionPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRulesFixedResponse {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#content_type LoadBalancer#content_type}
@@ -286,6 +485,102 @@ export function loadBalancerRulesOverridesPopPoolsToTerraform(struct?: LoadBalan
   }
 }
 
+export class LoadBalancerRulesOverridesPopPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRulesOverridesPopPools | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._poolIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolIds = this._poolIds;
+    }
+    if (this._pop !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pop = this._pop;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRulesOverridesPopPools | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._poolIds = undefined;
+      this._pop = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._poolIds = value.poolIds;
+      this._pop = value.pop;
+    }
+  }
+
+  // pool_ids - computed: false, optional: false, required: true
+  private _poolIds?: string[]; 
+  public get poolIds() {
+    return this.getListAttribute('pool_ids');
+  }
+  public set poolIds(value: string[]) {
+    this._poolIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdsInput() {
+    return this._poolIds;
+  }
+
+  // pop - computed: false, optional: false, required: true
+  private _pop?: string; 
+  public get pop() {
+    return this.getStringAttribute('pop');
+  }
+  public set pop(value: string) {
+    this._pop = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get popInput() {
+    return this._pop;
+  }
+}
+
+export class LoadBalancerRulesOverridesPopPoolsList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRulesOverridesPopPools[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRulesOverridesPopPoolsOutputReference {
+    return new LoadBalancerRulesOverridesPopPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRulesOverridesRegionPools {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
@@ -308,6 +603,102 @@ export function loadBalancerRulesOverridesRegionPoolsToTerraform(struct?: LoadBa
   }
 }
 
+export class LoadBalancerRulesOverridesRegionPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRulesOverridesRegionPools | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._poolIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolIds = this._poolIds;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRulesOverridesRegionPools | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._poolIds = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._poolIds = value.poolIds;
+      this._region = value.region;
+    }
+  }
+
+  // pool_ids - computed: false, optional: false, required: true
+  private _poolIds?: string[]; 
+  public get poolIds() {
+    return this.getListAttribute('pool_ids');
+  }
+  public set poolIds(value: string[]) {
+    this._poolIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdsInput() {
+    return this._poolIds;
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class LoadBalancerRulesOverridesRegionPoolsList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRulesOverridesRegionPools[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRulesOverridesRegionPoolsOutputReference {
+    return new LoadBalancerRulesOverridesRegionPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRulesOverrides {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#default_pools LoadBalancer#default_pools}
@@ -369,6 +760,262 @@ export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRules
   }
 }
 
+export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRulesOverrides | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultPools !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultPools = this._defaultPools;
+    }
+    if (this._fallbackPool !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fallbackPool = this._fallbackPool;
+    }
+    if (this._sessionAffinity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionAffinity = this._sessionAffinity;
+    }
+    if (this._sessionAffinityAttributes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionAffinityAttributes = this._sessionAffinityAttributes;
+    }
+    if (this._sessionAffinityTtl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionAffinityTtl = this._sessionAffinityTtl;
+    }
+    if (this._steeringPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.steeringPolicy = this._steeringPolicy;
+    }
+    if (this._ttl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ttl = this._ttl;
+    }
+    if (this._popPools?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.popPools = this._popPools?.internalValue;
+    }
+    if (this._regionPools?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionPools = this._regionPools?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRulesOverrides | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultPools = undefined;
+      this._fallbackPool = undefined;
+      this._sessionAffinity = undefined;
+      this._sessionAffinityAttributes = undefined;
+      this._sessionAffinityTtl = undefined;
+      this._steeringPolicy = undefined;
+      this._ttl = undefined;
+      this._popPools.internalValue = undefined;
+      this._regionPools.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultPools = value.defaultPools;
+      this._fallbackPool = value.fallbackPool;
+      this._sessionAffinity = value.sessionAffinity;
+      this._sessionAffinityAttributes = value.sessionAffinityAttributes;
+      this._sessionAffinityTtl = value.sessionAffinityTtl;
+      this._steeringPolicy = value.steeringPolicy;
+      this._ttl = value.ttl;
+      this._popPools.internalValue = value.popPools;
+      this._regionPools.internalValue = value.regionPools;
+    }
+  }
+
+  // default_pools - computed: false, optional: true, required: false
+  private _defaultPools?: string[]; 
+  public get defaultPools() {
+    return this.getListAttribute('default_pools');
+  }
+  public set defaultPools(value: string[]) {
+    this._defaultPools = value;
+  }
+  public resetDefaultPools() {
+    this._defaultPools = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultPoolsInput() {
+    return this._defaultPools;
+  }
+
+  // fallback_pool - computed: false, optional: true, required: false
+  private _fallbackPool?: string; 
+  public get fallbackPool() {
+    return this.getStringAttribute('fallback_pool');
+  }
+  public set fallbackPool(value: string) {
+    this._fallbackPool = value;
+  }
+  public resetFallbackPool() {
+    this._fallbackPool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fallbackPoolInput() {
+    return this._fallbackPool;
+  }
+
+  // session_affinity - computed: false, optional: true, required: false
+  private _sessionAffinity?: string; 
+  public get sessionAffinity() {
+    return this.getStringAttribute('session_affinity');
+  }
+  public set sessionAffinity(value: string) {
+    this._sessionAffinity = value;
+  }
+  public resetSessionAffinity() {
+    this._sessionAffinity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionAffinityInput() {
+    return this._sessionAffinity;
+  }
+
+  // session_affinity_attributes - computed: false, optional: true, required: false
+  private _sessionAffinityAttributes?: { [key: string]: string }; 
+  public get sessionAffinityAttributes() {
+    return this.getStringMapAttribute('session_affinity_attributes');
+  }
+  public set sessionAffinityAttributes(value: { [key: string]: string }) {
+    this._sessionAffinityAttributes = value;
+  }
+  public resetSessionAffinityAttributes() {
+    this._sessionAffinityAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionAffinityAttributesInput() {
+    return this._sessionAffinityAttributes;
+  }
+
+  // session_affinity_ttl - computed: false, optional: true, required: false
+  private _sessionAffinityTtl?: number; 
+  public get sessionAffinityTtl() {
+    return this.getNumberAttribute('session_affinity_ttl');
+  }
+  public set sessionAffinityTtl(value: number) {
+    this._sessionAffinityTtl = value;
+  }
+  public resetSessionAffinityTtl() {
+    this._sessionAffinityTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionAffinityTtlInput() {
+    return this._sessionAffinityTtl;
+  }
+
+  // steering_policy - computed: false, optional: true, required: false
+  private _steeringPolicy?: string; 
+  public get steeringPolicy() {
+    return this.getStringAttribute('steering_policy');
+  }
+  public set steeringPolicy(value: string) {
+    this._steeringPolicy = value;
+  }
+  public resetSteeringPolicy() {
+    this._steeringPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get steeringPolicyInput() {
+    return this._steeringPolicy;
+  }
+
+  // ttl - computed: false, optional: true, required: false
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
+  }
+  public set ttl(value: number) {
+    this._ttl = value;
+  }
+  public resetTtl() {
+    this._ttl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInput() {
+    return this._ttl;
+  }
+
+  // pop_pools - computed: false, optional: true, required: false
+  private _popPools = new LoadBalancerRulesOverridesPopPoolsList(this, "pop_pools", true);
+  public get popPools() {
+    return this._popPools;
+  }
+  public putPopPools(value: LoadBalancerRulesOverridesPopPools[] | cdktf.IResolvable) {
+    this._popPools.internalValue = value;
+  }
+  public resetPopPools() {
+    this._popPools.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get popPoolsInput() {
+    return this._popPools.internalValue;
+  }
+
+  // region_pools - computed: false, optional: true, required: false
+  private _regionPools = new LoadBalancerRulesOverridesRegionPoolsList(this, "region_pools", true);
+  public get regionPools() {
+    return this._regionPools;
+  }
+  public putRegionPools(value: LoadBalancerRulesOverridesRegionPools[] | cdktf.IResolvable) {
+    this._regionPools.internalValue = value;
+  }
+  public resetRegionPools() {
+    this._regionPools.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionPoolsInput() {
+    return this._regionPools.internalValue;
+  }
+}
+
+export class LoadBalancerRulesOverridesList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRulesOverrides[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRulesOverridesOutputReference {
+    return new LoadBalancerRulesOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRules {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#condition LoadBalancer#condition}
@@ -420,6 +1067,215 @@ export function loadBalancerRulesToTerraform(struct?: LoadBalancerRules | cdktf.
   }
 }
 
+export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._condition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition;
+    }
+    if (this._disabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disabled = this._disabled;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._terminates !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.terminates = this._terminates;
+    }
+    if (this._fixedResponse?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fixedResponse = this._fixedResponse?.internalValue;
+    }
+    if (this._overrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overrides = this._overrides?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._condition = undefined;
+      this._disabled = undefined;
+      this._name = undefined;
+      this._priority = undefined;
+      this._terminates = undefined;
+      this._fixedResponse.internalValue = undefined;
+      this._overrides.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._condition = value.condition;
+      this._disabled = value.disabled;
+      this._name = value.name;
+      this._priority = value.priority;
+      this._terminates = value.terminates;
+      this._fixedResponse.internalValue = value.fixedResponse;
+      this._overrides.internalValue = value.overrides;
+    }
+  }
+
+  // condition - computed: false, optional: true, required: false
+  private _condition?: string; 
+  public get condition() {
+    return this.getStringAttribute('condition');
+  }
+  public set condition(value: string) {
+    this._condition = value;
+  }
+  public resetCondition() {
+    this._condition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition;
+  }
+
+  // disabled - computed: false, optional: true, required: false
+  private _disabled?: boolean | cdktf.IResolvable; 
+  public get disabled() {
+    return this.getBooleanAttribute('disabled');
+  }
+  public set disabled(value: boolean | cdktf.IResolvable) {
+    this._disabled = value;
+  }
+  public resetDisabled() {
+    this._disabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disabledInput() {
+    return this._disabled;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // priority - computed: true, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // terminates - computed: true, optional: true, required: false
+  private _terminates?: boolean | cdktf.IResolvable; 
+  public get terminates() {
+    return this.getBooleanAttribute('terminates');
+  }
+  public set terminates(value: boolean | cdktf.IResolvable) {
+    this._terminates = value;
+  }
+  public resetTerminates() {
+    this._terminates = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terminatesInput() {
+    return this._terminates;
+  }
+
+  // fixed_response - computed: false, optional: true, required: false
+  private _fixedResponse = new LoadBalancerRulesFixedResponseOutputReference(this, "fixed_response");
+  public get fixedResponse() {
+    return this._fixedResponse;
+  }
+  public putFixedResponse(value: LoadBalancerRulesFixedResponse) {
+    this._fixedResponse.internalValue = value;
+  }
+  public resetFixedResponse() {
+    this._fixedResponse.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedResponseInput() {
+    return this._fixedResponse.internalValue;
+  }
+
+  // overrides - computed: false, optional: true, required: false
+  private _overrides = new LoadBalancerRulesOverridesList(this, "overrides", false);
+  public get overrides() {
+    return this._overrides;
+  }
+  public putOverrides(value: LoadBalancerRulesOverrides[] | cdktf.IResolvable) {
+    this._overrides.internalValue = value;
+  }
+  public resetOverrides() {
+    this._overrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overridesInput() {
+    return this._overrides.internalValue;
+  }
+}
+
+export class LoadBalancerRulesList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRulesOutputReference {
+    return new LoadBalancerRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer cloudflare_load_balancer}
@@ -459,6 +1315,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
     this._description = config.description;
     this._enabled = config.enabled;
     this._fallbackPoolId = config.fallbackPoolId;
+    this._id = config.id;
     this._name = config.name;
     this._proxied = config.proxied;
     this._sessionAffinity = config.sessionAffinity;
@@ -467,9 +1324,9 @@ export class LoadBalancer extends cdktf.TerraformResource {
     this._steeringPolicy = config.steeringPolicy;
     this._ttl = config.ttl;
     this._zoneId = config.zoneId;
-    this._popPools = config.popPools;
-    this._regionPools = config.regionPools;
-    this._rules = config.rules;
+    this._popPools.internalValue = config.popPools;
+    this._regionPools.internalValue = config.regionPools;
+    this._rules.internalValue = config.rules;
   }
 
   // ==========
@@ -540,8 +1397,19 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // modified_on - computed: true, optional: false, required: false
@@ -672,54 +1540,51 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // pop_pools - computed: false, optional: true, required: false
-  private _popPools?: LoadBalancerPopPools[] | cdktf.IResolvable; 
+  private _popPools = new LoadBalancerPopPoolsList(this, "pop_pools", true);
   public get popPools() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('pop_pools')));
+    return this._popPools;
   }
-  public set popPools(value: LoadBalancerPopPools[] | cdktf.IResolvable) {
-    this._popPools = value;
+  public putPopPools(value: LoadBalancerPopPools[] | cdktf.IResolvable) {
+    this._popPools.internalValue = value;
   }
   public resetPopPools() {
-    this._popPools = undefined;
+    this._popPools.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get popPoolsInput() {
-    return this._popPools;
+    return this._popPools.internalValue;
   }
 
   // region_pools - computed: false, optional: true, required: false
-  private _regionPools?: LoadBalancerRegionPools[] | cdktf.IResolvable; 
+  private _regionPools = new LoadBalancerRegionPoolsList(this, "region_pools", true);
   public get regionPools() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('region_pools')));
+    return this._regionPools;
   }
-  public set regionPools(value: LoadBalancerRegionPools[] | cdktf.IResolvable) {
-    this._regionPools = value;
+  public putRegionPools(value: LoadBalancerRegionPools[] | cdktf.IResolvable) {
+    this._regionPools.internalValue = value;
   }
   public resetRegionPools() {
-    this._regionPools = undefined;
+    this._regionPools.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get regionPoolsInput() {
-    return this._regionPools;
+    return this._regionPools.internalValue;
   }
 
   // rules - computed: false, optional: true, required: false
-  private _rules?: LoadBalancerRules[] | cdktf.IResolvable; 
+  private _rules = new LoadBalancerRulesList(this, "rules", false);
   public get rules() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rules');
+    return this._rules;
   }
-  public set rules(value: LoadBalancerRules[] | cdktf.IResolvable) {
-    this._rules = value;
+  public putRules(value: LoadBalancerRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
   }
   public resetRules() {
-    this._rules = undefined;
+    this._rules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
-    return this._rules;
+    return this._rules.internalValue;
   }
 
   // =========
@@ -732,6 +1597,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       fallback_pool_id: cdktf.stringToTerraform(this._fallbackPoolId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       proxied: cdktf.booleanToTerraform(this._proxied),
       session_affinity: cdktf.stringToTerraform(this._sessionAffinity),
@@ -740,9 +1606,9 @@ export class LoadBalancer extends cdktf.TerraformResource {
       steering_policy: cdktf.stringToTerraform(this._steeringPolicy),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      pop_pools: cdktf.listMapper(loadBalancerPopPoolsToTerraform)(this._popPools),
-      region_pools: cdktf.listMapper(loadBalancerRegionPoolsToTerraform)(this._regionPools),
-      rules: cdktf.listMapper(loadBalancerRulesToTerraform)(this._rules),
+      pop_pools: cdktf.listMapper(loadBalancerPopPoolsToTerraform)(this._popPools.internalValue),
+      region_pools: cdktf.listMapper(loadBalancerRegionPoolsToTerraform)(this._regionPools.internalValue),
+      rules: cdktf.listMapper(loadBalancerRulesToTerraform)(this._rules.internalValue),
     };
   }
 }

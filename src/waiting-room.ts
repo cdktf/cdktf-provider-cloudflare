@@ -24,6 +24,13 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   */
   readonly host: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#id WaitingRoom#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
   */
   readonly jsonResponseEnabled?: boolean | cdktf.IResolvable;
@@ -90,6 +97,7 @@ export function waitingRoomTimeoutsToTerraform(struct?: WaitingRoomTimeoutsOutpu
 
 export class WaitingRoomTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,7 +107,10 @@ export class WaitingRoomTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): WaitingRoomTimeouts | undefined {
+  public get internalValue(): WaitingRoomTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -113,14 +124,20 @@ export class WaitingRoomTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaitingRoomTimeouts | undefined) {
+  public set internalValue(value: WaitingRoomTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -197,6 +214,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
     this._description = config.description;
     this._disableSessionRenewal = config.disableSessionRenewal;
     this._host = config.host;
+    this._id = config.id;
     this._jsonResponseEnabled = config.jsonResponseEnabled;
     this._name = config.name;
     this._newUsersPerMinute = config.newUsersPerMinute;
@@ -275,8 +293,19 @@ export class WaitingRoom extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // json_response_enabled - computed: false, optional: true, required: false
@@ -437,6 +466,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       disable_session_renewal: cdktf.booleanToTerraform(this._disableSessionRenewal),
       host: cdktf.stringToTerraform(this._host),
+      id: cdktf.stringToTerraform(this._id),
       json_response_enabled: cdktf.booleanToTerraform(this._jsonResponseEnabled),
       name: cdktf.stringToTerraform(this._name),
       new_users_per_minute: cdktf.numberToTerraform(this._newUsersPerMinute),

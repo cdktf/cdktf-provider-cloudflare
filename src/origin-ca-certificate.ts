@@ -16,6 +16,13 @@ export interface OriginCaCertificateConfig extends cdktf.TerraformMetaArguments 
   */
   readonly hostnames: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#id OriginCaCertificate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#request_type OriginCaCertificate#request_type}
   */
   readonly requestType: string;
@@ -61,6 +68,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     });
     this._csr = config.csr;
     this._hostnames = config.hostnames;
+    this._id = config.id;
     this._requestType = config.requestType;
     this._requestedValidity = config.requestedValidity;
   }
@@ -109,8 +117,19 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // request_type - computed: false, optional: false, required: true
@@ -150,6 +169,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     return {
       csr: cdktf.stringToTerraform(this._csr),
       hostnames: cdktf.listMapper(cdktf.stringToTerraform)(this._hostnames),
+      id: cdktf.stringToTerraform(this._id),
       request_type: cdktf.stringToTerraform(this._requestType),
       requested_validity: cdktf.numberToTerraform(this._requestedValidity),
     };

@@ -20,6 +20,13 @@ export interface ZoneCacheVariantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly gif?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#id ZoneCacheVariants#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#jp2 ZoneCacheVariants#jp2}
   */
   readonly jp2?: string[];
@@ -94,6 +101,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
     this._avif = config.avif;
     this._bmp = config.bmp;
     this._gif = config.gif;
+    this._id = config.id;
     this._jp2 = config.jp2;
     this._jpeg = config.jpeg;
     this._jpg = config.jpg;
@@ -158,8 +166,19 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // jp2 - computed: false, optional: true, required: false
@@ -312,6 +331,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
       avif: cdktf.listMapper(cdktf.stringToTerraform)(this._avif),
       bmp: cdktf.listMapper(cdktf.stringToTerraform)(this._bmp),
       gif: cdktf.listMapper(cdktf.stringToTerraform)(this._gif),
+      id: cdktf.stringToTerraform(this._id),
       jp2: cdktf.listMapper(cdktf.stringToTerraform)(this._jp2),
       jpeg: cdktf.listMapper(cdktf.stringToTerraform)(this._jpeg),
       jpg: cdktf.listMapper(cdktf.stringToTerraform)(this._jpg),
