@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface CustomSslConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#id CustomSsl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#zone_id CustomSsl#zone_id}
   */
   readonly zoneId: string;
@@ -200,6 +207,9 @@ export class CustomSslCustomSslOptionsOutputReference extends cdktf.ComplexObjec
 export interface CustomSslCustomSslPriority {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#id CustomSsl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -219,6 +229,108 @@ export function customSslCustomSslPriorityToTerraform(struct?: CustomSslCustomSs
   }
 }
 
+export class CustomSslCustomSslPriorityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CustomSslCustomSslPriority | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CustomSslCustomSslPriority | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._priority = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._priority = value.priority;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+}
+
+export class CustomSslCustomSslPriorityList extends cdktf.ComplexList {
+  public internalValue? : CustomSslCustomSslPriority[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CustomSslCustomSslPriorityOutputReference {
+    return new CustomSslCustomSslPriorityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl cloudflare_custom_ssl}
@@ -254,9 +366,10 @@ export class CustomSsl extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._zoneId = config.zoneId;
     this._customSslOptions.internalValue = config.customSslOptions;
-    this._customSslPriority = config.customSslPriority;
+    this._customSslPriority.internalValue = config.customSslPriority;
   }
 
   // ==========
@@ -274,8 +387,19 @@ export class CustomSsl extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issuer - computed: true, optional: false, required: false
@@ -338,20 +462,19 @@ export class CustomSsl extends cdktf.TerraformResource {
   }
 
   // custom_ssl_priority - computed: false, optional: true, required: false
-  private _customSslPriority?: CustomSslCustomSslPriority[] | cdktf.IResolvable; 
+  private _customSslPriority = new CustomSslCustomSslPriorityList(this, "custom_ssl_priority", false);
   public get customSslPriority() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_ssl_priority');
+    return this._customSslPriority;
   }
-  public set customSslPriority(value: CustomSslCustomSslPriority[] | cdktf.IResolvable) {
-    this._customSslPriority = value;
+  public putCustomSslPriority(value: CustomSslCustomSslPriority[] | cdktf.IResolvable) {
+    this._customSslPriority.internalValue = value;
   }
   public resetCustomSslPriority() {
-    this._customSslPriority = undefined;
+    this._customSslPriority.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customSslPriorityInput() {
-    return this._customSslPriority;
+    return this._customSslPriority.internalValue;
   }
 
   // =========
@@ -360,9 +483,10 @@ export class CustomSsl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       custom_ssl_options: customSslCustomSslOptionsToTerraform(this._customSslOptions.internalValue),
-      custom_ssl_priority: cdktf.listMapper(customSslCustomSslPriorityToTerraform)(this._customSslPriority),
+      custom_ssl_priority: cdktf.listMapper(customSslCustomSslPriorityToTerraform)(this._customSslPriority.internalValue),
     };
   }
 }

@@ -12,6 +12,13 @@ export interface AccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#id AccessServiceToken#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
   */
   readonly minDaysForRenewal?: number;
@@ -60,6 +67,7 @@ export class AccessServiceToken extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._minDaysForRenewal = config.minDaysForRenewal;
     this._name = config.name;
     this._zoneId = config.zoneId;
@@ -101,8 +109,19 @@ export class AccessServiceToken extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // min_days_for_renewal - computed: false, optional: true, required: false
@@ -157,6 +176,7 @@ export class AccessServiceToken extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       min_days_for_renewal: cdktf.numberToTerraform(this._minDaysForRenewal),
       name: cdktf.stringToTerraform(this._name),
       zone_id: cdktf.stringToTerraform(this._zoneId),

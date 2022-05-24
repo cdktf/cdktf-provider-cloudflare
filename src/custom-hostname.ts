@@ -20,6 +20,13 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostname: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#id CustomHostname#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#zone_id CustomHostname#zone_id}
   */
   readonly zoneId: string;
@@ -225,6 +232,174 @@ export function customHostnameSslSettingsToTerraform(struct?: CustomHostnameSslS
   }
 }
 
+export class CustomHostnameSslSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CustomHostnameSslSettings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ciphers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ciphers = this._ciphers;
+    }
+    if (this._earlyHints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.earlyHints = this._earlyHints;
+    }
+    if (this._http2 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.http2 = this._http2;
+    }
+    if (this._minTlsVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minTlsVersion = this._minTlsVersion;
+    }
+    if (this._tls13 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tls13 = this._tls13;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CustomHostnameSslSettings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ciphers = undefined;
+      this._earlyHints = undefined;
+      this._http2 = undefined;
+      this._minTlsVersion = undefined;
+      this._tls13 = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ciphers = value.ciphers;
+      this._earlyHints = value.earlyHints;
+      this._http2 = value.http2;
+      this._minTlsVersion = value.minTlsVersion;
+      this._tls13 = value.tls13;
+    }
+  }
+
+  // ciphers - computed: false, optional: true, required: false
+  private _ciphers?: string[]; 
+  public get ciphers() {
+    return cdktf.Fn.tolist(this.getListAttribute('ciphers'));
+  }
+  public set ciphers(value: string[]) {
+    this._ciphers = value;
+  }
+  public resetCiphers() {
+    this._ciphers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ciphersInput() {
+    return this._ciphers;
+  }
+
+  // early_hints - computed: false, optional: true, required: false
+  private _earlyHints?: string; 
+  public get earlyHints() {
+    return this.getStringAttribute('early_hints');
+  }
+  public set earlyHints(value: string) {
+    this._earlyHints = value;
+  }
+  public resetEarlyHints() {
+    this._earlyHints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get earlyHintsInput() {
+    return this._earlyHints;
+  }
+
+  // http2 - computed: false, optional: true, required: false
+  private _http2?: string; 
+  public get http2() {
+    return this.getStringAttribute('http2');
+  }
+  public set http2(value: string) {
+    this._http2 = value;
+  }
+  public resetHttp2() {
+    this._http2 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get http2Input() {
+    return this._http2;
+  }
+
+  // min_tls_version - computed: false, optional: true, required: false
+  private _minTlsVersion?: string; 
+  public get minTlsVersion() {
+    return this.getStringAttribute('min_tls_version');
+  }
+  public set minTlsVersion(value: string) {
+    this._minTlsVersion = value;
+  }
+  public resetMinTlsVersion() {
+    this._minTlsVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minTlsVersionInput() {
+    return this._minTlsVersion;
+  }
+
+  // tls13 - computed: false, optional: true, required: false
+  private _tls13?: string; 
+  public get tls13() {
+    return this.getStringAttribute('tls13');
+  }
+  public set tls13(value: string) {
+    this._tls13 = value;
+  }
+  public resetTls13() {
+    this._tls13 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tls13Input() {
+    return this._tls13;
+  }
+}
+
+export class CustomHostnameSslSettingsList extends cdktf.ComplexList {
+  public internalValue? : CustomHostnameSslSettings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CustomHostnameSslSettingsOutputReference {
+    return new CustomHostnameSslSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CustomHostnameSsl {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#certificate_authority CustomHostname#certificate_authority}
@@ -274,6 +449,235 @@ export function customHostnameSslToTerraform(struct?: CustomHostnameSsl | cdktf.
   }
 }
 
+export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CustomHostnameSsl | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._certificateAuthority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateAuthority = this._certificateAuthority;
+    }
+    if (this._customCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customCertificate = this._customCertificate;
+    }
+    if (this._customKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customKey = this._customKey;
+    }
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._wildcard !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildcard = this._wildcard;
+    }
+    if (this._settings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.settings = this._settings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CustomHostnameSsl | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._certificateAuthority = undefined;
+      this._customCertificate = undefined;
+      this._customKey = undefined;
+      this._method = undefined;
+      this._type = undefined;
+      this._wildcard = undefined;
+      this._settings.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._certificateAuthority = value.certificateAuthority;
+      this._customCertificate = value.customCertificate;
+      this._customKey = value.customKey;
+      this._method = value.method;
+      this._type = value.type;
+      this._wildcard = value.wildcard;
+      this._settings.internalValue = value.settings;
+    }
+  }
+
+  // certificate_authority - computed: true, optional: true, required: false
+  private _certificateAuthority?: string; 
+  public get certificateAuthority() {
+    return this.getStringAttribute('certificate_authority');
+  }
+  public set certificateAuthority(value: string) {
+    this._certificateAuthority = value;
+  }
+  public resetCertificateAuthority() {
+    this._certificateAuthority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateAuthorityInput() {
+    return this._certificateAuthority;
+  }
+
+  // custom_certificate - computed: false, optional: true, required: false
+  private _customCertificate?: string; 
+  public get customCertificate() {
+    return this.getStringAttribute('custom_certificate');
+  }
+  public set customCertificate(value: string) {
+    this._customCertificate = value;
+  }
+  public resetCustomCertificate() {
+    this._customCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customCertificateInput() {
+    return this._customCertificate;
+  }
+
+  // custom_key - computed: false, optional: true, required: false
+  private _customKey?: string; 
+  public get customKey() {
+    return this.getStringAttribute('custom_key');
+  }
+  public set customKey(value: string) {
+    this._customKey = value;
+  }
+  public resetCustomKey() {
+    this._customKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customKeyInput() {
+    return this._customKey;
+  }
+
+  // method - computed: false, optional: true, required: false
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  public resetMethod() {
+    this._method = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // validation_errors - computed: true, optional: false, required: false
+  private _validationErrors = new CustomHostnameSslValidationErrorsList(this, "validation_errors", false);
+  public get validationErrors() {
+    return this._validationErrors;
+  }
+
+  // validation_records - computed: true, optional: false, required: false
+  private _validationRecords = new CustomHostnameSslValidationRecordsList(this, "validation_records", false);
+  public get validationRecords() {
+    return this._validationRecords;
+  }
+
+  // wildcard - computed: false, optional: true, required: false
+  private _wildcard?: boolean | cdktf.IResolvable; 
+  public get wildcard() {
+    return this.getBooleanAttribute('wildcard');
+  }
+  public set wildcard(value: boolean | cdktf.IResolvable) {
+    this._wildcard = value;
+  }
+  public resetWildcard() {
+    this._wildcard = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildcardInput() {
+    return this._wildcard;
+  }
+
+  // settings - computed: false, optional: true, required: false
+  private _settings = new CustomHostnameSslSettingsList(this, "settings", false);
+  public get settings() {
+    return this._settings;
+  }
+  public putSettings(value: CustomHostnameSslSettings[] | cdktf.IResolvable) {
+    this._settings.internalValue = value;
+  }
+  public resetSettings() {
+    this._settings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get settingsInput() {
+    return this._settings.internalValue;
+  }
+}
+
+export class CustomHostnameSslList extends cdktf.ComplexList {
+  public internalValue? : CustomHostnameSsl[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CustomHostnameSslOutputReference {
+    return new CustomHostnameSslOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname cloudflare_custom_hostname}
@@ -312,8 +716,9 @@ export class CustomHostname extends cdktf.TerraformResource {
     this._customOriginServer = config.customOriginServer;
     this._customOriginSni = config.customOriginSni;
     this._hostname = config.hostname;
+    this._id = config.id;
     this._zoneId = config.zoneId;
-    this._ssl = config.ssl;
+    this._ssl.internalValue = config.ssl;
   }
 
   // ==========
@@ -366,18 +771,31 @@ export class CustomHostname extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // ownership_verification - computed: true, optional: false, required: false
-  public ownershipVerification(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'ownership_verification').lookup(key);
+  private _ownershipVerification = new cdktf.StringMap(this, "ownership_verification");
+  public get ownershipVerification() {
+    return this._ownershipVerification;
   }
 
   // ownership_verification_http - computed: true, optional: false, required: false
-  public ownershipVerificationHttp(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'ownership_verification_http').lookup(key);
+  private _ownershipVerificationHttp = new cdktf.StringMap(this, "ownership_verification_http");
+  public get ownershipVerificationHttp() {
+    return this._ownershipVerificationHttp;
   }
 
   // status - computed: true, optional: false, required: false
@@ -399,20 +817,19 @@ export class CustomHostname extends cdktf.TerraformResource {
   }
 
   // ssl - computed: false, optional: true, required: false
-  private _ssl?: CustomHostnameSsl[] | cdktf.IResolvable; 
+  private _ssl = new CustomHostnameSslList(this, "ssl", false);
   public get ssl() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ssl');
+    return this._ssl;
   }
-  public set ssl(value: CustomHostnameSsl[] | cdktf.IResolvable) {
-    this._ssl = value;
+  public putSsl(value: CustomHostnameSsl[] | cdktf.IResolvable) {
+    this._ssl.internalValue = value;
   }
   public resetSsl() {
-    this._ssl = undefined;
+    this._ssl.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sslInput() {
-    return this._ssl;
+    return this._ssl.internalValue;
   }
 
   // =========
@@ -424,8 +841,9 @@ export class CustomHostname extends cdktf.TerraformResource {
       custom_origin_server: cdktf.stringToTerraform(this._customOriginServer),
       custom_origin_sni: cdktf.stringToTerraform(this._customOriginSni),
       hostname: cdktf.stringToTerraform(this._hostname),
+      id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      ssl: cdktf.listMapper(customHostnameSslToTerraform)(this._ssl),
+      ssl: cdktf.listMapper(customHostnameSslToTerraform)(this._ssl.internalValue),
     };
   }
 }

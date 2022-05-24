@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareWafGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/waf_groups#id DataCloudflareWafGroups#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/waf_groups#package_id DataCloudflareWafGroups#package_id}
   */
   readonly packageId?: string;
@@ -243,6 +250,7 @@ export class DataCloudflareWafGroups extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._packageId = config.packageId;
     this._zoneId = config.zoneId;
     this._filter.internalValue = config.filter;
@@ -259,8 +267,19 @@ export class DataCloudflareWafGroups extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // package_id - computed: false, optional: true, required: false
@@ -314,6 +333,7 @@ export class DataCloudflareWafGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       package_id: cdktf.stringToTerraform(this._packageId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       filter: dataCloudflareWafGroupsFilterToTerraform(this._filter.internalValue),

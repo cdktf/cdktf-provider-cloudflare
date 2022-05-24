@@ -20,6 +20,13 @@ export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments 
   */
   readonly edgeIps?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#id SpectrumApplication#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
   */
   readonly ipFirewall?: boolean | cdktf.IResolvable;
@@ -342,6 +349,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
     this._argoSmartRouting = config.argoSmartRouting;
     this._edgeIpConnectivity = config.edgeIpConnectivity;
     this._edgeIps = config.edgeIps;
+    this._id = config.id;
     this._ipFirewall = config.ipFirewall;
     this._originDirect = config.originDirect;
     this._originPort = config.originPort;
@@ -408,8 +416,19 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_firewall - computed: false, optional: true, required: false
@@ -588,6 +607,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       argo_smart_routing: cdktf.booleanToTerraform(this._argoSmartRouting),
       edge_ip_connectivity: cdktf.stringToTerraform(this._edgeIpConnectivity),
       edge_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._edgeIps),
+      id: cdktf.stringToTerraform(this._id),
       ip_firewall: cdktf.booleanToTerraform(this._ipFirewall),
       origin_direct: cdktf.listMapper(cdktf.stringToTerraform)(this._originDirect),
       origin_port: cdktf.numberToTerraform(this._originPort),

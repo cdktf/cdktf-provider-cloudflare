@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#id Zone#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#jump_start Zone#jump_start}
   */
   readonly jumpStart?: boolean | cdktf.IResolvable;
@@ -63,6 +70,7 @@ export class Zone extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._jumpStart = config.jumpStart;
     this._paused = config.paused;
     this._plan = config.plan;
@@ -75,8 +83,19 @@ export class Zone extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // jump_start - computed: false, optional: true, required: false
@@ -96,8 +115,9 @@ export class Zone extends cdktf.TerraformResource {
   }
 
   // meta - computed: true, optional: false, required: false
-  public meta(key: string): boolean | cdktf.IResolvable {
-    return new cdktf.BooleanMap(this, 'meta').lookup(key);
+  private _meta = new cdktf.BooleanMap(this, "meta");
+  public get meta() {
+    return this._meta;
   }
 
   // name_servers - computed: true, optional: false, required: false
@@ -187,6 +207,7 @@ export class Zone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       jump_start: cdktf.booleanToTerraform(this._jumpStart),
       paused: cdktf.booleanToTerraform(this._paused),
       plan: cdktf.stringToTerraform(this._plan),

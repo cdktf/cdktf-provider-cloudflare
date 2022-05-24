@@ -16,6 +16,13 @@ export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clientDefault?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location#id TeamsLocation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location#name TeamsLocation#name}
   */
   readonly name: string;
@@ -43,6 +50,88 @@ export function teamsLocationNetworksToTerraform(struct?: TeamsLocationNetworks 
   }
 }
 
+export class TeamsLocationNetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TeamsLocationNetworks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TeamsLocationNetworks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._network = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._network = value.network;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // network - computed: false, optional: false, required: true
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+}
+
+export class TeamsLocationNetworksList extends cdktf.ComplexList {
+  public internalValue? : TeamsLocationNetworks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TeamsLocationNetworksOutputReference {
+    return new TeamsLocationNetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location cloudflare_teams_location}
@@ -80,8 +169,9 @@ export class TeamsLocation extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._clientDefault = config.clientDefault;
+    this._id = config.id;
     this._name = config.name;
-    this._networks = config.networks;
+    this._networks.internalValue = config.networks;
   }
 
   // ==========
@@ -128,8 +218,19 @@ export class TeamsLocation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip - computed: true, optional: false, required: false
@@ -161,20 +262,19 @@ export class TeamsLocation extends cdktf.TerraformResource {
   }
 
   // networks - computed: false, optional: true, required: false
-  private _networks?: TeamsLocationNetworks[] | cdktf.IResolvable; 
+  private _networks = new TeamsLocationNetworksList(this, "networks", true);
   public get networks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('networks')));
+    return this._networks;
   }
-  public set networks(value: TeamsLocationNetworks[] | cdktf.IResolvable) {
-    this._networks = value;
+  public putNetworks(value: TeamsLocationNetworks[] | cdktf.IResolvable) {
+    this._networks.internalValue = value;
   }
   public resetNetworks() {
-    this._networks = undefined;
+    this._networks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networksInput() {
-    return this._networks;
+    return this._networks.internalValue;
   }
 
   // =========
@@ -185,8 +285,9 @@ export class TeamsLocation extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       client_default: cdktf.booleanToTerraform(this._clientDefault),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      networks: cdktf.listMapper(teamsLocationNetworksToTerraform)(this._networks),
+      networks: cdktf.listMapper(teamsLocationNetworksToTerraform)(this._networks.internalValue),
     };
   }
 }
