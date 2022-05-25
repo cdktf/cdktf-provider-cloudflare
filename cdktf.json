@@ -1,6 +1,7 @@
 {
   "language": "typescript",
   "app": "echo noop",
+  "sendCrashReports": false,
   "terraformProviders": [
     "cloudflare/cloudflare@~> 3.14.0"
   ],
