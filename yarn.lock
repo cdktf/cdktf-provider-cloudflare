@@ -235,9 +235,9 @@
     infer-owner "^1.0.4"
 
 "@npmcli/run-script@^4.1.0":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.1.2.tgz#05847f11016139d22f7185a2003a07870bdee6cc"
-  integrity sha512-fCSOS4L4yKRjX+FoWkGHugihBgUK+EjATJn6gfmZnRCt620OqRB8Mrtu/LMv7m1dMrTFVGdywsDq8wFGpyZKDA==
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.1.3.tgz#b89a3f861d740379892f9b2c44f8bb66dd7b577c"
+  integrity sha512-xb47c2KMkn6ERw2AwPPGKIITbWoXOT1yDV5rU3SYeC1vksYOodbgN0pnOptIVnRgS2e9G8R7BVDVm8lWp92unQ==
   dependencies:
     "@npmcli/node-gyp" "^2.0.0"
     "@npmcli/promise-spawn" "^3.0.0"
@@ -2066,10 +2066,10 @@ jsii-diff@^1.61.0:
     log4js "^6.5.2"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.37:
-  version "7.0.37"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.37.tgz#faedab37a09729e980ddff1eb2426e27804b8ed9"
-  integrity sha512-IQK775RdfF0a2nFOlrVl0TzGh6Tui7MqBfIG6Uf1pIFjRFvJkcJazVDtgq4Q7HMMWTJYn5k9Iwl3loNPL91W2w==
+jsii-docgen@^7.0.38:
+  version "7.0.38"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.38.tgz#a5849e64eaf02507e7f64f10785860271134961a"
+  integrity sha512-kiRZIt7hYDayUfAvqeLDPuSFU5uyDDQ9ci6+Ey7IWAf2L4y6oNzYkl3snyFiLNaOoeCkWQOw32VrxsFbJVmJHA==
   dependencies:
     "@jsii/spec" "^1.61.0"
     case "^1.6.3"
@@ -2132,9 +2132,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.61.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.596"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.596.tgz#955b5c19b347923adc8fd1c6743d7b1e223cc772"
-  integrity sha512-rBox18bO4cjGK3RwbA3O486UX24tUpBK6ObJo99FnEsUNtd6/70RcI4nb1hVolRnaA8H/Pe0SmlUSSvNSwdb7w==
+  version "0.1.597"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.597.tgz#8ba248e8705ea7b5a34dae0390d737d5aecfca53"
+  integrity sha512-7qo8EZ9wxvAP6mbJbMYUycKUAs5CxcTTs4gFfv1nBWk89wT2O92u9aFeECUJRhEsR41MrrvPdlGZRjYmMfu1Ng==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
@@ -2397,9 +2397,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.10.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.10.1.tgz#db577f42a94c168f676b638d15da8fb073448cab"
-  integrity sha512-BQuhQxPuRl79J5zSXRP+uNzPOyZw2oFI9JLRQ80XswSvg21KMKNtQza9eF42rfI/3Z40RvzBdXgziEkudzjo8A==
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.10.2.tgz#aab494e0768ce94f199ef553ffe0a362f2a58bb9"
+  integrity sha512-9zDbhgmXAUvUMPV81A705K3tVzcPiZL3Bf5/5JC/FjYJlLZ5AJCeqIRFHJqyBppiLosqF+uKB7p8/RDXylqBIw==
 
 lru_map@^0.3.3:
   version "0.3.3"
