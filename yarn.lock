@@ -2066,10 +2066,10 @@ jsii-diff@^1.61.0:
     log4js "^6.5.2"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.39:
-  version "7.0.39"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.39.tgz#b4c1833abb98817ca473c1da5e39e67d48d323fd"
-  integrity sha512-S67h6qlXWEG6rp4BhQfTHfuoMLGqdlWz+7O4dA0Vw7ITQ0BS1G1DThXSIah7zZVo2TTfHulgHwi7kWraV16gqw==
+jsii-docgen@^7.0.40:
+  version "7.0.40"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.40.tgz#1539dbc5e41984b8e117557b9c9ba0c7675b6c5e"
+  integrity sha512-p/hMt5X7NPB9HGbFWCp6IFNRCmtBkYeQy1KyFKfzhyJGY7DLe2Moa6uk9v2Ks5xz0UbHVBriJTQbdk8g60R/lg==
   dependencies:
     "@jsii/spec" "^1.61.0"
     case "^1.6.3"
@@ -2132,9 +2132,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.61.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.598"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.598.tgz#ec800f9e591b2f4f64b11d404325df48bf9d7c67"
-  integrity sha512-t9kHU2cwhl/g+8g6voEniYRB1dPDrCVNhpcoo4Hoo7jE2xErOFknea2Q3oAYh3c8EPaq4q4BeOD/gLQJCydntA==
+  version "0.1.599"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.599.tgz#09d1e85702a1e7b5cebcd705e9988bfc5c20e765"
+  integrity sha512-mVl0hsg28XFQG/hCzuOfHUjz1+1BBg52p66lffMBHtoRzOHnoVrAvlvy5gL44HOWH/L2PhFRW/koA/wLPXP3nA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
