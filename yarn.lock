@@ -2067,10 +2067,10 @@ jsii-diff@^1.61.0:
     log4js "^6.5.2"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.44:
-  version "7.0.44"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.44.tgz#05dcbb06a0acc4ac562863bc970fd704d65f9ea7"
-  integrity sha512-+4v++U/Ypr/r/hKsVDND6BlO+I4id6/9SaXBzGVjAJYRAm8tfg+6hr+ByBCnKSZ/EqEglVFuF9KH7gUsxWVXYQ==
+jsii-docgen@^7.0.45:
+  version "7.0.45"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.45.tgz#7da1ca21966cc96708ee9091b801e634eadd736f"
+  integrity sha512-Puq9TcKPwlqf5FC3dGlc5oRIH245A1Hm+GmL06tUtT3tV9lfCIHopTnqz3/d8Bg8R2eutLFcOObihAiadfUVrQ==
   dependencies:
     "@jsii/spec" "^1.61.0"
     case "^1.6.3"
@@ -2133,9 +2133,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.61.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.606"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.606.tgz#bf1d939dfd40c3856d96cff29cb7315960f0008f"
-  integrity sha512-wI6gJSze2+Orbh9BO7wmgu927zdurMP2UeQgG7/C5m7Vc9sttbLEfGa2RTu9szj0Yc8WeRdh/6kbgehM8LYTcg==
+  version "0.1.607"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.607.tgz#ede2638abbca0373c3aa9e2ff0c280971277fffd"
+  integrity sha512-5wmj/dkLkQulokVzVBWkl3CMFupDXHoED9Bf8DC1f82GvP+cZ2SxPC2/V4LyCMj4hXvxQM6dlpitXAj4t9To1g==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
@@ -3811,9 +3811,9 @@ typescript@^4.7.4:
   integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
 
 uglify-js@^3.1.4:
-  version "3.16.1"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.16.1.tgz#0e7ec928b3d0b1e1d952bce634c384fd56377317"
-  integrity sha512-X5BGTIDH8U6IQ1TIRP62YC36k+ULAa1d59BxlWvPUJ1NkW5L3FwcGfEzuVvGmhJFBu0YJ5Ge25tmRISqCmLiRQ==
+  version "3.16.2"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.16.2.tgz#0481e1dbeed343ad1c2ddf3c6d42e89b7a6d4def"
+  integrity sha512-AaQNokTNgExWrkEYA24BTNMSjyqEXPSfhqoS0AxmHkCJ4U+Dyy5AvbGV/sqxuxficEfGGoX3zWw9R7QpLFfEsg==
 
 unique-filename@^1.1.1:
   version "1.1.1"
