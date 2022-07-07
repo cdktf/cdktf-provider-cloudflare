@@ -374,9 +374,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.0.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.2.tgz#a594e580c396c22dd6b1470be81737c79ec0b1b1"
-  integrity sha512-b947SdS4GH+g2W33wf5FzUu1KLj5FcSIiNWbU1ZyMvt/X7w48ZsVcsQoirIgE/Oq03WT5Qbn/dkY0hePi4ZXcQ==
+  version "18.0.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.3.tgz#463fc47f13ec0688a33aec75d078a0541a447199"
+  integrity sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ==
 
 "@types/node@^14":
   version "14.18.21"
@@ -1207,7 +1207,7 @@ dargs@^7.0.0:
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-7.0.0.tgz#04015c41de0bcb69ec84050f3d9be0caf8d6d5cc"
   integrity sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==
 
-date-format@^4.0.10:
+date-format@^4.0.10, date-format@^4.0.11:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/date-format/-/date-format-4.0.11.tgz#ae0d1e069d7f0687938fd06f98c12f3a6276e526"
   integrity sha512-VS20KRyorrbMCQmpdl2hg5KaOUsda1RbnsJg461FfrcyCUg+pkd0b40BSW4niQyTheww4DBXQnS7HwSrKkipLw==
@@ -2067,10 +2067,10 @@ jsii-diff@^1.61.0:
     log4js "^6.5.2"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.46:
-  version "7.0.46"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.46.tgz#5d3743a0c83d844abcfc79bcfc7277d942678a92"
-  integrity sha512-84EkrBPT25XJZ2HntJF6P8TD+DTEbXzJ0oDA3V7iXF27DUtnP4jRPZuwiDSZg3GSwJjWOPNaRlkUJn6pTAzXAw==
+jsii-docgen@^7.0.47:
+  version "7.0.47"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.47.tgz#8958384b06ab12926ee8dc1e52a6f6162c90486d"
+  integrity sha512-OMOX8s894GJ+YxDC61NOxVqj5J6VVWDDCLOXnas/+4eRsBt9krXOdWhvFFtvDoWNKqQkiPD9ZZArLqFZ9X/5+A==
   dependencies:
     "@jsii/spec" "^1.61.0"
     case "^1.6.3"
@@ -2133,9 +2133,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.61.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.608"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.608.tgz#3fd0b6524315236e1d44c4342b8fda56a08bad8c"
-  integrity sha512-lVmvv/z92ZRHvGLDB3ybMkp2A/jw/cEwUwwqgfIHi7lIWHncVEtjIE+rOEilyeOTrvnAUkvvws+zO6baLGvc6g==
+  version "0.1.609"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.609.tgz#fc4b3a571b5cc67a15d9310cb1ebd086c3dda173"
+  integrity sha512-3snqrIJzgavj8JOaN6G4NiaMAhyQzsqts4ah09V09Za76spFMTINNApvI57uLJfZPueirkytjmq632ccRFXK1A==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
@@ -2363,11 +2363,11 @@ lodash@^4.17.15, lodash@^4.17.21:
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log4js@^6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.5.2.tgz#9ae371e5b3cb3a3a209c24686e5547f8670834e5"
-  integrity sha512-DXtpNtt+KDOMT7RHUDIur/WsSA3rntlUh9Zg4XCdV42wUuMmbFkl38+LZ92Z5QvQA7mD5kAVkLiBSEH/tvUB8A==
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.6.0.tgz#e8fd00143d1e0ecf1d10959bb69b90b1b30137f3"
+  integrity sha512-3v8R7fd45UB6THucSht6wN2/7AZEruQbXdjygPZcxt5TA/msO6si9CN5MefUuKXbYnJHTBnYcx4famwcyQd+sA==
   dependencies:
-    date-format "^4.0.10"
+    date-format "^4.0.11"
     debug "^4.3.4"
     flatted "^3.2.5"
     rfdc "^1.3.0"
