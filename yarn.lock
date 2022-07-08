@@ -1325,9 +1325,9 @@ dotgitignore@^2.1.0:
     minimatch "^3.0.4"
 
 duplexer3@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
-  integrity sha512-CEj8FwwNA4cVH2uFCoHUrmojhYh1vmCdOaneKJXwkeY1i9jnlslVo9dx+hQ5Hl9GnH/Bwy/IjxAyOePyPKYnzA==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.5.tgz#0b5e4d7bad5de8901ea4440624c8e1d20099217e"
+  integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2133,9 +2133,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.61.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.609"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.609.tgz#fc4b3a571b5cc67a15d9310cb1ebd086c3dda173"
-  integrity sha512-3snqrIJzgavj8JOaN6G4NiaMAhyQzsqts4ah09V09Za76spFMTINNApvI57uLJfZPueirkytjmq632ccRFXK1A==
+  version "0.1.610"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.610.tgz#a816ff63cd71d3862da92379107efa4ce5b4dd25"
+  integrity sha512-DDNkqvoju3vs8HO1KzOB5dw2mOK4tBvqwXlgQP56588Umi3wXcMA/RlwXFTVtCJWcw24AR6nTRAGE1gSAMRyMA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.61.0"
