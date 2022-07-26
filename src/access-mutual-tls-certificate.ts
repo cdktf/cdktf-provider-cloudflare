@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface AccessMutualTlsCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_mutual_tls_certificate#account_id AccessMutualTlsCertificate#account_id}
   */
   readonly accountId?: string;
   /**
+  * The hostnames that will be prompted for this certificate.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_mutual_tls_certificate#associated_hostnames AccessMutualTlsCertificate#associated_hostnames}
   */
   readonly associatedHostnames?: string[];
   /**
+  * The Root CA for your certificates.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_mutual_tls_certificate#certificate AccessMutualTlsCertificate#certificate}
   */
   readonly certificate?: string;
@@ -27,10 +33,14 @@ export interface AccessMutualTlsCertificateConfig extends cdktf.TerraformMetaArg
   */
   readonly id?: string;
   /**
+  * The name of the certificate.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_mutual_tls_certificate#name AccessMutualTlsCertificate#name}
   */
   readonly name: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_mutual_tls_certificate#zone_id AccessMutualTlsCertificate#zone_id}
   */
   readonly zoneId?: string;
@@ -62,8 +72,8 @@ export class AccessMutualTlsCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_mutual_tls_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -19,6 +19,8 @@ export interface LogpullRetentionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpull_retention#zone_id LogpullRetention#zone_id}
   */
   readonly zoneId: string;
@@ -50,8 +52,8 @@ export class LogpullRetention extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpull_retention',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

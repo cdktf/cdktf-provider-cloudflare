@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
   */
   readonly argoSmartRouting?: boolean | cdktf.IResolvable;
@@ -27,6 +29,8 @@ export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
   */
   readonly ipFirewall?: boolean | cdktf.IResolvable;
@@ -35,6 +39,8 @@ export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments 
   */
   readonly originDirect?: string[];
   /**
+  * Conflicts with `origin_port_range`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#origin_port SpectrumApplication#origin_port}
   */
   readonly originPort?: number;
@@ -43,18 +49,26 @@ export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments 
   */
   readonly protocol: string;
   /**
+  * Defaults to `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
   */
   readonly proxyProtocol?: string;
   /**
+  * Defaults to `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#tls SpectrumApplication#tls}
   */
   readonly tls?: string;
   /**
+  * Defaults to `direct`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#traffic_type SpectrumApplication#traffic_type}
   */
   readonly trafficType?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#zone_id SpectrumApplication#zone_id}
   */
   readonly zoneId: string;
@@ -338,8 +352,8 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_spectrum_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

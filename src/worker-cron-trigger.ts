@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface WorkerCronTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger#account_id WorkerCronTrigger#account_id}
   */
   readonly accountId: string;
@@ -54,8 +56,8 @@ export class WorkerCronTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_cron_trigger',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

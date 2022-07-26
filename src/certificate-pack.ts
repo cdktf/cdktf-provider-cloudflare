@@ -39,10 +39,14 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly validityDays?: number;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#wait_for_active_status CertificatePack#wait_for_active_status}
   */
   readonly waitForActiveStatus?: boolean | cdktf.IResolvable;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#zone_id CertificatePack#zone_id}
   */
   readonly zoneId: string;
@@ -420,8 +424,8 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

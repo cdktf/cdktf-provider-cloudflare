@@ -16,6 +16,8 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#enabled LoadBalancer#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -35,10 +37,14 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Defaults to `false`. Conflicts with `ttl`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#proxied LoadBalancer#proxied}
   */
   readonly proxied?: boolean | cdktf.IResolvable;
   /**
+  * Defaults to `none`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
@@ -55,10 +61,14 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly steeringPolicy?: string;
   /**
+  * Conflicts with `proxied`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#zone_id LoadBalancer#zone_id}
   */
   readonly zoneId: string;
@@ -1303,8 +1313,8 @@ export class LoadBalancer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

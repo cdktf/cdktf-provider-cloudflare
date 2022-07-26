@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface CustomPagesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages#account_id CustomPages#account_id}
   */
   readonly accountId?: string;
@@ -31,6 +33,8 @@ export interface CustomPagesConfig extends cdktf.TerraformMetaArguments {
   */
   readonly url: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages#zone_id CustomPages#zone_id}
   */
   readonly zoneId?: string;
@@ -62,8 +66,8 @@ export class CustomPages extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_pages',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

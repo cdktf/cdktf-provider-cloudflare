@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface ArgoTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#account_id ArgoTunnel#account_id}
   */
   readonly accountId: string;
@@ -54,8 +56,8 @@ export class ArgoTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_argo_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -130,6 +132,11 @@ export class ArgoTunnel extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get secretInput() {
     return this._secret;
+  }
+
+  // tunnel_token - computed: true, optional: false, required: false
+  public get tunnelToken() {
+    return this.getStringAttribute('tunnel_token');
   }
 
   // =========

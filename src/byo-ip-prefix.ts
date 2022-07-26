@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface ByoIpPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#account_id ByoIpPrefix#account_id}
   */
   readonly accountId: string;
@@ -58,8 +60,8 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

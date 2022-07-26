@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface WafPackageConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Defaults to `challenge`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#action_mode WafPackage#action_mode}
   */
   readonly actionMode?: string;
@@ -23,10 +25,14 @@ export interface WafPackageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly packageId: string;
   /**
+  * Defaults to `high`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#sensitivity WafPackage#sensitivity}
   */
   readonly sensitivity?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#zone_id WafPackage#zone_id}
   */
   readonly zoneId: string;
@@ -58,8 +64,8 @@ export class WafPackage extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_package',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

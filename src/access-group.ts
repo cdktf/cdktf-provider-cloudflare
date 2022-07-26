@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface AccessGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#account_id AccessGroup#account_id}
   */
   readonly accountId?: string;
@@ -23,6 +25,8 @@ export interface AccessGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#zone_id AccessGroup#zone_id}
   */
   readonly zoneId?: string;
@@ -170,6 +174,98 @@ export class AccessGroupExcludeAzureList extends cdktf.ComplexList {
   */
   public get(index: number): AccessGroupExcludeAzureOutputReference {
     return new AccessGroupExcludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessGroupExcludeExternalEvaluation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#evaluate_url AccessGroup#evaluate_url}
+  */
+  readonly evaluateUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#keys_url AccessGroup#keys_url}
+  */
+  readonly keysUrl?: string;
+}
+
+export function accessGroupExcludeExternalEvaluationToTerraform(struct?: AccessGroupExcludeExternalEvaluationOutputReference | AccessGroupExcludeExternalEvaluation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+  }
+}
+
+export class AccessGroupExcludeExternalEvaluationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessGroupExcludeExternalEvaluation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluateUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluateUrl = this._evaluateUrl;
+    }
+    if (this._keysUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keysUrl = this._keysUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupExcludeExternalEvaluation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._evaluateUrl = undefined;
+      this._keysUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._evaluateUrl = value.evaluateUrl;
+      this._keysUrl = value.keysUrl;
+    }
+  }
+
+  // evaluate_url - computed: false, optional: true, required: false
+  private _evaluateUrl?: string; 
+  public get evaluateUrl() {
+    return this.getStringAttribute('evaluate_url');
+  }
+  public set evaluateUrl(value: string) {
+    this._evaluateUrl = value;
+  }
+  public resetEvaluateUrl() {
+    this._evaluateUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluateUrlInput() {
+    return this._evaluateUrl;
+  }
+
+  // keys_url - computed: false, optional: true, required: false
+  private _keysUrl?: string; 
+  public get keysUrl() {
+    return this.getStringAttribute('keys_url');
+  }
+  public set keysUrl(value: string) {
+    this._keysUrl = value;
+  }
+  public resetKeysUrl() {
+    this._keysUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysUrlInput() {
+    return this._keysUrl;
   }
 }
 export interface AccessGroupExcludeGithub {
@@ -782,6 +878,12 @@ export interface AccessGroupExclude {
   */
   readonly azure?: AccessGroupExcludeAzure[] | cdktf.IResolvable;
   /**
+  * external_evaluation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#external_evaluation AccessGroup#external_evaluation}
+  */
+  readonly externalEvaluation?: AccessGroupExcludeExternalEvaluation;
+  /**
   * github block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#github AccessGroup#github}
@@ -827,6 +929,7 @@ export function accessGroupExcludeToTerraform(struct?: AccessGroupExclude | cdkt
     login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
     azure: cdktf.listMapper(accessGroupExcludeAzureToTerraform)(struct!.azure),
+    external_evaluation: accessGroupExcludeExternalEvaluationToTerraform(struct!.externalEvaluation),
     github: cdktf.listMapper(accessGroupExcludeGithubToTerraform)(struct!.github),
     gsuite: cdktf.listMapper(accessGroupExcludeGsuiteToTerraform)(struct!.gsuite),
     okta: cdktf.listMapper(accessGroupExcludeOktaToTerraform)(struct!.okta),
@@ -910,6 +1013,10 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.azure = this._azure?.internalValue;
     }
+    if (this._externalEvaluation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
+    }
     if (this._github?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.github = this._github?.internalValue;
@@ -947,6 +1054,7 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
+      this._externalEvaluation.internalValue = undefined;
       this._github.internalValue = undefined;
       this._gsuite.internalValue = undefined;
       this._okta.internalValue = undefined;
@@ -973,6 +1081,7 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
+      this._externalEvaluation.internalValue = value.externalEvaluation;
       this._github.internalValue = value.github;
       this._gsuite.internalValue = value.gsuite;
       this._okta.internalValue = value.okta;
@@ -1204,6 +1313,22 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
     return this._azure.internalValue;
   }
 
+  // external_evaluation - computed: false, optional: true, required: false
+  private _externalEvaluation = new AccessGroupExcludeExternalEvaluationOutputReference(this, "external_evaluation");
+  public get externalEvaluation() {
+    return this._externalEvaluation;
+  }
+  public putExternalEvaluation(value: AccessGroupExcludeExternalEvaluation) {
+    this._externalEvaluation.internalValue = value;
+  }
+  public resetExternalEvaluation() {
+    this._externalEvaluation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEvaluationInput() {
+    return this._externalEvaluation.internalValue;
+  }
+
   // github - computed: false, optional: true, required: false
   private _github = new AccessGroupExcludeGithubList(this, "github", false);
   public get github() {
@@ -1413,6 +1538,98 @@ export class AccessGroupIncludeAzureList extends cdktf.ComplexList {
   */
   public get(index: number): AccessGroupIncludeAzureOutputReference {
     return new AccessGroupIncludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessGroupIncludeExternalEvaluation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#evaluate_url AccessGroup#evaluate_url}
+  */
+  readonly evaluateUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#keys_url AccessGroup#keys_url}
+  */
+  readonly keysUrl?: string;
+}
+
+export function accessGroupIncludeExternalEvaluationToTerraform(struct?: AccessGroupIncludeExternalEvaluationOutputReference | AccessGroupIncludeExternalEvaluation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+  }
+}
+
+export class AccessGroupIncludeExternalEvaluationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessGroupIncludeExternalEvaluation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluateUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluateUrl = this._evaluateUrl;
+    }
+    if (this._keysUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keysUrl = this._keysUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupIncludeExternalEvaluation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._evaluateUrl = undefined;
+      this._keysUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._evaluateUrl = value.evaluateUrl;
+      this._keysUrl = value.keysUrl;
+    }
+  }
+
+  // evaluate_url - computed: false, optional: true, required: false
+  private _evaluateUrl?: string; 
+  public get evaluateUrl() {
+    return this.getStringAttribute('evaluate_url');
+  }
+  public set evaluateUrl(value: string) {
+    this._evaluateUrl = value;
+  }
+  public resetEvaluateUrl() {
+    this._evaluateUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluateUrlInput() {
+    return this._evaluateUrl;
+  }
+
+  // keys_url - computed: false, optional: true, required: false
+  private _keysUrl?: string; 
+  public get keysUrl() {
+    return this.getStringAttribute('keys_url');
+  }
+  public set keysUrl(value: string) {
+    this._keysUrl = value;
+  }
+  public resetKeysUrl() {
+    this._keysUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysUrlInput() {
+    return this._keysUrl;
   }
 }
 export interface AccessGroupIncludeGithub {
@@ -2025,6 +2242,12 @@ export interface AccessGroupInclude {
   */
   readonly azure?: AccessGroupIncludeAzure[] | cdktf.IResolvable;
   /**
+  * external_evaluation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#external_evaluation AccessGroup#external_evaluation}
+  */
+  readonly externalEvaluation?: AccessGroupIncludeExternalEvaluation;
+  /**
   * github block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#github AccessGroup#github}
@@ -2070,6 +2293,7 @@ export function accessGroupIncludeToTerraform(struct?: AccessGroupInclude | cdkt
     login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
     azure: cdktf.listMapper(accessGroupIncludeAzureToTerraform)(struct!.azure),
+    external_evaluation: accessGroupIncludeExternalEvaluationToTerraform(struct!.externalEvaluation),
     github: cdktf.listMapper(accessGroupIncludeGithubToTerraform)(struct!.github),
     gsuite: cdktf.listMapper(accessGroupIncludeGsuiteToTerraform)(struct!.gsuite),
     okta: cdktf.listMapper(accessGroupIncludeOktaToTerraform)(struct!.okta),
@@ -2153,6 +2377,10 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.azure = this._azure?.internalValue;
     }
+    if (this._externalEvaluation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
+    }
     if (this._github?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.github = this._github?.internalValue;
@@ -2190,6 +2418,7 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
+      this._externalEvaluation.internalValue = undefined;
       this._github.internalValue = undefined;
       this._gsuite.internalValue = undefined;
       this._okta.internalValue = undefined;
@@ -2216,6 +2445,7 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
+      this._externalEvaluation.internalValue = value.externalEvaluation;
       this._github.internalValue = value.github;
       this._gsuite.internalValue = value.gsuite;
       this._okta.internalValue = value.okta;
@@ -2447,6 +2677,22 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
     return this._azure.internalValue;
   }
 
+  // external_evaluation - computed: false, optional: true, required: false
+  private _externalEvaluation = new AccessGroupIncludeExternalEvaluationOutputReference(this, "external_evaluation");
+  public get externalEvaluation() {
+    return this._externalEvaluation;
+  }
+  public putExternalEvaluation(value: AccessGroupIncludeExternalEvaluation) {
+    this._externalEvaluation.internalValue = value;
+  }
+  public resetExternalEvaluation() {
+    this._externalEvaluation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEvaluationInput() {
+    return this._externalEvaluation.internalValue;
+  }
+
   // github - computed: false, optional: true, required: false
   private _github = new AccessGroupIncludeGithubList(this, "github", false);
   public get github() {
@@ -2656,6 +2902,98 @@ export class AccessGroupRequireAzureList extends cdktf.ComplexList {
   */
   public get(index: number): AccessGroupRequireAzureOutputReference {
     return new AccessGroupRequireAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessGroupRequireExternalEvaluation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#evaluate_url AccessGroup#evaluate_url}
+  */
+  readonly evaluateUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#keys_url AccessGroup#keys_url}
+  */
+  readonly keysUrl?: string;
+}
+
+export function accessGroupRequireExternalEvaluationToTerraform(struct?: AccessGroupRequireExternalEvaluationOutputReference | AccessGroupRequireExternalEvaluation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+  }
+}
+
+export class AccessGroupRequireExternalEvaluationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessGroupRequireExternalEvaluation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluateUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluateUrl = this._evaluateUrl;
+    }
+    if (this._keysUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keysUrl = this._keysUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessGroupRequireExternalEvaluation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._evaluateUrl = undefined;
+      this._keysUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._evaluateUrl = value.evaluateUrl;
+      this._keysUrl = value.keysUrl;
+    }
+  }
+
+  // evaluate_url - computed: false, optional: true, required: false
+  private _evaluateUrl?: string; 
+  public get evaluateUrl() {
+    return this.getStringAttribute('evaluate_url');
+  }
+  public set evaluateUrl(value: string) {
+    this._evaluateUrl = value;
+  }
+  public resetEvaluateUrl() {
+    this._evaluateUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluateUrlInput() {
+    return this._evaluateUrl;
+  }
+
+  // keys_url - computed: false, optional: true, required: false
+  private _keysUrl?: string; 
+  public get keysUrl() {
+    return this.getStringAttribute('keys_url');
+  }
+  public set keysUrl(value: string) {
+    this._keysUrl = value;
+  }
+  public resetKeysUrl() {
+    this._keysUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysUrlInput() {
+    return this._keysUrl;
   }
 }
 export interface AccessGroupRequireGithub {
@@ -3268,6 +3606,12 @@ export interface AccessGroupRequire {
   */
   readonly azure?: AccessGroupRequireAzure[] | cdktf.IResolvable;
   /**
+  * external_evaluation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#external_evaluation AccessGroup#external_evaluation}
+  */
+  readonly externalEvaluation?: AccessGroupRequireExternalEvaluation;
+  /**
   * github block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#github AccessGroup#github}
@@ -3313,6 +3657,7 @@ export function accessGroupRequireToTerraform(struct?: AccessGroupRequire | cdkt
     login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
     azure: cdktf.listMapper(accessGroupRequireAzureToTerraform)(struct!.azure),
+    external_evaluation: accessGroupRequireExternalEvaluationToTerraform(struct!.externalEvaluation),
     github: cdktf.listMapper(accessGroupRequireGithubToTerraform)(struct!.github),
     gsuite: cdktf.listMapper(accessGroupRequireGsuiteToTerraform)(struct!.gsuite),
     okta: cdktf.listMapper(accessGroupRequireOktaToTerraform)(struct!.okta),
@@ -3396,6 +3741,10 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.azure = this._azure?.internalValue;
     }
+    if (this._externalEvaluation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
+    }
     if (this._github?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.github = this._github?.internalValue;
@@ -3433,6 +3782,7 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
+      this._externalEvaluation.internalValue = undefined;
       this._github.internalValue = undefined;
       this._gsuite.internalValue = undefined;
       this._okta.internalValue = undefined;
@@ -3459,6 +3809,7 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
+      this._externalEvaluation.internalValue = value.externalEvaluation;
       this._github.internalValue = value.github;
       this._gsuite.internalValue = value.gsuite;
       this._okta.internalValue = value.okta;
@@ -3690,6 +4041,22 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
     return this._azure.internalValue;
   }
 
+  // external_evaluation - computed: false, optional: true, required: false
+  private _externalEvaluation = new AccessGroupRequireExternalEvaluationOutputReference(this, "external_evaluation");
+  public get externalEvaluation() {
+    return this._externalEvaluation;
+  }
+  public putExternalEvaluation(value: AccessGroupRequireExternalEvaluation) {
+    this._externalEvaluation.internalValue = value;
+  }
+  public resetExternalEvaluation() {
+    this._externalEvaluation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEvaluationInput() {
+    return this._externalEvaluation.internalValue;
+  }
+
   // github - computed: false, optional: true, required: false
   private _github = new AccessGroupRequireGithubList(this, "github", false);
   public get github() {
@@ -3801,8 +4168,8 @@ export class AccessGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

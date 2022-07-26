@@ -8,21 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface LogpushJobConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#account_id LogpushJob#account_id}
   */
   readonly accountId?: string;
   /**
+  * Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination). Available values: `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#dataset LogpushJob#dataset}
   */
   readonly dataset: string;
   /**
+  * Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#destination_conf LogpushJob#destination_conf}
   */
   readonly destinationConf: string;
   /**
+  * Whether to enable the job.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#enabled LogpushJob#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#filter LogpushJob#filter}
+  */
+  readonly filter?: string;
+  /**
+  * A higher frequency will result in logs being pushed on faster with smaller files. `low` frequency will push logs less often with larger files. Available values: `high`, `low`. Defaults to `high`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#frequency LogpushJob#frequency}
+  */
+  readonly frequency?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#id LogpushJob#id}
   *
@@ -31,18 +51,32 @@ export interface LogpushJobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#kind LogpushJob#kind}
+  */
+  readonly kind?: string;
+  /**
+  * Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpull options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#logpull_options LogpushJob#logpull_options}
   */
   readonly logpullOptions?: string;
   /**
+  * The name of the logpush job to create.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#name LogpushJob#name}
   */
   readonly name?: string;
   /**
+  * Ownership challenge token to prove destination ownership, required when destination is Amazon S3, Google Cloud Storage, Microsoft Azure or Sumo Logic. See [Developer documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#usage).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
   */
   readonly ownershipChallenge?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#zone_id LogpushJob#zone_id}
   */
   readonly zoneId?: string;
@@ -74,8 +108,8 @@ export class LogpushJob extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_job',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -86,7 +120,10 @@ export class LogpushJob extends cdktf.TerraformResource {
     this._dataset = config.dataset;
     this._destinationConf = config.destinationConf;
     this._enabled = config.enabled;
+    this._filter = config.filter;
+    this._frequency = config.frequency;
     this._id = config.id;
+    this._kind = config.kind;
     this._logpullOptions = config.logpullOptions;
     this._name = config.name;
     this._ownershipChallenge = config.ownershipChallenge;
@@ -155,6 +192,38 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._enabled;
   }
 
+  // filter - computed: false, optional: true, required: false
+  private _filter?: string; 
+  public get filter() {
+    return this.getStringAttribute('filter');
+  }
+  public set filter(value: string) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+
+  // frequency - computed: false, optional: true, required: false
+  private _frequency?: string; 
+  public get frequency() {
+    return this.getStringAttribute('frequency');
+  }
+  public set frequency(value: string) {
+    this._frequency = value;
+  }
+  public resetFrequency() {
+    this._frequency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get frequencyInput() {
+    return this._frequency;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -169,6 +238,22 @@ export class LogpushJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // kind - computed: false, optional: true, required: false
+  private _kind?: string; 
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+  public set kind(value: string) {
+    this._kind = value;
+  }
+  public resetKind() {
+    this._kind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kindInput() {
+    return this._kind;
   }
 
   // logpull_options - computed: false, optional: true, required: false
@@ -245,7 +330,10 @@ export class LogpushJob extends cdktf.TerraformResource {
       dataset: cdktf.stringToTerraform(this._dataset),
       destination_conf: cdktf.stringToTerraform(this._destinationConf),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      filter: cdktf.stringToTerraform(this._filter),
+      frequency: cdktf.stringToTerraform(this._frequency),
       id: cdktf.stringToTerraform(this._id),
+      kind: cdktf.stringToTerraform(this._kind),
       logpull_options: cdktf.stringToTerraform(this._logpullOptions),
       name: cdktf.stringToTerraform(this._name),
       ownership_challenge: cdktf.stringToTerraform(this._ownershipChallenge),

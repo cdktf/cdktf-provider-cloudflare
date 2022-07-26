@@ -15,14 +15,20 @@ export interface ArgoConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Whether smart routing is enabled. Available values: `on`, `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo#smart_routing Argo#smart_routing}
   */
   readonly smartRouting?: string;
   /**
+  * Whether tiered caching is enabled. Available values: `on`, `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo#tiered_caching Argo#tiered_caching}
   */
   readonly tieredCaching?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo#zone_id Argo#zone_id}
   */
   readonly zoneId: string;
@@ -54,8 +60,8 @@ export class Argo extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_argo',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

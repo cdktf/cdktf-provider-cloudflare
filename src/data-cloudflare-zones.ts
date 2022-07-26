@@ -92,10 +92,14 @@ export class DataCloudflareZonesZonesList extends cdktf.ComplexList {
 }
 export interface DataCloudflareZonesFilter {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#account_id DataCloudflareZones#account_id}
   */
   readonly accountId?: string;
   /**
+  * Defaults to `exact`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#lookup_type DataCloudflareZones#lookup_type}
   */
   readonly lookupType?: string;
@@ -108,6 +112,8 @@ export interface DataCloudflareZonesFilter {
   */
   readonly name?: string;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#paused DataCloudflareZones#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
@@ -317,8 +323,8 @@ export class DataCloudflareZones extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zones',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

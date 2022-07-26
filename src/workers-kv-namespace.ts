@@ -46,8 +46,8 @@ export class WorkersKvNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv_namespace',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

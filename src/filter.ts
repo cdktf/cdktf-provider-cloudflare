@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface FilterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * A note that you can use to describe the purpose of the filter.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#description Filter#description}
   */
   readonly description?: string;
   /**
+  * The filter expression to be used.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#expression Filter#expression}
   */
   readonly expression: string;
@@ -23,14 +27,20 @@ export interface FilterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Whether this filter is currently paused.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#paused Filter#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
+  * Short reference tag to quickly select related rules.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#ref Filter#ref}
   */
   readonly ref?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#zone_id Filter#zone_id}
   */
   readonly zoneId: string;
@@ -62,8 +72,8 @@ export class Filter extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_filter',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

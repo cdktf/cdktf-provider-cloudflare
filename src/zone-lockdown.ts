@@ -19,6 +19,8 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#paused ZoneLockdown#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
@@ -31,6 +33,8 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   */
   readonly urls: string[];
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#zone_id ZoneLockdown#zone_id}
   */
   readonly zoneId: string;
@@ -186,8 +190,8 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_lockdown',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

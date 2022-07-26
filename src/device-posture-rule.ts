@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#account_id DevicePostureRule#account_id}
   */
   readonly accountId: string;
@@ -15,6 +17,10 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#description DevicePostureRule#description}
   */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#expiration DevicePostureRule#expiration}
+  */
+  readonly expiration?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#id DevicePostureRule#id}
   *
@@ -106,7 +112,7 @@ export interface DevicePostureRuleInput {
   */
   readonly requireAll?: boolean | cdktf.IResolvable;
   /**
-  * Checks if the application should be running
+  * Checks if the application should be running.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#running DevicePostureRule#running}
   */
@@ -621,8 +627,8 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -631,6 +637,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._description = config.description;
+    this._expiration = config.expiration;
     this._id = config.id;
     this._name = config.name;
     this._schedule = config.schedule;
@@ -670,6 +677,22 @@ export class DevicePostureRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // expiration - computed: false, optional: true, required: false
+  private _expiration?: string; 
+  public get expiration() {
+    return this.getStringAttribute('expiration');
+  }
+  public set expiration(value: string) {
+    this._expiration = value;
+  }
+  public resetExpiration() {
+    this._expiration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationInput() {
+    return this._expiration;
   }
 
   // id - computed: true, optional: true, required: false
@@ -773,6 +796,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       description: cdktf.stringToTerraform(this._description),
+      expiration: cdktf.stringToTerraform(this._expiration),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),

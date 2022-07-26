@@ -43,6 +43,8 @@ export interface WafOverrideConfig extends cdktf.TerraformMetaArguments {
   */
   readonly urls: string[];
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_override#zone_id WafOverride#zone_id}
   */
   readonly zoneId: string;
@@ -74,8 +76,8 @@ export class WafOverride extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_override',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

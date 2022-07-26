@@ -15,14 +15,20 @@ export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The action to apply to a matched request. Available values: `block`, `challenge`, `whitelist`, `js_challenge`, `managed_challenge`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#mode AccessRule#mode}
   */
   readonly mode: string;
   /**
+  * A personal note about the rule. Typically used as a reminder or explanation for the rule.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#notes AccessRule#notes}
   */
   readonly notes?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#zone_id AccessRule#zone_id}
   */
   readonly zoneId?: string;
@@ -35,10 +41,14 @@ export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AccessRuleConfiguration {
   /**
+  * The request property to target. Available values: `ip`, `ip6`, `ip_range`, `asn`, `country`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#target AccessRule#target}
   */
   readonly target: string;
   /**
+  * The value to target. Depends on target's type.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#value AccessRule#value}
   */
   readonly value: string;
@@ -146,8 +156,8 @@ export class AccessRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

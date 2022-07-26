@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface AccessCaCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_ca_certificate#account_id AccessCaCertificate#account_id}
   */
   readonly accountId?: string;
   /**
+  * The Access Application ID to associate with the CA certificate.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_ca_certificate#application_id AccessCaCertificate#application_id}
   */
   readonly applicationId: string;
@@ -23,6 +27,8 @@ export interface AccessCaCertificateConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_ca_certificate#zone_id AccessCaCertificate#zone_id}
   */
   readonly zoneId?: string;
@@ -54,8 +60,8 @@ export class AccessCaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface IpListConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ip_list#account_id IpList#account_id}
   */
   readonly accountId: string;
@@ -185,8 +187,8 @@ export class IpList extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ip_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

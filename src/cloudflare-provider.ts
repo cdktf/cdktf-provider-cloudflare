@@ -8,73 +8,73 @@ import * as cdktf from 'cdktf';
 
 export interface CloudflareProviderConfig {
   /**
-  * Configure API client to always use that account
+  * Configure API client to always use a specific account. Alternatively, can be configured using the `CLOUDFLARE_ACCOUNT_ID` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#account_id CloudflareProvider#account_id}
   */
   readonly accountId?: string;
   /**
-  * Configure the base path used by the API client
+  * Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_base_path CloudflareProvider#api_base_path}
   */
   readonly apiBasePath?: string;
   /**
-  * Whether to print logs from the API client (using the default log library logger)
+  * Whether to print logs from the API client (using the default log library logger). Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_client_logging CloudflareProvider#api_client_logging}
   */
   readonly apiClientLogging?: boolean | cdktf.IResolvable;
   /**
-  * Configure the hostname used by the API client
+  * Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_hostname CloudflareProvider#api_hostname}
   */
   readonly apiHostname?: string;
   /**
-  * The API key for operations.
+  * The API key for operations. Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_key CloudflareProvider#api_key}
   */
   readonly apiKey?: string;
   /**
-  * The API Token for operations.
+  * The API Token for operations. Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_token CloudflareProvider#api_token}
   */
   readonly apiToken?: string;
   /**
-  * A special Cloudflare API key good for a restricted set of endpoints
+  * A special Cloudflare API key good for a restricted set of endpoints. Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_user_service_key CloudflareProvider#api_user_service_key}
   */
   readonly apiUserServiceKey?: string;
   /**
-  * A registered Cloudflare email address
+  * A registered Cloudflare email address. Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Conflicts with `api_token`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#email CloudflareProvider#email}
   */
   readonly email?: string;
   /**
-  * Maximum backoff period in seconds after failed API calls
+  * Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#max_backoff CloudflareProvider#max_backoff}
   */
   readonly maxBackoff?: number;
   /**
-  * Minimum backoff period in seconds after failed API calls
+  * Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#min_backoff CloudflareProvider#min_backoff}
   */
   readonly minBackoff?: number;
   /**
-  * Maximum number of retries to perform when an API request fails
+  * Maximum number of retries to perform when an API request fails. Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#retries CloudflareProvider#retries}
   */
   readonly retries?: number;
   /**
-  * RPS limit to apply when making calls to the API
+  * RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#rps CloudflareProvider#rps}
   */
@@ -113,8 +113,8 @@ export class CloudflareProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'cloudflare',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       terraformProviderSource: 'cloudflare/cloudflare'
     });

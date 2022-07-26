@@ -15,6 +15,8 @@ export interface DataCloudflareWafPackagesConfig extends cdktf.TerraformMetaArgu
   */
   readonly id?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/waf_packages#zone_id DataCloudflareWafPackages#zone_id}
   */
   readonly zoneId: string;
@@ -287,8 +289,8 @@ export class DataCloudflareWafPackages extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_waf_packages',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

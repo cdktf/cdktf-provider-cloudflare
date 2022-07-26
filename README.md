@@ -1,5 +1,5 @@
 
-# Terraform CDK cloudflare Provider ~> 3.14.0
+# Terraform CDK cloudflare Provider ~> 3.14
 
 This repo builds and publishes the Terraform cloudflare Provider bindings for [cdktf](https://cdk.tf).
 
@@ -48,7 +48,7 @@ Find auto-generated docs for this provider here: [./API.md](./API.md)
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform cloudflare Provider version 1:1. In fact, it always tracks `latest` of `~> 3.14.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform cloudflare Provider version 1:1. In fact, it always tracks `latest` of `~> 3.14` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 
