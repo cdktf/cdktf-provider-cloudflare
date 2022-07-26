@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface TunnelRouteConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#account_id TunnelRoute#account_id}
   */
   readonly accountId: string;
   /**
+  * Description of the tunnel route.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#comment TunnelRoute#comment}
   */
   readonly comment?: string;
@@ -23,13 +27,23 @@ export interface TunnelRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#network TunnelRoute#network}
   */
   readonly network: string;
   /**
+  * The ID of the tunnel that will service the tunnel route.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#tunnel_id TunnelRoute#tunnel_id}
   */
   readonly tunnelId: string;
+  /**
+  * The ID of the virtual network for which this route is being added; uses the default virtual network of the account if none is provided.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#virtual_network_id TunnelRoute#virtual_network_id}
+  */
+  readonly virtualNetworkId?: string;
 }
 
 /**
@@ -58,8 +72,8 @@ export class TunnelRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tunnel_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -71,6 +85,7 @@ export class TunnelRoute extends cdktf.TerraformResource {
     this._id = config.id;
     this._network = config.network;
     this._tunnelId = config.tunnelId;
+    this._virtualNetworkId = config.virtualNetworkId;
   }
 
   // ==========
@@ -148,6 +163,22 @@ export class TunnelRoute extends cdktf.TerraformResource {
     return this._tunnelId;
   }
 
+  // virtual_network_id - computed: false, optional: true, required: false
+  private _virtualNetworkId?: string; 
+  public get virtualNetworkId() {
+    return this.getStringAttribute('virtual_network_id');
+  }
+  public set virtualNetworkId(value: string) {
+    this._virtualNetworkId = value;
+  }
+  public resetVirtualNetworkId() {
+    this._virtualNetworkId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNetworkIdInput() {
+    return this._virtualNetworkId;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -159,6 +190,7 @@ export class TunnelRoute extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       network: cdktf.stringToTerraform(this._network),
       tunnel_id: cdktf.stringToTerraform(this._tunnelId),
+      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
     };
   }
 }

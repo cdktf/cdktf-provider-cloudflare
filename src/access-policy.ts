@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#account_id AccessPolicy#account_id}
   */
   readonly accountId?: string;
   /**
+  * The ID of the application the policy is associated with.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#application_id AccessPolicy#application_id}
   */
   readonly applicationId: string;
@@ -20,6 +24,8 @@ export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly approvalRequired?: boolean | cdktf.IResolvable;
   /**
+  * Defines the action Access will take if the policy matches the user. Available values: `allow`, `deny`, `non_identity`, `bypass`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#decision AccessPolicy#decision}
   */
   readonly decision: string;
@@ -31,22 +37,32 @@ export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Friendly name of the Access Policy.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#name AccessPolicy#name}
   */
   readonly name: string;
   /**
+  * The unique precedence for policies on a single application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#precedence AccessPolicy#precedence}
   */
   readonly precedence: number;
   /**
+  * The prompt to display to the user for a justification for accessing the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#purpose_justification_prompt AccessPolicy#purpose_justification_prompt}
   */
   readonly purposeJustificationPrompt?: string;
   /**
+  * Whether to prompt the user for a justification for accessing the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#purpose_justification_required AccessPolicy#purpose_justification_required}
   */
   readonly purposeJustificationRequired?: boolean | cdktf.IResolvable;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#zone_id AccessPolicy#zone_id}
   */
   readonly zoneId?: string;
@@ -77,10 +93,14 @@ export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AccessPolicyApprovalGroup {
   /**
+  * Number of approvals needed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#approvals_needed AccessPolicy#approvals_needed}
   */
   readonly approvalsNeeded: number;
   /**
+  * List of emails to request approval from.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#email_addresses AccessPolicy#email_addresses}
   */
   readonly emailAddresses?: string[];
@@ -348,6 +368,98 @@ export class AccessPolicyExcludeAzureList extends cdktf.ComplexList {
   */
   public get(index: number): AccessPolicyExcludeAzureOutputReference {
     return new AccessPolicyExcludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessPolicyExcludeExternalEvaluation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#evaluate_url AccessPolicy#evaluate_url}
+  */
+  readonly evaluateUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#keys_url AccessPolicy#keys_url}
+  */
+  readonly keysUrl?: string;
+}
+
+export function accessPolicyExcludeExternalEvaluationToTerraform(struct?: AccessPolicyExcludeExternalEvaluationOutputReference | AccessPolicyExcludeExternalEvaluation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+  }
+}
+
+export class AccessPolicyExcludeExternalEvaluationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessPolicyExcludeExternalEvaluation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluateUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluateUrl = this._evaluateUrl;
+    }
+    if (this._keysUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keysUrl = this._keysUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessPolicyExcludeExternalEvaluation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._evaluateUrl = undefined;
+      this._keysUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._evaluateUrl = value.evaluateUrl;
+      this._keysUrl = value.keysUrl;
+    }
+  }
+
+  // evaluate_url - computed: false, optional: true, required: false
+  private _evaluateUrl?: string; 
+  public get evaluateUrl() {
+    return this.getStringAttribute('evaluate_url');
+  }
+  public set evaluateUrl(value: string) {
+    this._evaluateUrl = value;
+  }
+  public resetEvaluateUrl() {
+    this._evaluateUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluateUrlInput() {
+    return this._evaluateUrl;
+  }
+
+  // keys_url - computed: false, optional: true, required: false
+  private _keysUrl?: string; 
+  public get keysUrl() {
+    return this.getStringAttribute('keys_url');
+  }
+  public set keysUrl(value: string) {
+    this._keysUrl = value;
+  }
+  public resetKeysUrl() {
+    this._keysUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysUrlInput() {
+    return this._keysUrl;
   }
 }
 export interface AccessPolicyExcludeGithub {
@@ -960,6 +1072,12 @@ export interface AccessPolicyExclude {
   */
   readonly azure?: AccessPolicyExcludeAzure[] | cdktf.IResolvable;
   /**
+  * external_evaluation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#external_evaluation AccessPolicy#external_evaluation}
+  */
+  readonly externalEvaluation?: AccessPolicyExcludeExternalEvaluation;
+  /**
   * github block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#github AccessPolicy#github}
@@ -1005,6 +1123,7 @@ export function accessPolicyExcludeToTerraform(struct?: AccessPolicyExclude | cd
     login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
     azure: cdktf.listMapper(accessPolicyExcludeAzureToTerraform)(struct!.azure),
+    external_evaluation: accessPolicyExcludeExternalEvaluationToTerraform(struct!.externalEvaluation),
     github: cdktf.listMapper(accessPolicyExcludeGithubToTerraform)(struct!.github),
     gsuite: cdktf.listMapper(accessPolicyExcludeGsuiteToTerraform)(struct!.gsuite),
     okta: cdktf.listMapper(accessPolicyExcludeOktaToTerraform)(struct!.okta),
@@ -1088,6 +1207,10 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.azure = this._azure?.internalValue;
     }
+    if (this._externalEvaluation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
+    }
     if (this._github?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.github = this._github?.internalValue;
@@ -1125,6 +1248,7 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
+      this._externalEvaluation.internalValue = undefined;
       this._github.internalValue = undefined;
       this._gsuite.internalValue = undefined;
       this._okta.internalValue = undefined;
@@ -1151,6 +1275,7 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
+      this._externalEvaluation.internalValue = value.externalEvaluation;
       this._github.internalValue = value.github;
       this._gsuite.internalValue = value.gsuite;
       this._okta.internalValue = value.okta;
@@ -1382,6 +1507,22 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
     return this._azure.internalValue;
   }
 
+  // external_evaluation - computed: false, optional: true, required: false
+  private _externalEvaluation = new AccessPolicyExcludeExternalEvaluationOutputReference(this, "external_evaluation");
+  public get externalEvaluation() {
+    return this._externalEvaluation;
+  }
+  public putExternalEvaluation(value: AccessPolicyExcludeExternalEvaluation) {
+    this._externalEvaluation.internalValue = value;
+  }
+  public resetExternalEvaluation() {
+    this._externalEvaluation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEvaluationInput() {
+    return this._externalEvaluation.internalValue;
+  }
+
   // github - computed: false, optional: true, required: false
   private _github = new AccessPolicyExcludeGithubList(this, "github", false);
   public get github() {
@@ -1591,6 +1732,98 @@ export class AccessPolicyIncludeAzureList extends cdktf.ComplexList {
   */
   public get(index: number): AccessPolicyIncludeAzureOutputReference {
     return new AccessPolicyIncludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessPolicyIncludeExternalEvaluation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#evaluate_url AccessPolicy#evaluate_url}
+  */
+  readonly evaluateUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#keys_url AccessPolicy#keys_url}
+  */
+  readonly keysUrl?: string;
+}
+
+export function accessPolicyIncludeExternalEvaluationToTerraform(struct?: AccessPolicyIncludeExternalEvaluationOutputReference | AccessPolicyIncludeExternalEvaluation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+  }
+}
+
+export class AccessPolicyIncludeExternalEvaluationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessPolicyIncludeExternalEvaluation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluateUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluateUrl = this._evaluateUrl;
+    }
+    if (this._keysUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keysUrl = this._keysUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessPolicyIncludeExternalEvaluation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._evaluateUrl = undefined;
+      this._keysUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._evaluateUrl = value.evaluateUrl;
+      this._keysUrl = value.keysUrl;
+    }
+  }
+
+  // evaluate_url - computed: false, optional: true, required: false
+  private _evaluateUrl?: string; 
+  public get evaluateUrl() {
+    return this.getStringAttribute('evaluate_url');
+  }
+  public set evaluateUrl(value: string) {
+    this._evaluateUrl = value;
+  }
+  public resetEvaluateUrl() {
+    this._evaluateUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluateUrlInput() {
+    return this._evaluateUrl;
+  }
+
+  // keys_url - computed: false, optional: true, required: false
+  private _keysUrl?: string; 
+  public get keysUrl() {
+    return this.getStringAttribute('keys_url');
+  }
+  public set keysUrl(value: string) {
+    this._keysUrl = value;
+  }
+  public resetKeysUrl() {
+    this._keysUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysUrlInput() {
+    return this._keysUrl;
   }
 }
 export interface AccessPolicyIncludeGithub {
@@ -2203,6 +2436,12 @@ export interface AccessPolicyInclude {
   */
   readonly azure?: AccessPolicyIncludeAzure[] | cdktf.IResolvable;
   /**
+  * external_evaluation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#external_evaluation AccessPolicy#external_evaluation}
+  */
+  readonly externalEvaluation?: AccessPolicyIncludeExternalEvaluation;
+  /**
   * github block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#github AccessPolicy#github}
@@ -2248,6 +2487,7 @@ export function accessPolicyIncludeToTerraform(struct?: AccessPolicyInclude | cd
     login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
     azure: cdktf.listMapper(accessPolicyIncludeAzureToTerraform)(struct!.azure),
+    external_evaluation: accessPolicyIncludeExternalEvaluationToTerraform(struct!.externalEvaluation),
     github: cdktf.listMapper(accessPolicyIncludeGithubToTerraform)(struct!.github),
     gsuite: cdktf.listMapper(accessPolicyIncludeGsuiteToTerraform)(struct!.gsuite),
     okta: cdktf.listMapper(accessPolicyIncludeOktaToTerraform)(struct!.okta),
@@ -2331,6 +2571,10 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.azure = this._azure?.internalValue;
     }
+    if (this._externalEvaluation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
+    }
     if (this._github?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.github = this._github?.internalValue;
@@ -2368,6 +2612,7 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
+      this._externalEvaluation.internalValue = undefined;
       this._github.internalValue = undefined;
       this._gsuite.internalValue = undefined;
       this._okta.internalValue = undefined;
@@ -2394,6 +2639,7 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
+      this._externalEvaluation.internalValue = value.externalEvaluation;
       this._github.internalValue = value.github;
       this._gsuite.internalValue = value.gsuite;
       this._okta.internalValue = value.okta;
@@ -2625,6 +2871,22 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
     return this._azure.internalValue;
   }
 
+  // external_evaluation - computed: false, optional: true, required: false
+  private _externalEvaluation = new AccessPolicyIncludeExternalEvaluationOutputReference(this, "external_evaluation");
+  public get externalEvaluation() {
+    return this._externalEvaluation;
+  }
+  public putExternalEvaluation(value: AccessPolicyIncludeExternalEvaluation) {
+    this._externalEvaluation.internalValue = value;
+  }
+  public resetExternalEvaluation() {
+    this._externalEvaluation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEvaluationInput() {
+    return this._externalEvaluation.internalValue;
+  }
+
   // github - computed: false, optional: true, required: false
   private _github = new AccessPolicyIncludeGithubList(this, "github", false);
   public get github() {
@@ -2834,6 +3096,98 @@ export class AccessPolicyRequireAzureList extends cdktf.ComplexList {
   */
   public get(index: number): AccessPolicyRequireAzureOutputReference {
     return new AccessPolicyRequireAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessPolicyRequireExternalEvaluation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#evaluate_url AccessPolicy#evaluate_url}
+  */
+  readonly evaluateUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#keys_url AccessPolicy#keys_url}
+  */
+  readonly keysUrl?: string;
+}
+
+export function accessPolicyRequireExternalEvaluationToTerraform(struct?: AccessPolicyRequireExternalEvaluationOutputReference | AccessPolicyRequireExternalEvaluation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+  }
+}
+
+export class AccessPolicyRequireExternalEvaluationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessPolicyRequireExternalEvaluation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluateUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluateUrl = this._evaluateUrl;
+    }
+    if (this._keysUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keysUrl = this._keysUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessPolicyRequireExternalEvaluation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._evaluateUrl = undefined;
+      this._keysUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._evaluateUrl = value.evaluateUrl;
+      this._keysUrl = value.keysUrl;
+    }
+  }
+
+  // evaluate_url - computed: false, optional: true, required: false
+  private _evaluateUrl?: string; 
+  public get evaluateUrl() {
+    return this.getStringAttribute('evaluate_url');
+  }
+  public set evaluateUrl(value: string) {
+    this._evaluateUrl = value;
+  }
+  public resetEvaluateUrl() {
+    this._evaluateUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluateUrlInput() {
+    return this._evaluateUrl;
+  }
+
+  // keys_url - computed: false, optional: true, required: false
+  private _keysUrl?: string; 
+  public get keysUrl() {
+    return this.getStringAttribute('keys_url');
+  }
+  public set keysUrl(value: string) {
+    this._keysUrl = value;
+  }
+  public resetKeysUrl() {
+    this._keysUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysUrlInput() {
+    return this._keysUrl;
   }
 }
 export interface AccessPolicyRequireGithub {
@@ -3446,6 +3800,12 @@ export interface AccessPolicyRequire {
   */
   readonly azure?: AccessPolicyRequireAzure[] | cdktf.IResolvable;
   /**
+  * external_evaluation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#external_evaluation AccessPolicy#external_evaluation}
+  */
+  readonly externalEvaluation?: AccessPolicyRequireExternalEvaluation;
+  /**
   * github block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#github AccessPolicy#github}
@@ -3491,6 +3851,7 @@ export function accessPolicyRequireToTerraform(struct?: AccessPolicyRequire | cd
     login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
     azure: cdktf.listMapper(accessPolicyRequireAzureToTerraform)(struct!.azure),
+    external_evaluation: accessPolicyRequireExternalEvaluationToTerraform(struct!.externalEvaluation),
     github: cdktf.listMapper(accessPolicyRequireGithubToTerraform)(struct!.github),
     gsuite: cdktf.listMapper(accessPolicyRequireGsuiteToTerraform)(struct!.gsuite),
     okta: cdktf.listMapper(accessPolicyRequireOktaToTerraform)(struct!.okta),
@@ -3574,6 +3935,10 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.azure = this._azure?.internalValue;
     }
+    if (this._externalEvaluation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
+    }
     if (this._github?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.github = this._github?.internalValue;
@@ -3611,6 +3976,7 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
+      this._externalEvaluation.internalValue = undefined;
       this._github.internalValue = undefined;
       this._gsuite.internalValue = undefined;
       this._okta.internalValue = undefined;
@@ -3637,6 +4003,7 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
+      this._externalEvaluation.internalValue = value.externalEvaluation;
       this._github.internalValue = value.github;
       this._gsuite.internalValue = value.gsuite;
       this._okta.internalValue = value.okta;
@@ -3868,6 +4235,22 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
     return this._azure.internalValue;
   }
 
+  // external_evaluation - computed: false, optional: true, required: false
+  private _externalEvaluation = new AccessPolicyRequireExternalEvaluationOutputReference(this, "external_evaluation");
+  public get externalEvaluation() {
+    return this._externalEvaluation;
+  }
+  public putExternalEvaluation(value: AccessPolicyRequireExternalEvaluation) {
+    this._externalEvaluation.internalValue = value;
+  }
+  public resetExternalEvaluation() {
+    this._externalEvaluation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEvaluationInput() {
+    return this._externalEvaluation.internalValue;
+  }
+
   // github - computed: false, optional: true, required: false
   private _github = new AccessPolicyRequireGithubList(this, "github", false);
   public get github() {
@@ -3979,8 +4362,8 @@ export class AccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

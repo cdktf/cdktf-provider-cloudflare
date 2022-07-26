@@ -16,6 +16,8 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#disabled RateLimit#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
@@ -35,6 +37,8 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly threshold: number;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#zone_id RateLimit#zone_id}
   */
   readonly zoneId: string;
@@ -687,8 +691,8 @@ export class RateLimit extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_rate_limit',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

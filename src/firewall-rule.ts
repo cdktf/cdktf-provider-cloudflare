@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface FirewallRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The action to apply to a matched request. Available values: `block`, `challenge`, `allow`, `js_challenge`, `managed_challenge`, `log`, `bypass`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#action FirewallRule#action}
   */
   readonly action: string;
   /**
+  * A description of the rule to help identify it.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#description FirewallRule#description}
   */
   readonly description?: string;
   /**
+  * The identifier of the Filter to use for determining if the Firewall Rule should be triggered.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#filter_id FirewallRule#filter_id}
   */
   readonly filterId: string;
@@ -27,18 +33,26 @@ export interface FirewallRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Whether this filter based firewall rule is currently paused.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#paused FirewallRule#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
+  * The priority of the rule to allow control of processing order. A lower number indicates high priority. If not provided, any rules with a priority will be sequenced before those without.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#priority FirewallRule#priority}
   */
   readonly priority?: number;
   /**
+  * List of products to bypass for a request when the bypass action is used. Available values: `zoneLockdown`, `uaBlock`, `bic`, `hot`, `securityLevel`, `rateLimit`, `waf`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#products FirewallRule#products}
   */
   readonly products?: string[];
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#zone_id FirewallRule#zone_id}
   */
   readonly zoneId: string;
@@ -70,8 +84,8 @@ export class FirewallRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_firewall_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

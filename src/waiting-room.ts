@@ -8,18 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   /**
+  * This is a templated html file that will be rendered at the edge.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#custom_page_html WaitingRoom#custom_page_html}
   */
   readonly customPageHtml?: string;
   /**
+  * The language to use for the default waiting room page. Available values: `de-DE`, `es-ES`, `en-US`, `fr-FR`, `id-ID`, `it-IT`, `ja-JP`, `ko-KR`, `nl-NL`, `pl-PL`, `pt-BR`, `tr-TR`, `zh-CN`, `zh-TW`. Defaults to `en-US`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#default_template_language WaitingRoom#default_template_language}
+  */
+  readonly defaultTemplateLanguage?: string;
+  /**
+  * A description to add more details about the waiting room.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#description WaitingRoom#description}
   */
   readonly description?: string;
   /**
+  * Disables automatic renewal of session cookies.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
   */
   readonly disableSessionRenewal?: boolean | cdktf.IResolvable;
   /**
+  * Host name for which the waiting room will be applied (no wildcards).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#host WaitingRoom#host}
   */
   readonly host: string;
@@ -31,38 +45,62 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * If true, requests to the waiting room with the header `Accept: application/json` will receive a JSON response object.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
   */
   readonly jsonResponseEnabled?: boolean | cdktf.IResolvable;
   /**
+  * A unique name to identify the waiting room.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#name WaitingRoom#name}
   */
   readonly name: string;
   /**
+  * The number of new users that will be let into the route every minute.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
   */
   readonly newUsersPerMinute: number;
   /**
+  * The path within the host to enable the waiting room on.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#path WaitingRoom#path}
   */
   readonly path?: string;
   /**
+  * If queue_all is true, then all traffic will be sent to the waiting room.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#queue_all WaitingRoom#queue_all}
   */
   readonly queueAll?: boolean | cdktf.IResolvable;
   /**
+  * The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. Defaults to `fifo`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#queueing_method WaitingRoom#queueing_method}
+  */
+  readonly queueingMethod?: string;
+  /**
+  * Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#session_duration WaitingRoom#session_duration}
   */
   readonly sessionDuration?: number;
   /**
+  * Suspends the waiting room.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#suspended WaitingRoom#suspended}
   */
   readonly suspended?: boolean | cdktf.IResolvable;
   /**
+  * The total number of active user sessions on the route at a point in time.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#total_active_users WaitingRoom#total_active_users}
   */
   readonly totalActiveUsers: number;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#zone_id WaitingRoom#zone_id}
   */
   readonly zoneId: string;
@@ -202,8 +240,8 @@ export class WaitingRoom extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -211,6 +249,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._customPageHtml = config.customPageHtml;
+    this._defaultTemplateLanguage = config.defaultTemplateLanguage;
     this._description = config.description;
     this._disableSessionRenewal = config.disableSessionRenewal;
     this._host = config.host;
@@ -220,6 +259,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
     this._newUsersPerMinute = config.newUsersPerMinute;
     this._path = config.path;
     this._queueAll = config.queueAll;
+    this._queueingMethod = config.queueingMethod;
     this._sessionDuration = config.sessionDuration;
     this._suspended = config.suspended;
     this._totalActiveUsers = config.totalActiveUsers;
@@ -245,6 +285,22 @@ export class WaitingRoom extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customPageHtmlInput() {
     return this._customPageHtml;
+  }
+
+  // default_template_language - computed: false, optional: true, required: false
+  private _defaultTemplateLanguage?: string; 
+  public get defaultTemplateLanguage() {
+    return this.getStringAttribute('default_template_language');
+  }
+  public set defaultTemplateLanguage(value: string) {
+    this._defaultTemplateLanguage = value;
+  }
+  public resetDefaultTemplateLanguage() {
+    this._defaultTemplateLanguage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultTemplateLanguageInput() {
+    return this._defaultTemplateLanguage;
   }
 
   // description - computed: false, optional: true, required: false
@@ -382,6 +438,22 @@ export class WaitingRoom extends cdktf.TerraformResource {
     return this._queueAll;
   }
 
+  // queueing_method - computed: false, optional: true, required: false
+  private _queueingMethod?: string; 
+  public get queueingMethod() {
+    return this.getStringAttribute('queueing_method');
+  }
+  public set queueingMethod(value: string) {
+    this._queueingMethod = value;
+  }
+  public resetQueueingMethod() {
+    this._queueingMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueingMethodInput() {
+    return this._queueingMethod;
+  }
+
   // session_duration - computed: false, optional: true, required: false
   private _sessionDuration?: number; 
   public get sessionDuration() {
@@ -463,6 +535,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       custom_page_html: cdktf.stringToTerraform(this._customPageHtml),
+      default_template_language: cdktf.stringToTerraform(this._defaultTemplateLanguage),
       description: cdktf.stringToTerraform(this._description),
       disable_session_renewal: cdktf.booleanToTerraform(this._disableSessionRenewal),
       host: cdktf.stringToTerraform(this._host),
@@ -472,6 +545,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       new_users_per_minute: cdktf.numberToTerraform(this._newUsersPerMinute),
       path: cdktf.stringToTerraform(this._path),
       queue_all: cdktf.booleanToTerraform(this._queueAll),
+      queueing_method: cdktf.stringToTerraform(this._queueingMethod),
       session_duration: cdktf.numberToTerraform(this._sessionDuration),
       suspended: cdktf.booleanToTerraform(this._suspended),
       total_active_users: cdktf.numberToTerraform(this._totalActiveUsers),

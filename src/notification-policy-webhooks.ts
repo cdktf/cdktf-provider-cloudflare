@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationPolicyWebhooksConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
   */
   readonly accountId: string;
@@ -58,8 +60,8 @@ export class NotificationPolicyWebhooks extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy_webhooks',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

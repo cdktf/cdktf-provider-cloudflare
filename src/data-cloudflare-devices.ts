@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareDevicesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/devices#account_id DataCloudflareDevices#account_id}
   */
   readonly accountId: string;
@@ -175,8 +177,8 @@ export class DataCloudflareDevices extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_devices',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

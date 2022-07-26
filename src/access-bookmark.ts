@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface AccessBookmarkConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#account_id AccessBookmark#account_id}
   */
   readonly accountId?: string;
   /**
+  * Option to show/hide the bookmark in the app launcher. Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#app_launcher_visible AccessBookmark#app_launcher_visible}
   */
   readonly appLauncherVisible?: boolean | cdktf.IResolvable;
   /**
+  * The domain of the bookmark application. Can include subdomains, paths, or both.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#domain AccessBookmark#domain}
   */
   readonly domain: string;
@@ -27,14 +33,20 @@ export interface AccessBookmarkConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The image URL for the logo shown in the app launcher dashboard.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#logo_url AccessBookmark#logo_url}
   */
   readonly logoUrl?: string;
   /**
+  * Name of the bookmark application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#name AccessBookmark#name}
   */
   readonly name: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_bookmark#zone_id AccessBookmark#zone_id}
   */
   readonly zoneId?: string;
@@ -66,8 +78,8 @@ export class AccessBookmark extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_bookmark',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareAccessIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/access_identity_provider#account_id DataCloudflareAccessIdentityProvider#account_id}
   */
   readonly accountId?: string;
@@ -23,6 +25,8 @@ export interface DataCloudflareAccessIdentityProviderConfig extends cdktf.Terraf
   */
   readonly name: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/access_identity_provider#zone_id DataCloudflareAccessIdentityProvider#zone_id}
   */
   readonly zoneId?: string;
@@ -54,8 +58,8 @@ export class DataCloudflareAccessIdentityProvider extends cdktf.TerraformDataSou
       terraformResourceType: 'cloudflare_access_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

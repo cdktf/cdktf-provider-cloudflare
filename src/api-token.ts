@@ -15,6 +15,8 @@ export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Name of the API Token.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#name ApiToken#name}
   */
   readonly name: string;
@@ -33,10 +35,14 @@ export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
 }
 export interface ApiTokenConditionRequestIp {
   /**
+  * List of IP addresses or CIDR notation where the token may be used from. If not specified, the token will be valid for all IP addresses.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#in ApiToken#in}
   */
   readonly in?: string[];
   /**
+  * List of IP addresses or CIDR notation where the token should not be used from.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#not_in ApiToken#not_in}
   */
   readonly notIn?: string[];
@@ -192,14 +198,20 @@ export class ApiTokenConditionOutputReference extends cdktf.ComplexObject {
 }
 export interface ApiTokenPolicy {
   /**
+  * Effect of the policy. Available values: `allow`, `deny`. Defaults to `allow`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#effect ApiToken#effect}
   */
   readonly effect?: string;
   /**
+  * List of permissions groups IDs. See [documentation](https://developers.cloudflare.com/api/tokens/create/permissions) for more information.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#permission_groups ApiToken#permission_groups}
   */
   readonly permissionGroups: string[];
   /**
+  * Describes what operations against which resources are allowed or denied.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#resources ApiToken#resources}
   */
   readonly resources: { [key: string]: string };
@@ -362,8 +374,8 @@ export class ApiToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

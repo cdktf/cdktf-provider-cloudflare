@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface AccessKeysConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
   */
   readonly accountId: string;
@@ -19,6 +21,8 @@ export interface AccessKeysConfigurationConfig extends cdktf.TerraformMetaArgume
   */
   readonly id?: string;
   /**
+  * Number of days to trigger a rotation of the keys.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
   */
   readonly keyRotationIntervalDays?: number;
@@ -50,8 +54,8 @@ export class AccessKeysConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_keys_configuration',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

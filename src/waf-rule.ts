@@ -27,6 +27,8 @@ export interface WafRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ruleId: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_rule#zone_id WafRule#zone_id}
   */
   readonly zoneId: string;
@@ -58,8 +60,8 @@ export class WafRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

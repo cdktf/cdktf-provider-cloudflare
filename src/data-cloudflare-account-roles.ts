@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareAccountRolesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/account_roles#account_id DataCloudflareAccountRoles#account_id}
   */
   readonly accountId: string;
@@ -120,8 +122,8 @@ export class DataCloudflareAccountRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_account_roles',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

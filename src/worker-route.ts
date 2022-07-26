@@ -23,6 +23,8 @@ export interface WorkerRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly scriptName?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_route#zone_id WorkerRoute#zone_id}
   */
   readonly zoneId: string;
@@ -54,8 +56,8 @@ export class WorkerRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

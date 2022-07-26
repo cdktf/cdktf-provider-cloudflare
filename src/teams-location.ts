@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location#account_id TeamsLocation#account_id}
   */
   readonly accountId: string;
@@ -159,8 +161,8 @@ export class TeamsLocation extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

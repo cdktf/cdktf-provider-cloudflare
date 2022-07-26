@@ -16,6 +16,8 @@ export interface LoadBalancerPoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#enabled LoadBalancerPool#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -35,6 +37,8 @@ export interface LoadBalancerPoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly longitude?: number;
   /**
+  * Defaults to `1`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#minimum_origins LoadBalancerPool#minimum_origins}
   */
   readonly minimumOrigins?: number;
@@ -71,18 +75,26 @@ export interface LoadBalancerPoolConfig extends cdktf.TerraformMetaArguments {
 }
 export interface LoadBalancerPoolLoadShedding {
   /**
+  * Defaults to `0`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#default_percent LoadBalancerPool#default_percent}
   */
   readonly defaultPercent?: number;
   /**
+  * Defaults to `""`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#default_policy LoadBalancerPool#default_policy}
   */
   readonly defaultPolicy?: string;
   /**
+  * Defaults to `0`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#session_percent LoadBalancerPool#session_percent}
   */
   readonly sessionPercent?: number;
   /**
+  * Defaults to `""`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#session_policy LoadBalancerPool#session_policy}
   */
   readonly sessionPolicy?: string;
@@ -249,6 +261,8 @@ export class LoadBalancerPoolLoadSheddingList extends cdktf.ComplexList {
 }
 export interface LoadBalancerPoolOriginSteering {
   /**
+  * Defaults to `random`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#policy LoadBalancerPool#policy}
   */
   readonly policy?: string;
@@ -468,6 +482,8 @@ export interface LoadBalancerPoolOrigins {
   */
   readonly address: string;
   /**
+  * Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#enabled LoadBalancerPool#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -476,6 +492,8 @@ export interface LoadBalancerPoolOrigins {
   */
   readonly name: string;
   /**
+  * Defaults to `1`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#weight LoadBalancerPool#weight}
   */
   readonly weight?: number;
@@ -690,8 +708,8 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_pool',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

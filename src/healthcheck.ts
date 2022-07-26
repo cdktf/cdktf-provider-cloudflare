@@ -8,38 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The hostname or IP address of the origin server to run health checks on.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#address Healthcheck#address}
   */
   readonly address: string;
   /**
+  * Do not validate the certificate when the health check uses HTTPS. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#allow_insecure Healthcheck#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
+  * A list of regions from which to run health checks. If not set, Cloudflare will pick a default region. Available values: `WNAM`, `ENAM`, `WEU`, `EEU`, `NSAM`, `SSAM`, `OC`, `ME`, `NAF`, `SAF`, `IN`, `SEAS`, `NEAS`, `ALL_REGIONS`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#check_regions Healthcheck#check_regions}
   */
   readonly checkRegions?: string[];
   /**
+  * The number of consecutive fails required from a health check before changing the health to unhealthy. Defaults to `1`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
   */
   readonly consecutiveFails?: number;
   /**
+  * The number of consecutive successes required from a health check before changing the health to healthy. Defaults to `1`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
   */
   readonly consecutiveSuccesses?: number;
   /**
+  * A human-readable description of the health check.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#description Healthcheck#description}
   */
   readonly description?: string;
   /**
+  * A case-insensitive sub-string to look for in the response body. If this string is not found the origin will be marked as unhealthy.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#expected_body Healthcheck#expected_body}
   */
   readonly expectedBody?: string;
   /**
+  * The expected HTTP response codes (e.g. '200') or code ranges (e.g. '2xx' for all codes starting with 2) of the health check.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#expected_codes Healthcheck#expected_codes}
   */
   readonly expectedCodes?: string[];
   /**
+  * Follow redirects if the origin returns a 3xx status code. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#follow_redirects Healthcheck#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
@@ -51,50 +69,74 @@ export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The interval between each health check. Shorter intervals may give quicker notifications if the origin status changes, but will increase the load on the origin as we check from multiple locations. Defaults to `60`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#interval Healthcheck#interval}
   */
   readonly interval?: number;
   /**
+  * The HTTP method to use for the health check. Available values: `connection_established`, `GET`, `HEAD`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#method Healthcheck#method}
   */
   readonly method?: string;
   /**
+  * A short name to identify the health check. Only alphanumeric characters, hyphens, and underscores are allowed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#name Healthcheck#name}
   */
   readonly name: string;
   /**
+  * A list of email addresses we want to send the notifications to. Deprecated, use cloudflare_notification_policy instead.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#notification_email_addresses Healthcheck#notification_email_addresses}
   */
   readonly notificationEmailAddresses?: string[];
   /**
+  * Whether the notifications are suspended or not. Useful for maintenance periods. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#notification_suspended Healthcheck#notification_suspended}
   */
   readonly notificationSuspended?: boolean | cdktf.IResolvable;
   /**
+  * The endpoint path to health check against. Defaults to `/`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#path Healthcheck#path}
   */
   readonly path?: string;
   /**
+  * Port number to connect to for the health check. Defaults to `80`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#port Healthcheck#port}
   */
   readonly port?: number;
   /**
+  * The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately. Defaults to `2`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#retries Healthcheck#retries}
   */
   readonly retries?: number;
   /**
+  * If suspended, no health checks are sent to the origin. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#suspended Healthcheck#suspended}
   */
   readonly suspended?: boolean | cdktf.IResolvable;
   /**
+  * The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#timeout Healthcheck#timeout}
   */
   readonly timeout?: number;
   /**
+  * The protocol to use for the health check. Available values: `TCP`, `HTTP`, `HTTPS`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#type Healthcheck#type}
   */
   readonly type: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#zone_id Healthcheck#zone_id}
   */
   readonly zoneId: string;
@@ -113,10 +155,14 @@ export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
 }
 export interface HealthcheckHeader {
   /**
+  * The header name.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#header Healthcheck#header}
   */
   readonly header: string;
   /**
+  * A list of string values for the header.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#values Healthcheck#values}
   */
   readonly values: string[];
@@ -331,8 +377,8 @@ export class Healthcheck extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_healthcheck',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -27,6 +27,8 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#zone_id CustomHostname#zone_id}
   */
   readonly zoneId: string;
@@ -418,6 +420,8 @@ export interface CustomHostnameSsl {
   */
   readonly method?: string;
   /**
+  * Defaults to `dv`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#type CustomHostname#type}
   */
   readonly type?: string;
@@ -705,8 +709,8 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

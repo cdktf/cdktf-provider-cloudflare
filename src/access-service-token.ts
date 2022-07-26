@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface AccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#account_id AccessServiceToken#account_id}
   */
   readonly accountId?: string;
@@ -19,14 +21,20 @@ export interface AccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Regenerates the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
   */
   readonly minDaysForRenewal?: number;
   /**
+  * Friendly name of the token's intent.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#name AccessServiceToken#name}
   */
   readonly name: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#zone_id AccessServiceToken#zone_id}
   */
   readonly zoneId?: string;
@@ -58,8 +66,8 @@ export class AccessServiceToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_service_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

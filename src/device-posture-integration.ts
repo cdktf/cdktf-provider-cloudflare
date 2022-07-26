@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DevicePostureIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#account_id DevicePostureIntegration#account_id}
   */
   readonly accountId: string;
@@ -55,9 +57,17 @@ export interface DevicePostureIntegrationConfigA {
   */
   readonly clientId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#client_key DevicePostureIntegration#client_key}
+  */
+  readonly clientKey?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#client_secret DevicePostureIntegration#client_secret}
   */
   readonly clientSecret?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#customer_id DevicePostureIntegration#customer_id}
+  */
+  readonly customerId?: string;
 }
 
 export function devicePostureIntegrationConfigAToTerraform(struct?: DevicePostureIntegrationConfigA | cdktf.IResolvable): any {
@@ -69,7 +79,9 @@ export function devicePostureIntegrationConfigAToTerraform(struct?: DevicePostur
     api_url: cdktf.stringToTerraform(struct!.apiUrl),
     auth_url: cdktf.stringToTerraform(struct!.authUrl),
     client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_key: cdktf.stringToTerraform(struct!.clientKey),
     client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    customer_id: cdktf.stringToTerraform(struct!.customerId),
   }
 }
 
@@ -105,9 +117,17 @@ export class DevicePostureIntegrationConfigAOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.clientId = this._clientId;
     }
+    if (this._clientKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientKey = this._clientKey;
+    }
     if (this._clientSecret !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientSecret = this._clientSecret;
+    }
+    if (this._customerId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customerId = this._customerId;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -119,7 +139,9 @@ export class DevicePostureIntegrationConfigAOutputReference extends cdktf.Comple
       this._apiUrl = undefined;
       this._authUrl = undefined;
       this._clientId = undefined;
+      this._clientKey = undefined;
       this._clientSecret = undefined;
+      this._customerId = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -131,7 +153,9 @@ export class DevicePostureIntegrationConfigAOutputReference extends cdktf.Comple
       this._apiUrl = value.apiUrl;
       this._authUrl = value.authUrl;
       this._clientId = value.clientId;
+      this._clientKey = value.clientKey;
       this._clientSecret = value.clientSecret;
+      this._customerId = value.customerId;
     }
   }
 
@@ -183,6 +207,22 @@ export class DevicePostureIntegrationConfigAOutputReference extends cdktf.Comple
     return this._clientId;
   }
 
+  // client_key - computed: false, optional: true, required: false
+  private _clientKey?: string; 
+  public get clientKey() {
+    return this.getStringAttribute('client_key');
+  }
+  public set clientKey(value: string) {
+    this._clientKey = value;
+  }
+  public resetClientKey() {
+    this._clientKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientKeyInput() {
+    return this._clientKey;
+  }
+
   // client_secret - computed: false, optional: true, required: false
   private _clientSecret?: string; 
   public get clientSecret() {
@@ -197,6 +237,22 @@ export class DevicePostureIntegrationConfigAOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get clientSecretInput() {
     return this._clientSecret;
+  }
+
+  // customer_id - computed: false, optional: true, required: false
+  private _customerId?: string; 
+  public get customerId() {
+    return this.getStringAttribute('customer_id');
+  }
+  public set customerId(value: string) {
+    this._customerId = value;
+  }
+  public resetCustomerId() {
+    this._customerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerIdInput() {
+    return this._customerId;
   }
 }
 
@@ -246,8 +302,8 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_integration',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

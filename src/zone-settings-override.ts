@@ -15,6 +15,8 @@ export interface ZoneSettingsOverrideConfig extends cdktf.TerraformMetaArguments
   */
   readonly id?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#zone_id ZoneSettingsOverride#zone_id}
   */
   readonly zoneId: string;
@@ -457,6 +459,11 @@ export class ZoneSettingsOverrideInitialSettingsOutputReference extends cdktf.Co
   // origin_error_page_pass_thru - computed: true, optional: false, required: false
   public get originErrorPagePassThru() {
     return this.getStringAttribute('origin_error_page_pass_thru');
+  }
+
+  // origin_max_http_version - computed: true, optional: false, required: false
+  public get originMaxHttpVersion() {
+    return this.getStringAttribute('origin_max_http_version');
   }
 
   // polish - computed: true, optional: false, required: false
@@ -1104,6 +1111,10 @@ export interface ZoneSettingsOverrideSettings {
   */
   readonly originErrorPagePassThru?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#origin_max_http_version ZoneSettingsOverride#origin_max_http_version}
+  */
+  readonly originMaxHttpVersion?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_settings_override#polish ZoneSettingsOverride#polish}
   */
   readonly polish?: string;
@@ -1243,6 +1254,7 @@ export function zoneSettingsOverrideSettingsToTerraform(struct?: ZoneSettingsOve
     opportunistic_onion: cdktf.stringToTerraform(struct!.opportunisticOnion),
     orange_to_orange: cdktf.stringToTerraform(struct!.orangeToOrange),
     origin_error_page_pass_thru: cdktf.stringToTerraform(struct!.originErrorPagePassThru),
+    origin_max_http_version: cdktf.stringToTerraform(struct!.originMaxHttpVersion),
     polish: cdktf.stringToTerraform(struct!.polish),
     prefetch_preload: cdktf.stringToTerraform(struct!.prefetchPreload),
     privacy_pass: cdktf.stringToTerraform(struct!.privacyPass),
@@ -1404,6 +1416,10 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.originErrorPagePassThru = this._originErrorPagePassThru;
     }
+    if (this._originMaxHttpVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.originMaxHttpVersion = this._originMaxHttpVersion;
+    }
     if (this._polish !== undefined) {
       hasAnyValues = true;
       internalValueResult.polish = this._polish;
@@ -1536,6 +1552,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       this._opportunisticOnion = undefined;
       this._orangeToOrange = undefined;
       this._originErrorPagePassThru = undefined;
+      this._originMaxHttpVersion = undefined;
       this._polish = undefined;
       this._prefetchPreload = undefined;
       this._privacyPass = undefined;
@@ -1593,6 +1610,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       this._opportunisticOnion = value.opportunisticOnion;
       this._orangeToOrange = value.orangeToOrange;
       this._originErrorPagePassThru = value.originErrorPagePassThru;
+      this._originMaxHttpVersion = value.originMaxHttpVersion;
       this._polish = value.polish;
       this._prefetchPreload = value.prefetchPreload;
       this._privacyPass = value.privacyPass;
@@ -2100,6 +2118,22 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
     return this._originErrorPagePassThru;
   }
 
+  // origin_max_http_version - computed: true, optional: true, required: false
+  private _originMaxHttpVersion?: string; 
+  public get originMaxHttpVersion() {
+    return this.getStringAttribute('origin_max_http_version');
+  }
+  public set originMaxHttpVersion(value: string) {
+    this._originMaxHttpVersion = value;
+  }
+  public resetOriginMaxHttpVersion() {
+    this._originMaxHttpVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get originMaxHttpVersionInput() {
+    return this._originMaxHttpVersion;
+  }
+
   // polish - computed: true, optional: true, required: false
   private _polish?: string; 
   public get polish() {
@@ -2511,8 +2545,8 @@ export class ZoneSettingsOverride extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_settings_override',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

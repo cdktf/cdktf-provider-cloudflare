@@ -8,18 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#account_id NotificationPolicy#account_id}
   */
   readonly accountId: string;
   /**
+  * The event type that will trigger the dispatch of a notification. See the developer documentation for descriptions of [available alert types](https://developers.cloudflare.com/fundamentals/notifications/notification-available/) Available values: `billing_usage_alert`, `health_check_status_notification`, `g6_pool_toggle_alert`, `real_origin_monitoring`, `universal_ssl_event_type`, `bgp_hijack_notification`, `http_alert_origin_error`, `workers_alert`, `weekly_account_overview`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#alert_type NotificationPolicy#alert_type}
   */
   readonly alertType: string;
   /**
+  * Description of the notification policy.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#description NotificationPolicy#description}
   */
   readonly description?: string;
   /**
+  * The status of the notification policy.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#enabled NotificationPolicy#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -31,6 +39,8 @@ export interface NotificationPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The name of the notification policy.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#name NotificationPolicy#name}
   */
   readonly name: string;
@@ -185,22 +195,32 @@ export class NotificationPolicyEmailIntegrationList extends cdktf.ComplexList {
 }
 export interface NotificationPolicyFilters {
   /**
+  * State of the pool to alert on.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#enabled NotificationPolicy#enabled}
   */
   readonly enabled?: string[];
   /**
+  * Identifier health check.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#health_check_id NotificationPolicy#health_check_id}
   */
   readonly healthCheckId?: string[];
   /**
+  * A numerical limit. Example: `100`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#limit NotificationPolicy#limit}
   */
   readonly limit?: string[];
   /**
+  * Load balancer pool identifier.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#pool_id NotificationPolicy#pool_id}
   */
   readonly poolId?: string[];
   /**
+  * Product name. Available values: `worker_requests`, `worker_durable_objects_requests`, `worker_durable_objects_duration`, `worker_durable_objects_data_transfer`, `worker_durable_objects_stored_data`, `worker_durable_objects_storage_deletes`, `worker_durable_objects_storage_writes`, `worker_durable_objects_storage_reads`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#product NotificationPolicy#product}
   */
   readonly product?: string[];
@@ -209,14 +229,20 @@ export interface NotificationPolicyFilters {
   */
   readonly services?: string[];
   /**
+  * A numerical limit. Example: `99.9`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#slo NotificationPolicy#slo}
   */
   readonly slo?: string[];
   /**
+  * Status to alert on.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#status NotificationPolicy#status}
   */
   readonly status?: string[];
   /**
+  * A list of zone identifiers.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#zones NotificationPolicy#zones}
   */
   readonly zones?: string[];
@@ -739,8 +765,8 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

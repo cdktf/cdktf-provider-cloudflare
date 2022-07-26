@@ -19,6 +19,8 @@ export interface WafGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Defaults to `on`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#mode WafGroup#mode}
   */
   readonly mode?: string;
@@ -27,6 +29,8 @@ export interface WafGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly packageId?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#zone_id WafGroup#zone_id}
   */
   readonly zoneId: string;
@@ -58,8 +62,8 @@ export class WafGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

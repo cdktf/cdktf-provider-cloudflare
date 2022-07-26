@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface AccountMemberConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The email address of the user who you wish to manage. Following creation, this field becomes read only via the API and cannot be updated.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#email_address AccountMember#email_address}
   */
   readonly emailAddress: string;
@@ -19,6 +21,8 @@ export interface AccountMemberConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * List of account role IDs that you want to assign to a member.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#role_ids AccountMember#role_ids}
   */
   readonly roleIds: string[];
@@ -50,8 +54,8 @@ export class AccountMember extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_member',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

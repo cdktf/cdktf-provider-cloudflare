@@ -35,6 +35,8 @@ export interface LoadBalancerMonitorConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * Defaults to `60`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#interval LoadBalancerMonitor#interval}
   */
   readonly interval?: number;
@@ -55,14 +57,20 @@ export interface LoadBalancerMonitorConfig extends cdktf.TerraformMetaArguments 
   */
   readonly probeZone?: string;
   /**
+  * Defaults to `2`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#retries LoadBalancerMonitor#retries}
   */
   readonly retries?: number;
   /**
+  * Defaults to `5`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
   */
   readonly timeout?: number;
   /**
+  * Defaults to `http`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#type LoadBalancerMonitor#type}
   */
   readonly type?: string;
@@ -218,8 +226,8 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_monitor',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

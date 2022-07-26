@@ -8,38 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#account_id AccessApplication#account_id}
   */
   readonly accountId?: string;
   /**
+  * The identity providers selected for the application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allowed_idps AccessApplication#allowed_idps}
   */
   readonly allowedIdps?: string[];
   /**
+  * Option to show/hide applications in App Launcher. Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
   */
   readonly appLauncherVisible?: boolean | cdktf.IResolvable;
   /**
+  * Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
   */
   readonly autoRedirectToIdentity?: boolean | cdktf.IResolvable;
   /**
+  * Option that returns a custom error message when a user is denied access to the application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#custom_deny_message AccessApplication#custom_deny_message}
   */
   readonly customDenyMessage?: string;
   /**
+  * Option that redirects to a custom URL when a user is denied access to the application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#custom_deny_url AccessApplication#custom_deny_url}
   */
   readonly customDenyUrl?: string;
   /**
+  * The complete URL of the asset you wish to put Cloudflare Access in front of. Can include subdomains or paths. Or both.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#domain AccessApplication#domain}
   */
   readonly domain: string;
   /**
+  * Option to provide increased security against compromised authorization tokens and CSRF attacks by requiring an additional "binding" cookie on requests. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
   */
   readonly enableBindingCookie?: boolean | cdktf.IResolvable;
   /**
+  * Option to add the `HttpOnly` cookie flag to access tokens. Defaults to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
   */
   readonly httpOnlyCookieAttribute?: boolean | cdktf.IResolvable;
@@ -51,34 +69,50 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Image URL for the logo shown in the app launcher dashboard.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#logo_url AccessApplication#logo_url}
   */
   readonly logoUrl?: string;
   /**
+  * Friendly name of the Access Application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#name AccessApplication#name}
   */
   readonly name: string;
   /**
+  * Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
   */
   readonly sameSiteCookieAttribute?: string;
   /**
+  * Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
   */
   readonly serviceAuth401Redirect?: boolean | cdktf.IResolvable;
   /**
+  * How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`. Defaults to `24h`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#session_duration AccessApplication#session_duration}
   */
   readonly sessionDuration?: string;
   /**
+  * Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#skip_interstitial AccessApplication#skip_interstitial}
   */
   readonly skipInterstitial?: boolean | cdktf.IResolvable;
   /**
+  * The application type. Available values: `self_hosted`, `ssh`, `vnc`, `file`. Defaults to `self_hosted`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#type AccessApplication#type}
   */
   readonly type?: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#zone_id AccessApplication#zone_id}
   */
   readonly zoneId?: string;
@@ -91,34 +125,50 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AccessApplicationCorsHeaders {
   /**
+  * Value to determine whether all HTTP headers are exposed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allow_all_headers AccessApplication#allow_all_headers}
   */
   readonly allowAllHeaders?: boolean | cdktf.IResolvable;
   /**
+  * Value to determine whether all methods are exposed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allow_all_methods AccessApplication#allow_all_methods}
   */
   readonly allowAllMethods?: boolean | cdktf.IResolvable;
   /**
+  * Value to determine whether all origins are permitted to make CORS requests.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allow_all_origins AccessApplication#allow_all_origins}
   */
   readonly allowAllOrigins?: boolean | cdktf.IResolvable;
   /**
+  * Value to determine if credentials (cookies, authorization headers, or TLS client certificates) are included with requests.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allow_credentials AccessApplication#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
+  * List of HTTP headers to expose via CORS.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allowed_headers AccessApplication#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
+  * List of methods to expose via CORS.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allowed_methods AccessApplication#allowed_methods}
   */
   readonly allowedMethods?: string[];
   /**
+  * List of origins permitted to make CORS requests.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#allowed_origins AccessApplication#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
+  * The maximum time a preflight request will be cached.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#max_age AccessApplication#max_age}
   */
   readonly maxAge?: number;
@@ -402,8 +452,8 @@ export class AccessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -565,7 +615,7 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._enableBindingCookie;
   }
 
-  // http_only_cookie_attribute - computed: true, optional: true, required: false
+  // http_only_cookie_attribute - computed: false, optional: true, required: false
   private _httpOnlyCookieAttribute?: boolean | cdktf.IResolvable; 
   public get httpOnlyCookieAttribute() {
     return this.getBooleanAttribute('http_only_cookie_attribute');

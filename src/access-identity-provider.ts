@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface AccessIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#account_id AccessIdentityProvider#account_id}
   */
   readonly accountId?: string;
@@ -19,14 +21,20 @@ export interface AccessIdentityProviderConfig extends cdktf.TerraformMetaArgumen
   */
   readonly id?: string;
   /**
+  * Friendly name of the Access Identity Provider configuration.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#name AccessIdentityProvider#name}
   */
   readonly name: string;
   /**
+  * The provider type to use. Available values: `centrify`, `facebook`, `google-apps`, `oidc`, `github`, `google`, `saml`, `linkedin`, `azureAD`, `okta`, `onetimepin`, `onelogin`, `yandex`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#type AccessIdentityProvider#type}
   */
   readonly type: string;
   /**
+  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#zone_id AccessIdentityProvider#zone_id}
   */
   readonly zoneId?: string;
@@ -99,6 +107,10 @@ export interface AccessIdentityProviderConfigA {
   */
   readonly oneloginAccount?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#pkce_enabled AccessIdentityProvider#pkce_enabled}
+  */
+  readonly pkceEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#redirect_url AccessIdentityProvider#redirect_url}
   */
   readonly redirectUrl?: string;
@@ -141,6 +153,7 @@ export function accessIdentityProviderConfigAToTerraform(struct?: AccessIdentity
     issuer_url: cdktf.stringToTerraform(struct!.issuerUrl),
     okta_account: cdktf.stringToTerraform(struct!.oktaAccount),
     onelogin_account: cdktf.stringToTerraform(struct!.oneloginAccount),
+    pkce_enabled: cdktf.booleanToTerraform(struct!.pkceEnabled),
     redirect_url: cdktf.stringToTerraform(struct!.redirectUrl),
     sign_request: cdktf.booleanToTerraform(struct!.signRequest),
     sso_target_url: cdktf.stringToTerraform(struct!.ssoTargetUrl),
@@ -229,6 +242,10 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.oneloginAccount = this._oneloginAccount;
     }
+    if (this._pkceEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pkceEnabled = this._pkceEnabled;
+    }
     if (this._redirectUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirectUrl = this._redirectUrl;
@@ -271,6 +288,7 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       this._issuerUrl = undefined;
       this._oktaAccount = undefined;
       this._oneloginAccount = undefined;
+      this._pkceEnabled = undefined;
       this._redirectUrl = undefined;
       this._signRequest = undefined;
       this._ssoTargetUrl = undefined;
@@ -299,6 +317,7 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       this._issuerUrl = value.issuerUrl;
       this._oktaAccount = value.oktaAccount;
       this._oneloginAccount = value.oneloginAccount;
+      this._pkceEnabled = value.pkceEnabled;
       this._redirectUrl = value.redirectUrl;
       this._signRequest = value.signRequest;
       this._ssoTargetUrl = value.ssoTargetUrl;
@@ -547,6 +566,22 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
     return this._oneloginAccount;
   }
 
+  // pkce_enabled - computed: false, optional: true, required: false
+  private _pkceEnabled?: boolean | cdktf.IResolvable; 
+  public get pkceEnabled() {
+    return this.getBooleanAttribute('pkce_enabled');
+  }
+  public set pkceEnabled(value: boolean | cdktf.IResolvable) {
+    this._pkceEnabled = value;
+  }
+  public resetPkceEnabled() {
+    this._pkceEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pkceEnabledInput() {
+    return this._pkceEnabled;
+  }
+
   // redirect_url - computed: true, optional: true, required: false
   private _redirectUrl?: string; 
   public get redirectUrl() {
@@ -674,8 +709,8 @@ export class AccessIdentityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

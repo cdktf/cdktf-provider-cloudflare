@@ -15,6 +15,8 @@ export interface DataCloudflareZoneDnssecConfig extends cdktf.TerraformMetaArgum
   */
   readonly id?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
   */
   readonly zoneId: string;
@@ -46,8 +48,8 @@ export class DataCloudflareZoneDnssec extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_dnssec',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

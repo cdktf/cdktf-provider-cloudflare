@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#account_id StaticRoute#account_id}
   */
   readonly accountId?: string;
@@ -74,8 +76,8 @@ export class StaticRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_static_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

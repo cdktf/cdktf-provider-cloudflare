@@ -15,10 +15,14 @@ export interface PageRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Defaults to `1`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#priority PageRule#priority}
   */
   readonly priority?: number;
   /**
+  * Defaults to `active`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#status PageRule#status}
   */
   readonly status?: string;
@@ -27,6 +31,8 @@ export interface PageRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly target: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#zone_id PageRule#zone_id}
   */
   readonly zoneId: string;
@@ -250,6 +256,8 @@ export class PageRuleActionsCacheKeyFieldsHeaderOutputReference extends cdktf.Co
 }
 export interface PageRuleActionsCacheKeyFieldsHost {
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#resolved PageRule#resolved}
   */
   readonly resolved?: boolean | cdktf.IResolvable;
@@ -1071,6 +1079,8 @@ export interface PageRuleActions {
   */
   readonly alwaysOnline?: string;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_use_https PageRule#always_use_https}
   */
   readonly alwaysUseHttps?: boolean | cdktf.IResolvable;
@@ -1107,22 +1117,32 @@ export interface PageRuleActions {
   */
   readonly cacheOnCookie?: string;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_apps PageRule#disable_apps}
   */
   readonly disableApps?: boolean | cdktf.IResolvable;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_performance PageRule#disable_performance}
   */
   readonly disablePerformance?: boolean | cdktf.IResolvable;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_railgun PageRule#disable_railgun}
   */
   readonly disableRailgun?: boolean | cdktf.IResolvable;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_security PageRule#disable_security}
   */
   readonly disableSecurity?: boolean | cdktf.IResolvable;
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#disable_zaraz PageRule#disable_zaraz}
   */
   readonly disableZaraz?: boolean | cdktf.IResolvable;
@@ -2164,8 +2184,8 @@ export class PageRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_page_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface RecordConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#allow_overwrite Record#allow_overwrite}
   */
   readonly allowOverwrite?: boolean | cdktf.IResolvable;
@@ -39,10 +41,14 @@ export interface RecordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly type: string;
   /**
+  * Conflicts with `data`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#value Record#value}
   */
   readonly value?: string;
   /**
+  * The zone identifier to target for the resource.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#zone_id Record#zone_id}
   */
   readonly zoneId: string;
@@ -1279,8 +1285,8 @@ export class Record extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.19.0',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
