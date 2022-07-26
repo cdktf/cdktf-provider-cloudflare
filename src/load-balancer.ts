@@ -108,7 +108,7 @@ export function loadBalancerPopPoolsToTerraform(struct?: LoadBalancerPopPools | 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pool_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.poolIds),
+    pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolIds),
     pop: cdktf.stringToTerraform(struct!.pop),
   }
 }
@@ -226,7 +226,7 @@ export function loadBalancerRegionPoolsToTerraform(struct?: LoadBalancerRegionPo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pool_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.poolIds),
+    pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolIds),
     region: cdktf.stringToTerraform(struct!.region),
   }
 }
@@ -490,7 +490,7 @@ export function loadBalancerRulesOverridesPopPoolsToTerraform(struct?: LoadBalan
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pool_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.poolIds),
+    pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolIds),
     pop: cdktf.stringToTerraform(struct!.pop),
   }
 }
@@ -608,7 +608,7 @@ export function loadBalancerRulesOverridesRegionPoolsToTerraform(struct?: LoadBa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pool_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.poolIds),
+    pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolIds),
     region: cdktf.stringToTerraform(struct!.region),
   }
 }
@@ -758,15 +758,15 @@ export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRules
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_pools: cdktf.listMapper(cdktf.stringToTerraform)(struct!.defaultPools),
+    default_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaultPools),
     fallback_pool: cdktf.stringToTerraform(struct!.fallbackPool),
     session_affinity: cdktf.stringToTerraform(struct!.sessionAffinity),
     session_affinity_attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sessionAffinityAttributes),
     session_affinity_ttl: cdktf.numberToTerraform(struct!.sessionAffinityTtl),
     steering_policy: cdktf.stringToTerraform(struct!.steeringPolicy),
     ttl: cdktf.numberToTerraform(struct!.ttl),
-    pop_pools: cdktf.listMapper(loadBalancerRulesOverridesPopPoolsToTerraform)(struct!.popPools),
-    region_pools: cdktf.listMapper(loadBalancerRulesOverridesRegionPoolsToTerraform)(struct!.regionPools),
+    pop_pools: cdktf.listMapper(loadBalancerRulesOverridesPopPoolsToTerraform, true)(struct!.popPools),
+    region_pools: cdktf.listMapper(loadBalancerRulesOverridesRegionPoolsToTerraform, true)(struct!.regionPools),
   }
 }
 
@@ -1073,7 +1073,7 @@ export function loadBalancerRulesToTerraform(struct?: LoadBalancerRules | cdktf.
     priority: cdktf.numberToTerraform(struct!.priority),
     terminates: cdktf.booleanToTerraform(struct!.terminates),
     fixed_response: loadBalancerRulesFixedResponseToTerraform(struct!.fixedResponse),
-    overrides: cdktf.listMapper(loadBalancerRulesOverridesToTerraform)(struct!.overrides),
+    overrides: cdktf.listMapper(loadBalancerRulesOverridesToTerraform, true)(struct!.overrides),
   }
 }
 
@@ -1319,7 +1319,10 @@ export class LoadBalancer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultPoolIds = config.defaultPoolIds;
     this._description = config.description;
@@ -1603,7 +1606,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_pool_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._defaultPoolIds),
+      default_pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._defaultPoolIds),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       fallback_pool_id: cdktf.stringToTerraform(this._fallbackPoolId),
@@ -1616,9 +1619,9 @@ export class LoadBalancer extends cdktf.TerraformResource {
       steering_policy: cdktf.stringToTerraform(this._steeringPolicy),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      pop_pools: cdktf.listMapper(loadBalancerPopPoolsToTerraform)(this._popPools.internalValue),
-      region_pools: cdktf.listMapper(loadBalancerRegionPoolsToTerraform)(this._regionPools.internalValue),
-      rules: cdktf.listMapper(loadBalancerRulesToTerraform)(this._rules.internalValue),
+      pop_pools: cdktf.listMapper(loadBalancerPopPoolsToTerraform, true)(this._popPools.internalValue),
+      region_pools: cdktf.listMapper(loadBalancerRegionPoolsToTerraform, true)(this._regionPools.internalValue),
+      rules: cdktf.listMapper(loadBalancerRulesToTerraform, true)(this._rules.internalValue),
     };
   }
 }

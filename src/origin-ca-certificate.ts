@@ -64,7 +64,10 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._csr = config.csr;
     this._hostnames = config.hostnames;
@@ -168,7 +171,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       csr: cdktf.stringToTerraform(this._csr),
-      hostnames: cdktf.listMapper(cdktf.stringToTerraform)(this._hostnames),
+      hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostnames),
       id: cdktf.stringToTerraform(this._id),
       request_type: cdktf.stringToTerraform(this._requestType),
       requested_validity: cdktf.numberToTerraform(this._requestedValidity),

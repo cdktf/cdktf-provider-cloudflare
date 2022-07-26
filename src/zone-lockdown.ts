@@ -196,7 +196,10 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -324,9 +327,9 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       paused: cdktf.booleanToTerraform(this._paused),
       priority: cdktf.numberToTerraform(this._priority),
-      urls: cdktf.listMapper(cdktf.stringToTerraform)(this._urls),
+      urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._urls),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      configurations: cdktf.listMapper(zoneLockdownConfigurationsToTerraform)(this._configurations.internalValue),
+      configurations: cdktf.listMapper(zoneLockdownConfigurationsToTerraform, true)(this._configurations.internalValue),
     };
   }
 }

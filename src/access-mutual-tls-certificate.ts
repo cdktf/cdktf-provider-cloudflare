@@ -78,7 +78,10 @@ export class AccessMutualTlsCertificate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._associatedHostnames = config.associatedHostnames;
@@ -197,7 +200,7 @@ export class AccessMutualTlsCertificate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      associated_hostnames: cdktf.listMapper(cdktf.stringToTerraform)(this._associatedHostnames),
+      associated_hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._associatedHostnames),
       certificate: cdktf.stringToTerraform(this._certificate),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

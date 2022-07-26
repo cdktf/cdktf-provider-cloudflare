@@ -82,7 +82,10 @@ export class StaticRoute extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._coloNames = config.coloNames;
@@ -241,8 +244,8 @@ export class StaticRoute extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      colo_names: cdktf.listMapper(cdktf.stringToTerraform)(this._coloNames),
-      colo_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._coloRegions),
+      colo_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._coloNames),
+      colo_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._coloRegions),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       nexthop: cdktf.stringToTerraform(this._nexthop),

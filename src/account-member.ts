@@ -60,7 +60,10 @@ export class AccountMember extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._emailAddress = config.emailAddress;
     this._id = config.id;
@@ -121,7 +124,7 @@ export class AccountMember extends cdktf.TerraformResource {
     return {
       email_address: cdktf.stringToTerraform(this._emailAddress),
       id: cdktf.stringToTerraform(this._id),
-      role_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._roleIds),
+      role_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleIds),
     };
   }
 }

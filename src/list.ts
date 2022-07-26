@@ -332,7 +332,7 @@ export function listItemValueToTerraform(struct?: ListItemValueOutputReference |
   }
   return {
     ip: cdktf.stringToTerraform(struct!.ip),
-    redirect: cdktf.listMapper(listItemValueRedirectToTerraform)(struct!.redirect),
+    redirect: cdktf.listMapper(listItemValueRedirectToTerraform, true)(struct!.redirect),
   }
 }
 
@@ -564,7 +564,10 @@ export class List extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -676,7 +679,7 @@ export class List extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
-      item: cdktf.listMapper(listItemToTerraform)(this._item.internalValue),
+      item: cdktf.listMapper(listItemToTerraform, true)(this._item.internalValue),
     };
   }
 }

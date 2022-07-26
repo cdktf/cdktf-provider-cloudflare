@@ -308,7 +308,10 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -438,7 +441,7 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       interval: cdktf.stringToTerraform(this._interval),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      config: cdktf.listMapper(devicePostureIntegrationConfigAToTerraform)(this._config.internalValue),
+      config: cdktf.listMapper(devicePostureIntegrationConfigAToTerraform, true)(this._config.internalValue),
     };
   }
 }

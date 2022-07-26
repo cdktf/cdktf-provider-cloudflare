@@ -226,7 +226,7 @@ export function customHostnameSslSettingsToTerraform(struct?: CustomHostnameSslS
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ciphers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ciphers),
+    ciphers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ciphers),
     early_hints: cdktf.stringToTerraform(struct!.earlyHints),
     http2: cdktf.stringToTerraform(struct!.http2),
     min_tls_version: cdktf.stringToTerraform(struct!.minTlsVersion),
@@ -449,7 +449,7 @@ export function customHostnameSslToTerraform(struct?: CustomHostnameSsl | cdktf.
     method: cdktf.stringToTerraform(struct!.method),
     type: cdktf.stringToTerraform(struct!.type),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
-    settings: cdktf.listMapper(customHostnameSslSettingsToTerraform)(struct!.settings),
+    settings: cdktf.listMapper(customHostnameSslSettingsToTerraform, true)(struct!.settings),
   }
 }
 
@@ -715,7 +715,10 @@ export class CustomHostname extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customOriginServer = config.customOriginServer;
     this._customOriginSni = config.customOriginSni;
@@ -847,7 +850,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      ssl: cdktf.listMapper(customHostnameSslToTerraform)(this._ssl.internalValue),
+      ssl: cdktf.listMapper(customHostnameSslToTerraform, true)(this._ssl.internalValue),
     };
   }
 }

@@ -99,7 +99,7 @@ export function loadBalancerMonitorHeaderToTerraform(struct?: LoadBalancerMonito
   }
   return {
     header: cdktf.stringToTerraform(struct!.header),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -232,7 +232,10 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowInsecure = config.allowInsecure;
     this._description = config.description;
@@ -525,7 +528,7 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
       retries: cdktf.numberToTerraform(this._retries),
       timeout: cdktf.numberToTerraform(this._timeout),
       type: cdktf.stringToTerraform(this._type),
-      header: cdktf.listMapper(loadBalancerMonitorHeaderToTerraform)(this._header.internalValue),
+      header: cdktf.listMapper(loadBalancerMonitorHeaderToTerraform, true)(this._header.internalValue),
     };
   }
 }

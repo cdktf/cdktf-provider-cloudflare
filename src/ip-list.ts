@@ -193,7 +193,10 @@ export class IpList extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -305,7 +308,7 @@ export class IpList extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
-      item: cdktf.listMapper(ipListItemToTerraform)(this._item.internalValue),
+      item: cdktf.listMapper(ipListItemToTerraform, true)(this._item.internalValue),
     };
   }
 }

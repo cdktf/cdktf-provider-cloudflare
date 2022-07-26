@@ -351,8 +351,8 @@ export function rateLimitMatchRequestToTerraform(struct?: RateLimitMatchRequestO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.methods),
-    schemes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.schemes),
+    methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.methods),
+    schemes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.schemes),
     url_pattern: cdktf.stringToTerraform(struct!.urlPattern),
   }
 }
@@ -470,9 +470,9 @@ export function rateLimitMatchResponseToTerraform(struct?: RateLimitMatchRespons
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    headers: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(struct!.headers),
+    headers: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(struct!.headers),
     origin_traffic: cdktf.booleanToTerraform(struct!.originTraffic),
-    statuses: cdktf.listMapper(cdktf.numberToTerraform)(struct!.statuses),
+    statuses: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.statuses),
   }
 }
 
@@ -697,7 +697,10 @@ export class RateLimit extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bypassUrlPatterns = config.bypassUrlPatterns;
     this._description = config.description;
@@ -869,7 +872,7 @@ export class RateLimit extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bypass_url_patterns: cdktf.listMapper(cdktf.stringToTerraform)(this._bypassUrlPatterns),
+      bypass_url_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._bypassUrlPatterns),
       description: cdktf.stringToTerraform(this._description),
       disabled: cdktf.booleanToTerraform(this._disabled),
       id: cdktf.stringToTerraform(this._id),

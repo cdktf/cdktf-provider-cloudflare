@@ -62,7 +62,10 @@ export class WorkerCronTrigger extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -137,7 +140,7 @@ export class WorkerCronTrigger extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
-      schedules: cdktf.listMapper(cdktf.stringToTerraform)(this._schedules),
+      schedules: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schedules),
       script_name: cdktf.stringToTerraform(this._scriptName),
     };
   }

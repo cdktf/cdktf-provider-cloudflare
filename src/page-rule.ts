@@ -60,8 +60,8 @@ export function pageRuleActionsCacheKeyFieldsCookieToTerraform(struct?: PageRule
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check_presence: cdktf.listMapper(cdktf.stringToTerraform)(struct!.checkPresence),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    check_presence: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkPresence),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -156,9 +156,9 @@ export function pageRuleActionsCacheKeyFieldsHeaderToTerraform(struct?: PageRule
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check_presence: cdktf.listMapper(cdktf.stringToTerraform)(struct!.checkPresence),
-    exclude: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclude),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    check_presence: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkPresence),
+    exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclude),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -342,9 +342,9 @@ export function pageRuleActionsCacheKeyFieldsQueryStringToTerraform(struct?: Pag
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclude),
+    exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclude),
     ignore: cdktf.booleanToTerraform(struct!.ignore),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -1289,9 +1289,9 @@ export function pageRuleActionsToTerraform(struct?: PageRuleActionsOutputReferen
     true_client_ip_header: cdktf.stringToTerraform(struct!.trueClientIpHeader),
     waf: cdktf.stringToTerraform(struct!.waf),
     cache_key_fields: pageRuleActionsCacheKeyFieldsToTerraform(struct!.cacheKeyFields),
-    cache_ttl_by_status: cdktf.listMapper(pageRuleActionsCacheTtlByStatusToTerraform)(struct!.cacheTtlByStatus),
+    cache_ttl_by_status: cdktf.listMapper(pageRuleActionsCacheTtlByStatusToTerraform, true)(struct!.cacheTtlByStatus),
     forwarding_url: pageRuleActionsForwardingUrlToTerraform(struct!.forwardingUrl),
-    minify: cdktf.listMapper(pageRuleActionsMinifyToTerraform)(struct!.minify),
+    minify: cdktf.listMapper(pageRuleActionsMinifyToTerraform, true)(struct!.minify),
   }
 }
 
@@ -2190,7 +2190,10 @@ export class PageRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._priority = config.priority;

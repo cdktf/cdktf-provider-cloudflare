@@ -90,7 +90,10 @@ export class FirewallRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._action = config.action;
     this._description = config.description;
@@ -237,7 +240,7 @@ export class FirewallRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       paused: cdktf.booleanToTerraform(this._paused),
       priority: cdktf.numberToTerraform(this._priority),
-      products: cdktf.listMapper(cdktf.stringToTerraform)(this._products),
+      products: cdktf.listMapper(cdktf.stringToTerraform, false)(this._products),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }

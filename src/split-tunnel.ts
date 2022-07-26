@@ -223,7 +223,10 @@ export class SplitTunnel extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -299,7 +302,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       mode: cdktf.stringToTerraform(this._mode),
-      tunnels: cdktf.listMapper(splitTunnelTunnelsToTerraform)(this._tunnels.internalValue),
+      tunnels: cdktf.listMapper(splitTunnelTunnelsToTerraform, true)(this._tunnels.internalValue),
     };
   }
 }

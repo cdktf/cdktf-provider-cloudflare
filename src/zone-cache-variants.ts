@@ -98,7 +98,10 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._avif = config.avif;
     this._bmp = config.bmp;
@@ -330,18 +333,18 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      avif: cdktf.listMapper(cdktf.stringToTerraform)(this._avif),
-      bmp: cdktf.listMapper(cdktf.stringToTerraform)(this._bmp),
-      gif: cdktf.listMapper(cdktf.stringToTerraform)(this._gif),
+      avif: cdktf.listMapper(cdktf.stringToTerraform, false)(this._avif),
+      bmp: cdktf.listMapper(cdktf.stringToTerraform, false)(this._bmp),
+      gif: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gif),
       id: cdktf.stringToTerraform(this._id),
-      jp2: cdktf.listMapper(cdktf.stringToTerraform)(this._jp2),
-      jpeg: cdktf.listMapper(cdktf.stringToTerraform)(this._jpeg),
-      jpg: cdktf.listMapper(cdktf.stringToTerraform)(this._jpg),
-      jpg2: cdktf.listMapper(cdktf.stringToTerraform)(this._jpg2),
-      png: cdktf.listMapper(cdktf.stringToTerraform)(this._png),
-      tif: cdktf.listMapper(cdktf.stringToTerraform)(this._tif),
-      tiff: cdktf.listMapper(cdktf.stringToTerraform)(this._tiff),
-      webp: cdktf.listMapper(cdktf.stringToTerraform)(this._webp),
+      jp2: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jp2),
+      jpeg: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jpeg),
+      jpg: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jpg),
+      jpg2: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jpg2),
+      png: cdktf.listMapper(cdktf.stringToTerraform, false)(this._png),
+      tif: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tif),
+      tiff: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tiff),
+      webp: cdktf.listMapper(cdktf.stringToTerraform, false)(this._webp),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }

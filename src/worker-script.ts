@@ -703,7 +703,10 @@ export class WorkerScript extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._content = config.content;
     this._id = config.id;
@@ -850,11 +853,11 @@ export class WorkerScript extends cdktf.TerraformResource {
       content: cdktf.stringToTerraform(this._content),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      kv_namespace_binding: cdktf.listMapper(workerScriptKvNamespaceBindingToTerraform)(this._kvNamespaceBinding.internalValue),
-      plain_text_binding: cdktf.listMapper(workerScriptPlainTextBindingToTerraform)(this._plainTextBinding.internalValue),
-      secret_text_binding: cdktf.listMapper(workerScriptSecretTextBindingToTerraform)(this._secretTextBinding.internalValue),
-      service_binding: cdktf.listMapper(workerScriptServiceBindingToTerraform)(this._serviceBinding.internalValue),
-      webassembly_binding: cdktf.listMapper(workerScriptWebassemblyBindingToTerraform)(this._webassemblyBinding.internalValue),
+      kv_namespace_binding: cdktf.listMapper(workerScriptKvNamespaceBindingToTerraform, true)(this._kvNamespaceBinding.internalValue),
+      plain_text_binding: cdktf.listMapper(workerScriptPlainTextBindingToTerraform, true)(this._plainTextBinding.internalValue),
+      secret_text_binding: cdktf.listMapper(workerScriptSecretTextBindingToTerraform, true)(this._secretTextBinding.internalValue),
+      service_binding: cdktf.listMapper(workerScriptServiceBindingToTerraform, true)(this._serviceBinding.internalValue),
+      webassembly_binding: cdktf.listMapper(workerScriptWebassemblyBindingToTerraform, true)(this._webassemblyBinding.internalValue),
     };
   }
 }

@@ -177,7 +177,7 @@ export function certificatePackValidationRecordsToTerraform(struct?: Certificate
   return {
     cname_name: cdktf.stringToTerraform(struct!.cnameName),
     cname_target: cdktf.stringToTerraform(struct!.cnameTarget),
-    emails: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emails),
+    emails: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emails),
     http_body: cdktf.stringToTerraform(struct!.httpBody),
     http_url: cdktf.stringToTerraform(struct!.httpUrl),
     txt_name: cdktf.stringToTerraform(struct!.txtName),
@@ -430,7 +430,10 @@ export class CertificatePack extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificateAuthority = config.certificateAuthority;
     this._cloudflareBranding = config.cloudflareBranding;
@@ -624,15 +627,15 @@ export class CertificatePack extends cdktf.TerraformResource {
     return {
       certificate_authority: cdktf.stringToTerraform(this._certificateAuthority),
       cloudflare_branding: cdktf.booleanToTerraform(this._cloudflareBranding),
-      hosts: cdktf.listMapper(cdktf.stringToTerraform)(this._hosts),
+      hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hosts),
       id: cdktf.stringToTerraform(this._id),
       type: cdktf.stringToTerraform(this._type),
       validation_method: cdktf.stringToTerraform(this._validationMethod),
       validity_days: cdktf.numberToTerraform(this._validityDays),
       wait_for_active_status: cdktf.booleanToTerraform(this._waitForActiveStatus),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      validation_errors: cdktf.listMapper(certificatePackValidationErrorsToTerraform)(this._validationErrors.internalValue),
-      validation_records: cdktf.listMapper(certificatePackValidationRecordsToTerraform)(this._validationRecords.internalValue),
+      validation_errors: cdktf.listMapper(certificatePackValidationErrorsToTerraform, true)(this._validationErrors.internalValue),
+      validation_records: cdktf.listMapper(certificatePackValidationRecordsToTerraform, true)(this._validationRecords.internalValue),
     };
   }
 }

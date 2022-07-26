@@ -175,7 +175,7 @@ export function healthcheckHeaderToTerraform(struct?: HealthcheckHeader | cdktf.
   }
   return {
     header: cdktf.stringToTerraform(struct!.header),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -383,7 +383,10 @@ export class Healthcheck extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._address = config.address;
     this._allowInsecure = config.allowInsecure;
@@ -805,18 +808,18 @@ export class Healthcheck extends cdktf.TerraformResource {
     return {
       address: cdktf.stringToTerraform(this._address),
       allow_insecure: cdktf.booleanToTerraform(this._allowInsecure),
-      check_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._checkRegions),
+      check_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._checkRegions),
       consecutive_fails: cdktf.numberToTerraform(this._consecutiveFails),
       consecutive_successes: cdktf.numberToTerraform(this._consecutiveSuccesses),
       description: cdktf.stringToTerraform(this._description),
       expected_body: cdktf.stringToTerraform(this._expectedBody),
-      expected_codes: cdktf.listMapper(cdktf.stringToTerraform)(this._expectedCodes),
+      expected_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._expectedCodes),
       follow_redirects: cdktf.booleanToTerraform(this._followRedirects),
       id: cdktf.stringToTerraform(this._id),
       interval: cdktf.numberToTerraform(this._interval),
       method: cdktf.stringToTerraform(this._method),
       name: cdktf.stringToTerraform(this._name),
-      notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationEmailAddresses),
+      notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmailAddresses),
       notification_suspended: cdktf.booleanToTerraform(this._notificationSuspended),
       path: cdktf.stringToTerraform(this._path),
       port: cdktf.numberToTerraform(this._port),
@@ -825,7 +828,7 @@ export class Healthcheck extends cdktf.TerraformResource {
       timeout: cdktf.numberToTerraform(this._timeout),
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      header: cdktf.listMapper(healthcheckHeaderToTerraform)(this._header.internalValue),
+      header: cdktf.listMapper(healthcheckHeaderToTerraform, true)(this._header.internalValue),
       timeouts: healthcheckTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -117,7 +117,7 @@ export function accessPolicyApprovalGroupToTerraform(struct?: AccessPolicyApprov
   }
   return {
     approvals_needed: cdktf.numberToTerraform(struct!.approvalsNeeded),
-    email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailAddresses),
+    email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddresses),
     email_list_uuid: cdktf.stringToTerraform(struct!.emailListUuid),
   }
 }
@@ -263,7 +263,7 @@ export function accessPolicyExcludeAzureToTerraform(struct?: AccessPolicyExclude
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.id),
+    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -485,7 +485,7 @@ export function accessPolicyExcludeGithubToTerraform(struct?: AccessPolicyExclud
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
   }
 }
 
@@ -630,7 +630,7 @@ export function accessPolicyExcludeGsuiteToTerraform(struct?: AccessPolicyExclud
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -755,7 +755,7 @@ export function accessPolicyExcludeOktaToTerraform(struct?: AccessPolicyExcludeO
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform)(struct!.name),
+    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
   }
 }
 
@@ -1113,21 +1113,21 @@ export function accessPolicyExcludeToTerraform(struct?: AccessPolicyExclude | cd
     auth_method: cdktf.stringToTerraform(struct!.authMethod),
     certificate: cdktf.booleanToTerraform(struct!.certificate),
     common_name: cdktf.stringToTerraform(struct!.commonName),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailDomain),
+    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
     everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ip),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
-    azure: cdktf.listMapper(accessPolicyExcludeAzureToTerraform)(struct!.azure),
+    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
+    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
+    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
+    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
+    azure: cdktf.listMapper(accessPolicyExcludeAzureToTerraform, true)(struct!.azure),
     external_evaluation: accessPolicyExcludeExternalEvaluationToTerraform(struct!.externalEvaluation),
-    github: cdktf.listMapper(accessPolicyExcludeGithubToTerraform)(struct!.github),
-    gsuite: cdktf.listMapper(accessPolicyExcludeGsuiteToTerraform)(struct!.gsuite),
-    okta: cdktf.listMapper(accessPolicyExcludeOktaToTerraform)(struct!.okta),
-    saml: cdktf.listMapper(accessPolicyExcludeSamlToTerraform)(struct!.saml),
+    github: cdktf.listMapper(accessPolicyExcludeGithubToTerraform, true)(struct!.github),
+    gsuite: cdktf.listMapper(accessPolicyExcludeGsuiteToTerraform, true)(struct!.gsuite),
+    okta: cdktf.listMapper(accessPolicyExcludeOktaToTerraform, true)(struct!.okta),
+    saml: cdktf.listMapper(accessPolicyExcludeSamlToTerraform, true)(struct!.saml),
   }
 }
 
@@ -1627,7 +1627,7 @@ export function accessPolicyIncludeAzureToTerraform(struct?: AccessPolicyInclude
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.id),
+    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -1849,7 +1849,7 @@ export function accessPolicyIncludeGithubToTerraform(struct?: AccessPolicyInclud
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
   }
 }
 
@@ -1994,7 +1994,7 @@ export function accessPolicyIncludeGsuiteToTerraform(struct?: AccessPolicyInclud
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -2119,7 +2119,7 @@ export function accessPolicyIncludeOktaToTerraform(struct?: AccessPolicyIncludeO
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform)(struct!.name),
+    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
   }
 }
 
@@ -2477,21 +2477,21 @@ export function accessPolicyIncludeToTerraform(struct?: AccessPolicyInclude | cd
     auth_method: cdktf.stringToTerraform(struct!.authMethod),
     certificate: cdktf.booleanToTerraform(struct!.certificate),
     common_name: cdktf.stringToTerraform(struct!.commonName),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailDomain),
+    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
     everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ip),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
-    azure: cdktf.listMapper(accessPolicyIncludeAzureToTerraform)(struct!.azure),
+    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
+    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
+    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
+    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
+    azure: cdktf.listMapper(accessPolicyIncludeAzureToTerraform, true)(struct!.azure),
     external_evaluation: accessPolicyIncludeExternalEvaluationToTerraform(struct!.externalEvaluation),
-    github: cdktf.listMapper(accessPolicyIncludeGithubToTerraform)(struct!.github),
-    gsuite: cdktf.listMapper(accessPolicyIncludeGsuiteToTerraform)(struct!.gsuite),
-    okta: cdktf.listMapper(accessPolicyIncludeOktaToTerraform)(struct!.okta),
-    saml: cdktf.listMapper(accessPolicyIncludeSamlToTerraform)(struct!.saml),
+    github: cdktf.listMapper(accessPolicyIncludeGithubToTerraform, true)(struct!.github),
+    gsuite: cdktf.listMapper(accessPolicyIncludeGsuiteToTerraform, true)(struct!.gsuite),
+    okta: cdktf.listMapper(accessPolicyIncludeOktaToTerraform, true)(struct!.okta),
+    saml: cdktf.listMapper(accessPolicyIncludeSamlToTerraform, true)(struct!.saml),
   }
 }
 
@@ -2991,7 +2991,7 @@ export function accessPolicyRequireAzureToTerraform(struct?: AccessPolicyRequire
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.id),
+    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -3213,7 +3213,7 @@ export function accessPolicyRequireGithubToTerraform(struct?: AccessPolicyRequir
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
   }
 }
 
@@ -3358,7 +3358,7 @@ export function accessPolicyRequireGsuiteToTerraform(struct?: AccessPolicyRequir
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -3483,7 +3483,7 @@ export function accessPolicyRequireOktaToTerraform(struct?: AccessPolicyRequireO
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform)(struct!.name),
+    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
   }
 }
 
@@ -3841,21 +3841,21 @@ export function accessPolicyRequireToTerraform(struct?: AccessPolicyRequire | cd
     auth_method: cdktf.stringToTerraform(struct!.authMethod),
     certificate: cdktf.booleanToTerraform(struct!.certificate),
     common_name: cdktf.stringToTerraform(struct!.commonName),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailDomain),
+    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
     everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ip),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
-    azure: cdktf.listMapper(accessPolicyRequireAzureToTerraform)(struct!.azure),
+    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
+    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
+    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
+    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
+    azure: cdktf.listMapper(accessPolicyRequireAzureToTerraform, true)(struct!.azure),
     external_evaluation: accessPolicyRequireExternalEvaluationToTerraform(struct!.externalEvaluation),
-    github: cdktf.listMapper(accessPolicyRequireGithubToTerraform)(struct!.github),
-    gsuite: cdktf.listMapper(accessPolicyRequireGsuiteToTerraform)(struct!.gsuite),
-    okta: cdktf.listMapper(accessPolicyRequireOktaToTerraform)(struct!.okta),
-    saml: cdktf.listMapper(accessPolicyRequireSamlToTerraform)(struct!.saml),
+    github: cdktf.listMapper(accessPolicyRequireGithubToTerraform, true)(struct!.github),
+    gsuite: cdktf.listMapper(accessPolicyRequireGsuiteToTerraform, true)(struct!.gsuite),
+    okta: cdktf.listMapper(accessPolicyRequireOktaToTerraform, true)(struct!.okta),
+    saml: cdktf.listMapper(accessPolicyRequireSamlToTerraform, true)(struct!.saml),
   }
 }
 
@@ -4368,7 +4368,10 @@ export class AccessPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._applicationId = config.applicationId;
@@ -4615,10 +4618,10 @@ export class AccessPolicy extends cdktf.TerraformResource {
       purpose_justification_prompt: cdktf.stringToTerraform(this._purposeJustificationPrompt),
       purpose_justification_required: cdktf.booleanToTerraform(this._purposeJustificationRequired),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      approval_group: cdktf.listMapper(accessPolicyApprovalGroupToTerraform)(this._approvalGroup.internalValue),
-      exclude: cdktf.listMapper(accessPolicyExcludeToTerraform)(this._exclude.internalValue),
-      include: cdktf.listMapper(accessPolicyIncludeToTerraform)(this._include.internalValue),
-      require: cdktf.listMapper(accessPolicyRequireToTerraform)(this._require.internalValue),
+      approval_group: cdktf.listMapper(accessPolicyApprovalGroupToTerraform, true)(this._approvalGroup.internalValue),
+      exclude: cdktf.listMapper(accessPolicyExcludeToTerraform, true)(this._exclude.internalValue),
+      include: cdktf.listMapper(accessPolicyIncludeToTerraform, true)(this._include.internalValue),
+      require: cdktf.listMapper(accessPolicyRequireToTerraform, true)(this._require.internalValue),
     };
   }
 }

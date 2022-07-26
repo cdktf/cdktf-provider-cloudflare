@@ -55,7 +55,7 @@ export function fallbackDomainDomainsToTerraform(struct?: FallbackDomainDomains 
   }
   return {
     description: cdktf.stringToTerraform(struct!.description),
-    dns_server: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dnsServer),
+    dns_server: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServer),
     suffix: cdktf.stringToTerraform(struct!.suffix),
   }
 }
@@ -217,7 +217,10 @@ export class FallbackDomain extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -278,7 +281,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
-      domains: cdktf.listMapper(fallbackDomainDomainsToTerraform)(this._domains.internalValue),
+      domains: cdktf.listMapper(fallbackDomainDomainsToTerraform, true)(this._domains.internalValue),
     };
   }
 }

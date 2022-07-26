@@ -358,7 +358,10 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._argoSmartRouting = config.argoSmartRouting;
     this._edgeIpConnectivity = config.edgeIpConnectivity;
@@ -620,10 +623,10 @@ export class SpectrumApplication extends cdktf.TerraformResource {
     return {
       argo_smart_routing: cdktf.booleanToTerraform(this._argoSmartRouting),
       edge_ip_connectivity: cdktf.stringToTerraform(this._edgeIpConnectivity),
-      edge_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._edgeIps),
+      edge_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._edgeIps),
       id: cdktf.stringToTerraform(this._id),
       ip_firewall: cdktf.booleanToTerraform(this._ipFirewall),
-      origin_direct: cdktf.listMapper(cdktf.stringToTerraform)(this._originDirect),
+      origin_direct: cdktf.listMapper(cdktf.stringToTerraform, false)(this._originDirect),
       origin_port: cdktf.numberToTerraform(this._originPort),
       protocol: cdktf.stringToTerraform(this._protocol),
       proxy_protocol: cdktf.stringToTerraform(this._proxyProtocol),

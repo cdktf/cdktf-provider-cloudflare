@@ -54,8 +54,8 @@ export function apiTokenConditionRequestIpToTerraform(struct?: ApiTokenCondition
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    in: cdktf.listMapper(cdktf.stringToTerraform)(struct!.in),
-    not_in: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notIn),
+    in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.in),
+    not_in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notIn),
   }
 }
 
@@ -224,7 +224,7 @@ export function apiTokenPolicyToTerraform(struct?: ApiTokenPolicy | cdktf.IResol
   }
   return {
     effect: cdktf.stringToTerraform(struct!.effect),
-    permission_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissionGroups),
+    permission_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissionGroups),
     resources: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.resources),
   }
 }
@@ -380,7 +380,10 @@ export class ApiToken extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -479,7 +482,7 @@ export class ApiToken extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       condition: apiTokenConditionToTerraform(this._condition.internalValue),
-      policy: cdktf.listMapper(apiTokenPolicyToTerraform)(this._policy.internalValue),
+      policy: cdktf.listMapper(apiTokenPolicyToTerraform, true)(this._policy.internalValue),
     };
   }
 }
