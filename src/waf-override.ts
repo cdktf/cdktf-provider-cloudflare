@@ -82,7 +82,10 @@ export class WafOverride extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._groups = config.groups;
@@ -255,7 +258,7 @@ export class WafOverride extends cdktf.TerraformResource {
       priority: cdktf.numberToTerraform(this._priority),
       rewrite_action: cdktf.hashMapper(cdktf.stringToTerraform)(this._rewriteAction),
       rules: cdktf.hashMapper(cdktf.stringToTerraform)(this._rules),
-      urls: cdktf.listMapper(cdktf.stringToTerraform)(this._urls),
+      urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._urls),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }

@@ -69,7 +69,7 @@ export function accessGroupExcludeAzureToTerraform(struct?: AccessGroupExcludeAz
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.id),
+    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -291,7 +291,7 @@ export function accessGroupExcludeGithubToTerraform(struct?: AccessGroupExcludeG
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
   }
 }
 
@@ -436,7 +436,7 @@ export function accessGroupExcludeGsuiteToTerraform(struct?: AccessGroupExcludeG
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -561,7 +561,7 @@ export function accessGroupExcludeOktaToTerraform(struct?: AccessGroupExcludeOkt
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform)(struct!.name),
+    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
   }
 }
 
@@ -919,21 +919,21 @@ export function accessGroupExcludeToTerraform(struct?: AccessGroupExclude | cdkt
     auth_method: cdktf.stringToTerraform(struct!.authMethod),
     certificate: cdktf.booleanToTerraform(struct!.certificate),
     common_name: cdktf.stringToTerraform(struct!.commonName),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailDomain),
+    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
     everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ip),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
-    azure: cdktf.listMapper(accessGroupExcludeAzureToTerraform)(struct!.azure),
+    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
+    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
+    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
+    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
+    azure: cdktf.listMapper(accessGroupExcludeAzureToTerraform, true)(struct!.azure),
     external_evaluation: accessGroupExcludeExternalEvaluationToTerraform(struct!.externalEvaluation),
-    github: cdktf.listMapper(accessGroupExcludeGithubToTerraform)(struct!.github),
-    gsuite: cdktf.listMapper(accessGroupExcludeGsuiteToTerraform)(struct!.gsuite),
-    okta: cdktf.listMapper(accessGroupExcludeOktaToTerraform)(struct!.okta),
-    saml: cdktf.listMapper(accessGroupExcludeSamlToTerraform)(struct!.saml),
+    github: cdktf.listMapper(accessGroupExcludeGithubToTerraform, true)(struct!.github),
+    gsuite: cdktf.listMapper(accessGroupExcludeGsuiteToTerraform, true)(struct!.gsuite),
+    okta: cdktf.listMapper(accessGroupExcludeOktaToTerraform, true)(struct!.okta),
+    saml: cdktf.listMapper(accessGroupExcludeSamlToTerraform, true)(struct!.saml),
   }
 }
 
@@ -1433,7 +1433,7 @@ export function accessGroupIncludeAzureToTerraform(struct?: AccessGroupIncludeAz
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.id),
+    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -1655,7 +1655,7 @@ export function accessGroupIncludeGithubToTerraform(struct?: AccessGroupIncludeG
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
   }
 }
 
@@ -1800,7 +1800,7 @@ export function accessGroupIncludeGsuiteToTerraform(struct?: AccessGroupIncludeG
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -1925,7 +1925,7 @@ export function accessGroupIncludeOktaToTerraform(struct?: AccessGroupIncludeOkt
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform)(struct!.name),
+    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
   }
 }
 
@@ -2283,21 +2283,21 @@ export function accessGroupIncludeToTerraform(struct?: AccessGroupInclude | cdkt
     auth_method: cdktf.stringToTerraform(struct!.authMethod),
     certificate: cdktf.booleanToTerraform(struct!.certificate),
     common_name: cdktf.stringToTerraform(struct!.commonName),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailDomain),
+    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
     everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ip),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
-    azure: cdktf.listMapper(accessGroupIncludeAzureToTerraform)(struct!.azure),
+    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
+    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
+    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
+    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
+    azure: cdktf.listMapper(accessGroupIncludeAzureToTerraform, true)(struct!.azure),
     external_evaluation: accessGroupIncludeExternalEvaluationToTerraform(struct!.externalEvaluation),
-    github: cdktf.listMapper(accessGroupIncludeGithubToTerraform)(struct!.github),
-    gsuite: cdktf.listMapper(accessGroupIncludeGsuiteToTerraform)(struct!.gsuite),
-    okta: cdktf.listMapper(accessGroupIncludeOktaToTerraform)(struct!.okta),
-    saml: cdktf.listMapper(accessGroupIncludeSamlToTerraform)(struct!.saml),
+    github: cdktf.listMapper(accessGroupIncludeGithubToTerraform, true)(struct!.github),
+    gsuite: cdktf.listMapper(accessGroupIncludeGsuiteToTerraform, true)(struct!.gsuite),
+    okta: cdktf.listMapper(accessGroupIncludeOktaToTerraform, true)(struct!.okta),
+    saml: cdktf.listMapper(accessGroupIncludeSamlToTerraform, true)(struct!.saml),
   }
 }
 
@@ -2797,7 +2797,7 @@ export function accessGroupRequireAzureToTerraform(struct?: AccessGroupRequireAz
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.id),
+    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -3019,7 +3019,7 @@ export function accessGroupRequireGithubToTerraform(struct?: AccessGroupRequireG
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
   }
 }
 
@@ -3164,7 +3164,7 @@ export function accessGroupRequireGsuiteToTerraform(struct?: AccessGroupRequireG
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -3289,7 +3289,7 @@ export function accessGroupRequireOktaToTerraform(struct?: AccessGroupRequireOkt
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform)(struct!.name),
+    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
   }
 }
 
@@ -3647,21 +3647,21 @@ export function accessGroupRequireToTerraform(struct?: AccessGroupRequire | cdkt
     auth_method: cdktf.stringToTerraform(struct!.authMethod),
     certificate: cdktf.booleanToTerraform(struct!.certificate),
     common_name: cdktf.stringToTerraform(struct!.commonName),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailDomain),
+    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
+    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
     everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ip),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceToken),
-    azure: cdktf.listMapper(accessGroupRequireAzureToTerraform)(struct!.azure),
+    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
+    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
+    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
+    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
+    azure: cdktf.listMapper(accessGroupRequireAzureToTerraform, true)(struct!.azure),
     external_evaluation: accessGroupRequireExternalEvaluationToTerraform(struct!.externalEvaluation),
-    github: cdktf.listMapper(accessGroupRequireGithubToTerraform)(struct!.github),
-    gsuite: cdktf.listMapper(accessGroupRequireGsuiteToTerraform)(struct!.gsuite),
-    okta: cdktf.listMapper(accessGroupRequireOktaToTerraform)(struct!.okta),
-    saml: cdktf.listMapper(accessGroupRequireSamlToTerraform)(struct!.saml),
+    github: cdktf.listMapper(accessGroupRequireGithubToTerraform, true)(struct!.github),
+    gsuite: cdktf.listMapper(accessGroupRequireGsuiteToTerraform, true)(struct!.gsuite),
+    okta: cdktf.listMapper(accessGroupRequireOktaToTerraform, true)(struct!.okta),
+    saml: cdktf.listMapper(accessGroupRequireSamlToTerraform, true)(struct!.saml),
   }
 }
 
@@ -4174,7 +4174,10 @@ export class AccessGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -4305,9 +4308,9 @@ export class AccessGroup extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      exclude: cdktf.listMapper(accessGroupExcludeToTerraform)(this._exclude.internalValue),
-      include: cdktf.listMapper(accessGroupIncludeToTerraform)(this._include.internalValue),
-      require: cdktf.listMapper(accessGroupRequireToTerraform)(this._require.internalValue),
+      exclude: cdktf.listMapper(accessGroupExcludeToTerraform, true)(this._exclude.internalValue),
+      include: cdktf.listMapper(accessGroupIncludeToTerraform, true)(this._include.internalValue),
+      require: cdktf.listMapper(accessGroupRequireToTerraform, true)(this._require.internalValue),
     };
   }
 }

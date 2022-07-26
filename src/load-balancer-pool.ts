@@ -376,7 +376,7 @@ export function loadBalancerPoolOriginsHeaderToTerraform(struct?: LoadBalancerPo
   }
   return {
     header: cdktf.stringToTerraform(struct!.header),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -515,7 +515,7 @@ export function loadBalancerPoolOriginsToTerraform(struct?: LoadBalancerPoolOrig
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     name: cdktf.stringToTerraform(struct!.name),
     weight: cdktf.numberToTerraform(struct!.weight),
-    header: cdktf.listMapper(loadBalancerPoolOriginsHeaderToTerraform)(struct!.header),
+    header: cdktf.listMapper(loadBalancerPoolOriginsHeaderToTerraform, true)(struct!.header),
   }
 }
 
@@ -714,7 +714,10 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._checkRegions = config.checkRegions;
     this._description = config.description;
@@ -953,7 +956,7 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      check_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._checkRegions),
+      check_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._checkRegions),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
@@ -963,9 +966,9 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       monitor: cdktf.stringToTerraform(this._monitor),
       name: cdktf.stringToTerraform(this._name),
       notification_email: cdktf.stringToTerraform(this._notificationEmail),
-      load_shedding: cdktf.listMapper(loadBalancerPoolLoadSheddingToTerraform)(this._loadShedding.internalValue),
-      origin_steering: cdktf.listMapper(loadBalancerPoolOriginSteeringToTerraform)(this._originSteering.internalValue),
-      origins: cdktf.listMapper(loadBalancerPoolOriginsToTerraform)(this._origins.internalValue),
+      load_shedding: cdktf.listMapper(loadBalancerPoolLoadSheddingToTerraform, true)(this._loadShedding.internalValue),
+      origin_steering: cdktf.listMapper(loadBalancerPoolOriginSteeringToTerraform, true)(this._originSteering.internalValue),
+      origins: cdktf.listMapper(loadBalancerPoolOriginsToTerraform, true)(this._origins.internalValue),
     };
   }
 }

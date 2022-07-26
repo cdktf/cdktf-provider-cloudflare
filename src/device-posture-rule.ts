@@ -633,7 +633,10 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -801,8 +804,8 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
       type: cdktf.stringToTerraform(this._type),
-      input: cdktf.listMapper(devicePostureRuleInputToTerraform)(this._input.internalValue),
-      match: cdktf.listMapper(devicePostureRuleMatchToTerraform)(this._match.internalValue),
+      input: cdktf.listMapper(devicePostureRuleInputToTerraform, true)(this._input.internalValue),
+      match: cdktf.listMapper(devicePostureRuleMatchToTerraform, true)(this._match.internalValue),
     };
   }
 }

@@ -1233,7 +1233,7 @@ export function zoneSettingsOverrideSettingsToTerraform(struct?: ZoneSettingsOve
     browser_check: cdktf.stringToTerraform(struct!.browserCheck),
     cache_level: cdktf.stringToTerraform(struct!.cacheLevel),
     challenge_ttl: cdktf.numberToTerraform(struct!.challengeTtl),
-    ciphers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ciphers),
+    ciphers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ciphers),
     cname_flattening: cdktf.stringToTerraform(struct!.cnameFlattening),
     development_mode: cdktf.stringToTerraform(struct!.developmentMode),
     early_hints: cdktf.stringToTerraform(struct!.earlyHints),
@@ -2551,7 +2551,10 @@ export class ZoneSettingsOverride extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._zoneId = config.zoneId;

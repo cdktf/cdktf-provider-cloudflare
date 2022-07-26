@@ -66,7 +66,10 @@ export class MagicFirewallRuleset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -163,7 +166,7 @@ export class MagicFirewallRuleset extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      rules: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._rules),
+      rules: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._rules),
     };
   }
 }

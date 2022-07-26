@@ -177,8 +177,8 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyCookieToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check_presence: cdktf.listMapper(cdktf.stringToTerraform)(struct!.checkPresence),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    check_presence: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkPresence),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -279,9 +279,9 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyHeaderToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check_presence: cdktf.listMapper(cdktf.stringToTerraform)(struct!.checkPresence),
+    check_presence: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkPresence),
     exclude_origin: cdktf.booleanToTerraform(struct!.excludeOrigin),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -465,8 +465,8 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclude),
-    include: cdktf.listMapper(cdktf.stringToTerraform)(struct!.include),
+    exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclude),
+    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
   }
 }
 
@@ -1159,7 +1159,7 @@ export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlToTerraform(stru
   return {
     status_code: cdktf.numberToTerraform(struct!.statusCode),
     value: cdktf.numberToTerraform(struct!.value),
-    status_code_range: cdktf.listMapper(rulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeToTerraform)(struct!.statusCodeRange),
+    status_code_range: cdktf.listMapper(rulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeToTerraform, true)(struct!.statusCodeRange),
   }
 }
 
@@ -1313,7 +1313,7 @@ export function rulesetRulesActionParametersEdgeTtlToTerraform(struct?: RulesetR
   return {
     default: cdktf.numberToTerraform(struct!.default),
     mode: cdktf.stringToTerraform(struct!.mode),
-    status_code_ttl: cdktf.listMapper(rulesetRulesActionParametersEdgeTtlStatusCodeTtlToTerraform)(struct!.statusCodeTtl),
+    status_code_ttl: cdktf.listMapper(rulesetRulesActionParametersEdgeTtlStatusCodeTtlToTerraform, true)(struct!.statusCodeTtl),
   }
 }
 
@@ -2317,8 +2317,8 @@ export function rulesetRulesActionParametersOverridesToTerraform(struct?: Rulese
     action: cdktf.stringToTerraform(struct!.action),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     status: cdktf.stringToTerraform(struct!.status),
-    categories: cdktf.listMapper(rulesetRulesActionParametersOverridesCategoriesToTerraform)(struct!.categories),
-    rules: cdktf.listMapper(rulesetRulesActionParametersOverridesRulesToTerraform)(struct!.rules),
+    categories: cdktf.listMapper(rulesetRulesActionParametersOverridesCategoriesToTerraform, true)(struct!.categories),
+    rules: cdktf.listMapper(rulesetRulesActionParametersOverridesRulesToTerraform, true)(struct!.rules),
   }
 }
 
@@ -3164,29 +3164,29 @@ export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesAct
   }
   return {
     bypass_cache: cdktf.booleanToTerraform(struct!.bypassCache),
-    cookie_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cookieFields),
+    cookie_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cookieFields),
     host_header: cdktf.stringToTerraform(struct!.hostHeader),
     id: cdktf.stringToTerraform(struct!.id),
     increment: cdktf.numberToTerraform(struct!.increment),
     origin_error_page_passthru: cdktf.booleanToTerraform(struct!.originErrorPagePassthru),
-    phases: cdktf.listMapper(cdktf.stringToTerraform)(struct!.phases),
-    products: cdktf.listMapper(cdktf.stringToTerraform)(struct!.products),
-    request_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.requestFields),
+    phases: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.phases),
+    products: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.products),
+    request_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestFields),
     respect_strong_etags: cdktf.booleanToTerraform(struct!.respectStrongEtags),
-    response_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.responseFields),
+    response_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseFields),
     rules: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.rules),
     ruleset: cdktf.stringToTerraform(struct!.ruleset),
-    rulesets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rulesets),
+    rulesets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rulesets),
     version: cdktf.stringToTerraform(struct!.version),
     browser_ttl: rulesetRulesActionParametersBrowserTtlToTerraform(struct!.browserTtl),
     cache_key: rulesetRulesActionParametersCacheKeyToTerraform(struct!.cacheKey),
     edge_ttl: rulesetRulesActionParametersEdgeTtlToTerraform(struct!.edgeTtl),
     from_list: rulesetRulesActionParametersFromListToTerraform(struct!.fromList),
-    headers: cdktf.listMapper(rulesetRulesActionParametersHeadersToTerraform)(struct!.headers),
+    headers: cdktf.listMapper(rulesetRulesActionParametersHeadersToTerraform, true)(struct!.headers),
     matched_data: rulesetRulesActionParametersMatchedDataToTerraform(struct!.matchedData),
     origin: rulesetRulesActionParametersOriginToTerraform(struct!.origin),
     overrides: rulesetRulesActionParametersOverridesToTerraform(struct!.overrides),
-    response: cdktf.listMapper(rulesetRulesActionParametersResponseToTerraform)(struct!.response),
+    response: cdktf.listMapper(rulesetRulesActionParametersResponseToTerraform, true)(struct!.response),
     serve_stale: rulesetRulesActionParametersServeStaleToTerraform(struct!.serveStale),
     uri: rulesetRulesActionParametersUriToTerraform(struct!.uri),
   }
@@ -4027,7 +4027,7 @@ export function rulesetRulesRatelimitToTerraform(struct?: RulesetRulesRatelimitO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    characteristics: cdktf.listMapper(cdktf.stringToTerraform)(struct!.characteristics),
+    characteristics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.characteristics),
     counting_expression: cdktf.stringToTerraform(struct!.countingExpression),
     mitigation_timeout: cdktf.numberToTerraform(struct!.mitigationTimeout),
     period: cdktf.numberToTerraform(struct!.period),
@@ -4541,7 +4541,10 @@ export class Ruleset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -4707,7 +4710,7 @@ export class Ruleset extends cdktf.TerraformResource {
       phase: cdktf.stringToTerraform(this._phase),
       shareable_entitlement_name: cdktf.stringToTerraform(this._shareableEntitlementName),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      rules: cdktf.listMapper(rulesetRulesToTerraform)(this._rules.internalValue),
+      rules: cdktf.listMapper(rulesetRulesToTerraform, true)(this._rules.internalValue),
     };
   }
 }

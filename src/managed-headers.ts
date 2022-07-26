@@ -316,7 +316,10 @@ export class ManagedHeaders extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._zoneId = config.zoneId;
@@ -397,8 +400,8 @@ export class ManagedHeaders extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      managed_request_headers: cdktf.listMapper(managedHeadersManagedRequestHeadersToTerraform)(this._managedRequestHeaders.internalValue),
-      managed_response_headers: cdktf.listMapper(managedHeadersManagedResponseHeadersToTerraform)(this._managedResponseHeaders.internalValue),
+      managed_request_headers: cdktf.listMapper(managedHeadersManagedRequestHeadersToTerraform, true)(this._managedRequestHeaders.internalValue),
+      managed_response_headers: cdktf.listMapper(managedHeadersManagedResponseHeadersToTerraform, true)(this._managedResponseHeaders.internalValue),
     };
   }
 }

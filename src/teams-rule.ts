@@ -464,7 +464,7 @@ export function teamsRuleRuleSettingsToTerraform(struct?: TeamsRuleRuleSettingsO
     block_page_reason: cdktf.stringToTerraform(struct!.blockPageReason),
     insecure_disable_dnssec_validation: cdktf.booleanToTerraform(struct!.insecureDisableDnssecValidation),
     override_host: cdktf.stringToTerraform(struct!.overrideHost),
-    override_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.overrideIps),
+    override_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.overrideIps),
     biso_admin_controls: teamsRuleRuleSettingsBisoAdminControlsToTerraform(struct!.bisoAdminControls),
     check_session: teamsRuleRuleSettingsCheckSessionToTerraform(struct!.checkSession),
     l4override: teamsRuleRuleSettingsL4OverrideToTerraform(struct!.l4Override),
@@ -728,7 +728,10 @@ export class TeamsRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._action = config.action;
@@ -941,7 +944,7 @@ export class TeamsRule extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       device_posture: cdktf.stringToTerraform(this._devicePosture),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      filters: cdktf.listMapper(cdktf.stringToTerraform)(this._filters),
+      filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._filters),
       id: cdktf.stringToTerraform(this._id),
       identity: cdktf.stringToTerraform(this._identity),
       name: cdktf.stringToTerraform(this._name),

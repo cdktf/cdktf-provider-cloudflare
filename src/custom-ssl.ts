@@ -366,7 +366,10 @@ export class CustomSsl extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._zoneId = config.zoneId;
@@ -488,7 +491,7 @@ export class CustomSsl extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       custom_ssl_options: customSslCustomSslOptionsToTerraform(this._customSslOptions.internalValue),
-      custom_ssl_priority: cdktf.listMapper(customSslCustomSslPriorityToTerraform)(this._customSslPriority.internalValue),
+      custom_ssl_priority: cdktf.listMapper(customSslCustomSslPriorityToTerraform, true)(this._customSslPriority.internalValue),
     };
   }
 }

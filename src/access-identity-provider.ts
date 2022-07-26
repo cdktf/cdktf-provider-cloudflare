@@ -140,7 +140,7 @@ export function accessIdentityProviderConfigAToTerraform(struct?: AccessIdentity
   return {
     api_token: cdktf.stringToTerraform(struct!.apiToken),
     apps_domain: cdktf.stringToTerraform(struct!.appsDomain),
-    attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.attributes),
+    attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.attributes),
     auth_url: cdktf.stringToTerraform(struct!.authUrl),
     centrify_account: cdktf.stringToTerraform(struct!.centrifyAccount),
     centrify_app_id: cdktf.stringToTerraform(struct!.centrifyAppId),
@@ -715,7 +715,10 @@ export class AccessIdentityProvider extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -830,7 +833,7 @@ export class AccessIdentityProvider extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      config: cdktf.listMapper(accessIdentityProviderConfigAToTerraform)(this._config.internalValue),
+      config: cdktf.listMapper(accessIdentityProviderConfigAToTerraform, true)(this._config.internalValue),
     };
   }
 }

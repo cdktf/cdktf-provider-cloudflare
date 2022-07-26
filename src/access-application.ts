@@ -184,9 +184,9 @@ export function accessApplicationCorsHeadersToTerraform(struct?: AccessApplicati
     allow_all_methods: cdktf.booleanToTerraform(struct!.allowAllMethods),
     allow_all_origins: cdktf.booleanToTerraform(struct!.allowAllOrigins),
     allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
+    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
     max_age: cdktf.numberToTerraform(struct!.maxAge),
   }
 }
@@ -458,7 +458,10 @@ export class AccessApplication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._allowedIdps = config.allowedIdps;
@@ -795,7 +798,7 @@ export class AccessApplication extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      allowed_idps: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedIdps),
+      allowed_idps: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIdps),
       app_launcher_visible: cdktf.booleanToTerraform(this._appLauncherVisible),
       auto_redirect_to_identity: cdktf.booleanToTerraform(this._autoRedirectToIdentity),
       custom_deny_message: cdktf.stringToTerraform(this._customDenyMessage),
@@ -812,7 +815,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       skip_interstitial: cdktf.booleanToTerraform(this._skipInterstitial),
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      cors_headers: cdktf.listMapper(accessApplicationCorsHeadersToTerraform)(this._corsHeaders.internalValue),
+      cors_headers: cdktf.listMapper(accessApplicationCorsHeadersToTerraform, true)(this._corsHeaders.internalValue),
     };
   }
 }

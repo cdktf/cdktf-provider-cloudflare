@@ -62,7 +62,10 @@ export class TeamsProxyEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -142,7 +145,7 @@ export class TeamsProxyEndpoint extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
-      ips: cdktf.listMapper(cdktf.stringToTerraform)(this._ips),
+      ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
       name: cdktf.stringToTerraform(this._name),
     };
   }

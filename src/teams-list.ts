@@ -70,7 +70,10 @@ export class TeamsList extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -180,7 +183,7 @@ export class TeamsList extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
-      items: cdktf.listMapper(cdktf.stringToTerraform)(this._items),
+      items: cdktf.listMapper(cdktf.stringToTerraform, false)(this._items),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
     };

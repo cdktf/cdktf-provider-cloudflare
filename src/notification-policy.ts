@@ -254,15 +254,15 @@ export function notificationPolicyFiltersToTerraform(struct?: NotificationPolicy
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enabled),
-    health_check_id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.healthCheckId),
-    limit: cdktf.listMapper(cdktf.stringToTerraform)(struct!.limit),
-    pool_id: cdktf.listMapper(cdktf.stringToTerraform)(struct!.poolId),
-    product: cdktf.listMapper(cdktf.stringToTerraform)(struct!.product),
-    services: cdktf.listMapper(cdktf.stringToTerraform)(struct!.services),
-    slo: cdktf.listMapper(cdktf.stringToTerraform)(struct!.slo),
-    status: cdktf.listMapper(cdktf.stringToTerraform)(struct!.status),
-    zones: cdktf.listMapper(cdktf.stringToTerraform)(struct!.zones),
+    enabled: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabled),
+    health_check_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.healthCheckId),
+    limit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.limit),
+    pool_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolId),
+    product: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.product),
+    services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.services),
+    slo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.slo),
+    status: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.status),
+    zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.zones),
   }
 }
 
@@ -771,7 +771,10 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._alertType = config.alertType;
@@ -959,10 +962,10 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      email_integration: cdktf.listMapper(notificationPolicyEmailIntegrationToTerraform)(this._emailIntegration.internalValue),
+      email_integration: cdktf.listMapper(notificationPolicyEmailIntegrationToTerraform, true)(this._emailIntegration.internalValue),
       filters: notificationPolicyFiltersToTerraform(this._filters.internalValue),
-      pagerduty_integration: cdktf.listMapper(notificationPolicyPagerdutyIntegrationToTerraform)(this._pagerdutyIntegration.internalValue),
-      webhooks_integration: cdktf.listMapper(notificationPolicyWebhooksIntegrationToTerraform)(this._webhooksIntegration.internalValue),
+      pagerduty_integration: cdktf.listMapper(notificationPolicyPagerdutyIntegrationToTerraform, true)(this._pagerdutyIntegration.internalValue),
+      webhooks_integration: cdktf.listMapper(notificationPolicyWebhooksIntegrationToTerraform, true)(this._webhooksIntegration.internalValue),
     };
   }
 }
