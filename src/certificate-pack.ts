@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Which certificate authority to issue the certificate pack. Available values: `digicert`, `lets_encrypt`, `google`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#certificate_authority CertificatePack#certificate_authority}
   */
-  readonly certificateAuthority?: string;
+  readonly certificateAuthority: string;
   /**
+  * Whether or not to include Cloudflare branding. This will add `sni.cloudflaressl.com` as the Common Name if set to `true`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
   */
   readonly cloudflareBranding?: boolean | cdktf.IResolvable;
   /**
+  * List of hostnames to provision the certificate pack for. The zone name must be included as a host. Note: If using Let's Encrypt, you cannot use individual subdomains and only a wildcard for subdomain is available.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#hosts CertificatePack#hosts}
   */
   readonly hosts: string[];
@@ -27,19 +33,25 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Certificate pack configuration type. Available values: `advanced`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#type CertificatePack#type}
   */
   readonly type: string;
   /**
+  * Which validation method to use in order to prove domain ownership. Available values: `txt`, `http`, `email`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#validation_method CertificatePack#validation_method}
   */
-  readonly validationMethod?: string;
+  readonly validationMethod: string;
   /**
+  * How long the certificate is valid for. Note: If using Let's Encrypt, this value can only be 90 days. Available values: `14`, `30`, `90`, `365`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#validity_days CertificatePack#validity_days}
   */
-  readonly validityDays?: number;
+  readonly validityDays: number;
   /**
-  * Defaults to `false`.
+  * Whether or not to wait for a certificate pack to reach status `active` during creation. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#wait_for_active_status CertificatePack#wait_for_active_status}
   */
@@ -424,7 +436,7 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -452,16 +464,13 @@ export class CertificatePack extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // certificate_authority - computed: true, optional: true, required: false
+  // certificate_authority - computed: false, optional: false, required: true
   private _certificateAuthority?: string; 
   public get certificateAuthority() {
     return this.getStringAttribute('certificate_authority');
   }
   public set certificateAuthority(value: string) {
     this._certificateAuthority = value;
-  }
-  public resetCertificateAuthority() {
-    this._certificateAuthority = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get certificateAuthorityInput() {
@@ -526,7 +535,7 @@ export class CertificatePack extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // validation_method - computed: false, optional: true, required: false
+  // validation_method - computed: false, optional: false, required: true
   private _validationMethod?: string; 
   public get validationMethod() {
     return this.getStringAttribute('validation_method');
@@ -534,24 +543,18 @@ export class CertificatePack extends cdktf.TerraformResource {
   public set validationMethod(value: string) {
     this._validationMethod = value;
   }
-  public resetValidationMethod() {
-    this._validationMethod = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get validationMethodInput() {
     return this._validationMethod;
   }
 
-  // validity_days - computed: false, optional: true, required: false
+  // validity_days - computed: false, optional: false, required: true
   private _validityDays?: number; 
   public get validityDays() {
     return this.getNumberAttribute('validity_days');
   }
   public set validityDays(value: number) {
     this._validityDays = value;
-  }
-  public resetValidityDays() {
-    this._validityDays = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get validityDaysInput() {

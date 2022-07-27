@@ -39,7 +39,7 @@ export interface RulesetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
+  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#phase Ruleset#phase}
   */
@@ -1491,6 +1491,227 @@ export class RulesetRulesActionParametersFromListOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+}
+export interface RulesetRulesActionParametersFromValueTargetUrl {
+  /**
+  * Use a value dynamically determined by the Firewall Rules expression language based on Wireshark display filters. Refer to the [Firewall Rules language](https://developers.cloudflare.com/firewall/cf-firewall-language) documentation for all available fields, operators, and functions. Conflicts with `"value"`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#expression Ruleset#expression}
+  */
+  readonly expression?: string;
+  /**
+  * Static value to provide as the HTTP request header value. Conflicts with `"expression"`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#value Ruleset#value}
+  */
+  readonly value?: string;
+}
+
+export function rulesetRulesActionParametersFromValueTargetUrlToTerraform(struct?: RulesetRulesActionParametersFromValueTargetUrlOutputReference | RulesetRulesActionParametersFromValueTargetUrl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    expression: cdktf.stringToTerraform(struct!.expression),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class RulesetRulesActionParametersFromValueTargetUrlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersFromValueTargetUrl | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersFromValueTargetUrl | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._expression = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._expression = value.expression;
+      this._value = value.value;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface RulesetRulesActionParametersFromValue {
+  /**
+  * Preserve query string for redirect URL.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#preserve_query_string Ruleset#preserve_query_string}
+  */
+  readonly preserveQueryString?: boolean | cdktf.IResolvable;
+  /**
+  * Status code for redirect.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#status_code Ruleset#status_code}
+  */
+  readonly statusCode?: number;
+  /**
+  * target_url block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#target_url Ruleset#target_url}
+  */
+  readonly targetUrl?: RulesetRulesActionParametersFromValueTargetUrl;
+}
+
+export function rulesetRulesActionParametersFromValueToTerraform(struct?: RulesetRulesActionParametersFromValueOutputReference | RulesetRulesActionParametersFromValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    preserve_query_string: cdktf.booleanToTerraform(struct!.preserveQueryString),
+    status_code: cdktf.numberToTerraform(struct!.statusCode),
+    target_url: rulesetRulesActionParametersFromValueTargetUrlToTerraform(struct!.targetUrl),
+  }
+}
+
+export class RulesetRulesActionParametersFromValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersFromValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._preserveQueryString !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preserveQueryString = this._preserveQueryString;
+    }
+    if (this._statusCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusCode = this._statusCode;
+    }
+    if (this._targetUrl?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetUrl = this._targetUrl?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersFromValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._preserveQueryString = undefined;
+      this._statusCode = undefined;
+      this._targetUrl.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._preserveQueryString = value.preserveQueryString;
+      this._statusCode = value.statusCode;
+      this._targetUrl.internalValue = value.targetUrl;
+    }
+  }
+
+  // preserve_query_string - computed: false, optional: true, required: false
+  private _preserveQueryString?: boolean | cdktf.IResolvable; 
+  public get preserveQueryString() {
+    return this.getBooleanAttribute('preserve_query_string');
+  }
+  public set preserveQueryString(value: boolean | cdktf.IResolvable) {
+    this._preserveQueryString = value;
+  }
+  public resetPreserveQueryString() {
+    this._preserveQueryString = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveQueryStringInput() {
+    return this._preserveQueryString;
+  }
+
+  // status_code - computed: false, optional: true, required: false
+  private _statusCode?: number; 
+  public get statusCode() {
+    return this.getNumberAttribute('status_code');
+  }
+  public set statusCode(value: number) {
+    this._statusCode = value;
+  }
+  public resetStatusCode() {
+    this._statusCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusCodeInput() {
+    return this._statusCode;
+  }
+
+  // target_url - computed: false, optional: true, required: false
+  private _targetUrl = new RulesetRulesActionParametersFromValueTargetUrlOutputReference(this, "target_url");
+  public get targetUrl() {
+    return this._targetUrl;
+  }
+  public putTargetUrl(value: RulesetRulesActionParametersFromValueTargetUrl) {
+    this._targetUrl.internalValue = value;
+  }
+  public resetTargetUrl() {
+    this._targetUrl.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetUrlInput() {
+    return this._targetUrl.internalValue;
   }
 }
 export interface RulesetRulesActionParametersHeaders {
@@ -2999,11 +3220,11 @@ export class RulesetRulesActionParametersUriOutputReference extends cdktf.Comple
 }
 export interface RulesetRulesActionParameters {
   /**
-  * Whether to bypass the cache if expression matches.
+  * Whether to cache if expression matches.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#bypass_cache Ruleset#bypass_cache}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#cache Ruleset#cache}
   */
-  readonly bypassCache?: boolean | cdktf.IResolvable;
+  readonly cache?: boolean | cdktf.IResolvable;
   /**
   * List of cookie values to include as part of custom fields logging.
   * 
@@ -3036,7 +3257,7 @@ export interface RulesetRulesActionParameters {
   */
   readonly originErrorPagePassthru?: boolean | cdktf.IResolvable;
   /**
-  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
+  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#phases Ruleset#phases}
   */
@@ -3114,6 +3335,12 @@ export interface RulesetRulesActionParameters {
   */
   readonly fromList?: RulesetRulesActionParametersFromList;
   /**
+  * from_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#from_value Ruleset#from_value}
+  */
+  readonly fromValue?: RulesetRulesActionParametersFromValue;
+  /**
   * headers block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#headers Ruleset#headers}
@@ -3163,7 +3390,7 @@ export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesAct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bypass_cache: cdktf.booleanToTerraform(struct!.bypassCache),
+    cache: cdktf.booleanToTerraform(struct!.cache),
     cookie_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cookieFields),
     host_header: cdktf.stringToTerraform(struct!.hostHeader),
     id: cdktf.stringToTerraform(struct!.id),
@@ -3182,6 +3409,7 @@ export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesAct
     cache_key: rulesetRulesActionParametersCacheKeyToTerraform(struct!.cacheKey),
     edge_ttl: rulesetRulesActionParametersEdgeTtlToTerraform(struct!.edgeTtl),
     from_list: rulesetRulesActionParametersFromListToTerraform(struct!.fromList),
+    from_value: rulesetRulesActionParametersFromValueToTerraform(struct!.fromValue),
     headers: cdktf.listMapper(rulesetRulesActionParametersHeadersToTerraform, true)(struct!.headers),
     matched_data: rulesetRulesActionParametersMatchedDataToTerraform(struct!.matchedData),
     origin: rulesetRulesActionParametersOriginToTerraform(struct!.origin),
@@ -3206,9 +3434,9 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   public get internalValue(): RulesetRulesActionParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bypassCache !== undefined) {
+    if (this._cache !== undefined) {
       hasAnyValues = true;
-      internalValueResult.bypassCache = this._bypassCache;
+      internalValueResult.cache = this._cache;
     }
     if (this._cookieFields !== undefined) {
       hasAnyValues = true;
@@ -3282,6 +3510,10 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.fromList = this._fromList?.internalValue;
     }
+    if (this._fromValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fromValue = this._fromValue?.internalValue;
+    }
     if (this._headers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.headers = this._headers?.internalValue;
@@ -3316,7 +3548,7 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   public set internalValue(value: RulesetRulesActionParameters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._bypassCache = undefined;
+      this._cache = undefined;
       this._cookieFields = undefined;
       this._hostHeader = undefined;
       this._id = undefined;
@@ -3335,6 +3567,7 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       this._cacheKey.internalValue = undefined;
       this._edgeTtl.internalValue = undefined;
       this._fromList.internalValue = undefined;
+      this._fromValue.internalValue = undefined;
       this._headers.internalValue = undefined;
       this._matchedData.internalValue = undefined;
       this._origin.internalValue = undefined;
@@ -3345,7 +3578,7 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._bypassCache = value.bypassCache;
+      this._cache = value.cache;
       this._cookieFields = value.cookieFields;
       this._hostHeader = value.hostHeader;
       this._id = value.id;
@@ -3364,6 +3597,7 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       this._cacheKey.internalValue = value.cacheKey;
       this._edgeTtl.internalValue = value.edgeTtl;
       this._fromList.internalValue = value.fromList;
+      this._fromValue.internalValue = value.fromValue;
       this._headers.internalValue = value.headers;
       this._matchedData.internalValue = value.matchedData;
       this._origin.internalValue = value.origin;
@@ -3374,20 +3608,20 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     }
   }
 
-  // bypass_cache - computed: false, optional: true, required: false
-  private _bypassCache?: boolean | cdktf.IResolvable; 
-  public get bypassCache() {
-    return this.getBooleanAttribute('bypass_cache');
+  // cache - computed: false, optional: true, required: false
+  private _cache?: boolean | cdktf.IResolvable; 
+  public get cache() {
+    return this.getBooleanAttribute('cache');
   }
-  public set bypassCache(value: boolean | cdktf.IResolvable) {
-    this._bypassCache = value;
+  public set cache(value: boolean | cdktf.IResolvable) {
+    this._cache = value;
   }
-  public resetBypassCache() {
-    this._bypassCache = undefined;
+  public resetCache() {
+    this._cache = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get bypassCacheInput() {
-    return this._bypassCache;
+  public get cacheInput() {
+    return this._cache;
   }
 
   // cookie_fields - computed: false, optional: true, required: false
@@ -3676,6 +3910,22 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get fromListInput() {
     return this._fromList.internalValue;
+  }
+
+  // from_value - computed: false, optional: true, required: false
+  private _fromValue = new RulesetRulesActionParametersFromValueOutputReference(this, "from_value");
+  public get fromValue() {
+    return this._fromValue;
+  }
+  public putFromValue(value: RulesetRulesActionParametersFromValue) {
+    this._fromValue.internalValue = value;
+  }
+  public resetFromValue() {
+    this._fromValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromValueInput() {
+    return this._fromValue.internalValue;
   }
 
   // headers - computed: false, optional: true, required: false
@@ -4535,7 +4785,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

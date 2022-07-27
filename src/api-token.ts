@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The expiration time on or after which the token MUST NOT be accepted for processing.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#expires_on ApiToken#expires_on}
+  */
+  readonly expiresOn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#id ApiToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -20,6 +26,12 @@ export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#name ApiToken#name}
   */
   readonly name: string;
+  /**
+  * The time before which the token MUST NOT be accepted for processing.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token#not_before ApiToken#not_before}
+  */
+  readonly notBefore?: string;
   /**
   * condition block
   * 
@@ -374,7 +386,7 @@ export class ApiToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -385,8 +397,10 @@ export class ApiToken extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._expiresOn = config.expiresOn;
     this._id = config.id;
     this._name = config.name;
+    this._notBefore = config.notBefore;
     this._condition.internalValue = config.condition;
     this._policy.internalValue = config.policy;
   }
@@ -394,6 +408,22 @@ export class ApiToken extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // expires_on - computed: false, optional: true, required: false
+  private _expiresOn?: string; 
+  public get expiresOn() {
+    return this.getStringAttribute('expires_on');
+  }
+  public set expiresOn(value: string) {
+    this._expiresOn = value;
+  }
+  public resetExpiresOn() {
+    this._expiresOn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expiresOnInput() {
+    return this._expiresOn;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -432,6 +462,22 @@ export class ApiToken extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // not_before - computed: false, optional: true, required: false
+  private _notBefore?: string; 
+  public get notBefore() {
+    return this.getStringAttribute('not_before');
+  }
+  public set notBefore(value: string) {
+    this._notBefore = value;
+  }
+  public resetNotBefore() {
+    this._notBefore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notBeforeInput() {
+    return this._notBefore;
   }
 
   // status - computed: true, optional: false, required: false
@@ -479,8 +525,10 @@ export class ApiToken extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      expires_on: cdktf.stringToTerraform(this._expiresOn),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      not_before: cdktf.stringToTerraform(this._notBefore),
       condition: apiTokenConditionToTerraform(this._condition.internalValue),
       policy: cdktf.listMapper(apiTokenPolicyToTerraform, true)(this._policy.internalValue),
     };

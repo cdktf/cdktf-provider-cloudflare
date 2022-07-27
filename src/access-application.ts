@@ -48,7 +48,7 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#domain AccessApplication#domain}
   */
-  readonly domain: string;
+  readonly domain?: string;
   /**
   * Option to provide increased security against compromised authorization tokens and CSRF attacks by requiring an additional "binding" cookie on requests. Defaults to `false`.
   * 
@@ -56,7 +56,7 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableBindingCookie?: boolean | cdktf.IResolvable;
   /**
-  * Option to add the `HttpOnly` cookie flag to access tokens. Defaults to `true`.
+  * Option to add the `HttpOnly` cookie flag to access tokens.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
   */
@@ -105,7 +105,7 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly skipInterstitial?: boolean | cdktf.IResolvable;
   /**
-  * The application type. Available values: `self_hosted`, `ssh`, `vnc`, `file`. Defaults to `self_hosted`.
+  * The application type. Available values: `self_hosted`, `saas`, `ssh`, `vnc`, `file`. Defaults to `self_hosted`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#type AccessApplication#type}
   */
@@ -122,6 +122,12 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#cors_headers AccessApplication#cors_headers}
   */
   readonly corsHeaders?: AccessApplicationCorsHeaders[] | cdktf.IResolvable;
+  /**
+  * saas_app block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#saas_app AccessApplication#saas_app}
+  */
+  readonly saasApp?: AccessApplicationSaasApp;
 }
 export interface AccessApplicationCorsHeaders {
   /**
@@ -425,6 +431,125 @@ export class AccessApplicationCorsHeadersList extends cdktf.ComplexList {
     return new AccessApplicationCorsHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessApplicationSaasApp {
+  /**
+  * The service provider's endpoint that is responsible for receiving and parsing a SAML assertion.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#consumer_service_url AccessApplication#consumer_service_url}
+  */
+  readonly consumerServiceUrl: string;
+  /**
+  * The format of the name identifier sent to the SaaS application. Defaults to `email`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#name_id_format AccessApplication#name_id_format}
+  */
+  readonly nameIdFormat?: string;
+  /**
+  * A globally unique name for an identity or service provider.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#sp_entity_id AccessApplication#sp_entity_id}
+  */
+  readonly spEntityId: string;
+}
+
+export function accessApplicationSaasAppToTerraform(struct?: AccessApplicationSaasAppOutputReference | AccessApplicationSaasApp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    consumer_service_url: cdktf.stringToTerraform(struct!.consumerServiceUrl),
+    name_id_format: cdktf.stringToTerraform(struct!.nameIdFormat),
+    sp_entity_id: cdktf.stringToTerraform(struct!.spEntityId),
+  }
+}
+
+export class AccessApplicationSaasAppOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessApplicationSaasApp | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._consumerServiceUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.consumerServiceUrl = this._consumerServiceUrl;
+    }
+    if (this._nameIdFormat !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nameIdFormat = this._nameIdFormat;
+    }
+    if (this._spEntityId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spEntityId = this._spEntityId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessApplicationSaasApp | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._consumerServiceUrl = undefined;
+      this._nameIdFormat = undefined;
+      this._spEntityId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._consumerServiceUrl = value.consumerServiceUrl;
+      this._nameIdFormat = value.nameIdFormat;
+      this._spEntityId = value.spEntityId;
+    }
+  }
+
+  // consumer_service_url - computed: false, optional: false, required: true
+  private _consumerServiceUrl?: string; 
+  public get consumerServiceUrl() {
+    return this.getStringAttribute('consumer_service_url');
+  }
+  public set consumerServiceUrl(value: string) {
+    this._consumerServiceUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get consumerServiceUrlInput() {
+    return this._consumerServiceUrl;
+  }
+
+  // name_id_format - computed: false, optional: true, required: false
+  private _nameIdFormat?: string; 
+  public get nameIdFormat() {
+    return this.getStringAttribute('name_id_format');
+  }
+  public set nameIdFormat(value: string) {
+    this._nameIdFormat = value;
+  }
+  public resetNameIdFormat() {
+    this._nameIdFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameIdFormatInput() {
+    return this._nameIdFormat;
+  }
+
+  // sp_entity_id - computed: false, optional: false, required: true
+  private _spEntityId?: string; 
+  public get spEntityId() {
+    return this.getStringAttribute('sp_entity_id');
+  }
+  public set spEntityId(value: string) {
+    this._spEntityId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spEntityIdInput() {
+    return this._spEntityId;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application cloudflare_access_application}
@@ -452,7 +577,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -482,6 +607,7 @@ export class AccessApplication extends cdktf.TerraformResource {
     this._type = config.type;
     this._zoneId = config.zoneId;
     this._corsHeaders.internalValue = config.corsHeaders;
+    this._saasApp.internalValue = config.saasApp;
   }
 
   // ==========
@@ -589,13 +715,16 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._customDenyUrl;
   }
 
-  // domain - computed: false, optional: false, required: true
+  // domain - computed: true, optional: true, required: false
   private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get domainInput() {
@@ -791,6 +920,22 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._corsHeaders.internalValue;
   }
 
+  // saas_app - computed: false, optional: true, required: false
+  private _saasApp = new AccessApplicationSaasAppOutputReference(this, "saas_app");
+  public get saasApp() {
+    return this._saasApp;
+  }
+  public putSaasApp(value: AccessApplicationSaasApp) {
+    this._saasApp.internalValue = value;
+  }
+  public resetSaasApp() {
+    this._saasApp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get saasAppInput() {
+    return this._saasApp.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -816,6 +961,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       cors_headers: cdktf.listMapper(accessApplicationCorsHeadersToTerraform, true)(this._corsHeaders.internalValue),
+      saas_app: accessApplicationSaasAppToTerraform(this._saasApp.internalValue),
     };
   }
 }

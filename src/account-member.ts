@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface AccountMemberConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Account ID to create the account member in.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#account_id AccountMember#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * The email address of the user who you wish to manage. Following creation, this field becomes read only via the API and cannot be updated.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#email_address AccountMember#email_address}
@@ -54,7 +60,7 @@ export class AccountMember extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_member',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -65,6 +71,7 @@ export class AccountMember extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._emailAddress = config.emailAddress;
     this._id = config.id;
     this._roleIds = config.roleIds;
@@ -73,6 +80,22 @@ export class AccountMember extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // email_address - computed: false, optional: false, required: true
   private _emailAddress?: string; 
@@ -122,6 +145,7 @@ export class AccountMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       email_address: cdktf.stringToTerraform(this._emailAddress),
       id: cdktf.stringToTerraform(this._id),
       role_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleIds),

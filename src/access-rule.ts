@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#account_id AccessRule#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#id AccessRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -156,7 +162,7 @@ export class AccessRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -167,6 +173,7 @@ export class AccessRule extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._id = config.id;
     this._mode = config.mode;
     this._notes = config.notes;
@@ -177,6 +184,22 @@ export class AccessRule extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -258,6 +281,7 @@ export class AccessRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       mode: cdktf.stringToTerraform(this._mode),
       notes: cdktf.stringToTerraform(this._notes),
