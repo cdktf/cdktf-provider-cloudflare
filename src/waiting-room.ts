@@ -63,7 +63,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   */
   readonly newUsersPerMinute: number;
   /**
-  * The path within the host to enable the waiting room on.
+  * The path within the host to enable the waiting room on. Defaults to `/`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#path WaitingRoom#path}
   */
@@ -81,7 +81,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   */
   readonly queueingMethod?: string;
   /**
-  * Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin.
+  * Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin. Defaults to `5`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#session_duration WaitingRoom#session_duration}
   */
@@ -240,7 +240,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

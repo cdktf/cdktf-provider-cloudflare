@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The custom origin server used for certificates.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
   */
   readonly customOriginServer?: string;
   /**
+  * The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
   */
   readonly customOriginSni?: string;
   /**
+  * Hostname you intend to request a certificate for.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#hostname CustomHostname#hostname}
   */
   readonly hostname: string;
@@ -199,22 +205,32 @@ export class CustomHostnameSslValidationRecordsList extends cdktf.ComplexList {
 }
 export interface CustomHostnameSslSettings {
   /**
+  * List of SSL/TLS ciphers to associate with this certificate.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#ciphers CustomHostname#ciphers}
   */
   readonly ciphers?: string[];
   /**
+  * Whether early hints should be supported. Available values: `on`, `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#early_hints CustomHostname#early_hints}
   */
   readonly earlyHints?: string;
   /**
+  * Whether HTTP2 should be supported. Available values: `on`, `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#http2 CustomHostname#http2}
   */
   readonly http2?: string;
   /**
+  * Lowest version of TLS this certificate should support. Available values: `1.0`, `1.1`, `1.2`, `1.3`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#min_tls_version CustomHostname#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
+  * Whether TLSv1.3 should be supported. Available values: `on`, `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#tls13 CustomHostname#tls13}
   */
   readonly tls13?: string;
@@ -408,24 +424,32 @@ export interface CustomHostnameSsl {
   */
   readonly certificateAuthority?: string;
   /**
+  * If a custom uploaded certificate is used.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_certificate CustomHostname#custom_certificate}
   */
   readonly customCertificate?: string;
   /**
+  * The key for a custom uploaded certificate.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_key CustomHostname#custom_key}
   */
   readonly customKey?: string;
   /**
+  * Domain control validation (DCV) method used for this hostname. Available values: `http`, `txt`, `email`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#method CustomHostname#method}
   */
   readonly method?: string;
   /**
-  * Defaults to `dv`.
+  * Level of validation to be used for this hostname. Available values: `dv`. Defaults to `dv`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#type CustomHostname#type}
   */
   readonly type?: string;
   /**
+  * Indicates whether the certificate covers a wildcard.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#wildcard CustomHostname#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
@@ -709,7 +733,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

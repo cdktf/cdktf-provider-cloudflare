@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Account ID to manage the zone resource in.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#account_id Zone#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#id Zone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -15,24 +21,32 @@ export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Wwhether to scan for DNS records on creation. Ignored after zone is created.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#jump_start Zone#jump_start}
   */
   readonly jumpStart?: boolean | cdktf.IResolvable;
   /**
+  * Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#paused Zone#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
+  * The name of the commercial plan to apply to the zone. Available values: `free`, `pro`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#plan Zone#plan}
   */
   readonly plan?: string;
   /**
-  * Defaults to `full`.
+  * A full zone implies that DNS is hosted with Cloudflare. A partial zone is typically a partner-hosted zone or a CNAME setup. Available values: `full`, `partial`. Defaults to `full`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#type Zone#type}
   */
   readonly type?: string;
   /**
+  * The DNS zone name which will be added.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#zone Zone#zone}
   */
   readonly zone: string;
@@ -64,7 +78,7 @@ export class Zone extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -75,6 +89,7 @@ export class Zone extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._id = config.id;
     this._jumpStart = config.jumpStart;
     this._paused = config.paused;
@@ -86,6 +101,22 @@ export class Zone extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -212,6 +243,7 @@ export class Zone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       jump_start: cdktf.booleanToTerraform(this._jumpStart),
       paused: cdktf.booleanToTerraform(this._paused),

@@ -73,6 +73,12 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly zoneId: string;
   /**
+  * country_pools block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country_pools LoadBalancer#country_pools}
+  */
+  readonly countryPools?: LoadBalancerCountryPools[] | cdktf.IResolvable;
+  /**
   * pop_pools block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop_pools LoadBalancer#pop_pools}
@@ -90,6 +96,124 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#rules LoadBalancer#rules}
   */
   readonly rules?: LoadBalancerRules[] | cdktf.IResolvable;
+}
+export interface LoadBalancerCountryPools {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country LoadBalancer#country}
+  */
+  readonly country: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  */
+  readonly poolIds: string[];
+}
+
+export function loadBalancerCountryPoolsToTerraform(struct?: LoadBalancerCountryPools | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    country: cdktf.stringToTerraform(struct!.country),
+    pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolIds),
+  }
+}
+
+export class LoadBalancerCountryPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerCountryPools | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._country !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.country = this._country;
+    }
+    if (this._poolIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolIds = this._poolIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerCountryPools | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._country = undefined;
+      this._poolIds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._country = value.country;
+      this._poolIds = value.poolIds;
+    }
+  }
+
+  // country - computed: false, optional: false, required: true
+  private _country?: string; 
+  public get country() {
+    return this.getStringAttribute('country');
+  }
+  public set country(value: string) {
+    this._country = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryInput() {
+    return this._country;
+  }
+
+  // pool_ids - computed: false, optional: false, required: true
+  private _poolIds?: string[]; 
+  public get poolIds() {
+    return this.getListAttribute('pool_ids');
+  }
+  public set poolIds(value: string[]) {
+    this._poolIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdsInput() {
+    return this._poolIds;
+  }
+}
+
+export class LoadBalancerCountryPoolsList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerCountryPools[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerCountryPoolsOutputReference {
+    return new LoadBalancerCountryPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface LoadBalancerPopPools {
   /**
@@ -473,6 +597,124 @@ export class LoadBalancerRulesFixedResponseOutputReference extends cdktf.Complex
     return this._statusCode;
   }
 }
+export interface LoadBalancerRulesOverridesCountryPools {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country LoadBalancer#country}
+  */
+  readonly country: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  */
+  readonly poolIds: string[];
+}
+
+export function loadBalancerRulesOverridesCountryPoolsToTerraform(struct?: LoadBalancerRulesOverridesCountryPools | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    country: cdktf.stringToTerraform(struct!.country),
+    pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolIds),
+  }
+}
+
+export class LoadBalancerRulesOverridesCountryPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRulesOverridesCountryPools | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._country !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.country = this._country;
+    }
+    if (this._poolIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolIds = this._poolIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRulesOverridesCountryPools | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._country = undefined;
+      this._poolIds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._country = value.country;
+      this._poolIds = value.poolIds;
+    }
+  }
+
+  // country - computed: false, optional: false, required: true
+  private _country?: string; 
+  public get country() {
+    return this.getStringAttribute('country');
+  }
+  public set country(value: string) {
+    this._country = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryInput() {
+    return this._country;
+  }
+
+  // pool_ids - computed: false, optional: false, required: true
+  private _poolIds?: string[]; 
+  public get poolIds() {
+    return this.getListAttribute('pool_ids');
+  }
+  public set poolIds(value: string[]) {
+    this._poolIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdsInput() {
+    return this._poolIds;
+  }
+}
+
+export class LoadBalancerRulesOverridesCountryPoolsList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRulesOverridesCountryPools[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRulesOverridesCountryPoolsOutputReference {
+    return new LoadBalancerRulesOverridesCountryPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRulesOverridesPopPools {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
@@ -739,6 +981,12 @@ export interface LoadBalancerRulesOverrides {
   */
   readonly ttl?: number;
   /**
+  * country_pools block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country_pools LoadBalancer#country_pools}
+  */
+  readonly countryPools?: LoadBalancerRulesOverridesCountryPools[] | cdktf.IResolvable;
+  /**
   * pop_pools block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop_pools LoadBalancer#pop_pools}
@@ -765,6 +1013,7 @@ export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRules
     session_affinity_ttl: cdktf.numberToTerraform(struct!.sessionAffinityTtl),
     steering_policy: cdktf.stringToTerraform(struct!.steeringPolicy),
     ttl: cdktf.numberToTerraform(struct!.ttl),
+    country_pools: cdktf.listMapper(loadBalancerRulesOverridesCountryPoolsToTerraform, true)(struct!.countryPools),
     pop_pools: cdktf.listMapper(loadBalancerRulesOverridesPopPoolsToTerraform, true)(struct!.popPools),
     region_pools: cdktf.listMapper(loadBalancerRulesOverridesRegionPoolsToTerraform, true)(struct!.regionPools),
   }
@@ -818,6 +1067,10 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.ttl = this._ttl;
     }
+    if (this._countryPools?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countryPools = this._countryPools?.internalValue;
+    }
     if (this._popPools?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.popPools = this._popPools?.internalValue;
@@ -840,6 +1093,7 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._sessionAffinityTtl = undefined;
       this._steeringPolicy = undefined;
       this._ttl = undefined;
+      this._countryPools.internalValue = undefined;
       this._popPools.internalValue = undefined;
       this._regionPools.internalValue = undefined;
     }
@@ -857,6 +1111,7 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._sessionAffinityTtl = value.sessionAffinityTtl;
       this._steeringPolicy = value.steeringPolicy;
       this._ttl = value.ttl;
+      this._countryPools.internalValue = value.countryPools;
       this._popPools.internalValue = value.popPools;
       this._regionPools.internalValue = value.regionPools;
     }
@@ -972,6 +1227,22 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
   // Temporarily expose input value. Use with caution.
   public get ttlInput() {
     return this._ttl;
+  }
+
+  // country_pools - computed: false, optional: true, required: false
+  private _countryPools = new LoadBalancerRulesOverridesCountryPoolsList(this, "country_pools", true);
+  public get countryPools() {
+    return this._countryPools;
+  }
+  public putCountryPools(value: LoadBalancerRulesOverridesCountryPools[] | cdktf.IResolvable) {
+    this._countryPools.internalValue = value;
+  }
+  public resetCountryPools() {
+    this._countryPools.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryPoolsInput() {
+    return this._countryPools.internalValue;
   }
 
   // pop_pools - computed: false, optional: true, required: false
@@ -1313,7 +1584,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -1337,6 +1608,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
     this._steeringPolicy = config.steeringPolicy;
     this._ttl = config.ttl;
     this._zoneId = config.zoneId;
+    this._countryPools.internalValue = config.countryPools;
     this._popPools.internalValue = config.popPools;
     this._regionPools.internalValue = config.regionPools;
     this._rules.internalValue = config.rules;
@@ -1552,6 +1824,22 @@ export class LoadBalancer extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
+  // country_pools - computed: false, optional: true, required: false
+  private _countryPools = new LoadBalancerCountryPoolsList(this, "country_pools", true);
+  public get countryPools() {
+    return this._countryPools;
+  }
+  public putCountryPools(value: LoadBalancerCountryPools[] | cdktf.IResolvable) {
+    this._countryPools.internalValue = value;
+  }
+  public resetCountryPools() {
+    this._countryPools.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryPoolsInput() {
+    return this._countryPools.internalValue;
+  }
+
   // pop_pools - computed: false, optional: true, required: false
   private _popPools = new LoadBalancerPopPoolsList(this, "pop_pools", true);
   public get popPools() {
@@ -1619,6 +1907,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       steering_policy: cdktf.stringToTerraform(this._steeringPolicy),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone_id: cdktf.stringToTerraform(this._zoneId),
+      country_pools: cdktf.listMapper(loadBalancerCountryPoolsToTerraform, true)(this._countryPools.internalValue),
       pop_pools: cdktf.listMapper(loadBalancerPopPoolsToTerraform, true)(this._popPools.internalValue),
       region_pools: cdktf.listMapper(loadBalancerRegionPoolsToTerraform, true)(this._regionPools.internalValue),
       rules: cdktf.listMapper(loadBalancerRulesToTerraform, true)(this._rules.internalValue),

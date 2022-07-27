@@ -87,18 +87,6 @@ export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * A list of email addresses we want to send the notifications to. Deprecated, use cloudflare_notification_policy instead.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#notification_email_addresses Healthcheck#notification_email_addresses}
-  */
-  readonly notificationEmailAddresses?: string[];
-  /**
-  * Whether the notifications are suspended or not. Useful for maintenance periods. Defaults to `false`.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#notification_suspended Healthcheck#notification_suspended}
-  */
-  readonly notificationSuspended?: boolean | cdktf.IResolvable;
-  /**
   * The endpoint path to health check against. Defaults to `/`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#path Healthcheck#path}
@@ -377,7 +365,7 @@ export class Healthcheck extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_healthcheck',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -401,8 +389,6 @@ export class Healthcheck extends cdktf.TerraformResource {
     this._interval = config.interval;
     this._method = config.method;
     this._name = config.name;
-    this._notificationEmailAddresses = config.notificationEmailAddresses;
-    this._notificationSuspended = config.notificationSuspended;
     this._path = config.path;
     this._port = config.port;
     this._retries = config.retries;
@@ -630,38 +616,6 @@ export class Healthcheck extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // notification_email_addresses - computed: false, optional: true, required: false
-  private _notificationEmailAddresses?: string[]; 
-  public get notificationEmailAddresses() {
-    return this.getListAttribute('notification_email_addresses');
-  }
-  public set notificationEmailAddresses(value: string[]) {
-    this._notificationEmailAddresses = value;
-  }
-  public resetNotificationEmailAddresses() {
-    this._notificationEmailAddresses = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationEmailAddressesInput() {
-    return this._notificationEmailAddresses;
-  }
-
-  // notification_suspended - computed: false, optional: true, required: false
-  private _notificationSuspended?: boolean | cdktf.IResolvable; 
-  public get notificationSuspended() {
-    return this.getBooleanAttribute('notification_suspended');
-  }
-  public set notificationSuspended(value: boolean | cdktf.IResolvable) {
-    this._notificationSuspended = value;
-  }
-  public resetNotificationSuspended() {
-    this._notificationSuspended = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationSuspendedInput() {
-    return this._notificationSuspended;
-  }
-
   // path - computed: false, optional: true, required: false
   private _path?: string; 
   public get path() {
@@ -819,8 +773,6 @@ export class Healthcheck extends cdktf.TerraformResource {
       interval: cdktf.numberToTerraform(this._interval),
       method: cdktf.stringToTerraform(this._method),
       name: cdktf.stringToTerraform(this._name),
-      notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmailAddresses),
-      notification_suspended: cdktf.booleanToTerraform(this._notificationSuspended),
       path: cdktf.stringToTerraform(this._path),
       port: cdktf.numberToTerraform(this._port),
       retries: cdktf.numberToTerraform(this._retries),
