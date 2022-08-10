@@ -54,7 +54,7 @@ export class WorkersKv extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
