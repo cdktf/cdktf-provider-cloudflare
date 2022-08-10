@@ -1075,10 +1075,6 @@ export class PageRuleActionsMinifyList extends cdktf.ComplexList {
 }
 export interface PageRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_online PageRule#always_online}
-  */
-  readonly alwaysOnline?: string;
-  /**
   * Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#always_use_https PageRule#always_use_https}
@@ -1254,7 +1250,6 @@ export function pageRuleActionsToTerraform(struct?: PageRuleActionsOutputReferen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    always_online: cdktf.stringToTerraform(struct!.alwaysOnline),
     always_use_https: cdktf.booleanToTerraform(struct!.alwaysUseHttps),
     automatic_https_rewrites: cdktf.stringToTerraform(struct!.automaticHttpsRewrites),
     browser_cache_ttl: cdktf.stringToTerraform(struct!.browserCacheTtl),
@@ -1309,10 +1304,6 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): PageRuleActions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._alwaysOnline !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.alwaysOnline = this._alwaysOnline;
-    }
     if (this._alwaysUseHttps !== undefined) {
       hasAnyValues = true;
       internalValueResult.alwaysUseHttps = this._alwaysUseHttps;
@@ -1467,7 +1458,6 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: PageRuleActions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._alwaysOnline = undefined;
       this._alwaysUseHttps = undefined;
       this._automaticHttpsRewrites = undefined;
       this._browserCacheTtl = undefined;
@@ -1508,7 +1498,6 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._alwaysOnline = value.alwaysOnline;
       this._alwaysUseHttps = value.alwaysUseHttps;
       this._automaticHttpsRewrites = value.automaticHttpsRewrites;
       this._browserCacheTtl = value.browserCacheTtl;
@@ -1547,22 +1536,6 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
       this._forwardingUrl.internalValue = value.forwardingUrl;
       this._minify.internalValue = value.minify;
     }
-  }
-
-  // always_online - computed: false, optional: true, required: false
-  private _alwaysOnline?: string; 
-  public get alwaysOnline() {
-    return this.getStringAttribute('always_online');
-  }
-  public set alwaysOnline(value: string) {
-    this._alwaysOnline = value;
-  }
-  public resetAlwaysOnline() {
-    this._alwaysOnline = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get alwaysOnlineInput() {
-    return this._alwaysOnline;
   }
 
   // always_use_https - computed: false, optional: true, required: false
@@ -2184,7 +2157,7 @@ export class PageRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_page_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
