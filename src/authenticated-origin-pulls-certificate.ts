@@ -141,7 +141,7 @@ export class AuthenticatedOriginPullsCertificate extends cdktf.TerraformResource
       terraformResourceType: 'cloudflare_authenticated_origin_pulls_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

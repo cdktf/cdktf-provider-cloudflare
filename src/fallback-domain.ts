@@ -211,7 +211,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_fallback_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -261,7 +261,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
   }
 
   // domains - computed: false, optional: false, required: true
-  private _domains = new FallbackDomainDomainsList(this, "domains", false);
+  private _domains = new FallbackDomainDomainsList(this, "domains", true);
   public get domains() {
     return this._domains;
   }
