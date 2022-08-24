@@ -39,7 +39,7 @@ export interface RulesetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_custom_errors`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
+  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_custom_errors`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`, `http_config_settings`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#phase Ruleset#phase}
   */
@@ -62,6 +62,163 @@ export interface RulesetConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#rules Ruleset#rules}
   */
   readonly rules?: RulesetRules[] | cdktf.IResolvable;
+}
+export interface RulesetRulesActionParametersAutominify {
+  /**
+  * SSL minification.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#css Ruleset#css}
+  */
+  readonly css?: boolean | cdktf.IResolvable;
+  /**
+  * HTML minification.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#html Ruleset#html}
+  */
+  readonly html?: boolean | cdktf.IResolvable;
+  /**
+  * JS minification.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#js Ruleset#js}
+  */
+  readonly js?: boolean | cdktf.IResolvable;
+}
+
+export function rulesetRulesActionParametersAutominifyToTerraform(struct?: RulesetRulesActionParametersAutominify | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    css: cdktf.booleanToTerraform(struct!.css),
+    html: cdktf.booleanToTerraform(struct!.html),
+    js: cdktf.booleanToTerraform(struct!.js),
+  }
+}
+
+export class RulesetRulesActionParametersAutominifyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RulesetRulesActionParametersAutominify | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._css !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.css = this._css;
+    }
+    if (this._html !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.html = this._html;
+    }
+    if (this._js !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.js = this._js;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetRulesActionParametersAutominify | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._css = undefined;
+      this._html = undefined;
+      this._js = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._css = value.css;
+      this._html = value.html;
+      this._js = value.js;
+    }
+  }
+
+  // css - computed: false, optional: true, required: false
+  private _css?: boolean | cdktf.IResolvable; 
+  public get css() {
+    return this.getBooleanAttribute('css');
+  }
+  public set css(value: boolean | cdktf.IResolvable) {
+    this._css = value;
+  }
+  public resetCss() {
+    this._css = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cssInput() {
+    return this._css;
+  }
+
+  // html - computed: false, optional: true, required: false
+  private _html?: boolean | cdktf.IResolvable; 
+  public get html() {
+    return this.getBooleanAttribute('html');
+  }
+  public set html(value: boolean | cdktf.IResolvable) {
+    this._html = value;
+  }
+  public resetHtml() {
+    this._html = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get htmlInput() {
+    return this._html;
+  }
+
+  // js - computed: false, optional: true, required: false
+  private _js?: boolean | cdktf.IResolvable; 
+  public get js() {
+    return this.getBooleanAttribute('js');
+  }
+  public set js(value: boolean | cdktf.IResolvable) {
+    this._js = value;
+  }
+  public resetJs() {
+    this._js = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsInput() {
+    return this._js;
+  }
+}
+
+export class RulesetRulesActionParametersAutominifyList extends cdktf.ComplexList {
+  public internalValue? : RulesetRulesActionParametersAutominify[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RulesetRulesActionParametersAutominifyOutputReference {
+    return new RulesetRulesActionParametersAutominifyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface RulesetRulesActionParametersBrowserTtl {
   /**
@@ -2065,7 +2222,7 @@ export class RulesetRulesActionParametersOriginOutputReference extends cdktf.Com
 }
 export interface RulesetRulesActionParametersOverridesCategories {
   /**
-  * Action to perform in the tag-level override. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `serve_error`, `skip`.
+  * Action to perform in the tag-level override. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `set_config`, `serve_error`, `skip`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action Ruleset#action}
   */
@@ -2251,7 +2408,7 @@ export class RulesetRulesActionParametersOverridesCategoriesList extends cdktf.C
 }
 export interface RulesetRulesActionParametersOverridesRules {
   /**
-  * Action to perform in the rule-level override. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `serve_error`, `skip`.
+  * Action to perform in the rule-level override. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `set_config`, `serve_error`, `skip`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action Ruleset#action}
   */
@@ -2498,7 +2655,7 @@ export class RulesetRulesActionParametersOverridesRulesList extends cdktf.Comple
 }
 export interface RulesetRulesActionParametersOverrides {
   /**
-  * Action to perform in the rule-level override. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `serve_error`, `skip`.
+  * Action to perform in the rule-level override. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `set_config`, `serve_error`, `skip`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action Ruleset#action}
   */
@@ -3287,6 +3444,18 @@ export class RulesetRulesActionParametersUriOutputReference extends cdktf.Comple
 }
 export interface RulesetRulesActionParameters {
   /**
+  * Turn on or off Cloudflare Automatic HTTPS rewrites.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+  */
+  readonly automaticHttpsRewrites?: boolean | cdktf.IResolvable;
+  /**
+  * Inspect the visitor's browser for headers commonly associated with spammers and certain bots.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#bic Ruleset#bic}
+  */
+  readonly bic?: boolean | cdktf.IResolvable;
+  /**
   * Whether to cache if expression matches.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#cache Ruleset#cache}
@@ -3311,11 +3480,41 @@ export interface RulesetRulesActionParameters {
   */
   readonly cookieFields?: string[];
   /**
+  * Turn off all active Cloudflare Apps.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#disable_apps Ruleset#disable_apps}
+  */
+  readonly disableApps?: boolean | cdktf.IResolvable;
+  /**
+  * Turn off railgun feature of the Cloudflare Speed app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#disable_railgun Ruleset#disable_railgun}
+  */
+  readonly disableRailgun?: boolean | cdktf.IResolvable;
+  /**
+  * Turn off zaraz feature.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#disable_zaraz Ruleset#disable_zaraz}
+  */
+  readonly disableZaraz?: boolean | cdktf.IResolvable;
+  /**
+  * Turn on or off the Cloudflare Email Obfuscation feature of the Cloudflare Scrape Shield app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#email_obfuscation Ruleset#email_obfuscation}
+  */
+  readonly emailObfuscation?: boolean | cdktf.IResolvable;
+  /**
   * Host Header that request origin receives.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#host_header Ruleset#host_header}
   */
   readonly hostHeader?: string;
+  /**
+  * Turn on or off the hotlink protection feature.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#hotlink_protection Ruleset#hotlink_protection}
+  */
+  readonly hotlinkProtection?: boolean | cdktf.IResolvable;
   /**
   * Identifier of the action parameter to modify.
   * 
@@ -3330,17 +3529,35 @@ export interface RulesetRulesActionParameters {
   */
   readonly increment?: number;
   /**
+  * Turn on or off Cloudflare Mirage of the Cloudflare Speed app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#mirage Ruleset#mirage}
+  */
+  readonly mirage?: boolean | cdktf.IResolvable;
+  /**
+  * Turn on or off the Cloudflare Opportunistic Encryption feature of the Edge Certificates tab in the Cloudflare SSL/TLS app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+  */
+  readonly opportunisticEncryption?: boolean | cdktf.IResolvable;
+  /**
   * Pass-through error page for origin.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
   */
   readonly originErrorPagePassthru?: boolean | cdktf.IResolvable;
   /**
-  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_custom_errors`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
+  * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_custom_errors`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`, `http_config_settings`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#phases Ruleset#phases}
   */
   readonly phases?: string[];
+  /**
+  * Apply options from the Polish feature of the Cloudflare Speed app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#polish Ruleset#polish}
+  */
+  readonly polish?: string;
   /**
   * Products to target with the actions. Available values: `bic`, `hot`, `ratelimit`, `securityLevel`, `uablock`, `waf`, `zonelockdown`.
   * 
@@ -3366,6 +3583,12 @@ export interface RulesetRulesActionParameters {
   */
   readonly responseFields?: string[];
   /**
+  * Turn on or off Cloudflare Rocket Loader in the Cloudflare Speed app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#rocket_loader Ruleset#rocket_loader}
+  */
+  readonly rocketLoader?: boolean | cdktf.IResolvable;
+  /**
   * Map of managed WAF rule ID to comma-delimited string of ruleset rule IDs. Example: `rules = { "efb7b8c949ac4650a09736fc376e9aee" = "5de7edfa648c4d6891dc3e7f84534ffa,e3a567afc347477d9702d9047e97d760" }`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#rules Ruleset#rules}
@@ -3384,17 +3607,47 @@ export interface RulesetRulesActionParameters {
   */
   readonly rulesets?: string[];
   /**
+  * Control options for the Security Level feature from the Security app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#security_level Ruleset#security_level}
+  */
+  readonly securityLevel?: string;
+  /**
+  * Turn on or off the Server Side Excludes feature of the Cloudflare Scrape Shield app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#server_side_excludes Ruleset#server_side_excludes}
+  */
+  readonly serverSideExcludes?: boolean | cdktf.IResolvable;
+  /**
+  * Control options for the SSL feature of the Edge Certificates tab in the Cloudflare SSL/TLS app.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#ssl Ruleset#ssl}
+  */
+  readonly ssl?: string;
+  /**
   * HTTP status code of the custom error response.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#status_code Ruleset#status_code}
   */
   readonly statusCode?: number;
   /**
+  * Turn on or off the SXG feature.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#sxg Ruleset#sxg}
+  */
+  readonly sxg?: boolean | cdktf.IResolvable;
+  /**
   * Version of the ruleset to deploy.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#version Ruleset#version}
   */
   readonly version?: string;
+  /**
+  * autominify block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#autominify Ruleset#autominify}
+  */
+  readonly autominify?: RulesetRulesActionParametersAutominify[] | cdktf.IResolvable;
   /**
   * browser_ttl block
   * 
@@ -3481,24 +3734,40 @@ export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesAct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    automatic_https_rewrites: cdktf.booleanToTerraform(struct!.automaticHttpsRewrites),
+    bic: cdktf.booleanToTerraform(struct!.bic),
     cache: cdktf.booleanToTerraform(struct!.cache),
     content: cdktf.stringToTerraform(struct!.content),
     content_type: cdktf.stringToTerraform(struct!.contentType),
     cookie_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cookieFields),
+    disable_apps: cdktf.booleanToTerraform(struct!.disableApps),
+    disable_railgun: cdktf.booleanToTerraform(struct!.disableRailgun),
+    disable_zaraz: cdktf.booleanToTerraform(struct!.disableZaraz),
+    email_obfuscation: cdktf.booleanToTerraform(struct!.emailObfuscation),
     host_header: cdktf.stringToTerraform(struct!.hostHeader),
+    hotlink_protection: cdktf.booleanToTerraform(struct!.hotlinkProtection),
     id: cdktf.stringToTerraform(struct!.id),
     increment: cdktf.numberToTerraform(struct!.increment),
+    mirage: cdktf.booleanToTerraform(struct!.mirage),
+    opportunistic_encryption: cdktf.booleanToTerraform(struct!.opportunisticEncryption),
     origin_error_page_passthru: cdktf.booleanToTerraform(struct!.originErrorPagePassthru),
     phases: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.phases),
+    polish: cdktf.stringToTerraform(struct!.polish),
     products: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.products),
     request_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestFields),
     respect_strong_etags: cdktf.booleanToTerraform(struct!.respectStrongEtags),
     response_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.responseFields),
+    rocket_loader: cdktf.booleanToTerraform(struct!.rocketLoader),
     rules: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.rules),
     ruleset: cdktf.stringToTerraform(struct!.ruleset),
     rulesets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rulesets),
+    security_level: cdktf.stringToTerraform(struct!.securityLevel),
+    server_side_excludes: cdktf.booleanToTerraform(struct!.serverSideExcludes),
+    ssl: cdktf.stringToTerraform(struct!.ssl),
     status_code: cdktf.numberToTerraform(struct!.statusCode),
+    sxg: cdktf.booleanToTerraform(struct!.sxg),
     version: cdktf.stringToTerraform(struct!.version),
+    autominify: cdktf.listMapper(rulesetRulesActionParametersAutominifyToTerraform, true)(struct!.autominify),
     browser_ttl: rulesetRulesActionParametersBrowserTtlToTerraform(struct!.browserTtl),
     cache_key: rulesetRulesActionParametersCacheKeyToTerraform(struct!.cacheKey),
     edge_ttl: rulesetRulesActionParametersEdgeTtlToTerraform(struct!.edgeTtl),
@@ -3529,6 +3798,14 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   public get internalValue(): RulesetRulesActionParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._automaticHttpsRewrites !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.automaticHttpsRewrites = this._automaticHttpsRewrites;
+    }
+    if (this._bic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bic = this._bic;
+    }
     if (this._cache !== undefined) {
       hasAnyValues = true;
       internalValueResult.cache = this._cache;
@@ -3545,9 +3822,29 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.cookieFields = this._cookieFields;
     }
+    if (this._disableApps !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableApps = this._disableApps;
+    }
+    if (this._disableRailgun !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableRailgun = this._disableRailgun;
+    }
+    if (this._disableZaraz !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableZaraz = this._disableZaraz;
+    }
+    if (this._emailObfuscation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailObfuscation = this._emailObfuscation;
+    }
     if (this._hostHeader !== undefined) {
       hasAnyValues = true;
       internalValueResult.hostHeader = this._hostHeader;
+    }
+    if (this._hotlinkProtection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hotlinkProtection = this._hotlinkProtection;
     }
     if (this._id !== undefined) {
       hasAnyValues = true;
@@ -3557,6 +3854,14 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.increment = this._increment;
     }
+    if (this._mirage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mirage = this._mirage;
+    }
+    if (this._opportunisticEncryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.opportunisticEncryption = this._opportunisticEncryption;
+    }
     if (this._originErrorPagePassthru !== undefined) {
       hasAnyValues = true;
       internalValueResult.originErrorPagePassthru = this._originErrorPagePassthru;
@@ -3564,6 +3869,10 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     if (this._phases !== undefined) {
       hasAnyValues = true;
       internalValueResult.phases = this._phases;
+    }
+    if (this._polish !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.polish = this._polish;
     }
     if (this._products !== undefined) {
       hasAnyValues = true;
@@ -3581,6 +3890,10 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.responseFields = this._responseFields;
     }
+    if (this._rocketLoader !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rocketLoader = this._rocketLoader;
+    }
     if (this._rules !== undefined) {
       hasAnyValues = true;
       internalValueResult.rules = this._rules;
@@ -3593,13 +3906,33 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.rulesets = this._rulesets;
     }
+    if (this._securityLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityLevel = this._securityLevel;
+    }
+    if (this._serverSideExcludes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverSideExcludes = this._serverSideExcludes;
+    }
+    if (this._ssl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ssl = this._ssl;
+    }
     if (this._statusCode !== undefined) {
       hasAnyValues = true;
       internalValueResult.statusCode = this._statusCode;
     }
+    if (this._sxg !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sxg = this._sxg;
+    }
     if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
+    }
+    if (this._autominify?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autominify = this._autominify?.internalValue;
     }
     if (this._browserTtl?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -3659,24 +3992,40 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   public set internalValue(value: RulesetRulesActionParameters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._automaticHttpsRewrites = undefined;
+      this._bic = undefined;
       this._cache = undefined;
       this._content = undefined;
       this._contentType = undefined;
       this._cookieFields = undefined;
+      this._disableApps = undefined;
+      this._disableRailgun = undefined;
+      this._disableZaraz = undefined;
+      this._emailObfuscation = undefined;
       this._hostHeader = undefined;
+      this._hotlinkProtection = undefined;
       this._id = undefined;
       this._increment = undefined;
+      this._mirage = undefined;
+      this._opportunisticEncryption = undefined;
       this._originErrorPagePassthru = undefined;
       this._phases = undefined;
+      this._polish = undefined;
       this._products = undefined;
       this._requestFields = undefined;
       this._respectStrongEtags = undefined;
       this._responseFields = undefined;
+      this._rocketLoader = undefined;
       this._rules = undefined;
       this._ruleset = undefined;
       this._rulesets = undefined;
+      this._securityLevel = undefined;
+      this._serverSideExcludes = undefined;
+      this._ssl = undefined;
       this._statusCode = undefined;
+      this._sxg = undefined;
       this._version = undefined;
+      this._autominify.internalValue = undefined;
       this._browserTtl.internalValue = undefined;
       this._cacheKey.internalValue = undefined;
       this._edgeTtl.internalValue = undefined;
@@ -3693,24 +4042,40 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._automaticHttpsRewrites = value.automaticHttpsRewrites;
+      this._bic = value.bic;
       this._cache = value.cache;
       this._content = value.content;
       this._contentType = value.contentType;
       this._cookieFields = value.cookieFields;
+      this._disableApps = value.disableApps;
+      this._disableRailgun = value.disableRailgun;
+      this._disableZaraz = value.disableZaraz;
+      this._emailObfuscation = value.emailObfuscation;
       this._hostHeader = value.hostHeader;
+      this._hotlinkProtection = value.hotlinkProtection;
       this._id = value.id;
       this._increment = value.increment;
+      this._mirage = value.mirage;
+      this._opportunisticEncryption = value.opportunisticEncryption;
       this._originErrorPagePassthru = value.originErrorPagePassthru;
       this._phases = value.phases;
+      this._polish = value.polish;
       this._products = value.products;
       this._requestFields = value.requestFields;
       this._respectStrongEtags = value.respectStrongEtags;
       this._responseFields = value.responseFields;
+      this._rocketLoader = value.rocketLoader;
       this._rules = value.rules;
       this._ruleset = value.ruleset;
       this._rulesets = value.rulesets;
+      this._securityLevel = value.securityLevel;
+      this._serverSideExcludes = value.serverSideExcludes;
+      this._ssl = value.ssl;
       this._statusCode = value.statusCode;
+      this._sxg = value.sxg;
       this._version = value.version;
+      this._autominify.internalValue = value.autominify;
       this._browserTtl.internalValue = value.browserTtl;
       this._cacheKey.internalValue = value.cacheKey;
       this._edgeTtl.internalValue = value.edgeTtl;
@@ -3725,6 +4090,38 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
       this._sni.internalValue = value.sni;
       this._uri.internalValue = value.uri;
     }
+  }
+
+  // automatic_https_rewrites - computed: false, optional: true, required: false
+  private _automaticHttpsRewrites?: boolean | cdktf.IResolvable; 
+  public get automaticHttpsRewrites() {
+    return this.getBooleanAttribute('automatic_https_rewrites');
+  }
+  public set automaticHttpsRewrites(value: boolean | cdktf.IResolvable) {
+    this._automaticHttpsRewrites = value;
+  }
+  public resetAutomaticHttpsRewrites() {
+    this._automaticHttpsRewrites = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automaticHttpsRewritesInput() {
+    return this._automaticHttpsRewrites;
+  }
+
+  // bic - computed: false, optional: true, required: false
+  private _bic?: boolean | cdktf.IResolvable; 
+  public get bic() {
+    return this.getBooleanAttribute('bic');
+  }
+  public set bic(value: boolean | cdktf.IResolvable) {
+    this._bic = value;
+  }
+  public resetBic() {
+    this._bic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bicInput() {
+    return this._bic;
   }
 
   // cache - computed: false, optional: true, required: false
@@ -3791,6 +4188,70 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     return this._cookieFields;
   }
 
+  // disable_apps - computed: false, optional: true, required: false
+  private _disableApps?: boolean | cdktf.IResolvable; 
+  public get disableApps() {
+    return this.getBooleanAttribute('disable_apps');
+  }
+  public set disableApps(value: boolean | cdktf.IResolvable) {
+    this._disableApps = value;
+  }
+  public resetDisableApps() {
+    this._disableApps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableAppsInput() {
+    return this._disableApps;
+  }
+
+  // disable_railgun - computed: false, optional: true, required: false
+  private _disableRailgun?: boolean | cdktf.IResolvable; 
+  public get disableRailgun() {
+    return this.getBooleanAttribute('disable_railgun');
+  }
+  public set disableRailgun(value: boolean | cdktf.IResolvable) {
+    this._disableRailgun = value;
+  }
+  public resetDisableRailgun() {
+    this._disableRailgun = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRailgunInput() {
+    return this._disableRailgun;
+  }
+
+  // disable_zaraz - computed: false, optional: true, required: false
+  private _disableZaraz?: boolean | cdktf.IResolvable; 
+  public get disableZaraz() {
+    return this.getBooleanAttribute('disable_zaraz');
+  }
+  public set disableZaraz(value: boolean | cdktf.IResolvable) {
+    this._disableZaraz = value;
+  }
+  public resetDisableZaraz() {
+    this._disableZaraz = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableZarazInput() {
+    return this._disableZaraz;
+  }
+
+  // email_obfuscation - computed: false, optional: true, required: false
+  private _emailObfuscation?: boolean | cdktf.IResolvable; 
+  public get emailObfuscation() {
+    return this.getBooleanAttribute('email_obfuscation');
+  }
+  public set emailObfuscation(value: boolean | cdktf.IResolvable) {
+    this._emailObfuscation = value;
+  }
+  public resetEmailObfuscation() {
+    this._emailObfuscation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailObfuscationInput() {
+    return this._emailObfuscation;
+  }
+
   // host_header - computed: false, optional: true, required: false
   private _hostHeader?: string; 
   public get hostHeader() {
@@ -3805,6 +4266,22 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get hostHeaderInput() {
     return this._hostHeader;
+  }
+
+  // hotlink_protection - computed: false, optional: true, required: false
+  private _hotlinkProtection?: boolean | cdktf.IResolvable; 
+  public get hotlinkProtection() {
+    return this.getBooleanAttribute('hotlink_protection');
+  }
+  public set hotlinkProtection(value: boolean | cdktf.IResolvable) {
+    this._hotlinkProtection = value;
+  }
+  public resetHotlinkProtection() {
+    this._hotlinkProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hotlinkProtectionInput() {
+    return this._hotlinkProtection;
   }
 
   // id - computed: false, optional: true, required: false
@@ -3839,6 +4316,38 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     return this._increment;
   }
 
+  // mirage - computed: false, optional: true, required: false
+  private _mirage?: boolean | cdktf.IResolvable; 
+  public get mirage() {
+    return this.getBooleanAttribute('mirage');
+  }
+  public set mirage(value: boolean | cdktf.IResolvable) {
+    this._mirage = value;
+  }
+  public resetMirage() {
+    this._mirage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mirageInput() {
+    return this._mirage;
+  }
+
+  // opportunistic_encryption - computed: false, optional: true, required: false
+  private _opportunisticEncryption?: boolean | cdktf.IResolvable; 
+  public get opportunisticEncryption() {
+    return this.getBooleanAttribute('opportunistic_encryption');
+  }
+  public set opportunisticEncryption(value: boolean | cdktf.IResolvable) {
+    this._opportunisticEncryption = value;
+  }
+  public resetOpportunisticEncryption() {
+    this._opportunisticEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opportunisticEncryptionInput() {
+    return this._opportunisticEncryption;
+  }
+
   // origin_error_page_passthru - computed: false, optional: true, required: false
   private _originErrorPagePassthru?: boolean | cdktf.IResolvable; 
   public get originErrorPagePassthru() {
@@ -3869,6 +4378,22 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get phasesInput() {
     return this._phases;
+  }
+
+  // polish - computed: false, optional: true, required: false
+  private _polish?: string; 
+  public get polish() {
+    return this.getStringAttribute('polish');
+  }
+  public set polish(value: string) {
+    this._polish = value;
+  }
+  public resetPolish() {
+    this._polish = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get polishInput() {
+    return this._polish;
   }
 
   // products - computed: false, optional: true, required: false
@@ -3935,6 +4460,22 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     return this._responseFields;
   }
 
+  // rocket_loader - computed: false, optional: true, required: false
+  private _rocketLoader?: boolean | cdktf.IResolvable; 
+  public get rocketLoader() {
+    return this.getBooleanAttribute('rocket_loader');
+  }
+  public set rocketLoader(value: boolean | cdktf.IResolvable) {
+    this._rocketLoader = value;
+  }
+  public resetRocketLoader() {
+    this._rocketLoader = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rocketLoaderInput() {
+    return this._rocketLoader;
+  }
+
   // rules - computed: false, optional: true, required: false
   private _rules?: { [key: string]: string }; 
   public get rules() {
@@ -3983,6 +4524,54 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     return this._rulesets;
   }
 
+  // security_level - computed: false, optional: true, required: false
+  private _securityLevel?: string; 
+  public get securityLevel() {
+    return this.getStringAttribute('security_level');
+  }
+  public set securityLevel(value: string) {
+    this._securityLevel = value;
+  }
+  public resetSecurityLevel() {
+    this._securityLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityLevelInput() {
+    return this._securityLevel;
+  }
+
+  // server_side_excludes - computed: false, optional: true, required: false
+  private _serverSideExcludes?: boolean | cdktf.IResolvable; 
+  public get serverSideExcludes() {
+    return this.getBooleanAttribute('server_side_excludes');
+  }
+  public set serverSideExcludes(value: boolean | cdktf.IResolvable) {
+    this._serverSideExcludes = value;
+  }
+  public resetServerSideExcludes() {
+    this._serverSideExcludes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverSideExcludesInput() {
+    return this._serverSideExcludes;
+  }
+
+  // ssl - computed: false, optional: true, required: false
+  private _ssl?: string; 
+  public get ssl() {
+    return this.getStringAttribute('ssl');
+  }
+  public set ssl(value: string) {
+    this._ssl = value;
+  }
+  public resetSsl() {
+    this._ssl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslInput() {
+    return this._ssl;
+  }
+
   // status_code - computed: false, optional: true, required: false
   private _statusCode?: number; 
   public get statusCode() {
@@ -3999,6 +4588,22 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
     return this._statusCode;
   }
 
+  // sxg - computed: false, optional: true, required: false
+  private _sxg?: boolean | cdktf.IResolvable; 
+  public get sxg() {
+    return this.getBooleanAttribute('sxg');
+  }
+  public set sxg(value: boolean | cdktf.IResolvable) {
+    this._sxg = value;
+  }
+  public resetSxg() {
+    this._sxg = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sxgInput() {
+    return this._sxg;
+  }
+
   // version - computed: true, optional: true, required: false
   private _version?: string; 
   public get version() {
@@ -4013,6 +4618,22 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
     return this._version;
+  }
+
+  // autominify - computed: false, optional: true, required: false
+  private _autominify = new RulesetRulesActionParametersAutominifyList(this, "autominify", false);
+  public get autominify() {
+    return this._autominify;
+  }
+  public putAutominify(value: RulesetRulesActionParametersAutominify[] | cdktf.IResolvable) {
+    this._autominify.internalValue = value;
+  }
+  public resetAutominify() {
+    this._autominify.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autominifyInput() {
+    return this._autominify.internalValue;
   }
 
   // browser_ttl - computed: false, optional: true, required: false
@@ -4629,7 +5250,7 @@ export class RulesetRulesRatelimitOutputReference extends cdktf.ComplexObject {
 }
 export interface RulesetRules {
   /**
-  * Action to perform in the ruleset rule. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `serve_error`, `skip`.
+  * Action to perform in the ruleset rule. Available values: `block`, `challenge`, `ddos_dynamic`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `set_cache_settings`, `set_config`, `serve_error`, `skip`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action Ruleset#action}
   */
@@ -4968,7 +5589,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

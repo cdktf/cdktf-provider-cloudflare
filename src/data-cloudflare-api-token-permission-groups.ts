@@ -42,7 +42,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
       terraformResourceType: 'cloudflare_api_token_permission_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -14,7 +14,7 @@ export interface NotificationPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
-  * The event type that will trigger the dispatch of a notification. See the developer documentation for descriptions of [available alert types](https://developers.cloudflare.com/fundamentals/notifications/notification-available/) Available values: `billing_usage_alert`, `health_check_status_notification`, `g6_pool_toggle_alert`, `real_origin_monitoring`, `universal_ssl_event_type`, `bgp_hijack_notification`, `http_alert_origin_error`, `workers_alert`, `weekly_account_overview`.
+  * The event type that will trigger the dispatch of a notification. See the developer documentation for descriptions of [available alert types](https://developers.cloudflare.com/fundamentals/notifications/notification-available/). Available values: `billing_usage_alert`, `health_check_status_notification`, `g6_pool_toggle_alert`, `real_origin_monitoring`, `universal_ssl_event_type`, `dedicated_ssl_certificate_event_type`, `custom_ssl_certificate_event_type`, `access_custom_certificate_expiration_type`, `zone_aop_custom_certificate_expiration_type`, `bgp_hijack_notification`, `http_alert_origin_error`, `workers_alert`, `weekly_account_overview`, `expiring_service_token_alert`, `secondary_dns_all_primaries_failing`, `secondary_dns_zone_validation_warning`, `secondary_dns_primaries_failing`, `secondary_dns_zone_successfully_updated`, `dos_attack_l7`, `dos_attack_l4`, `advanced_ddos_attack_l7_alert`, `advanced_ddos_attack_l4_alert`, `fbm_volumetric_attack`, `fbm_auto_advertisement`, `load_balancing_pool_enablement_alert`, `load_balancing_health_alert`, `g6_health_alert`, `http_alert_edge_error`, `clickhouse_alert_fw_anomaly`, `clickhouse_alert_fw_ent_anomaly`, `failing_logpush_job_disabled_alert`, `scriptmonitor_alert_new_hosts`, `scriptmonitor_alert_new_scripts`, `scriptmonitor_alert_new_malicious_scripts`, `scriptmonitor_alert_new_malicious_url`, `scriptmonitor_alert_new_code_change_detections`, `scriptmonitor_alert_new_max_length_script_url`, `scriptmonitor_alert_new_malicious_hosts`, `sentinel_alert`, `hostname_aop_custom_certificate_expiration_type`, `stream_live_notifications`, `block_notification_new_block`, `block_notification_review_rejected`, `block_notification_review_accepted`, `web_analytics_metrics_update`, `workers_uptime`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#alert_type NotificationPolicy#alert_type}
   */
@@ -201,17 +201,47 @@ export interface NotificationPolicyFilters {
   */
   readonly enabled?: string[];
   /**
+  * Source configuration to alert on for pool or origin.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#event_source NotificationPolicy#event_source}
+  */
+  readonly eventSource?: string[];
+  /**
+  * Stream event type to alert on.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#event_type NotificationPolicy#event_type}
+  */
+  readonly eventType?: string[];
+  /**
   * Identifier health check.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#health_check_id NotificationPolicy#health_check_id}
   */
   readonly healthCheckId?: string[];
   /**
+  * Stream input id to alert on.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#input_id NotificationPolicy#input_id}
+  */
+  readonly inputId?: string[];
+  /**
   * A numerical limit. Example: `100`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#limit NotificationPolicy#limit}
   */
   readonly limit?: string[];
+  /**
+  * Health status to alert on for pool or origin.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#new_health NotificationPolicy#new_health}
+  */
+  readonly newHealth?: string[];
+  /**
+  * Packets per second threshold for dos alert.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
+  */
+  readonly packetsPerSecond?: string[];
   /**
   * Load balancer pool identifier.
   * 
@@ -224,6 +254,18 @@ export interface NotificationPolicyFilters {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#product NotificationPolicy#product}
   */
   readonly product?: string[];
+  /**
+  * Protocol to alert on for dos.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#protocol NotificationPolicy#protocol}
+  */
+  readonly protocol?: string[];
+  /**
+  * Requests per second threshold for dos alert.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
+  */
+  readonly requestsPerSecond?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#services NotificationPolicy#services}
   */
@@ -241,6 +283,18 @@ export interface NotificationPolicyFilters {
   */
   readonly status?: string[];
   /**
+  * Target host to alert on for dos.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#target_host NotificationPolicy#target_host}
+  */
+  readonly targetHost?: string[];
+  /**
+  * Target domain to alert on.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
+  */
+  readonly targetZoneName?: string[];
+  /**
   * A list of zone identifiers.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#zones NotificationPolicy#zones}
@@ -255,13 +309,22 @@ export function notificationPolicyFiltersToTerraform(struct?: NotificationPolicy
   }
   return {
     enabled: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabled),
+    event_source: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventSource),
+    event_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventType),
     health_check_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.healthCheckId),
+    input_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputId),
     limit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.limit),
+    new_health: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newHealth),
+    packets_per_second: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packetsPerSecond),
     pool_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolId),
     product: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.product),
+    protocol: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocol),
+    requests_per_second: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestsPerSecond),
     services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.services),
     slo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.slo),
     status: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.status),
+    target_host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetHost),
+    target_zone_name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetZoneName),
     zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.zones),
   }
 }
@@ -284,13 +347,33 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
+    if (this._eventSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventSource = this._eventSource;
+    }
+    if (this._eventType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventType = this._eventType;
+    }
     if (this._healthCheckId !== undefined) {
       hasAnyValues = true;
       internalValueResult.healthCheckId = this._healthCheckId;
     }
+    if (this._inputId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputId = this._inputId;
+    }
     if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
+    }
+    if (this._newHealth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.newHealth = this._newHealth;
+    }
+    if (this._packetsPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.packetsPerSecond = this._packetsPerSecond;
     }
     if (this._poolId !== undefined) {
       hasAnyValues = true;
@@ -299,6 +382,14 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     if (this._product !== undefined) {
       hasAnyValues = true;
       internalValueResult.product = this._product;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    if (this._requestsPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestsPerSecond = this._requestsPerSecond;
     }
     if (this._services !== undefined) {
       hasAnyValues = true;
@@ -312,6 +403,14 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
+    if (this._targetHost !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetHost = this._targetHost;
+    }
+    if (this._targetZoneName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetZoneName = this._targetZoneName;
+    }
     if (this._zones !== undefined) {
       hasAnyValues = true;
       internalValueResult.zones = this._zones;
@@ -323,25 +422,43 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
+      this._eventSource = undefined;
+      this._eventType = undefined;
       this._healthCheckId = undefined;
+      this._inputId = undefined;
       this._limit = undefined;
+      this._newHealth = undefined;
+      this._packetsPerSecond = undefined;
       this._poolId = undefined;
       this._product = undefined;
+      this._protocol = undefined;
+      this._requestsPerSecond = undefined;
       this._services = undefined;
       this._slo = undefined;
       this._status = undefined;
+      this._targetHost = undefined;
+      this._targetZoneName = undefined;
       this._zones = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
+      this._eventSource = value.eventSource;
+      this._eventType = value.eventType;
       this._healthCheckId = value.healthCheckId;
+      this._inputId = value.inputId;
       this._limit = value.limit;
+      this._newHealth = value.newHealth;
+      this._packetsPerSecond = value.packetsPerSecond;
       this._poolId = value.poolId;
       this._product = value.product;
+      this._protocol = value.protocol;
+      this._requestsPerSecond = value.requestsPerSecond;
       this._services = value.services;
       this._slo = value.slo;
       this._status = value.status;
+      this._targetHost = value.targetHost;
+      this._targetZoneName = value.targetZoneName;
       this._zones = value.zones;
     }
   }
@@ -362,6 +479,38 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._enabled;
   }
 
+  // event_source - computed: false, optional: true, required: false
+  private _eventSource?: string[]; 
+  public get eventSource() {
+    return cdktf.Fn.tolist(this.getListAttribute('event_source'));
+  }
+  public set eventSource(value: string[]) {
+    this._eventSource = value;
+  }
+  public resetEventSource() {
+    this._eventSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventSourceInput() {
+    return this._eventSource;
+  }
+
+  // event_type - computed: false, optional: true, required: false
+  private _eventType?: string[]; 
+  public get eventType() {
+    return cdktf.Fn.tolist(this.getListAttribute('event_type'));
+  }
+  public set eventType(value: string[]) {
+    this._eventType = value;
+  }
+  public resetEventType() {
+    this._eventType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventTypeInput() {
+    return this._eventType;
+  }
+
   // health_check_id - computed: false, optional: true, required: false
   private _healthCheckId?: string[]; 
   public get healthCheckId() {
@@ -378,6 +527,22 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._healthCheckId;
   }
 
+  // input_id - computed: false, optional: true, required: false
+  private _inputId?: string[]; 
+  public get inputId() {
+    return cdktf.Fn.tolist(this.getListAttribute('input_id'));
+  }
+  public set inputId(value: string[]) {
+    this._inputId = value;
+  }
+  public resetInputId() {
+    this._inputId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputIdInput() {
+    return this._inputId;
+  }
+
   // limit - computed: false, optional: true, required: false
   private _limit?: string[]; 
   public get limit() {
@@ -392,6 +557,38 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get limitInput() {
     return this._limit;
+  }
+
+  // new_health - computed: false, optional: true, required: false
+  private _newHealth?: string[]; 
+  public get newHealth() {
+    return cdktf.Fn.tolist(this.getListAttribute('new_health'));
+  }
+  public set newHealth(value: string[]) {
+    this._newHealth = value;
+  }
+  public resetNewHealth() {
+    this._newHealth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get newHealthInput() {
+    return this._newHealth;
+  }
+
+  // packets_per_second - computed: false, optional: true, required: false
+  private _packetsPerSecond?: string[]; 
+  public get packetsPerSecond() {
+    return cdktf.Fn.tolist(this.getListAttribute('packets_per_second'));
+  }
+  public set packetsPerSecond(value: string[]) {
+    this._packetsPerSecond = value;
+  }
+  public resetPacketsPerSecond() {
+    this._packetsPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get packetsPerSecondInput() {
+    return this._packetsPerSecond;
   }
 
   // pool_id - computed: false, optional: true, required: false
@@ -424,6 +621,38 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get productInput() {
     return this._product;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string[]; 
+  public get protocol() {
+    return cdktf.Fn.tolist(this.getListAttribute('protocol'));
+  }
+  public set protocol(value: string[]) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // requests_per_second - computed: false, optional: true, required: false
+  private _requestsPerSecond?: string[]; 
+  public get requestsPerSecond() {
+    return cdktf.Fn.tolist(this.getListAttribute('requests_per_second'));
+  }
+  public set requestsPerSecond(value: string[]) {
+    this._requestsPerSecond = value;
+  }
+  public resetRequestsPerSecond() {
+    this._requestsPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestsPerSecondInput() {
+    return this._requestsPerSecond;
   }
 
   // services - computed: false, optional: true, required: false
@@ -472,6 +701,38 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
     return this._status;
+  }
+
+  // target_host - computed: false, optional: true, required: false
+  private _targetHost?: string[]; 
+  public get targetHost() {
+    return cdktf.Fn.tolist(this.getListAttribute('target_host'));
+  }
+  public set targetHost(value: string[]) {
+    this._targetHost = value;
+  }
+  public resetTargetHost() {
+    this._targetHost = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetHostInput() {
+    return this._targetHost;
+  }
+
+  // target_zone_name - computed: false, optional: true, required: false
+  private _targetZoneName?: string[]; 
+  public get targetZoneName() {
+    return cdktf.Fn.tolist(this.getListAttribute('target_zone_name'));
+  }
+  public set targetZoneName(value: string[]) {
+    this._targetZoneName = value;
+  }
+  public resetTargetZoneName() {
+    this._targetZoneName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetZoneNameInput() {
+    return this._targetZoneName;
   }
 
   // zones - computed: false, optional: true, required: false
@@ -765,7 +1026,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
