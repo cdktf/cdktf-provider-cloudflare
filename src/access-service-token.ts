@@ -21,7 +21,7 @@ export interface AccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Regenerates the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
+  * Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
   */
@@ -66,7 +66,7 @@ export class AccessServiceToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_service_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

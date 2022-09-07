@@ -213,7 +213,7 @@ export interface NotificationPolicyFilters {
   */
   readonly eventType?: string[];
   /**
-  * Identifier health check.
+  * Identifier health check. Required when using `filters.0.status`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#health_check_id NotificationPolicy#health_check_id}
   */
@@ -1026,7 +1026,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface LogpushJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#account_id LogpushJob#account_id}
   */
@@ -75,7 +75,7 @@ export interface LogpushJobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ownershipChallenge?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#zone_id LogpushJob#zone_id}
   */
@@ -108,7 +108,7 @@ export class LogpushJob extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_job',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
