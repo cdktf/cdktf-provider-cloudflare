@@ -32,7 +32,7 @@ export interface CloudflareProviderConfig {
   */
   readonly apiHostname?: string;
   /**
-  * The API key for operations. Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead.
+  * The API key for operations. Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_key CloudflareProvider#api_key}
   */
@@ -50,7 +50,7 @@ export interface CloudflareProviderConfig {
   */
   readonly apiUserServiceKey?: string;
   /**
-  * A registered Cloudflare email address. Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Conflicts with `api_token`.
+  * A registered Cloudflare email address. Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#email CloudflareProvider#email}
   */
@@ -113,7 +113,7 @@ export class CloudflareProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'cloudflare',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       terraformProviderSource: 'cloudflare/cloudflare'

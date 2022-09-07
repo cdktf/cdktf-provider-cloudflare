@@ -49,7 +49,7 @@ export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly precedence: number;
   /**
-  * The prompt to display to the user for a justification for accessing the resource.
+  * The prompt to display to the user for a justification for accessing the resource. Required when using `purpose_justification_required`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#purpose_justification_prompt AccessPolicy#purpose_justification_prompt}
   */
@@ -4362,7 +4362,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

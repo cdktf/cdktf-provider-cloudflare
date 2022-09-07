@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The script content.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#content WorkerScript#content}
   */
   readonly content: string;
@@ -19,6 +21,14 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Whether to upload Worker as a module.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#module WorkerScript#module}
+  */
+  readonly module?: boolean | cdktf.IResolvable;
+  /**
+  * The name for the script.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
@@ -61,10 +71,14 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
 }
 export interface WorkerScriptKvNamespaceBinding {
   /**
+  * The global variable for the binding in your Worker code.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
+  * ID of the KV namespace you want to use.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#namespace_id WorkerScript#namespace_id}
   */
   readonly namespaceId: string;
@@ -179,10 +193,14 @@ export class WorkerScriptKvNamespaceBindingList extends cdktf.ComplexList {
 }
 export interface WorkerScriptPlainTextBinding {
   /**
+  * The global variable for the binding in your Worker code.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
+  * The plain text you want to store.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#text WorkerScript#text}
   */
   readonly text: string;
@@ -297,10 +315,14 @@ export class WorkerScriptPlainTextBindingList extends cdktf.ComplexList {
 }
 export interface WorkerScriptR2BucketBinding {
   /**
+  * The name of the Bucket to bind to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#bucket_name WorkerScript#bucket_name}
   */
   readonly bucketName: string;
   /**
+  * The global variable for the binding in your Worker code.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
@@ -415,10 +437,14 @@ export class WorkerScriptR2BucketBindingList extends cdktf.ComplexList {
 }
 export interface WorkerScriptSecretTextBinding {
   /**
+  * The global variable for the binding in your Worker code.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
+  * The secret text you want to store.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#text WorkerScript#text}
   */
   readonly text: string;
@@ -533,14 +559,20 @@ export class WorkerScriptSecretTextBindingList extends cdktf.ComplexList {
 }
 export interface WorkerScriptServiceBinding {
   /**
+  * The name of the Worker environment to bind to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#environment WorkerScript#environment}
   */
   readonly environment?: string;
   /**
+  * The global variable for the binding in your Worker code.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
+  * The name of the Worker to bind to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#service WorkerScript#service}
   */
   readonly service: string;
@@ -678,10 +710,14 @@ export class WorkerScriptServiceBindingList extends cdktf.ComplexList {
 }
 export interface WorkerScriptWebassemblyBinding {
   /**
+  * The base64 encoded wasm module you want to store.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#module WorkerScript#module}
   */
   readonly module: string;
   /**
+  * The global variable for the binding in your Worker code.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
   readonly name: string;
@@ -821,7 +857,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -834,6 +870,7 @@ export class WorkerScript extends cdktf.TerraformResource {
     });
     this._content = config.content;
     this._id = config.id;
+    this._module = config.module;
     this._name = config.name;
     this._kvNamespaceBinding.internalValue = config.kvNamespaceBinding;
     this._plainTextBinding.internalValue = config.plainTextBinding;
@@ -874,6 +911,22 @@ export class WorkerScript extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // module - computed: false, optional: true, required: false
+  private _module?: boolean | cdktf.IResolvable; 
+  public get module() {
+    return this.getBooleanAttribute('module');
+  }
+  public set module(value: boolean | cdktf.IResolvable) {
+    this._module = value;
+  }
+  public resetModule() {
+    this._module = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get moduleInput() {
+    return this._module;
   }
 
   // name - computed: false, optional: false, required: true
@@ -993,6 +1046,7 @@ export class WorkerScript extends cdktf.TerraformResource {
     return {
       content: cdktf.stringToTerraform(this._content),
       id: cdktf.stringToTerraform(this._id),
+      module: cdktf.booleanToTerraform(this._module),
       name: cdktf.stringToTerraform(this._name),
       kv_namespace_binding: cdktf.listMapper(workerScriptKvNamespaceBindingToTerraform, true)(this._kvNamespaceBinding.internalValue),
       plain_text_binding: cdktf.listMapper(workerScriptPlainTextBindingToTerraform, true)(this._plainTextBinding.internalValue),

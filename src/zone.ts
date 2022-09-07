@@ -21,7 +21,7 @@ export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Wwhether to scan for DNS records on creation. Ignored after zone is created.
+  * Whether to scan for DNS records on creation. Ignored after zone is created.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#jump_start Zone#jump_start}
   */
@@ -78,7 +78,7 @@ export class Zone extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

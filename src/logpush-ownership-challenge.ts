@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface LogpushOwnershipChallengeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_ownership_challenge#account_id LogpushOwnershipChallenge#account_id}
   */
@@ -25,7 +25,7 @@ export interface LogpushOwnershipChallengeConfig extends cdktf.TerraformMetaArgu
   */
   readonly id?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_ownership_challenge#zone_id LogpushOwnershipChallenge#zone_id}
   */
@@ -58,7 +58,7 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_ownership_challenge',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
