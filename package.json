@@ -50,10 +50,10 @@
     "dot-prop": "^5.2.0",
     "jsii": "^1.53.0",
     "jsii-diff": "^1.67.0",
-    "jsii-docgen": "^7.0.83",
+    "jsii-docgen": "^7.0.84",
     "jsii-pacmak": "^1.67.0",
     "npm-check-updates": "^15",
-    "projen": "^0.62.5",
+    "projen": "^0.62.6",
     "standard-version": "^9",
     "typescript": "^4.8.3"
   },
