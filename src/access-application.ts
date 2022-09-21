@@ -105,7 +105,7 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly skipInterstitial?: boolean | cdktf.IResolvable;
   /**
-  * The application type. Available values: `self_hosted`, `saas`, `ssh`, `vnc`, `file`. Defaults to `self_hosted`.
+  * The application type. Available values: `self_hosted`, `saas`, `ssh`, `vnc`, `bookmark`. Defaults to `self_hosted`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#type AccessApplication#type}
   */
@@ -577,7 +577,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.23.0',
+        providerVersion: '3.24.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
