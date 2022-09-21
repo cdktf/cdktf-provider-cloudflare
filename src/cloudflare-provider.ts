@@ -32,19 +32,19 @@ export interface CloudflareProviderConfig {
   */
   readonly apiHostname?: string;
   /**
-  * The API key for operations. Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`.
+  * The API key for operations. Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_key CloudflareProvider#api_key}
   */
   readonly apiKey?: string;
   /**
-  * The API Token for operations. Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable.
+  * The API Token for operations. Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_token CloudflareProvider#api_token}
   */
   readonly apiToken?: string;
   /**
-  * A special Cloudflare API key good for a restricted set of endpoints. Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable.
+  * A special Cloudflare API key good for a restricted set of endpoints. Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_user_service_key CloudflareProvider#api_user_service_key}
   */
@@ -113,7 +113,7 @@ export class CloudflareProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'cloudflare',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.23.0',
+        providerVersion: '3.24.0',
         providerVersionConstraint: '~> 3.14'
       },
       terraformProviderSource: 'cloudflare/cloudflare'
