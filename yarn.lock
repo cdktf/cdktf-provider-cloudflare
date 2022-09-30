@@ -1075,9 +1075,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.115"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.115.tgz#2399afb4cdf280eda7ffd69f913c7e4344129435"
-  integrity sha512-pX3LI9Tf9ltsf0Qm7RCTdht0seLi4mLwjLuQ0znvzk2S88dWIKZdhzjI2zraN2kjY1a3fByYWg4aK8/St3sS+Q==
+  version "10.1.116"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.116.tgz#ad00b81b7fe856ee7da8db6154ced20cfc64ae07"
+  integrity sha512-FFdxdNZo5zP82WX9/aDSd5KerHpTBVTnFd/U5qTiQB4YMpAm7UsYIuf2h0fovRRjHFC6dHX/oCGgF9+WT2RCtg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2164,10 +2164,10 @@ jsii-diff@^1.69.0:
     log4js "^6.6.1"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.97:
-  version "7.0.97"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.97.tgz#4f41a50571646d64629306d7d77a16148fa55a73"
-  integrity sha512-nCp5rJzPpfu3IYJcKLnD+1TSSk0SPC3JLUs1frXY+wDEN6JOmvFWrox6GBTEaFyxwZYaeeM1VEd+8TYwCdb+VA==
+jsii-docgen@^7.0.98:
+  version "7.0.98"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.98.tgz#43157761c517602ea2a613a86308b71630fcfd41"
+  integrity sha512-ayyTgmbH70ZVGeyc/BHZXs+0W+Yb2W3Jv0ri0y/ylVUaBq4SmLAGm4baHlUH29+1XZqv0FRyA1nJvia9TRyW4Q==
   dependencies:
     "@jsii/spec" "^1.69.0"
     case "^1.6.3"
