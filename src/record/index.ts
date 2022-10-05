@@ -1285,7 +1285,7 @@ export class Record extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

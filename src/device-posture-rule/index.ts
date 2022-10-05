@@ -18,6 +18,8 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Expire posture results after the specified amount of time. Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#expiration DevicePostureRule#expiration}
   */
   readonly expiration?: string;
@@ -29,14 +31,20 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Name of the device posture rule.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#name DevicePostureRule#name}
   */
   readonly name?: string;
   /**
+  * Tells the client when to run the device posture check. Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#schedule DevicePostureRule#schedule}
   */
   readonly schedule?: string;
   /**
+  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `workspace_one`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#type DevicePostureRule#type}
   */
   readonly type: string;
@@ -100,6 +108,18 @@ export interface DevicePostureRuleInput {
   */
   readonly operator?: string;
   /**
+  * The operating system excluding version information.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#os_distro_name DevicePostureRule#os_distro_name}
+  */
+  readonly osDistroName?: string;
+  /**
+  * The operating system version excluding OS name information or release name.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
+  */
+  readonly osDistroRevision?: string;
+  /**
   * The path to the file.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#path DevicePostureRule#path}
@@ -150,6 +170,8 @@ export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInpu
     exists: cdktf.booleanToTerraform(struct!.exists),
     id: cdktf.stringToTerraform(struct!.id),
     operator: cdktf.stringToTerraform(struct!.operator),
+    os_distro_name: cdktf.stringToTerraform(struct!.osDistroName),
+    os_distro_revision: cdktf.stringToTerraform(struct!.osDistroRevision),
     path: cdktf.stringToTerraform(struct!.path),
     require_all: cdktf.booleanToTerraform(struct!.requireAll),
     running: cdktf.booleanToTerraform(struct!.running),
@@ -207,6 +229,14 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
+    if (this._osDistroName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osDistroName = this._osDistroName;
+    }
+    if (this._osDistroRevision !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osDistroRevision = this._osDistroRevision;
+    }
     if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
@@ -245,6 +275,8 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._exists = undefined;
       this._id = undefined;
       this._operator = undefined;
+      this._osDistroName = undefined;
+      this._osDistroRevision = undefined;
       this._path = undefined;
       this._requireAll = undefined;
       this._running = undefined;
@@ -266,6 +298,8 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._exists = value.exists;
       this._id = value.id;
       this._operator = value.operator;
+      this._osDistroName = value.osDistroName;
+      this._osDistroRevision = value.osDistroRevision;
       this._path = value.path;
       this._requireAll = value.requireAll;
       this._running = value.running;
@@ -387,6 +421,38 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
     return this._operator;
   }
 
+  // os_distro_name - computed: false, optional: true, required: false
+  private _osDistroName?: string; 
+  public get osDistroName() {
+    return this.getStringAttribute('os_distro_name');
+  }
+  public set osDistroName(value: string) {
+    this._osDistroName = value;
+  }
+  public resetOsDistroName() {
+    this._osDistroName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osDistroNameInput() {
+    return this._osDistroName;
+  }
+
+  // os_distro_revision - computed: false, optional: true, required: false
+  private _osDistroRevision?: string; 
+  public get osDistroRevision() {
+    return this.getStringAttribute('os_distro_revision');
+  }
+  public set osDistroRevision(value: string) {
+    this._osDistroRevision = value;
+  }
+  public resetOsDistroRevision() {
+    this._osDistroRevision = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osDistroRevisionInput() {
+    return this._osDistroRevision;
+  }
+
   // path - computed: false, optional: true, required: false
   private _path?: string; 
   public get path() {
@@ -505,6 +571,8 @@ export class DevicePostureRuleInputList extends cdktf.ComplexList {
 }
 export interface DevicePostureRuleMatch {
   /**
+  * The platform of the device. Available values: `windows`, `mac`, `linux`, `android`, `ios`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#platform DevicePostureRule#platform}
   */
   readonly platform?: string;
@@ -627,7 +695,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
