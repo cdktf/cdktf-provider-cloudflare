@@ -101,6 +101,16 @@ export class DataCloudflareDevicesDevicesOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('name');
   }
 
+  // os_distro_name - computed: true, optional: false, required: false
+  public get osDistroName() {
+    return this.getStringAttribute('os_distro_name');
+  }
+
+  // os_distro_revision - computed: true, optional: false, required: false
+  public get osDistroRevision() {
+    return this.getStringAttribute('os_distro_revision');
+  }
+
   // os_version - computed: true, optional: false, required: false
   public get osVersion() {
     return this.getStringAttribute('os_version');
@@ -177,7 +187,7 @@ export class DataCloudflareDevices extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_devices',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

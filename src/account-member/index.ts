@@ -32,6 +32,12 @@ export interface AccountMemberConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#role_ids AccountMember#role_ids}
   */
   readonly roleIds: string[];
+  /**
+  * A member's status in the account. Available values: `accepted`, `pending`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#status AccountMember#status}
+  */
+  readonly status?: string;
 }
 
 /**
@@ -60,7 +66,7 @@ export class AccountMember extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_member',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -75,6 +81,7 @@ export class AccountMember extends cdktf.TerraformResource {
     this._emailAddress = config.emailAddress;
     this._id = config.id;
     this._roleIds = config.roleIds;
+    this._status = config.status;
   }
 
   // ==========
@@ -139,6 +146,22 @@ export class AccountMember extends cdktf.TerraformResource {
     return this._roleIds;
   }
 
+  // status - computed: false, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -149,6 +172,7 @@ export class AccountMember extends cdktf.TerraformResource {
       email_address: cdktf.stringToTerraform(this._emailAddress),
       id: cdktf.stringToTerraform(this._id),
       role_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleIds),
+      status: cdktf.stringToTerraform(this._status),
     };
   }
 }

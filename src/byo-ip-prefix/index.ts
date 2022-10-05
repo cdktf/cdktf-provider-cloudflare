@@ -14,10 +14,14 @@ export interface ByoIpPrefixConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
+  * Whether or not the prefix shall be announced. A prefix can be activated or deactivated once every 15 minutes (attempting more regular updates will trigger rate limiting). Available values: `on`, `off`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#advertisement ByoIpPrefix#advertisement}
   */
   readonly advertisement?: string;
   /**
+  * Description of the BYO IP prefix.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#description ByoIpPrefix#description}
   */
   readonly description?: string;
@@ -29,6 +33,8 @@ export interface ByoIpPrefixConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The assigned Bring-Your-Own-IP prefix ID.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#prefix_id ByoIpPrefix#prefix_id}
   */
   readonly prefixId: string;
@@ -60,7 +66,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
