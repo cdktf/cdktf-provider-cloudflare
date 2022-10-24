@@ -814,7 +814,7 @@ export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexO
 }
 export interface PagesProjectSourceConfig {
   /**
-  * Toggle deployments on this repo.
+  * Toggle deployments on this repo. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#deployments_enabled PagesProject#deployments_enabled}
   */
@@ -826,7 +826,7 @@ export interface PagesProjectSourceConfig {
   */
   readonly owner?: string;
   /**
-  * Enable Pages to comment on Pull Requests.
+  * Enable Pages to comment on Pull Requests. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
   */
@@ -844,7 +844,7 @@ export interface PagesProjectSourceConfig {
   */
   readonly previewBranchIncludes?: string[];
   /**
-  * Preview Deployment Setting.
+  * Preview Deployment Setting. Defaults to `all`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
   */
@@ -856,7 +856,7 @@ export interface PagesProjectSourceConfig {
   */
   readonly productionBranch: string;
   /**
-  * Enable production deployments.
+  * Enable production deployments. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
   */
@@ -967,7 +967,7 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
     }
   }
 
-  // deployments_enabled - computed: true, optional: true, required: false
+  // deployments_enabled - computed: false, optional: true, required: false
   private _deploymentsEnabled?: boolean | cdktf.IResolvable; 
   public get deploymentsEnabled() {
     return this.getBooleanAttribute('deployments_enabled');
@@ -999,7 +999,7 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
     return this._owner;
   }
 
-  // pr_comments_enabled - computed: true, optional: true, required: false
+  // pr_comments_enabled - computed: false, optional: true, required: false
   private _prCommentsEnabled?: boolean | cdktf.IResolvable; 
   public get prCommentsEnabled() {
     return this.getBooleanAttribute('pr_comments_enabled');
@@ -1076,7 +1076,7 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
     return this._productionBranch;
   }
 
-  // production_deployment_enabled - computed: true, optional: true, required: false
+  // production_deployment_enabled - computed: false, optional: true, required: false
   private _productionDeploymentEnabled?: boolean | cdktf.IResolvable; 
   public get productionDeploymentEnabled() {
     return this.getBooleanAttribute('production_deployment_enabled');
@@ -1231,7 +1231,7 @@ export class PagesProject extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
