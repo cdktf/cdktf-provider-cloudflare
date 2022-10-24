@@ -43,7 +43,7 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly schedule?: string;
   /**
-  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `workspace_one`.
+  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `workspace_one`, `unique_client_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#type DevicePostureRule#type}
   */
@@ -571,7 +571,7 @@ export class DevicePostureRuleInputList extends cdktf.ComplexList {
 }
 export interface DevicePostureRuleMatch {
   /**
-  * The platform of the device. Available values: `windows`, `mac`, `linux`, `android`, `ios`.
+  * The platform of the device. Available values: `windows`, `mac`, `linux`, `android`, `ios`, `chromeos`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#platform DevicePostureRule#platform}
   */
@@ -695,7 +695,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
