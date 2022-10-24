@@ -33,6 +33,12 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
+  */
+  readonly waitForSslPendingValidation?: boolean | cdktf.IResolvable;
+  /**
   * The zone identifier to target for the resource.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#zone_id CustomHostname#zone_id}
@@ -733,7 +739,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -748,6 +754,7 @@ export class CustomHostname extends cdktf.TerraformResource {
     this._customOriginSni = config.customOriginSni;
     this._hostname = config.hostname;
     this._id = config.id;
+    this._waitForSslPendingValidation = config.waitForSslPendingValidation;
     this._zoneId = config.zoneId;
     this._ssl.internalValue = config.ssl;
   }
@@ -834,6 +841,22 @@ export class CustomHostname extends cdktf.TerraformResource {
     return this.getStringAttribute('status');
   }
 
+  // wait_for_ssl_pending_validation - computed: false, optional: true, required: false
+  private _waitForSslPendingValidation?: boolean | cdktf.IResolvable; 
+  public get waitForSslPendingValidation() {
+    return this.getBooleanAttribute('wait_for_ssl_pending_validation');
+  }
+  public set waitForSslPendingValidation(value: boolean | cdktf.IResolvable) {
+    this._waitForSslPendingValidation = value;
+  }
+  public resetWaitForSslPendingValidation() {
+    this._waitForSslPendingValidation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitForSslPendingValidationInput() {
+    return this._waitForSslPendingValidation;
+  }
+
   // zone_id - computed: false, optional: false, required: true
   private _zoneId?: string; 
   public get zoneId() {
@@ -873,6 +896,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       custom_origin_sni: cdktf.stringToTerraform(this._customOriginSni),
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
+      wait_for_ssl_pending_validation: cdktf.booleanToTerraform(this._waitForSslPendingValidation),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       ssl: cdktf.listMapper(customHostnameSslToTerraform, true)(this._ssl.internalValue),
     };

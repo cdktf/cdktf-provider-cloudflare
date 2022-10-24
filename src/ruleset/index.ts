@@ -2667,6 +2667,12 @@ export interface RulesetRulesActionParametersOverrides {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Sensitivity level to override for all ruleset rules. Available values: `default`, `medium`, `low`, `eoff`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#sensitivity_level Ruleset#sensitivity_level}
+  */
+  readonly sensitivityLevel?: string;
+  /**
   * Defines if the current ruleset-level override enables or disables the ruleset. Available values: `enabled`, `disabled`. Defaults to `""`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#status Ruleset#status}
@@ -2694,6 +2700,7 @@ export function rulesetRulesActionParametersOverridesToTerraform(struct?: Rulese
   return {
     action: cdktf.stringToTerraform(struct!.action),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
+    sensitivity_level: cdktf.stringToTerraform(struct!.sensitivityLevel),
     status: cdktf.stringToTerraform(struct!.status),
     categories: cdktf.listMapper(rulesetRulesActionParametersOverridesCategoriesToTerraform, true)(struct!.categories),
     rules: cdktf.listMapper(rulesetRulesActionParametersOverridesRulesToTerraform, true)(struct!.rules),
@@ -2722,6 +2729,10 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
+    if (this._sensitivityLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sensitivityLevel = this._sensitivityLevel;
+    }
     if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
@@ -2742,6 +2753,7 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
       this.isEmptyObject = false;
       this._action = undefined;
       this._enabled = undefined;
+      this._sensitivityLevel = undefined;
       this._status = undefined;
       this._categories.internalValue = undefined;
       this._rules.internalValue = undefined;
@@ -2750,6 +2762,7 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
       this.isEmptyObject = Object.keys(value).length === 0;
       this._action = value.action;
       this._enabled = value.enabled;
+      this._sensitivityLevel = value.sensitivityLevel;
       this._status = value.status;
       this._categories.internalValue = value.categories;
       this._rules.internalValue = value.rules;
@@ -2786,6 +2799,22 @@ export class RulesetRulesActionParametersOverridesOutputReference extends cdktf.
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
+  }
+
+  // sensitivity_level - computed: false, optional: true, required: false
+  private _sensitivityLevel?: string; 
+  public get sensitivityLevel() {
+    return this.getStringAttribute('sensitivity_level');
+  }
+  public set sensitivityLevel(value: string) {
+    this._sensitivityLevel = value;
+  }
+  public resetSensitivityLevel() {
+    this._sensitivityLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sensitivityLevelInput() {
+    return this._sensitivityLevel;
   }
 
   // status - computed: false, optional: true, required: false
@@ -5589,7 +5618,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
