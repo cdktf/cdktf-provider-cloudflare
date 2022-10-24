@@ -354,7 +354,7 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
