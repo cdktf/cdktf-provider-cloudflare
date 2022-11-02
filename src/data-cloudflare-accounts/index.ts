@@ -127,7 +127,7 @@ export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_accounts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

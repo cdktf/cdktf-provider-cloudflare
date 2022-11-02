@@ -58,7 +58,7 @@ export class DataCloudflareAccessIdentityProvider extends cdktf.TerraformDataSou
       terraformResourceType: 'cloudflare_access_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
