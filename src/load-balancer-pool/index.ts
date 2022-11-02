@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface LoadBalancerPoolConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#account_id LoadBalancerPool#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#check_regions LoadBalancerPool#check_regions}
   */
   readonly checkRegions?: string[];
@@ -708,7 +714,7 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_pool',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -719,6 +725,7 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._checkRegions = config.checkRegions;
     this._description = config.description;
     this._enabled = config.enabled;
@@ -737,6 +744,22 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // check_regions - computed: true, optional: true, required: false
   private _checkRegions?: string[]; 
@@ -956,6 +979,7 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       check_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._checkRegions),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),

@@ -558,7 +558,7 @@ export class List extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

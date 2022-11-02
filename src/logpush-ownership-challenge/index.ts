@@ -58,7 +58,7 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_ownership_challenge',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
