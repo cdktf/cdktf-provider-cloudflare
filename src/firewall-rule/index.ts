@@ -84,7 +84,7 @@ export class FirewallRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_firewall_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -436,7 +436,7 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
