@@ -21,6 +21,12 @@ export interface FallbackDomainConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The settings policy for which to configure this fallback domain policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/fallback_domain#policy_id FallbackDomain#policy_id}
+  */
+  readonly policyId?: string;
+  /**
   * domains block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/fallback_domain#domains FallbackDomain#domains}
@@ -211,7 +217,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_fallback_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -224,6 +230,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._id = config.id;
+    this._policyId = config.policyId;
     this._domains.internalValue = config.domains;
   }
 
@@ -260,6 +267,22 @@ export class FallbackDomain extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // policy_id - computed: false, optional: true, required: false
+  private _policyId?: string; 
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+  public set policyId(value: string) {
+    this._policyId = value;
+  }
+  public resetPolicyId() {
+    this._policyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyIdInput() {
+    return this._policyId;
+  }
+
   // domains - computed: false, optional: false, required: true
   private _domains = new FallbackDomainDomainsList(this, "domains", true);
   public get domains() {
@@ -281,6 +304,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
+      policy_id: cdktf.stringToTerraform(this._policyId),
       domains: cdktf.listMapper(fallbackDomainDomainsToTerraform, true)(this._domains.internalValue),
     };
   }

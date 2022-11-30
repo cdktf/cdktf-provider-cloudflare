@@ -27,7 +27,7 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   */
   readonly module?: boolean | cdktf.IResolvable;
   /**
-  * The name for the script.
+  * The name for the script. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
   */
@@ -857,7 +857,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

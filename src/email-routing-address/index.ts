@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface EmailRoutingAddressConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_address#account_id EmailRoutingAddress#account_id}
   */
   readonly accountId: string;
   /**
-  * The contact email address of the user.
+  * The contact email address of the user. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_address#email EmailRoutingAddress#email}
   */
@@ -54,7 +54,7 @@ export class EmailRoutingAddress extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_address',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

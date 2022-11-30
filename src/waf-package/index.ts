@@ -21,6 +21,8 @@ export interface WafPackageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#package_id WafPackage#package_id}
   */
   readonly packageId: string;
@@ -31,7 +33,7 @@ export interface WafPackageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly sensitivity?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#zone_id WafPackage#zone_id}
   */
@@ -64,7 +66,7 @@ export class WafPackage extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_package',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

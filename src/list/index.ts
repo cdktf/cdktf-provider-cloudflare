@@ -33,7 +33,7 @@ export interface ListConfig extends cdktf.TerraformMetaArguments {
   */
   readonly kind: string;
   /**
-  * The name of the list.
+  * The name of the list. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/list#name List#name}
   */
@@ -558,7 +558,7 @@ export class List extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -653,7 +653,7 @@ export class List extends cdktf.TerraformResource {
   }
 
   // item - computed: false, optional: true, required: false
-  private _item = new ListItemList(this, "item", false);
+  private _item = new ListItemList(this, "item", true);
   public get item() {
     return this._item;
   }

@@ -21,6 +21,8 @@ export interface RecordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#name Record#name}
   */
   readonly name: string;
@@ -37,6 +39,8 @@ export interface RecordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ttl?: number;
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#type Record#type}
   */
   readonly type: string;
@@ -47,7 +51,7 @@ export interface RecordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly value?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#zone_id Record#zone_id}
   */
@@ -1285,7 +1289,7 @@ export class Record extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

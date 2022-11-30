@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface OriginCaCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#csr OriginCaCertificate#csr}
   */
   readonly csr?: string;
   /**
+  * A list of hostnames or wildcard names bound to the certificate. **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
   */
   readonly hostnames: string[];
@@ -23,10 +27,20 @@ export interface OriginCaCertificateConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
+  */
+  readonly minDaysForRenewal?: number;
+  /**
+  * The signature type desired on the certificate. Available values: `origin-rsa`, `origin-ecc`, `keyless-certificate`. **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#request_type OriginCaCertificate#request_type}
   */
   readonly requestType: string;
   /**
+  * The number of days for which the certificate should be valid. Available values: `7`, `30`, `90`, `365`, `730`, `1095`, `5475`. **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
   */
   readonly requestedValidity?: number;
@@ -58,7 +72,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_origin_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -72,6 +86,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     this._csr = config.csr;
     this._hostnames = config.hostnames;
     this._id = config.id;
+    this._minDaysForRenewal = config.minDaysForRenewal;
     this._requestType = config.requestType;
     this._requestedValidity = config.requestedValidity;
   }
@@ -135,6 +150,22 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // min_days_for_renewal - computed: false, optional: true, required: false
+  private _minDaysForRenewal?: number; 
+  public get minDaysForRenewal() {
+    return this.getNumberAttribute('min_days_for_renewal');
+  }
+  public set minDaysForRenewal(value: number) {
+    this._minDaysForRenewal = value;
+  }
+  public resetMinDaysForRenewal() {
+    this._minDaysForRenewal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minDaysForRenewalInput() {
+    return this._minDaysForRenewal;
+  }
+
   // request_type - computed: false, optional: false, required: true
   private _requestType?: string; 
   public get requestType() {
@@ -173,6 +204,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
       csr: cdktf.stringToTerraform(this._csr),
       hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostnames),
       id: cdktf.stringToTerraform(this._id),
+      min_days_for_renewal: cdktf.numberToTerraform(this._minDaysForRenewal),
       request_type: cdktf.stringToTerraform(this._requestType),
       requested_validity: cdktf.numberToTerraform(this._requestedValidity),
     };

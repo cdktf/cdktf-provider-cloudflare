@@ -27,7 +27,7 @@ export interface AccountConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * Account type. Available values: `enterprise`, `standard`. Defaults to `standard`.
+  * Account type. Available values: `enterprise`, `standard`. Defaults to `standard`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account#type Account#type}
   */
@@ -60,7 +60,7 @@ export class Account extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

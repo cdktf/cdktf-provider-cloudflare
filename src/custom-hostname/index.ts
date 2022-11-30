@@ -20,7 +20,7 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   */
   readonly customOriginSni?: string;
   /**
-  * Hostname you intend to request a certificate for.
+  * Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#hostname CustomHostname#hostname}
   */
@@ -39,7 +39,7 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   */
   readonly waitForSslPendingValidation?: boolean | cdktf.IResolvable;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#zone_id CustomHostname#zone_id}
   */
@@ -739,7 +739,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

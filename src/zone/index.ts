@@ -45,7 +45,7 @@ export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   */
   readonly type?: string;
   /**
-  * The DNS zone name which will be added.
+  * The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#zone Zone#zone}
   */
@@ -78,7 +78,7 @@ export class Zone extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

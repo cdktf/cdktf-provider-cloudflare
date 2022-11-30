@@ -15,13 +15,13 @@ export interface WaitingRoomRulesConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The Waiting Room ID the rules should apply to.
+  * The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
   */
@@ -250,7 +250,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

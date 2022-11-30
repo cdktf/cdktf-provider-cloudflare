@@ -33,7 +33,7 @@ export interface UserAgentBlockingRuleConfig extends cdktf.TerraformMetaArgument
   */
   readonly paused: boolean | cdktf.IResolvable;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
   */
@@ -162,7 +162,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_user_agent_blocking_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

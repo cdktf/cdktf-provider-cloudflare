@@ -19,7 +19,7 @@ export interface CustomHostnameFallbackOriginConfig extends cdktf.TerraformMetaA
   */
   readonly origin: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#zone_id CustomHostnameFallbackOrigin#zone_id}
   */
@@ -52,7 +52,7 @@ export class CustomHostnameFallbackOrigin extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname_fallback_origin',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

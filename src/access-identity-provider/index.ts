@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AccessIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * The account identifier to target for the resource. Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#account_id AccessIdentityProvider#account_id}
   */
@@ -33,7 +33,7 @@ export interface AccessIdentityProviderConfig extends cdktf.TerraformMetaArgumen
   */
   readonly type: string;
   /**
-  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * The zone identifier to target for the resource. Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider#zone_id AccessIdentityProvider#zone_id}
   */
@@ -709,7 +709,7 @@ export class AccessIdentityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#account_id AccessRule#account_id}
   */
@@ -33,7 +33,7 @@ export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly notes?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#zone_id AccessRule#zone_id}
   */
@@ -47,13 +47,13 @@ export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AccessRuleConfiguration {
   /**
-  * The request property to target. Available values: `ip`, `ip6`, `ip_range`, `asn`, `country`.
+  * The request property to target. Available values: `ip`, `ip6`, `ip_range`, `asn`, `country`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#target AccessRule#target}
   */
   readonly target: string;
   /**
-  * The value to target. Depends on target's type.
+  * The value to target. Depends on target's type. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#value AccessRule#value}
   */
@@ -162,7 +162,7 @@ export class AccessRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

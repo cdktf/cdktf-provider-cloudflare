@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ArgoTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#account_id ArgoTunnel#account_id}
   */
@@ -21,10 +21,14 @@ export interface ArgoTunnelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#name ArgoTunnel#name}
   */
   readonly name: string;
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#secret ArgoTunnel#secret}
   */
   readonly secret: string;
@@ -56,7 +60,7 @@ export class ArgoTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_argo_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

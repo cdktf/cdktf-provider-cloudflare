@@ -33,7 +33,7 @@ export interface RulesetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly kind: string;
   /**
-  * Name of the ruleset.
+  * Name of the ruleset. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#name Ruleset#name}
   */
@@ -5618,7 +5618,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
