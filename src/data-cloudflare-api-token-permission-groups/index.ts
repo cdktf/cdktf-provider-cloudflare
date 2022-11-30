@@ -42,7 +42,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
       terraformResourceType: 'cloudflare_api_token_permission_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -59,6 +59,12 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account - computed: true, optional: false, required: false
+  private _account = new cdktf.StringMap(this, "account");
+  public get account() {
+    return this._account;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -80,6 +86,18 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
   private _permissions = new cdktf.StringMap(this, "permissions");
   public get permissions() {
     return this._permissions;
+  }
+
+  // user - computed: true, optional: false, required: false
+  private _user = new cdktf.StringMap(this, "user");
+  public get user() {
+    return this._user;
+  }
+
+  // zone - computed: true, optional: false, required: false
+  private _zone = new cdktf.StringMap(this, "zone");
+  public get zone() {
+    return this._zone;
   }
 
   // =========

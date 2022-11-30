@@ -33,7 +33,7 @@ export interface ByoIpPrefixConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The assigned Bring-Your-Own-IP prefix ID.
+  * The assigned Bring-Your-Own-IP prefix ID. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#prefix_id ByoIpPrefix#prefix_id}
   */
@@ -66,7 +66,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

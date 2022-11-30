@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface WafGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#group_id WafGroup#group_id}
   */
   readonly groupId: string;
@@ -29,7 +31,7 @@ export interface WafGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly packageId?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#zone_id WafGroup#zone_id}
   */
@@ -62,7 +64,7 @@ export class WafGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

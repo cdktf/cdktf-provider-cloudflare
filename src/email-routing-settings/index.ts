@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface EmailRoutingSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * State of the zone settings for Email Routing.
+  * State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_settings#enabled EmailRoutingSettings#enabled}
   */
@@ -27,7 +27,7 @@ export interface EmailRoutingSettingsConfig extends cdktf.TerraformMetaArguments
   */
   readonly skipWizard?: boolean | cdktf.IResolvable;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
   */
@@ -60,7 +60,7 @@ export class EmailRoutingSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

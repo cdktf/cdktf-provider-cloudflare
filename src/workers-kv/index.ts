@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface WorkersKvConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#account_id WorkersKv#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#id WorkersKv#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -15,14 +21,20 @@ export interface WorkersKvConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Name of the KV pair. **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#key WorkersKv#key}
   */
   readonly key: string;
   /**
+  * The ID of the Workers KV namespace in which you want to create the KV pair. **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#namespace_id WorkersKv#namespace_id}
   */
   readonly namespaceId: string;
   /**
+  * Value of the KV pair.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#value WorkersKv#value}
   */
   readonly value: string;
@@ -54,7 +66,7 @@ export class WorkersKv extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -65,6 +77,7 @@ export class WorkersKv extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._id = config.id;
     this._key = config.key;
     this._namespaceId = config.namespaceId;
@@ -74,6 +87,22 @@ export class WorkersKv extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -136,6 +165,7 @@ export class WorkersKv extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       namespace_id: cdktf.stringToTerraform(this._namespaceId),

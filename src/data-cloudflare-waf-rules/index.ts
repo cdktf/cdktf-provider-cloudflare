@@ -281,7 +281,7 @@ export class DataCloudflareWafRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_waf_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

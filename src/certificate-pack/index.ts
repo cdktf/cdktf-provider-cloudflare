@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Which certificate authority to issue the certificate pack. Available values: `digicert`, `lets_encrypt`, `google`.
+  * Which certificate authority to issue the certificate pack. Available values: `digicert`, `lets_encrypt`, `google`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#certificate_authority CertificatePack#certificate_authority}
   */
   readonly certificateAuthority: string;
   /**
-  * Whether or not to include Cloudflare branding. This will add `sni.cloudflaressl.com` as the Common Name if set to `true`.
+  * Whether or not to include Cloudflare branding. This will add `sni.cloudflaressl.com` as the Common Name if set to `true`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
   */
   readonly cloudflareBranding?: boolean | cdktf.IResolvable;
   /**
-  * List of hostnames to provision the certificate pack for. The zone name must be included as a host. Note: If using Let's Encrypt, you cannot use individual subdomains and only a wildcard for subdomain is available.
+  * List of hostnames to provision the certificate pack for. The zone name must be included as a host. Note: If using Let's Encrypt, you cannot use individual subdomains and only a wildcard for subdomain is available. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#hosts CertificatePack#hosts}
   */
@@ -33,31 +33,31 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Certificate pack configuration type. Available values: `advanced`.
+  * Certificate pack configuration type. Available values: `advanced`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#type CertificatePack#type}
   */
   readonly type: string;
   /**
-  * Which validation method to use in order to prove domain ownership. Available values: `txt`, `http`, `email`.
+  * Which validation method to use in order to prove domain ownership. Available values: `txt`, `http`, `email`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#validation_method CertificatePack#validation_method}
   */
   readonly validationMethod: string;
   /**
-  * How long the certificate is valid for. Note: If using Let's Encrypt, this value can only be 90 days. Available values: `14`, `30`, `90`, `365`.
+  * How long the certificate is valid for. Note: If using Let's Encrypt, this value can only be 90 days. Available values: `14`, `30`, `90`, `365`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#validity_days CertificatePack#validity_days}
   */
   readonly validityDays: number;
   /**
-  * Whether or not to wait for a certificate pack to reach status `active` during creation. Defaults to `false`.
+  * Whether or not to wait for a certificate pack to reach status `active` during creation. Defaults to `false`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#wait_for_active_status CertificatePack#wait_for_active_status}
   */
   readonly waitForActiveStatus?: boolean | cdktf.IResolvable;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/certificate_pack#zone_id CertificatePack#zone_id}
   */
@@ -436,7 +436,7 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

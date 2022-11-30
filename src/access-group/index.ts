@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AccessGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * The account identifier to target for the resource. Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#account_id AccessGroup#account_id}
   */
@@ -4168,7 +4168,7 @@ export class AccessGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

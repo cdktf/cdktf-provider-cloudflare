@@ -81,7 +81,7 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ttl?: number;
   /**
-  * The zone ID to add the load balancer to.
+  * The zone ID to add the load balancer to. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#zone_id LoadBalancer#zone_id}
   */
@@ -2469,7 +2469,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -64,7 +64,7 @@ export class TeamsList extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#account_id DlpProfile#account_id}
   */
@@ -27,13 +27,13 @@ export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Name of the profile.
+  * Name of the profile. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#name DlpProfile#name}
   */
   readonly name: string;
   /**
-  * The type of the profile. Available values: `custom`, `predefined`.
+  * The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#type DlpProfile#type}
   */
@@ -351,7 +351,7 @@ export class DlpProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dlp_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#account_id StaticRoute#account_id}
   */
@@ -45,6 +45,8 @@ export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly priority: number;
   /**
+  * **Modifying this attribute will force creation of a new resource.**
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#weight StaticRoute#weight}
   */
   readonly weight?: number;
@@ -76,7 +78,7 @@ export class StaticRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_static_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -21,11 +21,17 @@ export interface SplitTunnelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The mode of the split tunnel policy. Either 'include' or 'exclude'.
+  * The mode of the split tunnel policy. Available values: `include`, `exclude`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel#mode SplitTunnel#mode}
   */
   readonly mode: string;
+  /**
+  * The settings policy for which to configure this split tunnel policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel#policy_id SplitTunnel#policy_id}
+  */
+  readonly policyId?: string;
   /**
   * tunnels block
   * 
@@ -217,7 +223,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_split_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -231,6 +237,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._id = config.id;
     this._mode = config.mode;
+    this._policyId = config.policyId;
     this._tunnels.internalValue = config.tunnels;
   }
 
@@ -280,6 +287,22 @@ export class SplitTunnel extends cdktf.TerraformResource {
     return this._mode;
   }
 
+  // policy_id - computed: false, optional: true, required: false
+  private _policyId?: string; 
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+  public set policyId(value: string) {
+    this._policyId = value;
+  }
+  public resetPolicyId() {
+    this._policyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyIdInput() {
+    return this._policyId;
+  }
+
   // tunnels - computed: false, optional: false, required: true
   private _tunnels = new SplitTunnelTunnelsList(this, "tunnels", false);
   public get tunnels() {
@@ -302,6 +325,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       mode: cdktf.stringToTerraform(this._mode),
+      policy_id: cdktf.stringToTerraform(this._policyId),
       tunnels: cdktf.listMapper(splitTunnelTunnelsToTerraform, true)(this._tunnels.internalValue),
     };
   }

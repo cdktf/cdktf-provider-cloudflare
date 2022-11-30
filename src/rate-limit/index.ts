@@ -37,7 +37,7 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly threshold: number;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#zone_id RateLimit#zone_id}
   */
@@ -691,7 +691,7 @@ export class RateLimit extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_rate_limit',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

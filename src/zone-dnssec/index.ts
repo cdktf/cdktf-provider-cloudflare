@@ -19,7 +19,7 @@ export interface ZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   */
   readonly modifiedOn?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_dnssec#zone_id ZoneDnssec#zone_id}
   */
@@ -52,7 +52,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_dnssec',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface PagesDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#account_id PagesDomain#account_id}
   */
   readonly accountId: string;
   /**
-  * Custom domain.
+  * Custom domain. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#domain PagesDomain#domain}
   */
@@ -27,7 +27,7 @@ export interface PagesDomainConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Name of the Pages Project.
+  * Name of the Pages Project. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#project_name PagesDomain#project_name}
   */
@@ -60,7 +60,7 @@ export class PagesDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

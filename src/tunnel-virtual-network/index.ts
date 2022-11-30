@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface TunnelVirtualNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
   */
@@ -66,7 +66,7 @@ export class TunnelVirtualNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tunnel_virtual_network',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

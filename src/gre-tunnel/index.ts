@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GreTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#account_id GreTunnel#account_id}
   */
@@ -88,7 +88,7 @@ export class GreTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_gre_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

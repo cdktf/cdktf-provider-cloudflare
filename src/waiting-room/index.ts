@@ -51,7 +51,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   */
   readonly jsonResponseEnabled?: boolean | cdktf.IResolvable;
   /**
-  * A unique name to identify the waiting room.
+  * A unique name to identify the waiting room. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#name WaitingRoom#name}
   */
@@ -99,7 +99,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   */
   readonly totalActiveUsers: number;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#zone_id WaitingRoom#zone_id}
   */
@@ -240,7 +240,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

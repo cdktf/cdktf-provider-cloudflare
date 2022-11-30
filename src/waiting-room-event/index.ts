@@ -26,13 +26,13 @@ export interface WaitingRoomEventConfig extends cdktf.TerraformMetaArguments {
   */
   readonly disableSessionRenewal?: boolean | cdktf.IResolvable;
   /**
-  * ISO 8601 timestamp that marks the end of the event.
+  * ISO 8601 timestamp that marks the end of the event. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
   */
   readonly eventEndTime: string;
   /**
-  * ISO 8601 timestamp that marks the start of the event. Must occur at least 1 minute before `event_end_time`.
+  * ISO 8601 timestamp that marks the start of the event. Must occur at least 1 minute before `event_end_time`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
   */
@@ -45,7 +45,7 @@ export interface WaitingRoomEventConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * A unique name to identify the event. Only alphanumeric characters, hyphens, and underscores are allowed.
+  * A unique name to identify the event. Only alphanumeric characters, hyphens, and underscores are allowed. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#name WaitingRoomEvent#name}
   */
@@ -93,13 +93,13 @@ export interface WaitingRoomEventConfig extends cdktf.TerraformMetaArguments {
   */
   readonly totalActiveUsers?: number;
   /**
-  * The Waiting Room ID the event should apply to.
+  * The Waiting Room ID the event should apply to. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
   */
@@ -132,7 +132,7 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_event',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

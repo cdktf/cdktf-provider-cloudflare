@@ -352,7 +352,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_spectrum_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -419,7 +419,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   // edge_ips - computed: false, optional: true, required: false
   private _edgeIps?: string[]; 
   public get edgeIps() {
-    return this.getListAttribute('edge_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('edge_ips'));
   }
   public set edgeIps(value: string[]) {
     this._edgeIps = value;

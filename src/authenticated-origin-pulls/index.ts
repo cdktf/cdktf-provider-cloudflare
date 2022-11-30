@@ -27,7 +27,7 @@ export interface AuthenticatedOriginPullsConfig extends cdktf.TerraformMetaArgum
   */
   readonly id?: string;
   /**
-  * The zone identifier to target for the resource.
+  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls#zone_id AuthenticatedOriginPulls#zone_id}
   */
@@ -60,7 +60,7 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_authenticated_origin_pulls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
