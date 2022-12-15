@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/cloudflare/cloudflare",
-      "version": "3.29.0"
+      "version": "3.30.0"
     }
   },
   "resolutions": {

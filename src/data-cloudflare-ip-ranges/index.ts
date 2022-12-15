@@ -42,7 +42,7 @@ export class DataCloudflareIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

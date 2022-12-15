@@ -81,25 +81,25 @@ export interface LoadBalancerPoolConfig extends cdktf.TerraformMetaArguments {
 }
 export interface LoadBalancerPoolLoadShedding {
   /**
-  * Defaults to `0`.
+  * Percent of traffic to shed 0 - 100. Defaults to `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#default_percent LoadBalancerPool#default_percent}
   */
   readonly defaultPercent?: number;
   /**
-  * Defaults to `""`.
+  * Method of shedding traffic. Available values: ``, `hash`, `random`. Defaults to `""`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#default_policy LoadBalancerPool#default_policy}
   */
   readonly defaultPolicy?: string;
   /**
-  * Defaults to `0`.
+  * Percent of session traffic to shed 0 - 100. Defaults to `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#session_percent LoadBalancerPool#session_percent}
   */
   readonly sessionPercent?: number;
   /**
-  * Defaults to `""`.
+  * Method of shedding traffic. Available values: ``, `hash`. Defaults to `""`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#session_policy LoadBalancerPool#session_policy}
   */
@@ -267,7 +267,7 @@ export class LoadBalancerPoolLoadSheddingList extends cdktf.ComplexList {
 }
 export interface LoadBalancerPoolOriginSteering {
   /**
-  * Defaults to `random`.
+  * Origin steering policy to be used. Available values: ``, `hash`, `random`. Defaults to `random`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#policy LoadBalancerPool#policy}
   */
@@ -366,10 +366,14 @@ export class LoadBalancerPoolOriginSteeringList extends cdktf.ComplexList {
 }
 export interface LoadBalancerPoolOriginsHeader {
   /**
+  * HTTP Header name.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#header LoadBalancerPool#header}
   */
   readonly header: string;
   /**
+  * Values for the HTTP headers.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#values LoadBalancerPool#values}
   */
   readonly values: string[];
@@ -484,21 +488,25 @@ export class LoadBalancerPoolOriginsHeaderList extends cdktf.ComplexList {
 }
 export interface LoadBalancerPoolOrigins {
   /**
+  * The IP address (IPv4 or IPv6) of the origin, or the publicly addressable hostname.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#address LoadBalancerPool#address}
   */
   readonly address: string;
   /**
-  * Defaults to `true`.
+  * Whether this origin is enabled. Disabled origins will not receive traffic and are excluded from health checks. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#enabled LoadBalancerPool#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * A human-identifiable name for the origin.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#name LoadBalancerPool#name}
   */
   readonly name: string;
   /**
-  * Defaults to `1`.
+  * The weight (0.01 - 1.00) of this origin, relative to other origins in the pool. Equal values mean equal weighting. A weight of 0 means traffic will not be sent to this origin, but health is still checked. Defaults to `1`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#weight LoadBalancerPool#weight}
   */
@@ -714,7 +722,7 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_pool',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

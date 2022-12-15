@@ -223,7 +223,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_split_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -304,7 +304,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
   }
 
   // tunnels - computed: false, optional: false, required: true
-  private _tunnels = new SplitTunnelTunnelsList(this, "tunnels", false);
+  private _tunnels = new SplitTunnelTunnelsList(this, "tunnels", true);
   public get tunnels() {
     return this._tunnels;
   }
