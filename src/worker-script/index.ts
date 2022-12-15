@@ -33,6 +33,12 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * analytics_engine_binding block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
+  */
+  readonly analyticsEngineBinding?: WorkerScriptAnalyticsEngineBinding[] | cdktf.IResolvable;
+  /**
   * kv_namespace_binding block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
@@ -68,6 +74,128 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#webassembly_binding WorkerScript#webassembly_binding}
   */
   readonly webassemblyBinding?: WorkerScriptWebassemblyBinding[] | cdktf.IResolvable;
+}
+export interface WorkerScriptAnalyticsEngineBinding {
+  /**
+  * The name of the Analytics Engine dataset to write to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#dataset WorkerScript#dataset}
+  */
+  readonly dataset: string;
+  /**
+  * The global variable for the binding in your Worker code.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
+  */
+  readonly name: string;
+}
+
+export function workerScriptAnalyticsEngineBindingToTerraform(struct?: WorkerScriptAnalyticsEngineBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dataset: cdktf.stringToTerraform(struct!.dataset),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class WorkerScriptAnalyticsEngineBindingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WorkerScriptAnalyticsEngineBinding | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataset = this._dataset;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkerScriptAnalyticsEngineBinding | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dataset = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dataset = value.dataset;
+      this._name = value.name;
+    }
+  }
+
+  // dataset - computed: false, optional: false, required: true
+  private _dataset?: string; 
+  public get dataset() {
+    return this.getStringAttribute('dataset');
+  }
+  public set dataset(value: string) {
+    this._dataset = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datasetInput() {
+    return this._dataset;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class WorkerScriptAnalyticsEngineBindingList extends cdktf.ComplexList {
+  public internalValue? : WorkerScriptAnalyticsEngineBinding[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WorkerScriptAnalyticsEngineBindingOutputReference {
+    return new WorkerScriptAnalyticsEngineBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface WorkerScriptKvNamespaceBinding {
   /**
@@ -857,7 +985,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -872,6 +1000,7 @@ export class WorkerScript extends cdktf.TerraformResource {
     this._id = config.id;
     this._module = config.module;
     this._name = config.name;
+    this._analyticsEngineBinding.internalValue = config.analyticsEngineBinding;
     this._kvNamespaceBinding.internalValue = config.kvNamespaceBinding;
     this._plainTextBinding.internalValue = config.plainTextBinding;
     this._r2BucketBinding.internalValue = config.r2BucketBinding;
@@ -940,6 +1069,22 @@ export class WorkerScript extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // analytics_engine_binding - computed: false, optional: true, required: false
+  private _analyticsEngineBinding = new WorkerScriptAnalyticsEngineBindingList(this, "analytics_engine_binding", true);
+  public get analyticsEngineBinding() {
+    return this._analyticsEngineBinding;
+  }
+  public putAnalyticsEngineBinding(value: WorkerScriptAnalyticsEngineBinding[] | cdktf.IResolvable) {
+    this._analyticsEngineBinding.internalValue = value;
+  }
+  public resetAnalyticsEngineBinding() {
+    this._analyticsEngineBinding.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get analyticsEngineBindingInput() {
+    return this._analyticsEngineBinding.internalValue;
   }
 
   // kv_namespace_binding - computed: false, optional: true, required: false
@@ -1048,6 +1193,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       module: cdktf.booleanToTerraform(this._module),
       name: cdktf.stringToTerraform(this._name),
+      analytics_engine_binding: cdktf.listMapper(workerScriptAnalyticsEngineBindingToTerraform, true)(this._analyticsEngineBinding.internalValue),
       kv_namespace_binding: cdktf.listMapper(workerScriptKvNamespaceBindingToTerraform, true)(this._kvNamespaceBinding.internalValue),
       plain_text_binding: cdktf.listMapper(workerScriptPlainTextBindingToTerraform, true)(this._plainTextBinding.internalValue),
       r2_bucket_binding: cdktf.listMapper(workerScriptR2BucketBindingToTerraform, true)(this._r2BucketBinding.internalValue),

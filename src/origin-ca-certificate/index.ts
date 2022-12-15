@@ -72,7 +72,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_origin_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
