@@ -15,10 +15,14 @@ export interface WorkerRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The [route pattern](https://developers.cloudflare.com/workers/about/routes/) to associate the Worker with.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_route#pattern WorkerRoute#pattern}
   */
   readonly pattern: string;
   /**
+  * Worker script name to invoke for requests that match the route pattern.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_route#script_name WorkerRoute#script_name}
   */
   readonly scriptName?: string;
@@ -56,7 +60,7 @@ export class WorkerRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

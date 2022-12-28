@@ -25,7 +25,7 @@ export interface ApiShieldConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}
   */
-  readonly authIdCharacteristics: ApiShieldAuthIdCharacteristics[] | cdktf.IResolvable;
+  readonly authIdCharacteristics?: ApiShieldAuthIdCharacteristics[] | cdktf.IResolvable;
 }
 export interface ApiShieldAuthIdCharacteristics {
   /**
@@ -33,13 +33,13 @@ export interface ApiShieldAuthIdCharacteristics {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield#name ApiShield#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
   * The type of characteristic. Available values: `header`, `cookie`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield#type ApiShield#type}
   */
-  readonly type: string;
+  readonly type?: string;
 }
 
 export function apiShieldAuthIdCharacteristicsToTerraform(struct?: ApiShieldAuthIdCharacteristics | cdktf.IResolvable): any {
@@ -103,7 +103,7 @@ export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktf.Complex
     }
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -111,18 +111,24 @@ export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktf.Complex
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // type - computed: false, optional: false, required: true
+  // type - computed: false, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
@@ -176,7 +182,7 @@ export class ApiShield extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_shield',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -225,13 +231,16 @@ export class ApiShield extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // auth_id_characteristics - computed: false, optional: false, required: true
+  // auth_id_characteristics - computed: false, optional: true, required: false
   private _authIdCharacteristics = new ApiShieldAuthIdCharacteristicsList(this, "auth_id_characteristics", false);
   public get authIdCharacteristics() {
     return this._authIdCharacteristics;
   }
   public putAuthIdCharacteristics(value: ApiShieldAuthIdCharacteristics[] | cdktf.IResolvable) {
     this._authIdCharacteristics.internalValue = value;
+  }
+  public resetAuthIdCharacteristics() {
+    this._authIdCharacteristics.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get authIdCharacteristicsInput() {

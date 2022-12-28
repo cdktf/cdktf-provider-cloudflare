@@ -66,6 +66,7 @@ export * as teamsList from './teams-list';
 export * as teamsLocation from './teams-location';
 export * as teamsProxyEndpoint from './teams-proxy-endpoint';
 export * as teamsRule from './teams-rule';
+export * as tieredCache from './tiered-cache';
 export * as totalTls from './total-tls';
 export * as tunnelConfig from './tunnel-config';
 export * as tunnelRoute from './tunnel-route';
