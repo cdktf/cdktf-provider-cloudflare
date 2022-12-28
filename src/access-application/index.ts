@@ -577,7 +577,7 @@ export class AccessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -633,7 +633,7 @@ export class AccessApplication extends cdktf.TerraformResource {
   // allowed_idps - computed: false, optional: true, required: false
   private _allowedIdps?: string[]; 
   public get allowedIdps() {
-    return this.getListAttribute('allowed_idps');
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_idps'));
   }
   public set allowedIdps(value: string[]) {
     this._allowedIdps = value;

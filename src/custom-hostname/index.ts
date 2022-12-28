@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Custom metadata associated with custom hostname. Only supports primitive string values, all other values are accessible via the API directly.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+  */
+  readonly customMetadata?: { [key: string]: string };
+  /**
   * The custom origin server used for certificates.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
@@ -739,7 +745,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -750,6 +756,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._customMetadata = config.customMetadata;
     this._customOriginServer = config.customOriginServer;
     this._customOriginSni = config.customOriginSni;
     this._hostname = config.hostname;
@@ -762,6 +769,22 @@ export class CustomHostname extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // custom_metadata - computed: false, optional: true, required: false
+  private _customMetadata?: { [key: string]: string }; 
+  public get customMetadata() {
+    return this.getStringMapAttribute('custom_metadata');
+  }
+  public set customMetadata(value: { [key: string]: string }) {
+    this._customMetadata = value;
+  }
+  public resetCustomMetadata() {
+    this._customMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customMetadataInput() {
+    return this._customMetadata;
+  }
 
   // custom_origin_server - computed: false, optional: true, required: false
   private _customOriginServer?: string; 
@@ -892,6 +915,7 @@ export class CustomHostname extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      custom_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._customMetadata),
       custom_origin_server: cdktf.stringToTerraform(this._customOriginServer),
       custom_origin_sni: cdktf.stringToTerraform(this._customOriginSni),
       hostname: cdktf.stringToTerraform(this._hostname),

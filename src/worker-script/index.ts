@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account identifier to target for the resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#account_id WorkerScript#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * The script content.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#content WorkerScript#content}
@@ -985,7 +991,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -996,6 +1002,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._content = config.content;
     this._id = config.id;
     this._module = config.module;
@@ -1012,6 +1019,22 @@ export class WorkerScript extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // content - computed: false, optional: false, required: true
   private _content?: string; 
@@ -1189,6 +1212,7 @@ export class WorkerScript extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       content: cdktf.stringToTerraform(this._content),
       id: cdktf.stringToTerraform(this._id),
       module: cdktf.booleanToTerraform(this._module),

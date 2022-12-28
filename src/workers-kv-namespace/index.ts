@@ -21,6 +21,8 @@ export interface WorkersKvNamespaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Title value of the Worker KV Namespace.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace#title WorkersKvNamespace#title}
   */
   readonly title: string;
@@ -52,7 +54,7 @@ export class WorkersKvNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv_namespace',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

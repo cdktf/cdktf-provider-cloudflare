@@ -1447,7 +1447,7 @@ export interface RulesetRulesActionParametersEdgeTtl {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#default Ruleset#default}
   */
-  readonly default: number;
+  readonly default?: number;
   /**
   * Mode of the edge TTL.
   * 
@@ -1518,13 +1518,16 @@ export class RulesetRulesActionParametersEdgeTtlOutputReference extends cdktf.Co
     }
   }
 
-  // default - computed: false, optional: false, required: true
+  // default - computed: false, optional: true, required: false
   private _default?: number; 
   public get default() {
     return this.getNumberAttribute('default');
   }
   public set default(value: number) {
     this._default = value;
+  }
+  public resetDefault() {
+    this._default = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get defaultInput() {
@@ -5618,7 +5621,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.30.0',
+        providerVersion: '3.31.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
