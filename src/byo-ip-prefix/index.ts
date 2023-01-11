@@ -66,7 +66,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

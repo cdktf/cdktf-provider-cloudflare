@@ -234,7 +234,164 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._webAnalyticsToken;
   }
 }
+export interface PagesProjectDeploymentConfigsPreviewServiceBinding {
+  /**
+  * The name of the Worker environment to bind to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#environment PagesProject#environment}
+  */
+  readonly environment?: string;
+  /**
+  * The global variable for the binding in your Worker code.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#name PagesProject#name}
+  */
+  readonly name: string;
+  /**
+  * The name of the Worker to bind to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#service PagesProject#service}
+  */
+  readonly service: string;
+}
+
+export function pagesProjectDeploymentConfigsPreviewServiceBindingToTerraform(struct?: PagesProjectDeploymentConfigsPreviewServiceBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    environment: cdktf.stringToTerraform(struct!.environment),
+    name: cdktf.stringToTerraform(struct!.name),
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+export class PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewServiceBinding | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._environment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environment = this._environment;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewServiceBinding | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._environment = undefined;
+      this._name = undefined;
+      this._service = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._environment = value.environment;
+      this._name = value.name;
+      this._service = value.service;
+    }
+  }
+
+  // environment - computed: false, optional: true, required: false
+  private _environment?: string; 
+  public get environment() {
+    return this.getStringAttribute('environment');
+  }
+  public set environment(value: string) {
+    this._environment = value;
+  }
+  public resetEnvironment() {
+    this._environment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+
+export class PagesProjectDeploymentConfigsPreviewServiceBindingList extends cdktf.ComplexList {
+  public internalValue? : PagesProjectDeploymentConfigsPreviewServiceBinding[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference {
+    return new PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PagesProjectDeploymentConfigsPreview {
+  /**
+  * Use latest compatibility date for Pages Functions. Defaults to `false`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+  */
+  readonly alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable;
   /**
   * Compatibility date used for Pages Functions.
   * 
@@ -266,6 +423,12 @@ export interface PagesProjectDeploymentConfigsPreview {
   */
   readonly environmentVariables?: { [key: string]: string };
   /**
+  * Fail open used for Pages Functions. Defaults to `false`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#fail_open PagesProject#fail_open}
+  */
+  readonly failOpen?: boolean | cdktf.IResolvable;
+  /**
   * KV namespaces used for Pages Functions.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#kv_namespaces PagesProject#kv_namespaces}
@@ -277,6 +440,18 @@ export interface PagesProjectDeploymentConfigsPreview {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#r2_buckets PagesProject#r2_buckets}
   */
   readonly r2Buckets?: { [key: string]: string };
+  /**
+  * Usage model used for Pages Functions. Defaults to `bundled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#usage_model PagesProject#usage_model}
+  */
+  readonly usageModel?: string;
+  /**
+  * service_binding block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#service_binding PagesProject#service_binding}
+  */
+  readonly serviceBinding?: PagesProjectDeploymentConfigsPreviewServiceBinding[] | cdktf.IResolvable;
 }
 
 export function pagesProjectDeploymentConfigsPreviewToTerraform(struct?: PagesProjectDeploymentConfigsPreviewOutputReference | PagesProjectDeploymentConfigsPreview): any {
@@ -285,13 +460,17 @@ export function pagesProjectDeploymentConfigsPreviewToTerraform(struct?: PagesPr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    always_use_latest_compatibility_date: cdktf.booleanToTerraform(struct!.alwaysUseLatestCompatibilityDate),
     compatibility_date: cdktf.stringToTerraform(struct!.compatibilityDate),
     compatibility_flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.compatibilityFlags),
     d1_databases: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.d1Databases),
     durable_object_namespaces: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.durableObjectNamespaces),
     environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environmentVariables),
+    fail_open: cdktf.booleanToTerraform(struct!.failOpen),
     kv_namespaces: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.kvNamespaces),
     r2_buckets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.r2Buckets),
+    usage_model: cdktf.stringToTerraform(struct!.usageModel),
+    service_binding: cdktf.listMapper(pagesProjectDeploymentConfigsPreviewServiceBindingToTerraform, true)(struct!.serviceBinding),
   }
 }
 
@@ -309,6 +488,10 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get internalValue(): PagesProjectDeploymentConfigsPreview | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._alwaysUseLatestCompatibilityDate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alwaysUseLatestCompatibilityDate = this._alwaysUseLatestCompatibilityDate;
+    }
     if (this._compatibilityDate !== undefined) {
       hasAnyValues = true;
       internalValueResult.compatibilityDate = this._compatibilityDate;
@@ -329,6 +512,10 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.environmentVariables = this._environmentVariables;
     }
+    if (this._failOpen !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failOpen = this._failOpen;
+    }
     if (this._kvNamespaces !== undefined) {
       hasAnyValues = true;
       internalValueResult.kvNamespaces = this._kvNamespaces;
@@ -337,30 +524,62 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.r2Buckets = this._r2Buckets;
     }
+    if (this._usageModel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usageModel = this._usageModel;
+    }
+    if (this._serviceBinding?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceBinding = this._serviceBinding?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: PagesProjectDeploymentConfigsPreview | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._alwaysUseLatestCompatibilityDate = undefined;
       this._compatibilityDate = undefined;
       this._compatibilityFlags = undefined;
       this._d1Databases = undefined;
       this._durableObjectNamespaces = undefined;
       this._environmentVariables = undefined;
+      this._failOpen = undefined;
       this._kvNamespaces = undefined;
       this._r2Buckets = undefined;
+      this._usageModel = undefined;
+      this._serviceBinding.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._alwaysUseLatestCompatibilityDate = value.alwaysUseLatestCompatibilityDate;
       this._compatibilityDate = value.compatibilityDate;
       this._compatibilityFlags = value.compatibilityFlags;
       this._d1Databases = value.d1Databases;
       this._durableObjectNamespaces = value.durableObjectNamespaces;
       this._environmentVariables = value.environmentVariables;
+      this._failOpen = value.failOpen;
       this._kvNamespaces = value.kvNamespaces;
       this._r2Buckets = value.r2Buckets;
+      this._usageModel = value.usageModel;
+      this._serviceBinding.internalValue = value.serviceBinding;
     }
+  }
+
+  // always_use_latest_compatibility_date - computed: false, optional: true, required: false
+  private _alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable; 
+  public get alwaysUseLatestCompatibilityDate() {
+    return this.getBooleanAttribute('always_use_latest_compatibility_date');
+  }
+  public set alwaysUseLatestCompatibilityDate(value: boolean | cdktf.IResolvable) {
+    this._alwaysUseLatestCompatibilityDate = value;
+  }
+  public resetAlwaysUseLatestCompatibilityDate() {
+    this._alwaysUseLatestCompatibilityDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alwaysUseLatestCompatibilityDateInput() {
+    return this._alwaysUseLatestCompatibilityDate;
   }
 
   // compatibility_date - computed: true, optional: true, required: false
@@ -443,6 +662,22 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._environmentVariables;
   }
 
+  // fail_open - computed: false, optional: true, required: false
+  private _failOpen?: boolean | cdktf.IResolvable; 
+  public get failOpen() {
+    return this.getBooleanAttribute('fail_open');
+  }
+  public set failOpen(value: boolean | cdktf.IResolvable) {
+    this._failOpen = value;
+  }
+  public resetFailOpen() {
+    this._failOpen = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failOpenInput() {
+    return this._failOpen;
+  }
+
   // kv_namespaces - computed: false, optional: true, required: false
   private _kvNamespaces?: { [key: string]: string }; 
   public get kvNamespaces() {
@@ -474,8 +709,197 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get r2BucketsInput() {
     return this._r2Buckets;
   }
+
+  // usage_model - computed: false, optional: true, required: false
+  private _usageModel?: string; 
+  public get usageModel() {
+    return this.getStringAttribute('usage_model');
+  }
+  public set usageModel(value: string) {
+    this._usageModel = value;
+  }
+  public resetUsageModel() {
+    this._usageModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageModelInput() {
+    return this._usageModel;
+  }
+
+  // service_binding - computed: false, optional: true, required: false
+  private _serviceBinding = new PagesProjectDeploymentConfigsPreviewServiceBindingList(this, "service_binding", true);
+  public get serviceBinding() {
+    return this._serviceBinding;
+  }
+  public putServiceBinding(value: PagesProjectDeploymentConfigsPreviewServiceBinding[] | cdktf.IResolvable) {
+    this._serviceBinding.internalValue = value;
+  }
+  public resetServiceBinding() {
+    this._serviceBinding.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceBindingInput() {
+    return this._serviceBinding.internalValue;
+  }
+}
+export interface PagesProjectDeploymentConfigsProductionServiceBinding {
+  /**
+  * The name of the Worker environment to bind to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#environment PagesProject#environment}
+  */
+  readonly environment?: string;
+  /**
+  * The global variable for the binding in your Worker code.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#name PagesProject#name}
+  */
+  readonly name: string;
+  /**
+  * The name of the Worker to bind to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#service PagesProject#service}
+  */
+  readonly service: string;
+}
+
+export function pagesProjectDeploymentConfigsProductionServiceBindingToTerraform(struct?: PagesProjectDeploymentConfigsProductionServiceBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    environment: cdktf.stringToTerraform(struct!.environment),
+    name: cdktf.stringToTerraform(struct!.name),
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+export class PagesProjectDeploymentConfigsProductionServiceBindingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PagesProjectDeploymentConfigsProductionServiceBinding | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._environment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environment = this._environment;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionServiceBinding | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._environment = undefined;
+      this._name = undefined;
+      this._service = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._environment = value.environment;
+      this._name = value.name;
+      this._service = value.service;
+    }
+  }
+
+  // environment - computed: false, optional: true, required: false
+  private _environment?: string; 
+  public get environment() {
+    return this.getStringAttribute('environment');
+  }
+  public set environment(value: string) {
+    this._environment = value;
+  }
+  public resetEnvironment() {
+    this._environment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+
+export class PagesProjectDeploymentConfigsProductionServiceBindingList extends cdktf.ComplexList {
+  public internalValue? : PagesProjectDeploymentConfigsProductionServiceBinding[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PagesProjectDeploymentConfigsProductionServiceBindingOutputReference {
+    return new PagesProjectDeploymentConfigsProductionServiceBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface PagesProjectDeploymentConfigsProduction {
+  /**
+  * Use latest compatibility date for Pages Functions. Defaults to `false`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+  */
+  readonly alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable;
   /**
   * Compatibility date used for Pages Functions.
   * 
@@ -507,6 +931,12 @@ export interface PagesProjectDeploymentConfigsProduction {
   */
   readonly environmentVariables?: { [key: string]: string };
   /**
+  * Fail open used for Pages Functions. Defaults to `false`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#fail_open PagesProject#fail_open}
+  */
+  readonly failOpen?: boolean | cdktf.IResolvable;
+  /**
   * KV namespaces used for Pages Functions.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#kv_namespaces PagesProject#kv_namespaces}
@@ -518,6 +948,18 @@ export interface PagesProjectDeploymentConfigsProduction {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#r2_buckets PagesProject#r2_buckets}
   */
   readonly r2Buckets?: { [key: string]: string };
+  /**
+  * Usage model used for Pages Functions. Defaults to `bundled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#usage_model PagesProject#usage_model}
+  */
+  readonly usageModel?: string;
+  /**
+  * service_binding block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#service_binding PagesProject#service_binding}
+  */
+  readonly serviceBinding?: PagesProjectDeploymentConfigsProductionServiceBinding[] | cdktf.IResolvable;
 }
 
 export function pagesProjectDeploymentConfigsProductionToTerraform(struct?: PagesProjectDeploymentConfigsProductionOutputReference | PagesProjectDeploymentConfigsProduction): any {
@@ -526,13 +968,17 @@ export function pagesProjectDeploymentConfigsProductionToTerraform(struct?: Page
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    always_use_latest_compatibility_date: cdktf.booleanToTerraform(struct!.alwaysUseLatestCompatibilityDate),
     compatibility_date: cdktf.stringToTerraform(struct!.compatibilityDate),
     compatibility_flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.compatibilityFlags),
     d1_databases: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.d1Databases),
     durable_object_namespaces: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.durableObjectNamespaces),
     environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environmentVariables),
+    fail_open: cdktf.booleanToTerraform(struct!.failOpen),
     kv_namespaces: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.kvNamespaces),
     r2_buckets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.r2Buckets),
+    usage_model: cdktf.stringToTerraform(struct!.usageModel),
+    service_binding: cdktf.listMapper(pagesProjectDeploymentConfigsProductionServiceBindingToTerraform, true)(struct!.serviceBinding),
   }
 }
 
@@ -550,6 +996,10 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get internalValue(): PagesProjectDeploymentConfigsProduction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._alwaysUseLatestCompatibilityDate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alwaysUseLatestCompatibilityDate = this._alwaysUseLatestCompatibilityDate;
+    }
     if (this._compatibilityDate !== undefined) {
       hasAnyValues = true;
       internalValueResult.compatibilityDate = this._compatibilityDate;
@@ -570,6 +1020,10 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.environmentVariables = this._environmentVariables;
     }
+    if (this._failOpen !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failOpen = this._failOpen;
+    }
     if (this._kvNamespaces !== undefined) {
       hasAnyValues = true;
       internalValueResult.kvNamespaces = this._kvNamespaces;
@@ -578,30 +1032,62 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.r2Buckets = this._r2Buckets;
     }
+    if (this._usageModel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usageModel = this._usageModel;
+    }
+    if (this._serviceBinding?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceBinding = this._serviceBinding?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: PagesProjectDeploymentConfigsProduction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._alwaysUseLatestCompatibilityDate = undefined;
       this._compatibilityDate = undefined;
       this._compatibilityFlags = undefined;
       this._d1Databases = undefined;
       this._durableObjectNamespaces = undefined;
       this._environmentVariables = undefined;
+      this._failOpen = undefined;
       this._kvNamespaces = undefined;
       this._r2Buckets = undefined;
+      this._usageModel = undefined;
+      this._serviceBinding.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._alwaysUseLatestCompatibilityDate = value.alwaysUseLatestCompatibilityDate;
       this._compatibilityDate = value.compatibilityDate;
       this._compatibilityFlags = value.compatibilityFlags;
       this._d1Databases = value.d1Databases;
       this._durableObjectNamespaces = value.durableObjectNamespaces;
       this._environmentVariables = value.environmentVariables;
+      this._failOpen = value.failOpen;
       this._kvNamespaces = value.kvNamespaces;
       this._r2Buckets = value.r2Buckets;
+      this._usageModel = value.usageModel;
+      this._serviceBinding.internalValue = value.serviceBinding;
     }
+  }
+
+  // always_use_latest_compatibility_date - computed: false, optional: true, required: false
+  private _alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable; 
+  public get alwaysUseLatestCompatibilityDate() {
+    return this.getBooleanAttribute('always_use_latest_compatibility_date');
+  }
+  public set alwaysUseLatestCompatibilityDate(value: boolean | cdktf.IResolvable) {
+    this._alwaysUseLatestCompatibilityDate = value;
+  }
+  public resetAlwaysUseLatestCompatibilityDate() {
+    this._alwaysUseLatestCompatibilityDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alwaysUseLatestCompatibilityDateInput() {
+    return this._alwaysUseLatestCompatibilityDate;
   }
 
   // compatibility_date - computed: true, optional: true, required: false
@@ -684,6 +1170,22 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._environmentVariables;
   }
 
+  // fail_open - computed: false, optional: true, required: false
+  private _failOpen?: boolean | cdktf.IResolvable; 
+  public get failOpen() {
+    return this.getBooleanAttribute('fail_open');
+  }
+  public set failOpen(value: boolean | cdktf.IResolvable) {
+    this._failOpen = value;
+  }
+  public resetFailOpen() {
+    this._failOpen = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failOpenInput() {
+    return this._failOpen;
+  }
+
   // kv_namespaces - computed: false, optional: true, required: false
   private _kvNamespaces?: { [key: string]: string }; 
   public get kvNamespaces() {
@@ -715,6 +1217,38 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get r2BucketsInput() {
     return this._r2Buckets;
   }
+
+  // usage_model - computed: false, optional: true, required: false
+  private _usageModel?: string; 
+  public get usageModel() {
+    return this.getStringAttribute('usage_model');
+  }
+  public set usageModel(value: string) {
+    this._usageModel = value;
+  }
+  public resetUsageModel() {
+    this._usageModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageModelInput() {
+    return this._usageModel;
+  }
+
+  // service_binding - computed: false, optional: true, required: false
+  private _serviceBinding = new PagesProjectDeploymentConfigsProductionServiceBindingList(this, "service_binding", true);
+  public get serviceBinding() {
+    return this._serviceBinding;
+  }
+  public putServiceBinding(value: PagesProjectDeploymentConfigsProductionServiceBinding[] | cdktf.IResolvable) {
+    this._serviceBinding.internalValue = value;
+  }
+  public resetServiceBinding() {
+    this._serviceBinding.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceBindingInput() {
+    return this._serviceBinding.internalValue;
+  }
 }
 export interface PagesProjectDeploymentConfigs {
   /**
@@ -722,13 +1256,13 @@ export interface PagesProjectDeploymentConfigs {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#preview PagesProject#preview}
   */
-  readonly preview?: PagesProjectDeploymentConfigsPreview;
+  readonly preview: PagesProjectDeploymentConfigsPreview;
   /**
   * production block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#production PagesProject#production}
   */
-  readonly production?: PagesProjectDeploymentConfigsProduction;
+  readonly production: PagesProjectDeploymentConfigsProduction;
 }
 
 export function pagesProjectDeploymentConfigsToTerraform(struct?: PagesProjectDeploymentConfigsOutputReference | PagesProjectDeploymentConfigs): any {
@@ -780,7 +1314,7 @@ export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexO
     }
   }
 
-  // preview - computed: false, optional: true, required: false
+  // preview - computed: false, optional: false, required: true
   private _preview = new PagesProjectDeploymentConfigsPreviewOutputReference(this, "preview");
   public get preview() {
     return this._preview;
@@ -788,24 +1322,18 @@ export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexO
   public putPreview(value: PagesProjectDeploymentConfigsPreview) {
     this._preview.internalValue = value;
   }
-  public resetPreview() {
-    this._preview.internalValue = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get previewInput() {
     return this._preview.internalValue;
   }
 
-  // production - computed: false, optional: true, required: false
+  // production - computed: false, optional: false, required: true
   private _production = new PagesProjectDeploymentConfigsProductionOutputReference(this, "production");
   public get production() {
     return this._production;
   }
   public putProduction(value: PagesProjectDeploymentConfigsProduction) {
     this._production.internalValue = value;
-  }
-  public resetProduction() {
-    this._production.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get productionInput() {
@@ -1231,7 +1759,7 @@ export class PagesProject extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
