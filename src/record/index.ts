@@ -8,11 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface RecordConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Defaults to `false`.
+  * Allow creation of this record in Terraform to overwrite an existing record, if any. This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual changes outside Terraform from overwriting this record. **This configuration is not recommended for most environments**. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#allow_overwrite Record#allow_overwrite}
   */
   readonly allowOverwrite?: boolean | cdktf.IResolvable;
+  /**
+  * Comments or notes about the DNS record. This field has no effect on DNS responses.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#comment Record#comment}
+  */
+  readonly comment?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#id Record#id}
   *
@@ -21,31 +27,43 @@ export interface RecordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * **Modifying this attribute will force creation of a new resource.**
+  * The name of the record. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#name Record#name}
   */
   readonly name: string;
   /**
+  * The priority of the record.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#priority Record#priority}
   */
   readonly priority?: number;
   /**
+  * Whether the record gets Cloudflare's origin protection.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#proxied Record#proxied}
   */
   readonly proxied?: boolean | cdktf.IResolvable;
   /**
+  * Custom tags for the DNS record.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#tags Record#tags}
+  */
+  readonly tags?: string[];
+  /**
+  * The TTL of the record.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#ttl Record#ttl}
   */
   readonly ttl?: number;
   /**
-  * **Modifying this attribute will force creation of a new resource.**
+  * The type of the record. Available values: `A`, `AAAA`, `CAA`, `CNAME`, `TXT`, `SRV`, `LOC`, `MX`, `NS`, `SPF`, `CERT`, `DNSKEY`, `DS`, `NAPTR`, `SMIMEA`, `SSHFP`, `TLSA`, `URI`, `PTR`, `HTTPS`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#type Record#type}
   */
   readonly type: string;
   /**
-  * Conflicts with `data`.
+  * The value of the record. Conflicts with `data`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/record#value Record#value}
   */
@@ -1289,7 +1307,7 @@ export class Record extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -1301,10 +1319,12 @@ export class Record extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowOverwrite = config.allowOverwrite;
+    this._comment = config.comment;
     this._id = config.id;
     this._name = config.name;
     this._priority = config.priority;
     this._proxied = config.proxied;
+    this._tags = config.tags;
     this._ttl = config.ttl;
     this._type = config.type;
     this._value = config.value;
@@ -1331,6 +1351,22 @@ export class Record extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowOverwriteInput() {
     return this._allowOverwrite;
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
   }
 
   // created_on - computed: true, optional: false, required: false
@@ -1418,6 +1454,22 @@ export class Record extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get proxiedInput() {
     return this._proxied;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: string[]; 
+  public get tags() {
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+  }
+  public set tags(value: string[]) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
   }
 
   // ttl - computed: true, optional: true, required: false
@@ -1517,10 +1569,12 @@ export class Record extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_overwrite: cdktf.booleanToTerraform(this._allowOverwrite),
+      comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),
       proxied: cdktf.booleanToTerraform(this._proxied),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       value: cdktf.stringToTerraform(this._value),

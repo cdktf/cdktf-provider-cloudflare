@@ -56,7 +56,7 @@ export class TeamsProxyEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_proxy_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

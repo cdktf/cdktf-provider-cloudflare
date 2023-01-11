@@ -43,7 +43,7 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly schedule?: string;
   /**
-  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `workspace_one`, `unique_client_id`.
+  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#type DevicePostureRule#type}
   */
@@ -63,7 +63,7 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
 }
 export interface DevicePostureRuleInput {
   /**
-  * The workspace one device compliance status.
+  * The workspace one device compliance status. Available values: `compliant`, `noncompliant`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#compliance_status DevicePostureRule#compliance_status}
   */
@@ -102,11 +102,17 @@ export interface DevicePostureRuleInput {
   */
   readonly id?: string;
   /**
-  * The version comparison operator.
+  * The version comparison operator. Available values: `>`, `>=`, `<`, `<=`, `==`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#operator DevicePostureRule#operator}
   */
   readonly operator?: string;
+  /**
+  * OS signal score from Crowdstrike. Value must be between 1 and 100.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#os DevicePostureRule#os}
+  */
+  readonly os?: string;
   /**
   * The operating system excluding version information.
   * 
@@ -119,6 +125,12 @@ export interface DevicePostureRuleInput {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
   */
   readonly osDistroRevision?: string;
+  /**
+  * Overall ZTA score from Crowdstrike. Value must be between 1 and 100.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#overall DevicePostureRule#overall}
+  */
+  readonly overall?: string;
   /**
   * The path to the file.
   * 
@@ -138,6 +150,12 @@ export interface DevicePostureRuleInput {
   */
   readonly running?: boolean | cdktf.IResolvable;
   /**
+  * Sensor signal score from Crowdstrike. Value must be between 1 and 100.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#sensor_config DevicePostureRule#sensor_config}
+  */
+  readonly sensorConfig?: string;
+  /**
   * The sha256 hash of the file.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#sha256 DevicePostureRule#sha256}
@@ -155,6 +173,12 @@ export interface DevicePostureRuleInput {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#version DevicePostureRule#version}
   */
   readonly version?: string;
+  /**
+  * The version comparison operator for crowdstrike. Available values: `>`, `>=`, `<`, `<=`, `==`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#version_operator DevicePostureRule#version_operator}
+  */
+  readonly versionOperator?: string;
 }
 
 export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInput | cdktf.IResolvable): any {
@@ -170,14 +194,18 @@ export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInpu
     exists: cdktf.booleanToTerraform(struct!.exists),
     id: cdktf.stringToTerraform(struct!.id),
     operator: cdktf.stringToTerraform(struct!.operator),
+    os: cdktf.stringToTerraform(struct!.os),
     os_distro_name: cdktf.stringToTerraform(struct!.osDistroName),
     os_distro_revision: cdktf.stringToTerraform(struct!.osDistroRevision),
+    overall: cdktf.stringToTerraform(struct!.overall),
     path: cdktf.stringToTerraform(struct!.path),
     require_all: cdktf.booleanToTerraform(struct!.requireAll),
     running: cdktf.booleanToTerraform(struct!.running),
+    sensor_config: cdktf.stringToTerraform(struct!.sensorConfig),
     sha256: cdktf.stringToTerraform(struct!.sha256),
     thumbprint: cdktf.stringToTerraform(struct!.thumbprint),
     version: cdktf.stringToTerraform(struct!.version),
+    version_operator: cdktf.stringToTerraform(struct!.versionOperator),
   }
 }
 
@@ -229,6 +257,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
+    if (this._os !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.os = this._os;
+    }
     if (this._osDistroName !== undefined) {
       hasAnyValues = true;
       internalValueResult.osDistroName = this._osDistroName;
@@ -236,6 +268,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
     if (this._osDistroRevision !== undefined) {
       hasAnyValues = true;
       internalValueResult.osDistroRevision = this._osDistroRevision;
+    }
+    if (this._overall !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overall = this._overall;
     }
     if (this._path !== undefined) {
       hasAnyValues = true;
@@ -249,6 +285,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.running = this._running;
     }
+    if (this._sensorConfig !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sensorConfig = this._sensorConfig;
+    }
     if (this._sha256 !== undefined) {
       hasAnyValues = true;
       internalValueResult.sha256 = this._sha256;
@@ -260,6 +300,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
     if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
+    }
+    if (this._versionOperator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.versionOperator = this._versionOperator;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -275,14 +319,18 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._exists = undefined;
       this._id = undefined;
       this._operator = undefined;
+      this._os = undefined;
       this._osDistroName = undefined;
       this._osDistroRevision = undefined;
+      this._overall = undefined;
       this._path = undefined;
       this._requireAll = undefined;
       this._running = undefined;
+      this._sensorConfig = undefined;
       this._sha256 = undefined;
       this._thumbprint = undefined;
       this._version = undefined;
+      this._versionOperator = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -298,14 +346,18 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._exists = value.exists;
       this._id = value.id;
       this._operator = value.operator;
+      this._os = value.os;
       this._osDistroName = value.osDistroName;
       this._osDistroRevision = value.osDistroRevision;
+      this._overall = value.overall;
       this._path = value.path;
       this._requireAll = value.requireAll;
       this._running = value.running;
+      this._sensorConfig = value.sensorConfig;
       this._sha256 = value.sha256;
       this._thumbprint = value.thumbprint;
       this._version = value.version;
+      this._versionOperator = value.versionOperator;
     }
   }
 
@@ -421,6 +473,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
     return this._operator;
   }
 
+  // os - computed: false, optional: true, required: false
+  private _os?: string; 
+  public get os() {
+    return this.getStringAttribute('os');
+  }
+  public set os(value: string) {
+    this._os = value;
+  }
+  public resetOs() {
+    this._os = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osInput() {
+    return this._os;
+  }
+
   // os_distro_name - computed: false, optional: true, required: false
   private _osDistroName?: string; 
   public get osDistroName() {
@@ -451,6 +519,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get osDistroRevisionInput() {
     return this._osDistroRevision;
+  }
+
+  // overall - computed: false, optional: true, required: false
+  private _overall?: string; 
+  public get overall() {
+    return this.getStringAttribute('overall');
+  }
+  public set overall(value: string) {
+    this._overall = value;
+  }
+  public resetOverall() {
+    this._overall = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overallInput() {
+    return this._overall;
   }
 
   // path - computed: false, optional: true, required: false
@@ -501,6 +585,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
     return this._running;
   }
 
+  // sensor_config - computed: false, optional: true, required: false
+  private _sensorConfig?: string; 
+  public get sensorConfig() {
+    return this.getStringAttribute('sensor_config');
+  }
+  public set sensorConfig(value: string) {
+    this._sensorConfig = value;
+  }
+  public resetSensorConfig() {
+    this._sensorConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sensorConfigInput() {
+    return this._sensorConfig;
+  }
+
   // sha256 - computed: false, optional: true, required: false
   private _sha256?: string; 
   public get sha256() {
@@ -547,6 +647,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
     return this._version;
+  }
+
+  // version_operator - computed: false, optional: true, required: false
+  private _versionOperator?: string; 
+  public get versionOperator() {
+    return this.getStringAttribute('version_operator');
+  }
+  public set versionOperator(value: string) {
+    this._versionOperator = value;
+  }
+  public resetVersionOperator() {
+    this._versionOperator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionOperatorInput() {
+    return this._versionOperator;
   }
 }
 
@@ -695,7 +811,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

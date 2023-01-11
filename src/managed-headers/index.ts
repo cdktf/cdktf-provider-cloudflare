@@ -310,7 +310,7 @@ export class ManagedHeaders extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_managed_headers',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

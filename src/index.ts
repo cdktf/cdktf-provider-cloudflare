@@ -24,6 +24,7 @@ export * as customHostname from './custom-hostname';
 export * as customHostnameFallbackOrigin from './custom-hostname-fallback-origin';
 export * as customPages from './custom-pages';
 export * as customSsl from './custom-ssl';
+export * as deviceManagedNetworks from './device-managed-networks';
 export * as devicePolicyCertificates from './device-policy-certificates';
 export * as devicePostureIntegration from './device-posture-integration';
 export * as devicePostureRule from './device-posture-rule';
