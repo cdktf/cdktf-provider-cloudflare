@@ -459,11 +459,11 @@
     "@babel/types" "^7.3.0"
 
 "@types/glob@*":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@types/glob/-/glob-8.0.0.tgz#321607e9cbaec54f687a0792b2d1d370739455d2"
-  integrity sha512-l6NQsDDyQUVeoTynNpC9uRvCUint/gSUXQA2euwmTuWGvPY5LSDUu6tkCtJB2SvGQlJQzLaKqcGZP4//7EDveA==
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@types/glob/-/glob-8.0.1.tgz#6e3041640148b7764adf21ce5c7138ad454725b0"
+  integrity sha512-8bVUjXZvJacUFkJXHdyZ9iH1Eaj5V7I8c4NdH5sQJsdXkqT4CA5Dhb4yb4VE/3asyx4L9ayZr1NIhTsWHczmMw==
   dependencies:
-    "@types/minimatch" "*"
+    "@types/minimatch" "^5.1.2"
     "@types/node" "*"
 
 "@types/http-cache-semantics@^4.0.1":
@@ -471,7 +471,7 @@
   resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.1.tgz#0ea7b61496902b95890dc4c3a116b60cb8dae812"
   integrity sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==
 
-"@types/minimatch@*":
+"@types/minimatch@^5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-5.1.2.tgz#07508b45797cb81ec3f273011b054cd0755eddca"
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
@@ -1184,9 +1184,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.224"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.224.tgz#03fb7a6046d5fa8271eba333455763444f1a2862"
-  integrity sha512-ZP4hWdeCTck7c5NpmIJ074WB0QTcv/iWp6Jd67Y7ZGmy399vXT0DZk4I41B0h95mQGxSMJRhBdn0olQSVVHQRA==
+  version "10.1.225"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.225.tgz#f5d649e910fd166bfafd48bb8261cfd93dd438f5"
+  integrity sha512-4An6azyanAGLn+E1/9KSs/H6b/+HORZ+ZQ+7UthLYxJbZQcESlT9Dp8ogiOcP7v38WD1x15bEIC3Ztkp2VXz2w==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2315,10 +2315,10 @@ jsii-diff@^1.73.0:
     log4js "^6.7.1"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.208:
-  version "7.0.208"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.208.tgz#1ae6f812c22d30bf8b337dc111378c1c16efbbf6"
-  integrity sha512-54d9yke4AmI3qPRRwRdzuEubhntwN2qjfRAlKUDgIgtr3yKMyfNJuXsKGF+j6JyydcT4YP83UJ/8V9cv7mWK5w==
+jsii-docgen@^7.0.209:
+  version "7.0.209"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.209.tgz#04e9da2065dbb8092c6535da69ab13ec16413918"
+  integrity sha512-QXAyHYz6+nv+yhi8bY1cxD6cGxFXCwpm26DxNCeeHiMsUVvCOdawT0mAsT7+iz7NaKsYvQA1er+m1gSJoEZIkw==
   dependencies:
     "@jsii/spec" "^1.73.0"
     case "^1.6.3"
@@ -2379,9 +2379,9 @@ jsii-rosetta@^1.73.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.790:
-  version "0.1.798"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.798.tgz#44f6a221f43e7e51fc40e4a1072e60b2f98e47cf"
-  integrity sha512-Xc59g9Lb62cPCXD0nFwMGHar9uNsZYrWhDdBgHufNNSDS8F4LPrOKcRL+gJW/7a8r3g32pWi52y7B/SJ7ilDFg==
+  version "0.1.799"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.799.tgz#f6bdbe46671d9267775a3cc89fc313996674aa4e"
+  integrity sha512-i3F0M7PJffZRT9nHd3hvn6+4WFKvJFIrZYs6lnRUsvzAHcODq8IV+2sGFSGUwbrWsyTKEJOoX6/WJ96Sxf9X2A==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.73.0"
@@ -3382,10 +3382,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.67.6:
-  version "0.67.6"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.6.tgz#4a415b9fbf4cc99fd13b5e3fae005adeeacc7583"
-  integrity sha512-xY8SGIjlEoFvP4cppo3cj2npCJRG4L/OnbRQcZ1xO8XhVxYhlDRcvq/NOhaQyfMIyDVoJFbyejwDLA5cPQV7Hw==
+projen@^0.67.8:
+  version "0.67.8"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.8.tgz#0523ede4ff1abf1e0bcf5791a01c681d8a04592c"
+  integrity sha512-/8NENMiUjGq2i3JKThFIlyUY4eKfPX5XK5aEn/HpPomCexie9jwGQfxMGkoIxJv+UOob6314xngGsLrac606Vg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
