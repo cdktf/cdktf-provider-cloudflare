@@ -8,16 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Defaults to `false`.
+  * Enables Argo Smart Routing. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
   */
   readonly argoSmartRouting?: boolean | cdktf.IResolvable;
   /**
+  * Choose which types of IP addresses will be provisioned for this subdomain. Available values: `all`, `ipv4`, `ipv6`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#edge_ip_connectivity SpectrumApplication#edge_ip_connectivity}
   */
   readonly edgeIpConnectivity?: string;
   /**
+  * A list of edge IPs (IPv4 and/or IPv6) to configure Spectrum application to. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#edge_ips SpectrumApplication#edge_ips}
   */
   readonly edgeIps?: string[];
@@ -29,39 +33,43 @@ export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
-  * Defaults to `true`.
+  * Enables the IP Firewall for this application. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
   */
   readonly ipFirewall?: boolean | cdktf.IResolvable;
   /**
+  * A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#origin_direct SpectrumApplication#origin_direct}
   */
   readonly originDirect?: string[];
   /**
-  * Conflicts with `origin_port_range`.
+  * Origin port to proxy traffice to. Conflicts with `origin_port_range`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#origin_port SpectrumApplication#origin_port}
   */
   readonly originPort?: number;
   /**
+  * The port configuration at Cloudflare’s edge. e.g. `tcp/22`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#protocol SpectrumApplication#protocol}
   */
   readonly protocol: string;
   /**
-  * Defaults to `off`.
+  * Enables a proxy protocol to the origin. Available values: `off`, `v1`, `v2`, `simple`. Defaults to `off`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
   */
   readonly proxyProtocol?: string;
   /**
-  * Defaults to `off`.
+  * TLS configuration option for Cloudflare to connect to your origin. Available values: `off`, `flexible`, `full`, `strict`. Defaults to `off`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#tls SpectrumApplication#tls}
   */
   readonly tls?: string;
   /**
-  * Defaults to `direct`.
+  * Sets application type. Available values: `direct`, `http`, `https`. Defaults to `direct`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#traffic_type SpectrumApplication#traffic_type}
   */
@@ -93,10 +101,14 @@ export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments 
 }
 export interface SpectrumApplicationDns {
   /**
+  * The name of the DNS record associated with the application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#name SpectrumApplication#name}
   */
   readonly name: string;
   /**
+  * The type of DNS record associated with the application.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#type SpectrumApplication#type}
   */
   readonly type: string;
@@ -179,6 +191,8 @@ export class SpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
 }
 export interface SpectrumApplicationOriginDns {
   /**
+  * Fully qualified domain name of the origin.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#name SpectrumApplication#name}
   */
   readonly name: string;
@@ -241,10 +255,14 @@ export class SpectrumApplicationOriginDnsOutputReference extends cdktf.ComplexOb
 }
 export interface SpectrumApplicationOriginPortRange {
   /**
+  * Upper bound of the origin port range.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#end SpectrumApplication#end}
   */
   readonly end: number;
   /**
+  * Lower bound of the origin port range.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application#start SpectrumApplication#start}
   */
   readonly start: number;
@@ -352,7 +370,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_spectrum_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

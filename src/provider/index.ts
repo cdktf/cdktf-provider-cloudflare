@@ -113,7 +113,7 @@ export class CloudflareProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'cloudflare',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       terraformProviderSource: 'cloudflare/cloudflare'

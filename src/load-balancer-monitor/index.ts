@@ -14,22 +14,32 @@ export interface LoadBalancerMonitorConfig extends cdktf.TerraformMetaArguments 
   */
   readonly accountId?: string;
   /**
+  * Do not validate the certificate when monitor use HTTPS.  Only valid if `type` is "http" or "https".
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
+  * Free text description.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#description LoadBalancerMonitor#description}
   */
   readonly description?: string;
   /**
+  * A case-insensitive sub-string to look for in the response body. If this string is not found, the origin will be marked as unhealthy. Only valid if `type` is "http" or "https".
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
   */
   readonly expectedBody?: string;
   /**
+  * The expected HTTP response code or code range of the health check. Eg `2xx`. Only valid and required if `type` is "http" or "https".
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
   */
   readonly expectedCodes?: string;
   /**
+  * Follow redirects if returned by the origin. Only valid if `type` is "http" or "https".
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
@@ -41,41 +51,49 @@ export interface LoadBalancerMonitorConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
-  * Defaults to `60`.
+  * The interval between each health check. Shorter intervals may improve failover time, but will increase load on the origins as we check from multiple locations. Defaults to `60`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#interval LoadBalancerMonitor#interval}
   */
   readonly interval?: number;
   /**
+  * The method to use for the health check.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#method LoadBalancerMonitor#method}
   */
   readonly method?: string;
   /**
+  * The endpoint path to health check against.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#path LoadBalancerMonitor#path}
   */
   readonly path?: string;
   /**
+  * The port number to use for the healthcheck, required when creating a TCP monitor.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#port LoadBalancerMonitor#port}
   */
   readonly port?: number;
   /**
+  * Assign this monitor to emulate the specified zone while probing. Only valid if `type` is "http" or "https".
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
   */
   readonly probeZone?: string;
   /**
-  * Defaults to `2`.
+  * The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately. Defaults to `2`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#retries LoadBalancerMonitor#retries}
   */
   readonly retries?: number;
   /**
-  * Defaults to `5`.
+  * The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
   */
   readonly timeout?: number;
   /**
-  * Defaults to `http`.
+  * The protocol to use for the healthcheck. Available values: `http`, `https`, `tcp`, `udp_icmp`, `icmp_ping`, `smtp`. Defaults to `http`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#type LoadBalancerMonitor#type}
   */
@@ -89,10 +107,14 @@ export interface LoadBalancerMonitorConfig extends cdktf.TerraformMetaArguments 
 }
 export interface LoadBalancerMonitorHeader {
   /**
+  * The header name.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#header LoadBalancerMonitor#header}
   */
   readonly header: string;
   /**
+  * A list of values for the header.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor#values LoadBalancerMonitor#values}
   */
   readonly values: string[];
@@ -232,7 +254,7 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_monitor',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -64,7 +64,7 @@ export class WafGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waf_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

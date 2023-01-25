@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareOriginCaRootCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
   */
   readonly algorithm: string;
@@ -46,7 +48,7 @@ export class DataCloudflareOriginCaRootCertificate extends cdktf.TerraformDataSo
       terraformResourceType: 'cloudflare_origin_ca_root_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

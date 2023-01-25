@@ -1058,6 +1058,10 @@ export interface AccessPolicyExclude {
   */
   readonly ip?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#ip_list AccessPolicy#ip_list}
+  */
+  readonly ipList?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#login_method AccessPolicy#login_method}
   */
   readonly loginMethod?: string[];
@@ -1120,6 +1124,7 @@ export function accessPolicyExcludeToTerraform(struct?: AccessPolicyExclude | cd
     geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
     login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
     azure: cdktf.listMapper(accessPolicyExcludeAzureToTerraform, true)(struct!.azure),
@@ -1195,6 +1200,10 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ip = this._ip;
     }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
     if (this._loginMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.loginMethod = this._loginMethod;
@@ -1245,6 +1254,7 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
       this._geo = undefined;
       this._group = undefined;
       this._ip = undefined;
+      this._ipList = undefined;
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
@@ -1272,6 +1282,7 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
       this._geo = value.geo;
       this._group = value.group;
       this._ip = value.ip;
+      this._ipList = value.ipList;
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
@@ -1457,6 +1468,22 @@ export class AccessPolicyExcludeOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get ipInput() {
     return this._ip;
+  }
+
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  public resetIpList() {
+    this._ipList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
   }
 
   // login_method - computed: false, optional: true, required: false
@@ -2422,6 +2449,10 @@ export interface AccessPolicyInclude {
   */
   readonly ip?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#ip_list AccessPolicy#ip_list}
+  */
+  readonly ipList?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#login_method AccessPolicy#login_method}
   */
   readonly loginMethod?: string[];
@@ -2484,6 +2515,7 @@ export function accessPolicyIncludeToTerraform(struct?: AccessPolicyInclude | cd
     geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
     login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
     azure: cdktf.listMapper(accessPolicyIncludeAzureToTerraform, true)(struct!.azure),
@@ -2559,6 +2591,10 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ip = this._ip;
     }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
     if (this._loginMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.loginMethod = this._loginMethod;
@@ -2609,6 +2645,7 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
       this._geo = undefined;
       this._group = undefined;
       this._ip = undefined;
+      this._ipList = undefined;
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
@@ -2636,6 +2673,7 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
       this._geo = value.geo;
       this._group = value.group;
       this._ip = value.ip;
+      this._ipList = value.ipList;
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
@@ -2821,6 +2859,22 @@ export class AccessPolicyIncludeOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get ipInput() {
     return this._ip;
+  }
+
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  public resetIpList() {
+    this._ipList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
   }
 
   // login_method - computed: false, optional: true, required: false
@@ -3786,6 +3840,10 @@ export interface AccessPolicyRequire {
   */
   readonly ip?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#ip_list AccessPolicy#ip_list}
+  */
+  readonly ipList?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy#login_method AccessPolicy#login_method}
   */
   readonly loginMethod?: string[];
@@ -3848,6 +3906,7 @@ export function accessPolicyRequireToTerraform(struct?: AccessPolicyRequire | cd
     geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
     login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
     azure: cdktf.listMapper(accessPolicyRequireAzureToTerraform, true)(struct!.azure),
@@ -3923,6 +3982,10 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ip = this._ip;
     }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
     if (this._loginMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.loginMethod = this._loginMethod;
@@ -3973,6 +4036,7 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
       this._geo = undefined;
       this._group = undefined;
       this._ip = undefined;
+      this._ipList = undefined;
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
@@ -4000,6 +4064,7 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
       this._geo = value.geo;
       this._group = value.group;
       this._ip = value.ip;
+      this._ipList = value.ipList;
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
@@ -4187,6 +4252,22 @@ export class AccessPolicyRequireOutputReference extends cdktf.ComplexObject {
     return this._ip;
   }
 
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  public resetIpList() {
+    this._ipList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
+  }
+
   // login_method - computed: false, optional: true, required: false
   private _loginMethod?: string[]; 
   public get loginMethod() {
@@ -4362,7 +4443,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

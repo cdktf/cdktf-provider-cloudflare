@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface LogpullRetentionConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Whether you wish to retain logs or not.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpull_retention#enabled LogpullRetention#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -52,7 +54,7 @@ export class LogpullRetention extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpull_retention',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

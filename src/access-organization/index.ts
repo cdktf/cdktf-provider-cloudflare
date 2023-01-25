@@ -39,6 +39,12 @@ export interface AccessOrganizationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name?: string;
   /**
+  * The amount of time a user seat is inactive before it expires. When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count. Must be in the format `300ms` or `2h45m`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+  */
+  readonly userSeatExpirationInactiveTime?: string;
+  /**
   * The zone identifier to target for the resource. Conflicts with `account_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization#zone_id AccessOrganization#zone_id}
@@ -293,7 +299,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -309,6 +315,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
     this._id = config.id;
     this._isUiReadOnly = config.isUiReadOnly;
     this._name = config.name;
+    this._userSeatExpirationInactiveTime = config.userSeatExpirationInactiveTime;
     this._zoneId = config.zoneId;
     this._loginDesign.internalValue = config.loginDesign;
   }
@@ -394,6 +401,22 @@ export class AccessOrganization extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // user_seat_expiration_inactive_time - computed: false, optional: true, required: false
+  private _userSeatExpirationInactiveTime?: string; 
+  public get userSeatExpirationInactiveTime() {
+    return this.getStringAttribute('user_seat_expiration_inactive_time');
+  }
+  public set userSeatExpirationInactiveTime(value: string) {
+    this._userSeatExpirationInactiveTime = value;
+  }
+  public resetUserSeatExpirationInactiveTime() {
+    this._userSeatExpirationInactiveTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userSeatExpirationInactiveTimeInput() {
+    return this._userSeatExpirationInactiveTime;
+  }
+
   // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
@@ -437,6 +460,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       is_ui_read_only: cdktf.booleanToTerraform(this._isUiReadOnly),
       name: cdktf.stringToTerraform(this._name),
+      user_seat_expiration_inactive_time: cdktf.stringToTerraform(this._userSeatExpirationInactiveTime),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       login_design: cdktf.listMapper(accessOrganizationLoginDesignToTerraform, true)(this._loginDesign.internalValue),
     };

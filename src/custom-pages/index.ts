@@ -21,14 +21,20 @@ export interface CustomPagesConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Managed state of the custom page. Available values: `default`, `customized`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages#state CustomPages#state}
   */
   readonly state?: string;
   /**
+  * The type of custom page you wish to update. Available values: `basic_challenge`, `waf_challenge`, `waf_block`, `ratelimit_block`, `country_challenge`, `ip_block`, `under_attack`, `500_errors`, `1000_errors`, `always_online`, `managed_challenge`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages#type CustomPages#type}
   */
   readonly type: string;
   /**
+  * URL of where the custom page source is located.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages#url CustomPages#url}
   */
   readonly url: string;
@@ -66,7 +72,7 @@ export class CustomPages extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_pages',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

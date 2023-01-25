@@ -14,6 +14,8 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
+  * Whether to enable the activity log.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
   */
   readonly activityLogEnabled?: boolean | cdktf.IResolvable;
@@ -25,10 +27,14 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Indicator that decryption of TLS traffic is enabled.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
   */
   readonly tlsDecryptEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Safely browse websites in Browser Isolation through a URL.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
   */
   readonly urlBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
@@ -65,14 +71,20 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamsAccountAntivirus {
   /**
+  * Scan on file download.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
   */
   readonly enabledDownloadPhase: boolean | cdktf.IResolvable;
   /**
+  * Scan on file upload.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
   */
   readonly enabledUploadPhase: boolean | cdktf.IResolvable;
   /**
+  * Block requests for files that cannot be scanned.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#fail_closed TeamsAccount#fail_closed}
   */
   readonly failClosed: boolean | cdktf.IResolvable;
@@ -175,26 +187,50 @@ export class TeamsAccountAntivirusOutputReference extends cdktf.ComplexObject {
 }
 export interface TeamsAccountBlockPage {
   /**
+  * Hex code of block page background color.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#background_color TeamsAccount#background_color}
   */
   readonly backgroundColor?: string;
   /**
+  * Indicator of enablement.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled TeamsAccount#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Block page footer text.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#footer_text TeamsAccount#footer_text}
   */
   readonly footerText?: string;
   /**
+  * Block page header text.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#header_text TeamsAccount#header_text}
   */
   readonly headerText?: string;
   /**
+  * URL of block page logo.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#logo_path TeamsAccount#logo_path}
   */
   readonly logoPath?: string;
   /**
+  * Admin email for users to contact.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#mailto_address TeamsAccount#mailto_address}
+  */
+  readonly mailtoAddress?: string;
+  /**
+  * Subject line for emails created from block page.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#mailto_subject TeamsAccount#mailto_subject}
+  */
+  readonly mailtoSubject?: string;
+  /**
+  * Name of block page configuration.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#name TeamsAccount#name}
   */
   readonly name?: string;
@@ -211,6 +247,8 @@ export function teamsAccountBlockPageToTerraform(struct?: TeamsAccountBlockPageO
     footer_text: cdktf.stringToTerraform(struct!.footerText),
     header_text: cdktf.stringToTerraform(struct!.headerText),
     logo_path: cdktf.stringToTerraform(struct!.logoPath),
+    mailto_address: cdktf.stringToTerraform(struct!.mailtoAddress),
+    mailto_subject: cdktf.stringToTerraform(struct!.mailtoSubject),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -249,6 +287,14 @@ export class TeamsAccountBlockPageOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.logoPath = this._logoPath;
     }
+    if (this._mailtoAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mailtoAddress = this._mailtoAddress;
+    }
+    if (this._mailtoSubject !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mailtoSubject = this._mailtoSubject;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -264,6 +310,8 @@ export class TeamsAccountBlockPageOutputReference extends cdktf.ComplexObject {
       this._footerText = undefined;
       this._headerText = undefined;
       this._logoPath = undefined;
+      this._mailtoAddress = undefined;
+      this._mailtoSubject = undefined;
       this._name = undefined;
     }
     else {
@@ -273,6 +321,8 @@ export class TeamsAccountBlockPageOutputReference extends cdktf.ComplexObject {
       this._footerText = value.footerText;
       this._headerText = value.headerText;
       this._logoPath = value.logoPath;
+      this._mailtoAddress = value.mailtoAddress;
+      this._mailtoSubject = value.mailtoSubject;
       this._name = value.name;
     }
   }
@@ -357,6 +407,38 @@ export class TeamsAccountBlockPageOutputReference extends cdktf.ComplexObject {
     return this._logoPath;
   }
 
+  // mailto_address - computed: false, optional: true, required: false
+  private _mailtoAddress?: string; 
+  public get mailtoAddress() {
+    return this.getStringAttribute('mailto_address');
+  }
+  public set mailtoAddress(value: string) {
+    this._mailtoAddress = value;
+  }
+  public resetMailtoAddress() {
+    this._mailtoAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailtoAddressInput() {
+    return this._mailtoAddress;
+  }
+
+  // mailto_subject - computed: false, optional: true, required: false
+  private _mailtoSubject?: string; 
+  public get mailtoSubject() {
+    return this.getStringAttribute('mailto_subject');
+  }
+  public set mailtoSubject(value: string) {
+    this._mailtoSubject = value;
+  }
+  public resetMailtoSubject() {
+    this._mailtoSubject = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailtoSubjectInput() {
+    return this._mailtoSubject;
+  }
+
   // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
@@ -375,6 +457,8 @@ export class TeamsAccountBlockPageOutputReference extends cdktf.ComplexObject {
 }
 export interface TeamsAccountFips {
   /**
+  * Only allow FIPS-compliant TLS configuration.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#tls TeamsAccount#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
@@ -440,6 +524,8 @@ export class TeamsAccountFipsOutputReference extends cdktf.ComplexObject {
 }
 export interface TeamsAccountLoggingSettingsByRuleTypeDns {
   /**
+  * Whether to log all activity.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
@@ -526,6 +612,8 @@ export class TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference extends cdk
 }
 export interface TeamsAccountLoggingSettingsByRuleTypeHttp {
   /**
+  * Whether to log all activity.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
@@ -612,6 +700,8 @@ export class TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference extends cd
 }
 export interface TeamsAccountLoggingSettingsByRuleTypeL4 {
   /**
+  * Whether to log all activity.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
@@ -814,6 +904,8 @@ export class TeamsAccountLoggingSettingsByRuleTypeOutputReference extends cdktf.
 }
 export interface TeamsAccountLogging {
   /**
+  * Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#redact_pii TeamsAccount#redact_pii}
   */
   readonly redactPii: boolean | cdktf.IResolvable;
@@ -902,10 +994,14 @@ export class TeamsAccountLoggingOutputReference extends cdktf.ComplexObject {
 }
 export interface TeamsAccountProxy {
   /**
+  * Whether gateway proxy is enabled on gateway devices for TCP traffic.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#tcp TeamsAccount#tcp}
   */
   readonly tcp: boolean | cdktf.IResolvable;
   /**
+  * Whether gateway proxy is enabled on gateway devices for UDP traffic.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#udp TeamsAccount#udp}
   */
   readonly udp: boolean | cdktf.IResolvable;
@@ -1013,7 +1109,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_account',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

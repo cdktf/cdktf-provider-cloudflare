@@ -35,22 +35,32 @@ export interface CustomSslConfig extends cdktf.TerraformMetaArguments {
 }
 export interface CustomSslCustomSslOptions {
   /**
+  * Method of building intermediate certificate chain. A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it. Available values: `ubiquitous`, `optimal`, `force`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#bundle_method CustomSsl#bundle_method}
   */
   readonly bundleMethod?: string;
   /**
+  * Certificate certificate and the intermediate(s).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#certificate CustomSsl#certificate}
   */
   readonly certificate?: string;
   /**
+  * Specifies the region where your private key can be held locally. Available values: `us`, `eu`, `highest_security`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
   */
   readonly geoRestrictions?: string;
   /**
+  * Certificate's private key.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#private_key CustomSsl#private_key}
   */
   readonly privateKey?: string;
   /**
+  * Whether to enable support for legacy clients which do not include SNI in the TLS handshake. Available values: `legacy_custom`, `sni_custom`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl#type CustomSsl#type}
   */
   readonly type?: string;
@@ -360,7 +370,7 @@ export class CustomSsl extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_ssl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

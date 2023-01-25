@@ -25,14 +25,20 @@ export interface DevicePostureIntegrationConfig extends cdktf.TerraformMetaArgum
   */
   readonly identifier?: string;
   /**
+  * Indicates the frequency with which to poll the third-party API. Must be in the format `1h` or `30m`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#interval DevicePostureIntegration#interval}
   */
   readonly interval?: string;
   /**
+  * Name of the device posture integration.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#name DevicePostureIntegration#name}
   */
   readonly name: string;
   /**
+  * The device posture integration type. Available values: `workspace_one`, `uptycs`, `crowdstrike_s2s`, `intune`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#type DevicePostureIntegration#type}
   */
   readonly type: string;
@@ -45,26 +51,38 @@ export interface DevicePostureIntegrationConfig extends cdktf.TerraformMetaArgum
 }
 export interface DevicePostureIntegrationConfigA {
   /**
+  * The third-party API's URL.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#api_url DevicePostureIntegration#api_url}
   */
   readonly apiUrl?: string;
   /**
+  * The third-party authorization API URL.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#auth_url DevicePostureIntegration#auth_url}
   */
   readonly authUrl?: string;
   /**
+  * The client identifier for authenticating API calls.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#client_id DevicePostureIntegration#client_id}
   */
   readonly clientId?: string;
   /**
+  * The client key for authenticating API calls.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#client_key DevicePostureIntegration#client_key}
   */
   readonly clientKey?: string;
   /**
+  * The client secret for authenticating API calls.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#client_secret DevicePostureIntegration#client_secret}
   */
   readonly clientSecret?: string;
   /**
+  * The customer identifier for authenticating API calls.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_integration#customer_id DevicePostureIntegration#customer_id}
   */
   readonly customerId?: string;
@@ -302,7 +320,7 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_integration',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

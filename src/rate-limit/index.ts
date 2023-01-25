@@ -12,11 +12,13 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bypassUrlPatterns?: string[];
   /**
+  * A note that you can use to describe the reason for a rate limit. This value is sanitized and all tags are removed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#description RateLimit#description}
   */
   readonly description?: string;
   /**
-  * Defaults to `false`.
+  * Whether this ratelimit is currently disabled. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#disabled RateLimit#disabled}
   */
@@ -29,10 +31,14 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The time in seconds to count matching traffic. If the count exceeds threshold within this period the action will be performed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#period RateLimit#period}
   */
   readonly period: number;
   /**
+  * The threshold that triggers the rate limit mitigations, combine with period.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#threshold RateLimit#threshold}
   */
   readonly threshold: number;
@@ -63,10 +69,14 @@ export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
 }
 export interface RateLimitActionResponse {
   /**
+  * The body to return, the content here should conform to the `content_type`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#body RateLimit#body}
   */
   readonly body: string;
   /**
+  * The content-type of the body. Available values: `text/plain`, `text/xml`, `application/json`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#content_type RateLimit#content_type}
   */
   readonly contentType: string;
@@ -149,10 +159,14 @@ export class RateLimitActionResponseOutputReference extends cdktf.ComplexObject 
 }
 export interface RateLimitAction {
   /**
+  * The type of action to perform. Available values: `simulate`, `ban`, `challenge`, `js_challenge`, `managed_challenge`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#mode RateLimit#mode}
   */
   readonly mode: string;
   /**
+  * The time in seconds as an integer to perform the mitigation action. This field is required if the `mode` is either `simulate` or `ban`. Must be the same or greater than the period.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#timeout RateLimit#timeout}
   */
   readonly timeout?: number;
@@ -267,6 +281,8 @@ export class RateLimitActionOutputReference extends cdktf.ComplexObject {
 }
 export interface RateLimitCorrelate {
   /**
+  * If set to 'nat', NAT support will be enabled for rate limiting. Available values: `nat`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#by RateLimit#by}
   */
   readonly by?: string;
@@ -332,14 +348,20 @@ export class RateLimitCorrelateOutputReference extends cdktf.ComplexObject {
 }
 export interface RateLimitMatchRequest {
   /**
+  * HTTP Methods to match traffic on. Available values: `GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`, `_ALL_`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#methods RateLimit#methods}
   */
   readonly methods?: string[];
   /**
+  * HTTP schemes to match traffic on. Available values: `HTTP`, `HTTPS`, `_ALL_`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#schemes RateLimit#schemes}
   */
   readonly schemes?: string[];
   /**
+  * The URL pattern to match comprised of the host and path, i.e. example.org/path. Wildcard are expanded to match applicable traffic, query strings are not matched. Use _ for all traffic to your zone.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#url_pattern RateLimit#url_pattern}
   */
   readonly urlPattern?: string;
@@ -451,14 +473,20 @@ export class RateLimitMatchRequestOutputReference extends cdktf.ComplexObject {
 }
 export interface RateLimitMatchResponse {
   /**
+  * List of HTTP headers maps to match the origin response on.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#headers RateLimit#headers}
   */
   readonly headers?: { [key: string]: string } | cdktf.IResolvable;
   /**
+  * Only count traffic that has come from your origin servers. If true, cached items that Cloudflare serve will not count towards rate limiting.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#origin_traffic RateLimit#origin_traffic}
   */
   readonly originTraffic?: boolean | cdktf.IResolvable;
   /**
+  * HTTP Status codes, can be one, many or indicate all by not providing this value.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#statuses RateLimit#statuses}
   */
   readonly statuses?: number[];
@@ -691,7 +719,7 @@ export class RateLimit extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_rate_limit',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
