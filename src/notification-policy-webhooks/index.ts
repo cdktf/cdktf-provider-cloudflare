@@ -21,14 +21,20 @@ export interface NotificationPolicyWebhooksConfig extends cdktf.TerraformMetaArg
   */
   readonly id?: string;
   /**
+  * The name of the webhook destination.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
   */
   readonly name: string;
   /**
+  * An optional secret can be provided that will be passed in the `cf-webhook-auth` header when dispatching a webhook notification. Secrets are not returned in any API response body. Refer to the [documentation](https://api.cloudflare.com/#notification-webhooks-create-webhook) for more details.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
   */
   readonly secret?: string;
   /**
+  * The URL of the webhook destinations.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
   */
   readonly url?: string;
@@ -60,7 +66,7 @@ export class NotificationPolicyWebhooks extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy_webhooks',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

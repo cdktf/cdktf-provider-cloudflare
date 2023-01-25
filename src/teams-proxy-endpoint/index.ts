@@ -21,10 +21,14 @@ export interface TeamsProxyEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The networks CIDRs that will be allowed to initiate proxy connections.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
   */
   readonly ips: string[];
   /**
+  * Name of the teams proxy endpoint.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
   */
   readonly name: string;
@@ -56,7 +60,7 @@ export class TeamsProxyEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_proxy_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

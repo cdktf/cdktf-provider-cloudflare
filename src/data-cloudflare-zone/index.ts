@@ -21,7 +21,7 @@ export interface DataCloudflareZoneConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Must provide only one of `zone_id`, `name`.
+  * The name of the zone. Must provide only one of `zone_id`, `name`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zone#name DataCloudflareZone#name}
   */
@@ -60,7 +60,7 @@ export class DataCloudflareZone extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

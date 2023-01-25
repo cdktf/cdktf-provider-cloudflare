@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneCacheVariantsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List of strings with the MIME types of all the variants that should be served for avif.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#avif ZoneCacheVariants#avif}
   */
   readonly avif?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for bmp.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#bmp ZoneCacheVariants#bmp}
   */
   readonly bmp?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for gif.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#gif ZoneCacheVariants#gif}
   */
   readonly gif?: string[];
@@ -27,34 +33,50 @@ export interface ZoneCacheVariantsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * List of strings with the MIME types of all the variants that should be served for jp2.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#jp2 ZoneCacheVariants#jp2}
   */
   readonly jp2?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for jpeg.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#jpeg ZoneCacheVariants#jpeg}
   */
   readonly jpeg?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for jpg.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#jpg ZoneCacheVariants#jpg}
   */
   readonly jpg?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for jpg2.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#jpg2 ZoneCacheVariants#jpg2}
   */
   readonly jpg2?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for png.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#png ZoneCacheVariants#png}
   */
   readonly png?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for tif.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#tif ZoneCacheVariants#tif}
   */
   readonly tif?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for tiff.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#tiff ZoneCacheVariants#tiff}
   */
   readonly tiff?: string[];
   /**
+  * List of strings with the MIME types of all the variants that should be served for webp.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants#webp ZoneCacheVariants#webp}
   */
   readonly webp?: string[];
@@ -92,7 +114,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_cache_variants',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

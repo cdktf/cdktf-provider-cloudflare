@@ -21,6 +21,8 @@ export interface DataCloudflareAccessIdentityProviderConfig extends cdktf.Terraf
   */
   readonly id?: string;
   /**
+  * Access Identity Provider name to search for.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/access_identity_provider#name DataCloudflareAccessIdentityProvider#name}
   */
   readonly name: string;
@@ -58,7 +60,7 @@ export class DataCloudflareAccessIdentityProvider extends cdktf.TerraformDataSou
       terraformResourceType: 'cloudflare_access_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

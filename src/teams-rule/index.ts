@@ -14,22 +14,32 @@ export interface TeamsRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
+  * The action executed by matched teams rule. Available values: `allow`, `block`, `safesearch`, `ytrestricted`, `on`, `off`, `scan`, `noscan`, `isolate`, `noisolate`, `override`, `l4_override`, `egress`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#action TeamsRule#action}
   */
   readonly action: string;
   /**
+  * The description of the teams rule.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#description TeamsRule#description}
   */
   readonly description: string;
   /**
+  * The wirefilter expression to be used for device_posture check matching.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#device_posture TeamsRule#device_posture}
   */
   readonly devicePosture?: string;
   /**
+  * Indicator of rule enablement.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#enabled TeamsRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * The protocol or layer to evaluate the traffic and identity expressions.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#filters TeamsRule#filters}
   */
   readonly filters?: string[];
@@ -41,18 +51,26 @@ export interface TeamsRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The wirefilter expression to be used for identity matching.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#identity TeamsRule#identity}
   */
   readonly identity?: string;
   /**
+  * The name of the teams rule.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#name TeamsRule#name}
   */
   readonly name: string;
   /**
+  * The evaluation precedence of the teams rule.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#precedence TeamsRule#precedence}
   */
   readonly precedence: number;
   /**
+  * The wirefilter expression to be used for traffic matching.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#traffic TeamsRule#traffic}
   */
   readonly traffic?: string;
@@ -65,22 +83,32 @@ export interface TeamsRuleConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamsRuleRuleSettingsBisoAdminControls {
   /**
+  * Disable copy-paste.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
   */
   readonly disableCopyPaste?: boolean | cdktf.IResolvable;
   /**
+  * Disable download.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#disable_download TeamsRule#disable_download}
   */
   readonly disableDownload?: boolean | cdktf.IResolvable;
   /**
+  * Disable keyboard usage.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
   */
   readonly disableKeyboard?: boolean | cdktf.IResolvable;
   /**
+  * Disable printing.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#disable_printing TeamsRule#disable_printing}
   */
   readonly disablePrinting?: boolean | cdktf.IResolvable;
   /**
+  * Disable upload.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#disable_upload TeamsRule#disable_upload}
   */
   readonly disableUpload?: boolean | cdktf.IResolvable;
@@ -238,10 +266,14 @@ export class TeamsRuleRuleSettingsBisoAdminControlsOutputReference extends cdktf
 }
 export interface TeamsRuleRuleSettingsCheckSession {
   /**
+  * Configure how fresh the session needs to be to be considered valid.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#duration TeamsRule#duration}
   */
   readonly duration: string;
   /**
+  * Enable session enforcement for this rule.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#enforce TeamsRule#enforce}
   */
   readonly enforce: boolean | cdktf.IResolvable;
@@ -322,12 +354,135 @@ export class TeamsRuleRuleSettingsCheckSessionOutputReference extends cdktf.Comp
     return this._enforce;
   }
 }
+export interface TeamsRuleRuleSettingsEgress {
+  /**
+  * The IPv4 address to be used for egress.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#ipv4 TeamsRule#ipv4}
+  */
+  readonly ipv4: string;
+  /**
+  * The IPv4 address to be used for egress in the event of an error egressing with the primary IPv4. Can be '0.0.0.0' to indicate local egreass via Warp IPs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
+  */
+  readonly ipv4Fallback?: string;
+  /**
+  * The IPv6 range to be used for egress.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#ipv6 TeamsRule#ipv6}
+  */
+  readonly ipv6: string;
+}
+
+export function teamsRuleRuleSettingsEgressToTerraform(struct?: TeamsRuleRuleSettingsEgressOutputReference | TeamsRuleRuleSettingsEgress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ipv4: cdktf.stringToTerraform(struct!.ipv4),
+    ipv4_fallback: cdktf.stringToTerraform(struct!.ipv4Fallback),
+    ipv6: cdktf.stringToTerraform(struct!.ipv6),
+  }
+}
+
+export class TeamsRuleRuleSettingsEgressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TeamsRuleRuleSettingsEgress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipv4 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4 = this._ipv4;
+    }
+    if (this._ipv4Fallback !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4Fallback = this._ipv4Fallback;
+    }
+    if (this._ipv6 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6 = this._ipv6;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TeamsRuleRuleSettingsEgress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ipv4 = undefined;
+      this._ipv4Fallback = undefined;
+      this._ipv6 = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ipv4 = value.ipv4;
+      this._ipv4Fallback = value.ipv4Fallback;
+      this._ipv6 = value.ipv6;
+    }
+  }
+
+  // ipv4 - computed: false, optional: false, required: true
+  private _ipv4?: string; 
+  public get ipv4() {
+    return this.getStringAttribute('ipv4');
+  }
+  public set ipv4(value: string) {
+    this._ipv4 = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4Input() {
+    return this._ipv4;
+  }
+
+  // ipv4_fallback - computed: false, optional: true, required: false
+  private _ipv4Fallback?: string; 
+  public get ipv4Fallback() {
+    return this.getStringAttribute('ipv4_fallback');
+  }
+  public set ipv4Fallback(value: string) {
+    this._ipv4Fallback = value;
+  }
+  public resetIpv4Fallback() {
+    this._ipv4Fallback = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4FallbackInput() {
+    return this._ipv4Fallback;
+  }
+
+  // ipv6 - computed: false, optional: false, required: true
+  private _ipv6?: string; 
+  public get ipv6() {
+    return this.getStringAttribute('ipv6');
+  }
+  public set ipv6(value: string) {
+    this._ipv6 = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6Input() {
+    return this._ipv6;
+  }
+}
 export interface TeamsRuleRuleSettingsL4Override {
   /**
+  * Override IP to forward traffic to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#ip TeamsRule#ip}
   */
   readonly ip: string;
   /**
+  * Override Port to forward traffic to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#port TeamsRule#port}
   */
   readonly port: number;
@@ -410,26 +565,38 @@ export class TeamsRuleRuleSettingsL4OverrideOutputReference extends cdktf.Comple
 }
 export interface TeamsRuleRuleSettings {
   /**
+  * Add custom headers to allowed requests in the form of key-value pairs.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#add_headers TeamsRule#add_headers}
   */
   readonly addHeaders?: { [key: string]: string };
   /**
+  * Indicator of block page enablement.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
   */
   readonly blockPageEnabled?: boolean | cdktf.IResolvable;
   /**
+  * The displayed reason for a user being blocked.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#block_page_reason TeamsRule#block_page_reason}
   */
   readonly blockPageReason?: string;
   /**
+  * Disable DNSSEC validation (must be Allow rule).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
   */
   readonly insecureDisableDnssecValidation?: boolean | cdktf.IResolvable;
   /**
+  * The host to override matching DNS queries with.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#override_host TeamsRule#override_host}
   */
   readonly overrideHost?: string;
   /**
+  * The IPs to override matching DNS queries with.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#override_ips TeamsRule#override_ips}
   */
   readonly overrideIps?: string[];
@@ -445,6 +612,12 @@ export interface TeamsRuleRuleSettings {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#check_session TeamsRule#check_session}
   */
   readonly checkSession?: TeamsRuleRuleSettingsCheckSession;
+  /**
+  * egress block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_rule#egress TeamsRule#egress}
+  */
+  readonly egress?: TeamsRuleRuleSettingsEgress;
   /**
   * l4override block
   * 
@@ -467,6 +640,7 @@ export function teamsRuleRuleSettingsToTerraform(struct?: TeamsRuleRuleSettingsO
     override_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.overrideIps),
     biso_admin_controls: teamsRuleRuleSettingsBisoAdminControlsToTerraform(struct!.bisoAdminControls),
     check_session: teamsRuleRuleSettingsCheckSessionToTerraform(struct!.checkSession),
+    egress: teamsRuleRuleSettingsEgressToTerraform(struct!.egress),
     l4override: teamsRuleRuleSettingsL4OverrideToTerraform(struct!.l4Override),
   }
 }
@@ -517,6 +691,10 @@ export class TeamsRuleRuleSettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.checkSession = this._checkSession?.internalValue;
     }
+    if (this._egress?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egress = this._egress?.internalValue;
+    }
     if (this._l4Override?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.l4Override = this._l4Override?.internalValue;
@@ -535,6 +713,7 @@ export class TeamsRuleRuleSettingsOutputReference extends cdktf.ComplexObject {
       this._overrideIps = undefined;
       this._bisoAdminControls.internalValue = undefined;
       this._checkSession.internalValue = undefined;
+      this._egress.internalValue = undefined;
       this._l4Override.internalValue = undefined;
     }
     else {
@@ -547,6 +726,7 @@ export class TeamsRuleRuleSettingsOutputReference extends cdktf.ComplexObject {
       this._overrideIps = value.overrideIps;
       this._bisoAdminControls.internalValue = value.bisoAdminControls;
       this._checkSession.internalValue = value.checkSession;
+      this._egress.internalValue = value.egress;
       this._l4Override.internalValue = value.l4Override;
     }
   }
@@ -679,6 +859,22 @@ export class TeamsRuleRuleSettingsOutputReference extends cdktf.ComplexObject {
     return this._checkSession.internalValue;
   }
 
+  // egress - computed: false, optional: true, required: false
+  private _egress = new TeamsRuleRuleSettingsEgressOutputReference(this, "egress");
+  public get egress() {
+    return this._egress;
+  }
+  public putEgress(value: TeamsRuleRuleSettingsEgress) {
+    this._egress.internalValue = value;
+  }
+  public resetEgress() {
+    this._egress.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressInput() {
+    return this._egress.internalValue;
+  }
+
   // l4override - computed: false, optional: true, required: false
   private _l4Override = new TeamsRuleRuleSettingsL4OverrideOutputReference(this, "l4override");
   public get l4Override() {
@@ -722,7 +918,7 @@ export class TeamsRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

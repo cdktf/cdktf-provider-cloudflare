@@ -14,6 +14,8 @@ export interface TeamsListConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
+  * The description of the teams list.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_list#description TeamsList#description}
   */
   readonly description?: string;
@@ -25,14 +27,20 @@ export interface TeamsListConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The items of the teams list.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_list#items TeamsList#items}
   */
   readonly items?: string[];
   /**
+  * Name of the teams list.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_list#name TeamsList#name}
   */
   readonly name: string;
   /**
+  * The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_list#type TeamsList#type}
   */
   readonly type: string;
@@ -64,7 +72,7 @@ export class TeamsList extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

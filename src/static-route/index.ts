@@ -14,14 +14,20 @@ export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId?: string;
   /**
+  * List of Cloudflare colocation regions for this static route.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#colo_names StaticRoute#colo_names}
   */
   readonly coloNames?: string[];
   /**
+  * List of Cloudflare colocation names for this static route.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#colo_regions StaticRoute#colo_regions}
   */
   readonly coloRegions?: string[];
   /**
+  * Description of the static route.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#description StaticRoute#description}
   */
   readonly description?: string;
@@ -33,19 +39,25 @@ export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The nexthop IP address where traffic will be routed to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#nexthop StaticRoute#nexthop}
   */
   readonly nexthop: string;
   /**
+  * Your network prefix using CIDR notation.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#prefix StaticRoute#prefix}
   */
   readonly prefix: string;
   /**
+  * The priority for the static route.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#priority StaticRoute#priority}
   */
   readonly priority: number;
   /**
-  * **Modifying this attribute will force creation of a new resource.**
+  * The optional weight for ECMP routes. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#weight StaticRoute#weight}
   */
@@ -78,7 +90,7 @@ export class StaticRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_static_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

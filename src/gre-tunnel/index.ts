@@ -14,26 +14,38 @@ export interface GreTunnelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId?: string;
   /**
+  * The IP address assigned to the Cloudflare side of the GRE tunnel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#cloudflare_gre_endpoint GreTunnel#cloudflare_gre_endpoint}
   */
   readonly cloudflareGreEndpoint: string;
   /**
+  * The IP address assigned to the customer side of the GRE tunnel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#customer_gre_endpoint GreTunnel#customer_gre_endpoint}
   */
   readonly customerGreEndpoint: string;
   /**
+  * Description of the GRE tunnel intent.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#description GreTunnel#description}
   */
   readonly description?: string;
   /**
+  * Specifies if ICMP tunnel health checks are enabled.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#health_check_enabled GreTunnel#health_check_enabled}
   */
   readonly healthCheckEnabled?: boolean | cdktf.IResolvable;
   /**
+  * The IP address of the customer endpoint that will receive tunnel health checks.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#health_check_target GreTunnel#health_check_target}
   */
   readonly healthCheckTarget?: string;
   /**
+  * Specifies the ICMP echo type for the health check. Available values: `request`, `reply`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#health_check_type GreTunnel#health_check_type}
   */
   readonly healthCheckType?: string;
@@ -45,18 +57,26 @@ export interface GreTunnelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * 31-bit prefix (/31 in CIDR notation) supporting 2 hosts, one for each side of the tunnel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#interface_address GreTunnel#interface_address}
   */
   readonly interfaceAddress: string;
   /**
+  * Maximum Transmission Unit (MTU) in bytes for the GRE tunnel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#mtu GreTunnel#mtu}
   */
   readonly mtu?: number;
   /**
+  * Name of the GRE tunnel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#name GreTunnel#name}
   */
   readonly name: string;
   /**
+  * Time To Live (TTL) in number of hops of the GRE tunnel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#ttl GreTunnel#ttl}
   */
   readonly ttl?: number;
@@ -88,7 +108,7 @@ export class GreTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_gre_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

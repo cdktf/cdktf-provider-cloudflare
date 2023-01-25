@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface AuthenticatedOriginPullsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The ID of an uploaded Authenticated Origin Pulls certificate. If no hostname is provided, this certificate will be used zone wide as Per-Zone Authenticated Origin Pulls.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls#authenticated_origin_pulls_certificate AuthenticatedOriginPulls#authenticated_origin_pulls_certificate}
   */
   readonly authenticatedOriginPullsCertificate?: string;
   /**
+  * Whether to enable Authenticated Origin Pulls on the given zone or hostname.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls#enabled AuthenticatedOriginPulls#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
+  * Specify a hostname to enable Per-Hostname Authenticated Origin Pulls on, using the provided certificate.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls#hostname AuthenticatedOriginPulls#hostname}
   */
   readonly hostname?: string;
@@ -60,7 +66,7 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_authenticated_origin_pulls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DevicePolicyCertificatesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * `true` if certificate generation is enabled.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -52,7 +54,7 @@ export class DevicePolicyCertificates extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_policy_certificates',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

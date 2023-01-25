@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   /**
+  * A description about the lockdown entry. Typically used as a reminder or explanation for the lockdown.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#description ZoneLockdown#description}
   */
   readonly description?: string;
@@ -19,7 +21,7 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Defaults to `false`.
+  * Boolean of whether this zone lockdown is currently paused. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#paused ZoneLockdown#paused}
   */
@@ -29,6 +31,8 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   */
   readonly priority?: number;
   /**
+  * A list of simple wildcard patterns to match requests against. The order of the urls is unimportant.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#urls ZoneLockdown#urls}
   */
   readonly urls: string[];
@@ -47,10 +51,14 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
 }
 export interface ZoneLockdownConfigurations {
   /**
+  * The request property to target. Available values: `ip`, `ip_range`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#target ZoneLockdown#target}
   */
   readonly target: string;
   /**
+  * The value to target. Depends on target's type. IP addresses should just be standard IPv4/IPv6 notation i.e. `192.0.2.1` or `2001:db8::/32` and IP ranges in CIDR format i.e. `192.0.2.0/24`.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#value ZoneLockdown#value}
   */
   readonly value: string;
@@ -190,7 +198,7 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_lockdown',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

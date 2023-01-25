@@ -98,26 +98,32 @@ export interface DataCloudflareZonesFilter {
   */
   readonly accountId?: string;
   /**
-  * Defaults to `exact`.
+  * The type of search to perform for the `name` value when querying the zone API. Available values: `contains`, `exact`. Defaults to `exact`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#lookup_type DataCloudflareZones#lookup_type}
   */
   readonly lookupType?: string;
   /**
+  * A RE2 compatible regular expression to filter the	results. This is performed client side whereas the `name` and `lookup_type`	are performed on the Cloudflare server side.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#match DataCloudflareZones#match}
   */
   readonly match?: string;
   /**
+  * A string value to search for.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#name DataCloudflareZones#name}
   */
   readonly name?: string;
   /**
-  * Defaults to `false`.
+  * Paused status of the zone to lookup. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#paused DataCloudflareZones#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
+  * Status of the zone to lookup.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/zones#status DataCloudflareZones#status}
   */
   readonly status?: string;
@@ -323,7 +329,7 @@ export class DataCloudflareZones extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zones',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

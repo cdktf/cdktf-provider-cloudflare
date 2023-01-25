@@ -864,6 +864,10 @@ export interface AccessGroupExclude {
   */
   readonly ip?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#ip_list AccessGroup#ip_list}
+  */
+  readonly ipList?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#login_method AccessGroup#login_method}
   */
   readonly loginMethod?: string[];
@@ -926,6 +930,7 @@ export function accessGroupExcludeToTerraform(struct?: AccessGroupExclude | cdkt
     geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
     login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
     azure: cdktf.listMapper(accessGroupExcludeAzureToTerraform, true)(struct!.azure),
@@ -1001,6 +1006,10 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ip = this._ip;
     }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
     if (this._loginMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.loginMethod = this._loginMethod;
@@ -1051,6 +1060,7 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
       this._geo = undefined;
       this._group = undefined;
       this._ip = undefined;
+      this._ipList = undefined;
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
@@ -1078,6 +1088,7 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
       this._geo = value.geo;
       this._group = value.group;
       this._ip = value.ip;
+      this._ipList = value.ipList;
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
@@ -1263,6 +1274,22 @@ export class AccessGroupExcludeOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get ipInput() {
     return this._ip;
+  }
+
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  public resetIpList() {
+    this._ipList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
   }
 
   // login_method - computed: false, optional: true, required: false
@@ -2228,6 +2255,10 @@ export interface AccessGroupInclude {
   */
   readonly ip?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#ip_list AccessGroup#ip_list}
+  */
+  readonly ipList?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#login_method AccessGroup#login_method}
   */
   readonly loginMethod?: string[];
@@ -2290,6 +2321,7 @@ export function accessGroupIncludeToTerraform(struct?: AccessGroupInclude | cdkt
     geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
     login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
     azure: cdktf.listMapper(accessGroupIncludeAzureToTerraform, true)(struct!.azure),
@@ -2365,6 +2397,10 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ip = this._ip;
     }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
     if (this._loginMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.loginMethod = this._loginMethod;
@@ -2415,6 +2451,7 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
       this._geo = undefined;
       this._group = undefined;
       this._ip = undefined;
+      this._ipList = undefined;
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
@@ -2442,6 +2479,7 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
       this._geo = value.geo;
       this._group = value.group;
       this._ip = value.ip;
+      this._ipList = value.ipList;
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
@@ -2627,6 +2665,22 @@ export class AccessGroupIncludeOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get ipInput() {
     return this._ip;
+  }
+
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  public resetIpList() {
+    this._ipList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
   }
 
   // login_method - computed: false, optional: true, required: false
@@ -3592,6 +3646,10 @@ export interface AccessGroupRequire {
   */
   readonly ip?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#ip_list AccessGroup#ip_list}
+  */
+  readonly ipList?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#login_method AccessGroup#login_method}
   */
   readonly loginMethod?: string[];
@@ -3654,6 +3712,7 @@ export function accessGroupRequireToTerraform(struct?: AccessGroupRequire | cdkt
     geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
     group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
     ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
     login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
     service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
     azure: cdktf.listMapper(accessGroupRequireAzureToTerraform, true)(struct!.azure),
@@ -3729,6 +3788,10 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ip = this._ip;
     }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
     if (this._loginMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.loginMethod = this._loginMethod;
@@ -3779,6 +3842,7 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
       this._geo = undefined;
       this._group = undefined;
       this._ip = undefined;
+      this._ipList = undefined;
       this._loginMethod = undefined;
       this._serviceToken = undefined;
       this._azure.internalValue = undefined;
@@ -3806,6 +3870,7 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
       this._geo = value.geo;
       this._group = value.group;
       this._ip = value.ip;
+      this._ipList = value.ipList;
       this._loginMethod = value.loginMethod;
       this._serviceToken = value.serviceToken;
       this._azure.internalValue = value.azure;
@@ -3993,6 +4058,22 @@ export class AccessGroupRequireOutputReference extends cdktf.ComplexObject {
     return this._ip;
   }
 
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  public resetIpList() {
+    this._ipList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
+  }
+
   // login_method - computed: false, optional: true, required: false
   private _loginMethod?: string[]; 
   public get loginMethod() {
@@ -4168,7 +4249,7 @@ export class AccessGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

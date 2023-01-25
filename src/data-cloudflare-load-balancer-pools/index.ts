@@ -502,7 +502,7 @@ export class DataCloudflareLoadBalancerPools extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_load_balancer_pools',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

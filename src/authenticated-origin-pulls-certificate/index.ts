@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AuthenticatedOriginPullsCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * **Modifying this attribute will force creation of a new resource.**
+  * The public client certificate. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls_certificate#certificate AuthenticatedOriginPullsCertificate#certificate}
   */
@@ -21,13 +21,13 @@ export interface AuthenticatedOriginPullsCertificateConfig extends cdktf.Terrafo
   */
   readonly id?: string;
   /**
-  * **Modifying this attribute will force creation of a new resource.**
+  * The private key of the client certificate. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls_certificate#private_key AuthenticatedOriginPullsCertificate#private_key}
   */
   readonly privateKey: string;
   /**
-  * **Modifying this attribute will force creation of a new resource.**
+  * The form of Authenticated Origin Pulls to upload the certificate to. Available values: `per-zone`, `per-hostname`. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls_certificate#type AuthenticatedOriginPullsCertificate#type}
   */
@@ -147,7 +147,7 @@ export class AuthenticatedOriginPullsCertificate extends cdktf.TerraformResource
       terraformResourceType: 'cloudflare_authenticated_origin_pulls_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

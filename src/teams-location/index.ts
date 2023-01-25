@@ -14,6 +14,8 @@ export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
+  * Indicator that this is the default location.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location#client_default TeamsLocation#client_default}
   */
   readonly clientDefault?: boolean | cdktf.IResolvable;
@@ -25,6 +27,8 @@ export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Name of the teams location.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location#name TeamsLocation#name}
   */
   readonly name: string;
@@ -37,6 +41,8 @@ export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamsLocationNetworks {
   /**
+  * CIDR notation representation of the network IP.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location#network TeamsLocation#network}
   */
   readonly network: string;
@@ -161,7 +167,7 @@ export class TeamsLocation extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.1',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
