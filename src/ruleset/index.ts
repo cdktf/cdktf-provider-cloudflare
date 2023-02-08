@@ -5105,6 +5105,18 @@ export interface RulesetRulesRatelimit {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#requests_to_origin Ruleset#requests_to_origin}
   */
   readonly requestsToOrigin?: boolean | cdktf.IResolvable;
+  /**
+  * The maximum aggregate score over the period of time that will trigger Rate Limiting rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#score_per_period Ruleset#score_per_period}
+  */
+  readonly scorePerPeriod?: number;
+  /**
+  * Name of HTTP header in the response, set by the origin server, with the score for the current request.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#score_response_header_name Ruleset#score_response_header_name}
+  */
+  readonly scoreResponseHeaderName?: string;
 }
 
 export function rulesetRulesRatelimitToTerraform(struct?: RulesetRulesRatelimitOutputReference | RulesetRulesRatelimit): any {
@@ -5119,6 +5131,8 @@ export function rulesetRulesRatelimitToTerraform(struct?: RulesetRulesRatelimitO
     period: cdktf.numberToTerraform(struct!.period),
     requests_per_period: cdktf.numberToTerraform(struct!.requestsPerPeriod),
     requests_to_origin: cdktf.booleanToTerraform(struct!.requestsToOrigin),
+    score_per_period: cdktf.numberToTerraform(struct!.scorePerPeriod),
+    score_response_header_name: cdktf.stringToTerraform(struct!.scoreResponseHeaderName),
   }
 }
 
@@ -5160,6 +5174,14 @@ export class RulesetRulesRatelimitOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.requestsToOrigin = this._requestsToOrigin;
     }
+    if (this._scorePerPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scorePerPeriod = this._scorePerPeriod;
+    }
+    if (this._scoreResponseHeaderName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scoreResponseHeaderName = this._scoreResponseHeaderName;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -5172,6 +5194,8 @@ export class RulesetRulesRatelimitOutputReference extends cdktf.ComplexObject {
       this._period = undefined;
       this._requestsPerPeriod = undefined;
       this._requestsToOrigin = undefined;
+      this._scorePerPeriod = undefined;
+      this._scoreResponseHeaderName = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -5181,6 +5205,8 @@ export class RulesetRulesRatelimitOutputReference extends cdktf.ComplexObject {
       this._period = value.period;
       this._requestsPerPeriod = value.requestsPerPeriod;
       this._requestsToOrigin = value.requestsToOrigin;
+      this._scorePerPeriod = value.scorePerPeriod;
+      this._scoreResponseHeaderName = value.scoreResponseHeaderName;
     }
   }
 
@@ -5278,6 +5304,38 @@ export class RulesetRulesRatelimitOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get requestsToOriginInput() {
     return this._requestsToOrigin;
+  }
+
+  // score_per_period - computed: false, optional: true, required: false
+  private _scorePerPeriod?: number; 
+  public get scorePerPeriod() {
+    return this.getNumberAttribute('score_per_period');
+  }
+  public set scorePerPeriod(value: number) {
+    this._scorePerPeriod = value;
+  }
+  public resetScorePerPeriod() {
+    this._scorePerPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scorePerPeriodInput() {
+    return this._scorePerPeriod;
+  }
+
+  // score_response_header_name - computed: false, optional: true, required: false
+  private _scoreResponseHeaderName?: string; 
+  public get scoreResponseHeaderName() {
+    return this.getStringAttribute('score_response_header_name');
+  }
+  public set scoreResponseHeaderName(value: string) {
+    this._scoreResponseHeaderName = value;
+  }
+  public resetScoreResponseHeaderName() {
+    this._scoreResponseHeaderName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scoreResponseHeaderNameInput() {
+    return this._scoreResponseHeaderName;
   }
 }
 export interface RulesetRules {
@@ -5621,7 +5679,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

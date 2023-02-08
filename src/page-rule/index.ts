@@ -565,13 +565,13 @@ export interface PageRuleActionsCacheKeyFields {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#cookie PageRule#cookie}
   */
-  readonly cookie: PageRuleActionsCacheKeyFieldsCookie;
+  readonly cookie?: PageRuleActionsCacheKeyFieldsCookie;
   /**
   * header block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#header PageRule#header}
   */
-  readonly header: PageRuleActionsCacheKeyFieldsHeader;
+  readonly header?: PageRuleActionsCacheKeyFieldsHeader;
   /**
   * host block
   * 
@@ -662,7 +662,7 @@ export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktf.ComplexO
     }
   }
 
-  // cookie - computed: false, optional: false, required: true
+  // cookie - computed: false, optional: true, required: false
   private _cookie = new PageRuleActionsCacheKeyFieldsCookieOutputReference(this, "cookie");
   public get cookie() {
     return this._cookie;
@@ -670,18 +670,24 @@ export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktf.ComplexO
   public putCookie(value: PageRuleActionsCacheKeyFieldsCookie) {
     this._cookie.internalValue = value;
   }
+  public resetCookie() {
+    this._cookie.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get cookieInput() {
     return this._cookie.internalValue;
   }
 
-  // header - computed: false, optional: false, required: true
+  // header - computed: false, optional: true, required: false
   private _header = new PageRuleActionsCacheKeyFieldsHeaderOutputReference(this, "header");
   public get header() {
     return this._header;
   }
   public putHeader(value: PageRuleActionsCacheKeyFieldsHeader) {
     this._header.internalValue = value;
+  }
+  public resetHeader() {
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
@@ -2157,7 +2163,7 @@ export class PageRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_page_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

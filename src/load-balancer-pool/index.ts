@@ -736,7 +736,7 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_pool',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

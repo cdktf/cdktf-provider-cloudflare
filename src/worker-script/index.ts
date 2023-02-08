@@ -57,6 +57,12 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   */
   readonly plainTextBinding?: WorkerScriptPlainTextBinding[] | cdktf.IResolvable;
   /**
+  * queue_binding block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#queue_binding WorkerScript#queue_binding}
+  */
+  readonly queueBinding?: WorkerScriptQueueBinding[] | cdktf.IResolvable;
+  /**
   * r2_bucket_binding block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
@@ -445,6 +451,128 @@ export class WorkerScriptPlainTextBindingList extends cdktf.ComplexList {
   */
   public get(index: number): WorkerScriptPlainTextBindingOutputReference {
     return new WorkerScriptPlainTextBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface WorkerScriptQueueBinding {
+  /**
+  * The name of the global variable for the binding in your Worker code.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#binding WorkerScript#binding}
+  */
+  readonly binding: string;
+  /**
+  * Name of the queue you want to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#queue WorkerScript#queue}
+  */
+  readonly queue: string;
+}
+
+export function workerScriptQueueBindingToTerraform(struct?: WorkerScriptQueueBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    binding: cdktf.stringToTerraform(struct!.binding),
+    queue: cdktf.stringToTerraform(struct!.queue),
+  }
+}
+
+export class WorkerScriptQueueBindingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WorkerScriptQueueBinding | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._binding !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.binding = this._binding;
+    }
+    if (this._queue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queue = this._queue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkerScriptQueueBinding | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._binding = undefined;
+      this._queue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._binding = value.binding;
+      this._queue = value.queue;
+    }
+  }
+
+  // binding - computed: false, optional: false, required: true
+  private _binding?: string; 
+  public get binding() {
+    return this.getStringAttribute('binding');
+  }
+  public set binding(value: string) {
+    this._binding = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bindingInput() {
+    return this._binding;
+  }
+
+  // queue - computed: false, optional: false, required: true
+  private _queue?: string; 
+  public get queue() {
+    return this.getStringAttribute('queue');
+  }
+  public set queue(value: string) {
+    this._queue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueInput() {
+    return this._queue;
+  }
+}
+
+export class WorkerScriptQueueBindingList extends cdktf.ComplexList {
+  public internalValue? : WorkerScriptQueueBinding[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WorkerScriptQueueBindingOutputReference {
+    return new WorkerScriptQueueBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface WorkerScriptR2BucketBinding {
@@ -991,7 +1119,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -1010,6 +1138,7 @@ export class WorkerScript extends cdktf.TerraformResource {
     this._analyticsEngineBinding.internalValue = config.analyticsEngineBinding;
     this._kvNamespaceBinding.internalValue = config.kvNamespaceBinding;
     this._plainTextBinding.internalValue = config.plainTextBinding;
+    this._queueBinding.internalValue = config.queueBinding;
     this._r2BucketBinding.internalValue = config.r2BucketBinding;
     this._secretTextBinding.internalValue = config.secretTextBinding;
     this._serviceBinding.internalValue = config.serviceBinding;
@@ -1142,6 +1271,22 @@ export class WorkerScript extends cdktf.TerraformResource {
     return this._plainTextBinding.internalValue;
   }
 
+  // queue_binding - computed: false, optional: true, required: false
+  private _queueBinding = new WorkerScriptQueueBindingList(this, "queue_binding", true);
+  public get queueBinding() {
+    return this._queueBinding;
+  }
+  public putQueueBinding(value: WorkerScriptQueueBinding[] | cdktf.IResolvable) {
+    this._queueBinding.internalValue = value;
+  }
+  public resetQueueBinding() {
+    this._queueBinding.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueBindingInput() {
+    return this._queueBinding.internalValue;
+  }
+
   // r2_bucket_binding - computed: false, optional: true, required: false
   private _r2BucketBinding = new WorkerScriptR2BucketBindingList(this, "r2_bucket_binding", true);
   public get r2BucketBinding() {
@@ -1220,6 +1365,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       analytics_engine_binding: cdktf.listMapper(workerScriptAnalyticsEngineBindingToTerraform, true)(this._analyticsEngineBinding.internalValue),
       kv_namespace_binding: cdktf.listMapper(workerScriptKvNamespaceBindingToTerraform, true)(this._kvNamespaceBinding.internalValue),
       plain_text_binding: cdktf.listMapper(workerScriptPlainTextBindingToTerraform, true)(this._plainTextBinding.internalValue),
+      queue_binding: cdktf.listMapper(workerScriptQueueBindingToTerraform, true)(this._queueBinding.internalValue),
       r2_bucket_binding: cdktf.listMapper(workerScriptR2BucketBindingToTerraform, true)(this._r2BucketBinding.internalValue),
       secret_text_binding: cdktf.listMapper(workerScriptSecretTextBindingToTerraform, true)(this._secretTextBinding.internalValue),
       service_binding: cdktf.listMapper(workerScriptServiceBindingToTerraform, true)(this._serviceBinding.internalValue),

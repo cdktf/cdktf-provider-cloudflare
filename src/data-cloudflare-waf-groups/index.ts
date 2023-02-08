@@ -244,7 +244,7 @@ export class DataCloudflareWafGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_waf_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

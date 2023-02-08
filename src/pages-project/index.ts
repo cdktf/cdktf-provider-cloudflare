@@ -21,7 +21,7 @@ export interface PagesProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Name of the project.
+  * Name of the project. **Modifying this attribute will force creation of a new resource.**
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#name PagesProject#name}
   */
@@ -1759,7 +1759,7 @@ export class PagesProject extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

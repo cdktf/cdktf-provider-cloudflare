@@ -66,7 +66,7 @@ export class AccountMember extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_member',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.33.1',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -146,7 +146,7 @@ export class AccountMember extends cdktf.TerraformResource {
     return this._roleIds;
   }
 
-  // status - computed: false, optional: true, required: false
+  // status - computed: true, optional: true, required: false
   private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
