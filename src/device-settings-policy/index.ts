@@ -62,6 +62,12 @@ export interface DeviceSettingsPolicyConfig extends cdktf.TerraformMetaArguments
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Whether to add Microsoft IPs to split tunnel exclusions.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
+  */
+  readonly excludeOfficeIps?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_settings_policy#id DeviceSettingsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -138,7 +144,7 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_settings_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -158,6 +164,7 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
     this._default = config.default;
     this._disableAutoFallback = config.disableAutoFallback;
     this._enabled = config.enabled;
+    this._excludeOfficeIps = config.excludeOfficeIps;
     this._id = config.id;
     this._match = config.match;
     this._name = config.name;
@@ -313,6 +320,22 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
     return this._enabled;
   }
 
+  // exclude_office_ips - computed: false, optional: true, required: false
+  private _excludeOfficeIps?: boolean | cdktf.IResolvable; 
+  public get excludeOfficeIps() {
+    return this.getBooleanAttribute('exclude_office_ips');
+  }
+  public set excludeOfficeIps(value: boolean | cdktf.IResolvable) {
+    this._excludeOfficeIps = value;
+  }
+  public resetExcludeOfficeIps() {
+    this._excludeOfficeIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeOfficeIpsInput() {
+    return this._excludeOfficeIps;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -453,6 +476,7 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
       default: cdktf.booleanToTerraform(this._default),
       disable_auto_fallback: cdktf.booleanToTerraform(this._disableAutoFallback),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      exclude_office_ips: cdktf.booleanToTerraform(this._excludeOfficeIps),
       id: cdktf.stringToTerraform(this._id),
       match: cdktf.stringToTerraform(this._match),
       name: cdktf.stringToTerraform(this._name),

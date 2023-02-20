@@ -54,7 +54,7 @@ export class TieredCache extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tiered_cache',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
