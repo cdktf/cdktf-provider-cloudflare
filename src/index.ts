@@ -103,6 +103,7 @@ export * as dataCloudflareIpRanges from './data-cloudflare-ip-ranges';
 export * as dataCloudflareLoadBalancerPools from './data-cloudflare-load-balancer-pools';
 export * as dataCloudflareOriginCaRootCertificate from './data-cloudflare-origin-ca-root-certificate';
 export * as dataCloudflareRecord from './data-cloudflare-record';
+export * as dataCloudflareRulesets from './data-cloudflare-rulesets';
 export * as dataCloudflareWafGroups from './data-cloudflare-waf-groups';
 export * as dataCloudflareWafPackages from './data-cloudflare-waf-packages';
 export * as dataCloudflareWafRules from './data-cloudflare-waf-rules';

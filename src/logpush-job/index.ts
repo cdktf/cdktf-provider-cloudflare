@@ -57,7 +57,7 @@ export interface LogpushJobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly kind?: string;
   /**
-  * Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpull options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
+  * Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#logpull_options LogpushJob#logpull_options}
   */
@@ -108,7 +108,7 @@ export class LogpushJob extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_job',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

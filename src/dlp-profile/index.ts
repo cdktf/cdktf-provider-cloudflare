@@ -14,6 +14,12 @@ export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId: string;
   /**
+  * Related DLP policies will trigger when the match count exceeds the number set.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
+  */
+  readonly allowedMatchCount: number;
+  /**
   * Brief summary of the profile and its intended use.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#description DlpProfile#description}
@@ -351,7 +357,7 @@ export class DlpProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dlp_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -363,6 +369,7 @@ export class DlpProfile extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._allowedMatchCount = config.allowedMatchCount;
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
@@ -385,6 +392,19 @@ export class DlpProfile extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // allowed_match_count - computed: false, optional: false, required: true
+  private _allowedMatchCount?: number; 
+  public get allowedMatchCount() {
+    return this.getNumberAttribute('allowed_match_count');
+  }
+  public set allowedMatchCount(value: number) {
+    this._allowedMatchCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedMatchCountInput() {
+    return this._allowedMatchCount;
   }
 
   // description - computed: false, optional: true, required: false
@@ -465,6 +485,7 @@ export class DlpProfile extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      allowed_match_count: cdktf.numberToTerraform(this._allowedMatchCount),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

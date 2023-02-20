@@ -5364,6 +5364,12 @@ export interface RulesetRules {
   */
   readonly expression: string;
   /**
+  * The most recent update to this rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#last_updated Ruleset#last_updated}
+  */
+  readonly lastUpdated?: string;
+  /**
   * action_parameters block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#action_parameters Ruleset#action_parameters}
@@ -5399,6 +5405,7 @@ export function rulesetRulesToTerraform(struct?: RulesetRules | cdktf.IResolvabl
     description: cdktf.stringToTerraform(struct!.description),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     expression: cdktf.stringToTerraform(struct!.expression),
+    last_updated: cdktf.stringToTerraform(struct!.lastUpdated),
     action_parameters: rulesetRulesActionParametersToTerraform(struct!.actionParameters),
     exposed_credential_check: rulesetRulesExposedCredentialCheckToTerraform(struct!.exposedCredentialCheck),
     logging: rulesetRulesLoggingToTerraform(struct!.logging),
@@ -5442,6 +5449,10 @@ export class RulesetRulesOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.expression = this._expression;
     }
+    if (this._lastUpdated !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lastUpdated = this._lastUpdated;
+    }
     if (this._actionParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.actionParameters = this._actionParameters?.internalValue;
@@ -5469,6 +5480,7 @@ export class RulesetRulesOutputReference extends cdktf.ComplexObject {
       this._description = undefined;
       this._enabled = undefined;
       this._expression = undefined;
+      this._lastUpdated = undefined;
       this._actionParameters.internalValue = undefined;
       this._exposedCredentialCheck.internalValue = undefined;
       this._logging.internalValue = undefined;
@@ -5485,6 +5497,7 @@ export class RulesetRulesOutputReference extends cdktf.ComplexObject {
       this._description = value.description;
       this._enabled = value.enabled;
       this._expression = value.expression;
+      this._lastUpdated = value.lastUpdated;
       this._actionParameters.internalValue = value.actionParameters;
       this._exposedCredentialCheck.internalValue = value.exposedCredentialCheck;
       this._logging.internalValue = value.logging;
@@ -5556,6 +5569,22 @@ export class RulesetRulesOutputReference extends cdktf.ComplexObject {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // last_updated - computed: false, optional: true, required: false
+  private _lastUpdated?: string; 
+  public get lastUpdated() {
+    return this.getStringAttribute('last_updated');
+  }
+  public set lastUpdated(value: string) {
+    this._lastUpdated = value;
+  }
+  public resetLastUpdated() {
+    this._lastUpdated = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastUpdatedInput() {
+    return this._lastUpdated;
   }
 
   // ref - computed: true, optional: false, required: false
@@ -5679,7 +5708,7 @@ export class Ruleset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
