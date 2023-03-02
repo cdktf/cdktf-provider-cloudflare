@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_se
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverride(scope Construct, id *string, config ZoneSettingsOverrideConfig) ZoneSettingsOverride
 ```
@@ -293,7 +293,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.ZoneSettingsOverride_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.ZoneSettingsOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ zonesettingsoverride.ZoneSettingsOverride_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.ZoneSettingsOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideConfig {
 	Connection: interface{},
@@ -671,7 +671,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 	Provisioners: *[]interface{},
 	ZoneId: *string,
 	Id: *string,
-	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings,
+	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.zoneSettingsOverride.ZoneSettingsOverrideSettings,
 }
 ```
 
@@ -810,7 +810,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideInitialSettings {
 
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinify.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideInitialSettingsMinify {
 
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideInitialSettingsMobileRedirect {
 
@@ -849,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideInitialSettingsSecurityHeader {
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideSettings {
 	AlwaysOnline: *string,
@@ -889,10 +889,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 	Ipv6: *string,
 	LogToCloudflare: *string,
 	MaxUpload: *f64,
-	Minify: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify,
+	Minify: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify,
 	MinTlsVersion: *string,
 	Mirage: *string,
-	MobileRedirect: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect,
+	MobileRedirect: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect,
 	OpportunisticEncryption: *string,
 	OpportunisticOnion: *string,
 	OrangeToOrange: *string,
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsove
 	PseudoIpv4: *string,
 	ResponseBuffering: *string,
 	RocketLoader: *string,
-	SecurityHeader: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader,
+	SecurityHeader: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader,
 	SecurityLevel: *string,
 	ServerSideExclude: *string,
 	SortQueryStringForCache: *string,
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideSettingsMinify {
 	Css: *string,
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideSettingsMobileRedirect {
 	MobileSubdomain: *string,
@@ -1776,7 +1776,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 &zonesettingsoverride.ZoneSettingsOverrideSettingsSecurityHeader {
 	Enabled: interface{},
@@ -1866,7 +1866,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsList
 ```
@@ -1998,7 +1998,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsMinifyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsMinifyList
 ```
@@ -2130,7 +2130,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsMinifyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneSettingsOverrideInitialSettingsMinifyOutputReference
 ```
@@ -2430,7 +2430,7 @@ func InternalValue() ZoneSettingsOverrideInitialSettingsMinify
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsMobileRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsMobileRedirectList
 ```
@@ -2562,7 +2562,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference
 ```
@@ -2862,7 +2862,7 @@ func InternalValue() ZoneSettingsOverrideInitialSettingsMobileRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneSettingsOverrideInitialSettingsOutputReference
 ```
@@ -3734,7 +3734,7 @@ func InternalValue() ZoneSettingsOverrideInitialSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsSecurityHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsSecurityHeaderList
 ```
@@ -3866,7 +3866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference
 ```
@@ -4188,7 +4188,7 @@ func InternalValue() ZoneSettingsOverrideInitialSettingsSecurityHeader
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideSettingsMinifyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsMinifyOutputReference
 ```
@@ -4503,7 +4503,7 @@ func InternalValue() ZoneSettingsOverrideSettingsMinify
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideSettingsMobileRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsMobileRedirectOutputReference
 ```
@@ -4818,7 +4818,7 @@ func InternalValue() ZoneSettingsOverrideSettingsMobileRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsOutputReference
 ```
@@ -6701,7 +6701,7 @@ func InternalValue() ZoneSettingsOverrideSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonesettingsoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonesettingsoverride"
 
 zonesettingsoverride.NewZoneSettingsOverrideSettingsSecurityHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsSecurityHeaderOutputReference
 ```
