@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessBookmark.AccessBookmark.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessbookmark"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessbookmark"
 
 accessbookmark.NewAccessBookmark(scope Construct, id *string, config AccessBookmarkConfig) AccessBookmark
 ```
@@ -301,7 +301,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessBookmark.AccessBookmark.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessbookmark"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessbookmark"
 
 accessbookmark.AccessBookmark_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessBookmark.AccessBookmark.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessbookmark"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessbookmark"
 
 accessbookmark.AccessBookmark_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ accessbookmark.AccessBookmark_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessBookmark.AccessBookmark.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessbookmark"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessbookmark"
 
 accessbookmark.AccessBookmark_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessBookmark.AccessBookmarkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessbookmark"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessbookmark"
 
 &accessbookmark.AccessBookmarkConfig {
 	Connection: interface{},

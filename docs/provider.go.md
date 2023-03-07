@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/provider"
 
 provider.NewCloudflareProvider(scope Construct, id *string, config CloudflareProviderConfig) CloudflareProvider
 ```
@@ -227,7 +227,7 @@ func ResetRps()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/provider"
 
 provider.CloudflareProvider_IsConstruct(x interface{}) *bool
 ```
@@ -259,7 +259,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/provider"
 
 provider.CloudflareProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -273,7 +273,7 @@ provider.CloudflareProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/provider"
 
 provider.CloudflareProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/provider"
 
 &provider.CloudflareProviderConfig {
 	AccountId: *string,
