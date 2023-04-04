@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/record 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.record.Record.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 record.NewRecord(scope Construct, id *string, config RecordConfig) Record
 ```
@@ -362,7 +362,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.record.Record.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 record.Record_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.record.Record.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 record.Record_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ record.Record_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.record.Record.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 record.Record_IsTerraformResource(x interface{}) *bool
 ```
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.record.RecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 &record.RecordConfig {
 	Connection: interface{},
@@ -963,12 +963,12 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
 	ZoneId: *string,
 	AllowOverwrite: interface{},
 	Comment: *string,
-	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.record.RecordData,
+	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.record.RecordData,
 	Id: *string,
 	Priority: *f64,
 	Proxied: interface{},
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.record.RecordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.record.RecordTimeouts,
 	Ttl: *f64,
 	Value: *string,
 }
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.record.RecordData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 &record.RecordData {
 	Algorithm: *f64,
@@ -1827,7 +1827,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.record.RecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 &record.RecordTimeouts {
 	Create: *string,
@@ -1875,7 +1875,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.record.RecordDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 record.NewRecordDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RecordDataOutputReference
 ```
@@ -3255,7 +3255,7 @@ func InternalValue() RecordData
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/record"
 
 record.NewRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RecordTimeoutsOutputReference
 ```

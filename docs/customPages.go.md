@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customPages.CustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.NewCustomPages(scope Construct, id *string, config CustomPagesConfig) CustomPages
 ```
@@ -294,7 +294,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.customPages.CustomPages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.customPages.CustomPages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ custompages.CustomPages_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.customPages.CustomPages.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customPages.CustomPagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 &custompages.CustomPagesConfig {
 	Connection: interface{},
