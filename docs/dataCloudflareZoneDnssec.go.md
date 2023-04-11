@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dn
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarezonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarezonednssec"
 
 datacloudflarezonednssec.NewDataCloudflareZoneDnssec(scope Construct, id *string, config DataCloudflareZoneDnssecConfig) DataCloudflareZoneDnssec
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarezonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarezonednssec"
 
 datacloudflarezonednssec.DataCloudflareZoneDnssec_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarezonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarezonednssec"
 
 datacloudflarezonednssec.DataCloudflareZoneDnssec_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datacloudflarezonednssec.DataCloudflareZoneDnssec_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarezonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarezonednssec"
 
 datacloudflarezonednssec.DataCloudflareZoneDnssec_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarezonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarezonednssec"
 
 &datacloudflarezonednssec.DataCloudflareZoneDnssecConfig {
 	Connection: interface{},

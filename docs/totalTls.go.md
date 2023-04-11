@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/total_t
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.totalTls.TotalTls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/totaltls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/totaltls"
 
 totaltls.NewTotalTls(scope Construct, id *string, config TotalTlsConfig) TotalTls
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.totalTls.TotalTls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/totaltls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/totaltls"
 
 totaltls.TotalTls_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.totalTls.TotalTls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/totaltls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/totaltls"
 
 totaltls.TotalTls_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ totaltls.TotalTls_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.totalTls.TotalTls.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/totaltls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/totaltls"
 
 totaltls.TotalTls_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.totalTls.TotalTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/totaltls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/totaltls"
 
 &totaltls.TotalTlsConfig {
 	Connection: interface{},

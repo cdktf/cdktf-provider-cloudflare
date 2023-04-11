@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/static_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.staticRoute.StaticRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/staticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/staticroute"
 
 staticroute.NewStaticRoute(scope Construct, id *string, config StaticRouteConfig) StaticRoute
 ```
@@ -308,7 +308,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.staticRoute.StaticRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/staticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/staticroute"
 
 staticroute.StaticRoute_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.staticRoute.StaticRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/staticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/staticroute"
 
 staticroute.StaticRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ staticroute.StaticRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.staticRoute.StaticRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/staticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/staticroute"
 
 staticroute.StaticRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/staticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/staticroute"
 
 &staticroute.StaticRouteConfig {
 	Connection: interface{},

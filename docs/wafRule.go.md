@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_rul
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.wafRule.WafRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafrule"
 
 wafrule.NewWafRule(scope Construct, id *string, config WafRuleConfig) WafRule
 ```
@@ -280,7 +280,7 @@ func ResetPackageId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.wafRule.WafRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafrule"
 
 wafrule.WafRule_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.wafRule.WafRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafrule"
 
 wafrule.WafRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ wafrule.WafRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.wafRule.WafRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafrule"
 
 wafrule.WafRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.wafRule.WafRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafrule"
 
 &wafrule.WafRuleConfig {
 	Connection: interface{},

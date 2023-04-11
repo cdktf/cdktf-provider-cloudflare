@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argoTunnel.ArgoTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/argotunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argotunnel"
 
 argotunnel.NewArgoTunnel(scope Construct, id *string, config ArgoTunnelConfig) ArgoTunnel
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.argoTunnel.ArgoTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/argotunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argotunnel"
 
 argotunnel.ArgoTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.argoTunnel.ArgoTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/argotunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argotunnel"
 
 argotunnel.ArgoTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ argotunnel.ArgoTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.argoTunnel.ArgoTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/argotunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argotunnel"
 
 argotunnel.ArgoTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.argoTunnel.ArgoTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/argotunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argotunnel"
 
 &argotunnel.ArgoTunnelConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/byoipprefix"
 
 byoipprefix.NewByoIpPrefix(scope Construct, id *string, config ByoIpPrefixConfig) ByoIpPrefix
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/byoipprefix"
 
 byoipprefix.ByoIpPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/byoipprefix"
 
 byoipprefix.ByoIpPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ byoipprefix.ByoIpPrefix_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/byoipprefix"
 
 byoipprefix.ByoIpPrefix_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/byoipprefix"
 
 &byoipprefix.ByoIpPrefixConfig {
 	Connection: interface{},

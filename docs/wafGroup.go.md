@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_gro
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.wafGroup.WafGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafgroup"
 
 wafgroup.NewWafGroup(scope Construct, id *string, config WafGroupConfig) WafGroup
 ```
@@ -287,7 +287,7 @@ func ResetPackageId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.wafGroup.WafGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafgroup"
 
 wafgroup.WafGroup_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.wafGroup.WafGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafgroup"
 
 wafgroup.WafGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ wafgroup.WafGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.wafGroup.WafGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafgroup"
 
 wafgroup.WafGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.wafGroup.WafGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/wafgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafgroup"
 
 &wafgroup.WafGroupConfig {
 	Connection: interface{},
