@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_pac
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.wafPackage.WafPackage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafpackage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafpackage"
 
 wafpackage.NewWafPackage(scope Construct, id *string, config WafPackageConfig) WafPackage
 ```
@@ -287,7 +287,7 @@ func ResetSensitivity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.wafPackage.WafPackage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafpackage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafpackage"
 
 wafpackage.WafPackage_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.wafPackage.WafPackage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafpackage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafpackage"
 
 wafpackage.WafPackage_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ wafpackage.WafPackage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.wafPackage.WafPackage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafpackage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafpackage"
 
 wafpackage.WafPackage_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.wafPackage.WafPackageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafpackage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafpackage"
 
 &wafpackage.WafPackageConfig {
 	Connection: interface{},

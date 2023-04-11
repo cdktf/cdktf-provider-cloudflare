@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
 
 accesscacertificate.NewAccessCaCertificate(scope Construct, id *string, config AccessCaCertificateConfig) AccessCaCertificate
 ```
@@ -287,7 +287,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
 
 accesscacertificate.AccessCaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
 
 accesscacertificate.AccessCaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ accesscacertificate.AccessCaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
 
 accesscacertificate.AccessCaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
 
 &accesscacertificate.AccessCaCertificateConfig {
 	Connection: interface{},
