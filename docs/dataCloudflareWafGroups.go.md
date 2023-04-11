@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/waf_gro
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.NewDataCloudflareWafGroups(scope Construct, id *string, config DataCloudflareWafGroupsConfig) DataCloudflareWafGroups
 ```
@@ -300,7 +300,7 @@ func ResetPackageId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.DataCloudflareWafGroups_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.DataCloudflareWafGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ datacloudflarewafgroups.DataCloudflareWafGroups_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.DataCloudflareWafGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 &datacloudflarewafgroups.DataCloudflareWafGroupsConfig {
 	Connection: interface{},
@@ -633,7 +633,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudfla
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ZoneId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5.dataCloudflareWafGroups.DataCloudflareWafGroupsFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsFilter,
 	Id: *string,
 	PackageId: *string,
 }
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 &datacloudflarewafgroups.DataCloudflareWafGroupsFilter {
 	Mode: *string,
@@ -833,7 +833,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 &datacloudflarewafgroups.DataCloudflareWafGroupsGroups {
 
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudfla
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.NewDataCloudflareWafGroupsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWafGroupsFilterOutputReference
 ```
@@ -1155,7 +1155,7 @@ func InternalValue() DataCloudflareWafGroupsFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.NewDataCloudflareWafGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWafGroupsGroupsList
 ```
@@ -1287,7 +1287,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWafGroups.DataCloudflareWafGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarewafgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewafgroups"
 
 datacloudflarewafgroups.NewDataCloudflareWafGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWafGroupsGroupsOutputReference
 ```
