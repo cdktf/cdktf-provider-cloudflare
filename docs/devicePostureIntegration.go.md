@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/device_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 devicepostureintegration.NewDevicePostureIntegration(scope Construct, id *string, config DevicePostureIntegrationConfig) DevicePostureIntegration
 ```
@@ -307,7 +307,7 @@ func ResetInterval()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 devicepostureintegration.DevicePostureIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 devicepostureintegration.DevicePostureIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ devicepostureintegration.DevicePostureIntegration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 devicepostureintegration.DevicePostureIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 &devicepostureintegration.DevicePostureIntegrationConfig {
 	Connection: interface{},
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 &devicepostureintegration.DevicePostureIntegrationConfigA {
 	ApiUrl: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 devicepostureintegration.NewDevicePostureIntegrationConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevicePostureIntegrationConfigAList
 ```
@@ -1178,7 +1178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepostureintegration"
 
 devicepostureintegration.NewDevicePostureIntegrationConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevicePostureIntegrationConfigAOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganization(scope Construct, id *string, config AccessOrganizationConfig) AccessOrganization
 ```
@@ -328,7 +328,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ accessorganization.AccessOrganization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationConfig {
 	Connection: interface{},
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationLoginDesign {
 	BackgroundColor: *string,
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationLoginDesignList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessOrganizationLoginDesignList
 ```
@@ -1225,7 +1225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationLoginDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessOrganizationLoginDesignOutputReference
 ```

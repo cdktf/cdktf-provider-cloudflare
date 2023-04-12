@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/managed
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.NewManagedHeaders(scope Construct, id *string, config ManagedHeadersConfig) ManagedHeaders
 ```
@@ -313,7 +313,7 @@ func ResetManagedResponseHeaders()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.ManagedHeaders_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.ManagedHeaders_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ managedheaders.ManagedHeaders_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.ManagedHeaders_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 &managedheaders.ManagedHeadersConfig {
 	Connection: interface{},
@@ -813,7 +813,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 &managedheaders.ManagedHeadersManagedRequestHeaders {
 	Enabled: interface{},
@@ -866,7 +866,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 &managedheaders.ManagedHeadersManagedResponseHeaders {
 	Enabled: interface{},
@@ -921,7 +921,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.NewManagedHeadersManagedRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedHeadersManagedRequestHeadersList
 ```
@@ -1064,7 +1064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.NewManagedHeadersManagedRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedHeadersManagedRequestHeadersOutputReference
 ```
@@ -1375,7 +1375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.NewManagedHeadersManagedResponseHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedHeadersManagedResponseHeadersList
 ```
@@ -1518,7 +1518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/managedheaders"
 
 managedheaders.NewManagedHeadersManagedResponseHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedHeadersManagedResponseHeadersOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/record 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerecord"
 
 datacloudflarerecord.NewDataCloudflareRecord(scope Construct, id *string, config DataCloudflareRecordConfig) DataCloudflareRecord
 ```
@@ -287,7 +287,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerecord"
 
 datacloudflarerecord.DataCloudflareRecord_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerecord"
 
 datacloudflarerecord.DataCloudflareRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datacloudflarerecord.DataCloudflareRecord_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerecord"
 
 datacloudflarerecord.DataCloudflareRecord_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerecord"
 
 &datacloudflarerecord.DataCloudflareRecordConfig {
 	Connection: interface{},

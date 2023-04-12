@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_ove
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.wafOverride.WafOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafoverride"
 
 wafoverride.NewWafOverride(scope Construct, id *string, config WafOverrideConfig) WafOverride
 ```
@@ -315,7 +315,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.wafOverride.WafOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafoverride"
 
 wafoverride.WafOverride_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.wafOverride.WafOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafoverride"
 
 wafoverride.WafOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ wafoverride.WafOverride_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.wafOverride.WafOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafoverride"
 
 wafoverride.WafOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.wafOverride.WafOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/wafoverride"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/wafoverride"
 
 &wafoverride.WafOverrideConfig {
 	Connection: interface{},

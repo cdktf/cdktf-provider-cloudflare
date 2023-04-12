@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/ip_list
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ipList.IpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 iplist.NewIpList(scope Construct, id *string, config IpListConfig) IpList
 ```
@@ -300,7 +300,7 @@ func ResetItem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.ipList.IpList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 iplist.IpList_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.ipList.IpList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 iplist.IpList_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ iplist.IpList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.ipList.IpList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 iplist.IpList_IsTerraformResource(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.ipList.IpListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 &iplist.IpListConfig {
 	Connection: interface{},
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.ipList.IpListItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 &iplist.IpListItem {
 	Value: *string,
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ipList.IpListItemList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 iplist.NewIpListItemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IpListItemList
 ```
@@ -1063,7 +1063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ipList.IpListItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/iplist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/iplist"
 
 iplist.NewIpListItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IpListItemOutputReference
 ```
