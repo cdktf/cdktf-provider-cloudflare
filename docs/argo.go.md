@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/argo cl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argo.Argo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/argo"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argo"
 
 argo.NewArgo(scope Construct, id *string, config ArgoConfig) Argo
 ```
@@ -287,7 +287,7 @@ func ResetTieredCaching()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.argo.Argo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/argo"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argo"
 
 argo.Argo_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.argo.Argo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/argo"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argo"
 
 argo.Argo_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ argo.Argo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.argo.Argo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/argo"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argo"
 
 argo.Argo_IsTerraformResource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.argo.ArgoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/argo"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/argo"
 
 &argo.ArgoConfig {
 	Connection: interface{},

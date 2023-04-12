@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_ba
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancer(scope Construct, id *string, config LoadBalancerConfig) LoadBalancer
 ```
@@ -469,7 +469,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.LoadBalancer_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.LoadBalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ loadbalancer.LoadBalancer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.LoadBalancer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1176,7 +1176,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerAdaptiveRouting {
 	FailoverAcrossPools: interface{},
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerConfig {
 	Connection: interface{},
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerCountryPools {
 	Country: *string,
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerLocationStrategy {
 	Mode: *string,
@@ -1749,7 +1749,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerPopPools {
 	PoolIds: *[]*string,
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRandomSteering {
 	DefaultWeight: *f64,
@@ -1851,7 +1851,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRegionPools {
 	PoolIds: *[]*string,
@@ -1901,13 +1901,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRules {
 	Name: *string,
 	Condition: *string,
 	Disabled: interface{},
-	FixedResponse: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.loadBalancer.LoadBalancerRulesFixedResponse,
+	FixedResponse: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6.loadBalancer.LoadBalancerRulesFixedResponse,
 	Overrides: interface{},
 	Priority: *f64,
 	Terminates: interface{},
@@ -2037,7 +2037,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesFixedResponse {
 	ContentType: *string,
@@ -2119,7 +2119,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverrides {
 	AdaptiveRouting: interface{},
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesAdaptiveRouting {
 	FailoverAcrossPools: interface{},
@@ -2379,7 +2379,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesCountryPools {
 	Country: *string,
@@ -2429,7 +2429,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesLocationStrategy {
 	Mode: *string,
@@ -2479,7 +2479,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesPopPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesPopPools {
 	PoolIds: *[]*string,
@@ -2529,7 +2529,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesRandomSteering {
 	DefaultWeight: *f64,
@@ -2579,7 +2579,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesRegionPools {
 	PoolIds: *[]*string,
@@ -2631,7 +2631,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerAdaptiveRoutingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerAdaptiveRoutingList
 ```
@@ -2774,7 +2774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerAdaptiveRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerAdaptiveRoutingOutputReference
 ```
@@ -3070,7 +3070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerCountryPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerCountryPoolsList
 ```
@@ -3213,7 +3213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerCountryPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerCountryPoolsOutputReference
 ```
@@ -3524,7 +3524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerLocationStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerLocationStrategyList
 ```
@@ -3667,7 +3667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerLocationStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerLocationStrategyOutputReference
 ```
@@ -3992,7 +3992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerPopPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerPopPoolsList
 ```
@@ -4135,7 +4135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerPopPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerPopPoolsOutputReference
 ```
@@ -4446,7 +4446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRandomSteeringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRandomSteeringList
 ```
@@ -4589,7 +4589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRandomSteeringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRandomSteeringOutputReference
 ```
@@ -4914,7 +4914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRegionPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRegionPoolsList
 ```
@@ -5057,7 +5057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRegionPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRegionPoolsOutputReference
 ```
@@ -5368,7 +5368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesFixedResponseOutputReference
 ```
@@ -5733,7 +5733,7 @@ func InternalValue() LoadBalancerRulesFixedResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesList
 ```
@@ -5876,7 +5876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOutputReference
 ```
@@ -6365,7 +6365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesAdaptiveRoutingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesAdaptiveRoutingList
 ```
@@ -6508,7 +6508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesAdaptiveRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesAdaptiveRoutingOutputReference
 ```
@@ -6804,7 +6804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesCountryPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesCountryPoolsList
 ```
@@ -6947,7 +6947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesCountryPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesCountryPoolsOutputReference
 ```
@@ -7258,7 +7258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesList
 ```
@@ -7401,7 +7401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesLocationStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesLocationStrategyList
 ```
@@ -7544,7 +7544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesLocationStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesLocationStrategyOutputReference
 ```
@@ -7869,7 +7869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesOutputReference
 ```
@@ -8591,7 +8591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesPopPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesPopPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesPopPoolsList
 ```
@@ -8734,7 +8734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesPopPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesPopPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesPopPoolsOutputReference
 ```
@@ -9045,7 +9045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRandomSteeringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesRandomSteeringList
 ```
@@ -9188,7 +9188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRandomSteeringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesRandomSteeringOutputReference
 ```
@@ -9513,7 +9513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRegionPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesRegionPoolsList
 ```
@@ -9656,7 +9656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRegionPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesRegionPoolsOutputReference
 ```

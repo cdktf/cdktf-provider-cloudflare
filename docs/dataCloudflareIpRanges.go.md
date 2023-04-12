@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/ip_rang
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareipranges"
 
 datacloudflareipranges.NewDataCloudflareIpRanges(scope Construct, id *string, config DataCloudflareIpRangesConfig) DataCloudflareIpRanges
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datacloudflareipranges.DataCloudflareIpRanges_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareipranges"
 
 &datacloudflareipranges.DataCloudflareIpRangesConfig {
 	Connection: interface{},
