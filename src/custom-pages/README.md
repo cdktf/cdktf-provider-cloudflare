@@ -1,3 +1,3 @@
 # `cloudflare_custom_pages`
 
-Refer to the Terraform Registory for docs: [`cloudflare_custom_pages`](https://www.terraform.io/docs/providers/cloudflare/r/custom_pages).
+Refer to the Terraform Registory for docs: [`cloudflare_custom_pages`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_pages).

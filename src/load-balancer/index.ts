@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/load_balancer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of pool IDs ordered by their failover priority. Used whenever [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) are not defined.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#default_pool_ids LoadBalancer#default_pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#default_pool_ids LoadBalancer#default_pool_ids}
   */
   readonly defaultPoolIds: string[];
   /**
   * Free text description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#description LoadBalancer#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#description LoadBalancer#description}
   */
   readonly description?: string;
   /**
   * Enable or disable the load balancer. Defaults to `true`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#enabled LoadBalancer#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The pool ID to use when all other pools are detected as unhealthy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#fallback_pool_id LoadBalancer#fallback_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#fallback_pool_id LoadBalancer#fallback_pool_id}
   */
   readonly fallbackPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#id LoadBalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#id LoadBalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,99 +41,99 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The DNS hostname to associate with your load balancer. If this hostname already exists as a DNS record in Cloudflare's DNS, the load balancer will take precedence and the DNS record will not be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#name LoadBalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#name LoadBalancer#name}
   */
   readonly name: string;
   /**
   * Whether the hostname gets Cloudflare's origin protection. Defaults to `false`. Conflicts with `ttl`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#proxied LoadBalancer#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
   */
   readonly proxied?: boolean | cdktf.IResolvable;
   /**
   * Specifies the type of session affinity the load balancer should use unless specified as `none` or `""` (default). With value `cookie`, on the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy then a new origin server is calculated and used. Value `ip_cookie` behaves the same as `cookie` except the initial origin selection is stable and based on the client's IP address. Available values: `""`, `none`, `cookie`, `ip_cookie`. Defaults to `none`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity LoadBalancer#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
-  * See [`session_affinity_attributes`](#nested-schema-for-session_affinity_attributes).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
-  */
-  readonly sessionAffinityAttributes?: { [key: string]: string };
-  /**
   * Time, in seconds, until this load balancer's session affinity cookie expires after being created. This parameter is ignored unless a supported session affinity policy is set. The current default of `82800` (23 hours) will be used unless [`session_affinity_ttl`](#session_affinity_ttl) is explicitly set. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. Valid values are between `1800` and `604800`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
   * The method the load balancer uses to determine the route to your origin. Value `off` uses [`default_pool_ids`](#default_pool_ids). Value `geo` uses [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools). For non-proxied requests, the [`country`](#country) for [`country_pools`](#country_pools) is determined by [`location_strategy`](#location_strategy). Value `random` selects a pool randomly. Value `dynamic_latency` uses round trip time to select the closest pool in [`default_pool_ids`](#default_pool_ids) (requires pool health checks). Value `proximity` uses the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by [`location_strategy`](#location_strategy) for non-proxied requests. Value `""` maps to `geo` if you use [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) otherwise `off`. Available values: `off`, `geo`, `dynamic_latency`, `random`, `proximity`, `""` Defaults to `""`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#steering_policy LoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This cannot be set for proxied load balancers. Defaults to `30`. Conflicts with `proxied`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#ttl LoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
   /**
   * The zone ID to add the load balancer to. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#zone_id LoadBalancer#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
   */
   readonly zoneId: string;
   /**
   * adaptive_routing block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
   */
   readonly adaptiveRouting?: LoadBalancerAdaptiveRouting[] | cdktf.IResolvable;
   /**
   * country_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country_pools LoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
   */
   readonly countryPools?: LoadBalancerCountryPools[] | cdktf.IResolvable;
   /**
   * location_strategy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#location_strategy LoadBalancer#location_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
   */
   readonly locationStrategy?: LoadBalancerLocationStrategy[] | cdktf.IResolvable;
   /**
   * pop_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop_pools LoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
   */
   readonly popPools?: LoadBalancerPopPools[] | cdktf.IResolvable;
   /**
   * random_steering block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#random_steering LoadBalancer#random_steering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
   */
   readonly randomSteering?: LoadBalancerRandomSteering[] | cdktf.IResolvable;
   /**
   * region_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#region_pools LoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
   */
   readonly regionPools?: LoadBalancerRegionPools[] | cdktf.IResolvable;
   /**
   * rules block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#rules LoadBalancer#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#rules LoadBalancer#rules}
   */
   readonly rules?: LoadBalancerRules[] | cdktf.IResolvable;
+  /**
+  * session_affinity_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+  */
+  readonly sessionAffinityAttributes?: LoadBalancerSessionAffinityAttributes[] | cdktf.IResolvable;
 }
 export interface LoadBalancerAdaptiveRouting {
   /**
   * Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. When set `false`, zero-downtime failover will only occur between origins within the same pool. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
   */
   readonly failoverAcrossPools?: boolean | cdktf.IResolvable;
 }
@@ -232,13 +232,13 @@ export interface LoadBalancerCountryPools {
   /**
   * A country code which can be determined with the Load Balancing Regions API described [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/). Multiple entries should not be specified with the same country.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country LoadBalancer#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#country LoadBalancer#country}
   */
   readonly country: string;
   /**
   * A list of pool IDs in failover priority to use in the given country.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
   */
   readonly poolIds: string[];
 }
@@ -354,13 +354,13 @@ export interface LoadBalancerLocationStrategy {
   /**
   * Determines the authoritative location when ECS is not preferred, does not exist in the request, or its GeoIP lookup is unsuccessful. Value `pop` will use the Cloudflare PoP location. Value `resolver_ip` will use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, it will use the Cloudflare PoP location. Available values: `pop`, `resolver_ip`. Defaults to `pop`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#mode LoadBalancer#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#mode LoadBalancer#mode}
   */
   readonly mode?: string;
   /**
   * Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritative location. Value `always` will always prefer ECS, `never` will never prefer ECS, `proximity` will prefer ECS only when [`steering_policy="proximity"`](#steering_policy), and `geo` will prefer ECS only when [`steering_policy="geo"`](#steering_policy). Available values: `always`, `never`, `proximity`, `geo`. Defaults to `proximity`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
   */
   readonly preferEcs?: string;
 }
@@ -482,13 +482,13 @@ export interface LoadBalancerPopPools {
   /**
   * A list of pool IDs in failover priority to use for traffic reaching the given PoP.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
   */
   readonly poolIds: string[];
   /**
   * A 3-letter code for the Point-of-Presence. Allowed values can be found in the list of datacenters on the [status page](https://www.cloudflarestatus.com/). Multiple entries should not be specified with the same PoP.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop LoadBalancer#pop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pop LoadBalancer#pop}
   */
   readonly pop: string;
 }
@@ -604,13 +604,13 @@ export interface LoadBalancerRandomSteering {
   /**
   * The default weight for pools in the load balancer that are not specified in the [`pool_weights`](#pool_weights) map.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#default_weight LoadBalancer#default_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
   */
   readonly defaultWeight?: number;
   /**
   * A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_weights LoadBalancer#pool_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
   */
   readonly poolWeights?: { [key: string]: number };
 }
@@ -732,13 +732,13 @@ export interface LoadBalancerRegionPools {
   /**
   * A list of pool IDs in failover priority to use in the given region.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
   */
   readonly poolIds: string[];
   /**
   * A region code which must be in the list defined [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/#list-of-load-balancer-regions). Multiple entries should not be specified with the same region.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#region LoadBalancer#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#region LoadBalancer#region}
   */
   readonly region: string;
 }
@@ -854,25 +854,25 @@ export interface LoadBalancerRulesFixedResponse {
   /**
   * The value of the HTTP context-type header for this fixed response.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#content_type LoadBalancer#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
   */
   readonly contentType?: string;
   /**
   * The value of the HTTP location header for this fixed response.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#location LoadBalancer#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#location LoadBalancer#location}
   */
   readonly location?: string;
   /**
   * The text used as the html body for this fixed response.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#message_body LoadBalancer#message_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
   */
   readonly messageBody?: string;
   /**
   * The HTTP status code used for this fixed response.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#status_code LoadBalancer#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
   */
   readonly statusCode?: number;
 }
@@ -1006,9 +1006,9 @@ export class LoadBalancerRulesFixedResponseOutputReference extends cdktf.Complex
 }
 export interface LoadBalancerRulesOverridesAdaptiveRouting {
   /**
-  * See [`failover_across_pools`](#failover_across_pools).
+  * Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. When set `false`, zero-downtime failover will only occur between origins within the same pool.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
   */
   readonly failoverAcrossPools?: boolean | cdktf.IResolvable;
 }
@@ -1105,15 +1105,15 @@ export class LoadBalancerRulesOverridesAdaptiveRoutingList extends cdktf.Complex
 }
 export interface LoadBalancerRulesOverridesCountryPools {
   /**
-  * See [`country`](#country).
+  * A country code which can be determined with the Load Balancing Regions API described [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/). Multiple entries should not be specified with the same country.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country LoadBalancer#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#country LoadBalancer#country}
   */
   readonly country: string;
   /**
-  * See [`pool_ids`](#pool_ids).
+  * A list of pool IDs in failover priority to use in the given country.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
   */
   readonly poolIds: string[];
 }
@@ -1227,15 +1227,15 @@ export class LoadBalancerRulesOverridesCountryPoolsList extends cdktf.ComplexLis
 }
 export interface LoadBalancerRulesOverridesLocationStrategy {
   /**
-  * See [`mode`](#mode).
+  * Determines the authoritative location when ECS is not preferred, does not exist in the request, or its GeoIP lookup is unsuccessful. Value `pop` will use the Cloudflare PoP location. Value `resolver_ip` will use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, it will use the Cloudflare PoP location. Available values: `pop`, `resolver_ip`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#mode LoadBalancer#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#mode LoadBalancer#mode}
   */
   readonly mode?: string;
   /**
-  * See [`prefer_ecs`](#prefer_ecs).
+  * Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritative location. Value `always` will always prefer ECS, `never` will never prefer ECS, `proximity` will prefer ECS only when [`steering_policy="proximity"`](#steering_policy), and `geo` will prefer ECS only when [`steering_policy="geo"`](#steering_policy). Available values: `always`, `never`, `proximity`, `geo`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
   */
   readonly preferEcs?: string;
 }
@@ -1355,15 +1355,15 @@ export class LoadBalancerRulesOverridesLocationStrategyList extends cdktf.Comple
 }
 export interface LoadBalancerRulesOverridesPopPools {
   /**
-  * See [`pool_ids`](#pool_ids).
+  * A list of pool IDs in failover priority to use for traffic reaching the given PoP.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
   */
   readonly poolIds: string[];
   /**
-  * See [`pop`](#pop).
+  * A 3-letter code for the Point-of-Presence. Allowed values can be found in the list of datacenters on the [status page](https://www.cloudflarestatus.com/). Multiple entries should not be specified with the same PoP.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop LoadBalancer#pop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pop LoadBalancer#pop}
   */
   readonly pop: string;
 }
@@ -1477,15 +1477,15 @@ export class LoadBalancerRulesOverridesPopPoolsList extends cdktf.ComplexList {
 }
 export interface LoadBalancerRulesOverridesRandomSteering {
   /**
-  * See [`default_weight`](#default_weight).
+  * The default weight for pools in the load balancer that are not specified in the [`pool_weights`](#pool_weights) map.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#default_weight LoadBalancer#default_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
   */
   readonly defaultWeight?: number;
   /**
-  * See [`pool_weights`](#pool_weights).
+  * A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_weights LoadBalancer#pool_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
   */
   readonly poolWeights?: { [key: string]: number };
 }
@@ -1605,15 +1605,15 @@ export class LoadBalancerRulesOverridesRandomSteeringList extends cdktf.ComplexL
 }
 export interface LoadBalancerRulesOverridesRegionPools {
   /**
-  * See [`pool_ids`](#pool_ids).
+  * A list of pool IDs in failover priority to use in the given region.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pool_ids LoadBalancer#pool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
   */
   readonly poolIds: string[];
   /**
-  * See [`region`](#region).
+  * A region code which must be in the list defined [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/#list-of-load-balancer-regions). Multiple entries should not be specified with the same region.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#region LoadBalancer#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#region LoadBalancer#region}
   */
   readonly region: string;
 }
@@ -1725,85 +1725,242 @@ export class LoadBalancerRulesOverridesRegionPoolsList extends cdktf.ComplexList
     return new LoadBalancerRulesOverridesRegionPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface LoadBalancerRulesOverridesSessionAffinityAttributes {
+  /**
+  * Configures the SameSite attribute on session affinity cookie. Value `Auto` will be translated to `Lax` or `None` depending if Always Use HTTPS is enabled. Note: when using value `None`, then you can not set [`secure="Never"`](#secure). Available values: `Auto`, `Lax`, `None`, `Strict`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+  */
+  readonly samesite?: string;
+  /**
+  * Configures the Secure attribute on session affinity cookie. Value `Always` indicates the Secure attribute will be set in the Set-Cookie header, `Never` indicates the Secure attribute will not be set, and `Auto` will set the Secure attribute depending if Always Use HTTPS is enabled. Available values: `Auto`, `Always`, `Never`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+  */
+  readonly secure?: string;
+  /**
+  * Configures the zero-downtime failover between origins within a pool when session affinity is enabled. Value `none` means no failover takes place for sessions pinned to the origin. Value `temporary` means traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. Value `sticky` means the session affinity cookie is updated and subsequent requests are sent to the new origin. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. Available values: `none`, `temporary`, `sticky`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+  */
+  readonly zeroDowntimeFailover?: string;
+}
+
+export function loadBalancerRulesOverridesSessionAffinityAttributesToTerraform(struct?: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    samesite: cdktf.stringToTerraform(struct!.samesite),
+    secure: cdktf.stringToTerraform(struct!.secure),
+    zero_downtime_failover: cdktf.stringToTerraform(struct!.zeroDowntimeFailover),
+  }
+}
+
+export class LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._samesite !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.samesite = this._samesite;
+    }
+    if (this._secure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secure = this._secure;
+    }
+    if (this._zeroDowntimeFailover !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zeroDowntimeFailover = this._zeroDowntimeFailover;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._samesite = undefined;
+      this._secure = undefined;
+      this._zeroDowntimeFailover = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._samesite = value.samesite;
+      this._secure = value.secure;
+      this._zeroDowntimeFailover = value.zeroDowntimeFailover;
+    }
+  }
+
+  // samesite - computed: false, optional: true, required: false
+  private _samesite?: string; 
+  public get samesite() {
+    return this.getStringAttribute('samesite');
+  }
+  public set samesite(value: string) {
+    this._samesite = value;
+  }
+  public resetSamesite() {
+    this._samesite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samesiteInput() {
+    return this._samesite;
+  }
+
+  // secure - computed: false, optional: true, required: false
+  private _secure?: string; 
+  public get secure() {
+    return this.getStringAttribute('secure');
+  }
+  public set secure(value: string) {
+    this._secure = value;
+  }
+  public resetSecure() {
+    this._secure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secureInput() {
+    return this._secure;
+  }
+
+  // zero_downtime_failover - computed: false, optional: true, required: false
+  private _zeroDowntimeFailover?: string; 
+  public get zeroDowntimeFailover() {
+    return this.getStringAttribute('zero_downtime_failover');
+  }
+  public set zeroDowntimeFailover(value: string) {
+    this._zeroDowntimeFailover = value;
+  }
+  public resetZeroDowntimeFailover() {
+    this._zeroDowntimeFailover = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zeroDowntimeFailoverInput() {
+    return this._zeroDowntimeFailover;
+  }
+}
+
+export class LoadBalancerRulesOverridesSessionAffinityAttributesList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerRulesOverridesSessionAffinityAttributes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference {
+    return new LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LoadBalancerRulesOverrides {
   /**
-  * See [`default_pool_ids`](#default_pool_ids).
+  * A list of pool IDs ordered by their failover priority. Used whenever [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) are not defined.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#default_pools LoadBalancer#default_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
   */
   readonly defaultPools?: string[];
   /**
-  * See [`fallback_pool_id`](#fallback_pool_id).
+  * The pool ID to use when all other pools are detected as unhealthy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
   */
   readonly fallbackPool?: string;
   /**
-  * See [`session_affinity`](#session_affinity).
+  * Configure cookie attributes for session affinity cookie.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity LoadBalancer#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
-  * See [`session_affinity_attributes`](#nested-schema-for-session_affinity_attributes). Note that the property [`drain_duration`](#drain_duration) is not currently supported as a rule override.
+  * Time, in seconds, until this load balancer's session affinity cookie expires after being created. This parameter is ignored unless a supported session affinity policy is set. The current default of `82800` (23 hours) will be used unless [`session_affinity_ttl`](#session_affinity_ttl) is explicitly set. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. Valid values are between `1800` and `604800`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
-  */
-  readonly sessionAffinityAttributes?: { [key: string]: string };
-  /**
-  * See [`session_affinity_ttl`](#session_affinity_ttl).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
-  * See [`steering_policy`](#steering_policy).
+  * The method the load balancer uses to determine the route to your origin. Value `off` uses [`default_pool_ids`](#default_pool_ids). Value `geo` uses [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools). For non-proxied requests, the [`country`](#country) for [`country_pools`](#country_pools) is determined by [`location_strategy`](#location_strategy). Value `random` selects a pool randomly. Value `dynamic_latency` uses round trip time to select the closest pool in [`default_pool_ids`](#default_pool_ids) (requires pool health checks). Value `proximity` uses the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by [`location_strategy`](#location_strategy) for non-proxied requests. Value `""` maps to `geo` if you use [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) otherwise `off`. Available values: `off`, `geo`, `dynamic_latency`, `random`, `proximity`, `""` Defaults to `""`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#steering_policy LoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
-  * See [`ttl`](#ttl).
+  * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This cannot be set for proxied load balancers. Defaults to `30`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#ttl LoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
   /**
   * adaptive_routing block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
   */
   readonly adaptiveRouting?: LoadBalancerRulesOverridesAdaptiveRouting[] | cdktf.IResolvable;
   /**
   * country_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country_pools LoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
   */
   readonly countryPools?: LoadBalancerRulesOverridesCountryPools[] | cdktf.IResolvable;
   /**
   * location_strategy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#location_strategy LoadBalancer#location_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
   */
   readonly locationStrategy?: LoadBalancerRulesOverridesLocationStrategy[] | cdktf.IResolvable;
   /**
   * pop_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop_pools LoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
   */
   readonly popPools?: LoadBalancerRulesOverridesPopPools[] | cdktf.IResolvable;
   /**
   * random_steering block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#random_steering LoadBalancer#random_steering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
   */
   readonly randomSteering?: LoadBalancerRulesOverridesRandomSteering[] | cdktf.IResolvable;
   /**
   * region_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#region_pools LoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
   */
   readonly regionPools?: LoadBalancerRulesOverridesRegionPools[] | cdktf.IResolvable;
+  /**
+  * session_affinity_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+  */
+  readonly sessionAffinityAttributes?: LoadBalancerRulesOverridesSessionAffinityAttributes[] | cdktf.IResolvable;
 }
 
 export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRulesOverrides | cdktf.IResolvable): any {
@@ -1815,7 +1972,6 @@ export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRules
     default_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaultPools),
     fallback_pool: cdktf.stringToTerraform(struct!.fallbackPool),
     session_affinity: cdktf.stringToTerraform(struct!.sessionAffinity),
-    session_affinity_attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sessionAffinityAttributes),
     session_affinity_ttl: cdktf.numberToTerraform(struct!.sessionAffinityTtl),
     steering_policy: cdktf.stringToTerraform(struct!.steeringPolicy),
     ttl: cdktf.numberToTerraform(struct!.ttl),
@@ -1825,6 +1981,7 @@ export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRules
     pop_pools: cdktf.listMapper(loadBalancerRulesOverridesPopPoolsToTerraform, true)(struct!.popPools),
     random_steering: cdktf.listMapper(loadBalancerRulesOverridesRandomSteeringToTerraform, true)(struct!.randomSteering),
     region_pools: cdktf.listMapper(loadBalancerRulesOverridesRegionPoolsToTerraform, true)(struct!.regionPools),
+    session_affinity_attributes: cdktf.listMapper(loadBalancerRulesOverridesSessionAffinityAttributesToTerraform, true)(struct!.sessionAffinityAttributes),
   }
 }
 
@@ -1859,10 +2016,6 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
     if (this._sessionAffinity !== undefined) {
       hasAnyValues = true;
       internalValueResult.sessionAffinity = this._sessionAffinity;
-    }
-    if (this._sessionAffinityAttributes !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sessionAffinityAttributes = this._sessionAffinityAttributes;
     }
     if (this._sessionAffinityTtl !== undefined) {
       hasAnyValues = true;
@@ -1900,6 +2053,10 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.regionPools = this._regionPools?.internalValue;
     }
+    if (this._sessionAffinityAttributes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionAffinityAttributes = this._sessionAffinityAttributes?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1910,7 +2067,6 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._defaultPools = undefined;
       this._fallbackPool = undefined;
       this._sessionAffinity = undefined;
-      this._sessionAffinityAttributes = undefined;
       this._sessionAffinityTtl = undefined;
       this._steeringPolicy = undefined;
       this._ttl = undefined;
@@ -1920,6 +2076,7 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._popPools.internalValue = undefined;
       this._randomSteering.internalValue = undefined;
       this._regionPools.internalValue = undefined;
+      this._sessionAffinityAttributes.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1931,7 +2088,6 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._defaultPools = value.defaultPools;
       this._fallbackPool = value.fallbackPool;
       this._sessionAffinity = value.sessionAffinity;
-      this._sessionAffinityAttributes = value.sessionAffinityAttributes;
       this._sessionAffinityTtl = value.sessionAffinityTtl;
       this._steeringPolicy = value.steeringPolicy;
       this._ttl = value.ttl;
@@ -1941,6 +2097,7 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._popPools.internalValue = value.popPools;
       this._randomSteering.internalValue = value.randomSteering;
       this._regionPools.internalValue = value.regionPools;
+      this._sessionAffinityAttributes.internalValue = value.sessionAffinityAttributes;
     }
   }
 
@@ -1990,22 +2147,6 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
   // Temporarily expose input value. Use with caution.
   public get sessionAffinityInput() {
     return this._sessionAffinity;
-  }
-
-  // session_affinity_attributes - computed: false, optional: true, required: false
-  private _sessionAffinityAttributes?: { [key: string]: string }; 
-  public get sessionAffinityAttributes() {
-    return this.getStringMapAttribute('session_affinity_attributes');
-  }
-  public set sessionAffinityAttributes(value: { [key: string]: string }) {
-    this._sessionAffinityAttributes = value;
-  }
-  public resetSessionAffinityAttributes() {
-    this._sessionAffinityAttributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionAffinityAttributesInput() {
-    return this._sessionAffinityAttributes;
   }
 
   // session_affinity_ttl - computed: false, optional: true, required: false
@@ -2151,6 +2292,22 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
   public get regionPoolsInput() {
     return this._regionPools.internalValue;
   }
+
+  // session_affinity_attributes - computed: false, optional: true, required: false
+  private _sessionAffinityAttributes = new LoadBalancerRulesOverridesSessionAffinityAttributesList(this, "session_affinity_attributes", true);
+  public get sessionAffinityAttributes() {
+    return this._sessionAffinityAttributes;
+  }
+  public putSessionAffinityAttributes(value: LoadBalancerRulesOverridesSessionAffinityAttributes[] | cdktf.IResolvable) {
+    this._sessionAffinityAttributes.internalValue = value;
+  }
+  public resetSessionAffinityAttributes() {
+    this._sessionAffinityAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionAffinityAttributesInput() {
+    return this._sessionAffinityAttributes.internalValue;
+  }
 }
 
 export class LoadBalancerRulesOverridesList extends cdktf.ComplexList {
@@ -2176,43 +2333,43 @@ export interface LoadBalancerRules {
   /**
   * The statement to evaluate to determine if this rule's effects should be applied. An empty condition is always true. See [load balancing rules](https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-rules).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#condition LoadBalancer#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#condition LoadBalancer#condition}
   */
   readonly condition?: string;
   /**
   * A disabled rule will not be executed.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#disabled LoadBalancer#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Human readable name for this rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#name LoadBalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#name LoadBalancer#name}
   */
   readonly name: string;
   /**
   * Priority used when determining the order of rule execution. Lower values are executed first. If not provided, the list order will be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#priority LoadBalancer#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#priority LoadBalancer#priority}
   */
   readonly priority?: number;
   /**
   * Terminates indicates that if this rule is true no further rules should be executed. Note: setting a [`fixed_response`](#fixed_response) forces this field to `true`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#terminates LoadBalancer#terminates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
   */
   readonly terminates?: boolean | cdktf.IResolvable;
   /**
   * fixed_response block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#fixed_response LoadBalancer#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
   */
   readonly fixedResponse?: LoadBalancerRulesFixedResponse;
   /**
   * overrides block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#overrides LoadBalancer#overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
   */
   readonly overrides?: LoadBalancerRulesOverrides[] | cdktf.IResolvable;
 }
@@ -2442,9 +2599,195 @@ export class LoadBalancerRulesList extends cdktf.ComplexList {
     return new LoadBalancerRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface LoadBalancerSessionAffinityAttributes {
+  /**
+  * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer. Defaults to `0`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+  */
+  readonly drainDuration?: number;
+  /**
+  * Configures the SameSite attribute on session affinity cookie. Value `Auto` will be translated to `Lax` or `None` depending if Always Use HTTPS is enabled. Note: when using value `None`, then you can not set [`secure="Never"`](#secure). Available values: `Auto`, `Lax`, `None`, `Strict`. Defaults to `Auto`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+  */
+  readonly samesite?: string;
+  /**
+  * Configures the Secure attribute on session affinity cookie. Value `Always` indicates the Secure attribute will be set in the Set-Cookie header, `Never` indicates the Secure attribute will not be set, and `Auto` will set the Secure attribute depending if Always Use HTTPS is enabled. Available values: `Auto`, `Always`, `Never`. Defaults to `Auto`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+  */
+  readonly secure?: string;
+  /**
+  * Configures the zero-downtime failover between origins within a pool when session affinity is enabled. Value `none` means no failover takes place for sessions pinned to the origin. Value `temporary` means traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. Value `sticky` means the session affinity cookie is updated and subsequent requests are sent to the new origin. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. Available values: `none`, `temporary`, `sticky`. Defaults to `none`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+  */
+  readonly zeroDowntimeFailover?: string;
+}
+
+export function loadBalancerSessionAffinityAttributesToTerraform(struct?: LoadBalancerSessionAffinityAttributes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    drain_duration: cdktf.numberToTerraform(struct!.drainDuration),
+    samesite: cdktf.stringToTerraform(struct!.samesite),
+    secure: cdktf.stringToTerraform(struct!.secure),
+    zero_downtime_failover: cdktf.stringToTerraform(struct!.zeroDowntimeFailover),
+  }
+}
+
+export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LoadBalancerSessionAffinityAttributes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._drainDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.drainDuration = this._drainDuration;
+    }
+    if (this._samesite !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.samesite = this._samesite;
+    }
+    if (this._secure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secure = this._secure;
+    }
+    if (this._zeroDowntimeFailover !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zeroDowntimeFailover = this._zeroDowntimeFailover;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LoadBalancerSessionAffinityAttributes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._drainDuration = undefined;
+      this._samesite = undefined;
+      this._secure = undefined;
+      this._zeroDowntimeFailover = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._drainDuration = value.drainDuration;
+      this._samesite = value.samesite;
+      this._secure = value.secure;
+      this._zeroDowntimeFailover = value.zeroDowntimeFailover;
+    }
+  }
+
+  // drain_duration - computed: false, optional: true, required: false
+  private _drainDuration?: number; 
+  public get drainDuration() {
+    return this.getNumberAttribute('drain_duration');
+  }
+  public set drainDuration(value: number) {
+    this._drainDuration = value;
+  }
+  public resetDrainDuration() {
+    this._drainDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get drainDurationInput() {
+    return this._drainDuration;
+  }
+
+  // samesite - computed: false, optional: true, required: false
+  private _samesite?: string; 
+  public get samesite() {
+    return this.getStringAttribute('samesite');
+  }
+  public set samesite(value: string) {
+    this._samesite = value;
+  }
+  public resetSamesite() {
+    this._samesite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samesiteInput() {
+    return this._samesite;
+  }
+
+  // secure - computed: false, optional: true, required: false
+  private _secure?: string; 
+  public get secure() {
+    return this.getStringAttribute('secure');
+  }
+  public set secure(value: string) {
+    this._secure = value;
+  }
+  public resetSecure() {
+    this._secure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secureInput() {
+    return this._secure;
+  }
+
+  // zero_downtime_failover - computed: false, optional: true, required: false
+  private _zeroDowntimeFailover?: string; 
+  public get zeroDowntimeFailover() {
+    return this.getStringAttribute('zero_downtime_failover');
+  }
+  public set zeroDowntimeFailover(value: string) {
+    this._zeroDowntimeFailover = value;
+  }
+  public resetZeroDowntimeFailover() {
+    this._zeroDowntimeFailover = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zeroDowntimeFailoverInput() {
+    return this._zeroDowntimeFailover;
+  }
+}
+
+export class LoadBalancerSessionAffinityAttributesList extends cdktf.ComplexList {
+  public internalValue? : LoadBalancerSessionAffinityAttributes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LoadBalancerSessionAffinityAttributesOutputReference {
+    return new LoadBalancerSessionAffinityAttributesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer cloudflare_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer cloudflare_load_balancer}
 */
 export class LoadBalancer extends cdktf.TerraformResource {
 
@@ -2458,7 +2801,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer cloudflare_load_balancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer cloudflare_load_balancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2469,8 +2812,8 @@ export class LoadBalancer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2488,7 +2831,6 @@ export class LoadBalancer extends cdktf.TerraformResource {
     this._name = config.name;
     this._proxied = config.proxied;
     this._sessionAffinity = config.sessionAffinity;
-    this._sessionAffinityAttributes = config.sessionAffinityAttributes;
     this._sessionAffinityTtl = config.sessionAffinityTtl;
     this._steeringPolicy = config.steeringPolicy;
     this._ttl = config.ttl;
@@ -2500,6 +2842,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
     this._randomSteering.internalValue = config.randomSteering;
     this._regionPools.internalValue = config.regionPools;
     this._rules.internalValue = config.rules;
+    this._sessionAffinityAttributes.internalValue = config.sessionAffinityAttributes;
   }
 
   // ==========
@@ -2633,22 +2976,6 @@ export class LoadBalancer extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get sessionAffinityInput() {
     return this._sessionAffinity;
-  }
-
-  // session_affinity_attributes - computed: false, optional: true, required: false
-  private _sessionAffinityAttributes?: { [key: string]: string }; 
-  public get sessionAffinityAttributes() {
-    return this.getStringMapAttribute('session_affinity_attributes');
-  }
-  public set sessionAffinityAttributes(value: { [key: string]: string }) {
-    this._sessionAffinityAttributes = value;
-  }
-  public resetSessionAffinityAttributes() {
-    this._sessionAffinityAttributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionAffinityAttributesInput() {
-    return this._sessionAffinityAttributes;
   }
 
   // session_affinity_ttl - computed: false, optional: true, required: false
@@ -2824,6 +3151,22 @@ export class LoadBalancer extends cdktf.TerraformResource {
     return this._rules.internalValue;
   }
 
+  // session_affinity_attributes - computed: false, optional: true, required: false
+  private _sessionAffinityAttributes = new LoadBalancerSessionAffinityAttributesList(this, "session_affinity_attributes", true);
+  public get sessionAffinityAttributes() {
+    return this._sessionAffinityAttributes;
+  }
+  public putSessionAffinityAttributes(value: LoadBalancerSessionAffinityAttributes[] | cdktf.IResolvable) {
+    this._sessionAffinityAttributes.internalValue = value;
+  }
+  public resetSessionAffinityAttributes() {
+    this._sessionAffinityAttributes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionAffinityAttributesInput() {
+    return this._sessionAffinityAttributes.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -2838,7 +3181,6 @@ export class LoadBalancer extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       proxied: cdktf.booleanToTerraform(this._proxied),
       session_affinity: cdktf.stringToTerraform(this._sessionAffinity),
-      session_affinity_attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._sessionAffinityAttributes),
       session_affinity_ttl: cdktf.numberToTerraform(this._sessionAffinityTtl),
       steering_policy: cdktf.stringToTerraform(this._steeringPolicy),
       ttl: cdktf.numberToTerraform(this._ttl),
@@ -2850,6 +3192,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       random_steering: cdktf.listMapper(loadBalancerRandomSteeringToTerraform, true)(this._randomSteering.internalValue),
       region_pools: cdktf.listMapper(loadBalancerRegionPoolsToTerraform, true)(this._regionPools.internalValue),
       rules: cdktf.listMapper(loadBalancerRulesToTerraform, true)(this._rules.internalValue),
+      session_affinity_attributes: cdktf.listMapper(loadBalancerSessionAffinityAttributesToTerraform, true)(this._sessionAffinityAttributes.internalValue),
     };
   }
 }
