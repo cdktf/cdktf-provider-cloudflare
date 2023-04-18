@@ -1,3 +1,7 @@
+# `cloudflare_gre_tunnel`
+
+Refer to the Terraform Registory for docs: [`cloudflare_gre_tunnel`](https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel).
+
 # `greTunnel` Submodule <a name="`greTunnel` Submodule" id="@cdktf/provider-cloudflare.greTunnel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

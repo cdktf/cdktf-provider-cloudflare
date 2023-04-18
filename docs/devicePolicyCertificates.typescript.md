@@ -1,3 +1,7 @@
+# `cloudflare_device_policy_certificates`
+
+Refer to the Terraform Registory for docs: [`cloudflare_device_policy_certificates`](https://www.terraform.io/docs/providers/cloudflare/r/device_policy_certificates).
+
 # `devicePolicyCertificates` Submodule <a name="`devicePolicyCertificates` Submodule" id="@cdktf/provider-cloudflare.devicePolicyCertificates"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

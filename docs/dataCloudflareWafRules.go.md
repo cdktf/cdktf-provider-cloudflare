@@ -1,3 +1,7 @@
+# `data_cloudflare_waf_rules`
+
+Refer to the Terraform Registory for docs: [`data_cloudflare_waf_rules`](https://www.terraform.io/docs/providers/cloudflare/d/waf_rules).
+
 # `dataCloudflareWafRules` Submodule <a name="`dataCloudflareWafRules` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareWafRules"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

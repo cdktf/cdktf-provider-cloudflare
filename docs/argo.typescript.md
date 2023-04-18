@@ -1,3 +1,7 @@
+# `cloudflare_argo`
+
+Refer to the Terraform Registory for docs: [`cloudflare_argo`](https://www.terraform.io/docs/providers/cloudflare/r/argo).
+
 # `argo` Submodule <a name="`argo` Submodule" id="@cdktf/provider-cloudflare.argo"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

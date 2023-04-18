@@ -1,3 +1,7 @@
+# `data_cloudflare_load_balancer_pools`
+
+Refer to the Terraform Registory for docs: [`data_cloudflare_load_balancer_pools`](https://www.terraform.io/docs/providers/cloudflare/d/load_balancer_pools).
+
 # `dataCloudflareLoadBalancerPools` Submodule <a name="`dataCloudflareLoadBalancerPools` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

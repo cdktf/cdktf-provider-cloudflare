@@ -1,3 +1,7 @@
+# `cloudflare_zone`
+
+Refer to the Terraform Registory for docs: [`cloudflare_zone`](https://www.terraform.io/docs/providers/cloudflare/r/zone).
+
 # `zone` Submodule <a name="`zone` Submodule" id="@cdktf/provider-cloudflare.zone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
