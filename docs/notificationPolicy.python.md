@@ -1,3 +1,7 @@
+# `cloudflare_notification_policy`
+
+Refer to the Terraform Registory for docs: [`cloudflare_notification_policy`](https://www.terraform.io/docs/providers/cloudflare/r/notification_policy).
+
 # `notificationPolicy` Submodule <a name="`notificationPolicy` Submodule" id="@cdktf/provider-cloudflare.notificationPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

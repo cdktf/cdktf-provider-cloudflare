@@ -1,3 +1,7 @@
+# `cloudflare_custom_ssl`
+
+Refer to the Terraform Registory for docs: [`cloudflare_custom_ssl`](https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl).
+
 # `customSsl` Submodule <a name="`customSsl` Submodule" id="@cdktf/provider-cloudflare.customSsl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

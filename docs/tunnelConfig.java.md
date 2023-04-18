@@ -1,3 +1,7 @@
+# `cloudflare_tunnel_config`
+
+Refer to the Terraform Registory for docs: [`cloudflare_tunnel_config`](https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config).
+
 # `tunnelConfig` Submodule <a name="`tunnelConfig` Submodule" id="@cdktf/provider-cloudflare.tunnelConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

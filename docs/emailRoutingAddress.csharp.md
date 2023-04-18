@@ -1,3 +1,7 @@
+# `cloudflare_email_routing_address`
+
+Refer to the Terraform Registory for docs: [`cloudflare_email_routing_address`](https://www.terraform.io/docs/providers/cloudflare/r/email_routing_address).
+
 # `emailRoutingAddress` Submodule <a name="`emailRoutingAddress` Submodule" id="@cdktf/provider-cloudflare.emailRoutingAddress"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

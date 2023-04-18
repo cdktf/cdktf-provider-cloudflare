@@ -1,3 +1,7 @@
+# `data_cloudflare_api_token_permission_groups`
+
+Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permission_groups`](https://www.terraform.io/docs/providers/cloudflare/d/api_token_permission_groups).
+
 # `dataCloudflareApiTokenPermissionGroups` Submodule <a name="`dataCloudflareApiTokenPermissionGroups` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

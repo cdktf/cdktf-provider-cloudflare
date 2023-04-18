@@ -1,3 +1,7 @@
+# `cloudflare_argo_tunnel`
+
+Refer to the Terraform Registory for docs: [`cloudflare_argo_tunnel`](https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel).
+
 # `argoTunnel` Submodule <a name="`argoTunnel` Submodule" id="@cdktf/provider-cloudflare.argoTunnel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

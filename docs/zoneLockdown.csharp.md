@@ -1,3 +1,7 @@
+# `cloudflare_zone_lockdown`
+
+Refer to the Terraform Registory for docs: [`cloudflare_zone_lockdown`](https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown).
+
 # `zoneLockdown` Submodule <a name="`zoneLockdown` Submodule" id="@cdktf/provider-cloudflare.zoneLockdown"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

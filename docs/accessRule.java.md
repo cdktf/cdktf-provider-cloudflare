@@ -1,3 +1,7 @@
+# `cloudflare_access_rule`
+
+Refer to the Terraform Registory for docs: [`cloudflare_access_rule`](https://www.terraform.io/docs/providers/cloudflare/r/access_rule).
+
 # `accessRule` Submodule <a name="`accessRule` Submodule" id="@cdktf/provider-cloudflare.accessRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `cloudflare_page_rule`
+
+Refer to the Terraform Registory for docs: [`cloudflare_page_rule`](https://www.terraform.io/docs/providers/cloudflare/r/page_rule).
+
 # `pageRule` Submodule <a name="`pageRule` Submodule" id="@cdktf/provider-cloudflare.pageRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

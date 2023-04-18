@@ -1,3 +1,7 @@
+# `cloudflare_waf_package`
+
+Refer to the Terraform Registory for docs: [`cloudflare_waf_package`](https://www.terraform.io/docs/providers/cloudflare/r/waf_package).
+
 # `wafPackage` Submodule <a name="`wafPackage` Submodule" id="@cdktf/provider-cloudflare.wafPackage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
