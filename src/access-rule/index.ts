@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/access_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#account_id AccessRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#account_id AccessRule#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#id AccessRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#id AccessRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface AccessRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The action to apply to a matched request. Available values: `block`, `challenge`, `whitelist`, `js_challenge`, `managed_challenge`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#mode AccessRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#mode AccessRule#mode}
   */
   readonly mode: string;
   /**
   * A personal note about the rule. Typically used as a reminder or explanation for the rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#notes AccessRule#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#notes AccessRule#notes}
   */
   readonly notes?: string;
   /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#zone_id AccessRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
   */
   readonly zoneId?: string;
   /**
   * configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#configuration AccessRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#configuration AccessRule#configuration}
   */
   readonly configuration: AccessRuleConfiguration;
 }
@@ -49,13 +49,13 @@ export interface AccessRuleConfiguration {
   /**
   * The request property to target. Available values: `ip`, `ip6`, `ip_range`, `asn`, `country`. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#target AccessRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#target AccessRule#target}
   */
   readonly target: string;
   /**
   * The value to target. Depends on target's type. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule#value AccessRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule#value AccessRule#value}
   */
   readonly value: string;
 }
@@ -137,7 +137,7 @@ export class AccessRuleConfigurationOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule cloudflare_access_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule cloudflare_access_rule}
 */
 export class AccessRule extends cdktf.TerraformResource {
 
@@ -151,7 +151,7 @@ export class AccessRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_rule cloudflare_access_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_rule cloudflare_access_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,8 +162,8 @@ export class AccessRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

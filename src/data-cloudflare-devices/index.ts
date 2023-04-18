@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/d/devices
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataCloudflareDevicesConfig extends cdktf.TerraformMetaArgument
   /**
   * The account identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/devices#account_id DataCloudflareDevices#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices#account_id DataCloudflareDevices#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/devices#id DataCloudflareDevices#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices#id DataCloudflareDevices#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -66,6 +66,11 @@ export class DataCloudflareDevicesDevicesOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('created');
   }
 
+  // deleted - computed: true, optional: false, required: false
+  public get deleted() {
+    return this.getBooleanAttribute('deleted');
+  }
+
   // device_type - computed: true, optional: false, required: false
   public get deviceType() {
     return this.getStringAttribute('device_type');
@@ -91,6 +96,16 @@ export class DataCloudflareDevicesDevicesOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('last_seen');
   }
 
+  // mac_address - computed: true, optional: false, required: false
+  public get macAddress() {
+    return this.getStringAttribute('mac_address');
+  }
+
+  // manufacturer - computed: true, optional: false, required: false
+  public get manufacturer() {
+    return this.getStringAttribute('manufacturer');
+  }
+
   // model - computed: true, optional: false, required: false
   public get model() {
     return this.getStringAttribute('model');
@@ -114,6 +129,16 @@ export class DataCloudflareDevicesDevicesOutputReference extends cdktf.ComplexOb
   // os_version - computed: true, optional: false, required: false
   public get osVersion() {
     return this.getStringAttribute('os_version');
+  }
+
+  // revoked_at - computed: true, optional: false, required: false
+  public get revokedAt() {
+    return this.getStringAttribute('revoked_at');
+  }
+
+  // serial_number - computed: true, optional: false, required: false
+  public get serialNumber() {
+    return this.getStringAttribute('serial_number');
   }
 
   // updated - computed: true, optional: false, required: false
@@ -162,7 +187,7 @@ export class DataCloudflareDevicesDevicesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/devices cloudflare_devices}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices cloudflare_devices}
 */
 export class DataCloudflareDevices extends cdktf.TerraformDataSource {
 
@@ -176,7 +201,7 @@ export class DataCloudflareDevices extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/devices cloudflare_devices} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices cloudflare_devices} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,8 +212,8 @@ export class DataCloudflareDevices extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_devices',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/healthcheck
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,59 +10,59 @@ export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * The hostname or IP address of the origin server to run health checks on.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#address Healthcheck#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#address Healthcheck#address}
   */
   readonly address: string;
   /**
   * Do not validate the certificate when the health check uses HTTPS. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#allow_insecure Healthcheck#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
   * A list of regions from which to run health checks. If not set, Cloudflare will pick a default region. Available values: `WNAM`, `ENAM`, `WEU`, `EEU`, `NSAM`, `SSAM`, `OC`, `ME`, `NAF`, `SAF`, `IN`, `SEAS`, `NEAS`, `ALL_REGIONS`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#check_regions Healthcheck#check_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
   */
   readonly checkRegions?: string[];
   /**
   * The number of consecutive fails required from a health check before changing the health to unhealthy. Defaults to `1`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
   */
   readonly consecutiveFails?: number;
   /**
   * The number of consecutive successes required from a health check before changing the health to healthy. Defaults to `1`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
   */
   readonly consecutiveSuccesses?: number;
   /**
   * A human-readable description of the health check.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#description Healthcheck#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#description Healthcheck#description}
   */
   readonly description?: string;
   /**
   * A case-insensitive sub-string to look for in the response body. If this string is not found the origin will be marked as unhealthy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#expected_body Healthcheck#expected_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
   */
   readonly expectedBody?: string;
   /**
   * The expected HTTP response codes (e.g. '200') or code ranges (e.g. '2xx' for all codes starting with 2) of the health check.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#expected_codes Healthcheck#expected_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
   */
   readonly expectedCodes?: string[];
   /**
   * Follow redirects if the origin returns a 3xx status code. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#follow_redirects Healthcheck#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#id Healthcheck#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#id Healthcheck#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -71,73 +71,73 @@ export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * The interval between each health check. Shorter intervals may give quicker notifications if the origin status changes, but will increase the load on the origin as we check from multiple locations. Defaults to `60`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#interval Healthcheck#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#interval Healthcheck#interval}
   */
   readonly interval?: number;
   /**
   * The HTTP method to use for the health check. Available values: `connection_established`, `GET`, `HEAD`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#method Healthcheck#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#method Healthcheck#method}
   */
   readonly method?: string;
   /**
   * A short name to identify the health check. Only alphanumeric characters, hyphens, and underscores are allowed.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#name Healthcheck#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#name Healthcheck#name}
   */
   readonly name: string;
   /**
   * The endpoint path to health check against. Defaults to `/`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#path Healthcheck#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#path Healthcheck#path}
   */
   readonly path?: string;
   /**
   * Port number to connect to for the health check. Defaults to `80`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#port Healthcheck#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#port Healthcheck#port}
   */
   readonly port?: number;
   /**
   * The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately. Defaults to `2`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#retries Healthcheck#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#retries Healthcheck#retries}
   */
   readonly retries?: number;
   /**
   * If suspended, no health checks are sent to the origin. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#suspended Healthcheck#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
   */
   readonly suspended?: boolean | cdktf.IResolvable;
   /**
   * The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#timeout Healthcheck#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
   */
   readonly timeout?: number;
   /**
   * The protocol to use for the health check. Available values: `TCP`, `HTTP`, `HTTPS`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#type Healthcheck#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#type Healthcheck#type}
   */
   readonly type: string;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#zone_id Healthcheck#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
   */
   readonly zoneId: string;
   /**
   * header block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#header Healthcheck#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#header Healthcheck#header}
   */
   readonly header?: HealthcheckHeader[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#timeouts Healthcheck#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeouts Healthcheck#timeouts}
   */
   readonly timeouts?: HealthcheckTimeouts;
 }
@@ -145,13 +145,13 @@ export interface HealthcheckHeader {
   /**
   * The header name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#header Healthcheck#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#header Healthcheck#header}
   */
   readonly header: string;
   /**
   * A list of string values for the header.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#values Healthcheck#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#values Healthcheck#values}
   */
   readonly values: string[];
 }
@@ -265,12 +265,12 @@ export class HealthcheckHeaderList extends cdktf.ComplexList {
 }
 export interface HealthcheckTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#create Healthcheck#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#create Healthcheck#create}
   */
   readonly create?: string;
 }
 
-export function healthcheckTimeoutsToTerraform(struct?: HealthcheckTimeoutsOutputReference | HealthcheckTimeouts | cdktf.IResolvable): any {
+export function healthcheckTimeoutsToTerraform(struct?: HealthcheckTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -289,7 +289,7 @@ export class HealthcheckTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): HealthcheckTimeouts | cdktf.IResolvable | undefined {
@@ -340,7 +340,7 @@ export class HealthcheckTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck cloudflare_healthcheck}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck cloudflare_healthcheck}
 */
 export class Healthcheck extends cdktf.TerraformResource {
 
@@ -354,7 +354,7 @@ export class Healthcheck extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck cloudflare_healthcheck} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck cloudflare_healthcheck} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -365,8 +365,8 @@ export class Healthcheck extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_healthcheck',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

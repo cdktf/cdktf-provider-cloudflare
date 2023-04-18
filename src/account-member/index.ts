@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/account_member
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface AccountMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account ID to create the account member in.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#account_id AccountMember#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#account_id AccountMember#account_id}
   */
-  readonly accountId?: string;
+  readonly accountId: string;
   /**
   * The email address of the user who you wish to manage. Following creation, this field becomes read only via the API and cannot be updated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#email_address AccountMember#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#email_address AccountMember#email_address}
   */
   readonly emailAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#id AccountMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#id AccountMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,19 +29,19 @@ export interface AccountMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of account role IDs that you want to assign to a member.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#role_ids AccountMember#role_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#role_ids AccountMember#role_ids}
   */
   readonly roleIds: string[];
   /**
   * A member's status in the account. Available values: `accepted`, `pending`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#status AccountMember#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#status AccountMember#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member cloudflare_account_member}
 */
 export class AccountMember extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class AccountMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member cloudflare_account_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +66,8 @@ export class AccountMember extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_member',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -88,16 +88,13 @@ export class AccountMember extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
+  // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

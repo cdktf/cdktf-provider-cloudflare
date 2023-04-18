@@ -1,6 +1,6 @@
 # `cloudflare_account_member`
 
-Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https://www.terraform.io/docs/providers/cloudflare/r/account_member).
+Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member).
 
 # `accountMember` Submodule <a name="`accountMember` Submodule" id="@cdktf/provider-cloudflare.accountMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https:/
 
 ### AccountMember <a name="AccountMember" id="@cdktf/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.resetStatus">resetStatus</a></code> | *No description.* |
 
@@ -260,12 +259,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktf/provider-cloudflare.accountMember.AccountMember.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 ##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.accountMember.AccountMember.resetId"></a>
 
 ```typescript
@@ -360,7 +353,7 @@ accountMember.AccountMember.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +457,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.accountMember.AccountMember.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -656,16 +649,16 @@ const accountMemberConfig: accountMember.AccountMemberConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId">accountId</a></code> | <code>string</code> | Account ID to create the account member in. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | The email address of the user who you wish to manage. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.roleIds">roleIds</a></code> | <code>string[]</code> | List of account role IDs that you want to assign to a member. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId">accountId</a></code> | <code>string</code> | Account ID to create the account member in. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#id AccountMember#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#id AccountMember#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">status</a></code> | <code>string</code> | A member's status in the account. Available values: `accepted`, `pending`. |
 
 ---
@@ -683,10 +676,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -740,6 +733,20 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Account ID to create the account member in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#account_id AccountMember#account_id}
+
+---
+
 ##### `emailAddress`<sup>Required</sup> <a name="emailAddress" id="@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.emailAddress"></a>
 
 ```typescript
@@ -752,7 +759,7 @@ The email address of the user who you wish to manage.
 
 Following creation, this field becomes read only via the API and cannot be updated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#email_address AccountMember#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#email_address AccountMember#email_address}
 
 ---
 
@@ -766,21 +773,7 @@ public readonly roleIds: string[];
 
 List of account role IDs that you want to assign to a member.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#role_ids AccountMember#role_ids}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Account ID to create the account member in.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#role_ids AccountMember#role_ids}
 
 ---
 
@@ -792,7 +785,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#id AccountMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#id AccountMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +802,7 @@ public readonly status: string;
 
 A member's status in the account. Available values: `accepted`, `pending`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 

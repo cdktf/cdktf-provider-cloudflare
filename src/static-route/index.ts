@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/static_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#account_id StaticRoute#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#account_id StaticRoute#account_id}
   */
   readonly accountId?: string;
   /**
   * List of Cloudflare colocation regions for this static route.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#colo_names StaticRoute#colo_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#colo_names StaticRoute#colo_names}
   */
   readonly coloNames?: string[];
   /**
   * List of Cloudflare colocation names for this static route.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#colo_regions StaticRoute#colo_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#colo_regions StaticRoute#colo_regions}
   */
   readonly coloRegions?: string[];
   /**
   * Description of the static route.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#description StaticRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#description StaticRoute#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#id StaticRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#id StaticRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,31 +41,31 @@ export interface StaticRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * The nexthop IP address where traffic will be routed to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#nexthop StaticRoute#nexthop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#nexthop StaticRoute#nexthop}
   */
   readonly nexthop: string;
   /**
   * Your network prefix using CIDR notation.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#prefix StaticRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#prefix StaticRoute#prefix}
   */
   readonly prefix: string;
   /**
   * The priority for the static route.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#priority StaticRoute#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#priority StaticRoute#priority}
   */
   readonly priority: number;
   /**
   * The optional weight for ECMP routes. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#weight StaticRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route#weight StaticRoute#weight}
   */
   readonly weight?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route cloudflare_static_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route cloudflare_static_route}
 */
 export class StaticRoute extends cdktf.TerraformResource {
 
@@ -79,7 +79,7 @@ export class StaticRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route cloudflare_static_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route cloudflare_static_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,8 +90,8 @@ export class StaticRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_static_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

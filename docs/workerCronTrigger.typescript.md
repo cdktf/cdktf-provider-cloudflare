@@ -1,6 +1,6 @@
 # `cloudflare_worker_cron_trigger`
 
-Refer to the Terraform Registory for docs: [`cloudflare_worker_cron_trigger`](https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger).
+Refer to the Terraform Registory for docs: [`cloudflare_worker_cron_trigger`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger).
 
 # `workerCronTrigger` Submodule <a name="`workerCronTrigger` Submodule" id="@cdktf/provider-cloudflare.workerCronTrigger"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_worker_cron_trigger`](ht
 
 ### WorkerCronTrigger <a name="WorkerCronTrigger" id="@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger cloudflare_worker_cron_trigger}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.Initializer"></a>
 
@@ -346,7 +346,7 @@ workerCronTrigger.WorkerCronTrigger.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -620,7 +620,7 @@ const workerCronTriggerConfig: workerCronTrigger.WorkerCronTriggerConfig = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -629,7 +629,7 @@ const workerCronTriggerConfig: workerCronTrigger.WorkerCronTriggerConfig = { ...
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.schedules">schedules</a></code> | <code>string[]</code> | Cron expressions to execute the Worker script. |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Worker script to target for the schedules. |
-| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger#id WorkerCronTrigger#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger#id WorkerCronTrigger#id}. |
 
 ---
 
@@ -646,10 +646,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -713,7 +713,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger#account_id WorkerCronTrigger#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger#account_id WorkerCronTrigger#account_id}
 
 ---
 
@@ -727,7 +727,7 @@ public readonly schedules: string[];
 
 Cron expressions to execute the Worker script.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger#schedules WorkerCronTrigger#schedules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger#schedules WorkerCronTrigger#schedules}
 
 ---
 
@@ -741,7 +741,7 @@ public readonly scriptName: string;
 
 Worker script to target for the schedules.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger#script_name WorkerCronTrigger#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger#script_name WorkerCronTrigger#script_name}
 
 ---
 
@@ -753,7 +753,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_cron_trigger#id WorkerCronTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_cron_trigger#id WorkerCronTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

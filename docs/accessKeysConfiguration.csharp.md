@@ -1,6 +1,6 @@
 # `cloudflare_access_keys_configuration`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_keys_configuration`](https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration).
+Refer to the Terraform Registory for docs: [`cloudflare_access_keys_configuration`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration).
 
 # `accessKeysConfiguration` Submodule <a name="`accessKeysConfiguration` Submodule" id="@cdktf/provider-cloudflare.accessKeysConfiguration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_keys_configuratio
 
 ### AccessKeysConfiguration <a name="AccessKeysConfiguration" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration cloudflare_access_keys_configuration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration cloudflare_access_keys_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer"></a>
 
@@ -353,7 +353,7 @@ AccessKeysConfiguration.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -599,7 +599,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new AccessKeysConfigurationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -616,14 +616,14 @@ new AccessKeysConfigurationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration#id AccessKeysConfiguration#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.keyRotationIntervalDays">KeyRotationIntervalDays</a></code> | <code>double</code> | Number of days to trigger a rotation of the keys. |
 
 ---
@@ -641,10 +641,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -708,7 +708,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
 
 ---
 
@@ -720,7 +720,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration#id AccessKeysConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ public double KeyRotationIntervalDays { get; set; }
 
 Number of days to trigger a rotation of the keys.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
 
 ---
 

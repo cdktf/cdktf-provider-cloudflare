@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,15 +6,15 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TunnelConfigConfig extends cdktf.TerraformMetaArguments {
+export interface TunnelConfigAConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#account_id TunnelConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#account_id TunnelConfigA#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#id TunnelConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#id TunnelConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,33 +23,33 @@ export interface TunnelConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier of the Tunnel to target for this configuration.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#tunnel_id TunnelConfig#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#tunnel_id TunnelConfigA#tunnel_id}
   */
   readonly tunnelId: string;
   /**
   * config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#config TunnelConfig#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#config TunnelConfigA#config}
   */
-  readonly config: TunnelConfigConfigA;
+  readonly config: TunnelConfigConfig;
 }
 export interface TunnelConfigConfigIngressRule {
   /**
   * Hostname to match the incoming request with. If the hostname matches, the request will be sent to the service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#hostname TunnelConfig#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#hostname TunnelConfigA#hostname}
   */
   readonly hostname?: string;
   /**
   * Path of the incoming request. If the path matches, the request will be sent to the local service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#path TunnelConfig#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#path TunnelConfigA#path}
   */
   readonly path?: string;
   /**
   * Name of the service to which the request will be sent.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#service TunnelConfig#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#service TunnelConfigA#service}
   */
   readonly service: string;
 }
@@ -191,19 +191,19 @@ export interface TunnelConfigConfigOriginRequestIpRules {
   /**
   * Whether to allow the IP prefix.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#allow TunnelConfig#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#allow TunnelConfigA#allow}
   */
   readonly allow?: boolean | cdktf.IResolvable;
   /**
   * Ports to use within the IP rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#ports TunnelConfig#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#ports TunnelConfigA#ports}
   */
   readonly ports?: number[];
   /**
   * IP rule prefix.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#prefix TunnelConfig#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#prefix TunnelConfigA#prefix}
   */
   readonly prefix?: string;
 }
@@ -348,97 +348,97 @@ export interface TunnelConfigConfigOriginRequest {
   /**
   * Runs as jump host.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#bastion_mode TunnelConfig#bastion_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#bastion_mode TunnelConfigA#bastion_mode}
   */
   readonly bastionMode?: boolean | cdktf.IResolvable;
   /**
   * Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare. Defaults to `""`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#ca_pool TunnelConfig#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#ca_pool TunnelConfigA#ca_pool}
   */
   readonly caPool?: string;
   /**
   * Timeout for establishing a new TCP connection to your origin server. This excludes the time taken to establish TLS, which is controlled by `tlsTimeout`. Defaults to `30s`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#connect_timeout TunnelConfig#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#connect_timeout TunnelConfigA#connect_timeout}
   */
   readonly connectTimeout?: string;
   /**
   * Disables chunked transfer encoding. Useful if you are running a Web Server Gateway Interface (WSGI) server. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#disable_chunked_encoding TunnelConfig#disable_chunked_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#disable_chunked_encoding TunnelConfigA#disable_chunked_encoding}
   */
   readonly disableChunkedEncoding?: boolean | cdktf.IResolvable;
   /**
   * Sets the HTTP Host header on requests sent to the local service. Defaults to `""`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#http_host_header TunnelConfig#http_host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#http_host_header TunnelConfigA#http_host_header}
   */
   readonly httpHostHeader?: string;
   /**
   * Maximum number of idle keepalive connections between Tunnel and your origin. This does not restrict the total number of concurrent connections. Defaults to `100`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#keep_alive_connections TunnelConfig#keep_alive_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#keep_alive_connections TunnelConfigA#keep_alive_connections}
   */
   readonly keepAliveConnections?: number;
   /**
   * Timeout after which an idle keepalive connection can be discarded. Defaults to `1m30s`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#keep_alive_timeout TunnelConfig#keep_alive_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#keep_alive_timeout TunnelConfigA#keep_alive_timeout}
   */
   readonly keepAliveTimeout?: string;
   /**
   * Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local network has misconfigured one of the protocols. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#no_happy_eyeballs TunnelConfig#no_happy_eyeballs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#no_happy_eyeballs TunnelConfigA#no_happy_eyeballs}
   */
   readonly noHappyEyeballs?: boolean | cdktf.IResolvable;
   /**
   * Disables TLS verification of the certificate presented by your origin. Will allow any certificate from the origin to be accepted. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#no_tls_verify TunnelConfig#no_tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#no_tls_verify TunnelConfigA#no_tls_verify}
   */
   readonly noTlsVerify?: boolean | cdktf.IResolvable;
   /**
   * Hostname that cloudflared should expect from your origin server certificate. Defaults to `""`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#origin_server_name TunnelConfig#origin_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#origin_server_name TunnelConfigA#origin_server_name}
   */
   readonly originServerName?: string;
   /**
   * cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures the listen address for that proxy. Defaults to `127.0.0.1`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#proxy_address TunnelConfig#proxy_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#proxy_address TunnelConfigA#proxy_address}
   */
   readonly proxyAddress?: string;
   /**
   * cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures the listen port for that proxy. If set to zero, an unused port will randomly be chosen. Defaults to `0`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#proxy_port TunnelConfig#proxy_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#proxy_port TunnelConfigA#proxy_port}
   */
   readonly proxyPort?: number;
   /**
-  * cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures what type of proxy will be started. Available values: ``, `socks`. Defaults to `""`.
+  * cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures what type of proxy will be started. Available values: `""`, `socks`. Defaults to `""`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#proxy_type TunnelConfig#proxy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#proxy_type TunnelConfigA#proxy_type}
   */
   readonly proxyType?: string;
   /**
   * The timeout after which a TCP keepalive packet is sent on a connection between Tunnel and the origin server. Defaults to `30s`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#tcp_keep_alive TunnelConfig#tcp_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#tcp_keep_alive TunnelConfigA#tcp_keep_alive}
   */
   readonly tcpKeepAlive?: string;
   /**
   * Timeout for completing a TLS handshake to your origin server, if you have chosen to connect Tunnel to an HTTPS server. Defaults to `10s`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#tls_timeout TunnelConfig#tls_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#tls_timeout TunnelConfigA#tls_timeout}
   */
   readonly tlsTimeout?: string;
   /**
   * ip_rules block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#ip_rules TunnelConfig#ip_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#ip_rules TunnelConfigA#ip_rules}
   */
   readonly ipRules?: TunnelConfigConfigOriginRequestIpRules[] | cdktf.IResolvable;
 }
@@ -850,7 +850,7 @@ export interface TunnelConfigConfigWarpRouting {
   /**
   * Whether WARP routing is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#enabled TunnelConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#enabled TunnelConfigA#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -913,28 +913,28 @@ export class TunnelConfigConfigWarpRoutingOutputReference extends cdktf.ComplexO
     return this._enabled;
   }
 }
-export interface TunnelConfigConfigA {
+export interface TunnelConfigConfig {
   /**
   * ingress_rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#ingress_rule TunnelConfig#ingress_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#ingress_rule TunnelConfigA#ingress_rule}
   */
   readonly ingressRule: TunnelConfigConfigIngressRule[] | cdktf.IResolvable;
   /**
   * origin_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#origin_request TunnelConfig#origin_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#origin_request TunnelConfigA#origin_request}
   */
   readonly originRequest?: TunnelConfigConfigOriginRequest;
   /**
   * warp_routing block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config#warp_routing TunnelConfig#warp_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#warp_routing TunnelConfigA#warp_routing}
   */
   readonly warpRouting?: TunnelConfigConfigWarpRouting;
 }
 
-export function tunnelConfigConfigAToTerraform(struct?: TunnelConfigConfigAOutputReference | TunnelConfigConfigA): any {
+export function tunnelConfigConfigToTerraform(struct?: TunnelConfigConfigOutputReference | TunnelConfigConfig): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -946,7 +946,7 @@ export function tunnelConfigConfigAToTerraform(struct?: TunnelConfigConfigAOutpu
   }
 }
 
-export class TunnelConfigConfigAOutputReference extends cdktf.ComplexObject {
+export class TunnelConfigConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -957,7 +957,7 @@ export class TunnelConfigConfigAOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): TunnelConfigConfigA | undefined {
+  public get internalValue(): TunnelConfigConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ingressRule?.internalValue !== undefined) {
@@ -975,7 +975,7 @@ export class TunnelConfigConfigAOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TunnelConfigConfigA | undefined) {
+  public set internalValue(value: TunnelConfigConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._ingressRule.internalValue = undefined;
@@ -1037,9 +1037,9 @@ export class TunnelConfigConfigAOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config cloudflare_tunnel_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config cloudflare_tunnel_config}
 */
-export class TunnelConfig extends cdktf.TerraformResource {
+export class TunnelConfigA extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1051,19 +1051,19 @@ export class TunnelConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_config cloudflare_tunnel_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config cloudflare_tunnel_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options TunnelConfigConfig
+  * @param options TunnelConfigAConfig
   */
-  public constructor(scope: Construct, id: string, config: TunnelConfigConfig) {
+  public constructor(scope: Construct, id: string, config: TunnelConfigAConfig) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_tunnel_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1126,11 +1126,11 @@ export class TunnelConfig extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: false, required: true
-  private _config = new TunnelConfigConfigAOutputReference(this, "config");
+  private _config = new TunnelConfigConfigOutputReference(this, "config");
   public get config() {
     return this._config;
   }
-  public putConfig(value: TunnelConfigConfigA) {
+  public putConfig(value: TunnelConfigConfig) {
     this._config.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1147,7 +1147,7 @@ export class TunnelConfig extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       tunnel_id: cdktf.stringToTerraform(this._tunnelId),
-      config: tunnelConfigConfigAToTerraform(this._config.internalValue),
+      config: tunnelConfigConfigToTerraform(this._config.internalValue),
     };
   }
 }

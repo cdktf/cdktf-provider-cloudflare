@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/pages_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface PagesDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#account_id PagesDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Custom domain. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#domain PagesDomain#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain#domain PagesDomain#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#id PagesDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain#id PagesDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,13 +29,13 @@ export interface PagesDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the Pages Project. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain#project_name PagesDomain#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
   */
   readonly projectName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain cloudflare_pages_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain}
 */
 export class PagesDomain extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class PagesDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain cloudflare_pages_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,8 +60,8 @@ export class PagesDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,3 +1,3 @@
 # `cloudflare_zone_lockdown`
 
-Refer to the Terraform Registory for docs: [`cloudflare_zone_lockdown`](https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown).
+Refer to the Terraform Registory for docs: [`cloudflare_zone_lockdown`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown).

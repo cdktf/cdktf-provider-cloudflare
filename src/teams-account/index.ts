@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/cloudflare/r/teams_account
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#account_id TeamsAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to enable the activity log.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
   */
   readonly activityLogEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#id TeamsAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#id TeamsAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,43 +29,49 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicator that decryption of TLS traffic is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
   */
   readonly tlsDecryptEnabled?: boolean | cdktf.IResolvable;
   /**
   * Safely browse websites in Browser Isolation through a URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
   */
   readonly urlBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
   /**
   * antivirus block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#antivirus TeamsAccount#antivirus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
   */
   readonly antivirus?: TeamsAccountAntivirus;
   /**
   * block_page block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#block_page TeamsAccount#block_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
   */
   readonly blockPage?: TeamsAccountBlockPage;
   /**
   * fips block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#fips TeamsAccount#fips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#fips TeamsAccount#fips}
   */
   readonly fips?: TeamsAccountFips;
   /**
   * logging block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#logging TeamsAccount#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#logging TeamsAccount#logging}
   */
   readonly logging?: TeamsAccountLogging;
   /**
+  * payload_log block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+  */
+  readonly payloadLog?: TeamsAccountPayloadLog;
+  /**
   * proxy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#proxy TeamsAccount#proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
   */
   readonly proxy?: TeamsAccountProxy;
 }
@@ -73,19 +79,19 @@ export interface TeamsAccountAntivirus {
   /**
   * Scan on file download.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
   */
   readonly enabledDownloadPhase: boolean | cdktf.IResolvable;
   /**
   * Scan on file upload.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
   */
   readonly enabledUploadPhase: boolean | cdktf.IResolvable;
   /**
   * Block requests for files that cannot be scanned.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#fail_closed TeamsAccount#fail_closed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
   */
   readonly failClosed: boolean | cdktf.IResolvable;
 }
@@ -189,49 +195,49 @@ export interface TeamsAccountBlockPage {
   /**
   * Hex code of block page background color.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#background_color TeamsAccount#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * Indicator of enablement.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#enabled TeamsAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Block page footer text.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#footer_text TeamsAccount#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
   */
   readonly footerText?: string;
   /**
   * Block page header text.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#header_text TeamsAccount#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
   */
   readonly headerText?: string;
   /**
   * URL of block page logo.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#logo_path TeamsAccount#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
   */
   readonly logoPath?: string;
   /**
   * Admin email for users to contact.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#mailto_address TeamsAccount#mailto_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
   */
   readonly mailtoAddress?: string;
   /**
   * Subject line for emails created from block page.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#mailto_subject TeamsAccount#mailto_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
   */
   readonly mailtoSubject?: string;
   /**
   * Name of block page configuration.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#name TeamsAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#name TeamsAccount#name}
   */
   readonly name?: string;
 }
@@ -459,7 +465,7 @@ export interface TeamsAccountFips {
   /**
   * Only allow FIPS-compliant TLS configuration.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#tls TeamsAccount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#tls TeamsAccount#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
 }
@@ -526,11 +532,11 @@ export interface TeamsAccountLoggingSettingsByRuleTypeDns {
   /**
   * Whether to log all activity.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_all TeamsAccount#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_blocks TeamsAccount#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -614,11 +620,11 @@ export interface TeamsAccountLoggingSettingsByRuleTypeHttp {
   /**
   * Whether to log all activity.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_all TeamsAccount#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_blocks TeamsAccount#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -702,11 +708,11 @@ export interface TeamsAccountLoggingSettingsByRuleTypeL4 {
   /**
   * Whether to log all activity.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_all TeamsAccount#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#log_blocks TeamsAccount#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -790,19 +796,19 @@ export interface TeamsAccountLoggingSettingsByRuleType {
   /**
   * dns block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#dns TeamsAccount#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#dns TeamsAccount#dns}
   */
   readonly dns: TeamsAccountLoggingSettingsByRuleTypeDns;
   /**
   * http block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#http TeamsAccount#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#http TeamsAccount#http}
   */
   readonly http: TeamsAccountLoggingSettingsByRuleTypeHttp;
   /**
   * l4 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#l4 TeamsAccount#l4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#l4 TeamsAccount#l4}
   */
   readonly l4: TeamsAccountLoggingSettingsByRuleTypeL4;
 }
@@ -906,13 +912,13 @@ export interface TeamsAccountLogging {
   /**
   * Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#redact_pii TeamsAccount#redact_pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
   */
   readonly redactPii: boolean | cdktf.IResolvable;
   /**
   * settings_by_rule_type block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
   */
   readonly settingsByRuleType: TeamsAccountLoggingSettingsByRuleType;
 }
@@ -992,17 +998,81 @@ export class TeamsAccountLoggingOutputReference extends cdktf.ComplexObject {
     return this._settingsByRuleType.internalValue;
   }
 }
+export interface TeamsAccountPayloadLog {
+  /**
+  * Public key used to encrypt matched payloads.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
+  */
+  readonly publicKey: string;
+}
+
+export function teamsAccountPayloadLogToTerraform(struct?: TeamsAccountPayloadLogOutputReference | TeamsAccountPayloadLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    public_key: cdktf.stringToTerraform(struct!.publicKey),
+  }
+}
+
+export class TeamsAccountPayloadLogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TeamsAccountPayloadLog | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._publicKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicKey = this._publicKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TeamsAccountPayloadLog | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._publicKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._publicKey = value.publicKey;
+    }
+  }
+
+  // public_key - computed: false, optional: false, required: true
+  private _publicKey?: string; 
+  public get publicKey() {
+    return this.getStringAttribute('public_key');
+  }
+  public set publicKey(value: string) {
+    this._publicKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicKeyInput() {
+    return this._publicKey;
+  }
+}
 export interface TeamsAccountProxy {
   /**
   * Whether gateway proxy is enabled on gateway devices for TCP traffic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#tcp TeamsAccount#tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
   */
   readonly tcp: boolean | cdktf.IResolvable;
   /**
   * Whether gateway proxy is enabled on gateway devices for UDP traffic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account#udp TeamsAccount#udp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#udp TeamsAccount#udp}
   */
   readonly udp: boolean | cdktf.IResolvable;
 }
@@ -1084,7 +1154,7 @@ export class TeamsAccountProxyOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account cloudflare_teams_account}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account}
 */
 export class TeamsAccount extends cdktf.TerraformResource {
 
@@ -1098,7 +1168,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account cloudflare_teams_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1109,8 +1179,8 @@ export class TeamsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_account',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '3.35.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '4.3.0',
+        providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1129,6 +1199,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
     this._blockPage.internalValue = config.blockPage;
     this._fips.internalValue = config.fips;
     this._logging.internalValue = config.logging;
+    this._payloadLog.internalValue = config.payloadLog;
     this._proxy.internalValue = config.proxy;
   }
 
@@ -1277,6 +1348,22 @@ export class TeamsAccount extends cdktf.TerraformResource {
     return this._logging.internalValue;
   }
 
+  // payload_log - computed: false, optional: true, required: false
+  private _payloadLog = new TeamsAccountPayloadLogOutputReference(this, "payload_log");
+  public get payloadLog() {
+    return this._payloadLog;
+  }
+  public putPayloadLog(value: TeamsAccountPayloadLog) {
+    this._payloadLog.internalValue = value;
+  }
+  public resetPayloadLog() {
+    this._payloadLog.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get payloadLogInput() {
+    return this._payloadLog.internalValue;
+  }
+
   // proxy - computed: false, optional: true, required: false
   private _proxy = new TeamsAccountProxyOutputReference(this, "proxy");
   public get proxy() {
@@ -1308,6 +1395,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
       block_page: teamsAccountBlockPageToTerraform(this._blockPage.internalValue),
       fips: teamsAccountFipsToTerraform(this._fips.internalValue),
       logging: teamsAccountLoggingToTerraform(this._logging.internalValue),
+      payload_log: teamsAccountPayloadLogToTerraform(this._payloadLog.internalValue),
       proxy: teamsAccountProxyToTerraform(this._proxy.internalValue),
     };
   }
