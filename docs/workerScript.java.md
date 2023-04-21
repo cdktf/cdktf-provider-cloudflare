@@ -1,6 +1,6 @@
 # `cloudflare_worker_script`
 
-Refer to the Terraform Registory for docs: [`cloudflare_worker_script`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script).
+Refer to the Terraform Registory for docs: [`cloudflare_worker_script`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script).
 
 # `workerScript` Submodule <a name="`workerScript` Submodule" id="@cdktf/provider-cloudflare.workerScript"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_worker_script`](https://
 
 ### WorkerScript <a name="WorkerScript" id="@cdktf/provider-cloudflare.workerScript.WorkerScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script cloudflare_worker_script}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer"></a>
 
@@ -37,6 +37,8 @@ WorkerScript.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .kvNamespaceBinding(IResolvable)
 //  .kvNamespaceBinding(java.util.List<WorkerScriptKvNamespaceBinding>)
+//  .logpush(java.lang.Boolean)
+//  .logpush(IResolvable)
 //  .module(java.lang.Boolean)
 //  .module(IResolvable)
 //  .plainTextBinding(IResolvable)
@@ -71,8 +73,9 @@ WorkerScript.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.analyticsEngineBinding">analyticsEngineBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding">WorkerScriptAnalyticsEngineBinding</a>></code> | analytics_engine_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.compatibilityDate">compatibilityDate</a></code> | <code>java.lang.String</code> | The date to use for the compatibility flag. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.compatibilityFlags">compatibilityFlags</a></code> | <code>java.util.List<java.lang.String></code> | Compatibility flags used for Worker Scripts. |
-| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#id WorkerScript#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#id WorkerScript#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.kvNamespaceBinding">kvNamespaceBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding">WorkerScriptKvNamespaceBinding</a>></code> | kv_namespace_binding block. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.logpush">logpush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enabling allows Worker events to be sent to a defined Logpush destination. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.module">module</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to upload Worker as a module. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.plainTextBinding">plainTextBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding">WorkerScriptPlainTextBinding</a>></code> | plain_text_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.queueBinding">queueBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBinding">WorkerScriptQueueBinding</a>></code> | queue_binding block. |
@@ -149,7 +152,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#account_id WorkerScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#account_id WorkerScript#account_id}
 
 ---
 
@@ -159,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The script content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#content WorkerScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#content WorkerScript#content}
 
 ---
 
@@ -169,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name for the script. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -179,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 analytics_engine_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
 
 ---
 
@@ -189,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The date to use for the compatibility flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
 
 ---
 
@@ -199,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Compatibility flags used for Worker Scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
 
 ---
 
@@ -207,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#id WorkerScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#id WorkerScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -220,7 +223,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 kv_namespace_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+
+---
+
+##### `logpush`<sup>Optional</sup> <a name="logpush" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.logpush"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Enabling allows Worker events to be sent to a defined Logpush destination.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#logpush WorkerScript#logpush}
 
 ---
 
@@ -230,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to upload Worker as a module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#module WorkerScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#module WorkerScript#module}
 
 ---
 
@@ -240,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 plain_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
 
 ---
 
@@ -250,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 queue_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
 
 ---
 
@@ -260,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 r2_bucket_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
 
 ---
 
@@ -270,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 secret_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
 
 ---
 
@@ -280,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
 
 ---
 
@@ -290,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 webassembly_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
 
 ---
 
@@ -327,6 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetCompatibilityFlags">resetCompatibilityFlags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetKvNamespaceBinding">resetKvNamespaceBinding</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetLogpush">resetLogpush</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetModule">resetModule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetPlainTextBinding">resetPlainTextBinding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetQueueBinding">resetQueueBinding</a></code> | *No description.* |
@@ -647,6 +661,12 @@ public void resetId()
 public void resetKvNamespaceBinding()
 ```
 
+##### `resetLogpush` <a name="resetLogpush" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.resetLogpush"></a>
+
+```java
+public void resetLogpush()
+```
+
 ##### `resetModule` <a name="resetModule" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.resetModule"></a>
 
 ```java
@@ -792,6 +812,7 @@ WorkerScript.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.contentInput">contentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.kvNamespaceBindingInput">kvNamespaceBindingInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding">WorkerScriptKvNamespaceBinding</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.logpushInput">logpushInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.moduleInput">moduleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.plainTextBindingInput">plainTextBindingInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding">WorkerScriptPlainTextBinding</a>></code> | *No description.* |
@@ -805,6 +826,7 @@ WorkerScript.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.compatibilityFlags">compatibilityFlags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.content">content</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.logpush">logpush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.module">module</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -1102,6 +1124,16 @@ public java.lang.Object getKvNamespaceBindingInput();
 
 ---
 
+##### `logpushInput`<sup>Optional</sup> <a name="logpushInput" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.logpushInput"></a>
+
+```java
+public java.lang.Object getLogpushInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `moduleInput`<sup>Optional</sup> <a name="moduleInput" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.moduleInput"></a>
 
 ```java
@@ -1232,6 +1264,16 @@ public java.lang.String getId();
 
 ---
 
+##### `logpush`<sup>Required</sup> <a name="logpush" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.logpush"></a>
+
+```java
+public java.lang.Object getLogpush();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `module`<sup>Required</sup> <a name="module" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.module"></a>
 
 ```java
@@ -1304,7 +1346,7 @@ public java.lang.String getDataset();
 
 The name of the Analytics Engine dataset to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#dataset WorkerScript#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#dataset WorkerScript#dataset}
 
 ---
 
@@ -1318,7 +1360,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1351,6 +1393,8 @@ WorkerScriptConfig.builder()
 //  .id(java.lang.String)
 //  .kvNamespaceBinding(IResolvable)
 //  .kvNamespaceBinding(java.util.List<WorkerScriptKvNamespaceBinding>)
+//  .logpush(java.lang.Boolean)
+//  .logpush(IResolvable)
 //  .module(java.lang.Boolean)
 //  .module(IResolvable)
 //  .plainTextBinding(IResolvable)
@@ -1385,8 +1429,9 @@ WorkerScriptConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.analyticsEngineBinding">analyticsEngineBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding">WorkerScriptAnalyticsEngineBinding</a>></code> | analytics_engine_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.compatibilityDate">compatibilityDate</a></code> | <code>java.lang.String</code> | The date to use for the compatibility flag. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.compatibilityFlags">compatibilityFlags</a></code> | <code>java.util.List<java.lang.String></code> | Compatibility flags used for Worker Scripts. |
-| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#id WorkerScript#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#id WorkerScript#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.kvNamespaceBinding">kvNamespaceBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding">WorkerScriptKvNamespaceBinding</a>></code> | kv_namespace_binding block. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.logpush">logpush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enabling allows Worker events to be sent to a defined Logpush destination. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.module">module</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to upload Worker as a module. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.plainTextBinding">plainTextBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding">WorkerScriptPlainTextBinding</a>></code> | plain_text_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.queueBinding">queueBinding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBinding">WorkerScriptQueueBinding</a>></code> | queue_binding block. |
@@ -1477,7 +1522,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#account_id WorkerScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#account_id WorkerScript#account_id}
 
 ---
 
@@ -1491,7 +1536,7 @@ public java.lang.String getContent();
 
 The script content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#content WorkerScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#content WorkerScript#content}
 
 ---
 
@@ -1505,7 +1550,7 @@ public java.lang.String getName();
 
 The name for the script. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1519,7 +1564,7 @@ public java.lang.Object getAnalyticsEngineBinding();
 
 analytics_engine_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
 
 ---
 
@@ -1533,7 +1578,7 @@ public java.lang.String getCompatibilityDate();
 
 The date to use for the compatibility flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
 
 ---
 
@@ -1547,7 +1592,7 @@ public java.util.List<java.lang.String> getCompatibilityFlags();
 
 Compatibility flags used for Worker Scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
 
 ---
 
@@ -1559,7 +1604,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#id WorkerScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#id WorkerScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1576,7 +1621,21 @@ public java.lang.Object getKvNamespaceBinding();
 
 kv_namespace_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+
+---
+
+##### `logpush`<sup>Optional</sup> <a name="logpush" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.logpush"></a>
+
+```java
+public java.lang.Object getLogpush();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Enabling allows Worker events to be sent to a defined Logpush destination.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#logpush WorkerScript#logpush}
 
 ---
 
@@ -1590,7 +1649,7 @@ public java.lang.Object getModule();
 
 Whether to upload Worker as a module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#module WorkerScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#module WorkerScript#module}
 
 ---
 
@@ -1604,7 +1663,7 @@ public java.lang.Object getPlainTextBinding();
 
 plain_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
 
 ---
 
@@ -1618,7 +1677,7 @@ public java.lang.Object getQueueBinding();
 
 queue_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
 
 ---
 
@@ -1632,7 +1691,7 @@ public java.lang.Object getR2BucketBinding();
 
 r2_bucket_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
 
 ---
 
@@ -1646,7 +1705,7 @@ public java.lang.Object getSecretTextBinding();
 
 secret_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
 
 ---
 
@@ -1660,7 +1719,7 @@ public java.lang.Object getServiceBinding();
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
 
 ---
 
@@ -1674,7 +1733,7 @@ public java.lang.Object getWebassemblyBinding();
 
 webassembly_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
 
 ---
 
@@ -1710,7 +1769,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1724,7 +1783,7 @@ public java.lang.String getNamespaceId();
 
 ID of the KV namespace you want to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#namespace_id WorkerScript#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#namespace_id WorkerScript#namespace_id}
 
 ---
 
@@ -1760,7 +1819,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1774,7 +1833,7 @@ public java.lang.String getText();
 
 The plain text you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#text WorkerScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#text WorkerScript#text}
 
 ---
 
@@ -1810,7 +1869,7 @@ public java.lang.String getBinding();
 
 The name of the global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#binding WorkerScript#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#binding WorkerScript#binding}
 
 ---
 
@@ -1824,7 +1883,7 @@ public java.lang.String getQueue();
 
 Name of the queue you want to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#queue WorkerScript#queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#queue WorkerScript#queue}
 
 ---
 
@@ -1860,7 +1919,7 @@ public java.lang.String getBucketName();
 
 The name of the Bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#bucket_name WorkerScript#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#bucket_name WorkerScript#bucket_name}
 
 ---
 
@@ -1874,7 +1933,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1910,7 +1969,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1924,7 +1983,7 @@ public java.lang.String getText();
 
 The secret text you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#text WorkerScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#text WorkerScript#text}
 
 ---
 
@@ -1962,7 +2021,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1976,7 +2035,7 @@ public java.lang.String getService();
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#service WorkerScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#service WorkerScript#service}
 
 ---
 
@@ -1990,7 +2049,7 @@ public java.lang.String getEnvironment();
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#environment WorkerScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#environment WorkerScript#environment}
 
 ---
 
@@ -2026,7 +2085,7 @@ public java.lang.String getModule();
 
 The base64 encoded wasm module you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#module WorkerScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#module WorkerScript#module}
 
 ---
 
@@ -2040,7 +2099,7 @@ public java.lang.String getName();
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 

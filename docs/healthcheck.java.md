@@ -1,6 +1,6 @@
 # `cloudflare_healthcheck`
 
-Refer to the Terraform Registory for docs: [`cloudflare_healthcheck`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck).
+Refer to the Terraform Registory for docs: [`cloudflare_healthcheck`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck).
 
 # `healthcheck` Submodule <a name="`healthcheck` Submodule" id="@cdktf/provider-cloudflare.healthcheck"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_healthcheck`](https://re
 
 ### Healthcheck <a name="Healthcheck" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck cloudflare_healthcheck}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck cloudflare_healthcheck}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer"></a>
 
@@ -80,7 +80,7 @@ Healthcheck.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.expectedCodes">expectedCodes</a></code> | <code>java.util.List<java.lang.String></code> | The expected HTTP response codes (e.g. '200') or code ranges (e.g. '2xx' for all codes starting with 2) of the health check. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Follow redirects if the origin returns a 3xx status code. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHeader">HealthcheckHeader</a>></code> | header block. |
-| <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#id Healthcheck#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#id Healthcheck#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.interval">interval</a></code> | <code>java.lang.Number</code> | The interval between each health check. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.method">method</a></code> | <code>java.lang.String</code> | The HTTP method to use for the health check. Available values: `connection_established`, `GET`, `HEAD`. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | The endpoint path to health check against. Defaults to `/`. |
@@ -158,7 +158,7 @@ Must be unique amongst siblings in the same scope
 
 The hostname or IP address of the origin server to run health checks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#address Healthcheck#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#address Healthcheck#address}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A short name to identify the health check. Only alphanumeric characters, hyphens, and underscores are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#name Healthcheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#name Healthcheck#name}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The protocol to use for the health check. Available values: `TCP`, `HTTP`, `HTTPS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#type Healthcheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#type Healthcheck#type}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Do not validate the certificate when the health check uses HTTPS. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
 
 ---
 
@@ -210,7 +210,7 @@ A list of regions from which to run health checks.
 
 If not set, Cloudflare will pick a default region. Available values: `WNAM`, `ENAM`, `WEU`, `EEU`, `NSAM`, `SSAM`, `OC`, `ME`, `NAF`, `SAF`, `IN`, `SEAS`, `NEAS`, `ALL_REGIONS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of consecutive fails required from a health check before changing the health to unhealthy. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of consecutive successes required from a health check before changing the health to healthy. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A human-readable description of the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#description Healthcheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#description Healthcheck#description}
 
 ---
 
@@ -252,7 +252,7 @@ A case-insensitive sub-string to look for in the response body.
 
 If this string is not found the origin will be marked as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
 
 ---
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The expected HTTP response codes (e.g. '200') or code ranges (e.g. '2xx' for all codes starting with 2) of the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
 
 ---
 
@@ -272,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Follow redirects if the origin returns a 3xx status code. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#header Healthcheck#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#header Healthcheck#header}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#id Healthcheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#id Healthcheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -305,7 +305,7 @@ The interval between each health check.
 
 Shorter intervals may give quicker notifications if the origin status changes, but will increase the load on the origin as we check from multiple locations. Defaults to `60`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#interval Healthcheck#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#interval Healthcheck#interval}
 
 ---
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The HTTP method to use for the health check. Available values: `connection_established`, `GET`, `HEAD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#method Healthcheck#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#method Healthcheck#method}
 
 ---
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The endpoint path to health check against. Defaults to `/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#path Healthcheck#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#path Healthcheck#path}
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Port number to connect to for the health check. Defaults to `80`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#port Healthcheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#port Healthcheck#port}
 
 ---
 
@@ -347,7 +347,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 Retries are attempted immediately. Defaults to `2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#retries Healthcheck#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#retries Healthcheck#retries}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If suspended, no health checks are sent to the origin. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeouts Healthcheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#timeouts Healthcheck#timeouts}
 
 ---
 
@@ -1571,7 +1571,7 @@ HealthcheckConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.expectedCodes">expectedCodes</a></code> | <code>java.util.List<java.lang.String></code> | The expected HTTP response codes (e.g. '200') or code ranges (e.g. '2xx' for all codes starting with 2) of the health check. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.followRedirects">followRedirects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Follow redirects if the origin returns a 3xx status code. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHeader">HealthcheckHeader</a>></code> | header block. |
-| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#id Healthcheck#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#id Healthcheck#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.interval">interval</a></code> | <code>java.lang.Number</code> | The interval between each health check. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.method">method</a></code> | <code>java.lang.String</code> | The HTTP method to use for the health check. Available values: `connection_established`, `GET`, `HEAD`. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.property.path">path</a></code> | <code>java.lang.String</code> | The endpoint path to health check against. Defaults to `/`. |
@@ -1663,7 +1663,7 @@ public java.lang.String getAddress();
 
 The hostname or IP address of the origin server to run health checks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#address Healthcheck#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#address Healthcheck#address}
 
 ---
 
@@ -1677,7 +1677,7 @@ public java.lang.String getName();
 
 A short name to identify the health check. Only alphanumeric characters, hyphens, and underscores are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#name Healthcheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#name Healthcheck#name}
 
 ---
 
@@ -1691,7 +1691,7 @@ public java.lang.String getType();
 
 The protocol to use for the health check. Available values: `TCP`, `HTTP`, `HTTPS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#type Healthcheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#type Healthcheck#type}
 
 ---
 
@@ -1705,7 +1705,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
 
 ---
 
@@ -1719,7 +1719,7 @@ public java.lang.Object getAllowInsecure();
 
 Do not validate the certificate when the health check uses HTTPS. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
 
 ---
 
@@ -1735,7 +1735,7 @@ A list of regions from which to run health checks.
 
 If not set, Cloudflare will pick a default region. Available values: `WNAM`, `ENAM`, `WEU`, `EEU`, `NSAM`, `SSAM`, `OC`, `ME`, `NAF`, `SAF`, `IN`, `SEAS`, `NEAS`, `ALL_REGIONS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
 
 ---
 
@@ -1749,7 +1749,7 @@ public java.lang.Number getConsecutiveFails();
 
 The number of consecutive fails required from a health check before changing the health to unhealthy. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
 
 ---
 
@@ -1763,7 +1763,7 @@ public java.lang.Number getConsecutiveSuccesses();
 
 The number of consecutive successes required from a health check before changing the health to healthy. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
 
 ---
 
@@ -1777,7 +1777,7 @@ public java.lang.String getDescription();
 
 A human-readable description of the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#description Healthcheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#description Healthcheck#description}
 
 ---
 
@@ -1793,7 +1793,7 @@ A case-insensitive sub-string to look for in the response body.
 
 If this string is not found the origin will be marked as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
 
 ---
 
@@ -1807,7 +1807,7 @@ public java.util.List<java.lang.String> getExpectedCodes();
 
 The expected HTTP response codes (e.g. '200') or code ranges (e.g. '2xx' for all codes starting with 2) of the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
 
 ---
 
@@ -1821,7 +1821,7 @@ public java.lang.Object getFollowRedirects();
 
 Follow redirects if the origin returns a 3xx status code. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
 
 ---
 
@@ -1835,7 +1835,7 @@ public java.lang.Object getHeader();
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#header Healthcheck#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#header Healthcheck#header}
 
 ---
 
@@ -1847,7 +1847,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#id Healthcheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#id Healthcheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1866,7 +1866,7 @@ The interval between each health check.
 
 Shorter intervals may give quicker notifications if the origin status changes, but will increase the load on the origin as we check from multiple locations. Defaults to `60`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#interval Healthcheck#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#interval Healthcheck#interval}
 
 ---
 
@@ -1880,7 +1880,7 @@ public java.lang.String getMethod();
 
 The HTTP method to use for the health check. Available values: `connection_established`, `GET`, `HEAD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#method Healthcheck#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#method Healthcheck#method}
 
 ---
 
@@ -1894,7 +1894,7 @@ public java.lang.String getPath();
 
 The endpoint path to health check against. Defaults to `/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#path Healthcheck#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#path Healthcheck#path}
 
 ---
 
@@ -1908,7 +1908,7 @@ public java.lang.Number getPort();
 
 Port number to connect to for the health check. Defaults to `80`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#port Healthcheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#port Healthcheck#port}
 
 ---
 
@@ -1924,7 +1924,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 Retries are attempted immediately. Defaults to `2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#retries Healthcheck#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#retries Healthcheck#retries}
 
 ---
 
@@ -1938,7 +1938,7 @@ public java.lang.Object getSuspended();
 
 If suspended, no health checks are sent to the origin. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.Number getTimeout();
 
 The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
 
 ---
 
@@ -1966,7 +1966,7 @@ public HealthcheckTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#timeouts Healthcheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#timeouts Healthcheck#timeouts}
 
 ---
 
@@ -2002,7 +2002,7 @@ public java.lang.String getHeader();
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#header Healthcheck#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#header Healthcheck#header}
 
 ---
 
@@ -2016,7 +2016,7 @@ public java.util.List<java.lang.String> getValues();
 
 A list of string values for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#values Healthcheck#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#values Healthcheck#values}
 
 ---
 
@@ -2036,7 +2036,7 @@ HealthcheckTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#create Healthcheck#create}. |
+| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#create Healthcheck#create}. |
 
 ---
 
@@ -2048,7 +2048,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/healthcheck#create Healthcheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/healthcheck#create Healthcheck#create}.
 
 ---
 
