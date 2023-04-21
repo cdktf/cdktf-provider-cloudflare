@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,17 @@ export interface TunnelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#account_id Tunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#account_id Tunnel#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#id Tunnel#id}
+  * Indicates if this is a locally or remotely configured tunnel. If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard or using tunnel_config, tunnel_route or tunnel_virtual_network resources. Available values: `local`, `cloudflare`. **Modifying this attribute will force creation of a new resource.**
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#config_src Tunnel#config_src}
+  */
+  readonly configSrc?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#id Tunnel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +29,19 @@ export interface TunnelConfig extends cdktf.TerraformMetaArguments {
   /**
   * A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#name Tunnel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#name Tunnel#name}
   */
   readonly name: string;
   /**
   * 32 or more bytes, encoded as a base64 string. The Create Argo Tunnel endpoint sets this as the tunnel's password. Anyone wishing to run the tunnel needs this password. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#secret Tunnel#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#secret Tunnel#secret}
   */
   readonly secret: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel cloudflare_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel cloudflare_tunnel}
 */
 export class Tunnel extends cdktf.TerraformResource {
 
@@ -49,7 +55,7 @@ export class Tunnel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel cloudflare_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel cloudflare_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +66,7 @@ export class Tunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -72,6 +78,7 @@ export class Tunnel extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._configSrc = config.configSrc;
     this._id = config.id;
     this._name = config.name;
     this._secret = config.secret;
@@ -97,6 +104,22 @@ export class Tunnel extends cdktf.TerraformResource {
   // cname - computed: true, optional: false, required: false
   public get cname() {
     return this.getStringAttribute('cname');
+  }
+
+  // config_src - computed: false, optional: true, required: false
+  private _configSrc?: string; 
+  public get configSrc() {
+    return this.getStringAttribute('config_src');
+  }
+  public set configSrc(value: string) {
+    this._configSrc = value;
+  }
+  public resetConfigSrc() {
+    this._configSrc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configSrcInput() {
+    return this._configSrc;
   }
 
   // id - computed: true, optional: true, required: false
@@ -153,6 +176,7 @@ export class Tunnel extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      config_src: cdktf.stringToTerraform(this._configSrc),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       secret: cdktf.stringToTerraform(this._secret),

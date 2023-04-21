@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/data-sources/zone_dnssec
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec#id DataCloudflareZoneDnssec#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/data-sources/zone_dnssec#id DataCloudflareZoneDnssec#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataCloudflareZoneDnssecConfig extends cdktf.TerraformMetaArgum
   /**
   * The zone identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/data-sources/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}
 */
 export class DataCloudflareZoneDnssec extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataCloudflareZoneDnssec extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataCloudflareZoneDnssec extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_dnssec',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

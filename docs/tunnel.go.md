@@ -1,6 +1,6 @@
 # `cloudflare_tunnel`
 
-Refer to the Terraform Registory for docs: [`cloudflare_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel).
+Refer to the Terraform Registory for docs: [`cloudflare_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel).
 
 # `tunnel` Submodule <a name="`tunnel` Submodule" id="@cdktf/provider-cloudflare.tunnel"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`cloudflare_tunnel`](https://registr
 
 ### Tunnel <a name="Tunnel" id="@cdktf/provider-cloudflare.tunnel.Tunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel cloudflare_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel cloudflare_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
 
 tunnel.NewTunnel(scope Construct, id *string, config TunnelConfig) Tunnel
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.resetConfigSrc">ResetConfigSrc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -258,6 +259,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetConfigSrc` <a name="ResetConfigSrc" id="@cdktf/provider-cloudflare.tunnel.Tunnel.resetConfigSrc"></a>
+
+```go
+func ResetConfigSrc()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.tunnel.Tunnel.resetId"></a>
 
 ```go
@@ -277,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tunnel.Tunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
 
 tunnel.Tunnel_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tunnel.Tunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
 
 tunnel.Tunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +330,7 @@ tunnel.Tunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tunnel.Tunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
 
 tunnel.Tunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -355,10 +362,12 @@ tunnel.Tunnel_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.cname">Cname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.tunnelToken">TunnelToken</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.configSrcInput">ConfigSrcInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.secretInput">SecretInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.configSrc">ConfigSrc</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.property.secret">Secret</a></code> | <code>*string</code> | *No description.* |
@@ -537,6 +546,16 @@ func AccountIdInput() *string
 
 ---
 
+##### `ConfigSrcInput`<sup>Optional</sup> <a name="ConfigSrcInput" id="@cdktf/provider-cloudflare.tunnel.Tunnel.property.configSrcInput"></a>
+
+```go
+func ConfigSrcInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.tunnel.Tunnel.property.idInput"></a>
 
 ```go
@@ -571,6 +590,16 @@ func SecretInput() *string
 
 ```go
 func AccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ConfigSrc`<sup>Required</sup> <a name="ConfigSrc" id="@cdktf/provider-cloudflare.tunnel.Tunnel.property.configSrc"></a>
+
+```go
+func ConfigSrc() *string
 ```
 
 - *Type:* *string
@@ -632,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnel.TunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
 
 &tunnel.TunnelConfig {
 	Connection: interface{},
@@ -645,6 +674,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 	AccountId: *string,
 	Name: *string,
 	Secret: *string,
+	ConfigSrc: *string,
 	Id: *string,
 }
 ```
@@ -663,7 +693,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.name">Name</a></code> | <code>*string</code> | A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.secret">Secret</a></code> | <code>*string</code> | 32 or more bytes, encoded as a base64 string. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#id Tunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.configSrc">ConfigSrc</a></code> | <code>*string</code> | Indicates if this is a locally or remotely configured tunnel. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#id Tunnel#id}. |
 
 ---
 
@@ -747,7 +778,7 @@ AccountId *string
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#account_id Tunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#account_id Tunnel#account_id}
 
 ---
 
@@ -761,7 +792,7 @@ Name *string
 
 A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#name Tunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#name Tunnel#name}
 
 ---
 
@@ -777,7 +808,23 @@ Secret *string
 
 The Create Argo Tunnel endpoint sets this as the tunnel's password. Anyone wishing to run the tunnel needs this password. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#secret Tunnel#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#secret Tunnel#secret}
+
+---
+
+##### `ConfigSrc`<sup>Optional</sup> <a name="ConfigSrc" id="@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.configSrc"></a>
+
+```go
+ConfigSrc *string
+```
+
+- *Type:* *string
+
+Indicates if this is a locally or remotely configured tunnel.
+
+If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard or using tunnel_config, tunnel_route or tunnel_virtual_network resources. Available values: `local`, `cloudflare`. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#config_src Tunnel#config_src}
 
 ---
 
@@ -789,7 +836,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel#id Tunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/tunnel#id Tunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
