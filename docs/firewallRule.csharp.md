@@ -1,6 +1,6 @@
 # `cloudflare_firewall_rule`
 
-Refer to the Terraform Registory for docs: [`cloudflare_firewall_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule).
+Refer to the Terraform Registory for docs: [`cloudflare_firewall_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule).
 
 # `firewallRule` Submodule <a name="`firewallRule` Submodule" id="@cdktf/provider-cloudflare.firewallRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_firewall_rule`](https://
 
 ### FirewallRule <a name="FirewallRule" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.Initializer"></a>
 
@@ -762,7 +762,7 @@ new FirewallRuleConfig {
 | <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.filterId">FilterId</a></code> | <code>string</code> | The identifier of the Filter to use for determining if the Firewall Rule should be triggered. |
 | <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.description">Description</a></code> | <code>string</code> | A description of the rule to help identify it. |
-| <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#id FirewallRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#id FirewallRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.paused">Paused</a></code> | <code>object</code> | Whether this filter based firewall rule is currently paused. |
 | <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.priority">Priority</a></code> | <code>double</code> | The priority of the rule to allow control of processing order. |
 | <code><a href="#@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.property.products">Products</a></code> | <code>string[]</code> | List of products to bypass for a request when the bypass action is used. |
@@ -849,7 +849,7 @@ public string Action { get; set; }
 
 The action to apply to a matched request. Available values: `block`, `challenge`, `allow`, `js_challenge`, `managed_challenge`, `log`, `bypass`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#action FirewallRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#action FirewallRule#action}
 
 ---
 
@@ -863,7 +863,7 @@ public string FilterId { get; set; }
 
 The identifier of the Filter to use for determining if the Firewall Rule should be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#filter_id FirewallRule#filter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#filter_id FirewallRule#filter_id}
 
 ---
 
@@ -877,7 +877,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
 
 ---
 
@@ -891,7 +891,7 @@ public string Description { get; set; }
 
 A description of the rule to help identify it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#description FirewallRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#description FirewallRule#description}
 
 ---
 
@@ -903,7 +903,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#id FirewallRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#id FirewallRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -920,7 +920,7 @@ public object Paused { get; set; }
 
 Whether this filter based firewall rule is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#paused FirewallRule#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#paused FirewallRule#paused}
 
 ---
 
@@ -936,7 +936,7 @@ The priority of the rule to allow control of processing order.
 
 A lower number indicates high priority. If not provided, any rules with a priority will be sequenced before those without.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#priority FirewallRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#priority FirewallRule#priority}
 
 ---
 
@@ -952,7 +952,7 @@ List of products to bypass for a request when the bypass action is used.
 
 Available values: `zoneLockdown`, `uaBlock`, `bic`, `hot`, `securityLevel`, `rateLimit`, `waf`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/firewall_rule#products FirewallRule#products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/firewall_rule#products FirewallRule#products}
 
 ---
 

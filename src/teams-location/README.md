@@ -1,3 +1,3 @@
 # `cloudflare_teams_location`
 
-Refer to the Terraform Registory for docs: [`cloudflare_teams_location`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/teams_location).
+Refer to the Terraform Registory for docs: [`cloudflare_teams_location`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/teams_location).
