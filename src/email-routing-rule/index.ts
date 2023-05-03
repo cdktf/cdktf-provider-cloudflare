@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface EmailRoutingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Routing rule status.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#id EmailRoutingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#id EmailRoutingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,31 +23,31 @@ export interface EmailRoutingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Routing rule name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
   */
   readonly name: string;
   /**
   * Priority of the routing rule.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
   */
   readonly priority?: number;
   /**
   * The zone identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
   */
   readonly zoneId: string;
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
   */
   readonly action: EmailRoutingRuleAction[] | cdktf.IResolvable;
   /**
   * matcher block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
   */
   readonly matcher: EmailRoutingRuleMatcher[] | cdktf.IResolvable;
 }
@@ -55,13 +55,13 @@ export interface EmailRoutingRuleAction {
   /**
   * Type of supported action.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
   */
   readonly type: string;
   /**
   * An array with items in the following form.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
   */
   readonly value: string[];
 }
@@ -177,19 +177,19 @@ export interface EmailRoutingRuleMatcher {
   /**
   * Field for type matcher.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
   */
   readonly field?: string;
   /**
   * Type of matcher.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
   */
   readonly type: string;
   /**
   * Value for matcher.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
   */
   readonly value?: string;
 }
@@ -329,7 +329,7 @@ export class EmailRoutingRuleMatcherList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}
 */
 export class EmailRoutingRule extends cdktf.TerraformResource {
 
@@ -343,7 +343,7 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -354,7 +354,7 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

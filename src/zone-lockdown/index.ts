@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description about the lockdown entry. Typically used as a reminder or explanation for the lockdown.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#description ZoneLockdown#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#description ZoneLockdown#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#id ZoneLockdown#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#id ZoneLockdown#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,29 +23,29 @@ export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   /**
   * Boolean of whether this zone lockdown is currently paused. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}
   */
   readonly priority?: number;
   /**
   * A list of simple wildcard patterns to match requests against. The order of the urls is unimportant.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
   */
   readonly urls: string[];
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
   */
   readonly zoneId: string;
   /**
   * configurations block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
   */
   readonly configurations: ZoneLockdownConfigurations[] | cdktf.IResolvable;
 }
@@ -53,13 +53,13 @@ export interface ZoneLockdownConfigurations {
   /**
   * The request property to target. Available values: `ip`, `ip_range`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
   */
   readonly target: string;
   /**
   * The value to target. Depends on target's type. IP addresses should just be standard IPv4/IPv6 notation i.e. `192.0.2.1` or `2001:db8::/32` and IP ranges in CIDR format i.e. `192.0.2.0/24`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
   */
   readonly value: string;
 }
@@ -173,7 +173,7 @@ export class ZoneLockdownConfigurationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}
 */
 export class ZoneLockdown extends cdktf.TerraformResource {
 
@@ -187,7 +187,7 @@ export class ZoneLockdown extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +198,7 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_lockdown',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

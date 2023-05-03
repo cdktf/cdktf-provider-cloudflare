@@ -1,6 +1,6 @@
 # `cloudflare_logpush_job`
 
-Refer to the Terraform Registory for docs: [`cloudflare_logpush_job`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job).
+Refer to the Terraform Registory for docs: [`cloudflare_logpush_job`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job).
 
 # `logpushJob` Submodule <a name="`logpushJob` Submodule" id="@cdktf/provider-cloudflare.logpushJob"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_logpush_job`](https://re
 
 ### LogpushJob <a name="LogpushJob" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job cloudflare_logpush_job}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job cloudflare_logpush_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer"></a>
 
@@ -37,6 +37,9 @@ LogpushJob.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .kind(java.lang.String)
 //  .logpullOptions(java.lang.String)
+//  .maxUploadBytes(java.lang.Number)
+//  .maxUploadIntervalSeconds(java.lang.Number)
+//  .maxUploadRecords(java.lang.Number)
 //  .name(java.lang.String)
 //  .ownershipChallenge(java.lang.String)
 //  .zoneId(java.lang.String)
@@ -54,15 +57,18 @@ LogpushJob.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.dataset">dataset</a></code> | <code>java.lang.String</code> | Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.dataset">dataset</a></code> | <code>java.lang.String</code> | The kind of the dataset to use with the logpush job. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.destinationConf">destinationConf</a></code> | <code>java.lang.String</code> | Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable the job. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.filter">filter</a></code> | <code>java.lang.String</code> | Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/). |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.frequency">frequency</a></code> | <code>java.lang.String</code> | A higher frequency will result in logs being pushed on faster with smaller files. |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#id LogpushJob#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#id LogpushJob#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.logpullOptions">logpullOptions</a></code> | <code>java.lang.String</code> | Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options). |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.maxUploadBytes">maxUploadBytes</a></code> | <code>java.lang.Number</code> | The maximum uncompressed file size of a batch of logs. Value must be between 5MB and 1GB. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.maxUploadIntervalSeconds">maxUploadIntervalSeconds</a></code> | <code>java.lang.Number</code> | The maximum interval in seconds for log batches. Value must be between 30 and 300. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.maxUploadRecords">maxUploadRecords</a></code> | <code>java.lang.Number</code> | The maximum number of log lines per batch. Value must be between 1000 and 1,000,000. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the logpush job to create. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.ownershipChallenge">ownershipChallenge</a></code> | <code>java.lang.String</code> | Ownership challenge token to prove destination ownership, required when destination is Amazon S3, Google Cloud Storage, Microsoft Azure or Sumo Logic. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`. |
@@ -133,11 +139,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
+The kind of the dataset to use with the logpush job.
 
-Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination). Available values: `access_requests`, `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`, `workers_trace_events`.
+Available values: `access_requests`, `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`, `workers_trace_events`, `device_posture_results`, `zero_trust_network_sessions`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
 
 ---
 
@@ -149,7 +155,7 @@ Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
 
 Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
 
 ---
 
@@ -159,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
 
 ---
 
@@ -169,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
 
 ---
 
@@ -179,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#filter LogpushJob#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#filter LogpushJob#filter}
 
 ---
 
@@ -191,7 +197,7 @@ A higher frequency will result in logs being pushed on faster with smaller files
 
 `low` frequency will push logs less often with larger files. Available values: `high`, `low`. Defaults to `high`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
 
 ---
 
@@ -199,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#id LogpushJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#id LogpushJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -212,7 +218,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#kind LogpushJob#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#kind LogpushJob#kind}
 
 ---
 
@@ -222,7 +228,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+
+---
+
+##### `maxUploadBytes`<sup>Optional</sup> <a name="maxUploadBytes" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.maxUploadBytes"></a>
+
+- *Type:* java.lang.Number
+
+The maximum uncompressed file size of a batch of logs. Value must be between 5MB and 1GB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
+
+---
+
+##### `maxUploadIntervalSeconds`<sup>Optional</sup> <a name="maxUploadIntervalSeconds" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.maxUploadIntervalSeconds"></a>
+
+- *Type:* java.lang.Number
+
+The maximum interval in seconds for log batches. Value must be between 30 and 300.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
+
+---
+
+##### `maxUploadRecords`<sup>Optional</sup> <a name="maxUploadRecords" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer.parameter.maxUploadRecords"></a>
+
+- *Type:* java.lang.Number
+
+The maximum number of log lines per batch. Value must be between 1000 and 1,000,000.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
 
 ---
 
@@ -232,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the logpush job to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#name LogpushJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#name LogpushJob#name}
 
 ---
 
@@ -244,7 +280,7 @@ Ownership challenge token to prove destination ownership, required when destinat
 
 See [Developer documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#usage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
 
 ---
 
@@ -254,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
 
 ---
 
@@ -285,6 +321,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetKind">resetKind</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetLogpullOptions">resetLogpullOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetMaxUploadBytes">resetMaxUploadBytes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetMaxUploadIntervalSeconds">resetMaxUploadIntervalSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetMaxUploadRecords">resetMaxUploadRecords</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetOwnershipChallenge">resetOwnershipChallenge</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetZoneId">resetZoneId</a></code> | *No description.* |
@@ -517,6 +556,24 @@ public void resetKind()
 public void resetLogpullOptions()
 ```
 
+##### `resetMaxUploadBytes` <a name="resetMaxUploadBytes" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetMaxUploadBytes"></a>
+
+```java
+public void resetMaxUploadBytes()
+```
+
+##### `resetMaxUploadIntervalSeconds` <a name="resetMaxUploadIntervalSeconds" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetMaxUploadIntervalSeconds"></a>
+
+```java
+public void resetMaxUploadIntervalSeconds()
+```
+
+##### `resetMaxUploadRecords` <a name="resetMaxUploadRecords" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetMaxUploadRecords"></a>
+
+```java
+public void resetMaxUploadRecords()
+```
+
 ##### `resetName` <a name="resetName" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.resetName"></a>
 
 ```java
@@ -632,6 +689,9 @@ LogpushJob.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.kindInput">kindInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.logpullOptionsInput">logpullOptionsInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadBytesInput">maxUploadBytesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadIntervalSecondsInput">maxUploadIntervalSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadRecordsInput">maxUploadRecordsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.ownershipChallengeInput">ownershipChallengeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -644,6 +704,9 @@ LogpushJob.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.kind">kind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.logpullOptions">logpullOptions</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadBytes">maxUploadBytes</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadIntervalSeconds">maxUploadIntervalSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadRecords">maxUploadRecords</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.ownershipChallenge">ownershipChallenge</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -882,6 +945,36 @@ public java.lang.String getLogpullOptionsInput();
 
 ---
 
+##### `maxUploadBytesInput`<sup>Optional</sup> <a name="maxUploadBytesInput" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadBytesInput"></a>
+
+```java
+public java.lang.Number getMaxUploadBytesInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxUploadIntervalSecondsInput`<sup>Optional</sup> <a name="maxUploadIntervalSecondsInput" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadIntervalSecondsInput"></a>
+
+```java
+public java.lang.Number getMaxUploadIntervalSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxUploadRecordsInput`<sup>Optional</sup> <a name="maxUploadRecordsInput" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadRecordsInput"></a>
+
+```java
+public java.lang.Number getMaxUploadRecordsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.nameInput"></a>
 
 ```java
@@ -1002,6 +1095,36 @@ public java.lang.String getLogpullOptions();
 
 ---
 
+##### `maxUploadBytes`<sup>Required</sup> <a name="maxUploadBytes" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadBytes"></a>
+
+```java
+public java.lang.Number getMaxUploadBytes();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxUploadIntervalSeconds`<sup>Required</sup> <a name="maxUploadIntervalSeconds" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadIntervalSeconds"></a>
+
+```java
+public java.lang.Number getMaxUploadIntervalSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxUploadRecords`<sup>Required</sup> <a name="maxUploadRecords" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.maxUploadRecords"></a>
+
+```java
+public java.lang.Number getMaxUploadRecords();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.property.name"></a>
 
 ```java
@@ -1081,6 +1204,9 @@ LogpushJobConfig.builder()
 //  .id(java.lang.String)
 //  .kind(java.lang.String)
 //  .logpullOptions(java.lang.String)
+//  .maxUploadBytes(java.lang.Number)
+//  .maxUploadIntervalSeconds(java.lang.Number)
+//  .maxUploadRecords(java.lang.Number)
 //  .name(java.lang.String)
 //  .ownershipChallenge(java.lang.String)
 //  .zoneId(java.lang.String)
@@ -1098,15 +1224,18 @@ LogpushJobConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.dataset">dataset</a></code> | <code>java.lang.String</code> | Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.dataset">dataset</a></code> | <code>java.lang.String</code> | The kind of the dataset to use with the logpush job. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.destinationConf">destinationConf</a></code> | <code>java.lang.String</code> | Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable the job. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.filter">filter</a></code> | <code>java.lang.String</code> | Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/). |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.frequency">frequency</a></code> | <code>java.lang.String</code> | A higher frequency will result in logs being pushed on faster with smaller files. |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#id LogpushJob#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#id LogpushJob#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.logpullOptions">logpullOptions</a></code> | <code>java.lang.String</code> | Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options). |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.maxUploadBytes">maxUploadBytes</a></code> | <code>java.lang.Number</code> | The maximum uncompressed file size of a batch of logs. Value must be between 5MB and 1GB. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.maxUploadIntervalSeconds">maxUploadIntervalSeconds</a></code> | <code>java.lang.Number</code> | The maximum interval in seconds for log batches. Value must be between 30 and 300. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.maxUploadRecords">maxUploadRecords</a></code> | <code>java.lang.Number</code> | The maximum number of log lines per batch. Value must be between 1000 and 1,000,000. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the logpush job to create. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.ownershipChallenge">ownershipChallenge</a></code> | <code>java.lang.String</code> | Ownership challenge token to prove destination ownership, required when destination is Amazon S3, Google Cloud Storage, Microsoft Azure or Sumo Logic. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`. |
@@ -1191,11 +1320,11 @@ public java.lang.String getDataset();
 
 - *Type:* java.lang.String
 
-Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
+The kind of the dataset to use with the logpush job.
 
-Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination). Available values: `access_requests`, `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`, `workers_trace_events`.
+Available values: `access_requests`, `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`, `workers_trace_events`, `device_posture_results`, `zero_trust_network_sessions`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
 
 ---
 
@@ -1211,7 +1340,7 @@ Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
 
 Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
 
 ---
 
@@ -1225,7 +1354,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
 
 ---
 
@@ -1239,7 +1368,7 @@ public java.lang.Object getEnabled();
 
 Whether to enable the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
 
 ---
 
@@ -1253,7 +1382,7 @@ public java.lang.String getFilter();
 
 Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#filter LogpushJob#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#filter LogpushJob#filter}
 
 ---
 
@@ -1269,7 +1398,7 @@ A higher frequency will result in logs being pushed on faster with smaller files
 
 `low` frequency will push logs less often with larger files. Available values: `high`, `low`. Defaults to `high`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
 
 ---
 
@@ -1281,7 +1410,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#id LogpushJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#id LogpushJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1298,7 +1427,7 @@ public java.lang.String getKind();
 
 The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#kind LogpushJob#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#kind LogpushJob#kind}
 
 ---
 
@@ -1312,7 +1441,49 @@ public java.lang.String getLogpullOptions();
 
 Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+
+---
+
+##### `maxUploadBytes`<sup>Optional</sup> <a name="maxUploadBytes" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.maxUploadBytes"></a>
+
+```java
+public java.lang.Number getMaxUploadBytes();
+```
+
+- *Type:* java.lang.Number
+
+The maximum uncompressed file size of a batch of logs. Value must be between 5MB and 1GB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
+
+---
+
+##### `maxUploadIntervalSeconds`<sup>Optional</sup> <a name="maxUploadIntervalSeconds" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.maxUploadIntervalSeconds"></a>
+
+```java
+public java.lang.Number getMaxUploadIntervalSeconds();
+```
+
+- *Type:* java.lang.Number
+
+The maximum interval in seconds for log batches. Value must be between 30 and 300.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
+
+---
+
+##### `maxUploadRecords`<sup>Optional</sup> <a name="maxUploadRecords" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.property.maxUploadRecords"></a>
+
+```java
+public java.lang.Number getMaxUploadRecords();
+```
+
+- *Type:* java.lang.Number
+
+The maximum number of log lines per batch. Value must be between 1000 and 1,000,000.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
 
 ---
 
@@ -1326,7 +1497,7 @@ public java.lang.String getName();
 
 The name of the logpush job to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#name LogpushJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#name LogpushJob#name}
 
 ---
 
@@ -1342,7 +1513,7 @@ Ownership challenge token to prove destination ownership, required when destinat
 
 See [Developer documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#usage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
 
 ---
 
@@ -1356,7 +1527,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
 
 ---
 
