@@ -1,6 +1,6 @@
 # `cloudflare_pages_project`
 
-Refer to the Terraform Registory for docs: [`cloudflare_pages_project`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project).
+Refer to the Terraform Registory for docs: [`cloudflare_pages_project`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project).
 
 # `pagesProject` Submodule <a name="`pagesProject` Submodule" id="@cdktf/provider-cloudflare.pagesProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_pages_project`](https://
 
 ### PagesProject <a name="PagesProject" id="@cdktf/provider-cloudflare.pagesProject.PagesProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project cloudflare_pages_project}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project cloudflare_pages_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer"></a>
 
@@ -802,7 +802,7 @@ public string BuildCommand { get; set; }
 
 Command used to build project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#build_command PagesProject#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#build_command PagesProject#build_command}
 
 ---
 
@@ -816,7 +816,7 @@ public string DestinationDir { get; set; }
 
 Output directory of the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
 
 ---
 
@@ -830,7 +830,7 @@ public string RootDir { get; set; }
 
 Directory to run the command.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
 
 ---
 
@@ -844,7 +844,7 @@ public string WebAnalyticsTag { get; set; }
 
 The classifying tag for analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
 
 ---
 
@@ -858,7 +858,7 @@ public string WebAnalyticsToken { get; set; }
 
 The auth token for analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
 
 ---
 
@@ -903,7 +903,7 @@ new PagesProjectConfig {
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.productionBranch">ProductionBranch</a></code> | <code>string</code> | The name of the branch that is used for the production environment. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.buildConfig">BuildConfig</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | build_config block. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.deploymentConfigs">DeploymentConfigs</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | deployment_configs block. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#id PagesProject#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#id PagesProject#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.source">Source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | source block. |
 
 ---
@@ -988,7 +988,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#account_id PagesProject#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#account_id PagesProject#account_id}
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Name { get; set; }
 
 Name of the project. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ public string ProductionBranch { get; set; }
 
 The name of the branch that is used for the production environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
 
 ---
 
@@ -1030,7 +1030,7 @@ public PagesProjectBuildConfig BuildConfig { get; set; }
 
 build_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#build_config PagesProject#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#build_config PagesProject#build_config}
 
 ---
 
@@ -1044,7 +1044,7 @@ public PagesProjectDeploymentConfigs DeploymentConfigs { get; set; }
 
 deployment_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#id PagesProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#id PagesProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1073,7 @@ public PagesProjectSource Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#source PagesProject#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#source PagesProject#source}
 
 ---
 
@@ -1109,7 +1109,7 @@ public PagesProjectDeploymentConfigsPreview Preview { get; set; }
 
 preview block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#preview PagesProject#preview}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#preview PagesProject#preview}
 
 ---
 
@@ -1123,7 +1123,7 @@ public PagesProjectDeploymentConfigsProduction Production { get; set; }
 
 production block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#production PagesProject#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#production PagesProject#production}
 
 ---
 
@@ -1179,7 +1179,7 @@ public object AlwaysUseLatestCompatibilityDate { get; set; }
 
 Use latest compatibility date for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
 
 ---
 
@@ -1193,7 +1193,7 @@ public string CompatibilityDate { get; set; }
 
 Compatibility date used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 
 ---
 
@@ -1207,7 +1207,7 @@ public string[] CompatibilityFlags { get; set; }
 
 Compatibility flags used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 
 ---
 
@@ -1221,7 +1221,7 @@ public System.Collections.Generic.IDictionary<string, string> D1Databases { get;
 
 D1 Databases used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
 
 ---
 
@@ -1235,7 +1235,7 @@ public System.Collections.Generic.IDictionary<string, string> DurableObjectNames
 
 Durable Object namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
 
 ---
 
@@ -1249,7 +1249,7 @@ public System.Collections.Generic.IDictionary<string, string> EnvironmentVariabl
 
 Environment variables for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
 
 ---
 
@@ -1263,7 +1263,7 @@ public object FailOpen { get; set; }
 
 Fail open used for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
 
 ---
 
@@ -1277,7 +1277,7 @@ public System.Collections.Generic.IDictionary<string, string> KvNamespaces { get
 
 KV namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
 
 ---
 
@@ -1291,7 +1291,7 @@ public System.Collections.Generic.IDictionary<string, string> R2Buckets { get; s
 
 R2 Buckets used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
 
 ---
 
@@ -1305,7 +1305,7 @@ public System.Collections.Generic.IDictionary<string, string> Secrets { get; set
 
 Encrypted environment variables for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#secrets PagesProject#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#secrets PagesProject#secrets}
 
 ---
 
@@ -1319,7 +1319,7 @@ public object ServiceBinding { get; set; }
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
 
 ---
 
@@ -1333,7 +1333,7 @@ public string UsageModel { get; set; }
 
 Usage model used for Pages Functions. Defaults to `bundled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
 
 ---
 
@@ -1371,7 +1371,7 @@ public string Name { get; set; }
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1385,7 +1385,7 @@ public string Service { get; set; }
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#service PagesProject#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#service PagesProject#service}
 
 ---
 
@@ -1399,7 +1399,7 @@ public string Environment { get; set; }
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#environment PagesProject#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#environment PagesProject#environment}
 
 ---
 
@@ -1455,7 +1455,7 @@ public object AlwaysUseLatestCompatibilityDate { get; set; }
 
 Use latest compatibility date for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
 
 ---
 
@@ -1469,7 +1469,7 @@ public string CompatibilityDate { get; set; }
 
 Compatibility date used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 
 ---
 
@@ -1483,7 +1483,7 @@ public string[] CompatibilityFlags { get; set; }
 
 Compatibility flags used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 
 ---
 
@@ -1497,7 +1497,7 @@ public System.Collections.Generic.IDictionary<string, string> D1Databases { get;
 
 D1 Databases used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
 
 ---
 
@@ -1511,7 +1511,7 @@ public System.Collections.Generic.IDictionary<string, string> DurableObjectNames
 
 Durable Object namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
 
 ---
 
@@ -1525,7 +1525,7 @@ public System.Collections.Generic.IDictionary<string, string> EnvironmentVariabl
 
 Environment variables for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
 
 ---
 
@@ -1539,7 +1539,7 @@ public object FailOpen { get; set; }
 
 Fail open used for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
 
 ---
 
@@ -1553,7 +1553,7 @@ public System.Collections.Generic.IDictionary<string, string> KvNamespaces { get
 
 KV namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
 
 ---
 
@@ -1567,7 +1567,7 @@ public System.Collections.Generic.IDictionary<string, string> R2Buckets { get; s
 
 R2 Buckets used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
 
 ---
 
@@ -1581,7 +1581,7 @@ public System.Collections.Generic.IDictionary<string, string> Secrets { get; set
 
 Encrypted environment variables for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#secrets PagesProject#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#secrets PagesProject#secrets}
 
 ---
 
@@ -1595,7 +1595,7 @@ public object ServiceBinding { get; set; }
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
 
 ---
 
@@ -1609,7 +1609,7 @@ public string UsageModel { get; set; }
 
 Usage model used for Pages Functions. Defaults to `bundled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
 
 ---
 
@@ -1647,7 +1647,7 @@ public string Name { get; set; }
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1661,7 +1661,7 @@ public string Service { get; set; }
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#service PagesProject#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#service PagesProject#service}
 
 ---
 
@@ -1675,7 +1675,7 @@ public string Environment { get; set; }
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#environment PagesProject#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#environment PagesProject#environment}
 
 ---
 
@@ -1711,7 +1711,7 @@ public PagesProjectSourceConfig Config { get; set; }
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#config PagesProject#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#config PagesProject#config}
 
 ---
 
@@ -1725,7 +1725,7 @@ public string Type { get; set; }
 
 Project host type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#type PagesProject#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#type PagesProject#type}
 
 ---
 
@@ -1775,7 +1775,7 @@ public string ProductionBranch { get; set; }
 
 Project production branch name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
 
 ---
 
@@ -1789,7 +1789,7 @@ public object DeploymentsEnabled { get; set; }
 
 Toggle deployments on this repo. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
 
 ---
 
@@ -1803,7 +1803,7 @@ public string Owner { get; set; }
 
 Project owner username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#owner PagesProject#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#owner PagesProject#owner}
 
 ---
 
@@ -1817,7 +1817,7 @@ public object PrCommentsEnabled { get; set; }
 
 Enable Pages to comment on Pull Requests. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
 
 ---
 
@@ -1831,7 +1831,7 @@ public string[] PreviewBranchExcludes { get; set; }
 
 Branches will be excluded from automatic deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
 
 ---
 
@@ -1845,7 +1845,7 @@ public string[] PreviewBranchIncludes { get; set; }
 
 Branches will be included for automatic deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
 
 ---
 
@@ -1859,7 +1859,7 @@ public string PreviewDeploymentSetting { get; set; }
 
 Preview Deployment Setting. Defaults to `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
 
 ---
 
@@ -1873,7 +1873,7 @@ public object ProductionDeploymentEnabled { get; set; }
 
 Enable production deployments. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
 
 ---
 
@@ -1887,7 +1887,7 @@ public string RepoName { get; set; }
 
 Project repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
 
 ---
 

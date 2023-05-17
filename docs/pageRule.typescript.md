@@ -1,6 +1,6 @@
 # `cloudflare_page_rule`
 
-Refer to the Terraform Registory for docs: [`cloudflare_page_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule).
+Refer to the Terraform Registory for docs: [`cloudflare_page_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule).
 
 # `pageRule` Submodule <a name="`pageRule` Submodule" id="@cdktf/provider-cloudflare.pageRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_page_rule`](https://regi
 
 ### PageRule <a name="PageRule" id="@cdktf/provider-cloudflare.pageRule.PageRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule cloudflare_page_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule cloudflare_page_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pageRule.PageRule.Initializer"></a>
 
@@ -691,42 +691,42 @@ const pageRuleActions: pageRule.PageRuleActions = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.alwaysUseHttps">alwaysUseHttps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to `false`. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.automaticHttpsRewrites">automaticHttpsRewrites</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.browserCacheTtl">browserCacheTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.browserCheck">browserCheck</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#browser_check PageRule#browser_check}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.bypassCacheOnCookie">bypassCacheOnCookie</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#bypass_cache_on_cookie PageRule#bypass_cache_on_cookie}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheByDeviceType">cacheByDeviceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_by_device_type PageRule#cache_by_device_type}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheDeceptionArmor">cacheDeceptionArmor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_deception_armor PageRule#cache_deception_armor}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.automaticHttpsRewrites">automaticHttpsRewrites</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.browserCacheTtl">browserCacheTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.browserCheck">browserCheck</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#browser_check PageRule#browser_check}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.bypassCacheOnCookie">bypassCacheOnCookie</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#bypass_cache_on_cookie PageRule#bypass_cache_on_cookie}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheByDeviceType">cacheByDeviceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_by_device_type PageRule#cache_by_device_type}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheDeceptionArmor">cacheDeceptionArmor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_deception_armor PageRule#cache_deception_armor}. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheKeyFields">cacheKeyFields</a></code> | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFields">PageRuleActionsCacheKeyFields</a></code> | cache_key_fields block. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheLevel">cacheLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_level PageRule#cache_level}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheOnCookie">cacheOnCookie</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_on_cookie PageRule#cache_on_cookie}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheLevel">cacheLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_level PageRule#cache_level}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheOnCookie">cacheOnCookie</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_on_cookie PageRule#cache_on_cookie}. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.cacheTtlByStatus">cacheTtlByStatus</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus">PageRuleActionsCacheTtlByStatus</a>[]</code> | cache_ttl_by_status block. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.disableApps">disableApps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.disablePerformance">disablePerformance</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.disableRailgun">disableRailgun</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.disableSecurity">disableSecurity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.disableZaraz">disableZaraz</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to `false`. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.edgeCacheTtl">edgeCacheTtl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.emailObfuscation">emailObfuscation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.explicitCacheControl">explicitCacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#explicit_cache_control PageRule#explicit_cache_control}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.edgeCacheTtl">edgeCacheTtl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.emailObfuscation">emailObfuscation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.explicitCacheControl">explicitCacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#explicit_cache_control PageRule#explicit_cache_control}. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.forwardingUrl">forwardingUrl</a></code> | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl">PageRuleActionsForwardingUrl</a></code> | forwarding_url block. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.hostHeaderOverride">hostHeaderOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#host_header_override PageRule#host_header_override}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.ipGeolocation">ipGeolocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ip_geolocation PageRule#ip_geolocation}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.hostHeaderOverride">hostHeaderOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#host_header_override PageRule#host_header_override}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.ipGeolocation">ipGeolocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ip_geolocation PageRule#ip_geolocation}. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.minify">minify</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify">PageRuleActionsMinify</a>[]</code> | minify block. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.mirage">mirage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#mirage PageRule#mirage}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.opportunisticEncryption">opportunisticEncryption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#opportunistic_encryption PageRule#opportunistic_encryption}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.originErrorPagePassThru">originErrorPagePassThru</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#origin_error_page_pass_thru PageRule#origin_error_page_pass_thru}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.polish">polish</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#polish PageRule#polish}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.resolveOverride">resolveOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#resolve_override PageRule#resolve_override}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.respectStrongEtag">respectStrongEtag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#respect_strong_etag PageRule#respect_strong_etag}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.responseBuffering">responseBuffering</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#response_buffering PageRule#response_buffering}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.rocketLoader">rocketLoader</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#rocket_loader PageRule#rocket_loader}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.securityLevel">securityLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#security_level PageRule#security_level}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.serverSideExclude">serverSideExclude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#server_side_exclude PageRule#server_side_exclude}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.sortQueryStringForCache">sortQueryStringForCache</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#sort_query_string_for_cache PageRule#sort_query_string_for_cache}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.ssl">ssl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ssl PageRule#ssl}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.trueClientIpHeader">trueClientIpHeader</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#true_client_ip_header PageRule#true_client_ip_header}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.waf">waf</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#waf PageRule#waf}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.mirage">mirage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#mirage PageRule#mirage}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.opportunisticEncryption">opportunisticEncryption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#opportunistic_encryption PageRule#opportunistic_encryption}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.originErrorPagePassThru">originErrorPagePassThru</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#origin_error_page_pass_thru PageRule#origin_error_page_pass_thru}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.polish">polish</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#polish PageRule#polish}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.resolveOverride">resolveOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#resolve_override PageRule#resolve_override}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.respectStrongEtag">respectStrongEtag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#respect_strong_etag PageRule#respect_strong_etag}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.responseBuffering">responseBuffering</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#response_buffering PageRule#response_buffering}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.rocketLoader">rocketLoader</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#rocket_loader PageRule#rocket_loader}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.securityLevel">securityLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#security_level PageRule#security_level}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.serverSideExclude">serverSideExclude</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#server_side_exclude PageRule#server_side_exclude}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.sortQueryStringForCache">sortQueryStringForCache</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#sort_query_string_for_cache PageRule#sort_query_string_for_cache}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.ssl">ssl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ssl PageRule#ssl}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.trueClientIpHeader">trueClientIpHeader</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#true_client_ip_header PageRule#true_client_ip_header}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions.property.waf">waf</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#waf PageRule#waf}. |
 
 ---
 
@@ -740,7 +740,7 @@ public readonly alwaysUseHttps: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#always_use_https PageRule#always_use_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#always_use_https PageRule#always_use_https}
 
 ---
 
@@ -752,7 +752,7 @@ public readonly automaticHttpsRewrites: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}.
 
 ---
 
@@ -764,7 +764,7 @@ public readonly browserCacheTtl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}.
 
 ---
 
@@ -776,7 +776,7 @@ public readonly browserCheck: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#browser_check PageRule#browser_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#browser_check PageRule#browser_check}.
 
 ---
 
@@ -788,7 +788,7 @@ public readonly bypassCacheOnCookie: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#bypass_cache_on_cookie PageRule#bypass_cache_on_cookie}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#bypass_cache_on_cookie PageRule#bypass_cache_on_cookie}.
 
 ---
 
@@ -800,7 +800,7 @@ public readonly cacheByDeviceType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_by_device_type PageRule#cache_by_device_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_by_device_type PageRule#cache_by_device_type}.
 
 ---
 
@@ -812,7 +812,7 @@ public readonly cacheDeceptionArmor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_deception_armor PageRule#cache_deception_armor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_deception_armor PageRule#cache_deception_armor}.
 
 ---
 
@@ -826,7 +826,7 @@ public readonly cacheKeyFields: PageRuleActionsCacheKeyFields;
 
 cache_key_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_key_fields PageRule#cache_key_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_key_fields PageRule#cache_key_fields}
 
 ---
 
@@ -838,7 +838,7 @@ public readonly cacheLevel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_level PageRule#cache_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_level PageRule#cache_level}.
 
 ---
 
@@ -850,7 +850,7 @@ public readonly cacheOnCookie: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_on_cookie PageRule#cache_on_cookie}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_on_cookie PageRule#cache_on_cookie}.
 
 ---
 
@@ -864,7 +864,7 @@ public readonly cacheTtlByStatus: IResolvable | PageRuleActionsCacheTtlByStatus[
 
 cache_ttl_by_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cache_ttl_by_status PageRule#cache_ttl_by_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cache_ttl_by_status PageRule#cache_ttl_by_status}
 
 ---
 
@@ -878,7 +878,7 @@ public readonly disableApps: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#disable_apps PageRule#disable_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#disable_apps PageRule#disable_apps}
 
 ---
 
@@ -892,7 +892,7 @@ public readonly disablePerformance: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#disable_performance PageRule#disable_performance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#disable_performance PageRule#disable_performance}
 
 ---
 
@@ -906,7 +906,7 @@ public readonly disableRailgun: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#disable_railgun PageRule#disable_railgun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#disable_railgun PageRule#disable_railgun}
 
 ---
 
@@ -920,7 +920,7 @@ public readonly disableSecurity: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#disable_security PageRule#disable_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#disable_security PageRule#disable_security}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly disableZaraz: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#disable_zaraz PageRule#disable_zaraz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#disable_zaraz PageRule#disable_zaraz}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly edgeCacheTtl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}.
 
 ---
 
@@ -958,7 +958,7 @@ public readonly emailObfuscation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly explicitCacheControl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#explicit_cache_control PageRule#explicit_cache_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#explicit_cache_control PageRule#explicit_cache_control}.
 
 ---
 
@@ -984,7 +984,7 @@ public readonly forwardingUrl: PageRuleActionsForwardingUrl;
 
 forwarding_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#forwarding_url PageRule#forwarding_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#forwarding_url PageRule#forwarding_url}
 
 ---
 
@@ -996,7 +996,7 @@ public readonly hostHeaderOverride: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#host_header_override PageRule#host_header_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#host_header_override PageRule#host_header_override}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly ipGeolocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ip_geolocation PageRule#ip_geolocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ip_geolocation PageRule#ip_geolocation}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly minify: IResolvable | PageRuleActionsMinify[];
 
 minify block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#minify PageRule#minify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#minify PageRule#minify}
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly mirage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#mirage PageRule#mirage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#mirage PageRule#mirage}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly opportunisticEncryption: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#opportunistic_encryption PageRule#opportunistic_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#opportunistic_encryption PageRule#opportunistic_encryption}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly originErrorPagePassThru: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#origin_error_page_pass_thru PageRule#origin_error_page_pass_thru}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#origin_error_page_pass_thru PageRule#origin_error_page_pass_thru}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly polish: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#polish PageRule#polish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#polish PageRule#polish}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly resolveOverride: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#resolve_override PageRule#resolve_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#resolve_override PageRule#resolve_override}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly respectStrongEtag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#respect_strong_etag PageRule#respect_strong_etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#respect_strong_etag PageRule#respect_strong_etag}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly responseBuffering: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#response_buffering PageRule#response_buffering}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#response_buffering PageRule#response_buffering}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly rocketLoader: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#rocket_loader PageRule#rocket_loader}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#rocket_loader PageRule#rocket_loader}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly securityLevel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#security_level PageRule#security_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#security_level PageRule#security_level}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly serverSideExclude: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#server_side_exclude PageRule#server_side_exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#server_side_exclude PageRule#server_side_exclude}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly sortQueryStringForCache: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#sort_query_string_for_cache PageRule#sort_query_string_for_cache}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#sort_query_string_for_cache PageRule#sort_query_string_for_cache}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly ssl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ssl PageRule#ssl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ssl PageRule#ssl}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly trueClientIpHeader: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#true_client_ip_header PageRule#true_client_ip_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#true_client_ip_header PageRule#true_client_ip_header}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly waf: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#waf PageRule#waf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#waf PageRule#waf}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly host: PageRuleActionsCacheKeyFieldsHost;
 
 host block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#host PageRule#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#host PageRule#host}
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly queryString: PageRuleActionsCacheKeyFieldsQueryString;
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#query_string PageRule#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#query_string PageRule#query_string}
 
 ---
 
@@ -1254,7 +1254,7 @@ public readonly user: PageRuleActionsCacheKeyFieldsUser;
 
 user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#user PageRule#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#user PageRule#user}
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly cookie: PageRuleActionsCacheKeyFieldsCookie;
 
 cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#cookie PageRule#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#cookie PageRule#cookie}
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly header: PageRuleActionsCacheKeyFieldsHeader;
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#header PageRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#header PageRule#header}
 
 ---
 
@@ -1300,8 +1300,8 @@ const pageRuleActionsCacheKeyFieldsCookie: pageRule.PageRuleActionsCacheKeyField
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie.property.checkPresence">checkPresence</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#check_presence PageRule#check_presence}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#include PageRule#include}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie.property.checkPresence">checkPresence</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#check_presence PageRule#check_presence}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#include PageRule#include}. |
 
 ---
 
@@ -1313,7 +1313,7 @@ public readonly checkPresence: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#check_presence PageRule#check_presence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#check_presence PageRule#check_presence}.
 
 ---
 
@@ -1325,7 +1325,7 @@ public readonly include: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#include PageRule#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#include PageRule#include}.
 
 ---
 
@@ -1343,9 +1343,9 @@ const pageRuleActionsCacheKeyFieldsHeader: pageRule.PageRuleActionsCacheKeyField
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.property.checkPresence">checkPresence</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#check_presence PageRule#check_presence}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.property.exclude">exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#exclude PageRule#exclude}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#include PageRule#include}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.property.checkPresence">checkPresence</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#check_presence PageRule#check_presence}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.property.exclude">exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#exclude PageRule#exclude}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#include PageRule#include}. |
 
 ---
 
@@ -1357,7 +1357,7 @@ public readonly checkPresence: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#check_presence PageRule#check_presence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#check_presence PageRule#check_presence}.
 
 ---
 
@@ -1369,7 +1369,7 @@ public readonly exclude: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#exclude PageRule#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#exclude PageRule#exclude}.
 
 ---
 
@@ -1381,7 +1381,7 @@ public readonly include: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#include PageRule#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#include PageRule#include}.
 
 ---
 
@@ -1413,7 +1413,7 @@ public readonly resolved: boolean | IResolvable;
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#resolved PageRule#resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#resolved PageRule#resolved}
 
 ---
 
@@ -1431,9 +1431,9 @@ const pageRuleActionsCacheKeyFieldsQueryString: pageRule.PageRuleActionsCacheKey
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.property.exclude">exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#exclude PageRule#exclude}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.property.ignore">ignore</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ignore PageRule#ignore}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#include PageRule#include}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.property.exclude">exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#exclude PageRule#exclude}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.property.ignore">ignore</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ignore PageRule#ignore}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.property.include">include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#include PageRule#include}. |
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly exclude: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#exclude PageRule#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#exclude PageRule#exclude}.
 
 ---
 
@@ -1457,7 +1457,7 @@ public readonly ignore: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ignore PageRule#ignore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ignore PageRule#ignore}.
 
 ---
 
@@ -1469,7 +1469,7 @@ public readonly include: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#include PageRule#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#include PageRule#include}.
 
 ---
 
@@ -1487,9 +1487,9 @@ const pageRuleActionsCacheKeyFieldsUser: pageRule.PageRuleActionsCacheKeyFieldsU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.property.deviceType">deviceType</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#device_type PageRule#device_type}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.property.geo">geo</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#geo PageRule#geo}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.property.lang">lang</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#lang PageRule#lang}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.property.deviceType">deviceType</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#device_type PageRule#device_type}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.property.geo">geo</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#geo PageRule#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.property.lang">lang</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#lang PageRule#lang}. |
 
 ---
 
@@ -1501,7 +1501,7 @@ public readonly deviceType: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#device_type PageRule#device_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#device_type PageRule#device_type}.
 
 ---
 
@@ -1513,7 +1513,7 @@ public readonly geo: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#geo PageRule#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#geo PageRule#geo}.
 
 ---
 
@@ -1525,7 +1525,7 @@ public readonly lang: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#lang PageRule#lang}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#lang PageRule#lang}.
 
 ---
 
@@ -1543,8 +1543,8 @@ const pageRuleActionsCacheTtlByStatus: pageRule.PageRuleActionsCacheTtlByStatus 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus.property.codes">codes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#codes PageRule#codes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ttl PageRule#ttl}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus.property.codes">codes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#codes PageRule#codes}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ttl PageRule#ttl}. |
 
 ---
 
@@ -1556,7 +1556,7 @@ public readonly codes: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#codes PageRule#codes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#codes PageRule#codes}.
 
 ---
 
@@ -1568,7 +1568,7 @@ public readonly ttl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#ttl PageRule#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#ttl PageRule#ttl}.
 
 ---
 
@@ -1586,8 +1586,8 @@ const pageRuleActionsForwardingUrl: pageRule.PageRuleActionsForwardingUrl = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl.property.statusCode">statusCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#status_code PageRule#status_code}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#url PageRule#url}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl.property.statusCode">statusCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#status_code PageRule#status_code}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#url PageRule#url}. |
 
 ---
 
@@ -1599,7 +1599,7 @@ public readonly statusCode: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#status_code PageRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#status_code PageRule#status_code}.
 
 ---
 
@@ -1611,7 +1611,7 @@ public readonly url: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#url PageRule#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#url PageRule#url}.
 
 ---
 
@@ -1629,9 +1629,9 @@ const pageRuleActionsMinify: pageRule.PageRuleActionsMinify = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify.property.css">css</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#css PageRule#css}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify.property.html">html</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#html PageRule#html}. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify.property.js">js</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#js PageRule#js}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify.property.css">css</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#css PageRule#css}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify.property.html">html</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#html PageRule#html}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify.property.js">js</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#js PageRule#js}. |
 
 ---
 
@@ -1643,7 +1643,7 @@ public readonly css: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#css PageRule#css}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#css PageRule#css}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public readonly html: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#html PageRule#html}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#html PageRule#html}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public readonly js: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#js PageRule#js}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#js PageRule#js}.
 
 ---
 
@@ -1693,9 +1693,9 @@ const pageRuleConfig: pageRule.PageRuleConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleActions">PageRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#target PageRule#target}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#target PageRule#target}. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#id PageRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#id PageRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.priority">priority</a></code> | <code>number</code> | Defaults to `1`. |
 | <code><a href="#@cdktf/provider-cloudflare.pageRule.PageRuleConfig.property.status">status</a></code> | <code>string</code> | Defaults to `active`. |
 
@@ -1781,7 +1781,7 @@ public readonly actions: PageRuleActions;
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#actions PageRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#actions PageRule#actions}
 
 ---
 
@@ -1793,7 +1793,7 @@ public readonly target: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#target PageRule#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#target PageRule#target}.
 
 ---
 
@@ -1807,7 +1807,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#zone_id PageRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#zone_id PageRule#zone_id}
 
 ---
 
@@ -1819,7 +1819,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#id PageRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#id PageRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1836,7 +1836,7 @@ public readonly priority: number;
 
 Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#priority PageRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#priority PageRule#priority}
 
 ---
 
@@ -1850,7 +1850,7 @@ public readonly status: string;
 
 Defaults to `active`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/page_rule#status PageRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/page_rule#status PageRule#status}
 
 ---
 

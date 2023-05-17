@@ -1,6 +1,6 @@
 # `cloudflare_turnstile_widget`
 
-Refer to the Terraform Registory for docs: [`cloudflare_turnstile_widget`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget).
+Refer to the Terraform Registory for docs: [`cloudflare_turnstile_widget`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget).
 
 # `turnstileWidget` Submodule <a name="`turnstileWidget` Submodule" id="@cdktf/provider-cloudflare.turnstileWidget"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_turnstile_widget`](https
 
 ### TurnstileWidget <a name="TurnstileWidget" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
@@ -29,11 +29,11 @@ TurnstileWidget.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .domains(java.util.List<java.lang.String>)
+    .mode(java.lang.String)
     .name(java.lang.String)
 //  .botFightMode(java.lang.Boolean)
 //  .botFightMode(IResolvable)
 //  .id(java.lang.String)
-//  .mode(java.lang.String)
 //  .offlabel(java.lang.Boolean)
 //  .offlabel(IResolvable)
 //  .region(java.lang.String)
@@ -53,10 +53,10 @@ TurnstileWidget.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Domains where the widget is deployed. |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | Widget Mode. Available values: `non-interactive`, `invisible`, `managed`. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Human readable widget name. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.botFightMode">botFightMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only). |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The identifier of this resource. This is the site key value. |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | Widget Mode. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.offlabel">offlabel</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not show any Cloudflare branding on the widget (Enterprise only). |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this widget can be used. |
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 
 ---
 
@@ -138,7 +138,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Domains where the widget is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.mode"></a>
+
+- *Type:* java.lang.String
+
+Widget Mode. Available values: `non-interactive`, `invisible`, `managed`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -148,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Human readable widget name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -158,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -168,20 +178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The identifier of this resource. This is the site key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.mode"></a>
-
-- *Type:* java.lang.String
-
-Widget Mode.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Do not show any Cloudflare branding on the widget (Enterprise only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Region where this widget can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 
@@ -227,7 +227,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetBotFightMode">resetBotFightMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetMode">resetMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOfflabel">resetOfflabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetRegion">resetRegion</a></code> | *No description.* |
 
@@ -427,12 +426,6 @@ public void resetBotFightMode()
 
 ```java
 public void resetId()
-```
-
-##### `resetMode` <a name="resetMode" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetMode"></a>
-
-```java
-public void resetMode()
 ```
 
 ##### `resetOfflabel` <a name="resetOfflabel" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOfflabel"></a>
@@ -908,11 +901,11 @@ TurnstileWidgetConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .domains(java.util.List<java.lang.String>)
+    .mode(java.lang.String)
     .name(java.lang.String)
 //  .botFightMode(java.lang.Boolean)
 //  .botFightMode(IResolvable)
 //  .id(java.lang.String)
-//  .mode(java.lang.String)
 //  .offlabel(java.lang.Boolean)
 //  .offlabel(IResolvable)
 //  .region(java.lang.String)
@@ -932,10 +925,10 @@ TurnstileWidgetConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Domains where the widget is deployed. |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | Widget Mode. Available values: `non-interactive`, `invisible`, `managed`. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Human readable widget name. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.botFightMode">botFightMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only). |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | The identifier of this resource. This is the site key value. |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | Widget Mode. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.offlabel">offlabel</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not show any Cloudflare branding on the widget (Enterprise only). |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this widget can be used. |
 
@@ -1021,7 +1014,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 
 ---
 
@@ -1035,7 +1028,21 @@ public java.util.List<java.lang.String> getDomains();
 
 Domains where the widget is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode"></a>
+
+```java
+public java.lang.String getMode();
+```
+
+- *Type:* java.lang.String
+
+Widget Mode. Available values: `non-interactive`, `invisible`, `managed`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1049,7 +1056,7 @@ public java.lang.String getName();
 
 Human readable widget name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -1063,7 +1070,7 @@ public java.lang.Object getBotFightMode();
 
 If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -1077,24 +1084,10 @@ public java.lang.String getId();
 
 The identifier of this resource. This is the site key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode"></a>
-
-```java
-public java.lang.String getMode();
-```
-
-- *Type:* java.lang.String
-
-Widget Mode.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1108,7 +1101,7 @@ public java.lang.Object getOfflabel();
 
 Do not show any Cloudflare branding on the widget (Enterprise only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -1122,7 +1115,7 @@ public java.lang.String getRegion();
 
 Region where this widget can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 

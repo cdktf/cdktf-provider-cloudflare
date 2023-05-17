@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface RegionalHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * The hostname to regionalize.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#id RegionalHostname#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#id RegionalHostname#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,29 +23,29 @@ export interface RegionalHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * The region key. See [the full region list](https://developers.cloudflare.com/data-localization/regional-services/get-started/).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
   */
   readonly regionKey: string;
   /**
   * The zone identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
   */
   readonly zoneId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#timeouts RegionalHostname#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#timeouts RegionalHostname#timeouts}
   */
   readonly timeouts?: RegionalHostnameTimeouts;
 }
 export interface RegionalHostnameTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#create RegionalHostname#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#create RegionalHostname#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname#update RegionalHostname#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname#update RegionalHostname#update}
   */
   readonly update?: string;
 }
@@ -143,7 +143,7 @@ export class RegionalHostnameTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname cloudflare_regional_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname cloudflare_regional_hostname}
 */
 export class RegionalHostname extends cdktf.TerraformResource {
 
@@ -157,7 +157,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_regional_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.5.0',
+        providerVersion: '4.6.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

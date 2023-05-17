@@ -1,6 +1,6 @@
 # `cloudflare_access_ca_certificate`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_ca_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate).
+Refer to the Terraform Registory for docs: [`cloudflare_access_ca_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate).
 
 # `accessCaCertificate` Submodule <a name="`accessCaCertificate` Submodule" id="@cdktf/provider-cloudflare.accessCaCertificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_ca_certificate`](
 
 ### AccessCaCertificate <a name="AccessCaCertificate" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
 
 accesscacertificate.NewAccessCaCertificate(scope Construct, id *string, config AccessCaCertificateConfig) AccessCaCertificate
 ```
@@ -291,7 +291,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
 
 accesscacertificate.AccessCaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
 
 accesscacertificate.AccessCaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ accesscacertificate.AccessCaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
 
 accesscacertificate.AccessCaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscacertificate"
 
 &accesscacertificate.AccessCaCertificateConfig {
 	Connection: interface{},
@@ -676,7 +676,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesscacert
 | <code><a href="#@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The Access Application ID to associate with the CA certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
-| <code><a href="#@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate#id AccessCaCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate#id AccessCaCertificate#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
 ---
@@ -761,7 +761,7 @@ ApplicationId *string
 
 The Access Application ID to associate with the CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate#application_id AccessCaCertificate#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate#application_id AccessCaCertificate#application_id}
 
 ---
 
@@ -775,7 +775,7 @@ AccountId *string
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate#account_id AccessCaCertificate#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate#account_id AccessCaCertificate#account_id}
 
 ---
 
@@ -787,7 +787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate#id AccessCaCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate#id AccessCaCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -804,7 +804,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/access_ca_certificate#zone_id AccessCaCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/access_ca_certificate#zone_id AccessCaCertificate#zone_id}
 
 ---
 

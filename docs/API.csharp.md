@@ -100,6 +100,7 @@ The following submodules are available:
 - [waitingRoom](./waitingRoom.csharp.md)
 - [waitingRoomEvent](./waitingRoomEvent.csharp.md)
 - [waitingRoomRules](./waitingRoomRules.csharp.md)
+- [waitingRoomSettings](./waitingRoomSettings.csharp.md)
 - [web3Hostname](./web3Hostname.csharp.md)
 - [workerCronTrigger](./workerCronTrigger.csharp.md)
 - [workerDomain](./workerDomain.csharp.md)

@@ -100,6 +100,7 @@ The following submodules are available:
 - [waitingRoom](./waitingRoom.typescript.md)
 - [waitingRoomEvent](./waitingRoomEvent.typescript.md)
 - [waitingRoomRules](./waitingRoomRules.typescript.md)
+- [waitingRoomSettings](./waitingRoomSettings.typescript.md)
 - [web3Hostname](./web3Hostname.typescript.md)
 - [workerCronTrigger](./workerCronTrigger.typescript.md)
 - [workerDomain](./workerDomain.typescript.md)

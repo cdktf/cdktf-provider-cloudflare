@@ -100,6 +100,7 @@ The following submodules are available:
 - [waitingRoom](./waitingRoom.python.md)
 - [waitingRoomEvent](./waitingRoomEvent.python.md)
 - [waitingRoomRules](./waitingRoomRules.python.md)
+- [waitingRoomSettings](./waitingRoomSettings.python.md)
 - [web3Hostname](./web3Hostname.python.md)
 - [workerCronTrigger](./workerCronTrigger.python.md)
 - [workerDomain](./workerDomain.python.md)

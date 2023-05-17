@@ -100,6 +100,7 @@ The following submodules are available:
 - [waitingRoom](./waitingRoom.java.md)
 - [waitingRoomEvent](./waitingRoomEvent.java.md)
 - [waitingRoomRules](./waitingRoomRules.java.md)
+- [waitingRoomSettings](./waitingRoomSettings.java.md)
 - [web3Hostname](./web3Hostname.java.md)
 - [workerCronTrigger](./workerCronTrigger.java.md)
 - [workerDomain](./workerDomain.java.md)
