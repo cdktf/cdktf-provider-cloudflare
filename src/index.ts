@@ -82,6 +82,7 @@ export * as userAgentBlockingRule from './user-agent-blocking-rule';
 export * as waitingRoom from './waiting-room';
 export * as waitingRoomEvent from './waiting-room-event';
 export * as waitingRoomRules from './waiting-room-rules';
+export * as waitingRoomSettings from './waiting-room-settings';
 export * as web3Hostname from './web3-hostname';
 export * as workerCronTrigger from './worker-cron-trigger';
 export * as workerDomain from './worker-domain';

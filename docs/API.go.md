@@ -100,6 +100,7 @@ The following submodules are available:
 - [waitingRoom](./waitingRoom.go.md)
 - [waitingRoomEvent](./waitingRoomEvent.go.md)
 - [waitingRoomRules](./waitingRoomRules.go.md)
+- [waitingRoomSettings](./waitingRoomSettings.go.md)
 - [web3Hostname](./web3Hostname.go.md)
 - [workerCronTrigger](./workerCronTrigger.go.md)
 - [workerDomain](./workerDomain.go.md)
