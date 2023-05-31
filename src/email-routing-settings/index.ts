@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface EmailRoutingSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings#id EmailRoutingSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface EmailRoutingSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Flag to check if the user skipped the configuration wizard.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
   */
   readonly skipWizard?: boolean | cdktf.IResolvable;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings cloudflare_email_routing_settings}
 */
 export class EmailRoutingSettings extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class EmailRoutingSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class EmailRoutingSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.0',
+        providerVersion: '4.7.1',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

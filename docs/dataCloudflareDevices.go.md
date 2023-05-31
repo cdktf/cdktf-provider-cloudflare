@@ -1,6 +1,6 @@
 # `data_cloudflare_devices`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_devices`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/devices).
+Refer to the Terraform Registory for docs: [`data_cloudflare_devices`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/devices).
 
 # `dataCloudflareDevices` Submodule <a name="`dataCloudflareDevices` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareDevices"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_devices`](https://r
 
 ### DataCloudflareDevices <a name="DataCloudflareDevices" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/devices cloudflare_devices}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/devices cloudflare_devices}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 datacloudflaredevices.NewDataCloudflareDevices(scope Construct, id *string, config DataCloudflareDevicesConfig) DataCloudflareDevices
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 datacloudflaredevices.DataCloudflareDevices_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 datacloudflaredevices.DataCloudflareDevices_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datacloudflaredevices.DataCloudflareDevices_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 datacloudflaredevices.DataCloudflareDevices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 &datacloudflaredevices.DataCloudflareDevicesConfig {
 	Connection: interface{},
@@ -582,7 +582,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/devices#id DataCloudflareDevices#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/devices#id DataCloudflareDevices#id}. |
 
 ---
 
@@ -666,7 +666,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/devices#account_id DataCloudflareDevices#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/devices#account_id DataCloudflareDevices#account_id}
 
 ---
 
@@ -678,7 +678,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/devices#id DataCloudflareDevices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/devices#id DataCloudflareDevices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -690,7 +690,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 &datacloudflaredevices.DataCloudflareDevicesDevices {
 
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 datacloudflaredevices.NewDataCloudflareDevicesDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareDevicesDevicesList
 ```
@@ -837,7 +837,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflaredevices"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredevices"
 
 datacloudflaredevices.NewDataCloudflareDevicesDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareDevicesDevicesOutputReference
 ```

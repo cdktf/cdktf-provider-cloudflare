@@ -1,6 +1,6 @@
 # `cloudflare_device_settings_policy`
 
-Refer to the Terraform Registory for docs: [`cloudflare_device_settings_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy).
+Refer to the Terraform Registory for docs: [`cloudflare_device_settings_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy).
 
 # `deviceSettingsPolicy` Submodule <a name="`deviceSettingsPolicy` Submodule" id="@cdktf/provider-cloudflare.deviceSettingsPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_device_settings_policy`]
 
 ### DeviceSettingsPolicy <a name="DeviceSettingsPolicy" id="@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy.Initializer"></a>
 
@@ -1050,7 +1050,7 @@ const deviceSettingsPolicyConfig: deviceSettingsPolicy.DeviceSettingsPolicyConfi
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.disableAutoFallback">disableAutoFallback</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to disable auto fallback for this policy. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the policy is enabled (cannot be set for default policies). Defaults to `true`. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.excludeOfficeIps">excludeOfficeIps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to add Microsoft IPs to split tunnel exclusions. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.match">match</a></code> | <code>string</code> | Wirefilter expression to match a device against when evaluating whether this policy should take effect for that device. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.precedence">precedence</a></code> | <code>number</code> | The precedence of the policy. Lower values indicate higher precedence. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.serviceModeV2Mode">serviceModeV2Mode</a></code> | <code>string</code> | The service mode. Available values: `1dot1`, `warp`, `proxy`, `posture_only`, `warp_tunnel_only`. Defaults to `warp`. |
@@ -1140,7 +1140,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly name: string;
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#name DeviceSettingsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#name DeviceSettingsPolicy#name}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly allowedToLeave: boolean | IResolvable;
 
 Whether to allow devices to leave the organization. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly allowModeSwitch: boolean | IResolvable;
 
 Whether to allow mode switch for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly allowUpdates: boolean | IResolvable;
 
 Whether to allow updates under this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly autoConnect: number;
 
 The amount of time in minutes to reconnect after having been disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly captivePortal: number;
 
 The captive portal value for this policy. Defaults to `180`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#captive_portal DeviceSettingsPolicy#captive_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#captive_portal DeviceSettingsPolicy#captive_portal}
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly default: boolean | IResolvable;
 
 Whether the policy refers to the default account policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly disableAutoFallback: boolean | IResolvable;
 
 Whether to disable auto fallback for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the policy is enabled (cannot be set for default policies). Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly excludeOfficeIps: boolean | IResolvable;
 
 Whether to add Microsoft IPs to split tunnel exclusions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1309,7 +1309,7 @@ public readonly match: string;
 
 Wirefilter expression to match a device against when evaluating whether this policy should take effect for that device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#match DeviceSettingsPolicy#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#match DeviceSettingsPolicy#match}
 
 ---
 
@@ -1323,7 +1323,7 @@ public readonly precedence: number;
 
 The precedence of the policy. Lower values indicate higher precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#precedence DeviceSettingsPolicy#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#precedence DeviceSettingsPolicy#precedence}
 
 ---
 
@@ -1337,7 +1337,7 @@ public readonly serviceModeV2Mode: string;
 
 The service mode. Available values: `1dot1`, `warp`, `proxy`, `posture_only`, `warp_tunnel_only`. Defaults to `warp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#service_mode_v2_mode DeviceSettingsPolicy#service_mode_v2_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#service_mode_v2_mode DeviceSettingsPolicy#service_mode_v2_mode}
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly serviceModeV2Port: number;
 
 The port to use for the proxy service mode. Required when using `service_mode_v2_mode`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#service_mode_v2_port DeviceSettingsPolicy#service_mode_v2_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#service_mode_v2_port DeviceSettingsPolicy#service_mode_v2_port}
 
 ---
 
@@ -1365,7 +1365,7 @@ public readonly supportUrl: string;
 
 The support URL that will be opened when sending feedback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#support_url DeviceSettingsPolicy#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#support_url DeviceSettingsPolicy#support_url}
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly switchLocked: boolean | IResolvable;
 
 Enablement of the ZT client switch lock.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
 
 ---
 
