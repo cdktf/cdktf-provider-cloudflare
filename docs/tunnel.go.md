@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 
 tunnel.NewTunnel(scope Construct, id *string, config TunnelConfig) Tunnel
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tunnel.Tunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 
 tunnel.Tunnel_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tunnel.Tunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 
 tunnel.Tunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ tunnel.Tunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tunnel.Tunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 
 tunnel.Tunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnel.TunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnel"
 
 &tunnel.TunnelConfig {
 	Connection: interface{},
