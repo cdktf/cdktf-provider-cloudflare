@@ -76,6 +76,7 @@ The following submodules are available:
 - [pagesProject](./pagesProject.python.md)
 - [provider](./provider.python.md)
 - [queue](./queue.python.md)
+- [r2Bucket](./r2Bucket.python.md)
 - [rateLimit](./rateLimit.python.md)
 - [record](./record.python.md)
 - [regionalHostname](./regionalHostname.python.md)

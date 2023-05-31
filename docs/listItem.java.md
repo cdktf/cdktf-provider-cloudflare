@@ -1,6 +1,6 @@
 # `cloudflare_list_item`
 
-Refer to the Terraform Registory for docs: [`cloudflare_list_item`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item).
+Refer to the Terraform Registory for docs: [`cloudflare_list_item`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item).
 
 # `listItem` Submodule <a name="`listItem` Submodule" id="@cdktf/provider-cloudflare.listItem"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_list_item`](https://regi
 
 ### ListItemA <a name="ListItemA" id="@cdktf/provider-cloudflare.listItem.ListItemA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item cloudflare_list_item}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item cloudflare_list_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemA.Initializer"></a>
 
@@ -29,7 +29,9 @@ ListItemA.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .listId(java.lang.String)
+//  .asn(java.lang.Number)
 //  .comment(java.lang.String)
+//  .hostname(ListItemHostname)
 //  .id(java.lang.String)
 //  .ip(java.lang.String)
 //  .redirect(ListItemRedirect)
@@ -49,8 +51,10 @@ ListItemA.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.listId">listId</a></code> | <code>java.lang.String</code> | The list identifier to target for the resource. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.asn">asn</a></code> | <code>java.lang.Number</code> | Autonomous system number to include in the list. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | An optional comment for the item. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#id ListItemA#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.hostname">hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a></code> | hostname block. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#id ListItemA#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.ip">ip</a></code> | <code>java.lang.String</code> | IP address to include in the list. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect">ListItemRedirect</a></code> | redirect block. |
 
@@ -122,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#account_id ListItemA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#account_id ListItemA#account_id}
 
 ---
 
@@ -132,7 +136,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The list identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#list_id ListItemA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#list_id ListItemA#list_id}
+
+---
+
+##### `asn`<sup>Optional</sup> <a name="asn" id="@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.asn"></a>
+
+- *Type:* java.lang.Number
+
+Autonomous system number to include in the list.
+
+Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#asn ListItemA#asn}
 
 ---
 
@@ -142,7 +158,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional comment for the item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#comment ListItemA#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#comment ListItemA#comment}
+
+---
+
+##### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktf/provider-cloudflare.listItem.ListItemA.Initializer.parameter.hostname"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a>
+
+hostname block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#hostname ListItemA#hostname}
 
 ---
 
@@ -150,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#id ListItemA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#id ListItemA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,9 +189,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 IP address to include in the list.
 
-Must provide only one of `ip`, `redirect`. **Modifying this attribute will force creation of a new resource.**
+Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#ip ListItemA#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#ip ListItemA#ip}
 
 ---
 
@@ -175,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#redirect ListItemA#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#redirect ListItemA#redirect}
 
 ---
 
@@ -199,8 +225,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.putHostname">putHostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.putRedirect">putRedirect</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.resetAsn">resetAsn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.resetHostname">resetHostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.resetIp">resetIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.resetRedirect">resetRedirect</a></code> | *No description.* |
@@ -391,6 +420,18 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `putHostname` <a name="putHostname" id="@cdktf/provider-cloudflare.listItem.ListItemA.putHostname"></a>
+
+```java
+public void putHostname(ListItemHostname value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.listItem.ListItemA.putHostname.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a>
+
+---
+
 ##### `putRedirect` <a name="putRedirect" id="@cdktf/provider-cloudflare.listItem.ListItemA.putRedirect"></a>
 
 ```java
@@ -403,10 +444,22 @@ public void putRedirect(ListItemRedirect value)
 
 ---
 
+##### `resetAsn` <a name="resetAsn" id="@cdktf/provider-cloudflare.listItem.ListItemA.resetAsn"></a>
+
+```java
+public void resetAsn()
+```
+
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-cloudflare.listItem.ListItemA.resetComment"></a>
 
 ```java
 public void resetComment()
+```
+
+##### `resetHostname` <a name="resetHostname" id="@cdktf/provider-cloudflare.listItem.ListItemA.resetHostname"></a>
+
+```java
+public void resetHostname()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.listItem.ListItemA.resetId"></a>
@@ -515,14 +568,18 @@ ListItemA.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.hostname">hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference">ListItemHostnameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference">ListItemRedirectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.asnInput">asnInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.hostnameInput">hostnameInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.ipInput">ipInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.listIdInput">listIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.redirectInput">redirectInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect">ListItemRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.asn">asn</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemA.property.ip">ip</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -672,6 +729,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktf/provider-cloudflare.listItem.ListItemA.property.hostname"></a>
+
+```java
+public ListItemHostnameOutputReference getHostname();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference">ListItemHostnameOutputReference</a>
+
+---
+
 ##### `redirect`<sup>Required</sup> <a name="redirect" id="@cdktf/provider-cloudflare.listItem.ListItemA.property.redirect"></a>
 
 ```java
@@ -692,6 +759,16 @@ public java.lang.String getAccountIdInput();
 
 ---
 
+##### `asnInput`<sup>Optional</sup> <a name="asnInput" id="@cdktf/provider-cloudflare.listItem.ListItemA.property.asnInput"></a>
+
+```java
+public java.lang.Number getAsnInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-cloudflare.listItem.ListItemA.property.commentInput"></a>
 
 ```java
@@ -699,6 +776,16 @@ public java.lang.String getCommentInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `hostnameInput`<sup>Optional</sup> <a name="hostnameInput" id="@cdktf/provider-cloudflare.listItem.ListItemA.property.hostnameInput"></a>
+
+```java
+public ListItemHostname getHostnameInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a>
 
 ---
 
@@ -749,6 +836,16 @@ public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `asn`<sup>Required</sup> <a name="asn" id="@cdktf/provider-cloudflare.listItem.ListItemA.property.asn"></a>
+
+```java
+public java.lang.Number getAsn();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -833,7 +930,9 @@ ListItemAConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .listId(java.lang.String)
+//  .asn(java.lang.Number)
 //  .comment(java.lang.String)
+//  .hostname(ListItemHostname)
 //  .id(java.lang.String)
 //  .ip(java.lang.String)
 //  .redirect(ListItemRedirect)
@@ -853,8 +952,10 @@ ListItemAConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.listId">listId</a></code> | <code>java.lang.String</code> | The list identifier to target for the resource. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.asn">asn</a></code> | <code>java.lang.Number</code> | Autonomous system number to include in the list. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | An optional comment for the item. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#id ListItemA#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.hostname">hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a></code> | hostname block. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#id ListItemA#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.ip">ip</a></code> | <code>java.lang.String</code> | IP address to include in the list. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect">ListItemRedirect</a></code> | redirect block. |
 
@@ -940,7 +1041,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#account_id ListItemA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#account_id ListItemA#account_id}
 
 ---
 
@@ -954,7 +1055,23 @@ public java.lang.String getListId();
 
 The list identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#list_id ListItemA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#list_id ListItemA#list_id}
+
+---
+
+##### `asn`<sup>Optional</sup> <a name="asn" id="@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.asn"></a>
+
+```java
+public java.lang.Number getAsn();
+```
+
+- *Type:* java.lang.Number
+
+Autonomous system number to include in the list.
+
+Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#asn ListItemA#asn}
 
 ---
 
@@ -968,7 +1085,21 @@ public java.lang.String getComment();
 
 An optional comment for the item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#comment ListItemA#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#comment ListItemA#comment}
+
+---
+
+##### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktf/provider-cloudflare.listItem.ListItemAConfig.property.hostname"></a>
+
+```java
+public ListItemHostname getHostname();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a>
+
+hostname block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#hostname ListItemA#hostname}
 
 ---
 
@@ -980,7 +1111,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#id ListItemA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#id ListItemA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -997,9 +1128,9 @@ public java.lang.String getIp();
 
 IP address to include in the list.
 
-Must provide only one of `ip`, `redirect`. **Modifying this attribute will force creation of a new resource.**
+Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#ip ListItemA#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#ip ListItemA#ip}
 
 ---
 
@@ -1013,7 +1144,41 @@ public ListItemRedirect getRedirect();
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#redirect ListItemA#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#redirect ListItemA#redirect}
+
+---
+
+### ListItemHostname <a name="ListItemHostname" id="@cdktf/provider-cloudflare.listItem.ListItemHostname"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemHostname.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.list_item.ListItemHostname;
+
+ListItemHostname.builder()
+    .urlHostname(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname.property.urlHostname">urlHostname</a></code> | <code>java.lang.String</code> | The FQDN to match on. |
+
+---
+
+##### `urlHostname`<sup>Required</sup> <a name="urlHostname" id="@cdktf/provider-cloudflare.listItem.ListItemHostname.property.urlHostname"></a>
+
+```java
+public java.lang.String getUrlHostname();
+```
+
+- *Type:* java.lang.String
+
+The FQDN to match on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#url_hostname ListItemA#url_hostname}
 
 ---
 
@@ -1059,7 +1224,7 @@ public java.lang.String getSourceUrl();
 
 The source url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#source_url ListItemA#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#source_url ListItemA#source_url}
 
 ---
 
@@ -1073,7 +1238,7 @@ public java.lang.String getTargetUrl();
 
 The target url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#target_url ListItemA#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#target_url ListItemA#target_url}
 
 ---
 
@@ -1087,7 +1252,7 @@ public java.lang.String getIncludeSubdomains();
 
 Whether the redirect also matches subdomains of the source url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#include_subdomains ListItemA#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#include_subdomains ListItemA#include_subdomains}
 
 ---
 
@@ -1101,7 +1266,7 @@ public java.lang.String getPreservePathSuffix();
 
 Whether to preserve the path suffix when doing subpath matching. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#preserve_path_suffix ListItemA#preserve_path_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#preserve_path_suffix ListItemA#preserve_path_suffix}
 
 ---
 
@@ -1115,7 +1280,7 @@ public java.lang.String getPreserveQueryString();
 
 Whether the redirect target url should keep the query string of the request's url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#preserve_query_string ListItemA#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#preserve_query_string ListItemA#preserve_query_string}
 
 ---
 
@@ -1129,7 +1294,7 @@ public java.lang.Number getStatusCode();
 
 The status code to be used when redirecting a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#status_code ListItemA#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#status_code ListItemA#status_code}
 
 ---
 
@@ -1143,11 +1308,282 @@ public java.lang.String getSubpathMatching();
 
 Whether the redirect also matches subpaths of the source url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list_item#subpath_matching ListItemA#subpath_matching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list_item#subpath_matching ListItemA#subpath_matching}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ListItemHostnameOutputReference <a name="ListItemHostnameOutputReference" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.list_item.ListItemHostnameOutputReference;
+
+new ListItemHostnameOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.urlHostnameInput">urlHostnameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.urlHostname">urlHostname</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `urlHostnameInput`<sup>Optional</sup> <a name="urlHostnameInput" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.urlHostnameInput"></a>
+
+```java
+public java.lang.String getUrlHostnameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `urlHostname`<sup>Required</sup> <a name="urlHostname" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.urlHostname"></a>
+
+```java
+public java.lang.String getUrlHostname();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.property.internalValue"></a>
+
+```java
+public ListItemHostname getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a>
+
+---
+
 
 ### ListItemRedirectOutputReference <a name="ListItemRedirectOutputReference" id="@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference"></a>
 

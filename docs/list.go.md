@@ -1,6 +1,6 @@
 # `cloudflare_list`
 
-Refer to the Terraform Registory for docs: [`cloudflare_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list).
+Refer to the Terraform Registory for docs: [`cloudflare_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list).
 
 # `list` Submodule <a name="`list` Submodule" id="@cdktf/provider-cloudflare.list"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_list`](https://registry.
 
 ### List <a name="List" id="@cdktf/provider-cloudflare.list.List"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.list.List.Initializer"></a>
 
@@ -712,10 +712,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/list"
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.kind">Kind</a></code> | <code>*string</code> | The type of items the list will contain. **Modifying this attribute will force creation of a new resource.**. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.kind">Kind</a></code> | <code>*string</code> | The type of items the list will contain. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.name">Name</a></code> | <code>*string</code> | The name of the list. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of the list. |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#id List#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#id List#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.item">Item</a></code> | <code>interface{}</code> | item block. |
 
 ---
@@ -800,7 +800,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#account_id List#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#account_id List#account_id}
 
 ---
 
@@ -812,9 +812,11 @@ Kind *string
 
 - *Type:* *string
 
-The type of items the list will contain. **Modifying this attribute will force creation of a new resource.**.
+The type of items the list will contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#kind List#kind}
+Available values: `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#kind List#kind}
 
 ---
 
@@ -828,7 +830,7 @@ Name *string
 
 The name of the list. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#name List#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#name List#name}
 
 ---
 
@@ -842,7 +844,7 @@ Description *string
 
 An optional description of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#description List#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#description List#description}
 
 ---
 
@@ -854,7 +856,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#id List#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#id List#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +873,7 @@ Item interface{}
 
 item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#item List#item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#item List#item}
 
 ---
 
@@ -907,7 +909,7 @@ Value ListItemValue
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#value List#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#value List#value}
 
 ---
 
@@ -921,7 +923,7 @@ Comment *string
 
 An optional comment for the item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#comment List#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#comment List#comment}
 
 ---
 
@@ -933,6 +935,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/list"
 
 &list.ListItemValue {
+	Asn: *f64,
+	Hostname: interface{},
 	Ip: *string,
 	Redirect: interface{},
 }
@@ -942,8 +946,36 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/list"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.ip">Ip</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#ip List#ip}. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.asn">Asn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#asn List#asn}. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.hostname">Hostname</a></code> | <code>interface{}</code> | hostname block. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.ip">Ip</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#ip List#ip}. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.redirect">Redirect</a></code> | <code>interface{}</code> | redirect block. |
+
+---
+
+##### `Asn`<sup>Optional</sup> <a name="Asn" id="@cdktf/provider-cloudflare.list.ListItemValue.property.asn"></a>
+
+```go
+Asn *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#asn List#asn}.
+
+---
+
+##### `Hostname`<sup>Optional</sup> <a name="Hostname" id="@cdktf/provider-cloudflare.list.ListItemValue.property.hostname"></a>
+
+```go
+Hostname interface{}
+```
+
+- *Type:* interface{}
+
+hostname block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#hostname List#hostname}
 
 ---
 
@@ -955,7 +987,7 @@ Ip *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#ip List#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#ip List#ip}.
 
 ---
 
@@ -969,7 +1001,41 @@ Redirect interface{}
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#redirect List#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#redirect List#redirect}
+
+---
+
+### ListItemValueHostname <a name="ListItemValueHostname" id="@cdktf/provider-cloudflare.list.ListItemValueHostname"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.list.ListItemValueHostname.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/list"
+
+&list.ListItemValueHostname {
+	UrlHostname: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname.property.urlHostname">UrlHostname</a></code> | <code>*string</code> | The FQDN to match on. Wildcard sub-domain matching is allowed. Eg. *.abc.com. |
+
+---
+
+##### `UrlHostname`<sup>Required</sup> <a name="UrlHostname" id="@cdktf/provider-cloudflare.list.ListItemValueHostname.property.urlHostname"></a>
+
+```go
+UrlHostname *string
+```
+
+- *Type:* *string
+
+The FQDN to match on. Wildcard sub-domain matching is allowed. Eg. *.abc.com.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#url_hostname List#url_hostname}
 
 ---
 
@@ -1015,7 +1081,7 @@ SourceUrl *string
 
 The source url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#source_url List#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#source_url List#source_url}
 
 ---
 
@@ -1029,7 +1095,7 @@ TargetUrl *string
 
 The target url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#target_url List#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#target_url List#target_url}
 
 ---
 
@@ -1043,7 +1109,7 @@ IncludeSubdomains *string
 
 Whether the redirect also matches subdomains of the source url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#include_subdomains List#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#include_subdomains List#include_subdomains}
 
 ---
 
@@ -1057,7 +1123,7 @@ PreservePathSuffix *string
 
 Whether to preserve the path suffix when doing subpath matching. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}
 
 ---
 
@@ -1071,7 +1137,7 @@ PreserveQueryString *string
 
 Whether the redirect target url should keep the query string of the request's url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#preserve_query_string List#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#preserve_query_string List#preserve_query_string}
 
 ---
 
@@ -1085,7 +1151,7 @@ StatusCode *f64
 
 The status code to be used when redirecting a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#status_code List#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#status_code List#status_code}
 
 ---
 
@@ -1099,7 +1165,7 @@ SubpathMatching *string
 
 Whether the redirect also matches subpaths of the source url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/list#subpath_matching List#subpath_matching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/list#subpath_matching List#subpath_matching}
 
 ---
 
@@ -1579,6 +1645,438 @@ func InternalValue() interface{}
 ---
 
 
+### ListItemValueHostnameList <a name="ListItemValueHostnameList" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/list"
+
+list.NewListItemValueHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListItemValueHostnameList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.get"></a>
+
+```go
+func Get(index *f64) ListItemValueHostnameOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ListItemValueHostnameOutputReference <a name="ListItemValueHostnameOutputReference" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/list"
+
+list.NewListItemValueHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ListItemValueHostnameOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostnameInput">UrlHostnameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostname">UrlHostname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UrlHostnameInput`<sup>Optional</sup> <a name="UrlHostnameInput" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostnameInput"></a>
+
+```go
+func UrlHostnameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UrlHostname`<sup>Required</sup> <a name="UrlHostname" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostname"></a>
+
+```go
+func UrlHostname() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### ListItemValueOutputReference <a name="ListItemValueOutputReference" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.Initializer"></a>
@@ -1629,7 +2127,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.putHostname">PutHostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.putRedirect">PutRedirect</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetAsn">ResetAsn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetHostname">ResetHostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetIp">ResetIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetRedirect">ResetRedirect</a></code> | *No description.* |
 
@@ -1785,6 +2286,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutHostname` <a name="PutHostname" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.putHostname"></a>
+
+```go
+func PutHostname(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.putHostname.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutRedirect` <a name="PutRedirect" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.putRedirect"></a>
 
 ```go
@@ -1796,6 +2309,18 @@ func PutRedirect(value interface{})
 - *Type:* interface{}
 
 ---
+
+##### `ResetAsn` <a name="ResetAsn" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetAsn"></a>
+
+```go
+func ResetAsn()
+```
+
+##### `ResetHostname` <a name="ResetHostname" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetHostname"></a>
+
+```go
+func ResetHostname()
+```
 
 ##### `ResetIp` <a name="ResetIp" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.resetIp"></a>
 
@@ -1816,9 +2341,13 @@ func ResetRedirect()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.hostname">Hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList">ListItemValueHostnameList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.redirect">Redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectList">ListItemValueRedirectList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.asnInput">AsnInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.hostnameInput">HostnameInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.ipInput">IpInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.redirectInput">RedirectInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.asn">Asn</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.ip">Ip</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue">ListItemValue</a></code> | *No description.* |
 
@@ -1848,6 +2377,16 @@ func Fqn() *string
 
 ---
 
+##### `Hostname`<sup>Required</sup> <a name="Hostname" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.hostname"></a>
+
+```go
+func Hostname() ListItemValueHostnameList
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameList">ListItemValueHostnameList</a>
+
+---
+
 ##### `Redirect`<sup>Required</sup> <a name="Redirect" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.redirect"></a>
 
 ```go
@@ -1855,6 +2394,26 @@ func Redirect() ListItemValueRedirectList
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectList">ListItemValueRedirectList</a>
+
+---
+
+##### `AsnInput`<sup>Optional</sup> <a name="AsnInput" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.asnInput"></a>
+
+```go
+func AsnInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `HostnameInput`<sup>Optional</sup> <a name="HostnameInput" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.hostnameInput"></a>
+
+```go
+func HostnameInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1875,6 +2434,16 @@ func RedirectInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `Asn`<sup>Required</sup> <a name="Asn" id="@cdktf/provider-cloudflare.list.ListItemValueOutputReference.property.asn"></a>
+
+```go
+func Asn() *f64
+```
+
+- *Type:* *f64
 
 ---
 

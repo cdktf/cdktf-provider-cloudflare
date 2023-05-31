@@ -76,6 +76,7 @@ The following submodules are available:
 - [pagesProject](./pagesProject.java.md)
 - [provider](./provider.java.md)
 - [queue](./queue.java.md)
+- [r2Bucket](./r2Bucket.java.md)
 - [rateLimit](./rateLimit.java.md)
 - [record](./record.java.md)
 - [regionalHostname](./regionalHostname.java.md)
