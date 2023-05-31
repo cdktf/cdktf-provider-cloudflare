@@ -76,6 +76,7 @@ The following submodules are available:
 - [pagesProject](./pagesProject.csharp.md)
 - [provider](./provider.csharp.md)
 - [queue](./queue.csharp.md)
+- [r2Bucket](./r2Bucket.csharp.md)
 - [rateLimit](./rateLimit.csharp.md)
 - [record](./record.csharp.md)
 - [regionalHostname](./regionalHostname.csharp.md)

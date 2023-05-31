@@ -76,6 +76,7 @@ The following submodules are available:
 - [pagesProject](./pagesProject.go.md)
 - [provider](./provider.go.md)
 - [queue](./queue.go.md)
+- [r2Bucket](./r2Bucket.go.md)
 - [rateLimit](./rateLimit.go.md)
 - [record](./record.go.md)
 - [regionalHostname](./regionalHostname.go.md)

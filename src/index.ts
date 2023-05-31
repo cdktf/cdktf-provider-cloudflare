@@ -58,6 +58,7 @@ export * as pageRule from './page-rule';
 export * as pagesDomain from './pages-domain';
 export * as pagesProject from './pages-project';
 export * as queue from './queue';
+export * as r2Bucket from './r2-bucket';
 export * as rateLimit from './rate-limit';
 export * as record from './record';
 export * as regionalHostname from './regional-hostname';

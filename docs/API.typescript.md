@@ -76,6 +76,7 @@ The following submodules are available:
 - [pagesProject](./pagesProject.typescript.md)
 - [provider](./provider.typescript.md)
 - [queue](./queue.typescript.md)
+- [r2Bucket](./r2Bucket.typescript.md)
 - [rateLimit](./rateLimit.typescript.md)
 - [record](./record.typescript.md)
 - [regionalHostname](./regionalHostname.typescript.md)

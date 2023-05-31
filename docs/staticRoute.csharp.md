@@ -1,6 +1,6 @@
 # `cloudflare_static_route`
 
-Refer to the Terraform Registory for docs: [`cloudflare_static_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route).
+Refer to the Terraform Registory for docs: [`cloudflare_static_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route).
 
 # `staticRoute` Submodule <a name="`staticRoute` Submodule" id="@cdktf/provider-cloudflare.staticRoute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_static_route`](https://r
 
 ### StaticRoute <a name="StaticRoute" id="@cdktf/provider-cloudflare.staticRoute.StaticRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route cloudflare_static_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route cloudflare_static_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.staticRoute.StaticRoute.Initializer"></a>
 
@@ -795,7 +795,7 @@ new StaticRouteConfig {
 | <code><a href="#@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.property.coloNames">ColoNames</a></code> | <code>string[]</code> | List of Cloudflare colocation regions for this static route. |
 | <code><a href="#@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.property.coloRegions">ColoRegions</a></code> | <code>string[]</code> | List of Cloudflare colocation names for this static route. |
 | <code><a href="#@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.property.description">Description</a></code> | <code>string</code> | Description of the static route. |
-| <code><a href="#@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#id StaticRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#id StaticRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig.property.weight">Weight</a></code> | <code>double</code> | The optional weight for ECMP routes. **Modifying this attribute will force creation of a new resource.**. |
 
 ---
@@ -880,7 +880,7 @@ public string Nexthop { get; set; }
 
 The nexthop IP address where traffic will be routed to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#nexthop StaticRoute#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#nexthop StaticRoute#nexthop}
 
 ---
 
@@ -894,7 +894,7 @@ public string Prefix { get; set; }
 
 Your network prefix using CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#prefix StaticRoute#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#prefix StaticRoute#prefix}
 
 ---
 
@@ -908,7 +908,7 @@ public double Priority { get; set; }
 
 The priority for the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#priority StaticRoute#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#priority StaticRoute#priority}
 
 ---
 
@@ -922,7 +922,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#account_id StaticRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#account_id StaticRoute#account_id}
 
 ---
 
@@ -936,7 +936,7 @@ public string[] ColoNames { get; set; }
 
 List of Cloudflare colocation regions for this static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#colo_names StaticRoute#colo_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#colo_names StaticRoute#colo_names}
 
 ---
 
@@ -950,7 +950,7 @@ public string[] ColoRegions { get; set; }
 
 List of Cloudflare colocation names for this static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#colo_regions StaticRoute#colo_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#colo_regions StaticRoute#colo_regions}
 
 ---
 
@@ -964,7 +964,7 @@ public string Description { get; set; }
 
 Description of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#description StaticRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#description StaticRoute#description}
 
 ---
 
@@ -976,7 +976,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#id StaticRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#id StaticRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -993,7 +993,7 @@ public double Weight { get; set; }
 
 The optional weight for ECMP routes. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/static_route#weight StaticRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/static_route#weight StaticRoute#weight}
 
 ---
 
