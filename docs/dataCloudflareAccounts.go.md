@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 datacloudflareaccounts.NewDataCloudflareAccounts(scope Construct, id *string, config DataCloudflareAccountsConfig) DataCloudflareAccounts
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 datacloudflareaccounts.DataCloudflareAccounts_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 datacloudflareaccounts.DataCloudflareAccounts_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datacloudflareaccounts.DataCloudflareAccounts_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 datacloudflareaccounts.DataCloudflareAccounts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 &datacloudflareaccounts.DataCloudflareAccountsAccounts {
 
@@ -575,7 +575,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 &datacloudflareaccounts.DataCloudflareAccountsConfig {
 	Connection: interface{},
@@ -712,7 +712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 datacloudflareaccounts.NewDataCloudflareAccountsAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAccountsAccountsList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccounts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccounts"
 
 datacloudflareaccounts.NewDataCloudflareAccountsAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAccountsAccountsOutputReference
 ```
