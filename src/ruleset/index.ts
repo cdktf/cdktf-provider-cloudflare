@@ -1948,7 +1948,7 @@ export class RulesetRulesActionParametersEdgeTtlList extends cdktf.ComplexList {
     return new RulesetRulesActionParametersEdgeTtlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface RulesetRulesActionParametersFromList {
+export interface RulesetRulesActionParametersFromListStruct {
   /**
   * Expression to use for the list lookup.
   * 
@@ -1963,7 +1963,7 @@ export interface RulesetRulesActionParametersFromList {
   readonly name?: string;
 }
 
-export function rulesetRulesActionParametersFromListToTerraform(struct?: RulesetRulesActionParametersFromList | cdktf.IResolvable): any {
+export function rulesetRulesActionParametersFromListStructToTerraform(struct?: RulesetRulesActionParametersFromListStruct | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1974,7 +1974,7 @@ export function rulesetRulesActionParametersFromListToTerraform(struct?: Ruleset
   }
 }
 
-export class RulesetRulesActionParametersFromListOutputReference extends cdktf.ComplexObject {
+export class RulesetRulesActionParametersFromListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -1988,7 +1988,7 @@ export class RulesetRulesActionParametersFromListOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RulesetRulesActionParametersFromList | cdktf.IResolvable | undefined {
+  public get internalValue(): RulesetRulesActionParametersFromListStruct | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2005,7 +2005,7 @@ export class RulesetRulesActionParametersFromListOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RulesetRulesActionParametersFromList | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RulesetRulesActionParametersFromListStruct | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2057,8 +2057,8 @@ export class RulesetRulesActionParametersFromListOutputReference extends cdktf.C
   }
 }
 
-export class RulesetRulesActionParametersFromListList extends cdktf.ComplexList {
-  public internalValue? : RulesetRulesActionParametersFromList[] | cdktf.IResolvable
+export class RulesetRulesActionParametersFromListStructList extends cdktf.ComplexList {
+  public internalValue? : RulesetRulesActionParametersFromListStruct[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2072,8 +2072,8 @@ export class RulesetRulesActionParametersFromListList extends cdktf.ComplexList 
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): RulesetRulesActionParametersFromListOutputReference {
-    return new RulesetRulesActionParametersFromListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): RulesetRulesActionParametersFromListStructOutputReference {
+    return new RulesetRulesActionParametersFromListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface RulesetRulesActionParametersFromValueTargetUrl {
@@ -4365,7 +4365,7 @@ export interface RulesetRulesActionParameters {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/ruleset#from_list Ruleset#from_list}
   */
-  readonly fromList?: RulesetRulesActionParametersFromList[] | cdktf.IResolvable;
+  readonly fromList?: RulesetRulesActionParametersFromListStruct[] | cdktf.IResolvable;
   /**
   * from_value block
   * 
@@ -4466,7 +4466,7 @@ export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesAct
     browser_ttl: cdktf.listMapper(rulesetRulesActionParametersBrowserTtlToTerraform, true)(struct!.browserTtl),
     cache_key: cdktf.listMapper(rulesetRulesActionParametersCacheKeyToTerraform, true)(struct!.cacheKey),
     edge_ttl: cdktf.listMapper(rulesetRulesActionParametersEdgeTtlToTerraform, true)(struct!.edgeTtl),
-    from_list: cdktf.listMapper(rulesetRulesActionParametersFromListToTerraform, true)(struct!.fromList),
+    from_list: cdktf.listMapper(rulesetRulesActionParametersFromListStructToTerraform, true)(struct!.fromList),
     from_value: cdktf.listMapper(rulesetRulesActionParametersFromValueToTerraform, true)(struct!.fromValue),
     headers: cdktf.listMapper(rulesetRulesActionParametersHeadersToTerraform, true)(struct!.headers),
     matched_data: cdktf.listMapper(rulesetRulesActionParametersMatchedDataToTerraform, true)(struct!.matchedData),
@@ -5414,11 +5414,11 @@ export class RulesetRulesActionParametersOutputReference extends cdktf.ComplexOb
   }
 
   // from_list - computed: false, optional: true, required: false
-  private _fromList = new RulesetRulesActionParametersFromListList(this, "from_list", false);
+  private _fromList = new RulesetRulesActionParametersFromListStructList(this, "from_list", false);
   public get fromList() {
     return this._fromList;
   }
-  public putFromList(value: RulesetRulesActionParametersFromList[] | cdktf.IResolvable) {
+  public putFromList(value: RulesetRulesActionParametersFromListStruct[] | cdktf.IResolvable) {
     this._fromList.internalValue = value;
   }
   public resetFromList() {
