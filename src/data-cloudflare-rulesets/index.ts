@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/rulesets
 // generated from terraform resource schema
 
@@ -925,10 +920,10 @@ export class DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList exte
     return new DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataCloudflareRulesetsRulesetsRulesActionParametersFromList {
+export interface DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct {
 }
 
-export function dataCloudflareRulesetsRulesetsRulesActionParametersFromListToTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersFromList): any {
+export function dataCloudflareRulesetsRulesetsRulesActionParametersFromListStructToTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -937,7 +932,7 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersFromListToTer
   }
 }
 
-export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -950,13 +945,13 @@ export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputRe
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudflareRulesetsRulesetsRulesActionParametersFromList | undefined {
+  public get internalValue(): DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareRulesetsRulesetsRulesActionParametersFromList | undefined) {
+  public set internalValue(value: DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -976,7 +971,7 @@ export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputRe
   }
 }
 
-export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListList extends cdktf.ComplexList {
+export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -990,8 +985,8 @@ export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListList ext
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference {
-    return new DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference {
+    return new DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl {
@@ -2140,7 +2135,7 @@ export class DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference 
   }
 
   // from_list - computed: true, optional: false, required: false
-  private _fromList = new DataCloudflareRulesetsRulesetsRulesActionParametersFromListList(this, "from_list", false);
+  private _fromList = new DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList(this, "from_list", false);
   public get fromList() {
     return this._fromList;
   }
