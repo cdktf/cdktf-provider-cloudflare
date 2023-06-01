@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/accounts
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/accounts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareAccountsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/accounts#id DataCloudflareAccounts#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/accounts#id DataCloudflareAccounts#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +17,7 @@ export interface DataCloudflareAccountsConfig extends cdktf.TerraformMetaArgumen
   /**
   * The account name to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/accounts#name DataCloudflareAccounts#name}
   */
   readonly name?: string;
 }
@@ -102,7 +102,7 @@ export class DataCloudflareAccountsAccountsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/accounts cloudflare_accounts}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/accounts cloudflare_accounts}
 */
 export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
 
@@ -116,7 +116,7 @@ export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/data-sources/accounts cloudflare_accounts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/accounts cloudflare_accounts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -127,7 +127,7 @@ export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_accounts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.0',
+        providerVersion: '4.7.1',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

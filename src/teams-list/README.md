@@ -1,3 +1,3 @@
 # `cloudflare_teams_list`
 
-Refer to the Terraform Registory for docs: [`cloudflare_teams_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/teams_list).
+Refer to the Terraform Registory for docs: [`cloudflare_teams_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/teams_list).
