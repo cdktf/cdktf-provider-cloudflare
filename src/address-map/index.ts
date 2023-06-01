@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface AddressMapConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#account_id AddressMap#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#account_id AddressMap#account_id}
   */
   readonly accountId: string;
   /**
   * If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#default_sni AddressMap#default_sni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#default_sni AddressMap#default_sni}
   */
   readonly defaultSni?: string;
   /**
   * Description of the address map.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#description AddressMap#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#description AddressMap#description}
   */
   readonly description?: string;
   /**
   * Whether the Address Map is enabled or not.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#enabled AddressMap#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#enabled AddressMap#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#id AddressMap#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#id AddressMap#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,13 +41,13 @@ export interface AddressMapConfig extends cdktf.TerraformMetaArguments {
   /**
   * ips block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#ips AddressMap#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#ips AddressMap#ips}
   */
   readonly ips?: AddressMapIps[] | cdktf.IResolvable;
   /**
   * memberships block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#memberships AddressMap#memberships}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#memberships AddressMap#memberships}
   */
   readonly memberships?: AddressMapMemberships[] | cdktf.IResolvable;
 }
@@ -55,7 +55,7 @@ export interface AddressMapIps {
   /**
   * An IPv4 or IPv6 address.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#ip AddressMap#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#ip AddressMap#ip}
   */
   readonly ip: string;
 }
@@ -151,13 +151,13 @@ export interface AddressMapMemberships {
   /**
   * Identifier of the account or zone.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#identifier AddressMap#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#identifier AddressMap#identifier}
   */
   readonly identifier: string;
   /**
   * The type of the membership.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map#kind AddressMap#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map#kind AddressMap#kind}
   */
   readonly kind: string;
 }
@@ -276,7 +276,7 @@ export class AddressMapMembershipsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map cloudflare_address_map}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map cloudflare_address_map}
 */
 export class AddressMap extends cdktf.TerraformResource {
 
@@ -290,7 +290,7 @@ export class AddressMap extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/address_map cloudflare_address_map} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/address_map cloudflare_address_map} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -301,7 +301,7 @@ export class AddressMap extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_address_map',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.0',
+        providerVersion: '4.7.1',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
