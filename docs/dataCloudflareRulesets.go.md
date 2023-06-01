@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesets(scope Construct, id *string, config DataCloudflareRulesetsConfig) DataCloudflareRulesets
 ```
@@ -318,7 +318,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datacloudflarerulesets.DataCloudflareRulesets_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsConfig {
 	Connection: interface{},
@@ -673,7 +673,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6.dataCloudflareRulesets.DataCloudflareRulesetsFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilter,
 	Id: *string,
 	IncludeRules: interface{},
 	ZoneId: *string,
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsFilter {
 	Id: *string,
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesets {
 
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRules {
 
@@ -974,7 +974,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParameters {
 
@@ -987,7 +987,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominify.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominify {
 
@@ -1000,7 +1000,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtl {
 
@@ -1013,7 +1013,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey {
 
@@ -1026,7 +1026,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKey {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie {
 
@@ -1052,7 +1052,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeader {
 
@@ -1065,7 +1065,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHost {
 
@@ -1078,7 +1078,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryString {
 
@@ -1091,7 +1091,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUser {
 
@@ -1104,7 +1104,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl {
 
@@ -1117,7 +1117,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtl {
 
@@ -1130,7 +1130,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange {
 
@@ -1138,14 +1138,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 ```
 
 
-### DataCloudflareRulesetsRulesetsRulesActionParametersFromList <a name="DataCloudflareRulesetsRulesetsRulesActionParametersFromList" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromList"></a>
+### DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct <a name="DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromList.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
-&datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromList {
+&datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct {
 
 }
 ```
@@ -1156,7 +1156,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValue {
 
@@ -1169,7 +1169,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl {
 
@@ -1182,7 +1182,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeaders {
 
@@ -1195,7 +1195,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedData {
 
@@ -1208,7 +1208,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOrigin {
 
@@ -1221,7 +1221,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverrides {
 
@@ -1234,7 +1234,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategories {
 
@@ -1247,7 +1247,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRules {
 
@@ -1260,7 +1260,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponse {
 
@@ -1273,7 +1273,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStale.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStale {
 
@@ -1286,7 +1286,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSni.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSni {
 
@@ -1299,7 +1299,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUri {
 
@@ -1312,7 +1312,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPath {
 
@@ -1325,7 +1325,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery {
 
@@ -1338,7 +1338,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck {
 
@@ -1351,7 +1351,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesLogging {
 
@@ -1364,7 +1364,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsRulesetsRulesRatelimit {
 
@@ -1379,7 +1379,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareRulesetsFilterOutputReference
 ```
@@ -1773,7 +1773,7 @@ func InternalValue() DataCloudflareRulesetsFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsList
 ```
@@ -1905,7 +1905,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsOutputReference
 ```
@@ -2249,7 +2249,7 @@ func InternalValue() DataCloudflareRulesetsRulesets
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList
 ```
@@ -2381,7 +2381,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference
 ```
@@ -2681,7 +2681,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersAutomini
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList
 ```
@@ -2813,7 +2813,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference
 ```
@@ -3102,7 +3102,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersBrowserT
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList
 ```
@@ -3234,7 +3234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference
 ```
@@ -3523,7 +3523,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList
 ```
@@ -3655,7 +3655,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference
 ```
@@ -3955,7 +3955,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList
 ```
@@ -4087,7 +4087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference
 ```
@@ -4365,7 +4365,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList
 ```
@@ -4497,7 +4497,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference
 ```
@@ -4819,7 +4819,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList
 ```
@@ -4951,7 +4951,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference
 ```
@@ -5240,7 +5240,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList
 ```
@@ -5372,7 +5372,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference
 ```
@@ -5672,7 +5672,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList
 ```
@@ -5804,7 +5804,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference
 ```
@@ -6115,7 +6115,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList
 ```
@@ -6247,7 +6247,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference
 ```
@@ -6547,7 +6547,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList
 ```
@@ -6679,7 +6679,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference
 ```
@@ -6979,7 +6979,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlS
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList
 ```
@@ -7111,7 +7111,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference
 ```
@@ -7395,25 +7395,25 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlS
 ---
 
 
-### DataCloudflareRulesetsRulesetsRulesActionParametersFromListList <a name="DataCloudflareRulesetsRulesetsRulesActionParametersFromListList" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList"></a>
+### DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList <a name="DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
-datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromListList
+datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -7421,7 +7421,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -7429,7 +7429,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -7441,20 +7441,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -7462,13 +7462,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.toString"></a>
 
 ```go
 func ToString() *string
@@ -7478,13 +7478,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.get"></a>
+##### `Get` <a name="Get" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.get"></a>
 
 ```go
-func Get(index *f64) DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference
+func Get(index *f64) DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -7497,12 +7497,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -7516,7 +7516,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -7527,26 +7527,26 @@ func Fqn() *string
 ---
 
 
-### DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference <a name="DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference"></a>
+### DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference <a name="DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
-datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference
+datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -7554,7 +7554,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -7562,7 +7562,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -7570,7 +7570,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -7582,149 +7582,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -7732,13 +7732,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -7753,15 +7753,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromList">DataCloudflareRulesetsRulesetsRulesActionParametersFromList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct">DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -7775,7 +7775,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -7785,7 +7785,7 @@ func Fqn() *string
 
 ---
 
-##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.key"></a>
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.key"></a>
 
 ```go
 func Key() *string
@@ -7795,7 +7795,7 @@ func Key() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -7805,13 +7805,13 @@ func Name() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersFromList
+func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromList">DataCloudflareRulesetsRulesetsRulesActionParametersFromList</a>
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct">DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct</a>
 
 ---
 
@@ -7821,7 +7821,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersFromList
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList
 ```
@@ -7953,7 +7953,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference
 ```
@@ -8253,7 +8253,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersFromValu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList
 ```
@@ -8385,7 +8385,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference
 ```
@@ -8674,7 +8674,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersFromValu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList
 ```
@@ -8806,7 +8806,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference
 ```
@@ -9117,7 +9117,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersList
 ```
@@ -9249,7 +9249,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList
 ```
@@ -9381,7 +9381,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference
 ```
@@ -9659,7 +9659,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersMatchedD
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOriginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOriginList
 ```
@@ -9791,7 +9791,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference
 ```
@@ -10080,7 +10080,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersOrigin
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference
 ```
@@ -10317,7 +10317,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.disableZaraz">DisableZaraz</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.edgeTtl">EdgeTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList">DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.emailObfuscation">EmailObfuscation</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.fromList">FromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList">DataCloudflareRulesetsRulesetsRulesActionParametersFromListList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.fromList">FromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList">DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.fromValue">FromValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList">DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.headers">Headers</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList">DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.hostHeader">HostHeader</a></code> | <code>*string</code> | *No description.* |
@@ -10521,10 +10521,10 @@ func EmailObfuscation() IResolvable
 ##### `FromList`<sup>Required</sup> <a name="FromList" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference.property.fromList"></a>
 
 ```go
-func FromList() DataCloudflareRulesetsRulesetsRulesActionParametersFromListList
+func FromList() DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListList">DataCloudflareRulesetsRulesetsRulesActionParametersFromListList</a>
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList">DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList</a>
 
 ---
 
@@ -10864,7 +10864,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList
 ```
@@ -10996,7 +10996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference
 ```
@@ -11307,7 +11307,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersOverride
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList
 ```
@@ -11439,7 +11439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference
 ```
@@ -11772,7 +11772,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersOverride
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList
 ```
@@ -11904,7 +11904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference
 ```
@@ -12237,7 +12237,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersOverride
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersResponseList
 ```
@@ -12369,7 +12369,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference
 ```
@@ -12669,7 +12669,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList
 ```
@@ -12801,7 +12801,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference
 ```
@@ -13079,7 +13079,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersServeSta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSniList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersSniList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersSniList
 ```
@@ -13211,7 +13211,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference
 ```
@@ -13489,7 +13489,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersSni
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersUriList
 ```
@@ -13621,7 +13621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference
 ```
@@ -13921,7 +13921,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersUri
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersUriPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList
 ```
@@ -14053,7 +14053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference
 ```
@@ -14342,7 +14342,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersUriPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList
 ```
@@ -14474,7 +14474,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference
 ```
@@ -14763,7 +14763,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList
 ```
@@ -14895,7 +14895,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference
 ```
@@ -15184,7 +15184,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesList
 ```
@@ -15316,7 +15316,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesLoggingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesLoggingList
 ```
@@ -15448,7 +15448,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesLoggingOutputReference
 ```
@@ -15737,7 +15737,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRulesLogging
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesOutputReference
 ```
@@ -16136,7 +16136,7 @@ func InternalValue() DataCloudflareRulesetsRulesetsRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesRatelimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsRulesetsRulesRatelimitList
 ```
@@ -16268,7 +16268,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsRulesetsRulesRatelimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference
 ```

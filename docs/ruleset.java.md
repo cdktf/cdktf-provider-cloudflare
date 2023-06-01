@@ -1393,7 +1393,7 @@ RulesetRulesActionParameters.builder()
 //  .emailObfuscation(java.lang.Boolean)
 //  .emailObfuscation(IResolvable)
 //  .fromList(IResolvable)
-//  .fromList(java.util.List<RulesetRulesActionParametersFromList>)
+//  .fromList(java.util.List<RulesetRulesActionParametersFromListStruct>)
 //  .fromValue(IResolvable)
 //  .fromValue(java.util.List<RulesetRulesActionParametersFromValue>)
 //  .headers(IResolvable)
@@ -1465,7 +1465,7 @@ RulesetRulesActionParameters.builder()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz">disableZaraz</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn off zaraz feature. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.edgeTtl">edgeTtl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a>></code> | edge_ttl block. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation">emailObfuscation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off the Cloudflare Email Obfuscation feature of the Cloudflare Scrape Shield app. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromList">fromList</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>></code> | from_list block. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromList">fromList</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>></code> | from_list block. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromValue">fromValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a>></code> | from_value block. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | headers block. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hostHeader">hostHeader</a></code> | <code>java.lang.String</code> | Host Header that request origin receives. |
@@ -1717,7 +1717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 public java.lang.Object getFromList();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>>
 
 from_list block.
 
@@ -2975,14 +2975,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ---
 
-### RulesetRulesActionParametersFromList <a name="RulesetRulesActionParametersFromList" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList"></a>
+### RulesetRulesActionParametersFromListStruct <a name="RulesetRulesActionParametersFromListStruct" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.Initializer"></a>
 
 ```java
-import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromList;
+import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromListStruct;
 
-RulesetRulesActionParametersFromList.builder()
+RulesetRulesActionParametersFromListStruct.builder()
 //  .key(java.lang.String)
 //  .name(java.lang.String)
     .build();
@@ -2992,12 +2992,12 @@ RulesetRulesActionParametersFromList.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList.property.key">key</a></code> | <code>java.lang.String</code> | Expression to use for the list lookup. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList.property.name">name</a></code> | <code>java.lang.String</code> | Name of the list. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.key">key</a></code> | <code>java.lang.String</code> | Expression to use for the list lookup. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.name">name</a></code> | <code>java.lang.String</code> | Name of the list. |
 
 ---
 
-##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList.property.key"></a>
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.key"></a>
 
 ```java
 public java.lang.String getKey();
@@ -3011,7 +3011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.name"></a>
 
 ```java
 public java.lang.String getName();
@@ -10536,25 +10536,25 @@ public java.lang.Object getInternalValue();
 ---
 
 
-### RulesetRulesActionParametersFromListList <a name="RulesetRulesActionParametersFromListList" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList"></a>
+### RulesetRulesActionParametersFromListStructList <a name="RulesetRulesActionParametersFromListStructList" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer"></a>
 
 ```java
-import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromListList;
+import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromListStructList;
 
-new RulesetRulesActionParametersFromListList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+new RulesetRulesActionParametersFromListStructList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* com.hashicorp.cdktf.IInterpolatingParent
 
@@ -10562,7 +10562,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
@@ -10570,7 +10570,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* java.lang.Boolean
 
@@ -10582,20 +10582,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.computeFqn"></a>
 
 ```java
 public java.lang.String computeFqn()
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.resolve"></a>
 
 ```java
 public java.lang.Object resolve(IResolveContext _context)
@@ -10603,13 +10603,13 @@ public java.lang.Object resolve(IResolveContext _context)
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.resolve.parameter._context"></a>
 
 - *Type:* com.hashicorp.cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -10619,13 +10619,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.get"></a>
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.get"></a>
 
 ```java
-public RulesetRulesActionParametersFromListOutputReference get(java.lang.Number index)
+public RulesetRulesActionParametersFromListStructOutputReference get(java.lang.Number index)
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.get.parameter.index"></a>
 
 - *Type:* java.lang.Number
 
@@ -10638,13 +10638,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.property.creationStack"></a>
 
 ```java
 public java.util.List<java.lang.String> getCreationStack();
@@ -10658,7 +10658,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -10668,37 +10668,37 @@ public java.lang.String getFqn();
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList.property.internalValue"></a>
 
 ```java
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>>
 
 ---
 
 
-### RulesetRulesActionParametersFromListOutputReference <a name="RulesetRulesActionParametersFromListOutputReference" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference"></a>
+### RulesetRulesActionParametersFromListStructOutputReference <a name="RulesetRulesActionParametersFromListStructOutputReference" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer"></a>
 
 ```java
-import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference;
+import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference;
 
-new RulesetRulesActionParametersFromListOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+new RulesetRulesActionParametersFromListStructOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* com.hashicorp.cdktf.IInterpolatingParent
 
@@ -10706,7 +10706,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
@@ -10714,7 +10714,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* java.lang.Number
 
@@ -10722,7 +10722,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* java.lang.Boolean
 
@@ -10734,151 +10734,151 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resetKey">resetKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetKey">resetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetName">resetName</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.computeFqn"></a>
 
 ```java
 public java.lang.String computeFqn()
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getAnyMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getBooleanAttribute"></a>
 
 ```java
 public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getBooleanMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberAttribute"></a>
 
 ```java
 public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberListAttribute"></a>
 
 ```java
 public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getStringAttribute"></a>
 
 ```java
 public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getStringMapAttribute"></a>
 
 ```java
 public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.interpolationForAttribute"></a>
 
 ```java
 public IResolvable interpolationForAttribute(java.lang.String property)
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* java.lang.String
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resolve"></a>
 
 ```java
 public java.lang.Object resolve(IResolveContext _context)
@@ -10886,13 +10886,13 @@ public java.lang.Object resolve(IResolveContext _context)
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resolve.parameter._context"></a>
 
 - *Type:* com.hashicorp.cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.toString"></a>
 
 ```java
 public java.lang.String toString()
@@ -10902,13 +10902,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetKey` <a name="resetKey" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resetKey"></a>
+##### `resetKey` <a name="resetKey" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetKey"></a>
 
 ```java
 public void resetKey()
 ```
 
-##### `resetName` <a name="resetName" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.resetName"></a>
+##### `resetName` <a name="resetName" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetName"></a>
 
 ```java
 public void resetName()
@@ -10919,17 +10919,17 @@ public void resetName()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.creationStack"></a>
 
 ```java
 public java.util.List<java.lang.String> getCreationStack();
@@ -10943,7 +10943,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.fqn"></a>
 
 ```java
 public java.lang.String getFqn();
@@ -10953,7 +10953,7 @@ public java.lang.String getFqn();
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.keyInput"></a>
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.keyInput"></a>
 
 ```java
 public java.lang.String getKeyInput();
@@ -10963,7 +10963,7 @@ public java.lang.String getKeyInput();
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.nameInput"></a>
 
 ```java
 public java.lang.String getNameInput();
@@ -10973,7 +10973,7 @@ public java.lang.String getNameInput();
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.key"></a>
 
 ```java
 public java.lang.String getKey();
@@ -10983,7 +10983,7 @@ public java.lang.String getKey();
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.name"></a>
 
 ```java
 public java.lang.String getName();
@@ -10993,13 +10993,13 @@ public java.lang.String getName();
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.internalValue"></a>
 
 ```java
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a> OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -13905,12 +13905,12 @@ public void putEdgeTtl(IResolvable OR java.util.List<RulesetRulesActionParameter
 ##### `putFromList` <a name="putFromList" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putFromList"></a>
 
 ```java
-public void putFromList(IResolvable OR java.util.List<RulesetRulesActionParametersFromList> value)
+public void putFromList(IResolvable OR java.util.List<RulesetRulesActionParametersFromListStruct> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putFromList.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>>
 
 ---
 
@@ -14322,7 +14322,7 @@ public void resetVersion()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.browserTtl">browserTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList">RulesetRulesActionParametersBrowserTtlList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheKey">cacheKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList">RulesetRulesActionParametersCacheKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.edgeTtl">edgeTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList">RulesetRulesActionParametersEdgeTtlList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromList">fromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList">RulesetRulesActionParametersFromListList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromList">fromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList">RulesetRulesActionParametersFromListStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValue">fromValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueList">RulesetRulesActionParametersFromValueList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersList">RulesetRulesActionParametersHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedData">matchedData</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataList">RulesetRulesActionParametersMatchedDataList</a></code> | *No description.* |
@@ -14347,7 +14347,7 @@ public void resetVersion()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZarazInput">disableZarazInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.edgeTtlInput">edgeTtlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscationInput">emailObfuscationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromListInput">fromListInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromListInput">fromListInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValueInput">fromValueInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.headersInput">headersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hostHeaderInput">hostHeaderInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -14494,10 +14494,10 @@ public RulesetRulesActionParametersEdgeTtlList getEdgeTtl();
 ##### `fromList`<sup>Required</sup> <a name="fromList" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromList"></a>
 
 ```java
-public RulesetRulesActionParametersFromListList getFromList();
+public RulesetRulesActionParametersFromListStructList getFromList();
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList">RulesetRulesActionParametersFromListList</a>
+- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList">RulesetRulesActionParametersFromListStructList</a>
 
 ---
 
@@ -14747,7 +14747,7 @@ public java.lang.Object getEmailObfuscationInput();
 public java.lang.Object getFromListInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList">RulesetRulesActionParametersFromList</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>>
 
 ---
 
