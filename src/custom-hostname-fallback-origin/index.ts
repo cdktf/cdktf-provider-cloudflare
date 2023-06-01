@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/custom_hostname_fallback_origin
 // generated from terraform resource schema
 
