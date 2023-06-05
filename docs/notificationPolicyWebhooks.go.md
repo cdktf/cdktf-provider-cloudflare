@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NewNotificationPolicyWebhooks(scope Construct, id *string, config NotificationPolicyWebhooksConfig) NotificationPolicyWebhooks
 ```
@@ -291,7 +291,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 &notificationpolicywebhooks.NotificationPolicyWebhooksConfig {
 	Connection: interface{},
