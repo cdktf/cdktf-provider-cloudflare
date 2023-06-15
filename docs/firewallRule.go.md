@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/firewallrule"
 
 firewallrule.NewFirewallRule(scope Construct, id *string, config FirewallRuleConfig) FirewallRule
 ```
@@ -305,7 +305,7 @@ func ResetProducts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/firewallrule"
 
 firewallrule.FirewallRule_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/firewallrule"
 
 firewallrule.FirewallRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ firewallrule.FirewallRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/firewallrule"
 
 firewallrule.FirewallRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/firewallrule"
 
 &firewallrule.FirewallRuleConfig {
 	Connection: interface{},
