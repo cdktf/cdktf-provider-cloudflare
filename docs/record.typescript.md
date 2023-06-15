@@ -456,7 +456,7 @@ record.Record.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.proxiedInput">proxiedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.record.Record.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.record.Record.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
@@ -770,10 +770,10 @@ public readonly tagsInput: string[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-cloudflare.record.Record.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: RecordTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | RecordTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>
 
 ---
 
@@ -3418,7 +3418,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3489,10 +3489,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RecordTimeouts | IResolvable;
+public readonly internalValue: IResolvable | RecordTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>
 
 ---
 

@@ -1427,7 +1427,7 @@ def reset_suffix() -> None
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference.property.dnsServer">dns_server</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference.property.suffix">suffix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains">FallbackDomainDomains</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains">FallbackDomainDomains</a>]</code> | *No description.* |
 
 ---
 
@@ -1518,10 +1518,10 @@ suffix: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[FallbackDomainDomains, IResolvable]
+internal_value: typing.Union[IResolvable, FallbackDomainDomains]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains">FallbackDomainDomains</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains">FallbackDomainDomains</a>]
 
 ---
 

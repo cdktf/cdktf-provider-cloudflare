@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroup(scope Construct, id *string, config AccessGroupConfig) AccessGroup
 ```
@@ -344,7 +344,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.AccessGroup_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.AccessGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ accessgroup.AccessGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.AccessGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExclude {
 	AnyValidServiceToken: interface{},
@@ -970,7 +970,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
 	Email: *[]*string,
 	EmailDomain: *[]*string,
 	Everyone: interface{},
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7.accessGroup.AccessGroupExcludeExternalEvaluation,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8.accessGroup.AccessGroupExcludeExternalEvaluation,
 	Geo: *[]*string,
 	Github: interface{},
 	Group: *[]*string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExcludeAzure {
 	Id: *[]*string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExcludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExcludeGithub {
 	IdentityProviderId: *string,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExcludeGsuite {
 	Email: *[]*string,
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExcludeOkta {
 	IdentityProviderId: *string,
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupExcludeSaml {
 	AttributeName: *string,
@@ -1579,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupInclude {
 	AnyValidServiceToken: interface{},
@@ -1591,7 +1591,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
 	Email: *[]*string,
 	EmailDomain: *[]*string,
 	Everyone: interface{},
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7.accessGroup.AccessGroupIncludeExternalEvaluation,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8.accessGroup.AccessGroupIncludeExternalEvaluation,
 	Geo: *[]*string,
 	Github: interface{},
 	Group: *[]*string,
@@ -1889,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupIncludeAzure {
 	Id: *[]*string,
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupIncludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupIncludeGithub {
 	IdentityProviderId: *string,
@@ -2048,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupIncludeGsuite {
 	Email: *[]*string,
@@ -2094,7 +2094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupIncludeOkta {
 	IdentityProviderId: *string,
@@ -2140,7 +2140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupIncludeSaml {
 	AttributeName: *string,
@@ -2200,7 +2200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequire {
 	AnyValidServiceToken: interface{},
@@ -2212,7 +2212,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
 	Email: *[]*string,
 	EmailDomain: *[]*string,
 	Everyone: interface{},
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7.accessGroup.AccessGroupRequireExternalEvaluation,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8.accessGroup.AccessGroupRequireExternalEvaluation,
 	Geo: *[]*string,
 	Github: interface{},
 	Group: *[]*string,
@@ -2510,7 +2510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequireAzure {
 	Id: *[]*string,
@@ -2563,7 +2563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequireExternalEvaluation {
 	EvaluateUrl: *string,
@@ -2609,7 +2609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequireGithub {
 	IdentityProviderId: *string,
@@ -2669,7 +2669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequireGsuite {
 	Email: *[]*string,
@@ -2715,7 +2715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequireOkta {
 	IdentityProviderId: *string,
@@ -2761,7 +2761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 &accessgroup.AccessGroupRequireSaml {
 	AttributeName: *string,
@@ -2823,7 +2823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupExcludeAzureList
 ```
@@ -2966,7 +2966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupExcludeAzureOutputReference
 ```
@@ -3291,7 +3291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessGroupExcludeExternalEvaluationOutputReference
 ```
@@ -3598,7 +3598,7 @@ func InternalValue() AccessGroupExcludeExternalEvaluation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupExcludeGithubList
 ```
@@ -3741,7 +3741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupExcludeGithubOutputReference
 ```
@@ -4095,7 +4095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeGsuiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupExcludeGsuiteList
 ```
@@ -4238,7 +4238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupExcludeGsuiteOutputReference
 ```
@@ -4563,7 +4563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupExcludeList
 ```
@@ -4706,7 +4706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeOktaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupExcludeOktaList
 ```
@@ -4849,7 +4849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupExcludeOktaOutputReference
 ```
@@ -5174,7 +5174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupExcludeOutputReference
 ```
@@ -6099,7 +6099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupExcludeSamlList
 ```
@@ -6242,7 +6242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupExcludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupExcludeSamlOutputReference
 ```
@@ -6596,7 +6596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeAzureList
 ```
@@ -6739,7 +6739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupIncludeAzureOutputReference
 ```
@@ -7064,7 +7064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessGroupIncludeExternalEvaluationOutputReference
 ```
@@ -7371,7 +7371,7 @@ func InternalValue() AccessGroupIncludeExternalEvaluation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeGithubList
 ```
@@ -7514,7 +7514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupIncludeGithubOutputReference
 ```
@@ -7868,7 +7868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeGsuiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeGsuiteList
 ```
@@ -8011,7 +8011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupIncludeGsuiteOutputReference
 ```
@@ -8336,7 +8336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeList
 ```
@@ -8479,7 +8479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeOktaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeOktaList
 ```
@@ -8622,7 +8622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupIncludeOktaOutputReference
 ```
@@ -8947,7 +8947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupIncludeOutputReference
 ```
@@ -9872,7 +9872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeSamlList
 ```
@@ -10015,7 +10015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupIncludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupIncludeSamlOutputReference
 ```
@@ -10369,7 +10369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireAzureList
 ```
@@ -10512,7 +10512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupRequireAzureOutputReference
 ```
@@ -10837,7 +10837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessGroupRequireExternalEvaluationOutputReference
 ```
@@ -11144,7 +11144,7 @@ func InternalValue() AccessGroupRequireExternalEvaluation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireGithubList
 ```
@@ -11287,7 +11287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupRequireGithubOutputReference
 ```
@@ -11641,7 +11641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireGsuiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireGsuiteList
 ```
@@ -11784,7 +11784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupRequireGsuiteOutputReference
 ```
@@ -12109,7 +12109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireList
 ```
@@ -12252,7 +12252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireOktaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireOktaList
 ```
@@ -12395,7 +12395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupRequireOktaOutputReference
 ```
@@ -12720,7 +12720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupRequireOutputReference
 ```
@@ -13645,7 +13645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireSamlList
 ```
@@ -13788,7 +13788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup"
 
 accessgroup.NewAccessGroupRequireSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessGroupRequireSamlOutputReference
 ```

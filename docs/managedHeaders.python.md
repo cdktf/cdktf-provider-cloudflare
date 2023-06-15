@@ -1466,7 +1466,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders">ManagedHeadersManagedRequestHeaders</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders">ManagedHeadersManagedRequestHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -1537,10 +1537,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ManagedHeadersManagedRequestHeaders, IResolvable]
+internal_value: typing.Union[IResolvable, ManagedHeadersManagedRequestHeaders]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders">ManagedHeadersManagedRequestHeaders</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders">ManagedHeadersManagedRequestHeaders</a>]
 
 ---
 
@@ -1955,7 +1955,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders">ManagedHeadersManagedResponseHeaders</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders">ManagedHeadersManagedResponseHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -2026,10 +2026,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ManagedHeadersManagedResponseHeaders, IResolvable]
+internal_value: typing.Union[IResolvable, ManagedHeadersManagedResponseHeaders]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders">ManagedHeadersManagedResponseHeaders</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders">ManagedHeadersManagedResponseHeaders</a>]
 
 ---
 

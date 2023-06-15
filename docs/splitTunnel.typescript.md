@@ -1279,7 +1279,7 @@ public resetHost(): void
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.property.address">address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.property.host">host</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnels">SplitTunnelTunnels</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnels">SplitTunnelTunnels</a></code> | *No description.* |
 
 ---
 
@@ -1370,10 +1370,10 @@ public readonly host: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SplitTunnelTunnels | IResolvable;
+public readonly internalValue: IResolvable | SplitTunnelTunnels;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnels">SplitTunnelTunnels</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnels">SplitTunnelTunnels</a>
 
 ---
 

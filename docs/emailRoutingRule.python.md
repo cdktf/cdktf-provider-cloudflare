@@ -1637,7 +1637,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference.property.valueInput">value_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference.property.value">value</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]</code> | *No description.* |
 
 ---
 
@@ -1708,10 +1708,10 @@ value: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmailRoutingRuleAction, IResolvable]
+internal_value: typing.Union[IResolvable, EmailRoutingRuleAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]
 
 ---
 
@@ -2142,7 +2142,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference.property.field">field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]</code> | *No description.* |
 
 ---
 
@@ -2233,10 +2233,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmailRoutingRuleMatcher, IResolvable]
+internal_value: typing.Union[IResolvable, EmailRoutingRuleMatcher]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]
 
 ---
 

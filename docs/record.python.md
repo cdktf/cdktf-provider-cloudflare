@@ -1059,7 +1059,7 @@ record.Record.is_terraform_resource(
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.proxiedInput">proxied_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.record.Record.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.record.Record.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
@@ -1373,10 +1373,10 @@ tags_input: typing.List[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-cloudflare.record.Record.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[RecordTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, RecordTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>]
 
 ---
 
@@ -4135,7 +4135,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4206,10 +4206,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RecordTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, RecordTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.record.RecordTimeouts">RecordTimeouts</a>]
 
 ---
 

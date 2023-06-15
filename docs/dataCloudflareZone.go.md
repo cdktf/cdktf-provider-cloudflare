@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZone(scope Construct, id *string, config DataCloudflareZoneConfig) DataCloudflareZone
 ```
@@ -298,7 +298,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datacloudflarezone.DataCloudflareZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneConfig {
 	Connection: interface{},

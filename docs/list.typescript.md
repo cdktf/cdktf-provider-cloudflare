@@ -1534,7 +1534,7 @@ public resetComment(): void
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.valueInput">valueInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue">ListItemValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a></code> | *No description.* |
 
 ---
 
@@ -1605,10 +1605,10 @@ public readonly comment: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.list.ListItemOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ListItem | IResolvable;
+public readonly internalValue: IResolvable | ListItem;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a>
 
 ---
 
@@ -1986,7 +1986,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostnameInput">urlHostnameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostname">urlHostname</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a></code> | *No description.* |
 
 ---
 
@@ -2037,10 +2037,10 @@ public readonly urlHostname: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ListItemValueHostname | IResolvable;
+public readonly internalValue: IResolvable | ListItemValueHostname;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a>
 
 ---
 
@@ -2856,7 +2856,7 @@ public resetSubpathMatching(): void
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.statusCode">statusCode</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.subpathMatching">subpathMatching</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.targetUrl">targetUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a></code> | *No description.* |
 
 ---
 
@@ -3027,10 +3027,10 @@ public readonly targetUrl: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ListItemValueRedirect | IResolvable;
+public readonly internalValue: IResolvable | ListItemValueRedirect;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a>
 
 ---
 
