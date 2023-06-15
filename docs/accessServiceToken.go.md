@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessservicetoken"
 
 accessservicetoken.NewAccessServiceToken(scope Construct, id *string, config AccessServiceTokenConfig) AccessServiceToken
 ```
@@ -298,7 +298,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessservicetoken"
 
 accessservicetoken.AccessServiceToken_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessservicetoken"
 
 accessservicetoken.AccessServiceToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ accessservicetoken.AccessServiceToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessservicetoken"
 
 accessservicetoken.AccessServiceToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessservicetoken"
 
 &accessservicetoken.AccessServiceTokenConfig {
 	Connection: interface{},
