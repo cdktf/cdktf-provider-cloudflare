@@ -1796,7 +1796,7 @@ def reset_comment() -> None
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.valueInput">value_input</a></code> | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue">ListItemValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a>]</code> | *No description.* |
 
 ---
 
@@ -1867,10 +1867,10 @@ comment: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.list.ListItemOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ListItem, IResolvable]
+internal_value: typing.Union[IResolvable, ListItem]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.list.ListItem">ListItem</a>]
 
 ---
 
@@ -2283,7 +2283,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostnameInput">url_hostname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.urlHostname">url_hostname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a>]</code> | *No description.* |
 
 ---
 
@@ -2334,10 +2334,10 @@ url_hostname: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.list.ListItemValueHostnameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ListItemValueHostname, IResolvable]
+internal_value: typing.Union[IResolvable, ListItemValueHostname]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.list.ListItemValueHostname">ListItemValueHostname</a>]
 
 ---
 
@@ -3217,7 +3217,7 @@ def reset_subpath_matching() -> None
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.subpathMatching">subpath_matching</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.targetUrl">target_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a>]</code> | *No description.* |
 
 ---
 
@@ -3388,10 +3388,10 @@ target_url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ListItemValueRedirect, IResolvable]
+internal_value: typing.Union[IResolvable, ListItemValueRedirect]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.list.ListItemValueRedirect">ListItemValueRedirect</a>]
 
 ---
 
