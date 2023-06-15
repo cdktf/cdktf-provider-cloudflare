@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostname(scope Construct, id *string, config CustomHostnameConfig) CustomHostname
 ```
@@ -325,7 +325,7 @@ func ResetWaitForSslPendingValidation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.CustomHostname_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.CustomHostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ customhostname.CustomHostname_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.CustomHostname_IsTerraformResource(x interface{}) *bool
 ```
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 &customhostname.CustomHostnameConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 &customhostname.CustomHostnameSsl {
 	BundleMethod: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 &customhostname.CustomHostnameSslSettings {
 	Ciphers: *[]*string,
@@ -1256,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 &customhostname.CustomHostnameSslValidationErrors {
 
@@ -1269,7 +1269,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 &customhostname.CustomHostnameSslValidationRecords {
 
@@ -1284,7 +1284,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslList
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomHostnameSslOutputReference
 ```
@@ -1972,7 +1972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslSettingsList
 ```
@@ -2115,7 +2115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomHostnameSslSettingsOutputReference
 ```
@@ -2527,7 +2527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslValidationErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslValidationErrorsList
 ```
@@ -2659,7 +2659,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslValidationErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomHostnameSslValidationErrorsOutputReference
 ```
@@ -2937,7 +2937,7 @@ func InternalValue() CustomHostnameSslValidationErrors
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslValidationRecordsList
 ```
@@ -3069,7 +3069,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname"
 
 customhostname.NewCustomHostnameSslValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomHostnameSslValidationRecordsOutputReference
 ```
