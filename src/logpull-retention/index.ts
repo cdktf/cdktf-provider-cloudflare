@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/logpull_retention
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface LogpullRetentionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether you wish to retain logs or not.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention#enabled LogpullRetention#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/logpull_retention#enabled LogpullRetention#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention#id LogpullRetention#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/logpull_retention#id LogpullRetention#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface LogpullRetentionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention cloudflare_logpull_retention}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/logpull_retention cloudflare_logpull_retention}
 */
 export class LogpullRetention extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class LogpullRetention extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention cloudflare_logpull_retention} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class LogpullRetention extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpull_retention',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.1',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface PagesProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#account_id PagesProject#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#account_id PagesProject#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface PagesProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the project. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
   /**
   * The name of the branch that is used for the production environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#production_branch PagesProject#production_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
   */
   readonly productionBranch: string;
   /**
   * build_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#build_config PagesProject#build_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#build_config PagesProject#build_config}
   */
   readonly buildConfig?: PagesProjectBuildConfig;
   /**
   * deployment_configs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
   */
   readonly deploymentConfigs?: PagesProjectDeploymentConfigs;
   /**
   * source block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#source PagesProject#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#source PagesProject#source}
   */
   readonly source?: PagesProjectSource;
 }
@@ -60,31 +55,31 @@ export interface PagesProjectBuildConfig {
   /**
   * Command used to build project.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#build_command PagesProject#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#build_command PagesProject#build_command}
   */
   readonly buildCommand?: string;
   /**
   * Output directory of the build.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
   */
   readonly destinationDir?: string;
   /**
   * Your project's root directory, where Cloudflare runs the build command. If your site is not in a subdirectory, leave this path value empty.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#root_dir PagesProject#root_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
   */
   readonly rootDir?: string;
   /**
   * The classifying tag for analytics.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
   */
   readonly webAnalyticsTag?: string;
   /**
   * The auth token for analytics.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
   */
   readonly webAnalyticsToken?: string;
 }
@@ -239,23 +234,90 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._webAnalyticsToken;
   }
 }
+export interface PagesProjectDeploymentConfigsPreviewPlacement {
+  /**
+  * Placement Mode for the Pages Function.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#mode PagesProject#mode}
+  */
+  readonly mode?: string;
+}
+
+export function pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct?: PagesProjectDeploymentConfigsPreviewPlacementOutputReference | PagesProjectDeploymentConfigsPreviewPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mode: cdktf.stringToTerraform(struct!.mode),
+  }
+}
+
+export class PagesProjectDeploymentConfigsPreviewPlacementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewPlacement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewPlacement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mode = value.mode;
+    }
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+}
 export interface PagesProjectDeploymentConfigsPreviewServiceBinding {
   /**
   * The name of the Worker environment to bind to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#environment PagesProject#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#environment PagesProject#environment}
   */
   readonly environment?: string;
   /**
   * The global variable for the binding in your Worker code.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
   /**
   * The name of the Worker to bind to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#service PagesProject#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#service PagesProject#service}
   */
   readonly service: string;
 }
@@ -394,73 +456,79 @@ export interface PagesProjectDeploymentConfigsPreview {
   /**
   * Use latest compatibility date for Pages Functions. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
   */
   readonly alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable;
   /**
   * Compatibility date used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * D1 Databases used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
   */
   readonly d1Databases?: { [key: string]: string };
   /**
   * Durable Object namespaces used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
   */
   readonly durableObjectNamespaces?: { [key: string]: string };
   /**
   * Environment variables for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
   */
   readonly environmentVariables?: { [key: string]: string };
   /**
   * Fail open used for Pages Functions. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#fail_open PagesProject#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
   */
   readonly failOpen?: boolean | cdktf.IResolvable;
   /**
   * KV namespaces used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
   */
   readonly kvNamespaces?: { [key: string]: string };
   /**
   * R2 Buckets used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
   */
   readonly r2Buckets?: { [key: string]: string };
   /**
   * Encrypted environment variables for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#secrets PagesProject#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#secrets PagesProject#secrets}
   */
   readonly secrets?: { [key: string]: string };
   /**
   * Usage model used for Pages Functions. Defaults to `bundled`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#usage_model PagesProject#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
   */
   readonly usageModel?: string;
   /**
+  * placement block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#placement PagesProject#placement}
+  */
+  readonly placement?: PagesProjectDeploymentConfigsPreviewPlacement;
+  /**
   * service_binding block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#service_binding PagesProject#service_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
   */
   readonly serviceBinding?: PagesProjectDeploymentConfigsPreviewServiceBinding[] | cdktf.IResolvable;
 }
@@ -482,6 +550,7 @@ export function pagesProjectDeploymentConfigsPreviewToTerraform(struct?: PagesPr
     r2_buckets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.r2Buckets),
     secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.secrets),
     usage_model: cdktf.stringToTerraform(struct!.usageModel),
+    placement: pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct!.placement),
     service_binding: cdktf.listMapper(pagesProjectDeploymentConfigsPreviewServiceBindingToTerraform, true)(struct!.serviceBinding),
   }
 }
@@ -544,6 +613,10 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.usageModel = this._usageModel;
     }
+    if (this._placement?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.placement = this._placement?.internalValue;
+    }
     if (this._serviceBinding?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceBinding = this._serviceBinding?.internalValue;
@@ -565,6 +638,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
       this._r2Buckets = undefined;
       this._secrets = undefined;
       this._usageModel = undefined;
+      this._placement.internalValue = undefined;
       this._serviceBinding.internalValue = undefined;
     }
     else {
@@ -580,6 +654,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
       this._r2Buckets = value.r2Buckets;
       this._secrets = value.secrets;
       this._usageModel = value.usageModel;
+      this._placement.internalValue = value.placement;
       this._serviceBinding.internalValue = value.serviceBinding;
     }
   }
@@ -760,6 +835,22 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._usageModel;
   }
 
+  // placement - computed: false, optional: true, required: false
+  private _placement = new PagesProjectDeploymentConfigsPreviewPlacementOutputReference(this, "placement");
+  public get placement() {
+    return this._placement;
+  }
+  public putPlacement(value: PagesProjectDeploymentConfigsPreviewPlacement) {
+    this._placement.internalValue = value;
+  }
+  public resetPlacement() {
+    this._placement.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementInput() {
+    return this._placement.internalValue;
+  }
+
   // service_binding - computed: false, optional: true, required: false
   private _serviceBinding = new PagesProjectDeploymentConfigsPreviewServiceBindingList(this, "service_binding", true);
   public get serviceBinding() {
@@ -776,23 +867,90 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._serviceBinding.internalValue;
   }
 }
+export interface PagesProjectDeploymentConfigsProductionPlacement {
+  /**
+  * Placement Mode for the Pages Function.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#mode PagesProject#mode}
+  */
+  readonly mode?: string;
+}
+
+export function pagesProjectDeploymentConfigsProductionPlacementToTerraform(struct?: PagesProjectDeploymentConfigsProductionPlacementOutputReference | PagesProjectDeploymentConfigsProductionPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mode: cdktf.stringToTerraform(struct!.mode),
+  }
+}
+
+export class PagesProjectDeploymentConfigsProductionPlacementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PagesProjectDeploymentConfigsProductionPlacement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionPlacement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mode = value.mode;
+    }
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+}
 export interface PagesProjectDeploymentConfigsProductionServiceBinding {
   /**
   * The name of the Worker environment to bind to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#environment PagesProject#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#environment PagesProject#environment}
   */
   readonly environment?: string;
   /**
   * The global variable for the binding in your Worker code.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
   /**
   * The name of the Worker to bind to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#service PagesProject#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#service PagesProject#service}
   */
   readonly service: string;
 }
@@ -931,73 +1089,79 @@ export interface PagesProjectDeploymentConfigsProduction {
   /**
   * Use latest compatibility date for Pages Functions. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
   */
   readonly alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable;
   /**
   * Compatibility date used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * D1 Databases used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
   */
   readonly d1Databases?: { [key: string]: string };
   /**
   * Durable Object namespaces used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
   */
   readonly durableObjectNamespaces?: { [key: string]: string };
   /**
   * Environment variables for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
   */
   readonly environmentVariables?: { [key: string]: string };
   /**
   * Fail open used for Pages Functions. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#fail_open PagesProject#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
   */
   readonly failOpen?: boolean | cdktf.IResolvable;
   /**
   * KV namespaces used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
   */
   readonly kvNamespaces?: { [key: string]: string };
   /**
   * R2 Buckets used for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
   */
   readonly r2Buckets?: { [key: string]: string };
   /**
   * Encrypted environment variables for Pages Functions.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#secrets PagesProject#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#secrets PagesProject#secrets}
   */
   readonly secrets?: { [key: string]: string };
   /**
   * Usage model used for Pages Functions. Defaults to `bundled`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#usage_model PagesProject#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
   */
   readonly usageModel?: string;
   /**
+  * placement block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#placement PagesProject#placement}
+  */
+  readonly placement?: PagesProjectDeploymentConfigsProductionPlacement;
+  /**
   * service_binding block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#service_binding PagesProject#service_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
   */
   readonly serviceBinding?: PagesProjectDeploymentConfigsProductionServiceBinding[] | cdktf.IResolvable;
 }
@@ -1019,6 +1183,7 @@ export function pagesProjectDeploymentConfigsProductionToTerraform(struct?: Page
     r2_buckets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.r2Buckets),
     secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.secrets),
     usage_model: cdktf.stringToTerraform(struct!.usageModel),
+    placement: pagesProjectDeploymentConfigsProductionPlacementToTerraform(struct!.placement),
     service_binding: cdktf.listMapper(pagesProjectDeploymentConfigsProductionServiceBindingToTerraform, true)(struct!.serviceBinding),
   }
 }
@@ -1081,6 +1246,10 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.usageModel = this._usageModel;
     }
+    if (this._placement?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.placement = this._placement?.internalValue;
+    }
     if (this._serviceBinding?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceBinding = this._serviceBinding?.internalValue;
@@ -1102,6 +1271,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
       this._r2Buckets = undefined;
       this._secrets = undefined;
       this._usageModel = undefined;
+      this._placement.internalValue = undefined;
       this._serviceBinding.internalValue = undefined;
     }
     else {
@@ -1117,6 +1287,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
       this._r2Buckets = value.r2Buckets;
       this._secrets = value.secrets;
       this._usageModel = value.usageModel;
+      this._placement.internalValue = value.placement;
       this._serviceBinding.internalValue = value.serviceBinding;
     }
   }
@@ -1297,6 +1468,22 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._usageModel;
   }
 
+  // placement - computed: false, optional: true, required: false
+  private _placement = new PagesProjectDeploymentConfigsProductionPlacementOutputReference(this, "placement");
+  public get placement() {
+    return this._placement;
+  }
+  public putPlacement(value: PagesProjectDeploymentConfigsProductionPlacement) {
+    this._placement.internalValue = value;
+  }
+  public resetPlacement() {
+    this._placement.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementInput() {
+    return this._placement.internalValue;
+  }
+
   // service_binding - computed: false, optional: true, required: false
   private _serviceBinding = new PagesProjectDeploymentConfigsProductionServiceBindingList(this, "service_binding", true);
   public get serviceBinding() {
@@ -1317,13 +1504,13 @@ export interface PagesProjectDeploymentConfigs {
   /**
   * preview block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#preview PagesProject#preview}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#preview PagesProject#preview}
   */
   readonly preview: PagesProjectDeploymentConfigsPreview;
   /**
   * production block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#production PagesProject#production}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#production PagesProject#production}
   */
   readonly production: PagesProjectDeploymentConfigsProduction;
 }
@@ -1407,55 +1594,55 @@ export interface PagesProjectSourceConfig {
   /**
   * Toggle deployments on this repo. Defaults to `true`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
   */
   readonly deploymentsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Project owner username.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#owner PagesProject#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#owner PagesProject#owner}
   */
   readonly owner?: string;
   /**
   * Enable Pages to comment on Pull Requests. Defaults to `true`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
   */
   readonly prCommentsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Branches will be excluded from automatic deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
   */
   readonly previewBranchExcludes?: string[];
   /**
   * Branches will be included for automatic deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
   */
   readonly previewBranchIncludes?: string[];
   /**
   * Preview Deployment Setting. Defaults to `all`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
   */
   readonly previewDeploymentSetting?: string;
   /**
   * Project production branch name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#production_branch PagesProject#production_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
   */
   readonly productionBranch: string;
   /**
   * Enable production deployments. Defaults to `true`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
   */
   readonly productionDeploymentEnabled?: boolean | cdktf.IResolvable;
   /**
   * Project repository name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#repo_name PagesProject#repo_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
   */
   readonly repoName?: string;
 }
@@ -1703,13 +1890,13 @@ export interface PagesProjectSource {
   /**
   * Project host type.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#type PagesProject#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#type PagesProject#type}
   */
   readonly type?: string;
   /**
   * config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project#config PagesProject#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project#config PagesProject#config}
   */
   readonly config?: PagesProjectSourceConfig;
 }
@@ -1797,7 +1984,7 @@ export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project cloudflare_pages_project}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project cloudflare_pages_project}
 */
 export class PagesProject extends cdktf.TerraformResource {
 
@@ -1811,7 +1998,7 @@ export class PagesProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/pages_project cloudflare_pages_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/pages_project cloudflare_pages_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1822,7 +2009,7 @@ export class PagesProject extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.1',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
