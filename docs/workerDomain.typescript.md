@@ -1,6 +1,6 @@
 # `cloudflare_worker_domain`
 
-Refer to the Terraform Registory for docs: [`cloudflare_worker_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain).
+Refer to the Terraform Registory for docs: [`cloudflare_worker_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain).
 
 # `workerDomain` Submodule <a name="`workerDomain` Submodule" id="@cdktf/provider-cloudflare.workerDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_worker_domain`](https://
 
 ### WorkerDomain <a name="WorkerDomain" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain cloudflare_worker_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain cloudflare_worker_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.Initializer"></a>
 
@@ -682,7 +682,7 @@ const workerDomainConfig: workerDomain.WorkerDomainConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomainConfig.property.service">service</a></code> | <code>string</code> | Name of worker script to attach the domain to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomainConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomainConfig.property.environment">environment</a></code> | <code>string</code> | The name of the Worker environment. Defaults to `production`. |
-| <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#id WorkerDomain#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#id WorkerDomain#id}. |
 
 ---
 
@@ -766,7 +766,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#account_id WorkerDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#account_id WorkerDomain#account_id}
 
 ---
 
@@ -780,7 +780,7 @@ public readonly hostname: string;
 
 Hostname of the Worker Domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#hostname WorkerDomain#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#hostname WorkerDomain#hostname}
 
 ---
 
@@ -794,7 +794,7 @@ public readonly service: string;
 
 Name of worker script to attach the domain to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#service WorkerDomain#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#service WorkerDomain#service}
 
 ---
 
@@ -808,7 +808,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#zone_id WorkerDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#zone_id WorkerDomain#zone_id}
 
 ---
 
@@ -822,7 +822,7 @@ public readonly environment: string;
 
 The name of the Worker environment. Defaults to `production`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#environment WorkerDomain#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#environment WorkerDomain#environment}
 
 ---
 
@@ -834,7 +834,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/worker_domain#id WorkerDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_domain#id WorkerDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

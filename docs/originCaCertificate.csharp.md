@@ -1,6 +1,6 @@
 # `cloudflare_origin_ca_certificate`
 
-Refer to the Terraform Registory for docs: [`cloudflare_origin_ca_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate).
+Refer to the Terraform Registory for docs: [`cloudflare_origin_ca_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate).
 
 # `originCaCertificate` Submodule <a name="`originCaCertificate` Submodule" id="@cdktf/provider-cloudflare.originCaCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_origin_ca_certificate`](
 
 ### OriginCaCertificate <a name="OriginCaCertificate" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetCsr">ResetCsr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetMinDaysForRenewal">ResetMinDaysForRenewal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetRequestedValidity">ResetRequestedValidity</a></code> | *No description.* |
@@ -260,12 +259,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 - *Type:* string
 
 ---
-
-##### `ResetCsr` <a name="ResetCsr" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetCsr"></a>
-
-```csharp
-private void ResetCsr()
-```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.resetId"></a>
 
@@ -707,9 +700,9 @@ new OriginCaCertificateConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
+    string Csr,
     string[] Hostnames,
     string RequestType,
-    string Csr = null,
     string Id = null,
     double MinDaysForRenewal = null,
     double RequestedValidity = null
@@ -727,10 +720,10 @@ new OriginCaCertificateConfig {
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.csr">Csr</a></code> | <code>string</code> | The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.hostnames">Hostnames</a></code> | <code>string[]</code> | A list of hostnames or wildcard names bound to the certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.requestType">RequestType</a></code> | <code>string</code> | The signature type desired on the certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.csr">Csr</a></code> | <code>string</code> | The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.minDaysForRenewal">MinDaysForRenewal</a></code> | <code>double</code> | Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.requestedValidity">RequestedValidity</a></code> | <code>double</code> | The number of days for which the certificate should be valid. |
 
@@ -806,6 +799,20 @@ public object[] Provisioners { get; set; }
 
 ---
 
+##### `Csr`<sup>Required</sup> <a name="Csr" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.csr"></a>
+
+```csharp
+public string Csr { get; set; }
+```
+
+- *Type:* string
+
+The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+
+---
+
 ##### `Hostnames`<sup>Required</sup> <a name="Hostnames" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.hostnames"></a>
 
 ```csharp
@@ -818,7 +825,7 @@ A list of hostnames or wildcard names bound to the certificate.
 
 **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
 
 ---
 
@@ -834,21 +841,7 @@ The signature type desired on the certificate.
 
 Available values: `origin-rsa`, `origin-ecc`, `keyless-certificate`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
-
----
-
-##### `Csr`<sup>Optional</sup> <a name="Csr" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.csr"></a>
-
-```csharp
-public string Csr { get; set; }
-```
-
-- *Type:* string
-
-The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
 
 ---
 
@@ -860,7 +853,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -877,7 +870,7 @@ public double MinDaysForRenewal { get; set; }
 
 Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
 
 ---
 
@@ -893,7 +886,7 @@ The number of days for which the certificate should be valid.
 
 Available values: `7`, `30`, `90`, `365`, `730`, `1095`, `5475`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
 
 ---
 

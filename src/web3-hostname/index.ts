@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface Web3HostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional description of the hostname.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname#description Web3Hostname#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname#description Web3Hostname#description}
   */
   readonly description?: string;
   /**
   * DNSLink value used if the target is ipfs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
   */
   readonly dnslink?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname#id Web3Hostname#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname#id Web3Hostname#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface Web3HostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * The hostname that will point to the target gateway via CNAME.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname#name Web3Hostname#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname#name Web3Hostname#name}
   */
   readonly name: string;
   /**
   * Target gateway of the hostname.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname#target Web3Hostname#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname#target Web3Hostname#target}
   */
   readonly target: string;
   /**
   * The zone identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname cloudflare_web3_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname cloudflare_web3_hostname}
 */
 export class Web3Hostname extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/web3_hostname cloudflare_web3_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web3_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.1',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

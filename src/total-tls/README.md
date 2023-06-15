@@ -1,3 +1,3 @@
 # `cloudflare_total_tls`
 
-Refer to the Terraform Registory for docs: [`cloudflare_total_tls`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/total_tls).
+Refer to the Terraform Registory for docs: [`cloudflare_total_tls`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/total_tls).

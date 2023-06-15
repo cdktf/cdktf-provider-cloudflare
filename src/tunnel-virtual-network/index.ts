@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface TunnelVirtualNetworkConfig extends cdktf.TerraformMetaArguments
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
   */
   readonly accountId: string;
   /**
   * Description of the tunnel virtual network.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network#comment TunnelVirtualNetwork#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#comment TunnelVirtualNetwork#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface TunnelVirtualNetworkConfig extends cdktf.TerraformMetaArguments
   /**
   * Whether this virtual network is the default one for the account. This means IP Routes belong to this virtual network and Teams Clients in the account route through this virtual network, unless specified otherwise for each case.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network#is_default_network TunnelVirtualNetwork#is_default_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#is_default_network TunnelVirtualNetwork#is_default_network}
   */
   readonly isDefaultNetwork?: boolean | cdktf.IResolvable;
   /**
   * A user-friendly name chosen when the virtual network is created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network#name TunnelVirtualNetwork#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#name TunnelVirtualNetwork#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}
 */
 export class TunnelVirtualNetwork extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class TunnelVirtualNetwork extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class TunnelVirtualNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tunnel_virtual_network',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.7.1',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

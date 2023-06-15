@@ -1,6 +1,6 @@
 # `data_cloudflare_origin_ca_root_certificate`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/origin_ca_root_certificate).
+Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/origin_ca_root_certificate).
 
 # `dataCloudflareOriginCaRootCertificate` Submodule <a name="`dataCloudflareOriginCaRootCertificate` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_cert
 
 ### DataCloudflareOriginCaRootCertificate <a name="DataCloudflareOriginCaRootCertificate" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/origin_ca_root_certificate cloudflare_origin_ca_root_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/origin_ca_root_certificate cloudflare_origin_ca_root_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer"></a>
 
@@ -582,7 +582,7 @@ new DataCloudflareOriginCaRootCertificateConfig {
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.algorithm">Algorithm</a></code> | <code>string</code> | The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
 
 ---
 
@@ -666,7 +666,7 @@ public string Algorithm { get; set; }
 
 The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
