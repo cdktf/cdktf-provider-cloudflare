@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRoles(scope Construct, id *string, config DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesConfig {
 	Connection: interface{},
@@ -690,7 +690,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesRoles {
 
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudfla
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAccountRolesRolesList
 ```
@@ -837,7 +837,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAccountRolesRolesOutputReference
 ```
