@@ -1,3 +1,3 @@
 # `cloudflare_zone_dnssec`
 
-Refer to the Terraform Registory for docs: [`cloudflare_zone_dnssec`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/zone_dnssec).
+Refer to the Terraform Registory for docs: [`cloudflare_zone_dnssec`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/zone_dnssec).

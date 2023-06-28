@@ -1,3 +1,3 @@
 # `data_cloudflare_rulesets`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_rulesets`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/rulesets).
+Refer to the Terraform Registory for docs: [`data_cloudflare_rulesets`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/rulesets).

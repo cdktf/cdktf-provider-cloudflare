@@ -1,6 +1,6 @@
 # `cloudflare_tunnel_virtual_network`
 
-Refer to the Terraform Registory for docs: [`cloudflare_tunnel_virtual_network`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network).
+Refer to the Terraform Registory for docs: [`cloudflare_tunnel_virtual_network`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network).
 
 # `tunnelVirtualNetwork` Submodule <a name="`tunnelVirtualNetwork` Submodule" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_tunnel_virtual_network`]
 
 ### TunnelVirtualNetwork <a name="TunnelVirtualNetwork" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer"></a>
 
@@ -47,7 +47,7 @@ tunnelVirtualNetwork.TunnelVirtualNetwork(
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | A user-friendly name chosen when the virtual network is created. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Description of the tunnel virtual network. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer.parameter.isDefaultNetwork">is_default_network</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this virtual network is the default one for the account. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user-friendly name chosen when the virtual network is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#name TunnelVirtualNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#name TunnelVirtualNetwork#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Description of the tunnel virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#comment TunnelVirtualNetwork#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#comment TunnelVirtualNetwork#comment}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ Whether this virtual network is the default one for the account.
 
 This means IP Routes belong to this virtual network and Teams Clients in the account route through this virtual network, unless specified otherwise for each case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#is_default_network TunnelVirtualNetwork#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#is_default_network TunnelVirtualNetwork#is_default_network}
 
 ---
 
@@ -824,7 +824,7 @@ tunnelVirtualNetwork.TunnelVirtualNetworkConfig(
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.property.name">name</a></code> | <code>str</code> | A user-friendly name chosen when the virtual network is created. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.property.comment">comment</a></code> | <code>str</code> | Description of the tunnel virtual network. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.property.isDefaultNetwork">is_default_network</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this virtual network is the default one for the account. |
 
 ---
@@ -909,7 +909,7 @@ account_id: str
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#account_id TunnelVirtualNetwork#account_id}
 
 ---
 
@@ -923,7 +923,7 @@ name: str
 
 A user-friendly name chosen when the virtual network is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#name TunnelVirtualNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#name TunnelVirtualNetwork#name}
 
 ---
 
@@ -937,7 +937,7 @@ comment: str
 
 Description of the tunnel virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#comment TunnelVirtualNetwork#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#comment TunnelVirtualNetwork#comment}
 
 ---
 
@@ -949,7 +949,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#id TunnelVirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ Whether this virtual network is the default one for the account.
 
 This means IP Routes belong to this virtual network and Teams Clients in the account route through this virtual network, unless specified otherwise for each case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/tunnel_virtual_network#is_default_network TunnelVirtualNetwork#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/tunnel_virtual_network#is_default_network TunnelVirtualNetwork#is_default_network}
 
 ---
 
