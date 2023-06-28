@@ -1,6 +1,6 @@
 # `cloudflare_worker_cron_trigger`
 
-Refer to the Terraform Registory for docs: [`cloudflare_worker_cron_trigger`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger).
+Refer to the Terraform Registory for docs: [`cloudflare_worker_cron_trigger`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger).
 
 # `workerCronTrigger` Submodule <a name="`workerCronTrigger` Submodule" id="@cdktf/provider-cloudflare.workerCronTrigger"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_worker_cron_trigger`](ht
 
 ### WorkerCronTrigger <a name="WorkerCronTrigger" id="@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger.Initializer"></a>
 
@@ -641,7 +641,7 @@ new WorkerCronTriggerConfig {
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.schedules">Schedules</a></code> | <code>string[]</code> | Cron expressions to execute the Worker script. |
 | <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.scriptName">ScriptName</a></code> | <code>string</code> | Worker script to target for the schedules. |
-| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger#id WorkerCronTrigger#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger#id WorkerCronTrigger#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger#account_id WorkerCronTrigger#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger#account_id WorkerCronTrigger#account_id}
 
 ---
 
@@ -739,7 +739,7 @@ public string[] Schedules { get; set; }
 
 Cron expressions to execute the Worker script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger#schedules WorkerCronTrigger#schedules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger#schedules WorkerCronTrigger#schedules}
 
 ---
 
@@ -753,7 +753,7 @@ public string ScriptName { get; set; }
 
 Worker script to target for the schedules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger#script_name WorkerCronTrigger#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger#script_name WorkerCronTrigger#script_name}
 
 ---
 
@@ -765,7 +765,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/worker_cron_trigger#id WorkerCronTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/worker_cron_trigger#id WorkerCronTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
