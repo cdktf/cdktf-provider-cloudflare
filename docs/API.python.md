@@ -25,6 +25,7 @@ The following submodules are available:
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.python.md)
 - [customPages](./customPages.python.md)
 - [customSsl](./customSsl.python.md)
+- [dataCloudflareAccessApplication](./dataCloudflareAccessApplication.python.md)
 - [dataCloudflareAccessIdentityProvider](./dataCloudflareAccessIdentityProvider.python.md)
 - [dataCloudflareAccountRoles](./dataCloudflareAccountRoles.python.md)
 - [dataCloudflareAccounts](./dataCloudflareAccounts.python.md)
