@@ -25,6 +25,7 @@ The following submodules are available:
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.csharp.md)
 - [customPages](./customPages.csharp.md)
 - [customSsl](./customSsl.csharp.md)
+- [dataCloudflareAccessApplication](./dataCloudflareAccessApplication.csharp.md)
 - [dataCloudflareAccessIdentityProvider](./dataCloudflareAccessIdentityProvider.csharp.md)
 - [dataCloudflareAccountRoles](./dataCloudflareAccountRoles.csharp.md)
 - [dataCloudflareAccounts](./dataCloudflareAccounts.csharp.md)
