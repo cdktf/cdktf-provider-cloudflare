@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_policy_certificates
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_policy_certificates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DevicePolicyCertificatesConfig extends cdktf.TerraformMetaArgum
   /**
   * `true` if certificate generation is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DevicePolicyCertificatesConfig extends cdktf.TerraformMetaArgum
   /**
   * The zone identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_policy_certificates#zone_id DevicePolicyCertificates#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_policy_certificates#zone_id DevicePolicyCertificates#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates}
 */
 export class DevicePolicyCertificates extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class DevicePolicyCertificates extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class DevicePolicyCertificates extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_policy_certificates',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
