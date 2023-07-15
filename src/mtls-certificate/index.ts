@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface MtlsCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
   */
   readonly accountId: string;
   /**
   * Whether this is a CA or leaf certificate. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
   */
   readonly ca: boolean | cdktf.IResolvable;
   /**
   * Certificate you intend to use with mTLS-enabled services. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
   */
   readonly certificates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate#id MtlsCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate#id MtlsCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +35,19 @@ export interface MtlsCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional unique name for the certificate. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
   */
   readonly name?: string;
   /**
   * The certificate's private key. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
   */
   readonly privateKey?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}
 */
 export class MtlsCertificate extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_mtls_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

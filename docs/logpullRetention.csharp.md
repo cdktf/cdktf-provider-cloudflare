@@ -1,6 +1,6 @@
 # `cloudflare_logpull_retention`
 
-Refer to the Terraform Registory for docs: [`cloudflare_logpull_retention`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/logpull_retention).
+Refer to the Terraform Registory for docs: [`cloudflare_logpull_retention`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/logpull_retention).
 
 # `logpullRetention` Submodule <a name="`logpullRetention` Submodule" id="@cdktf/provider-cloudflare.logpullRetention"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_logpull_retention`](http
 
 ### LogpullRetention <a name="LogpullRetention" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.Initializer"></a>
 
@@ -617,7 +617,7 @@ new LogpullRetentionConfig {
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.enabled">Enabled</a></code> | <code>object</code> | Whether you wish to retain logs or not. |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/logpull_retention#id LogpullRetention#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/logpull_retention#id LogpullRetention#id}. |
 
 ---
 
@@ -701,7 +701,7 @@ public object Enabled { get; set; }
 
 Whether you wish to retain logs or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/logpull_retention#enabled LogpullRetention#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/logpull_retention#enabled LogpullRetention#enabled}
 
 ---
 
@@ -715,7 +715,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
 
 ---
 
@@ -727,7 +727,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/logpull_retention#id LogpullRetention#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/logpull_retention#id LogpullRetention#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

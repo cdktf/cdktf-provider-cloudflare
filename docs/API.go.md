@@ -25,6 +25,7 @@ The following submodules are available:
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.go.md)
 - [customPages](./customPages.go.md)
 - [customSsl](./customSsl.go.md)
+- [dataCloudflareAccessApplication](./dataCloudflareAccessApplication.go.md)
 - [dataCloudflareAccessIdentityProvider](./dataCloudflareAccessIdentityProvider.go.md)
 - [dataCloudflareAccountRoles](./dataCloudflareAccountRoles.go.md)
 - [dataCloudflareAccounts](./dataCloudflareAccounts.go.md)
