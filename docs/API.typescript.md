@@ -25,6 +25,7 @@ The following submodules are available:
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.typescript.md)
 - [customPages](./customPages.typescript.md)
 - [customSsl](./customSsl.typescript.md)
+- [dataCloudflareAccessApplication](./dataCloudflareAccessApplication.typescript.md)
 - [dataCloudflareAccessIdentityProvider](./dataCloudflareAccessIdentityProvider.typescript.md)
 - [dataCloudflareAccountRoles](./dataCloudflareAccountRoles.typescript.md)
 - [dataCloudflareAccounts](./dataCloudflareAccounts.typescript.md)
