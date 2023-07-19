@@ -25,6 +25,7 @@ The following submodules are available:
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.java.md)
 - [customPages](./customPages.java.md)
 - [customSsl](./customSsl.java.md)
+- [dataCloudflareAccessApplication](./dataCloudflareAccessApplication.java.md)
 - [dataCloudflareAccessIdentityProvider](./dataCloudflareAccessIdentityProvider.java.md)
 - [dataCloudflareAccountRoles](./dataCloudflareAccountRoles.java.md)
 - [dataCloudflareAccounts](./dataCloudflareAccounts.java.md)
