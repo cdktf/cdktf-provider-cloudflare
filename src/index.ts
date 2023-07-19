@@ -101,6 +101,7 @@ export * as zoneCacheVariants from './zone-cache-variants';
 export * as zoneDnssec from './zone-dnssec';
 export * as zoneLockdown from './zone-lockdown';
 export * as zoneSettingsOverride from './zone-settings-override';
+export * as dataCloudflareAccessApplication from './data-cloudflare-access-application';
 export * as dataCloudflareAccessIdentityProvider from './data-cloudflare-access-identity-provider';
 export * as dataCloudflareAccountRoles from './data-cloudflare-account-roles';
 export * as dataCloudflareAccounts from './data-cloudflare-accounts';

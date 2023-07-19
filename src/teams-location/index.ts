@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
   */
   readonly accountId: string;
   /**
   * Indicator that this is the default location.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
   */
   readonly clientDefault?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location#id TeamsLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location#id TeamsLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface TeamsLocationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the teams location.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location#name TeamsLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location#name TeamsLocation#name}
   */
   readonly name: string;
   /**
   * networks block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location#networks TeamsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location#networks TeamsLocation#networks}
   */
   readonly networks?: TeamsLocationNetworks[] | cdktf.IResolvable;
 }
@@ -48,7 +48,7 @@ export interface TeamsLocationNetworks {
   /**
   * CIDR notation representation of the network IP.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location#network TeamsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location#network TeamsLocation#network}
   */
   readonly network: string;
 }
@@ -147,7 +147,7 @@ export class TeamsLocationNetworksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location cloudflare_teams_location}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location cloudflare_teams_location}
 */
 export class TeamsLocation extends cdktf.TerraformResource {
 
@@ -161,7 +161,7 @@ export class TeamsLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_location cloudflare_teams_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_location cloudflare_teams_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +172,7 @@ export class TeamsLocation extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/email_routing_address
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/email_routing_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface EmailRoutingAddressConfig extends cdktf.TerraformMetaArguments 
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
   */
   readonly accountId: string;
   /**
   * The contact email address of the user. **Modifying this attribute will force creation of a new resource.**
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/email_routing_address#id EmailRoutingAddress#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/email_routing_address#id EmailRoutingAddress#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface EmailRoutingAddressConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/email_routing_address cloudflare_email_routing_address}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/email_routing_address cloudflare_email_routing_address}
 */
 export class EmailRoutingAddress extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class EmailRoutingAddress extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class EmailRoutingAddress extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_address',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
