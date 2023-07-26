@@ -81,6 +81,7 @@ The following submodules are available:
 - [rateLimit](./rateLimit.java.md)
 - [record](./record.java.md)
 - [regionalHostname](./regionalHostname.java.md)
+- [regionalTieredCache](./regionalTieredCache.java.md)
 - [ruleset](./ruleset.java.md)
 - [spectrumApplication](./spectrumApplication.java.md)
 - [splitTunnel](./splitTunnel.java.md)

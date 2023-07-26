@@ -81,6 +81,7 @@ The following submodules are available:
 - [rateLimit](./rateLimit.python.md)
 - [record](./record.python.md)
 - [regionalHostname](./regionalHostname.python.md)
+- [regionalTieredCache](./regionalTieredCache.python.md)
 - [ruleset](./ruleset.python.md)
 - [spectrumApplication](./spectrumApplication.python.md)
 - [splitTunnel](./splitTunnel.python.md)

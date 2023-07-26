@@ -81,6 +81,7 @@ The following submodules are available:
 - [rateLimit](./rateLimit.go.md)
 - [record](./record.go.md)
 - [regionalHostname](./regionalHostname.go.md)
+- [regionalTieredCache](./regionalTieredCache.go.md)
 - [ruleset](./ruleset.go.md)
 - [spectrumApplication](./spectrumApplication.go.md)
 - [splitTunnel](./splitTunnel.go.md)
