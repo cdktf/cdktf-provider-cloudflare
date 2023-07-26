@@ -81,6 +81,7 @@ The following submodules are available:
 - [rateLimit](./rateLimit.typescript.md)
 - [record](./record.typescript.md)
 - [regionalHostname](./regionalHostname.typescript.md)
+- [regionalTieredCache](./regionalTieredCache.typescript.md)
 - [ruleset](./ruleset.typescript.md)
 - [spectrumApplication](./spectrumApplication.typescript.md)
 - [splitTunnel](./splitTunnel.typescript.md)

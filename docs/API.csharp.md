@@ -81,6 +81,7 @@ The following submodules are available:
 - [rateLimit](./rateLimit.csharp.md)
 - [record](./record.csharp.md)
 - [regionalHostname](./regionalHostname.csharp.md)
+- [regionalTieredCache](./regionalTieredCache.csharp.md)
 - [ruleset](./ruleset.csharp.md)
 - [spectrumApplication](./spectrumApplication.csharp.md)
 - [splitTunnel](./splitTunnel.csharp.md)

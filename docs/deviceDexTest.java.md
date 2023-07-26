@@ -1,6 +1,6 @@
 # `cloudflare_device_dex_test`
 
-Refer to the Terraform Registory for docs: [`cloudflare_device_dex_test`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test).
+Refer to the Terraform Registory for docs: [`cloudflare_device_dex_test`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test).
 
 # `deviceDexTest` Submodule <a name="`deviceDexTest` Submodule" id="@cdktf/provider-cloudflare.deviceDexTest"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_device_dex_test`](https:
 
 ### DeviceDexTest <a name="DeviceDexTest" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer"></a>
 
@@ -55,7 +55,7 @@ DeviceDexTest.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the test is active. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.interval">interval</a></code> | <code>java.lang.String</code> | How often the test will run. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the Device Dex Test. Must be unique. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
 
 ---
 
@@ -125,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#data DeviceDexTest#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#data DeviceDexTest#data}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Additional details about the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#description DeviceDexTest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#description DeviceDexTest#description}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Determines whether or not the test is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How often the test will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the Device Dex Test. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#name DeviceDexTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#name DeviceDexTest#name}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ DeviceDexTestConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether or not the test is active. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.interval">interval</a></code> | <code>java.lang.String</code> | How often the test will run. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the Device Dex Test. Must be unique. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
 
 ---
 
@@ -977,7 +977,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
 
 ---
 
@@ -991,7 +991,7 @@ public DeviceDexTestData getData();
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#data DeviceDexTest#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#data DeviceDexTest#data}
 
 ---
 
@@ -1005,7 +1005,7 @@ public java.lang.String getDescription();
 
 Additional details about the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#description DeviceDexTest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#description DeviceDexTest#description}
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.Object getEnabled();
 
 Determines whether or not the test is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
 
 ---
 
@@ -1033,7 +1033,7 @@ public java.lang.String getInterval();
 
 How often the test will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
 
 ---
 
@@ -1047,7 +1047,7 @@ public java.lang.String getName();
 
 The name of the Device Dex Test. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#name DeviceDexTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#name DeviceDexTest#name}
 
 ---
 
@@ -1059,7 +1059,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1100,7 @@ public java.lang.String getHost();
 
 The host URL for `http` test `kind`. For `traceroute`, it must be a valid hostname or IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#host DeviceDexTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#host DeviceDexTest#host}
 
 ---
 
@@ -1114,7 +1114,7 @@ public java.lang.String getKind();
 
 The type of Device Dex Test. Available values: `http`, `traceroute`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
 
 ---
 
@@ -1128,7 +1128,7 @@ public java.lang.String getMethod();
 
 The http request method. Available values: `GET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_dex_test#method DeviceDexTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_dex_test#method DeviceDexTest#method}
 
 ---
 
