@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface AccessOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
   */
   readonly accountId?: string;
   /**
   * The unique subdomain assigned to your Zero Trust organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
   */
   readonly authDomain: string;
   /**
   * When set to true, users skip the identity provider selection step during login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
   */
   readonly autoRedirectToIdentity?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#id AccessOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#id AccessOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,69 +40,203 @@ export interface AccessOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
   */
   readonly isUiReadOnly?: boolean | cdktf.IResolvable;
   /**
   * The name of your Zero Trust organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#name AccessOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#name AccessOrganization#name}
   */
   readonly name?: string;
   /**
   * A description of the reason why the UI read only field is being toggled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
   */
   readonly uiReadOnlyToggleReason?: string;
   /**
   * The amount of time a user seat is inactive before it expires. When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count. Must be in the format `300ms` or `2h45m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
   */
   readonly userSeatExpirationInactiveTime?: string;
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
   */
   readonly zoneId?: string;
   /**
+  * custom_pages block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
+  */
+  readonly customPages?: AccessOrganizationCustomPages[] | cdktf.IResolvable;
+  /**
   * login_design block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
   */
   readonly loginDesign?: AccessOrganizationLoginDesign[] | cdktf.IResolvable;
+}
+export interface AccessOrganizationCustomPages {
+  /**
+  * The id of the forbidden page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#forbidden AccessOrganization#forbidden}
+  */
+  readonly forbidden?: string;
+  /**
+  * The id of the identity denied page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#identity_denied AccessOrganization#identity_denied}
+  */
+  readonly identityDenied?: string;
+}
+
+export function accessOrganizationCustomPagesToTerraform(struct?: AccessOrganizationCustomPages | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    forbidden: cdktf.stringToTerraform(struct!.forbidden),
+    identity_denied: cdktf.stringToTerraform(struct!.identityDenied),
+  }
+}
+
+export class AccessOrganizationCustomPagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessOrganizationCustomPages | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forbidden !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forbidden = this._forbidden;
+    }
+    if (this._identityDenied !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityDenied = this._identityDenied;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessOrganizationCustomPages | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._forbidden = undefined;
+      this._identityDenied = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._forbidden = value.forbidden;
+      this._identityDenied = value.identityDenied;
+    }
+  }
+
+  // forbidden - computed: false, optional: true, required: false
+  private _forbidden?: string; 
+  public get forbidden() {
+    return this.getStringAttribute('forbidden');
+  }
+  public set forbidden(value: string) {
+    this._forbidden = value;
+  }
+  public resetForbidden() {
+    this._forbidden = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forbiddenInput() {
+    return this._forbidden;
+  }
+
+  // identity_denied - computed: false, optional: true, required: false
+  private _identityDenied?: string; 
+  public get identityDenied() {
+    return this.getStringAttribute('identity_denied');
+  }
+  public set identityDenied(value: string) {
+    this._identityDenied = value;
+  }
+  public resetIdentityDenied() {
+    this._identityDenied = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityDeniedInput() {
+    return this._identityDenied;
+  }
+}
+
+export class AccessOrganizationCustomPagesList extends cdktf.ComplexList {
+  public internalValue? : AccessOrganizationCustomPages[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessOrganizationCustomPagesOutputReference {
+    return new AccessOrganizationCustomPagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface AccessOrganizationLoginDesign {
   /**
   * The background color on the login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#background_color AccessOrganization#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#background_color AccessOrganization#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * The text at the bottom of the login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#footer_text AccessOrganization#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#footer_text AccessOrganization#footer_text}
   */
   readonly footerText?: string;
   /**
   * The text at the top of the login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#header_text AccessOrganization#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#header_text AccessOrganization#header_text}
   */
   readonly headerText?: string;
   /**
   * The URL of the logo on the login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#logo_path AccessOrganization#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#logo_path AccessOrganization#logo_path}
   */
   readonly logoPath?: string;
   /**
   * The text color on the login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization#text_color AccessOrganization#text_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization#text_color AccessOrganization#text_color}
   */
   readonly textColor?: string;
 }
@@ -291,7 +425,7 @@ export class AccessOrganizationLoginDesignList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization cloudflare_access_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization}
 */
 export class AccessOrganization extends cdktf.TerraformResource {
 
@@ -305,7 +439,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_organization cloudflare_access_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -316,7 +450,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -336,6 +470,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
     this._uiReadOnlyToggleReason = config.uiReadOnlyToggleReason;
     this._userSeatExpirationInactiveTime = config.userSeatExpirationInactiveTime;
     this._zoneId = config.zoneId;
+    this._customPages.internalValue = config.customPages;
     this._loginDesign.internalValue = config.loginDesign;
   }
 
@@ -484,6 +619,22 @@ export class AccessOrganization extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
+  // custom_pages - computed: false, optional: true, required: false
+  private _customPages = new AccessOrganizationCustomPagesList(this, "custom_pages", false);
+  public get customPages() {
+    return this._customPages;
+  }
+  public putCustomPages(value: AccessOrganizationCustomPages[] | cdktf.IResolvable) {
+    this._customPages.internalValue = value;
+  }
+  public resetCustomPages() {
+    this._customPages.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPagesInput() {
+    return this._customPages.internalValue;
+  }
+
   // login_design - computed: false, optional: true, required: false
   private _loginDesign = new AccessOrganizationLoginDesignList(this, "login_design", false);
   public get loginDesign() {
@@ -515,6 +666,7 @@ export class AccessOrganization extends cdktf.TerraformResource {
       ui_read_only_toggle_reason: cdktf.stringToTerraform(this._uiReadOnlyToggleReason),
       user_seat_expiration_inactive_time: cdktf.stringToTerraform(this._userSeatExpirationInactiveTime),
       zone_id: cdktf.stringToTerraform(this._zoneId),
+      custom_pages: cdktf.listMapper(accessOrganizationCustomPagesToTerraform, true)(this._customPages.internalValue),
       login_design: cdktf.listMapper(accessOrganizationLoginDesignToTerraform, true)(this._loginDesign.internalValue),
     };
   }

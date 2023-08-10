@@ -3,6 +3,7 @@
 The following submodules are available:
 - [accessApplication](./accessApplication.go.md)
 - [accessCaCertificate](./accessCaCertificate.go.md)
+- [accessCustomPage](./accessCustomPage.go.md)
 - [accessGroup](./accessGroup.go.md)
 - [accessIdentityProvider](./accessIdentityProvider.go.md)
 - [accessKeysConfiguration](./accessKeysConfiguration.go.md)
@@ -39,6 +40,7 @@ The following submodules are available:
 - [dataCloudflareRecord](./dataCloudflareRecord.go.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.go.md)
 - [dataCloudflareZone](./dataCloudflareZone.go.md)
+- [dataCloudflareZoneCacheReserve](./dataCloudflareZoneCacheReserve.go.md)
 - [dataCloudflareZoneDnssec](./dataCloudflareZoneDnssec.go.md)
 - [dataCloudflareZones](./dataCloudflareZones.go.md)
 - [deviceDexTest](./deviceDexTest.go.md)
@@ -112,6 +114,7 @@ The following submodules are available:
 - [workersKv](./workersKv.go.md)
 - [workersKvNamespace](./workersKvNamespace.go.md)
 - [zone](./zone.go.md)
+- [zoneCacheReserve](./zoneCacheReserve.go.md)
 - [zoneCacheVariants](./zoneCacheVariants.go.md)
 - [zoneDnssec](./zoneDnssec.go.md)
 - [zoneLockdown](./zoneLockdown.go.md)
