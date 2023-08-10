@@ -1,6 +1,6 @@
 # `cloudflare_r2_bucket`
 
-Refer to the Terraform Registory for docs: [`cloudflare_r2_bucket`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/r2_bucket).
+Refer to the Terraform Registory for docs: [`cloudflare_r2_bucket`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket).
 
 # `r2Bucket` Submodule <a name="`r2Bucket` Submodule" id="@cdktf/provider-cloudflare.r2Bucket"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`cloudflare_r2_bucket`](https://regi
 
 ### R2Bucket <a name="R2Bucket" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.NewR2Bucket(scope Construct, id *string, config R2BucketConfig) R2Bucket
 ```
@@ -277,7 +277,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ r2bucket.R2Bucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 &r2bucket.R2BucketConfig {
 	Connection: interface{},
@@ -712,7 +712,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -726,7 +726,7 @@ Name *string
 
 The name of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket#name R2Bucket#name}
 
 ---
 
@@ -740,7 +740,7 @@ Location *string
 
 The location hint of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket#location R2Bucket#location}
 
 ---
 

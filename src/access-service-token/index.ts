@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token#account_id AccessServiceToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token#account_id AccessServiceToken#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token#id AccessServiceToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token#id AccessServiceToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface AccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
   */
   readonly minDaysForRenewal?: number;
   /**
   * Friendly name of the token's intent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token#name AccessServiceToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token#name AccessServiceToken#name}
   */
   readonly name: string;
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token#zone_id AccessServiceToken#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token#zone_id AccessServiceToken#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token cloudflare_access_service_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token cloudflare_access_service_token}
 */
 export class AccessServiceToken extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class AccessServiceToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_service_token cloudflare_access_service_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_service_token cloudflare_access_service_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class AccessServiceToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_service_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

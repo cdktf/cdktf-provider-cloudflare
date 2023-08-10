@@ -1,6 +1,6 @@
 # `cloudflare_teams_proxy_endpoint`
 
-Refer to the Terraform Registory for docs: [`cloudflare_teams_proxy_endpoint`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint).
+Refer to the Terraform Registory for docs: [`cloudflare_teams_proxy_endpoint`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint).
 
 # `teamsProxyEndpoint` Submodule <a name="`teamsProxyEndpoint` Submodule" id="@cdktf/provider-cloudflare.teamsProxyEndpoint"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_teams_proxy_endpoint`](h
 
 ### TeamsProxyEndpoint <a name="TeamsProxyEndpoint" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint.Initializer"></a>
 
@@ -640,7 +640,7 @@ const teamsProxyEndpointConfig: teamsProxyEndpoint.TeamsProxyEndpointConfig = { 
 | <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.ips">ips</a></code> | <code>string[]</code> | The networks CIDRs that will be allowed to initiate proxy connections. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.name">name</a></code> | <code>string</code> | Name of the teams proxy endpoint. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}. |
 
 ---
 
@@ -724,7 +724,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
 
 ---
 
@@ -738,7 +738,7 @@ public readonly ips: string[];
 
 The networks CIDRs that will be allowed to initiate proxy connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
 
 ---
 
@@ -752,7 +752,7 @@ public readonly name: string;
 
 Name of the teams proxy endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

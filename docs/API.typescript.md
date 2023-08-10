@@ -3,6 +3,7 @@
 The following submodules are available:
 - [accessApplication](./accessApplication.typescript.md)
 - [accessCaCertificate](./accessCaCertificate.typescript.md)
+- [accessCustomPage](./accessCustomPage.typescript.md)
 - [accessGroup](./accessGroup.typescript.md)
 - [accessIdentityProvider](./accessIdentityProvider.typescript.md)
 - [accessKeysConfiguration](./accessKeysConfiguration.typescript.md)
@@ -39,6 +40,7 @@ The following submodules are available:
 - [dataCloudflareRecord](./dataCloudflareRecord.typescript.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.typescript.md)
 - [dataCloudflareZone](./dataCloudflareZone.typescript.md)
+- [dataCloudflareZoneCacheReserve](./dataCloudflareZoneCacheReserve.typescript.md)
 - [dataCloudflareZoneDnssec](./dataCloudflareZoneDnssec.typescript.md)
 - [dataCloudflareZones](./dataCloudflareZones.typescript.md)
 - [deviceDexTest](./deviceDexTest.typescript.md)
@@ -112,6 +114,7 @@ The following submodules are available:
 - [workersKv](./workersKv.typescript.md)
 - [workersKvNamespace](./workersKvNamespace.typescript.md)
 - [zone](./zone.typescript.md)
+- [zoneCacheReserve](./zoneCacheReserve.typescript.md)
 - [zoneCacheVariants](./zoneCacheVariants.typescript.md)
 - [zoneDnssec](./zoneDnssec.typescript.md)
 - [zoneLockdown](./zoneLockdown.typescript.md)

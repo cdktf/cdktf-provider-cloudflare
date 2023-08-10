@@ -3,6 +3,7 @@
 The following submodules are available:
 - [accessApplication](./accessApplication.csharp.md)
 - [accessCaCertificate](./accessCaCertificate.csharp.md)
+- [accessCustomPage](./accessCustomPage.csharp.md)
 - [accessGroup](./accessGroup.csharp.md)
 - [accessIdentityProvider](./accessIdentityProvider.csharp.md)
 - [accessKeysConfiguration](./accessKeysConfiguration.csharp.md)
@@ -39,6 +40,7 @@ The following submodules are available:
 - [dataCloudflareRecord](./dataCloudflareRecord.csharp.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.csharp.md)
 - [dataCloudflareZone](./dataCloudflareZone.csharp.md)
+- [dataCloudflareZoneCacheReserve](./dataCloudflareZoneCacheReserve.csharp.md)
 - [dataCloudflareZoneDnssec](./dataCloudflareZoneDnssec.csharp.md)
 - [dataCloudflareZones](./dataCloudflareZones.csharp.md)
 - [deviceDexTest](./deviceDexTest.csharp.md)
@@ -112,6 +114,7 @@ The following submodules are available:
 - [workersKv](./workersKv.csharp.md)
 - [workersKvNamespace](./workersKvNamespace.csharp.md)
 - [zone](./zone.csharp.md)
+- [zoneCacheReserve](./zoneCacheReserve.csharp.md)
 - [zoneCacheVariants](./zoneCacheVariants.csharp.md)
 - [zoneDnssec](./zoneDnssec.csharp.md)
 - [zoneLockdown](./zoneLockdown.csharp.md)

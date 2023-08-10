@@ -3,6 +3,7 @@
 The following submodules are available:
 - [accessApplication](./accessApplication.java.md)
 - [accessCaCertificate](./accessCaCertificate.java.md)
+- [accessCustomPage](./accessCustomPage.java.md)
 - [accessGroup](./accessGroup.java.md)
 - [accessIdentityProvider](./accessIdentityProvider.java.md)
 - [accessKeysConfiguration](./accessKeysConfiguration.java.md)
@@ -39,6 +40,7 @@ The following submodules are available:
 - [dataCloudflareRecord](./dataCloudflareRecord.java.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.java.md)
 - [dataCloudflareZone](./dataCloudflareZone.java.md)
+- [dataCloudflareZoneCacheReserve](./dataCloudflareZoneCacheReserve.java.md)
 - [dataCloudflareZoneDnssec](./dataCloudflareZoneDnssec.java.md)
 - [dataCloudflareZones](./dataCloudflareZones.java.md)
 - [deviceDexTest](./deviceDexTest.java.md)
@@ -112,6 +114,7 @@ The following submodules are available:
 - [workersKv](./workersKv.java.md)
 - [workersKvNamespace](./workersKvNamespace.java.md)
 - [zone](./zone.java.md)
+- [zoneCacheReserve](./zoneCacheReserve.java.md)
 - [zoneCacheVariants](./zoneCacheVariants.java.md)
 - [zoneDnssec](./zoneDnssec.java.md)
 - [zoneLockdown](./zoneLockdown.java.md)

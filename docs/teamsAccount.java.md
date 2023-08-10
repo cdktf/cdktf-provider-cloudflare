@@ -1,6 +1,6 @@
 # `cloudflare_teams_account`
 
-Refer to the Terraform Registory for docs: [`cloudflare_teams_account`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account).
+Refer to the Terraform Registory for docs: [`cloudflare_teams_account`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account).
 
 # `teamsAccount` Submodule <a name="`teamsAccount` Submodule" id="@cdktf/provider-cloudflare.teamsAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_teams_account`](https://
 
 ### TeamsAccount <a name="TeamsAccount" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account cloudflare_teams_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account cloudflare_teams_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer"></a>
 
@@ -36,6 +36,8 @@ TeamsAccount.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .logging(TeamsAccountLogging)
 //  .payloadLog(TeamsAccountPayloadLog)
+//  .protocolDetectionEnabled(java.lang.Boolean)
+//  .protocolDetectionEnabled(IResolvable)
 //  .proxy(TeamsAccountProxy)
 //  .tlsDecryptEnabled(java.lang.Boolean)
 //  .tlsDecryptEnabled(IResolvable)
@@ -60,9 +62,10 @@ TeamsAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.antivirus">antivirus</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirus">TeamsAccountAntivirus</a></code> | antivirus block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.blockPage">blockPage</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPage">TeamsAccountBlockPage</a></code> | block_page block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.fips">fips</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips">TeamsAccountFips</a></code> | fips block. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#id TeamsAccount#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#id TeamsAccount#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.logging">logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging">TeamsAccountLogging</a></code> | logging block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.payloadLog">payloadLog</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog">TeamsAccountPayloadLog</a></code> | payload_log block. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.protocolDetectionEnabled">protocolDetectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicator that protocol detection is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.proxy">proxy</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxy">TeamsAccountProxy</a></code> | proxy block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.tlsDecryptEnabled">tlsDecryptEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicator that decryption of TLS traffic is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.urlBrowserIsolationEnabled">urlBrowserIsolationEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Safely browse websites in Browser Isolation through a URL. |
@@ -135,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
 
 ---
 
@@ -145,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable the activity log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
 
 ---
 
@@ -155,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 antivirus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
 
 ---
 
@@ -165,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 block_page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
 
 ---
 
@@ -175,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 fips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#fips TeamsAccount#fips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#fips TeamsAccount#fips}
 
 ---
 
@@ -183,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#id TeamsAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#id TeamsAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -196,7 +199,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#logging TeamsAccount#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#logging TeamsAccount#logging}
 
 ---
 
@@ -206,7 +209,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 payload_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+
+---
+
+##### `protocolDetectionEnabled`<sup>Optional</sup> <a name="protocolDetectionEnabled" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer.parameter.protocolDetectionEnabled"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Indicator that protocol detection is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#protocol_detection_enabled TeamsAccount#protocol_detection_enabled}
 
 ---
 
@@ -216,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
 
 ---
 
@@ -226,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicator that decryption of TLS traffic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
 
 ---
 
@@ -236,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Safely browse websites in Browser Isolation through a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
 
 ---
 
@@ -273,6 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetLogging">resetLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetPayloadLog">resetPayloadLog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetProtocolDetectionEnabled">resetProtocolDetectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetProxy">resetProxy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetTlsDecryptEnabled">resetTlsDecryptEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetUrlBrowserIsolationEnabled">resetUrlBrowserIsolationEnabled</a></code> | *No description.* |
@@ -577,6 +591,12 @@ public void resetLogging()
 public void resetPayloadLog()
 ```
 
+##### `resetProtocolDetectionEnabled` <a name="resetProtocolDetectionEnabled" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetProtocolDetectionEnabled"></a>
+
+```java
+public void resetProtocolDetectionEnabled()
+```
+
 ##### `resetProxy` <a name="resetProxy" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.resetProxy"></a>
 
 ```java
@@ -697,12 +717,14 @@ TeamsAccount.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.loggingInput">loggingInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging">TeamsAccountLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.payloadLogInput">payloadLogInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog">TeamsAccountPayloadLog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.protocolDetectionEnabledInput">protocolDetectionEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.proxyInput">proxyInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxy">TeamsAccountProxy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.tlsDecryptEnabledInput">tlsDecryptEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.urlBrowserIsolationEnabledInput">urlBrowserIsolationEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.activityLogEnabled">activityLogEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.protocolDetectionEnabled">protocolDetectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.tlsDecryptEnabled">tlsDecryptEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.urlBrowserIsolationEnabled">urlBrowserIsolationEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
@@ -990,6 +1012,16 @@ public TeamsAccountPayloadLog getPayloadLogInput();
 
 ---
 
+##### `protocolDetectionEnabledInput`<sup>Optional</sup> <a name="protocolDetectionEnabledInput" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.protocolDetectionEnabledInput"></a>
+
+```java
+public java.lang.Object getProtocolDetectionEnabledInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `proxyInput`<sup>Optional</sup> <a name="proxyInput" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.proxyInput"></a>
 
 ```java
@@ -1047,6 +1079,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `protocolDetectionEnabled`<sup>Required</sup> <a name="protocolDetectionEnabled" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.property.protocolDetectionEnabled"></a>
+
+```java
+public java.lang.Object getProtocolDetectionEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1127,7 +1169,7 @@ public java.lang.Object getEnabledDownloadPhase();
 
 Scan on file download.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
 
 ---
 
@@ -1141,7 +1183,7 @@ public java.lang.Object getEnabledUploadPhase();
 
 Scan on file upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
 
 ---
 
@@ -1155,7 +1197,7 @@ public java.lang.Object getFailClosed();
 
 Block requests for files that cannot be scanned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
 
 ---
 
@@ -1204,7 +1246,7 @@ public java.lang.String getBackgroundColor();
 
 Hex code of block page background color.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
 
 ---
 
@@ -1218,7 +1260,7 @@ public java.lang.Object getEnabled();
 
 Indicator of enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
 
 ---
 
@@ -1232,7 +1274,7 @@ public java.lang.String getFooterText();
 
 Block page footer text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
 
 ---
 
@@ -1246,7 +1288,7 @@ public java.lang.String getHeaderText();
 
 Block page header text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
 
 ---
 
@@ -1260,7 +1302,7 @@ public java.lang.String getLogoPath();
 
 URL of block page logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
 
 ---
 
@@ -1274,7 +1316,7 @@ public java.lang.String getMailtoAddress();
 
 Admin email for users to contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
 
 ---
 
@@ -1288,7 +1330,7 @@ public java.lang.String getMailtoSubject();
 
 Subject line for emails created from block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
 
 ---
 
@@ -1302,7 +1344,7 @@ public java.lang.String getName();
 
 Name of block page configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#name TeamsAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#name TeamsAccount#name}
 
 ---
 
@@ -1334,6 +1376,8 @@ TeamsAccountConfig.builder()
 //  .id(java.lang.String)
 //  .logging(TeamsAccountLogging)
 //  .payloadLog(TeamsAccountPayloadLog)
+//  .protocolDetectionEnabled(java.lang.Boolean)
+//  .protocolDetectionEnabled(IResolvable)
 //  .proxy(TeamsAccountProxy)
 //  .tlsDecryptEnabled(java.lang.Boolean)
 //  .tlsDecryptEnabled(IResolvable)
@@ -1358,9 +1402,10 @@ TeamsAccountConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.antivirus">antivirus</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirus">TeamsAccountAntivirus</a></code> | antivirus block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.blockPage">blockPage</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPage">TeamsAccountBlockPage</a></code> | block_page block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.fips">fips</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips">TeamsAccountFips</a></code> | fips block. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#id TeamsAccount#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#id TeamsAccount#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.logging">logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging">TeamsAccountLogging</a></code> | logging block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.payloadLog">payloadLog</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog">TeamsAccountPayloadLog</a></code> | payload_log block. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.protocolDetectionEnabled">protocolDetectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicator that protocol detection is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.proxy">proxy</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxy">TeamsAccountProxy</a></code> | proxy block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.tlsDecryptEnabled">tlsDecryptEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicator that decryption of TLS traffic is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.urlBrowserIsolationEnabled">urlBrowserIsolationEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Safely browse websites in Browser Isolation through a URL. |
@@ -1447,7 +1492,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
 
 ---
 
@@ -1461,7 +1506,7 @@ public java.lang.Object getActivityLogEnabled();
 
 Whether to enable the activity log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
 
 ---
 
@@ -1475,7 +1520,7 @@ public TeamsAccountAntivirus getAntivirus();
 
 antivirus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
 
 ---
 
@@ -1489,7 +1534,7 @@ public TeamsAccountBlockPage getBlockPage();
 
 block_page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
 
 ---
 
@@ -1503,7 +1548,7 @@ public TeamsAccountFips getFips();
 
 fips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#fips TeamsAccount#fips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#fips TeamsAccount#fips}
 
 ---
 
@@ -1515,7 +1560,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#id TeamsAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#id TeamsAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1532,7 +1577,7 @@ public TeamsAccountLogging getLogging();
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#logging TeamsAccount#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#logging TeamsAccount#logging}
 
 ---
 
@@ -1546,7 +1591,21 @@ public TeamsAccountPayloadLog getPayloadLog();
 
 payload_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+
+---
+
+##### `protocolDetectionEnabled`<sup>Optional</sup> <a name="protocolDetectionEnabled" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.protocolDetectionEnabled"></a>
+
+```java
+public java.lang.Object getProtocolDetectionEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Indicator that protocol detection is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#protocol_detection_enabled TeamsAccount#protocol_detection_enabled}
 
 ---
 
@@ -1560,7 +1619,7 @@ public TeamsAccountProxy getProxy();
 
 proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
 
 ---
 
@@ -1574,7 +1633,7 @@ public java.lang.Object getTlsDecryptEnabled();
 
 Indicator that decryption of TLS traffic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
 
 ---
 
@@ -1588,7 +1647,7 @@ public java.lang.Object getUrlBrowserIsolationEnabled();
 
 Safely browse websites in Browser Isolation through a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
 
 ---
 
@@ -1623,7 +1682,7 @@ public java.lang.Object getTls();
 
 Only allow FIPS-compliant TLS configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#tls TeamsAccount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#tls TeamsAccount#tls}
 
 ---
 
@@ -1660,7 +1719,7 @@ public java.lang.Object getRedactPii();
 
 Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
 
 ---
 
@@ -1674,7 +1733,7 @@ public TeamsAccountLoggingSettingsByRuleType getSettingsByRuleType();
 
 settings_by_rule_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
 
 ---
 
@@ -1712,7 +1771,7 @@ public TeamsAccountLoggingSettingsByRuleTypeDns getDns();
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#dns TeamsAccount#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#dns TeamsAccount#dns}
 
 ---
 
@@ -1726,7 +1785,7 @@ public TeamsAccountLoggingSettingsByRuleTypeHttp getHttp();
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#http TeamsAccount#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#http TeamsAccount#http}
 
 ---
 
@@ -1740,7 +1799,7 @@ public TeamsAccountLoggingSettingsByRuleTypeL4 getL4();
 
 l4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#l4 TeamsAccount#l4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#l4 TeamsAccount#l4}
 
 ---
 
@@ -1764,7 +1823,7 @@ TeamsAccountLoggingSettingsByRuleTypeDns.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.property.logAll">logAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.property.logBlocks">logBlocks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.property.logBlocks">logBlocks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
 
 ---
 
@@ -1778,7 +1837,7 @@ public java.lang.Object getLogAll();
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
 
 ---
 
@@ -1790,7 +1849,7 @@ public java.lang.Object getLogBlocks();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
 
 ---
 
@@ -1814,7 +1873,7 @@ TeamsAccountLoggingSettingsByRuleTypeHttp.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.property.logAll">logAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.property.logBlocks">logBlocks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.property.logBlocks">logBlocks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
 
 ---
 
@@ -1828,7 +1887,7 @@ public java.lang.Object getLogAll();
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
 
 ---
 
@@ -1840,7 +1899,7 @@ public java.lang.Object getLogBlocks();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
 
 ---
 
@@ -1864,7 +1923,7 @@ TeamsAccountLoggingSettingsByRuleTypeL4.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.property.logAll">logAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.property.logBlocks">logBlocks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.property.logBlocks">logBlocks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
 
 ---
 
@@ -1878,7 +1937,7 @@ public java.lang.Object getLogAll();
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
 
 ---
 
@@ -1890,7 +1949,7 @@ public java.lang.Object getLogBlocks();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
 
 ---
 
@@ -1924,7 +1983,7 @@ public java.lang.String getPublicKey();
 
 Public key used to encrypt matched payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
 
 ---
 
@@ -1965,7 +2024,7 @@ public java.lang.Object getRootCa();
 
 Whether root ca is enabled account wide for ZT clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#root_ca TeamsAccount#root_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#root_ca TeamsAccount#root_ca}
 
 ---
 
@@ -1979,7 +2038,7 @@ public java.lang.Object getTcp();
 
 Whether gateway proxy is enabled on gateway devices for TCP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
 
 ---
 
@@ -1993,7 +2052,7 @@ public java.lang.Object getUdp();
 
 Whether gateway proxy is enabled on gateway devices for UDP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account#udp TeamsAccount#udp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account#udp TeamsAccount#udp}
 
 ---
 
