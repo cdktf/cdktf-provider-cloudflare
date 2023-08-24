@@ -1,6 +1,6 @@
 # `cloudflare_waiting_room`
 
-Refer to the Terraform Registory for docs: [`cloudflare_waiting_room`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room).
+Refer to the Terraform Registory for docs: [`cloudflare_waiting_room`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room).
 
 # `waitingRoom` Submodule <a name="`waitingRoom` Submodule" id="@cdktf/provider-cloudflare.waitingRoom"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_waiting_room`](https://r
 
 ### WaitingRoom <a name="WaitingRoom" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room cloudflare_waiting_room}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer"></a>
 
@@ -41,6 +41,7 @@ waitingRoom.WaitingRoom(
   path: str = None,
   queue_all: typing.Union[bool, IResolvable] = None,
   queueing_method: str = None,
+  queueing_status_code: typing.Union[int, float] = None,
   session_duration: typing.Union[int, float] = None,
   suspended: typing.Union[bool, IResolvable] = None,
   timeouts: WaitingRoomTimeouts = None
@@ -69,11 +70,12 @@ waitingRoom.WaitingRoom(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.defaultTemplateLanguage">default_template_language</a></code> | <code>str</code> | The language to use for the default waiting room page. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.description">description</a></code> | <code>str</code> | A description to add more details about the waiting room. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables automatic renewal of session cookies. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#id WaitingRoom#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#id WaitingRoom#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.jsonResponseEnabled">json_response_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, requests to the waiting room with the header `Accept: application/json` will receive a JSON response object. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.path">path</a></code> | <code>str</code> | The path within the host to enable the waiting room on. Defaults to `/`. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.queueAll">queue_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If queue_all is true, then all traffic will be sent to the waiting room. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.queueingMethod">queueing_method</a></code> | <code>str</code> | The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. Defaults to `fifo`. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.queueingStatusCode">queueing_status_code</a></code> | <code>typing.Union[int, float]</code> | HTTP status code returned to a user while in the queue. Defaults to `200`. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Suspends the waiting room. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts">WaitingRoomTimeouts</a></code> | timeouts block. |
@@ -146,7 +148,7 @@ Must be unique amongst siblings in the same scope
 
 Host name for which the waiting room will be applied (no wildcards).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#host WaitingRoom#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#host WaitingRoom#host}
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A unique name to identify the waiting room. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#name WaitingRoom#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#name WaitingRoom#name}
 
 ---
 
@@ -166,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of new users that will be let into the route every minute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
 
 ---
 
@@ -176,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The total number of active user sessions on the route at a point in time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
 
 ---
 
@@ -186,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 additional_routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A cookie suffix to be appended to the Cloudflare waiting room cookie name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
 
 ---
 
@@ -216,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 This is a templated html file that will be rendered at the edge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
 
 ---
 
@@ -228,7 +230,7 @@ The language to use for the default waiting room page.
 
 Available values: `de-DE`, `es-ES`, `en-US`, `fr-FR`, `id-ID`, `it-IT`, `ja-JP`, `ko-KR`, `nl-NL`, `pl-PL`, `pt-BR`, `tr-TR`, `zh-CN`, `zh-TW`, `ru-RU`, `fa-IR`. Defaults to `en-US`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
 
 ---
 
@@ -238,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A description to add more details about the waiting room.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#description WaitingRoom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#description WaitingRoom#description}
 
 ---
 
@@ -248,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Disables automatic renewal of session cookies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
 
 ---
 
@@ -256,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#id WaitingRoom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#id WaitingRoom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -269,7 +271,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If true, requests to the waiting room with the header `Accept: application/json` will receive a JSON response object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
 
 ---
 
@@ -279,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The path within the host to enable the waiting room on. Defaults to `/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#path WaitingRoom#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#path WaitingRoom#path}
 
 ---
 
@@ -289,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If queue_all is true, then all traffic will be sent to the waiting room.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
 
 ---
 
@@ -299,7 +301,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. Defaults to `fifo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
+
+---
+
+##### `queueing_status_code`<sup>Optional</sup> <a name="queueing_status_code" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer.parameter.queueingStatusCode"></a>
+
+- *Type:* typing.Union[int, float]
+
+HTTP status code returned to a user while in the queue. Defaults to `200`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#queueing_status_code WaitingRoom#queueing_status_code}
 
 ---
 
@@ -311,7 +323,7 @@ Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to 
 
 Defaults to `5`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
 
 ---
 
@@ -321,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Suspends the waiting room.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
 
 ---
 
@@ -331,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#timeouts WaitingRoom#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#timeouts WaitingRoom#timeouts}
 
 ---
 
@@ -368,6 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetPath">reset_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetQueueAll">reset_queue_all</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetQueueingMethod">reset_queueing_method</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetQueueingStatusCode">reset_queueing_status_code</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetSessionDuration">reset_session_duration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetSuspended">reset_suspended</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -610,7 +623,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#create WaitingRoom#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#create WaitingRoom#create}.
 
 ---
 
@@ -618,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#update WaitingRoom#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#update WaitingRoom#update}.
 
 ---
 
@@ -686,6 +699,12 @@ def reset_queue_all() -> None
 
 ```python
 def reset_queueing_method() -> None
+```
+
+##### `reset_queueing_status_code` <a name="reset_queueing_status_code" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetQueueingStatusCode"></a>
+
+```python
+def reset_queueing_status_code() -> None
 ```
 
 ##### `reset_session_duration` <a name="reset_session_duration" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.resetSessionDuration"></a>
@@ -816,6 +835,7 @@ waitingRoom.WaitingRoom.is_terraform_resource(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueAllInput">queue_all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueingMethodInput">queueing_method_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueingStatusCodeInput">queueing_status_code_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.sessionDurationInput">session_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.suspendedInput">suspended_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts">WaitingRoomTimeouts</a>]</code> | *No description.* |
@@ -834,6 +854,7 @@ waitingRoom.WaitingRoom.is_terraform_resource(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueAll">queue_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueingMethod">queueing_method</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueingStatusCode">queueing_status_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.totalActiveUsers">total_active_users</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1143,6 +1164,16 @@ queueing_method_input: str
 
 ---
 
+##### `queueing_status_code_input`<sup>Optional</sup> <a name="queueing_status_code_input" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueingStatusCodeInput"></a>
+
+```python
+queueing_status_code_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `session_duration_input`<sup>Optional</sup> <a name="session_duration_input" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.sessionDurationInput"></a>
 
 ```python
@@ -1323,6 +1354,16 @@ queueing_method: str
 
 ---
 
+##### `queueing_status_code`<sup>Required</sup> <a name="queueing_status_code" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.queueingStatusCode"></a>
+
+```python
+queueing_status_code: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `session_duration`<sup>Required</sup> <a name="session_duration" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.property.sessionDuration"></a>
 
 ```python
@@ -1415,7 +1456,7 @@ host: str
 
 The additional host name for which the waiting room to be applied on (no wildcards).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#host WaitingRoom#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#host WaitingRoom#host}
 
 ---
 
@@ -1429,7 +1470,7 @@ path: str
 
 The path within the additional host to enable the waiting room on. Defaults to `/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#path WaitingRoom#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#path WaitingRoom#path}
 
 ---
 
@@ -1464,6 +1505,7 @@ waitingRoom.WaitingRoomConfig(
   path: str = None,
   queue_all: typing.Union[bool, IResolvable] = None,
   queueing_method: str = None,
+  queueing_status_code: typing.Union[int, float] = None,
   session_duration: typing.Union[int, float] = None,
   suspended: typing.Union[bool, IResolvable] = None,
   timeouts: WaitingRoomTimeouts = None
@@ -1492,11 +1534,12 @@ waitingRoom.WaitingRoomConfig(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.defaultTemplateLanguage">default_template_language</a></code> | <code>str</code> | The language to use for the default waiting room page. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.description">description</a></code> | <code>str</code> | A description to add more details about the waiting room. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables automatic renewal of session cookies. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#id WaitingRoom#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#id WaitingRoom#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.jsonResponseEnabled">json_response_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, requests to the waiting room with the header `Accept: application/json` will receive a JSON response object. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.path">path</a></code> | <code>str</code> | The path within the host to enable the waiting room on. Defaults to `/`. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.queueAll">queue_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If queue_all is true, then all traffic will be sent to the waiting room. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.queueingMethod">queueing_method</a></code> | <code>str</code> | The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. Defaults to `fifo`. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.queueingStatusCode">queueing_status_code</a></code> | <code>typing.Union[int, float]</code> | HTTP status code returned to a user while in the queue. Defaults to `200`. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Suspends the waiting room. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts">WaitingRoomTimeouts</a></code> | timeouts block. |
@@ -1583,7 +1626,7 @@ host: str
 
 Host name for which the waiting room will be applied (no wildcards).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#host WaitingRoom#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#host WaitingRoom#host}
 
 ---
 
@@ -1597,7 +1640,7 @@ name: str
 
 A unique name to identify the waiting room. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#name WaitingRoom#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#name WaitingRoom#name}
 
 ---
 
@@ -1611,7 +1654,7 @@ new_users_per_minute: typing.Union[int, float]
 
 The number of new users that will be let into the route every minute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
 
 ---
 
@@ -1625,7 +1668,7 @@ total_active_users: typing.Union[int, float]
 
 The total number of active user sessions on the route at a point in time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
 
 ---
 
@@ -1639,7 +1682,7 @@ zone_id: str
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
 
 ---
 
@@ -1653,7 +1696,7 @@ additional_routes: typing.Union[IResolvable, typing.List[WaitingRoomAdditionalRo
 
 additional_routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
 
 ---
 
@@ -1667,7 +1710,7 @@ cookie_suffix: str
 
 A cookie suffix to be appended to the Cloudflare waiting room cookie name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
 
 ---
 
@@ -1681,7 +1724,7 @@ custom_page_html: str
 
 This is a templated html file that will be rendered at the edge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
 
 ---
 
@@ -1697,7 +1740,7 @@ The language to use for the default waiting room page.
 
 Available values: `de-DE`, `es-ES`, `en-US`, `fr-FR`, `id-ID`, `it-IT`, `ja-JP`, `ko-KR`, `nl-NL`, `pl-PL`, `pt-BR`, `tr-TR`, `zh-CN`, `zh-TW`, `ru-RU`, `fa-IR`. Defaults to `en-US`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
 
 ---
 
@@ -1711,7 +1754,7 @@ description: str
 
 A description to add more details about the waiting room.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#description WaitingRoom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#description WaitingRoom#description}
 
 ---
 
@@ -1725,7 +1768,7 @@ disable_session_renewal: typing.Union[bool, IResolvable]
 
 Disables automatic renewal of session cookies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
 
 ---
 
@@ -1737,7 +1780,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#id WaitingRoom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#id WaitingRoom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1754,7 +1797,7 @@ json_response_enabled: typing.Union[bool, IResolvable]
 
 If true, requests to the waiting room with the header `Accept: application/json` will receive a JSON response object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
 
 ---
 
@@ -1768,7 +1811,7 @@ path: str
 
 The path within the host to enable the waiting room on. Defaults to `/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#path WaitingRoom#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#path WaitingRoom#path}
 
 ---
 
@@ -1782,7 +1825,7 @@ queue_all: typing.Union[bool, IResolvable]
 
 If queue_all is true, then all traffic will be sent to the waiting room.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
 
 ---
 
@@ -1796,7 +1839,21 @@ queueing_method: str
 
 The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. Defaults to `fifo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
+
+---
+
+##### `queueing_status_code`<sup>Optional</sup> <a name="queueing_status_code" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.property.queueingStatusCode"></a>
+
+```python
+queueing_status_code: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+HTTP status code returned to a user while in the queue. Defaults to `200`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#queueing_status_code WaitingRoom#queueing_status_code}
 
 ---
 
@@ -1812,7 +1869,7 @@ Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to 
 
 Defaults to `5`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
 
 ---
 
@@ -1826,7 +1883,7 @@ suspended: typing.Union[bool, IResolvable]
 
 Suspends the waiting room.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
 
 ---
 
@@ -1840,7 +1897,7 @@ timeouts: WaitingRoomTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#timeouts WaitingRoom#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#timeouts WaitingRoom#timeouts}
 
 ---
 
@@ -1861,8 +1918,8 @@ waitingRoom.WaitingRoomTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#create WaitingRoom#create}. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#update WaitingRoom#update}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#create WaitingRoom#create}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#update WaitingRoom#update}. |
 
 ---
 
@@ -1874,7 +1931,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#create WaitingRoom#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#create WaitingRoom#create}.
 
 ---
 
@@ -1886,7 +1943,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room#update WaitingRoom#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room#update WaitingRoom#update}.
 
 ---
 
