@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.Account.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/account"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/account"
 
 account.NewAccount(scope Construct, id *string, config AccountConfig) Account
 ```
@@ -291,7 +291,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.account.Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/account"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/account"
 
 account.Account_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.account.Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/account"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/account"
 
 account.Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ account.Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.account.Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/account"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/account"
 
 account.Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.account.AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/account"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/account"
 
 &account.AccountConfig {
 	Connection: interface{},

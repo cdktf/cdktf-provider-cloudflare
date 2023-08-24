@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.NewDataCloudflareApiTokenPermissionGroups(scope Construct, id *string, config DataCloudflareApiTokenPermissionGroupsConfig) DataCloudflareApiTokenPermissionGroups
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareapitokenpermissiongroups"
 
 &datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroupsConfig {
 	Connection: interface{},
