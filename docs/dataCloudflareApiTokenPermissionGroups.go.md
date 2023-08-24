@@ -1,6 +1,6 @@
 # `data_cloudflare_api_token_permission_groups`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permission_groups`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups).
+Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permission_groups`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups).
 
 # `dataCloudflareApiTokenPermissionGroups` Submodule <a name="`dataCloudflareApiTokenPermissionGroups` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permissio
 
 ### DataCloudflareApiTokenPermissionGroups <a name="DataCloudflareApiTokenPermissionGroups" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.NewDataCloudflareApiTokenPermissionGroups(scope Construct, id *string, config DataCloudflareApiTokenPermissionGroupsConfig) DataCloudflareApiTokenPermissionGroups
 ```
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -258,12 +257,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -277,7 +270,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +316,7 @@ datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroups"
 
 datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -351,11 +344,11 @@ datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroups_Is
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.account">Account</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.permissions">Permissions</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.r2">R2</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.user">User</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.zone">Zone</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -491,10 +484,30 @@ func Account() StringMap
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Permissions`<sup>Required</sup> <a name="Permissions" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.permissions"></a>
 
 ```go
 func Permissions() StringMap
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+
+---
+
+##### `R2`<sup>Required</sup> <a name="R2" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.r2"></a>
+
+```go
+func R2() StringMap
 ```
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
@@ -518,26 +531,6 @@ func Zone() StringMap
 ```
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -566,7 +559,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroups"
 
 &datacloudflareapitokenpermissiongroups.DataCloudflareApiTokenPermissionGroupsConfig {
 	Connection: interface{},
@@ -576,7 +569,6 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudfla
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Id: *string,
 }
 ```
 
@@ -591,7 +583,6 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudfla
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups#id DataCloudflareApiTokenPermissionGroups#id}. |
 
 ---
 
@@ -662,21 +653,6 @@ Provisioners *[]interface{}
 ```
 
 - *Type:* *[]interface{}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups#id DataCloudflareApiTokenPermissionGroups#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

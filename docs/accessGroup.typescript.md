@@ -1,6 +1,6 @@
 # `cloudflare_access_group`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group).
+Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group).
 
 # `accessGroup` Submodule <a name="`accessGroup` Submodule" id="@cdktf/provider-cloudflare.accessGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://r
 
 ### AccessGroup <a name="AccessGroup" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group cloudflare_access_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group cloudflare_access_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup.Initializer"></a>
 
@@ -760,10 +760,10 @@ const accessGroupConfig: accessGroup.AccessGroupConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.include">include</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude">AccessGroupInclude</a>[]</code> | include block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.exclude">exclude</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude">AccessGroupExclude</a>[]</code> | exclude block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#id AccessGroup#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.require">require</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire">AccessGroupRequire</a>[]</code> | require block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
@@ -849,7 +849,7 @@ public readonly include: IResolvable | AccessGroupInclude[];
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#include AccessGroup#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#include AccessGroup#include}
 
 ---
 
@@ -861,7 +861,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -877,7 +877,7 @@ The account identifier to target for the resource.
 
 Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#account_id AccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#account_id AccessGroup#account_id}
 
 ---
 
@@ -891,7 +891,7 @@ public readonly exclude: IResolvable | AccessGroupExclude[];
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#exclude AccessGroup#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#exclude AccessGroup#exclude}
 
 ---
 
@@ -903,7 +903,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#id AccessGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -920,7 +920,7 @@ public readonly require: IResolvable | AccessGroupRequire[];
 
 require block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#require AccessGroup#require}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#require AccessGroup#require}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#zone_id AccessGroup#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#zone_id AccessGroup#zone_id}
 
 ---
 
@@ -952,26 +952,27 @@ const accessGroupExclude: accessGroup.AccessGroupExclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authMethod">authMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authContext">authContext</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]</code> | auth_context block. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authMethod">authMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.azure">azure</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzure">AccessGroupExcludeAzure</a>[]</code> | azure block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.certificate">certificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.commonName">commonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.devicePosture">devicePosture</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.emailDomain">emailDomain</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.everyone">everyone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.certificate">certificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.commonName">commonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.devicePosture">devicePosture</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.emailDomain">emailDomain</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.everyone">everyone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation">AccessGroupExcludeExternalEvaluation</a></code> | external_evaluation block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.geo">geo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#geo AccessGroup#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.geo">geo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.github">github</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub">AccessGroupExcludeGithub</a>[]</code> | github block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.group">group</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#group AccessGroup#group}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.group">group</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.gsuite">gsuite</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite">AccessGroupExcludeGsuite</a>[]</code> | gsuite block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ip">ip</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip AccessGroup#ip}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ipList">ipList</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.loginMethod">loginMethod</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ip">ip</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ipList">ipList</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.loginMethod">loginMethod</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.okta">okta</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta">AccessGroupExcludeOkta</a>[]</code> | okta block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.saml">saml</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml">AccessGroupExcludeSaml</a>[]</code> | saml block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.serviceToken">serviceToken</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.serviceToken">serviceToken</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
 
 ---
 
@@ -983,7 +984,21 @@ public readonly anyValidServiceToken: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+
+---
+
+##### `authContext`<sup>Optional</sup> <a name="authContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authContext"></a>
+
+```typescript
+public readonly authContext: IResolvable | AccessGroupExcludeAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]
+
+auth_context block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
 
 ---
 
@@ -995,7 +1010,7 @@ public readonly authMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
 
 ---
 
@@ -1009,7 +1024,7 @@ public readonly azure: IResolvable | AccessGroupExcludeAzure[];
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#azure AccessGroup#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#azure AccessGroup#azure}
 
 ---
 
@@ -1021,7 +1036,7 @@ public readonly certificate: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#certificate AccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}.
 
 ---
 
@@ -1033,7 +1048,7 @@ public readonly commonName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#common_name AccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}.
 
 ---
 
@@ -1045,7 +1060,7 @@ public readonly devicePosture: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
 
 ---
 
@@ -1057,7 +1072,7 @@ public readonly email: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1069,7 +1084,7 @@ public readonly emailDomain: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
 
 ---
 
@@ -1081,7 +1096,7 @@ public readonly everyone: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#everyone AccessGroup#everyone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}.
 
 ---
 
@@ -1095,7 +1110,7 @@ public readonly externalEvaluation: AccessGroupExcludeExternalEvaluation;
 
 external_evaluation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
 
 ---
 
@@ -1107,7 +1122,7 @@ public readonly geo: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#geo AccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}.
 
 ---
 
@@ -1121,7 +1136,7 @@ public readonly github: IResolvable | AccessGroupExcludeGithub[];
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#github AccessGroup#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#github AccessGroup#github}
 
 ---
 
@@ -1133,7 +1148,7 @@ public readonly group: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#group AccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}.
 
 ---
 
@@ -1147,7 +1162,7 @@ public readonly gsuite: IResolvable | AccessGroupExcludeGsuite[];
 
 gsuite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
 
 ---
 
@@ -1159,7 +1174,7 @@ public readonly ip: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip AccessGroup#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}.
 
 ---
 
@@ -1171,7 +1186,7 @@ public readonly ipList: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
 
 ---
 
@@ -1183,7 +1198,7 @@ public readonly loginMethod: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#login_method AccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}.
 
 ---
 
@@ -1197,7 +1212,7 @@ public readonly okta: IResolvable | AccessGroupExcludeOkta[];
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#okta AccessGroup#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#okta AccessGroup#okta}
 
 ---
 
@@ -1211,7 +1226,7 @@ public readonly saml: IResolvable | AccessGroupExcludeSaml[];
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#saml AccessGroup#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#saml AccessGroup#saml}
 
 ---
 
@@ -1223,7 +1238,72 @@ public readonly serviceToken: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+
+---
+
+### AccessGroupExcludeAuthContext <a name="AccessGroupExcludeAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+const accessGroupExcludeAuthContext: accessGroup.AccessGroupExcludeAuthContext = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.property.acId">acId</a></code> | <code>string</code> | The ACID of the Authentication Context. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.property.id">id</a></code> | <code>string</code> | The ID of the Authentication Context. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | The ID of the Azure Identity provider. |
+
+---
+
+##### `acId`<sup>Required</sup> <a name="acId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.property.acId"></a>
+
+```typescript
+public readonly acId: string;
+```
+
+- *Type:* string
+
+The ACID of the Authentication Context.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The ID of the Authentication Context.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identityProviderId`<sup>Required</sup> <a name="identityProviderId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext.property.identityProviderId"></a>
+
+```typescript
+public readonly identityProviderId: string;
+```
+
+- *Type:* string
+
+The ID of the Azure Identity provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -1256,7 +1336,7 @@ public readonly id: string[];
 
 The ID of the Azure group or user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1273,7 +1353,7 @@ public readonly identityProviderId: string;
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -1291,8 +1371,8 @@ const accessGroupExcludeExternalEvaluation: accessGroup.AccessGroupExcludeExtern
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.evaluateUrl">evaluateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.keysUrl">keysUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.evaluateUrl">evaluateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.keysUrl">keysUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
 
 ---
 
@@ -1304,7 +1384,7 @@ public readonly evaluateUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
 
 ---
 
@@ -1316,7 +1396,7 @@ public readonly keysUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
 
 ---
 
@@ -1334,9 +1414,9 @@ const accessGroupExcludeGithub: accessGroup.AccessGroupExcludeGithub = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#teams AccessGroup#teams}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}. |
 
 ---
 
@@ -1348,7 +1428,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1360,7 +1440,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -1372,7 +1452,7 @@ public readonly teams: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#teams AccessGroup#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}.
 
 ---
 
@@ -1390,8 +1470,8 @@ const accessGroupExcludeGsuite: accessGroup.AccessGroupExcludeGsuite = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -1403,7 +1483,7 @@ public readonly email: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1415,7 +1495,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1433,8 +1513,8 @@ const accessGroupExcludeOkta: accessGroup.AccessGroupExcludeOkta = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.name">name</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.name">name</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
 
 ---
 
@@ -1446,7 +1526,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1458,7 +1538,7 @@ public readonly name: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -1476,9 +1556,9 @@ const accessGroupExcludeSaml: accessGroup.AccessGroupExcludeSaml = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeName">attributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeValue">attributeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeName">attributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeValue">attributeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -1490,7 +1570,7 @@ public readonly attributeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
 
 ---
 
@@ -1502,7 +1582,7 @@ public readonly attributeValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
 
 ---
 
@@ -1514,7 +1594,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1532,26 +1612,27 @@ const accessGroupInclude: accessGroup.AccessGroupInclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authMethod">authMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authContext">authContext</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]</code> | auth_context block. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authMethod">authMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.azure">azure</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzure">AccessGroupIncludeAzure</a>[]</code> | azure block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.certificate">certificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.commonName">commonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.devicePosture">devicePosture</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.emailDomain">emailDomain</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.everyone">everyone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.certificate">certificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.commonName">commonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.devicePosture">devicePosture</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.emailDomain">emailDomain</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.everyone">everyone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation">AccessGroupIncludeExternalEvaluation</a></code> | external_evaluation block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.geo">geo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#geo AccessGroup#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.geo">geo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.github">github</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub">AccessGroupIncludeGithub</a>[]</code> | github block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.group">group</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#group AccessGroup#group}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.group">group</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.gsuite">gsuite</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite">AccessGroupIncludeGsuite</a>[]</code> | gsuite block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ip">ip</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip AccessGroup#ip}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ipList">ipList</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.loginMethod">loginMethod</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ip">ip</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ipList">ipList</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.loginMethod">loginMethod</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.okta">okta</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta">AccessGroupIncludeOkta</a>[]</code> | okta block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.saml">saml</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml">AccessGroupIncludeSaml</a>[]</code> | saml block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.serviceToken">serviceToken</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.serviceToken">serviceToken</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
 
 ---
 
@@ -1563,7 +1644,21 @@ public readonly anyValidServiceToken: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+
+---
+
+##### `authContext`<sup>Optional</sup> <a name="authContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authContext"></a>
+
+```typescript
+public readonly authContext: IResolvable | AccessGroupIncludeAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]
+
+auth_context block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
 
 ---
 
@@ -1575,7 +1670,7 @@ public readonly authMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
 
 ---
 
@@ -1589,7 +1684,7 @@ public readonly azure: IResolvable | AccessGroupIncludeAzure[];
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#azure AccessGroup#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#azure AccessGroup#azure}
 
 ---
 
@@ -1601,7 +1696,7 @@ public readonly certificate: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#certificate AccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}.
 
 ---
 
@@ -1613,7 +1708,7 @@ public readonly commonName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#common_name AccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}.
 
 ---
 
@@ -1625,7 +1720,7 @@ public readonly devicePosture: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
 
 ---
 
@@ -1637,7 +1732,7 @@ public readonly email: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1649,7 +1744,7 @@ public readonly emailDomain: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
 
 ---
 
@@ -1661,7 +1756,7 @@ public readonly everyone: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#everyone AccessGroup#everyone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}.
 
 ---
 
@@ -1675,7 +1770,7 @@ public readonly externalEvaluation: AccessGroupIncludeExternalEvaluation;
 
 external_evaluation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
 
 ---
 
@@ -1687,7 +1782,7 @@ public readonly geo: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#geo AccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}.
 
 ---
 
@@ -1701,7 +1796,7 @@ public readonly github: IResolvable | AccessGroupIncludeGithub[];
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#github AccessGroup#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#github AccessGroup#github}
 
 ---
 
@@ -1713,7 +1808,7 @@ public readonly group: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#group AccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}.
 
 ---
 
@@ -1727,7 +1822,7 @@ public readonly gsuite: IResolvable | AccessGroupIncludeGsuite[];
 
 gsuite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
 
 ---
 
@@ -1739,7 +1834,7 @@ public readonly ip: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip AccessGroup#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}.
 
 ---
 
@@ -1751,7 +1846,7 @@ public readonly ipList: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
 
 ---
 
@@ -1763,7 +1858,7 @@ public readonly loginMethod: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#login_method AccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}.
 
 ---
 
@@ -1777,7 +1872,7 @@ public readonly okta: IResolvable | AccessGroupIncludeOkta[];
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#okta AccessGroup#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#okta AccessGroup#okta}
 
 ---
 
@@ -1791,7 +1886,7 @@ public readonly saml: IResolvable | AccessGroupIncludeSaml[];
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#saml AccessGroup#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#saml AccessGroup#saml}
 
 ---
 
@@ -1803,7 +1898,72 @@ public readonly serviceToken: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+
+---
+
+### AccessGroupIncludeAuthContext <a name="AccessGroupIncludeAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+const accessGroupIncludeAuthContext: accessGroup.AccessGroupIncludeAuthContext = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.property.acId">acId</a></code> | <code>string</code> | The ACID of the Authentication Context. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.property.id">id</a></code> | <code>string</code> | The ID of the Authentication Context. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | The ID of the Azure Identity provider. |
+
+---
+
+##### `acId`<sup>Required</sup> <a name="acId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.property.acId"></a>
+
+```typescript
+public readonly acId: string;
+```
+
+- *Type:* string
+
+The ACID of the Authentication Context.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The ID of the Authentication Context.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identityProviderId`<sup>Required</sup> <a name="identityProviderId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext.property.identityProviderId"></a>
+
+```typescript
+public readonly identityProviderId: string;
+```
+
+- *Type:* string
+
+The ID of the Azure Identity provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -1836,7 +1996,7 @@ public readonly id: string[];
 
 The ID of the Azure group or user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1853,7 +2013,7 @@ public readonly identityProviderId: string;
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -1871,8 +2031,8 @@ const accessGroupIncludeExternalEvaluation: accessGroup.AccessGroupIncludeExtern
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.evaluateUrl">evaluateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.keysUrl">keysUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.evaluateUrl">evaluateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.keysUrl">keysUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
 
 ---
 
@@ -1884,7 +2044,7 @@ public readonly evaluateUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
 
 ---
 
@@ -1896,7 +2056,7 @@ public readonly keysUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
 
 ---
 
@@ -1914,9 +2074,9 @@ const accessGroupIncludeGithub: accessGroup.AccessGroupIncludeGithub = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#teams AccessGroup#teams}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}. |
 
 ---
 
@@ -1928,7 +2088,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1940,7 +2100,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -1952,7 +2112,7 @@ public readonly teams: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#teams AccessGroup#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}.
 
 ---
 
@@ -1970,8 +2130,8 @@ const accessGroupIncludeGsuite: accessGroup.AccessGroupIncludeGsuite = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -1983,7 +2143,7 @@ public readonly email: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1995,7 +2155,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2013,8 +2173,8 @@ const accessGroupIncludeOkta: accessGroup.AccessGroupIncludeOkta = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.name">name</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.name">name</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
 
 ---
 
@@ -2026,7 +2186,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2038,7 +2198,7 @@ public readonly name: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -2056,9 +2216,9 @@ const accessGroupIncludeSaml: accessGroup.AccessGroupIncludeSaml = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeName">attributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeValue">attributeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeName">attributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeValue">attributeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -2070,7 +2230,7 @@ public readonly attributeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
 
 ---
 
@@ -2082,7 +2242,7 @@ public readonly attributeValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
 
 ---
 
@@ -2094,7 +2254,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2112,26 +2272,27 @@ const accessGroupRequire: accessGroup.AccessGroupRequire = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authMethod">authMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.anyValidServiceToken">anyValidServiceToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authContext">authContext</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]</code> | auth_context block. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authMethod">authMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.azure">azure</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzure">AccessGroupRequireAzure</a>[]</code> | azure block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.certificate">certificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.commonName">commonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.devicePosture">devicePosture</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.emailDomain">emailDomain</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.everyone">everyone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.certificate">certificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.commonName">commonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.devicePosture">devicePosture</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.emailDomain">emailDomain</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.everyone">everyone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation">AccessGroupRequireExternalEvaluation</a></code> | external_evaluation block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.geo">geo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#geo AccessGroup#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.geo">geo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.github">github</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub">AccessGroupRequireGithub</a>[]</code> | github block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.group">group</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#group AccessGroup#group}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.group">group</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.gsuite">gsuite</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite">AccessGroupRequireGsuite</a>[]</code> | gsuite block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ip">ip</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip AccessGroup#ip}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ipList">ipList</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.loginMethod">loginMethod</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ip">ip</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ipList">ipList</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.loginMethod">loginMethod</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.okta">okta</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta">AccessGroupRequireOkta</a>[]</code> | okta block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.saml">saml</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml">AccessGroupRequireSaml</a>[]</code> | saml block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.serviceToken">serviceToken</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.serviceToken">serviceToken</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
 
 ---
 
@@ -2143,7 +2304,21 @@ public readonly anyValidServiceToken: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+
+---
+
+##### `authContext`<sup>Optional</sup> <a name="authContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authContext"></a>
+
+```typescript
+public readonly authContext: IResolvable | AccessGroupRequireAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]
+
+auth_context block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
 
 ---
 
@@ -2155,7 +2330,7 @@ public readonly authMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
 
 ---
 
@@ -2169,7 +2344,7 @@ public readonly azure: IResolvable | AccessGroupRequireAzure[];
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#azure AccessGroup#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#azure AccessGroup#azure}
 
 ---
 
@@ -2181,7 +2356,7 @@ public readonly certificate: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#certificate AccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}.
 
 ---
 
@@ -2193,7 +2368,7 @@ public readonly commonName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#common_name AccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}.
 
 ---
 
@@ -2205,7 +2380,7 @@ public readonly devicePosture: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
 
 ---
 
@@ -2217,7 +2392,7 @@ public readonly email: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -2229,7 +2404,7 @@ public readonly emailDomain: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
 
 ---
 
@@ -2241,7 +2416,7 @@ public readonly everyone: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#everyone AccessGroup#everyone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}.
 
 ---
 
@@ -2255,7 +2430,7 @@ public readonly externalEvaluation: AccessGroupRequireExternalEvaluation;
 
 external_evaluation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
 
 ---
 
@@ -2267,7 +2442,7 @@ public readonly geo: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#geo AccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}.
 
 ---
 
@@ -2281,7 +2456,7 @@ public readonly github: IResolvable | AccessGroupRequireGithub[];
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#github AccessGroup#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#github AccessGroup#github}
 
 ---
 
@@ -2293,7 +2468,7 @@ public readonly group: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#group AccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}.
 
 ---
 
@@ -2307,7 +2482,7 @@ public readonly gsuite: IResolvable | AccessGroupRequireGsuite[];
 
 gsuite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
 
 ---
 
@@ -2319,7 +2494,7 @@ public readonly ip: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip AccessGroup#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}.
 
 ---
 
@@ -2331,7 +2506,7 @@ public readonly ipList: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
 
 ---
 
@@ -2343,7 +2518,7 @@ public readonly loginMethod: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#login_method AccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}.
 
 ---
 
@@ -2357,7 +2532,7 @@ public readonly okta: IResolvable | AccessGroupRequireOkta[];
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#okta AccessGroup#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#okta AccessGroup#okta}
 
 ---
 
@@ -2371,7 +2546,7 @@ public readonly saml: IResolvable | AccessGroupRequireSaml[];
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#saml AccessGroup#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#saml AccessGroup#saml}
 
 ---
 
@@ -2383,7 +2558,72 @@ public readonly serviceToken: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+
+---
+
+### AccessGroupRequireAuthContext <a name="AccessGroupRequireAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+const accessGroupRequireAuthContext: accessGroup.AccessGroupRequireAuthContext = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.property.acId">acId</a></code> | <code>string</code> | The ACID of the Authentication Context. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.property.id">id</a></code> | <code>string</code> | The ID of the Authentication Context. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | The ID of the Azure Identity provider. |
+
+---
+
+##### `acId`<sup>Required</sup> <a name="acId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.property.acId"></a>
+
+```typescript
+public readonly acId: string;
+```
+
+- *Type:* string
+
+The ACID of the Authentication Context.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The ID of the Authentication Context.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identityProviderId`<sup>Required</sup> <a name="identityProviderId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext.property.identityProviderId"></a>
+
+```typescript
+public readonly identityProviderId: string;
+```
+
+- *Type:* string
+
+The ID of the Azure Identity provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -2416,7 +2656,7 @@ public readonly id: string[];
 
 The ID of the Azure group or user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2433,7 +2673,7 @@ public readonly identityProviderId: string;
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -2451,8 +2691,8 @@ const accessGroupRequireExternalEvaluation: accessGroup.AccessGroupRequireExtern
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.evaluateUrl">evaluateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.keysUrl">keysUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.evaluateUrl">evaluateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.keysUrl">keysUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
 
 ---
 
@@ -2464,7 +2704,7 @@ public readonly evaluateUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
 
 ---
 
@@ -2476,7 +2716,7 @@ public readonly keysUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
 
 ---
 
@@ -2494,9 +2734,9 @@ const accessGroupRequireGithub: accessGroup.AccessGroupRequireGithub = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#teams AccessGroup#teams}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}. |
 
 ---
 
@@ -2508,7 +2748,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2520,7 +2760,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -2532,7 +2772,7 @@ public readonly teams: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#teams AccessGroup#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}.
 
 ---
 
@@ -2550,8 +2790,8 @@ const accessGroupRequireGsuite: accessGroup.AccessGroupRequireGsuite = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.email">email</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -2563,7 +2803,7 @@ public readonly email: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -2575,7 +2815,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2593,8 +2833,8 @@ const accessGroupRequireOkta: accessGroup.AccessGroupRequireOkta = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.name">name</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.name">name</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
 
 ---
 
@@ -2606,7 +2846,7 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2618,7 +2858,7 @@ public readonly name: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -2636,9 +2876,9 @@ const accessGroupRequireSaml: accessGroup.AccessGroupRequireSaml = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeName">attributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeValue">attributeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeName">attributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeValue">attributeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -2650,7 +2890,7 @@ public readonly attributeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
 
 ---
 
@@ -2662,7 +2902,7 @@ public readonly attributeValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
 
 ---
 
@@ -2674,11 +2914,487 @@ public readonly identityProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AccessGroupExcludeAuthContextList <a name="AccessGroupExcludeAuthContextList" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+new accessGroup.AccessGroupExcludeAuthContextList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.get"></a>
+
+```typescript
+public get(index: number): AccessGroupExcludeAuthContextOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccessGroupExcludeAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]
+
+---
+
+
+### AccessGroupExcludeAuthContextOutputReference <a name="AccessGroupExcludeAuthContextOutputReference" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+new accessGroup.AccessGroupExcludeAuthContextOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.acIdInput">acIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.identityProviderIdInput">identityProviderIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.acId">acId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acIdInput`<sup>Optional</sup> <a name="acIdInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.acIdInput"></a>
+
+```typescript
+public readonly acIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityProviderIdInput`<sup>Optional</sup> <a name="identityProviderIdInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.identityProviderIdInput"></a>
+
+```typescript
+public readonly identityProviderIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acId`<sup>Required</sup> <a name="acId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.acId"></a>
+
+```typescript
+public readonly acId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityProviderId`<sup>Required</sup> <a name="identityProviderId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.identityProviderId"></a>
+
+```typescript
+public readonly identityProviderId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccessGroupExcludeAuthContext;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>
+
+---
+
 
 ### AccessGroupExcludeAzureList <a name="AccessGroupExcludeAzureList" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList"></a>
 
@@ -5099,6 +5815,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putAuthContext">putAuthContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putAzure">putAzure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putExternalEvaluation">putExternalEvaluation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putGithub">putGithub</a></code> | *No description.* |
@@ -5106,6 +5823,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putOkta">putOkta</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putSaml">putSaml</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetAnyValidServiceToken">resetAnyValidServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetAuthContext">resetAuthContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetAuthMethod">resetAuthMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetAzure">resetAzure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetCertificate">resetCertificate</a></code> | *No description.* |
@@ -5278,6 +5996,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAuthContext` <a name="putAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putAuthContext"></a>
+
+```typescript
+public putAuthContext(value: IResolvable | AccessGroupExcludeAuthContext[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putAuthContext.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]
+
+---
+
 ##### `putAzure` <a name="putAzure" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.putAzure"></a>
 
 ```typescript
@@ -5354,6 +6084,12 @@ public putSaml(value: IResolvable | AccessGroupExcludeSaml[]): void
 
 ```typescript
 public resetAnyValidServiceToken(): void
+```
+
+##### `resetAuthContext` <a name="resetAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetAuthContext"></a>
+
+```typescript
+public resetAuthContext(): void
 ```
 
 ##### `resetAuthMethod` <a name="resetAuthMethod" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.resetAuthMethod"></a>
@@ -5477,6 +6213,7 @@ public resetServiceToken(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.authContext">authContext</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList">AccessGroupExcludeAuthContextList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.azure">azure</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList">AccessGroupExcludeAzureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference">AccessGroupExcludeExternalEvaluationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.github">github</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList">AccessGroupExcludeGithubList</a></code> | *No description.* |
@@ -5484,6 +6221,7 @@ public resetServiceToken(): void
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.okta">okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaList">AccessGroupExcludeOktaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.saml">saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlList">AccessGroupExcludeSamlList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.anyValidServiceTokenInput">anyValidServiceTokenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.authContextInput">authContextInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.authMethodInput">authMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.azureInput">azureInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzure">AccessGroupExcludeAzure</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.certificateInput">certificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -5542,6 +6280,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `authContext`<sup>Required</sup> <a name="authContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.authContext"></a>
+
+```typescript
+public readonly authContext: AccessGroupExcludeAuthContextList;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContextList">AccessGroupExcludeAuthContextList</a>
 
 ---
 
@@ -5612,6 +6360,16 @@ public readonly anyValidServiceTokenInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `authContextInput`<sup>Optional</sup> <a name="authContextInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference.property.authContextInput"></a>
+
+```typescript
+public readonly authContextInput: IResolvable | AccessGroupExcludeAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAuthContext">AccessGroupExcludeAuthContext</a>[]
 
 ---
 
@@ -6449,6 +7207,482 @@ public readonly internalValue: IResolvable | AccessGroupExcludeSaml;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml">AccessGroupExcludeSaml</a>
+
+---
+
+
+### AccessGroupIncludeAuthContextList <a name="AccessGroupIncludeAuthContextList" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+new accessGroup.AccessGroupIncludeAuthContextList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.get"></a>
+
+```typescript
+public get(index: number): AccessGroupIncludeAuthContextOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccessGroupIncludeAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]
+
+---
+
+
+### AccessGroupIncludeAuthContextOutputReference <a name="AccessGroupIncludeAuthContextOutputReference" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+new accessGroup.AccessGroupIncludeAuthContextOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.acIdInput">acIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.identityProviderIdInput">identityProviderIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.acId">acId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acIdInput`<sup>Optional</sup> <a name="acIdInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.acIdInput"></a>
+
+```typescript
+public readonly acIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityProviderIdInput`<sup>Optional</sup> <a name="identityProviderIdInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.identityProviderIdInput"></a>
+
+```typescript
+public readonly identityProviderIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acId`<sup>Required</sup> <a name="acId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.acId"></a>
+
+```typescript
+public readonly acId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityProviderId`<sup>Required</sup> <a name="identityProviderId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.identityProviderId"></a>
+
+```typescript
+public readonly identityProviderId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccessGroupIncludeAuthContext;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>
 
 ---
 
@@ -8872,6 +10106,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putAuthContext">putAuthContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putAzure">putAzure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putExternalEvaluation">putExternalEvaluation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putGithub">putGithub</a></code> | *No description.* |
@@ -8879,6 +10114,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putOkta">putOkta</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putSaml">putSaml</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetAnyValidServiceToken">resetAnyValidServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetAuthContext">resetAuthContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetAuthMethod">resetAuthMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetAzure">resetAzure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetCertificate">resetCertificate</a></code> | *No description.* |
@@ -9051,6 +10287,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAuthContext` <a name="putAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putAuthContext"></a>
+
+```typescript
+public putAuthContext(value: IResolvable | AccessGroupIncludeAuthContext[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putAuthContext.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]
+
+---
+
 ##### `putAzure` <a name="putAzure" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.putAzure"></a>
 
 ```typescript
@@ -9127,6 +10375,12 @@ public putSaml(value: IResolvable | AccessGroupIncludeSaml[]): void
 
 ```typescript
 public resetAnyValidServiceToken(): void
+```
+
+##### `resetAuthContext` <a name="resetAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetAuthContext"></a>
+
+```typescript
+public resetAuthContext(): void
 ```
 
 ##### `resetAuthMethod` <a name="resetAuthMethod" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.resetAuthMethod"></a>
@@ -9250,6 +10504,7 @@ public resetServiceToken(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.authContext">authContext</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList">AccessGroupIncludeAuthContextList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.azure">azure</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureList">AccessGroupIncludeAzureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference">AccessGroupIncludeExternalEvaluationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.github">github</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList">AccessGroupIncludeGithubList</a></code> | *No description.* |
@@ -9257,6 +10512,7 @@ public resetServiceToken(): void
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.okta">okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaList">AccessGroupIncludeOktaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.saml">saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList">AccessGroupIncludeSamlList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.anyValidServiceTokenInput">anyValidServiceTokenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.authContextInput">authContextInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.authMethodInput">authMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.azureInput">azureInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzure">AccessGroupIncludeAzure</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.certificateInput">certificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -9315,6 +10571,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `authContext`<sup>Required</sup> <a name="authContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.authContext"></a>
+
+```typescript
+public readonly authContext: AccessGroupIncludeAuthContextList;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContextList">AccessGroupIncludeAuthContextList</a>
 
 ---
 
@@ -9385,6 +10651,16 @@ public readonly anyValidServiceTokenInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `authContextInput`<sup>Optional</sup> <a name="authContextInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference.property.authContextInput"></a>
+
+```typescript
+public readonly authContextInput: IResolvable | AccessGroupIncludeAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAuthContext">AccessGroupIncludeAuthContext</a>[]
 
 ---
 
@@ -10222,6 +11498,482 @@ public readonly internalValue: IResolvable | AccessGroupIncludeSaml;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml">AccessGroupIncludeSaml</a>
+
+---
+
+
+### AccessGroupRequireAuthContextList <a name="AccessGroupRequireAuthContextList" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+new accessGroup.AccessGroupRequireAuthContextList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.get"></a>
+
+```typescript
+public get(index: number): AccessGroupRequireAuthContextOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccessGroupRequireAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]
+
+---
+
+
+### AccessGroupRequireAuthContextOutputReference <a name="AccessGroupRequireAuthContextOutputReference" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer"></a>
+
+```typescript
+import { accessGroup } from '@cdktf/provider-cloudflare'
+
+new accessGroup.AccessGroupRequireAuthContextOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.acIdInput">acIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.identityProviderIdInput">identityProviderIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.acId">acId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.identityProviderId">identityProviderId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acIdInput`<sup>Optional</sup> <a name="acIdInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.acIdInput"></a>
+
+```typescript
+public readonly acIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityProviderIdInput`<sup>Optional</sup> <a name="identityProviderIdInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.identityProviderIdInput"></a>
+
+```typescript
+public readonly identityProviderIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acId`<sup>Required</sup> <a name="acId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.acId"></a>
+
+```typescript
+public readonly acId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityProviderId`<sup>Required</sup> <a name="identityProviderId" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.identityProviderId"></a>
+
+```typescript
+public readonly identityProviderId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccessGroupRequireAuthContext;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>
 
 ---
 
@@ -12645,6 +14397,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putAuthContext">putAuthContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putAzure">putAzure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putExternalEvaluation">putExternalEvaluation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putGithub">putGithub</a></code> | *No description.* |
@@ -12652,6 +14405,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putOkta">putOkta</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putSaml">putSaml</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetAnyValidServiceToken">resetAnyValidServiceToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetAuthContext">resetAuthContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetAuthMethod">resetAuthMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetAzure">resetAzure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetCertificate">resetCertificate</a></code> | *No description.* |
@@ -12824,6 +14578,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAuthContext` <a name="putAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putAuthContext"></a>
+
+```typescript
+public putAuthContext(value: IResolvable | AccessGroupRequireAuthContext[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putAuthContext.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]
+
+---
+
 ##### `putAzure` <a name="putAzure" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.putAzure"></a>
 
 ```typescript
@@ -12900,6 +14666,12 @@ public putSaml(value: IResolvable | AccessGroupRequireSaml[]): void
 
 ```typescript
 public resetAnyValidServiceToken(): void
+```
+
+##### `resetAuthContext` <a name="resetAuthContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetAuthContext"></a>
+
+```typescript
+public resetAuthContext(): void
 ```
 
 ##### `resetAuthMethod` <a name="resetAuthMethod" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.resetAuthMethod"></a>
@@ -13023,6 +14795,7 @@ public resetServiceToken(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.authContext">authContext</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList">AccessGroupRequireAuthContextList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.azure">azure</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureList">AccessGroupRequireAzureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.externalEvaluation">externalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference">AccessGroupRequireExternalEvaluationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.github">github</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList">AccessGroupRequireGithubList</a></code> | *No description.* |
@@ -13030,6 +14803,7 @@ public resetServiceToken(): void
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.okta">okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList">AccessGroupRequireOktaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.saml">saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlList">AccessGroupRequireSamlList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.anyValidServiceTokenInput">anyValidServiceTokenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.authContextInput">authContextInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.authMethodInput">authMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.azureInput">azureInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzure">AccessGroupRequireAzure</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.certificateInput">certificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -13088,6 +14862,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `authContext`<sup>Required</sup> <a name="authContext" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.authContext"></a>
+
+```typescript
+public readonly authContext: AccessGroupRequireAuthContextList;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContextList">AccessGroupRequireAuthContextList</a>
 
 ---
 
@@ -13158,6 +14942,16 @@ public readonly anyValidServiceTokenInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `authContextInput`<sup>Optional</sup> <a name="authContextInput" id="@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference.property.authContextInput"></a>
+
+```typescript
+public readonly authContextInput: IResolvable | AccessGroupRequireAuthContext[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAuthContext">AccessGroupRequireAuthContext</a>[]
 
 ---
 

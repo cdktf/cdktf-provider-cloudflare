@@ -1,6 +1,6 @@
 # `cloudflare_regional_hostname`
 
-Refer to the Terraform Registory for docs: [`cloudflare_regional_hostname`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname).
+Refer to the Terraform Registory for docs: [`cloudflare_regional_hostname`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname).
 
 # `regionalHostname` Submodule <a name="`regionalHostname` Submodule" id="@cdktf/provider-cloudflare.regionalHostname"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`cloudflare_regional_hostname`](http
 
 ### RegionalHostname <a name="RegionalHostname" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.NewRegionalHostname(scope Construct, id *string, config RegionalHostnameConfig) RegionalHostname
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ regionalhostname.RegionalHostname_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 &regionalhostname.RegionalHostnameConfig {
 	Connection: interface{},
@@ -677,7 +677,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhost
 	RegionKey: *string,
 	ZoneId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8.regionalHostname.RegionalHostnameTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.regionalHostname.RegionalHostnameTimeouts,
 }
 ```
 
@@ -695,7 +695,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhost
 | <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.hostname">Hostname</a></code> | <code>*string</code> | The hostname to regionalize. |
 | <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.regionKey">RegionKey</a></code> | <code>*string</code> | The region key. See [the full region list](https://developers.cloudflare.com/data-localization/regional-services/get-started/). |
 | <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#id RegionalHostname#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#id RegionalHostname#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts">RegionalHostnameTimeouts</a></code> | timeouts block. |
 
 ---
@@ -780,7 +780,7 @@ Hostname *string
 
 The hostname to regionalize.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
 
 ---
 
@@ -794,7 +794,7 @@ RegionKey *string
 
 The region key. See [the full region list](https://developers.cloudflare.com/data-localization/regional-services/get-started/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
 
 ---
 
@@ -808,7 +808,7 @@ ZoneId *string
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
 
 ---
 
@@ -820,7 +820,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#id RegionalHostname#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#id RegionalHostname#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ Timeouts RegionalHostnameTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#timeouts RegionalHostname#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#timeouts RegionalHostname#timeouts}
 
 ---
 
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 &regionalhostname.RegionalHostnameTimeouts {
 	Create: *string,
@@ -858,8 +858,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhost
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#create RegionalHostname#create}. |
-| <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#update RegionalHostname#update}. |
+| <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#create RegionalHostname#create}. |
+| <code><a href="#@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#update RegionalHostname#update}. |
 
 ---
 
@@ -871,7 +871,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#create RegionalHostname#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#create RegionalHostname#create}.
 
 ---
 
@@ -883,7 +883,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname#update RegionalHostname#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname#update RegionalHostname#update}.
 
 ---
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.NewRegionalHostnameTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RegionalHostnameTimeoutsOutputReference
 ```

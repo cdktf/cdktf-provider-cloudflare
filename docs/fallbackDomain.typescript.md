@@ -1,6 +1,6 @@
 # `cloudflare_fallback_domain`
 
-Refer to the Terraform Registory for docs: [`cloudflare_fallback_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain).
+Refer to the Terraform Registory for docs: [`cloudflare_fallback_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain).
 
 # `fallbackDomain` Submodule <a name="`fallbackDomain` Submodule" id="@cdktf/provider-cloudflare.fallbackDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_fallback_domain`](https:
 
 ### FallbackDomain <a name="FallbackDomain" id="@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain cloudflare_fallback_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain cloudflare_fallback_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain.Initializer"></a>
 
@@ -648,7 +648,7 @@ const fallbackDomainConfig: fallbackDomain.FallbackDomainConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig.property.domains">domains</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains">FallbackDomainDomains</a>[]</code> | domains block. |
-| <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#id FallbackDomain#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#id FallbackDomain#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig.property.policyId">policyId</a></code> | <code>string</code> | The settings policy for which to configure this fallback domain policy. |
 
 ---
@@ -733,7 +733,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#account_id FallbackDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#account_id FallbackDomain#account_id}
 
 ---
 
@@ -747,7 +747,7 @@ public readonly domains: IResolvable | FallbackDomainDomains[];
 
 domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#domains FallbackDomain#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#domains FallbackDomain#domains}
 
 ---
 
@@ -759,7 +759,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#id FallbackDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#id FallbackDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -776,7 +776,7 @@ public readonly policyId: string;
 
 The settings policy for which to configure this fallback domain policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#policy_id FallbackDomain#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#policy_id FallbackDomain#policy_id}
 
 ---
 
@@ -810,7 +810,7 @@ public readonly description: string;
 
 A description of the fallback domain, displayed in the client UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#description FallbackDomain#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#description FallbackDomain#description}
 
 ---
 
@@ -824,7 +824,7 @@ public readonly dnsServer: string[];
 
 A list of IP addresses to handle domain resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#dns_server FallbackDomain#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#dns_server FallbackDomain#dns_server}
 
 ---
 
@@ -838,7 +838,7 @@ public readonly suffix: string;
 
 The domain suffix to match when resolving locally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/fallback_domain#suffix FallbackDomain#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/fallback_domain#suffix FallbackDomain#suffix}
 
 ---
 

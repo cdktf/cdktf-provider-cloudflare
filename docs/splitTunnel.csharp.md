@@ -1,6 +1,6 @@
 # `cloudflare_split_tunnel`
 
-Refer to the Terraform Registory for docs: [`cloudflare_split_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel).
+Refer to the Terraform Registory for docs: [`cloudflare_split_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel).
 
 # `splitTunnel` Submodule <a name="`splitTunnel` Submodule" id="@cdktf/provider-cloudflare.splitTunnel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_split_tunnel`](https://r
 
 ### SplitTunnel <a name="SplitTunnel" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel cloudflare_split_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel cloudflare_split_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnel.Initializer"></a>
 
@@ -684,7 +684,7 @@ new SplitTunnelConfig {
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.property.mode">Mode</a></code> | <code>string</code> | The mode of the split tunnel policy. Available values: `include`, `exclude`. |
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.property.tunnels">Tunnels</a></code> | <code>object</code> | tunnels block. |
-| <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#id SplitTunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#id SplitTunnel#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.property.policyId">PolicyId</a></code> | <code>string</code> | The settings policy for which to configure this split tunnel policy. |
 
 ---
@@ -769,7 +769,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#account_id SplitTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#account_id SplitTunnel#account_id}
 
 ---
 
@@ -783,7 +783,7 @@ public string Mode { get; set; }
 
 The mode of the split tunnel policy. Available values: `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#mode SplitTunnel#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#mode SplitTunnel#mode}
 
 ---
 
@@ -797,7 +797,7 @@ public object Tunnels { get; set; }
 
 tunnels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#tunnels SplitTunnel#tunnels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#tunnels SplitTunnel#tunnels}
 
 ---
 
@@ -809,7 +809,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#id SplitTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#id SplitTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ public string PolicyId { get; set; }
 
 The settings policy for which to configure this split tunnel policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#policy_id SplitTunnel#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#policy_id SplitTunnel#policy_id}
 
 ---
 
@@ -864,7 +864,7 @@ public string Address { get; set; }
 
 The address for the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#address SplitTunnel#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#address SplitTunnel#address}
 
 ---
 
@@ -878,7 +878,7 @@ public string Description { get; set; }
 
 A description for the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#description SplitTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#description SplitTunnel#description}
 
 ---
 
@@ -892,7 +892,7 @@ public string Host { get; set; }
 
 The domain name for the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/split_tunnel#host SplitTunnel#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/split_tunnel#host SplitTunnel#host}
 
 ---
 
