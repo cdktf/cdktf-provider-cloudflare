@@ -1,6 +1,6 @@
 # `cloudflare_access_group`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group).
+Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group).
 
 # `accessGroup` Submodule <a name="`accessGroup` Submodule" id="@cdktf/provider-cloudflare.accessGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://r
 
 ### AccessGroup <a name="AccessGroup" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group cloudflare_access_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group cloudflare_access_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessGroup.AccessGroup.Initializer"></a>
 
@@ -775,10 +775,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.include">Include</a></code> | <code>interface{}</code> | include block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.exclude">Exclude</a></code> | <code>interface{}</code> | exclude block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.require">Require</a></code> | <code>interface{}</code> | require block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
@@ -864,7 +864,7 @@ Include interface{}
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#include AccessGroup#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#include AccessGroup#include}
 
 ---
 
@@ -876,7 +876,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -892,7 +892,7 @@ The account identifier to target for the resource.
 
 Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#account_id AccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#account_id AccessGroup#account_id}
 
 ---
 
@@ -906,7 +906,7 @@ Exclude interface{}
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#exclude AccessGroup#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#exclude AccessGroup#exclude}
 
 ---
 
@@ -918,7 +918,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -935,7 +935,7 @@ Require interface{}
 
 require block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#require AccessGroup#require}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#require AccessGroup#require}
 
 ---
 
@@ -949,7 +949,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#zone_id AccessGroup#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#zone_id AccessGroup#zone_id}
 
 ---
 
@@ -989,27 +989,27 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.anyValidServiceToken">AnyValidServiceToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.anyValidServiceToken">AnyValidServiceToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authContext">AuthContext</a></code> | <code>interface{}</code> | auth_context block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.azure">Azure</a></code> | <code>interface{}</code> | azure block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.certificate">Certificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.commonName">CommonName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.devicePosture">DevicePosture</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.emailDomain">EmailDomain</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.everyone">Everyone</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.certificate">Certificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.commonName">CommonName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.devicePosture">DevicePosture</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.emailDomain">EmailDomain</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.everyone">Everyone</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.externalEvaluation">ExternalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation">AccessGroupExcludeExternalEvaluation</a></code> | external_evaluation block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.geo">Geo</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.geo">Geo</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#geo AccessGroup#geo}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.github">Github</a></code> | <code>interface{}</code> | github block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.group">Group</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.group">Group</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#group AccessGroup#group}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.gsuite">Gsuite</a></code> | <code>interface{}</code> | gsuite block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ip">Ip</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ipList">IpList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.loginMethod">LoginMethod</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ip">Ip</a></code> | <code>*[]*string</code> | An IPv4 or IPv6 CIDR block. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.ipList">IpList</a></code> | <code>*[]*string</code> | The ID of an existing IP list to reference. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.loginMethod">LoginMethod</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.okta">Okta</a></code> | <code>interface{}</code> | okta block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.saml">Saml</a></code> | <code>interface{}</code> | saml block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.serviceToken">ServiceToken</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude.property.serviceToken">ServiceToken</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ AnyValidServiceToken interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
 
 ---
 
@@ -1035,7 +1035,7 @@ AuthContext interface{}
 
 auth_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
 
 ---
 
@@ -1047,7 +1047,7 @@ AuthMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Azure interface{}
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#azure AccessGroup#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#azure AccessGroup#azure}
 
 ---
 
@@ -1073,7 +1073,7 @@ Certificate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#certificate AccessGroup#certificate}.
 
 ---
 
@@ -1085,7 +1085,7 @@ CommonName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#common_name AccessGroup#common_name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ DevicePosture *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Email *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1121,7 +1121,7 @@ EmailDomain *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
 
 ---
 
@@ -1133,7 +1133,7 @@ Everyone interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#everyone AccessGroup#everyone}.
 
 ---
 
@@ -1147,7 +1147,7 @@ ExternalEvaluation AccessGroupExcludeExternalEvaluation
 
 external_evaluation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
 
 ---
 
@@ -1159,7 +1159,7 @@ Geo *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#geo AccessGroup#geo}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Github interface{}
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#github AccessGroup#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#github AccessGroup#github}
 
 ---
 
@@ -1185,7 +1185,7 @@ Group *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#group AccessGroup#group}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Gsuite interface{}
 
 gsuite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
 
 ---
 
@@ -1211,7 +1211,9 @@ Ip *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}.
+An IPv4 or IPv6 CIDR block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ip AccessGroup#ip}
 
 ---
 
@@ -1223,7 +1225,9 @@ IpList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
+The ID of an existing IP list to reference.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ip_list AccessGroup#ip_list}
 
 ---
 
@@ -1235,7 +1239,7 @@ LoginMethod *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#login_method AccessGroup#login_method}.
 
 ---
 
@@ -1249,7 +1253,7 @@ Okta interface{}
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#okta AccessGroup#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#okta AccessGroup#okta}
 
 ---
 
@@ -1263,7 +1267,7 @@ Saml interface{}
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#saml AccessGroup#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#saml AccessGroup#saml}
 
 ---
 
@@ -1275,7 +1279,7 @@ ServiceToken *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#service_token AccessGroup#service_token}.
 
 ---
 
@@ -1313,7 +1317,7 @@ AcId *string
 
 The ACID of the Authentication Context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
 
 ---
 
@@ -1327,7 +1331,7 @@ Id *string
 
 The ID of the Authentication Context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1344,7 +1348,7 @@ IdentityProviderId *string
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -1380,7 +1384,7 @@ Id *[]*string
 
 The ID of the Azure group or user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1397,7 +1401,7 @@ IdentityProviderId *string
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -1418,8 +1422,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.evaluateUrl">EvaluateUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.keysUrl">KeysUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.evaluateUrl">EvaluateUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation.property.keysUrl">KeysUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
 
 ---
 
@@ -1431,7 +1435,7 @@ EvaluateUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
 
 ---
 
@@ -1443,7 +1447,7 @@ KeysUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
 
 ---
 
@@ -1465,9 +1469,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#teams AccessGroup#teams}. |
 
 ---
 
@@ -1479,7 +1483,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1491,7 +1495,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -1503,7 +1507,7 @@ Teams *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#teams AccessGroup#teams}.
 
 ---
 
@@ -1524,8 +1528,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -1537,7 +1541,7 @@ Email *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1549,7 +1553,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1570,8 +1574,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.name">Name</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta.property.name">Name</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
 
 ---
 
@@ -1583,7 +1587,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1595,7 +1599,7 @@ Name *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -1617,9 +1621,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeName">AttributeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeName">AttributeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -1631,7 +1635,7 @@ AttributeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
 
 ---
 
@@ -1643,7 +1647,7 @@ AttributeValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
 
 ---
 
@@ -1655,7 +1659,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -1695,27 +1699,27 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.anyValidServiceToken">AnyValidServiceToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.anyValidServiceToken">AnyValidServiceToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authContext">AuthContext</a></code> | <code>interface{}</code> | auth_context block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.azure">Azure</a></code> | <code>interface{}</code> | azure block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.certificate">Certificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.commonName">CommonName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.devicePosture">DevicePosture</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.emailDomain">EmailDomain</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.everyone">Everyone</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.certificate">Certificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.commonName">CommonName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.devicePosture">DevicePosture</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.emailDomain">EmailDomain</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.everyone">Everyone</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.externalEvaluation">ExternalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation">AccessGroupIncludeExternalEvaluation</a></code> | external_evaluation block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.geo">Geo</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.geo">Geo</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#geo AccessGroup#geo}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.github">Github</a></code> | <code>interface{}</code> | github block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.group">Group</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.group">Group</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#group AccessGroup#group}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.gsuite">Gsuite</a></code> | <code>interface{}</code> | gsuite block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ip">Ip</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ipList">IpList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.loginMethod">LoginMethod</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ip">Ip</a></code> | <code>*[]*string</code> | An IPv4 or IPv6 CIDR block. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.ipList">IpList</a></code> | <code>*[]*string</code> | The ID of an existing IP list to reference. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.loginMethod">LoginMethod</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.okta">Okta</a></code> | <code>interface{}</code> | okta block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.saml">Saml</a></code> | <code>interface{}</code> | saml block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.serviceToken">ServiceToken</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude.property.serviceToken">ServiceToken</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
 
 ---
 
@@ -1727,7 +1731,7 @@ AnyValidServiceToken interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
 
 ---
 
@@ -1741,7 +1745,7 @@ AuthContext interface{}
 
 auth_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
 
 ---
 
@@ -1753,7 +1757,7 @@ AuthMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
 
 ---
 
@@ -1767,7 +1771,7 @@ Azure interface{}
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#azure AccessGroup#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#azure AccessGroup#azure}
 
 ---
 
@@ -1779,7 +1783,7 @@ Certificate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#certificate AccessGroup#certificate}.
 
 ---
 
@@ -1791,7 +1795,7 @@ CommonName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#common_name AccessGroup#common_name}.
 
 ---
 
@@ -1803,7 +1807,7 @@ DevicePosture *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
 
 ---
 
@@ -1815,7 +1819,7 @@ Email *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -1827,7 +1831,7 @@ EmailDomain *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
 
 ---
 
@@ -1839,7 +1843,7 @@ Everyone interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#everyone AccessGroup#everyone}.
 
 ---
 
@@ -1853,7 +1857,7 @@ ExternalEvaluation AccessGroupIncludeExternalEvaluation
 
 external_evaluation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
 
 ---
 
@@ -1865,7 +1869,7 @@ Geo *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#geo AccessGroup#geo}.
 
 ---
 
@@ -1879,7 +1883,7 @@ Github interface{}
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#github AccessGroup#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#github AccessGroup#github}
 
 ---
 
@@ -1891,7 +1895,7 @@ Group *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#group AccessGroup#group}.
 
 ---
 
@@ -1905,7 +1909,7 @@ Gsuite interface{}
 
 gsuite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
 
 ---
 
@@ -1917,7 +1921,9 @@ Ip *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}.
+An IPv4 or IPv6 CIDR block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ip AccessGroup#ip}
 
 ---
 
@@ -1929,7 +1935,9 @@ IpList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
+The ID of an existing IP list to reference.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ip_list AccessGroup#ip_list}
 
 ---
 
@@ -1941,7 +1949,7 @@ LoginMethod *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#login_method AccessGroup#login_method}.
 
 ---
 
@@ -1955,7 +1963,7 @@ Okta interface{}
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#okta AccessGroup#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#okta AccessGroup#okta}
 
 ---
 
@@ -1969,7 +1977,7 @@ Saml interface{}
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#saml AccessGroup#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#saml AccessGroup#saml}
 
 ---
 
@@ -1981,7 +1989,7 @@ ServiceToken *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#service_token AccessGroup#service_token}.
 
 ---
 
@@ -2019,7 +2027,7 @@ AcId *string
 
 The ACID of the Authentication Context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
 
 ---
 
@@ -2033,7 +2041,7 @@ Id *string
 
 The ID of the Authentication Context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2050,7 +2058,7 @@ IdentityProviderId *string
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -2086,7 +2094,7 @@ Id *[]*string
 
 The ID of the Azure group or user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2103,7 +2111,7 @@ IdentityProviderId *string
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -2124,8 +2132,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.evaluateUrl">EvaluateUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.keysUrl">KeysUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.evaluateUrl">EvaluateUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation.property.keysUrl">KeysUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
 
 ---
 
@@ -2137,7 +2145,7 @@ EvaluateUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
 
 ---
 
@@ -2149,7 +2157,7 @@ KeysUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
 
 ---
 
@@ -2171,9 +2179,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#teams AccessGroup#teams}. |
 
 ---
 
@@ -2185,7 +2193,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2197,7 +2205,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -2209,7 +2217,7 @@ Teams *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#teams AccessGroup#teams}.
 
 ---
 
@@ -2230,8 +2238,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -2243,7 +2251,7 @@ Email *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -2255,7 +2263,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2276,8 +2284,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.name">Name</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta.property.name">Name</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
 
 ---
 
@@ -2289,7 +2297,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2301,7 +2309,7 @@ Name *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -2323,9 +2331,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeName">AttributeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeName">AttributeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -2337,7 +2345,7 @@ AttributeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
 
 ---
 
@@ -2349,7 +2357,7 @@ AttributeValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
 
 ---
 
@@ -2361,7 +2369,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2401,27 +2409,27 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.anyValidServiceToken">AnyValidServiceToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.anyValidServiceToken">AnyValidServiceToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authContext">AuthContext</a></code> | <code>interface{}</code> | auth_context block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_method AccessGroup#auth_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.azure">Azure</a></code> | <code>interface{}</code> | azure block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.certificate">Certificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.commonName">CommonName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.devicePosture">DevicePosture</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.emailDomain">EmailDomain</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.everyone">Everyone</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.certificate">Certificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#certificate AccessGroup#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.commonName">CommonName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#common_name AccessGroup#common_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.devicePosture">DevicePosture</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#device_posture AccessGroup#device_posture}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.emailDomain">EmailDomain</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email_domain AccessGroup#email_domain}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.everyone">Everyone</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#everyone AccessGroup#everyone}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.externalEvaluation">ExternalEvaluation</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation">AccessGroupRequireExternalEvaluation</a></code> | external_evaluation block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.geo">Geo</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.geo">Geo</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#geo AccessGroup#geo}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.github">Github</a></code> | <code>interface{}</code> | github block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.group">Group</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.group">Group</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#group AccessGroup#group}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.gsuite">Gsuite</a></code> | <code>interface{}</code> | gsuite block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ip">Ip</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ipList">IpList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.loginMethod">LoginMethod</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ip">Ip</a></code> | <code>*[]*string</code> | An IPv4 or IPv6 CIDR block. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.ipList">IpList</a></code> | <code>*[]*string</code> | The ID of an existing IP list to reference. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.loginMethod">LoginMethod</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#login_method AccessGroup#login_method}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.okta">Okta</a></code> | <code>interface{}</code> | okta block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.saml">Saml</a></code> | <code>interface{}</code> | saml block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.serviceToken">ServiceToken</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire.property.serviceToken">ServiceToken</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#service_token AccessGroup#service_token}. |
 
 ---
 
@@ -2433,7 +2441,7 @@ AnyValidServiceToken interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#any_valid_service_token AccessGroup#any_valid_service_token}.
 
 ---
 
@@ -2447,7 +2455,7 @@ AuthContext interface{}
 
 auth_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_context AccessGroup#auth_context}
 
 ---
 
@@ -2459,7 +2467,7 @@ AuthMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#auth_method AccessGroup#auth_method}.
 
 ---
 
@@ -2473,7 +2481,7 @@ Azure interface{}
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#azure AccessGroup#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#azure AccessGroup#azure}
 
 ---
 
@@ -2485,7 +2493,7 @@ Certificate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#certificate AccessGroup#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#certificate AccessGroup#certificate}.
 
 ---
 
@@ -2497,7 +2505,7 @@ CommonName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#common_name AccessGroup#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#common_name AccessGroup#common_name}.
 
 ---
 
@@ -2509,7 +2517,7 @@ DevicePosture *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#device_posture AccessGroup#device_posture}.
 
 ---
 
@@ -2521,7 +2529,7 @@ Email *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -2533,7 +2541,7 @@ EmailDomain *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email_domain AccessGroup#email_domain}.
 
 ---
 
@@ -2545,7 +2553,7 @@ Everyone interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#everyone AccessGroup#everyone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#everyone AccessGroup#everyone}.
 
 ---
 
@@ -2559,7 +2567,7 @@ ExternalEvaluation AccessGroupRequireExternalEvaluation
 
 external_evaluation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#external_evaluation AccessGroup#external_evaluation}
 
 ---
 
@@ -2571,7 +2579,7 @@ Geo *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#geo AccessGroup#geo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#geo AccessGroup#geo}.
 
 ---
 
@@ -2585,7 +2593,7 @@ Github interface{}
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#github AccessGroup#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#github AccessGroup#github}
 
 ---
 
@@ -2597,7 +2605,7 @@ Group *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#group AccessGroup#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#group AccessGroup#group}.
 
 ---
 
@@ -2611,7 +2619,7 @@ Gsuite interface{}
 
 gsuite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#gsuite AccessGroup#gsuite}
 
 ---
 
@@ -2623,7 +2631,9 @@ Ip *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip AccessGroup#ip}.
+An IPv4 or IPv6 CIDR block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ip AccessGroup#ip}
 
 ---
 
@@ -2635,7 +2645,9 @@ IpList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ip_list AccessGroup#ip_list}.
+The ID of an existing IP list to reference.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ip_list AccessGroup#ip_list}
 
 ---
 
@@ -2647,7 +2659,7 @@ LoginMethod *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#login_method AccessGroup#login_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#login_method AccessGroup#login_method}.
 
 ---
 
@@ -2661,7 +2673,7 @@ Okta interface{}
 
 okta block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#okta AccessGroup#okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#okta AccessGroup#okta}
 
 ---
 
@@ -2675,7 +2687,7 @@ Saml interface{}
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#saml AccessGroup#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#saml AccessGroup#saml}
 
 ---
 
@@ -2687,7 +2699,7 @@ ServiceToken *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#service_token AccessGroup#service_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#service_token AccessGroup#service_token}.
 
 ---
 
@@ -2725,7 +2737,7 @@ AcId *string
 
 The ACID of the Authentication Context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#ac_id AccessGroup#ac_id}
 
 ---
 
@@ -2739,7 +2751,7 @@ Id *string
 
 The ID of the Authentication Context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2756,7 +2768,7 @@ IdentityProviderId *string
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -2792,7 +2804,7 @@ Id *[]*string
 
 The ID of the Azure group or user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#id AccessGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#id AccessGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2809,7 +2821,7 @@ IdentityProviderId *string
 
 The ID of the Azure Identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}
 
 ---
 
@@ -2830,8 +2842,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.evaluateUrl">EvaluateUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.keysUrl">KeysUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.evaluateUrl">EvaluateUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation.property.keysUrl">KeysUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#keys_url AccessGroup#keys_url}. |
 
 ---
 
@@ -2843,7 +2855,7 @@ EvaluateUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#evaluate_url AccessGroup#evaluate_url}.
 
 ---
 
@@ -2855,7 +2867,7 @@ KeysUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#keys_url AccessGroup#keys_url}.
 
 ---
 
@@ -2877,9 +2889,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#teams AccessGroup#teams}. |
 
 ---
 
@@ -2891,7 +2903,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2903,7 +2915,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -2915,7 +2927,7 @@ Teams *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#teams AccessGroup#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#teams AccessGroup#teams}.
 
 ---
 
@@ -2936,8 +2948,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.email">Email</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -2949,7 +2961,7 @@ Email *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#email AccessGroup#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#email AccessGroup#email}.
 
 ---
 
@@ -2961,7 +2973,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -2982,8 +2994,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.name">Name</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta.property.name">Name</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}. |
 
 ---
 
@@ -2995,7 +3007,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 
@@ -3007,7 +3019,7 @@ Name *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#name AccessGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#name AccessGroup#name}.
 
 ---
 
@@ -3029,9 +3041,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeName">AttributeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
-| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeName">AttributeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml.property.identityProviderId">IdentityProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}. |
 
 ---
 
@@ -3043,7 +3055,7 @@ AttributeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_name AccessGroup#attribute_name}.
 
 ---
 
@@ -3055,7 +3067,7 @@ AttributeValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#attribute_value AccessGroup#attribute_value}.
 
 ---
 
@@ -3067,7 +3079,7 @@ IdentityProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_group#identity_provider_id AccessGroup#identity_provider_id}.
 
 ---
 

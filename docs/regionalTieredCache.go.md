@@ -1,6 +1,6 @@
 # `cloudflare_regional_tiered_cache`
 
-Refer to the Terraform Registory for docs: [`cloudflare_regional_tiered_cache`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache).
+Refer to the Terraform Registory for docs: [`cloudflare_regional_tiered_cache`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/regional_tiered_cache).
 
 # `regionalTieredCache` Submodule <a name="`regionalTieredCache` Submodule" id="@cdktf/provider-cloudflare.regionalTieredCache"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_regional_tiered_cache`](
 
 ### RegionalTieredCache <a name="RegionalTieredCache" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache.Initializer"></a>
 
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltier
 | <code><a href="#@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.property.value">Value</a></code> | <code>*string</code> | Value of the Regional Tiered Cache zone setting. |
 | <code><a href="#@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache#id RegionalTieredCache#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/regional_tiered_cache#id RegionalTieredCache#id}. |
 
 ---
 
@@ -701,7 +701,7 @@ Value *string
 
 Value of the Regional Tiered Cache zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
 
 ---
 
@@ -715,7 +715,7 @@ ZoneId *string
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache#id RegionalTieredCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/regional_tiered_cache#id RegionalTieredCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `cloudflare_load_balancer_monitor`
 
-Refer to the Terraform Registory for docs: [`cloudflare_load_balancer_monitor`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor).
+Refer to the Terraform Registory for docs: [`cloudflare_load_balancer_monitor`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor).
 
 # `loadBalancerMonitor` Submodule <a name="`loadBalancerMonitor` Submodule" id="@cdktf/provider-cloudflare.loadBalancerMonitor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_load_balancer_monitor`](
 
 ### LoadBalancerMonitor <a name="LoadBalancerMonitor" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.Initializer"></a>
 
@@ -72,6 +72,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.putHeader">PutHeader</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetAllowInsecure">ResetAllowInsecure</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetConsecutiveDown">ResetConsecutiveDown</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetConsecutiveUp">ResetConsecutiveUp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetExpectedBody">ResetExpectedBody</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetExpectedCodes">ResetExpectedCodes</a></code> | *No description.* |
@@ -291,6 +293,18 @@ func PutHeader(value interface{})
 func ResetAllowInsecure()
 ```
 
+##### `ResetConsecutiveDown` <a name="ResetConsecutiveDown" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetConsecutiveDown"></a>
+
+```go
+func ResetConsecutiveDown()
+```
+
+##### `ResetConsecutiveUp` <a name="ResetConsecutiveUp" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetConsecutiveUp"></a>
+
+```go
+func ResetConsecutiveUp()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.resetDescription"></a>
 
 ```go
@@ -468,6 +482,8 @@ loadbalancermonitor.LoadBalancerMonitor_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveDownInput">ConsecutiveDownInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveUpInput">ConsecutiveUpInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.expectedBodyInput">ExpectedBodyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.expectedCodesInput">ExpectedCodesInput</a></code> | <code>*string</code> | *No description.* |
@@ -484,6 +500,8 @@ loadbalancermonitor.LoadBalancerMonitor_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.allowInsecure">AllowInsecure</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveDown">ConsecutiveDown</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveUp">ConsecutiveUp</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.expectedBody">ExpectedBody</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.expectedCodes">ExpectedCodes</a></code> | <code>*string</code> | *No description.* |
@@ -692,6 +710,26 @@ func AllowInsecureInput() interface{}
 
 ---
 
+##### `ConsecutiveDownInput`<sup>Optional</sup> <a name="ConsecutiveDownInput" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveDownInput"></a>
+
+```go
+func ConsecutiveDownInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ConsecutiveUpInput`<sup>Optional</sup> <a name="ConsecutiveUpInput" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveUpInput"></a>
+
+```go
+func ConsecutiveUpInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.descriptionInput"></a>
 
 ```go
@@ -849,6 +887,26 @@ func AllowInsecure() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `ConsecutiveDown`<sup>Required</sup> <a name="ConsecutiveDown" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveDown"></a>
+
+```go
+func ConsecutiveDown() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ConsecutiveUp`<sup>Required</sup> <a name="ConsecutiveUp" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.property.consecutiveUp"></a>
+
+```go
+func ConsecutiveUp() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1019,6 +1077,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/loadbalancer
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	AllowInsecure: interface{},
+	ConsecutiveDown: *f64,
+	ConsecutiveUp: *f64,
 	Description: *string,
 	ExpectedBody: *string,
 	ExpectedCodes: *string,
@@ -1049,12 +1109,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/loadbalancer
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.allowInsecure">AllowInsecure</a></code> | <code>interface{}</code> | Do not validate the certificate when monitor use HTTPS.  Only valid if `type` is "http" or "https". |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.consecutiveDown">ConsecutiveDown</a></code> | <code>*f64</code> | To be marked unhealthy the monitored origin must fail this healthcheck N consecutive times. Defaults to `0`. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.consecutiveUp">ConsecutiveUp</a></code> | <code>*f64</code> | To be marked healthy the monitored origin must pass this healthcheck N consecutive times. Defaults to `0`. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.description">Description</a></code> | <code>*string</code> | Free text description. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.expectedBody">ExpectedBody</a></code> | <code>*string</code> | A case-insensitive sub-string to look for in the response body. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.expectedCodes">ExpectedCodes</a></code> | <code>*string</code> | The expected HTTP response code or code range of the health check. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.followRedirects">FollowRedirects</a></code> | <code>interface{}</code> | Follow redirects if returned by the origin. Only valid if `type` is "http" or "https". |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.header">Header</a></code> | <code>interface{}</code> | header block. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#id LoadBalancerMonitor#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#id LoadBalancerMonitor#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.interval">Interval</a></code> | <code>*f64</code> | The interval between each health check. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.method">Method</a></code> | <code>*string</code> | The method to use for the health check. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.path">Path</a></code> | <code>*string</code> | The endpoint path to health check against. |
@@ -1146,7 +1208,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
 
 ---
 
@@ -1160,7 +1222,35 @@ AllowInsecure interface{}
 
 Do not validate the certificate when monitor use HTTPS.  Only valid if `type` is "http" or "https".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
+
+---
+
+##### `ConsecutiveDown`<sup>Optional</sup> <a name="ConsecutiveDown" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.consecutiveDown"></a>
+
+```go
+ConsecutiveDown *f64
+```
+
+- *Type:* *f64
+
+To be marked unhealthy the monitored origin must fail this healthcheck N consecutive times. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#consecutive_down LoadBalancerMonitor#consecutive_down}
+
+---
+
+##### `ConsecutiveUp`<sup>Optional</sup> <a name="ConsecutiveUp" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.consecutiveUp"></a>
+
+```go
+ConsecutiveUp *f64
+```
+
+- *Type:* *f64
+
+To be marked healthy the monitored origin must pass this healthcheck N consecutive times. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#consecutive_up LoadBalancerMonitor#consecutive_up}
 
 ---
 
@@ -1174,7 +1264,7 @@ Description *string
 
 Free text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
 
 ---
 
@@ -1190,7 +1280,7 @@ A case-insensitive sub-string to look for in the response body.
 
 If this string is not found, the origin will be marked as unhealthy. Only valid if `type` is "http" or "https".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
 
 ---
 
@@ -1206,7 +1296,7 @@ The expected HTTP response code or code range of the health check.
 
 Eg `2xx`. Only valid and required if `type` is "http" or "https".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
 
 ---
 
@@ -1220,7 +1310,7 @@ FollowRedirects interface{}
 
 Follow redirects if returned by the origin. Only valid if `type` is "http" or "https".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
 
 ---
 
@@ -1234,7 +1324,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
 
 ---
 
@@ -1246,7 +1336,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#id LoadBalancerMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#id LoadBalancerMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1265,7 +1355,7 @@ The interval between each health check.
 
 Shorter intervals may improve failover time, but will increase load on the origins as we check from multiple locations. Defaults to `60`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#interval LoadBalancerMonitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#interval LoadBalancerMonitor#interval}
 
 ---
 
@@ -1279,7 +1369,7 @@ Method *string
 
 The method to use for the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#method LoadBalancerMonitor#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#method LoadBalancerMonitor#method}
 
 ---
 
@@ -1293,7 +1383,7 @@ Path *string
 
 The endpoint path to health check against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#path LoadBalancerMonitor#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#path LoadBalancerMonitor#path}
 
 ---
 
@@ -1307,7 +1397,7 @@ Port *f64
 
 The port number to use for the healthcheck, required when creating a TCP monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#port LoadBalancerMonitor#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#port LoadBalancerMonitor#port}
 
 ---
 
@@ -1321,7 +1411,7 @@ ProbeZone *string
 
 Assign this monitor to emulate the specified zone while probing. Only valid if `type` is "http" or "https".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
 
 ---
 
@@ -1337,7 +1427,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 Retries are attempted immediately. Defaults to `2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#retries LoadBalancerMonitor#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#retries LoadBalancerMonitor#retries}
 
 ---
 
@@ -1351,7 +1441,7 @@ Timeout *f64
 
 The timeout (in seconds) before marking the health check as failed. Defaults to `5`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
 
 ---
 
@@ -1365,7 +1455,7 @@ Type *string
 
 The protocol to use for the healthcheck. Available values: `http`, `https`, `tcp`, `udp_icmp`, `icmp_ping`, `smtp`. Defaults to `http`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
 
 ---
 
@@ -1401,7 +1491,7 @@ Header *string
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
 
 ---
 
@@ -1415,7 +1505,7 @@ Values *[]*string
 
 A list of values for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/load_balancer_monitor#values LoadBalancerMonitor#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/load_balancer_monitor#values LoadBalancerMonitor#values}
 
 ---
 

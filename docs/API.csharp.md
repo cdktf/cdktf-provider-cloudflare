@@ -111,6 +111,8 @@ The following submodules are available:
 - [waitingRoomRules](./waitingRoomRules.csharp.md)
 - [waitingRoomSettings](./waitingRoomSettings.csharp.md)
 - [web3Hostname](./web3Hostname.csharp.md)
+- [webAnalyticsRule](./webAnalyticsRule.csharp.md)
+- [webAnalyticsSite](./webAnalyticsSite.csharp.md)
 - [workerCronTrigger](./workerCronTrigger.csharp.md)
 - [workerDomain](./workerDomain.csharp.md)
 - [workerRoute](./workerRoute.csharp.md)

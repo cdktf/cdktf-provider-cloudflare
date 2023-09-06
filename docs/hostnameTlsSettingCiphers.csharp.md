@@ -1,6 +1,6 @@
 # `cloudflare_hostname_tls_setting_ciphers`
 
-Refer to the Terraform Registory for docs: [`cloudflare_hostname_tls_setting_ciphers`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers).
+Refer to the Terraform Registory for docs: [`cloudflare_hostname_tls_setting_ciphers`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers).
 
 # `hostnameTlsSettingCiphers` Submodule <a name="`hostnameTlsSettingCiphers` Submodule" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_hostname_tls_setting_cip
 
 ### HostnameTlsSettingCiphers <a name="HostnameTlsSettingCiphers" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers.Initializer"></a>
 
@@ -693,7 +693,7 @@ new HostnameTlsSettingCiphersConfig {
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.property.hostname">Hostname</a></code> | <code>string</code> | Hostname that belongs to this zone name. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.property.value">Value</a></code> | <code>string[]</code> | Ciphers suites value. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers#id HostnameTlsSettingCiphers#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers#id HostnameTlsSettingCiphers#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.property.ports">Ports</a></code> | <code>double[]</code> | Ports to use within the IP rule. |
 
 ---
@@ -778,7 +778,7 @@ public string Hostname { get; set; }
 
 Hostname that belongs to this zone name. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers#hostname HostnameTlsSettingCiphers#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers#hostname HostnameTlsSettingCiphers#hostname}
 
 ---
 
@@ -792,7 +792,7 @@ public string[] Value { get; set; }
 
 Ciphers suites value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers#value HostnameTlsSettingCiphers#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers#value HostnameTlsSettingCiphers#value}
 
 ---
 
@@ -806,7 +806,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers#zone_id HostnameTlsSettingCiphers#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers#zone_id HostnameTlsSettingCiphers#zone_id}
 
 ---
 
@@ -818,7 +818,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers#id HostnameTlsSettingCiphers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers#id HostnameTlsSettingCiphers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -835,7 +835,7 @@ public double[] Ports { get; set; }
 
 Ports to use within the IP rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/hostname_tls_setting_ciphers#ports HostnameTlsSettingCiphers#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/hostname_tls_setting_ciphers#ports HostnameTlsSettingCiphers#ports}
 
 ---
 

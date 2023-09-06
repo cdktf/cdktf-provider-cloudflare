@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface AccessCustomPageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#account_id AccessCustomPage#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#account_id AccessCustomPage#account_id}
   */
   readonly accountId?: string;
   /**
   * Number of apps to display on the custom page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#app_count AccessCustomPage#app_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#app_count AccessCustomPage#app_count}
   */
   readonly appCount?: number;
   /**
   * Custom HTML to display on the custom page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#custom_html AccessCustomPage#custom_html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#custom_html AccessCustomPage#custom_html}
   */
   readonly customHtml?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#id AccessCustomPage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#id AccessCustomPage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,25 @@ export interface AccessCustomPageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Friendly name of the Access Custom Page configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#name AccessCustomPage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#name AccessCustomPage#name}
   */
   readonly name: string;
   /**
   * Type of Access custom page to create. Available values: `identity_denied`, `forbidden`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#type AccessCustomPage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#type AccessCustomPage#type}
   */
   readonly type: string;
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page#zone_id AccessCustomPage#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page#zone_id AccessCustomPage#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page cloudflare_access_custom_page}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page cloudflare_access_custom_page}
 */
 export class AccessCustomPage extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class AccessCustomPage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_custom_page cloudflare_access_custom_page} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_custom_page cloudflare_access_custom_page} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class AccessCustomPage extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_custom_page',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

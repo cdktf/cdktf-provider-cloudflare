@@ -111,6 +111,8 @@ The following submodules are available:
 - [waitingRoomRules](./waitingRoomRules.go.md)
 - [waitingRoomSettings](./waitingRoomSettings.go.md)
 - [web3Hostname](./web3Hostname.go.md)
+- [webAnalyticsRule](./webAnalyticsRule.go.md)
+- [webAnalyticsSite](./webAnalyticsSite.go.md)
 - [workerCronTrigger](./workerCronTrigger.go.md)
 - [workerDomain](./workerDomain.go.md)
 - [workerRoute](./workerRoute.go.md)

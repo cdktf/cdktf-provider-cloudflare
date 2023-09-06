@@ -111,6 +111,8 @@ The following submodules are available:
 - [waitingRoomRules](./waitingRoomRules.java.md)
 - [waitingRoomSettings](./waitingRoomSettings.java.md)
 - [web3Hostname](./web3Hostname.java.md)
+- [webAnalyticsRule](./webAnalyticsRule.java.md)
+- [webAnalyticsSite](./webAnalyticsSite.java.md)
 - [workerCronTrigger](./workerCronTrigger.java.md)
 - [workerDomain](./workerDomain.java.md)
 - [workerRoute](./workerRoute.java.md)

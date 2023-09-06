@@ -1,6 +1,6 @@
 # `data_cloudflare_api_token_permission_groups`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permission_groups`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups).
+Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permission_groups`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/api_token_permission_groups).
 
 # `dataCloudflareApiTokenPermissionGroups` Submodule <a name="`dataCloudflareApiTokenPermissionGroups` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_api_token_permissio
 
 ### DataCloudflareApiTokenPermissionGroups <a name="DataCloudflareApiTokenPermissionGroups" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups.Initializer"></a>
 

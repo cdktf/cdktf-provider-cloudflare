@@ -95,6 +95,8 @@ Object.defineProperty(exports, 'waitingRoomEvent', { get: function () { return r
 Object.defineProperty(exports, 'waitingRoomRules', { get: function () { return require('./waiting-room-rules'); } });
 Object.defineProperty(exports, 'waitingRoomSettings', { get: function () { return require('./waiting-room-settings'); } });
 Object.defineProperty(exports, 'web3Hostname', { get: function () { return require('./web3-hostname'); } });
+Object.defineProperty(exports, 'webAnalyticsRule', { get: function () { return require('./web-analytics-rule'); } });
+Object.defineProperty(exports, 'webAnalyticsSite', { get: function () { return require('./web-analytics-site'); } });
 Object.defineProperty(exports, 'workerCronTrigger', { get: function () { return require('./worker-cron-trigger'); } });
 Object.defineProperty(exports, 'workerDomain', { get: function () { return require('./worker-domain'); } });
 Object.defineProperty(exports, 'workerRoute', { get: function () { return require('./worker-route'); } });
