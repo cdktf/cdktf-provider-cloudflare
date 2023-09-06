@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/origincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/origincacertificate"
 
 origincacertificate.NewOriginCaCertificate(scope Construct, id *string, config OriginCaCertificateConfig) OriginCaCertificate
 ```
@@ -291,7 +291,7 @@ func ResetRequestedValidity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/origincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/origincacertificate"
 
 origincacertificate.OriginCaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/origincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/origincacertificate"
 
 origincacertificate.OriginCaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ origincacertificate.OriginCaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/origincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/origincacertificate"
 
 origincacertificate.OriginCaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/origincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/origincacertificate"
 
 &origincacertificate.OriginCaCertificateConfig {
 	Connection: interface{},
