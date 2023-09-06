@@ -1,6 +1,6 @@
 # `cloudflare_record`
 
-Refer to the Terraform Registory for docs: [`cloudflare_record`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record).
+Refer to the Terraform Registory for docs: [`cloudflare_record`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record).
 
 # `record` Submodule <a name="`record` Submodule" id="@cdktf/provider-cloudflare.record"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_record`](https://registr
 
 ### Record <a name="Record" id="@cdktf/provider-cloudflare.record.Record"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record cloudflare_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record cloudflare_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.record.Record.Initializer"></a>
 
@@ -62,7 +62,7 @@ Record.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.allowOverwrite">allowOverwrite</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow creation of this record in Terraform to overwrite an existing record, if any. |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.data">data</a></code> | <code><a href="#@cdktf/provider-cloudflare.record.RecordData">RecordData</a></code> | data block. |
-| <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#id Record#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#id Record#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | The priority of the record. |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.proxied">proxied</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the record gets Cloudflare's origin protection. |
 | <code><a href="#@cdktf/provider-cloudflare.record.Record.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Custom tags for the DNS record. |
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the record. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#name Record#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#name Record#name}
 
 ---
 
@@ -150,7 +150,7 @@ The type of the record.
 
 Available values: `A`, `AAAA`, `CAA`, `CNAME`, `TXT`, `SRV`, `LOC`, `MX`, `NS`, `SPF`, `CERT`, `DNSKEY`, `DS`, `NAPTR`, `SMIMEA`, `SSHFP`, `TLSA`, `URI`, `PTR`, `HTTPS`, `SVCB`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#type Record#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#type Record#type}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#zone_id Record#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#zone_id Record#zone_id}
 
 ---
 
@@ -172,7 +172,7 @@ Allow creation of this record in Terraform to overwrite an existing record, if a
 
 This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual changes outside Terraform from overwriting this record. **This configuration is not recommended for most environments**. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#allow_overwrite Record#allow_overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#allow_overwrite Record#allow_overwrite}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#comment Record#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#comment Record#comment}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#data Record#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#data Record#data}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#id Record#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#id Record#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The priority of the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#priority Record#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#priority Record#priority}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the record gets Cloudflare's origin protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#proxied Record#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#proxied Record#proxied}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom tags for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#tags Record#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#tags Record#tags}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#timeouts Record#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#timeouts Record#timeouts}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The TTL of the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#ttl Record#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#ttl Record#ttl}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The value of the record. Conflicts with `data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#value Record#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#value Record#value}
 
 ---
 
@@ -1218,7 +1218,7 @@ RecordConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.allowOverwrite">allowOverwrite</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow creation of this record in Terraform to overwrite an existing record, if any. |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.data">data</a></code> | <code><a href="#@cdktf/provider-cloudflare.record.RecordData">RecordData</a></code> | data block. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#id Record#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#id Record#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | The priority of the record. |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.proxied">proxied</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the record gets Cloudflare's origin protection. |
 | <code><a href="#@cdktf/provider-cloudflare.record.RecordConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Custom tags for the DNS record. |
@@ -1308,7 +1308,7 @@ public java.lang.String getName();
 
 The name of the record. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#name Record#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#name Record#name}
 
 ---
 
@@ -1324,7 +1324,7 @@ The type of the record.
 
 Available values: `A`, `AAAA`, `CAA`, `CNAME`, `TXT`, `SRV`, `LOC`, `MX`, `NS`, `SPF`, `CERT`, `DNSKEY`, `DS`, `NAPTR`, `SMIMEA`, `SSHFP`, `TLSA`, `URI`, `PTR`, `HTTPS`, `SVCB`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#type Record#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#type Record#type}
 
 ---
 
@@ -1338,7 +1338,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#zone_id Record#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#zone_id Record#zone_id}
 
 ---
 
@@ -1354,7 +1354,7 @@ Allow creation of this record in Terraform to overwrite an existing record, if a
 
 This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual changes outside Terraform from overwriting this record. **This configuration is not recommended for most environments**. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#allow_overwrite Record#allow_overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#allow_overwrite Record#allow_overwrite}
 
 ---
 
@@ -1368,7 +1368,7 @@ public java.lang.String getComment();
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#comment Record#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#comment Record#comment}
 
 ---
 
@@ -1382,7 +1382,7 @@ public RecordData getData();
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#data Record#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#data Record#data}
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#id Record#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#id Record#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1411,7 +1411,7 @@ public java.lang.Number getPriority();
 
 The priority of the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#priority Record#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#priority Record#priority}
 
 ---
 
@@ -1425,7 +1425,7 @@ public java.lang.Object getProxied();
 
 Whether the record gets Cloudflare's origin protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#proxied Record#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#proxied Record#proxied}
 
 ---
 
@@ -1439,7 +1439,7 @@ public java.util.List<java.lang.String> getTags();
 
 Custom tags for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#tags Record#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#tags Record#tags}
 
 ---
 
@@ -1453,7 +1453,7 @@ public RecordTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#timeouts Record#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#timeouts Record#timeouts}
 
 ---
 
@@ -1467,7 +1467,7 @@ public java.lang.Number getTtl();
 
 The TTL of the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#ttl Record#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#ttl Record#ttl}
 
 ---
 
@@ -1481,7 +1481,7 @@ public java.lang.String getValue();
 
 The value of the record. Conflicts with `data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#value Record#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#value Record#value}
 
 ---
 
@@ -1539,45 +1539,45 @@ RecordData.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.algorithm">algorithm</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#algorithm Record#algorithm}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.altitude">altitude</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#altitude Record#altitude}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.certificate">certificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#certificate Record#certificate}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#content Record#content}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.digest">digest</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#digest Record#digest}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.digestType">digestType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#digest_type Record#digest_type}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.fingerprint">fingerprint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#fingerprint Record#fingerprint}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.flags">flags</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#flags Record#flags}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.keyTag">keyTag</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#key_tag Record#key_tag}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latDegrees">latDegrees</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_degrees Record#lat_degrees}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latDirection">latDirection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_direction Record#lat_direction}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latMinutes">latMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_minutes Record#lat_minutes}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latSeconds">latSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_seconds Record#lat_seconds}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longDegrees">longDegrees</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_degrees Record#long_degrees}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longDirection">longDirection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_direction Record#long_direction}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longMinutes">longMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_minutes Record#long_minutes}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longSeconds">longSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_seconds Record#long_seconds}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.matchingType">matchingType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#matching_type Record#matching_type}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#name Record#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.order">order</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#order Record#order}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#port Record#port}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.precisionHorz">precisionHorz</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#precision_horz Record#precision_horz}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.precisionVert">precisionVert</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#precision_vert Record#precision_vert}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.preference">preference</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#preference Record#preference}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#priority Record#priority}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.proto">proto</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#proto Record#proto}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.protocol">protocol</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#protocol Record#protocol}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#public_key Record#public_key}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.regex">regex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#regex Record#regex}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.replacement">replacement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#replacement Record#replacement}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.selector">selector</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#selector Record#selector}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#service Record#service}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.size">size</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#size Record#size}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.tag">tag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#tag Record#tag}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#target Record#target}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.type">type</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#type Record#type}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.usage">usage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#usage Record#usage}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#value Record#value}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.weight">weight</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#weight Record#weight}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.algorithm">algorithm</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#algorithm Record#algorithm}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.altitude">altitude</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#altitude Record#altitude}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.certificate">certificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#certificate Record#certificate}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#content Record#content}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.digest">digest</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#digest Record#digest}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.digestType">digestType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#digest_type Record#digest_type}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.fingerprint">fingerprint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#fingerprint Record#fingerprint}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.flags">flags</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#flags Record#flags}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.keyTag">keyTag</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#key_tag Record#key_tag}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latDegrees">latDegrees</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_degrees Record#lat_degrees}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latDirection">latDirection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_direction Record#lat_direction}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latMinutes">latMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_minutes Record#lat_minutes}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.latSeconds">latSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_seconds Record#lat_seconds}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longDegrees">longDegrees</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_degrees Record#long_degrees}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longDirection">longDirection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_direction Record#long_direction}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longMinutes">longMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_minutes Record#long_minutes}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.longSeconds">longSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_seconds Record#long_seconds}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.matchingType">matchingType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#matching_type Record#matching_type}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#name Record#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.order">order</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#order Record#order}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#port Record#port}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.precisionHorz">precisionHorz</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#precision_horz Record#precision_horz}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.precisionVert">precisionVert</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#precision_vert Record#precision_vert}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.preference">preference</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#preference Record#preference}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#priority Record#priority}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.proto">proto</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#proto Record#proto}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.protocol">protocol</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#protocol Record#protocol}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#public_key Record#public_key}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.regex">regex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#regex Record#regex}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.replacement">replacement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#replacement Record#replacement}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.selector">selector</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#selector Record#selector}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#service Record#service}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.size">size</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#size Record#size}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.tag">tag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#tag Record#tag}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#target Record#target}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.type">type</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#type Record#type}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.usage">usage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#usage Record#usage}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#value Record#value}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordData.property.weight">weight</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#weight Record#weight}. |
 
 ---
 
@@ -1589,7 +1589,7 @@ public java.lang.Number getAlgorithm();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#algorithm Record#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#algorithm Record#algorithm}.
 
 ---
 
@@ -1601,7 +1601,7 @@ public java.lang.Number getAltitude();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#altitude Record#altitude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#altitude Record#altitude}.
 
 ---
 
@@ -1613,7 +1613,7 @@ public java.lang.String getCertificate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#certificate Record#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#certificate Record#certificate}.
 
 ---
 
@@ -1625,7 +1625,7 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#content Record#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#content Record#content}.
 
 ---
 
@@ -1637,7 +1637,7 @@ public java.lang.String getDigest();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#digest Record#digest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#digest Record#digest}.
 
 ---
 
@@ -1649,7 +1649,7 @@ public java.lang.Number getDigestType();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#digest_type Record#digest_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#digest_type Record#digest_type}.
 
 ---
 
@@ -1661,7 +1661,7 @@ public java.lang.String getFingerprint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#fingerprint Record#fingerprint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#fingerprint Record#fingerprint}.
 
 ---
 
@@ -1673,7 +1673,7 @@ public java.lang.String getFlags();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#flags Record#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#flags Record#flags}.
 
 ---
 
@@ -1685,7 +1685,7 @@ public java.lang.Number getKeyTag();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#key_tag Record#key_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#key_tag Record#key_tag}.
 
 ---
 
@@ -1697,7 +1697,7 @@ public java.lang.Number getLatDegrees();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_degrees Record#lat_degrees}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_degrees Record#lat_degrees}.
 
 ---
 
@@ -1709,7 +1709,7 @@ public java.lang.String getLatDirection();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_direction Record#lat_direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_direction Record#lat_direction}.
 
 ---
 
@@ -1721,7 +1721,7 @@ public java.lang.Number getLatMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_minutes Record#lat_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_minutes Record#lat_minutes}.
 
 ---
 
@@ -1733,7 +1733,7 @@ public java.lang.Number getLatSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#lat_seconds Record#lat_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#lat_seconds Record#lat_seconds}.
 
 ---
 
@@ -1745,7 +1745,7 @@ public java.lang.Number getLongDegrees();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_degrees Record#long_degrees}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_degrees Record#long_degrees}.
 
 ---
 
@@ -1757,7 +1757,7 @@ public java.lang.String getLongDirection();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_direction Record#long_direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_direction Record#long_direction}.
 
 ---
 
@@ -1769,7 +1769,7 @@ public java.lang.Number getLongMinutes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_minutes Record#long_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_minutes Record#long_minutes}.
 
 ---
 
@@ -1781,7 +1781,7 @@ public java.lang.Number getLongSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#long_seconds Record#long_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#long_seconds Record#long_seconds}.
 
 ---
 
@@ -1793,7 +1793,7 @@ public java.lang.Number getMatchingType();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#matching_type Record#matching_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#matching_type Record#matching_type}.
 
 ---
 
@@ -1805,7 +1805,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#name Record#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#name Record#name}.
 
 ---
 
@@ -1817,7 +1817,7 @@ public java.lang.Number getOrder();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#order Record#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#order Record#order}.
 
 ---
 
@@ -1829,7 +1829,7 @@ public java.lang.Number getPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#port Record#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#port Record#port}.
 
 ---
 
@@ -1841,7 +1841,7 @@ public java.lang.Number getPrecisionHorz();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#precision_horz Record#precision_horz}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#precision_horz Record#precision_horz}.
 
 ---
 
@@ -1853,7 +1853,7 @@ public java.lang.Number getPrecisionVert();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#precision_vert Record#precision_vert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#precision_vert Record#precision_vert}.
 
 ---
 
@@ -1865,7 +1865,7 @@ public java.lang.Number getPreference();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#preference Record#preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#preference Record#preference}.
 
 ---
 
@@ -1877,7 +1877,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#priority Record#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#priority Record#priority}.
 
 ---
 
@@ -1889,7 +1889,7 @@ public java.lang.String getProto();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#proto Record#proto}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#proto Record#proto}.
 
 ---
 
@@ -1901,7 +1901,7 @@ public java.lang.Number getProtocol();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#protocol Record#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#protocol Record#protocol}.
 
 ---
 
@@ -1913,7 +1913,7 @@ public java.lang.String getPublicKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#public_key Record#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#public_key Record#public_key}.
 
 ---
 
@@ -1925,7 +1925,7 @@ public java.lang.String getRegex();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#regex Record#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#regex Record#regex}.
 
 ---
 
@@ -1937,7 +1937,7 @@ public java.lang.String getReplacement();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#replacement Record#replacement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#replacement Record#replacement}.
 
 ---
 
@@ -1949,7 +1949,7 @@ public java.lang.Number getSelector();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#selector Record#selector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#selector Record#selector}.
 
 ---
 
@@ -1961,7 +1961,7 @@ public java.lang.String getService();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#service Record#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#service Record#service}.
 
 ---
 
@@ -1973,7 +1973,7 @@ public java.lang.Number getSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#size Record#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#size Record#size}.
 
 ---
 
@@ -1985,7 +1985,7 @@ public java.lang.String getTag();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#tag Record#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#tag Record#tag}.
 
 ---
 
@@ -1997,7 +1997,7 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#target Record#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#target Record#target}.
 
 ---
 
@@ -2009,7 +2009,7 @@ public java.lang.Number getType();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#type Record#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#type Record#type}.
 
 ---
 
@@ -2021,7 +2021,7 @@ public java.lang.Number getUsage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#usage Record#usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#usage Record#usage}.
 
 ---
 
@@ -2033,7 +2033,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#value Record#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#value Record#value}.
 
 ---
 
@@ -2045,7 +2045,7 @@ public java.lang.Number getWeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#weight Record#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#weight Record#weight}.
 
 ---
 
@@ -2066,8 +2066,8 @@ RecordTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#create Record#create}. |
-| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#update Record#update}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#create Record#create}. |
+| <code><a href="#@cdktf/provider-cloudflare.record.RecordTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#update Record#update}. |
 
 ---
 
@@ -2079,7 +2079,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#create Record#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#create Record#create}.
 
 ---
 
@@ -2091,7 +2091,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record#update Record#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/record#update Record#update}.
 
 ---
 

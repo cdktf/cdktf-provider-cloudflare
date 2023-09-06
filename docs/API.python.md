@@ -111,6 +111,8 @@ The following submodules are available:
 - [waitingRoomRules](./waitingRoomRules.python.md)
 - [waitingRoomSettings](./waitingRoomSettings.python.md)
 - [web3Hostname](./web3Hostname.python.md)
+- [webAnalyticsRule](./webAnalyticsRule.python.md)
+- [webAnalyticsSite](./webAnalyticsSite.python.md)
 - [workerCronTrigger](./workerCronTrigger.python.md)
 - [workerDomain](./workerDomain.python.md)
 - [workerRoute](./workerRoute.python.md)

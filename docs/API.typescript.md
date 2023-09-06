@@ -111,6 +111,8 @@ The following submodules are available:
 - [waitingRoomRules](./waitingRoomRules.typescript.md)
 - [waitingRoomSettings](./waitingRoomSettings.typescript.md)
 - [web3Hostname](./web3Hostname.typescript.md)
+- [webAnalyticsRule](./webAnalyticsRule.typescript.md)
+- [webAnalyticsSite](./webAnalyticsSite.typescript.md)
 - [workerCronTrigger](./workerCronTrigger.typescript.md)
 - [workerDomain](./workerDomain.typescript.md)
 - [workerRoute](./workerRoute.typescript.md)

@@ -1,6 +1,6 @@
 # `cloudflare_access_service_token`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_service_token`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token).
+Refer to the Terraform Registory for docs: [`cloudflare_access_service_token`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token).
 
 # `accessServiceToken` Submodule <a name="`accessServiceToken` Submodule" id="@cdktf/provider-cloudflare.accessServiceToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_service_token`](h
 
 ### AccessServiceToken <a name="AccessServiceToken" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token cloudflare_access_service_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token cloudflare_access_service_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken.Initializer"></a>
 
@@ -734,7 +734,7 @@ const accessServiceTokenConfig: accessServiceToken.AccessServiceTokenConfig = { 
 | <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.name">name</a></code> | <code>string</code> | Friendly name of the token's intent. |
 | <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
 | <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.duration">duration</a></code> | <code>string</code> | Length of time the service token is valid for. Available values: `8760h`, `17520h`, `43800h`, `87600h`, `forever`. |
-| <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#id AccessServiceToken#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#id AccessServiceToken#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.minDaysForRenewal">minDaysForRenewal</a></code> | <code>number</code> | Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`. |
 | <code><a href="#@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
@@ -820,7 +820,7 @@ public readonly name: string;
 
 Friendly name of the token's intent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#name AccessServiceToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#name AccessServiceToken#name}
 
 ---
 
@@ -834,7 +834,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#account_id AccessServiceToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#account_id AccessServiceToken#account_id}
 
 ---
 
@@ -848,7 +848,7 @@ public readonly duration: string;
 
 Length of time the service token is valid for. Available values: `8760h`, `17520h`, `43800h`, `87600h`, `forever`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#duration AccessServiceToken#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#duration AccessServiceToken#duration}
 
 ---
 
@@ -860,7 +860,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#id AccessServiceToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#id AccessServiceToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -877,7 +877,7 @@ public readonly minDaysForRenewal: number;
 
 Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
 
 ---
 
@@ -891,7 +891,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_service_token#zone_id AccessServiceToken#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_service_token#zone_id AccessServiceToken#zone_id}
 
 ---
 
