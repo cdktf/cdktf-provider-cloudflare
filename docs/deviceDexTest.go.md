@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 devicedextest.NewDeviceDexTest(scope Construct, id *string, config DeviceDexTestConfig) DeviceDexTest
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 devicedextest.DeviceDexTest_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 devicedextest.DeviceDexTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ devicedextest.DeviceDexTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 devicedextest.DeviceDexTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 &devicedextest.DeviceDexTestConfig {
 	Connection: interface{},
@@ -722,7 +722,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.deviceDexTest.DeviceDexTestData,
+	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9.deviceDexTest.DeviceDexTestData,
 	Description: *string,
 	Enabled: interface{},
 	Interval: *string,
@@ -926,7 +926,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 &devicedextest.DeviceDexTestData {
 	Host: *string,
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicedextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest"
 
 devicedextest.NewDeviceDexTestDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeviceDexTestDataOutputReference
 ```
