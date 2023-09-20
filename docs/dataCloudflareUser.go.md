@@ -1,6 +1,6 @@
 # `data_cloudflare_user`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_user`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/user).
+Refer to the Terraform Registory for docs: [`data_cloudflare_user`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/user).
 
 # `dataCloudflareUser` Submodule <a name="`dataCloudflareUser` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_user`](https://regi
 
 ### DataCloudflareUser <a name="DataCloudflareUser" id="@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/user cloudflare_user}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/user cloudflare_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareuser"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuser"
 
 datacloudflareuser.NewDataCloudflareUser(scope Construct, id *string, config DataCloudflareUserConfig) DataCloudflareUser
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareuser"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuser"
 
 datacloudflareuser.DataCloudflareUser_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareuser"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuser"
 
 datacloudflareuser.DataCloudflareUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datacloudflareuser.DataCloudflareUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareuser"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuser"
 
 datacloudflareuser.DataCloudflareUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareUser.DataCloudflareUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareuser"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuser"
 
 &datacloudflareuser.DataCloudflareUserConfig {
 	Connection: interface{},

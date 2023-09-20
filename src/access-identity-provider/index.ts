@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AccessIdentityProviderConfig extends cdktf.TerraformMetaArgumen
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#account_id AccessIdentityProvider#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#account_id AccessIdentityProvider#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#id AccessIdentityProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#id AccessIdentityProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,125 +23,137 @@ export interface AccessIdentityProviderConfig extends cdktf.TerraformMetaArgumen
   /**
   * Friendly name of the Access Identity Provider configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#name AccessIdentityProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#name AccessIdentityProvider#name}
   */
   readonly name: string;
   /**
-  * The provider type to use. Available values: `centrify`, `facebook`, `google-apps`, `oidc`, `github`, `google`, `saml`, `linkedin`, `azureAD`, `okta`, `onetimepin`, `onelogin`, `yandex`.
+  * The provider type to use. Available values: `azureAD`, `centrify`, `facebook`, `github`, `google`, `google-apps`, `linkedin`, `oidc`, `okta`, `onelogin`, `onetimepin`, `pingone`, `saml`, `yandex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#type AccessIdentityProvider#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#type AccessIdentityProvider#type}
   */
   readonly type: string;
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#zone_id AccessIdentityProvider#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#zone_id AccessIdentityProvider#zone_id}
   */
   readonly zoneId?: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#config AccessIdentityProvider#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#config AccessIdentityProvider#config}
   */
   readonly config?: AccessIdentityProviderConfigA[] | cdktf.IResolvable;
   /**
   * scim_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#scim_config AccessIdentityProvider#scim_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#scim_config AccessIdentityProvider#scim_config}
   */
   readonly scimConfig?: AccessIdentityProviderScimConfig[] | cdktf.IResolvable;
 }
 export interface AccessIdentityProviderConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#api_token AccessIdentityProvider#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#api_token AccessIdentityProvider#api_token}
   */
   readonly apiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#apps_domain AccessIdentityProvider#apps_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#apps_domain AccessIdentityProvider#apps_domain}
   */
   readonly appsDomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#attributes AccessIdentityProvider#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#attributes AccessIdentityProvider#attributes}
   */
   readonly attributes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#auth_url AccessIdentityProvider#auth_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#auth_url AccessIdentityProvider#auth_url}
   */
   readonly authUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#centrify_account AccessIdentityProvider#centrify_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#authorization_server_id AccessIdentityProvider#authorization_server_id}
+  */
+  readonly authorizationServerId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#centrify_account AccessIdentityProvider#centrify_account}
   */
   readonly centrifyAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#centrify_app_id AccessIdentityProvider#centrify_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#centrify_app_id AccessIdentityProvider#centrify_app_id}
   */
   readonly centrifyAppId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#certs_url AccessIdentityProvider#certs_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#certs_url AccessIdentityProvider#certs_url}
   */
   readonly certsUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#claims AccessIdentityProvider#claims}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#claims AccessIdentityProvider#claims}
   */
   readonly claims?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#client_id AccessIdentityProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#client_id AccessIdentityProvider#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#client_secret AccessIdentityProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#client_secret AccessIdentityProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#conditional_access_enabled AccessIdentityProvider#conditional_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#conditional_access_enabled AccessIdentityProvider#conditional_access_enabled}
   */
   readonly conditionalAccessEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#directory_id AccessIdentityProvider#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#directory_id AccessIdentityProvider#directory_id}
   */
   readonly directoryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#email_attribute_name AccessIdentityProvider#email_attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#email_attribute_name AccessIdentityProvider#email_attribute_name}
   */
   readonly emailAttributeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#idp_public_cert AccessIdentityProvider#idp_public_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#email_claim_name AccessIdentityProvider#email_claim_name}
+  */
+  readonly emailClaimName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#idp_public_cert AccessIdentityProvider#idp_public_cert}
   */
   readonly idpPublicCert?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#issuer_url AccessIdentityProvider#issuer_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#issuer_url AccessIdentityProvider#issuer_url}
   */
   readonly issuerUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#okta_account AccessIdentityProvider#okta_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#okta_account AccessIdentityProvider#okta_account}
   */
   readonly oktaAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#onelogin_account AccessIdentityProvider#onelogin_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#onelogin_account AccessIdentityProvider#onelogin_account}
   */
   readonly oneloginAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#pkce_enabled AccessIdentityProvider#pkce_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#ping_env_id AccessIdentityProvider#ping_env_id}
+  */
+  readonly pingEnvId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#pkce_enabled AccessIdentityProvider#pkce_enabled}
   */
   readonly pkceEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#scopes AccessIdentityProvider#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#scopes AccessIdentityProvider#scopes}
   */
   readonly scopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#sign_request AccessIdentityProvider#sign_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#sign_request AccessIdentityProvider#sign_request}
   */
   readonly signRequest?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#sso_target_url AccessIdentityProvider#sso_target_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#sso_target_url AccessIdentityProvider#sso_target_url}
   */
   readonly ssoTargetUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#support_groups AccessIdentityProvider#support_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#support_groups AccessIdentityProvider#support_groups}
   */
   readonly supportGroups?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#token_url AccessIdentityProvider#token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#token_url AccessIdentityProvider#token_url}
   */
   readonly tokenUrl?: string;
 }
@@ -161,6 +168,7 @@ export function accessIdentityProviderConfigAToTerraform(struct?: AccessIdentity
     apps_domain: cdktf.stringToTerraform(struct!.appsDomain),
     attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.attributes),
     auth_url: cdktf.stringToTerraform(struct!.authUrl),
+    authorization_server_id: cdktf.stringToTerraform(struct!.authorizationServerId),
     centrify_account: cdktf.stringToTerraform(struct!.centrifyAccount),
     centrify_app_id: cdktf.stringToTerraform(struct!.centrifyAppId),
     certs_url: cdktf.stringToTerraform(struct!.certsUrl),
@@ -170,10 +178,12 @@ export function accessIdentityProviderConfigAToTerraform(struct?: AccessIdentity
     conditional_access_enabled: cdktf.booleanToTerraform(struct!.conditionalAccessEnabled),
     directory_id: cdktf.stringToTerraform(struct!.directoryId),
     email_attribute_name: cdktf.stringToTerraform(struct!.emailAttributeName),
+    email_claim_name: cdktf.stringToTerraform(struct!.emailClaimName),
     idp_public_cert: cdktf.stringToTerraform(struct!.idpPublicCert),
     issuer_url: cdktf.stringToTerraform(struct!.issuerUrl),
     okta_account: cdktf.stringToTerraform(struct!.oktaAccount),
     onelogin_account: cdktf.stringToTerraform(struct!.oneloginAccount),
+    ping_env_id: cdktf.stringToTerraform(struct!.pingEnvId),
     pkce_enabled: cdktf.booleanToTerraform(struct!.pkceEnabled),
     scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
     sign_request: cdktf.booleanToTerraform(struct!.signRequest),
@@ -219,6 +229,10 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.authUrl = this._authUrl;
     }
+    if (this._authorizationServerId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizationServerId = this._authorizationServerId;
+    }
     if (this._centrifyAccount !== undefined) {
       hasAnyValues = true;
       internalValueResult.centrifyAccount = this._centrifyAccount;
@@ -255,6 +269,10 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.emailAttributeName = this._emailAttributeName;
     }
+    if (this._emailClaimName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailClaimName = this._emailClaimName;
+    }
     if (this._idpPublicCert !== undefined) {
       hasAnyValues = true;
       internalValueResult.idpPublicCert = this._idpPublicCert;
@@ -270,6 +288,10 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
     if (this._oneloginAccount !== undefined) {
       hasAnyValues = true;
       internalValueResult.oneloginAccount = this._oneloginAccount;
+    }
+    if (this._pingEnvId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pingEnvId = this._pingEnvId;
     }
     if (this._pkceEnabled !== undefined) {
       hasAnyValues = true;
@@ -306,6 +328,7 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       this._appsDomain = undefined;
       this._attributes = undefined;
       this._authUrl = undefined;
+      this._authorizationServerId = undefined;
       this._centrifyAccount = undefined;
       this._centrifyAppId = undefined;
       this._certsUrl = undefined;
@@ -315,10 +338,12 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       this._conditionalAccessEnabled = undefined;
       this._directoryId = undefined;
       this._emailAttributeName = undefined;
+      this._emailClaimName = undefined;
       this._idpPublicCert = undefined;
       this._issuerUrl = undefined;
       this._oktaAccount = undefined;
       this._oneloginAccount = undefined;
+      this._pingEnvId = undefined;
       this._pkceEnabled = undefined;
       this._scopes = undefined;
       this._signRequest = undefined;
@@ -337,6 +362,7 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       this._appsDomain = value.appsDomain;
       this._attributes = value.attributes;
       this._authUrl = value.authUrl;
+      this._authorizationServerId = value.authorizationServerId;
       this._centrifyAccount = value.centrifyAccount;
       this._centrifyAppId = value.centrifyAppId;
       this._certsUrl = value.certsUrl;
@@ -346,10 +372,12 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
       this._conditionalAccessEnabled = value.conditionalAccessEnabled;
       this._directoryId = value.directoryId;
       this._emailAttributeName = value.emailAttributeName;
+      this._emailClaimName = value.emailClaimName;
       this._idpPublicCert = value.idpPublicCert;
       this._issuerUrl = value.issuerUrl;
       this._oktaAccount = value.oktaAccount;
       this._oneloginAccount = value.oneloginAccount;
+      this._pingEnvId = value.pingEnvId;
       this._pkceEnabled = value.pkceEnabled;
       this._scopes = value.scopes;
       this._signRequest = value.signRequest;
@@ -421,6 +449,22 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get authUrlInput() {
     return this._authUrl;
+  }
+
+  // authorization_server_id - computed: false, optional: true, required: false
+  private _authorizationServerId?: string; 
+  public get authorizationServerId() {
+    return this.getStringAttribute('authorization_server_id');
+  }
+  public set authorizationServerId(value: string) {
+    this._authorizationServerId = value;
+  }
+  public resetAuthorizationServerId() {
+    this._authorizationServerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationServerIdInput() {
+    return this._authorizationServerId;
   }
 
   // centrify_account - computed: false, optional: true, required: false
@@ -567,6 +611,22 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
     return this._emailAttributeName;
   }
 
+  // email_claim_name - computed: false, optional: true, required: false
+  private _emailClaimName?: string; 
+  public get emailClaimName() {
+    return this.getStringAttribute('email_claim_name');
+  }
+  public set emailClaimName(value: string) {
+    this._emailClaimName = value;
+  }
+  public resetEmailClaimName() {
+    this._emailClaimName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailClaimNameInput() {
+    return this._emailClaimName;
+  }
+
   // idp_public_cert - computed: false, optional: true, required: false
   private _idpPublicCert?: string; 
   public get idpPublicCert() {
@@ -629,6 +689,22 @@ export class AccessIdentityProviderConfigAOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get oneloginAccountInput() {
     return this._oneloginAccount;
+  }
+
+  // ping_env_id - computed: false, optional: true, required: false
+  private _pingEnvId?: string; 
+  public get pingEnvId() {
+    return this.getStringAttribute('ping_env_id');
+  }
+  public set pingEnvId(value: string) {
+    this._pingEnvId = value;
+  }
+  public resetPingEnvId() {
+    this._pingEnvId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pingEnvIdInput() {
+    return this._pingEnvId;
   }
 
   // pkce_enabled - computed: false, optional: true, required: false
@@ -754,23 +830,23 @@ export class AccessIdentityProviderConfigAList extends cdktf.ComplexList {
 }
 export interface AccessIdentityProviderScimConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#enabled AccessIdentityProvider#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#enabled AccessIdentityProvider#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#group_member_deprovision AccessIdentityProvider#group_member_deprovision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#group_member_deprovision AccessIdentityProvider#group_member_deprovision}
   */
   readonly groupMemberDeprovision?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#seat_deprovision AccessIdentityProvider#seat_deprovision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#seat_deprovision AccessIdentityProvider#seat_deprovision}
   */
   readonly seatDeprovision?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#secret AccessIdentityProvider#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#secret AccessIdentityProvider#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider#user_deprovision AccessIdentityProvider#user_deprovision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider#user_deprovision AccessIdentityProvider#user_deprovision}
   */
   readonly userDeprovision?: boolean | cdktf.IResolvable;
 }
@@ -959,7 +1035,7 @@ export class AccessIdentityProviderScimConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}
 */
 export class AccessIdentityProvider extends cdktf.TerraformResource {
 
@@ -973,7 +1049,7 @@ export class AccessIdentityProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -984,7 +1060,7 @@ export class AccessIdentityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

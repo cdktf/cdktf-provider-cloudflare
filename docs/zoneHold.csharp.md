@@ -1,6 +1,6 @@
 # `cloudflare_zone_hold`
 
-Refer to the Terraform Registory for docs: [`cloudflare_zone_hold`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold).
+Refer to the Terraform Registory for docs: [`cloudflare_zone_hold`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold).
 
 # `zoneHold` Submodule <a name="`zoneHold` Submodule" id="@cdktf/provider-cloudflare.zoneHold"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_zone_hold`](https://regi
 
 ### ZoneHold <a name="ZoneHold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer"></a>
 
@@ -678,7 +678,7 @@ new ZoneHoldConfig {
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold">Hold</a></code> | <code>object</code> | Enablement status of the zone hold. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">HoldAfter</a></code> | <code>string</code> | The RFC3339 compatible timestamp when to automatically re-enable the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold#id ZoneHold#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold#id ZoneHold#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">IncludeSubdomains</a></code> | <code>object</code> | Whether to extend to block any subdomain of the given zone. |
 
 ---
@@ -763,7 +763,7 @@ public object Hold { get; set; }
 
 Enablement status of the zone hold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold#hold ZoneHold#hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold#hold ZoneHold#hold}
 
 ---
 
@@ -777,7 +777,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -791,7 +791,7 @@ public string HoldAfter { get; set; }
 
 The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -803,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold#id ZoneHold#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold#id ZoneHold#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ public object IncludeSubdomains { get; set; }
 
 Whether to extend to block any subdomain of the given zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 
