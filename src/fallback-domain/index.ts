@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface FallbackDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#account_id FallbackDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#account_id FallbackDomain#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#id FallbackDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#id FallbackDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface FallbackDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * The settings policy for which to configure this fallback domain policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#policy_id FallbackDomain#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#policy_id FallbackDomain#policy_id}
   */
   readonly policyId?: string;
   /**
   * domains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#domains FallbackDomain#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#domains FallbackDomain#domains}
   */
   readonly domains: FallbackDomainDomains[] | cdktf.IResolvable;
 }
@@ -42,19 +42,19 @@ export interface FallbackDomainDomains {
   /**
   * A description of the fallback domain, displayed in the client UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#description FallbackDomain#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#description FallbackDomain#description}
   */
   readonly description?: string;
   /**
   * A list of IP addresses to handle domain resolution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#dns_server FallbackDomain#dns_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#dns_server FallbackDomain#dns_server}
   */
   readonly dnsServer?: string[];
   /**
   * The domain suffix to match when resolving locally.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain#suffix FallbackDomain#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain#suffix FallbackDomain#suffix}
   */
   readonly suffix?: string;
 }
@@ -197,7 +197,7 @@ export class FallbackDomainDomainsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain cloudflare_fallback_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain cloudflare_fallback_domain}
 */
 export class FallbackDomain extends cdktf.TerraformResource {
 
@@ -211,7 +211,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +222,7 @@ export class FallbackDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_fallback_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

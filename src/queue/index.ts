@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/queue
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface QueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/queue#account_id Queue#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/queue#account_id Queue#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/queue#id Queue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/queue#id Queue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface QueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the queue.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/queue#name Queue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/queue#name Queue#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/queue cloudflare_queue}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/queue cloudflare_queue}
 */
 export class Queue extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Queue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/queue cloudflare_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/queue cloudflare_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class Queue extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_queue',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

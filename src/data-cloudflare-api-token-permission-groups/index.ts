@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/api_token_permission_groups
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/api_token_permission_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareApiTokenPermissionGroupsConfig extends cdktf.Terr
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}
 */
 export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataSource {
 
@@ -29,7 +29,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +40,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
       terraformResourceType: 'cloudflare_api_token_permission_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

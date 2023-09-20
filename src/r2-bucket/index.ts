@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/r2_bucket
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/r2_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface R2BucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
   */
   readonly accountId: string;
   /**
   * The location hint of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/r2_bucket#location R2Bucket#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/r2_bucket#location R2Bucket#location}
   */
   readonly location?: string;
   /**
   * The name of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/r2_bucket#name R2Bucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/r2_bucket#name R2Bucket#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/r2_bucket cloudflare_r2_bucket}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/r2_bucket cloudflare_r2_bucket}
 */
 export class R2Bucket extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class R2Bucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class R2Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

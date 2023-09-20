@@ -1,6 +1,6 @@
 # `data_cloudflare_accounts`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_accounts`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/accounts).
+Refer to the Terraform Registory for docs: [`data_cloudflare_accounts`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/accounts).
 
 # `dataCloudflareAccounts` Submodule <a name="`dataCloudflareAccounts` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareAccounts"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_accounts`](https://
 
 ### DataCloudflareAccounts <a name="DataCloudflareAccounts" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/accounts cloudflare_accounts}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/accounts cloudflare_accounts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.Initializer"></a>
 
@@ -601,7 +601,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudfla
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/accounts#id DataCloudflareAccounts#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/accounts#id DataCloudflareAccounts#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig.property.name">Name</a></code> | <code>*string</code> | The account name to target for the resource. |
 
 ---
@@ -684,7 +684,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/accounts#id DataCloudflareAccounts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/accounts#id DataCloudflareAccounts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -701,7 +701,7 @@ Name *string
 
 The account name to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
 
 ---
 

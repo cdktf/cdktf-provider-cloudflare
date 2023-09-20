@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DeviceManagedNetworksConfig extends cdktf.TerraformMetaArgument
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#account_id DeviceManagedNetworks#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#account_id DeviceManagedNetworks#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#id DeviceManagedNetworks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#id DeviceManagedNetworks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DeviceManagedNetworksConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the Device Managed Network. Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#name DeviceManagedNetworks#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#name DeviceManagedNetworks#name}
   */
   readonly name: string;
   /**
   * The type of Device Managed Network. Available values: `tls`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#type DeviceManagedNetworks#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#type DeviceManagedNetworks#type}
   */
   readonly type: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#config DeviceManagedNetworks#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#config DeviceManagedNetworks#config}
   */
   readonly config: DeviceManagedNetworksConfigA;
 }
@@ -48,13 +48,13 @@ export interface DeviceManagedNetworksConfigA {
   /**
   * The SHA-256 hash of the TLS certificate presented by the host found at tls_sockaddr. If absent, regular certificate verification (trusted roots, valid timestamp, etc) will be used to validate the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#sha256 DeviceManagedNetworks#sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#sha256 DeviceManagedNetworks#sha256}
   */
   readonly sha256: string;
   /**
   * A network address of the form "host:port" that the WARP client will use to detect the presence of a TLS host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks#tls_sockaddr DeviceManagedNetworks#tls_sockaddr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks#tls_sockaddr DeviceManagedNetworks#tls_sockaddr}
   */
   readonly tlsSockaddr: string;
 }
@@ -136,7 +136,7 @@ export class DeviceManagedNetworksConfigAOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}
 */
 export class DeviceManagedNetworks extends cdktf.TerraformResource {
 
@@ -150,7 +150,7 @@ export class DeviceManagedNetworks extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +161,7 @@ export class DeviceManagedNetworks extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_managed_networks',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

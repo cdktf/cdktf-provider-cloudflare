@@ -1,6 +1,6 @@
 # `cloudflare_web_analytics_rule`
 
-Refer to the Terraform Registory for docs: [`cloudflare_web_analytics_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule).
+Refer to the Terraform Registory for docs: [`cloudflare_web_analytics_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule).
 
 # `webAnalyticsRule` Submodule <a name="`webAnalyticsRule` Submodule" id="@cdktf/provider-cloudflare.webAnalyticsRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_web_analytics_rule`](htt
 
 ### WebAnalyticsRule <a name="WebAnalyticsRule" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer"></a>
 
@@ -53,7 +53,7 @@ webAnalyticsRule.WebAnalyticsRule(
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer.parameter.isPaused">is_paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is paused or not. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer.parameter.paths">paths</a></code> | <code>typing.List[str]</code> | A list of paths to apply the rule to. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer.parameter.rulesetId">ruleset_id</a></code> | <code>str</code> | The Web Analytics ruleset id. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeouts">WebAnalyticsRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The host to apply the rule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the rule includes or excludes the matched traffic from being measured in Web Analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the rule is paused or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of paths to apply the rule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Web Analytics ruleset id. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#timeouts WebAnalyticsRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#timeouts WebAnalyticsRule#timeouts}
 
 ---
 
@@ -446,7 +446,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}.
 
 ---
 
@@ -940,7 +940,7 @@ webAnalyticsRule.WebAnalyticsRuleConfig(
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.isPaused">is_paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is paused or not. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.paths">paths</a></code> | <code>typing.List[str]</code> | A list of paths to apply the rule to. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.rulesetId">ruleset_id</a></code> | <code>str</code> | The Web Analytics ruleset id. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeouts">WebAnalyticsRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1025,7 +1025,7 @@ account_id: str
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
 
 ---
 
@@ -1039,7 +1039,7 @@ host: str
 
 The host to apply the rule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
 
 ---
 
@@ -1053,7 +1053,7 @@ inclusive: typing.Union[bool, IResolvable]
 
 Whether the rule includes or excludes the matched traffic from being measured in Web Analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
 
 ---
 
@@ -1067,7 +1067,7 @@ is_paused: typing.Union[bool, IResolvable]
 
 Whether the rule is paused or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
 
 ---
 
@@ -1081,7 +1081,7 @@ paths: typing.List[str]
 
 A list of paths to apply the rule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
 
 ---
 
@@ -1095,7 +1095,7 @@ ruleset_id: str
 
 The Web Analytics ruleset id. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
 
 ---
 
@@ -1107,7 +1107,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ timeouts: WebAnalyticsRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#timeouts WebAnalyticsRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#timeouts WebAnalyticsRule#timeouts}
 
 ---
 
@@ -1144,7 +1144,7 @@ webAnalyticsRule.WebAnalyticsRuleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}.
 
 ---
 
