@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accesskeysconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesskeysconfiguration"
 
 accesskeysconfiguration.NewAccessKeysConfiguration(scope Construct, id *string, config AccessKeysConfigurationConfig) AccessKeysConfiguration
 ```
@@ -284,7 +284,7 @@ func ResetKeyRotationIntervalDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accesskeysconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesskeysconfiguration"
 
 accesskeysconfiguration.AccessKeysConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accesskeysconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesskeysconfiguration"
 
 accesskeysconfiguration.AccessKeysConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ accesskeysconfiguration.AccessKeysConfiguration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accesskeysconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesskeysconfiguration"
 
 accesskeysconfiguration.AccessKeysConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accesskeysconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesskeysconfiguration"
 
 &accesskeysconfiguration.AccessKeysConfigurationConfig {
 	Connection: interface{},
