@@ -16,6 +16,7 @@ The following submodules are available:
 - [accountMember](./accountMember.java.md)
 - [addressMap](./addressMap.java.md)
 - [apiShield](./apiShield.java.md)
+- [apiShieldOperation](./apiShieldOperation.java.md)
 - [apiToken](./apiToken.java.md)
 - [argo](./argo.java.md)
 - [authenticatedOriginPulls](./authenticatedOriginPulls.java.md)

@@ -16,6 +16,7 @@ The following submodules are available:
 - [accountMember](./accountMember.go.md)
 - [addressMap](./addressMap.go.md)
 - [apiShield](./apiShield.go.md)
+- [apiShieldOperation](./apiShieldOperation.go.md)
 - [apiToken](./apiToken.go.md)
 - [argo](./argo.go.md)
 - [authenticatedOriginPulls](./authenticatedOriginPulls.go.md)

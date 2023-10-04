@@ -16,6 +16,7 @@ The following submodules are available:
 - [accountMember](./accountMember.python.md)
 - [addressMap](./addressMap.python.md)
 - [apiShield](./apiShield.python.md)
+- [apiShieldOperation](./apiShieldOperation.python.md)
 - [apiToken](./apiToken.python.md)
 - [argo](./argo.python.md)
 - [authenticatedOriginPulls](./authenticatedOriginPulls.python.md)

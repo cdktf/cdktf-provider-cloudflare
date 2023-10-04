@@ -1,6 +1,6 @@
 # `cloudflare_account_member`
 
-Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member).
+Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member).
 
 # `accountMember` Submodule <a name="`accountMember` Submodule" id="@cdktf/provider-cloudflare.accountMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https:/
 
 ### AccountMember <a name="AccountMember" id="@cdktf/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
@@ -658,7 +658,7 @@ const accountMemberConfig: accountMember.AccountMemberConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId">accountId</a></code> | <code>string</code> | Account ID to create the account member in. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | The email address of the user who you wish to manage. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.roleIds">roleIds</a></code> | <code>string[]</code> | List of account role IDs that you want to assign to a member. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member#id AccountMember#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member#id AccountMember#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">status</a></code> | <code>string</code> | A member's status in the account. Available values: `accepted`, `pending`. |
 
 ---
@@ -743,7 +743,7 @@ public readonly accountId: string;
 
 Account ID to create the account member in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member#account_id AccountMember#account_id}
 
 ---
 
@@ -759,7 +759,7 @@ The email address of the user who you wish to manage.
 
 Following creation, this field becomes read only via the API and cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member#email_address AccountMember#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member#email_address AccountMember#email_address}
 
 ---
 
@@ -773,7 +773,7 @@ public readonly roleIds: string[];
 
 List of account role IDs that you want to assign to a member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member#role_ids AccountMember#role_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member#role_ids AccountMember#role_ids}
 
 ---
 
@@ -785,7 +785,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member#id AccountMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member#id AccountMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -802,7 +802,7 @@ public readonly status: string;
 
 A member's status in the account. Available values: `accepted`, `pending`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 

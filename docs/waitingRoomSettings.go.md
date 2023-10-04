@@ -1,6 +1,6 @@
 # `cloudflare_waiting_room_settings`
 
-Refer to the Terraform Registory for docs: [`cloudflare_waiting_room_settings`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/waiting_room_settings).
+Refer to the Terraform Registory for docs: [`cloudflare_waiting_room_settings`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/waiting_room_settings).
 
 # `waitingRoomSettings` Submodule <a name="`waitingRoomSettings` Submodule" id="@cdktf/provider-cloudflare.waitingRoomSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`cloudflare_waiting_room_settings`](
 
 ### WaitingRoomSettings <a name="WaitingRoomSettings" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.NewWaitingRoomSettings(scope Construct, id *string, config WaitingRoomSettingsConfig) WaitingRoomSettings
 ```
@@ -284,7 +284,7 @@ func ResetSearchEngineCrawlerBypass()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ waitingroomsettings.WaitingRoomSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 &waitingroomsettings.WaitingRoomSettingsConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingrooms
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/waiting_room_settings#id WaitingRoomSettings#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/waiting_room_settings#id WaitingRoomSettings#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.property.searchEngineCrawlerBypass">SearchEngineCrawlerBypass</a></code> | <code>interface{}</code> | Whether to allow verified search engine crawlers to bypass all waiting rooms on this zone. Defaults to `false`. |
 
 ---
@@ -708,7 +708,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/waiting_room_settings#zone_id WaitingRoomSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/waiting_room_settings#zone_id WaitingRoomSettings#zone_id}
 
 ---
 
@@ -720,7 +720,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/waiting_room_settings#id WaitingRoomSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/waiting_room_settings#id WaitingRoomSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ SearchEngineCrawlerBypass interface{}
 
 Whether to allow verified search engine crawlers to bypass all waiting rooms on this zone. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/waiting_room_settings#search_engine_crawler_bypass WaitingRoomSettings#search_engine_crawler_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/waiting_room_settings#search_engine_crawler_bypass WaitingRoomSettings#search_engine_crawler_bypass}
 
 ---
 

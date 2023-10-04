@@ -16,6 +16,7 @@ The following submodules are available:
 - [accountMember](./accountMember.typescript.md)
 - [addressMap](./addressMap.typescript.md)
 - [apiShield](./apiShield.typescript.md)
+- [apiShieldOperation](./apiShieldOperation.typescript.md)
 - [apiToken](./apiToken.typescript.md)
 - [argo](./argo.typescript.md)
 - [authenticatedOriginPulls](./authenticatedOriginPulls.typescript.md)
