@@ -19,6 +19,7 @@ export * as account from './account';
 export * as accountMember from './account-member';
 export * as addressMap from './address-map';
 export * as apiShield from './api-shield';
+export * as apiShieldOperation from './api-shield-operation';
 export * as apiToken from './api-token';
 export * as argo from './argo';
 export * as authenticatedOriginPulls from './authenticated-origin-pulls';

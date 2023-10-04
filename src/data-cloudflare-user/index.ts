@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/user
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareUserConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/user cloudflare_user}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/data-sources/user cloudflare_user}
 */
 export class DataCloudflareUser extends cdktf.TerraformDataSource {
 
@@ -29,7 +29,7 @@ export class DataCloudflareUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/data-sources/user cloudflare_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/data-sources/user cloudflare_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +40,7 @@ export class DataCloudflareUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_user',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.15.0',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

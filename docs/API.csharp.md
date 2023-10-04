@@ -16,6 +16,7 @@ The following submodules are available:
 - [accountMember](./accountMember.csharp.md)
 - [addressMap](./addressMap.csharp.md)
 - [apiShield](./apiShield.csharp.md)
+- [apiShieldOperation](./apiShieldOperation.csharp.md)
 - [apiToken](./apiToken.csharp.md)
 - [argo](./argo.csharp.md)
 - [authenticatedOriginPulls](./authenticatedOriginPulls.csharp.md)

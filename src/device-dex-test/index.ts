@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DeviceDexTestConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
   */
   readonly accountId: string;
   /**
   * Additional details about the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#description DeviceDexTest#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#description DeviceDexTest#description}
   */
   readonly description: string;
   /**
   * Determines whether or not the test is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#id DeviceDexTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#id DeviceDexTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +40,19 @@ export interface DeviceDexTestConfig extends cdktf.TerraformMetaArguments {
   /**
   * How often the test will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
   */
   readonly interval: string;
   /**
   * The name of the Device Dex Test. Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#name DeviceDexTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#name DeviceDexTest#name}
   */
   readonly name: string;
   /**
   * data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#data DeviceDexTest#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#data DeviceDexTest#data}
   */
   readonly data: DeviceDexTestData;
 }
@@ -60,19 +60,19 @@ export interface DeviceDexTestData {
   /**
   * The host URL for `http` test `kind`. For `traceroute`, it must be a valid hostname or IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#host DeviceDexTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#host DeviceDexTest#host}
   */
   readonly host: string;
   /**
   * The type of Device Dex Test. Available values: `http`, `traceroute`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
   */
   readonly kind: string;
   /**
   * The http request method. Available values: `GET`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test#method DeviceDexTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test#method DeviceDexTest#method}
   */
   readonly method?: string;
 }
@@ -177,7 +177,7 @@ export class DeviceDexTestDataOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test cloudflare_device_dex_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test cloudflare_device_dex_test}
 */
 export class DeviceDexTest extends cdktf.TerraformResource {
 
@@ -191,7 +191,7 @@ export class DeviceDexTest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +202,7 @@ export class DeviceDexTest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_dex_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.15.0',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

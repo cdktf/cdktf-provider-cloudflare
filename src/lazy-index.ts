@@ -19,6 +19,7 @@ Object.defineProperty(exports, 'account', { get: function () { return require('.
 Object.defineProperty(exports, 'accountMember', { get: function () { return require('./account-member'); } });
 Object.defineProperty(exports, 'addressMap', { get: function () { return require('./address-map'); } });
 Object.defineProperty(exports, 'apiShield', { get: function () { return require('./api-shield'); } });
+Object.defineProperty(exports, 'apiShieldOperation', { get: function () { return require('./api-shield-operation'); } });
 Object.defineProperty(exports, 'apiToken', { get: function () { return require('./api-token'); } });
 Object.defineProperty(exports, 'argo', { get: function () { return require('./argo'); } });
 Object.defineProperty(exports, 'authenticatedOriginPulls', { get: function () { return require('./authenticated-origin-pulls'); } });
