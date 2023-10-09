@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperation(scope Construct, id *string, config ApiShieldOperationConfig) ApiShieldOperation
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ apishieldoperation.ApiShieldOperation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationConfig {
 	Connection: interface{},
