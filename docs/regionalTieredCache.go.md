@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionaltieredcache"
 
 regionaltieredcache.NewRegionalTieredCache(scope Construct, id *string, config RegionalTieredCacheConfig) RegionalTieredCache
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ regionaltieredcache.RegionalTieredCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionaltieredcache"
 
 &regionaltieredcache.RegionalTieredCacheConfig {
 	Connection: interface{},
