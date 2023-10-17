@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/tunnel_route
 // generated from terraform resource schema
 
@@ -60,6 +55,20 @@ export class TunnelRoute extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "cloudflare_tunnel_route";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a TunnelRoute resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the TunnelRoute to import
+  * @param importFromId The id of the existing TunnelRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/tunnel_route#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the TunnelRoute to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_tunnel_route", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
