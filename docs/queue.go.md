@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.queue.Queue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/queue"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/queue"
 
 queue.NewQueue(scope Construct, id *string, config QueueConfig) Queue
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.queue.Queue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/queue"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/queue"
 
 queue.Queue_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.queue.Queue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/queue"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/queue"
 
 queue.Queue_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ queue.Queue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.queue.Queue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/queue"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/queue"
 
 queue.Queue_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ queue.Queue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.queue.Queue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/queue"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/queue"
 
 queue.Queue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.queue.QueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/queue"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/queue"
 
 &queue.QueueConfig {
 	Connection: interface{},

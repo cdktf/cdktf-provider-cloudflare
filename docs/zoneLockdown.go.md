@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.NewZoneLockdown(scope Construct, id *string, config ZoneLockdownConfig) ZoneLockdown
 ```
@@ -373,7 +373,7 @@ func ResetPriority()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.ZoneLockdown_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.ZoneLockdown_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ zonelockdown.ZoneLockdown_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.ZoneLockdown_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ zonelockdown.ZoneLockdown_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.ZoneLockdown_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 &zonelockdown.ZoneLockdownConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 &zonelockdown.ZoneLockdownConfigurations {
 	Target: *string,
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.NewZoneLockdownConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneLockdownConfigurationsList
 ```
@@ -1226,7 +1226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonelockdown"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonelockdown"
 
 zonelockdown.NewZoneLockdownConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZoneLockdownConfigurationsOutputReference
 ```

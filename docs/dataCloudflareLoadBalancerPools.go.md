@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPools(scope Construct, id *string, config DataCloudflareLoadBalancerPoolsConfig) DataCloudflareLoadBalancerPools
 ```
@@ -318,7 +318,7 @@ func ResetPools()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPools_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPools_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPools_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPools_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -673,7 +673,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 &datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPoolsConfig {
 	Connection: interface{},
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilter,
 	Id: *string,
 	Pools: interface{},
 }
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 &datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPoolsFilter {
 	Name: *string,
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 &datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPoolsPools {
 
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadShedding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 &datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPoolsPoolsLoadShedding {
 
@@ -900,7 +900,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 &datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPoolsPoolsOrigins {
 
@@ -913,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 &datacloudflareloadbalancerpools.DataCloudflareLoadBalancerPoolsPoolsOriginsHeader {
 
@@ -928,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareLoadBalancerPoolsFilterOutputReference
 ```
@@ -1206,7 +1206,7 @@ func InternalValue() DataCloudflareLoadBalancerPoolsFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareLoadBalancerPoolsPoolsList
 ```
@@ -1349,7 +1349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadSheddingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsLoadSheddingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareLoadBalancerPoolsPoolsLoadSheddingList
 ```
@@ -1481,7 +1481,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference
 ```
@@ -1792,7 +1792,7 @@ func InternalValue() DataCloudflareLoadBalancerPoolsPoolsLoadShedding
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsOriginsHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareLoadBalancerPoolsPoolsOriginsHeaderList
 ```
@@ -1924,7 +1924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsOriginsHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareLoadBalancerPoolsPoolsOriginsHeaderOutputReference
 ```
@@ -2213,7 +2213,7 @@ func InternalValue() DataCloudflareLoadBalancerPoolsPoolsOriginsHeader
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareLoadBalancerPoolsPoolsOriginsList
 ```
@@ -2345,7 +2345,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference
 ```
@@ -2667,7 +2667,7 @@ func InternalValue() DataCloudflareLoadBalancerPoolsPoolsOrigins
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareloadbalancerpools"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancerpools"
 
 datacloudflareloadbalancerpools.NewDataCloudflareLoadBalancerPoolsPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareLoadBalancerPoolsPoolsOutputReference
 ```
