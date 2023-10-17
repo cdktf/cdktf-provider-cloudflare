@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetPaused">ResetPaused</a></code> | *No description.* |
@@ -140,6 +143,22 @@ private object ToTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-cloudflare.filter.Filter.addMoveTarget"></a>
+
+```csharp
+private void AddMoveTarget(string MoveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktf/provider-cloudflare.filter.Filter.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.filter.Filter.getAnyMapAttribute"></a>
 
@@ -249,6 +268,24 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-cloudflare.filter.Filter.importFrom"></a>
+
+```csharp
+private void ImportFrom(string Id, TerraformProvider Provider = null)
+```
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.filter.Filter.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-cloudflare.filter.Filter.importFrom.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.filter.Filter.interpolationForAttribute"></a>
 
 ```csharp
@@ -258,6 +295,30 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 ###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-cloudflare.filter.Filter.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-cloudflare.filter.Filter.moveTo"></a>
+
+```csharp
+private void MoveTo(string MoveTarget, object Index = null)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktf/provider-cloudflare.filter.Filter.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-cloudflare.filter.Filter.moveTo.parameter.index"></a>
+
+- *Type:* object
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -292,6 +353,7 @@ private void ResetRef()
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Filter resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -352,6 +414,50 @@ Filter.IsTerraformResource(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-cloudflare.filter.Filter.isTerraformResource.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Cloudflare;
+
+Filter.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a Filter resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the Filter to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing Filter that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the Filter to import is found.
 
 ---
 

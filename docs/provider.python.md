@@ -375,6 +375,7 @@ def reset_rps() -> None
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a CloudflareProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -441,6 +442,55 @@ provider.CloudflareProvider.is_terraform_provider(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import provider
+
+provider.CloudflareProvider.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a CloudflareProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the CloudflareProvider to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing CloudflareProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the CloudflareProvider to import is found.
 
 ---
 

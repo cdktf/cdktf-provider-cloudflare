@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putAnalyticsEngineBinding">PutAnalyticsEngineBinding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putKvNamespaceBinding">PutKvNamespaceBinding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putPlainTextBinding">PutPlainTextBinding</a></code> | *No description.* |
@@ -157,6 +160,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.getAnyMapAttribute"></a>
 
@@ -266,6 +285,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.interpolationForAttribute"></a>
 
 ```go
@@ -275,6 +312,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -459,6 +520,7 @@ func ResetWebassemblyBinding()
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a WorkerScript resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -519,6 +581,50 @@ workerscript.WorkerScript_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerscript"
+
+workerscript.WorkerScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a WorkerScript resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the WorkerScript to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing WorkerScript that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/worker_script#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the WorkerScript to import is found.
 
 ---
 

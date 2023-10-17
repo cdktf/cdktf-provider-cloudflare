@@ -187,6 +187,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -196,7 +197,9 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.resetEnvironment">resetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.resetId">resetId</a></code> | *No description.* |
 
@@ -265,6 +268,22 @@ public java.lang.Object toTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.addMoveTarget"></a>
+
+```java
+public void addMoveTarget(java.lang.String moveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.getAnyMapAttribute"></a>
 
@@ -374,6 +393,25 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.importFrom"></a>
+
+```java
+public void importFrom(java.lang.String id)
+public void importFrom(java.lang.String id, TerraformProvider provider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.importFrom.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.importFrom.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.interpolationForAttribute"></a>
 
 ```java
@@ -383,6 +421,31 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.moveTo"></a>
+
+```java
+public void moveTo(java.lang.String moveTarget)
+public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.moveTo.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.moveTo.parameter.index"></a>
+
+- *Type:* java.lang.String OR java.lang.Number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -405,6 +468,7 @@ public void resetId()
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerDomain.WorkerDomain.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a WorkerDomain resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -465,6 +529,50 @@ WorkerDomain.isTerraformResource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.isTerraformResource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.worker_domain.WorkerDomain;
+
+WorkerDomain.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),WorkerDomain.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a WorkerDomain resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the WorkerDomain to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing WorkerDomain that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/worker_domain#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.workerDomain.WorkerDomain.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the WorkerDomain to import is found.
 
 ---
 

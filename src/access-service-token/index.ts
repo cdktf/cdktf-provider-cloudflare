@@ -61,6 +61,20 @@ export class AccessServiceToken extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "cloudflare_access_service_token";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AccessServiceToken resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AccessServiceToken to import
+  * @param importFromId The id of the existing AccessServiceToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/access_service_token#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AccessServiceToken to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_access_service_token", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

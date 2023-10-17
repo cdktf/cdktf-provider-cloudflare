@@ -49,6 +49,20 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "cloudflare_logpush_ownership_challenge";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LogpushOwnershipChallenge resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LogpushOwnershipChallenge to import
+  * @param importFromId The id of the existing LogpushOwnershipChallenge that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/logpush_ownership_challenge#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LogpushOwnershipChallenge to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_logpush_ownership_challenge", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

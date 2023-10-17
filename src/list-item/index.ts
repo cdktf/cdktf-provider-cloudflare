@@ -372,6 +372,20 @@ export class ListItemA extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "cloudflare_list_item";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ListItemA resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ListItemA to import
+  * @param importFromId The id of the existing ListItemA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ListItemA to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_list_item", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

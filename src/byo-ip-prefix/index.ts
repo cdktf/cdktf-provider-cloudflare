@@ -55,6 +55,20 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "cloudflare_byo_ip_prefix";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ByoIpPrefix resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ByoIpPrefix to import
+  * @param importFromId The id of the existing ByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ByoIpPrefix to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_byo_ip_prefix", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

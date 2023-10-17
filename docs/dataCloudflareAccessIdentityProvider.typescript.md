@@ -285,6 +285,7 @@ public resetZoneId(): void
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataCloudflareAccessIdentityProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -345,6 +346,50 @@ dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isTerr
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport"></a>
+
+```typescript
+import { dataCloudflareAccessIdentityProvider } from '@cdktf/provider-cloudflare'
+
+dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataCloudflareAccessIdentityProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataCloudflareAccessIdentityProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataCloudflareAccessIdentityProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/data-sources/access_identity_provider#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataCloudflareAccessIdentityProvider to import is found.
 
 ---
 

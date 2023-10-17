@@ -311,6 +311,7 @@ private void ResetPools()
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataCloudflareLoadBalancerPools resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -371,6 +372,50 @@ DataCloudflareLoadBalancerPools.IsTerraformDataSource(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Cloudflare;
+
+DataCloudflareLoadBalancerPools.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataCloudflareLoadBalancerPools resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataCloudflareLoadBalancerPools to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataCloudflareLoadBalancerPools that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/data-sources/load_balancer_pools#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataCloudflareLoadBalancerPools to import is found.
 
 ---
 
