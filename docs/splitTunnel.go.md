@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 splittunnel.NewSplitTunnel(scope Construct, id *string, config SplitTunnelConfig) SplitTunnel
 ```
@@ -297,7 +297,7 @@ func ResetPolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 splittunnel.SplitTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 splittunnel.SplitTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ splittunnel.SplitTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 splittunnel.SplitTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 &splittunnel.SplitTunnelConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 &splittunnel.SplitTunnelTunnels {
 	Address: *string,
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 splittunnel.NewSplitTunnelTunnelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SplitTunnelTunnelsList
 ```
@@ -1046,7 +1046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/splittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/splittunnel"
 
 splittunnel.NewSplitTunnelTunnelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SplitTunnelTunnelsOutputReference
 ```

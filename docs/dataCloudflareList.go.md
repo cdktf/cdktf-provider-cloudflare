@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelist"
 
 datacloudflarelist.NewDataCloudflareList(scope Construct, id *string, config DataCloudflareListConfig) DataCloudflareList
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelist"
 
 datacloudflarelist.DataCloudflareList_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelist"
 
 datacloudflarelist.DataCloudflareList_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datacloudflarelist.DataCloudflareList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelist"
 
 datacloudflarelist.DataCloudflareList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelist"
 
 &datacloudflarelist.DataCloudflareListConfig {
 	Connection: interface{},
