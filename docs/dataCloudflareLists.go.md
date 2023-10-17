@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.NewDataCloudflareLists(scope Construct, id *string, config DataCloudflareListsConfig) DataCloudflareLists
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.DataCloudflareLists_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.DataCloudflareLists_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datacloudflarelists.DataCloudflareLists_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.DataCloudflareLists_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datacloudflarelists.DataCloudflareLists_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.DataCloudflareLists_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 &datacloudflarelists.DataCloudflareListsConfig {
 	Connection: interface{},
@@ -735,7 +735,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsLists.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 &datacloudflarelists.DataCloudflareListsLists {
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarel
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.NewDataCloudflareListsListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareListsListsList
 ```
@@ -882,7 +882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelists"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarelists"
 
 datacloudflarelists.NewDataCloudflareListsListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareListsListsOutputReference
 ```
