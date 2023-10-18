@@ -15,11 +15,13 @@ Object.defineProperty(exports, 'accessOrganization', { get: function () { return
 Object.defineProperty(exports, 'accessPolicy', { get: function () { return require('./access-policy'); } });
 Object.defineProperty(exports, 'accessRule', { get: function () { return require('./access-rule'); } });
 Object.defineProperty(exports, 'accessServiceToken', { get: function () { return require('./access-service-token'); } });
+Object.defineProperty(exports, 'accessTag', { get: function () { return require('./access-tag'); } });
 Object.defineProperty(exports, 'account', { get: function () { return require('./account'); } });
 Object.defineProperty(exports, 'accountMember', { get: function () { return require('./account-member'); } });
 Object.defineProperty(exports, 'addressMap', { get: function () { return require('./address-map'); } });
 Object.defineProperty(exports, 'apiShield', { get: function () { return require('./api-shield'); } });
 Object.defineProperty(exports, 'apiShieldOperation', { get: function () { return require('./api-shield-operation'); } });
+Object.defineProperty(exports, 'apiShieldSchema', { get: function () { return require('./api-shield-schema'); } });
 Object.defineProperty(exports, 'apiToken', { get: function () { return require('./api-token'); } });
 Object.defineProperty(exports, 'argo', { get: function () { return require('./argo'); } });
 Object.defineProperty(exports, 'authenticatedOriginPulls', { get: function () { return require('./authenticated-origin-pulls'); } });
@@ -31,6 +33,7 @@ Object.defineProperty(exports, 'customHostname', { get: function () { return req
 Object.defineProperty(exports, 'customHostnameFallbackOrigin', { get: function () { return require('./custom-hostname-fallback-origin'); } });
 Object.defineProperty(exports, 'customPages', { get: function () { return require('./custom-pages'); } });
 Object.defineProperty(exports, 'customSsl', { get: function () { return require('./custom-ssl'); } });
+Object.defineProperty(exports, 'd1Database', { get: function () { return require('./d1-database'); } });
 Object.defineProperty(exports, 'deviceDexTest', { get: function () { return require('./device-dex-test'); } });
 Object.defineProperty(exports, 'deviceManagedNetworks', { get: function () { return require('./device-managed-networks'); } });
 Object.defineProperty(exports, 'devicePolicyCertificates', { get: function () { return require('./device-policy-certificates'); } });
@@ -63,6 +66,7 @@ Object.defineProperty(exports, 'managedHeaders', { get: function () { return req
 Object.defineProperty(exports, 'mtlsCertificate', { get: function () { return require('./mtls-certificate'); } });
 Object.defineProperty(exports, 'notificationPolicy', { get: function () { return require('./notification-policy'); } });
 Object.defineProperty(exports, 'notificationPolicyWebhooks', { get: function () { return require('./notification-policy-webhooks'); } });
+Object.defineProperty(exports, 'observatoryScheduledTest', { get: function () { return require('./observatory-scheduled-test'); } });
 Object.defineProperty(exports, 'originCaCertificate', { get: function () { return require('./origin-ca-certificate'); } });
 Object.defineProperty(exports, 'pageRule', { get: function () { return require('./page-rule'); } });
 Object.defineProperty(exports, 'pagesDomain', { get: function () { return require('./pages-domain'); } });
