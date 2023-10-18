@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom metadata associated with custom hostname. Only supports primitive string values, all other values are accessible via the API directly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
   */
   readonly customMetadata?: { [key: string]: string };
   /**
   * The custom origin server used for certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
   */
   readonly customOriginServer?: string;
   /**
   * The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
   */
   readonly customOriginSni?: string;
   /**
   * Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#id CustomHostname#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#id CustomHostname#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,19 +41,19 @@ export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
   */
   readonly waitForSslPendingValidation?: boolean | cdktf.IResolvable;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
   */
   readonly zoneId: string;
   /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
   */
   readonly ssl?: CustomHostnameSsl[] | cdktf.IResolvable;
 }
@@ -224,31 +219,31 @@ export interface CustomHostnameSslSettings {
   /**
   * List of SSL/TLS ciphers to associate with this certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
   */
   readonly ciphers?: string[];
   /**
   * Whether early hints should be supported. Available values: `on`, `off`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
   */
   readonly earlyHints?: string;
   /**
   * Whether HTTP2 should be supported. Available values: `on`, `off`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
   */
   readonly http2?: string;
   /**
   * Lowest version of TLS this certificate should support. Available values: `1.0`, `1.1`, `1.2`, `1.3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
   * Whether TLSv1.3 should be supported. Available values: `on`, `off`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#tls13 CustomHostname#tls13}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#tls13 CustomHostname#tls13}
   */
   readonly tls13?: string;
 }
@@ -439,47 +434,47 @@ export interface CustomHostnameSsl {
   /**
   * A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it. Available values: `ubiquitous`, `optimal`, `force`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
   */
   readonly bundleMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}
   */
   readonly certificateAuthority?: string;
   /**
   * If a custom uploaded certificate is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
   */
   readonly customCertificate?: string;
   /**
   * The key for a custom uploaded certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
   */
   readonly customKey?: string;
   /**
   * Domain control validation (DCV) method used for this hostname. Available values: `http`, `txt`, `email`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#method CustomHostname#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#method CustomHostname#method}
   */
   readonly method?: string;
   /**
   * Level of validation to be used for this hostname. Available values: `dv`. Defaults to `dv`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#type CustomHostname#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#type CustomHostname#type}
   */
   readonly type?: string;
   /**
   * Indicates whether the certificate covers a wildcard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#settings CustomHostname#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#settings CustomHostname#settings}
   */
   readonly settings?: CustomHostnameSslSettings[] | cdktf.IResolvable;
 }
@@ -754,7 +749,7 @@ export class CustomHostnameSslList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname cloudflare_custom_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname cloudflare_custom_hostname}
 */
 export class CustomHostname extends cdktf.TerraformResource {
 
@@ -770,7 +765,7 @@ export class CustomHostname extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomHostname resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomHostname to import
-  * @param importFromId The id of the existing CustomHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomHostname to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -782,7 +777,7 @@ export class CustomHostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -793,7 +788,7 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.16.0',
+        providerVersion: '4.17.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
