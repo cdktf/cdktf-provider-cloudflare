@@ -1,3 +1,3 @@
 # `cloudflare_logpush_ownership_challenge`
 
-Refer to the Terraform Registory for docs: [`cloudflare_logpush_ownership_challenge`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/logpush_ownership_challenge).
+Refer to the Terraform Registory for docs: [`cloudflare_logpush_ownership_challenge`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/logpush_ownership_challenge).

@@ -21,7 +21,9 @@ export * as accountMember from './account-member';
 export * as addressMap from './address-map';
 export * as apiShield from './api-shield';
 export * as apiShieldOperation from './api-shield-operation';
+export * as apiShieldOperationSchemaValidationSettings from './api-shield-operation-schema-validation-settings';
 export * as apiShieldSchema from './api-shield-schema';
+export * as apiShieldSchemaValidationSettings from './api-shield-schema-validation-settings';
 export * as apiToken from './api-token';
 export * as argo from './argo';
 export * as authenticatedOriginPulls from './authenticated-origin-pulls';
@@ -120,6 +122,7 @@ export * as dataCloudflareAccessIdentityProvider from './data-cloudflare-access-
 export * as dataCloudflareAccountRoles from './data-cloudflare-account-roles';
 export * as dataCloudflareAccounts from './data-cloudflare-accounts';
 export * as dataCloudflareApiTokenPermissionGroups from './data-cloudflare-api-token-permission-groups';
+export * as dataCloudflareDevicePostureRules from './data-cloudflare-device-posture-rules';
 export * as dataCloudflareDevices from './data-cloudflare-devices';
 export * as dataCloudflareIpRanges from './data-cloudflare-ip-ranges';
 export * as dataCloudflareList from './data-cloudflare-list';
@@ -128,6 +131,8 @@ export * as dataCloudflareLoadBalancerPools from './data-cloudflare-load-balance
 export * as dataCloudflareOriginCaRootCertificate from './data-cloudflare-origin-ca-root-certificate';
 export * as dataCloudflareRecord from './data-cloudflare-record';
 export * as dataCloudflareRulesets from './data-cloudflare-rulesets';
+export * as dataCloudflareTunnel from './data-cloudflare-tunnel';
+export * as dataCloudflareTunnelVirtualNetwork from './data-cloudflare-tunnel-virtual-network';
 export * as dataCloudflareUser from './data-cloudflare-user';
 export * as dataCloudflareZone from './data-cloudflare-zone';
 export * as dataCloudflareZoneCacheReserve from './data-cloudflare-zone-cache-reserve';

@@ -1,6 +1,6 @@
 # `cloudflare_api_shield_schema`
 
-Refer to the Terraform Registory for docs: [`cloudflare_api_shield_schema`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema).
+Refer to the Terraform Registory for docs: [`cloudflare_api_shield_schema`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema).
 
 # `apiShieldSchema` Submodule <a name="`apiShieldSchema` Submodule" id="@cdktf/provider-cloudflare.apiShieldSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_api_shield_schema`](http
 
 ### ApiShieldSchema <a name="ApiShieldSchema" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the ApiShieldSchema to import.
 
 The id of the existing ApiShieldSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ new ApiShieldSchemaConfig {
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.name">Name</a></code> | <code>string</code> | Name of the schema. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.source">Source</a></code> | <code>string</code> | Schema file bytes. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#id ApiShieldSchema#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#id ApiShieldSchema#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.kind">Kind</a></code> | <code>string</code> | Kind of schema. Defaults to `openapi_v3`. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.validationEnabled">ValidationEnabled</a></code> | <code>object</code> | Flag whether schema is enabled for validation. |
 
@@ -893,7 +893,7 @@ public string Name { get; set; }
 
 Name of the schema. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
 
 ---
 
@@ -907,7 +907,7 @@ public string Source { get; set; }
 
 Schema file bytes. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#source ApiShieldSchema#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#source ApiShieldSchema#source}
 
 ---
 
@@ -921,7 +921,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
 
 ---
 
@@ -933,7 +933,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#id ApiShieldSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#id ApiShieldSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public string Kind { get; set; }
 
 Kind of schema. Defaults to `openapi_v3`. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
 
 ---
 
@@ -964,7 +964,7 @@ public object ValidationEnabled { get; set; }
 
 Flag whether schema is enabled for validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
 
 ---
 

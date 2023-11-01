@@ -1,6 +1,6 @@
 # `cloudflare_access_custom_page`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_custom_page`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page).
+Refer to the Terraform Registory for docs: [`cloudflare_access_custom_page`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page).
 
 # `accessCustomPage` Submodule <a name="`accessCustomPage` Submodule" id="@cdktf/provider-cloudflare.accessCustomPage"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_custom_page`](htt
 
 ### AccessCustomPage <a name="AccessCustomPage" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page cloudflare_access_custom_page}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page cloudflare_access_custom_page}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage.Initializer"></a>
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the AccessCustomPage to import
 
 The id of the existing AccessCustomPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ new AccessCustomPageConfig {
 | <code><a href="#@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.property.appCount">AppCount</a></code> | <code>double</code> | Number of apps to display on the custom page. |
 | <code><a href="#@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.property.customHtml">CustomHtml</a></code> | <code>string</code> | Custom HTML to display on the custom page. |
-| <code><a href="#@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#id AccessCustomPage#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#id AccessCustomPage#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. |
 
 ---
@@ -931,7 +931,7 @@ public string Name { get; set; }
 
 Friendly name of the Access Custom Page configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#name AccessCustomPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#name AccessCustomPage#name}
 
 ---
 
@@ -945,7 +945,7 @@ public string Type { get; set; }
 
 Type of Access custom page to create. Available values: `identity_denied`, `forbidden`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#type AccessCustomPage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#type AccessCustomPage#type}
 
 ---
 
@@ -961,7 +961,7 @@ The account identifier to target for the resource.
 
 Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#account_id AccessCustomPage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#account_id AccessCustomPage#account_id}
 
 ---
 
@@ -975,7 +975,7 @@ public double AppCount { get; set; }
 
 Number of apps to display on the custom page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#app_count AccessCustomPage#app_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#app_count AccessCustomPage#app_count}
 
 ---
 
@@ -989,7 +989,7 @@ public string CustomHtml { get; set; }
 
 Custom HTML to display on the custom page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#custom_html AccessCustomPage#custom_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#custom_html AccessCustomPage#custom_html}
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#id AccessCustomPage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#id AccessCustomPage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ The zone identifier to target for the resource.
 
 Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page#zone_id AccessCustomPage#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_custom_page#zone_id AccessCustomPage#zone_id}
 
 ---
 

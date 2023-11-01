@@ -1,6 +1,6 @@
 # `cloudflare_device_settings_policy`
 
-Refer to the Terraform Registory for docs: [`cloudflare_device_settings_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy).
+Refer to the Terraform Registory for docs: [`cloudflare_device_settings_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy).
 
 # `deviceSettingsPolicy` Submodule <a name="`deviceSettingsPolicy` Submodule" id="@cdktf/provider-cloudflare.deviceSettingsPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_device_settings_policy`]
 
 ### DeviceSettingsPolicy <a name="DeviceSettingsPolicy" id="@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy.Initializer"></a>
 
@@ -533,7 +533,7 @@ The construct id used in the generated config for the DeviceSettingsPolicy to im
 
 The id of the existing DeviceSettingsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1206,7 +1206,7 @@ new DeviceSettingsPolicyConfig {
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.disableAutoFallback">DisableAutoFallback</a></code> | <code>object</code> | Whether to disable auto fallback for this policy. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.enabled">Enabled</a></code> | <code>object</code> | Whether the policy is enabled (cannot be set for default policies). Defaults to `true`. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.excludeOfficeIps">ExcludeOfficeIps</a></code> | <code>object</code> | Whether to add Microsoft IPs to split tunnel exclusions. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.match">Match</a></code> | <code>string</code> | Wirefilter expression to match a device against when evaluating whether this policy should take effect for that device. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.precedence">Precedence</a></code> | <code>double</code> | The precedence of the policy. Lower values indicate higher precedence. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig.property.serviceModeV2Mode">ServiceModeV2Mode</a></code> | <code>string</code> | The service mode. Available values: `1dot1`, `warp`, `proxy`, `posture_only`, `warp_tunnel_only`. Defaults to `warp`. |
@@ -1296,7 +1296,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
 
 ---
 
@@ -1310,7 +1310,7 @@ public string Description { get; set; }
 
 Description of Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#description DeviceSettingsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#description DeviceSettingsPolicy#description}
 
 ---
 
@@ -1324,7 +1324,7 @@ public string Name { get; set; }
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#name DeviceSettingsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#name DeviceSettingsPolicy#name}
 
 ---
 
@@ -1338,7 +1338,7 @@ public object AllowedToLeave { get; set; }
 
 Whether to allow devices to leave the organization. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
 
 ---
 
@@ -1352,7 +1352,7 @@ public object AllowModeSwitch { get; set; }
 
 Whether to allow mode switch for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
 
 ---
 
@@ -1366,7 +1366,7 @@ public object AllowUpdates { get; set; }
 
 Whether to allow updates under this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
 
 ---
 
@@ -1380,7 +1380,7 @@ public double AutoConnect { get; set; }
 
 The amount of time in minutes to reconnect after having been disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
 
 ---
 
@@ -1394,7 +1394,7 @@ public double CaptivePortal { get; set; }
 
 The captive portal value for this policy. Defaults to `180`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#captive_portal DeviceSettingsPolicy#captive_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#captive_portal DeviceSettingsPolicy#captive_portal}
 
 ---
 
@@ -1408,7 +1408,7 @@ public object Default { get; set; }
 
 Whether the policy refers to the default account policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
 
 ---
 
@@ -1422,7 +1422,7 @@ public object DisableAutoFallback { get; set; }
 
 Whether to disable auto fallback for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
 
 ---
 
@@ -1436,7 +1436,7 @@ public object Enabled { get; set; }
 
 Whether the policy is enabled (cannot be set for default policies). Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
 
 ---
 
@@ -1450,7 +1450,7 @@ public object ExcludeOfficeIps { get; set; }
 
 Whether to add Microsoft IPs to split tunnel exclusions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
 
 ---
 
@@ -1462,7 +1462,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1479,7 +1479,7 @@ public string Match { get; set; }
 
 Wirefilter expression to match a device against when evaluating whether this policy should take effect for that device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#match DeviceSettingsPolicy#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#match DeviceSettingsPolicy#match}
 
 ---
 
@@ -1493,7 +1493,7 @@ public double Precedence { get; set; }
 
 The precedence of the policy. Lower values indicate higher precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#precedence DeviceSettingsPolicy#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#precedence DeviceSettingsPolicy#precedence}
 
 ---
 
@@ -1507,7 +1507,7 @@ public string ServiceModeV2Mode { get; set; }
 
 The service mode. Available values: `1dot1`, `warp`, `proxy`, `posture_only`, `warp_tunnel_only`. Defaults to `warp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#service_mode_v2_mode DeviceSettingsPolicy#service_mode_v2_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#service_mode_v2_mode DeviceSettingsPolicy#service_mode_v2_mode}
 
 ---
 
@@ -1521,7 +1521,7 @@ public double ServiceModeV2Port { get; set; }
 
 The port to use for the proxy service mode. Required when using `service_mode_v2_mode`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#service_mode_v2_port DeviceSettingsPolicy#service_mode_v2_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#service_mode_v2_port DeviceSettingsPolicy#service_mode_v2_port}
 
 ---
 
@@ -1535,7 +1535,7 @@ public string SupportUrl { get; set; }
 
 The support URL that will be opened when sending feedback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#support_url DeviceSettingsPolicy#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#support_url DeviceSettingsPolicy#support_url}
 
 ---
 
@@ -1549,7 +1549,7 @@ public object SwitchLocked { get; set; }
 
 Enablement of the ZT client switch lock.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
 
 ---
 

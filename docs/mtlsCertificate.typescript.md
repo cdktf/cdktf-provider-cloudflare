@@ -1,6 +1,6 @@
 # `cloudflare_mtls_certificate`
 
-Refer to the Terraform Registory for docs: [`cloudflare_mtls_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate).
+Refer to the Terraform Registory for docs: [`cloudflare_mtls_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate).
 
 # `mtlsCertificate` Submodule <a name="`mtlsCertificate` Submodule" id="@cdktf/provider-cloudflare.mtlsCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_mtls_certificate`](https
 
 ### MtlsCertificate <a name="MtlsCertificate" id="@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the MtlsCertificate to import.
 
 The id of the existing MtlsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ const mtlsCertificateConfig: mtlsCertificate.MtlsCertificateConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.ca">ca</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this is a CA or leaf certificate. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.certificates">certificates</a></code> | <code>string</code> | Certificate you intend to use with mTLS-enabled services. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#id MtlsCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#id MtlsCertificate#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.name">name</a></code> | <code>string</code> | Optional unique name for the certificate. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig.property.privateKey">privateKey</a></code> | <code>string</code> | The certificate's private key. **Modifying this attribute will force creation of a new resource.**. |
 
@@ -934,7 +934,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly ca: boolean | IResolvable;
 
 Whether this is a CA or leaf certificate. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
 
 ---
 
@@ -962,7 +962,7 @@ public readonly certificates: string;
 
 Certificate you intend to use with mTLS-enabled services. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
 
 ---
 
@@ -974,7 +974,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#id MtlsCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#id MtlsCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ public readonly name: string;
 
 Optional unique name for the certificate. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly privateKey: string;
 
 The certificate's private key. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
 
 ---
 
