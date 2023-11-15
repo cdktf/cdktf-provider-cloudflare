@@ -1,6 +1,6 @@
 # `data_cloudflare_device_posture_rules`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_device_posture_rules`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules).
+Refer to the Terraform Registory for docs: [`data_cloudflare_device_posture_rules`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules).
 
 # `dataCloudflareDevicePostureRules` Submodule <a name="`dataCloudflareDevicePostureRules` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_device_posture_rule
 
 ### DataCloudflareDevicePostureRules <a name="DataCloudflareDevicePostureRules" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer"></a>
 
@@ -46,7 +46,7 @@ DataCloudflareDevicePostureRules.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Device Posture Rule. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The device posture rule type. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the Device Posture Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
 
 ---
 
@@ -151,7 +151,7 @@ The device posture rule type.
 
 Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
 
 ---
 
@@ -486,7 +486,7 @@ The construct id used in the generated config for the DataCloudflareDevicePostur
 
 The id of the existing DataCloudflareDevicePostureRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ DataCloudflareDevicePostureRulesConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Device Posture Rule. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.type">type</a></code> | <code>java.lang.String</code> | The device posture rule type. |
 
@@ -882,7 +882,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
 
 ---
 
@@ -894,7 +894,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +911,7 @@ public java.lang.String getName();
 
 Name of the Device Posture Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
 
 ---
 
@@ -927,7 +927,7 @@ The device posture rule type.
 
 Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
 
 ---
 

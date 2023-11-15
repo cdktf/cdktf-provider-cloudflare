@@ -1,6 +1,6 @@
 # `cloudflare_email_routing_catch_all`
 
-Refer to the Terraform Registory for docs: [`cloudflare_email_routing_catch_all`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all).
+Refer to the Terraform Registory for docs: [`cloudflare_email_routing_catch_all`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all).
 
 # `emailRoutingCatchAll` Submodule <a name="`emailRoutingCatchAll` Submodule" id="@cdktf/provider-cloudflare.emailRoutingCatchAll"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_email_routing_catch_all`
 
 ### EmailRoutingCatchAll <a name="EmailRoutingCatchAll" id="@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer"></a>
 
@@ -461,7 +461,7 @@ The construct id used in the generated config for the EmailRoutingCatchAll to im
 
 The id of the existing EmailRoutingCatchAll that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,7 +828,7 @@ public readonly type: string;
 
 Type of supported action. Available values: `drop`, `forward`, `worker`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
 
 ---
 
@@ -842,7 +842,7 @@ public readonly value: string[];
 
 A list with items in the following form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}
 
 ---
 
@@ -872,7 +872,7 @@ const emailRoutingCatchAllConfig: emailRoutingCatchAll.EmailRoutingCatchAllConfi
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.name">name</a></code> | <code>string</code> | Routing rule name. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Routing rule status. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#id EmailRoutingCatchAll#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#id EmailRoutingCatchAll#id}. |
 
 ---
 
@@ -956,7 +956,7 @@ public readonly action: IResolvable | EmailRoutingCatchAllAction[];
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#action EmailRoutingCatchAll#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#action EmailRoutingCatchAll#action}
 
 ---
 
@@ -970,7 +970,7 @@ public readonly matcher: IResolvable | EmailRoutingCatchAllMatcher[];
 
 matcher block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#matcher EmailRoutingCatchAll#matcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#matcher EmailRoutingCatchAll#matcher}
 
 ---
 
@@ -984,7 +984,7 @@ public readonly name: string;
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly enabled: boolean | IResolvable;
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#id EmailRoutingCatchAll#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#id EmailRoutingCatchAll#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ public readonly type: string;
 
 Type of matcher. Available values: `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
 
 ---
 

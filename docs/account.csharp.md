@@ -1,6 +1,6 @@
 # `cloudflare_account`
 
-Refer to the Terraform Registory for docs: [`cloudflare_account`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account).
+Refer to the Terraform Registory for docs: [`cloudflare_account`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account).
 
 # `account` Submodule <a name="`account` Submodule" id="@cdktf/provider-cloudflare.account"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_account`](https://regist
 
 ### Account <a name="Account" id="@cdktf/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ new AccountConfig {
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.name">Name</a></code> | <code>string</code> | The name of the account that is displayed in the Cloudflare dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.enforceTwofactor">EnforceTwofactor</a></code> | <code>object</code> | Whether 2FA is enforced on the account. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account#id Account#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account#id Account#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.type">Type</a></code> | <code>string</code> | Account type. Available values: `enterprise`, `standard`. Defaults to `standard`. **Modifying this attribute will force creation of a new resource.**. |
 
 ---
@@ -845,7 +845,7 @@ public string Name { get; set; }
 
 The name of the account that is displayed in the Cloudflare dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -859,7 +859,7 @@ public object EnforceTwofactor { get; set; }
 
 Whether 2FA is enforced on the account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -871,7 +871,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account#id Account#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account#id Account#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -888,7 +888,7 @@ public string Type { get; set; }
 
 Account type. Available values: `enterprise`, `standard`. Defaults to `standard`. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account#type Account#type}
 
 ---
 

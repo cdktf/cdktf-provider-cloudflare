@@ -73,6 +73,7 @@ The following submodules are available:
 - [hostnameTlsSetting](./hostnameTlsSetting.typescript.md)
 - [hostnameTlsSettingCiphers](./hostnameTlsSettingCiphers.typescript.md)
 - [ipsecTunnel](./ipsecTunnel.typescript.md)
+- [keylessCertificate](./keylessCertificate.typescript.md)
 - [list](./list.typescript.md)
 - [listItem](./listItem.typescript.md)
 - [loadBalancer](./loadBalancer.typescript.md)

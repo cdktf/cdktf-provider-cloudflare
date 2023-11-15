@@ -1,6 +1,6 @@
 # `cloudflare_access_organization`
 
-Refer to the Terraform Registory for docs: [`cloudflare_access_organization`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization).
+Refer to the Terraform Registory for docs: [`cloudflare_access_organization`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization).
 
 # `accessOrganization` Submodule <a name="`accessOrganization` Submodule" id="@cdktf/provider-cloudflare.accessOrganization"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`cloudflare_access_organization`](ht
 
 ### AccessOrganization <a name="AccessOrganization" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization cloudflare_access_organization}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization cloudflare_access_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganization(scope Construct, id *string, config AccessOrganizationConfig) AccessOrganization
 ```
@@ -435,7 +435,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ accessorganization.AccessOrganization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ accessorganization.AccessOrganization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -524,7 +524,7 @@ The construct id used in the generated config for the AccessOrganization to impo
 
 The id of the existing AccessOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationConfig {
 	Connection: interface{},
@@ -1028,7 +1028,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorgan
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.autoRedirectToIdentity">AutoRedirectToIdentity</a></code> | <code>interface{}</code> | When set to true, users skip the identity provider selection step during login. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.customPages">CustomPages</a></code> | <code>interface{}</code> | custom_pages block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#id AccessOrganization#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#id AccessOrganization#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.isUiReadOnly">IsUiReadOnly</a></code> | <code>interface{}</code> | When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.loginDesign">LoginDesign</a></code> | <code>interface{}</code> | login_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.name">Name</a></code> | <code>*string</code> | The name of your Zero Trust organization. |
@@ -1119,7 +1119,7 @@ AuthDomain *string
 
 The unique subdomain assigned to your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
 
 ---
 
@@ -1133,7 +1133,7 @@ AccountId *string
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
 
 ---
 
@@ -1147,7 +1147,7 @@ AutoRedirectToIdentity interface{}
 
 When set to true, users skip the identity provider selection step during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
 
 ---
 
@@ -1161,7 +1161,7 @@ CustomPages interface{}
 
 custom_pages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
 
 ---
 
@@ -1173,7 +1173,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#id AccessOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#id AccessOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1190,7 @@ IsUiReadOnly interface{}
 
 When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
 
 ---
 
@@ -1204,7 +1204,7 @@ LoginDesign interface{}
 
 login_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
 
 ---
 
@@ -1218,7 +1218,7 @@ Name *string
 
 The name of your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#name AccessOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#name AccessOrganization#name}
 
 ---
 
@@ -1234,7 +1234,7 @@ How often a user will be forced to re-authorise.
 
 Must be in the format `48h` or `2h45m`. Defaults to `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#session_duration AccessOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#session_duration AccessOrganization#session_duration}
 
 ---
 
@@ -1248,7 +1248,7 @@ UiReadOnlyToggleReason *string
 
 A description of the reason why the UI read only field is being toggled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
 
 ---
 
@@ -1264,7 +1264,7 @@ The amount of time a user seat is inactive before it expires.
 
 When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count. Must be in the format `300ms` or `2h45m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
 
 ---
 
@@ -1278,7 +1278,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
 
 ---
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationCustomPages {
 	Forbidden: *string,
@@ -1314,7 +1314,7 @@ Forbidden *string
 
 The id of the forbidden page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#forbidden AccessOrganization#forbidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#forbidden AccessOrganization#forbidden}
 
 ---
 
@@ -1328,7 +1328,7 @@ IdentityDenied *string
 
 The id of the identity denied page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#identity_denied AccessOrganization#identity_denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#identity_denied AccessOrganization#identity_denied}
 
 ---
 
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationLoginDesign {
 	BackgroundColor: *string,
@@ -1370,7 +1370,7 @@ BackgroundColor *string
 
 The background color on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#background_color AccessOrganization#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#background_color AccessOrganization#background_color}
 
 ---
 
@@ -1384,7 +1384,7 @@ FooterText *string
 
 The text at the bottom of the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#footer_text AccessOrganization#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#footer_text AccessOrganization#footer_text}
 
 ---
 
@@ -1398,7 +1398,7 @@ HeaderText *string
 
 The text at the top of the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#header_text AccessOrganization#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#header_text AccessOrganization#header_text}
 
 ---
 
@@ -1412,7 +1412,7 @@ LogoPath *string
 
 The URL of the logo on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#logo_path AccessOrganization#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#logo_path AccessOrganization#logo_path}
 
 ---
 
@@ -1426,7 +1426,7 @@ TextColor *string
 
 The text color on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/access_organization#text_color AccessOrganization#text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization#text_color AccessOrganization#text_color}
 
 ---
 
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationCustomPagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessOrganizationCustomPagesList
 ```
@@ -1580,7 +1580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationCustomPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessOrganizationCustomPagesOutputReference
 ```
@@ -1905,7 +1905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationLoginDesignList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessOrganizationLoginDesignList
 ```
@@ -2048,7 +2048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationLoginDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessOrganizationLoginDesignOutputReference
 ```

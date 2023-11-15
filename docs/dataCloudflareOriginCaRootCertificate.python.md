@@ -1,6 +1,6 @@
 # `data_cloudflare_origin_ca_root_certificate`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate).
+Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate).
 
 # `dataCloudflareOriginCaRootCertificate` Submodule <a name="`dataCloudflareOriginCaRootCertificate` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_cert
 
 ### DataCloudflareOriginCaRootCertificate <a name="DataCloudflareOriginCaRootCertificate" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate cloudflare_origin_ca_root_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate cloudflare_origin_ca_root_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer.parameter.algorithm">algorithm</a></code> | <code>str</code> | The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -480,7 +480,7 @@ The construct id used in the generated config for the DataCloudflareOriginCaRoot
 
 The id of the existing DataCloudflareOriginCaRootCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfi
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.algorithm">algorithm</a></code> | <code>str</code> | The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
 
 ---
 
@@ -824,7 +824,7 @@ algorithm: str
 
 The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
 
 ---
 
@@ -836,7 +836,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
