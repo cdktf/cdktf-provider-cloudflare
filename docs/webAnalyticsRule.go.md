@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 webanalyticsrule.NewWebAnalyticsRule(scope Construct, id *string, config WebAnalyticsRuleConfig) WebAnalyticsRule
 ```
@@ -359,7 +359,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 webanalyticsrule.WebAnalyticsRule_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 webanalyticsrule.WebAnalyticsRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ webanalyticsrule.WebAnalyticsRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 webanalyticsrule.WebAnalyticsRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ webanalyticsrule.WebAnalyticsRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 webanalyticsrule.WebAnalyticsRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 &webanalyticsrule.WebAnalyticsRuleConfig {
 	Connection: interface{},
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalytic
 	Paths: *[]*string,
 	RulesetId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.webAnalyticsRule.WebAnalyticsRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeouts,
 }
 ```
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 &webanalyticsrule.WebAnalyticsRuleTimeouts {
 	Create: *string,
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/webanalyticsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticsrule"
 
 webanalyticsrule.NewWebAnalyticsRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebAnalyticsRuleTimeoutsOutputReference
 ```

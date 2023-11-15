@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonecachevariants"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachevariants"
 
 zonecachevariants.NewZoneCacheVariants(scope Construct, id *string, config ZoneCacheVariantsConfig) ZoneCacheVariants
 ```
@@ -416,7 +416,7 @@ func ResetWebp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonecachevariants"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachevariants"
 
 zonecachevariants.ZoneCacheVariants_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonecachevariants"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachevariants"
 
 zonecachevariants.ZoneCacheVariants_IsTerraformElement(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ zonecachevariants.ZoneCacheVariants_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonecachevariants"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachevariants"
 
 zonecachevariants.ZoneCacheVariants_IsTerraformResource(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ zonecachevariants.ZoneCacheVariants_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonecachevariants"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachevariants"
 
 zonecachevariants.ZoneCacheVariants_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/zonecachevariants"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachevariants"
 
 &zonecachevariants.ZoneCacheVariantsConfig {
 	Connection: interface{},
