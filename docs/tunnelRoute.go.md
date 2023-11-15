@@ -1,6 +1,6 @@
 # `cloudflare_tunnel_route`
 
-Refer to the Terraform Registory for docs: [`cloudflare_tunnel_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route).
+Refer to the Terraform Registory for docs: [`cloudflare_tunnel_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route).
 
 # `tunnelRoute` Submodule <a name="`tunnelRoute` Submodule" id="@cdktf/provider-cloudflare.tunnelRoute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_tunnel_route`](https://r
 
 ### TunnelRoute <a name="TunnelRoute" id="@cdktf/provider-cloudflare.tunnelRoute.TunnelRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route cloudflare_tunnel_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route cloudflare_tunnel_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelRoute.TunnelRoute.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the TunnelRoute to import.
 
 The id of the existing TunnelRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelroute
 | <code><a href="#@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig.property.network">Network</a></code> | <code>*string</code> | The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig.property.tunnelId">TunnelId</a></code> | <code>*string</code> | The ID of the tunnel that will service the tunnel route. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig.property.comment">Comment</a></code> | <code>*string</code> | Description of the tunnel route. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#id TunnelRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#id TunnelRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelRoute.TunnelRouteConfig.property.virtualNetworkId">VirtualNetworkId</a></code> | <code>*string</code> | The ID of the virtual network for which this route is being added; |
 
 ---
@@ -893,7 +893,7 @@ AccountId *string
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#account_id TunnelRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#account_id TunnelRoute#account_id}
 
 ---
 
@@ -907,7 +907,7 @@ Network *string
 
 The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#network TunnelRoute#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#network TunnelRoute#network}
 
 ---
 
@@ -921,7 +921,7 @@ TunnelId *string
 
 The ID of the tunnel that will service the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#tunnel_id TunnelRoute#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#tunnel_id TunnelRoute#tunnel_id}
 
 ---
 
@@ -935,7 +935,7 @@ Comment *string
 
 Description of the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#comment TunnelRoute#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#comment TunnelRoute#comment}
 
 ---
 
@@ -947,7 +947,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#id TunnelRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#id TunnelRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ The ID of the virtual network for which this route is being added;
 
 uses the default virtual network of the account if none is provided. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_route#virtual_network_id TunnelRoute#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route#virtual_network_id TunnelRoute#virtual_network_id}
 
 ---
 

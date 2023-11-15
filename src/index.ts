@@ -55,6 +55,7 @@ export * as healthcheck from './healthcheck';
 export * as hostnameTlsSetting from './hostname-tls-setting';
 export * as hostnameTlsSettingCiphers from './hostname-tls-setting-ciphers';
 export * as ipsecTunnel from './ipsec-tunnel';
+export * as keylessCertificate from './keyless-certificate';
 export * as list from './list';
 export * as listItem from './list-item';
 export * as loadBalancer from './load-balancer';

@@ -55,6 +55,7 @@ Object.defineProperty(exports, 'healthcheck', { get: function () { return requir
 Object.defineProperty(exports, 'hostnameTlsSetting', { get: function () { return require('./hostname-tls-setting'); } });
 Object.defineProperty(exports, 'hostnameTlsSettingCiphers', { get: function () { return require('./hostname-tls-setting-ciphers'); } });
 Object.defineProperty(exports, 'ipsecTunnel', { get: function () { return require('./ipsec-tunnel'); } });
+Object.defineProperty(exports, 'keylessCertificate', { get: function () { return require('./keyless-certificate'); } });
 Object.defineProperty(exports, 'list', { get: function () { return require('./list'); } });
 Object.defineProperty(exports, 'listItem', { get: function () { return require('./list-item'); } });
 Object.defineProperty(exports, 'loadBalancer', { get: function () { return require('./load-balancer'); } });

@@ -1,3 +1,3 @@
 # `cloudflare_list`
 
-Refer to the Terraform Registory for docs: [`cloudflare_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/list).
+Refer to the Terraform Registory for docs: [`cloudflare_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/list).

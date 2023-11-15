@@ -1,6 +1,6 @@
 # `cloudflare_address_map`
 
-Refer to the Terraform Registory for docs: [`cloudflare_address_map`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map).
+Refer to the Terraform Registory for docs: [`cloudflare_address_map`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map).
 
 # `addressMap` Submodule <a name="`addressMap` Submodule" id="@cdktf/provider-cloudflare.addressMap"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_address_map`](https://re
 
 ### AddressMap <a name="AddressMap" id="@cdktf/provider-cloudflare.addressMap.AddressMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map cloudflare_address_map}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map cloudflare_address_map}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.addressMap.AddressMap.Initializer"></a>
 
@@ -482,7 +482,7 @@ The construct id used in the generated config for the AddressMap to import.
 
 The id of the existing AddressMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ new AddressMapConfig {
 | <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.enabled">Enabled</a></code> | <code>object</code> | Whether the Address Map is enabled or not. |
 | <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.defaultSni">DefaultSni</a></code> | <code>string</code> | If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map. |
 | <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.description">Description</a></code> | <code>string</code> | Description of the address map. |
-| <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#id AddressMap#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#id AddressMap#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.ips">Ips</a></code> | <code>object</code> | ips block. |
 | <code><a href="#@cdktf/provider-cloudflare.addressMap.AddressMapConfig.property.memberships">Memberships</a></code> | <code>object</code> | memberships block. |
 
@@ -979,7 +979,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#account_id AddressMap#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#account_id AddressMap#account_id}
 
 ---
 
@@ -993,7 +993,7 @@ public object Enabled { get; set; }
 
 Whether the Address Map is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#enabled AddressMap#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#enabled AddressMap#enabled}
 
 ---
 
@@ -1007,7 +1007,7 @@ public string DefaultSni { get; set; }
 
 If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#default_sni AddressMap#default_sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#default_sni AddressMap#default_sni}
 
 ---
 
@@ -1021,7 +1021,7 @@ public string Description { get; set; }
 
 Description of the address map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#description AddressMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#description AddressMap#description}
 
 ---
 
@@ -1033,7 +1033,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#id AddressMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#id AddressMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1050,7 +1050,7 @@ public object Ips { get; set; }
 
 ips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#ips AddressMap#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#ips AddressMap#ips}
 
 ---
 
@@ -1064,7 +1064,7 @@ public object Memberships { get; set; }
 
 memberships block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#memberships AddressMap#memberships}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#memberships AddressMap#memberships}
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Ip { get; set; }
 
 An IPv4 or IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#ip AddressMap#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#ip AddressMap#ip}
 
 ---
 
@@ -1134,7 +1134,7 @@ public string Identifier { get; set; }
 
 Identifier of the account or zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#identifier AddressMap#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#identifier AddressMap#identifier}
 
 ---
 
@@ -1148,7 +1148,7 @@ public string Kind { get; set; }
 
 The type of the membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/address_map#kind AddressMap#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map#kind AddressMap#kind}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_cloudflare_tunnel`
 
-Refer to the Terraform Registory for docs: [`data_cloudflare_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel).
+Refer to the Terraform Registory for docs: [`data_cloudflare_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel).
 
 # `dataCloudflareTunnel` Submodule <a name="`dataCloudflareTunnel` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareTunnel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_cloudflare_tunnel`](https://re
 
 ### DataCloudflareTunnel <a name="DataCloudflareTunnel" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel cloudflare_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel cloudflare_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the tunnel. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
 
 ---
 
@@ -438,7 +438,7 @@ The construct id used in the generated config for the DataCloudflareTunnel to im
 
 The id of the existing DataCloudflareTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
 
 ---
 
@@ -833,7 +833,7 @@ public java.lang.String getName();
 
 Name of the tunnel. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
 
 ---
 

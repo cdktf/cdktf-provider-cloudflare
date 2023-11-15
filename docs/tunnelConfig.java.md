@@ -1,6 +1,6 @@
 # `cloudflare_tunnel_config`
 
-Refer to the Terraform Registory for docs: [`cloudflare_tunnel_config`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config).
+Refer to the Terraform Registory for docs: [`cloudflare_tunnel_config`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config).
 
 # `tunnelConfig` Submodule <a name="`tunnelConfig` Submodule" id="@cdktf/provider-cloudflare.tunnelConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`cloudflare_tunnel_config`](https://
 
 ### TunnelConfigA <a name="TunnelConfigA" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config cloudflare_tunnel_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config cloudflare_tunnel_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer"></a>
 
@@ -48,7 +48,7 @@ TunnelConfigA.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig">TunnelConfigConfig</a></code> | config block. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer.parameter.tunnelId">tunnelId</a></code> | <code>java.lang.String</code> | Identifier of the Tunnel to target for this configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#id TunnelConfigA#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#id TunnelConfigA#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#account_id TunnelConfigA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#account_id TunnelConfigA#account_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#config TunnelConfigA#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#config TunnelConfigA#config}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier of the Tunnel to target for this configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#tunnel_id TunnelConfigA#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#tunnel_id TunnelConfigA#tunnel_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#id TunnelConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#id TunnelConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -546,7 +546,7 @@ The construct id used in the generated config for the TunnelConfigA to import.
 
 The id of the existing TunnelConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,7 +869,7 @@ TunnelConfigAConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig">TunnelConfigConfig</a></code> | config block. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig.property.tunnelId">tunnelId</a></code> | <code>java.lang.String</code> | Identifier of the Tunnel to target for this configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#id TunnelConfigA#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#id TunnelConfigA#id}. |
 
 ---
 
@@ -953,7 +953,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#account_id TunnelConfigA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#account_id TunnelConfigA#account_id}
 
 ---
 
@@ -967,7 +967,7 @@ public TunnelConfigConfig getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#config TunnelConfigA#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#config TunnelConfigA#config}
 
 ---
 
@@ -981,7 +981,7 @@ public java.lang.String getTunnelId();
 
 Identifier of the Tunnel to target for this configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#tunnel_id TunnelConfigA#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#tunnel_id TunnelConfigA#tunnel_id}
 
 ---
 
@@ -993,7 +993,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#id TunnelConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#id TunnelConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1035,7 @@ public java.lang.Object getIngressRule();
 
 ingress_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ingress_rule TunnelConfigA#ingress_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ingress_rule TunnelConfigA#ingress_rule}
 
 ---
 
@@ -1049,7 +1049,7 @@ public TunnelConfigConfigOriginRequest getOriginRequest();
 
 origin_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#origin_request TunnelConfigA#origin_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#origin_request TunnelConfigA#origin_request}
 
 ---
 
@@ -1063,7 +1063,7 @@ public TunnelConfigConfigWarpRouting getWarpRouting();
 
 warp_routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#warp_routing TunnelConfigA#warp_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#warp_routing TunnelConfigA#warp_routing}
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getService();
 
 Name of the service to which the request will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#service TunnelConfigA#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#service TunnelConfigA#service}
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getHostname();
 
 Hostname to match the incoming request with. If the hostname matches, the request will be sent to the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#hostname TunnelConfigA#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#hostname TunnelConfigA#hostname}
 
 ---
 
@@ -1131,7 +1131,7 @@ public TunnelConfigConfigIngressRuleOriginRequest getOriginRequest();
 
 origin_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#origin_request TunnelConfigA#origin_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#origin_request TunnelConfigA#origin_request}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.String getPath();
 
 Path of the incoming request. If the path matches, the request will be sent to the local service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#path TunnelConfigA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#path TunnelConfigA#path}
 
 ---
 
@@ -1219,7 +1219,7 @@ public TunnelConfigConfigIngressRuleOriginRequestAccess getAccess();
 
 access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#access TunnelConfigA#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#access TunnelConfigA#access}
 
 ---
 
@@ -1233,7 +1233,7 @@ public java.lang.Object getBastionMode();
 
 Runs as jump host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#bastion_mode TunnelConfigA#bastion_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#bastion_mode TunnelConfigA#bastion_mode}
 
 ---
 
@@ -1249,7 +1249,7 @@ Path to the certificate authority (CA) for the certificate of your origin.
 
 This option should be used only if your certificate is not signed by Cloudflare. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ca_pool TunnelConfigA#ca_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ca_pool TunnelConfigA#ca_pool}
 
 ---
 
@@ -1265,7 +1265,7 @@ Timeout for establishing a new TCP connection to your origin server.
 
 This excludes the time taken to establish TLS, which is controlled by `tlsTimeout`. Defaults to `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#connect_timeout TunnelConfigA#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#connect_timeout TunnelConfigA#connect_timeout}
 
 ---
 
@@ -1279,7 +1279,7 @@ public java.lang.Object getDisableChunkedEncoding();
 
 Disables chunked transfer encoding. Useful if you are running a Web Server Gateway Interface (WSGI) server. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#disable_chunked_encoding TunnelConfigA#disable_chunked_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#disable_chunked_encoding TunnelConfigA#disable_chunked_encoding}
 
 ---
 
@@ -1293,7 +1293,7 @@ public java.lang.Object getHttp2Origin();
 
 Enables HTTP/2 support for the origin connection. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#http2_origin TunnelConfigA#http2_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#http2_origin TunnelConfigA#http2_origin}
 
 ---
 
@@ -1307,7 +1307,7 @@ public java.lang.String getHttpHostHeader();
 
 Sets the HTTP Host header on requests sent to the local service. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#http_host_header TunnelConfigA#http_host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#http_host_header TunnelConfigA#http_host_header}
 
 ---
 
@@ -1321,7 +1321,7 @@ public java.lang.Object getIpRules();
 
 ip_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ip_rules TunnelConfigA#ip_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ip_rules TunnelConfigA#ip_rules}
 
 ---
 
@@ -1337,7 +1337,7 @@ Maximum number of idle keepalive connections between Tunnel and your origin.
 
 This does not restrict the total number of concurrent connections. Defaults to `100`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#keep_alive_connections TunnelConfigA#keep_alive_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#keep_alive_connections TunnelConfigA#keep_alive_connections}
 
 ---
 
@@ -1351,7 +1351,7 @@ public java.lang.String getKeepAliveTimeout();
 
 Timeout after which an idle keepalive connection can be discarded. Defaults to `1m30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#keep_alive_timeout TunnelConfigA#keep_alive_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#keep_alive_timeout TunnelConfigA#keep_alive_timeout}
 
 ---
 
@@ -1367,7 +1367,7 @@ Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local 
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#no_happy_eyeballs TunnelConfigA#no_happy_eyeballs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#no_happy_eyeballs TunnelConfigA#no_happy_eyeballs}
 
 ---
 
@@ -1383,7 +1383,7 @@ Disables TLS verification of the certificate presented by your origin.
 
 Will allow any certificate from the origin to be accepted. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#no_tls_verify TunnelConfigA#no_tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#no_tls_verify TunnelConfigA#no_tls_verify}
 
 ---
 
@@ -1397,7 +1397,7 @@ public java.lang.String getOriginServerName();
 
 Hostname that cloudflared should expect from your origin server certificate. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#origin_server_name TunnelConfigA#origin_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#origin_server_name TunnelConfigA#origin_server_name}
 
 ---
 
@@ -1413,7 +1413,7 @@ cloudflared starts a proxy server to translate HTTP traffic into TCP when proxyi
 
 This configures the listen address for that proxy. Defaults to `127.0.0.1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#proxy_address TunnelConfigA#proxy_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#proxy_address TunnelConfigA#proxy_address}
 
 ---
 
@@ -1429,7 +1429,7 @@ cloudflared starts a proxy server to translate HTTP traffic into TCP when proxyi
 
 This configures the listen port for that proxy. If set to zero, an unused port will randomly be chosen. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#proxy_port TunnelConfigA#proxy_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#proxy_port TunnelConfigA#proxy_port}
 
 ---
 
@@ -1445,7 +1445,7 @@ cloudflared starts a proxy server to translate HTTP traffic into TCP when proxyi
 
 This configures what type of proxy will be started. Available values: `""`, `socks`. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#proxy_type TunnelConfigA#proxy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#proxy_type TunnelConfigA#proxy_type}
 
 ---
 
@@ -1461,7 +1461,7 @@ The timeout after which a TCP keepalive packet is sent on a connection between T
 
 Defaults to `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#tcp_keep_alive TunnelConfigA#tcp_keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#tcp_keep_alive TunnelConfigA#tcp_keep_alive}
 
 ---
 
@@ -1477,7 +1477,7 @@ Timeout for completing a TLS handshake to your origin server, if you have chosen
 
 Defaults to `10s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#tls_timeout TunnelConfigA#tls_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#tls_timeout TunnelConfigA#tls_timeout}
 
 ---
 
@@ -1516,7 +1516,7 @@ public java.util.List<java.lang.String> getAudTag();
 
 Audience tags of the access rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#aud_tag TunnelConfigA#aud_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#aud_tag TunnelConfigA#aud_tag}
 
 ---
 
@@ -1530,7 +1530,7 @@ public java.lang.Object getRequired();
 
 Whether the access rule is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#required TunnelConfigA#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#required TunnelConfigA#required}
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.String getTeamName();
 
 Name of the team to which the access rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#team_name TunnelConfigA#team_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#team_name TunnelConfigA#team_name}
 
 ---
 
@@ -1583,7 +1583,7 @@ public java.lang.Object getAllow();
 
 Whether to allow the IP prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#allow TunnelConfigA#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#allow TunnelConfigA#allow}
 
 ---
 
@@ -1597,7 +1597,7 @@ public java.util.List<java.lang.Number> getPorts();
 
 Ports to use within the IP rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ports TunnelConfigA#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ports TunnelConfigA#ports}
 
 ---
 
@@ -1611,7 +1611,7 @@ public java.lang.String getPrefix();
 
 IP rule prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#prefix TunnelConfigA#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#prefix TunnelConfigA#prefix}
 
 ---
 
@@ -1685,7 +1685,7 @@ public TunnelConfigConfigOriginRequestAccess getAccess();
 
 access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#access TunnelConfigA#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#access TunnelConfigA#access}
 
 ---
 
@@ -1699,7 +1699,7 @@ public java.lang.Object getBastionMode();
 
 Runs as jump host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#bastion_mode TunnelConfigA#bastion_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#bastion_mode TunnelConfigA#bastion_mode}
 
 ---
 
@@ -1715,7 +1715,7 @@ Path to the certificate authority (CA) for the certificate of your origin.
 
 This option should be used only if your certificate is not signed by Cloudflare. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ca_pool TunnelConfigA#ca_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ca_pool TunnelConfigA#ca_pool}
 
 ---
 
@@ -1731,7 +1731,7 @@ Timeout for establishing a new TCP connection to your origin server.
 
 This excludes the time taken to establish TLS, which is controlled by `tlsTimeout`. Defaults to `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#connect_timeout TunnelConfigA#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#connect_timeout TunnelConfigA#connect_timeout}
 
 ---
 
@@ -1745,7 +1745,7 @@ public java.lang.Object getDisableChunkedEncoding();
 
 Disables chunked transfer encoding. Useful if you are running a Web Server Gateway Interface (WSGI) server. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#disable_chunked_encoding TunnelConfigA#disable_chunked_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#disable_chunked_encoding TunnelConfigA#disable_chunked_encoding}
 
 ---
 
@@ -1759,7 +1759,7 @@ public java.lang.Object getHttp2Origin();
 
 Enables HTTP/2 support for the origin connection. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#http2_origin TunnelConfigA#http2_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#http2_origin TunnelConfigA#http2_origin}
 
 ---
 
@@ -1773,7 +1773,7 @@ public java.lang.String getHttpHostHeader();
 
 Sets the HTTP Host header on requests sent to the local service. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#http_host_header TunnelConfigA#http_host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#http_host_header TunnelConfigA#http_host_header}
 
 ---
 
@@ -1787,7 +1787,7 @@ public java.lang.Object getIpRules();
 
 ip_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ip_rules TunnelConfigA#ip_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ip_rules TunnelConfigA#ip_rules}
 
 ---
 
@@ -1803,7 +1803,7 @@ Maximum number of idle keepalive connections between Tunnel and your origin.
 
 This does not restrict the total number of concurrent connections. Defaults to `100`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#keep_alive_connections TunnelConfigA#keep_alive_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#keep_alive_connections TunnelConfigA#keep_alive_connections}
 
 ---
 
@@ -1817,7 +1817,7 @@ public java.lang.String getKeepAliveTimeout();
 
 Timeout after which an idle keepalive connection can be discarded. Defaults to `1m30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#keep_alive_timeout TunnelConfigA#keep_alive_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#keep_alive_timeout TunnelConfigA#keep_alive_timeout}
 
 ---
 
@@ -1833,7 +1833,7 @@ Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local 
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#no_happy_eyeballs TunnelConfigA#no_happy_eyeballs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#no_happy_eyeballs TunnelConfigA#no_happy_eyeballs}
 
 ---
 
@@ -1849,7 +1849,7 @@ Disables TLS verification of the certificate presented by your origin.
 
 Will allow any certificate from the origin to be accepted. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#no_tls_verify TunnelConfigA#no_tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#no_tls_verify TunnelConfigA#no_tls_verify}
 
 ---
 
@@ -1863,7 +1863,7 @@ public java.lang.String getOriginServerName();
 
 Hostname that cloudflared should expect from your origin server certificate. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#origin_server_name TunnelConfigA#origin_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#origin_server_name TunnelConfigA#origin_server_name}
 
 ---
 
@@ -1879,7 +1879,7 @@ cloudflared starts a proxy server to translate HTTP traffic into TCP when proxyi
 
 This configures the listen address for that proxy. Defaults to `127.0.0.1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#proxy_address TunnelConfigA#proxy_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#proxy_address TunnelConfigA#proxy_address}
 
 ---
 
@@ -1895,7 +1895,7 @@ cloudflared starts a proxy server to translate HTTP traffic into TCP when proxyi
 
 This configures the listen port for that proxy. If set to zero, an unused port will randomly be chosen. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#proxy_port TunnelConfigA#proxy_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#proxy_port TunnelConfigA#proxy_port}
 
 ---
 
@@ -1911,7 +1911,7 @@ cloudflared starts a proxy server to translate HTTP traffic into TCP when proxyi
 
 This configures what type of proxy will be started. Available values: `""`, `socks`. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#proxy_type TunnelConfigA#proxy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#proxy_type TunnelConfigA#proxy_type}
 
 ---
 
@@ -1927,7 +1927,7 @@ The timeout after which a TCP keepalive packet is sent on a connection between T
 
 Defaults to `30s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#tcp_keep_alive TunnelConfigA#tcp_keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#tcp_keep_alive TunnelConfigA#tcp_keep_alive}
 
 ---
 
@@ -1943,7 +1943,7 @@ Timeout for completing a TLS handshake to your origin server, if you have chosen
 
 Defaults to `10s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#tls_timeout TunnelConfigA#tls_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#tls_timeout TunnelConfigA#tls_timeout}
 
 ---
 
@@ -1982,7 +1982,7 @@ public java.util.List<java.lang.String> getAudTag();
 
 Audience tags of the access rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#aud_tag TunnelConfigA#aud_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#aud_tag TunnelConfigA#aud_tag}
 
 ---
 
@@ -1996,7 +1996,7 @@ public java.lang.Object getRequired();
 
 Whether the access rule is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#required TunnelConfigA#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#required TunnelConfigA#required}
 
 ---
 
@@ -2010,7 +2010,7 @@ public java.lang.String getTeamName();
 
 Name of the team to which the access rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#team_name TunnelConfigA#team_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#team_name TunnelConfigA#team_name}
 
 ---
 
@@ -2049,7 +2049,7 @@ public java.lang.Object getAllow();
 
 Whether to allow the IP prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#allow TunnelConfigA#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#allow TunnelConfigA#allow}
 
 ---
 
@@ -2063,7 +2063,7 @@ public java.util.List<java.lang.Number> getPorts();
 
 Ports to use within the IP rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#ports TunnelConfigA#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#ports TunnelConfigA#ports}
 
 ---
 
@@ -2077,7 +2077,7 @@ public java.lang.String getPrefix();
 
 IP rule prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#prefix TunnelConfigA#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#prefix TunnelConfigA#prefix}
 
 ---
 
@@ -2112,7 +2112,7 @@ public java.lang.Object getEnabled();
 
 Whether WARP routing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel_config#enabled TunnelConfigA#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_config#enabled TunnelConfigA#enabled}
 
 ---
 
