@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.NewDataCloudflareZones(scope Construct, id *string, config DataCloudflareZonesConfig) DataCloudflareZones
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.DataCloudflareZones_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.DataCloudflareZones_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datacloudflarezones.DataCloudflareZones_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.DataCloudflareZones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflarezones.DataCloudflareZones_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.DataCloudflareZones_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 &datacloudflarezones.DataCloudflareZonesConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarez
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZones.DataCloudflareZonesFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.dataCloudflareZones.DataCloudflareZonesFilter,
 	Id: *string,
 }
 ```
@@ -748,7 +748,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 &datacloudflarezones.DataCloudflareZonesFilter {
 	AccountId: *string,
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 &datacloudflarezones.DataCloudflareZonesZones {
 
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarez
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.NewDataCloudflareZonesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZonesFilterOutputReference
 ```
@@ -1304,7 +1304,7 @@ func InternalValue() DataCloudflareZonesFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.NewDataCloudflareZonesZonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZonesZonesList
 ```
@@ -1436,7 +1436,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezones"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezones"
 
 datacloudflarezones.NewDataCloudflareZonesZonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZonesZonesOutputReference
 ```
