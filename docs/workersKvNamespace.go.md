@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerskvnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskvnamespace"
 
 workerskvnamespace.NewWorkersKvNamespace(scope Construct, id *string, config WorkersKvNamespaceConfig) WorkersKvNamespace
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerskvnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskvnamespace"
 
 workerskvnamespace.WorkersKvNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerskvnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskvnamespace"
 
 workerskvnamespace.WorkersKvNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ workerskvnamespace.WorkersKvNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerskvnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskvnamespace"
 
 workerskvnamespace.WorkersKvNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ workerskvnamespace.WorkersKvNamespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerskvnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskvnamespace"
 
 workerskvnamespace.WorkersKvNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/workerskvnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskvnamespace"
 
 &workerskvnamespace.WorkersKvNamespaceConfig {
 	Connection: interface{},
