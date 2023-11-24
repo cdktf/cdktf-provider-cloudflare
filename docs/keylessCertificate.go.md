@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/keylesscertificate"
 
 keylesscertificate.NewKeylessCertificate(scope Construct, id *string, config KeylessCertificateConfig) KeylessCertificate
 ```
@@ -367,7 +367,7 @@ func ResetPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ keylesscertificate.KeylessCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ keylesscertificate.KeylessCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/keylesscertificate"
 
 &keylesscertificate.KeylessCertificateConfig {
 	Connection: interface{},
