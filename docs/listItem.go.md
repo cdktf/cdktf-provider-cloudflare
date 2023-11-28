@@ -1,7 +1,3 @@
-# `cloudflare_list_item`
-
-Refer to the Terraform Registory for docs: [`cloudflare_list_item`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/list_item).
-
 # `listItem` Submodule <a name="`listItem` Submodule" id="@cdktf/provider-cloudflare.listItem"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

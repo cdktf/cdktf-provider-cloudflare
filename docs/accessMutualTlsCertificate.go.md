@@ -1,7 +1,3 @@
-# `cloudflare_access_mutual_tls_certificate`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_mutual_tls_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_mutual_tls_certificate).
-
 # `accessMutualTlsCertificate` Submodule <a name="`accessMutualTlsCertificate` Submodule" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

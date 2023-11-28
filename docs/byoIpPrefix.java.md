@@ -1,7 +1,3 @@
-# `cloudflare_byo_ip_prefix`
-
-Refer to the Terraform Registory for docs: [`cloudflare_byo_ip_prefix`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/byo_ip_prefix).
-
 # `byoIpPrefix` Submodule <a name="`byoIpPrefix` Submodule" id="@cdktf/provider-cloudflare.byoIpPrefix"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

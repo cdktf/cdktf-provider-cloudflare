@@ -1,7 +1,3 @@
-# `data_cloudflare_ip_ranges`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_ip_ranges`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/ip_ranges).
-
 # `dataCloudflareIpRanges` Submodule <a name="`dataCloudflareIpRanges` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

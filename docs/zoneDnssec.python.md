@@ -1,7 +1,3 @@
-# `cloudflare_zone_dnssec`
-
-Refer to the Terraform Registory for docs: [`cloudflare_zone_dnssec`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/zone_dnssec).
-
 # `zoneDnssec` Submodule <a name="`zoneDnssec` Submodule" id="@cdktf/provider-cloudflare.zoneDnssec"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

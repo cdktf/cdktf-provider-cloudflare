@@ -1,7 +1,3 @@
-# `cloudflare_bot_management`
-
-Refer to the Terraform Registory for docs: [`cloudflare_bot_management`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/bot_management).
-
 # `botManagement` Submodule <a name="`botManagement` Submodule" id="@cdktf/provider-cloudflare.botManagement"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `cloudflare_tunnel_route`
-
-Refer to the Terraform Registory for docs: [`cloudflare_tunnel_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel_route).
-
 # `tunnelRoute` Submodule <a name="`tunnelRoute` Submodule" id="@cdktf/provider-cloudflare.tunnelRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

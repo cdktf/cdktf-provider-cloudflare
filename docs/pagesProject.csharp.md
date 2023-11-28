@@ -1,7 +1,3 @@
-# `cloudflare_pages_project`
-
-Refer to the Terraform Registory for docs: [`cloudflare_pages_project`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project).
-
 # `pagesProject` Submodule <a name="`pagesProject` Submodule" id="@cdktf/provider-cloudflare.pagesProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `cloudflare_worker_route`
-
-Refer to the Terraform Registory for docs: [`cloudflare_worker_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/worker_route).
-
 # `workerRoute` Submodule <a name="`workerRoute` Submodule" id="@cdktf/provider-cloudflare.workerRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

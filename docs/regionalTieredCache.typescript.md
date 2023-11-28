@@ -1,7 +1,3 @@
-# `cloudflare_regional_tiered_cache`
-
-Refer to the Terraform Registory for docs: [`cloudflare_regional_tiered_cache`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/regional_tiered_cache).
-
 # `regionalTieredCache` Submodule <a name="`regionalTieredCache` Submodule" id="@cdktf/provider-cloudflare.regionalTieredCache"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

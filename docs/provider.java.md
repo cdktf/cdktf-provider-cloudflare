@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`cloudflare`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-cloudflare.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

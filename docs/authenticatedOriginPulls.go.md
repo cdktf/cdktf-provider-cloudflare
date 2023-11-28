@@ -1,7 +1,3 @@
-# `cloudflare_authenticated_origin_pulls`
-
-Refer to the Terraform Registory for docs: [`cloudflare_authenticated_origin_pulls`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/authenticated_origin_pulls).
-
 # `authenticatedOriginPulls` Submodule <a name="`authenticatedOriginPulls` Submodule" id="@cdktf/provider-cloudflare.authenticatedOriginPulls"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

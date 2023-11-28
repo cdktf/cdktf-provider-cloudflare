@@ -1,7 +1,3 @@
-# `cloudflare_workers_kv`
-
-Refer to the Terraform Registory for docs: [`cloudflare_workers_kv`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/workers_kv).
-
 # `workersKv` Submodule <a name="`workersKv` Submodule" id="@cdktf/provider-cloudflare.workersKv"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

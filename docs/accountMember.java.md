@@ -1,7 +1,3 @@
-# `cloudflare_account_member`
-
-Refer to the Terraform Registory for docs: [`cloudflare_account_member`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/account_member).
-
 # `accountMember` Submodule <a name="`accountMember` Submodule" id="@cdktf/provider-cloudflare.accountMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

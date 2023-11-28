@@ -1,7 +1,3 @@
-# `data_cloudflare_lists`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_lists`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/lists).
-
 # `dataCloudflareLists` Submodule <a name="`dataCloudflareLists` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareLists"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

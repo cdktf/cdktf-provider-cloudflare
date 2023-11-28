@@ -1,7 +1,3 @@
-# `cloudflare_zone_hold`
-
-Refer to the Terraform Registory for docs: [`cloudflare_zone_hold`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/zone_hold).
-
 # `zoneHold` Submodule <a name="`zoneHold` Submodule" id="@cdktf/provider-cloudflare.zoneHold"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

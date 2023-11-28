@@ -1,7 +1,3 @@
-# `cloudflare_certificate_pack`
-
-Refer to the Terraform Registory for docs: [`cloudflare_certificate_pack`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/certificate_pack).
-
 # `certificatePack` Submodule <a name="`certificatePack` Submodule" id="@cdktf/provider-cloudflare.certificatePack"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

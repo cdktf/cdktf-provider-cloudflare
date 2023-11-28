@@ -1,7 +1,3 @@
-# `data_cloudflare_access_application`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_access_application`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/access_application).
-
 # `dataCloudflareAccessApplication` Submodule <a name="`dataCloudflareAccessApplication` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareAccessApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

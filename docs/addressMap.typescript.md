@@ -1,7 +1,3 @@
-# `cloudflare_address_map`
-
-Refer to the Terraform Registory for docs: [`cloudflare_address_map`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/address_map).
-
 # `addressMap` Submodule <a name="`addressMap` Submodule" id="@cdktf/provider-cloudflare.addressMap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

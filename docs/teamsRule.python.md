@@ -1,7 +1,3 @@
-# `cloudflare_teams_rule`
-
-Refer to the Terraform Registory for docs: [`cloudflare_teams_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/teams_rule).
-
 # `teamsRule` Submodule <a name="`teamsRule` Submodule" id="@cdktf/provider-cloudflare.teamsRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

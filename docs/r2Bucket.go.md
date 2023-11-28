@@ -1,7 +1,3 @@
-# `cloudflare_r2_bucket`
-
-Refer to the Terraform Registory for docs: [`cloudflare_r2_bucket`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/r2_bucket).
-
 # `r2Bucket` Submodule <a name="`r2Bucket` Submodule" id="@cdktf/provider-cloudflare.r2Bucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

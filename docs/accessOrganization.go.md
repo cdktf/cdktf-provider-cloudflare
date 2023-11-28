@@ -1,7 +1,3 @@
-# `cloudflare_access_organization`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_organization`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization).
-
 # `accessOrganization` Submodule <a name="`accessOrganization` Submodule" id="@cdktf/provider-cloudflare.accessOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

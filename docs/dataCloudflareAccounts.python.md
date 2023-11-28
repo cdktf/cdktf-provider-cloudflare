@@ -1,7 +1,3 @@
-# `data_cloudflare_accounts`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_accounts`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/accounts).
-
 # `dataCloudflareAccounts` Submodule <a name="`dataCloudflareAccounts` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareAccounts"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

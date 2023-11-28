@@ -1,7 +1,3 @@
-# `data_cloudflare_account_roles`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_account_roles`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/account_roles).
-
 # `dataCloudflareAccountRoles` Submodule <a name="`dataCloudflareAccountRoles` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

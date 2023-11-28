@@ -1,7 +1,3 @@
-# `cloudflare_regional_hostname`
-
-Refer to the Terraform Registory for docs: [`cloudflare_regional_hostname`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/regional_hostname).
-
 # `regionalHostname` Submodule <a name="`regionalHostname` Submodule" id="@cdktf/provider-cloudflare.regionalHostname"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

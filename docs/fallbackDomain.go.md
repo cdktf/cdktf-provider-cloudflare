@@ -1,7 +1,3 @@
-# `cloudflare_fallback_domain`
-
-Refer to the Terraform Registory for docs: [`cloudflare_fallback_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/fallback_domain).
-
 # `fallbackDomain` Submodule <a name="`fallbackDomain` Submodule" id="@cdktf/provider-cloudflare.fallbackDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

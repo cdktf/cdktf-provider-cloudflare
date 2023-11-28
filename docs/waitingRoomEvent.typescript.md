@@ -1,7 +1,3 @@
-# `cloudflare_waiting_room_event`
-
-Refer to the Terraform Registory for docs: [`cloudflare_waiting_room_event`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/waiting_room_event).
-
 # `waitingRoomEvent` Submodule <a name="`waitingRoomEvent` Submodule" id="@cdktf/provider-cloudflare.waitingRoomEvent"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

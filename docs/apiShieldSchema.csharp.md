@@ -1,7 +1,3 @@
-# `cloudflare_api_shield_schema`
-
-Refer to the Terraform Registory for docs: [`cloudflare_api_shield_schema`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/api_shield_schema).
-
 # `apiShieldSchema` Submodule <a name="`apiShieldSchema` Submodule" id="@cdktf/provider-cloudflare.apiShieldSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

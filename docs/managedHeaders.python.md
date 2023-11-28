@@ -1,7 +1,3 @@
-# `cloudflare_managed_headers`
-
-Refer to the Terraform Registory for docs: [`cloudflare_managed_headers`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/managed_headers).
-
 # `managedHeaders` Submodule <a name="`managedHeaders` Submodule" id="@cdktf/provider-cloudflare.managedHeaders"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

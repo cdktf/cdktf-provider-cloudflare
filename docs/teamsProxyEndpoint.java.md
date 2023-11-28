@@ -1,7 +1,3 @@
-# `cloudflare_teams_proxy_endpoint`
-
-Refer to the Terraform Registory for docs: [`cloudflare_teams_proxy_endpoint`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/teams_proxy_endpoint).
-
 # `teamsProxyEndpoint` Submodule <a name="`teamsProxyEndpoint` Submodule" id="@cdktf/provider-cloudflare.teamsProxyEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

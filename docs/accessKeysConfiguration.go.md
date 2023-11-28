@@ -1,7 +1,3 @@
-# `cloudflare_access_keys_configuration`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_keys_configuration`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_keys_configuration).
-
 # `accessKeysConfiguration` Submodule <a name="`accessKeysConfiguration` Submodule" id="@cdktf/provider-cloudflare.accessKeysConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

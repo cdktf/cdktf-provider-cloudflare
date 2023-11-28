@@ -1,7 +1,3 @@
-# `data_cloudflare_devices`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_devices`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/devices).
-
 # `dataCloudflareDevices` Submodule <a name="`dataCloudflareDevices` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareDevices"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
