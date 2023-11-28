@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTest(scope Construct, id *string, config ObservatoryScheduledTestConfig) ObservatoryScheduledTest
 ```
@@ -355,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ observatoryscheduledtest.ObservatoryScheduledTest_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 observatoryscheduledtest.ObservatoryScheduledTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatorysche
 	Url: *string,
 	ZoneId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.observatoryScheduledTest.ObservatoryScheduledTestTimeouts,
 }
 ```
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 &observatoryscheduledtest.ObservatoryScheduledTestTimeouts {
 	Create: *string,
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/observatoryscheduledtest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/observatoryscheduledtest"
 
 observatoryscheduledtest.NewObservatoryScheduledTestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTimeoutsOutputReference
 ```

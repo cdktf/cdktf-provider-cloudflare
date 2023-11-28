@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailroutingsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingsettings"
 
 emailroutingsettings.NewEmailRoutingSettings(scope Construct, id *string, config EmailRoutingSettingsConfig) EmailRoutingSettings
 ```
@@ -342,7 +342,7 @@ func ResetSkipWizard()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailroutingsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailroutingsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ emailroutingsettings.EmailRoutingSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailroutingsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ emailroutingsettings.EmailRoutingSettings_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailroutingsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingsettings"
 
 emailroutingsettings.EmailRoutingSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailroutingsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingsettings"
 
 &emailroutingsettings.EmailRoutingSettingsConfig {
 	Connection: interface{},

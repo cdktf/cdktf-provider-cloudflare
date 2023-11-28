@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicy(scope Construct, id *string, config AccessPolicyConfig) AccessPolicy
 ```
@@ -457,7 +457,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.AccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -489,7 +489,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.AccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -503,7 +503,7 @@ accesspolicy.AccessPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.AccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -517,7 +517,7 @@ accesspolicy.AccessPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.AccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1098,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyApprovalGroup {
 	ApprovalsNeeded: *f64,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyConfig {
 	Connection: interface{},
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExclude {
 	AnyValidServiceToken: interface{},
@@ -1534,7 +1534,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
 	Email: *[]*string,
 	EmailDomain: *[]*string,
 	Everyone: interface{},
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluation,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.accessPolicy.AccessPolicyExcludeExternalEvaluation,
 	Geo: *[]*string,
 	Github: interface{},
 	Group: *[]*string,
@@ -1851,7 +1851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeAuthContext {
 	AcId: *string,
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeAzure {
 	Id: *[]*string,
@@ -1973,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeGithub {
 	IdentityProviderId: *string,
@@ -2079,7 +2079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeGsuite {
 	Email: *[]*string,
@@ -2125,7 +2125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeOkta {
 	IdentityProviderId: *string,
@@ -2171,7 +2171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyExcludeSaml {
 	AttributeName: *string,
@@ -2231,7 +2231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyInclude {
 	AnyValidServiceToken: interface{},
@@ -2244,7 +2244,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
 	Email: *[]*string,
 	EmailDomain: *[]*string,
 	Everyone: interface{},
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluation,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.accessPolicy.AccessPolicyIncludeExternalEvaluation,
 	Geo: *[]*string,
 	Github: interface{},
 	Group: *[]*string,
@@ -2561,7 +2561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeAuthContext {
 	AcId: *string,
@@ -2630,7 +2630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeAzure {
 	Id: *[]*string,
@@ -2683,7 +2683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -2729,7 +2729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeGithub {
 	IdentityProviderId: *string,
@@ -2789,7 +2789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeGsuite {
 	Email: *[]*string,
@@ -2835,7 +2835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeOkta {
 	IdentityProviderId: *string,
@@ -2881,7 +2881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyIncludeSaml {
 	AttributeName: *string,
@@ -2941,7 +2941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequire.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequire {
 	AnyValidServiceToken: interface{},
@@ -2954,7 +2954,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
 	Email: *[]*string,
 	EmailDomain: *[]*string,
 	Everyone: interface{},
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessPolicy.AccessPolicyRequireExternalEvaluation,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.accessPolicy.AccessPolicyRequireExternalEvaluation,
 	Geo: *[]*string,
 	Github: interface{},
 	Group: *[]*string,
@@ -3271,7 +3271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireAuthContext {
 	AcId: *string,
@@ -3340,7 +3340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireAzure {
 	Id: *[]*string,
@@ -3393,7 +3393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireExternalEvaluation {
 	EvaluateUrl: *string,
@@ -3439,7 +3439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireGithub {
 	IdentityProviderId: *string,
@@ -3499,7 +3499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireGsuite {
 	Email: *[]*string,
@@ -3545,7 +3545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireOkta {
 	IdentityProviderId: *string,
@@ -3591,7 +3591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 &accesspolicy.AccessPolicyRequireSaml {
 	AttributeName: *string,
@@ -3653,7 +3653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyApprovalGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyApprovalGroupList
 ```
@@ -3796,7 +3796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyApprovalGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyApprovalGroupOutputReference
 ```
@@ -4143,7 +4143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAuthContextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeAuthContextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeAuthContextList
 ```
@@ -4286,7 +4286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeAuthContextOutputReference
 ```
@@ -4619,7 +4619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeAzureList
 ```
@@ -4762,7 +4762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeAzureOutputReference
 ```
@@ -5087,7 +5087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPolicyExcludeExternalEvaluationOutputReference
 ```
@@ -5394,7 +5394,7 @@ func InternalValue() AccessPolicyExcludeExternalEvaluation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeGithubList
 ```
@@ -5537,7 +5537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeGithubOutputReference
 ```
@@ -5891,7 +5891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeGsuiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeGsuiteList
 ```
@@ -6034,7 +6034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeGsuiteOutputReference
 ```
@@ -6359,7 +6359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeList
 ```
@@ -6502,7 +6502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOktaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeOktaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeOktaList
 ```
@@ -6645,7 +6645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeOktaOutputReference
 ```
@@ -6970,7 +6970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeOutputReference
 ```
@@ -7937,7 +7937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeSamlList
 ```
@@ -8080,7 +8080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyExcludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyExcludeSamlOutputReference
 ```
@@ -8434,7 +8434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAuthContextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeAuthContextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeAuthContextList
 ```
@@ -8577,7 +8577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeAuthContextOutputReference
 ```
@@ -8910,7 +8910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeAzureList
 ```
@@ -9053,7 +9053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeAzureOutputReference
 ```
@@ -9378,7 +9378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPolicyIncludeExternalEvaluationOutputReference
 ```
@@ -9685,7 +9685,7 @@ func InternalValue() AccessPolicyIncludeExternalEvaluation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeGithubList
 ```
@@ -9828,7 +9828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeGithubOutputReference
 ```
@@ -10182,7 +10182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGsuiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeGsuiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeGsuiteList
 ```
@@ -10325,7 +10325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeGsuiteOutputReference
 ```
@@ -10650,7 +10650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeList
 ```
@@ -10793,7 +10793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOktaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeOktaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeOktaList
 ```
@@ -10936,7 +10936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeOktaOutputReference
 ```
@@ -11261,7 +11261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeOutputReference
 ```
@@ -12228,7 +12228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeSamlList
 ```
@@ -12371,7 +12371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyIncludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyIncludeSamlOutputReference
 ```
@@ -12725,7 +12725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAuthContextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireAuthContextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireAuthContextList
 ```
@@ -12868,7 +12868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireAuthContextOutputReference
 ```
@@ -13201,7 +13201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireAzureList
 ```
@@ -13344,7 +13344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireAzureOutputReference
 ```
@@ -13669,7 +13669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPolicyRequireExternalEvaluationOutputReference
 ```
@@ -13976,7 +13976,7 @@ func InternalValue() AccessPolicyRequireExternalEvaluation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithubList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireGithubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireGithubList
 ```
@@ -14119,7 +14119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireGithubOutputReference
 ```
@@ -14473,7 +14473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireGsuiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireGsuiteList
 ```
@@ -14616,7 +14616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireGsuiteOutputReference
 ```
@@ -14941,7 +14941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireList
 ```
@@ -15084,7 +15084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOktaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireOktaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireOktaList
 ```
@@ -15227,7 +15227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireOktaOutputReference
 ```
@@ -15552,7 +15552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireOutputReference
 ```
@@ -16519,7 +16519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyRequireSamlList
 ```
@@ -16662,7 +16662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesspolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesspolicy"
 
 accesspolicy.NewAccessPolicyRequireSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPolicyRequireSamlOutputReference
 ```

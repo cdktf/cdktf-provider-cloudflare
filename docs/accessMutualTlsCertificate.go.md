@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessmutualtlscertificate"
 
 accessmutualtlscertificate.NewAccessMutualTlsCertificate(scope Construct, id *string, config AccessMutualTlsCertificateConfig) AccessMutualTlsCertificate
 ```
@@ -363,7 +363,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessmutualtlscertificate"
 
 accessmutualtlscertificate.AccessMutualTlsCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessmutualtlscertificate"
 
 accessmutualtlscertificate.AccessMutualTlsCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ accessmutualtlscertificate.AccessMutualTlsCertificate_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessmutualtlscertificate"
 
 accessmutualtlscertificate.AccessMutualTlsCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ accessmutualtlscertificate.AccessMutualTlsCertificate_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessmutualtlscertificate"
 
 accessmutualtlscertificate.AccessMutualTlsCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessmutualtlscertificate"
 
 &accessmutualtlscertificate.AccessMutualTlsCertificateConfig {
 	Connection: interface{},

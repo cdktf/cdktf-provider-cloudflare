@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssettingciphers"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/hostnametlssettingciphers"
 
 hostnametlssettingciphers.NewHostnameTlsSettingCiphers(scope Construct, id *string, config HostnameTlsSettingCiphersConfig) HostnameTlsSettingCiphers
 ```
@@ -342,7 +342,7 @@ func ResetPorts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssettingciphers"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/hostnametlssettingciphers"
 
 hostnametlssettingciphers.HostnameTlsSettingCiphers_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssettingciphers"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/hostnametlssettingciphers"
 
 hostnametlssettingciphers.HostnameTlsSettingCiphers_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ hostnametlssettingciphers.HostnameTlsSettingCiphers_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssettingciphers"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/hostnametlssettingciphers"
 
 hostnametlssettingciphers.HostnameTlsSettingCiphers_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ hostnametlssettingciphers.HostnameTlsSettingCiphers_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssettingciphers"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/hostnametlssettingciphers"
 
 hostnametlssettingciphers.HostnameTlsSettingCiphers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers.HostnameTlsSettingCiphersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssettingciphers"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/hostnametlssettingciphers"
 
 &hostnametlssettingciphers.HostnameTlsSettingCiphersConfig {
 	Connection: interface{},
