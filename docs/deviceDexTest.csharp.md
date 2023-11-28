@@ -1,7 +1,3 @@
-# `cloudflare_device_dex_test`
-
-Refer to the Terraform Registory for docs: [`cloudflare_device_dex_test`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test).
-
 # `deviceDexTest` Submodule <a name="`deviceDexTest` Submodule" id="@cdktf/provider-cloudflare.deviceDexTest"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `cloudflare_access_group`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_group`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_group).
-
 # `accessGroup` Submodule <a name="`accessGroup` Submodule" id="@cdktf/provider-cloudflare.accessGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `cloudflare_queue`
-
-Refer to the Terraform Registory for docs: [`cloudflare_queue`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/queue).
-
 # `queue` Submodule <a name="`queue` Submodule" id="@cdktf/provider-cloudflare.queue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

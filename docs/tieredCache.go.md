@@ -1,7 +1,3 @@
-# `cloudflare_tiered_cache`
-
-Refer to the Terraform Registory for docs: [`cloudflare_tiered_cache`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tiered_cache).
-
 # `tieredCache` Submodule <a name="`tieredCache` Submodule" id="@cdktf/provider-cloudflare.tieredCache"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.NewTieredCache(scope Construct, id *string, config TieredCacheConfig) TieredCache
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ tieredcache.TieredCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ tieredcache.TieredCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 &tieredcache.TieredCacheConfig {
 	Connection: interface{},

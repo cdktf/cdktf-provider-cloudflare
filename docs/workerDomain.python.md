@@ -1,7 +1,3 @@
-# `cloudflare_worker_domain`
-
-Refer to the Terraform Registory for docs: [`cloudflare_worker_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/worker_domain).
-
 # `workerDomain` Submodule <a name="`workerDomain` Submodule" id="@cdktf/provider-cloudflare.workerDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

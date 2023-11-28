@@ -1,7 +1,3 @@
-# `data_cloudflare_zone_cache_reserve`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_zone_cache_reserve`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/zone_cache_reserve).
-
 # `dataCloudflareZoneCacheReserve` Submodule <a name="`dataCloudflareZoneCacheReserve` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve.DataCloudflareZoneCacheReserve.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonecachereserve"
 
 datacloudflarezonecachereserve.NewDataCloudflareZoneCacheReserve(scope Construct, id *string, config DataCloudflareZoneCacheReserveConfig) DataCloudflareZoneCacheReserve
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve.DataCloudflareZoneCacheReserve.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonecachereserve"
 
 datacloudflarezonecachereserve.DataCloudflareZoneCacheReserve_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve.DataCloudflareZoneCacheReserve.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonecachereserve"
 
 datacloudflarezonecachereserve.DataCloudflareZoneCacheReserve_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datacloudflarezonecachereserve.DataCloudflareZoneCacheReserve_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve.DataCloudflareZoneCacheReserve.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonecachereserve"
 
 datacloudflarezonecachereserve.DataCloudflareZoneCacheReserve_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datacloudflarezonecachereserve.DataCloudflareZoneCacheReserve_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve.DataCloudflareZoneCacheReserve.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonecachereserve"
 
 datacloudflarezonecachereserve.DataCloudflareZoneCacheReserve_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve.DataCloudflareZoneCacheReserveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflarezonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonecachereserve"
 
 &datacloudflarezonecachereserve.DataCloudflareZoneCacheReserveConfig {
 	Connection: interface{},

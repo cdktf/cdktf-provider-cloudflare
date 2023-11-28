@@ -1,7 +1,3 @@
-# `cloudflare_static_route`
-
-Refer to the Terraform Registory for docs: [`cloudflare_static_route`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/static_route).
-
 # `staticRoute` Submodule <a name="`staticRoute` Submodule" id="@cdktf/provider-cloudflare.staticRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

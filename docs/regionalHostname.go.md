@@ -1,7 +1,3 @@
-# `cloudflare_regional_hostname`
-
-Refer to the Terraform Registory for docs: [`cloudflare_regional_hostname`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/regional_hostname).
-
 # `regionalHostname` Submodule <a name="`regionalHostname` Submodule" id="@cdktf/provider-cloudflare.regionalHostname"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.NewRegionalHostname(scope Construct, id *string, config RegionalHostnameConfig) RegionalHostname
 ```
@@ -359,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ regionalhostname.RegionalHostname_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ regionalhostname.RegionalHostname_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostname.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.RegionalHostname_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 &regionalhostname.RegionalHostnameConfig {
 	Connection: interface{},
@@ -783,7 +779,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhos
 	RegionKey: *string,
 	ZoneId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.regionalHostname.RegionalHostnameTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.regionalHostname.RegionalHostnameTimeouts,
 }
 ```
 
@@ -952,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 &regionalhostname.RegionalHostnameTimeouts {
 	Create: *string,
@@ -1000,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalHostname.RegionalHostnameTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/regionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/regionalhostname"
 
 regionalhostname.NewRegionalHostnameTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RegionalHostnameTimeoutsOutputReference
 ```

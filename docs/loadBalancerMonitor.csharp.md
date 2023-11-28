@@ -1,7 +1,3 @@
-# `cloudflare_load_balancer_monitor`
-
-Refer to the Terraform Registory for docs: [`cloudflare_load_balancer_monitor`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer_monitor).
-
 # `loadBalancerMonitor` Submodule <a name="`loadBalancerMonitor` Submodule" id="@cdktf/provider-cloudflare.loadBalancerMonitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

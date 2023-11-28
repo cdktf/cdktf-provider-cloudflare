@@ -1,7 +1,3 @@
-# `cloudflare_access_service_token`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_service_token`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_service_token).
-
 # `accessServiceToken` Submodule <a name="`accessServiceToken` Submodule" id="@cdktf/provider-cloudflare.accessServiceToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

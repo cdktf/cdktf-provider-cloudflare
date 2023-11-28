@@ -1,7 +1,3 @@
-# `cloudflare_mtls_certificate`
-
-Refer to the Terraform Registory for docs: [`cloudflare_mtls_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/mtls_certificate).
-
 # `mtlsCertificate` Submodule <a name="`mtlsCertificate` Submodule" id="@cdktf/provider-cloudflare.mtlsCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

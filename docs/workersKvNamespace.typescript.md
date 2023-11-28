@@ -1,7 +1,3 @@
-# `cloudflare_workers_kv_namespace`
-
-Refer to the Terraform Registory for docs: [`cloudflare_workers_kv_namespace`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/workers_kv_namespace).
-
 # `workersKvNamespace` Submodule <a name="`workersKvNamespace` Submodule" id="@cdktf/provider-cloudflare.workersKvNamespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

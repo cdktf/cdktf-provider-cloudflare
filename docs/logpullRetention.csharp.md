@@ -1,7 +1,3 @@
-# `cloudflare_logpull_retention`
-
-Refer to the Terraform Registory for docs: [`cloudflare_logpull_retention`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/logpull_retention).
-
 # `logpullRetention` Submodule <a name="`logpullRetention` Submodule" id="@cdktf/provider-cloudflare.logpullRetention"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

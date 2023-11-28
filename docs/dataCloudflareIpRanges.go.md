@@ -1,7 +1,3 @@
-# `data_cloudflare_ip_ranges`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_ip_ranges`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/ip_ranges).
-
 # `dataCloudflareIpRanges` Submodule <a name="`dataCloudflareIpRanges` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.NewDataCloudflareIpRanges(scope Construct, id *string, config DataCloudflareIpRangesConfig) DataCloudflareIpRanges
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datacloudflareipranges.DataCloudflareIpRanges_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datacloudflareipranges.DataCloudflareIpRanges_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 &datacloudflareipranges.DataCloudflareIpRangesConfig {
 	Connection: interface{},

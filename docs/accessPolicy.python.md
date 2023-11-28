@@ -1,7 +1,3 @@
-# `cloudflare_access_policy`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_policy).
-
 # `accessPolicy` Submodule <a name="`accessPolicy` Submodule" id="@cdktf/provider-cloudflare.accessPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

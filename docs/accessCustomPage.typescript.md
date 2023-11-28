@@ -1,7 +1,3 @@
-# `cloudflare_access_custom_page`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_custom_page`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_custom_page).
-
 # `accessCustomPage` Submodule <a name="`accessCustomPage` Submodule" id="@cdktf/provider-cloudflare.accessCustomPage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

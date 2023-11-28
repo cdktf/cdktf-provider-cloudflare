@@ -1,7 +1,3 @@
-# `cloudflare_custom_hostname`
-
-Refer to the Terraform Registory for docs: [`cloudflare_custom_hostname`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/custom_hostname).
-
 # `customHostname` Submodule <a name="`customHostname` Submodule" id="@cdktf/provider-cloudflare.customHostname"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

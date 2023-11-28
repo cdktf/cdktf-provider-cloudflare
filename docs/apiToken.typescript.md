@@ -1,7 +1,3 @@
-# `cloudflare_api_token`
-
-Refer to the Terraform Registory for docs: [`cloudflare_api_token`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/api_token).
-
 # `apiToken` Submodule <a name="`apiToken` Submodule" id="@cdktf/provider-cloudflare.apiToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

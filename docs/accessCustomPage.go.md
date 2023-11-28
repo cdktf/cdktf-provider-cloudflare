@@ -1,7 +1,3 @@
-# `cloudflare_access_custom_page`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_custom_page`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_custom_page).
-
 # `accessCustomPage` Submodule <a name="`accessCustomPage` Submodule" id="@cdktf/provider-cloudflare.accessCustomPage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesscustompage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscustompage"
 
 accesscustompage.NewAccessCustomPage(scope Construct, id *string, config AccessCustomPageConfig) AccessCustomPage
 ```
@@ -367,7 +363,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesscustompage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscustompage"
 
 accesscustompage.AccessCustomPage_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesscustompage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscustompage"
 
 accesscustompage.AccessCustomPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ accesscustompage.AccessCustomPage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesscustompage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscustompage"
 
 accesscustompage.AccessCustomPage_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ accesscustompage.AccessCustomPage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesscustompage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscustompage"
 
 accesscustompage.AccessCustomPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessCustomPage.AccessCustomPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accesscustompage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accesscustompage"
 
 &accesscustompage.AccessCustomPageConfig {
 	Connection: interface{},

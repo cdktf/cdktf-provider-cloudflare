@@ -1,7 +1,3 @@
-# `cloudflare_waiting_room`
-
-Refer to the Terraform Registory for docs: [`cloudflare_waiting_room`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/waiting_room).
-
 # `waitingRoom` Submodule <a name="`waitingRoom` Submodule" id="@cdktf/provider-cloudflare.waitingRoom"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

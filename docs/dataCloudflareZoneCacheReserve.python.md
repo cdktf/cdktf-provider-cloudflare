@@ -1,7 +1,3 @@
-# `data_cloudflare_zone_cache_reserve`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_zone_cache_reserve`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/zone_cache_reserve).
-
 # `dataCloudflareZoneCacheReserve` Submodule <a name="`dataCloudflareZoneCacheReserve` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheReserve"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

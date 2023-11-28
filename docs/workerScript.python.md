@@ -1,7 +1,3 @@
-# `cloudflare_worker_script`
-
-Refer to the Terraform Registory for docs: [`cloudflare_worker_script`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/worker_script).
-
 # `workerScript` Submodule <a name="`workerScript` Submodule" id="@cdktf/provider-cloudflare.workerScript"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

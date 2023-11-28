@@ -1,7 +1,3 @@
-# `cloudflare_d1_database`
-
-Refer to the Terraform Registory for docs: [`cloudflare_d1_database`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/d1_database).
-
 # `d1Database` Submodule <a name="`d1Database` Submodule" id="@cdktf/provider-cloudflare.d1Database"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

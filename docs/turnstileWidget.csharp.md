@@ -1,7 +1,3 @@
-# `cloudflare_turnstile_widget`
-
-Refer to the Terraform Registory for docs: [`cloudflare_turnstile_widget`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/turnstile_widget).
-
 # `turnstileWidget` Submodule <a name="`turnstileWidget` Submodule" id="@cdktf/provider-cloudflare.turnstileWidget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

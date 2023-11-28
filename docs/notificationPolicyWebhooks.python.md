@@ -1,7 +1,3 @@
-# `cloudflare_notification_policy_webhooks`
-
-Refer to the Terraform Registory for docs: [`cloudflare_notification_policy_webhooks`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/notification_policy_webhooks).
-
 # `notificationPolicyWebhooks` Submodule <a name="`notificationPolicyWebhooks` Submodule" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

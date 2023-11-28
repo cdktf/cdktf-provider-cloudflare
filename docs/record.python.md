@@ -1,7 +1,3 @@
-# `cloudflare_record`
-
-Refer to the Terraform Registory for docs: [`cloudflare_record`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/record).
-
 # `record` Submodule <a name="`record` Submodule" id="@cdktf/provider-cloudflare.record"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

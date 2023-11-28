@@ -1,7 +1,3 @@
-# `cloudflare_api_shield_schema_validation_settings`
-
-Refer to the Terraform Registory for docs: [`cloudflare_api_shield_schema_validation_settings`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/api_shield_schema_validation_settings).
-
 # `apiShieldSchemaValidationSettings` Submodule <a name="`apiShieldSchemaValidationSettings` Submodule" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.NewApiShieldSchemaValidationSettings(scope Construct, id *string, config ApiShieldSchemaValidationSettingsConfig) ApiShieldSchemaValidationSettings
 ```
@@ -346,7 +342,7 @@ func ResetValidationOverrideMitigationAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 &apishieldschemavalidationsettings.ApiShieldSchemaValidationSettingsConfig {
 	Connection: interface{},

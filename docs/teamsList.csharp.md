@@ -1,7 +1,3 @@
-# `cloudflare_teams_list`
-
-Refer to the Terraform Registory for docs: [`cloudflare_teams_list`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/teams_list).
-
 # `teamsList` Submodule <a name="`teamsList` Submodule" id="@cdktf/provider-cloudflare.teamsList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

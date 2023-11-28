@@ -1,7 +1,3 @@
-# `cloudflare_healthcheck`
-
-Refer to the Terraform Registory for docs: [`cloudflare_healthcheck`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/healthcheck).
-
 # `healthcheck` Submodule <a name="`healthcheck` Submodule" id="@cdktf/provider-cloudflare.healthcheck"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

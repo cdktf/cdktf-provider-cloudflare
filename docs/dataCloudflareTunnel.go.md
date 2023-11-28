@@ -1,7 +1,3 @@
-# `data_cloudflare_tunnel`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_tunnel`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/tunnel).
-
 # `dataCloudflareTunnel` Submodule <a name="`dataCloudflareTunnel` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareTunnel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnel"
 
 datacloudflaretunnel.NewDataCloudflareTunnel(scope Construct, id *string, config DataCloudflareTunnelConfig) DataCloudflareTunnel
 ```
@@ -271,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnel"
 
 datacloudflaretunnel.DataCloudflareTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnel"
 
 datacloudflaretunnel.DataCloudflareTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ datacloudflaretunnel.DataCloudflareTunnel_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnel"
 
 datacloudflaretunnel.DataCloudflareTunnel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datacloudflaretunnel.DataCloudflareTunnel_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnel"
 
 datacloudflaretunnel.DataCloudflareTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -626,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnel"
 
 &datacloudflaretunnel.DataCloudflareTunnelConfig {
 	Connection: interface{},

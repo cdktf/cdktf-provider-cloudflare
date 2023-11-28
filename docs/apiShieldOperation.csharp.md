@@ -1,7 +1,3 @@
-# `cloudflare_api_shield_operation`
-
-Refer to the Terraform Registory for docs: [`cloudflare_api_shield_operation`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/api_shield_operation).
-
 # `apiShieldOperation` Submodule <a name="`apiShieldOperation` Submodule" id="@cdktf/provider-cloudflare.apiShieldOperation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

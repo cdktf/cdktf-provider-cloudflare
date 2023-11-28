@@ -1,7 +1,3 @@
-# `cloudflare_access_organization`
-
-Refer to the Terraform Registory for docs: [`cloudflare_access_organization`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/access_organization).
-
 # `accessOrganization` Submodule <a name="`accessOrganization` Submodule" id="@cdktf/provider-cloudflare.accessOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganization(scope Construct, id *string, config AccessOrganizationConfig) AccessOrganization
 ```
@@ -435,7 +431,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +477,7 @@ accessorganization.AccessOrganization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +491,7 @@ accessorganization.AccessOrganization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.AccessOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationConfig {
 	Connection: interface{},
@@ -1287,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationCustomPages {
 	Forbidden: *string,
@@ -1337,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 &accessorganization.AccessOrganizationLoginDesign {
 	BackgroundColor: *string,
@@ -1437,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationCustomPagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessOrganizationCustomPagesList
 ```
@@ -1580,7 +1576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationCustomPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessOrganizationCustomPagesOutputReference
 ```
@@ -1905,7 +1901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationLoginDesignList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessOrganizationLoginDesignList
 ```
@@ -2048,7 +2044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessorganization"
 
 accessorganization.NewAccessOrganizationLoginDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessOrganizationLoginDesignOutputReference
 ```

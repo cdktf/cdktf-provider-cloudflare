@@ -1,7 +1,3 @@
-# `cloudflare_hostname_tls_setting_ciphers`
-
-Refer to the Terraform Registory for docs: [`cloudflare_hostname_tls_setting_ciphers`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/hostname_tls_setting_ciphers).
-
 # `hostnameTlsSettingCiphers` Submodule <a name="`hostnameTlsSettingCiphers` Submodule" id="@cdktf/provider-cloudflare.hostnameTlsSettingCiphers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

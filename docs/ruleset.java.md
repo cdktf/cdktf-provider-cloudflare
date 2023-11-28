@@ -1,7 +1,3 @@
-# `cloudflare_ruleset`
-
-Refer to the Terraform Registory for docs: [`cloudflare_ruleset`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/ruleset).
-
 # `ruleset` Submodule <a name="`ruleset` Submodule" id="@cdktf/provider-cloudflare.ruleset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

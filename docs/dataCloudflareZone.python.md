@@ -1,7 +1,3 @@
-# `data_cloudflare_zone`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_zone`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/zone).
-
 # `dataCloudflareZone` Submodule <a name="`dataCloudflareZone` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareZone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_cloudflare_origin_ca_root_certificate`
-
-Refer to the Terraform Registory for docs: [`data_cloudflare_origin_ca_root_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate).
-
 # `dataCloudflareOriginCaRootCertificate` Submodule <a name="`dataCloudflareOriginCaRootCertificate` Submodule" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.NewDataCloudflareOriginCaRootCertificate(scope Construct, id *string, config DataCloudflareOriginCaRootCertificateConfig) DataCloudflareOriginCaRootCertificate
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 &datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificateConfig {
 	Connection: interface{},

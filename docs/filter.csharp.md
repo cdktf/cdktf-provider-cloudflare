@@ -1,7 +1,3 @@
-# `cloudflare_filter`
-
-Refer to the Terraform Registory for docs: [`cloudflare_filter`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/filter).
-
 # `filter` Submodule <a name="`filter` Submodule" id="@cdktf/provider-cloudflare.filter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

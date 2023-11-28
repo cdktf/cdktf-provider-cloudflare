@@ -1,7 +1,3 @@
-# `cloudflare_api_shield_schema`
-
-Refer to the Terraform Registory for docs: [`cloudflare_api_shield_schema`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/api_shield_schema).
-
 # `apiShieldSchema` Submodule <a name="`apiShieldSchema` Submodule" id="@cdktf/provider-cloudflare.apiShieldSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschema"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschema"
 
 apishieldschema.NewApiShieldSchema(scope Construct, id *string, config ApiShieldSchemaConfig) ApiShieldSchema
 ```
@@ -353,7 +349,7 @@ func ResetValidationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschema"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschema"
 
 apishieldschema.ApiShieldSchema_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschema"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschema"
 
 apishieldschema.ApiShieldSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ apishieldschema.ApiShieldSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschema"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschema"
 
 apishieldschema.ApiShieldSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ apishieldschema.ApiShieldSchema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschema"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschema"
 
 apishieldschema.ApiShieldSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldschema"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschema"
 
 &apishieldschema.ApiShieldSchemaConfig {
 	Connection: interface{},
