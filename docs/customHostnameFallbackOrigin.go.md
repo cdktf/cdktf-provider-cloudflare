@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/customhostnamefallbackorigin"
 
 customhostnamefallbackorigin.NewCustomHostnameFallbackOrigin(scope Construct, id *string, config CustomHostnameFallbackOriginConfig) CustomHostnameFallbackOrigin
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/customhostnamefallbackorigin"
 
 customhostnamefallbackorigin.CustomHostnameFallbackOrigin_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/customhostnamefallbackorigin"
 
 customhostnamefallbackorigin.CustomHostnameFallbackOrigin_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ customhostnamefallbackorigin.CustomHostnameFallbackOrigin_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/customhostnamefallbackorigin"
 
 customhostnamefallbackorigin.CustomHostnameFallbackOrigin_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ customhostnamefallbackorigin.CustomHostnameFallbackOrigin_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/customhostnamefallbackorigin"
 
 customhostnamefallbackorigin.CustomHostnameFallbackOrigin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/customhostnamefallbackorigin"
 
 &customhostnamefallbackorigin.CustomHostnameFallbackOriginConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.NewWaitingRoomRules(scope Construct, id *string, config WaitingRoomRulesConfig) WaitingRoomRules
 ```
@@ -355,7 +355,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.WaitingRoomRules_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.WaitingRoomRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ waitingroomrules.WaitingRoomRules_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.WaitingRoomRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ waitingroomrules.WaitingRoomRules_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.WaitingRoomRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 &waitingroomrules.WaitingRoomRulesConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 &waitingroomrules.WaitingRoomRulesRules {
 	Action: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.NewWaitingRoomRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WaitingRoomRulesRulesList
 ```
@@ -1128,7 +1128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/waitingroomrules"
 
 waitingroomrules.NewWaitingRoomRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WaitingRoomRulesRulesOutputReference
 ```
