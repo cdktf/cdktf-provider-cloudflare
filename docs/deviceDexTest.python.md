@@ -4,7 +4,7 @@
 
 ### DeviceDexTest <a name="DeviceDexTest" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer"></a>
 
@@ -48,7 +48,7 @@ deviceDexTest.DeviceDexTest(
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the test is active. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.interval">interval</a></code> | <code>str</code> | How often the test will run. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Device Dex Test. Must be unique. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#data DeviceDexTest#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#data DeviceDexTest#data}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Additional details about the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#description DeviceDexTest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#description DeviceDexTest#description}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Determines whether or not the test is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How often the test will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the Device Dex Test. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#name DeviceDexTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#name DeviceDexTest#name}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -502,7 +502,7 @@ def put_data(
 
 The host URL for `http` test `kind`. For `traceroute`, it must be a valid hostname or IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#host DeviceDexTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#host DeviceDexTest#host}
 
 ---
 
@@ -512,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of Device Dex Test. Available values: `http`, `traceroute`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
 
 ---
 
@@ -522,7 +522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The http request method. Available values: `GET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#method DeviceDexTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#method DeviceDexTest#method}
 
 ---
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the DeviceDexTest to import.
 
 The id of the existing DeviceDexTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1059,7 +1059,7 @@ deviceDexTest.DeviceDexTestConfig(
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the test is active. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.interval">interval</a></code> | <code>str</code> | How often the test will run. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.name">name</a></code> | <code>str</code> | The name of the Device Dex Test. Must be unique. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#id DeviceDexTest#id}. |
 
 ---
 
@@ -1143,7 +1143,7 @@ account_id: str
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#account_id DeviceDexTest#account_id}
 
 ---
 
@@ -1157,7 +1157,7 @@ data: DeviceDexTestData
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#data DeviceDexTest#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#data DeviceDexTest#data}
 
 ---
 
@@ -1171,7 +1171,7 @@ description: str
 
 Additional details about the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#description DeviceDexTest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#description DeviceDexTest#description}
 
 ---
 
@@ -1185,7 +1185,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Determines whether or not the test is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#enabled DeviceDexTest#enabled}
 
 ---
 
@@ -1199,7 +1199,7 @@ interval: str
 
 How often the test will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#interval DeviceDexTest#interval}
 
 ---
 
@@ -1213,7 +1213,7 @@ name: str
 
 The name of the Device Dex Test. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#name DeviceDexTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#name DeviceDexTest#name}
 
 ---
 
@@ -1225,7 +1225,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#id DeviceDexTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ host: str
 
 The host URL for `http` test `kind`. For `traceroute`, it must be a valid hostname or IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#host DeviceDexTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#host DeviceDexTest#host}
 
 ---
 
@@ -1280,7 +1280,7 @@ kind: str
 
 The type of Device Dex Test. Available values: `http`, `traceroute`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#kind DeviceDexTest#kind}
 
 ---
 
@@ -1294,7 +1294,7 @@ method: str
 
 The http request method. Available values: `GET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_dex_test#method DeviceDexTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test#method DeviceDexTest#method}
 
 ---
 

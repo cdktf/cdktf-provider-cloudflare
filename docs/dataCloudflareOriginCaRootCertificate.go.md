@@ -4,12 +4,12 @@
 
 ### DataCloudflareOriginCaRootCertificate <a name="DataCloudflareOriginCaRootCertificate" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate cloudflare_origin_ca_root_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/origin_ca_root_certificate cloudflare_origin_ca_root_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.NewDataCloudflareOriginCaRootCertificate(scope Construct, id *string, config DataCloudflareOriginCaRootCertificateConfig) DataCloudflareOriginCaRootCertificate
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataCloudflareOriginCaRoot
 
 The id of the existing DataCloudflareOriginCaRootCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/origin_ca_root_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareorigincarootcertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincarootcertificate"
 
 &datacloudflareorigincarootcertificate.DataCloudflareOriginCaRootCertificateConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.algorithm">Algorithm</a></code> | <code>*string</code> | The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}. |
 
 ---
 
@@ -707,7 +707,7 @@ Algorithm *string
 
 The name of the algorithm used when creating an Origin CA certificate. Available values: `rsa`, `ecc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/origin_ca_root_certificate#algorithm DataCloudflareOriginCaRootCertificate#algorithm}
 
 ---
 
@@ -719,7 +719,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/origin_ca_root_certificate#id DataCloudflareOriginCaRootCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

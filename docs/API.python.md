@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataCloudflareList](./dataCloudflareList.python.md)
 - [dataCloudflareLists](./dataCloudflareLists.python.md)
 - [dataCloudflareLoadBalancerPools](./dataCloudflareLoadBalancerPools.python.md)
+- [dataCloudflareOriginCaCertificate](./dataCloudflareOriginCaCertificate.python.md)
 - [dataCloudflareOriginCaRootCertificate](./dataCloudflareOriginCaRootCertificate.python.md)
 - [dataCloudflareRecord](./dataCloudflareRecord.python.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.python.md)

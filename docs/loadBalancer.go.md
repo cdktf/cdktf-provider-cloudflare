@@ -4,12 +4,12 @@
 
 ### LoadBalancer <a name="LoadBalancer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer cloudflare_load_balancer}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer cloudflare_load_balancer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancer(scope Construct, id *string, config LoadBalancerConfig) LoadBalancer
 ```
@@ -544,7 +544,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.LoadBalancer_IsConstruct(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.LoadBalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ loadbalancer.LoadBalancer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.LoadBalancer_IsTerraformResource(x interface{}) *bool
 ```
@@ -604,7 +604,7 @@ loadbalancer.LoadBalancer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.LoadBalancer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +633,7 @@ The construct id used in the generated config for the LoadBalancer to import.
 
 The id of the existing LoadBalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1295,7 +1295,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerAdaptiveRouting {
 	FailoverAcrossPools: interface{},
@@ -1322,7 +1322,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 When set `false`, zero-downtime failover will only occur between origins within the same pool. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 
 ---
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerConfig {
 	Connection: interface{},
@@ -1383,7 +1383,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalance
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.countryPools">CountryPools</a></code> | <code>interface{}</code> | country_pools block. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.description">Description</a></code> | <code>*string</code> | Free text description. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Enable or disable the load balancer. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#id LoadBalancer#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#id LoadBalancer#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.locationStrategy">LocationStrategy</a></code> | <code>interface{}</code> | location_strategy block. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.popPools">PopPools</a></code> | <code>interface{}</code> | pop_pools block. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.proxied">Proxied</a></code> | <code>interface{}</code> | Whether the hostname gets Cloudflare's origin protection. Defaults to `false`. Conflicts with `ttl`. |
@@ -1478,7 +1478,7 @@ DefaultPoolIds *[]*string
 
 A list of pool IDs ordered by their failover priority. Used whenever [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) are not defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#default_pool_ids LoadBalancer#default_pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#default_pool_ids LoadBalancer#default_pool_ids}
 
 ---
 
@@ -1492,7 +1492,7 @@ FallbackPoolId *string
 
 The pool ID to use when all other pools are detected as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#fallback_pool_id LoadBalancer#fallback_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#fallback_pool_id LoadBalancer#fallback_pool_id}
 
 ---
 
@@ -1508,7 +1508,7 @@ The DNS hostname to associate with your load balancer.
 
 If this hostname already exists as a DNS record in Cloudflare's DNS, the load balancer will take precedence and the DNS record will not be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#name LoadBalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#name LoadBalancer#name}
 
 ---
 
@@ -1522,7 +1522,7 @@ ZoneId *string
 
 The zone ID to add the load balancer to. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
 
 ---
 
@@ -1536,7 +1536,7 @@ AdaptiveRouting interface{}
 
 adaptive_routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
 
 ---
 
@@ -1550,7 +1550,7 @@ CountryPools interface{}
 
 country_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
 
 ---
 
@@ -1564,7 +1564,7 @@ Description *string
 
 Free text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#description LoadBalancer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#description LoadBalancer#description}
 
 ---
 
@@ -1578,7 +1578,7 @@ Enabled interface{}
 
 Enable or disable the load balancer. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
 
 ---
 
@@ -1590,7 +1590,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#id LoadBalancer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#id LoadBalancer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1607,7 +1607,7 @@ LocationStrategy interface{}
 
 location_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
 
 ---
 
@@ -1621,7 +1621,7 @@ PopPools interface{}
 
 pop_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
 
 ---
 
@@ -1635,7 +1635,7 @@ Proxied interface{}
 
 Whether the hostname gets Cloudflare's origin protection. Defaults to `false`. Conflicts with `ttl`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
 
 ---
 
@@ -1649,7 +1649,7 @@ RandomSteering interface{}
 
 random_steering block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
 
 ---
 
@@ -1663,7 +1663,7 @@ RegionPools interface{}
 
 region_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
 
 ---
 
@@ -1677,7 +1677,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#rules LoadBalancer#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#rules LoadBalancer#rules}
 
 ---
 
@@ -1693,7 +1693,7 @@ Specifies the type of session affinity the load balancer should use unless speci
 
 With value `cookie`, on the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy then a new origin server is calculated and used. Value `ip_cookie` behaves the same as `cookie` except the initial origin selection is stable and based on the client's IP address. Available values: `""`, `none`, `cookie`, `ip_cookie`, `header`. Defaults to `none`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
 
 ---
 
@@ -1707,7 +1707,7 @@ SessionAffinityAttributes interface{}
 
 session_affinity_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
 
 ---
 
@@ -1723,7 +1723,7 @@ Time, in seconds, until this load balancer's session affinity cookie expires aft
 
 This parameter is ignored unless a supported session affinity policy is set. The current default of `82800` (23 hours) will be used unless [`session_affinity_ttl`](#session_affinity_ttl) is explicitly set. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. Valid values are between `1800` and `604800`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
 
 ---
 
@@ -1739,7 +1739,7 @@ The method the load balancer uses to determine the route to your origin.
 
 Value `off` uses [`default_pool_ids`](#default_pool_ids). Value `geo` uses [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools). For non-proxied requests, the [`country`](#country) for [`country_pools`](#country_pools) is determined by [`location_strategy`](#location_strategy). Value `random` selects a pool randomly. Value `dynamic_latency` uses round trip time to select the closest pool in [`default_pool_ids`](#default_pool_ids) (requires pool health checks). Value `proximity` uses the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by [`location_strategy`](#location_strategy) for non-proxied requests. Value `least_outstanding_requests` selects a pool by taking into consideration [`random_steering`](#random_steering) weights, as well as each pool's number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others. Value `least_connections` selects a pool by taking into consideration [`random_steering`](#random_steering) weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections. Value `""` maps to `geo` if you use [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) otherwise `off`. Available values: `off`, `geo`, `dynamic_latency`, `random`, `proximity`, `least_outstanding_requests`, `least_connections`, `""` Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -1755,7 +1755,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This cannot be set for proxied load balancers. Defaults to `30`. Conflicts with `proxied`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 
 ---
 
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerCountryPools {
 	Country: *string,
@@ -1791,7 +1791,7 @@ Country *string
 
 A country code which can be determined with the Load Balancing Regions API described [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/). Multiple entries should not be specified with the same country.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#country LoadBalancer#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#country LoadBalancer#country}
 
 ---
 
@@ -1805,7 +1805,7 @@ PoolIds *[]*string
 
 A list of pool IDs in failover priority to use in the given country.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
 
 ---
 
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerLocationStrategy {
 	Mode: *string,
@@ -1843,7 +1843,7 @@ Determines the authoritative location when ECS is not preferred, does not exist 
 
 Value `pop` will use the Cloudflare PoP location. Value `resolver_ip` will use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, it will use the Cloudflare PoP location. Available values: `pop`, `resolver_ip`. Defaults to `pop`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 
 ---
 
@@ -1859,7 +1859,7 @@ Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritat
 
 Value `always` will always prefer ECS, `never` will never prefer ECS, `proximity` will prefer ECS only when [`steering_policy="proximity"`](#steering_policy), and `geo` will prefer ECS only when [`steering_policy="geo"`](#steering_policy). Available values: `always`, `never`, `proximity`, `geo`. Defaults to `proximity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
 
 ---
 
@@ -1868,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerPopPools {
 	PoolIds: *[]*string,
@@ -1895,7 +1895,7 @@ PoolIds *[]*string
 
 A list of pool IDs in failover priority to use for traffic reaching the given PoP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
 
 ---
 
@@ -1911,7 +1911,7 @@ A 3-letter code for the Point-of-Presence.
 
 Allowed values can be found in the list of datacenters on the [status page](https://www.cloudflarestatus.com/). Multiple entries should not be specified with the same PoP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pop LoadBalancer#pop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pop LoadBalancer#pop}
 
 ---
 
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRandomSteering {
 	DefaultWeight: *f64,
@@ -1947,7 +1947,7 @@ DefaultWeight *f64
 
 The default weight for pools in the load balancer that are not specified in the [`pool_weights`](#pool_weights) map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
 
 ---
 
@@ -1961,7 +1961,7 @@ PoolWeights *map[string]*f64
 
 A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
 
 ---
 
@@ -1970,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRegionPools {
 	PoolIds: *[]*string,
@@ -1997,7 +1997,7 @@ PoolIds *[]*string
 
 A list of pool IDs in failover priority to use in the given region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
 
 ---
 
@@ -2011,7 +2011,7 @@ Region *string
 
 A region code which must be in the list defined [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/#list-of-load-balancer-regions). Multiple entries should not be specified with the same region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#region LoadBalancer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#region LoadBalancer#region}
 
 ---
 
@@ -2020,13 +2020,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRules {
 	Name: *string,
 	Condition: *string,
 	Disabled: interface{},
-	FixedResponse: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.loadBalancer.LoadBalancerRulesFixedResponse,
+	FixedResponse: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.loadBalancer.LoadBalancerRulesFixedResponse,
 	Overrides: interface{},
 	Priority: *f64,
 	Terminates: interface{},
@@ -2057,7 +2057,7 @@ Name *string
 
 Human readable name for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#name LoadBalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#name LoadBalancer#name}
 
 ---
 
@@ -2073,7 +2073,7 @@ The statement to evaluate to determine if this rule's effects should be applied.
 
 An empty condition is always true. See [load balancing rules](https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-rules).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#condition LoadBalancer#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#condition LoadBalancer#condition}
 
 ---
 
@@ -2087,7 +2087,7 @@ Disabled interface{}
 
 A disabled rule will not be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
 
 ---
 
@@ -2101,7 +2101,7 @@ FixedResponse LoadBalancerRulesFixedResponse
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
 
 ---
 
@@ -2115,7 +2115,7 @@ Overrides interface{}
 
 overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
 
 ---
 
@@ -2131,7 +2131,7 @@ Priority used when determining the order of rule execution.
 
 Lower values are executed first. If not provided, the list order will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#priority LoadBalancer#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#priority LoadBalancer#priority}
 
 ---
 
@@ -2147,7 +2147,7 @@ Terminates indicates that if this rule is true no further rules should be execut
 
 Note: setting a [`fixed_response`](#fixed_response) forces this field to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
 
 ---
 
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesFixedResponse {
 	ContentType: *string,
@@ -2187,7 +2187,7 @@ ContentType *string
 
 The value of the HTTP context-type header for this fixed response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
 
 ---
 
@@ -2201,7 +2201,7 @@ Location *string
 
 The value of the HTTP location header for this fixed response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#location LoadBalancer#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#location LoadBalancer#location}
 
 ---
 
@@ -2215,7 +2215,7 @@ MessageBody *string
 
 The text used as the html body for this fixed response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
 
 ---
 
@@ -2229,7 +2229,7 @@ StatusCode *f64
 
 The HTTP status code used for this fixed response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
 
 ---
 
@@ -2238,7 +2238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverrides {
 	AdaptiveRouting: interface{},
@@ -2287,7 +2287,7 @@ AdaptiveRouting interface{}
 
 adaptive_routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
 
 ---
 
@@ -2301,7 +2301,7 @@ CountryPools interface{}
 
 country_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
 
 ---
 
@@ -2315,7 +2315,7 @@ DefaultPools *[]*string
 
 A list of pool IDs ordered by their failover priority. Used whenever [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) are not defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
 
 ---
 
@@ -2329,7 +2329,7 @@ FallbackPool *string
 
 The pool ID to use when all other pools are detected as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
 
 ---
 
@@ -2343,7 +2343,7 @@ LocationStrategy interface{}
 
 location_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
 
 ---
 
@@ -2357,7 +2357,7 @@ PopPools interface{}
 
 pop_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
 
 ---
 
@@ -2371,7 +2371,7 @@ RandomSteering interface{}
 
 random_steering block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
 
 ---
 
@@ -2385,7 +2385,7 @@ RegionPools interface{}
 
 region_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
 
 ---
 
@@ -2399,7 +2399,7 @@ SessionAffinity *string
 
 Configure attributes for session affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
 
 ---
 
@@ -2413,7 +2413,7 @@ SessionAffinityAttributes interface{}
 
 session_affinity_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
 
 ---
 
@@ -2429,7 +2429,7 @@ Time, in seconds, until this load balancer's session affinity cookie expires aft
 
 This parameter is ignored unless a supported session affinity policy is set. The current default of `82800` (23 hours) will be used unless [`session_affinity_ttl`](#session_affinity_ttl) is explicitly set. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. Valid values are between `1800` and `604800`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
 
 ---
 
@@ -2445,7 +2445,7 @@ The method the load balancer uses to determine the route to your origin.
 
 Value `off` uses [`default_pool_ids`](#default_pool_ids). Value `geo` uses [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools). For non-proxied requests, the [`country`](#country) for [`country_pools`](#country_pools) is determined by [`location_strategy`](#location_strategy). Value `random` selects a pool randomly. Value `dynamic_latency` uses round trip time to select the closest pool in [`default_pool_ids`](#default_pool_ids) (requires pool health checks). Value `proximity` uses the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by [`location_strategy`](#location_strategy) for non-proxied requests. Value `least_outstanding_requests` selects a pool by taking into consideration [`random_steering`](#random_steering) weights, as well as each pool's number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others. Value `least_connections` selects a pool by taking into consideration [`random_steering`](#random_steering) weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections. Value `""` maps to `geo` if you use [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) otherwise `off`. Available values: `off`, `geo`, `dynamic_latency`, `random`, `proximity`, `least_outstanding_requests`, `least_connections`, `""` Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
 
 ---
 
@@ -2461,7 +2461,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This cannot be set for proxied load balancers. Defaults to `30`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 
 ---
 
@@ -2470,7 +2470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesAdaptiveRouting {
 	FailoverAcrossPools: interface{},
@@ -2497,7 +2497,7 @@ Extends zero-downtime failover of requests to healthy origins from alternate poo
 
 When set `false`, zero-downtime failover will only occur between origins within the same pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 
 ---
 
@@ -2506,7 +2506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesCountryPools {
 	Country: *string,
@@ -2533,7 +2533,7 @@ Country *string
 
 A country code which can be determined with the Load Balancing Regions API described [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/). Multiple entries should not be specified with the same country.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#country LoadBalancer#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#country LoadBalancer#country}
 
 ---
 
@@ -2547,7 +2547,7 @@ PoolIds *[]*string
 
 A list of pool IDs in failover priority to use in the given country.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
 
 ---
 
@@ -2556,7 +2556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesLocationStrategy {
 	Mode: *string,
@@ -2585,7 +2585,7 @@ Determines the authoritative location when ECS is not preferred, does not exist 
 
 Value `pop` will use the Cloudflare PoP location. Value `resolver_ip` will use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, it will use the Cloudflare PoP location. Available values: `pop`, `resolver_ip`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 
 ---
 
@@ -2601,7 +2601,7 @@ Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritat
 
 Value `always` will always prefer ECS, `never` will never prefer ECS, `proximity` will prefer ECS only when [`steering_policy="proximity"`](#steering_policy), and `geo` will prefer ECS only when [`steering_policy="geo"`](#steering_policy). Available values: `always`, `never`, `proximity`, `geo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
 
 ---
 
@@ -2610,7 +2610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesPopPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesPopPools {
 	PoolIds: *[]*string,
@@ -2637,7 +2637,7 @@ PoolIds *[]*string
 
 A list of pool IDs in failover priority to use for traffic reaching the given PoP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
 
 ---
 
@@ -2653,7 +2653,7 @@ A 3-letter code for the Point-of-Presence.
 
 Allowed values can be found in the list of datacenters on the [status page](https://www.cloudflarestatus.com/). Multiple entries should not be specified with the same PoP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pop LoadBalancer#pop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pop LoadBalancer#pop}
 
 ---
 
@@ -2662,7 +2662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesRandomSteering {
 	DefaultWeight: *f64,
@@ -2689,7 +2689,7 @@ DefaultWeight *f64
 
 The default weight for pools in the load balancer that are not specified in the [`pool_weights`](#pool_weights) map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
 
 ---
 
@@ -2703,7 +2703,7 @@ PoolWeights *map[string]*f64
 
 A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
 
 ---
 
@@ -2712,7 +2712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesRegionPools {
 	PoolIds: *[]*string,
@@ -2739,7 +2739,7 @@ PoolIds *[]*string
 
 A list of pool IDs in failover priority to use in the given region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#pool_ids LoadBalancer#pool_ids}
 
 ---
 
@@ -2753,7 +2753,7 @@ Region *string
 
 A region code which must be in the list defined [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api/#list-of-load-balancer-regions). Multiple entries should not be specified with the same region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#region LoadBalancer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#region LoadBalancer#region}
 
 ---
 
@@ -2762,7 +2762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerRulesOverridesSessionAffinityAttributes {
 	Headers: *[]*string,
@@ -2795,7 +2795,7 @@ Headers *[]*string
 
 Configures the HTTP header names to use when header session affinity is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#headers LoadBalancer#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#headers LoadBalancer#headers}
 
 ---
 
@@ -2811,7 +2811,7 @@ Configures how headers are used when header session affinity is enabled.
 
 Set to true to require all headers to be present on requests in order for sessions to be created or false to require at least one header to be present. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
 
 ---
 
@@ -2827,7 +2827,7 @@ Configures the SameSite attribute on session affinity cookie.
 
 Value `Auto` will be translated to `Lax` or `None` depending if Always Use HTTPS is enabled. Note: when using value `None`, then you can not set [`secure="Never"`](#secure). Available values: `Auto`, `Lax`, `None`, `Strict`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
 
 ---
 
@@ -2843,7 +2843,7 @@ Configures the Secure attribute on session affinity cookie.
 
 Value `Always` indicates the Secure attribute will be set in the Set-Cookie header, `Never` indicates the Secure attribute will not be set, and `Auto` will set the Secure attribute depending if Always Use HTTPS is enabled. Available values: `Auto`, `Always`, `Never`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#secure LoadBalancer#secure}
 
 ---
 
@@ -2859,7 +2859,7 @@ Configures the zero-downtime failover between origins within a pool when session
 
 Value `none` means no failover takes place for sessions pinned to the origin. Value `temporary` means traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. Value `sticky` means the session affinity cookie is updated and subsequent requests are sent to the new origin. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. Available values: `none`, `temporary`, `sticky`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 
 ---
 
@@ -2868,7 +2868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 &loadbalancer.LoadBalancerSessionAffinityAttributes {
 	DrainDuration: *f64,
@@ -2905,7 +2905,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
 
 ---
 
@@ -2919,7 +2919,7 @@ Headers *[]*string
 
 Configures the HTTP header names to use when header session affinity is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#headers LoadBalancer#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#headers LoadBalancer#headers}
 
 ---
 
@@ -2935,7 +2935,7 @@ Configures how headers are used when header session affinity is enabled.
 
 Set to true to require all headers to be present on requests in order for sessions to be created or false to require at least one header to be present. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
 
 ---
 
@@ -2951,7 +2951,7 @@ Configures the SameSite attribute on session affinity cookie.
 
 Value `Auto` will be translated to `Lax` or `None` depending if Always Use HTTPS is enabled. Note: when using value `None`, then you can not set [`secure="Never"`](#secure). Available values: `Auto`, `Lax`, `None`, `Strict`. Defaults to `Auto`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
 
 ---
 
@@ -2967,7 +2967,7 @@ Configures the Secure attribute on session affinity cookie.
 
 Value `Always` indicates the Secure attribute will be set in the Set-Cookie header, `Never` indicates the Secure attribute will not be set, and `Auto` will set the Secure attribute depending if Always Use HTTPS is enabled. Available values: `Auto`, `Always`, `Never`. Defaults to `Auto`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#secure LoadBalancer#secure}
 
 ---
 
@@ -2983,7 +2983,7 @@ Configures the zero-downtime failover between origins within a pool when session
 
 Value `none` means no failover takes place for sessions pinned to the origin. Value `temporary` means traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. Value `sticky` means the session affinity cookie is updated and subsequent requests are sent to the new origin. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. Available values: `none`, `temporary`, `sticky`. Defaults to `none`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
 
 ---
 
@@ -2994,7 +2994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerAdaptiveRoutingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerAdaptiveRoutingList
 ```
@@ -3137,7 +3137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerAdaptiveRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerAdaptiveRoutingOutputReference
 ```
@@ -3433,7 +3433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerCountryPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerCountryPoolsList
 ```
@@ -3576,7 +3576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerCountryPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerCountryPoolsOutputReference
 ```
@@ -3887,7 +3887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerLocationStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerLocationStrategyList
 ```
@@ -4030,7 +4030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerLocationStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerLocationStrategyOutputReference
 ```
@@ -4355,7 +4355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerPopPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerPopPoolsList
 ```
@@ -4498,7 +4498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerPopPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerPopPoolsOutputReference
 ```
@@ -4809,7 +4809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRandomSteeringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRandomSteeringList
 ```
@@ -4952,7 +4952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRandomSteeringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRandomSteeringOutputReference
 ```
@@ -5277,7 +5277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRegionPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRegionPoolsList
 ```
@@ -5420,7 +5420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRegionPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRegionPoolsOutputReference
 ```
@@ -5731,7 +5731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesFixedResponseOutputReference
 ```
@@ -6096,7 +6096,7 @@ func InternalValue() LoadBalancerRulesFixedResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesList
 ```
@@ -6239,7 +6239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOutputReference
 ```
@@ -6728,7 +6728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesAdaptiveRoutingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesAdaptiveRoutingList
 ```
@@ -6871,7 +6871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesAdaptiveRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesAdaptiveRoutingOutputReference
 ```
@@ -7167,7 +7167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesCountryPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesCountryPoolsList
 ```
@@ -7310,7 +7310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesCountryPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesCountryPoolsOutputReference
 ```
@@ -7621,7 +7621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesList
 ```
@@ -7764,7 +7764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesLocationStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesLocationStrategyList
 ```
@@ -7907,7 +7907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesLocationStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesLocationStrategyOutputReference
 ```
@@ -8232,7 +8232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesOutputReference
 ```
@@ -8967,7 +8967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesPopPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesPopPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesPopPoolsList
 ```
@@ -9110,7 +9110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesPopPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesPopPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesPopPoolsOutputReference
 ```
@@ -9421,7 +9421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRandomSteeringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesRandomSteeringList
 ```
@@ -9564,7 +9564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRandomSteeringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesRandomSteeringOutputReference
 ```
@@ -9889,7 +9889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRegionPoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesRegionPoolsList
 ```
@@ -10032,7 +10032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesRegionPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesRegionPoolsOutputReference
 ```
@@ -10343,7 +10343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesSessionAffinityAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesSessionAffinityAttributesList
 ```
@@ -10486,7 +10486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference
 ```
@@ -10898,7 +10898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerSessionAffinityAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerSessionAffinityAttributesList
 ```
@@ -11041,7 +11041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancer"
 
 loadbalancer.NewLoadBalancerSessionAffinityAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoadBalancerSessionAffinityAttributesOutputReference
 ```

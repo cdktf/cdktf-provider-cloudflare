@@ -4,12 +4,12 @@
 
 ### D1Database <a name="D1Database" id="@cdktf/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.NewD1Database(scope Construct, id *string, config D1DatabaseConfig) D1Database
 ```
@@ -328,7 +328,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.d1Database.D1Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.d1Database.D1Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -417,7 +417,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 &d1database.D1DatabaseConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -808,7 +808,7 @@ Name *string
 
 The name of the D1 Database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/d1_database#name D1Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 

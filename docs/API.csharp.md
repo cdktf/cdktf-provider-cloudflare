@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataCloudflareList](./dataCloudflareList.csharp.md)
 - [dataCloudflareLists](./dataCloudflareLists.csharp.md)
 - [dataCloudflareLoadBalancerPools](./dataCloudflareLoadBalancerPools.csharp.md)
+- [dataCloudflareOriginCaCertificate](./dataCloudflareOriginCaCertificate.csharp.md)
 - [dataCloudflareOriginCaRootCertificate](./dataCloudflareOriginCaRootCertificate.csharp.md)
 - [dataCloudflareRecord](./dataCloudflareRecord.csharp.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.csharp.md)

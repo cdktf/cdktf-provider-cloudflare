@@ -4,7 +4,7 @@
 
 ### EmailRoutingSettings <a name="EmailRoutingSettings" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer"></a>
 
@@ -45,7 +45,7 @@ EmailRoutingSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.skipWizard">skipWizard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to check if the user skipped the configuration wizard. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Flag to check if the user skipped the configuration wizard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
 
 ---
 
@@ -538,7 +538,7 @@ The construct id used in the generated config for the EmailRoutingSettings to im
 
 The id of the existing EmailRoutingSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ EmailRoutingSettingsConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.skipWizard">skipWizard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to check if the user skipped the configuration wizard. |
 
 ---
@@ -1002,7 +1002,7 @@ public java.lang.Object getEnabled();
 
 State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
 
 ---
 
@@ -1016,7 +1016,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 
 ---
 
@@ -1028,7 +1028,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#id EmailRoutingSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ public java.lang.Object getSkipWizard();
 
 Flag to check if the user skipped the configuration wizard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
 
 ---
 

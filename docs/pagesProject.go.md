@@ -4,12 +4,12 @@
 
 ### PagesProject <a name="PagesProject" id="@cdktf/provider-cloudflare.pagesProject.PagesProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project cloudflare_pages_project}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project cloudflare_pages_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProject(scope Construct, id *string, config PagesProjectConfig) PagesProject
 ```
@@ -395,7 +395,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.PagesProject_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.PagesProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ pagesproject.PagesProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.PagesProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ pagesproject.PagesProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.PagesProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -484,7 +484,7 @@ The construct id used in the generated config for the PagesProject to import.
 
 The id of the existing PagesProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectBuildConfig {
 	BuildCommand: *string,
@@ -904,7 +904,7 @@ BuildCommand *string
 
 Command used to build project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#build_command PagesProject#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#build_command PagesProject#build_command}
 
 ---
 
@@ -918,7 +918,7 @@ DestinationDir *string
 
 Output directory of the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
 
 ---
 
@@ -934,7 +934,7 @@ Your project's root directory, where Cloudflare runs the build command.
 
 If your site is not in a subdirectory, leave this path value empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
 
 ---
 
@@ -948,7 +948,7 @@ WebAnalyticsTag *string
 
 The classifying tag for analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
 
 ---
 
@@ -962,7 +962,7 @@ WebAnalyticsToken *string
 
 The auth token for analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
 
 ---
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectConfig {
 	Connection: interface{},
@@ -984,10 +984,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesprojec
 	AccountId: *string,
 	Name: *string,
 	ProductionBranch: *string,
-	BuildConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectBuildConfig,
-	DeploymentConfigs: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectDeploymentConfigs,
+	BuildConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectBuildConfig,
+	DeploymentConfigs: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectDeploymentConfigs,
 	Id: *string,
-	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectSource,
+	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectSource,
 }
 ```
 
@@ -1007,7 +1007,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesprojec
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.productionBranch">ProductionBranch</a></code> | <code>*string</code> | The name of the branch that is used for the production environment. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.buildConfig">BuildConfig</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | build_config block. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.deploymentConfigs">DeploymentConfigs</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | deployment_configs block. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#id PagesProject#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#id PagesProject#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.source">Source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | source block. |
 
 ---
@@ -1092,7 +1092,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#account_id PagesProject#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#account_id PagesProject#account_id}
 
 ---
 
@@ -1106,7 +1106,7 @@ Name *string
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1120,7 +1120,7 @@ ProductionBranch *string
 
 The name of the branch that is used for the production environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
 
 ---
 
@@ -1134,7 +1134,7 @@ BuildConfig PagesProjectBuildConfig
 
 build_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#build_config PagesProject#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#build_config PagesProject#build_config}
 
 ---
 
@@ -1148,7 +1148,7 @@ DeploymentConfigs PagesProjectDeploymentConfigs
 
 deployment_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
 
 ---
 
@@ -1160,7 +1160,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#id PagesProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#id PagesProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ Source PagesProjectSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#source PagesProject#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#source PagesProject#source}
 
 ---
 
@@ -1186,11 +1186,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigs {
-	Preview: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectDeploymentConfigsPreview,
-	Production: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectDeploymentConfigsProduction,
+	Preview: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview,
+	Production: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction,
 }
 ```
 
@@ -1213,7 +1213,7 @@ Preview PagesProjectDeploymentConfigsPreview
 
 preview block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#preview PagesProject#preview}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#preview PagesProject#preview}
 
 ---
 
@@ -1227,7 +1227,7 @@ Production PagesProjectDeploymentConfigsProduction
 
 production block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#production PagesProject#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#production PagesProject#production}
 
 ---
 
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigsPreview {
 	AlwaysUseLatestCompatibilityDate: interface{},
@@ -1247,7 +1247,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesprojec
 	EnvironmentVariables: *map[string]*string,
 	FailOpen: interface{},
 	KvNamespaces: *map[string]*string,
-	Placement: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement,
+	Placement: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement,
 	R2Buckets: *map[string]*string,
 	Secrets: *map[string]*string,
 	ServiceBinding: interface{},
@@ -1285,7 +1285,7 @@ AlwaysUseLatestCompatibilityDate interface{}
 
 Use latest compatibility date for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
 
 ---
 
@@ -1299,7 +1299,7 @@ CompatibilityDate *string
 
 Compatibility date used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 
 ---
 
@@ -1313,7 +1313,7 @@ CompatibilityFlags *[]*string
 
 Compatibility flags used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 
 ---
 
@@ -1327,7 +1327,7 @@ D1Databases *map[string]*string
 
 D1 Databases used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
 
 ---
 
@@ -1341,7 +1341,7 @@ DurableObjectNamespaces *map[string]*string
 
 Durable Object namespaces used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
 
 ---
 
@@ -1355,7 +1355,7 @@ EnvironmentVariables *map[string]*string
 
 Environment variables for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
 
 ---
 
@@ -1369,7 +1369,7 @@ FailOpen interface{}
 
 Fail open used for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
 
 ---
 
@@ -1383,7 +1383,7 @@ KvNamespaces *map[string]*string
 
 KV namespaces used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
 
 ---
 
@@ -1397,7 +1397,7 @@ Placement PagesProjectDeploymentConfigsPreviewPlacement
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#placement PagesProject#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#placement PagesProject#placement}
 
 ---
 
@@ -1411,7 +1411,7 @@ R2Buckets *map[string]*string
 
 R2 Buckets used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
 
 ---
 
@@ -1425,7 +1425,7 @@ Secrets *map[string]*string
 
 Encrypted environment variables for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#secrets PagesProject#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#secrets PagesProject#secrets}
 
 ---
 
@@ -1439,7 +1439,7 @@ ServiceBinding interface{}
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
 
 ---
 
@@ -1453,7 +1453,7 @@ UsageModel *string
 
 Usage model used for Pages Functions. Defaults to `bundled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
 
 ---
 
@@ -1462,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigsPreviewPlacement {
 	Mode: *string,
@@ -1487,7 +1487,7 @@ Mode *string
 
 Placement Mode for the Pages Function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#mode PagesProject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#mode PagesProject#mode}
 
 ---
 
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigsPreviewServiceBinding {
 	Name: *string,
@@ -1525,7 +1525,7 @@ Name *string
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1539,7 +1539,7 @@ Service *string
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#service PagesProject#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#service PagesProject#service}
 
 ---
 
@@ -1553,7 +1553,7 @@ Environment *string
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#environment PagesProject#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#environment PagesProject#environment}
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigsProduction {
 	AlwaysUseLatestCompatibilityDate: interface{},
@@ -1573,7 +1573,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesprojec
 	EnvironmentVariables: *map[string]*string,
 	FailOpen: interface{},
 	KvNamespaces: *map[string]*string,
-	Placement: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectDeploymentConfigsProductionPlacement,
+	Placement: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement,
 	R2Buckets: *map[string]*string,
 	Secrets: *map[string]*string,
 	ServiceBinding: interface{},
@@ -1611,7 +1611,7 @@ AlwaysUseLatestCompatibilityDate interface{}
 
 Use latest compatibility date for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
 
 ---
 
@@ -1625,7 +1625,7 @@ CompatibilityDate *string
 
 Compatibility date used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 
 ---
 
@@ -1639,7 +1639,7 @@ CompatibilityFlags *[]*string
 
 Compatibility flags used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 
 ---
 
@@ -1653,7 +1653,7 @@ D1Databases *map[string]*string
 
 D1 Databases used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
 
 ---
 
@@ -1667,7 +1667,7 @@ DurableObjectNamespaces *map[string]*string
 
 Durable Object namespaces used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
 
 ---
 
@@ -1681,7 +1681,7 @@ EnvironmentVariables *map[string]*string
 
 Environment variables for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
 
 ---
 
@@ -1695,7 +1695,7 @@ FailOpen interface{}
 
 Fail open used for Pages Functions. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
 
 ---
 
@@ -1709,7 +1709,7 @@ KvNamespaces *map[string]*string
 
 KV namespaces used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
 
 ---
 
@@ -1723,7 +1723,7 @@ Placement PagesProjectDeploymentConfigsProductionPlacement
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#placement PagesProject#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#placement PagesProject#placement}
 
 ---
 
@@ -1737,7 +1737,7 @@ R2Buckets *map[string]*string
 
 R2 Buckets used for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
 
 ---
 
@@ -1751,7 +1751,7 @@ Secrets *map[string]*string
 
 Encrypted environment variables for Pages Functions. Defaults to `map[]`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#secrets PagesProject#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#secrets PagesProject#secrets}
 
 ---
 
@@ -1765,7 +1765,7 @@ ServiceBinding interface{}
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
 
 ---
 
@@ -1779,7 +1779,7 @@ UsageModel *string
 
 Usage model used for Pages Functions. Defaults to `bundled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
 
 ---
 
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigsProductionPlacement {
 	Mode: *string,
@@ -1813,7 +1813,7 @@ Mode *string
 
 Placement Mode for the Pages Function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#mode PagesProject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#mode PagesProject#mode}
 
 ---
 
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectDeploymentConfigsProductionServiceBinding {
 	Name: *string,
@@ -1851,7 +1851,7 @@ Name *string
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1865,7 +1865,7 @@ Service *string
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#service PagesProject#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#service PagesProject#service}
 
 ---
 
@@ -1879,7 +1879,7 @@ Environment *string
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#environment PagesProject#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#environment PagesProject#environment}
 
 ---
 
@@ -1888,10 +1888,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectSource {
-	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.pagesProject.PagesProjectSourceConfig,
+	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.pagesProject.PagesProjectSourceConfig,
 	Type: *string,
 }
 ```
@@ -1915,7 +1915,7 @@ Config PagesProjectSourceConfig
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#config PagesProject#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#config PagesProject#config}
 
 ---
 
@@ -1929,7 +1929,7 @@ Type *string
 
 Project host type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#type PagesProject#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#type PagesProject#type}
 
 ---
 
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 &pagesproject.PagesProjectSourceConfig {
 	ProductionBranch: *string,
@@ -1979,7 +1979,7 @@ ProductionBranch *string
 
 Project production branch name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
 
 ---
 
@@ -1993,7 +1993,7 @@ DeploymentsEnabled interface{}
 
 Toggle deployments on this repo. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
 
 ---
 
@@ -2007,7 +2007,7 @@ Owner *string
 
 Project owner username. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#owner PagesProject#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#owner PagesProject#owner}
 
 ---
 
@@ -2021,7 +2021,7 @@ PrCommentsEnabled interface{}
 
 Enable Pages to comment on Pull Requests. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
 
 ---
 
@@ -2035,7 +2035,7 @@ PreviewBranchExcludes *[]*string
 
 Branches will be excluded from automatic deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
 
 ---
 
@@ -2049,7 +2049,7 @@ PreviewBranchIncludes *[]*string
 
 Branches will be included for automatic deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
 
 ---
 
@@ -2063,7 +2063,7 @@ PreviewDeploymentSetting *string
 
 Preview Deployment Setting. Defaults to `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
 
 ---
 
@@ -2077,7 +2077,7 @@ ProductionDeploymentEnabled interface{}
 
 Enable production deployments. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
 
 ---
 
@@ -2091,7 +2091,7 @@ RepoName *string
 
 Project repository name. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
 
 ---
 
@@ -2102,7 +2102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectBuildConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectBuildConfigOutputReference
 ```
@@ -2496,7 +2496,7 @@ func InternalValue() PagesProjectBuildConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsOutputReference
 ```
@@ -2829,7 +2829,7 @@ func InternalValue() PagesProjectDeploymentConfigs
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsPreviewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsPreviewOutputReference
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() PagesProjectDeploymentConfigsPreview
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsPreviewPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsPreviewPlacementOutputReference
 ```
@@ -3759,7 +3759,7 @@ func InternalValue() PagesProjectDeploymentConfigsPreviewPlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsPreviewServiceBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PagesProjectDeploymentConfigsPreviewServiceBindingList
 ```
@@ -3902,7 +3902,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsPreviewServiceBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference
 ```
@@ -4242,7 +4242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsProductionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionOutputReference
 ```
@@ -4894,7 +4894,7 @@ func InternalValue() PagesProjectDeploymentConfigsProduction
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsProductionPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionPlacementOutputReference
 ```
@@ -5172,7 +5172,7 @@ func InternalValue() PagesProjectDeploymentConfigsProductionPlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsProductionServiceBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PagesProjectDeploymentConfigsProductionServiceBindingList
 ```
@@ -5315,7 +5315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectDeploymentConfigsProductionServiceBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PagesProjectDeploymentConfigsProductionServiceBindingOutputReference
 ```
@@ -5655,7 +5655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectSourceConfigOutputReference
 ```
@@ -6158,7 +6158,7 @@ func InternalValue() PagesProjectSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/pagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pagesproject"
 
 pagesproject.NewPagesProjectSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PagesProjectSourceOutputReference
 ```
