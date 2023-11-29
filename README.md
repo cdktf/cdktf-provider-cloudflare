@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform cloudflare Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on cloudflare 4.19.0
+Is based directly on cloudflare 4.20.0
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform cloudflare Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform cloudflare Provider](https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0)
+- [Terraform cloudflare Provider](https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-cloudflare/releases)
 - [Terraform Engine](https://terraform.io)
 

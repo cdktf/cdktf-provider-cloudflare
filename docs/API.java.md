@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataCloudflareList](./dataCloudflareList.java.md)
 - [dataCloudflareLists](./dataCloudflareLists.java.md)
 - [dataCloudflareLoadBalancerPools](./dataCloudflareLoadBalancerPools.java.md)
+- [dataCloudflareOriginCaCertificate](./dataCloudflareOriginCaCertificate.java.md)
 - [dataCloudflareOriginCaRootCertificate](./dataCloudflareOriginCaRootCertificate.java.md)
 - [dataCloudflareRecord](./dataCloudflareRecord.java.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.java.md)

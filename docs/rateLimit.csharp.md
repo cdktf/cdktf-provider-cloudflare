@@ -4,7 +4,7 @@
 
 ### RateLimit <a name="RateLimit" id="@cdktf/provider-cloudflare.rateLimit.RateLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit cloudflare_rate_limit}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit cloudflare_rate_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimit.Initializer"></a>
 
@@ -498,7 +498,7 @@ The construct id used in the generated config for the RateLimit to import.
 
 The id of the existing RateLimit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,7 +947,7 @@ public string Mode { get; set; }
 
 The type of action to perform. Available values: `simulate`, `ban`, `challenge`, `js_challenge`, `managed_challenge`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#mode RateLimit#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#mode RateLimit#mode}
 
 ---
 
@@ -961,7 +961,7 @@ public RateLimitActionResponse Response { get; set; }
 
 response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#response RateLimit#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#response RateLimit#response}
 
 ---
 
@@ -977,7 +977,7 @@ The time in seconds as an integer to perform the mitigation action.
 
 This field is required if the `mode` is either `simulate` or `ban`. Must be the same or greater than the period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#timeout RateLimit#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#timeout RateLimit#timeout}
 
 ---
 
@@ -1013,7 +1013,7 @@ public string Body { get; set; }
 
 The body to return, the content here should conform to the `content_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#body RateLimit#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#body RateLimit#body}
 
 ---
 
@@ -1027,7 +1027,7 @@ public string ContentType { get; set; }
 
 The content-type of the body. Available values: `text/plain`, `text/xml`, `application/json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#content_type RateLimit#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#content_type RateLimit#content_type}
 
 ---
 
@@ -1074,11 +1074,11 @@ new RateLimitConfig {
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.period">Period</a></code> | <code>double</code> | The time in seconds to count matching traffic. |
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.threshold">Threshold</a></code> | <code>double</code> | The threshold that triggers the rate limit mitigations, combine with period. |
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.bypassUrlPatterns">BypassUrlPatterns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#bypass_url_patterns RateLimit#bypass_url_patterns}. |
+| <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.bypassUrlPatterns">BypassUrlPatterns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#bypass_url_patterns RateLimit#bypass_url_patterns}. |
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.correlate">Correlate</a></code> | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelate">RateLimitCorrelate</a></code> | correlate block. |
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.description">Description</a></code> | <code>string</code> | A note that you can use to describe the reason for a rate limit. |
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.disabled">Disabled</a></code> | <code>object</code> | Whether this ratelimit is currently disabled. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#id RateLimit#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#id RateLimit#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.property.match">Match</a></code> | <code><a href="#@cdktf/provider-cloudflare.rateLimit.RateLimitMatch">RateLimitMatch</a></code> | match block. |
 
 ---
@@ -1163,7 +1163,7 @@ public RateLimitAction Action { get; set; }
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#action RateLimit#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#action RateLimit#action}
 
 ---
 
@@ -1179,7 +1179,7 @@ The time in seconds to count matching traffic.
 
 If the count exceeds threshold within this period the action will be performed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#period RateLimit#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#period RateLimit#period}
 
 ---
 
@@ -1193,7 +1193,7 @@ public double Threshold { get; set; }
 
 The threshold that triggers the rate limit mitigations, combine with period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#threshold RateLimit#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#threshold RateLimit#threshold}
 
 ---
 
@@ -1207,7 +1207,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
 
 ---
 
@@ -1219,7 +1219,7 @@ public string[] BypassUrlPatterns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#bypass_url_patterns RateLimit#bypass_url_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#bypass_url_patterns RateLimit#bypass_url_patterns}.
 
 ---
 
@@ -1233,7 +1233,7 @@ public RateLimitCorrelate Correlate { get; set; }
 
 correlate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#correlate RateLimit#correlate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#correlate RateLimit#correlate}
 
 ---
 
@@ -1249,7 +1249,7 @@ A note that you can use to describe the reason for a rate limit.
 
 This value is sanitized and all tags are removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#description RateLimit#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#description RateLimit#description}
 
 ---
 
@@ -1263,7 +1263,7 @@ public object Disabled { get; set; }
 
 Whether this ratelimit is currently disabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#disabled RateLimit#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#disabled RateLimit#disabled}
 
 ---
 
@@ -1275,7 +1275,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#id RateLimit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#id RateLimit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1292,7 @@ public RateLimitMatch Match { get; set; }
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#match RateLimit#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#match RateLimit#match}
 
 ---
 
@@ -1326,7 +1326,7 @@ public string By { get; set; }
 
 If set to 'nat', NAT support will be enabled for rate limiting. Available values: `nat`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#by RateLimit#by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#by RateLimit#by}
 
 ---
 
@@ -1362,7 +1362,7 @@ public RateLimitMatchRequest Request { get; set; }
 
 request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#request RateLimit#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#request RateLimit#request}
 
 ---
 
@@ -1376,7 +1376,7 @@ public RateLimitMatchResponse Response { get; set; }
 
 response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#response RateLimit#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#response RateLimit#response}
 
 ---
 
@@ -1414,7 +1414,7 @@ public string[] Methods { get; set; }
 
 HTTP Methods to match traffic on. Available values: `GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`, `_ALL_`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#methods RateLimit#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#methods RateLimit#methods}
 
 ---
 
@@ -1428,7 +1428,7 @@ public string[] Schemes { get; set; }
 
 HTTP schemes to match traffic on. Available values: `HTTP`, `HTTPS`, `_ALL_`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#schemes RateLimit#schemes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#schemes RateLimit#schemes}
 
 ---
 
@@ -1442,7 +1442,7 @@ public string UrlPattern { get; set; }
 
 The URL pattern to match comprised of the host and path, i.e. example.org/path. Wildcard are expanded to match applicable traffic, query strings are not matched. Use _ for all traffic to your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#url_pattern RateLimit#url_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#url_pattern RateLimit#url_pattern}
 
 ---
 
@@ -1480,7 +1480,7 @@ public object Headers { get; set; }
 
 List of HTTP headers maps to match the origin response on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#headers RateLimit#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#headers RateLimit#headers}
 
 ---
 
@@ -1496,7 +1496,7 @@ Only count traffic that has come from your origin servers.
 
 If true, cached items that Cloudflare serve will not count towards rate limiting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
 
 ---
 
@@ -1510,7 +1510,7 @@ public double[] Statuses { get; set; }
 
 HTTP Status codes, can be one, many or indicate all by not providing this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/rate_limit#statuses RateLimit#statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/rate_limit#statuses RateLimit#statuses}
 
 ---
 

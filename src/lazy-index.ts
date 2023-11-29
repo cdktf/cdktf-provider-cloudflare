@@ -129,6 +129,7 @@ Object.defineProperty(exports, 'dataCloudflareIpRanges', { get: function () { re
 Object.defineProperty(exports, 'dataCloudflareList', { get: function () { return require('./data-cloudflare-list'); } });
 Object.defineProperty(exports, 'dataCloudflareLists', { get: function () { return require('./data-cloudflare-lists'); } });
 Object.defineProperty(exports, 'dataCloudflareLoadBalancerPools', { get: function () { return require('./data-cloudflare-load-balancer-pools'); } });
+Object.defineProperty(exports, 'dataCloudflareOriginCaCertificate', { get: function () { return require('./data-cloudflare-origin-ca-certificate'); } });
 Object.defineProperty(exports, 'dataCloudflareOriginCaRootCertificate', { get: function () { return require('./data-cloudflare-origin-ca-root-certificate'); } });
 Object.defineProperty(exports, 'dataCloudflareRecord', { get: function () { return require('./data-cloudflare-record'); } });
 Object.defineProperty(exports, 'dataCloudflareRulesets', { get: function () { return require('./data-cloudflare-rulesets'); } });

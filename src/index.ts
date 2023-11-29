@@ -129,6 +129,7 @@ export * as dataCloudflareIpRanges from './data-cloudflare-ip-ranges';
 export * as dataCloudflareList from './data-cloudflare-list';
 export * as dataCloudflareLists from './data-cloudflare-lists';
 export * as dataCloudflareLoadBalancerPools from './data-cloudflare-load-balancer-pools';
+export * as dataCloudflareOriginCaCertificate from './data-cloudflare-origin-ca-certificate';
 export * as dataCloudflareOriginCaRootCertificate from './data-cloudflare-origin-ca-root-certificate';
 export * as dataCloudflareRecord from './data-cloudflare-record';
 export * as dataCloudflareRulesets from './data-cloudflare-rulesets';

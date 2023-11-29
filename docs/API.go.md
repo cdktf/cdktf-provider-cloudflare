@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataCloudflareList](./dataCloudflareList.go.md)
 - [dataCloudflareLists](./dataCloudflareLists.go.md)
 - [dataCloudflareLoadBalancerPools](./dataCloudflareLoadBalancerPools.go.md)
+- [dataCloudflareOriginCaCertificate](./dataCloudflareOriginCaCertificate.go.md)
 - [dataCloudflareOriginCaRootCertificate](./dataCloudflareOriginCaRootCertificate.go.md)
 - [dataCloudflareRecord](./dataCloudflareRecord.go.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.go.md)

@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataCloudflareList](./dataCloudflareList.typescript.md)
 - [dataCloudflareLists](./dataCloudflareLists.typescript.md)
 - [dataCloudflareLoadBalancerPools](./dataCloudflareLoadBalancerPools.typescript.md)
+- [dataCloudflareOriginCaCertificate](./dataCloudflareOriginCaCertificate.typescript.md)
 - [dataCloudflareOriginCaRootCertificate](./dataCloudflareOriginCaRootCertificate.typescript.md)
 - [dataCloudflareRecord](./dataCloudflareRecord.typescript.md)
 - [dataCloudflareRulesets](./dataCloudflareRulesets.typescript.md)
