@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.NewTurnstileWidget(scope Construct, id *string, config TurnstileWidgetConfig) TurnstileWidget
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ turnstilewidget.TurnstileWidget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ turnstilewidget.TurnstileWidget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 &turnstilewidget.TurnstileWidgetConfig {
 	Connection: interface{},
