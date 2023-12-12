@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.filter.Filter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/filter"
 
 filter.NewFilter(scope Construct, id *string, config FilterConfig) Filter
 ```
@@ -399,7 +399,7 @@ func ResetRef()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.filter.Filter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/filter"
 
 filter.Filter_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.filter.Filter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/filter"
 
 filter.Filter_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ filter.Filter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.filter.Filter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/filter"
 
 filter.Filter_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ filter.Filter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/filter"
 
 filter.Filter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.filter.FilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/filter"
 
 &filter.FilterConfig {
 	Connection: interface{},
