@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.NewLogpushJob(scope Construct, id *string, config LogpushJobConfig) LogpushJob
 ```
@@ -462,7 +462,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ logpushjob.LogpushJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ logpushjob.LogpushJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 &logpushjob.LogpushJobConfig {
 	Connection: interface{},
