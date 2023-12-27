@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,71 +15,89 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#account_id AccessApplication#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#account_id AccessApplication#account_id}
   */
   readonly accountId?: string;
   /**
   * The identity providers selected for the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
   */
   readonly allowedIdps?: string[];
   /**
+  * The logo URL of the app launcher.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
+  */
+  readonly appLauncherLogoUrl?: string;
+  /**
   * Option to show/hide applications in App Launcher. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
   */
   readonly appLauncherVisible?: boolean | cdktf.IResolvable;
   /**
   * Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
   */
   readonly autoRedirectToIdentity?: boolean | cdktf.IResolvable;
   /**
+  * The background color of the app launcher.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
+  */
+  readonly bgColor?: string;
+  /**
   * Option that returns a custom error message when a user is denied access to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
   */
   readonly customDenyMessage?: string;
   /**
   * Option that redirects to a custom URL when a user is denied access to the application via identity based rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
   */
   readonly customDenyUrl?: string;
   /**
   * Option that redirects to a custom URL when a user is denied access to the application via non identity rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
   */
   readonly customNonIdentityDenyUrl?: string;
   /**
   * The custom pages selected for the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
   */
   readonly customPages?: string[];
   /**
   * The primary hostname and path that Access will secure. If the app is visible in the App Launcher dashboard, this is the domain that will be displayed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#domain AccessApplication#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#domain AccessApplication#domain}
   */
   readonly domain?: string;
   /**
   * Option to provide increased security against compromised authorization tokens and CSRF attacks by requiring an additional "binding" cookie on requests. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
   */
   readonly enableBindingCookie?: boolean | cdktf.IResolvable;
   /**
+  * The background color of the header bar in the app launcher.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
+  */
+  readonly headerBgColor?: string;
+  /**
   * Option to add the `HttpOnly` cookie flag to access tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
   */
   readonly httpOnlyCookieAttribute?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#id AccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#id AccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -88,73 +106,85 @@ export interface AccessApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Image URL for the logo shown in the app launcher dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
   */
   readonly logoUrl?: string;
   /**
   * Friendly name of the Access Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#name AccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#name AccessApplication#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
   * Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
   */
   readonly sameSiteCookieAttribute?: string;
   /**
   * List of domains that access will secure. Only present for self_hosted, vnc, and ssh applications. Always includes the value set as `domain`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
   */
   readonly selfHostedDomains?: string[];
   /**
   * Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
   */
   readonly serviceAuth401Redirect?: boolean | cdktf.IResolvable;
   /**
   * How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`. Defaults to `24h`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
   */
   readonly sessionDuration?: string;
   /**
   * Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
   */
   readonly skipInterstitial?: boolean | cdktf.IResolvable;
   /**
   * The itags associated with the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#tags AccessApplication#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#tags AccessApplication#tags}
   */
   readonly tags?: string[];
   /**
   * The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`. Defaults to `self_hosted`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#type AccessApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#type AccessApplication#type}
   */
   readonly type?: string;
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
   */
   readonly zoneId?: string;
   /**
   * cors_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
   */
   readonly corsHeaders?: AccessApplicationCorsHeaders[] | cdktf.IResolvable;
   /**
+  * footer_links block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
+  */
+  readonly footerLinks?: AccessApplicationFooterLinks[] | cdktf.IResolvable;
+  /**
+  * landing_page_design block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
+  */
+  readonly landingPageDesign?: AccessApplicationLandingPageDesign;
+  /**
   * saas_app block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
   */
   readonly saasApp?: AccessApplicationSaasApp;
 }
@@ -162,49 +192,49 @@ export interface AccessApplicationCorsHeaders {
   /**
   * Value to determine whether all HTTP headers are exposed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
   */
   readonly allowAllHeaders?: boolean | cdktf.IResolvable;
   /**
   * Value to determine whether all methods are exposed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
   */
   readonly allowAllMethods?: boolean | cdktf.IResolvable;
   /**
   * Value to determine whether all origins are permitted to make CORS requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
   */
   readonly allowAllOrigins?: boolean | cdktf.IResolvable;
   /**
   * Value to determine if credentials (cookies, authorization headers, or TLS client certificates) are included with requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * List of HTTP headers to expose via CORS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
   * List of methods to expose via CORS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
   */
   readonly allowedMethods?: string[];
   /**
   * List of origins permitted to make CORS requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * The maximum time a preflight request will be cached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#max_age AccessApplication#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#max_age AccessApplication#max_age}
   */
   readonly maxAge?: number;
 }
@@ -460,11 +490,322 @@ export class AccessApplicationCorsHeadersList extends cdktf.ComplexList {
     return new AccessApplicationCorsHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessApplicationFooterLinks {
+  /**
+  * The name of the footer link.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#name AccessApplication#name}
+  */
+  readonly name?: string;
+  /**
+  * The URL of the footer link.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#url AccessApplication#url}
+  */
+  readonly url?: string;
+}
+
+export function accessApplicationFooterLinksToTerraform(struct?: AccessApplicationFooterLinks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    url: cdktf.stringToTerraform(struct!.url),
+  }
+}
+
+export class AccessApplicationFooterLinksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessApplicationFooterLinks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessApplicationFooterLinks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._url = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._url = value.url;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+}
+
+export class AccessApplicationFooterLinksList extends cdktf.ComplexList {
+  public internalValue? : AccessApplicationFooterLinks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessApplicationFooterLinksOutputReference {
+    return new AccessApplicationFooterLinksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessApplicationLandingPageDesign {
+  /**
+  * The button color of the landing page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#button_color AccessApplication#button_color}
+  */
+  readonly buttonColor?: string;
+  /**
+  * The button text color of the landing page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
+  */
+  readonly buttonTextColor?: string;
+  /**
+  * The URL of the image to be displayed in the landing page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#image_url AccessApplication#image_url}
+  */
+  readonly imageUrl?: string;
+  /**
+  * The message of the landing page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#message AccessApplication#message}
+  */
+  readonly message?: string;
+  /**
+  * The title of the landing page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#title AccessApplication#title}
+  */
+  readonly title?: string;
+}
+
+export function accessApplicationLandingPageDesignToTerraform(struct?: AccessApplicationLandingPageDesignOutputReference | AccessApplicationLandingPageDesign): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    button_color: cdktf.stringToTerraform(struct!.buttonColor),
+    button_text_color: cdktf.stringToTerraform(struct!.buttonTextColor),
+    image_url: cdktf.stringToTerraform(struct!.imageUrl),
+    message: cdktf.stringToTerraform(struct!.message),
+    title: cdktf.stringToTerraform(struct!.title),
+  }
+}
+
+export class AccessApplicationLandingPageDesignOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessApplicationLandingPageDesign | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._buttonColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.buttonColor = this._buttonColor;
+    }
+    if (this._buttonTextColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.buttonTextColor = this._buttonTextColor;
+    }
+    if (this._imageUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageUrl = this._imageUrl;
+    }
+    if (this._message !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.message = this._message;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessApplicationLandingPageDesign | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._buttonColor = undefined;
+      this._buttonTextColor = undefined;
+      this._imageUrl = undefined;
+      this._message = undefined;
+      this._title = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._buttonColor = value.buttonColor;
+      this._buttonTextColor = value.buttonTextColor;
+      this._imageUrl = value.imageUrl;
+      this._message = value.message;
+      this._title = value.title;
+    }
+  }
+
+  // button_color - computed: false, optional: true, required: false
+  private _buttonColor?: string; 
+  public get buttonColor() {
+    return this.getStringAttribute('button_color');
+  }
+  public set buttonColor(value: string) {
+    this._buttonColor = value;
+  }
+  public resetButtonColor() {
+    this._buttonColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get buttonColorInput() {
+    return this._buttonColor;
+  }
+
+  // button_text_color - computed: false, optional: true, required: false
+  private _buttonTextColor?: string; 
+  public get buttonTextColor() {
+    return this.getStringAttribute('button_text_color');
+  }
+  public set buttonTextColor(value: string) {
+    this._buttonTextColor = value;
+  }
+  public resetButtonTextColor() {
+    this._buttonTextColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get buttonTextColorInput() {
+    return this._buttonTextColor;
+  }
+
+  // image_url - computed: false, optional: true, required: false
+  private _imageUrl?: string; 
+  public get imageUrl() {
+    return this.getStringAttribute('image_url');
+  }
+  public set imageUrl(value: string) {
+    this._imageUrl = value;
+  }
+  public resetImageUrl() {
+    this._imageUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageUrlInput() {
+    return this._imageUrl;
+  }
+
+  // message - computed: false, optional: true, required: false
+  private _message?: string; 
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+  public set message(value: string) {
+    this._message = value;
+  }
+  public resetMessage() {
+    this._message = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageInput() {
+    return this._message;
+  }
+
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+}
 export interface AccessApplicationSaasAppCustomAttributeSource {
   /**
   * The name of the attribute as provided by the IDP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#name AccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#name AccessApplication#name}
   */
   readonly name: string;
 }
@@ -528,31 +869,31 @@ export interface AccessApplicationSaasAppCustomAttribute {
   /**
   * A friendly name for the attribute as provided to the SaaS app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
   */
   readonly friendlyName?: string;
   /**
   * The name of the attribute as provided to the SaaS app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#name AccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#name AccessApplication#name}
   */
   readonly name?: string;
   /**
   * A globally unique name for an identity or service provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#name_format AccessApplication#name_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#name_format AccessApplication#name_format}
   */
   readonly nameFormat?: string;
   /**
   * True if the attribute must be always present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#required AccessApplication#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#required AccessApplication#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#source AccessApplication#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#source AccessApplication#source}
   */
   readonly source: AccessApplicationSaasAppCustomAttributeSource;
 }
@@ -740,25 +1081,25 @@ export interface AccessApplicationSaasApp {
   /**
   * The service provider's endpoint that is responsible for receiving and parsing a SAML assertion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
   */
   readonly consumerServiceUrl: string;
   /**
   * The format of the name identifier sent to the SaaS application. Defaults to `email`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
   */
   readonly nameIdFormat?: string;
   /**
   * A globally unique name for an identity or service provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
   */
   readonly spEntityId: string;
   /**
   * custom_attribute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
   */
   readonly customAttribute?: AccessApplicationSaasAppCustomAttribute[] | cdktf.IResolvable;
 }
@@ -901,7 +1242,7 @@ export class AccessApplicationSaasAppOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application cloudflare_access_application}
 */
 export class AccessApplication extends cdktf.TerraformResource {
 
@@ -917,7 +1258,7 @@ export class AccessApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccessApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessApplication to import
-  * @param importFromId The id of the existing AccessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -929,18 +1270,18 @@ export class AccessApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application cloudflare_access_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AccessApplicationConfig
+  * @param options AccessApplicationConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: AccessApplicationConfig) {
+  public constructor(scope: Construct, id: string, config: AccessApplicationConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_access_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -953,14 +1294,17 @@ export class AccessApplication extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._allowedIdps = config.allowedIdps;
+    this._appLauncherLogoUrl = config.appLauncherLogoUrl;
     this._appLauncherVisible = config.appLauncherVisible;
     this._autoRedirectToIdentity = config.autoRedirectToIdentity;
+    this._bgColor = config.bgColor;
     this._customDenyMessage = config.customDenyMessage;
     this._customDenyUrl = config.customDenyUrl;
     this._customNonIdentityDenyUrl = config.customNonIdentityDenyUrl;
     this._customPages = config.customPages;
     this._domain = config.domain;
     this._enableBindingCookie = config.enableBindingCookie;
+    this._headerBgColor = config.headerBgColor;
     this._httpOnlyCookieAttribute = config.httpOnlyCookieAttribute;
     this._id = config.id;
     this._logoUrl = config.logoUrl;
@@ -974,6 +1318,8 @@ export class AccessApplication extends cdktf.TerraformResource {
     this._type = config.type;
     this._zoneId = config.zoneId;
     this._corsHeaders.internalValue = config.corsHeaders;
+    this._footerLinks.internalValue = config.footerLinks;
+    this._landingPageDesign.internalValue = config.landingPageDesign;
     this._saasApp.internalValue = config.saasApp;
   }
 
@@ -1013,6 +1359,22 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._allowedIdps;
   }
 
+  // app_launcher_logo_url - computed: false, optional: true, required: false
+  private _appLauncherLogoUrl?: string; 
+  public get appLauncherLogoUrl() {
+    return this.getStringAttribute('app_launcher_logo_url');
+  }
+  public set appLauncherLogoUrl(value: string) {
+    this._appLauncherLogoUrl = value;
+  }
+  public resetAppLauncherLogoUrl() {
+    this._appLauncherLogoUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appLauncherLogoUrlInput() {
+    return this._appLauncherLogoUrl;
+  }
+
   // app_launcher_visible - computed: false, optional: true, required: false
   private _appLauncherVisible?: boolean | cdktf.IResolvable; 
   public get appLauncherVisible() {
@@ -1048,6 +1410,22 @@ export class AccessApplication extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoRedirectToIdentityInput() {
     return this._autoRedirectToIdentity;
+  }
+
+  // bg_color - computed: false, optional: true, required: false
+  private _bgColor?: string; 
+  public get bgColor() {
+    return this.getStringAttribute('bg_color');
+  }
+  public set bgColor(value: string) {
+    this._bgColor = value;
+  }
+  public resetBgColor() {
+    this._bgColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgColorInput() {
+    return this._bgColor;
   }
 
   // custom_deny_message - computed: false, optional: true, required: false
@@ -1146,6 +1524,22 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._enableBindingCookie;
   }
 
+  // header_bg_color - computed: false, optional: true, required: false
+  private _headerBgColor?: string; 
+  public get headerBgColor() {
+    return this.getStringAttribute('header_bg_color');
+  }
+  public set headerBgColor(value: string) {
+    this._headerBgColor = value;
+  }
+  public resetHeaderBgColor() {
+    this._headerBgColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerBgColorInput() {
+    return this._headerBgColor;
+  }
+
   // http_only_cookie_attribute - computed: false, optional: true, required: false
   private _httpOnlyCookieAttribute?: boolean | cdktf.IResolvable; 
   public get httpOnlyCookieAttribute() {
@@ -1194,13 +1588,16 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._logoUrl;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -1351,6 +1748,38 @@ export class AccessApplication extends cdktf.TerraformResource {
     return this._corsHeaders.internalValue;
   }
 
+  // footer_links - computed: false, optional: true, required: false
+  private _footerLinks = new AccessApplicationFooterLinksList(this, "footer_links", true);
+  public get footerLinks() {
+    return this._footerLinks;
+  }
+  public putFooterLinks(value: AccessApplicationFooterLinks[] | cdktf.IResolvable) {
+    this._footerLinks.internalValue = value;
+  }
+  public resetFooterLinks() {
+    this._footerLinks.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get footerLinksInput() {
+    return this._footerLinks.internalValue;
+  }
+
+  // landing_page_design - computed: false, optional: true, required: false
+  private _landingPageDesign = new AccessApplicationLandingPageDesignOutputReference(this, "landing_page_design");
+  public get landingPageDesign() {
+    return this._landingPageDesign;
+  }
+  public putLandingPageDesign(value: AccessApplicationLandingPageDesign) {
+    this._landingPageDesign.internalValue = value;
+  }
+  public resetLandingPageDesign() {
+    this._landingPageDesign.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get landingPageDesignInput() {
+    return this._landingPageDesign.internalValue;
+  }
+
   // saas_app - computed: false, optional: true, required: false
   private _saasApp = new AccessApplicationSaasAppOutputReference(this, "saas_app");
   public get saasApp() {
@@ -1375,14 +1804,17 @@ export class AccessApplication extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       allowed_idps: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIdps),
+      app_launcher_logo_url: cdktf.stringToTerraform(this._appLauncherLogoUrl),
       app_launcher_visible: cdktf.booleanToTerraform(this._appLauncherVisible),
       auto_redirect_to_identity: cdktf.booleanToTerraform(this._autoRedirectToIdentity),
+      bg_color: cdktf.stringToTerraform(this._bgColor),
       custom_deny_message: cdktf.stringToTerraform(this._customDenyMessage),
       custom_deny_url: cdktf.stringToTerraform(this._customDenyUrl),
       custom_non_identity_deny_url: cdktf.stringToTerraform(this._customNonIdentityDenyUrl),
       custom_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customPages),
       domain: cdktf.stringToTerraform(this._domain),
       enable_binding_cookie: cdktf.booleanToTerraform(this._enableBindingCookie),
+      header_bg_color: cdktf.stringToTerraform(this._headerBgColor),
       http_only_cookie_attribute: cdktf.booleanToTerraform(this._httpOnlyCookieAttribute),
       id: cdktf.stringToTerraform(this._id),
       logo_url: cdktf.stringToTerraform(this._logoUrl),
@@ -1396,6 +1828,8 @@ export class AccessApplication extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       cors_headers: cdktf.listMapper(accessApplicationCorsHeadersToTerraform, true)(this._corsHeaders.internalValue),
+      footer_links: cdktf.listMapper(accessApplicationFooterLinksToTerraform, true)(this._footerLinks.internalValue),
+      landing_page_design: accessApplicationLandingPageDesignToTerraform(this._landingPageDesign.internalValue),
       saas_app: accessApplicationSaasAppToTerraform(this._saasApp.internalValue),
     };
   }
