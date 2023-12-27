@@ -4,12 +4,12 @@
 
 ### AccountMember <a name="AccountMember" id="@cdktf/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMember(scope Construct, id *string, config AccountMemberConfig) AccountMember
 ```
@@ -385,7 +385,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accountMember.AccountMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accountMember.AccountMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ accountmember.AccountMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accountMember.AccountMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ accountmember.AccountMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accountMember.AccountMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AccountMember to import.
 
 The id of the existing AccountMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 &accountmember.AccountMemberConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accountmemb
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account ID to create the account member in. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | The email address of the user who you wish to manage. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.roleIds">RoleIds</a></code> | <code>*[]*string</code> | List of account role IDs that you want to assign to a member. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#id AccountMember#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#id AccountMember#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">Status</a></code> | <code>*string</code> | A member's status in the account. Available values: `accepted`, `pending`. |
 
 ---
@@ -901,7 +901,7 @@ AccountId *string
 
 Account ID to create the account member in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#account_id AccountMember#account_id}
 
 ---
 
@@ -917,7 +917,7 @@ The email address of the user who you wish to manage.
 
 Following creation, this field becomes read only via the API and cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#email_address AccountMember#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#email_address AccountMember#email_address}
 
 ---
 
@@ -931,7 +931,7 @@ RoleIds *[]*string
 
 List of account role IDs that you want to assign to a member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#role_ids AccountMember#role_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#role_ids AccountMember#role_ids}
 
 ---
 
@@ -943,7 +943,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#id AccountMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#id AccountMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ Status *string
 
 A member's status in the account. Available values: `accepted`, `pending`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 

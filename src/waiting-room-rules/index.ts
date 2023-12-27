@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface WaitingRoomRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface WaitingRoomRulesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
   */
   readonly zoneId: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
   */
   readonly rules?: WaitingRoomRulesRules[] | cdktf.IResolvable;
 }
@@ -42,25 +37,25 @@ export interface WaitingRoomRulesRules {
   /**
   * Action to perform in the ruleset rule. Available values: `bypass_waiting_room`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
   */
   readonly action: string;
   /**
   * Brief summary of the waiting room rule and its intended use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
   */
   readonly description?: string;
   /**
   * Criteria for an HTTP request to trigger the waiting room rule action. Uses the Firewall Rules expression language based on Wireshark display filters. Refer to the [Waiting Room Rules Docs](https://developers.cloudflare.com/waiting-room/additional-options/waiting-room-rules/bypass-rules/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
   */
   readonly expression: string;
   /**
   * Whether the rule is enabled or disabled. Available values: `enabled`, `disabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#status WaitingRoomRules#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#status WaitingRoomRules#status}
   */
   readonly status?: string;
 }
@@ -230,7 +225,7 @@ export class WaitingRoomRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}
 */
 export class WaitingRoomRules extends cdktf.TerraformResource {
 
@@ -246,7 +241,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaitingRoomRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoomRules to import
-  * @param importFromId The id of the existing WaitingRoomRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoomRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoomRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -258,7 +253,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +264,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

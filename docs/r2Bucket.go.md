@@ -4,12 +4,12 @@
 
 ### R2Bucket <a name="R2Bucket" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.NewR2Bucket(scope Construct, id *string, config R2BucketConfig) R2Bucket
 ```
@@ -378,7 +378,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ r2bucket.R2Bucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ r2bucket.R2Bucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 r2bucket.R2Bucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the R2Bucket to import.
 
 The id of the existing R2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucket"
 
 &r2bucket.R2BucketConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -871,7 +871,7 @@ Name *string
 
 The name of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/r2_bucket#name R2Bucket#name}
 
 ---
 
@@ -885,7 +885,7 @@ Location *string
 
 The location hint of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/r2_bucket#location R2Bucket#location}
 
 ---
 

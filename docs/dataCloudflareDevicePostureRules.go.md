@@ -4,12 +4,12 @@
 
 ### DataCloudflareDevicePostureRules <a name="DataCloudflareDevicePostureRules" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.NewDataCloudflareDevicePostureRules(scope Construct, id *string, config DataCloudflareDevicePostureRulesConfig) DataCloudflareDevicePostureRules
 ```
@@ -288,7 +288,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.DataCloudflareDevicePostureRules_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.DataCloudflareDevicePostureRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datacloudflaredeviceposturerules.DataCloudflareDevicePostureRules_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.DataCloudflareDevicePostureRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ datacloudflaredeviceposturerules.DataCloudflareDevicePostureRules_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.DataCloudflareDevicePostureRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -377,7 +377,7 @@ The construct id used in the generated config for the DataCloudflareDevicePostur
 
 The id of the existing DataCloudflareDevicePostureRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 &datacloudflaredeviceposturerules.DataCloudflareDevicePostureRulesConfig {
 	Connection: interface{},
@@ -683,7 +683,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Device Posture Rule. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesConfig.property.type">Type</a></code> | <code>*string</code> | The device posture rule type. |
 
@@ -769,7 +769,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
 
 ---
 
@@ -781,7 +781,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -798,7 +798,7 @@ Name *string
 
 Name of the Device Posture Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
 
 ---
 
@@ -814,7 +814,7 @@ The device posture rule type.
 
 Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
 
 ---
 
@@ -823,7 +823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 &datacloudflaredeviceposturerules.DataCloudflareDevicePostureRulesRules {
 
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.NewDataCloudflareDevicePostureRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareDevicePostureRulesRulesList
 ```
@@ -970,7 +970,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDevicePostureRules.DataCloudflareDevicePostureRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflaredeviceposturerules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredeviceposturerules"
 
 datacloudflaredeviceposturerules.NewDataCloudflareDevicePostureRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareDevicePostureRulesRulesOutputReference
 ```

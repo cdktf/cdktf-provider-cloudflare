@@ -4,7 +4,7 @@
 
 ### DevicePostureIntegration <a name="DevicePostureIntegration" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer"></a>
 
@@ -46,8 +46,8 @@ devicePostureIntegration.DevicePostureIntegration(
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the device posture integration. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.type">type</a></code> | <code>str</code> | The device posture integration type. Available values: `workspace_one`, `uptycs`, `crowdstrike_s2s`, `intune`, `kolide`, `sentinelone_s2s`, `tanium_s2s`. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.config">config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA">DevicePostureIntegrationConfigA</a>]]</code> | config block. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration.Initializer.parameter.interval">interval</a></code> | <code>str</code> | Indicates the frequency with which to poll the third-party API. Must be in the format `1h` or `30m`. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#account_id DevicePostureIntegration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#account_id DevicePostureIntegration#account_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#name DevicePostureIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#name DevicePostureIntegration#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The device posture integration type. Available values: `workspace_one`, `uptycs`, `crowdstrike_s2s`, `intune`, `kolide`, `sentinelone_s2s`, `tanium_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#type DevicePostureIntegration#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#type DevicePostureIntegration#type}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#config DevicePostureIntegration#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#config DevicePostureIntegration#config}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates the frequency with which to poll the third-party API. Must be in the format `1h` or `30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#interval DevicePostureIntegration#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#interval DevicePostureIntegration#interval}
 
 ---
 
@@ -686,7 +686,7 @@ The construct id used in the generated config for the DevicePostureIntegration t
 
 The id of the existing DevicePostureIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1075,8 +1075,8 @@ devicePostureIntegration.DevicePostureIntegrationConfig(
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.name">name</a></code> | <code>str</code> | Name of the device posture integration. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.type">type</a></code> | <code>str</code> | The device posture integration type. Available values: `workspace_one`, `uptycs`, `crowdstrike_s2s`, `intune`, `kolide`, `sentinelone_s2s`, `tanium_s2s`. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.config">config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA">DevicePostureIntegrationConfigA</a>]]</code> | config block. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig.property.interval">interval</a></code> | <code>str</code> | Indicates the frequency with which to poll the third-party API. Must be in the format `1h` or `30m`. |
 
 ---
@@ -1161,7 +1161,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#account_id DevicePostureIntegration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#account_id DevicePostureIntegration#account_id}
 
 ---
 
@@ -1175,7 +1175,7 @@ name: str
 
 Name of the device posture integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#name DevicePostureIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#name DevicePostureIntegration#name}
 
 ---
 
@@ -1189,7 +1189,7 @@ type: str
 
 The device posture integration type. Available values: `workspace_one`, `uptycs`, `crowdstrike_s2s`, `intune`, `kolide`, `sentinelone_s2s`, `tanium_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#type DevicePostureIntegration#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#type DevicePostureIntegration#type}
 
 ---
 
@@ -1203,7 +1203,7 @@ config: typing.Union[IResolvable, typing.List[DevicePostureIntegrationConfigA]]
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#config DevicePostureIntegration#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#config DevicePostureIntegration#config}
 
 ---
 
@@ -1215,7 +1215,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1230,7 +1230,7 @@ identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}.
 
 ---
 
@@ -1244,7 +1244,7 @@ interval: str
 
 Indicates the frequency with which to poll the third-party API. Must be in the format `1h` or `30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#interval DevicePostureIntegration#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#interval DevicePostureIntegration#interval}
 
 ---
 
@@ -1256,6 +1256,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import device_posture_integration
 
 devicePostureIntegration.DevicePostureIntegrationConfigA(
+  access_client_id: str = None,
+  access_client_secret: str = None,
   api_url: str = None,
   auth_url: str = None,
   client_id: str = None,
@@ -1269,12 +1271,42 @@ devicePostureIntegration.DevicePostureIntegrationConfigA(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.accessClientId">access_client_id</a></code> | <code>str</code> | The Access client ID to be used as the `Cf-Access-Client-ID` header when making a request to the `api_url`. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.accessClientSecret">access_client_secret</a></code> | <code>str</code> | The Access client secret to be used as the `Cf-Access-Client-Secret` header when making a request to the `api_url`. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.apiUrl">api_url</a></code> | <code>str</code> | The third-party API's URL. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.authUrl">auth_url</a></code> | <code>str</code> | The third-party authorization API URL. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.clientId">client_id</a></code> | <code>str</code> | The client identifier for authenticating API calls. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.clientKey">client_key</a></code> | <code>str</code> | The client key for authenticating API calls. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.clientSecret">client_secret</a></code> | <code>str</code> | The client secret for authenticating API calls. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.customerId">customer_id</a></code> | <code>str</code> | The customer identifier for authenticating API calls. |
+
+---
+
+##### `access_client_id`<sup>Optional</sup> <a name="access_client_id" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.accessClientId"></a>
+
+```python
+access_client_id: str
+```
+
+- *Type:* str
+
+The Access client ID to be used as the `Cf-Access-Client-ID` header when making a request to the `api_url`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#access_client_id DevicePostureIntegration#access_client_id}
+
+---
+
+##### `access_client_secret`<sup>Optional</sup> <a name="access_client_secret" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA.property.accessClientSecret"></a>
+
+```python
+access_client_secret: str
+```
+
+- *Type:* str
+
+The Access client secret to be used as the `Cf-Access-Client-Secret` header when making a request to the `api_url`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#access_client_secret DevicePostureIntegration#access_client_secret}
 
 ---
 
@@ -1288,7 +1320,7 @@ api_url: str
 
 The third-party API's URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#api_url DevicePostureIntegration#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#api_url DevicePostureIntegration#api_url}
 
 ---
 
@@ -1302,7 +1334,7 @@ auth_url: str
 
 The third-party authorization API URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#auth_url DevicePostureIntegration#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#auth_url DevicePostureIntegration#auth_url}
 
 ---
 
@@ -1316,7 +1348,7 @@ client_id: str
 
 The client identifier for authenticating API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#client_id DevicePostureIntegration#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#client_id DevicePostureIntegration#client_id}
 
 ---
 
@@ -1330,7 +1362,7 @@ client_key: str
 
 The client key for authenticating API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#client_key DevicePostureIntegration#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#client_key DevicePostureIntegration#client_key}
 
 ---
 
@@ -1344,7 +1376,7 @@ client_secret: str
 
 The client secret for authenticating API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#client_secret DevicePostureIntegration#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#client_secret DevicePostureIntegration#client_secret}
 
 ---
 
@@ -1358,7 +1390,7 @@ customer_id: str
 
 The customer identifier for authenticating API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_integration#customer_id DevicePostureIntegration#customer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_posture_integration#customer_id DevicePostureIntegration#customer_id}
 
 ---
 
@@ -1588,6 +1620,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetAccessClientId">reset_access_client_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetAccessClientSecret">reset_access_client_secret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetApiUrl">reset_api_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetAuthUrl">reset_auth_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetClientId">reset_client_id</a></code> | *No description.* |
@@ -1769,6 +1803,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_access_client_id` <a name="reset_access_client_id" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetAccessClientId"></a>
+
+```python
+def reset_access_client_id() -> None
+```
+
+##### `reset_access_client_secret` <a name="reset_access_client_secret" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetAccessClientSecret"></a>
+
+```python
+def reset_access_client_secret() -> None
+```
+
 ##### `reset_api_url` <a name="reset_api_url" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.resetApiUrl"></a>
 
 ```python
@@ -1812,12 +1858,16 @@ def reset_customer_id() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientIdInput">access_client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientSecretInput">access_client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.apiUrlInput">api_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.authUrlInput">auth_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.clientKeyInput">client_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.customerIdInput">customer_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientId">access_client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientSecret">access_client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.apiUrl">api_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.authUrl">auth_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
@@ -1846,6 +1896,26 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_id_input`<sup>Optional</sup> <a name="access_client_id_input" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientIdInput"></a>
+
+```python
+access_client_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_secret_input`<sup>Optional</sup> <a name="access_client_secret_input" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientSecretInput"></a>
+
+```python
+access_client_secret_input: str
 ```
 
 - *Type:* str
@@ -1906,6 +1976,26 @@ client_secret_input: str
 
 ```python
 customer_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_id`<sup>Required</sup> <a name="access_client_id" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientId"></a>
+
+```python
+access_client_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_secret`<sup>Required</sup> <a name="access_client_secret" id="@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference.property.accessClientSecret"></a>
+
+```python
+access_client_secret: str
 ```
 
 - *Type:* str
