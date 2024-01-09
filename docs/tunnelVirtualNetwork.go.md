@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelvirtualnetwork"
 
 tunnelvirtualnetwork.NewTunnelVirtualNetwork(scope Construct, id *string, config TunnelVirtualNetworkConfig) TunnelVirtualNetwork
 ```
@@ -392,7 +392,7 @@ func ResetIsDefaultNetwork()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelvirtualnetwork"
 
 tunnelvirtualnetwork.TunnelVirtualNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelvirtualnetwork"
 
 tunnelvirtualnetwork.TunnelVirtualNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ tunnelvirtualnetwork.TunnelVirtualNetwork_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelvirtualnetwork"
 
 tunnelvirtualnetwork.TunnelVirtualNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ tunnelvirtualnetwork.TunnelVirtualNetwork_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelvirtualnetwork"
 
 tunnelvirtualnetwork.TunnelVirtualNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/tunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelvirtualnetwork"
 
 &tunnelvirtualnetwork.TunnelVirtualNetworkConfig {
 	Connection: interface{},

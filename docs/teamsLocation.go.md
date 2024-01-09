@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocation(scope Construct, id *string, config TeamsLocationConfig) TeamsLocation
 ```
@@ -405,7 +405,7 @@ func ResetNetworks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ teamslocation.TeamsLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ teamslocation.TeamsLocation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationConfig {
 	Connection: interface{},
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationNetworks {
 	Network: *string,
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsLocationNetworksList
 ```
@@ -1221,7 +1221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsLocationNetworksOutputReference
 ```
