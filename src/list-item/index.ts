@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface ListItemAConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#account_id ListItemA#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#account_id ListItemA#account_id}
   */
   readonly accountId: string;
   /**
   * Autonomous system number to include in the list. Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#asn ListItemA#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#asn ListItemA#asn}
   */
   readonly asn?: number;
   /**
   * An optional comment for the item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#comment ListItemA#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#comment ListItemA#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#id ListItemA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#id ListItemA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +35,25 @@ export interface ListItemAConfig extends cdktf.TerraformMetaArguments {
   /**
   * IP address to include in the list. Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#ip ListItemA#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#ip ListItemA#ip}
   */
   readonly ip?: string;
   /**
   * The list identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#list_id ListItemA#list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#list_id ListItemA#list_id}
   */
   readonly listId: string;
   /**
   * hostname block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#hostname ListItemA#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#hostname ListItemA#hostname}
   */
   readonly hostname?: ListItemHostname;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#redirect ListItemA#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#redirect ListItemA#redirect}
   */
   readonly redirect?: ListItemRedirect;
 }
@@ -66,7 +61,7 @@ export interface ListItemHostname {
   /**
   * The FQDN to match on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#url_hostname ListItemA#url_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#url_hostname ListItemA#url_hostname}
   */
   readonly urlHostname: string;
 }
@@ -130,43 +125,43 @@ export interface ListItemRedirect {
   /**
   * Whether the redirect also matches subdomains of the source url. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#include_subdomains ListItemA#include_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#include_subdomains ListItemA#include_subdomains}
   */
   readonly includeSubdomains?: string;
   /**
   * Whether to preserve the path suffix when doing subpath matching. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#preserve_path_suffix ListItemA#preserve_path_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#preserve_path_suffix ListItemA#preserve_path_suffix}
   */
   readonly preservePathSuffix?: string;
   /**
   * Whether the redirect target url should keep the query string of the request's url. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#preserve_query_string ListItemA#preserve_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#preserve_query_string ListItemA#preserve_query_string}
   */
   readonly preserveQueryString?: string;
   /**
   * The source url of the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#source_url ListItemA#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#source_url ListItemA#source_url}
   */
   readonly sourceUrl: string;
   /**
   * The status code to be used when redirecting a request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#status_code ListItemA#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#status_code ListItemA#status_code}
   */
   readonly statusCode?: number;
   /**
   * Whether the redirect also matches subpaths of the source url. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#subpath_matching ListItemA#subpath_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#subpath_matching ListItemA#subpath_matching}
   */
   readonly subpathMatching?: string;
   /**
   * The target url of the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#target_url ListItemA#target_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#target_url ListItemA#target_url}
   */
   readonly targetUrl: string;
 }
@@ -363,7 +358,7 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item cloudflare_list_item}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item cloudflare_list_item}
 */
 export class ListItemA extends cdktf.TerraformResource {
 
@@ -379,7 +374,7 @@ export class ListItemA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ListItemA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ListItemA to import
-  * @param importFromId The id of the existing ListItemA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ListItemA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ListItemA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -391,7 +386,7 @@ export class ListItemA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list_item cloudflare_list_item} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item cloudflare_list_item} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -402,7 +397,7 @@ export class ListItemA extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_list_item',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

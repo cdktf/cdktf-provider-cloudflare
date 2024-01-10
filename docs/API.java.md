@@ -132,6 +132,7 @@ The following submodules are available:
 - [workerDomain](./workerDomain.java.md)
 - [workerRoute](./workerRoute.java.md)
 - [workerScript](./workerScript.java.md)
+- [workerSecret](./workerSecret.java.md)
 - [workersKv](./workersKv.java.md)
 - [workersKvNamespace](./workersKvNamespace.java.md)
 - [zone](./zone.java.md)

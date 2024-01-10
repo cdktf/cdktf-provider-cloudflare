@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#account_id WorkerScript#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#account_id WorkerScript#account_id}
   */
   readonly accountId: string;
   /**
   * The date to use for the compatibility flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Worker Scripts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * The script content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#content WorkerScript#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#content WorkerScript#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#id WorkerScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#id WorkerScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,73 +41,79 @@ export interface WorkerScriptConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enabling allows Worker events to be sent to a defined Logpush destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#logpush WorkerScript#logpush}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#logpush WorkerScript#logpush}
   */
   readonly logpush?: boolean | cdktf.IResolvable;
   /**
   * Whether to upload Worker as a module.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#module WorkerScript#module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#module WorkerScript#module}
   */
   readonly module?: boolean | cdktf.IResolvable;
   /**
   * The name for the script. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
   * analytics_engine_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
   */
   readonly analyticsEngineBinding?: WorkerScriptAnalyticsEngineBinding[] | cdktf.IResolvable;
   /**
+  * d1_database_binding block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#d1_database_binding WorkerScript#d1_database_binding}
+  */
+  readonly d1DatabaseBinding?: WorkerScriptD1DatabaseBinding[] | cdktf.IResolvable;
+  /**
   * kv_namespace_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
   */
   readonly kvNamespaceBinding?: WorkerScriptKvNamespaceBinding[] | cdktf.IResolvable;
   /**
   * placement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#placement WorkerScript#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#placement WorkerScript#placement}
   */
   readonly placement?: WorkerScriptPlacement[] | cdktf.IResolvable;
   /**
   * plain_text_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
   */
   readonly plainTextBinding?: WorkerScriptPlainTextBinding[] | cdktf.IResolvable;
   /**
   * queue_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
   */
   readonly queueBinding?: WorkerScriptQueueBinding[] | cdktf.IResolvable;
   /**
   * r2_bucket_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
   */
   readonly r2BucketBinding?: WorkerScriptR2BucketBinding[] | cdktf.IResolvable;
   /**
   * secret_text_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
   */
   readonly secretTextBinding?: WorkerScriptSecretTextBinding[] | cdktf.IResolvable;
   /**
   * service_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
   */
   readonly serviceBinding?: WorkerScriptServiceBinding[] | cdktf.IResolvable;
   /**
   * webassembly_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
   */
   readonly webassemblyBinding?: WorkerScriptWebassemblyBinding[] | cdktf.IResolvable;
 }
@@ -120,13 +121,13 @@ export interface WorkerScriptAnalyticsEngineBinding {
   /**
   * The name of the Analytics Engine dataset to write to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#dataset WorkerScript#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#dataset WorkerScript#dataset}
   */
   readonly dataset: string;
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
 }
@@ -238,17 +239,139 @@ export class WorkerScriptAnalyticsEngineBindingList extends cdktf.ComplexList {
     return new WorkerScriptAnalyticsEngineBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface WorkerScriptD1DatabaseBinding {
+  /**
+  * Database ID of D1 database to use.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#database_id WorkerScript#database_id}
+  */
+  readonly databaseId: string;
+  /**
+  * The global variable for the binding in your Worker code.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
+  */
+  readonly name: string;
+}
+
+export function workerScriptD1DatabaseBindingToTerraform(struct?: WorkerScriptD1DatabaseBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    database_id: cdktf.stringToTerraform(struct!.databaseId),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class WorkerScriptD1DatabaseBindingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WorkerScriptD1DatabaseBinding | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._databaseId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseId = this._databaseId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkerScriptD1DatabaseBinding | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._databaseId = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._databaseId = value.databaseId;
+      this._name = value.name;
+    }
+  }
+
+  // database_id - computed: false, optional: false, required: true
+  private _databaseId?: string; 
+  public get databaseId() {
+    return this.getStringAttribute('database_id');
+  }
+  public set databaseId(value: string) {
+    this._databaseId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseIdInput() {
+    return this._databaseId;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class WorkerScriptD1DatabaseBindingList extends cdktf.ComplexList {
+  public internalValue? : WorkerScriptD1DatabaseBinding[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WorkerScriptD1DatabaseBindingOutputReference {
+    return new WorkerScriptD1DatabaseBindingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface WorkerScriptKvNamespaceBinding {
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
   * ID of the KV namespace you want to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#namespace_id WorkerScript#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#namespace_id WorkerScript#namespace_id}
   */
   readonly namespaceId: string;
 }
@@ -364,7 +487,7 @@ export interface WorkerScriptPlacement {
   /**
   * The placement mode for the Worker. Available values: `smart`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#mode WorkerScript#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#mode WorkerScript#mode}
   */
   readonly mode: string;
 }
@@ -460,13 +583,13 @@ export interface WorkerScriptPlainTextBinding {
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
   * The plain text you want to store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#text WorkerScript#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#text WorkerScript#text}
   */
   readonly text: string;
 }
@@ -582,13 +705,13 @@ export interface WorkerScriptQueueBinding {
   /**
   * The name of the global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#binding WorkerScript#binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#binding WorkerScript#binding}
   */
   readonly binding: string;
   /**
   * Name of the queue you want to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#queue WorkerScript#queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#queue WorkerScript#queue}
   */
   readonly queue: string;
 }
@@ -704,13 +827,13 @@ export interface WorkerScriptR2BucketBinding {
   /**
   * The name of the Bucket to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#bucket_name WorkerScript#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#bucket_name WorkerScript#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
 }
@@ -826,13 +949,13 @@ export interface WorkerScriptSecretTextBinding {
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
   * The secret text you want to store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#text WorkerScript#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#text WorkerScript#text}
   */
   readonly text: string;
 }
@@ -948,19 +1071,19 @@ export interface WorkerScriptServiceBinding {
   /**
   * The name of the Worker environment to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#environment WorkerScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#environment WorkerScript#environment}
   */
   readonly environment?: string;
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
   /**
   * The name of the Worker to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#service WorkerScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#service WorkerScript#service}
   */
   readonly service: string;
 }
@@ -1099,13 +1222,13 @@ export interface WorkerScriptWebassemblyBinding {
   /**
   * The base64 encoded wasm module you want to store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#module WorkerScript#module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#module WorkerScript#module}
   */
   readonly module: string;
   /**
   * The global variable for the binding in your Worker code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#name WorkerScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#name WorkerScript#name}
   */
   readonly name: string;
 }
@@ -1219,7 +1342,7 @@ export class WorkerScriptWebassemblyBindingList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script cloudflare_worker_script}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script cloudflare_worker_script}
 */
 export class WorkerScript extends cdktf.TerraformResource {
 
@@ -1235,7 +1358,7 @@ export class WorkerScript extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkerScript resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkerScript to import
-  * @param importFromId The id of the existing WorkerScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkerScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkerScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1247,7 +1370,7 @@ export class WorkerScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script cloudflare_worker_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script cloudflare_worker_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1258,7 +1381,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -1278,6 +1401,7 @@ export class WorkerScript extends cdktf.TerraformResource {
     this._module = config.module;
     this._name = config.name;
     this._analyticsEngineBinding.internalValue = config.analyticsEngineBinding;
+    this._d1DatabaseBinding.internalValue = config.d1DatabaseBinding;
     this._kvNamespaceBinding.internalValue = config.kvNamespaceBinding;
     this._placement.internalValue = config.placement;
     this._plainTextBinding.internalValue = config.plainTextBinding;
@@ -1427,6 +1551,22 @@ export class WorkerScript extends cdktf.TerraformResource {
     return this._analyticsEngineBinding.internalValue;
   }
 
+  // d1_database_binding - computed: false, optional: true, required: false
+  private _d1DatabaseBinding = new WorkerScriptD1DatabaseBindingList(this, "d1_database_binding", true);
+  public get d1DatabaseBinding() {
+    return this._d1DatabaseBinding;
+  }
+  public putD1DatabaseBinding(value: WorkerScriptD1DatabaseBinding[] | cdktf.IResolvable) {
+    this._d1DatabaseBinding.internalValue = value;
+  }
+  public resetD1DatabaseBinding() {
+    this._d1DatabaseBinding.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get d1DatabaseBindingInput() {
+    return this._d1DatabaseBinding.internalValue;
+  }
+
   // kv_namespace_binding - computed: false, optional: true, required: false
   private _kvNamespaceBinding = new WorkerScriptKvNamespaceBindingList(this, "kv_namespace_binding", true);
   public get kvNamespaceBinding() {
@@ -1570,6 +1710,7 @@ export class WorkerScript extends cdktf.TerraformResource {
       module: cdktf.booleanToTerraform(this._module),
       name: cdktf.stringToTerraform(this._name),
       analytics_engine_binding: cdktf.listMapper(workerScriptAnalyticsEngineBindingToTerraform, true)(this._analyticsEngineBinding.internalValue),
+      d1_database_binding: cdktf.listMapper(workerScriptD1DatabaseBindingToTerraform, true)(this._d1DatabaseBinding.internalValue),
       kv_namespace_binding: cdktf.listMapper(workerScriptKvNamespaceBindingToTerraform, true)(this._kvNamespaceBinding.internalValue),
       placement: cdktf.listMapper(workerScriptPlacementToTerraform, true)(this._placement.internalValue),
       plain_text_binding: cdktf.listMapper(workerScriptPlainTextBindingToTerraform, true)(this._plainTextBinding.internalValue),
