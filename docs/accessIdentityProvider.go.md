@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.NewAccessIdentityProvider(scope Construct, id *string, config AccessIdentityProviderConfig) AccessIdentityProvider
 ```
@@ -432,7 +432,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.AccessIdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.AccessIdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ accessidentityprovider.AccessIdentityProvider_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.AccessIdentityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ accessidentityprovider.AccessIdentityProvider_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.AccessIdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 &accessidentityprovider.AccessIdentityProviderConfig {
 	Connection: interface{},
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 &accessidentityprovider.AccessIdentityProviderConfigA {
 	ApiToken: *string,
@@ -1478,7 +1478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 &accessidentityprovider.AccessIdentityProviderScimConfig {
 	Enabled: interface{},
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.NewAccessIdentityProviderConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessIdentityProviderConfigAList
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.NewAccessIdentityProviderConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessIdentityProviderConfigAOutputReference
 ```
@@ -2743,7 +2743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.NewAccessIdentityProviderScimConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessIdentityProviderScimConfigList
 ```
@@ -2886,7 +2886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/accessidentityprovider"
 
 accessidentityprovider.NewAccessIdentityProviderScimConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessIdentityProviderScimConfigOutputReference
 ```
