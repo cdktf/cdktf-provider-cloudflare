@@ -132,6 +132,7 @@ The following submodules are available:
 - [workerDomain](./workerDomain.csharp.md)
 - [workerRoute](./workerRoute.csharp.md)
 - [workerScript](./workerScript.csharp.md)
+- [workerSecret](./workerSecret.csharp.md)
 - [workersKv](./workersKv.csharp.md)
 - [workersKvNamespace](./workersKvNamespace.csharp.md)
 - [zone](./zone.csharp.md)

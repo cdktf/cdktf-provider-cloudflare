@@ -109,6 +109,7 @@ Object.defineProperty(exports, 'workerCronTrigger', { get: function () { return 
 Object.defineProperty(exports, 'workerDomain', { get: function () { return require('./worker-domain'); } });
 Object.defineProperty(exports, 'workerRoute', { get: function () { return require('./worker-route'); } });
 Object.defineProperty(exports, 'workerScript', { get: function () { return require('./worker-script'); } });
+Object.defineProperty(exports, 'workerSecret', { get: function () { return require('./worker-secret'); } });
 Object.defineProperty(exports, 'workersKv', { get: function () { return require('./workers-kv'); } });
 Object.defineProperty(exports, 'workersKvNamespace', { get: function () { return require('./workers-kv-namespace'); } });
 Object.defineProperty(exports, 'zone', { get: function () { return require('./zone'); } });

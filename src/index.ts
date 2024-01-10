@@ -109,6 +109,7 @@ export * as workerCronTrigger from './worker-cron-trigger';
 export * as workerDomain from './worker-domain';
 export * as workerRoute from './worker-route';
 export * as workerScript from './worker-script';
+export * as workerSecret from './worker-secret';
 export * as workersKv from './workers-kv';
 export * as workersKvNamespace from './workers-kv-namespace';
 export * as zone from './zone';

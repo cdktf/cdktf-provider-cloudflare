@@ -132,6 +132,7 @@ The following submodules are available:
 - [workerDomain](./workerDomain.typescript.md)
 - [workerRoute](./workerRoute.typescript.md)
 - [workerScript](./workerScript.typescript.md)
+- [workerSecret](./workerSecret.typescript.md)
 - [workersKv](./workersKv.typescript.md)
 - [workersKvNamespace](./workersKvNamespace.typescript.md)
 - [zone](./zone.typescript.md)

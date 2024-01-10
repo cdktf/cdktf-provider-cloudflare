@@ -132,6 +132,7 @@ The following submodules are available:
 - [workerDomain](./workerDomain.go.md)
 - [workerRoute](./workerRoute.go.md)
 - [workerScript](./workerScript.go.md)
+- [workerSecret](./workerSecret.go.md)
 - [workersKv](./workersKv.go.md)
 - [workersKvNamespace](./workersKvNamespace.go.md)
 - [zone](./zone.go.md)

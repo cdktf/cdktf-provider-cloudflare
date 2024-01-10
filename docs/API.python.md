@@ -132,6 +132,7 @@ The following submodules are available:
 - [workerDomain](./workerDomain.python.md)
 - [workerRoute](./workerRoute.python.md)
 - [workerScript](./workerScript.python.md)
+- [workerSecret](./workerSecret.python.md)
 - [workersKv](./workersKv.python.md)
 - [workersKvNamespace](./workersKvNamespace.python.md)
 - [zone](./zone.python.md)
