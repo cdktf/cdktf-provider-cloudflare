@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/load_balancer_pool
 // generated from terraform resource schema
 
@@ -136,6 +131,43 @@ export function loadBalancerPoolLoadSheddingToTerraform(struct?: LoadBalancerPoo
     session_percent: cdktf.numberToTerraform(struct!.sessionPercent),
     session_policy: cdktf.stringToTerraform(struct!.sessionPolicy),
   }
+}
+
+
+export function loadBalancerPoolLoadSheddingToHclTerraform(struct?: LoadBalancerPoolLoadShedding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_percent: {
+      value: cdktf.numberToHclTerraform(struct!.defaultPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    default_policy: {
+      value: cdktf.stringToHclTerraform(struct!.defaultPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_percent: {
+      value: cdktf.numberToHclTerraform(struct!.sessionPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    session_policy: {
+      value: cdktf.stringToHclTerraform(struct!.sessionPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadBalancerPoolLoadSheddingOutputReference extends cdktf.ComplexObject {
@@ -303,6 +335,25 @@ export function loadBalancerPoolOriginSteeringToTerraform(struct?: LoadBalancerP
   }
 }
 
+
+export function loadBalancerPoolOriginSteeringToHclTerraform(struct?: LoadBalancerPoolOriginSteering | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LoadBalancerPoolOriginSteeringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -407,6 +458,31 @@ export function loadBalancerPoolOriginsHeaderToTerraform(struct?: LoadBalancerPo
     header: cdktf.stringToTerraform(struct!.header),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function loadBalancerPoolOriginsHeaderToHclTerraform(struct?: LoadBalancerPoolOriginsHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header: {
+      value: cdktf.stringToHclTerraform(struct!.header),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadBalancerPoolOriginsHeaderOutputReference extends cdktf.ComplexObject {
@@ -550,6 +626,49 @@ export function loadBalancerPoolOriginsToTerraform(struct?: LoadBalancerPoolOrig
     weight: cdktf.numberToTerraform(struct!.weight),
     header: cdktf.listMapper(loadBalancerPoolOriginsHeaderToTerraform, true)(struct!.header),
   }
+}
+
+
+export function loadBalancerPoolOriginsToHclTerraform(struct?: LoadBalancerPoolOrigins | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    header: {
+      value: cdktf.listMapperHcl(loadBalancerPoolOriginsHeaderToHclTerraform, true)(struct!.header),
+      isBlock: true,
+      type: "set",
+      storageClassType: "LoadBalancerPoolOriginsHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LoadBalancerPoolOriginsOutputReference extends cdktf.ComplexObject {
@@ -1032,5 +1151,97 @@ export class LoadBalancerPool extends cdktf.TerraformResource {
       origin_steering: cdktf.listMapper(loadBalancerPoolOriginSteeringToTerraform, true)(this._originSteering.internalValue),
       origins: cdktf.listMapper(loadBalancerPoolOriginsToTerraform, true)(this._origins.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      check_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._checkRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      latitude: {
+        value: cdktf.numberToHclTerraform(this._latitude),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      longitude: {
+        value: cdktf.numberToHclTerraform(this._longitude),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      minimum_origins: {
+        value: cdktf.numberToHclTerraform(this._minimumOrigins),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      monitor: {
+        value: cdktf.stringToHclTerraform(this._monitor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_email: {
+        value: cdktf.stringToHclTerraform(this._notificationEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_shedding: {
+        value: cdktf.listMapperHcl(loadBalancerPoolLoadSheddingToHclTerraform, true)(this._loadShedding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LoadBalancerPoolLoadSheddingList",
+      },
+      origin_steering: {
+        value: cdktf.listMapperHcl(loadBalancerPoolOriginSteeringToHclTerraform, true)(this._originSteering.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LoadBalancerPoolOriginSteeringList",
+      },
+      origins: {
+        value: cdktf.listMapperHcl(loadBalancerPoolOriginsToHclTerraform, true)(this._origins.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LoadBalancerPoolOriginsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

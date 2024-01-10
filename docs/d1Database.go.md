@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.NewD1Database(scope Construct, id *string, config D1DatabaseConfig) D1Database
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -124,6 +125,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-cloudflare.d1Database.D1Database.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-cloudflare.d1Database.D1Database.toMetadata"></a>
 
@@ -371,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.d1Database.D1Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.d1Database.D1Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -726,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 &d1database.D1DatabaseConfig {
 	Connection: interface{},

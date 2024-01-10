@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/waiting_room
 // generated from terraform resource schema
 
@@ -160,6 +155,31 @@ export function waitingRoomAdditionalRoutesToTerraform(struct?: WaitingRoomAddit
   }
 }
 
+
+export function waitingRoomAdditionalRoutesToHclTerraform(struct?: WaitingRoomAdditionalRoutes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WaitingRoomAdditionalRoutesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -279,6 +299,31 @@ export function waitingRoomTimeoutsToTerraform(struct?: WaitingRoomTimeouts | cd
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function waitingRoomTimeoutsToHclTerraform(struct?: WaitingRoomTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WaitingRoomTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -771,5 +816,133 @@ export class WaitingRoom extends cdktf.TerraformResource {
       additional_routes: cdktf.listMapper(waitingRoomAdditionalRoutesToTerraform, true)(this._additionalRoutes.internalValue),
       timeouts: waitingRoomTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cookie_suffix: {
+        value: cdktf.stringToHclTerraform(this._cookieSuffix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_page_html: {
+        value: cdktf.stringToHclTerraform(this._customPageHtml),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_template_language: {
+        value: cdktf.stringToHclTerraform(this._defaultTemplateLanguage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_session_renewal: {
+        value: cdktf.booleanToHclTerraform(this._disableSessionRenewal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      json_response_enabled: {
+        value: cdktf.booleanToHclTerraform(this._jsonResponseEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      new_users_per_minute: {
+        value: cdktf.numberToHclTerraform(this._newUsersPerMinute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      queue_all: {
+        value: cdktf.booleanToHclTerraform(this._queueAll),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      queueing_method: {
+        value: cdktf.stringToHclTerraform(this._queueingMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      queueing_status_code: {
+        value: cdktf.numberToHclTerraform(this._queueingStatusCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      session_duration: {
+        value: cdktf.numberToHclTerraform(this._sessionDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      suspended: {
+        value: cdktf.booleanToHclTerraform(this._suspended),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      total_active_users: {
+        value: cdktf.numberToHclTerraform(this._totalActiveUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      additional_routes: {
+        value: cdktf.listMapperHcl(waitingRoomAdditionalRoutesToHclTerraform, true)(this._additionalRoutes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WaitingRoomAdditionalRoutesList",
+      },
+      timeouts: {
+        value: waitingRoomTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WaitingRoomTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

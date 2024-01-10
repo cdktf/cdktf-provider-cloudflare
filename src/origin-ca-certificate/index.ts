@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/origin_ca_certificate
 // generated from terraform resource schema
 
@@ -224,5 +219,49 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
       request_type: cdktf.stringToTerraform(this._requestType),
       requested_validity: cdktf.numberToTerraform(this._requestedValidity),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      csr: {
+        value: cdktf.stringToHclTerraform(this._csr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hostnames: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostnames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_days_for_renewal: {
+        value: cdktf.numberToHclTerraform(this._minDaysForRenewal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      request_type: {
+        value: cdktf.stringToHclTerraform(this._requestType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      requested_validity: {
+        value: cdktf.numberToHclTerraform(this._requestedValidity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

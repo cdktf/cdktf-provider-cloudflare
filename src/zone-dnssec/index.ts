@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/zone_dnssec
 // generated from terraform resource schema
 
@@ -198,5 +193,31 @@ export class ZoneDnssec extends cdktf.TerraformResource {
       modified_on: cdktf.stringToTerraform(this._modifiedOn),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      modified_on: {
+        value: cdktf.stringToHclTerraform(this._modifiedOn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

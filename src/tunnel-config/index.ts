@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/tunnel_config
 // generated from terraform resource schema
 
@@ -69,6 +64,37 @@ export function tunnelConfigConfigIngressRuleOriginRequestAccessToTerraform(stru
     required: cdktf.booleanToTerraform(struct!.required),
     team_name: cdktf.stringToTerraform(struct!.teamName),
   }
+}
+
+
+export function tunnelConfigConfigIngressRuleOriginRequestAccessToHclTerraform(struct?: TunnelConfigConfigIngressRuleOriginRequestAccessOutputReference | TunnelConfigConfigIngressRuleOriginRequestAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aud_tag: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audTag),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    team_name: {
+      value: cdktf.stringToHclTerraform(struct!.teamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TunnelConfigConfigIngressRuleOriginRequestAccessOutputReference extends cdktf.ComplexObject {
@@ -194,6 +220,37 @@ export function tunnelConfigConfigIngressRuleOriginRequestIpRulesToTerraform(str
     ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function tunnelConfigConfigIngressRuleOriginRequestIpRulesToHclTerraform(struct?: TunnelConfigConfigIngressRuleOriginRequestIpRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow: {
+      value: cdktf.booleanToHclTerraform(struct!.allow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ports: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TunnelConfigConfigIngressRuleOriginRequestIpRulesOutputReference extends cdktf.ComplexObject {
@@ -456,6 +513,127 @@ export function tunnelConfigConfigIngressRuleOriginRequestToTerraform(struct?: T
     access: tunnelConfigConfigIngressRuleOriginRequestAccessToTerraform(struct!.access),
     ip_rules: cdktf.listMapper(tunnelConfigConfigIngressRuleOriginRequestIpRulesToTerraform, true)(struct!.ipRules),
   }
+}
+
+
+export function tunnelConfigConfigIngressRuleOriginRequestToHclTerraform(struct?: TunnelConfigConfigIngressRuleOriginRequestOutputReference | TunnelConfigConfigIngressRuleOriginRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bastion_mode: {
+      value: cdktf.booleanToHclTerraform(struct!.bastionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ca_pool: {
+      value: cdktf.stringToHclTerraform(struct!.caPool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connect_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.connectTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disable_chunked_encoding: {
+      value: cdktf.booleanToHclTerraform(struct!.disableChunkedEncoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http2_origin: {
+      value: cdktf.booleanToHclTerraform(struct!.http2Origin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http_host_header: {
+      value: cdktf.stringToHclTerraform(struct!.httpHostHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    keep_alive_connections: {
+      value: cdktf.numberToHclTerraform(struct!.keepAliveConnections),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    keep_alive_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.keepAliveTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_happy_eyeballs: {
+      value: cdktf.booleanToHclTerraform(struct!.noHappyEyeballs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    no_tls_verify: {
+      value: cdktf.booleanToHclTerraform(struct!.noTlsVerify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    origin_server_name: {
+      value: cdktf.stringToHclTerraform(struct!.originServerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_address: {
+      value: cdktf.stringToHclTerraform(struct!.proxyAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_port: {
+      value: cdktf.numberToHclTerraform(struct!.proxyPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    proxy_type: {
+      value: cdktf.stringToHclTerraform(struct!.proxyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tcp_keep_alive: {
+      value: cdktf.stringToHclTerraform(struct!.tcpKeepAlive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.tlsTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access: {
+      value: tunnelConfigConfigIngressRuleOriginRequestAccessToHclTerraform(struct!.access),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TunnelConfigConfigIngressRuleOriginRequestAccessList",
+    },
+    ip_rules: {
+      value: cdktf.listMapperHcl(tunnelConfigConfigIngressRuleOriginRequestIpRulesToHclTerraform, true)(struct!.ipRules),
+      isBlock: true,
+      type: "set",
+      storageClassType: "TunnelConfigConfigIngressRuleOriginRequestIpRulesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TunnelConfigConfigIngressRuleOriginRequestOutputReference extends cdktf.ComplexObject {
@@ -920,6 +1098,43 @@ export function tunnelConfigConfigIngressRuleToTerraform(struct?: TunnelConfigCo
   }
 }
 
+
+export function tunnelConfigConfigIngressRuleToHclTerraform(struct?: TunnelConfigConfigIngressRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hostname: {
+      value: cdktf.stringToHclTerraform(struct!.hostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    origin_request: {
+      value: tunnelConfigConfigIngressRuleOriginRequestToHclTerraform(struct!.originRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TunnelConfigConfigIngressRuleOriginRequestList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TunnelConfigConfigIngressRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1096,6 +1311,37 @@ export function tunnelConfigConfigOriginRequestAccessToTerraform(struct?: Tunnel
   }
 }
 
+
+export function tunnelConfigConfigOriginRequestAccessToHclTerraform(struct?: TunnelConfigConfigOriginRequestAccessOutputReference | TunnelConfigConfigOriginRequestAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aud_tag: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audTag),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    team_name: {
+      value: cdktf.stringToHclTerraform(struct!.teamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TunnelConfigConfigOriginRequestAccessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1219,6 +1465,37 @@ export function tunnelConfigConfigOriginRequestIpRulesToTerraform(struct?: Tunne
     ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function tunnelConfigConfigOriginRequestIpRulesToHclTerraform(struct?: TunnelConfigConfigOriginRequestIpRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow: {
+      value: cdktf.booleanToHclTerraform(struct!.allow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ports: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TunnelConfigConfigOriginRequestIpRulesOutputReference extends cdktf.ComplexObject {
@@ -1481,6 +1758,127 @@ export function tunnelConfigConfigOriginRequestToTerraform(struct?: TunnelConfig
     access: tunnelConfigConfigOriginRequestAccessToTerraform(struct!.access),
     ip_rules: cdktf.listMapper(tunnelConfigConfigOriginRequestIpRulesToTerraform, true)(struct!.ipRules),
   }
+}
+
+
+export function tunnelConfigConfigOriginRequestToHclTerraform(struct?: TunnelConfigConfigOriginRequestOutputReference | TunnelConfigConfigOriginRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bastion_mode: {
+      value: cdktf.booleanToHclTerraform(struct!.bastionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ca_pool: {
+      value: cdktf.stringToHclTerraform(struct!.caPool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connect_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.connectTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disable_chunked_encoding: {
+      value: cdktf.booleanToHclTerraform(struct!.disableChunkedEncoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http2_origin: {
+      value: cdktf.booleanToHclTerraform(struct!.http2Origin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http_host_header: {
+      value: cdktf.stringToHclTerraform(struct!.httpHostHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    keep_alive_connections: {
+      value: cdktf.numberToHclTerraform(struct!.keepAliveConnections),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    keep_alive_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.keepAliveTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_happy_eyeballs: {
+      value: cdktf.booleanToHclTerraform(struct!.noHappyEyeballs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    no_tls_verify: {
+      value: cdktf.booleanToHclTerraform(struct!.noTlsVerify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    origin_server_name: {
+      value: cdktf.stringToHclTerraform(struct!.originServerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_address: {
+      value: cdktf.stringToHclTerraform(struct!.proxyAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_port: {
+      value: cdktf.numberToHclTerraform(struct!.proxyPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    proxy_type: {
+      value: cdktf.stringToHclTerraform(struct!.proxyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tcp_keep_alive: {
+      value: cdktf.stringToHclTerraform(struct!.tcpKeepAlive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.tlsTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access: {
+      value: tunnelConfigConfigOriginRequestAccessToHclTerraform(struct!.access),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TunnelConfigConfigOriginRequestAccessList",
+    },
+    ip_rules: {
+      value: cdktf.listMapperHcl(tunnelConfigConfigOriginRequestIpRulesToHclTerraform, true)(struct!.ipRules),
+      isBlock: true,
+      type: "set",
+      storageClassType: "TunnelConfigConfigOriginRequestIpRulesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TunnelConfigConfigOriginRequestOutputReference extends cdktf.ComplexObject {
@@ -1924,6 +2322,25 @@ export function tunnelConfigConfigWarpRoutingToTerraform(struct?: TunnelConfigCo
   }
 }
 
+
+export function tunnelConfigConfigWarpRoutingToHclTerraform(struct?: TunnelConfigConfigWarpRoutingOutputReference | TunnelConfigConfigWarpRouting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TunnelConfigConfigWarpRoutingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2003,6 +2420,37 @@ export function tunnelConfigConfigToTerraform(struct?: TunnelConfigConfigOutputR
     origin_request: tunnelConfigConfigOriginRequestToTerraform(struct!.originRequest),
     warp_routing: tunnelConfigConfigWarpRoutingToTerraform(struct!.warpRouting),
   }
+}
+
+
+export function tunnelConfigConfigToHclTerraform(struct?: TunnelConfigConfigOutputReference | TunnelConfigConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ingress_rule: {
+      value: cdktf.listMapperHcl(tunnelConfigConfigIngressRuleToHclTerraform, true)(struct!.ingressRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TunnelConfigConfigIngressRuleList",
+    },
+    origin_request: {
+      value: tunnelConfigConfigOriginRequestToHclTerraform(struct!.originRequest),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TunnelConfigConfigOriginRequestList",
+    },
+    warp_routing: {
+      value: tunnelConfigConfigWarpRoutingToHclTerraform(struct!.warpRouting),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TunnelConfigConfigWarpRoutingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TunnelConfigConfigOutputReference extends cdktf.ComplexObject {
@@ -2222,5 +2670,37 @@ export class TunnelConfigA extends cdktf.TerraformResource {
       tunnel_id: cdktf.stringToTerraform(this._tunnelId),
       config: tunnelConfigConfigToTerraform(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tunnel_id: {
+        value: cdktf.stringToHclTerraform(this._tunnelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: tunnelConfigConfigToHclTerraform(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TunnelConfigConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

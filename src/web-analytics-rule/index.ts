@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/web_analytics_rule
 // generated from terraform resource schema
 
@@ -77,6 +72,25 @@ export function webAnalyticsRuleTimeoutsToTerraform(struct?: WebAnalyticsRuleTim
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function webAnalyticsRuleTimeoutsToHclTerraform(struct?: WebAnalyticsRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WebAnalyticsRuleTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -328,5 +342,61 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
       ruleset_id: cdktf.stringToTerraform(this._rulesetId),
       timeouts: webAnalyticsRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inclusive: {
+        value: cdktf.booleanToHclTerraform(this._inclusive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_paused: {
+        value: cdktf.booleanToHclTerraform(this._isPaused),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      paths: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._paths),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ruleset_id: {
+        value: cdktf.stringToHclTerraform(this._rulesetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: webAnalyticsRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WebAnalyticsRuleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

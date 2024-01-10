@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_shield_operation_schema_validation_settings
 // generated from terraform resource schema
 
@@ -169,5 +164,37 @@ export class ApiShieldOperationSchemaValidationSettings extends cdktf.TerraformR
       operation_id: cdktf.stringToTerraform(this._operationId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mitigation_action: {
+        value: cdktf.stringToHclTerraform(this._mitigationAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operation_id: {
+        value: cdktf.stringToHclTerraform(this._operationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/zone_hold
 // generated from terraform resource schema
 
@@ -193,5 +188,43 @@ export class ZoneHold extends cdktf.TerraformResource {
       include_subdomains: cdktf.booleanToTerraform(this._includeSubdomains),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hold: {
+        value: cdktf.booleanToHclTerraform(this._hold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hold_after: {
+        value: cdktf.stringToHclTerraform(this._holdAfter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_subdomains: {
+        value: cdktf.booleanToHclTerraform(this._includeSubdomains),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_token
 // generated from terraform resource schema
 
@@ -74,6 +69,31 @@ export function apiTokenConditionRequestIpToTerraform(struct?: ApiTokenCondition
     in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.in),
     not_in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notIn),
   }
+}
+
+
+export function apiTokenConditionRequestIpToHclTerraform(struct?: ApiTokenConditionRequestIpOutputReference | ApiTokenConditionRequestIp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    in: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.in),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    not_in: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notIn),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApiTokenConditionRequestIpOutputReference extends cdktf.ComplexObject {
@@ -165,6 +185,25 @@ export function apiTokenConditionToTerraform(struct?: ApiTokenConditionOutputRef
   }
 }
 
+
+export function apiTokenConditionToHclTerraform(struct?: ApiTokenConditionOutputReference | ApiTokenCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    request_ip: {
+      value: apiTokenConditionRequestIpToHclTerraform(struct!.requestIp),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ApiTokenConditionRequestIpList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApiTokenConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -244,6 +283,37 @@ export function apiTokenPolicyToTerraform(struct?: ApiTokenPolicy | cdktf.IResol
     permission_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissionGroups),
     resources: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.resources),
   }
+}
+
+
+export function apiTokenPolicyToHclTerraform(struct?: ApiTokenPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    effect: {
+      value: cdktf.stringToHclTerraform(struct!.effect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission_groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permissionGroups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    resources: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.resources),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApiTokenPolicyOutputReference extends cdktf.ComplexObject {
@@ -551,5 +621,49 @@ export class ApiToken extends cdktf.TerraformResource {
       condition: apiTokenConditionToTerraform(this._condition.internalValue),
       policy: cdktf.listMapper(apiTokenPolicyToTerraform, true)(this._policy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      expires_on: {
+        value: cdktf.stringToHclTerraform(this._expiresOn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      not_before: {
+        value: cdktf.stringToHclTerraform(this._notBefore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition: {
+        value: apiTokenConditionToHclTerraform(this._condition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApiTokenConditionList",
+      },
+      policy: {
+        value: cdktf.listMapperHcl(apiTokenPolicyToHclTerraform, true)(this._policy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ApiTokenPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

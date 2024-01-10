@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.NewSpectrumApplication(scope Construct, id *string, config SpectrumApplicationConfig) SpectrumApplication
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -139,6 +140,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.toMetadata"></a>
 
@@ -500,7 +507,7 @@ func ResetTrafficType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.SpectrumApplication_IsConstruct(x interface{}) *bool
 ```
@@ -532,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.SpectrumApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -546,7 +553,7 @@ spectrumapplication.SpectrumApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.SpectrumApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -560,7 +567,7 @@ spectrumapplication.SpectrumApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.SpectrumApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1097,7 +1104,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 &spectrumapplication.SpectrumApplicationConfig {
 	Connection: interface{},
@@ -1107,17 +1114,17 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapp
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Dns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.spectrumApplication.SpectrumApplicationDns,
+	Dns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.spectrumApplication.SpectrumApplicationDns,
 	Protocol: *string,
 	ZoneId: *string,
 	ArgoSmartRouting: interface{},
-	EdgeIps: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.spectrumApplication.SpectrumApplicationEdgeIps,
+	EdgeIps: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.spectrumApplication.SpectrumApplicationEdgeIps,
 	Id: *string,
 	IpFirewall: interface{},
 	OriginDirect: *[]*string,
-	OriginDns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.spectrumApplication.SpectrumApplicationOriginDns,
+	OriginDns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.spectrumApplication.SpectrumApplicationOriginDns,
 	OriginPort: *f64,
-	OriginPortRange: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.spectrumApplication.SpectrumApplicationOriginPortRange,
+	OriginPortRange: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.spectrumApplication.SpectrumApplicationOriginPortRange,
 	ProxyProtocol: *string,
 	Tls: *string,
 	TrafficType: *string,
@@ -1424,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 &spectrumapplication.SpectrumApplicationDns {
 	Name: *string,
@@ -1474,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 &spectrumapplication.SpectrumApplicationEdgeIps {
 	Type: *string,
@@ -1544,7 +1551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 &spectrumapplication.SpectrumApplicationOriginDns {
 	Name: *string,
@@ -1578,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 &spectrumapplication.SpectrumApplicationOriginPortRange {
 	End: *f64,
@@ -1630,7 +1637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.NewSpectrumApplicationDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpectrumApplicationDnsOutputReference
 ```
@@ -1923,7 +1930,7 @@ func InternalValue() SpectrumApplicationDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.NewSpectrumApplicationEdgeIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpectrumApplicationEdgeIpsOutputReference
 ```
@@ -2252,7 +2259,7 @@ func InternalValue() SpectrumApplicationEdgeIps
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.NewSpectrumApplicationOriginDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpectrumApplicationOriginDnsOutputReference
 ```
@@ -2523,7 +2530,7 @@ func InternalValue() SpectrumApplicationOriginDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/spectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/spectrumapplication"
 
 spectrumapplication.NewSpectrumApplicationOriginPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpectrumApplicationOriginPortRangeOutputReference
 ```

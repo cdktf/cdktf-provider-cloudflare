@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/address_map
 // generated from terraform resource schema
 
@@ -73,6 +68,25 @@ export function addressMapIpsToTerraform(struct?: AddressMapIps | cdktf.IResolva
   return {
     ip: cdktf.stringToTerraform(struct!.ip),
   }
+}
+
+
+export function addressMapIpsToHclTerraform(struct?: AddressMapIps | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AddressMapIpsOutputReference extends cdktf.ComplexObject {
@@ -176,6 +190,31 @@ export function addressMapMembershipsToTerraform(struct?: AddressMapMemberships 
     identifier: cdktf.stringToTerraform(struct!.identifier),
     kind: cdktf.stringToTerraform(struct!.kind),
   }
+}
+
+
+export function addressMapMembershipsToHclTerraform(struct?: AddressMapMemberships | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    identifier: {
+      value: cdktf.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kind: {
+      value: cdktf.stringToHclTerraform(struct!.kind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AddressMapMembershipsOutputReference extends cdktf.ComplexObject {
@@ -474,5 +513,55 @@ export class AddressMap extends cdktf.TerraformResource {
       ips: cdktf.listMapper(addressMapIpsToTerraform, true)(this._ips.internalValue),
       memberships: cdktf.listMapper(addressMapMembershipsToTerraform, true)(this._memberships.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_sni: {
+        value: cdktf.stringToHclTerraform(this._defaultSni),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ips: {
+        value: cdktf.listMapperHcl(addressMapIpsToHclTerraform, true)(this._ips.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AddressMapIpsList",
+      },
+      memberships: {
+        value: cdktf.listMapperHcl(addressMapMembershipsToHclTerraform, true)(this._memberships.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AddressMapMembershipsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

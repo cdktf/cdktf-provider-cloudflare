@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_cron_trigger
 // generated from terraform resource schema
 
@@ -166,5 +161,37 @@ export class WorkerCronTrigger extends cdktf.TerraformResource {
       schedules: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schedules),
       script_name: cdktf.stringToTerraform(this._scriptName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedules: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._schedules),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      script_name: {
+        value: cdktf.stringToHclTerraform(this._scriptName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

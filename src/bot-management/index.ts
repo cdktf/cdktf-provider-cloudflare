@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/bot_management
 // generated from terraform resource schema
 
@@ -345,5 +340,79 @@ export class BotManagement extends cdktf.TerraformResource {
       suppress_session_score: cdktf.booleanToTerraform(this._suppressSessionScore),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_update_model: {
+        value: cdktf.booleanToHclTerraform(this._autoUpdateModel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_js: {
+        value: cdktf.booleanToHclTerraform(this._enableJs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      fight_mode: {
+        value: cdktf.booleanToHclTerraform(this._fightMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      optimize_wordpress: {
+        value: cdktf.booleanToHclTerraform(this._optimizeWordpress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sbfm_definitely_automated: {
+        value: cdktf.stringToHclTerraform(this._sbfmDefinitelyAutomated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sbfm_likely_automated: {
+        value: cdktf.stringToHclTerraform(this._sbfmLikelyAutomated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sbfm_static_resource_protection: {
+        value: cdktf.booleanToHclTerraform(this._sbfmStaticResourceProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sbfm_verified_bots: {
+        value: cdktf.stringToHclTerraform(this._sbfmVerifiedBots),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      suppress_session_score: {
+        value: cdktf.booleanToHclTerraform(this._suppressSessionScore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

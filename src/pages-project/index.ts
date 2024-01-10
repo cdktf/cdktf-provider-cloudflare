@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/pages_project
 // generated from terraform resource schema
 
@@ -101,6 +96,49 @@ export function pagesProjectBuildConfigToTerraform(struct?: PagesProjectBuildCon
     web_analytics_tag: cdktf.stringToTerraform(struct!.webAnalyticsTag),
     web_analytics_token: cdktf.stringToTerraform(struct!.webAnalyticsToken),
   }
+}
+
+
+export function pagesProjectBuildConfigToHclTerraform(struct?: PagesProjectBuildConfigOutputReference | PagesProjectBuildConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    build_command: {
+      value: cdktf.stringToHclTerraform(struct!.buildCommand),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_dir: {
+      value: cdktf.stringToHclTerraform(struct!.destinationDir),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    root_dir: {
+      value: cdktf.stringToHclTerraform(struct!.rootDir),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    web_analytics_tag: {
+      value: cdktf.stringToHclTerraform(struct!.webAnalyticsTag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    web_analytics_token: {
+      value: cdktf.stringToHclTerraform(struct!.webAnalyticsToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject {
@@ -258,6 +296,25 @@ export function pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct?
   }
 }
 
+
+export function pagesProjectDeploymentConfigsPreviewPlacementToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewPlacementOutputReference | PagesProjectDeploymentConfigsPreviewPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PagesProjectDeploymentConfigsPreviewPlacementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -337,6 +394,37 @@ export function pagesProjectDeploymentConfigsPreviewServiceBindingToTerraform(st
     name: cdktf.stringToTerraform(struct!.name),
     service: cdktf.stringToTerraform(struct!.service),
   }
+}
+
+
+export function pagesProjectDeploymentConfigsPreviewServiceBindingToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewServiceBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    environment: {
+      value: cdktf.stringToHclTerraform(struct!.environment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference extends cdktf.ComplexObject {
@@ -558,6 +646,97 @@ export function pagesProjectDeploymentConfigsPreviewToTerraform(struct?: PagesPr
     placement: pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct!.placement),
     service_binding: cdktf.listMapper(pagesProjectDeploymentConfigsPreviewServiceBindingToTerraform, true)(struct!.serviceBinding),
   }
+}
+
+
+export function pagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewOutputReference | PagesProjectDeploymentConfigsPreview): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    always_use_latest_compatibility_date: {
+      value: cdktf.booleanToHclTerraform(struct!.alwaysUseLatestCompatibilityDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    compatibility_date: {
+      value: cdktf.stringToHclTerraform(struct!.compatibilityDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compatibility_flags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.compatibilityFlags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    d1_databases: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.d1Databases),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    durable_object_namespaces: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.durableObjectNamespaces),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    environment_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environmentVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    fail_open: {
+      value: cdktf.booleanToHclTerraform(struct!.failOpen),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kv_namespaces: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.kvNamespaces),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    r2_buckets: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.r2Buckets),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    secrets: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.secrets),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    usage_model: {
+      value: cdktf.stringToHclTerraform(struct!.usageModel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    placement: {
+      value: pagesProjectDeploymentConfigsPreviewPlacementToHclTerraform(struct!.placement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PagesProjectDeploymentConfigsPreviewPlacementList",
+    },
+    service_binding: {
+      value: cdktf.listMapperHcl(pagesProjectDeploymentConfigsPreviewServiceBindingToHclTerraform, true)(struct!.serviceBinding),
+      isBlock: true,
+      type: "set",
+      storageClassType: "PagesProjectDeploymentConfigsPreviewServiceBindingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.ComplexObject {
@@ -891,6 +1070,25 @@ export function pagesProjectDeploymentConfigsProductionPlacementToTerraform(stru
   }
 }
 
+
+export function pagesProjectDeploymentConfigsProductionPlacementToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionPlacementOutputReference | PagesProjectDeploymentConfigsProductionPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PagesProjectDeploymentConfigsProductionPlacementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -970,6 +1168,37 @@ export function pagesProjectDeploymentConfigsProductionServiceBindingToTerraform
     name: cdktf.stringToTerraform(struct!.name),
     service: cdktf.stringToTerraform(struct!.service),
   }
+}
+
+
+export function pagesProjectDeploymentConfigsProductionServiceBindingToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionServiceBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    environment: {
+      value: cdktf.stringToHclTerraform(struct!.environment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectDeploymentConfigsProductionServiceBindingOutputReference extends cdktf.ComplexObject {
@@ -1191,6 +1420,97 @@ export function pagesProjectDeploymentConfigsProductionToTerraform(struct?: Page
     placement: pagesProjectDeploymentConfigsProductionPlacementToTerraform(struct!.placement),
     service_binding: cdktf.listMapper(pagesProjectDeploymentConfigsProductionServiceBindingToTerraform, true)(struct!.serviceBinding),
   }
+}
+
+
+export function pagesProjectDeploymentConfigsProductionToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionOutputReference | PagesProjectDeploymentConfigsProduction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    always_use_latest_compatibility_date: {
+      value: cdktf.booleanToHclTerraform(struct!.alwaysUseLatestCompatibilityDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    compatibility_date: {
+      value: cdktf.stringToHclTerraform(struct!.compatibilityDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compatibility_flags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.compatibilityFlags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    d1_databases: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.d1Databases),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    durable_object_namespaces: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.durableObjectNamespaces),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    environment_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environmentVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    fail_open: {
+      value: cdktf.booleanToHclTerraform(struct!.failOpen),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kv_namespaces: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.kvNamespaces),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    r2_buckets: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.r2Buckets),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    secrets: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.secrets),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    usage_model: {
+      value: cdktf.stringToHclTerraform(struct!.usageModel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    placement: {
+      value: pagesProjectDeploymentConfigsProductionPlacementToHclTerraform(struct!.placement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PagesProjectDeploymentConfigsProductionPlacementList",
+    },
+    service_binding: {
+      value: cdktf.listMapperHcl(pagesProjectDeploymentConfigsProductionServiceBindingToHclTerraform, true)(struct!.serviceBinding),
+      isBlock: true,
+      type: "set",
+      storageClassType: "PagesProjectDeploymentConfigsProductionServiceBindingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectDeploymentConfigsProductionOutputReference extends cdktf.ComplexObject {
@@ -1531,6 +1851,31 @@ export function pagesProjectDeploymentConfigsToTerraform(struct?: PagesProjectDe
   }
 }
 
+
+export function pagesProjectDeploymentConfigsToHclTerraform(struct?: PagesProjectDeploymentConfigsOutputReference | PagesProjectDeploymentConfigs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    preview: {
+      value: pagesProjectDeploymentConfigsPreviewToHclTerraform(struct!.preview),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PagesProjectDeploymentConfigsPreviewList",
+    },
+    production: {
+      value: pagesProjectDeploymentConfigsProductionToHclTerraform(struct!.production),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PagesProjectDeploymentConfigsProductionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1674,6 +2019,73 @@ export function pagesProjectSourceConfigToTerraform(struct?: PagesProjectSourceC
     production_deployment_enabled: cdktf.booleanToTerraform(struct!.productionDeploymentEnabled),
     repo_name: cdktf.stringToTerraform(struct!.repoName),
   }
+}
+
+
+export function pagesProjectSourceConfigToHclTerraform(struct?: PagesProjectSourceConfigOutputReference | PagesProjectSourceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deployments_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.deploymentsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pr_comments_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.prCommentsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preview_branch_excludes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previewBranchExcludes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    preview_branch_includes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previewBranchIncludes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    preview_deployment_setting: {
+      value: cdktf.stringToHclTerraform(struct!.previewDeploymentSetting),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    production_branch: {
+      value: cdktf.stringToHclTerraform(struct!.productionBranch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    production_deployment_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.productionDeploymentEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    repo_name: {
+      value: cdktf.stringToHclTerraform(struct!.repoName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject {
@@ -1921,6 +2333,31 @@ export function pagesProjectSourceToTerraform(struct?: PagesProjectSourceOutputR
     type: cdktf.stringToTerraform(struct!.type),
     config: pagesProjectSourceConfigToTerraform(struct!.config),
   }
+}
+
+
+export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSourceOutputReference | PagesProjectSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    config: {
+      value: pagesProjectSourceConfigToHclTerraform(struct!.config),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PagesProjectSourceConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
@@ -2190,5 +2627,55 @@ export class PagesProject extends cdktf.TerraformResource {
       deployment_configs: pagesProjectDeploymentConfigsToTerraform(this._deploymentConfigs.internalValue),
       source: pagesProjectSourceToTerraform(this._source.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      production_branch: {
+        value: cdktf.stringToHclTerraform(this._productionBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      build_config: {
+        value: pagesProjectBuildConfigToHclTerraform(this._buildConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PagesProjectBuildConfigList",
+      },
+      deployment_configs: {
+        value: pagesProjectDeploymentConfigsToHclTerraform(this._deploymentConfigs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PagesProjectDeploymentConfigsList",
+      },
+      source: {
+        value: pagesProjectSourceToHclTerraform(this._source.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PagesProjectSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

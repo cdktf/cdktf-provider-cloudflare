@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets
 // generated from terraform resource schema
 
@@ -54,6 +49,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersAutominifyToT
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersAutominifyToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersAutominify): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference extends cdktf.ComplexObject {
@@ -130,6 +136,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlToT
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -199,6 +216,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCusto
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -266,6 +294,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCusto
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference extends cdktf.ComplexObject {
@@ -342,6 +381,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCusto
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHost): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -404,6 +454,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCusto
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference extends cdktf.ComplexObject {
@@ -473,6 +534,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCusto
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference extends cdktf.ComplexObject {
@@ -547,6 +619,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCusto
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference extends cdktf.ComplexObject {
@@ -638,6 +721,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyToTer
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -718,6 +812,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatus
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -785,6 +890,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatus
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference extends cdktf.ComplexObject {
@@ -862,6 +978,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlToTerr
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -937,6 +1064,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersFromListStruc
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersFromListStructToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1006,6 +1144,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersFromValueTarg
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1073,6 +1222,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersFromValueToTe
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersFromValueToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersFromValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference extends cdktf.ComplexObject {
@@ -1148,6 +1308,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersHeadersToTerr
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersHeadersToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference extends cdktf.ComplexObject {
@@ -1229,6 +1400,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataTo
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersMatchedData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1291,6 +1473,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersOriginToTerra
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersOriginToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersOrigin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference extends cdktf.ComplexObject {
@@ -1360,6 +1553,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersOverridesCate
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategories): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference extends cdktf.ComplexObject {
@@ -1439,6 +1643,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersOverridesRule
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference extends cdktf.ComplexObject {
@@ -1528,6 +1743,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersOverridesToTe
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersOverridesToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersOverrides): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference extends cdktf.ComplexObject {
@@ -1621,6 +1847,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersResponseToTer
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersResponseToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersResponse): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1695,6 +1932,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersServeStaleToT
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersServeStaleToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersServeStale): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1759,6 +2007,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersSniToTerrafor
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersSniToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersSni): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1821,6 +2080,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersUriPathToTerr
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersUriPathToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference extends cdktf.ComplexObject {
@@ -1892,6 +2162,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersUriQueryToTer
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersUriQueryToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1959,6 +2240,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersUriToTerrafor
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersUriToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParametersUri): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference extends cdktf.ComplexObject {
@@ -2035,6 +2327,17 @@ export function dataCloudflareRulesetsRulesetsRulesActionParametersToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesActionParametersToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesActionParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference extends cdktf.ComplexObject {
@@ -2361,6 +2664,17 @@ export function dataCloudflareRulesetsRulesetsRulesExposedCredentialCheckToTerra
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesExposedCredentialCheckToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2430,6 +2744,17 @@ export function dataCloudflareRulesetsRulesetsRulesLoggingToTerraform(struct?: D
   }
 }
 
+
+export function dataCloudflareRulesetsRulesetsRulesLoggingToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareRulesetsRulesetsRulesLoggingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2497,6 +2822,17 @@ export function dataCloudflareRulesetsRulesetsRulesRatelimitToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesRatelimitToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRulesRatelimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference extends cdktf.ComplexObject {
@@ -2596,6 +2932,17 @@ export function dataCloudflareRulesetsRulesetsRulesToTerraform(struct?: DataClou
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsRulesToHclTerraform(struct?: DataCloudflareRulesetsRulesetsRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsRulesOutputReference extends cdktf.ComplexObject {
@@ -2719,6 +3066,17 @@ export function dataCloudflareRulesetsRulesetsToTerraform(struct?: DataCloudflar
   }
   return {
   }
+}
+
+
+export function dataCloudflareRulesetsRulesetsToHclTerraform(struct?: DataCloudflareRulesetsRulesets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareRulesetsRulesetsOutputReference extends cdktf.ComplexObject {
@@ -2852,6 +3210,49 @@ export function dataCloudflareRulesetsFilterToTerraform(struct?: DataCloudflareR
     phase: cdktf.stringToTerraform(struct!.phase),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function dataCloudflareRulesetsFilterToHclTerraform(struct?: DataCloudflareRulesetsFilterOutputReference | DataCloudflareRulesetsFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kind: {
+      value: cdktf.stringToHclTerraform(struct!.kind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phase: {
+      value: cdktf.stringToHclTerraform(struct!.phase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataCloudflareRulesetsFilterOutputReference extends cdktf.ComplexObject {
@@ -3151,5 +3552,43 @@ export class DataCloudflareRulesets extends cdktf.TerraformDataSource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
       filter: dataCloudflareRulesetsFilterToTerraform(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_rules: {
+        value: cdktf.booleanToHclTerraform(this._includeRules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: dataCloudflareRulesetsFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataCloudflareRulesetsFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

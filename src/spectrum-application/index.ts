@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/spectrum_application
 // generated from terraform resource schema
 
@@ -124,6 +119,31 @@ export function spectrumApplicationDnsToTerraform(struct?: SpectrumApplicationDn
   }
 }
 
+
+export function spectrumApplicationDnsToHclTerraform(struct?: SpectrumApplicationDnsOutputReference | SpectrumApplicationDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -219,6 +239,37 @@ export function spectrumApplicationEdgeIpsToTerraform(struct?: SpectrumApplicati
     ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ips),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function spectrumApplicationEdgeIpsToHclTerraform(struct?: SpectrumApplicationEdgeIpsOutputReference | SpectrumApplicationEdgeIps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connectivity: {
+      value: cdktf.stringToHclTerraform(struct!.connectivity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ips),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObject {
@@ -329,6 +380,25 @@ export function spectrumApplicationOriginDnsToTerraform(struct?: SpectrumApplica
   }
 }
 
+
+export function spectrumApplicationOriginDnsToHclTerraform(struct?: SpectrumApplicationOriginDnsOutputReference | SpectrumApplicationOriginDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SpectrumApplicationOriginDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -398,6 +468,31 @@ export function spectrumApplicationOriginPortRangeToTerraform(struct?: SpectrumA
     end: cdktf.numberToTerraform(struct!.end),
     start: cdktf.numberToTerraform(struct!.start),
   }
+}
+
+
+export function spectrumApplicationOriginPortRangeToHclTerraform(struct?: SpectrumApplicationOriginPortRangeOutputReference | SpectrumApplicationOriginPortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.numberToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start: {
+      value: cdktf.numberToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SpectrumApplicationOriginPortRangeOutputReference extends cdktf.ComplexObject {
@@ -772,5 +867,97 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       origin_dns: spectrumApplicationOriginDnsToTerraform(this._originDns.internalValue),
       origin_port_range: spectrumApplicationOriginPortRangeToTerraform(this._originPortRange.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      argo_smart_routing: {
+        value: cdktf.booleanToHclTerraform(this._argoSmartRouting),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_firewall: {
+        value: cdktf.booleanToHclTerraform(this._ipFirewall),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      origin_direct: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._originDirect),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      origin_port: {
+        value: cdktf.numberToHclTerraform(this._originPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_protocol: {
+        value: cdktf.stringToHclTerraform(this._proxyProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls: {
+        value: cdktf.stringToHclTerraform(this._tls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_type: {
+        value: cdktf.stringToHclTerraform(this._trafficType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns: {
+        value: spectrumApplicationDnsToHclTerraform(this._dns.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SpectrumApplicationDnsList",
+      },
+      edge_ips: {
+        value: spectrumApplicationEdgeIpsToHclTerraform(this._edgeIps.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SpectrumApplicationEdgeIpsList",
+      },
+      origin_dns: {
+        value: spectrumApplicationOriginDnsToHclTerraform(this._originDns.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SpectrumApplicationOriginDnsList",
+      },
+      origin_port_range: {
+        value: spectrumApplicationOriginPortRangeToHclTerraform(this._originPortRange.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SpectrumApplicationOriginPortRangeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

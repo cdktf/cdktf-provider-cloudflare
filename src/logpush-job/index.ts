@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/logpush_job
 // generated from terraform resource schema
 
@@ -433,5 +428,103 @@ export class LogpushJob extends cdktf.TerraformResource {
       ownership_challenge: cdktf.stringToTerraform(this._ownershipChallenge),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dataset: {
+        value: cdktf.stringToHclTerraform(this._dataset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_conf: {
+        value: cdktf.stringToHclTerraform(this._destinationConf),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      frequency: {
+        value: cdktf.stringToHclTerraform(this._frequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logpull_options: {
+        value: cdktf.stringToHclTerraform(this._logpullOptions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_upload_bytes: {
+        value: cdktf.numberToHclTerraform(this._maxUploadBytes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_upload_interval_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxUploadIntervalSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_upload_records: {
+        value: cdktf.numberToHclTerraform(this._maxUploadRecords),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ownership_challenge: {
+        value: cdktf.stringToHclTerraform(this._ownershipChallenge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

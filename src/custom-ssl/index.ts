@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/custom_ssl
 // generated from terraform resource schema
 
@@ -83,6 +78,49 @@ export function customSslCustomSslOptionsToTerraform(struct?: CustomSslCustomSsl
     private_key: cdktf.stringToTerraform(struct!.privateKey),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function customSslCustomSslOptionsToHclTerraform(struct?: CustomSslCustomSslOptionsOutputReference | CustomSslCustomSslOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bundle_method: {
+      value: cdktf.stringToHclTerraform(struct!.bundleMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate: {
+      value: cdktf.stringToHclTerraform(struct!.certificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    geo_restrictions: {
+      value: cdktf.stringToHclTerraform(struct!.geoRestrictions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomSslCustomSslOptionsOutputReference extends cdktf.ComplexObject {
@@ -244,6 +282,31 @@ export function customSslCustomSslPriorityToTerraform(struct?: CustomSslCustomSs
     id: cdktf.stringToTerraform(struct!.id),
     priority: cdktf.numberToTerraform(struct!.priority),
   }
+}
+
+
+export function customSslCustomSslPriorityToHclTerraform(struct?: CustomSslCustomSslPriority | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomSslCustomSslPriorityOutputReference extends cdktf.ComplexObject {
@@ -522,5 +585,37 @@ export class CustomSsl extends cdktf.TerraformResource {
       custom_ssl_options: customSslCustomSslOptionsToTerraform(this._customSslOptions.internalValue),
       custom_ssl_priority: cdktf.listMapper(customSslCustomSslPriorityToTerraform, true)(this._customSslPriority.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_ssl_options: {
+        value: customSslCustomSslOptionsToHclTerraform(this._customSslOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CustomSslCustomSslOptionsList",
+      },
+      custom_ssl_priority: {
+        value: cdktf.listMapperHcl(customSslCustomSslPriorityToHclTerraform, true)(this._customSslPriority.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CustomSslCustomSslPriorityList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

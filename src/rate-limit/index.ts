@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/rate_limit
 // generated from terraform resource schema
 
@@ -96,6 +91,31 @@ export function rateLimitActionResponseToTerraform(struct?: RateLimitActionRespo
     body: cdktf.stringToTerraform(struct!.body),
     content_type: cdktf.stringToTerraform(struct!.contentType),
   }
+}
+
+
+export function rateLimitActionResponseToHclTerraform(struct?: RateLimitActionResponseOutputReference | RateLimitActionResponse): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    body: {
+      value: cdktf.stringToHclTerraform(struct!.body),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RateLimitActionResponseOutputReference extends cdktf.ComplexObject {
@@ -193,6 +213,37 @@ export function rateLimitActionToTerraform(struct?: RateLimitActionOutputReferen
     timeout: cdktf.numberToTerraform(struct!.timeout),
     response: rateLimitActionResponseToTerraform(struct!.response),
   }
+}
+
+
+export function rateLimitActionToHclTerraform(struct?: RateLimitActionOutputReference | RateLimitAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    response: {
+      value: rateLimitActionResponseToHclTerraform(struct!.response),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RateLimitActionResponseList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RateLimitActionOutputReference extends cdktf.ComplexObject {
@@ -303,6 +354,25 @@ export function rateLimitCorrelateToTerraform(struct?: RateLimitCorrelateOutputR
   }
 }
 
+
+export function rateLimitCorrelateToHclTerraform(struct?: RateLimitCorrelateOutputReference | RateLimitCorrelate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    by: {
+      value: cdktf.stringToHclTerraform(struct!.by),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RateLimitCorrelateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -382,6 +452,37 @@ export function rateLimitMatchRequestToTerraform(struct?: RateLimitMatchRequestO
     schemes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.schemes),
     url_pattern: cdktf.stringToTerraform(struct!.urlPattern),
   }
+}
+
+
+export function rateLimitMatchRequestToHclTerraform(struct?: RateLimitMatchRequestOutputReference | RateLimitMatchRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    methods: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.methods),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    schemes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.schemes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    url_pattern: {
+      value: cdktf.stringToHclTerraform(struct!.urlPattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RateLimitMatchRequestOutputReference extends cdktf.ComplexObject {
@@ -509,6 +610,37 @@ export function rateLimitMatchResponseToTerraform(struct?: RateLimitMatchRespons
   }
 }
 
+
+export function rateLimitMatchResponseToHclTerraform(struct?: RateLimitMatchResponseOutputReference | RateLimitMatchResponse): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    headers: {
+      value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(struct!.headers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringMapList",
+    },
+    origin_traffic: {
+      value: cdktf.booleanToHclTerraform(struct!.originTraffic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    statuses: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.statuses),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RateLimitMatchResponseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -625,6 +757,31 @@ export function rateLimitMatchToTerraform(struct?: RateLimitMatchOutputReference
     request: rateLimitMatchRequestToTerraform(struct!.request),
     response: rateLimitMatchResponseToTerraform(struct!.response),
   }
+}
+
+
+export function rateLimitMatchToHclTerraform(struct?: RateLimitMatchOutputReference | RateLimitMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    request: {
+      value: rateLimitMatchRequestToHclTerraform(struct!.request),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RateLimitMatchRequestList",
+    },
+    response: {
+      value: rateLimitMatchResponseToHclTerraform(struct!.response),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RateLimitMatchResponseList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RateLimitMatchOutputReference extends cdktf.ComplexObject {
@@ -930,5 +1087,73 @@ export class RateLimit extends cdktf.TerraformResource {
       correlate: rateLimitCorrelateToTerraform(this._correlate.internalValue),
       match: rateLimitMatchToTerraform(this._match.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bypass_url_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._bypassUrlPatterns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      period: {
+        value: cdktf.numberToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      threshold: {
+        value: cdktf.numberToHclTerraform(this._threshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action: {
+        value: rateLimitActionToHclTerraform(this._action.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RateLimitActionList",
+      },
+      correlate: {
+        value: rateLimitCorrelateToHclTerraform(this._correlate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RateLimitCorrelateList",
+      },
+      match: {
+        value: rateLimitMatchToHclTerraform(this._match.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RateLimitMatchList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list_item
 // generated from terraform resource schema
 
@@ -79,6 +74,25 @@ export function listItemHostnameToTerraform(struct?: ListItemHostnameOutputRefer
   return {
     url_hostname: cdktf.stringToTerraform(struct!.urlHostname),
   }
+}
+
+
+export function listItemHostnameToHclTerraform(struct?: ListItemHostnameOutputReference | ListItemHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    url_hostname: {
+      value: cdktf.stringToHclTerraform(struct!.urlHostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ListItemHostnameOutputReference extends cdktf.ComplexObject {
@@ -185,6 +199,61 @@ export function listItemRedirectToTerraform(struct?: ListItemRedirectOutputRefer
     subpath_matching: cdktf.stringToTerraform(struct!.subpathMatching),
     target_url: cdktf.stringToTerraform(struct!.targetUrl),
   }
+}
+
+
+export function listItemRedirectToHclTerraform(struct?: ListItemRedirectOutputReference | ListItemRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    include_subdomains: {
+      value: cdktf.stringToHclTerraform(struct!.includeSubdomains),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preserve_path_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.preservePathSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preserve_query_string: {
+      value: cdktf.stringToHclTerraform(struct!.preserveQueryString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_url: {
+      value: cdktf.stringToHclTerraform(struct!.sourceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    subpath_matching: {
+      value: cdktf.stringToHclTerraform(struct!.subpathMatching),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_url: {
+      value: cdktf.stringToHclTerraform(struct!.targetUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
@@ -564,5 +633,61 @@ export class ListItemA extends cdktf.TerraformResource {
       hostname: listItemHostnameToTerraform(this._hostname.internalValue),
       redirect: listItemRedirectToTerraform(this._redirect.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      asn: {
+        value: cdktf.numberToHclTerraform(this._asn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip: {
+        value: cdktf.stringToHclTerraform(this._ip),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      list_id: {
+        value: cdktf.stringToHclTerraform(this._listId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hostname: {
+        value: listItemHostnameToHclTerraform(this._hostname.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ListItemHostnameList",
+      },
+      redirect: {
+        value: listItemRedirectToHclTerraform(this._redirect.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ListItemRedirectList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

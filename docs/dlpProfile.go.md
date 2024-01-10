@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfile(scope Construct, id *string, config DlpProfileConfig) DlpProfile
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ dlpprofile.DlpProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ dlpprofile.DlpProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -841,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileConfig {
 	Connection: interface{},
@@ -1056,13 +1063,13 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileEntry {
 	Name: *string,
 	Enabled: interface{},
 	Id: *string,
-	Pattern: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10.dlpProfile.DlpProfileEntryPattern,
+	Pattern: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dlpProfile.DlpProfileEntryPattern,
 }
 ```
 
@@ -1141,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileEntryPattern {
 	Regex: *string,
@@ -1193,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DlpProfileEntryList
 ```
@@ -1234,10 +1241,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1336,7 +1360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DlpProfileEntryOutputReference
 ```
@@ -1725,7 +1749,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileEntryPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlpProfileEntryPatternOutputReference
 ```

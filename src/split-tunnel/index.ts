@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/split_tunnel
 // generated from terraform resource schema
 
@@ -75,6 +70,37 @@ export function splitTunnelTunnelsToTerraform(struct?: SplitTunnelTunnels | cdkt
     description: cdktf.stringToTerraform(struct!.description),
     host: cdktf.stringToTerraform(struct!.host),
   }
+}
+
+
+export function splitTunnelTunnelsToHclTerraform(struct?: SplitTunnelTunnels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SplitTunnelTunnelsOutputReference extends cdktf.ComplexObject {
@@ -347,5 +373,43 @@ export class SplitTunnel extends cdktf.TerraformResource {
       policy_id: cdktf.stringToTerraform(this._policyId),
       tunnels: cdktf.listMapper(splitTunnelTunnelsToTerraform, true)(this._tunnels.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mode: {
+        value: cdktf.stringToHclTerraform(this._mode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tunnels: {
+        value: cdktf.listMapperHcl(splitTunnelTunnelsToHclTerraform, true)(this._tunnels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SplitTunnelTunnelsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script
 // generated from terraform resource schema
 
@@ -148,6 +143,31 @@ export function workerScriptAnalyticsEngineBindingToTerraform(struct?: WorkerScr
   }
 }
 
+
+export function workerScriptAnalyticsEngineBindingToHclTerraform(struct?: WorkerScriptAnalyticsEngineBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset: {
+      value: cdktf.stringToHclTerraform(struct!.dataset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkerScriptAnalyticsEngineBindingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -268,6 +288,31 @@ export function workerScriptD1DatabaseBindingToTerraform(struct?: WorkerScriptD1
     database_id: cdktf.stringToTerraform(struct!.databaseId),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function workerScriptD1DatabaseBindingToHclTerraform(struct?: WorkerScriptD1DatabaseBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database_id: {
+      value: cdktf.stringToHclTerraform(struct!.databaseId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkerScriptD1DatabaseBindingOutputReference extends cdktf.ComplexObject {
@@ -392,6 +437,31 @@ export function workerScriptKvNamespaceBindingToTerraform(struct?: WorkerScriptK
   }
 }
 
+
+export function workerScriptKvNamespaceBindingToHclTerraform(struct?: WorkerScriptKvNamespaceBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace_id: {
+      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkerScriptKvNamespaceBindingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -507,6 +577,25 @@ export function workerScriptPlacementToTerraform(struct?: WorkerScriptPlacement 
   }
 }
 
+
+export function workerScriptPlacementToHclTerraform(struct?: WorkerScriptPlacement | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkerScriptPlacementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -608,6 +697,31 @@ export function workerScriptPlainTextBindingToTerraform(struct?: WorkerScriptPla
     name: cdktf.stringToTerraform(struct!.name),
     text: cdktf.stringToTerraform(struct!.text),
   }
+}
+
+
+export function workerScriptPlainTextBindingToHclTerraform(struct?: WorkerScriptPlainTextBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text: {
+      value: cdktf.stringToHclTerraform(struct!.text),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkerScriptPlainTextBindingOutputReference extends cdktf.ComplexObject {
@@ -732,6 +846,31 @@ export function workerScriptQueueBindingToTerraform(struct?: WorkerScriptQueueBi
   }
 }
 
+
+export function workerScriptQueueBindingToHclTerraform(struct?: WorkerScriptQueueBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    binding: {
+      value: cdktf.stringToHclTerraform(struct!.binding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue: {
+      value: cdktf.stringToHclTerraform(struct!.queue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkerScriptQueueBindingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -854,6 +993,31 @@ export function workerScriptR2BucketBindingToTerraform(struct?: WorkerScriptR2Bu
   }
 }
 
+
+export function workerScriptR2BucketBindingToHclTerraform(struct?: WorkerScriptR2BucketBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkerScriptR2BucketBindingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -974,6 +1138,31 @@ export function workerScriptSecretTextBindingToTerraform(struct?: WorkerScriptSe
     name: cdktf.stringToTerraform(struct!.name),
     text: cdktf.stringToTerraform(struct!.text),
   }
+}
+
+
+export function workerScriptSecretTextBindingToHclTerraform(struct?: WorkerScriptSecretTextBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text: {
+      value: cdktf.stringToHclTerraform(struct!.text),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkerScriptSecretTextBindingOutputReference extends cdktf.ComplexObject {
@@ -1103,6 +1292,37 @@ export function workerScriptServiceBindingToTerraform(struct?: WorkerScriptServi
     name: cdktf.stringToTerraform(struct!.name),
     service: cdktf.stringToTerraform(struct!.service),
   }
+}
+
+
+export function workerScriptServiceBindingToHclTerraform(struct?: WorkerScriptServiceBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    environment: {
+      value: cdktf.stringToHclTerraform(struct!.environment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkerScriptServiceBindingOutputReference extends cdktf.ComplexObject {
@@ -1247,6 +1467,31 @@ export function workerScriptWebassemblyBindingToTerraform(struct?: WorkerScriptW
     module: cdktf.stringToTerraform(struct!.module),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function workerScriptWebassemblyBindingToHclTerraform(struct?: WorkerScriptWebassemblyBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    module: {
+      value: cdktf.stringToHclTerraform(struct!.module),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkerScriptWebassemblyBindingOutputReference extends cdktf.ComplexObject {
@@ -1725,5 +1970,121 @@ export class WorkerScript extends cdktf.TerraformResource {
       service_binding: cdktf.listMapper(workerScriptServiceBindingToTerraform, true)(this._serviceBinding.internalValue),
       webassembly_binding: cdktf.listMapper(workerScriptWebassemblyBindingToTerraform, true)(this._webassemblyBinding.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compatibility_date: {
+        value: cdktf.stringToHclTerraform(this._compatibilityDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compatibility_flags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._compatibilityFlags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logpush: {
+        value: cdktf.booleanToHclTerraform(this._logpush),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      module: {
+        value: cdktf.booleanToHclTerraform(this._module),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      analytics_engine_binding: {
+        value: cdktf.listMapperHcl(workerScriptAnalyticsEngineBindingToHclTerraform, true)(this._analyticsEngineBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptAnalyticsEngineBindingList",
+      },
+      d1_database_binding: {
+        value: cdktf.listMapperHcl(workerScriptD1DatabaseBindingToHclTerraform, true)(this._d1DatabaseBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptD1DatabaseBindingList",
+      },
+      kv_namespace_binding: {
+        value: cdktf.listMapperHcl(workerScriptKvNamespaceBindingToHclTerraform, true)(this._kvNamespaceBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptKvNamespaceBindingList",
+      },
+      placement: {
+        value: cdktf.listMapperHcl(workerScriptPlacementToHclTerraform, true)(this._placement.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptPlacementList",
+      },
+      plain_text_binding: {
+        value: cdktf.listMapperHcl(workerScriptPlainTextBindingToHclTerraform, true)(this._plainTextBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptPlainTextBindingList",
+      },
+      queue_binding: {
+        value: cdktf.listMapperHcl(workerScriptQueueBindingToHclTerraform, true)(this._queueBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptQueueBindingList",
+      },
+      r2_bucket_binding: {
+        value: cdktf.listMapperHcl(workerScriptR2BucketBindingToHclTerraform, true)(this._r2BucketBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptR2BucketBindingList",
+      },
+      secret_text_binding: {
+        value: cdktf.listMapperHcl(workerScriptSecretTextBindingToHclTerraform, true)(this._secretTextBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptSecretTextBindingList",
+      },
+      service_binding: {
+        value: cdktf.listMapperHcl(workerScriptServiceBindingToHclTerraform, true)(this._serviceBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptServiceBindingList",
+      },
+      webassembly_binding: {
+        value: cdktf.listMapperHcl(workerScriptWebassemblyBindingToHclTerraform, true)(this._webassemblyBinding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkerScriptWebassemblyBindingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

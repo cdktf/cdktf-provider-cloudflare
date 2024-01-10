@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs
 // generated from terraform resource schema
 
@@ -384,5 +379,91 @@ export class CloudflareProvider extends cdktf.TerraformProvider {
       user_agent_operator_suffix: cdktf.stringToTerraform(this._userAgentOperatorSuffix),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_base_path: {
+        value: cdktf.stringToHclTerraform(this._apiBasePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_client_logging: {
+        value: cdktf.booleanToHclTerraform(this._apiClientLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      api_hostname: {
+        value: cdktf.stringToHclTerraform(this._apiHostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_key: {
+        value: cdktf.stringToHclTerraform(this._apiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_token: {
+        value: cdktf.stringToHclTerraform(this._apiToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_user_service_key: {
+        value: cdktf.stringToHclTerraform(this._apiUserServiceKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_backoff: {
+        value: cdktf.numberToHclTerraform(this._maxBackoff),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_backoff: {
+        value: cdktf.numberToHclTerraform(this._minBackoff),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      retries: {
+        value: cdktf.numberToHclTerraform(this._retries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rps: {
+        value: cdktf.numberToHclTerraform(this._rps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      user_agent_operator_suffix: {
+        value: cdktf.stringToHclTerraform(this._userAgentOperatorSuffix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

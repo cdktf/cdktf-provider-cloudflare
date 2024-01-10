@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/dlp_profile
 // generated from terraform resource schema
 
@@ -80,6 +75,31 @@ export function dlpProfileEntryPatternToTerraform(struct?: DlpProfileEntryPatter
     regex: cdktf.stringToTerraform(struct!.regex),
     validation: cdktf.stringToTerraform(struct!.validation),
   }
+}
+
+
+export function dlpProfileEntryPatternToHclTerraform(struct?: DlpProfileEntryPatternOutputReference | DlpProfileEntryPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    validation: {
+      value: cdktf.stringToHclTerraform(struct!.validation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlpProfileEntryPatternOutputReference extends cdktf.ComplexObject {
@@ -190,6 +210,43 @@ export function dlpProfileEntryToTerraform(struct?: DlpProfileEntry | cdktf.IRes
     name: cdktf.stringToTerraform(struct!.name),
     pattern: dlpProfileEntryPatternToTerraform(struct!.pattern),
   }
+}
+
+
+export function dlpProfileEntryToHclTerraform(struct?: DlpProfileEntry | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pattern: {
+      value: dlpProfileEntryPatternToHclTerraform(struct!.pattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlpProfileEntryPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlpProfileEntryOutputReference extends cdktf.ComplexObject {
@@ -511,5 +568,55 @@ export class DlpProfile extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       entry: cdktf.listMapper(dlpProfileEntryToTerraform, true)(this._entry.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_match_count: {
+        value: cdktf.numberToHclTerraform(this._allowedMatchCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      entry: {
+        value: cdktf.listMapperHcl(dlpProfileEntryToHclTerraform, true)(this._entry.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DlpProfileEntryList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
