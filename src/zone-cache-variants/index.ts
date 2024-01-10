@@ -389,4 +389,90 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      avif: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._avif),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bmp: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._bmp),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      gif: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gif),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jp2: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jp2),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      jpeg: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jpeg),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      jpg: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jpg),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      jpg2: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jpg2),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      png: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._png),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tif: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tif),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tiff: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tiff),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      webp: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._webp),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

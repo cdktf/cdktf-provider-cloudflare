@@ -356,4 +356,84 @@ export class GreTunnel extends cdktf.TerraformResource {
       ttl: cdktf.numberToTerraform(this._ttl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloudflare_gre_endpoint: {
+        value: cdktf.stringToHclTerraform(this._cloudflareGreEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_gre_endpoint: {
+        value: cdktf.stringToHclTerraform(this._customerGreEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      health_check_enabled: {
+        value: cdktf.booleanToHclTerraform(this._healthCheckEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      health_check_target: {
+        value: cdktf.stringToHclTerraform(this._healthCheckTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      health_check_type: {
+        value: cdktf.stringToHclTerraform(this._healthCheckType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interface_address: {
+        value: cdktf.stringToHclTerraform(this._interfaceAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mtu: {
+        value: cdktf.numberToHclTerraform(this._mtu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

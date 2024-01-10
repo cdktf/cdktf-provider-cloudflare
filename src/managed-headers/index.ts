@@ -67,6 +67,31 @@ export function managedHeadersManagedRequestHeadersToTerraform(struct?: ManagedH
   }
 }
 
+
+export function managedHeadersManagedRequestHeadersToHclTerraform(struct?: ManagedHeadersManagedRequestHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ManagedHeadersManagedRequestHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -190,6 +215,31 @@ export function managedHeadersManagedResponseHeadersToTerraform(struct?: Managed
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function managedHeadersManagedResponseHeadersToHclTerraform(struct?: ManagedHeadersManagedResponseHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedHeadersManagedResponseHeadersOutputReference extends cdktf.ComplexObject {
@@ -422,5 +472,37 @@ export class ManagedHeaders extends cdktf.TerraformResource {
       managed_request_headers: cdktf.listMapper(managedHeadersManagedRequestHeadersToTerraform, true)(this._managedRequestHeaders.internalValue),
       managed_response_headers: cdktf.listMapper(managedHeadersManagedResponseHeadersToTerraform, true)(this._managedResponseHeaders.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_request_headers: {
+        value: cdktf.listMapperHcl(managedHeadersManagedRequestHeadersToHclTerraform, true)(this._managedRequestHeaders.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedHeadersManagedRequestHeadersList",
+      },
+      managed_response_headers: {
+        value: cdktf.listMapperHcl(managedHeadersManagedResponseHeadersToHclTerraform, true)(this._managedResponseHeaders.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedHeadersManagedResponseHeadersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

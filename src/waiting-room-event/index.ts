@@ -459,4 +459,108 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_page_html: {
+        value: cdktf.stringToHclTerraform(this._customPageHtml),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_session_renewal: {
+        value: cdktf.booleanToHclTerraform(this._disableSessionRenewal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      event_end_time: {
+        value: cdktf.stringToHclTerraform(this._eventEndTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_start_time: {
+        value: cdktf.stringToHclTerraform(this._eventStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      new_users_per_minute: {
+        value: cdktf.numberToHclTerraform(this._newUsersPerMinute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      prequeue_start_time: {
+        value: cdktf.stringToHclTerraform(this._prequeueStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      queueing_method: {
+        value: cdktf.stringToHclTerraform(this._queueingMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_duration: {
+        value: cdktf.numberToHclTerraform(this._sessionDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shuffle_at_event_start: {
+        value: cdktf.booleanToHclTerraform(this._shuffleAtEventStart),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      suspended: {
+        value: cdktf.booleanToHclTerraform(this._suspended),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      total_active_users: {
+        value: cdktf.numberToHclTerraform(this._totalActiveUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      waiting_room_id: {
+        value: cdktf.stringToHclTerraform(this._waitingRoomId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

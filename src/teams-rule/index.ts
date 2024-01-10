@@ -105,6 +105,25 @@ export function teamsRuleRuleSettingsAuditSshToTerraform(struct?: TeamsRuleRuleS
   }
 }
 
+
+export function teamsRuleRuleSettingsAuditSshToHclTerraform(struct?: TeamsRuleRuleSettingsAuditSshOutputReference | TeamsRuleRuleSettingsAuditSsh): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    command_logging: {
+      value: cdktf.booleanToHclTerraform(struct!.commandLogging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsRuleRuleSettingsAuditSshOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -195,6 +214,49 @@ export function teamsRuleRuleSettingsBisoAdminControlsToTerraform(struct?: Teams
     disable_printing: cdktf.booleanToTerraform(struct!.disablePrinting),
     disable_upload: cdktf.booleanToTerraform(struct!.disableUpload),
   }
+}
+
+
+export function teamsRuleRuleSettingsBisoAdminControlsToHclTerraform(struct?: TeamsRuleRuleSettingsBisoAdminControlsOutputReference | TeamsRuleRuleSettingsBisoAdminControls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disable_copy_paste: {
+      value: cdktf.booleanToHclTerraform(struct!.disableCopyPaste),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disable_download: {
+      value: cdktf.booleanToHclTerraform(struct!.disableDownload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disable_keyboard: {
+      value: cdktf.booleanToHclTerraform(struct!.disableKeyboard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disable_printing: {
+      value: cdktf.booleanToHclTerraform(struct!.disablePrinting),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disable_upload: {
+      value: cdktf.booleanToHclTerraform(struct!.disableUpload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsRuleRuleSettingsBisoAdminControlsOutputReference extends cdktf.ComplexObject {
@@ -359,6 +421,31 @@ export function teamsRuleRuleSettingsCheckSessionToTerraform(struct?: TeamsRuleR
   }
 }
 
+
+export function teamsRuleRuleSettingsCheckSessionToHclTerraform(struct?: TeamsRuleRuleSettingsCheckSessionOutputReference | TeamsRuleRuleSettingsCheckSession): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.stringToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enforce: {
+      value: cdktf.booleanToHclTerraform(struct!.enforce),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsRuleRuleSettingsCheckSessionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -454,6 +541,37 @@ export function teamsRuleRuleSettingsEgressToTerraform(struct?: TeamsRuleRuleSet
     ipv4_fallback: cdktf.stringToTerraform(struct!.ipv4Fallback),
     ipv6: cdktf.stringToTerraform(struct!.ipv6),
   }
+}
+
+
+export function teamsRuleRuleSettingsEgressToHclTerraform(struct?: TeamsRuleRuleSettingsEgressOutputReference | TeamsRuleRuleSettingsEgress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ipv4: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv4_fallback: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4Fallback),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv6: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsRuleRuleSettingsEgressOutputReference extends cdktf.ComplexObject {
@@ -568,6 +686,31 @@ export function teamsRuleRuleSettingsL4OverrideToTerraform(struct?: TeamsRuleRul
   }
 }
 
+
+export function teamsRuleRuleSettingsL4OverrideToHclTerraform(struct?: TeamsRuleRuleSettingsL4OverrideOutputReference | TeamsRuleRuleSettingsL4Override): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsRuleRuleSettingsL4OverrideOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -663,6 +806,37 @@ export function teamsRuleRuleSettingsNotificationSettingsToTerraform(struct?: Te
     message: cdktf.stringToTerraform(struct!.message),
     support_url: cdktf.stringToTerraform(struct!.supportUrl),
   }
+}
+
+
+export function teamsRuleRuleSettingsNotificationSettingsToHclTerraform(struct?: TeamsRuleRuleSettingsNotificationSettingsOutputReference | TeamsRuleRuleSettingsNotificationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    message: {
+      value: cdktf.stringToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    support_url: {
+      value: cdktf.stringToHclTerraform(struct!.supportUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsRuleRuleSettingsNotificationSettingsOutputReference extends cdktf.ComplexObject {
@@ -776,6 +950,25 @@ export function teamsRuleRuleSettingsPayloadLogToTerraform(struct?: TeamsRuleRul
   }
 }
 
+
+export function teamsRuleRuleSettingsPayloadLogToHclTerraform(struct?: TeamsRuleRuleSettingsPayloadLogOutputReference | TeamsRuleRuleSettingsPayloadLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsRuleRuleSettingsPayloadLogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -838,6 +1031,25 @@ export function teamsRuleRuleSettingsUntrustedCertToTerraform(struct?: TeamsRule
   return {
     action: cdktf.stringToTerraform(struct!.action),
   }
+}
+
+
+export function teamsRuleRuleSettingsUntrustedCertToHclTerraform(struct?: TeamsRuleRuleSettingsUntrustedCertOutputReference | TeamsRuleRuleSettingsUntrustedCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsRuleRuleSettingsUntrustedCertOutputReference extends cdktf.ComplexObject {
@@ -1017,6 +1229,121 @@ export function teamsRuleRuleSettingsToTerraform(struct?: TeamsRuleRuleSettingsO
     payload_log: teamsRuleRuleSettingsPayloadLogToTerraform(struct!.payloadLog),
     untrusted_cert: teamsRuleRuleSettingsUntrustedCertToTerraform(struct!.untrustedCert),
   }
+}
+
+
+export function teamsRuleRuleSettingsToHclTerraform(struct?: TeamsRuleRuleSettingsOutputReference | TeamsRuleRuleSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    add_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.addHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    allow_child_bypass: {
+      value: cdktf.booleanToHclTerraform(struct!.allowChildBypass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    block_page_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.blockPageEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    block_page_reason: {
+      value: cdktf.stringToHclTerraform(struct!.blockPageReason),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bypass_parent_rule: {
+      value: cdktf.booleanToHclTerraform(struct!.bypassParentRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    insecure_disable_dnssec_validation: {
+      value: cdktf.booleanToHclTerraform(struct!.insecureDisableDnssecValidation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ip_categories: {
+      value: cdktf.booleanToHclTerraform(struct!.ipCategories),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    override_host: {
+      value: cdktf.stringToHclTerraform(struct!.overrideHost),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.overrideIps),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    audit_ssh: {
+      value: teamsRuleRuleSettingsAuditSshToHclTerraform(struct!.auditSsh),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsAuditSshList",
+    },
+    biso_admin_controls: {
+      value: teamsRuleRuleSettingsBisoAdminControlsToHclTerraform(struct!.bisoAdminControls),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsBisoAdminControlsList",
+    },
+    check_session: {
+      value: teamsRuleRuleSettingsCheckSessionToHclTerraform(struct!.checkSession),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsCheckSessionList",
+    },
+    egress: {
+      value: teamsRuleRuleSettingsEgressToHclTerraform(struct!.egress),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsEgressList",
+    },
+    l4override: {
+      value: teamsRuleRuleSettingsL4OverrideToHclTerraform(struct!.l4Override),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsL4OverrideList",
+    },
+    notification_settings: {
+      value: teamsRuleRuleSettingsNotificationSettingsToHclTerraform(struct!.notificationSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsNotificationSettingsList",
+    },
+    payload_log: {
+      value: teamsRuleRuleSettingsPayloadLogToHclTerraform(struct!.payloadLog),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsPayloadLogList",
+    },
+    untrusted_cert: {
+      value: teamsRuleRuleSettingsUntrustedCertToHclTerraform(struct!.untrustedCert),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsRuleRuleSettingsUntrustedCertList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsRuleRuleSettingsOutputReference extends cdktf.ComplexObject {
@@ -1690,5 +2017,85 @@ export class TeamsRule extends cdktf.TerraformResource {
       traffic: cdktf.stringToTerraform(this._traffic),
       rule_settings: teamsRuleRuleSettingsToTerraform(this._ruleSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_posture: {
+        value: cdktf.stringToHclTerraform(this._devicePosture),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filters: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filters),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity: {
+        value: cdktf.stringToHclTerraform(this._identity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      precedence: {
+        value: cdktf.numberToHclTerraform(this._precedence),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      traffic: {
+        value: cdktf.stringToHclTerraform(this._traffic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_settings: {
+        value: teamsRuleRuleSettingsToHclTerraform(this._ruleSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsRuleRuleSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -215,4 +215,48 @@ export class TunnelRoute extends cdktf.TerraformResource {
       virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network: {
+        value: cdktf.stringToHclTerraform(this._network),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tunnel_id: {
+        value: cdktf.stringToHclTerraform(this._tunnelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_network_id: {
+        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

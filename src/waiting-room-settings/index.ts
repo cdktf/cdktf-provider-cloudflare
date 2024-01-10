@@ -149,4 +149,30 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search_engine_crawler_bypass: {
+        value: cdktf.booleanToHclTerraform(this._searchEngineCrawlerBypass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

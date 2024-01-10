@@ -287,4 +287,66 @@ export class StaticRoute extends cdktf.TerraformResource {
       weight: cdktf.numberToTerraform(this._weight),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      colo_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._coloNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      colo_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._coloRegions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nexthop: {
+        value: cdktf.stringToHclTerraform(this._nexthop),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      weight: {
+        value: cdktf.numberToHclTerraform(this._weight),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -76,6 +76,31 @@ export function emailRoutingCatchAllActionToTerraform(struct?: EmailRoutingCatch
   }
 }
 
+
+export function emailRoutingCatchAllActionToHclTerraform(struct?: EmailRoutingCatchAllAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmailRoutingCatchAllActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -189,6 +214,25 @@ export function emailRoutingCatchAllMatcherToTerraform(struct?: EmailRoutingCatc
   return {
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function emailRoutingCatchAllMatcherToHclTerraform(struct?: EmailRoutingCatchAllMatcher | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmailRoutingCatchAllMatcherOutputReference extends cdktf.ComplexObject {
@@ -434,5 +478,49 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
       action: cdktf.listMapper(emailRoutingCatchAllActionToTerraform, true)(this._action.internalValue),
       matcher: cdktf.listMapper(emailRoutingCatchAllMatcherToTerraform, true)(this._matcher.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action: {
+        value: cdktf.listMapperHcl(emailRoutingCatchAllActionToHclTerraform, true)(this._action.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EmailRoutingCatchAllActionList",
+      },
+      matcher: {
+        value: cdktf.listMapperHcl(emailRoutingCatchAllMatcherToHclTerraform, true)(this._matcher.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EmailRoutingCatchAllMatcherList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

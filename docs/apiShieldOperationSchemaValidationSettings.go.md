@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.NewApiShieldOperationSchemaValidationSettings(scope Construct, id *string, config ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.toMetadata"></a>
 
@@ -385,7 +392,7 @@ func ResetMitigationAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSet
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSet
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
 
 &apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettingsConfig {
 	Connection: interface{},

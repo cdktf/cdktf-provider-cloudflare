@@ -70,6 +70,31 @@ export function deviceManagedNetworksConfigAToTerraform(struct?: DeviceManagedNe
   }
 }
 
+
+export function deviceManagedNetworksConfigAToHclTerraform(struct?: DeviceManagedNetworksConfigAOutputReference | DeviceManagedNetworksConfigA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sha256: {
+      value: cdktf.stringToHclTerraform(struct!.sha256),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_sockaddr: {
+      value: cdktf.stringToHclTerraform(struct!.tlsSockaddr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DeviceManagedNetworksConfigAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -277,5 +302,43 @@ export class DeviceManagedNetworks extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       config: deviceManagedNetworksConfigAToTerraform(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: deviceManagedNetworksConfigAToHclTerraform(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DeviceManagedNetworksConfigAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

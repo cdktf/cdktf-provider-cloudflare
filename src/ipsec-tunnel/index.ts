@@ -452,4 +452,108 @@ export class IpsecTunnel extends cdktf.TerraformResource {
       user_id: cdktf.stringToTerraform(this._userId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allow_null_cipher: {
+        value: cdktf.booleanToHclTerraform(this._allowNullCipher),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cloudflare_endpoint: {
+        value: cdktf.stringToHclTerraform(this._cloudflareEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_endpoint: {
+        value: cdktf.stringToHclTerraform(this._customerEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fqdn_id: {
+        value: cdktf.stringToHclTerraform(this._fqdnId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      health_check_enabled: {
+        value: cdktf.booleanToHclTerraform(this._healthCheckEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      health_check_target: {
+        value: cdktf.stringToHclTerraform(this._healthCheckTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      health_check_type: {
+        value: cdktf.stringToHclTerraform(this._healthCheckType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hex_id: {
+        value: cdktf.stringToHclTerraform(this._hexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interface_address: {
+        value: cdktf.stringToHclTerraform(this._interfaceAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      psk: {
+        value: cdktf.stringToHclTerraform(this._psk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_id: {
+        value: cdktf.stringToHclTerraform(this._remoteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

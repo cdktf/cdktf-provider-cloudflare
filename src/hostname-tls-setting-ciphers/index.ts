@@ -201,4 +201,42 @@ export class HostnameTlsSettingCiphers extends cdktf.TerraformResource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hostname: {
+        value: cdktf.stringToHclTerraform(this._hostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ports: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._ports),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+      value: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._value),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

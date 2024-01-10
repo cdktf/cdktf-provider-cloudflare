@@ -527,4 +527,126 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
       switch_locked: cdktf.booleanToTerraform(this._switchLocked),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allow_mode_switch: {
+        value: cdktf.booleanToHclTerraform(this._allowModeSwitch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_updates: {
+        value: cdktf.booleanToHclTerraform(this._allowUpdates),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allowed_to_leave: {
+        value: cdktf.booleanToHclTerraform(this._allowedToLeave),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_connect: {
+        value: cdktf.numberToHclTerraform(this._autoConnect),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      captive_portal: {
+        value: cdktf.numberToHclTerraform(this._captivePortal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default: {
+        value: cdktf.booleanToHclTerraform(this._default),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_auto_fallback: {
+        value: cdktf.booleanToHclTerraform(this._disableAutoFallback),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      exclude_office_ips: {
+        value: cdktf.booleanToHclTerraform(this._excludeOfficeIps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      match: {
+        value: cdktf.stringToHclTerraform(this._match),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      precedence: {
+        value: cdktf.numberToHclTerraform(this._precedence),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      service_mode_v2_mode: {
+        value: cdktf.stringToHclTerraform(this._serviceModeV2Mode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_mode_v2_port: {
+        value: cdktf.numberToHclTerraform(this._serviceModeV2Port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      support_url: {
+        value: cdktf.stringToHclTerraform(this._supportUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      switch_locked: {
+        value: cdktf.booleanToHclTerraform(this._switchLocked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

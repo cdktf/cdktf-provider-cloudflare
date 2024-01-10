@@ -122,6 +122,67 @@ export function devicePostureIntegrationConfigAToTerraform(struct?: DevicePostur
   }
 }
 
+
+export function devicePostureIntegrationConfigAToHclTerraform(struct?: DevicePostureIntegrationConfigA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_client_id: {
+      value: cdktf.stringToHclTerraform(struct!.accessClientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.accessClientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    api_url: {
+      value: cdktf.stringToHclTerraform(struct!.apiUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_url: {
+      value: cdktf.stringToHclTerraform(struct!.authUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_key: {
+      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customer_id: {
+      value: cdktf.stringToHclTerraform(struct!.customerId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DevicePostureIntegrationConfigAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -538,5 +599,55 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       config: cdktf.listMapper(devicePostureIntegrationConfigAToTerraform, true)(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identifier: {
+        value: cdktf.stringToHclTerraform(this._identifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interval: {
+        value: cdktf.stringToHclTerraform(this._interval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: cdktf.listMapperHcl(devicePostureIntegrationConfigAToHclTerraform, true)(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DevicePostureIntegrationConfigAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -112,6 +112,31 @@ export function accessOrganizationCustomPagesToTerraform(struct?: AccessOrganiza
   }
 }
 
+
+export function accessOrganizationCustomPagesToHclTerraform(struct?: AccessOrganizationCustomPages | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    forbidden: {
+      value: cdktf.stringToHclTerraform(struct!.forbidden),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_denied: {
+      value: cdktf.stringToHclTerraform(struct!.identityDenied),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AccessOrganizationCustomPagesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -259,6 +284,49 @@ export function accessOrganizationLoginDesignToTerraform(struct?: AccessOrganiza
     logo_path: cdktf.stringToTerraform(struct!.logoPath),
     text_color: cdktf.stringToTerraform(struct!.textColor),
   }
+}
+
+
+export function accessOrganizationLoginDesignToHclTerraform(struct?: AccessOrganizationLoginDesign | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    background_color: {
+      value: cdktf.stringToHclTerraform(struct!.backgroundColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    footer_text: {
+      value: cdktf.stringToHclTerraform(struct!.footerText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_text: {
+      value: cdktf.stringToHclTerraform(struct!.headerText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logo_path: {
+      value: cdktf.stringToHclTerraform(struct!.logoPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_color: {
+      value: cdktf.stringToHclTerraform(struct!.textColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AccessOrganizationLoginDesignOutputReference extends cdktf.ComplexObject {
@@ -707,5 +775,85 @@ export class AccessOrganization extends cdktf.TerraformResource {
       custom_pages: cdktf.listMapper(accessOrganizationCustomPagesToTerraform, true)(this._customPages.internalValue),
       login_design: cdktf.listMapper(accessOrganizationLoginDesignToTerraform, true)(this._loginDesign.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_domain: {
+        value: cdktf.stringToHclTerraform(this._authDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_redirect_to_identity: {
+        value: cdktf.booleanToHclTerraform(this._autoRedirectToIdentity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_ui_read_only: {
+        value: cdktf.booleanToHclTerraform(this._isUiReadOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_duration: {
+        value: cdktf.stringToHclTerraform(this._sessionDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ui_read_only_toggle_reason: {
+        value: cdktf.stringToHclTerraform(this._uiReadOnlyToggleReason),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_seat_expiration_inactive_time: {
+        value: cdktf.stringToHclTerraform(this._userSeatExpirationInactiveTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_pages: {
+        value: cdktf.listMapperHcl(accessOrganizationCustomPagesToHclTerraform, true)(this._customPages.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AccessOrganizationCustomPagesList",
+      },
+      login_design: {
+        value: cdktf.listMapperHcl(accessOrganizationLoginDesignToHclTerraform, true)(this._loginDesign.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AccessOrganizationLoginDesignList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

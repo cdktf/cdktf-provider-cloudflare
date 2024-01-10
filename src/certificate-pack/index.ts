@@ -92,6 +92,17 @@ export function certificatePackValidationErrorsToTerraform(struct?: CertificateP
   }
 }
 
+
+export function certificatePackValidationErrorsToHclTerraform(struct?: CertificatePackValidationErrors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class CertificatePackValidationErrorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -200,6 +211,61 @@ export function certificatePackValidationRecordsToTerraform(struct?: Certificate
     txt_name: cdktf.stringToTerraform(struct!.txtName),
     txt_value: cdktf.stringToTerraform(struct!.txtValue),
   }
+}
+
+
+export function certificatePackValidationRecordsToHclTerraform(struct?: CertificatePackValidationRecords | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cname_name: {
+      value: cdktf.stringToHclTerraform(struct!.cnameName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cname_target: {
+      value: cdktf.stringToHclTerraform(struct!.cnameTarget),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    emails: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emails),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    http_body: {
+      value: cdktf.stringToHclTerraform(struct!.httpBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_url: {
+      value: cdktf.stringToHclTerraform(struct!.httpUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    txt_name: {
+      value: cdktf.stringToHclTerraform(struct!.txtName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    txt_value: {
+      value: cdktf.stringToHclTerraform(struct!.txtValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CertificatePackValidationRecordsOutputReference extends cdktf.ComplexObject {
@@ -659,5 +725,79 @@ export class CertificatePack extends cdktf.TerraformResource {
       validation_errors: cdktf.listMapper(certificatePackValidationErrorsToTerraform, true)(this._validationErrors.internalValue),
       validation_records: cdktf.listMapper(certificatePackValidationRecordsToTerraform, true)(this._validationRecords.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_authority: {
+        value: cdktf.stringToHclTerraform(this._certificateAuthority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloudflare_branding: {
+        value: cdktf.booleanToHclTerraform(this._cloudflareBranding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hosts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hosts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validation_method: {
+        value: cdktf.stringToHclTerraform(this._validationMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validity_days: {
+        value: cdktf.numberToHclTerraform(this._validityDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      wait_for_active_status: {
+        value: cdktf.booleanToHclTerraform(this._waitForActiveStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validation_errors: {
+        value: cdktf.listMapperHcl(certificatePackValidationErrorsToHclTerraform, true)(this._validationErrors.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CertificatePackValidationErrorsList",
+      },
+      validation_records: {
+        value: cdktf.listMapperHcl(certificatePackValidationRecordsToHclTerraform, true)(this._validationRecords.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CertificatePackValidationRecordsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

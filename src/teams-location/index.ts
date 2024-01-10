@@ -63,6 +63,25 @@ export function teamsLocationNetworksToTerraform(struct?: TeamsLocationNetworks 
   }
 }
 
+
+export function teamsLocationNetworksToHclTerraform(struct?: TeamsLocationNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsLocationNetworksOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -319,5 +338,43 @@ export class TeamsLocation extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       networks: cdktf.listMapper(teamsLocationNetworksToTerraform, true)(this._networks.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_default: {
+        value: cdktf.booleanToHclTerraform(this._clientDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      networks: {
+        value: cdktf.listMapperHcl(teamsLocationNetworksToHclTerraform, true)(this._networks.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "TeamsLocationNetworksList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

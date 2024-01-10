@@ -57,6 +57,25 @@ export function dataCloudflareLoadBalancerPoolsFilterToTerraform(struct?: DataCl
   }
 }
 
+
+export function dataCloudflareLoadBalancerPoolsFilterToHclTerraform(struct?: DataCloudflareLoadBalancerPoolsFilterOutputReference | DataCloudflareLoadBalancerPoolsFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataCloudflareLoadBalancerPoolsFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -115,6 +134,17 @@ export function dataCloudflareLoadBalancerPoolsPoolsLoadSheddingToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataCloudflareLoadBalancerPoolsPoolsLoadSheddingToHclTerraform(struct?: DataCloudflareLoadBalancerPoolsPoolsLoadShedding): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference extends cdktf.ComplexObject {
@@ -196,6 +226,17 @@ export function dataCloudflareLoadBalancerPoolsPoolsOriginsHeaderToTerraform(str
   }
 }
 
+
+export function dataCloudflareLoadBalancerPoolsPoolsOriginsHeaderToHclTerraform(struct?: DataCloudflareLoadBalancerPoolsPoolsOriginsHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataCloudflareLoadBalancerPoolsPoolsOriginsHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -263,6 +304,17 @@ export function dataCloudflareLoadBalancerPoolsPoolsOriginsToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataCloudflareLoadBalancerPoolsPoolsOriginsToHclTerraform(struct?: DataCloudflareLoadBalancerPoolsPoolsOrigins): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference extends cdktf.ComplexObject {
@@ -348,6 +400,17 @@ export function dataCloudflareLoadBalancerPoolsPoolsToTerraform(struct?: DataClo
   }
   return {
   }
+}
+
+
+export function dataCloudflareLoadBalancerPoolsPoolsToHclTerraform(struct?: DataCloudflareLoadBalancerPoolsPools | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataCloudflareLoadBalancerPoolsPoolsOutputReference extends cdktf.ComplexObject {
@@ -614,5 +677,37 @@ export class DataCloudflareLoadBalancerPools extends cdktf.TerraformDataSource {
       filter: dataCloudflareLoadBalancerPoolsFilterToTerraform(this._filter.internalValue),
       pools: cdktf.listMapper(dataCloudflareLoadBalancerPoolsPoolsToTerraform, true)(this._pools.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: dataCloudflareLoadBalancerPoolsFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataCloudflareLoadBalancerPoolsFilterList",
+      },
+      pools: {
+        value: cdktf.listMapperHcl(dataCloudflareLoadBalancerPoolsPoolsToHclTerraform, true)(this._pools.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataCloudflareLoadBalancerPoolsPoolsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

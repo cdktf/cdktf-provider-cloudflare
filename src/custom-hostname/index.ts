@@ -74,6 +74,17 @@ export function customHostnameSslValidationErrorsToTerraform(struct?: CustomHost
   }
 }
 
+
+export function customHostnameSslValidationErrorsToHclTerraform(struct?: CustomHostnameSslValidationErrors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class CustomHostnameSslValidationErrorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -136,6 +147,17 @@ export function customHostnameSslValidationRecordsToTerraform(struct?: CustomHos
   }
   return {
   }
+}
+
+
+export function customHostnameSslValidationRecordsToHclTerraform(struct?: CustomHostnameSslValidationRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class CustomHostnameSslValidationRecordsOutputReference extends cdktf.ComplexObject {
@@ -265,6 +287,49 @@ export function customHostnameSslSettingsToTerraform(struct?: CustomHostnameSslS
     min_tls_version: cdktf.stringToTerraform(struct!.minTlsVersion),
     tls13: cdktf.stringToTerraform(struct!.tls13),
   }
+}
+
+
+export function customHostnameSslSettingsToHclTerraform(struct?: CustomHostnameSslSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ciphers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ciphers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    early_hints: {
+      value: cdktf.stringToHclTerraform(struct!.earlyHints),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http2: {
+      value: cdktf.stringToHclTerraform(struct!.http2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_tls_version: {
+      value: cdktf.stringToHclTerraform(struct!.minTlsVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls13: {
+      value: cdktf.stringToHclTerraform(struct!.tls13),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomHostnameSslSettingsOutputReference extends cdktf.ComplexObject {
@@ -499,6 +564,67 @@ export function customHostnameSslToTerraform(struct?: CustomHostnameSsl | cdktf.
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
     settings: cdktf.listMapper(customHostnameSslSettingsToTerraform, true)(struct!.settings),
   }
+}
+
+
+export function customHostnameSslToHclTerraform(struct?: CustomHostnameSsl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bundle_method: {
+      value: cdktf.stringToHclTerraform(struct!.bundleMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    certificate_authority: {
+      value: cdktf.stringToHclTerraform(struct!.certificateAuthority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.customCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_key: {
+      value: cdktf.stringToHclTerraform(struct!.customKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildcard: {
+      value: cdktf.booleanToHclTerraform(struct!.wildcard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    settings: {
+      value: cdktf.listMapperHcl(customHostnameSslSettingsToHclTerraform, true)(struct!.settings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomHostnameSslSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
@@ -972,5 +1098,61 @@ export class CustomHostname extends cdktf.TerraformResource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
       ssl: cdktf.listMapper(customHostnameSslToTerraform, true)(this._ssl.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customMetadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      custom_origin_server: {
+        value: cdktf.stringToHclTerraform(this._customOriginServer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_origin_sni: {
+        value: cdktf.stringToHclTerraform(this._customOriginSni),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hostname: {
+        value: cdktf.stringToHclTerraform(this._hostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_ssl_pending_validation: {
+        value: cdktf.booleanToHclTerraform(this._waitForSslPendingValidation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssl: {
+        value: cdktf.listMapperHcl(customHostnameSslToHclTerraform, true)(this._ssl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CustomHostnameSslList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

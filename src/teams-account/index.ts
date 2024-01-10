@@ -137,6 +137,37 @@ export function teamsAccountAntivirusToTerraform(struct?: TeamsAccountAntivirusO
   }
 }
 
+
+export function teamsAccountAntivirusToHclTerraform(struct?: TeamsAccountAntivirusOutputReference | TeamsAccountAntivirus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled_download_phase: {
+      value: cdktf.booleanToHclTerraform(struct!.enabledDownloadPhase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enabled_upload_phase: {
+      value: cdktf.booleanToHclTerraform(struct!.enabledUploadPhase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fail_closed: {
+      value: cdktf.booleanToHclTerraform(struct!.failClosed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsAccountAntivirusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -286,6 +317,67 @@ export function teamsAccountBlockPageToTerraform(struct?: TeamsAccountBlockPageO
     mailto_subject: cdktf.stringToTerraform(struct!.mailtoSubject),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function teamsAccountBlockPageToHclTerraform(struct?: TeamsAccountBlockPageOutputReference | TeamsAccountBlockPage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    background_color: {
+      value: cdktf.stringToHclTerraform(struct!.backgroundColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    footer_text: {
+      value: cdktf.stringToHclTerraform(struct!.footerText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_text: {
+      value: cdktf.stringToHclTerraform(struct!.headerText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logo_path: {
+      value: cdktf.stringToHclTerraform(struct!.logoPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mailto_address: {
+      value: cdktf.stringToHclTerraform(struct!.mailtoAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mailto_subject: {
+      value: cdktf.stringToHclTerraform(struct!.mailtoSubject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountBlockPageOutputReference extends cdktf.ComplexObject {
@@ -509,6 +601,25 @@ export function teamsAccountBodyScanningToTerraform(struct?: TeamsAccountBodySca
   }
 }
 
+
+export function teamsAccountBodyScanningToHclTerraform(struct?: TeamsAccountBodyScanningOutputReference | TeamsAccountBodyScanning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    inspection_mode: {
+      value: cdktf.stringToHclTerraform(struct!.inspectionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsAccountBodyScanningOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -571,6 +682,25 @@ export function teamsAccountFipsToTerraform(struct?: TeamsAccountFipsOutputRefer
   return {
     tls: cdktf.booleanToTerraform(struct!.tls),
   }
+}
+
+
+export function teamsAccountFipsToHclTerraform(struct?: TeamsAccountFipsOutputReference | TeamsAccountFips): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tls: {
+      value: cdktf.booleanToHclTerraform(struct!.tls),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountFipsOutputReference extends cdktf.ComplexObject {
@@ -643,6 +773,31 @@ export function teamsAccountLoggingSettingsByRuleTypeDnsToTerraform(struct?: Tea
     log_all: cdktf.booleanToTerraform(struct!.logAll),
     log_blocks: cdktf.booleanToTerraform(struct!.logBlocks),
   }
+}
+
+
+export function teamsAccountLoggingSettingsByRuleTypeDnsToHclTerraform(struct?: TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference | TeamsAccountLoggingSettingsByRuleTypeDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_all: {
+      value: cdktf.booleanToHclTerraform(struct!.logAll),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_blocks: {
+      value: cdktf.booleanToHclTerraform(struct!.logBlocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference extends cdktf.ComplexObject {
@@ -733,6 +888,31 @@ export function teamsAccountLoggingSettingsByRuleTypeHttpToTerraform(struct?: Te
   }
 }
 
+
+export function teamsAccountLoggingSettingsByRuleTypeHttpToHclTerraform(struct?: TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference | TeamsAccountLoggingSettingsByRuleTypeHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_all: {
+      value: cdktf.booleanToHclTerraform(struct!.logAll),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_blocks: {
+      value: cdktf.booleanToHclTerraform(struct!.logBlocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -819,6 +999,31 @@ export function teamsAccountLoggingSettingsByRuleTypeL4ToTerraform(struct?: Team
     log_all: cdktf.booleanToTerraform(struct!.logAll),
     log_blocks: cdktf.booleanToTerraform(struct!.logBlocks),
   }
+}
+
+
+export function teamsAccountLoggingSettingsByRuleTypeL4ToHclTerraform(struct?: TeamsAccountLoggingSettingsByRuleTypeL4OutputReference | TeamsAccountLoggingSettingsByRuleTypeL4): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_all: {
+      value: cdktf.booleanToHclTerraform(struct!.logAll),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_blocks: {
+      value: cdktf.booleanToHclTerraform(struct!.logBlocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountLoggingSettingsByRuleTypeL4OutputReference extends cdktf.ComplexObject {
@@ -916,6 +1121,37 @@ export function teamsAccountLoggingSettingsByRuleTypeToTerraform(struct?: TeamsA
     http: teamsAccountLoggingSettingsByRuleTypeHttpToTerraform(struct!.http),
     l4: teamsAccountLoggingSettingsByRuleTypeL4ToTerraform(struct!.l4),
   }
+}
+
+
+export function teamsAccountLoggingSettingsByRuleTypeToHclTerraform(struct?: TeamsAccountLoggingSettingsByRuleTypeOutputReference | TeamsAccountLoggingSettingsByRuleType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns: {
+      value: teamsAccountLoggingSettingsByRuleTypeDnsToHclTerraform(struct!.dns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsAccountLoggingSettingsByRuleTypeDnsList",
+    },
+    http: {
+      value: teamsAccountLoggingSettingsByRuleTypeHttpToHclTerraform(struct!.http),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsAccountLoggingSettingsByRuleTypeHttpList",
+    },
+    l4: {
+      value: teamsAccountLoggingSettingsByRuleTypeL4ToHclTerraform(struct!.l4),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsAccountLoggingSettingsByRuleTypeL4List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountLoggingSettingsByRuleTypeOutputReference extends cdktf.ComplexObject {
@@ -1027,6 +1263,31 @@ export function teamsAccountLoggingToTerraform(struct?: TeamsAccountLoggingOutpu
   }
 }
 
+
+export function teamsAccountLoggingToHclTerraform(struct?: TeamsAccountLoggingOutputReference | TeamsAccountLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    redact_pii: {
+      value: cdktf.booleanToHclTerraform(struct!.redactPii),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    settings_by_rule_type: {
+      value: teamsAccountLoggingSettingsByRuleTypeToHclTerraform(struct!.settingsByRuleType),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsAccountLoggingSettingsByRuleTypeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsAccountLoggingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1110,6 +1371,25 @@ export function teamsAccountPayloadLogToTerraform(struct?: TeamsAccountPayloadLo
   }
 }
 
+
+export function teamsAccountPayloadLogToHclTerraform(struct?: TeamsAccountPayloadLogOutputReference | TeamsAccountPayloadLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_key: {
+      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamsAccountPayloadLogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1186,6 +1466,37 @@ export function teamsAccountProxyToTerraform(struct?: TeamsAccountProxyOutputRef
     tcp: cdktf.booleanToTerraform(struct!.tcp),
     udp: cdktf.booleanToTerraform(struct!.udp),
   }
+}
+
+
+export function teamsAccountProxyToHclTerraform(struct?: TeamsAccountProxyOutputReference | TeamsAccountProxy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    root_ca: {
+      value: cdktf.booleanToHclTerraform(struct!.rootCa),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tcp: {
+      value: cdktf.booleanToHclTerraform(struct!.tcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    udp: {
+      value: cdktf.booleanToHclTerraform(struct!.udp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountProxyOutputReference extends cdktf.ComplexObject {
@@ -1288,6 +1599,25 @@ export function teamsAccountSshSessionLogToTerraform(struct?: TeamsAccountSshSes
   return {
     public_key: cdktf.stringToTerraform(struct!.publicKey),
   }
+}
+
+
+export function teamsAccountSshSessionLogToHclTerraform(struct?: TeamsAccountSshSessionLogOutputReference | TeamsAccountSshSessionLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_key: {
+      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamsAccountSshSessionLogOutputReference extends cdktf.ComplexObject {
@@ -1667,5 +1997,103 @@ export class TeamsAccount extends cdktf.TerraformResource {
       proxy: teamsAccountProxyToTerraform(this._proxy.internalValue),
       ssh_session_log: teamsAccountSshSessionLogToTerraform(this._sshSessionLog.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      activity_log_enabled: {
+        value: cdktf.booleanToHclTerraform(this._activityLogEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      non_identity_browser_isolation_enabled: {
+        value: cdktf.booleanToHclTerraform(this._nonIdentityBrowserIsolationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      protocol_detection_enabled: {
+        value: cdktf.booleanToHclTerraform(this._protocolDetectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tls_decrypt_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tlsDecryptEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      url_browser_isolation_enabled: {
+        value: cdktf.booleanToHclTerraform(this._urlBrowserIsolationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      antivirus: {
+        value: teamsAccountAntivirusToHclTerraform(this._antivirus.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountAntivirusList",
+      },
+      block_page: {
+        value: teamsAccountBlockPageToHclTerraform(this._blockPage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountBlockPageList",
+      },
+      body_scanning: {
+        value: teamsAccountBodyScanningToHclTerraform(this._bodyScanning.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountBodyScanningList",
+      },
+      fips: {
+        value: teamsAccountFipsToHclTerraform(this._fips.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountFipsList",
+      },
+      logging: {
+        value: teamsAccountLoggingToHclTerraform(this._logging.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountLoggingList",
+      },
+      payload_log: {
+        value: teamsAccountPayloadLogToHclTerraform(this._payloadLog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountPayloadLogList",
+      },
+      proxy: {
+        value: teamsAccountProxyToHclTerraform(this._proxy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountProxyList",
+      },
+      ssh_session_log: {
+        value: teamsAccountSshSessionLogToHclTerraform(this._sshSessionLog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountSshSessionLogList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

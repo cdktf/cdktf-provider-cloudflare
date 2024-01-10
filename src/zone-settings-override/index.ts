@@ -44,6 +44,17 @@ export function zoneSettingsOverrideInitialSettingsMinifyToTerraform(struct?: Zo
   }
 }
 
+
+export function zoneSettingsOverrideInitialSettingsMinifyToHclTerraform(struct?: ZoneSettingsOverrideInitialSettingsMinify): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ZoneSettingsOverrideInitialSettingsMinifyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -118,6 +129,17 @@ export function zoneSettingsOverrideInitialSettingsMobileRedirectToTerraform(str
   }
 }
 
+
+export function zoneSettingsOverrideInitialSettingsMobileRedirectToHclTerraform(struct?: ZoneSettingsOverrideInitialSettingsMobileRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -190,6 +212,17 @@ export function zoneSettingsOverrideInitialSettingsSecurityHeaderToTerraform(str
   }
   return {
   }
+}
+
+
+export function zoneSettingsOverrideInitialSettingsSecurityHeaderToHclTerraform(struct?: ZoneSettingsOverrideInitialSettingsSecurityHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference extends cdktf.ComplexObject {
@@ -274,6 +307,17 @@ export function zoneSettingsOverrideInitialSettingsToTerraform(struct?: ZoneSett
   }
   return {
   }
+}
+
+
+export function zoneSettingsOverrideInitialSettingsToHclTerraform(struct?: ZoneSettingsOverrideInitialSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ZoneSettingsOverrideInitialSettingsOutputReference extends cdktf.ComplexObject {
@@ -633,6 +677,37 @@ export function zoneSettingsOverrideSettingsMinifyToTerraform(struct?: ZoneSetti
   }
 }
 
+
+export function zoneSettingsOverrideSettingsMinifyToHclTerraform(struct?: ZoneSettingsOverrideSettingsMinifyOutputReference | ZoneSettingsOverrideSettingsMinify): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    css: {
+      value: cdktf.stringToHclTerraform(struct!.css),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    html: {
+      value: cdktf.stringToHclTerraform(struct!.html),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    js: {
+      value: cdktf.stringToHclTerraform(struct!.js),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ZoneSettingsOverrideSettingsMinifyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -741,6 +816,37 @@ export function zoneSettingsOverrideSettingsMobileRedirectToTerraform(struct?: Z
     status: cdktf.stringToTerraform(struct!.status),
     strip_uri: cdktf.booleanToTerraform(struct!.stripUri),
   }
+}
+
+
+export function zoneSettingsOverrideSettingsMobileRedirectToHclTerraform(struct?: ZoneSettingsOverrideSettingsMobileRedirectOutputReference | ZoneSettingsOverrideSettingsMobileRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mobile_subdomain: {
+      value: cdktf.stringToHclTerraform(struct!.mobileSubdomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strip_uri: {
+      value: cdktf.booleanToHclTerraform(struct!.stripUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ZoneSettingsOverrideSettingsMobileRedirectOutputReference extends cdktf.ComplexObject {
@@ -861,6 +967,49 @@ export function zoneSettingsOverrideSettingsSecurityHeaderToTerraform(struct?: Z
     nosniff: cdktf.booleanToTerraform(struct!.nosniff),
     preload: cdktf.booleanToTerraform(struct!.preload),
   }
+}
+
+
+export function zoneSettingsOverrideSettingsSecurityHeaderToHclTerraform(struct?: ZoneSettingsOverrideSettingsSecurityHeaderOutputReference | ZoneSettingsOverrideSettingsSecurityHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    include_subdomains: {
+      value: cdktf.booleanToHclTerraform(struct!.includeSubdomains),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    max_age: {
+      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    nosniff: {
+      value: cdktf.booleanToHclTerraform(struct!.nosniff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preload: {
+      value: cdktf.booleanToHclTerraform(struct!.preload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ZoneSettingsOverrideSettingsSecurityHeaderOutputReference extends cdktf.ComplexObject {
@@ -1295,6 +1444,355 @@ export function zoneSettingsOverrideSettingsToTerraform(struct?: ZoneSettingsOve
     mobile_redirect: zoneSettingsOverrideSettingsMobileRedirectToTerraform(struct!.mobileRedirect),
     security_header: zoneSettingsOverrideSettingsSecurityHeaderToTerraform(struct!.securityHeader),
   }
+}
+
+
+export function zoneSettingsOverrideSettingsToHclTerraform(struct?: ZoneSettingsOverrideSettingsOutputReference | ZoneSettingsOverrideSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    always_online: {
+      value: cdktf.stringToHclTerraform(struct!.alwaysOnline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    always_use_https: {
+      value: cdktf.stringToHclTerraform(struct!.alwaysUseHttps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    automatic_https_rewrites: {
+      value: cdktf.stringToHclTerraform(struct!.automaticHttpsRewrites),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    binary_ast: {
+      value: cdktf.stringToHclTerraform(struct!.binaryAst),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    brotli: {
+      value: cdktf.stringToHclTerraform(struct!.brotli),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    browser_cache_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.browserCacheTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    browser_check: {
+      value: cdktf.stringToHclTerraform(struct!.browserCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cache_level: {
+      value: cdktf.stringToHclTerraform(struct!.cacheLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    challenge_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.challengeTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ciphers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ciphers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    cname_flattening: {
+      value: cdktf.stringToHclTerraform(struct!.cnameFlattening),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    development_mode: {
+      value: cdktf.stringToHclTerraform(struct!.developmentMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    early_hints: {
+      value: cdktf.stringToHclTerraform(struct!.earlyHints),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email_obfuscation: {
+      value: cdktf.stringToHclTerraform(struct!.emailObfuscation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_logs_to_cloudflare: {
+      value: cdktf.stringToHclTerraform(struct!.filterLogsToCloudflare),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fonts: {
+      value: cdktf.stringToHclTerraform(struct!.fonts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    h2_prioritization: {
+      value: cdktf.stringToHclTerraform(struct!.h2Prioritization),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hotlink_protection: {
+      value: cdktf.stringToHclTerraform(struct!.hotlinkProtection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http2: {
+      value: cdktf.stringToHclTerraform(struct!.http2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http3: {
+      value: cdktf.stringToHclTerraform(struct!.http3),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_resizing: {
+      value: cdktf.stringToHclTerraform(struct!.imageResizing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_geolocation: {
+      value: cdktf.stringToHclTerraform(struct!.ipGeolocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv6: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_to_cloudflare: {
+      value: cdktf.stringToHclTerraform(struct!.logToCloudflare),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_upload: {
+      value: cdktf.numberToHclTerraform(struct!.maxUpload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_tls_version: {
+      value: cdktf.stringToHclTerraform(struct!.minTlsVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mirage: {
+      value: cdktf.stringToHclTerraform(struct!.mirage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opportunistic_encryption: {
+      value: cdktf.stringToHclTerraform(struct!.opportunisticEncryption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opportunistic_onion: {
+      value: cdktf.stringToHclTerraform(struct!.opportunisticOnion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    orange_to_orange: {
+      value: cdktf.stringToHclTerraform(struct!.orangeToOrange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    origin_error_page_pass_thru: {
+      value: cdktf.stringToHclTerraform(struct!.originErrorPagePassThru),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    origin_max_http_version: {
+      value: cdktf.stringToHclTerraform(struct!.originMaxHttpVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    polish: {
+      value: cdktf.stringToHclTerraform(struct!.polish),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefetch_preload: {
+      value: cdktf.stringToHclTerraform(struct!.prefetchPreload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    privacy_pass: {
+      value: cdktf.stringToHclTerraform(struct!.privacyPass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_read_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.proxyReadTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pseudo_ipv4: {
+      value: cdktf.stringToHclTerraform(struct!.pseudoIpv4),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_buffering: {
+      value: cdktf.stringToHclTerraform(struct!.responseBuffering),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rocket_loader: {
+      value: cdktf.stringToHclTerraform(struct!.rocketLoader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_level: {
+      value: cdktf.stringToHclTerraform(struct!.securityLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    server_side_exclude: {
+      value: cdktf.stringToHclTerraform(struct!.serverSideExclude),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort_query_string_for_cache: {
+      value: cdktf.stringToHclTerraform(struct!.sortQueryStringForCache),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssl: {
+      value: cdktf.stringToHclTerraform(struct!.ssl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_1_2_only: {
+      value: cdktf.stringToHclTerraform(struct!.tls12Only),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_1_3: {
+      value: cdktf.stringToHclTerraform(struct!.tls13),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_client_auth: {
+      value: cdktf.stringToHclTerraform(struct!.tlsClientAuth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    true_client_ip_header: {
+      value: cdktf.stringToHclTerraform(struct!.trueClientIpHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    universal_ssl: {
+      value: cdktf.stringToHclTerraform(struct!.universalSsl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    visitor_ip: {
+      value: cdktf.stringToHclTerraform(struct!.visitorIp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    waf: {
+      value: cdktf.stringToHclTerraform(struct!.waf),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    webp: {
+      value: cdktf.stringToHclTerraform(struct!.webp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    websockets: {
+      value: cdktf.stringToHclTerraform(struct!.websockets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zero_rtt: {
+      value: cdktf.stringToHclTerraform(struct!.zeroRtt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    minify: {
+      value: zoneSettingsOverrideSettingsMinifyToHclTerraform(struct!.minify),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ZoneSettingsOverrideSettingsMinifyList",
+    },
+    mobile_redirect: {
+      value: zoneSettingsOverrideSettingsMobileRedirectToHclTerraform(struct!.mobileRedirect),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ZoneSettingsOverrideSettingsMobileRedirectList",
+    },
+    security_header: {
+      value: zoneSettingsOverrideSettingsSecurityHeaderToHclTerraform(struct!.securityHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ZoneSettingsOverrideSettingsSecurityHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexObject {
@@ -2697,5 +3195,31 @@ export class ZoneSettingsOverride extends cdktf.TerraformResource {
       zone_id: cdktf.stringToTerraform(this._zoneId),
       settings: zoneSettingsOverrideSettingsToTerraform(this._settings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings: {
+        value: zoneSettingsOverrideSettingsToHclTerraform(this._settings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZoneSettingsOverrideSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
