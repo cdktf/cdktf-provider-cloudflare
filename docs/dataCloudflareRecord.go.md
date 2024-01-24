@@ -4,7 +4,7 @@
 
 ### DataCloudflareRecord <a name="DataCloudflareRecord" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record cloudflare_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record cloudflare_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareRecord to im
 
 The id of the existing DataCloudflareRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.hostname">Hostname</a></code> | <code>*string</code> | Hostname to filter DNS record results on. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#id DataCloudflareRecord#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#id DataCloudflareRecord#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.priority">Priority</a></code> | <code>*f64</code> | DNS priority to filter record results on. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig.property.type">Type</a></code> | <code>*string</code> | DNS record type to filter record results on. Defaults to `A`. |
 
@@ -857,7 +857,7 @@ Hostname *string
 
 Hostname to filter DNS record results on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#hostname DataCloudflareRecord#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#hostname DataCloudflareRecord#hostname}
 
 ---
 
@@ -871,7 +871,7 @@ ZoneId *string
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#zone_id DataCloudflareRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#zone_id DataCloudflareRecord#zone_id}
 
 ---
 
@@ -883,7 +883,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#id DataCloudflareRecord#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#id DataCloudflareRecord#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ Priority *f64
 
 DNS priority to filter record results on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#priority DataCloudflareRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#priority DataCloudflareRecord#priority}
 
 ---
 
@@ -914,7 +914,7 @@ Type *string
 
 DNS record type to filter record results on. Defaults to `A`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/record#type DataCloudflareRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#type DataCloudflareRecord#type}
 
 ---
 

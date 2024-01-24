@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface HostnameTlsSettingCiphersConfig extends cdktf.TerraformMetaArgu
   /**
   * Hostname that belongs to this zone name. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers#hostname HostnameTlsSettingCiphers#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers#hostname HostnameTlsSettingCiphers#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers#id HostnameTlsSettingCiphers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers#id HostnameTlsSettingCiphers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface HostnameTlsSettingCiphersConfig extends cdktf.TerraformMetaArgu
   /**
   * Ports to use within the IP rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers#ports HostnameTlsSettingCiphers#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers#ports HostnameTlsSettingCiphers#ports}
   */
   readonly ports?: number[];
   /**
   * Ciphers suites value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers#value HostnameTlsSettingCiphers#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers#value HostnameTlsSettingCiphers#value}
   */
   readonly value: string[];
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers#zone_id HostnameTlsSettingCiphers#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers#zone_id HostnameTlsSettingCiphers#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers}
 */
 export class HostnameTlsSettingCiphers extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class HostnameTlsSettingCiphers extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a HostnameTlsSettingCiphers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HostnameTlsSettingCiphers to import
-  * @param importFromId The id of the existing HostnameTlsSettingCiphers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HostnameTlsSettingCiphers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HostnameTlsSettingCiphers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class HostnameTlsSettingCiphers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class HostnameTlsSettingCiphers extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_hostname_tls_setting_ciphers',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

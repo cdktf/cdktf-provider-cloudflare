@@ -4,7 +4,7 @@
 
 ### EmailRoutingRule <a name="EmailRoutingRule" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer"></a>
 
@@ -21,12 +21,11 @@ emailRoutingRule.EmailRoutingRule(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  action: typing.Union[IResolvable, typing.List[EmailRoutingRuleAction]],
-  matcher: typing.Union[IResolvable, typing.List[EmailRoutingRuleMatcher]],
   name: str,
   zone_id: str,
+  action: typing.Union[IResolvable, typing.List[EmailRoutingRuleAction]] = None,
   enabled: typing.Union[bool, IResolvable] = None,
-  id: str = None,
+  matcher: typing.Union[IResolvable, typing.List[EmailRoutingRuleMatcher]] = None,
   priority: typing.Union[int, float] = None
 )
 ```
@@ -42,13 +41,12 @@ emailRoutingRule.EmailRoutingRule(
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.action">action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]</code> | action block. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.matcher">matcher</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]</code> | matcher block. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Routing rule name. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Routing rule status. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#id EmailRoutingRule#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Priority of the routing rule. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.action">action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]</code> | action block. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the email routing rule is enabled. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.matcher">matcher</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]</code> | matcher block. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority of the email routing rule. |
 
 ---
 
@@ -112,33 +110,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.action"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]
-
-action block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
-
----
-
-##### `matcher`<sup>Required</sup> <a name="matcher" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.matcher"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]
-
-matcher block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
 
 ---
 
@@ -148,7 +126,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+
+---
+
+##### `action`<sup>Optional</sup> <a name="action" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.action"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]
+
+action block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
 
 ---
 
@@ -156,20 +144,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Routing rule status.
+Whether the email routing rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.id"></a>
+##### `matcher`<sup>Optional</sup> <a name="matcher" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer.parameter.matcher"></a>
 
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#id EmailRoutingRule#id}.
+matcher block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
 
 ---
 
@@ -177,9 +164,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Priority of the routing rule.
+The priority of the email routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
 
 ---
 
@@ -212,8 +199,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.putAction">put_action</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.putMatcher">put_matcher</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetAction">reset_action</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetEnabled">reset_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetMatcher">reset_matcher</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetPriority">reset_priority</a></code> | *No description.* |
 
 ---
@@ -571,16 +559,22 @@ def put_matcher(
 
 ---
 
+##### `reset_action` <a name="reset_action" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetAction"></a>
+
+```python
+def reset_action() -> None
+```
+
 ##### `reset_enabled` <a name="reset_enabled" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetEnabled"></a>
 
 ```python
 def reset_enabled() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetId"></a>
+##### `reset_matcher` <a name="reset_matcher" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetMatcher"></a>
 
 ```python
-def reset_id() -> None
+def reset_matcher() -> None
 ```
 
 ##### `reset_priority` <a name="reset_priority" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetPriority"></a>
@@ -703,7 +697,7 @@ The construct id used in the generated config for the EmailRoutingRule to import
 
 The id of the existing EmailRoutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,17 +728,16 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.action">action</a></code> | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionList">EmailRoutingRuleActionList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.matcher">matcher</a></code> | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList">EmailRoutingRuleMatcherList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.tag">tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.actionInput">action_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.matcherInput">matcher_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
@@ -903,6 +896,16 @@ action: EmailRoutingRuleActionList
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `matcher`<sup>Required</sup> <a name="matcher" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.matcher"></a>
 
 ```python
@@ -940,16 +943,6 @@ enabled_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1000,16 +993,6 @@ enabled: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1080,8 +1063,8 @@ emailRoutingRule.EmailRoutingRuleAction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction.property.type">type</a></code> | <code>str</code> | Type of supported action. Available values: `forward`, `worker`, `drop`. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction.property.value">value</a></code> | <code>typing.List[str]</code> | An array with items in the following form. Only required when `type` is `forward` or `worker`. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction.property.type">type</a></code> | <code>str</code> | Type of action. Available values: `forward`, `worker`, `drop`. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction.property.value">value</a></code> | <code>typing.List[str]</code> | Value to match on. Required for `type` of `literal`. |
 
 ---
 
@@ -1093,9 +1076,9 @@ type: str
 
 - *Type:* str
 
-Type of supported action. Available values: `forward`, `worker`, `drop`.
+Type of action. Available values: `forward`, `worker`, `drop`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 
 ---
 
@@ -1107,9 +1090,9 @@ value: typing.List[str]
 
 - *Type:* typing.List[str]
 
-An array with items in the following form. Only required when `type` is `forward` or `worker`.
+Value to match on. Required for `type` of `literal`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
 
 ---
 
@@ -1128,12 +1111,11 @@ emailRoutingRule.EmailRoutingRuleConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  action: typing.Union[IResolvable, typing.List[EmailRoutingRuleAction]],
-  matcher: typing.Union[IResolvable, typing.List[EmailRoutingRuleMatcher]],
   name: str,
   zone_id: str,
+  action: typing.Union[IResolvable, typing.List[EmailRoutingRuleAction]] = None,
   enabled: typing.Union[bool, IResolvable] = None,
-  id: str = None,
+  matcher: typing.Union[IResolvable, typing.List[EmailRoutingRuleMatcher]] = None,
   priority: typing.Union[int, float] = None
 )
 ```
@@ -1149,13 +1131,12 @@ emailRoutingRule.EmailRoutingRuleConfig(
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.action">action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]</code> | action block. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.matcher">matcher</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]</code> | matcher block. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.name">name</a></code> | <code>str</code> | Routing rule name. |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Routing rule status. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#id EmailRoutingRule#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Priority of the routing rule. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.action">action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]</code> | action block. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the email routing rule is enabled. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.matcher">matcher</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]</code> | matcher block. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority of the email routing rule. |
 
 ---
 
@@ -1229,34 +1210,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.action"></a>
-
-```python
-action: typing.Union[IResolvable, typing.List[EmailRoutingRuleAction]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]
-
-action block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
-
----
-
-##### `matcher`<sup>Required</sup> <a name="matcher" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.matcher"></a>
-
-```python
-matcher: typing.Union[IResolvable, typing.List[EmailRoutingRuleMatcher]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]
-
-matcher block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.name"></a>
 
 ```python
@@ -1267,7 +1220,7 @@ name: str
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
 
 ---
 
@@ -1281,7 +1234,21 @@ zone_id: str
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+
+---
+
+##### `action`<sup>Optional</sup> <a name="action" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.action"></a>
+
+```python
+action: typing.Union[IResolvable, typing.List[EmailRoutingRuleAction]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction">EmailRoutingRuleAction</a>]]
+
+action block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
 
 ---
 
@@ -1293,24 +1260,23 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Routing rule status.
+Whether the email routing rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.id"></a>
+##### `matcher`<sup>Optional</sup> <a name="matcher" id="@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.matcher"></a>
 
 ```python
-id: str
+matcher: typing.Union[IResolvable, typing.List[EmailRoutingRuleMatcher]]
 ```
 
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher">EmailRoutingRuleMatcher</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#id EmailRoutingRule#id}.
+matcher block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
 
 ---
 
@@ -1322,9 +1288,9 @@ priority: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Priority of the routing rule.
+The priority of the email routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
 
 ---
 
@@ -1347,8 +1313,8 @@ emailRoutingRule.EmailRoutingRuleMatcher(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher.property.type">type</a></code> | <code>str</code> | Type of matcher. Available values: `literal`, `all`. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher.property.field">field</a></code> | <code>str</code> | Field for type matcher. |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher.property.value">value</a></code> | <code>str</code> | Value for matcher. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher.property.field">field</a></code> | <code>str</code> | Field to match on. Required for `type` of `literal`. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher.property.value">value</a></code> | <code>str</code> | Value to match on. Required for `type` of `literal`. |
 
 ---
 
@@ -1362,7 +1328,7 @@ type: str
 
 Type of matcher. Available values: `literal`, `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 
 ---
 
@@ -1374,9 +1340,9 @@ field: str
 
 - *Type:* str
 
-Field for type matcher.
+Field to match on. Required for `type` of `literal`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
 
 ---
 
@@ -1388,9 +1354,9 @@ value: str
 
 - *Type:* str
 
-Value for matcher.
+Value to match on. Required for `type` of `literal`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
 
 ---
 
