@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataCloudflareRulesetsConfig extends cdktf.TerraformMetaArgumen
   /**
   * The account identifier to target for the resource. Must provide only one of `zone_id`, `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#id DataCloudflareRulesets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#id DataCloudflareRulesets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface DataCloudflareRulesetsConfig extends cdktf.TerraformMetaArgumen
   /**
   * Include rule data in response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#include_rules DataCloudflareRulesets#include_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#include_rules DataCloudflareRulesets#include_rules}
   */
   readonly includeRules?: boolean | cdktf.IResolvable;
   /**
   * The zone identifier to target for the resource. Must provide only one of `zone_id`, `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
   */
   readonly zoneId?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#filter DataCloudflareRulesets#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#filter DataCloudflareRulesets#filter}
   */
   readonly filter?: DataCloudflareRulesetsFilter;
 }
@@ -3171,7 +3166,7 @@ export interface DataCloudflareRulesetsFilter {
   /**
   * The ID of the Ruleset to target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#id DataCloudflareRulesets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#id DataCloudflareRulesets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3180,25 +3175,25 @@ export interface DataCloudflareRulesetsFilter {
   /**
   * Type of Ruleset to create. Available values: `custom`, `managed`, `root`, `zone`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#kind DataCloudflareRulesets#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#kind DataCloudflareRulesets#kind}
   */
   readonly kind?: string;
   /**
   * Name of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#name DataCloudflareRulesets#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#name DataCloudflareRulesets#name}
   */
   readonly name?: string;
   /**
   * Point in the request/response lifecycle where the ruleset will be created. Available values: `ddos_l4`, `ddos_l7`, `http_config_settings`, `http_custom_errors`, `http_log_custom_fields`, `http_ratelimit`, `http_request_cache_settings`, `http_request_dynamic_redirect`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_origin`, `http_request_redirect`, `http_request_sanitize`, `http_request_sbfm`, `http_request_transform`, `http_response_compression`, `http_response_firewall_managed`, `http_response_headers_transform`, `magic_transit`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#phase DataCloudflareRulesets#phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#phase DataCloudflareRulesets#phase}
   */
   readonly phase?: string;
   /**
   * Version of the ruleset to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#version DataCloudflareRulesets#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#version DataCloudflareRulesets#version}
   */
   readonly version?: string;
 }
@@ -3398,7 +3393,7 @@ export class DataCloudflareRulesetsFilterOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets cloudflare_rulesets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets cloudflare_rulesets}
 */
 export class DataCloudflareRulesets extends cdktf.TerraformDataSource {
 
@@ -3414,7 +3409,7 @@ export class DataCloudflareRulesets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareRulesets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRulesets to import
-  * @param importFromId The id of the existing DataCloudflareRulesets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRulesets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRulesets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3426,7 +3421,7 @@ export class DataCloudflareRulesets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3437,7 +3432,7 @@ export class DataCloudflareRulesets extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_rulesets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

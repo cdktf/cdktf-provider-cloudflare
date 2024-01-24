@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,71 +10,71 @@ export interface DeviceSettingsPolicyConfig extends cdktf.TerraformMetaArguments
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#account_id DeviceSettingsPolicy#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to allow mode switch for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#allow_mode_switch DeviceSettingsPolicy#allow_mode_switch}
   */
   readonly allowModeSwitch?: boolean | cdktf.IResolvable;
   /**
   * Whether to allow updates under this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#allow_updates DeviceSettingsPolicy#allow_updates}
   */
   readonly allowUpdates?: boolean | cdktf.IResolvable;
   /**
   * Whether to allow devices to leave the organization. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#allowed_to_leave DeviceSettingsPolicy#allowed_to_leave}
   */
   readonly allowedToLeave?: boolean | cdktf.IResolvable;
   /**
   * The amount of time in minutes to reconnect after having been disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#auto_connect DeviceSettingsPolicy#auto_connect}
   */
   readonly autoConnect?: number;
   /**
   * The captive portal value for this policy. Defaults to `180`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#captive_portal DeviceSettingsPolicy#captive_portal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#captive_portal DeviceSettingsPolicy#captive_portal}
   */
   readonly captivePortal?: number;
   /**
   * Whether the policy refers to the default account policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#default DeviceSettingsPolicy#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
   /**
   * Description of Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#description DeviceSettingsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#description DeviceSettingsPolicy#description}
   */
   readonly description: string;
   /**
   * Whether to disable auto fallback for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#disable_auto_fallback DeviceSettingsPolicy#disable_auto_fallback}
   */
   readonly disableAutoFallback?: boolean | cdktf.IResolvable;
   /**
   * Whether the policy is enabled (cannot be set for default policies). Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#enabled DeviceSettingsPolicy#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Whether to add Microsoft IPs to split tunnel exclusions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#exclude_office_ips DeviceSettingsPolicy#exclude_office_ips}
   */
   readonly excludeOfficeIps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#id DeviceSettingsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -88,49 +83,49 @@ export interface DeviceSettingsPolicyConfig extends cdktf.TerraformMetaArguments
   /**
   * Wirefilter expression to match a device against when evaluating whether this policy should take effect for that device.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#match DeviceSettingsPolicy#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#match DeviceSettingsPolicy#match}
   */
   readonly match?: string;
   /**
   * Name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#name DeviceSettingsPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#name DeviceSettingsPolicy#name}
   */
   readonly name: string;
   /**
   * The precedence of the policy. Lower values indicate higher precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#precedence DeviceSettingsPolicy#precedence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#precedence DeviceSettingsPolicy#precedence}
   */
   readonly precedence?: number;
   /**
   * The service mode. Available values: `1dot1`, `warp`, `proxy`, `posture_only`, `warp_tunnel_only`. Defaults to `warp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#service_mode_v2_mode DeviceSettingsPolicy#service_mode_v2_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#service_mode_v2_mode DeviceSettingsPolicy#service_mode_v2_mode}
   */
   readonly serviceModeV2Mode?: string;
   /**
   * The port to use for the proxy service mode. Required when using `service_mode_v2_mode`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#service_mode_v2_port DeviceSettingsPolicy#service_mode_v2_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#service_mode_v2_port DeviceSettingsPolicy#service_mode_v2_port}
   */
   readonly serviceModeV2Port?: number;
   /**
   * The support URL that will be opened when sending feedback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#support_url DeviceSettingsPolicy#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#support_url DeviceSettingsPolicy#support_url}
   */
   readonly supportUrl?: string;
   /**
   * Enablement of the ZT client switch lock.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#switch_locked DeviceSettingsPolicy#switch_locked}
   */
   readonly switchLocked?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}
 */
 export class DeviceSettingsPolicy extends cdktf.TerraformResource {
 
@@ -146,7 +141,7 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DeviceSettingsPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeviceSettingsPolicy to import
-  * @param importFromId The id of the existing DeviceSettingsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DeviceSettingsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeviceSettingsPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -158,7 +153,7 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +164,7 @@ export class DeviceSettingsPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_settings_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
