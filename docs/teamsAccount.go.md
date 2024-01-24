@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccount(scope Construct, id *string, config TeamsAccountConfig) TeamsAccount
 ```
@@ -580,7 +580,7 @@ func ResetUrlBrowserIsolationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.TeamsAccount_IsConstruct(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.TeamsAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ teamsaccount.TeamsAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.TeamsAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ teamsaccount.TeamsAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.TeamsAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1199,7 +1199,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountAntivirus {
 	EnabledDownloadPhase: interface{},
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountBlockPage {
 	BackgroundColor: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBodyScanning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountBodyScanning {
 	InspectionMode: *string,
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountConfig {
 	Connection: interface{},
@@ -1457,17 +1457,17 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccoun
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	ActivityLogEnabled: interface{},
-	Antivirus: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountAntivirus,
-	BlockPage: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountBlockPage,
-	BodyScanning: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountBodyScanning,
-	Fips: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountFips,
+	Antivirus: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountAntivirus,
+	BlockPage: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountBlockPage,
+	BodyScanning: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountBodyScanning,
+	Fips: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountFips,
 	Id: *string,
-	Logging: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountLogging,
+	Logging: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountLogging,
 	NonIdentityBrowserIsolationEnabled: interface{},
-	PayloadLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountPayloadLog,
+	PayloadLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountPayloadLog,
 	ProtocolDetectionEnabled: interface{},
-	Proxy: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountProxy,
-	SshSessionLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountSshSessionLog,
+	Proxy: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountProxy,
+	SshSessionLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountSshSessionLog,
 	TlsDecryptEnabled: interface{},
 	UrlBrowserIsolationEnabled: interface{},
 }
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountFips {
 	Tls: interface{},
@@ -1822,11 +1822,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountLogging {
 	RedactPii: interface{},
-	SettingsByRuleType: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountLoggingSettingsByRuleType,
+	SettingsByRuleType: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleType,
 }
 ```
 
@@ -1872,12 +1872,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountLoggingSettingsByRuleType {
-	Dns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns,
-	Http: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp,
-	L4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4,
+	Dns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns,
+	Http: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp,
+	L4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4,
 }
 ```
 
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountLoggingSettingsByRuleTypeDns {
 	LogAll: interface{},
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountLoggingSettingsByRuleTypeHttp {
 	LogAll: interface{},
@@ -2034,7 +2034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountLoggingSettingsByRuleTypeL4 {
 	LogAll: interface{},
@@ -2082,7 +2082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountPayloadLog {
 	PublicKey: *string,
@@ -2116,7 +2116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountProxy {
 	RootCa: interface{},
@@ -2182,7 +2182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountSshSessionLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 &teamsaccount.TeamsAccountSshSessionLog {
 	PublicKey: *string,
@@ -2218,7 +2218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountAntivirusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountAntivirusOutputReference
 ```
@@ -2533,7 +2533,7 @@ func InternalValue() TeamsAccountAntivirus
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountBlockPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountBlockPageOutputReference
 ```
@@ -3014,7 +3014,7 @@ func InternalValue() TeamsAccountBlockPage
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBodyScanningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountBodyScanningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountBodyScanningOutputReference
 ```
@@ -3285,7 +3285,7 @@ func InternalValue() TeamsAccountBodyScanning
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountFipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountFipsOutputReference
 ```
@@ -3563,7 +3563,7 @@ func InternalValue() TeamsAccountFips
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountLoggingOutputReference
 ```
@@ -3869,7 +3869,7 @@ func InternalValue() TeamsAccountLogging
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountLoggingSettingsByRuleTypeDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference
 ```
@@ -4162,7 +4162,7 @@ func InternalValue() TeamsAccountLoggingSettingsByRuleTypeDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountLoggingSettingsByRuleTypeHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference
 ```
@@ -4455,7 +4455,7 @@ func InternalValue() TeamsAccountLoggingSettingsByRuleTypeHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountLoggingSettingsByRuleTypeL4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountLoggingSettingsByRuleTypeL4OutputReference
 ```
@@ -4748,7 +4748,7 @@ func InternalValue() TeamsAccountLoggingSettingsByRuleTypeL4
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountLoggingSettingsByRuleTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountLoggingSettingsByRuleTypeOutputReference
 ```
@@ -5102,7 +5102,7 @@ func InternalValue() TeamsAccountLoggingSettingsByRuleType
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountPayloadLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountPayloadLogOutputReference
 ```
@@ -5373,7 +5373,7 @@ func InternalValue() TeamsAccountPayloadLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountProxyOutputReference
 ```
@@ -5688,7 +5688,7 @@ func InternalValue() TeamsAccountProxy
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccountSshSessionLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccount"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsaccount"
 
 teamsaccount.NewTeamsAccountSshSessionLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsAccountSshSessionLogOutputReference
 ```
