@@ -4,12 +4,12 @@
 
 ### DataCloudflareTunnelVirtualNetwork <a name="DataCloudflareTunnelVirtualNetwork" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaretunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnelvirtualnetwork"
 
 datacloudflaretunnelvirtualnetwork.NewDataCloudflareTunnelVirtualNetwork(scope Construct, id *string, config DataCloudflareTunnelVirtualNetworkConfig) DataCloudflareTunnelVirtualNetwork
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaretunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnelvirtualnetwork"
 
 datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaretunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnelvirtualnetwork"
 
 datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetwork_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaretunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnelvirtualnetwork"
 
 datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetwork_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaretunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnelvirtualnetwork"
 
 datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareTunnelVirtua
 
 The id of the existing DataCloudflareTunnelVirtualNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel_virtual_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/tunnel_virtual_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaretunnelvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretunnelvirtualnetwork"
 
 &datacloudflaretunnelvirtualnetwork.DataCloudflareTunnelVirtualNetworkConfig {
 	Connection: interface{},
@@ -667,7 +667,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetworkConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetworkConfig.property.name">Name</a></code> | <code>*string</code> | The Virtual Network Name. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel_virtual_network#id DataCloudflareTunnelVirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnelVirtualNetwork.DataCloudflareTunnelVirtualNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/tunnel_virtual_network#id DataCloudflareTunnelVirtualNetwork#id}. |
 
 ---
 
@@ -751,7 +751,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel_virtual_network#account_id DataCloudflareTunnelVirtualNetwork#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/tunnel_virtual_network#account_id DataCloudflareTunnelVirtualNetwork#account_id}
 
 ---
 
@@ -765,7 +765,7 @@ Name *string
 
 The Virtual Network Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel_virtual_network#name DataCloudflareTunnelVirtualNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/tunnel_virtual_network#name DataCloudflareTunnelVirtualNetwork#name}
 
 ---
 
@@ -777,7 +777,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel_virtual_network#id DataCloudflareTunnelVirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/tunnel_virtual_network#id DataCloudflareTunnelVirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
