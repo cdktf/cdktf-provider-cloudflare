@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareRecordConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Content to filter record results on.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#content DataCloudflareRecord#content}
+  */
+  readonly content?: string;
+  /**
   * Hostname to filter DNS record results on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#hostname DataCloudflareRecord#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#hostname DataCloudflareRecord#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#id DataCloudflareRecord#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#id DataCloudflareRecord#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +34,25 @@ export interface DataCloudflareRecordConfig extends cdktf.TerraformMetaArguments
   /**
   * DNS priority to filter record results on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#priority DataCloudflareRecord#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#priority DataCloudflareRecord#priority}
   */
   readonly priority?: number;
   /**
   * DNS record type to filter record results on. Defaults to `A`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#type DataCloudflareRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#type DataCloudflareRecord#type}
   */
   readonly type?: string;
   /**
   * The zone identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#zone_id DataCloudflareRecord#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#zone_id DataCloudflareRecord#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record cloudflare_record}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record cloudflare_record}
 */
 export class DataCloudflareRecord extends cdktf.TerraformDataSource {
 
@@ -62,7 +68,7 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareRecord resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRecord to import
-  * @param importFromId The id of the existing DataCloudflareRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +80,7 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/record cloudflare_record} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/data-sources/record cloudflare_record} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +91,7 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -96,6 +102,7 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._content = config.content;
     this._hostname = config.hostname;
     this._id = config.id;
     this._priority = config.priority;
@@ -106,6 +113,22 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // content - computed: false, optional: true, required: false
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  public resetContent() {
+    this._content = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
 
   // hostname - computed: false, optional: false, required: true
   private _hostname?: string; 
@@ -217,6 +240,7 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      content: cdktf.stringToTerraform(this._content),
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
       priority: cdktf.numberToTerraform(this._priority),
@@ -227,6 +251,12 @@ export class DataCloudflareRecord extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       hostname: {
         value: cdktf.stringToHclTerraform(this._hostname),
         isBlock: false,
