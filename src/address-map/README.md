@@ -1,3 +1,3 @@
 # `cloudflare_address_map`
 
-Refer to the Terraform Registry for docs: [`cloudflare_address_map`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/address_map).
+Refer to the Terraform Registry for docs: [`cloudflare_address_map`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/address_map).
