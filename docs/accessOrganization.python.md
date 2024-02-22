@@ -4,7 +4,7 @@
 
 ### AccessOrganization <a name="AccessOrganization" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization cloudflare_access_organization}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization cloudflare_access_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer"></a>
 
@@ -23,6 +23,7 @@ accessOrganization.AccessOrganization(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   auth_domain: str,
   account_id: str = None,
+  allow_authenticate_via_warp: typing.Union[bool, IResolvable] = None,
   auto_redirect_to_identity: typing.Union[bool, IResolvable] = None,
   custom_pages: typing.Union[IResolvable, typing.List[AccessOrganizationCustomPages]] = None,
   id: str = None,
@@ -32,6 +33,7 @@ accessOrganization.AccessOrganization(
   session_duration: str = None,
   ui_read_only_toggle_reason: str = None,
   user_seat_expiration_inactive_time: str = None,
+  warp_auth_session_duration: str = None,
   zone_id: str = None
 )
 ```
@@ -49,15 +51,17 @@ accessOrganization.AccessOrganization(
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.authDomain">auth_domain</a></code> | <code>str</code> | The unique subdomain assigned to your Zero Trust organization. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.allowAuthenticateViaWarp">allow_authenticate_via_warp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, users can authenticate via WARP for any application in your organization. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.autoRedirectToIdentity">auto_redirect_to_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, users skip the identity provider selection step during login. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.customPages">custom_pages</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPages">AccessOrganizationCustomPages</a>]]</code> | custom_pages block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#id AccessOrganization#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#id AccessOrganization#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.isUiReadOnly">is_ui_read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.loginDesign">login_design</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign">AccessOrganizationLoginDesign</a>]]</code> | login_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of your Zero Trust organization. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.sessionDuration">session_duration</a></code> | <code>str</code> | How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.uiReadOnlyToggleReason">ui_read_only_toggle_reason</a></code> | <code>str</code> | A description of the reason why the UI read only field is being toggled. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.userSeatExpirationInactiveTime">user_seat_expiration_inactive_time</a></code> | <code>str</code> | The amount of time a user seat is inactive before it expires. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.warpAuthSessionDuration">warp_auth_session_duration</a></code> | <code>str</code> | The amount of time that tokens issued for applications will be valid. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
 ---
@@ -128,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The unique subdomain assigned to your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
 
 ---
 
@@ -138,7 +142,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
+
+---
+
+##### `allow_authenticate_via_warp`<sup>Optional</sup> <a name="allow_authenticate_via_warp" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.allowAuthenticateViaWarp"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When set to true, users can authenticate via WARP for any application in your organization.
+
+Application settings will take precedence over this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#allow_authenticate_via_warp AccessOrganization#allow_authenticate_via_warp}
 
 ---
 
@@ -148,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When set to true, users skip the identity provider selection step during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
 
 ---
 
@@ -158,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 custom_pages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
 
 ---
 
@@ -166,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#id AccessOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#id AccessOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
 
 ---
 
@@ -189,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 login_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
 
 ---
 
@@ -199,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#name AccessOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#name AccessOrganization#name}
 
 ---
 
@@ -209,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#session_duration AccessOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#session_duration AccessOrganization#session_duration}
 
 ---
 
@@ -219,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A description of the reason why the UI read only field is being toggled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
 
 ---
 
@@ -231,7 +247,19 @@ The amount of time a user seat is inactive before it expires.
 
 When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count. Must be in the format `300ms` or `2h45m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+
+---
+
+##### `warp_auth_session_duration`<sup>Optional</sup> <a name="warp_auth_session_duration" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.Initializer.parameter.warpAuthSessionDuration"></a>
+
+- *Type:* str
+
+The amount of time that tokens issued for applications will be valid.
+
+Must be in the format 30m or 2h45m. Valid time units are: m, h.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#warp_auth_session_duration AccessOrganization#warp_auth_session_duration}
 
 ---
 
@@ -241,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
 
 ---
 
@@ -275,6 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.putCustomPages">put_custom_pages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.putLoginDesign">put_login_design</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetAllowAuthenticateViaWarp">reset_allow_authenticate_via_warp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetAutoRedirectToIdentity">reset_auto_redirect_to_identity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetCustomPages">reset_custom_pages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetId">reset_id</a></code> | *No description.* |
@@ -284,6 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetSessionDuration">reset_session_duration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetUiReadOnlyToggleReason">reset_ui_read_only_toggle_reason</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetUserSeatExpirationInactiveTime">reset_user_seat_expiration_inactive_time</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetWarpAuthSessionDuration">reset_warp_auth_session_duration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
@@ -647,6 +677,12 @@ def put_login_design(
 def reset_account_id() -> None
 ```
 
+##### `reset_allow_authenticate_via_warp` <a name="reset_allow_authenticate_via_warp" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetAllowAuthenticateViaWarp"></a>
+
+```python
+def reset_allow_authenticate_via_warp() -> None
+```
+
 ##### `reset_auto_redirect_to_identity` <a name="reset_auto_redirect_to_identity" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetAutoRedirectToIdentity"></a>
 
 ```python
@@ -699,6 +735,12 @@ def reset_ui_read_only_toggle_reason() -> None
 
 ```python
 def reset_user_seat_expiration_inactive_time() -> None
+```
+
+##### `reset_warp_auth_session_duration` <a name="reset_warp_auth_session_duration" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetWarpAuthSessionDuration"></a>
+
+```python
+def reset_warp_auth_session_duration() -> None
 ```
 
 ##### `reset_zone_id` <a name="reset_zone_id" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.resetZoneId"></a>
@@ -821,7 +863,7 @@ The construct id used in the generated config for the AccessOrganization to impo
 
 The id of the existing AccessOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,6 +896,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.customPages">custom_pages</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPagesList">AccessOrganizationCustomPagesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.loginDesign">login_design</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList">AccessOrganizationLoginDesignList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.allowAuthenticateViaWarpInput">allow_authenticate_via_warp_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.authDomainInput">auth_domain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.autoRedirectToIdentityInput">auto_redirect_to_identity_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.customPagesInput">custom_pages_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPages">AccessOrganizationCustomPages</a>]]</code> | *No description.* |
@@ -864,8 +907,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.sessionDurationInput">session_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.uiReadOnlyToggleReasonInput">ui_read_only_toggle_reason_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.userSeatExpirationInactiveTimeInput">user_seat_expiration_inactive_time_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.warpAuthSessionDurationInput">warp_auth_session_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.allowAuthenticateViaWarp">allow_authenticate_via_warp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.authDomain">auth_domain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.autoRedirectToIdentity">auto_redirect_to_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -874,6 +919,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.sessionDuration">session_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.uiReadOnlyToggleReason">ui_read_only_toggle_reason</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.userSeatExpirationInactiveTime">user_seat_expiration_inactive_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.warpAuthSessionDuration">warp_auth_session_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1050,6 +1096,16 @@ account_id_input: str
 
 ---
 
+##### `allow_authenticate_via_warp_input`<sup>Optional</sup> <a name="allow_authenticate_via_warp_input" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.allowAuthenticateViaWarpInput"></a>
+
+```python
+allow_authenticate_via_warp_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `auth_domain_input`<sup>Optional</sup> <a name="auth_domain_input" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.authDomainInput"></a>
 
 ```python
@@ -1150,6 +1206,16 @@ user_seat_expiration_inactive_time_input: str
 
 ---
 
+##### `warp_auth_session_duration_input`<sup>Optional</sup> <a name="warp_auth_session_duration_input" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.warpAuthSessionDurationInput"></a>
+
+```python
+warp_auth_session_duration_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `zone_id_input`<sup>Optional</sup> <a name="zone_id_input" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.zoneIdInput"></a>
 
 ```python
@@ -1167,6 +1233,16 @@ account_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `allow_authenticate_via_warp`<sup>Required</sup> <a name="allow_authenticate_via_warp" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.allowAuthenticateViaWarp"></a>
+
+```python
+allow_authenticate_via_warp: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1250,6 +1326,16 @@ user_seat_expiration_inactive_time: str
 
 ---
 
+##### `warp_auth_session_duration`<sup>Required</sup> <a name="warp_auth_session_duration" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.warpAuthSessionDuration"></a>
+
+```python
+warp_auth_session_duration: str
+```
+
+- *Type:* str
+
+---
+
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganization.property.zoneId"></a>
 
 ```python
@@ -1297,6 +1383,7 @@ accessOrganization.AccessOrganizationConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   auth_domain: str,
   account_id: str = None,
+  allow_authenticate_via_warp: typing.Union[bool, IResolvable] = None,
   auto_redirect_to_identity: typing.Union[bool, IResolvable] = None,
   custom_pages: typing.Union[IResolvable, typing.List[AccessOrganizationCustomPages]] = None,
   id: str = None,
@@ -1306,6 +1393,7 @@ accessOrganization.AccessOrganizationConfig(
   session_duration: str = None,
   ui_read_only_toggle_reason: str = None,
   user_seat_expiration_inactive_time: str = None,
+  warp_auth_session_duration: str = None,
   zone_id: str = None
 )
 ```
@@ -1323,15 +1411,17 @@ accessOrganization.AccessOrganizationConfig(
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.authDomain">auth_domain</a></code> | <code>str</code> | The unique subdomain assigned to your Zero Trust organization. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.allowAuthenticateViaWarp">allow_authenticate_via_warp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, users can authenticate via WARP for any application in your organization. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.autoRedirectToIdentity">auto_redirect_to_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, users skip the identity provider selection step during login. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.customPages">custom_pages</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationCustomPages">AccessOrganizationCustomPages</a>]]</code> | custom_pages block. |
-| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#id AccessOrganization#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#id AccessOrganization#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.isUiReadOnly">is_ui_read_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.loginDesign">login_design</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign">AccessOrganizationLoginDesign</a>]]</code> | login_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.name">name</a></code> | <code>str</code> | The name of your Zero Trust organization. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.sessionDuration">session_duration</a></code> | <code>str</code> | How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.uiReadOnlyToggleReason">ui_read_only_toggle_reason</a></code> | <code>str</code> | A description of the reason why the UI read only field is being toggled. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.userSeatExpirationInactiveTime">user_seat_expiration_inactive_time</a></code> | <code>str</code> | The amount of time a user seat is inactive before it expires. |
+| <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.warpAuthSessionDuration">warp_auth_session_duration</a></code> | <code>str</code> | The amount of time that tokens issued for applications will be valid. |
 | <code><a href="#@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
 ---
@@ -1416,7 +1506,7 @@ auth_domain: str
 
 The unique subdomain assigned to your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
 
 ---
 
@@ -1430,7 +1520,23 @@ account_id: str
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#account_id AccessOrganization#account_id}
+
+---
+
+##### `allow_authenticate_via_warp`<sup>Optional</sup> <a name="allow_authenticate_via_warp" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.allowAuthenticateViaWarp"></a>
+
+```python
+allow_authenticate_via_warp: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When set to true, users can authenticate via WARP for any application in your organization.
+
+Application settings will take precedence over this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#allow_authenticate_via_warp AccessOrganization#allow_authenticate_via_warp}
 
 ---
 
@@ -1444,7 +1550,7 @@ auto_redirect_to_identity: typing.Union[bool, IResolvable]
 
 When set to true, users skip the identity provider selection step during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#auto_redirect_to_identity AccessOrganization#auto_redirect_to_identity}
 
 ---
 
@@ -1458,7 +1564,7 @@ custom_pages: typing.Union[IResolvable, typing.List[AccessOrganizationCustomPage
 
 custom_pages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#custom_pages AccessOrganization#custom_pages}
 
 ---
 
@@ -1470,7 +1576,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#id AccessOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#id AccessOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1487,7 +1593,7 @@ is_ui_read_only: typing.Union[bool, IResolvable]
 
 When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
 
 ---
 
@@ -1501,7 +1607,7 @@ login_design: typing.Union[IResolvable, typing.List[AccessOrganizationLoginDesig
 
 login_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
 
 ---
 
@@ -1515,7 +1621,7 @@ name: str
 
 The name of your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#name AccessOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#name AccessOrganization#name}
 
 ---
 
@@ -1529,7 +1635,7 @@ session_duration: str
 
 How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#session_duration AccessOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#session_duration AccessOrganization#session_duration}
 
 ---
 
@@ -1543,7 +1649,7 @@ ui_read_only_toggle_reason: str
 
 A description of the reason why the UI read only field is being toggled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#ui_read_only_toggle_reason AccessOrganization#ui_read_only_toggle_reason}
 
 ---
 
@@ -1559,7 +1665,23 @@ The amount of time a user seat is inactive before it expires.
 
 When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count. Must be in the format `300ms` or `2h45m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+
+---
+
+##### `warp_auth_session_duration`<sup>Optional</sup> <a name="warp_auth_session_duration" id="@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig.property.warpAuthSessionDuration"></a>
+
+```python
+warp_auth_session_duration: str
+```
+
+- *Type:* str
+
+The amount of time that tokens issued for applications will be valid.
+
+Must be in the format 30m or 2h45m. Valid time units are: m, h.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#warp_auth_session_duration AccessOrganization#warp_auth_session_duration}
 
 ---
 
@@ -1573,7 +1695,7 @@ zone_id: str
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
 
 ---
 
@@ -1609,7 +1731,7 @@ forbidden: str
 
 The id of the forbidden page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#forbidden AccessOrganization#forbidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#forbidden AccessOrganization#forbidden}
 
 ---
 
@@ -1623,7 +1745,7 @@ identity_denied: str
 
 The id of the identity denied page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#identity_denied AccessOrganization#identity_denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#identity_denied AccessOrganization#identity_denied}
 
 ---
 
@@ -1665,7 +1787,7 @@ background_color: str
 
 The background color on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#background_color AccessOrganization#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#background_color AccessOrganization#background_color}
 
 ---
 
@@ -1679,7 +1801,7 @@ footer_text: str
 
 The text at the bottom of the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#footer_text AccessOrganization#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#footer_text AccessOrganization#footer_text}
 
 ---
 
@@ -1693,7 +1815,7 @@ header_text: str
 
 The text at the top of the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#header_text AccessOrganization#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#header_text AccessOrganization#header_text}
 
 ---
 
@@ -1707,7 +1829,7 @@ logo_path: str
 
 The URL of the logo on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#logo_path AccessOrganization#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#logo_path AccessOrganization#logo_path}
 
 ---
 
@@ -1721,7 +1843,7 @@ text_color: str
 
 The text color on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_organization#text_color AccessOrganization#text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_organization#text_color AccessOrganization#text_color}
 
 ---
 

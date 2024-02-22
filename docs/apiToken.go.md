@@ -4,12 +4,12 @@
 
 ### ApiToken <a name="ApiToken" id="@cdktf/provider-cloudflare.apiToken.ApiToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token cloudflare_api_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token cloudflare_api_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiToken.ApiToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.NewApiToken(scope Construct, id *string, config ApiTokenConfig) ApiToken
 ```
@@ -432,7 +432,7 @@ func ResetNotBefore()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiToken.ApiToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.ApiToken_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiToken.ApiToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.ApiToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ apitoken.ApiToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiToken.ApiToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.ApiToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ apitoken.ApiToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiToken.ApiToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.ApiToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the ApiToken to import.
 
 The id of the existing ApiToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,10 +897,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiToken.ApiTokenCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 &apitoken.ApiTokenCondition {
-	RequestIp: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.apiToken.ApiTokenConditionRequestIp,
+	RequestIp: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.apiToken.ApiTokenConditionRequestIp,
 }
 ```
 
@@ -922,7 +922,7 @@ RequestIp ApiTokenConditionRequestIp
 
 request_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#request_ip ApiToken#request_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#request_ip ApiToken#request_ip}
 
 ---
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiToken.ApiTokenConditionRequestIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 &apitoken.ApiTokenConditionRequestIp {
 	In: *[]*string,
@@ -960,7 +960,7 @@ List of IP addresses or CIDR notation where the token may be used from.
 
 If not specified, the token will be valid for all IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#in ApiToken#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#in ApiToken#in}
 
 ---
 
@@ -974,7 +974,7 @@ NotIn *[]*string
 
 List of IP addresses or CIDR notation where the token should not be used from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#not_in ApiToken#not_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#not_in ApiToken#not_in}
 
 ---
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 &apitoken.ApiTokenConfig {
 	Connection: interface{},
@@ -995,7 +995,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Policy: interface{},
-	Condition: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.apiToken.ApiTokenCondition,
+	Condition: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.apiToken.ApiTokenCondition,
 	ExpiresOn: *string,
 	Id: *string,
 	NotBefore: *string,
@@ -1017,7 +1017,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
 | <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.property.policy">Policy</a></code> | <code>interface{}</code> | policy block. |
 | <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenCondition">ApiTokenCondition</a></code> | condition block. |
 | <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.property.expiresOn">ExpiresOn</a></code> | <code>*string</code> | The expiration time on or after which the token MUST NOT be accepted for processing. |
-| <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#id ApiToken#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#id ApiToken#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.apiToken.ApiTokenConfig.property.notBefore">NotBefore</a></code> | <code>*string</code> | The time before which the token MUST NOT be accepted for processing. |
 
 ---
@@ -1102,7 +1102,7 @@ Name *string
 
 Name of the API Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#name ApiToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#name ApiToken#name}
 
 ---
 
@@ -1116,7 +1116,7 @@ Policy interface{}
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#policy ApiToken#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#policy ApiToken#policy}
 
 ---
 
@@ -1130,7 +1130,7 @@ Condition ApiTokenCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#condition ApiToken#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#condition ApiToken#condition}
 
 ---
 
@@ -1144,7 +1144,7 @@ ExpiresOn *string
 
 The expiration time on or after which the token MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#expires_on ApiToken#expires_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#expires_on ApiToken#expires_on}
 
 ---
 
@@ -1156,7 +1156,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#id ApiToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#id ApiToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1173,7 @@ NotBefore *string
 
 The time before which the token MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#not_before ApiToken#not_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#not_before ApiToken#not_before}
 
 ---
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiToken.ApiTokenPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 &apitoken.ApiTokenPolicy {
 	PermissionGroups: *[]*string,
@@ -1211,7 +1211,7 @@ PermissionGroups *[]*string
 
 List of permissions groups IDs. See [documentation](https://developers.cloudflare.com/api/tokens/create/permissions) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
 
 ---
 
@@ -1225,7 +1225,7 @@ Resources *map[string]*string
 
 Describes what operations against which resources are allowed or denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#resources ApiToken#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#resources ApiToken#resources}
 
 ---
 
@@ -1239,7 +1239,7 @@ Effect *string
 
 Effect of the policy. Available values: `allow`, `deny`. Defaults to `allow`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/api_token#effect ApiToken#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/api_token#effect ApiToken#effect}
 
 ---
 
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiToken.ApiTokenConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.NewApiTokenConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiTokenConditionOutputReference
 ```
@@ -1541,7 +1541,7 @@ func InternalValue() ApiTokenCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.NewApiTokenConditionRequestIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiTokenConditionRequestIpOutputReference
 ```
@@ -1848,7 +1848,7 @@ func InternalValue() ApiTokenConditionRequestIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.NewApiTokenPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiTokenPolicyList
 ```
@@ -2008,7 +2008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apitoken"
 
 apitoken.NewApiTokenPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiTokenPolicyOutputReference
 ```

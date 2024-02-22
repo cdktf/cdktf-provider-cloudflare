@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to enable the activity log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
   */
   readonly activityLogEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#id TeamsAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#id TeamsAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,95 +29,263 @@ export interface TeamsAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable non-identity onramp for Browser Isolation. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#non_identity_browser_isolation_enabled TeamsAccount#non_identity_browser_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#non_identity_browser_isolation_enabled TeamsAccount#non_identity_browser_isolation_enabled}
   */
   readonly nonIdentityBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Indicator that protocol detection is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#protocol_detection_enabled TeamsAccount#protocol_detection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#protocol_detection_enabled TeamsAccount#protocol_detection_enabled}
   */
   readonly protocolDetectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Indicator that decryption of TLS traffic is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
   */
   readonly tlsDecryptEnabled?: boolean | cdktf.IResolvable;
   /**
   * Safely browse websites in Browser Isolation through a URL. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
   */
   readonly urlBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
   /**
   * antivirus block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
   */
   readonly antivirus?: TeamsAccountAntivirus;
   /**
   * block_page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
   */
   readonly blockPage?: TeamsAccountBlockPage;
   /**
   * body_scanning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#body_scanning TeamsAccount#body_scanning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#body_scanning TeamsAccount#body_scanning}
   */
   readonly bodyScanning?: TeamsAccountBodyScanning;
   /**
+  * extended_email_matching block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#extended_email_matching TeamsAccount#extended_email_matching}
+  */
+  readonly extendedEmailMatching?: TeamsAccountExtendedEmailMatching;
+  /**
   * fips block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#fips TeamsAccount#fips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#fips TeamsAccount#fips}
   */
   readonly fips?: TeamsAccountFips;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#logging TeamsAccount#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#logging TeamsAccount#logging}
   */
   readonly logging?: TeamsAccountLogging;
   /**
   * payload_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
   */
   readonly payloadLog?: TeamsAccountPayloadLog;
   /**
   * proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
   */
   readonly proxy?: TeamsAccountProxy;
   /**
   * ssh_session_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#ssh_session_log TeamsAccount#ssh_session_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#ssh_session_log TeamsAccount#ssh_session_log}
   */
   readonly sshSessionLog?: TeamsAccountSshSessionLog;
+}
+export interface TeamsAccountAntivirusNotificationSettings {
+  /**
+  * Enable notification settings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Notification content.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#message TeamsAccount#message}
+  */
+  readonly message?: string;
+  /**
+  * Support URL to show in the notification.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#support_url TeamsAccount#support_url}
+  */
+  readonly supportUrl?: string;
+}
+
+export function teamsAccountAntivirusNotificationSettingsToTerraform(struct?: TeamsAccountAntivirusNotificationSettingsOutputReference | TeamsAccountAntivirusNotificationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    message: cdktf.stringToTerraform(struct!.message),
+    support_url: cdktf.stringToTerraform(struct!.supportUrl),
+  }
+}
+
+
+export function teamsAccountAntivirusNotificationSettingsToHclTerraform(struct?: TeamsAccountAntivirusNotificationSettingsOutputReference | TeamsAccountAntivirusNotificationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    message: {
+      value: cdktf.stringToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    support_url: {
+      value: cdktf.stringToHclTerraform(struct!.supportUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TeamsAccountAntivirusNotificationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TeamsAccountAntivirusNotificationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._message !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.message = this._message;
+    }
+    if (this._supportUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.supportUrl = this._supportUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TeamsAccountAntivirusNotificationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._message = undefined;
+      this._supportUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._message = value.message;
+      this._supportUrl = value.supportUrl;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // message - computed: false, optional: true, required: false
+  private _message?: string; 
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+  public set message(value: string) {
+    this._message = value;
+  }
+  public resetMessage() {
+    this._message = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageInput() {
+    return this._message;
+  }
+
+  // support_url - computed: false, optional: true, required: false
+  private _supportUrl?: string; 
+  public get supportUrl() {
+    return this.getStringAttribute('support_url');
+  }
+  public set supportUrl(value: string) {
+    this._supportUrl = value;
+  }
+  public resetSupportUrl() {
+    this._supportUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportUrlInput() {
+    return this._supportUrl;
+  }
 }
 export interface TeamsAccountAntivirus {
   /**
   * Scan on file download.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
   */
   readonly enabledDownloadPhase: boolean | cdktf.IResolvable;
   /**
   * Scan on file upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
   */
   readonly enabledUploadPhase: boolean | cdktf.IResolvable;
   /**
   * Block requests for files that cannot be scanned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
   */
   readonly failClosed: boolean | cdktf.IResolvable;
+  /**
+  * notification_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#notification_settings TeamsAccount#notification_settings}
+  */
+  readonly notificationSettings?: TeamsAccountAntivirusNotificationSettings;
 }
 
 export function teamsAccountAntivirusToTerraform(struct?: TeamsAccountAntivirusOutputReference | TeamsAccountAntivirus): any {
@@ -134,6 +297,7 @@ export function teamsAccountAntivirusToTerraform(struct?: TeamsAccountAntivirusO
     enabled_download_phase: cdktf.booleanToTerraform(struct!.enabledDownloadPhase),
     enabled_upload_phase: cdktf.booleanToTerraform(struct!.enabledUploadPhase),
     fail_closed: cdktf.booleanToTerraform(struct!.failClosed),
+    notification_settings: teamsAccountAntivirusNotificationSettingsToTerraform(struct!.notificationSettings),
   }
 }
 
@@ -161,6 +325,12 @@ export function teamsAccountAntivirusToHclTerraform(struct?: TeamsAccountAntivir
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    notification_settings: {
+      value: teamsAccountAntivirusNotificationSettingsToHclTerraform(struct!.notificationSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TeamsAccountAntivirusNotificationSettingsList",
     },
   };
 
@@ -194,6 +364,10 @@ export class TeamsAccountAntivirusOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.failClosed = this._failClosed;
     }
+    if (this._notificationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationSettings = this._notificationSettings?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -203,12 +377,14 @@ export class TeamsAccountAntivirusOutputReference extends cdktf.ComplexObject {
       this._enabledDownloadPhase = undefined;
       this._enabledUploadPhase = undefined;
       this._failClosed = undefined;
+      this._notificationSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabledDownloadPhase = value.enabledDownloadPhase;
       this._enabledUploadPhase = value.enabledUploadPhase;
       this._failClosed = value.failClosed;
+      this._notificationSettings.internalValue = value.notificationSettings;
     }
   }
 
@@ -250,54 +426,70 @@ export class TeamsAccountAntivirusOutputReference extends cdktf.ComplexObject {
   public get failClosedInput() {
     return this._failClosed;
   }
+
+  // notification_settings - computed: false, optional: true, required: false
+  private _notificationSettings = new TeamsAccountAntivirusNotificationSettingsOutputReference(this, "notification_settings");
+  public get notificationSettings() {
+    return this._notificationSettings;
+  }
+  public putNotificationSettings(value: TeamsAccountAntivirusNotificationSettings) {
+    this._notificationSettings.internalValue = value;
+  }
+  public resetNotificationSettings() {
+    this._notificationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationSettingsInput() {
+    return this._notificationSettings.internalValue;
+  }
 }
 export interface TeamsAccountBlockPage {
   /**
   * Hex code of block page background color.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * Indicator of enablement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Block page footer text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
   */
   readonly footerText?: string;
   /**
   * Block page header text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
   */
   readonly headerText?: string;
   /**
   * URL of block page logo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
   */
   readonly logoPath?: string;
   /**
   * Admin email for users to contact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
   */
   readonly mailtoAddress?: string;
   /**
   * Subject line for emails created from block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
   */
   readonly mailtoSubject?: string;
   /**
   * Name of block page configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#name TeamsAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#name TeamsAccount#name}
   */
   readonly name?: string;
 }
@@ -586,7 +778,7 @@ export interface TeamsAccountBodyScanning {
   /**
   * Body scanning inspection mode. Available values: `deep`, `shallow`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#inspection_mode TeamsAccount#inspection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#inspection_mode TeamsAccount#inspection_mode}
   */
   readonly inspectionMode: string;
 }
@@ -665,11 +857,94 @@ export class TeamsAccountBodyScanningOutputReference extends cdktf.ComplexObject
     return this._inspectionMode;
   }
 }
+export interface TeamsAccountExtendedEmailMatching {
+  /**
+  * Whether e-mails should be matched on all variants of user emails (with + or . modifiers) in Firewall policies.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function teamsAccountExtendedEmailMatchingToTerraform(struct?: TeamsAccountExtendedEmailMatchingOutputReference | TeamsAccountExtendedEmailMatching): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
+export function teamsAccountExtendedEmailMatchingToHclTerraform(struct?: TeamsAccountExtendedEmailMatchingOutputReference | TeamsAccountExtendedEmailMatching): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TeamsAccountExtendedEmailMatchingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TeamsAccountExtendedEmailMatching | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TeamsAccountExtendedEmailMatching | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface TeamsAccountFips {
   /**
   * Only allow FIPS-compliant TLS configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#tls TeamsAccount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#tls TeamsAccount#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
 }
@@ -755,11 +1030,11 @@ export interface TeamsAccountLoggingSettingsByRuleTypeDns {
   /**
   * Whether to log all activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -868,11 +1143,11 @@ export interface TeamsAccountLoggingSettingsByRuleTypeHttp {
   /**
   * Whether to log all activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -981,11 +1256,11 @@ export interface TeamsAccountLoggingSettingsByRuleTypeL4 {
   /**
   * Whether to log all activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -1094,19 +1369,19 @@ export interface TeamsAccountLoggingSettingsByRuleType {
   /**
   * dns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#dns TeamsAccount#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#dns TeamsAccount#dns}
   */
   readonly dns: TeamsAccountLoggingSettingsByRuleTypeDns;
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#http TeamsAccount#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#http TeamsAccount#http}
   */
   readonly http: TeamsAccountLoggingSettingsByRuleTypeHttp;
   /**
   * l4 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#l4 TeamsAccount#l4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#l4 TeamsAccount#l4}
   */
   readonly l4: TeamsAccountLoggingSettingsByRuleTypeL4;
 }
@@ -1241,13 +1516,13 @@ export interface TeamsAccountLogging {
   /**
   * Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
   */
   readonly redactPii: boolean | cdktf.IResolvable;
   /**
   * settings_by_rule_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
   */
   readonly settingsByRuleType: TeamsAccountLoggingSettingsByRuleType;
 }
@@ -1356,7 +1631,7 @@ export interface TeamsAccountPayloadLog {
   /**
   * Public key used to encrypt matched payloads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
   */
   readonly publicKey: string;
 }
@@ -1439,19 +1714,19 @@ export interface TeamsAccountProxy {
   /**
   * Whether root ca is enabled account wide for ZT clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#root_ca TeamsAccount#root_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#root_ca TeamsAccount#root_ca}
   */
   readonly rootCa: boolean | cdktf.IResolvable;
   /**
   * Whether gateway proxy is enabled on gateway devices for TCP traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
   */
   readonly tcp: boolean | cdktf.IResolvable;
   /**
   * Whether gateway proxy is enabled on gateway devices for UDP traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#udp TeamsAccount#udp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#udp TeamsAccount#udp}
   */
   readonly udp: boolean | cdktf.IResolvable;
 }
@@ -1586,7 +1861,7 @@ export interface TeamsAccountSshSessionLog {
   /**
   * Public key used to encrypt ssh session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
   */
   readonly publicKey: string;
 }
@@ -1667,7 +1942,7 @@ export class TeamsAccountSshSessionLogOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account cloudflare_teams_account}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account cloudflare_teams_account}
 */
 export class TeamsAccount extends cdktf.TerraformResource {
 
@@ -1683,7 +1958,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamsAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamsAccount to import
-  * @param importFromId The id of the existing TeamsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamsAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1695,7 +1970,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account cloudflare_teams_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account cloudflare_teams_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1706,7 +1981,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_account',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -1727,6 +2002,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
     this._antivirus.internalValue = config.antivirus;
     this._blockPage.internalValue = config.blockPage;
     this._bodyScanning.internalValue = config.bodyScanning;
+    this._extendedEmailMatching.internalValue = config.extendedEmailMatching;
     this._fips.internalValue = config.fips;
     this._logging.internalValue = config.logging;
     this._payloadLog.internalValue = config.payloadLog;
@@ -1895,6 +2171,22 @@ export class TeamsAccount extends cdktf.TerraformResource {
     return this._bodyScanning.internalValue;
   }
 
+  // extended_email_matching - computed: false, optional: true, required: false
+  private _extendedEmailMatching = new TeamsAccountExtendedEmailMatchingOutputReference(this, "extended_email_matching");
+  public get extendedEmailMatching() {
+    return this._extendedEmailMatching;
+  }
+  public putExtendedEmailMatching(value: TeamsAccountExtendedEmailMatching) {
+    this._extendedEmailMatching.internalValue = value;
+  }
+  public resetExtendedEmailMatching() {
+    this._extendedEmailMatching.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extendedEmailMatchingInput() {
+    return this._extendedEmailMatching.internalValue;
+  }
+
   // fips - computed: false, optional: true, required: false
   private _fips = new TeamsAccountFipsOutputReference(this, "fips");
   public get fips() {
@@ -1991,6 +2283,7 @@ export class TeamsAccount extends cdktf.TerraformResource {
       antivirus: teamsAccountAntivirusToTerraform(this._antivirus.internalValue),
       block_page: teamsAccountBlockPageToTerraform(this._blockPage.internalValue),
       body_scanning: teamsAccountBodyScanningToTerraform(this._bodyScanning.internalValue),
+      extended_email_matching: teamsAccountExtendedEmailMatchingToTerraform(this._extendedEmailMatching.internalValue),
       fips: teamsAccountFipsToTerraform(this._fips.internalValue),
       logging: teamsAccountLoggingToTerraform(this._logging.internalValue),
       payload_log: teamsAccountPayloadLogToTerraform(this._payloadLog.internalValue),
@@ -2060,6 +2353,12 @@ export class TeamsAccount extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "TeamsAccountBodyScanningList",
+      },
+      extended_email_matching: {
+        value: teamsAccountExtendedEmailMatchingToHclTerraform(this._extendedEmailMatching.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamsAccountExtendedEmailMatchingList",
       },
       fips: {
         value: teamsAccountFipsToHclTerraform(this._fips.internalValue),

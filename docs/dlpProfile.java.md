@@ -4,7 +4,7 @@
 
 ### DlpProfile <a name="DlpProfile" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer"></a>
 
@@ -51,7 +51,7 @@ DlpProfile.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the profile. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Brief summary of the profile and its intended use. |
-| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#id DlpProfile#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#id DlpProfile#id}. |
 
 ---
 
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Related DLP policies will trigger when the match count exceeds the number set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#entry DlpProfile#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#entry DlpProfile#entry}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the profile. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#name DlpProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#name DlpProfile#name}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#type DlpProfile#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#type DlpProfile#type}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Brief summary of the profile and its intended use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#description DlpProfile#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#description DlpProfile#description}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#id DlpProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#id DlpProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -636,7 +636,7 @@ The construct id used in the generated config for the DlpProfile to import.
 
 The id of the existing DlpProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,7 +1032,7 @@ DlpProfileConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the profile. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.description">description</a></code> | <code>java.lang.String</code> | Brief summary of the profile and its intended use. |
-| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#id DlpProfile#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#id DlpProfile#id}. |
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
 
 ---
 
@@ -1130,7 +1130,7 @@ public java.lang.Number getAllowedMatchCount();
 
 Related DLP policies will trigger when the match count exceeds the number set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.lang.Object getEntry();
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#entry DlpProfile#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#entry DlpProfile#entry}
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getName();
 
 Name of the profile. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#name DlpProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#name DlpProfile#name}
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getType();
 
 The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#type DlpProfile#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#type DlpProfile#type}
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getDescription();
 
 Brief summary of the profile and its intended use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#description DlpProfile#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#description DlpProfile#description}
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#id DlpProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#id DlpProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1242,7 +1242,7 @@ public java.lang.String getName();
 
 Name of the entry to deploy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#name DlpProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#name DlpProfile#name}
 
 ---
 
@@ -1256,7 +1256,7 @@ public java.lang.Object getEnabled();
 
 Whether the entry is active. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
 
 ---
 
@@ -1270,7 +1270,7 @@ public java.lang.String getId();
 
 Unique entry identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#id DlpProfile#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#id DlpProfile#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1287,7 +1287,7 @@ public DlpProfileEntryPattern getPattern();
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
 
 ---
 
@@ -1323,7 +1323,7 @@ public java.lang.String getRegex();
 
 The regex that defines the pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#regex DlpProfile#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#regex DlpProfile#regex}
 
 ---
 
@@ -1337,7 +1337,7 @@ public java.lang.String getValidation();
 
 The validation algorithm to apply with this pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/dlp_profile#validation DlpProfile#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile#validation DlpProfile#validation}
 
 ---
 

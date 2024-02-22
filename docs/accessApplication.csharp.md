@@ -4,7 +4,7 @@
 
 ### AccessApplication <a name="AccessApplication" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application cloudflare_access_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application cloudflare_access_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.putLandingPageDesign">PutLandingPageDesign</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.putSaasApp">PutSaasApp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAccountId">ResetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAllowAuthenticateViaWarp">ResetAllowAuthenticateViaWarp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAllowedIdps">ResetAllowedIdps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAppLauncherLogoUrl">ResetAppLauncherLogoUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAppLauncherVisible">ResetAppLauncherVisible</a></code> | *No description.* |
@@ -451,6 +452,12 @@ private void PutSaasApp(AccessApplicationSaasApp Value)
 private void ResetAccountId()
 ```
 
+##### `ResetAllowAuthenticateViaWarp` <a name="ResetAllowAuthenticateViaWarp" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAllowAuthenticateViaWarp"></a>
+
+```csharp
+private void ResetAllowAuthenticateViaWarp()
+```
+
 ##### `ResetAllowedIdps` <a name="ResetAllowedIdps" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.resetAllowedIdps"></a>
 
 ```csharp
@@ -722,7 +729,7 @@ The construct id used in the generated config for the AccessApplication to impor
 
 The id of the existing AccessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,6 +765,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.landingPageDesign">LandingPageDesign</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesignOutputReference">AccessApplicationLandingPageDesignOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.saasApp">SaasApp</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference">AccessApplicationSaasAppOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowAuthenticateViaWarpInput">AllowAuthenticateViaWarpInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowedIdpsInput">AllowedIdpsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.appLauncherLogoUrlInput">AppLauncherLogoUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.appLauncherVisibleInput">AppLauncherVisibleInput</a></code> | <code>object</code> | *No description.* |
@@ -787,6 +795,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowAuthenticateViaWarp">AllowAuthenticateViaWarp</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowedIdps">AllowedIdps</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.appLauncherLogoUrl">AppLauncherLogoUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.appLauncherVisible">AppLauncherVisible</a></code> | <code>object</code> | *No description.* |
@@ -1013,6 +1022,16 @@ public string AccountIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AllowAuthenticateViaWarpInput`<sup>Optional</sup> <a name="AllowAuthenticateViaWarpInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowAuthenticateViaWarpInput"></a>
+
+```csharp
+public object AllowAuthenticateViaWarpInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1306,6 +1325,16 @@ public string AccountId { get; }
 
 ---
 
+##### `AllowAuthenticateViaWarp`<sup>Required</sup> <a name="AllowAuthenticateViaWarp" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowAuthenticateViaWarp"></a>
+
+```csharp
+public object AllowAuthenticateViaWarp { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AllowedIdps`<sup>Required</sup> <a name="AllowedIdps" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.property.allowedIdps"></a>
 
 ```csharp
@@ -1582,6 +1611,7 @@ new AccessApplicationConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string AccountId = null,
+    object AllowAuthenticateViaWarp = null,
     string[] AllowedIdps = null,
     string AppLauncherLogoUrl = null,
     object AppLauncherVisible = null,
@@ -1625,6 +1655,7 @@ new AccessApplicationConfig {
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.allowAuthenticateViaWarp">AllowAuthenticateViaWarp</a></code> | <code>object</code> | When set to true, users can authenticate to this application using their WARP session. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.allowedIdps">AllowedIdps</a></code> | <code>string[]</code> | The identity providers selected for the application. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.appLauncherLogoUrl">AppLauncherLogoUrl</a></code> | <code>string</code> | The logo URL of the app launcher. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.appLauncherVisible">AppLauncherVisible</a></code> | <code>object</code> | Option to show/hide applications in App Launcher. Defaults to `true`. |
@@ -1640,7 +1671,7 @@ new AccessApplicationConfig {
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.footerLinks">FooterLinks</a></code> | <code>object</code> | footer_links block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.headerBgColor">HeaderBgColor</a></code> | <code>string</code> | The background color of the header bar in the app launcher. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.httpOnlyCookieAttribute">HttpOnlyCookieAttribute</a></code> | <code>object</code> | Option to add the `HttpOnly` cookie flag to access tokens. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#id AccessApplication#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#id AccessApplication#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.landingPageDesign">LandingPageDesign</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesign">AccessApplicationLandingPageDesign</a></code> | landing_page_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.logoUrl">LogoUrl</a></code> | <code>string</code> | Image URL for the logo shown in the app launcher dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.name">Name</a></code> | <code>string</code> | Friendly name of the Access Application. |
@@ -1736,7 +1767,23 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#account_id AccessApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#account_id AccessApplication#account_id}
+
+---
+
+##### `AllowAuthenticateViaWarp`<sup>Optional</sup> <a name="AllowAuthenticateViaWarp" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.allowAuthenticateViaWarp"></a>
+
+```csharp
+public object AllowAuthenticateViaWarp { get; set; }
+```
+
+- *Type:* object
+
+When set to true, users can authenticate to this application using their WARP session.
+
+When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
 
 ---
 
@@ -1750,7 +1797,7 @@ public string[] AllowedIdps { get; set; }
 
 The identity providers selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
 
 ---
 
@@ -1764,7 +1811,7 @@ public string AppLauncherLogoUrl { get; set; }
 
 The logo URL of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
 
 ---
 
@@ -1778,7 +1825,7 @@ public object AppLauncherVisible { get; set; }
 
 Option to show/hide applications in App Launcher. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
 
 ---
 
@@ -1792,7 +1839,7 @@ public object AutoRedirectToIdentity { get; set; }
 
 Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
 
 ---
 
@@ -1806,7 +1853,7 @@ public string BgColor { get; set; }
 
 The background color of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
 
 ---
 
@@ -1820,7 +1867,7 @@ public object CorsHeaders { get; set; }
 
 cors_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
 
 ---
 
@@ -1834,7 +1881,7 @@ public string CustomDenyMessage { get; set; }
 
 Option that returns a custom error message when a user is denied access to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
 
 ---
 
@@ -1848,7 +1895,7 @@ public string CustomDenyUrl { get; set; }
 
 Option that redirects to a custom URL when a user is denied access to the application via identity based rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
 
 ---
 
@@ -1862,7 +1909,7 @@ public string CustomNonIdentityDenyUrl { get; set; }
 
 Option that redirects to a custom URL when a user is denied access to the application via non identity rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
 
 ---
 
@@ -1876,7 +1923,7 @@ public string[] CustomPages { get; set; }
 
 The custom pages selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
 
 ---
 
@@ -1892,7 +1939,7 @@ The primary hostname and path that Access will secure.
 
 If the app is visible in the App Launcher dashboard, this is the domain that will be displayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#domain AccessApplication#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#domain AccessApplication#domain}
 
 ---
 
@@ -1908,7 +1955,7 @@ Option to provide increased security against compromised authorization tokens an
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
 
 ---
 
@@ -1922,7 +1969,7 @@ public object FooterLinks { get; set; }
 
 footer_links block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
 
 ---
 
@@ -1936,7 +1983,7 @@ public string HeaderBgColor { get; set; }
 
 The background color of the header bar in the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
 
 ---
 
@@ -1950,7 +1997,7 @@ public object HttpOnlyCookieAttribute { get; set; }
 
 Option to add the `HttpOnly` cookie flag to access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
 
 ---
 
@@ -1962,7 +2009,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#id AccessApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#id AccessApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1979,7 +2026,7 @@ public AccessApplicationLandingPageDesign LandingPageDesign { get; set; }
 
 landing_page_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
 
 ---
 
@@ -1993,7 +2040,7 @@ public string LogoUrl { get; set; }
 
 Image URL for the logo shown in the app launcher dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
 
 ---
 
@@ -2007,7 +2054,7 @@ public string Name { get; set; }
 
 Friendly name of the Access Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2021,7 +2068,7 @@ public AccessApplicationSaasApp SaasApp { get; set; }
 
 saas_app block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
 
 ---
 
@@ -2035,7 +2082,7 @@ public string SameSiteCookieAttribute { get; set; }
 
 Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
 
 ---
 
@@ -2051,7 +2098,7 @@ List of domains that access will secure.
 
 Only present for self_hosted, vnc, and ssh applications. Always includes the value set as `domain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
 
 ---
 
@@ -2065,7 +2112,7 @@ public object ServiceAuth401Redirect { get; set; }
 
 Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
 
 ---
 
@@ -2081,7 +2128,7 @@ How often a user will be forced to re-authorise.
 
 Must be in the format `48h` or `2h45m`. Defaults to `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
 
 ---
 
@@ -2095,7 +2142,7 @@ public object SkipInterstitial { get; set; }
 
 Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
 
 ---
 
@@ -2109,7 +2156,7 @@ public string[] Tags { get; set; }
 
 The itags associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#tags AccessApplication#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#tags AccessApplication#tags}
 
 ---
 
@@ -2123,7 +2170,7 @@ public string Type { get; set; }
 
 The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`. Defaults to `self_hosted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#type AccessApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#type AccessApplication#type}
 
 ---
 
@@ -2137,7 +2184,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
 
 ---
 
@@ -2185,7 +2232,7 @@ public object AllowAllHeaders { get; set; }
 
 Value to determine whether all HTTP headers are exposed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
 
 ---
 
@@ -2199,7 +2246,7 @@ public object AllowAllMethods { get; set; }
 
 Value to determine whether all methods are exposed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
 
 ---
 
@@ -2213,7 +2260,7 @@ public object AllowAllOrigins { get; set; }
 
 Value to determine whether all origins are permitted to make CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
 
 ---
 
@@ -2227,7 +2274,7 @@ public object AllowCredentials { get; set; }
 
 Value to determine if credentials (cookies, authorization headers, or TLS client certificates) are included with requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
 
 ---
 
@@ -2241,7 +2288,7 @@ public string[] AllowedHeaders { get; set; }
 
 List of HTTP headers to expose via CORS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
 
 ---
 
@@ -2255,7 +2302,7 @@ public string[] AllowedMethods { get; set; }
 
 List of methods to expose via CORS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
 
 ---
 
@@ -2269,7 +2316,7 @@ public string[] AllowedOrigins { get; set; }
 
 List of origins permitted to make CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
 
 ---
 
@@ -2283,7 +2330,7 @@ public double MaxAge { get; set; }
 
 The maximum time a preflight request will be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#max_age AccessApplication#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#max_age AccessApplication#max_age}
 
 ---
 
@@ -2319,7 +2366,7 @@ public string Name { get; set; }
 
 The name of the footer link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2333,7 +2380,7 @@ public string Url { get; set; }
 
 The URL of the footer link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#url AccessApplication#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#url AccessApplication#url}
 
 ---
 
@@ -2375,7 +2422,7 @@ public string ButtonColor { get; set; }
 
 The button color of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#button_color AccessApplication#button_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#button_color AccessApplication#button_color}
 
 ---
 
@@ -2389,7 +2436,7 @@ public string ButtonTextColor { get; set; }
 
 The button text color of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
 
 ---
 
@@ -2403,7 +2450,7 @@ public string ImageUrl { get; set; }
 
 The URL of the image to be displayed in the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#image_url AccessApplication#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#image_url AccessApplication#image_url}
 
 ---
 
@@ -2417,7 +2464,7 @@ public string Message { get; set; }
 
 The message of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#message AccessApplication#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#message AccessApplication#message}
 
 ---
 
@@ -2431,7 +2478,7 @@ public string Title { get; set; }
 
 The title of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#title AccessApplication#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#title AccessApplication#title}
 
 ---
 
@@ -2443,11 +2490,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new AccessApplicationSaasApp {
-    string ConsumerServiceUrl,
-    string SpEntityId,
+    string AppLauncherUrl = null,
+    string AuthType = null,
+    string ConsumerServiceUrl = null,
     object CustomAttribute = null,
     string DefaultRelayState = null,
-    string NameIdFormat = null
+    string[] GrantTypes = null,
+    string GroupFilterRegex = null,
+    string NameIdFormat = null,
+    string[] RedirectUris = null,
+    string[] Scopes = null,
+    string SpEntityId = null
 };
 ```
 
@@ -2455,15 +2508,47 @@ new AccessApplicationSaasApp {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.appLauncherUrl">AppLauncherUrl</a></code> | <code>string</code> | The URL where this applications tile redirects users. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.authType">AuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#auth_type AccessApplication#auth_type}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.consumerServiceUrl">ConsumerServiceUrl</a></code> | <code>string</code> | The service provider's endpoint that is responsible for receiving and parsing a SAML assertion. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.spEntityId">SpEntityId</a></code> | <code>string</code> | A globally unique name for an identity or service provider. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.customAttribute">CustomAttribute</a></code> | <code>object</code> | custom_attribute block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.defaultRelayState">DefaultRelayState</a></code> | <code>string</code> | The relay state used if not provided by the identity provider. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.nameIdFormat">NameIdFormat</a></code> | <code>string</code> | The format of the name identifier sent to the SaaS application. Defaults to `email`. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.grantTypes">GrantTypes</a></code> | <code>string[]</code> | The OIDC flows supported by this application. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.groupFilterRegex">GroupFilterRegex</a></code> | <code>string</code> | A regex to filter Cloudflare groups returned in ID token and userinfo endpoint. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.nameIdFormat">NameIdFormat</a></code> | <code>string</code> | The format of the name identifier sent to the SaaS application. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.redirectUris">RedirectUris</a></code> | <code>string[]</code> | The permitted URL's for Cloudflare to return Authorization codes and Access/ID tokens. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.scopes">Scopes</a></code> | <code>string[]</code> | Define the user information shared with access. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.spEntityId">SpEntityId</a></code> | <code>string</code> | A globally unique name for an identity or service provider. |
 
 ---
 
-##### `ConsumerServiceUrl`<sup>Required</sup> <a name="ConsumerServiceUrl" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.consumerServiceUrl"></a>
+##### `AppLauncherUrl`<sup>Optional</sup> <a name="AppLauncherUrl" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.appLauncherUrl"></a>
+
+```csharp
+public string AppLauncherUrl { get; set; }
+```
+
+- *Type:* string
+
+The URL where this applications tile redirects users.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#app_launcher_url AccessApplication#app_launcher_url}
+
+---
+
+##### `AuthType`<sup>Optional</sup> <a name="AuthType" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.authType"></a>
+
+```csharp
+public string AuthType { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#auth_type AccessApplication#auth_type}.
+
+---
+
+##### `ConsumerServiceUrl`<sup>Optional</sup> <a name="ConsumerServiceUrl" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.consumerServiceUrl"></a>
 
 ```csharp
 public string ConsumerServiceUrl { get; set; }
@@ -2473,21 +2558,7 @@ public string ConsumerServiceUrl { get; set; }
 
 The service provider's endpoint that is responsible for receiving and parsing a SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
-
----
-
-##### `SpEntityId`<sup>Required</sup> <a name="SpEntityId" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.spEntityId"></a>
-
-```csharp
-public string SpEntityId { get; set; }
-```
-
-- *Type:* string
-
-A globally unique name for an identity or service provider.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
 
 ---
 
@@ -2501,7 +2572,7 @@ public object CustomAttribute { get; set; }
 
 custom_attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
 
 ---
 
@@ -2515,7 +2586,35 @@ public string DefaultRelayState { get; set; }
 
 The relay state used if not provided by the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#default_relay_state AccessApplication#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#default_relay_state AccessApplication#default_relay_state}
+
+---
+
+##### `GrantTypes`<sup>Optional</sup> <a name="GrantTypes" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.grantTypes"></a>
+
+```csharp
+public string[] GrantTypes { get; set; }
+```
+
+- *Type:* string[]
+
+The OIDC flows supported by this application.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#grant_types AccessApplication#grant_types}
+
+---
+
+##### `GroupFilterRegex`<sup>Optional</sup> <a name="GroupFilterRegex" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.groupFilterRegex"></a>
+
+```csharp
+public string GroupFilterRegex { get; set; }
+```
+
+- *Type:* string
+
+A regex to filter Cloudflare groups returned in ID token and userinfo endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#group_filter_regex AccessApplication#group_filter_regex}
 
 ---
 
@@ -2527,9 +2626,51 @@ public string NameIdFormat { get; set; }
 
 - *Type:* string
 
-The format of the name identifier sent to the SaaS application. Defaults to `email`.
+The format of the name identifier sent to the SaaS application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
+
+---
+
+##### `RedirectUris`<sup>Optional</sup> <a name="RedirectUris" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.redirectUris"></a>
+
+```csharp
+public string[] RedirectUris { get; set; }
+```
+
+- *Type:* string[]
+
+The permitted URL's for Cloudflare to return Authorization codes and Access/ID tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#redirect_uris AccessApplication#redirect_uris}
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.scopes"></a>
+
+```csharp
+public string[] Scopes { get; set; }
+```
+
+- *Type:* string[]
+
+Define the user information shared with access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#scopes AccessApplication#scopes}
+
+---
+
+##### `SpEntityId`<sup>Optional</sup> <a name="SpEntityId" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.spEntityId"></a>
+
+```csharp
+public string SpEntityId { get; set; }
+```
+
+- *Type:* string
+
+A globally unique name for an identity or service provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
 
 ---
 
@@ -2571,7 +2712,7 @@ public AccessApplicationSaasAppCustomAttributeSource Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#source AccessApplication#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#source AccessApplication#source}
 
 ---
 
@@ -2585,7 +2726,7 @@ public string FriendlyName { get; set; }
 
 A friendly name for the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
 
 ---
 
@@ -2599,7 +2740,7 @@ public string Name { get; set; }
 
 The name of the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2613,7 +2754,7 @@ public string NameFormat { get; set; }
 
 A globally unique name for an identity or service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#name_format AccessApplication#name_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#name_format AccessApplication#name_format}
 
 ---
 
@@ -2627,7 +2768,7 @@ public object Required { get; set; }
 
 True if the attribute must be always present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#required AccessApplication#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#required AccessApplication#required}
 
 ---
 
@@ -2661,7 +2802,7 @@ public string Name { get; set; }
 
 The name of the attribute as provided by the IDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -5105,9 +5246,17 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putCustomAttribute">PutCustomAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetAppLauncherUrl">ResetAppLauncherUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetAuthType">ResetAuthType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetConsumerServiceUrl">ResetConsumerServiceUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetCustomAttribute">ResetCustomAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetDefaultRelayState">ResetDefaultRelayState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetGrantTypes">ResetGrantTypes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetGroupFilterRegex">ResetGroupFilterRegex</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetNameIdFormat">ResetNameIdFormat</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetRedirectUris">ResetRedirectUris</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetScopes">ResetScopes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetSpEntityId">ResetSpEntityId</a></code> | *No description.* |
 
 ---
 
@@ -5273,6 +5422,24 @@ private void PutCustomAttribute(object Value)
 
 ---
 
+##### `ResetAppLauncherUrl` <a name="ResetAppLauncherUrl" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetAppLauncherUrl"></a>
+
+```csharp
+private void ResetAppLauncherUrl()
+```
+
+##### `ResetAuthType` <a name="ResetAuthType" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetAuthType"></a>
+
+```csharp
+private void ResetAuthType()
+```
+
+##### `ResetConsumerServiceUrl` <a name="ResetConsumerServiceUrl" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetConsumerServiceUrl"></a>
+
+```csharp
+private void ResetConsumerServiceUrl()
+```
+
 ##### `ResetCustomAttribute` <a name="ResetCustomAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetCustomAttribute"></a>
 
 ```csharp
@@ -5285,10 +5452,40 @@ private void ResetCustomAttribute()
 private void ResetDefaultRelayState()
 ```
 
+##### `ResetGrantTypes` <a name="ResetGrantTypes" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetGrantTypes"></a>
+
+```csharp
+private void ResetGrantTypes()
+```
+
+##### `ResetGroupFilterRegex` <a name="ResetGroupFilterRegex" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetGroupFilterRegex"></a>
+
+```csharp
+private void ResetGroupFilterRegex()
+```
+
 ##### `ResetNameIdFormat` <a name="ResetNameIdFormat" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetNameIdFormat"></a>
 
 ```csharp
 private void ResetNameIdFormat()
+```
+
+##### `ResetRedirectUris` <a name="ResetRedirectUris" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetRedirectUris"></a>
+
+```csharp
+private void ResetRedirectUris()
+```
+
+##### `ResetScopes` <a name="ResetScopes" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetScopes"></a>
+
+```csharp
+private void ResetScopes()
+```
+
+##### `ResetSpEntityId` <a name="ResetSpEntityId" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetSpEntityId"></a>
+
+```csharp
+private void ResetSpEntityId()
 ```
 
 
@@ -5298,18 +5495,32 @@ private void ResetNameIdFormat()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.customAttribute">CustomAttribute</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeList">AccessApplicationSaasAppCustomAttributeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.idpEntityId">IdpEntityId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.publicKey">PublicKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.ssoEndpoint">SsoEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.appLauncherUrlInput">AppLauncherUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.consumerServiceUrlInput">ConsumerServiceUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.customAttributeInput">CustomAttributeInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.defaultRelayStateInput">DefaultRelayStateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.grantTypesInput">GrantTypesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.groupFilterRegexInput">GroupFilterRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.nameIdFormatInput">NameIdFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.redirectUrisInput">RedirectUrisInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.scopesInput">ScopesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.spEntityIdInput">SpEntityIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.appLauncherUrl">AppLauncherUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.consumerServiceUrl">ConsumerServiceUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.defaultRelayState">DefaultRelayState</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.grantTypes">GrantTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.groupFilterRegex">GroupFilterRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.nameIdFormat">NameIdFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.redirectUris">RedirectUris</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.scopes">Scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.spEntityId">SpEntityId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp">AccessApplicationSaasApp</a></code> | *No description.* |
 
@@ -5333,6 +5544,26 @@ If this returns an empty array the stack will not be attached.
 
 ```csharp
 public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ClientId`<sup>Required</sup> <a name="ClientId" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.clientId"></a>
+
+```csharp
+public string ClientId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ClientSecret`<sup>Required</sup> <a name="ClientSecret" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.clientSecret"></a>
+
+```csharp
+public string ClientSecret { get; }
 ```
 
 - *Type:* string
@@ -5379,6 +5610,26 @@ public string SsoEndpoint { get; }
 
 ---
 
+##### `AppLauncherUrlInput`<sup>Optional</sup> <a name="AppLauncherUrlInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.appLauncherUrlInput"></a>
+
+```csharp
+public string AppLauncherUrlInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AuthTypeInput`<sup>Optional</sup> <a name="AuthTypeInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.authTypeInput"></a>
+
+```csharp
+public string AuthTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ConsumerServiceUrlInput`<sup>Optional</sup> <a name="ConsumerServiceUrlInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.consumerServiceUrlInput"></a>
 
 ```csharp
@@ -5409,6 +5660,26 @@ public string DefaultRelayStateInput { get; }
 
 ---
 
+##### `GrantTypesInput`<sup>Optional</sup> <a name="GrantTypesInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.grantTypesInput"></a>
+
+```csharp
+public string[] GrantTypesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `GroupFilterRegexInput`<sup>Optional</sup> <a name="GroupFilterRegexInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.groupFilterRegexInput"></a>
+
+```csharp
+public string GroupFilterRegexInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NameIdFormatInput`<sup>Optional</sup> <a name="NameIdFormatInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.nameIdFormatInput"></a>
 
 ```csharp
@@ -5419,10 +5690,50 @@ public string NameIdFormatInput { get; }
 
 ---
 
+##### `RedirectUrisInput`<sup>Optional</sup> <a name="RedirectUrisInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.redirectUrisInput"></a>
+
+```csharp
+public string[] RedirectUrisInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.scopesInput"></a>
+
+```csharp
+public string[] ScopesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `SpEntityIdInput`<sup>Optional</sup> <a name="SpEntityIdInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.spEntityIdInput"></a>
 
 ```csharp
 public string SpEntityIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AppLauncherUrl`<sup>Required</sup> <a name="AppLauncherUrl" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.appLauncherUrl"></a>
+
+```csharp
+public string AppLauncherUrl { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AuthType`<sup>Required</sup> <a name="AuthType" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.authType"></a>
+
+```csharp
+public string AuthType { get; }
 ```
 
 - *Type:* string
@@ -5449,6 +5760,26 @@ public string DefaultRelayState { get; }
 
 ---
 
+##### `GrantTypes`<sup>Required</sup> <a name="GrantTypes" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.grantTypes"></a>
+
+```csharp
+public string[] GrantTypes { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `GroupFilterRegex`<sup>Required</sup> <a name="GroupFilterRegex" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.groupFilterRegex"></a>
+
+```csharp
+public string GroupFilterRegex { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NameIdFormat`<sup>Required</sup> <a name="NameIdFormat" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.nameIdFormat"></a>
 
 ```csharp
@@ -5456,6 +5787,26 @@ public string NameIdFormat { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `RedirectUris`<sup>Required</sup> <a name="RedirectUris" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.redirectUris"></a>
+
+```csharp
+public string[] RedirectUris { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.scopes"></a>
+
+```csharp
+public string[] Scopes { get; }
+```
+
+- *Type:* string[]
 
 ---
 
