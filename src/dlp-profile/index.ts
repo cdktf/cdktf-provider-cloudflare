@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/dlp_profile
 // generated from terraform resource schema
 
