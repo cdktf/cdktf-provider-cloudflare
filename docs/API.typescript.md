@@ -43,6 +43,7 @@ The following submodules are available:
 - [dataCloudflareApiTokenPermissionGroups](./dataCloudflareApiTokenPermissionGroups.typescript.md)
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.typescript.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.typescript.md)
+- [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.typescript.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.typescript.md)
 - [dataCloudflareList](./dataCloudflareList.typescript.md)
 - [dataCloudflareLists](./dataCloudflareLists.typescript.md)
