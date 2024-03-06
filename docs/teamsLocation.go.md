@@ -4,7 +4,7 @@
 
 ### TeamsLocation <a name="TeamsLocation" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location cloudflare_teams_location}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location cloudflare_teams_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the TeamsLocation to import.
 
 The id of the existing TeamsLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -898,7 +898,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocati
 | <code><a href="#@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.property.name">Name</a></code> | <code>*string</code> | Name of the teams location. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.property.clientDefault">ClientDefault</a></code> | <code>interface{}</code> | Indicator that this is the default location. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#id TeamsLocation#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#id TeamsLocation#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.property.networks">Networks</a></code> | <code>interface{}</code> | networks block. |
 
 ---
@@ -983,7 +983,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
 
 ---
 
@@ -997,7 +997,7 @@ Name *string
 
 Name of the teams location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#name TeamsLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#name TeamsLocation#name}
 
 ---
 
@@ -1011,7 +1011,7 @@ ClientDefault interface{}
 
 Indicator that this is the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
 
 ---
 
@@ -1023,7 +1023,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#id TeamsLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#id TeamsLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1040,7 +1040,7 @@ Networks interface{}
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#networks TeamsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#networks TeamsLocation#networks}
 
 ---
 
@@ -1074,7 +1074,7 @@ Network *string
 
 CIDR notation representation of the network IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_location#network TeamsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_location#network TeamsLocation#network}
 
 ---
 

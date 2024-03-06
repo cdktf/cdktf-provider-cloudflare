@@ -43,6 +43,7 @@ The following submodules are available:
 - [dataCloudflareApiTokenPermissionGroups](./dataCloudflareApiTokenPermissionGroups.csharp.md)
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.csharp.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.csharp.md)
+- [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.csharp.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.csharp.md)
 - [dataCloudflareList](./dataCloudflareList.csharp.md)
 - [dataCloudflareLists](./dataCloudflareLists.csharp.md)

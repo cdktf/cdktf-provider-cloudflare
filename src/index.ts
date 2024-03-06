@@ -126,6 +126,7 @@ export * as dataCloudflareAccounts from './data-cloudflare-accounts';
 export * as dataCloudflareApiTokenPermissionGroups from './data-cloudflare-api-token-permission-groups';
 export * as dataCloudflareDevicePostureRules from './data-cloudflare-device-posture-rules';
 export * as dataCloudflareDevices from './data-cloudflare-devices';
+export * as dataCloudflareDlpDatasets from './data-cloudflare-dlp-datasets';
 export * as dataCloudflareIpRanges from './data-cloudflare-ip-ranges';
 export * as dataCloudflareList from './data-cloudflare-list';
 export * as dataCloudflareLists from './data-cloudflare-lists';

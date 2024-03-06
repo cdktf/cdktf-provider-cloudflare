@@ -43,6 +43,7 @@ The following submodules are available:
 - [dataCloudflareApiTokenPermissionGroups](./dataCloudflareApiTokenPermissionGroups.python.md)
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.python.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.python.md)
+- [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.python.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.python.md)
 - [dataCloudflareList](./dataCloudflareList.python.md)
 - [dataCloudflareLists](./dataCloudflareLists.python.md)

@@ -43,6 +43,7 @@ The following submodules are available:
 - [dataCloudflareApiTokenPermissionGroups](./dataCloudflareApiTokenPermissionGroups.java.md)
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.java.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.java.md)
+- [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.java.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.java.md)
 - [dataCloudflareList](./dataCloudflareList.java.md)
 - [dataCloudflareLists](./dataCloudflareLists.java.md)

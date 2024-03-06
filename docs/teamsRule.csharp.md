@@ -4,7 +4,7 @@
 
 ### TeamsRule <a name="TeamsRule" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule cloudflare_teams_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule cloudflare_teams_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the TeamsRule to import.
 
 The id of the existing TeamsRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ new TeamsRuleConfig {
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.devicePosture">DevicePosture</a></code> | <code>string</code> | The wirefilter expression to be used for device_posture check matching. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.enabled">Enabled</a></code> | <code>object</code> | Indicator of rule enablement. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.filters">Filters</a></code> | <code>string[]</code> | The protocol or layer to evaluate the traffic and identity expressions. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#id TeamsRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#id TeamsRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.identity">Identity</a></code> | <code>string</code> | The wirefilter expression to be used for identity matching. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.ruleSettings">RuleSettings</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettings">TeamsRuleRuleSettings</a></code> | rule_settings block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.traffic">Traffic</a></code> | <code>string</code> | The wirefilter expression to be used for traffic matching. |
@@ -1135,7 +1135,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
 
 ---
 
@@ -1151,7 +1151,7 @@ The action executed by matched teams rule.
 
 Available values: `allow`, `block`, `safesearch`, `ytrestricted`, `on`, `off`, `scan`, `noscan`, `isolate`, `noisolate`, `override`, `l4_override`, `egress`, `audit_ssh`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#action TeamsRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#action TeamsRule#action}
 
 ---
 
@@ -1165,7 +1165,7 @@ public string Description { get; set; }
 
 The description of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#description TeamsRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#description TeamsRule#description}
 
 ---
 
@@ -1179,7 +1179,7 @@ public string Name { get; set; }
 
 The name of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#name TeamsRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#name TeamsRule#name}
 
 ---
 
@@ -1193,7 +1193,7 @@ public double Precedence { get; set; }
 
 The evaluation precedence of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
 
 ---
 
@@ -1207,7 +1207,7 @@ public string DevicePosture { get; set; }
 
 The wirefilter expression to be used for device_posture check matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
 
 ---
 
@@ -1221,7 +1221,7 @@ public object Enabled { get; set; }
 
 Indicator of rule enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -1235,7 +1235,7 @@ public string[] Filters { get; set; }
 
 The protocol or layer to evaluate the traffic and identity expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#filters TeamsRule#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#filters TeamsRule#filters}
 
 ---
 
@@ -1247,7 +1247,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#id TeamsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#id TeamsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1264,7 +1264,7 @@ public string Identity { get; set; }
 
 The wirefilter expression to be used for identity matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#identity TeamsRule#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#identity TeamsRule#identity}
 
 ---
 
@@ -1278,7 +1278,7 @@ public TeamsRuleRuleSettings RuleSettings { get; set; }
 
 rule_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
 
 ---
 
@@ -1292,7 +1292,7 @@ public string Traffic { get; set; }
 
 The wirefilter expression to be used for traffic matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
 
 ---
 
@@ -1358,7 +1358,7 @@ public System.Collections.Generic.IDictionary<string, string> AddHeaders { get; 
 
 Add custom headers to allowed requests in the form of key-value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#add_headers TeamsRule#add_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#add_headers TeamsRule#add_headers}
 
 ---
 
@@ -1372,7 +1372,7 @@ public object AllowChildBypass { get; set; }
 
 Allow parent MSP accounts to enable bypass their children's rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
 
 ---
 
@@ -1386,7 +1386,7 @@ public TeamsRuleRuleSettingsAuditSsh AuditSsh { get; set; }
 
 audit_ssh block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
 
 ---
 
@@ -1400,7 +1400,7 @@ public TeamsRuleRuleSettingsBisoAdminControls BisoAdminControls { get; set; }
 
 biso_admin_controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#biso_admin_controls TeamsRule#biso_admin_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#biso_admin_controls TeamsRule#biso_admin_controls}
 
 ---
 
@@ -1414,7 +1414,7 @@ public object BlockPageEnabled { get; set; }
 
 Indicator of block page enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
 
 ---
 
@@ -1428,7 +1428,7 @@ public string BlockPageReason { get; set; }
 
 The displayed reason for a user being blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
 
 ---
 
@@ -1442,7 +1442,7 @@ public object BypassParentRule { get; set; }
 
 Allow child MSP accounts to bypass their parent's rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
 
 ---
 
@@ -1456,7 +1456,7 @@ public TeamsRuleRuleSettingsCheckSession CheckSession { get; set; }
 
 check_session block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
 
 ---
 
@@ -1470,7 +1470,7 @@ public TeamsRuleRuleSettingsEgress Egress { get; set; }
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#egress TeamsRule#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#egress TeamsRule#egress}
 
 ---
 
@@ -1484,7 +1484,7 @@ public object InsecureDisableDnssecValidation { get; set; }
 
 Disable DNSSEC validation (must be Allow rule).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
 
 ---
 
@@ -1498,7 +1498,7 @@ public object IpCategories { get; set; }
 
 Turns on IP category based filter on dns if the rule contains dns category checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
 
 ---
 
@@ -1512,7 +1512,7 @@ public TeamsRuleRuleSettingsL4Override L4Override { get; set; }
 
 l4override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
 
 ---
 
@@ -1526,7 +1526,7 @@ public TeamsRuleRuleSettingsNotificationSettings NotificationSettings { get; set
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#notification_settings TeamsRule#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#notification_settings TeamsRule#notification_settings}
 
 ---
 
@@ -1540,7 +1540,7 @@ public string OverrideHost { get; set; }
 
 The host to override matching DNS queries with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#override_host TeamsRule#override_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#override_host TeamsRule#override_host}
 
 ---
 
@@ -1554,7 +1554,7 @@ public string[] OverrideIps { get; set; }
 
 The IPs to override matching DNS queries with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#override_ips TeamsRule#override_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#override_ips TeamsRule#override_ips}
 
 ---
 
@@ -1568,7 +1568,7 @@ public TeamsRuleRuleSettingsPayloadLog PayloadLog { get; set; }
 
 payload_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#payload_log TeamsRule#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#payload_log TeamsRule#payload_log}
 
 ---
 
@@ -1582,7 +1582,7 @@ public TeamsRuleRuleSettingsUntrustedCert UntrustedCert { get; set; }
 
 untrusted_cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
 
 ---
 
@@ -1616,7 +1616,7 @@ public object CommandLogging { get; set; }
 
 Log all SSH commands.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#command_logging TeamsRule#command_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#command_logging TeamsRule#command_logging}
 
 ---
 
@@ -1658,7 +1658,7 @@ public object DisableCopyPaste { get; set; }
 
 Disable copy-paste.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
 
 ---
 
@@ -1672,7 +1672,7 @@ public object DisableDownload { get; set; }
 
 Disable download.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#disable_download TeamsRule#disable_download}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#disable_download TeamsRule#disable_download}
 
 ---
 
@@ -1686,7 +1686,7 @@ public object DisableKeyboard { get; set; }
 
 Disable keyboard usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
 
 ---
 
@@ -1700,7 +1700,7 @@ public object DisablePrinting { get; set; }
 
 Disable printing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#disable_printing TeamsRule#disable_printing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#disable_printing TeamsRule#disable_printing}
 
 ---
 
@@ -1714,7 +1714,7 @@ public object DisableUpload { get; set; }
 
 Disable upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#disable_upload TeamsRule#disable_upload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#disable_upload TeamsRule#disable_upload}
 
 ---
 
@@ -1750,7 +1750,7 @@ public string Duration { get; set; }
 
 Configure how fresh the session needs to be to be considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#duration TeamsRule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#duration TeamsRule#duration}
 
 ---
 
@@ -1764,7 +1764,7 @@ public object Enforce { get; set; }
 
 Enable session enforcement for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
 
 ---
 
@@ -1802,7 +1802,7 @@ public string Ipv4 { get; set; }
 
 The IPv4 address to be used for egress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
 
 ---
 
@@ -1816,7 +1816,7 @@ public string Ipv6 { get; set; }
 
 The IPv6 range to be used for egress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
 
 ---
 
@@ -1832,7 +1832,7 @@ The IPv4 address to be used for egress in the event of an error egressing with t
 
 Can be '0.0.0.0' to indicate local egreass via Warp IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
 
 ---
 
@@ -1868,7 +1868,7 @@ public string Ip { get; set; }
 
 Override IP to forward traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#ip TeamsRule#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#ip TeamsRule#ip}
 
 ---
 
@@ -1882,7 +1882,7 @@ public double Port { get; set; }
 
 Override Port to forward traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#port TeamsRule#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#port TeamsRule#port}
 
 ---
 
@@ -1920,7 +1920,7 @@ public object Enabled { get; set; }
 
 Enable notification settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -1934,7 +1934,7 @@ public string Message { get; set; }
 
 Notification content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#message TeamsRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#message TeamsRule#message}
 
 ---
 
@@ -1948,7 +1948,7 @@ public string SupportUrl { get; set; }
 
 Support URL to show in the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#support_url TeamsRule#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#support_url TeamsRule#support_url}
 
 ---
 
@@ -1982,7 +1982,7 @@ public object Enabled { get; set; }
 
 Enable or disable DLP Payload Logging for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -2016,7 +2016,7 @@ public string Action { get; set; }
 
 Action to be taken when the SSL certificate of upstream is invalid. Available values: `pass_through`, `block`, `error`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_rule#action TeamsRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/teams_rule#action TeamsRule#action}
 
 ---
 
