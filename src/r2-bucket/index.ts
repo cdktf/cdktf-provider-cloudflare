@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/r2_bucket
 // generated from terraform resource schema
 
