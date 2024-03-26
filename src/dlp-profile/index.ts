@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
   */
   readonly accountId: string;
   /**
   * Related DLP policies will trigger when the match count exceeds the number set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
   */
   readonly allowedMatchCount: number;
   /**
   * Brief summary of the profile and its intended use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#description DlpProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#description DlpProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#id DlpProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#id DlpProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,33 +40,237 @@ export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the profile. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#name DlpProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#name DlpProfile#name}
   */
   readonly name: string;
   /**
   * The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#type DlpProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#type DlpProfile#type}
   */
   readonly type: string;
   /**
+  * context_awareness block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#context_awareness DlpProfile#context_awareness}
+  */
+  readonly contextAwareness?: DlpProfileContextAwareness;
+  /**
   * entry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#entry DlpProfile#entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#entry DlpProfile#entry}
   */
   readonly entry: DlpProfileEntry[] | cdktf.IResolvable;
+}
+export interface DlpProfileContextAwarenessSkip {
+  /**
+  * Return all matches, regardless of context analysis result, if the data is a file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#files DlpProfile#files}
+  */
+  readonly files: boolean | cdktf.IResolvable;
+}
+
+export function dlpProfileContextAwarenessSkipToTerraform(struct?: DlpProfileContextAwarenessSkipOutputReference | DlpProfileContextAwarenessSkip): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    files: cdktf.booleanToTerraform(struct!.files),
+  }
+}
+
+
+export function dlpProfileContextAwarenessSkipToHclTerraform(struct?: DlpProfileContextAwarenessSkipOutputReference | DlpProfileContextAwarenessSkip): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    files: {
+      value: cdktf.booleanToHclTerraform(struct!.files),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DlpProfileContextAwarenessSkipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DlpProfileContextAwarenessSkip | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._files !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.files = this._files;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DlpProfileContextAwarenessSkip | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._files = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._files = value.files;
+    }
+  }
+
+  // files - computed: false, optional: false, required: true
+  private _files?: boolean | cdktf.IResolvable; 
+  public get files() {
+    return this.getBooleanAttribute('files');
+  }
+  public set files(value: boolean | cdktf.IResolvable) {
+    this._files = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filesInput() {
+    return this._files;
+  }
+}
+export interface DlpProfileContextAwareness {
+  /**
+  * Scan the context of predefined entries to only return matches surrounded by keywords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * skip block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#skip DlpProfile#skip}
+  */
+  readonly skip: DlpProfileContextAwarenessSkip;
+}
+
+export function dlpProfileContextAwarenessToTerraform(struct?: DlpProfileContextAwarenessOutputReference | DlpProfileContextAwareness): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    skip: dlpProfileContextAwarenessSkipToTerraform(struct!.skip),
+  }
+}
+
+
+export function dlpProfileContextAwarenessToHclTerraform(struct?: DlpProfileContextAwarenessOutputReference | DlpProfileContextAwareness): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    skip: {
+      value: dlpProfileContextAwarenessSkipToHclTerraform(struct!.skip),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlpProfileContextAwarenessSkipList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DlpProfileContextAwarenessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DlpProfileContextAwareness | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._skip?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skip = this._skip?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DlpProfileContextAwareness | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._skip.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._skip.internalValue = value.skip;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // skip - computed: false, optional: false, required: true
+  private _skip = new DlpProfileContextAwarenessSkipOutputReference(this, "skip");
+  public get skip() {
+    return this._skip;
+  }
+  public putSkip(value: DlpProfileContextAwarenessSkip) {
+    this._skip.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipInput() {
+    return this._skip.internalValue;
+  }
 }
 export interface DlpProfileEntryPattern {
   /**
   * The regex that defines the pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#regex DlpProfile#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#regex DlpProfile#regex}
   */
   readonly regex: string;
   /**
   * The validation algorithm to apply with this pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#validation DlpProfile#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#validation DlpProfile#validation}
   */
   readonly validation?: string;
 }
@@ -178,13 +382,13 @@ export interface DlpProfileEntry {
   /**
   * Whether the entry is active. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Unique entry identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#id DlpProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#id DlpProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,13 +397,13 @@ export interface DlpProfileEntry {
   /**
   * Name of the entry to deploy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#name DlpProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#name DlpProfile#name}
   */
   readonly name: string;
   /**
   * pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
   */
   readonly pattern?: DlpProfileEntryPattern;
 }
@@ -399,7 +603,7 @@ export class DlpProfileEntryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile cloudflare_dlp_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile cloudflare_dlp_profile}
 */
 export class DlpProfile extends cdktf.TerraformResource {
 
@@ -415,7 +619,7 @@ export class DlpProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DlpProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DlpProfile to import
-  * @param importFromId The id of the existing DlpProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DlpProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DlpProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -427,7 +631,7 @@ export class DlpProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -438,7 +642,7 @@ export class DlpProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dlp_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -455,6 +659,7 @@ export class DlpProfile extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._type = config.type;
+    this._contextAwareness.internalValue = config.contextAwareness;
     this._entry.internalValue = config.entry;
   }
 
@@ -546,6 +751,22 @@ export class DlpProfile extends cdktf.TerraformResource {
     return this._type;
   }
 
+  // context_awareness - computed: false, optional: true, required: false
+  private _contextAwareness = new DlpProfileContextAwarenessOutputReference(this, "context_awareness");
+  public get contextAwareness() {
+    return this._contextAwareness;
+  }
+  public putContextAwareness(value: DlpProfileContextAwareness) {
+    this._contextAwareness.internalValue = value;
+  }
+  public resetContextAwareness() {
+    this._contextAwareness.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextAwarenessInput() {
+    return this._contextAwareness.internalValue;
+  }
+
   // entry - computed: false, optional: false, required: true
   private _entry = new DlpProfileEntryList(this, "entry", true);
   public get entry() {
@@ -571,6 +792,7 @@ export class DlpProfile extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
+      context_awareness: dlpProfileContextAwarenessToTerraform(this._contextAwareness.internalValue),
       entry: cdktf.listMapper(dlpProfileEntryToTerraform, true)(this._entry.internalValue),
     };
   }
@@ -612,6 +834,12 @@ export class DlpProfile extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      context_awareness: {
+        value: dlpProfileContextAwarenessToHclTerraform(this._contextAwareness.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DlpProfileContextAwarenessList",
       },
       entry: {
         value: cdktf.listMapperHcl(dlpProfileEntryToHclTerraform, true)(this._entry.internalValue),

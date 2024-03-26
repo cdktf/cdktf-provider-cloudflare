@@ -11,6 +11,7 @@ Object.defineProperty(exports, 'accessGroup', { get: function () { return requir
 Object.defineProperty(exports, 'accessIdentityProvider', { get: function () { return require('./access-identity-provider'); } });
 Object.defineProperty(exports, 'accessKeysConfiguration', { get: function () { return require('./access-keys-configuration'); } });
 Object.defineProperty(exports, 'accessMutualTlsCertificate', { get: function () { return require('./access-mutual-tls-certificate'); } });
+Object.defineProperty(exports, 'accessMutualTlsHostnameSettings', { get: function () { return require('./access-mutual-tls-hostname-settings'); } });
 Object.defineProperty(exports, 'accessOrganization', { get: function () { return require('./access-organization'); } });
 Object.defineProperty(exports, 'accessPolicy', { get: function () { return require('./access-policy'); } });
 Object.defineProperty(exports, 'accessRule', { get: function () { return require('./access-rule'); } });
@@ -54,6 +55,7 @@ Object.defineProperty(exports, 'greTunnel', { get: function () { return require(
 Object.defineProperty(exports, 'healthcheck', { get: function () { return require('./healthcheck'); } });
 Object.defineProperty(exports, 'hostnameTlsSetting', { get: function () { return require('./hostname-tls-setting'); } });
 Object.defineProperty(exports, 'hostnameTlsSettingCiphers', { get: function () { return require('./hostname-tls-setting-ciphers'); } });
+Object.defineProperty(exports, 'hyperdriveConfig', { get: function () { return require('./hyperdrive-config'); } });
 Object.defineProperty(exports, 'ipsecTunnel', { get: function () { return require('./ipsec-tunnel'); } });
 Object.defineProperty(exports, 'keylessCertificate', { get: function () { return require('./keyless-certificate'); } });
 Object.defineProperty(exports, 'list', { get: function () { return require('./list'); } });
@@ -110,6 +112,7 @@ Object.defineProperty(exports, 'workerDomain', { get: function () { return requi
 Object.defineProperty(exports, 'workerRoute', { get: function () { return require('./worker-route'); } });
 Object.defineProperty(exports, 'workerScript', { get: function () { return require('./worker-script'); } });
 Object.defineProperty(exports, 'workerSecret', { get: function () { return require('./worker-secret'); } });
+Object.defineProperty(exports, 'workersForPlatformsNamespace', { get: function () { return require('./workers-for-platforms-namespace'); } });
 Object.defineProperty(exports, 'workersKv', { get: function () { return require('./workers-kv'); } });
 Object.defineProperty(exports, 'workersKvNamespace', { get: function () { return require('./workers-kv-namespace'); } });
 Object.defineProperty(exports, 'zone', { get: function () { return require('./zone'); } });
