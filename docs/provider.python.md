@@ -4,7 +4,7 @@
 
 ### CloudflareProvider <a name="CloudflareProvider" id="@cdktf/provider-cloudflare.provider.CloudflareProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs cloudflare}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs cloudflare}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer"></a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#alias CloudflareProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#alias CloudflareProvider#alias}
 
 ---
 
@@ -84,7 +84,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_base_path CloudflareProvider#api_base_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_base_path CloudflareProvider#api_base_path}
 
 ---
 
@@ -96,7 +96,7 @@ Whether to print logs from the API client (using the default log library logger)
 
 Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_client_logging CloudflareProvider#api_client_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_client_logging CloudflareProvider#api_client_logging}
 
 ---
 
@@ -106,7 +106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_hostname CloudflareProvider#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_hostname CloudflareProvider#api_hostname}
 
 ---
 
@@ -118,7 +118,7 @@ The API key for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/fundamentals/api/get-started/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_key CloudflareProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_key CloudflareProvider#api_key}
 
 ---
 
@@ -130,7 +130,7 @@ The API Token for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_token CloudflareProvider#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_token CloudflareProvider#api_token}
 
 ---
 
@@ -142,7 +142,7 @@ A special Cloudflare API key good for a restricted set of endpoints.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
 
 ---
 
@@ -154,7 +154,7 @@ A registered Cloudflare email address.
 
 Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#email CloudflareProvider#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#email CloudflareProvider#email}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#max_backoff CloudflareProvider#max_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#max_backoff CloudflareProvider#max_backoff}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#min_backoff CloudflareProvider#min_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#min_backoff CloudflareProvider#min_backoff}
 
 ---
 
@@ -186,7 +186,7 @@ Maximum number of retries to perform when an API request fails.
 
 Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#retries CloudflareProvider#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#retries CloudflareProvider#retries}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#rps CloudflareProvider#rps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#rps CloudflareProvider#rps}
 
 ---
 
@@ -208,7 +208,7 @@ A value to append to the HTTP User Agent for all API calls.
 
 This value is not something most users need to modify however, if you are using a non-standard provider or operator configuration, this is recommended to assist in uniquely identifying your traffic. **Setting this value will remove the Terraform version from the HTTP User Agent string and may have unintended consequences**. Alternatively, can be configured using the `CLOUDFLARE_USER_AGENT_OPERATOR_SUFFIX` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
 
 ---
 
@@ -506,7 +506,7 @@ The construct id used in the generated config for the CloudflareProvider to impo
 
 The id of the existing CloudflareProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#alias CloudflareProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#alias CloudflareProvider#alias}
 
 ---
 
@@ -989,7 +989,7 @@ api_base_path: str
 
 Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_base_path CloudflareProvider#api_base_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_base_path CloudflareProvider#api_base_path}
 
 ---
 
@@ -1005,7 +1005,7 @@ Whether to print logs from the API client (using the default log library logger)
 
 Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_client_logging CloudflareProvider#api_client_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_client_logging CloudflareProvider#api_client_logging}
 
 ---
 
@@ -1019,7 +1019,7 @@ api_hostname: str
 
 Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_hostname CloudflareProvider#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_hostname CloudflareProvider#api_hostname}
 
 ---
 
@@ -1035,7 +1035,7 @@ The API key for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/fundamentals/api/get-started/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_key CloudflareProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_key CloudflareProvider#api_key}
 
 ---
 
@@ -1051,7 +1051,7 @@ The API Token for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_token CloudflareProvider#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_token CloudflareProvider#api_token}
 
 ---
 
@@ -1067,7 +1067,7 @@ A special Cloudflare API key good for a restricted set of endpoints.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
 
 ---
 
@@ -1083,7 +1083,7 @@ A registered Cloudflare email address.
 
 Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#email CloudflareProvider#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#email CloudflareProvider#email}
 
 ---
 
@@ -1097,7 +1097,7 @@ max_backoff: typing.Union[int, float]
 
 Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#max_backoff CloudflareProvider#max_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#max_backoff CloudflareProvider#max_backoff}
 
 ---
 
@@ -1111,7 +1111,7 @@ min_backoff: typing.Union[int, float]
 
 Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#min_backoff CloudflareProvider#min_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#min_backoff CloudflareProvider#min_backoff}
 
 ---
 
@@ -1127,7 +1127,7 @@ Maximum number of retries to perform when an API request fails.
 
 Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#retries CloudflareProvider#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#retries CloudflareProvider#retries}
 
 ---
 
@@ -1141,7 +1141,7 @@ rps: typing.Union[int, float]
 
 RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#rps CloudflareProvider#rps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#rps CloudflareProvider#rps}
 
 ---
 
@@ -1157,7 +1157,7 @@ A value to append to the HTTP User Agent for all API calls.
 
 This value is not something most users need to modify however, if you are using a non-standard provider or operator configuration, this is recommended to assist in uniquely identifying your traffic. **Setting this value will remove the Terraform version from the HTTP User Agent string and may have unintended consequences**. Alternatively, can be configured using the `CLOUDFLARE_USER_AGENT_OPERATOR_SUFFIX` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
 
 ---
 

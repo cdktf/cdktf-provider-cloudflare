@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/data-sources/api_token_permission_groups
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/api_token_permission_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataCloudflareApiTokenPermissionGroupsConfig extends cdktf.Terr
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}
 */
 export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataSource {
 
@@ -31,7 +26,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataCloudflareApiTokenPermissionGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiTokenPermissionGroups to import
-  * @param importFromId The id of the existing DataCloudflareApiTokenPermissionGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/data-sources/api_token_permission_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiTokenPermissionGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/api_token_permission_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiTokenPermissionGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +38,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +49,7 @@ export class DataCloudflareApiTokenPermissionGroups extends cdktf.TerraformDataS
       terraformResourceType: 'cloudflare_api_token_permission_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

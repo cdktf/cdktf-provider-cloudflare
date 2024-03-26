@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface WorkerRouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route#id WorkerRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route#id WorkerRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface WorkerRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * The [route pattern](https://developers.cloudflare.com/workers/about/routes/) to associate the Worker with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route#pattern WorkerRoute#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route#pattern WorkerRoute#pattern}
   */
   readonly pattern: string;
   /**
   * Worker script name to invoke for requests that match the route pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route#script_name WorkerRoute#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route#script_name WorkerRoute#script_name}
   */
   readonly scriptName?: string;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route#zone_id WorkerRoute#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route#zone_id WorkerRoute#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route cloudflare_worker_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route cloudflare_worker_route}
 */
 export class WorkerRoute extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class WorkerRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkerRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkerRoute to import
-  * @param importFromId The id of the existing WorkerRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkerRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkerRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class WorkerRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_route cloudflare_worker_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_route cloudflare_worker_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class WorkerRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
