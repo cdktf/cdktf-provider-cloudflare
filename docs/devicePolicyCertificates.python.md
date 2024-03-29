@@ -4,7 +4,7 @@
 
 ### DevicePolicyCertificates <a name="DevicePolicyCertificates" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer"></a>
 
@@ -40,7 +40,7 @@ devicePolicyCertificates.DevicePolicyCertificates(
 | <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | `true` if certificate generation is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 `true` if certificate generation is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#zone_id DevicePolicyCertificates#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#zone_id DevicePolicyCertificates#zone_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -611,7 +611,7 @@ The construct id used in the generated config for the DevicePolicyCertificates t
 
 The id of the existing DevicePolicyCertificates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ devicePolicyCertificates.DevicePolicyCertificatesConfig(
 | <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | `true` if certificate generation is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}. |
 
 ---
 
@@ -990,7 +990,7 @@ enabled: typing.Union[bool, IResolvable]
 
 `true` if certificate generation is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#enabled DevicePolicyCertificates#enabled}
 
 ---
 
@@ -1004,7 +1004,7 @@ zone_id: str
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#zone_id DevicePolicyCertificates#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#zone_id DevicePolicyCertificates#zone_id}
 
 ---
 
@@ -1016,7 +1016,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/device_policy_certificates#id DevicePolicyCertificates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

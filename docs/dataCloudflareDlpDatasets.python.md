@@ -4,7 +4,7 @@
 
 ### DataCloudflareDlpDatasets <a name="DataCloudflareDlpDatasets" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The account ID to fetch DLP Datasets from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataCloudflareDlpDatasets 
 
 The id of the existing DataCloudflareDlpDatasets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/dlp_datasets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/dlp_datasets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,7 +785,7 @@ account_id: str
 
 The account ID to fetch DLP Datasets from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
 
 ---
 

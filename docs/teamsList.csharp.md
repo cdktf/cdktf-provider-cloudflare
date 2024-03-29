@@ -4,7 +4,7 @@
 
 ### TeamsList <a name="TeamsList" id="@cdktf/provider-cloudflare.teamsList.TeamsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list cloudflare_teams_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list cloudflare_teams_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the TeamsList to import.
 
 The id of the existing TeamsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ new TeamsListConfig {
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.name">Name</a></code> | <code>string</code> | Name of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.type">Type</a></code> | <code>string</code> | The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.description">Description</a></code> | <code>string</code> | The description of the teams list. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#id TeamsList#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#id TeamsList#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.items">Items</a></code> | <code>string[]</code> | The items of the teams list. |
 
 ---
@@ -939,7 +939,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#account_id TeamsList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#account_id TeamsList#account_id}
 
 ---
 
@@ -953,7 +953,7 @@ public string Name { get; set; }
 
 Name of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#name TeamsList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#name TeamsList#name}
 
 ---
 
@@ -967,7 +967,7 @@ public string Type { get; set; }
 
 The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#type TeamsList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#type TeamsList#type}
 
 ---
 
@@ -981,7 +981,7 @@ public string Description { get; set; }
 
 The description of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#description TeamsList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#description TeamsList#description}
 
 ---
 
@@ -993,7 +993,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#id TeamsList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#id TeamsList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1010,7 +1010,7 @@ public string[] Items { get; set; }
 
 The items of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/teams_list#items TeamsList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/teams_list#items TeamsList#items}
 
 ---
 

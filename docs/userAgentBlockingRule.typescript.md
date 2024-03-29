@@ -4,7 +4,7 @@
 
 ### UserAgentBlockingRule <a name="UserAgentBlockingRule" id="@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the UserAgentBlockingRule to i
 
 The id of the existing UserAgentBlockingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,7 +840,7 @@ const userAgentBlockingRuleConfig: userAgentBlockingRule.UserAgentBlockingRuleCo
 | <code><a href="#@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.mode">mode</a></code> | <code>string</code> | The action to apply to a matched request. Available values: `block`, `challenge`, `js_challenge`, `managed_challenge`. |
 | <code><a href="#@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, indicates that the rule is currently paused. |
 | <code><a href="#@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}. |
 
 ---
 
@@ -924,7 +924,7 @@ public readonly configuration: UserAgentBlockingRuleConfiguration;
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
 
 ---
 
@@ -938,7 +938,7 @@ public readonly description: string;
 
 An informative summary of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
 
 ---
 
@@ -952,7 +952,7 @@ public readonly mode: string;
 
 The action to apply to a matched request. Available values: `block`, `challenge`, `js_challenge`, `managed_challenge`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
 
 ---
 
@@ -966,7 +966,7 @@ public readonly paused: boolean | IResolvable;
 
 When true, indicates that the rule is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
 
 ---
 
@@ -980,7 +980,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
 
 ---
 
@@ -992,7 +992,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ public readonly target: string;
 
 The configuration target for this rule. You must set the target to ua for User Agent Blocking rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly value: string;
 
 The exact user agent string to match. This value will be compared to the received User-Agent HTTP header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
 
 ---
 
