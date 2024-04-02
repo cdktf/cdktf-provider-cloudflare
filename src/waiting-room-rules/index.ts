@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/resources/waiting_room_rules
 // generated from terraform resource schema
 
