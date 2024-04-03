@@ -4,7 +4,7 @@
 
 ### DataCloudflareTunnel <a name="DataCloudflareTunnel" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel cloudflare_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel cloudflare_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.resetIsDeleted">resetIsDeleted</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetIsDeleted` <a name="resetIsDeleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.resetIsDeleted"></a>
+
+```typescript
+public resetIsDeleted(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareTunnel to im
 
 The id of the existing DataCloudflareTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -398,8 +405,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.tunnelType">tunnelType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeletedInput">isDeletedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeleted">isDeleted</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -576,6 +585,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `isDeletedInput`<sup>Optional</sup> <a name="isDeletedInput" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeletedInput"></a>
+
+```typescript
+public readonly isDeletedInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.nameInput"></a>
 
 ```typescript
@@ -593,6 +612,16 @@ public readonly accountId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `isDeleted`<sup>Required</sup> <a name="isDeleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeleted"></a>
+
+```typescript
+public readonly isDeleted: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -649,6 +678,7 @@ const dataCloudflareTunnelConfig: dataCloudflareTunnel.DataCloudflareTunnelConfi
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.name">name</a></code> | <code>string</code> | Name of the tunnel. **Modifying this attribute will force creation of a new resource.**. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.isDeleted">isDeleted</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, only include deleted tunnels. |
 
 ---
 
@@ -732,7 +762,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
 
 ---
 
@@ -746,7 +776,23 @@ public readonly name: string;
 
 Name of the tunnel. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+
+---
+
+##### `isDeleted`<sup>Optional</sup> <a name="isDeleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.isDeleted"></a>
+
+```typescript
+public readonly isDeleted: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If true, only include deleted tunnels.
+
+If false, exclude deleted tunnels. If empty, all tunnels will be included. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#is_deleted DataCloudflareTunnel#is_deleted}
 
 ---
 
