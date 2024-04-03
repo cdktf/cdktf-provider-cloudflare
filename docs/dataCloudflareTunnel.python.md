@@ -4,7 +4,7 @@
 
 ### DataCloudflareTunnel <a name="DataCloudflareTunnel" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel cloudflare_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel cloudflare_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer"></a>
 
@@ -22,7 +22,8 @@ dataCloudflareTunnel.DataCloudflareTunnel(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
-  name: str
+  name: str,
+  is_deleted: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -39,6 +40,7 @@ dataCloudflareTunnel.DataCloudflareTunnel(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the tunnel. **Modifying this attribute will force creation of a new resource.**. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer.parameter.isDeleted">is_deleted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, only include deleted tunnels. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
 
 ---
 
@@ -118,7 +120,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the tunnel. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+
+---
+
+##### `is_deleted`<sup>Optional</sup> <a name="is_deleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.Initializer.parameter.isDeleted"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, only include deleted tunnels.
+
+If false, exclude deleted tunnels. If empty, all tunnels will be included. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#is_deleted DataCloudflareTunnel#is_deleted}
 
 ---
 
@@ -143,6 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.resetIsDeleted">reset_is_deleted</a></code> | *No description.* |
 
 ---
 
@@ -363,6 +378,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_is_deleted` <a name="reset_is_deleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.resetIsDeleted"></a>
+
+```python
+def reset_is_deleted() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -477,7 +498,7 @@ The construct id used in the generated config for the DataCloudflareTunnel to im
 
 The id of the existing DataCloudflareTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -510,8 +531,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.tunnelType">tunnel_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeletedInput">is_deleted_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeleted">is_deleted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -688,6 +711,16 @@ account_id_input: str
 
 ---
 
+##### `is_deleted_input`<sup>Optional</sup> <a name="is_deleted_input" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeletedInput"></a>
+
+```python
+is_deleted_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.nameInput"></a>
 
 ```python
@@ -705,6 +738,16 @@ account_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `is_deleted`<sup>Required</sup> <a name="is_deleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnel.property.isDeleted"></a>
+
+```python
+is_deleted: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -754,7 +797,8 @@ dataCloudflareTunnel.DataCloudflareTunnelConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
-  name: str
+  name: str,
+  is_deleted: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -771,6 +815,7 @@ dataCloudflareTunnel.DataCloudflareTunnelConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.name">name</a></code> | <code>str</code> | Name of the tunnel. **Modifying this attribute will force creation of a new resource.**. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.isDeleted">is_deleted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, only include deleted tunnels. |
 
 ---
 
@@ -854,7 +899,7 @@ account_id: str
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
 
 ---
 
@@ -868,7 +913,23 @@ name: str
 
 Name of the tunnel. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+
+---
+
+##### `is_deleted`<sup>Optional</sup> <a name="is_deleted" id="@cdktf/provider-cloudflare.dataCloudflareTunnel.DataCloudflareTunnelConfig.property.isDeleted"></a>
+
+```python
+is_deleted: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, only include deleted tunnels.
+
+If false, exclude deleted tunnels. If empty, all tunnels will be included. **Modifying this attribute will force creation of a new resource.**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel#is_deleted DataCloudflareTunnel#is_deleted}
 
 ---
 
