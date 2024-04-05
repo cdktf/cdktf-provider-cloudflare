@@ -3,7 +3,7 @@
 name: lock
 on:
   schedule:
-    - cron: 8 8 * * *
+    - cron: 44 2 * * *
 jobs:
   lock:
     runs-on: ubuntu-latest
