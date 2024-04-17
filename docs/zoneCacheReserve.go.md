@@ -4,12 +4,12 @@
 
 ### ZoneCacheReserve <a name="ZoneCacheReserve" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachereserve"
 
 zonecachereserve.NewZoneCacheReserve(scope Construct, id *string, config ZoneCacheReserveConfig) ZoneCacheReserve
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachereserve"
 
 zonecachereserve.ZoneCacheReserve_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachereserve"
 
 zonecachereserve.ZoneCacheReserve_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ zonecachereserve.ZoneCacheReserve_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachereserve"
 
 zonecachereserve.ZoneCacheReserve_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ zonecachereserve.ZoneCacheReserve_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachereserve"
 
 zonecachereserve.ZoneCacheReserve_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ZoneCacheReserve to import
 
 The id of the existing ZoneCacheReserve that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonecachereserve"
 
 &zonecachereserve.ZoneCacheReserveConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachere
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether to enable or disable Cache Reserve support for a given zone. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Enabled interface{}
 
 Whether to enable or disable Cache Reserve support for a given zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/zone_cache_reserve#enabled ZoneCacheReserve#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/zone_cache_reserve#enabled ZoneCacheReserve#enabled}
 
 ---
 
@@ -867,7 +867,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
