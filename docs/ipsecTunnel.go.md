@@ -4,7 +4,7 @@
 
 ### IpsecTunnel <a name="IpsecTunnel" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.Initializer"></a>
 
@@ -86,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetPsk">ResetPsk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetRemoteId">ResetRemoteId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetReplayProtection">ResetReplayProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetUserId">ResetUserId</a></code> | *No description.* |
 
 ---
@@ -456,6 +457,12 @@ func ResetPsk()
 func ResetRemoteId()
 ```
 
+##### `ResetReplayProtection` <a name="ResetReplayProtection" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetReplayProtection"></a>
+
+```go
+func ResetReplayProtection()
+```
+
 ##### `ResetUserId` <a name="ResetUserId" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.resetUserId"></a>
 
 ```go
@@ -565,7 +572,7 @@ The construct id used in the generated config for the IpsecTunnel to import.
 
 The id of the existing IpsecTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,6 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.pskInput">PskInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.remoteIdInput">RemoteIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.replayProtectionInput">ReplayProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.userIdInput">UserIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.allowNullCipher">AllowNullCipher</a></code> | <code>interface{}</code> | *No description.* |
@@ -630,6 +638,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.psk">Psk</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.remoteId">RemoteId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.replayProtection">ReplayProtection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.userId">UserId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -946,6 +955,16 @@ func RemoteIdInput() *string
 
 ---
 
+##### `ReplayProtectionInput`<sup>Optional</sup> <a name="ReplayProtectionInput" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.replayProtectionInput"></a>
+
+```go
+func ReplayProtectionInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `UserIdInput`<sup>Optional</sup> <a name="UserIdInput" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.userIdInput"></a>
 
 ```go
@@ -1126,6 +1145,16 @@ func RemoteId() *string
 
 ---
 
+##### `ReplayProtection`<sup>Required</sup> <a name="ReplayProtection" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.replayProtection"></a>
+
+```go
+func ReplayProtection() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `UserId`<sup>Required</sup> <a name="UserId" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.property.userId"></a>
 
 ```go
@@ -1188,6 +1217,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel
 	Id: *string,
 	Psk: *string,
 	RemoteId: *string,
+	ReplayProtection: interface{},
 	UserId: *string,
 }
 ```
@@ -1217,9 +1247,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.healthCheckTarget">HealthCheckTarget</a></code> | <code>*string</code> | The IP address of the customer endpoint that will receive tunnel health checks. Default: `<customer_gre_endpoint>`. |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.healthCheckType">HealthCheckType</a></code> | <code>*string</code> | Specifies the ICMP echo type for the health check (`request` or `reply`). Available values: `request`, `reply` Default: `reply`. |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.hexId">HexId</a></code> | <code>*string</code> | `remote_id` as a hex string. This value is generated by cloudflare. |
-| <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#id IpsecTunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#id IpsecTunnel#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.psk">Psk</a></code> | <code>*string</code> | Pre shared key to be used with the IPsec tunnel. If left unset, it will be autogenerated. |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.remoteId">RemoteId</a></code> | <code>*string</code> | ID to be used while setting up the IPsec tunnel. This value is generated by cloudflare. |
+| <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.replayProtection">ReplayProtection</a></code> | <code>interface{}</code> | Specifies if replay protection is enabled. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.userId">UserId</a></code> | <code>*string</code> | `remote_id` in the form of an email address. This value is generated by cloudflare. |
 
 ---
@@ -1304,7 +1335,7 @@ CloudflareEndpoint *string
 
 IP address assigned to the Cloudflare side of the IPsec tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#cloudflare_endpoint IpsecTunnel#cloudflare_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#cloudflare_endpoint IpsecTunnel#cloudflare_endpoint}
 
 ---
 
@@ -1318,7 +1349,7 @@ CustomerEndpoint *string
 
 IP address assigned to the customer side of the IPsec tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#customer_endpoint IpsecTunnel#customer_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#customer_endpoint IpsecTunnel#customer_endpoint}
 
 ---
 
@@ -1332,7 +1363,7 @@ InterfaceAddress *string
 
 31-bit prefix (/31 in CIDR notation) supporting 2 hosts, one for each side of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#interface_address IpsecTunnel#interface_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#interface_address IpsecTunnel#interface_address}
 
 ---
 
@@ -1346,7 +1377,7 @@ Name *string
 
 Name of the IPsec tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#name IpsecTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#name IpsecTunnel#name}
 
 ---
 
@@ -1360,7 +1391,7 @@ AccountId *string
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#account_id IpsecTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#account_id IpsecTunnel#account_id}
 
 ---
 
@@ -1374,7 +1405,7 @@ AllowNullCipher interface{}
 
 Specifies if this tunnel may use a null cipher (ENCR_NULL) in Phase 2. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#allow_null_cipher IpsecTunnel#allow_null_cipher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#allow_null_cipher IpsecTunnel#allow_null_cipher}
 
 ---
 
@@ -1388,7 +1419,7 @@ Description *string
 
 An optional description of the IPsec tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#description IpsecTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#description IpsecTunnel#description}
 
 ---
 
@@ -1402,7 +1433,7 @@ FqdnId *string
 
 `remote_id` in the form of a fqdn. This value is generated by cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#fqdn_id IpsecTunnel#fqdn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#fqdn_id IpsecTunnel#fqdn_id}
 
 ---
 
@@ -1416,7 +1447,7 @@ HealthCheckDirection *string
 
 Specifies the direction for the health check. Available values: `unidirectional`, `bidirectional` Default: `unidirectional`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#health_check_direction IpsecTunnel#health_check_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#health_check_direction IpsecTunnel#health_check_direction}
 
 ---
 
@@ -1430,7 +1461,7 @@ HealthCheckEnabled interface{}
 
 Specifies if ICMP tunnel health checks are enabled. Default: `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#health_check_enabled IpsecTunnel#health_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#health_check_enabled IpsecTunnel#health_check_enabled}
 
 ---
 
@@ -1444,7 +1475,7 @@ HealthCheckRate *string
 
 Specifies the ICMP rate for the health check. Available values: `low`, `mid`, `high` Default: `mid`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#health_check_rate IpsecTunnel#health_check_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#health_check_rate IpsecTunnel#health_check_rate}
 
 ---
 
@@ -1458,7 +1489,7 @@ HealthCheckTarget *string
 
 The IP address of the customer endpoint that will receive tunnel health checks. Default: `<customer_gre_endpoint>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#health_check_target IpsecTunnel#health_check_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#health_check_target IpsecTunnel#health_check_target}
 
 ---
 
@@ -1472,7 +1503,7 @@ HealthCheckType *string
 
 Specifies the ICMP echo type for the health check (`request` or `reply`). Available values: `request`, `reply` Default: `reply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#health_check_type IpsecTunnel#health_check_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#health_check_type IpsecTunnel#health_check_type}
 
 ---
 
@@ -1486,7 +1517,7 @@ HexId *string
 
 `remote_id` as a hex string. This value is generated by cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#hex_id IpsecTunnel#hex_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#hex_id IpsecTunnel#hex_id}
 
 ---
 
@@ -1498,7 +1529,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#id IpsecTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#id IpsecTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1515,7 +1546,7 @@ Psk *string
 
 Pre shared key to be used with the IPsec tunnel. If left unset, it will be autogenerated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#psk IpsecTunnel#psk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#psk IpsecTunnel#psk}
 
 ---
 
@@ -1529,7 +1560,21 @@ RemoteId *string
 
 ID to be used while setting up the IPsec tunnel. This value is generated by cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#remote_id IpsecTunnel#remote_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#remote_id IpsecTunnel#remote_id}
+
+---
+
+##### `ReplayProtection`<sup>Optional</sup> <a name="ReplayProtection" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.property.replayProtection"></a>
+
+```go
+ReplayProtection interface{}
+```
+
+- *Type:* interface{}
+
+Specifies if replay protection is enabled. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#replay_protection IpsecTunnel#replay_protection}
 
 ---
 
@@ -1543,7 +1588,7 @@ UserId *string
 
 `remote_id` in the form of an email address. This value is generated by cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel#user_id IpsecTunnel#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel#user_id IpsecTunnel#user_id}
 
 ---
 
