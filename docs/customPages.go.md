@@ -4,12 +4,12 @@
 
 ### CustomPages <a name="CustomPages" id="@cdktf/provider-cloudflare.customPages.CustomPages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages cloudflare_custom_pages}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages cloudflare_custom_pages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customPages.CustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.NewCustomPages(scope Construct, id *string, config CustomPagesConfig) CustomPages
 ```
@@ -406,7 +406,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.customPages.CustomPages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.customPages.CustomPages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ custompages.CustomPages_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.customPages.CustomPages.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ custompages.CustomPages_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.customPages.CustomPages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 custompages.CustomPages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the CustomPages to import.
 
 The id of the existing CustomPages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customPages.CustomPagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/custompages"
 
 &custompages.CustomPagesConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/custompages
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.type">Type</a></code> | <code>*string</code> | The type of custom page you wish to update. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.url">Url</a></code> | <code>*string</code> | URL of where the custom page source is located. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. Conflicts with `zone_id`. |
-| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#id CustomPages#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#id CustomPages#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.state">State</a></code> | <code>*string</code> | Managed state of the custom page. Available values: `default`, `customized`. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. Conflicts with `account_id`. |
 
@@ -948,7 +948,7 @@ The type of custom page you wish to update.
 
 Available values: `basic_challenge`, `waf_challenge`, `waf_block`, `ratelimit_block`, `country_challenge`, `ip_block`, `under_attack`, `500_errors`, `1000_errors`, `managed_challenge`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#type CustomPages#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#type CustomPages#type}
 
 ---
 
@@ -962,7 +962,7 @@ Url *string
 
 URL of where the custom page source is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#url CustomPages#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#url CustomPages#url}
 
 ---
 
@@ -976,7 +976,7 @@ AccountId *string
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#account_id CustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#account_id CustomPages#account_id}
 
 ---
 
@@ -988,7 +988,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#id CustomPages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#id CustomPages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ State *string
 
 Managed state of the custom page. Available values: `default`, `customized`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#state CustomPages#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#state CustomPages#state}
 
 ---
 
@@ -1019,7 +1019,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/custom_pages#zone_id CustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/custom_pages#zone_id CustomPages#zone_id}
 
 ---
 
