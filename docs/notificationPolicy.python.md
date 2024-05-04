@@ -4,7 +4,7 @@
 
 ### NotificationPolicy <a name="NotificationPolicy" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy cloudflare_notification_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy cloudflare_notification_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer"></a>
 
@@ -52,7 +52,7 @@ notificationPolicy.NotificationPolicy(
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the notification policy. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.emailIntegration">email_integration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration">NotificationPolicyEmailIntegration</a>]]</code> | email_integration block. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.filters">filters</a></code> | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters">NotificationPolicyFilters</a></code> | filters block. |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.pagerdutyIntegration">pagerduty_integration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration">NotificationPolicyPagerdutyIntegration</a>]]</code> | pagerduty_integration block. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer.parameter.webhooksIntegration">webhooks_integration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration">NotificationPolicyWebhooksIntegration</a>]]</code> | webhooks_integration block. |
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
 
 ---
 
@@ -136,7 +136,7 @@ The event type that will trigger the dispatch of a notification.
 
 See the developer documentation for descriptions of [available alert types](https://developers.cloudflare.com/fundamentals/notifications/notification-available/). Available values: `advanced_http_alert_error`, `access_custom_certificate_expiration_type`, `advanced_ddos_attack_l4_alert`, `advanced_ddos_attack_l7_alert`, `bgp_hijack_notification`, `billing_usage_alert`, `block_notification_block_removed`, `block_notification_new_block`, `block_notification_review_rejected`, `brand_protection_alert`, `brand_protection_digest`, `clickhouse_alert_fw_anomaly`, `clickhouse_alert_fw_ent_anomaly`, `custom_ssl_certificate_event_type`, `dedicated_ssl_certificate_event_type`, `dos_attack_l4`, `dos_attack_l7`, `expiring_service_token_alert`, `failing_logpush_job_disabled_alert`, `fbm_auto_advertisement`, `fbm_dosd_attack`, `fbm_volumetric_attack`, `health_check_status_notification`, `hostname_aop_custom_certificate_expiration_type`, `http_alert_edge_error`, `http_alert_origin_error`, `incident_alert`, `load_balancing_health_alert`, `load_balancing_pool_enablement_alert`, `logo_match_alert`, `magic_tunnel_health_check_event`, `maintenance_event_notification`, `mtls_certificate_store_certificate_expiration_type`, `pages_event_alert`, `radar_notification`, `real_origin_monitoring`, `scriptmonitor_alert_new_code_change_detections`, `scriptmonitor_alert_new_hosts`, `scriptmonitor_alert_new_malicious_hosts`, `scriptmonitor_alert_new_malicious_scripts`, `scriptmonitor_alert_new_malicious_url`, `scriptmonitor_alert_new_max_length_resource_url`, `scriptmonitor_alert_new_resources`, `secondary_dns_all_primaries_failing`, `secondary_dns_primaries_failing`, `secondary_dns_zone_successfully_updated`, `secondary_dns_zone_validation_warning`, `sentinel_alert`, `stream_live_notifications`, `traffic_anomalies_alert`, `tunnel_health_event`, `tunnel_update_event`, `universal_ssl_event_type`, `web_analytics_metrics_update`, `weekly_account_overview`, `workers_alert`, `zone_aop_custom_certificate_expiration_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The status of the notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Description of the notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#description NotificationPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#description NotificationPolicy#description}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 email_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#email_integration NotificationPolicy#email_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#email_integration NotificationPolicy#email_integration}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 pagerduty_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#pagerduty_integration NotificationPolicy#pagerduty_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#pagerduty_integration NotificationPolicy#pagerduty_integration}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 webhooks_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#webhooks_integration NotificationPolicy#webhooks_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#webhooks_integration NotificationPolicy#webhooks_integration}
 
 ---
 
@@ -632,6 +632,7 @@ def put_filters(
   slo: typing.List[str] = None,
   status: typing.List[str] = None,
   target_hostname: typing.List[str] = None,
+  target_ip: typing.List[str] = None,
   target_zone_name: typing.List[str] = None,
   tunnel_id: typing.List[str] = None,
   where: typing.List[str] = None,
@@ -645,7 +646,7 @@ def put_filters(
 
 Targeted actions for alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
 
 ---
 
@@ -657,7 +658,7 @@ Affected components for alert.
 
 Available values: `API`, `API Shield`, `Access`, `Always Online`, `Analytics`, `Apps Marketplace`, `Argo Smart Routing`, `Audit Logs`, `Authoritative DNS`, `Billing`, `Bot Management`, `Bring Your Own IP (BYOIP)`, `Browser Isolation`, `CDN Cache Purge`, `CDN/Cache`, `Cache Reserve`, `Challenge Platform`, `Cloud Access Security Broker (CASB)`, `Community Site`, `DNS Root Servers`, `DNS Updates`, `Dashboard`, `Data Loss Prevention (DLP)`, `Developer's Site`, `Digital Experience Monitoring (DEX)`, `Distributed Web Gateway`, `Durable Objects`, `Email Routing`, `Ethereum Gateway`, `Firewall`, `Gateway`, `Geo-Key Manager`, `Image Resizing`, `Images`, `Infrastructure`, `Lists`, `Load Balancing and Monitoring`, `Logs`, `Magic Firewall`, `Magic Transit`, `Magic WAN`, `Magic WAN Connector`, `Marketing Site`, `Mirage`, `Network`, `Notifications`, `Observatory`, `Page Shield`, `Pages`, `R2`, `Radar`, `Randomness Beacon`, `Recursive DNS`, `Registrar`, `Registration Data Access Protocol (RDAP)`, `SSL Certificate Provisioning`, `SSL for SaaS Provisioning`, `Security Center`, `Snippets`, `Spectrum`, `Speed Optimizations`, `Stream`, `Support Site`, `Time Services`, `Trace`, `Tunnel`, `Turnstile`, `WARP`, `Waiting Room`, `Web Analytics`, `Workers`, `Workers KV`, `Workers Preview`, `Zaraz`, `Zero Trust`, `Zero Trust Dashboard`, `Zone Versioning`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
 
 ---
 
@@ -667,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter on Points of Presence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
 
 ---
 
@@ -677,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Alert trigger preferences. Example: `slo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
 
 ---
 
@@ -687,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 State of the pool to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
 
 ---
 
@@ -697,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Environment of pages. Available values: `ENVIRONMENT_PREVIEW`, `ENVIRONMENT_PRODUCTION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
 
 ---
 
@@ -707,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Pages event to alert. Available values: `EVENT_DEPLOYMENT_STARTED`, `EVENT_DEPLOYMENT_FAILED`, `EVENT_DEPLOYMENT_SUCCESS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#event NotificationPolicy#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#event NotificationPolicy#event}
 
 ---
 
@@ -717,7 +718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Source configuration to alert on for pool or origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
 
 ---
 
@@ -727,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Stream event type to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
 
 ---
 
@@ -737,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Alert grouping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
 
 ---
 
@@ -747,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier health check. Required when using `filters.0.status`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
 
 ---
 
@@ -757,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The incident impact level that will trigger the dispatch of a notification. Available values: `INCIDENT_IMPACT_NONE`, `INCIDENT_IMPACT_MINOR`, `INCIDENT_IMPACT_MAJOR`, `INCIDENT_IMPACT_CRITICAL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
 
 ---
 
@@ -767,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Stream input id to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
 
 ---
 
@@ -777,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A numerical limit. Example: `100`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
 
 ---
 
@@ -787,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Megabits per second threshold for dos alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
 
 ---
 
@@ -797,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Health status to alert on for pool or origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
 
 ---
 
@@ -807,7 +808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Tunnel health status to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
 
 ---
 
@@ -817,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Packets per second threshold for dos alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
 
 ---
 
@@ -827,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Load balancer pool identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
 
 ---
 
@@ -837,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Product name. Available values: `worker_requests`, `worker_durable_objects_requests`, `worker_durable_objects_duration`, `worker_durable_objects_data_transfer`, `worker_durable_objects_stored_data`, `worker_durable_objects_storage_deletes`, `worker_durable_objects_storage_writes`, `worker_durable_objects_storage_reads`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#product NotificationPolicy#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#product NotificationPolicy#product}
 
 ---
 
@@ -847,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier of pages project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
 
 ---
 
@@ -857,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Protocol to alert on for dos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
 
 ---
 
@@ -867,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Requests per second threshold for dos alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
 
 ---
 
@@ -877,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Selectors for alert. Valid options depend on the alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
 
 ---
 
@@ -885,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#services NotificationPolicy#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#services NotificationPolicy#services}.
 
 ---
 
@@ -895,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A numerical limit. Example: `99.9`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
 
 ---
 
@@ -905,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Status to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#status NotificationPolicy#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#status NotificationPolicy#status}
 
 ---
 
@@ -915,7 +916,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Target host to alert on for dos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+
+---
+
+###### `target_ip`<sup>Optional</sup> <a name="target_ip" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.putFilters.parameter.targetIp"></a>
+
+- *Type:* typing.List[str]
+
+Target ip to alert on for dos in CIDR notation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
 
 ---
 
@@ -925,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Target domain to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
 
 ---
 
@@ -935,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Tunnel IDs to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
 
 ---
 
@@ -945,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter for alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#where NotificationPolicy#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#where NotificationPolicy#where}
 
 ---
 
@@ -955,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of zone identifiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
 
 ---
 
@@ -1137,7 +1148,7 @@ The construct id used in the generated config for the NotificationPolicy to impo
 
 The id of the existing NotificationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1620,7 +1631,7 @@ notificationPolicy.NotificationPolicyConfig(
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.description">description</a></code> | <code>str</code> | Description of the notification policy. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.emailIntegration">email_integration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration">NotificationPolicyEmailIntegration</a>]]</code> | email_integration block. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters">NotificationPolicyFilters</a></code> | filters block. |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.pagerdutyIntegration">pagerduty_integration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration">NotificationPolicyPagerdutyIntegration</a>]]</code> | pagerduty_integration block. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.property.webhooksIntegration">webhooks_integration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration">NotificationPolicyWebhooksIntegration</a>]]</code> | webhooks_integration block. |
 
@@ -1706,7 +1717,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
 
 ---
 
@@ -1722,7 +1733,7 @@ The event type that will trigger the dispatch of a notification.
 
 See the developer documentation for descriptions of [available alert types](https://developers.cloudflare.com/fundamentals/notifications/notification-available/). Available values: `advanced_http_alert_error`, `access_custom_certificate_expiration_type`, `advanced_ddos_attack_l4_alert`, `advanced_ddos_attack_l7_alert`, `bgp_hijack_notification`, `billing_usage_alert`, `block_notification_block_removed`, `block_notification_new_block`, `block_notification_review_rejected`, `brand_protection_alert`, `brand_protection_digest`, `clickhouse_alert_fw_anomaly`, `clickhouse_alert_fw_ent_anomaly`, `custom_ssl_certificate_event_type`, `dedicated_ssl_certificate_event_type`, `dos_attack_l4`, `dos_attack_l7`, `expiring_service_token_alert`, `failing_logpush_job_disabled_alert`, `fbm_auto_advertisement`, `fbm_dosd_attack`, `fbm_volumetric_attack`, `health_check_status_notification`, `hostname_aop_custom_certificate_expiration_type`, `http_alert_edge_error`, `http_alert_origin_error`, `incident_alert`, `load_balancing_health_alert`, `load_balancing_pool_enablement_alert`, `logo_match_alert`, `magic_tunnel_health_check_event`, `maintenance_event_notification`, `mtls_certificate_store_certificate_expiration_type`, `pages_event_alert`, `radar_notification`, `real_origin_monitoring`, `scriptmonitor_alert_new_code_change_detections`, `scriptmonitor_alert_new_hosts`, `scriptmonitor_alert_new_malicious_hosts`, `scriptmonitor_alert_new_malicious_scripts`, `scriptmonitor_alert_new_malicious_url`, `scriptmonitor_alert_new_max_length_resource_url`, `scriptmonitor_alert_new_resources`, `secondary_dns_all_primaries_failing`, `secondary_dns_primaries_failing`, `secondary_dns_zone_successfully_updated`, `secondary_dns_zone_validation_warning`, `sentinel_alert`, `stream_live_notifications`, `traffic_anomalies_alert`, `tunnel_health_event`, `tunnel_update_event`, `universal_ssl_event_type`, `web_analytics_metrics_update`, `weekly_account_overview`, `workers_alert`, `zone_aop_custom_certificate_expiration_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
 
 ---
 
@@ -1736,7 +1747,7 @@ enabled: typing.Union[bool, IResolvable]
 
 The status of the notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
 
 ---
 
@@ -1750,7 +1761,7 @@ name: str
 
 The name of the notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}
 
 ---
 
@@ -1764,7 +1775,7 @@ description: str
 
 Description of the notification policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#description NotificationPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#description NotificationPolicy#description}
 
 ---
 
@@ -1778,7 +1789,7 @@ email_integration: typing.Union[IResolvable, typing.List[NotificationPolicyEmail
 
 email_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#email_integration NotificationPolicy#email_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#email_integration NotificationPolicy#email_integration}
 
 ---
 
@@ -1792,7 +1803,7 @@ filters: NotificationPolicyFilters
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
 
 ---
 
@@ -1804,7 +1815,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1821,7 +1832,7 @@ pagerduty_integration: typing.Union[IResolvable, typing.List[NotificationPolicyP
 
 pagerduty_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#pagerduty_integration NotificationPolicy#pagerduty_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#pagerduty_integration NotificationPolicy#pagerduty_integration}
 
 ---
 
@@ -1835,7 +1846,7 @@ webhooks_integration: typing.Union[IResolvable, typing.List[NotificationPolicyWe
 
 webhooks_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#webhooks_integration NotificationPolicy#webhooks_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#webhooks_integration NotificationPolicy#webhooks_integration}
 
 ---
 
@@ -1856,8 +1867,8 @@ notificationPolicy.NotificationPolicyEmailIntegration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}. |
 
 ---
 
@@ -1869,7 +1880,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1884,7 +1895,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}.
 
 ---
 
@@ -1924,6 +1935,7 @@ notificationPolicy.NotificationPolicyFilters(
   slo: typing.List[str] = None,
   status: typing.List[str] = None,
   target_hostname: typing.List[str] = None,
+  target_ip: typing.List[str] = None,
   target_zone_name: typing.List[str] = None,
   tunnel_id: typing.List[str] = None,
   where: typing.List[str] = None,
@@ -1959,10 +1971,11 @@ notificationPolicy.NotificationPolicyFilters(
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.protocol">protocol</a></code> | <code>typing.List[str]</code> | Protocol to alert on for dos. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.requestsPerSecond">requests_per_second</a></code> | <code>typing.List[str]</code> | Requests per second threshold for dos alert. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.selectors">selectors</a></code> | <code>typing.List[str]</code> | Selectors for alert. Valid options depend on the alert type. |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.services">services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#services NotificationPolicy#services}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.services">services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#services NotificationPolicy#services}. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.slo">slo</a></code> | <code>typing.List[str]</code> | A numerical limit. Example: `99.9`. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.status">status</a></code> | <code>typing.List[str]</code> | Status to alert on. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.targetHostname">target_hostname</a></code> | <code>typing.List[str]</code> | Target host to alert on for dos. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.targetIp">target_ip</a></code> | <code>typing.List[str]</code> | Target ip to alert on for dos in CIDR notation. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.targetZoneName">target_zone_name</a></code> | <code>typing.List[str]</code> | Target domain to alert on. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.tunnelId">tunnel_id</a></code> | <code>typing.List[str]</code> | Tunnel IDs to alert on. |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.where">where</a></code> | <code>typing.List[str]</code> | Filter for alert. |
@@ -1980,7 +1993,7 @@ actions: typing.List[str]
 
 Targeted actions for alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
 
 ---
 
@@ -1996,7 +2009,7 @@ Affected components for alert.
 
 Available values: `API`, `API Shield`, `Access`, `Always Online`, `Analytics`, `Apps Marketplace`, `Argo Smart Routing`, `Audit Logs`, `Authoritative DNS`, `Billing`, `Bot Management`, `Bring Your Own IP (BYOIP)`, `Browser Isolation`, `CDN Cache Purge`, `CDN/Cache`, `Cache Reserve`, `Challenge Platform`, `Cloud Access Security Broker (CASB)`, `Community Site`, `DNS Root Servers`, `DNS Updates`, `Dashboard`, `Data Loss Prevention (DLP)`, `Developer's Site`, `Digital Experience Monitoring (DEX)`, `Distributed Web Gateway`, `Durable Objects`, `Email Routing`, `Ethereum Gateway`, `Firewall`, `Gateway`, `Geo-Key Manager`, `Image Resizing`, `Images`, `Infrastructure`, `Lists`, `Load Balancing and Monitoring`, `Logs`, `Magic Firewall`, `Magic Transit`, `Magic WAN`, `Magic WAN Connector`, `Marketing Site`, `Mirage`, `Network`, `Notifications`, `Observatory`, `Page Shield`, `Pages`, `R2`, `Radar`, `Randomness Beacon`, `Recursive DNS`, `Registrar`, `Registration Data Access Protocol (RDAP)`, `SSL Certificate Provisioning`, `SSL for SaaS Provisioning`, `Security Center`, `Snippets`, `Spectrum`, `Speed Optimizations`, `Stream`, `Support Site`, `Time Services`, `Trace`, `Tunnel`, `Turnstile`, `WARP`, `Waiting Room`, `Web Analytics`, `Workers`, `Workers KV`, `Workers Preview`, `Zaraz`, `Zero Trust`, `Zero Trust Dashboard`, `Zone Versioning`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
 
 ---
 
@@ -2010,7 +2023,7 @@ airport_code: typing.List[str]
 
 Filter on Points of Presence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
 
 ---
 
@@ -2024,7 +2037,7 @@ alert_trigger_preferences: typing.List[str]
 
 Alert trigger preferences. Example: `slo`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
 
 ---
 
@@ -2038,7 +2051,7 @@ enabled: typing.List[str]
 
 State of the pool to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
 
 ---
 
@@ -2052,7 +2065,7 @@ environment: typing.List[str]
 
 Environment of pages. Available values: `ENVIRONMENT_PREVIEW`, `ENVIRONMENT_PRODUCTION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
 
 ---
 
@@ -2066,7 +2079,7 @@ event: typing.List[str]
 
 Pages event to alert. Available values: `EVENT_DEPLOYMENT_STARTED`, `EVENT_DEPLOYMENT_FAILED`, `EVENT_DEPLOYMENT_SUCCESS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#event NotificationPolicy#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#event NotificationPolicy#event}
 
 ---
 
@@ -2080,7 +2093,7 @@ event_source: typing.List[str]
 
 Source configuration to alert on for pool or origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
 
 ---
 
@@ -2094,7 +2107,7 @@ event_type: typing.List[str]
 
 Stream event type to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
 
 ---
 
@@ -2108,7 +2121,7 @@ group_by: typing.List[str]
 
 Alert grouping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
 
 ---
 
@@ -2122,7 +2135,7 @@ health_check_id: typing.List[str]
 
 Identifier health check. Required when using `filters.0.status`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
 
 ---
 
@@ -2136,7 +2149,7 @@ incident_impact: typing.List[str]
 
 The incident impact level that will trigger the dispatch of a notification. Available values: `INCIDENT_IMPACT_NONE`, `INCIDENT_IMPACT_MINOR`, `INCIDENT_IMPACT_MAJOR`, `INCIDENT_IMPACT_CRITICAL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
 
 ---
 
@@ -2150,7 +2163,7 @@ input_id: typing.List[str]
 
 Stream input id to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
 
 ---
 
@@ -2164,7 +2177,7 @@ limit: typing.List[str]
 
 A numerical limit. Example: `100`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
 
 ---
 
@@ -2178,7 +2191,7 @@ megabits_per_second: typing.List[str]
 
 Megabits per second threshold for dos alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
 
 ---
 
@@ -2192,7 +2205,7 @@ new_health: typing.List[str]
 
 Health status to alert on for pool or origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
 
 ---
 
@@ -2206,7 +2219,7 @@ new_status: typing.List[str]
 
 Tunnel health status to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
 
 ---
 
@@ -2220,7 +2233,7 @@ packets_per_second: typing.List[str]
 
 Packets per second threshold for dos alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
 
 ---
 
@@ -2234,7 +2247,7 @@ pool_id: typing.List[str]
 
 Load balancer pool identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
 
 ---
 
@@ -2248,7 +2261,7 @@ product: typing.List[str]
 
 Product name. Available values: `worker_requests`, `worker_durable_objects_requests`, `worker_durable_objects_duration`, `worker_durable_objects_data_transfer`, `worker_durable_objects_stored_data`, `worker_durable_objects_storage_deletes`, `worker_durable_objects_storage_writes`, `worker_durable_objects_storage_reads`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#product NotificationPolicy#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#product NotificationPolicy#product}
 
 ---
 
@@ -2262,7 +2275,7 @@ project_id: typing.List[str]
 
 Identifier of pages project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
 
 ---
 
@@ -2276,7 +2289,7 @@ protocol: typing.List[str]
 
 Protocol to alert on for dos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
 
 ---
 
@@ -2290,7 +2303,7 @@ requests_per_second: typing.List[str]
 
 Requests per second threshold for dos alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
 
 ---
 
@@ -2304,7 +2317,7 @@ selectors: typing.List[str]
 
 Selectors for alert. Valid options depend on the alert type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
 
 ---
 
@@ -2316,7 +2329,7 @@ services: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#services NotificationPolicy#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#services NotificationPolicy#services}.
 
 ---
 
@@ -2330,7 +2343,7 @@ slo: typing.List[str]
 
 A numerical limit. Example: `99.9`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
 
 ---
 
@@ -2344,7 +2357,7 @@ status: typing.List[str]
 
 Status to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#status NotificationPolicy#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#status NotificationPolicy#status}
 
 ---
 
@@ -2358,7 +2371,21 @@ target_hostname: typing.List[str]
 
 Target host to alert on for dos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+
+---
+
+##### `target_ip`<sup>Optional</sup> <a name="target_ip" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.property.targetIp"></a>
+
+```python
+target_ip: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Target ip to alert on for dos in CIDR notation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
 
 ---
 
@@ -2372,7 +2399,7 @@ target_zone_name: typing.List[str]
 
 Target domain to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
 
 ---
 
@@ -2386,7 +2413,7 @@ tunnel_id: typing.List[str]
 
 Tunnel IDs to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
 
 ---
 
@@ -2400,7 +2427,7 @@ where: typing.List[str]
 
 Filter for alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#where NotificationPolicy#where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#where NotificationPolicy#where}
 
 ---
 
@@ -2414,7 +2441,7 @@ zones: typing.List[str]
 
 A list of zone identifiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
 
 ---
 
@@ -2435,8 +2462,8 @@ notificationPolicy.NotificationPolicyPagerdutyIntegration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}. |
 
 ---
 
@@ -2448,7 +2475,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2463,7 +2490,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}.
 
 ---
 
@@ -2484,8 +2511,8 @@ notificationPolicy.NotificationPolicyWebhooksIntegration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}. |
 
 ---
 
@@ -2497,7 +2524,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#id NotificationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#id NotificationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2512,7 +2539,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/notification_policy#name NotificationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/notification_policy#name NotificationPolicy#name}.
 
 ---
 
@@ -3114,6 +3141,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetSlo">reset_slo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetTargetHostname">reset_target_hostname</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetTargetIp">reset_target_ip</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetTargetZoneName">reset_target_zone_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetTunnelId">reset_tunnel_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetWhere">reset_where</a></code> | *No description.* |
@@ -3461,6 +3489,12 @@ def reset_status() -> None
 def reset_target_hostname() -> None
 ```
 
+##### `reset_target_ip` <a name="reset_target_ip" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetTargetIp"></a>
+
+```python
+def reset_target_ip() -> None
+```
+
 ##### `reset_target_zone_name` <a name="reset_target_zone_name" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.resetTargetZoneName"></a>
 
 ```python
@@ -3520,6 +3554,7 @@ def reset_zones() -> None
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.sloInput">slo_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.statusInput">status_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetHostnameInput">target_hostname_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetIpInput">target_ip_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetZoneNameInput">target_zone_name_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.tunnelIdInput">tunnel_id_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.whereInput">where_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -3552,6 +3587,7 @@ def reset_zones() -> None
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.slo">slo</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.status">status</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetHostname">target_hostname</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetIp">target_ip</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetZoneName">target_zone_name</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.tunnelId">tunnel_id</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.where">where</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -3858,6 +3894,16 @@ status_input: typing.List[str]
 
 ```python
 target_hostname_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `target_ip_input`<sup>Optional</sup> <a name="target_ip_input" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetIpInput"></a>
+
+```python
+target_ip_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -4178,6 +4224,16 @@ status: typing.List[str]
 
 ```python
 target_hostname: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `target_ip`<sup>Required</sup> <a name="target_ip" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.property.targetIp"></a>
+
+```python
+target_ip: typing.List[str]
 ```
 
 - *Type:* typing.List[str]

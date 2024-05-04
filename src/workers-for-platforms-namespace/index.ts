@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/workers_for_platforms_namespace
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/workers_for_platforms_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface WorkersForPlatformsNamespaceConfig extends cdktf.TerraformMetaA
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
   */
   readonly accountId: string;
   /**
   * The name of the Workers for Platforms namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}
 */
 export class WorkersForPlatformsNamespace extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class WorkersForPlatformsNamespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersForPlatformsNamespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersForPlatformsNamespace to import
-  * @param importFromId The id of the existing WorkersForPlatformsNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/workers_for_platforms_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersForPlatformsNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/workers_for_platforms_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersForPlatformsNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class WorkersForPlatformsNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class WorkersForPlatformsNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_for_platforms_namespace',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
