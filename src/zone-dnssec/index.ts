@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec#id ZoneDnssec#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec#id ZoneDnssec#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface ZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   /**
   * Zone DNSSEC updated time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec#modified_on ZoneDnssec#modified_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec#modified_on ZoneDnssec#modified_on}
   */
   readonly modifiedOn?: string;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}
 */
 export class ZoneDnssec extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneDnssec resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneDnssec to import
-  * @param importFromId The id of the existing ZoneDnssec that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneDnssec that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneDnssec to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_dnssec',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

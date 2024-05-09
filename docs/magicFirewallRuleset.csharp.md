@@ -4,7 +4,7 @@
 
 ### MagicFirewallRuleset <a name="MagicFirewallRuleset" id="@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the MagicFirewallRuleset to im
 
 The id of the existing MagicFirewallRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,9 +829,9 @@ new MagicFirewallRulesetConfig {
 | <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.name">Name</a></code> | <code>string</code> | **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#description MagicFirewallRuleset#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#id MagicFirewallRuleset#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.rules">Rules</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#rules MagicFirewallRuleset#rules}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#description MagicFirewallRuleset#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#id MagicFirewallRuleset#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig.property.rules">Rules</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#rules MagicFirewallRuleset#rules}. |
 
 ---
 
@@ -915,7 +915,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#account_id MagicFirewallRuleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#account_id MagicFirewallRuleset#account_id}
 
 ---
 
@@ -929,7 +929,7 @@ public string Name { get; set; }
 
 **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#name MagicFirewallRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#name MagicFirewallRuleset#name}
 
 ---
 
@@ -941,7 +941,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#description MagicFirewallRuleset#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#description MagicFirewallRuleset#description}.
 
 ---
 
@@ -953,7 +953,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#id MagicFirewallRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#id MagicFirewallRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ public object Rules { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/magic_firewall_ruleset#rules MagicFirewallRuleset#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/magic_firewall_ruleset#rules MagicFirewallRuleset#rules}.
 
 ---
 
