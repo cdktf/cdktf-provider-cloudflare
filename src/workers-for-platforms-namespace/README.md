@@ -1,3 +1,3 @@
 # `cloudflare_workers_for_platforms_namespace`
 
-Refer to the Terraform Registry for docs: [`cloudflare_workers_for_platforms_namespace`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/workers_for_platforms_namespace).
+Refer to the Terraform Registry for docs: [`cloudflare_workers_for_platforms_namespace`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/workers_for_platforms_namespace).
