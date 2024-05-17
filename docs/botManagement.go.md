@@ -4,12 +4,12 @@
 
 ### BotManagement <a name="BotManagement" id="@cdktf/provider-cloudflare.botManagement.BotManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management cloudflare_bot_management}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management cloudflare_bot_management}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.botManagement.BotManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.NewBotManagement(scope Construct, id *string, config BotManagementConfig) BotManagement
 ```
@@ -448,7 +448,7 @@ func ResetSuppressSessionScore()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.botManagement.BotManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.botManagement.BotManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ botmanagement.BotManagement_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.botManagement.BotManagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ botmanagement.BotManagement_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.botManagement.BotManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the BotManagement to import.
 
 The id of the existing BotManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.botManagement.BotManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 &botmanagement.BotManagementConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/botmanageme
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.autoUpdateModel">AutoUpdateModel</a></code> | <code>interface{}</code> | Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes). |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.enableJs">EnableJs</a></code> | <code>interface{}</code> | Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/). |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.fightMode">FightMode</a></code> | <code>interface{}</code> | Whether to enable Bot Fight Mode. |
-| <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#id BotManagement#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#id BotManagement#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.optimizeWordpress">OptimizeWordpress</a></code> | <code>interface{}</code> | Whether to optimize Super Bot Fight Mode protections for Wordpress. |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.sbfmDefinitelyAutomated">SbfmDefinitelyAutomated</a></code> | <code>*string</code> | Super Bot Fight Mode (SBFM) action to take on definitely automated requests. |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.sbfmLikelyAutomated">SbfmLikelyAutomated</a></code> | <code>*string</code> | Super Bot Fight Mode (SBFM) action to take on likely automated requests. |
@@ -1119,7 +1119,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
 
 ---
 
@@ -1133,7 +1133,7 @@ AutoUpdateModel interface{}
 
 Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
 
 ---
 
@@ -1147,7 +1147,7 @@ EnableJs interface{}
 
 Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
 
 ---
 
@@ -1161,7 +1161,7 @@ FightMode interface{}
 
 Whether to enable Bot Fight Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
 
 ---
 
@@ -1173,7 +1173,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#id BotManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#id BotManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1190,7 @@ OptimizeWordpress interface{}
 
 Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
 
 ---
 
@@ -1204,7 +1204,7 @@ SbfmDefinitelyAutomated *string
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
 
 ---
 
@@ -1218,7 +1218,7 @@ SbfmLikelyAutomated *string
 
 Super Bot Fight Mode (SBFM) action to take on likely automated requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
 
 ---
 
@@ -1234,7 +1234,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection.
 
 Enable if static resources on your application need bot protection. Note: Static resource protection can also result in legitimate traffic being blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
 
 ---
 
@@ -1248,7 +1248,7 @@ SbfmVerifiedBots *string
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
 
 ---
 
@@ -1262,7 +1262,7 @@ SuppressSessionScore interface{}
 
 Whether to disable tracking the highest bot score for a session in the Bot Management cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
 
 ---
 
