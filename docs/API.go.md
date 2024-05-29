@@ -106,6 +106,7 @@ The following submodules are available:
 - [record](./record.go.md)
 - [regionalHostname](./regionalHostname.go.md)
 - [regionalTieredCache](./regionalTieredCache.go.md)
+- [riskBehavior](./riskBehavior.go.md)
 - [ruleset](./ruleset.go.md)
 - [spectrumApplication](./spectrumApplication.go.md)
 - [splitTunnel](./splitTunnel.go.md)

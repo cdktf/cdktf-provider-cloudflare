@@ -1,3 +1,3 @@
 # `cloudflare_device_settings_policy`
 
-Refer to the Terraform Registry for docs: [`cloudflare_device_settings_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/device_settings_policy).
+Refer to the Terraform Registry for docs: [`cloudflare_device_settings_policy`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/device_settings_policy).

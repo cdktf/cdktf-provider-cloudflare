@@ -106,6 +106,7 @@ The following submodules are available:
 - [record](./record.java.md)
 - [regionalHostname](./regionalHostname.java.md)
 - [regionalTieredCache](./regionalTieredCache.java.md)
+- [riskBehavior](./riskBehavior.java.md)
 - [ruleset](./ruleset.java.md)
 - [spectrumApplication](./spectrumApplication.java.md)
 - [splitTunnel](./splitTunnel.java.md)

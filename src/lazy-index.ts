@@ -82,6 +82,7 @@ Object.defineProperty(exports, 'rateLimit', { get: function () { return require(
 Object.defineProperty(exports, 'record', { get: function () { return require('./record'); } });
 Object.defineProperty(exports, 'regionalHostname', { get: function () { return require('./regional-hostname'); } });
 Object.defineProperty(exports, 'regionalTieredCache', { get: function () { return require('./regional-tiered-cache'); } });
+Object.defineProperty(exports, 'riskBehavior', { get: function () { return require('./risk-behavior'); } });
 Object.defineProperty(exports, 'ruleset', { get: function () { return require('./ruleset'); } });
 Object.defineProperty(exports, 'spectrumApplication', { get: function () { return require('./spectrum-application'); } });
 Object.defineProperty(exports, 'splitTunnel', { get: function () { return require('./split-tunnel'); } });

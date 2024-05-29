@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataCloudflareDevicePostureRulesConfig extends cdktf.TerraformM
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules#account_id DataCloudflareDevicePostureRules#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules#id DataCloudflareDevicePostureRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface DataCloudflareDevicePostureRulesConfig extends cdktf.TerraformM
   /**
   * Name of the Device Posture Rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules#name DataCloudflareDevicePostureRules#name}
   */
   readonly name?: string;
   /**
   * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules#type DataCloudflareDevicePostureRules#type}
   */
   readonly type?: string;
 }
@@ -140,7 +140,7 @@ export class DataCloudflareDevicePostureRulesRulesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules}
 */
 export class DataCloudflareDevicePostureRules extends cdktf.TerraformDataSource {
 
@@ -156,7 +156,7 @@ export class DataCloudflareDevicePostureRules extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataCloudflareDevicePostureRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDevicePostureRules to import
-  * @param importFromId The id of the existing DataCloudflareDevicePostureRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDevicePostureRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDevicePostureRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -168,7 +168,7 @@ export class DataCloudflareDevicePostureRules extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/data-sources/device_posture_rules cloudflare_device_posture_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,7 @@ export class DataCloudflareDevicePostureRules extends cdktf.TerraformDataSource 
       terraformResourceType: 'cloudflare_device_posture_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.33.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

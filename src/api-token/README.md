@@ -1,3 +1,3 @@
 # `cloudflare_api_token`
 
-Refer to the Terraform Registry for docs: [`cloudflare_api_token`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/api_token).
+Refer to the Terraform Registry for docs: [`cloudflare_api_token`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/api_token).

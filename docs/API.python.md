@@ -106,6 +106,7 @@ The following submodules are available:
 - [record](./record.python.md)
 - [regionalHostname](./regionalHostname.python.md)
 - [regionalTieredCache](./regionalTieredCache.python.md)
+- [riskBehavior](./riskBehavior.python.md)
 - [ruleset](./ruleset.python.md)
 - [spectrumApplication](./spectrumApplication.python.md)
 - [splitTunnel](./splitTunnel.python.md)

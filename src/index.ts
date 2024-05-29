@@ -82,6 +82,7 @@ export * as rateLimit from './rate-limit';
 export * as record from './record';
 export * as regionalHostname from './regional-hostname';
 export * as regionalTieredCache from './regional-tiered-cache';
+export * as riskBehavior from './risk-behavior';
 export * as ruleset from './ruleset';
 export * as spectrumApplication from './spectrum-application';
 export * as splitTunnel from './split-tunnel';
