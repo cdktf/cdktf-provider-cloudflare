@@ -106,6 +106,7 @@ The following submodules are available:
 - [record](./record.typescript.md)
 - [regionalHostname](./regionalHostname.typescript.md)
 - [regionalTieredCache](./regionalTieredCache.typescript.md)
+- [riskBehavior](./riskBehavior.typescript.md)
 - [ruleset](./ruleset.typescript.md)
 - [spectrumApplication](./spectrumApplication.typescript.md)
 - [splitTunnel](./splitTunnel.typescript.md)

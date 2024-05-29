@@ -106,6 +106,7 @@ The following submodules are available:
 - [record](./record.csharp.md)
 - [regionalHostname](./regionalHostname.csharp.md)
 - [regionalTieredCache](./regionalTieredCache.csharp.md)
+- [riskBehavior](./riskBehavior.csharp.md)
 - [ruleset](./ruleset.csharp.md)
 - [spectrumApplication](./spectrumApplication.csharp.md)
 - [splitTunnel](./splitTunnel.csharp.md)

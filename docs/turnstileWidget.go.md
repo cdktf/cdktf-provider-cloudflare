@@ -4,12 +4,12 @@
 
 ### TurnstileWidget <a name="TurnstileWidget" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.NewTurnstileWidget(scope Construct, id *string, config TurnstileWidgetConfig) TurnstileWidget
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ turnstilewidget.TurnstileWidget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ turnstilewidget.TurnstileWidget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the TurnstileWidget to import.
 
 The id of the existing TurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 &turnstilewidget.TurnstileWidgetConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ Domains *[]*string
 
 Domains where the widget is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
 
 ---
 
@@ -1033,7 +1033,7 @@ Mode *string
 
 Widget Mode. Available values: `non-interactive`, `invisible`, `managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1047,7 +1047,7 @@ Name *string
 
 Human readable widget name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -1061,7 +1061,7 @@ BotFightMode interface{}
 
 If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -1075,7 +1075,7 @@ Id *string
 
 The identifier of this resource. This is the site key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1092,7 +1092,7 @@ Offlabel interface{}
 
 Do not show any Cloudflare branding on the widget (Enterprise only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -1106,7 +1106,7 @@ Region *string
 
 Region where this widget can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 
