@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScript(scope Construct, id *string, config WorkerScriptConfig) WorkerScript
 ```
@@ -627,7 +627,7 @@ func ResetWebassemblyBinding()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.WorkerScript_IsConstruct(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.WorkerScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -673,7 +673,7 @@ workerscript.WorkerScript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.WorkerScript_IsTerraformResource(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ workerscript.WorkerScript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.WorkerScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1356,7 +1356,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptAnalyticsEngineBinding {
 	Dataset: *string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptConfig {
 	Connection: interface{},
@@ -1827,7 +1827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptD1DatabaseBinding {
 	DatabaseId: *string,
@@ -1877,7 +1877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptKvNamespaceBinding {
 	Name: *string,
@@ -1927,7 +1927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptPlacement {
 	Mode: *string,
@@ -1961,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptPlainTextBinding {
 	Name: *string,
@@ -2011,7 +2011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptQueueBinding {
 	Binding: *string,
@@ -2061,7 +2061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptR2BucketBinding {
 	BucketName: *string,
@@ -2111,7 +2111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptSecretTextBinding {
 	Name: *string,
@@ -2161,7 +2161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptServiceBinding {
 	Name: *string,
@@ -2227,7 +2227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 &workerscript.WorkerScriptWebassemblyBinding {
 	Module: *string,
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptAnalyticsEngineBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptAnalyticsEngineBindingList
 ```
@@ -2439,7 +2439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptAnalyticsEngineBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptAnalyticsEngineBindingOutputReference
 ```
@@ -2750,7 +2750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptD1DatabaseBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptD1DatabaseBindingList
 ```
@@ -2910,7 +2910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptD1DatabaseBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptD1DatabaseBindingOutputReference
 ```
@@ -3221,7 +3221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptKvNamespaceBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptKvNamespaceBindingList
 ```
@@ -3381,7 +3381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptKvNamespaceBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptKvNamespaceBindingOutputReference
 ```
@@ -3692,7 +3692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptPlacementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptPlacementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptPlacementList
 ```
@@ -3852,7 +3852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptPlacementOutputReference
 ```
@@ -4141,7 +4141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptPlainTextBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptPlainTextBindingList
 ```
@@ -4301,7 +4301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptPlainTextBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptPlainTextBindingOutputReference
 ```
@@ -4612,7 +4612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptQueueBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptQueueBindingList
 ```
@@ -4772,7 +4772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptQueueBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptQueueBindingOutputReference
 ```
@@ -5083,7 +5083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptR2BucketBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptR2BucketBindingList
 ```
@@ -5243,7 +5243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptR2BucketBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptR2BucketBindingOutputReference
 ```
@@ -5554,7 +5554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptSecretTextBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptSecretTextBindingList
 ```
@@ -5714,7 +5714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptSecretTextBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptSecretTextBindingOutputReference
 ```
@@ -6025,7 +6025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptServiceBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptServiceBindingList
 ```
@@ -6185,7 +6185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptServiceBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptServiceBindingOutputReference
 ```
@@ -6525,7 +6525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptWebassemblyBindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptWebassemblyBindingList
 ```
@@ -6685,7 +6685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscript"
 
 workerscript.NewWorkerScriptWebassemblyBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerScriptWebassemblyBindingOutputReference
 ```
