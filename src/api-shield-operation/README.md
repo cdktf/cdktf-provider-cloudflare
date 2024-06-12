@@ -1,3 +1,3 @@
 # `cloudflare_api_shield_operation`
 
-Refer to the Terraform Registry for docs: [`cloudflare_api_shield_operation`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/api_shield_operation).
+Refer to the Terraform Registry for docs: [`cloudflare_api_shield_operation`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/api_shield_operation).

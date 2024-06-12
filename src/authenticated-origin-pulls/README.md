@@ -1,3 +1,3 @@
 # `cloudflare_authenticated_origin_pulls`
 
-Refer to the Terraform Registry for docs: [`cloudflare_authenticated_origin_pulls`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/authenticated_origin_pulls).
+Refer to the Terraform Registry for docs: [`cloudflare_authenticated_origin_pulls`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/authenticated_origin_pulls).
