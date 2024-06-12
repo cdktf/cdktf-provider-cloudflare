@@ -4,12 +4,12 @@
 
 ### AccessApplication <a name="AccessApplication" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application cloudflare_access_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application cloudflare_access_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplication(scope Construct, id *string, config AccessApplicationConfig) AccessApplication
 ```
@@ -674,7 +674,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.AccessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.AccessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -720,7 +720,7 @@ accessapplication.AccessApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.AccessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -734,7 +734,7 @@ accessapplication.AccessApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.AccessApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ The construct id used in the generated config for the AccessApplication to impor
 
 The id of the existing AccessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1700,7 +1700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationConfig {
 	Connection: interface{},
@@ -1728,14 +1728,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessappli
 	HeaderBgColor: *string,
 	HttpOnlyCookieAttribute: interface{},
 	Id: *string,
-	LandingPageDesign: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationLandingPageDesign,
+	LandingPageDesign: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationLandingPageDesign,
 	LogoUrl: *string,
 	Name: *string,
 	OptionsPreflightBypass: interface{},
 	Policies: *[]*string,
-	SaasApp: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasApp,
+	SaasApp: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasApp,
 	SameSiteCookieAttribute: *string,
-	ScimConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationScimConfig,
+	ScimConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationScimConfig,
 	SelfHostedDomains: *[]*string,
 	ServiceAuth401Redirect: interface{},
 	SessionDuration: *string,
@@ -1774,7 +1774,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessappli
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.footerLinks">FooterLinks</a></code> | <code>interface{}</code> | footer_links block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.headerBgColor">HeaderBgColor</a></code> | <code>*string</code> | The background color of the header bar in the app launcher. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.httpOnlyCookieAttribute">HttpOnlyCookieAttribute</a></code> | <code>interface{}</code> | Option to add the `HttpOnly` cookie flag to access tokens. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#id AccessApplication#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#id AccessApplication#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.landingPageDesign">LandingPageDesign</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesign">AccessApplicationLandingPageDesign</a></code> | landing_page_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.logoUrl">LogoUrl</a></code> | <code>*string</code> | Image URL for the logo shown in the app launcher dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Friendly name of the Access Application. |
@@ -1873,7 +1873,7 @@ AccountId *string
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#account_id AccessApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#account_id AccessApplication#account_id}
 
 ---
 
@@ -1889,7 +1889,7 @@ When set to true, users can authenticate to this application using their WARP se
 
 When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
 
 ---
 
@@ -1903,7 +1903,7 @@ AllowedIdps *[]*string
 
 The identity providers selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
 
 ---
 
@@ -1917,7 +1917,7 @@ AppLauncherLogoUrl *string
 
 The logo URL of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
 
 ---
 
@@ -1931,7 +1931,7 @@ AppLauncherVisible interface{}
 
 Option to show/hide applications in App Launcher. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
 
 ---
 
@@ -1945,7 +1945,7 @@ AutoRedirectToIdentity interface{}
 
 Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
 
 ---
 
@@ -1959,7 +1959,7 @@ BgColor *string
 
 The background color of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
 
 ---
 
@@ -1973,7 +1973,7 @@ CorsHeaders interface{}
 
 cors_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
 
 ---
 
@@ -1987,7 +1987,7 @@ CustomDenyMessage *string
 
 Option that returns a custom error message when a user is denied access to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
 
 ---
 
@@ -2001,7 +2001,7 @@ CustomDenyUrl *string
 
 Option that redirects to a custom URL when a user is denied access to the application via identity based rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
 
 ---
 
@@ -2015,7 +2015,7 @@ CustomNonIdentityDenyUrl *string
 
 Option that redirects to a custom URL when a user is denied access to the application via non identity rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
 
 ---
 
@@ -2029,7 +2029,7 @@ CustomPages *[]*string
 
 The custom pages selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
 
 ---
 
@@ -2045,7 +2045,7 @@ The primary hostname and path that Access will secure.
 
 If the app is visible in the App Launcher dashboard, this is the domain that will be displayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#domain AccessApplication#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#domain AccessApplication#domain}
 
 ---
 
@@ -2061,7 +2061,7 @@ Option to provide increased security against compromised authorization tokens an
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
 
 ---
 
@@ -2075,7 +2075,7 @@ FooterLinks interface{}
 
 footer_links block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
 
 ---
 
@@ -2089,7 +2089,7 @@ HeaderBgColor *string
 
 The background color of the header bar in the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
 
 ---
 
@@ -2103,7 +2103,7 @@ HttpOnlyCookieAttribute interface{}
 
 Option to add the `HttpOnly` cookie flag to access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
 
 ---
 
@@ -2115,7 +2115,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#id AccessApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#id AccessApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2132,7 +2132,7 @@ LandingPageDesign AccessApplicationLandingPageDesign
 
 landing_page_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
 
 ---
 
@@ -2146,7 +2146,7 @@ LogoUrl *string
 
 Image URL for the logo shown in the app launcher dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
 
 ---
 
@@ -2160,7 +2160,7 @@ Name *string
 
 Friendly name of the Access Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2176,7 +2176,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 Cannot turn on if cors_headers is set. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#options_preflight_bypass AccessApplication#options_preflight_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#options_preflight_bypass AccessApplication#options_preflight_bypass}
 
 ---
 
@@ -2192,7 +2192,7 @@ The policies associated with the application, in ascending order of precedence.
 
 When omitted, the application policies are not be updated. Warning: Do not use this field while you still have this application ID referenced as `application_id` in any `cloudflare_access_policy` resource, as it can result in an inconsistent state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#policies AccessApplication#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#policies AccessApplication#policies}
 
 ---
 
@@ -2206,7 +2206,7 @@ SaasApp AccessApplicationSaasApp
 
 saas_app block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
 
 ---
 
@@ -2220,7 +2220,7 @@ SameSiteCookieAttribute *string
 
 Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
 
 ---
 
@@ -2234,7 +2234,7 @@ ScimConfig AccessApplicationScimConfig
 
 scim_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#scim_config AccessApplication#scim_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#scim_config AccessApplication#scim_config}
 
 ---
 
@@ -2250,7 +2250,7 @@ List of domains that access will secure.
 
 Only present for self_hosted, vnc, and ssh applications. Always includes the value set as `domain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
 
 ---
 
@@ -2264,7 +2264,7 @@ ServiceAuth401Redirect interface{}
 
 Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
 
 ---
 
@@ -2280,7 +2280,7 @@ How often a user will be forced to re-authorise.
 
 Must be in the format `48h` or `2h45m`. Defaults to `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
 
 ---
 
@@ -2294,7 +2294,7 @@ SkipInterstitial interface{}
 
 Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
 
 ---
 
@@ -2308,7 +2308,7 @@ Tags *[]*string
 
 The itags associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#tags AccessApplication#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#tags AccessApplication#tags}
 
 ---
 
@@ -2322,7 +2322,7 @@ Type *string
 
 The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`. Defaults to `self_hosted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#type AccessApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#type AccessApplication#type}
 
 ---
 
@@ -2336,7 +2336,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
 
 ---
 
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationCorsHeaders {
 	AllowAllHeaders: interface{},
@@ -2384,7 +2384,7 @@ AllowAllHeaders interface{}
 
 Value to determine whether all HTTP headers are exposed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
 
 ---
 
@@ -2398,7 +2398,7 @@ AllowAllMethods interface{}
 
 Value to determine whether all methods are exposed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
 
 ---
 
@@ -2412,7 +2412,7 @@ AllowAllOrigins interface{}
 
 Value to determine whether all origins are permitted to make CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
 
 ---
 
@@ -2426,7 +2426,7 @@ AllowCredentials interface{}
 
 Value to determine if credentials (cookies, authorization headers, or TLS client certificates) are included with requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
 
 ---
 
@@ -2440,7 +2440,7 @@ AllowedHeaders *[]*string
 
 List of HTTP headers to expose via CORS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
 
 ---
 
@@ -2454,7 +2454,7 @@ AllowedMethods *[]*string
 
 List of methods to expose via CORS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
 
 ---
 
@@ -2468,7 +2468,7 @@ AllowedOrigins *[]*string
 
 List of origins permitted to make CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
 
 ---
 
@@ -2482,7 +2482,7 @@ MaxAge *f64
 
 The maximum time a preflight request will be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#max_age AccessApplication#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#max_age AccessApplication#max_age}
 
 ---
 
@@ -2491,7 +2491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationFooterLinks {
 	Name: *string,
@@ -2518,7 +2518,7 @@ Name *string
 
 The name of the footer link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2532,7 +2532,7 @@ Url *string
 
 The URL of the footer link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#url AccessApplication#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#url AccessApplication#url}
 
 ---
 
@@ -2541,7 +2541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationLandingPageDesign {
 	ButtonColor: *string,
@@ -2574,7 +2574,7 @@ ButtonColor *string
 
 The button color of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#button_color AccessApplication#button_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#button_color AccessApplication#button_color}
 
 ---
 
@@ -2588,7 +2588,7 @@ ButtonTextColor *string
 
 The button text color of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
 
 ---
 
@@ -2602,7 +2602,7 @@ ImageUrl *string
 
 The URL of the image to be displayed in the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#image_url AccessApplication#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#image_url AccessApplication#image_url}
 
 ---
 
@@ -2616,7 +2616,7 @@ Message *string
 
 The message of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#message AccessApplication#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#message AccessApplication#message}
 
 ---
 
@@ -2630,7 +2630,7 @@ Title *string
 
 The title of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#title AccessApplication#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#title AccessApplication#title}
 
 ---
 
@@ -2639,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationSaasApp {
 	AllowPkceWithoutClientSecret: interface{},
@@ -2651,6 +2651,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessappli
 	DefaultRelayState: *string,
 	GrantTypes: *[]*string,
 	GroupFilterRegex: *string,
+	HybridAndImplicitOptions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions,
 	NameIdFormat: *string,
 	NameIdTransformJsonata: *string,
 	RedirectUris: *[]*string,
@@ -2667,13 +2668,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessappli
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.allowPkceWithoutClientSecret">AllowPkceWithoutClientSecret</a></code> | <code>interface{}</code> | Allow PKCE flow without a client secret. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.appLauncherUrl">AppLauncherUrl</a></code> | <code>*string</code> | The URL where this applications tile redirects users. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#auth_type AccessApplication#auth_type}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.authType">AuthType</a></code> | <code>*string</code> | **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.consumerServiceUrl">ConsumerServiceUrl</a></code> | <code>*string</code> | The service provider's endpoint that is responsible for receiving and parsing a SAML assertion. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.customAttribute">CustomAttribute</a></code> | <code>interface{}</code> | custom_attribute block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.customClaim">CustomClaim</a></code> | <code>interface{}</code> | custom_claim block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.defaultRelayState">DefaultRelayState</a></code> | <code>*string</code> | The relay state used if not provided by the identity provider. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.grantTypes">GrantTypes</a></code> | <code>*[]*string</code> | The OIDC flows supported by this application. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.groupFilterRegex">GroupFilterRegex</a></code> | <code>*string</code> | A regex to filter Cloudflare groups returned in ID token and userinfo endpoint. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.hybridAndImplicitOptions">HybridAndImplicitOptions</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a></code> | hybrid_and_implicit_options block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.nameIdFormat">NameIdFormat</a></code> | <code>*string</code> | The format of the name identifier sent to the SaaS application. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.nameIdTransformJsonata">NameIdTransformJsonata</a></code> | <code>*string</code> | A [JSONata](https://jsonata.org/) expression that transforms an application's user identities into a NameID value for its SAML assertion. This expression should evaluate to a singular string. The output of this expression can override the `name_id_format` setting. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.redirectUris">RedirectUris</a></code> | <code>*[]*string</code> | The permitted URL's for Cloudflare to return Authorization codes and Access/ID tokens. |
@@ -2694,7 +2696,7 @@ AllowPkceWithoutClientSecret interface{}
 
 Allow PKCE flow without a client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#allow_pkce_without_client_secret AccessApplication#allow_pkce_without_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#allow_pkce_without_client_secret AccessApplication#allow_pkce_without_client_secret}
 
 ---
 
@@ -2708,7 +2710,7 @@ AppLauncherUrl *string
 
 The URL where this applications tile redirects users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#app_launcher_url AccessApplication#app_launcher_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#app_launcher_url AccessApplication#app_launcher_url}
 
 ---
 
@@ -2720,7 +2722,9 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#auth_type AccessApplication#auth_type}.
+**Modifying this attribute will force creation of a new resource.**.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#auth_type AccessApplication#auth_type}
 
 ---
 
@@ -2734,7 +2738,7 @@ ConsumerServiceUrl *string
 
 The service provider's endpoint that is responsible for receiving and parsing a SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
 
 ---
 
@@ -2748,7 +2752,7 @@ CustomAttribute interface{}
 
 custom_attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
 
 ---
 
@@ -2762,7 +2766,7 @@ CustomClaim interface{}
 
 custom_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#custom_claim AccessApplication#custom_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#custom_claim AccessApplication#custom_claim}
 
 ---
 
@@ -2776,7 +2780,7 @@ DefaultRelayState *string
 
 The relay state used if not provided by the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#default_relay_state AccessApplication#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#default_relay_state AccessApplication#default_relay_state}
 
 ---
 
@@ -2790,7 +2794,7 @@ GrantTypes *[]*string
 
 The OIDC flows supported by this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#grant_types AccessApplication#grant_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#grant_types AccessApplication#grant_types}
 
 ---
 
@@ -2804,7 +2808,21 @@ GroupFilterRegex *string
 
 A regex to filter Cloudflare groups returned in ID token and userinfo endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#group_filter_regex AccessApplication#group_filter_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#group_filter_regex AccessApplication#group_filter_regex}
+
+---
+
+##### `HybridAndImplicitOptions`<sup>Optional</sup> <a name="HybridAndImplicitOptions" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.property.hybridAndImplicitOptions"></a>
+
+```go
+HybridAndImplicitOptions AccessApplicationSaasAppHybridAndImplicitOptions
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a>
+
+hybrid_and_implicit_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#hybrid_and_implicit_options AccessApplication#hybrid_and_implicit_options}
 
 ---
 
@@ -2818,7 +2836,7 @@ NameIdFormat *string
 
 The format of the name identifier sent to the SaaS application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
 
 ---
 
@@ -2832,7 +2850,7 @@ NameIdTransformJsonata *string
 
 A [JSONata](https://jsonata.org/) expression that transforms an application's user identities into a NameID value for its SAML assertion. This expression should evaluate to a singular string. The output of this expression can override the `name_id_format` setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name_id_transform_jsonata AccessApplication#name_id_transform_jsonata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name_id_transform_jsonata AccessApplication#name_id_transform_jsonata}
 
 ---
 
@@ -2846,7 +2864,7 @@ RedirectUris *[]*string
 
 The permitted URL's for Cloudflare to return Authorization codes and Access/ID tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#redirect_uris AccessApplication#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#redirect_uris AccessApplication#redirect_uris}
 
 ---
 
@@ -2860,7 +2878,7 @@ RefreshTokenOptions interface{}
 
 refresh_token_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#refresh_token_options AccessApplication#refresh_token_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#refresh_token_options AccessApplication#refresh_token_options}
 
 ---
 
@@ -2874,7 +2892,7 @@ SamlAttributeTransformJsonata *string
 
 A [JSONata](https://jsonata.org/) expression that transforms an application's user identities into attribute assertions in the SAML response. The expression can transform id, email, name, and groups values. It can also transform fields listed in the saml_attributes or oidc_fields of the identity provider used to authenticate. The output of this expression must be a JSON object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#saml_attribute_transform_jsonata AccessApplication#saml_attribute_transform_jsonata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#saml_attribute_transform_jsonata AccessApplication#saml_attribute_transform_jsonata}
 
 ---
 
@@ -2888,7 +2906,7 @@ Scopes *[]*string
 
 Define the user information shared with access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#scopes AccessApplication#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#scopes AccessApplication#scopes}
 
 ---
 
@@ -2902,7 +2920,7 @@ SpEntityId *string
 
 A globally unique name for an identity or service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
 
 ---
 
@@ -2911,10 +2929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomAttribute {
-	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasAppCustomAttributeSource,
+	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeSource,
 	FriendlyName: *string,
 	Name: *string,
 	NameFormat: *string,
@@ -2944,7 +2962,7 @@ Source AccessApplicationSaasAppCustomAttributeSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#source AccessApplication#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#source AccessApplication#source}
 
 ---
 
@@ -2958,7 +2976,7 @@ FriendlyName *string
 
 A friendly name for the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
 
 ---
 
@@ -2972,7 +2990,7 @@ Name *string
 
 The name of the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2986,7 +3004,7 @@ NameFormat *string
 
 A globally unique name for an identity or service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name_format AccessApplication#name_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name_format AccessApplication#name_format}
 
 ---
 
@@ -3000,7 +3018,7 @@ Required interface{}
 
 True if the attribute must be always present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#required AccessApplication#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#required AccessApplication#required}
 
 ---
 
@@ -3009,7 +3027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomAttributeSource {
 	Name: *string,
@@ -3036,7 +3054,7 @@ Name *string
 
 The name of the attribute as provided by the IDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -3050,7 +3068,7 @@ NameByIdp *map[string]*string
 
 A mapping from IdP ID to claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
 
 ---
 
@@ -3059,10 +3077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomClaim {
-	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasAppCustomClaimSource,
+	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSource,
 	Name: *string,
 	Required: interface{},
 	Scope: *string,
@@ -3090,7 +3108,7 @@ Source AccessApplicationSaasAppCustomClaimSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#source AccessApplication#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#source AccessApplication#source}
 
 ---
 
@@ -3104,7 +3122,7 @@ Name *string
 
 The name of the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -3118,7 +3136,7 @@ Required interface{}
 
 True if the attribute must be always present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#required AccessApplication#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#required AccessApplication#required}
 
 ---
 
@@ -3132,7 +3150,7 @@ Scope *string
 
 The scope of the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#scope AccessApplication#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#scope AccessApplication#scope}
 
 ---
 
@@ -3141,7 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomClaimSource {
 	Name: *string,
@@ -3168,7 +3186,7 @@ Name *string
 
 The name of the attribute as provided by the IDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -3182,7 +3200,57 @@ NameByIdp *map[string]*string
 
 A mapping from IdP ID to claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
+
+---
+
+### AccessApplicationSaasAppHybridAndImplicitOptions <a name="AccessApplicationSaasAppHybridAndImplicitOptions" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+
+&accessapplication.AccessApplicationSaasAppHybridAndImplicitOptions {
+	ReturnAccessTokenFromAuthorizationEndpoint: interface{},
+	ReturnIdTokenFromAuthorizationEndpoint: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions.property.returnAccessTokenFromAuthorizationEndpoint">ReturnAccessTokenFromAuthorizationEndpoint</a></code> | <code>interface{}</code> | If true, the authorization endpoint will return an access token. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions.property.returnIdTokenFromAuthorizationEndpoint">ReturnIdTokenFromAuthorizationEndpoint</a></code> | <code>interface{}</code> | If true, the authorization endpoint will return an id token. |
+
+---
+
+##### `ReturnAccessTokenFromAuthorizationEndpoint`<sup>Optional</sup> <a name="ReturnAccessTokenFromAuthorizationEndpoint" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions.property.returnAccessTokenFromAuthorizationEndpoint"></a>
+
+```go
+ReturnAccessTokenFromAuthorizationEndpoint interface{}
+```
+
+- *Type:* interface{}
+
+If true, the authorization endpoint will return an access token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#return_access_token_from_authorization_endpoint AccessApplication#return_access_token_from_authorization_endpoint}
+
+---
+
+##### `ReturnIdTokenFromAuthorizationEndpoint`<sup>Optional</sup> <a name="ReturnIdTokenFromAuthorizationEndpoint" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions.property.returnIdTokenFromAuthorizationEndpoint"></a>
+
+```go
+ReturnIdTokenFromAuthorizationEndpoint interface{}
+```
+
+- *Type:* interface{}
+
+If true, the authorization endpoint will return an id token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#return_id_token_from_authorization_endpoint AccessApplication#return_id_token_from_authorization_endpoint}
 
 ---
 
@@ -3191,7 +3259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppRefreshTokenOptions {
 	Lifetime: *string,
@@ -3218,7 +3286,7 @@ How long a refresh token will be valid for after creation.
 
 Valid units are m,h,d. Must be longer than 1m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#lifetime AccessApplication#lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#lifetime AccessApplication#lifetime}
 
 ---
 
@@ -3227,12 +3295,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationScimConfig {
 	IdpUid: *string,
 	RemoteUri: *string,
-	Authentication: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationScimConfigAuthentication,
+	Authentication: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationScimConfigAuthentication,
 	DeactivateOnDelete: interface{},
 	Enabled: interface{},
 	Mappings: interface{},
@@ -3262,7 +3330,7 @@ IdpUid *string
 
 The UID of the IdP to use as the source for SCIM resources to provision to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#idp_uid AccessApplication#idp_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#idp_uid AccessApplication#idp_uid}
 
 ---
 
@@ -3276,7 +3344,7 @@ RemoteUri *string
 
 The base URI for the application's SCIM-compatible API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#remote_uri AccessApplication#remote_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#remote_uri AccessApplication#remote_uri}
 
 ---
 
@@ -3290,7 +3358,7 @@ Authentication AccessApplicationScimConfigAuthentication
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#authentication AccessApplication#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#authentication AccessApplication#authentication}
 
 ---
 
@@ -3306,7 +3374,7 @@ If false, propagates DELETE requests to the target application for SCIM resource
 
 If true, sets 'active' to false on the SCIM resource. Note: Some targets do not support DELETE operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#deactivate_on_delete AccessApplication#deactivate_on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#deactivate_on_delete AccessApplication#deactivate_on_delete}
 
 ---
 
@@ -3320,7 +3388,7 @@ Enabled interface{}
 
 Whether SCIM provisioning is turned on for this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#enabled AccessApplication#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#enabled AccessApplication#enabled}
 
 ---
 
@@ -3334,7 +3402,7 @@ Mappings interface{}
 
 mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#mappings AccessApplication#mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#mappings AccessApplication#mappings}
 
 ---
 
@@ -3343,7 +3411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationScimConfigAuthentication {
 	Scheme: *string,
@@ -3384,7 +3452,7 @@ Scheme *string
 
 The authentication scheme to use when making SCIM requests to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#scheme AccessApplication#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#scheme AccessApplication#scheme}
 
 ---
 
@@ -3400,7 +3468,7 @@ URL used to generate the auth code used during token generation.
 
 Required when using `scim_config.0.authentication.0.client_secret`, `scim_config.0.authentication.0.client_id`, `scim_config.0.authentication.0.token_url`. Conflicts with `scim_config.0.authentication.0.user`, `scim_config.0.authentication.0.password`, `scim_config.0.authentication.0.token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#authorization_url AccessApplication#authorization_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#authorization_url AccessApplication#authorization_url}
 
 ---
 
@@ -3416,7 +3484,7 @@ Client ID used to authenticate when generating a token for authenticating with t
 
 Required when using `scim_config.0.authentication.0.client_secret`, `scim_config.0.authentication.0.authorization_url`, `scim_config.0.authentication.0.token_url`. Conflicts with `scim_config.0.authentication.0.user`, `scim_config.0.authentication.0.password`, `scim_config.0.authentication.0.token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#client_id AccessApplication#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#client_id AccessApplication#client_id}
 
 ---
 
@@ -3432,7 +3500,7 @@ Secret used to authenticate when generating a token for authenticating with the 
 
 Required when using `scim_config.0.authentication.0.client_id`, `scim_config.0.authentication.0.authorization_url`, `scim_config.0.authentication.0.token_url`. Conflicts with `scim_config.0.authentication.0.user`, `scim_config.0.authentication.0.password`, `scim_config.0.authentication.0.token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#client_secret AccessApplication#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#client_secret AccessApplication#client_secret}
 
 ---
 
@@ -3446,7 +3514,7 @@ Password *string
 
 Required when using `scim_config.0.authentication.0.user`. Conflicts with `scim_config.0.authentication.0.token`, `scim_config.0.authentication.0.client_id`, `scim_config.0.authentication.0.client_secret`, `scim_config.0.authentication.0.authorization_url`, `scim_config.0.authentication.0.token_url`, `scim_config.0.authentication.0.scopes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#password AccessApplication#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#password AccessApplication#password}
 
 ---
 
@@ -3462,7 +3530,7 @@ The authorization scopes to request when generating the token used to authentica
 
 Conflicts with `scim_config.0.authentication.0.user`, `scim_config.0.authentication.0.password`, `scim_config.0.authentication.0.token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#scopes AccessApplication#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#scopes AccessApplication#scopes}
 
 ---
 
@@ -3476,7 +3544,7 @@ Token *string
 
 Token used to authenticate with the remote SCIM service. Conflicts with `scim_config.0.authentication.0.user`, `scim_config.0.authentication.0.password`, `scim_config.0.authentication.0.client_id`, `scim_config.0.authentication.0.client_secret`, `scim_config.0.authentication.0.authorization_url`, `scim_config.0.authentication.0.token_url`, `scim_config.0.authentication.0.scopes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#token AccessApplication#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#token AccessApplication#token}
 
 ---
 
@@ -3492,7 +3560,7 @@ URL used to generate the token used to authenticate with the remote SCIM service
 
 Required when using `scim_config.0.authentication.0.client_secret`, `scim_config.0.authentication.0.authorization_url`, `scim_config.0.authentication.0.client_id`. Conflicts with `scim_config.0.authentication.0.user`, `scim_config.0.authentication.0.password`, `scim_config.0.authentication.0.token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#token_url AccessApplication#token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#token_url AccessApplication#token_url}
 
 ---
 
@@ -3508,7 +3576,7 @@ User name used to authenticate with the remote SCIM service.
 
 Required when using `scim_config.0.authentication.0.password`. Conflicts with `scim_config.0.authentication.0.token`, `scim_config.0.authentication.0.client_id`, `scim_config.0.authentication.0.client_secret`, `scim_config.0.authentication.0.authorization_url`, `scim_config.0.authentication.0.token_url`, `scim_config.0.authentication.0.scopes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#user AccessApplication#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#user AccessApplication#user}
 
 ---
 
@@ -3517,13 +3585,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationScimConfigMappings {
 	Schema: *string,
 	Enabled: interface{},
 	Filter: *string,
-	Operations: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationScimConfigMappingsOperations,
+	Operations: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationScimConfigMappingsOperations,
 	TransformJsonata: *string,
 }
 ```
@@ -3550,7 +3618,7 @@ Schema *string
 
 Which SCIM resource type this mapping applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#schema AccessApplication#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#schema AccessApplication#schema}
 
 ---
 
@@ -3564,7 +3632,7 @@ Enabled interface{}
 
 Whether or not this mapping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#enabled AccessApplication#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#enabled AccessApplication#enabled}
 
 ---
 
@@ -3578,7 +3646,7 @@ Filter *string
 
 A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#filter AccessApplication#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#filter AccessApplication#filter}
 
 ---
 
@@ -3592,7 +3660,7 @@ Operations AccessApplicationScimConfigMappingsOperations
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#operations AccessApplication#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#operations AccessApplication#operations}
 
 ---
 
@@ -3606,7 +3674,7 @@ TransformJsonata *string
 
 A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#transform_jsonata AccessApplication#transform_jsonata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#transform_jsonata AccessApplication#transform_jsonata}
 
 ---
 
@@ -3615,7 +3683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 &accessapplication.AccessApplicationScimConfigMappingsOperations {
 	Create: interface{},
@@ -3644,7 +3712,7 @@ Create interface{}
 
 Whether or not this mapping applies to create (POST) operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#create AccessApplication#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#create AccessApplication#create}
 
 ---
 
@@ -3658,7 +3726,7 @@ Delete interface{}
 
 Whether or not this mapping applies to DELETE operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#delete AccessApplication#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#delete AccessApplication#delete}
 
 ---
 
@@ -3672,7 +3740,7 @@ Update interface{}
 
 Whether or not this mapping applies to update (PATCH/PUT) operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_application#update AccessApplication#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_application#update AccessApplication#update}
 
 ---
 
@@ -3683,7 +3751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationCorsHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationCorsHeadersList
 ```
@@ -3843,7 +3911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationCorsHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationCorsHeadersOutputReference
 ```
@@ -4342,7 +4410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationFooterLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationFooterLinksList
 ```
@@ -4502,7 +4570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationFooterLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationFooterLinksOutputReference
 ```
@@ -4827,7 +4895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationLandingPageDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationLandingPageDesignOutputReference
 ```
@@ -5221,7 +5289,7 @@ func InternalValue() AccessApplicationLandingPageDesign
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationSaasAppCustomAttributeList
 ```
@@ -5381,7 +5449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationSaasAppCustomAttributeOutputReference
 ```
@@ -5799,7 +5867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomAttributeSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppCustomAttributeSourceOutputReference
 ```
@@ -6099,7 +6167,7 @@ func InternalValue() AccessApplicationSaasAppCustomAttributeSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationSaasAppCustomClaimList
 ```
@@ -6259,7 +6327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationSaasAppCustomClaimOutputReference
 ```
@@ -6648,7 +6716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomClaimSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppCustomClaimSourceOutputReference
 ```
@@ -6943,12 +7011,319 @@ func InternalValue() AccessApplicationSaasAppCustomClaimSource
 ---
 
 
+### AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference <a name="AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+
+accessapplication.NewAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resetReturnAccessTokenFromAuthorizationEndpoint">ResetReturnAccessTokenFromAuthorizationEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resetReturnIdTokenFromAuthorizationEndpoint">ResetReturnIdTokenFromAuthorizationEndpoint</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetReturnAccessTokenFromAuthorizationEndpoint` <a name="ResetReturnAccessTokenFromAuthorizationEndpoint" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resetReturnAccessTokenFromAuthorizationEndpoint"></a>
+
+```go
+func ResetReturnAccessTokenFromAuthorizationEndpoint()
+```
+
+##### `ResetReturnIdTokenFromAuthorizationEndpoint` <a name="ResetReturnIdTokenFromAuthorizationEndpoint" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.resetReturnIdTokenFromAuthorizationEndpoint"></a>
+
+```go
+func ResetReturnIdTokenFromAuthorizationEndpoint()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnAccessTokenFromAuthorizationEndpointInput">ReturnAccessTokenFromAuthorizationEndpointInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnIdTokenFromAuthorizationEndpointInput">ReturnIdTokenFromAuthorizationEndpointInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnAccessTokenFromAuthorizationEndpoint">ReturnAccessTokenFromAuthorizationEndpoint</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnIdTokenFromAuthorizationEndpoint">ReturnIdTokenFromAuthorizationEndpoint</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ReturnAccessTokenFromAuthorizationEndpointInput`<sup>Optional</sup> <a name="ReturnAccessTokenFromAuthorizationEndpointInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnAccessTokenFromAuthorizationEndpointInput"></a>
+
+```go
+func ReturnAccessTokenFromAuthorizationEndpointInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ReturnIdTokenFromAuthorizationEndpointInput`<sup>Optional</sup> <a name="ReturnIdTokenFromAuthorizationEndpointInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnIdTokenFromAuthorizationEndpointInput"></a>
+
+```go
+func ReturnIdTokenFromAuthorizationEndpointInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ReturnAccessTokenFromAuthorizationEndpoint`<sup>Required</sup> <a name="ReturnAccessTokenFromAuthorizationEndpoint" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnAccessTokenFromAuthorizationEndpoint"></a>
+
+```go
+func ReturnAccessTokenFromAuthorizationEndpoint() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ReturnIdTokenFromAuthorizationEndpoint`<sup>Required</sup> <a name="ReturnIdTokenFromAuthorizationEndpoint" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.returnIdTokenFromAuthorizationEndpoint"></a>
+
+```go
+func ReturnIdTokenFromAuthorizationEndpoint() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() AccessApplicationSaasAppHybridAndImplicitOptions
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a>
+
+---
+
+
 ### AccessApplicationSaasAppOutputReference <a name="AccessApplicationSaasAppOutputReference" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppOutputReference
 ```
@@ -6995,6 +7370,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putCustomAttribute">PutCustomAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putCustomClaim">PutCustomClaim</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putHybridAndImplicitOptions">PutHybridAndImplicitOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putRefreshTokenOptions">PutRefreshTokenOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetAllowPkceWithoutClientSecret">ResetAllowPkceWithoutClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetAppLauncherUrl">ResetAppLauncherUrl</a></code> | *No description.* |
@@ -7005,6 +7381,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetDefaultRelayState">ResetDefaultRelayState</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetGrantTypes">ResetGrantTypes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetGroupFilterRegex">ResetGroupFilterRegex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetHybridAndImplicitOptions">ResetHybridAndImplicitOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetNameIdFormat">ResetNameIdFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetNameIdTransformJsonata">ResetNameIdTransformJsonata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetRedirectUris">ResetRedirectUris</a></code> | *No description.* |
@@ -7189,6 +7566,18 @@ func PutCustomClaim(value interface{})
 
 ---
 
+##### `PutHybridAndImplicitOptions` <a name="PutHybridAndImplicitOptions" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putHybridAndImplicitOptions"></a>
+
+```go
+func PutHybridAndImplicitOptions(value AccessApplicationSaasAppHybridAndImplicitOptions)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putHybridAndImplicitOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a>
+
+---
+
 ##### `PutRefreshTokenOptions` <a name="PutRefreshTokenOptions" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.putRefreshTokenOptions"></a>
 
 ```go
@@ -7255,6 +7644,12 @@ func ResetGrantTypes()
 func ResetGroupFilterRegex()
 ```
 
+##### `ResetHybridAndImplicitOptions` <a name="ResetHybridAndImplicitOptions" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetHybridAndImplicitOptions"></a>
+
+```go
+func ResetHybridAndImplicitOptions()
+```
+
 ##### `ResetNameIdFormat` <a name="ResetNameIdFormat" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.resetNameIdFormat"></a>
 
 ```go
@@ -7308,6 +7703,7 @@ func ResetSpEntityId()
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.customAttribute">CustomAttribute</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeList">AccessApplicationSaasAppCustomAttributeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.customClaim">CustomClaim</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimList">AccessApplicationSaasAppCustomClaimList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.hybridAndImplicitOptions">HybridAndImplicitOptions</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference">AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.idpEntityId">IdpEntityId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.publicKey">PublicKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.refreshTokenOptions">RefreshTokenOptions</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsList">AccessApplicationSaasAppRefreshTokenOptionsList</a></code> | *No description.* |
@@ -7321,6 +7717,7 @@ func ResetSpEntityId()
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.defaultRelayStateInput">DefaultRelayStateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.grantTypesInput">GrantTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.groupFilterRegexInput">GroupFilterRegexInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.hybridAndImplicitOptionsInput">HybridAndImplicitOptionsInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.nameIdFormatInput">NameIdFormatInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.nameIdTransformJsonataInput">NameIdTransformJsonataInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.redirectUrisInput">RedirectUrisInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -7406,6 +7803,16 @@ func CustomClaim() AccessApplicationSaasAppCustomClaimList
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimList">AccessApplicationSaasAppCustomClaimList</a>
+
+---
+
+##### `HybridAndImplicitOptions`<sup>Required</sup> <a name="HybridAndImplicitOptions" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.hybridAndImplicitOptions"></a>
+
+```go
+func HybridAndImplicitOptions() AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference">AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference</a>
 
 ---
 
@@ -7536,6 +7943,16 @@ func GroupFilterRegexInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `HybridAndImplicitOptionsInput`<sup>Optional</sup> <a name="HybridAndImplicitOptionsInput" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.property.hybridAndImplicitOptionsInput"></a>
+
+```go
+func HybridAndImplicitOptionsInput() AccessApplicationSaasAppHybridAndImplicitOptions
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions">AccessApplicationSaasAppHybridAndImplicitOptions</a>
 
 ---
 
@@ -7755,7 +8172,7 @@ func InternalValue() AccessApplicationSaasApp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppRefreshTokenOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationSaasAppRefreshTokenOptionsList
 ```
@@ -7915,7 +8332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppRefreshTokenOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationSaasAppRefreshTokenOptionsOutputReference
 ```
@@ -8211,7 +8628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigAuthenticationOutputReference
 ```
@@ -8714,7 +9131,7 @@ func InternalValue() AccessApplicationScimConfigAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationScimConfigMappingsList
 ```
@@ -8874,7 +9291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigMappingsOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigMappingsOperationsOutputReference
 ```
@@ -9210,7 +9627,7 @@ func InternalValue() AccessApplicationScimConfigMappingsOperations
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationScimConfigMappingsOutputReference
 ```
@@ -9628,7 +10045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigOutputReference
 ```

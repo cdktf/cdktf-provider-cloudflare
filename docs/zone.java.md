@@ -4,7 +4,7 @@
 
 ### Zone <a name="Zone" id="@cdktf/provider-cloudflare.zone.Zone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone cloudflare_zone}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone cloudflare_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zone.Zone.Initializer"></a>
 
@@ -32,6 +32,7 @@ Zone.Builder.create(Construct scope, java.lang.String id)
 //  .paused(IResolvable)
 //  .plan(java.lang.String)
 //  .type(java.lang.String)
+//  .vanityNameServers(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -48,11 +49,12 @@ Zone.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID to manage the zone resource in. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#id Zone#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#id Zone#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.jumpStart">jumpStart</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to scan for DNS records on creation. Ignored after zone is created. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.plan">plan</a></code> | <code>java.lang.String</code> | The name of the commercial plan to apply to the zone. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | A full zone implies that DNS is hosted with Cloudflare. |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.vanityNameServers">vanityNameServers</a></code> | <code>java.util.List<java.lang.String></code> | List of Vanity Nameservers (if set). |
 
 ---
 
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Account ID to manage the zone resource in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#account_id Zone#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#account_id Zone#account_id}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#zone Zone#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#zone Zone#zone}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#id Zone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#id Zone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether to scan for DNS records on creation. Ignored after zone is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#jump_start Zone#jump_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#jump_start Zone#jump_start}
 
 ---
 
@@ -163,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#paused Zone#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#paused Zone#paused}
 
 ---
 
@@ -175,7 +177,7 @@ The name of the commercial plan to apply to the zone.
 
 Available values: `free`, `lite`, `pro`, `pro_plus`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#plan Zone#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#plan Zone#plan}
 
 ---
 
@@ -187,7 +189,17 @@ A full zone implies that DNS is hosted with Cloudflare.
 
 A partial zone is typically a partner-hosted zone or a CNAME setup. Available values: `full`, `partial`, `secondary`. Defaults to `full`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#type Zone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#type Zone#type}
+
+---
+
+##### `vanityNameServers`<sup>Optional</sup> <a name="vanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.Initializer.parameter.vanityNameServers"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+List of Vanity Nameservers (if set).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
 
 ---
 
@@ -223,6 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetPaused">resetPaused</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetPlan">resetPlan</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetVanityNameServers">resetVanityNameServers</a></code> | *No description.* |
 
 ---
 
@@ -546,6 +559,12 @@ public void resetPlan()
 public void resetType()
 ```
 
+##### `resetVanityNameServers` <a name="resetVanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.resetVanityNameServers"></a>
+
+```java
+public void resetVanityNameServers()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -649,7 +668,7 @@ The construct id used in the generated config for the Zone to import.
 
 The id of the existing Zone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +701,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.meta">meta</a></code> | <code>com.hashicorp.cdktf.BooleanMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.nameServers">nameServers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers">vanityNameServers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.verificationKey">verificationKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -690,6 +708,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.pausedInput">pausedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.planInput">planInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServersInput">vanityNameServersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -697,6 +716,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.plan">plan</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers">vanityNameServers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -873,16 +893,6 @@ public java.lang.String getStatus();
 
 ---
 
-##### `vanityNameServers`<sup>Required</sup> <a name="vanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers"></a>
-
-```java
-public java.util.List<java.lang.String> getVanityNameServers();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `verificationKey`<sup>Required</sup> <a name="verificationKey" id="@cdktf/provider-cloudflare.zone.Zone.property.verificationKey"></a>
 
 ```java
@@ -950,6 +960,16 @@ public java.lang.String getTypeInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `vanityNameServersInput`<sup>Optional</sup> <a name="vanityNameServersInput" id="@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServersInput"></a>
+
+```java
+public java.util.List<java.lang.String> getVanityNameServersInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -1023,6 +1043,16 @@ public java.lang.String getType();
 
 ---
 
+##### `vanityNameServers`<sup>Required</sup> <a name="vanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers"></a>
+
+```java
+public java.util.List<java.lang.String> getVanityNameServers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-cloudflare.zone.Zone.property.zone"></a>
 
 ```java
@@ -1081,6 +1111,7 @@ ZoneConfig.builder()
 //  .paused(IResolvable)
 //  .plan(java.lang.String)
 //  .type(java.lang.String)
+//  .vanityNameServers(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -1097,11 +1128,12 @@ ZoneConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID to manage the zone resource in. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#id Zone#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#id Zone#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.jumpStart">jumpStart</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to scan for DNS records on creation. Ignored after zone is created. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.plan">plan</a></code> | <code>java.lang.String</code> | The name of the commercial plan to apply to the zone. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.type">type</a></code> | <code>java.lang.String</code> | A full zone implies that DNS is hosted with Cloudflare. |
+| <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.vanityNameServers">vanityNameServers</a></code> | <code>java.util.List<java.lang.String></code> | List of Vanity Nameservers (if set). |
 
 ---
 
@@ -1185,7 +1217,7 @@ public java.lang.String getAccountId();
 
 Account ID to manage the zone resource in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#account_id Zone#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#account_id Zone#account_id}
 
 ---
 
@@ -1199,7 +1231,7 @@ public java.lang.String getZone();
 
 The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#zone Zone#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#zone Zone#zone}
 
 ---
 
@@ -1211,7 +1243,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#id Zone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#id Zone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1228,7 +1260,7 @@ public java.lang.Object getJumpStart();
 
 Whether to scan for DNS records on creation. Ignored after zone is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#jump_start Zone#jump_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#jump_start Zone#jump_start}
 
 ---
 
@@ -1242,7 +1274,7 @@ public java.lang.Object getPaused();
 
 Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#paused Zone#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#paused Zone#paused}
 
 ---
 
@@ -1258,7 +1290,7 @@ The name of the commercial plan to apply to the zone.
 
 Available values: `free`, `lite`, `pro`, `pro_plus`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#plan Zone#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#plan Zone#plan}
 
 ---
 
@@ -1274,7 +1306,21 @@ A full zone implies that DNS is hosted with Cloudflare.
 
 A partial zone is typically a partner-hosted zone or a CNAME setup. Available values: `full`, `partial`, `secondary`. Defaults to `full`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#type Zone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#type Zone#type}
+
+---
+
+##### `vanityNameServers`<sup>Optional</sup> <a name="vanityNameServers" id="@cdktf/provider-cloudflare.zone.ZoneConfig.property.vanityNameServers"></a>
+
+```java
+public java.util.List<java.lang.String> getVanityNameServers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of Vanity Nameservers (if set).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
 
 ---
 

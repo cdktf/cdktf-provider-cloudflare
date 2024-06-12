@@ -4,12 +4,12 @@
 
 ### Zone <a name="Zone" id="@cdktf/provider-cloudflare.zone.Zone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone cloudflare_zone}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone cloudflare_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zone.Zone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 
 zone.NewZone(scope Construct, id *string, config ZoneConfig) Zone
 ```
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetPaused">ResetPaused</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetPlan">ResetPlan</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.resetVanityNameServers">ResetVanityNameServers</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +400,12 @@ func ResetPlan()
 func ResetType()
 ```
 
+##### `ResetVanityNameServers` <a name="ResetVanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.resetVanityNameServers"></a>
+
+```go
+func ResetVanityNameServers()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -413,7 +420,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zone.Zone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 
 zone.Zone_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zone.Zone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 
 zone.Zone_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ zone.Zone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zone.Zone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 
 zone.Zone_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ zone.Zone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zone.Zone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 
 zone.Zone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +509,7 @@ The construct id used in the generated config for the Zone to import.
 
 The id of the existing Zone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,7 +542,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.meta">Meta</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.BooleanMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.nameServers">NameServers</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.status">Status</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers">VanityNameServers</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.verificationKey">VerificationKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -543,6 +549,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.pausedInput">PausedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.planInput">PlanInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServersInput">VanityNameServersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -550,6 +557,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.paused">Paused</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.plan">Plan</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers">VanityNameServers</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.Zone.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -726,16 +734,6 @@ func Status() *string
 
 ---
 
-##### `VanityNameServers`<sup>Required</sup> <a name="VanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers"></a>
-
-```go
-func VanityNameServers() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `VerificationKey`<sup>Required</sup> <a name="VerificationKey" id="@cdktf/provider-cloudflare.zone.Zone.property.verificationKey"></a>
 
 ```go
@@ -803,6 +801,16 @@ func TypeInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `VanityNameServersInput`<sup>Optional</sup> <a name="VanityNameServersInput" id="@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServersInput"></a>
+
+```go
+func VanityNameServersInput() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -876,6 +884,16 @@ func Type() *string
 
 ---
 
+##### `VanityNameServers`<sup>Required</sup> <a name="VanityNameServers" id="@cdktf/provider-cloudflare.zone.Zone.property.vanityNameServers"></a>
+
+```go
+func VanityNameServers() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `Zone`<sup>Required</sup> <a name="Zone" id="@cdktf/provider-cloudflare.zone.Zone.property.zone"></a>
 
 ```go
@@ -911,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zone.ZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 
 &zone.ZoneConfig {
 	Connection: interface{},
@@ -928,6 +946,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
 	Paused: interface{},
 	Plan: *string,
 	Type: *string,
+	VanityNameServers: *[]*string,
 }
 ```
 
@@ -944,11 +963,12 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone"
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account ID to manage the zone resource in. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.zone">Zone</a></code> | <code>*string</code> | The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#id Zone#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#id Zone#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.jumpStart">JumpStart</a></code> | <code>interface{}</code> | Whether to scan for DNS records on creation. Ignored after zone is created. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.paused">Paused</a></code> | <code>interface{}</code> | Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.plan">Plan</a></code> | <code>*string</code> | The name of the commercial plan to apply to the zone. |
 | <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.type">Type</a></code> | <code>*string</code> | A full zone implies that DNS is hosted with Cloudflare. |
+| <code><a href="#@cdktf/provider-cloudflare.zone.ZoneConfig.property.vanityNameServers">VanityNameServers</a></code> | <code>*[]*string</code> | List of Vanity Nameservers (if set). |
 
 ---
 
@@ -1032,7 +1052,7 @@ AccountId *string
 
 Account ID to manage the zone resource in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#account_id Zone#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#account_id Zone#account_id}
 
 ---
 
@@ -1046,7 +1066,7 @@ Zone *string
 
 The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#zone Zone#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#zone Zone#zone}
 
 ---
 
@@ -1058,7 +1078,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#id Zone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#id Zone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1095,7 @@ JumpStart interface{}
 
 Whether to scan for DNS records on creation. Ignored after zone is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#jump_start Zone#jump_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#jump_start Zone#jump_start}
 
 ---
 
@@ -1089,7 +1109,7 @@ Paused interface{}
 
 Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#paused Zone#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#paused Zone#paused}
 
 ---
 
@@ -1105,7 +1125,7 @@ The name of the commercial plan to apply to the zone.
 
 Available values: `free`, `lite`, `pro`, `pro_plus`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#plan Zone#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#plan Zone#plan}
 
 ---
 
@@ -1121,7 +1141,21 @@ A full zone implies that DNS is hosted with Cloudflare.
 
 A partial zone is typically a partner-hosted zone or a CNAME setup. Available values: `full`, `partial`, `secondary`. Defaults to `full`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone#type Zone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#type Zone#type}
+
+---
+
+##### `VanityNameServers`<sup>Optional</sup> <a name="VanityNameServers" id="@cdktf/provider-cloudflare.zone.ZoneConfig.property.vanityNameServers"></a>
+
+```go
+VanityNameServers *[]*string
+```
+
+- *Type:* *[]*string
+
+List of Vanity Nameservers (if set).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
 
 ---
 

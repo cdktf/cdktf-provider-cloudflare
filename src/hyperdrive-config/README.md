@@ -1,3 +1,3 @@
 # `cloudflare_hyperdrive_config`
 
-Refer to the Terraform Registry for docs: [`cloudflare_hyperdrive_config`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/hyperdrive_config).
+Refer to the Terraform Registry for docs: [`cloudflare_hyperdrive_config`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/hyperdrive_config).

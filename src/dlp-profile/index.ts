@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
   */
   readonly accountId: string;
   /**
   * Related DLP policies will trigger when the match count exceeds the number set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
   */
   readonly allowedMatchCount: number;
   /**
   * Brief summary of the profile and its intended use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#description DlpProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#description DlpProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#id DlpProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#id DlpProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +35,31 @@ export interface DlpProfileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the profile. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#name DlpProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#name DlpProfile#name}
   */
   readonly name: string;
   /**
   * If true, scan images via OCR to determine if any text present matches filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#ocr_enabled DlpProfile#ocr_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#ocr_enabled DlpProfile#ocr_enabled}
   */
   readonly ocrEnabled?: boolean | cdktf.IResolvable;
   /**
   * The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#type DlpProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#type DlpProfile#type}
   */
   readonly type: string;
   /**
   * context_awareness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#context_awareness DlpProfile#context_awareness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#context_awareness DlpProfile#context_awareness}
   */
   readonly contextAwareness?: DlpProfileContextAwareness;
   /**
   * entry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#entry DlpProfile#entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#entry DlpProfile#entry}
   */
   readonly entry: DlpProfileEntry[] | cdktf.IResolvable;
 }
@@ -72,7 +67,7 @@ export interface DlpProfileContextAwarenessSkip {
   /**
   * Return all matches, regardless of context analysis result, if the data is a file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#files DlpProfile#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#files DlpProfile#files}
   */
   readonly files: boolean | cdktf.IResolvable;
 }
@@ -155,13 +150,13 @@ export interface DlpProfileContextAwareness {
   /**
   * Scan the context of predefined entries to only return matches surrounded by keywords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * skip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#skip DlpProfile#skip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#skip DlpProfile#skip}
   */
   readonly skip: DlpProfileContextAwarenessSkip;
 }
@@ -270,13 +265,13 @@ export interface DlpProfileEntryPattern {
   /**
   * The regex that defines the pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#regex DlpProfile#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#regex DlpProfile#regex}
   */
   readonly regex: string;
   /**
   * The validation algorithm to apply with this pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#validation DlpProfile#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#validation DlpProfile#validation}
   */
   readonly validation?: string;
 }
@@ -388,13 +383,13 @@ export interface DlpProfileEntry {
   /**
   * Whether the entry is active. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Unique entry identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#id DlpProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#id DlpProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -403,13 +398,13 @@ export interface DlpProfileEntry {
   /**
   * Name of the entry to deploy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#name DlpProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#name DlpProfile#name}
   */
   readonly name: string;
   /**
   * pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
   */
   readonly pattern?: DlpProfileEntryPattern;
 }
@@ -609,7 +604,7 @@ export class DlpProfileEntryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile cloudflare_dlp_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile cloudflare_dlp_profile}
 */
 export class DlpProfile extends cdktf.TerraformResource {
 
@@ -625,7 +620,7 @@ export class DlpProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DlpProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DlpProfile to import
-  * @param importFromId The id of the existing DlpProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DlpProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DlpProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -637,7 +632,7 @@ export class DlpProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -648,7 +643,7 @@ export class DlpProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dlp_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
