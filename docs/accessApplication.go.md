@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplication(scope Construct, id *string, config AccessApplicationConfig) AccessApplication
 ```
@@ -674,7 +674,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.AccessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.AccessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -720,7 +720,7 @@ accessapplication.AccessApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.AccessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -734,7 +734,7 @@ accessapplication.AccessApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.AccessApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1700,7 +1700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationConfig {
 	Connection: interface{},
@@ -1728,14 +1728,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplicati
 	HeaderBgColor: *string,
 	HttpOnlyCookieAttribute: interface{},
 	Id: *string,
-	LandingPageDesign: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationLandingPageDesign,
+	LandingPageDesign: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationLandingPageDesign,
 	LogoUrl: *string,
 	Name: *string,
 	OptionsPreflightBypass: interface{},
 	Policies: *[]*string,
-	SaasApp: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasApp,
+	SaasApp: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasApp,
 	SameSiteCookieAttribute: *string,
-	ScimConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationScimConfig,
+	ScimConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationScimConfig,
 	SelfHostedDomains: *[]*string,
 	ServiceAuth401Redirect: interface{},
 	SessionDuration: *string,
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationCorsHeaders {
 	AllowAllHeaders: interface{},
@@ -2491,7 +2491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationFooterLinks {
 	Name: *string,
@@ -2541,7 +2541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationLandingPageDesign {
 	ButtonColor: *string,
@@ -2639,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasApp {
 	AllowPkceWithoutClientSecret: interface{},
@@ -2651,7 +2651,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplicati
 	DefaultRelayState: *string,
 	GrantTypes: *[]*string,
 	GroupFilterRegex: *string,
-	HybridAndImplicitOptions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions,
+	HybridAndImplicitOptions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions,
 	NameIdFormat: *string,
 	NameIdTransformJsonata: *string,
 	RedirectUris: *[]*string,
@@ -2929,10 +2929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomAttribute {
-	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeSource,
+	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasAppCustomAttributeSource,
 	FriendlyName: *string,
 	Name: *string,
 	NameFormat: *string,
@@ -3027,7 +3027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomAttributeSource {
 	Name: *string,
@@ -3077,10 +3077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomClaim {
-	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSource,
+	Source: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationSaasAppCustomClaimSource,
 	Name: *string,
 	Required: interface{},
 	Scope: *string,
@@ -3159,7 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppCustomClaimSource {
 	Name: *string,
@@ -3209,7 +3209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppHybridAndImplicitOptions {
 	ReturnAccessTokenFromAuthorizationEndpoint: interface{},
@@ -3259,7 +3259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationSaasAppRefreshTokenOptions {
 	Lifetime: *string,
@@ -3295,12 +3295,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationScimConfig {
 	IdpUid: *string,
 	RemoteUri: *string,
-	Authentication: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationScimConfigAuthentication,
+	Authentication: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationScimConfigAuthentication,
 	DeactivateOnDelete: interface{},
 	Enabled: interface{},
 	Mappings: interface{},
@@ -3411,7 +3411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationScimConfigAuthentication {
 	Scheme: *string,
@@ -3585,13 +3585,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationScimConfigMappings {
 	Schema: *string,
 	Enabled: interface{},
 	Filter: *string,
-	Operations: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessApplication.AccessApplicationScimConfigMappingsOperations,
+	Operations: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.accessApplication.AccessApplicationScimConfigMappingsOperations,
 	TransformJsonata: *string,
 }
 ```
@@ -3683,7 +3683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 &accessapplication.AccessApplicationScimConfigMappingsOperations {
 	Create: interface{},
@@ -3751,7 +3751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationCorsHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationCorsHeadersList
 ```
@@ -3911,7 +3911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationCorsHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationCorsHeadersOutputReference
 ```
@@ -4410,7 +4410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationFooterLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationFooterLinksList
 ```
@@ -4570,7 +4570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationFooterLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationFooterLinksOutputReference
 ```
@@ -4895,7 +4895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationLandingPageDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationLandingPageDesignOutputReference
 ```
@@ -5289,7 +5289,7 @@ func InternalValue() AccessApplicationLandingPageDesign
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationSaasAppCustomAttributeList
 ```
@@ -5449,7 +5449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationSaasAppCustomAttributeOutputReference
 ```
@@ -5867,7 +5867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomAttributeSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomAttributeSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppCustomAttributeSourceOutputReference
 ```
@@ -6167,7 +6167,7 @@ func InternalValue() AccessApplicationSaasAppCustomAttributeSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationSaasAppCustomClaimList
 ```
@@ -6327,7 +6327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationSaasAppCustomClaimOutputReference
 ```
@@ -6716,7 +6716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppCustomClaimSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppCustomClaimSourceOutputReference
 ```
@@ -7016,7 +7016,7 @@ func InternalValue() AccessApplicationSaasAppCustomClaimSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
 ```
@@ -7323,7 +7323,7 @@ func InternalValue() AccessApplicationSaasAppHybridAndImplicitOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppOutputReference
 ```
@@ -8172,7 +8172,7 @@ func InternalValue() AccessApplicationSaasApp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppRefreshTokenOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationSaasAppRefreshTokenOptionsList
 ```
@@ -8332,7 +8332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationSaasAppRefreshTokenOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationSaasAppRefreshTokenOptionsOutputReference
 ```
@@ -8628,7 +8628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigAuthenticationOutputReference
 ```
@@ -9131,7 +9131,7 @@ func InternalValue() AccessApplicationScimConfigAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationScimConfigMappingsList
 ```
@@ -9291,7 +9291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigMappingsOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigMappingsOperationsOutputReference
 ```
@@ -9627,7 +9627,7 @@ func InternalValue() AccessApplicationScimConfigMappingsOperations
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessApplicationScimConfigMappingsOutputReference
 ```
@@ -10045,7 +10045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessapplication"
 
 accessapplication.NewAccessApplicationScimConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigOutputReference
 ```
