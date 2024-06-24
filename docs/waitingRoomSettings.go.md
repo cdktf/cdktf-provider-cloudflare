@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.NewWaitingRoomSettings(scope Construct, id *string, config WaitingRoomSettingsConfig) WaitingRoomSettings
 ```
@@ -392,7 +392,7 @@ func ResetSearchEngineCrawlerBypass()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ waitingroomsettings.WaitingRoomSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ waitingroomsettings.WaitingRoomSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 waitingroomsettings.WaitingRoomSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroomsettings"
 
 &waitingroomsettings.WaitingRoomSettingsConfig {
 	Connection: interface{},
