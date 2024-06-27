@@ -4,7 +4,7 @@
 
 ### TeamsAccount <a name="TeamsAccount" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account cloudflare_teams_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account cloudflare_teams_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsAccount.TeamsAccount.Initializer"></a>
 
@@ -709,7 +709,7 @@ The construct id used in the generated config for the TeamsAccount to import.
 
 The id of the existing TeamsAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1314,7 +1314,7 @@ EnabledDownloadPhase interface{}
 
 Scan on file download.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#enabled_download_phase TeamsAccount#enabled_download_phase}
 
 ---
 
@@ -1328,7 +1328,7 @@ EnabledUploadPhase interface{}
 
 Scan on file upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#enabled_upload_phase TeamsAccount#enabled_upload_phase}
 
 ---
 
@@ -1342,7 +1342,7 @@ FailClosed interface{}
 
 Block requests for files that cannot be scanned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#fail_closed TeamsAccount#fail_closed}
 
 ---
 
@@ -1356,7 +1356,7 @@ NotificationSettings TeamsAccountAntivirusNotificationSettings
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#notification_settings TeamsAccount#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#notification_settings TeamsAccount#notification_settings}
 
 ---
 
@@ -1394,7 +1394,7 @@ Enabled interface{}
 
 Enable notification settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
 
 ---
 
@@ -1408,7 +1408,7 @@ Message *string
 
 Notification content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#message TeamsAccount#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#message TeamsAccount#message}
 
 ---
 
@@ -1422,7 +1422,7 @@ SupportUrl *string
 
 Support URL to show in the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#support_url TeamsAccount#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#support_url TeamsAccount#support_url}
 
 ---
 
@@ -1470,7 +1470,7 @@ BackgroundColor *string
 
 Hex code of block page background color.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#background_color TeamsAccount#background_color}
 
 ---
 
@@ -1484,7 +1484,7 @@ Enabled interface{}
 
 Indicator of enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
 
 ---
 
@@ -1498,7 +1498,7 @@ FooterText *string
 
 Block page footer text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
 
 ---
 
@@ -1512,7 +1512,7 @@ HeaderText *string
 
 Block page header text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#header_text TeamsAccount#header_text}
 
 ---
 
@@ -1526,7 +1526,7 @@ LogoPath *string
 
 URL of block page logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#logo_path TeamsAccount#logo_path}
 
 ---
 
@@ -1540,7 +1540,7 @@ MailtoAddress *string
 
 Admin email for users to contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#mailto_address TeamsAccount#mailto_address}
 
 ---
 
@@ -1554,7 +1554,7 @@ MailtoSubject *string
 
 Subject line for emails created from block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#mailto_subject TeamsAccount#mailto_subject}
 
 ---
 
@@ -1568,7 +1568,7 @@ Name *string
 
 Name of block page configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#name TeamsAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#name TeamsAccount#name}
 
 ---
 
@@ -1602,7 +1602,7 @@ InspectionMode *string
 
 Body scanning inspection mode. Available values: `deep`, `shallow`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#inspection_mode TeamsAccount#inspection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#inspection_mode TeamsAccount#inspection_mode}
 
 ---
 
@@ -1660,7 +1660,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccoun
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.customCertificate">CustomCertificate</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountCustomCertificate">TeamsAccountCustomCertificate</a></code> | custom_certificate block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.extendedEmailMatching">ExtendedEmailMatching</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountExtendedEmailMatching">TeamsAccountExtendedEmailMatching</a></code> | extended_email_matching block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.fips">Fips</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips">TeamsAccountFips</a></code> | fips block. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#id TeamsAccount#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#id TeamsAccount#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.logging">Logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging">TeamsAccountLogging</a></code> | logging block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.nonIdentityBrowserIsolationEnabled">NonIdentityBrowserIsolationEnabled</a></code> | <code>interface{}</code> | Enable non-identity onramp for Browser Isolation. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig.property.payloadLog">PayloadLog</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog">TeamsAccountPayloadLog</a></code> | payload_log block. |
@@ -1752,7 +1752,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#account_id TeamsAccount#account_id}
 
 ---
 
@@ -1766,7 +1766,7 @@ ActivityLogEnabled interface{}
 
 Whether to enable the activity log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#activity_log_enabled TeamsAccount#activity_log_enabled}
 
 ---
 
@@ -1780,7 +1780,7 @@ Antivirus TeamsAccountAntivirus
 
 antivirus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#antivirus TeamsAccount#antivirus}
 
 ---
 
@@ -1794,7 +1794,7 @@ BlockPage TeamsAccountBlockPage
 
 block_page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#block_page TeamsAccount#block_page}
 
 ---
 
@@ -1808,7 +1808,7 @@ BodyScanning TeamsAccountBodyScanning
 
 body_scanning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#body_scanning TeamsAccount#body_scanning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#body_scanning TeamsAccount#body_scanning}
 
 ---
 
@@ -1822,7 +1822,7 @@ CustomCertificate TeamsAccountCustomCertificate
 
 custom_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#custom_certificate TeamsAccount#custom_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#custom_certificate TeamsAccount#custom_certificate}
 
 ---
 
@@ -1836,7 +1836,7 @@ ExtendedEmailMatching TeamsAccountExtendedEmailMatching
 
 extended_email_matching block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#extended_email_matching TeamsAccount#extended_email_matching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#extended_email_matching TeamsAccount#extended_email_matching}
 
 ---
 
@@ -1850,7 +1850,7 @@ Fips TeamsAccountFips
 
 fips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#fips TeamsAccount#fips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#fips TeamsAccount#fips}
 
 ---
 
@@ -1862,7 +1862,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#id TeamsAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#id TeamsAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1879,7 +1879,7 @@ Logging TeamsAccountLogging
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#logging TeamsAccount#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#logging TeamsAccount#logging}
 
 ---
 
@@ -1893,7 +1893,7 @@ NonIdentityBrowserIsolationEnabled interface{}
 
 Enable non-identity onramp for Browser Isolation. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#non_identity_browser_isolation_enabled TeamsAccount#non_identity_browser_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#non_identity_browser_isolation_enabled TeamsAccount#non_identity_browser_isolation_enabled}
 
 ---
 
@@ -1907,7 +1907,7 @@ PayloadLog TeamsAccountPayloadLog
 
 payload_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#payload_log TeamsAccount#payload_log}
 
 ---
 
@@ -1921,7 +1921,7 @@ ProtocolDetectionEnabled interface{}
 
 Indicator that protocol detection is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#protocol_detection_enabled TeamsAccount#protocol_detection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#protocol_detection_enabled TeamsAccount#protocol_detection_enabled}
 
 ---
 
@@ -1935,7 +1935,7 @@ Proxy TeamsAccountProxy
 
 proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#proxy TeamsAccount#proxy}
 
 ---
 
@@ -1949,7 +1949,7 @@ SshSessionLog TeamsAccountSshSessionLog
 
 ssh_session_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#ssh_session_log TeamsAccount#ssh_session_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#ssh_session_log TeamsAccount#ssh_session_log}
 
 ---
 
@@ -1963,7 +1963,7 @@ TlsDecryptEnabled interface{}
 
 Indicator that decryption of TLS traffic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#tls_decrypt_enabled TeamsAccount#tls_decrypt_enabled}
 
 ---
 
@@ -1977,7 +1977,7 @@ UrlBrowserIsolationEnabled interface{}
 
 Safely browse websites in Browser Isolation through a URL. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#url_browser_isolation_enabled TeamsAccount#url_browser_isolation_enabled}
 
 ---
 
@@ -2013,7 +2013,7 @@ Enabled interface{}
 
 Whether TLS encryption should use a custom certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
 
 ---
 
@@ -2027,7 +2027,7 @@ Id *string
 
 ID of custom certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#id TeamsAccount#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#id TeamsAccount#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2064,7 +2064,7 @@ Enabled interface{}
 
 Whether e-mails should be matched on all variants of user emails (with + or . modifiers) in Firewall policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
 
 ---
 
@@ -2098,7 +2098,7 @@ Tls interface{}
 
 Only allow FIPS-compliant TLS configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#tls TeamsAccount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#tls TeamsAccount#tls}
 
 ---
 
@@ -2134,7 +2134,7 @@ RedactPii interface{}
 
 Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#redact_pii TeamsAccount#redact_pii}
 
 ---
 
@@ -2148,7 +2148,7 @@ SettingsByRuleType TeamsAccountLoggingSettingsByRuleType
 
 settings_by_rule_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#settings_by_rule_type TeamsAccount#settings_by_rule_type}
 
 ---
 
@@ -2186,7 +2186,7 @@ Dns TeamsAccountLoggingSettingsByRuleTypeDns
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#dns TeamsAccount#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#dns TeamsAccount#dns}
 
 ---
 
@@ -2200,7 +2200,7 @@ Http TeamsAccountLoggingSettingsByRuleTypeHttp
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#http TeamsAccount#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#http TeamsAccount#http}
 
 ---
 
@@ -2214,7 +2214,7 @@ L4 TeamsAccountLoggingSettingsByRuleTypeL4
 
 l4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#l4 TeamsAccount#l4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#l4 TeamsAccount#l4}
 
 ---
 
@@ -2236,7 +2236,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccoun
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.property.logAll">LogAll</a></code> | <code>interface{}</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
 
 ---
 
@@ -2250,7 +2250,7 @@ LogAll interface{}
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
 
 ---
 
@@ -2262,7 +2262,7 @@ LogBlocks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
 
 ---
 
@@ -2284,7 +2284,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccoun
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.property.logAll">LogAll</a></code> | <code>interface{}</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
 
 ---
 
@@ -2298,7 +2298,7 @@ LogAll interface{}
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
 
 ---
 
@@ -2310,7 +2310,7 @@ LogBlocks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
 
 ---
 
@@ -2332,7 +2332,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsaccoun
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.property.logAll">LogAll</a></code> | <code>interface{}</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}. |
 
 ---
 
@@ -2346,7 +2346,7 @@ LogAll interface{}
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_all TeamsAccount#log_all}
 
 ---
 
@@ -2358,7 +2358,7 @@ LogBlocks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#log_blocks TeamsAccount#log_blocks}.
 
 ---
 
@@ -2392,7 +2392,7 @@ PublicKey *string
 
 Public key used to encrypt matched payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
 
 ---
 
@@ -2432,7 +2432,7 @@ RootCa interface{}
 
 Whether root ca is enabled account wide for ZT clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#root_ca TeamsAccount#root_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#root_ca TeamsAccount#root_ca}
 
 ---
 
@@ -2446,7 +2446,7 @@ Tcp interface{}
 
 Whether gateway proxy is enabled on gateway devices for TCP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#tcp TeamsAccount#tcp}
 
 ---
 
@@ -2460,7 +2460,7 @@ Udp interface{}
 
 Whether gateway proxy is enabled on gateway devices for UDP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#udp TeamsAccount#udp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#udp TeamsAccount#udp}
 
 ---
 
@@ -2474,7 +2474,7 @@ VirtualIp interface{}
 
 Whether virtual IP (CGNAT) is enabled account wide and will override existing local interface IP for ZT clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#virtual_ip TeamsAccount#virtual_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#virtual_ip TeamsAccount#virtual_ip}
 
 ---
 
@@ -2508,7 +2508,7 @@ PublicKey *string
 
 Public key used to encrypt ssh session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/teams_account#public_key TeamsAccount#public_key}
 
 ---
 

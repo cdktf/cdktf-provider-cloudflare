@@ -4,7 +4,7 @@
 
 ### OriginCaCertificate <a name="OriginCaCertificate" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer"></a>
 
@@ -46,7 +46,7 @@ OriginCaCertificate.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.csr">csr</a></code> | <code>java.lang.String</code> | The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.hostnames">hostnames</a></code> | <code>java.util.List<java.lang.String></code> | A list of hostnames or wildcard names bound to the certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.requestType">requestType</a></code> | <code>java.lang.String</code> | The signature type desired on the certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.minDaysForRenewal">minDaysForRenewal</a></code> | <code>java.lang.Number</code> | Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate.Initializer.parameter.requestedValidity">requestedValidity</a></code> | <code>java.lang.Number</code> | The number of days for which the certificate should be valid. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
 
 ---
 
@@ -130,7 +130,7 @@ A list of hostnames or wildcard names bound to the certificate.
 
 **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
 
 ---
 
@@ -142,7 +142,7 @@ The signature type desired on the certificate.
 
 Available values: `origin-rsa`, `origin-ecc`, `keyless-certificate`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
 
 ---
 
@@ -175,7 +175,7 @@ The number of days for which the certificate should be valid.
 
 Available values: `7`, `30`, `90`, `365`, `730`, `1095`, `5475`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the OriginCaCertificate to imp
 
 The id of the existing OriginCaCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,7 +1014,7 @@ OriginCaCertificateConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.csr">csr</a></code> | <code>java.lang.String</code> | The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.hostnames">hostnames</a></code> | <code>java.util.List<java.lang.String></code> | A list of hostnames or wildcard names bound to the certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.requestType">requestType</a></code> | <code>java.lang.String</code> | The signature type desired on the certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.minDaysForRenewal">minDaysForRenewal</a></code> | <code>java.lang.Number</code> | Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run. |
 | <code><a href="#@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig.property.requestedValidity">requestedValidity</a></code> | <code>java.lang.Number</code> | The number of days for which the certificate should be valid. |
 
@@ -1100,7 +1100,7 @@ public java.lang.String getCsr();
 
 The Certificate Signing Request. Must be newline-encoded. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
 
 ---
 
@@ -1116,7 +1116,7 @@ A list of hostnames or wildcard names bound to the certificate.
 
 **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
 
 ---
 
@@ -1132,7 +1132,7 @@ The signature type desired on the certificate.
 
 Available values: `origin-rsa`, `origin-ecc`, `keyless-certificate`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#id OriginCaCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1161,7 +1161,7 @@ public java.lang.Number getMinDaysForRenewal();
 
 Number of days prior to the expiry to trigger a renewal of the certificate if a Terraform operation is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#min_days_for_renewal OriginCaCertificate#min_days_for_renewal}
 
 ---
 
@@ -1177,7 +1177,7 @@ The number of days for which the certificate should be valid.
 
 Available values: `7`, `30`, `90`, `365`, `730`, `1095`, `5475`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
 
 ---
 

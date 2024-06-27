@@ -1,3 +1,3 @@
 # `cloudflare_origin_ca_certificate`
 
-Refer to the Terraform Registry for docs: [`cloudflare_origin_ca_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/origin_ca_certificate).
+Refer to the Terraform Registry for docs: [`cloudflare_origin_ca_certificate`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/origin_ca_certificate).

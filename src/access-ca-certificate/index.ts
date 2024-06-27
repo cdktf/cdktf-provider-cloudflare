@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface AccessCaCertificateConfig extends cdktf.TerraformMetaArguments 
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate#account_id AccessCaCertificate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate#account_id AccessCaCertificate#account_id}
   */
   readonly accountId?: string;
   /**
   * The Access Application ID to associate with the CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate#application_id AccessCaCertificate#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate#application_id AccessCaCertificate#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate#id AccessCaCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate#id AccessCaCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface AccessCaCertificateConfig extends cdktf.TerraformMetaArguments 
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate#zone_id AccessCaCertificate#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate#zone_id AccessCaCertificate#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate}
 */
 export class AccessCaCertificate extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class AccessCaCertificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccessCaCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessCaCertificate to import
-  * @param importFromId The id of the existing AccessCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessCaCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class AccessCaCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class AccessCaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.35.0',
+        providerVersion: '4.36.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
