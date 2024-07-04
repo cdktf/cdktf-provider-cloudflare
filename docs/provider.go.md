@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider"
 
 provider.NewCloudflareProvider(scope Construct, id *string, config CloudflareProviderConfig) CloudflareProvider
 ```
@@ -235,7 +235,7 @@ func ResetUserAgentOperatorSuffix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider"
 
 provider.CloudflareProvider_IsConstruct(x interface{}) *bool
 ```
@@ -267,7 +267,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider"
 
 provider.CloudflareProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -281,7 +281,7 @@ provider.CloudflareProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider"
 
 provider.CloudflareProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -295,7 +295,7 @@ provider.CloudflareProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider"
 
 provider.CloudflareProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/provider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider"
 
 &provider.CloudflareProviderConfig {
 	Alias: *string,
