@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   /**
   * Which certificate authority to issue the certificate pack. Available values: `digicert`, `lets_encrypt`, `google`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
   */
   readonly certificateAuthority: string;
   /**
   * Whether or not to include Cloudflare branding. This will add `sni.cloudflaressl.com` as the Common Name if set to `true`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
   */
   readonly cloudflareBranding?: boolean | cdktf.IResolvable;
   /**
   * List of hostnames to provision the certificate pack for. The zone name must be included as a host. Note: If using Let's Encrypt, you cannot use individual subdomains and only a wildcard for subdomain is available. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
   */
   readonly hosts: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#id CertificatePack#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#id CertificatePack#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +40,43 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   /**
   * Certificate pack configuration type. Available values: `advanced`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#type CertificatePack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#type CertificatePack#type}
   */
   readonly type: string;
   /**
   * Which validation method to use in order to prove domain ownership. Available values: `txt`, `http`, `email`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
   */
   readonly validationMethod: string;
   /**
   * How long the certificate is valid for. Note: If using Let's Encrypt, this value can only be 90 days. Available values: `14`, `30`, `90`, `365`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
   */
   readonly validityDays: number;
   /**
   * Whether or not to wait for a certificate pack to reach status `active` during creation. Defaults to `false`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#wait_for_active_status CertificatePack#wait_for_active_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#wait_for_active_status CertificatePack#wait_for_active_status}
   */
   readonly waitForActiveStatus?: boolean | cdktf.IResolvable;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
   */
   readonly zoneId: string;
   /**
   * validation_errors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#validation_errors CertificatePack#validation_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#validation_errors CertificatePack#validation_errors}
   */
   readonly validationErrors?: CertificatePackValidationErrors[] | cdktf.IResolvable;
   /**
   * validation_records block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#validation_records CertificatePack#validation_records}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#validation_records CertificatePack#validation_records}
   */
   readonly validationRecords?: CertificatePackValidationRecords[] | cdktf.IResolvable;
 }
@@ -168,31 +168,31 @@ export class CertificatePackValidationErrorsList extends cdktf.ComplexList {
 }
 export interface CertificatePackValidationRecords {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#cname_name CertificatePack#cname_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#cname_name CertificatePack#cname_name}
   */
   readonly cnameName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#cname_target CertificatePack#cname_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#cname_target CertificatePack#cname_target}
   */
   readonly cnameTarget?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#emails CertificatePack#emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#emails CertificatePack#emails}
   */
   readonly emails?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#http_body CertificatePack#http_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#http_body CertificatePack#http_body}
   */
   readonly httpBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#http_url CertificatePack#http_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#http_url CertificatePack#http_url}
   */
   readonly httpUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#txt_name CertificatePack#txt_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#txt_name CertificatePack#txt_name}
   */
   readonly txtName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#txt_value CertificatePack#txt_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#txt_value CertificatePack#txt_value}
   */
   readonly txtValue?: string;
 }
@@ -482,7 +482,7 @@ export class CertificatePackValidationRecordsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack cloudflare_certificate_pack}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack cloudflare_certificate_pack}
 */
 export class CertificatePack extends cdktf.TerraformResource {
 
@@ -498,7 +498,7 @@ export class CertificatePack extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CertificatePack resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificatePack to import
-  * @param importFromId The id of the existing CertificatePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CertificatePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificatePack to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -510,7 +510,7 @@ export class CertificatePack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.36.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -521,7 +521,7 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.36.0',
+        providerVersion: '4.37.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
