@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/devicepolicycertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepolicycertificates"
 
 devicepolicycertificates.NewDevicePolicyCertificates(scope Construct, id *string, config DevicePolicyCertificatesConfig) DevicePolicyCertificates
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/devicepolicycertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepolicycertificates"
 
 devicepolicycertificates.DevicePolicyCertificates_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/devicepolicycertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepolicycertificates"
 
 devicepolicycertificates.DevicePolicyCertificates_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ devicepolicycertificates.DevicePolicyCertificates_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/devicepolicycertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepolicycertificates"
 
 devicepolicycertificates.DevicePolicyCertificates_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ devicepolicycertificates.DevicePolicyCertificates_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/devicepolicycertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepolicycertificates"
 
 devicepolicycertificates.DevicePolicyCertificates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/devicepolicycertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/devicepolicycertificates"
 
 &devicepolicycertificates.DevicePolicyCertificatesConfig {
 	Connection: interface{},
