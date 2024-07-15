@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/zone
 // generated from terraform resource schema
 
