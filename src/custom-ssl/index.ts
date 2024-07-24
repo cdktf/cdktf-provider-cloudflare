@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface CustomSslConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#id CustomSsl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#id CustomSsl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface CustomSslConfig extends cdktf.TerraformMetaArguments {
   /**
   * The zone identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
   */
   readonly zoneId: string;
   /**
   * custom_ssl_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#custom_ssl_options CustomSsl#custom_ssl_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#custom_ssl_options CustomSsl#custom_ssl_options}
   */
   readonly customSslOptions?: CustomSslCustomSslOptions;
   /**
   * custom_ssl_priority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#custom_ssl_priority CustomSsl#custom_ssl_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#custom_ssl_priority CustomSsl#custom_ssl_priority}
   */
   readonly customSslPriority?: CustomSslCustomSslPriority[] | cdktf.IResolvable;
 }
@@ -42,31 +37,31 @@ export interface CustomSslCustomSslOptions {
   /**
   * Method of building intermediate certificate chain. A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it. Available values: `ubiquitous`, `optimal`, `force`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
   */
   readonly bundleMethod?: string;
   /**
   * Certificate certificate and the intermediate(s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
   */
   readonly certificate?: string;
   /**
   * Specifies the region where your private key can be held locally. Available values: `us`, `eu`, `highest_security`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
   */
   readonly geoRestrictions?: string;
   /**
   * Certificate's private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
   */
   readonly privateKey?: string;
   /**
   * Whether to enable support for legacy clients which do not include SNI in the TLS handshake. Available values: `legacy_custom`, `sni_custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#type CustomSsl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#type CustomSsl#type}
   */
   readonly type?: string;
 }
@@ -266,14 +261,14 @@ export class CustomSslCustomSslOptionsOutputReference extends cdktf.ComplexObjec
 }
 export interface CustomSslCustomSslPriority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#id CustomSsl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#id CustomSsl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#priority CustomSsl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#priority CustomSsl#priority}
   */
   readonly priority?: number;
 }
@@ -418,7 +413,7 @@ export class CustomSslCustomSslPriorityList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl cloudflare_custom_ssl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl cloudflare_custom_ssl}
 */
 export class CustomSsl extends cdktf.TerraformResource {
 
@@ -434,7 +429,7 @@ export class CustomSsl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomSsl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomSsl to import
-  * @param importFromId The id of the existing CustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomSsl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -446,7 +441,7 @@ export class CustomSsl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -457,7 +452,7 @@ export class CustomSsl extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_ssl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.37.0',
+        providerVersion: '4.38.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

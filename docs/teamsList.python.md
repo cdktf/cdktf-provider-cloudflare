@@ -4,7 +4,7 @@
 
 ### TeamsList <a name="TeamsList" id="@cdktf/provider-cloudflare.teamsList.TeamsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list cloudflare_teams_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list cloudflare_teams_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer"></a>
 
@@ -26,7 +26,8 @@ teamsList.TeamsList(
   type: str,
   description: str = None,
   id: str = None,
-  items: typing.List[str] = None
+  items: typing.List[str] = None,
+  items_with_description: typing.Union[IResolvable, typing.List[TeamsListItemsWithDescription]] = None
 )
 ```
 
@@ -45,8 +46,9 @@ teamsList.TeamsList(
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.type">type</a></code> | <code>str</code> | The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the teams list. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#id TeamsList#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#id TeamsList#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.items">items</a></code> | <code>typing.List[str]</code> | The items of the teams list. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.itemsWithDescription">items_with_description</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]</code> | The items of the teams list that has explicit description. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#account_id TeamsList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#account_id TeamsList#account_id}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#name TeamsList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#name TeamsList#name}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#type TeamsList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#type TeamsList#type}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The description of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#description TeamsList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#description TeamsList#description}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#id TeamsList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#id TeamsList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +169,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 The items of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#items TeamsList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#items TeamsList#items}
+
+---
+
+##### `items_with_description`<sup>Optional</sup> <a name="items_with_description" id="@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer.parameter.itemsWithDescription"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]
+
+The items of the teams list that has explicit description.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#items_with_description TeamsList#items_with_description}
 
 ---
 
@@ -198,9 +210,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.putItemsWithDescription">put_items_with_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.resetItems">reset_items</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.resetItemsWithDescription">reset_items_with_description</a></code> | *No description.* |
 
 ---
 
@@ -529,6 +543,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_items_with_description` <a name="put_items_with_description" id="@cdktf/provider-cloudflare.teamsList.TeamsList.putItemsWithDescription"></a>
+
+```python
+def put_items_with_description(
+  value: typing.Union[IResolvable, typing.List[TeamsListItemsWithDescription]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.teamsList.TeamsList.putItemsWithDescription.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]
+
+---
+
 ##### `reset_description` <a name="reset_description" id="@cdktf/provider-cloudflare.teamsList.TeamsList.resetDescription"></a>
 
 ```python
@@ -545,6 +573,12 @@ def reset_id() -> None
 
 ```python
 def reset_items() -> None
+```
+
+##### `reset_items_with_description` <a name="reset_items_with_description" id="@cdktf/provider-cloudflare.teamsList.TeamsList.resetItemsWithDescription"></a>
+
+```python
+def reset_items_with_description() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -661,7 +695,7 @@ The construct id used in the generated config for the TeamsList to import.
 
 The id of the existing TeamsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -691,10 +725,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.itemsWithDescription">items_with_description</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList">TeamsListItemsWithDescriptionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.itemsInput">items_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.itemsWithDescriptionInput">items_with_description_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsList.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
@@ -848,6 +884,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `items_with_description`<sup>Required</sup> <a name="items_with_description" id="@cdktf/provider-cloudflare.teamsList.TeamsList.property.itemsWithDescription"></a>
+
+```python
+items_with_description: TeamsListItemsWithDescriptionList
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList">TeamsListItemsWithDescriptionList</a>
+
+---
+
 ##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktf/provider-cloudflare.teamsList.TeamsList.property.accountIdInput"></a>
 
 ```python
@@ -885,6 +931,16 @@ items_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `items_with_description_input`<sup>Optional</sup> <a name="items_with_description_input" id="@cdktf/provider-cloudflare.teamsList.TeamsList.property.itemsWithDescriptionInput"></a>
+
+```python
+items_with_description_input: typing.Union[IResolvable, typing.List[TeamsListItemsWithDescription]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]
 
 ---
 
@@ -1008,7 +1064,8 @@ teamsList.TeamsListConfig(
   type: str,
   description: str = None,
   id: str = None,
-  items: typing.List[str] = None
+  items: typing.List[str] = None,
+  items_with_description: typing.Union[IResolvable, typing.List[TeamsListItemsWithDescription]] = None
 )
 ```
 
@@ -1027,8 +1084,9 @@ teamsList.TeamsListConfig(
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.name">name</a></code> | <code>str</code> | Name of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.type">type</a></code> | <code>str</code> | The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.description">description</a></code> | <code>str</code> | The description of the teams list. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#id TeamsList#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#id TeamsList#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.items">items</a></code> | <code>typing.List[str]</code> | The items of the teams list. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.itemsWithDescription">items_with_description</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]</code> | The items of the teams list that has explicit description. |
 
 ---
 
@@ -1112,7 +1170,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#account_id TeamsList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#account_id TeamsList#account_id}
 
 ---
 
@@ -1126,7 +1184,7 @@ name: str
 
 Name of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#name TeamsList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#name TeamsList#name}
 
 ---
 
@@ -1140,7 +1198,7 @@ type: str
 
 The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#type TeamsList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#type TeamsList#type}
 
 ---
 
@@ -1154,7 +1212,7 @@ description: str
 
 The description of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#description TeamsList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#description TeamsList#description}
 
 ---
 
@@ -1166,7 +1224,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#id TeamsList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#id TeamsList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1183,7 +1241,590 @@ items: typing.List[str]
 
 The items of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list#items TeamsList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#items TeamsList#items}
+
+---
+
+##### `items_with_description`<sup>Optional</sup> <a name="items_with_description" id="@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.itemsWithDescription"></a>
+
+```python
+items_with_description: typing.Union[IResolvable, typing.List[TeamsListItemsWithDescription]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]
+
+The items of the teams list that has explicit description.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#items_with_description TeamsList#items_with_description}
+
+---
+
+### TeamsListItemsWithDescription <a name="TeamsListItemsWithDescription" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import teams_list
+
+teamsList.TeamsListItemsWithDescription(
+  description: str = None,
+  value: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#description TeamsList#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#value TeamsList#value}. |
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#description TeamsList#description}.
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list#value TeamsList#value}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### TeamsListItemsWithDescriptionList <a name="TeamsListItemsWithDescriptionList" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import teams_list
+
+teamsList.TeamsListItemsWithDescriptionList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> TeamsListItemsWithDescriptionOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[TeamsListItemsWithDescription]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]]
+
+---
+
+
+### TeamsListItemsWithDescriptionOutputReference <a name="TeamsListItemsWithDescriptionOutputReference" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import teams_list
+
+teamsList.TeamsListItemsWithDescriptionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_description` <a name="reset_description" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resetDescription"></a>
+
+```python
+def reset_description() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.descriptionInput"></a>
+
+```python
+description_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, TeamsListItemsWithDescription]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription">TeamsListItemsWithDescription</a>]
 
 ---
 

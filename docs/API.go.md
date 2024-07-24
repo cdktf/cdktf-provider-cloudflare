@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.go.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.go.md)
 - [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.go.md)
+- [dataCloudflareGatewayCategories](./dataCloudflareGatewayCategories.go.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.go.md)
 - [dataCloudflareList](./dataCloudflareList.go.md)
 - [dataCloudflareLists](./dataCloudflareLists.go.md)

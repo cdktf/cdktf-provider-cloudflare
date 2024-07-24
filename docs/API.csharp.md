@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.csharp.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.csharp.md)
 - [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.csharp.md)
+- [dataCloudflareGatewayCategories](./dataCloudflareGatewayCategories.csharp.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.csharp.md)
 - [dataCloudflareList](./dataCloudflareList.csharp.md)
 - [dataCloudflareLists](./dataCloudflareLists.csharp.md)

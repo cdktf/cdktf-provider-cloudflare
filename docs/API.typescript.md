@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.typescript.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.typescript.md)
 - [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.typescript.md)
+- [dataCloudflareGatewayCategories](./dataCloudflareGatewayCategories.typescript.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.typescript.md)
 - [dataCloudflareList](./dataCloudflareList.typescript.md)
 - [dataCloudflareLists](./dataCloudflareLists.typescript.md)

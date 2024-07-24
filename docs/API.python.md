@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.python.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.python.md)
 - [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.python.md)
+- [dataCloudflareGatewayCategories](./dataCloudflareGatewayCategories.python.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.python.md)
 - [dataCloudflareList](./dataCloudflareList.python.md)
 - [dataCloudflareLists](./dataCloudflareLists.python.md)
