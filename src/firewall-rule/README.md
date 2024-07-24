@@ -1,3 +1,3 @@
 # `cloudflare_firewall_rule`
 
-Refer to the Terraform Registry for docs: [`cloudflare_firewall_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/firewall_rule).
+Refer to the Terraform Registry for docs: [`cloudflare_firewall_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/firewall_rule).

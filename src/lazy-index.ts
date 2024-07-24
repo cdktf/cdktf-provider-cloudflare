@@ -131,6 +131,7 @@ Object.defineProperty(exports, 'dataCloudflareApiTokenPermissionGroups', { get: 
 Object.defineProperty(exports, 'dataCloudflareDevicePostureRules', { get: function () { return require('./data-cloudflare-device-posture-rules'); } });
 Object.defineProperty(exports, 'dataCloudflareDevices', { get: function () { return require('./data-cloudflare-devices'); } });
 Object.defineProperty(exports, 'dataCloudflareDlpDatasets', { get: function () { return require('./data-cloudflare-dlp-datasets'); } });
+Object.defineProperty(exports, 'dataCloudflareGatewayCategories', { get: function () { return require('./data-cloudflare-gateway-categories'); } });
 Object.defineProperty(exports, 'dataCloudflareIpRanges', { get: function () { return require('./data-cloudflare-ip-ranges'); } });
 Object.defineProperty(exports, 'dataCloudflareList', { get: function () { return require('./data-cloudflare-list'); } });
 Object.defineProperty(exports, 'dataCloudflareLists', { get: function () { return require('./data-cloudflare-lists'); } });

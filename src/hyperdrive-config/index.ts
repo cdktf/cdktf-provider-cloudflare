@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface HyperdriveConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
   */
   readonly accountId: string;
   /**
   * The caching details for the Hyperdrive configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
   */
   readonly caching?: HyperdriveConfigCaching;
   /**
   * The identifier of this resource. This is the hyperdrive config value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,13 +36,13 @@ export interface HyperdriveConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Hyperdrive configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
   */
   readonly name: string;
   /**
   * The origin details for the Hyperdrive configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
   */
   readonly origin: HyperdriveConfigOrigin;
 }
@@ -50,7 +50,7 @@ export interface HyperdriveConfigCaching {
   /**
   * Disable caching for this Hyperdrive configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
 }
@@ -146,37 +146,37 @@ export interface HyperdriveConfigOrigin {
   /**
   * The name of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
   */
   readonly database: string;
   /**
   * The host (hostname or IP) of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
   */
   readonly host: string;
   /**
   * The password of the Hyperdrive configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
   */
   readonly password: string;
   /**
   * The port (default: 5432 for Postgres) of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
   */
   readonly port: number;
   /**
   * Specifies the URL scheme used to connect to your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
   */
   readonly scheme: string;
   /**
   * The user of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
   */
   readonly user: string;
 }
@@ -397,7 +397,7 @@ export class HyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}
 */
 export class HyperdriveConfig extends cdktf.TerraformResource {
 
@@ -413,7 +413,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a HyperdriveConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HyperdriveConfig to import
-  * @param importFromId The id of the existing HyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HyperdriveConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -425,7 +425,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -436,7 +436,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_hyperdrive_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.37.0',
+        providerVersion: '4.38.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

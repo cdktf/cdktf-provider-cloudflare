@@ -4,7 +4,7 @@
 
 ### WaitingRoomRules <a name="WaitingRoomRules" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer"></a>
 
@@ -41,7 +41,7 @@ waitingRoomRules.WaitingRoomRules(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer.parameter.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer.parameter.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules">WaitingRoomRulesRules</a>]]</code> | rules block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
 
 ---
 
@@ -645,7 +645,7 @@ The construct id used in the generated config for the WaitingRoomRules to import
 
 The id of the existing WaitingRoomRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -963,7 +963,7 @@ waitingRoomRules.WaitingRoomRulesConfig(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules">WaitingRoomRulesRules</a>]]</code> | rules block. |
 
 ---
@@ -1048,7 +1048,7 @@ waiting_room_id: str
 
 The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
 
 ---
 
@@ -1062,7 +1062,7 @@ zone_id: str
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
 
 ---
 
@@ -1074,7 +1074,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#id WaitingRoomRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ rules: typing.Union[IResolvable, typing.List[WaitingRoomRulesRules]]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
 
 ---
 
@@ -1131,7 +1131,7 @@ action: str
 
 Action to perform in the ruleset rule. Available values: `bypass_waiting_room`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
 
 ---
 
@@ -1147,7 +1147,7 @@ Criteria for an HTTP request to trigger the waiting room rule action.
 
 Uses the Firewall Rules expression language based on Wireshark display filters. Refer to the [Waiting Room Rules Docs](https://developers.cloudflare.com/waiting-room/additional-options/waiting-room-rules/bypass-rules/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
 
 ---
 
@@ -1161,7 +1161,7 @@ description: str
 
 Brief summary of the waiting room rule and its intended use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
 
 ---
 
@@ -1175,7 +1175,7 @@ status: str
 
 Whether the rule is enabled or disabled. Available values: `enabled`, `disabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/waiting_room_rules#status WaitingRoomRules#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/waiting_room_rules#status WaitingRoomRules#status}
 
 ---
 

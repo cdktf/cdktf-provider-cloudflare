@@ -4,7 +4,7 @@
 
 ### HyperdriveConfig <a name="HyperdriveConfig" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The origin details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The caching details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The identifier of this resource. This is the hyperdrive config value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -534,7 +534,7 @@ def put_caching(
 
 Disable caching for this Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
 
 ---
 
@@ -557,7 +557,7 @@ def put_origin(
 
 The name of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
 
 ---
 
@@ -567,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The host (hostname or IP) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
 
 ---
 
@@ -577,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The password of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The port (default: 5432 for Postgres) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
 
 ---
 
@@ -597,7 +597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the URL scheme used to connect to your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
 
 ---
 
@@ -607,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The user of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
 
 ---
 
@@ -737,7 +737,7 @@ The construct id used in the generated config for the HyperdriveConfig to import
 
 The id of the existing HyperdriveConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,7 +1072,7 @@ disabled: typing.Union[bool, IResolvable]
 
 Disable caching for this Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
 
 ---
 
@@ -1198,7 +1198,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -1212,7 +1212,7 @@ name: str
 
 The name of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -1226,7 +1226,7 @@ origin: HyperdriveConfigOrigin
 
 The origin details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -1240,7 +1240,7 @@ caching: HyperdriveConfigCaching
 
 The caching details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
 
 ---
 
@@ -1254,7 +1254,7 @@ id: str
 
 The identifier of this resource. This is the hyperdrive config value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1301,7 +1301,7 @@ database: str
 
 The name of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
 
 ---
 
@@ -1315,7 +1315,7 @@ host: str
 
 The host (hostname or IP) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
 
 ---
 
@@ -1329,7 +1329,7 @@ password: str
 
 The password of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
 
 ---
 
@@ -1343,7 +1343,7 @@ port: typing.Union[int, float]
 
 The port (default: 5432 for Postgres) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
 
 ---
 
@@ -1357,7 +1357,7 @@ scheme: str
 
 Specifies the URL scheme used to connect to your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
 
 ---
 
@@ -1371,7 +1371,7 @@ user: str
 
 The user of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
 
 ---
 

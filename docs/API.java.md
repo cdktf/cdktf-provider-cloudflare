@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataCloudflareDevicePostureRules](./dataCloudflareDevicePostureRules.java.md)
 - [dataCloudflareDevices](./dataCloudflareDevices.java.md)
 - [dataCloudflareDlpDatasets](./dataCloudflareDlpDatasets.java.md)
+- [dataCloudflareGatewayCategories](./dataCloudflareGatewayCategories.java.md)
 - [dataCloudflareIpRanges](./dataCloudflareIpRanges.java.md)
 - [dataCloudflareList](./dataCloudflareList.java.md)
 - [dataCloudflareLists](./dataCloudflareLists.java.md)
