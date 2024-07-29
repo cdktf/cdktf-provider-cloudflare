@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/ipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel"
 
 ipsectunnel.NewIpsecTunnel(scope Construct, id *string, config IpsecTunnelConfig) IpsecTunnel
 ```
@@ -483,7 +483,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/ipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel"
 
 ipsectunnel.IpsecTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/ipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel"
 
 ipsectunnel.IpsecTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ ipsectunnel.IpsecTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/ipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel"
 
 ipsectunnel.IpsecTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ ipsectunnel.IpsecTunnel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/ipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel"
 
 ipsectunnel.IpsecTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1190,7 +1190,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/ipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ipsectunnel"
 
 &ipsectunnel.IpsecTunnelConfig {
 	Connection: interface{},
