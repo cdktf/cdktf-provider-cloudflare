@@ -4,7 +4,7 @@
 
 ### HyperdriveConfig <a name="HyperdriveConfig" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The origin details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The caching details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The identifier of this resource. This is the hyperdrive config value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -626,7 +626,7 @@ The construct id used in the generated config for the HyperdriveConfig to import
 
 The id of the existing HyperdriveConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,6 +941,8 @@ import com.hashicorp.cdktf.providers.cloudflare.hyperdrive_config.HyperdriveConf
 HyperdriveConfigCaching.builder()
 //  .disabled(java.lang.Boolean)
 //  .disabled(IResolvable)
+//  .maxAge(java.lang.Number)
+//  .staleWhileRevalidate(java.lang.Number)
     .build();
 ```
 
@@ -949,6 +951,8 @@ HyperdriveConfigCaching.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable caching for this Hyperdrive configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.maxAge">maxAge</a></code> | <code>java.lang.Number</code> | Configure the `max_age` value of this Hyperdrive configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.staleWhileRevalidate">staleWhileRevalidate</a></code> | <code>java.lang.Number</code> | Disable caching for this Hyperdrive configuration. |
 
 ---
 
@@ -962,7 +966,35 @@ public java.lang.Object getDisabled();
 
 Disable caching for this Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+
+---
+
+##### `maxAge`<sup>Optional</sup> <a name="maxAge" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.maxAge"></a>
+
+```java
+public java.lang.Number getMaxAge();
+```
+
+- *Type:* java.lang.Number
+
+Configure the `max_age` value of this Hyperdrive configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
+
+---
+
+##### `staleWhileRevalidate`<sup>Optional</sup> <a name="staleWhileRevalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.staleWhileRevalidate"></a>
+
+```java
+public java.lang.Number getStaleWhileRevalidate();
+```
+
+- *Type:* java.lang.Number
+
+Disable caching for this Hyperdrive configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
 
 ---
 
@@ -1092,7 +1124,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -1106,7 +1138,7 @@ public java.lang.String getName();
 
 The name of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -1120,7 +1152,7 @@ public HyperdriveConfigOrigin getOrigin();
 
 The origin details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -1134,7 +1166,7 @@ public HyperdriveConfigCaching getCaching();
 
 The caching details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
 
 ---
 
@@ -1148,7 +1180,7 @@ public java.lang.String getId();
 
 The identifier of this resource. This is the hyperdrive config value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1166,9 +1198,11 @@ HyperdriveConfigOrigin.builder()
     .database(java.lang.String)
     .host(java.lang.String)
     .password(java.lang.String)
-    .port(java.lang.Number)
     .scheme(java.lang.String)
     .user(java.lang.String)
+//  .accessClientId(java.lang.String)
+//  .accessClientSecret(java.lang.String)
+//  .port(java.lang.Number)
     .build();
 ```
 
@@ -1179,9 +1213,11 @@ HyperdriveConfigOrigin.builder()
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.database">database</a></code> | <code>java.lang.String</code> | The name of your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.host">host</a></code> | <code>java.lang.String</code> | The host (hostname or IP) of your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.password">password</a></code> | <code>java.lang.String</code> | The password of the Hyperdrive configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port">port</a></code> | <code>java.lang.Number</code> | The port (default: 5432 for Postgres) of your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.scheme">scheme</a></code> | <code>java.lang.String</code> | Specifies the URL scheme used to connect to your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.user">user</a></code> | <code>java.lang.String</code> | The user of your origin database. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientId">accessClientId</a></code> | <code>java.lang.String</code> | Client ID associated with the Cloudflare Access Service Token used to connect via Access. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientSecret">accessClientSecret</a></code> | <code>java.lang.String</code> | Client Secret associated with the Cloudflare Access Service Token used to connect via Access. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port">port</a></code> | <code>java.lang.Number</code> | The port (default: 5432 for Postgres) of your origin database. |
 
 ---
 
@@ -1195,7 +1231,7 @@ public java.lang.String getDatabase();
 
 The name of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
 
 ---
 
@@ -1209,7 +1245,7 @@ public java.lang.String getHost();
 
 The host (hostname or IP) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
 
 ---
 
@@ -1223,21 +1259,7 @@ public java.lang.String getPassword();
 
 The password of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
-
----
-
-##### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port"></a>
-
-```java
-public java.lang.Number getPort();
-```
-
-- *Type:* java.lang.Number
-
-The port (default: 5432 for Postgres) of your origin database.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
 
 ---
 
@@ -1251,7 +1273,7 @@ public java.lang.String getScheme();
 
 Specifies the URL scheme used to connect to your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
 
 ---
 
@@ -1265,7 +1287,49 @@ public java.lang.String getUser();
 
 The user of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+
+---
+
+##### `accessClientId`<sup>Optional</sup> <a name="accessClientId" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientId"></a>
+
+```java
+public java.lang.String getAccessClientId();
+```
+
+- *Type:* java.lang.String
+
+Client ID associated with the Cloudflare Access Service Token used to connect via Access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
+
+---
+
+##### `accessClientSecret`<sup>Optional</sup> <a name="accessClientSecret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientSecret"></a>
+
+```java
+public java.lang.String getAccessClientSecret();
+```
+
+- *Type:* java.lang.String
+
+Client Secret associated with the Cloudflare Access Service Token used to connect via Access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+The port (default: 5432 for Postgres) of your origin database.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
 
 ---
 
@@ -1322,6 +1386,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetDisabled">resetDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetMaxAge">resetMaxAge</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetStaleWhileRevalidate">resetStaleWhileRevalidate</a></code> | *No description.* |
 
 ---
 
@@ -1481,6 +1547,18 @@ Returns a reversible string representation.
 public void resetDisabled()
 ```
 
+##### `resetMaxAge` <a name="resetMaxAge" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetMaxAge"></a>
+
+```java
+public void resetMaxAge()
+```
+
+##### `resetStaleWhileRevalidate` <a name="resetStaleWhileRevalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetStaleWhileRevalidate"></a>
+
+```java
+public void resetStaleWhileRevalidate()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1489,7 +1567,11 @@ public void resetDisabled()
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidateInput">staleWhileRevalidateInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAge">maxAge</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidate">staleWhileRevalidate</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching">HyperdriveConfigCaching</a></code> | *No description.* |
 
 ---
@@ -1528,6 +1610,26 @@ public java.lang.Object getDisabledInput();
 
 ---
 
+##### `maxAgeInput`<sup>Optional</sup> <a name="maxAgeInput" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAgeInput"></a>
+
+```java
+public java.lang.Number getMaxAgeInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `staleWhileRevalidateInput`<sup>Optional</sup> <a name="staleWhileRevalidateInput" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidateInput"></a>
+
+```java
+public java.lang.Number getStaleWhileRevalidateInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.disabled"></a>
 
 ```java
@@ -1535,6 +1637,26 @@ public java.lang.Object getDisabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `maxAge`<sup>Required</sup> <a name="maxAge" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAge"></a>
+
+```java
+public java.lang.Number getMaxAge();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `staleWhileRevalidate`<sup>Required</sup> <a name="staleWhileRevalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidate"></a>
+
+```java
+public java.lang.Number getStaleWhileRevalidate();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -1599,6 +1721,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientId">resetAccessClientId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientSecret">resetAccessClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetPort">resetPort</a></code> | *No description.* |
 
 ---
 
@@ -1752,6 +1877,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAccessClientId` <a name="resetAccessClientId" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientId"></a>
+
+```java
+public void resetAccessClientId()
+```
+
+##### `resetAccessClientSecret` <a name="resetAccessClientSecret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientSecret"></a>
+
+```java
+public void resetAccessClientSecret()
+```
+
+##### `resetPort` <a name="resetPort" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetPort"></a>
+
+```java
+public void resetPort()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1759,12 +1902,16 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientIdInput">accessClientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecretInput">accessClientSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.portInput">portInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.schemeInput">schemeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientId">accessClientId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecret">accessClientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1793,6 +1940,26 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessClientIdInput`<sup>Optional</sup> <a name="accessClientIdInput" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientIdInput"></a>
+
+```java
+public java.lang.String getAccessClientIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessClientSecretInput`<sup>Optional</sup> <a name="accessClientSecretInput" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecretInput"></a>
+
+```java
+public java.lang.String getAccessClientSecretInput();
 ```
 
 - *Type:* java.lang.String
@@ -1853,6 +2020,26 @@ public java.lang.String getSchemeInput();
 
 ```java
 public java.lang.String getUserInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessClientId`<sup>Required</sup> <a name="accessClientId" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientId"></a>
+
+```java
+public java.lang.String getAccessClientId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accessClientSecret`<sup>Required</sup> <a name="accessClientSecret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecret"></a>
+
+```java
+public java.lang.String getAccessClientSecret();
 ```
 
 - *Type:* java.lang.String

@@ -4,12 +4,12 @@
 
 ### ListItemA <a name="ListItemA" id="@cdktf/provider-cloudflare.listItem.ListItemA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item cloudflare_list_item}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item cloudflare_list_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemA(scope Construct, id *string, config ListItemAConfig) ListItemA
 ```
@@ -439,7 +439,7 @@ func ResetRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.listItem.ListItemA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.listItem.ListItemA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ listitem.ListItemA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.listItem.ListItemA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ listitem.ListItemA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.listItem.ListItemA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the ListItemA to import.
 
 The id of the existing ListItemA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 &listitem.ListItemAConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#account_id ListItemA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#account_id ListItemA#account_id}
 
 ---
 
@@ -1028,7 +1028,7 @@ ListId *string
 
 The list identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#list_id ListItemA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#list_id ListItemA#list_id}
 
 ---
 
@@ -1042,7 +1042,7 @@ Asn *f64
 
 Autonomous system number to include in the list. Must provide only one of: `ip`, `asn`, `redirect`, `hostname`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#asn ListItemA#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#asn ListItemA#asn}
 
 ---
 
@@ -1056,7 +1056,7 @@ Comment *string
 
 An optional comment for the item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#comment ListItemA#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#comment ListItemA#comment}
 
 ---
 
@@ -1070,7 +1070,7 @@ Hostname interface{}
 
 hostname block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#hostname ListItemA#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#hostname ListItemA#hostname}
 
 ---
 
@@ -1084,7 +1084,7 @@ Ip *string
 
 IP address to include in the list. Must provide only one of: `ip`, `asn`, `redirect`, `hostname`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#ip ListItemA#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#ip ListItemA#ip}
 
 ---
 
@@ -1098,7 +1098,7 @@ Redirect interface{}
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#redirect ListItemA#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#redirect ListItemA#redirect}
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 &listitem.ListItemHostname {
 	UrlHostname: *string,
@@ -1132,7 +1132,7 @@ UrlHostname *string
 
 The FQDN to match on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#url_hostname ListItemA#url_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#url_hostname ListItemA#url_hostname}
 
 ---
 
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 &listitem.ListItemRedirect {
 	SourceUrl: *string,
@@ -1178,7 +1178,7 @@ SourceUrl *string
 
 The source url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#source_url ListItemA#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#source_url ListItemA#source_url}
 
 ---
 
@@ -1192,7 +1192,7 @@ TargetUrl *string
 
 The target url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#target_url ListItemA#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#target_url ListItemA#target_url}
 
 ---
 
@@ -1206,7 +1206,7 @@ IncludeSubdomains interface{}
 
 Whether the redirect also matches subdomains of the source url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#include_subdomains ListItemA#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#include_subdomains ListItemA#include_subdomains}
 
 ---
 
@@ -1220,7 +1220,7 @@ PreservePathSuffix interface{}
 
 Whether the redirect target url should keep the query string of the request's url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#preserve_path_suffix ListItemA#preserve_path_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#preserve_path_suffix ListItemA#preserve_path_suffix}
 
 ---
 
@@ -1234,7 +1234,7 @@ PreserveQueryString interface{}
 
 Whether the redirect target url should keep the query string of the request's url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#preserve_query_string ListItemA#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#preserve_query_string ListItemA#preserve_query_string}
 
 ---
 
@@ -1248,7 +1248,7 @@ StatusCode *f64
 
 The status code to be used when redirecting a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#status_code ListItemA#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#status_code ListItemA#status_code}
 
 ---
 
@@ -1262,7 +1262,7 @@ SubpathMatching interface{}
 
 Whether the redirect also matches subpaths of the source url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/list_item#subpath_matching ListItemA#subpath_matching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/list_item#subpath_matching ListItemA#subpath_matching}
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListItemHostnameList
 ```
@@ -1433,7 +1433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ListItemHostnameOutputReference
 ```
@@ -1722,7 +1722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListItemRedirectList
 ```
@@ -1882,7 +1882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ListItemRedirectOutputReference
 ```

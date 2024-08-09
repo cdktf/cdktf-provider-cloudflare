@@ -4,7 +4,7 @@
 
 ### HyperdriveConfig <a name="HyperdriveConfig" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The origin details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The caching details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The identifier of this resource. This is the hyperdrive config value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -524,7 +524,9 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_caching(
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: typing.Union[bool, IResolvable] = None,
+  max_age: typing.Union[int, float] = None,
+  stale_while_revalidate: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -534,7 +536,27 @@ def put_caching(
 
 Disable caching for this Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+
+---
+
+###### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putCaching.parameter.maxAge"></a>
+
+- *Type:* typing.Union[int, float]
+
+Configure the `max_age` value of this Hyperdrive configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
+
+---
+
+###### `stale_while_revalidate`<sup>Optional</sup> <a name="stale_while_revalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putCaching.parameter.staleWhileRevalidate"></a>
+
+- *Type:* typing.Union[int, float]
+
+Disable caching for this Hyperdrive configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
 
 ---
 
@@ -545,9 +567,11 @@ def put_origin(
   database: str,
   host: str,
   password: str,
-  port: typing.Union[int, float],
   scheme: str,
-  user: str
+  user: str,
+  access_client_id: str = None,
+  access_client_secret: str = None,
+  port: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -557,7 +581,7 @@ def put_origin(
 
 The name of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
 
 ---
 
@@ -567,7 +591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The host (hostname or IP) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
 
 ---
 
@@ -577,17 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The password of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
-
----
-
-###### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putOrigin.parameter.port"></a>
-
-- *Type:* typing.Union[int, float]
-
-The port (default: 5432 for Postgres) of your origin database.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
 
 ---
 
@@ -597,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the URL scheme used to connect to your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
 
 ---
 
@@ -607,7 +621,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The user of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+
+---
+
+###### `access_client_id`<sup>Optional</sup> <a name="access_client_id" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putOrigin.parameter.accessClientId"></a>
+
+- *Type:* str
+
+Client ID associated with the Cloudflare Access Service Token used to connect via Access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
+
+---
+
+###### `access_client_secret`<sup>Optional</sup> <a name="access_client_secret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putOrigin.parameter.accessClientSecret"></a>
+
+- *Type:* str
+
+Client Secret associated with the Cloudflare Access Service Token used to connect via Access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
+
+---
+
+###### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.putOrigin.parameter.port"></a>
+
+- *Type:* typing.Union[int, float]
+
+The port (default: 5432 for Postgres) of your origin database.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
 
 ---
 
@@ -737,7 +781,7 @@ The construct id used in the generated config for the HyperdriveConfig to import
 
 The id of the existing HyperdriveConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1050,7 +1094,9 @@ tfResourceType: str
 from cdktf_cdktf_provider_cloudflare import hyperdrive_config
 
 hyperdriveConfig.HyperdriveConfigCaching(
-  disabled: typing.Union[bool, IResolvable] = None
+  disabled: typing.Union[bool, IResolvable] = None,
+  max_age: typing.Union[int, float] = None,
+  stale_while_revalidate: typing.Union[int, float] = None
 )
 ```
 
@@ -1059,6 +1105,8 @@ hyperdriveConfig.HyperdriveConfigCaching(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable caching for this Hyperdrive configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.maxAge">max_age</a></code> | <code>typing.Union[int, float]</code> | Configure the `max_age` value of this Hyperdrive configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.staleWhileRevalidate">stale_while_revalidate</a></code> | <code>typing.Union[int, float]</code> | Disable caching for this Hyperdrive configuration. |
 
 ---
 
@@ -1072,7 +1120,35 @@ disabled: typing.Union[bool, IResolvable]
 
 Disable caching for this Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+
+---
+
+##### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.maxAge"></a>
+
+```python
+max_age: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Configure the `max_age` value of this Hyperdrive configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
+
+---
+
+##### `stale_while_revalidate`<sup>Optional</sup> <a name="stale_while_revalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.property.staleWhileRevalidate"></a>
+
+```python
+stale_while_revalidate: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Disable caching for this Hyperdrive configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
 
 ---
 
@@ -1198,7 +1274,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 
 ---
 
@@ -1212,7 +1288,7 @@ name: str
 
 The name of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
 
 ---
 
@@ -1226,7 +1302,7 @@ origin: HyperdriveConfigOrigin
 
 The origin details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
 
 ---
 
@@ -1240,7 +1316,7 @@ caching: HyperdriveConfigCaching
 
 The caching details for the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
 
 ---
 
@@ -1254,7 +1330,7 @@ id: str
 
 The identifier of this resource. This is the hyperdrive config value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#id HyperdriveConfig#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1272,9 +1348,11 @@ hyperdriveConfig.HyperdriveConfigOrigin(
   database: str,
   host: str,
   password: str,
-  port: typing.Union[int, float],
   scheme: str,
-  user: str
+  user: str,
+  access_client_id: str = None,
+  access_client_secret: str = None,
+  port: typing.Union[int, float] = None
 )
 ```
 
@@ -1285,9 +1363,11 @@ hyperdriveConfig.HyperdriveConfigOrigin(
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.database">database</a></code> | <code>str</code> | The name of your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.host">host</a></code> | <code>str</code> | The host (hostname or IP) of your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.password">password</a></code> | <code>str</code> | The password of the Hyperdrive configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port (default: 5432 for Postgres) of your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.scheme">scheme</a></code> | <code>str</code> | Specifies the URL scheme used to connect to your origin database. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.user">user</a></code> | <code>str</code> | The user of your origin database. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientId">access_client_id</a></code> | <code>str</code> | Client ID associated with the Cloudflare Access Service Token used to connect via Access. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientSecret">access_client_secret</a></code> | <code>str</code> | Client Secret associated with the Cloudflare Access Service Token used to connect via Access. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port (default: 5432 for Postgres) of your origin database. |
 
 ---
 
@@ -1301,7 +1381,7 @@ database: str
 
 The name of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
 
 ---
 
@@ -1315,7 +1395,7 @@ host: str
 
 The host (hostname or IP) of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
 
 ---
 
@@ -1329,21 +1409,7 @@ password: str
 
 The password of the Hyperdrive configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
-
----
-
-##### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port"></a>
-
-```python
-port: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-The port (default: 5432 for Postgres) of your origin database.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
 
 ---
 
@@ -1357,7 +1423,7 @@ scheme: str
 
 Specifies the URL scheme used to connect to your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
 
 ---
 
@@ -1371,7 +1437,49 @@ user: str
 
 The user of your origin database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+
+---
+
+##### `access_client_id`<sup>Optional</sup> <a name="access_client_id" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientId"></a>
+
+```python
+access_client_id: str
+```
+
+- *Type:* str
+
+Client ID associated with the Cloudflare Access Service Token used to connect via Access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
+
+---
+
+##### `access_client_secret`<sup>Optional</sup> <a name="access_client_secret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.accessClientSecret"></a>
+
+```python
+access_client_secret: str
+```
+
+- *Type:* str
+
+Client Secret associated with the Cloudflare Access Service Token used to connect via Access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.property.port"></a>
+
+```python
+port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The port (default: 5432 for Postgres) of your origin database.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
 
 ---
 
@@ -1431,6 +1539,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetDisabled">reset_disabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetMaxAge">reset_max_age</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetStaleWhileRevalidate">reset_stale_while_revalidate</a></code> | *No description.* |
 
 ---
 
@@ -1612,6 +1722,18 @@ Returns a reversible string representation.
 def reset_disabled() -> None
 ```
 
+##### `reset_max_age` <a name="reset_max_age" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetMaxAge"></a>
+
+```python
+def reset_max_age() -> None
+```
+
+##### `reset_stale_while_revalidate` <a name="reset_stale_while_revalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.resetStaleWhileRevalidate"></a>
+
+```python
+def reset_stale_while_revalidate() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1620,7 +1742,11 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidateInput">stale_while_revalidate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAge">max_age</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidate">stale_while_revalidate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching">HyperdriveConfigCaching</a>]</code> | *No description.* |
 
 ---
@@ -1659,6 +1785,26 @@ disabled_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `max_age_input`<sup>Optional</sup> <a name="max_age_input" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAgeInput"></a>
+
+```python
+max_age_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `stale_while_revalidate_input`<sup>Optional</sup> <a name="stale_while_revalidate_input" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidateInput"></a>
+
+```python
+stale_while_revalidate_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.disabled"></a>
 
 ```python
@@ -1666,6 +1812,26 @@ disabled: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `max_age`<sup>Required</sup> <a name="max_age" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.maxAge"></a>
+
+```python
+max_age: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `stale_while_revalidate`<sup>Required</sup> <a name="stale_while_revalidate" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.property.staleWhileRevalidate"></a>
+
+```python
+stale_while_revalidate: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1733,6 +1899,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientId">reset_access_client_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientSecret">reset_access_client_secret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetPort">reset_port</a></code> | *No description.* |
 
 ---
 
@@ -1908,6 +2077,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_access_client_id` <a name="reset_access_client_id" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientId"></a>
+
+```python
+def reset_access_client_id() -> None
+```
+
+##### `reset_access_client_secret` <a name="reset_access_client_secret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetAccessClientSecret"></a>
+
+```python
+def reset_access_client_secret() -> None
+```
+
+##### `reset_port` <a name="reset_port" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.resetPort"></a>
+
+```python
+def reset_port() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1915,12 +2102,16 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientIdInput">access_client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecretInput">access_client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.schemeInput">scheme_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.userInput">user_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientId">access_client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecret">access_client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.password">password</a></code> | <code>str</code> | *No description.* |
@@ -1949,6 +2140,26 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_id_input`<sup>Optional</sup> <a name="access_client_id_input" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientIdInput"></a>
+
+```python
+access_client_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_secret_input`<sup>Optional</sup> <a name="access_client_secret_input" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecretInput"></a>
+
+```python
+access_client_secret_input: str
 ```
 
 - *Type:* str
@@ -2009,6 +2220,26 @@ scheme_input: str
 
 ```python
 user_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_id`<sup>Required</sup> <a name="access_client_id" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientId"></a>
+
+```python
+access_client_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_client_secret`<sup>Required</sup> <a name="access_client_secret" id="@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.property.accessClientSecret"></a>
+
+```python
+access_client_secret: str
 ```
 
 - *Type:* str
