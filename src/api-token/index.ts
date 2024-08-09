@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The expiration time on or after which the token MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#expires_on ApiToken#expires_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#expires_on ApiToken#expires_on}
   */
   readonly expiresOn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#id ApiToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#id ApiToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the API Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#name ApiToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#name ApiToken#name}
   */
   readonly name: string;
   /**
   * The time before which the token MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#not_before ApiToken#not_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#not_before ApiToken#not_before}
   */
   readonly notBefore?: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#condition ApiToken#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#condition ApiToken#condition}
   */
   readonly condition?: ApiTokenCondition;
   /**
   * policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#policy ApiToken#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#policy ApiToken#policy}
   */
   readonly policy: ApiTokenPolicy[] | cdktf.IResolvable;
 }
@@ -54,13 +54,13 @@ export interface ApiTokenConditionRequestIp {
   /**
   * List of IP addresses or CIDR notation where the token may be used from. If not specified, the token will be valid for all IP addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#in ApiToken#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#in ApiToken#in}
   */
   readonly in?: string[];
   /**
   * List of IP addresses or CIDR notation where the token should not be used from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#not_in ApiToken#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#not_in ApiToken#not_in}
   */
   readonly notIn?: string[];
 }
@@ -175,7 +175,7 @@ export interface ApiTokenCondition {
   /**
   * request_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#request_ip ApiToken#request_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#request_ip ApiToken#request_ip}
   */
   readonly requestIp?: ApiTokenConditionRequestIp;
 }
@@ -261,19 +261,19 @@ export interface ApiTokenPolicy {
   /**
   * Effect of the policy. Available values: `allow`, `deny`. Defaults to `allow`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#effect ApiToken#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#effect ApiToken#effect}
   */
   readonly effect?: string;
   /**
   * List of permissions groups IDs. See [documentation](https://developers.cloudflare.com/api/tokens/create/permissions) for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
   */
   readonly permissionGroups: string[];
   /**
   * Describes what operations against which resources are allowed or denied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#resources ApiToken#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#resources ApiToken#resources}
   */
   readonly resources: { [key: string]: string };
 }
@@ -441,7 +441,7 @@ export class ApiTokenPolicyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token cloudflare_api_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token cloudflare_api_token}
 */
 export class ApiToken extends cdktf.TerraformResource {
 
@@ -457,7 +457,7 @@ export class ApiToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiToken to import
-  * @param importFromId The id of the existing ApiToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -469,7 +469,7 @@ export class ApiToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/api_token cloudflare_api_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/api_token cloudflare_api_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -480,7 +480,7 @@ export class ApiToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.38.0',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

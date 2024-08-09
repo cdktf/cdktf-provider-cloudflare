@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface R2BucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
   */
   readonly accountId: string;
   /**
   * The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket#location R2Bucket#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket#location R2Bucket#location}
   */
   readonly location?: string;
   /**
   * The name of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket#name R2Bucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket#name R2Bucket#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket cloudflare_r2_bucket}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket cloudflare_r2_bucket}
 */
 export class R2Bucket extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class R2Bucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2Bucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2Bucket to import
-  * @param importFromId The id of the existing R2Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2Bucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class R2Bucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class R2Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.38.0',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
