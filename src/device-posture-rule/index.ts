@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,21 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#description DevicePostureRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#description DevicePostureRule#description}
   */
   readonly description?: string;
   /**
   * Expire posture results after the specified amount of time. Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#expiration DevicePostureRule#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#expiration DevicePostureRule#expiration}
   */
   readonly expiration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,105 +38,270 @@ export interface DevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the device posture rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
   */
   readonly name?: string;
   /**
   * Tells the client when to run the device posture check. Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
   */
   readonly schedule?: string;
   /**
-  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
+  * The device posture rule type. Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `client_certificate_v2`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#type DevicePostureRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#type DevicePostureRule#type}
   */
   readonly type: string;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
   */
   readonly input?: DevicePostureRuleInput[] | cdktf.IResolvable;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
   */
   readonly match?: DevicePostureRuleMatch[] | cdktf.IResolvable;
+}
+export interface DevicePostureRuleInputLocations {
+  /**
+  * List of paths to check for client certificate rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#paths DevicePostureRule#paths}
+  */
+  readonly paths?: string[];
+  /**
+  * List of trust stores to check for client certificate rule. Available values: `system`, `user`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#trust_stores DevicePostureRule#trust_stores}
+  */
+  readonly trustStores?: string[];
+}
+
+export function devicePostureRuleInputLocationsToTerraform(struct?: DevicePostureRuleInputLocations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.paths),
+    trust_stores: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustStores),
+  }
+}
+
+
+export function devicePostureRuleInputLocationsToHclTerraform(struct?: DevicePostureRuleInputLocations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.paths),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    trust_stores: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustStores),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DevicePostureRuleInputLocationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DevicePostureRuleInputLocations | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._paths !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.paths = this._paths;
+    }
+    if (this._trustStores !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trustStores = this._trustStores;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DevicePostureRuleInputLocations | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._paths = undefined;
+      this._trustStores = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._paths = value.paths;
+      this._trustStores = value.trustStores;
+    }
+  }
+
+  // paths - computed: false, optional: true, required: false
+  private _paths?: string[]; 
+  public get paths() {
+    return cdktf.Fn.tolist(this.getListAttribute('paths'));
+  }
+  public set paths(value: string[]) {
+    this._paths = value;
+  }
+  public resetPaths() {
+    this._paths = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathsInput() {
+    return this._paths;
+  }
+
+  // trust_stores - computed: false, optional: true, required: false
+  private _trustStores?: string[]; 
+  public get trustStores() {
+    return cdktf.Fn.tolist(this.getListAttribute('trust_stores'));
+  }
+  public set trustStores(value: string[]) {
+    this._trustStores = value;
+  }
+  public resetTrustStores() {
+    this._trustStores = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trustStoresInput() {
+    return this._trustStores;
+  }
+}
+
+export class DevicePostureRuleInputLocationsList extends cdktf.ComplexList {
+  public internalValue? : DevicePostureRuleInputLocations[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DevicePostureRuleInputLocationsOutputReference {
+    return new DevicePostureRuleInputLocationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DevicePostureRuleInput {
   /**
   * The number of active threats from SentinelOne.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#active_threats DevicePostureRule#active_threats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#active_threats DevicePostureRule#active_threats}
   */
   readonly activeThreats?: number;
   /**
   * The UUID of a Cloudflare managed certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#certificate_id DevicePostureRule#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#certificate_id DevicePostureRule#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * Specific volume(s) to check for encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#check_disks DevicePostureRule#check_disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#check_disks DevicePostureRule#check_disks}
   */
   readonly checkDisks?: string[];
   /**
+  * Confirm the certificate was not imported from another device.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#check_private_key DevicePostureRule#check_private_key}
+  */
+  readonly checkPrivateKey?: boolean | cdktf.IResolvable;
+  /**
   * The common name for a certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#cn DevicePostureRule#cn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#cn DevicePostureRule#cn}
   */
   readonly cn?: string;
   /**
   * The workspace one or intune device compliance status. `compliant` and `noncompliant` are values supported by both providers. `unknown`, `conflict`, `error`, `ingraceperiod` values are only supported by intune. Available values: `compliant`, `noncompliant`, `unknown`, `conflict`, `error`, `ingraceperiod`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#compliance_status DevicePostureRule#compliance_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#compliance_status DevicePostureRule#compliance_status}
   */
   readonly complianceStatus?: string;
   /**
   * The workspace one or intune connection id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#connection_id DevicePostureRule#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#connection_id DevicePostureRule#connection_id}
   */
   readonly connectionId?: string;
   /**
   * The count comparison operator for kolide. Available values: `>`, `>=`, `<`, `<=`, `==`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#count_operator DevicePostureRule#count_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#count_operator DevicePostureRule#count_operator}
   */
   readonly countOperator?: string;
   /**
   * The domain that the client must join.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#domain DevicePostureRule#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#domain DevicePostureRule#domain}
   */
   readonly domain?: string;
   /**
   * The datetime a device last seen in RFC 3339 format from Tanium.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#eid_last_seen DevicePostureRule#eid_last_seen}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#eid_last_seen DevicePostureRule#eid_last_seen}
   */
   readonly eidLastSeen?: string;
   /**
   * True if the firewall must be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#enabled DevicePostureRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#enabled DevicePostureRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Checks if the file should exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#exists DevicePostureRule#exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#exists DevicePostureRule#exists}
   */
   readonly exists?: boolean | cdktf.IResolvable;
   /**
+  * List of values indicating purposes for which the certificate public key can be used. Available values: `clientAuth`, `emailProtection`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#extended_key_usage DevicePostureRule#extended_key_usage}
+  */
+  readonly extendedKeyUsage?: string[];
+  /**
   * The Teams List id. Required for `serial_number` and `unique_client_id` rule types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,135 +310,141 @@ export interface DevicePostureRuleInput {
   /**
   * True if SentinelOne device is infected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#infected DevicePostureRule#infected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#infected DevicePostureRule#infected}
   */
   readonly infected?: boolean | cdktf.IResolvable;
   /**
   * True if SentinelOne device is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#is_active DevicePostureRule#is_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#is_active DevicePostureRule#is_active}
   */
   readonly isActive?: boolean | cdktf.IResolvable;
   /**
   * The number of issues for kolide.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#issue_count DevicePostureRule#issue_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#issue_count DevicePostureRule#issue_count}
   */
   readonly issueCount?: string;
   /**
   * The duration of time that the host was last seen from Crowdstrike. Must be in the format `1h` or `30m`. Valid units are `d`, `h` and `m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#last_seen DevicePostureRule#last_seen}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#last_seen DevicePostureRule#last_seen}
   */
   readonly lastSeen?: string;
   /**
   * The network status from SentinelOne. Available values: `connected`, `disconnected`, `disconnecting`, `connecting`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#network_status DevicePostureRule#network_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#network_status DevicePostureRule#network_status}
   */
   readonly networkStatus?: string;
   /**
   * The version comparison operator. Available values: `>`, `>=`, `<`, `<=`, `==`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#operator DevicePostureRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#operator DevicePostureRule#operator}
   */
   readonly operator?: string;
   /**
   * OS signal score from Crowdstrike. Value must be between 1 and 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os DevicePostureRule#os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os DevicePostureRule#os}
   */
   readonly os?: string;
   /**
   * The operating system excluding version information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os_distro_name DevicePostureRule#os_distro_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os_distro_name DevicePostureRule#os_distro_name}
   */
   readonly osDistroName?: string;
   /**
   * The operating system version excluding OS name information or release name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
   */
   readonly osDistroRevision?: string;
   /**
   * Extra version value following the operating system semantic version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os_version_extra DevicePostureRule#os_version_extra}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os_version_extra DevicePostureRule#os_version_extra}
   */
   readonly osVersionExtra?: string;
   /**
   * Overall ZTA score from Crowdstrike. Value must be between 1 and 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#overall DevicePostureRule#overall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#overall DevicePostureRule#overall}
   */
   readonly overall?: string;
   /**
   * The path to the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#path DevicePostureRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#path DevicePostureRule#path}
   */
   readonly path?: string;
   /**
   * True if all drives must be encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#require_all DevicePostureRule#require_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#require_all DevicePostureRule#require_all}
   */
   readonly requireAll?: boolean | cdktf.IResolvable;
   /**
   * The risk level from Tanium. Available values: `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#risk_level DevicePostureRule#risk_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#risk_level DevicePostureRule#risk_level}
   */
   readonly riskLevel?: string;
   /**
   * Checks if the application should be running.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#running DevicePostureRule#running}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#running DevicePostureRule#running}
   */
   readonly running?: boolean | cdktf.IResolvable;
   /**
   * Sensor signal score from Crowdstrike. Value must be between 1 and 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#sensor_config DevicePostureRule#sensor_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#sensor_config DevicePostureRule#sensor_config}
   */
   readonly sensorConfig?: string;
   /**
   * The sha256 hash of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#sha256 DevicePostureRule#sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#sha256 DevicePostureRule#sha256}
   */
   readonly sha256?: string;
   /**
   * The host’s current online status from Crowdstrike. Available values: `online`, `offline`, `unknown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#state DevicePostureRule#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#state DevicePostureRule#state}
   */
   readonly state?: string;
   /**
   * The thumbprint of the file certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#thumbprint DevicePostureRule#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#thumbprint DevicePostureRule#thumbprint}
   */
   readonly thumbprint?: string;
   /**
   * The total score from Tanium.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#total_score DevicePostureRule#total_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#total_score DevicePostureRule#total_score}
   */
   readonly totalScore?: number;
   /**
   * The operating system semantic version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#version DevicePostureRule#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#version DevicePostureRule#version}
   */
   readonly version?: string;
   /**
   * The version comparison operator for crowdstrike. Available values: `>`, `>=`, `<`, `<=`, `==`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#version_operator DevicePostureRule#version_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#version_operator DevicePostureRule#version_operator}
   */
   readonly versionOperator?: string;
+  /**
+  * locations block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#locations DevicePostureRule#locations}
+  */
+  readonly locations?: DevicePostureRuleInputLocations[] | cdktf.IResolvable;
 }
 
 export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInput | cdktf.IResolvable): any {
@@ -285,6 +456,7 @@ export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInpu
     active_threats: cdktf.numberToTerraform(struct!.activeThreats),
     certificate_id: cdktf.stringToTerraform(struct!.certificateId),
     check_disks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkDisks),
+    check_private_key: cdktf.booleanToTerraform(struct!.checkPrivateKey),
     cn: cdktf.stringToTerraform(struct!.cn),
     compliance_status: cdktf.stringToTerraform(struct!.complianceStatus),
     connection_id: cdktf.stringToTerraform(struct!.connectionId),
@@ -293,6 +465,7 @@ export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInpu
     eid_last_seen: cdktf.stringToTerraform(struct!.eidLastSeen),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     exists: cdktf.booleanToTerraform(struct!.exists),
+    extended_key_usage: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.extendedKeyUsage),
     id: cdktf.stringToTerraform(struct!.id),
     infected: cdktf.booleanToTerraform(struct!.infected),
     is_active: cdktf.booleanToTerraform(struct!.isActive),
@@ -316,6 +489,7 @@ export function devicePostureRuleInputToTerraform(struct?: DevicePostureRuleInpu
     total_score: cdktf.numberToTerraform(struct!.totalScore),
     version: cdktf.stringToTerraform(struct!.version),
     version_operator: cdktf.stringToTerraform(struct!.versionOperator),
+    locations: cdktf.listMapper(devicePostureRuleInputLocationsToTerraform, true)(struct!.locations),
   }
 }
 
@@ -343,6 +517,12 @@ export function devicePostureRuleInputToHclTerraform(struct?: DevicePostureRuleI
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    check_private_key: {
+      value: cdktf.booleanToHclTerraform(struct!.checkPrivateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     cn: {
       value: cdktf.stringToHclTerraform(struct!.cn),
@@ -391,6 +571,12 @@ export function devicePostureRuleInputToHclTerraform(struct?: DevicePostureRuleI
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    extended_key_usage: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.extendedKeyUsage),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
     },
     id: {
       value: cdktf.stringToHclTerraform(struct!.id),
@@ -530,6 +716,12 @@ export function devicePostureRuleInputToHclTerraform(struct?: DevicePostureRuleI
       type: "simple",
       storageClassType: "string",
     },
+    locations: {
+      value: cdktf.listMapperHcl(devicePostureRuleInputLocationsToHclTerraform, true)(struct!.locations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DevicePostureRuleInputLocationsList",
+    },
   };
 
   // remove undefined attributes
@@ -568,6 +760,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.checkDisks = this._checkDisks;
     }
+    if (this._checkPrivateKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.checkPrivateKey = this._checkPrivateKey;
+    }
     if (this._cn !== undefined) {
       hasAnyValues = true;
       internalValueResult.cn = this._cn;
@@ -599,6 +795,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
     if (this._exists !== undefined) {
       hasAnyValues = true;
       internalValueResult.exists = this._exists;
+    }
+    if (this._extendedKeyUsage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extendedKeyUsage = this._extendedKeyUsage;
     }
     if (this._id !== undefined) {
       hasAnyValues = true;
@@ -692,6 +892,10 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.versionOperator = this._versionOperator;
     }
+    if (this._locations?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.locations = this._locations?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -702,6 +906,7 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._activeThreats = undefined;
       this._certificateId = undefined;
       this._checkDisks = undefined;
+      this._checkPrivateKey = undefined;
       this._cn = undefined;
       this._complianceStatus = undefined;
       this._connectionId = undefined;
@@ -710,6 +915,7 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._eidLastSeen = undefined;
       this._enabled = undefined;
       this._exists = undefined;
+      this._extendedKeyUsage = undefined;
       this._id = undefined;
       this._infected = undefined;
       this._isActive = undefined;
@@ -733,6 +939,7 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._totalScore = undefined;
       this._version = undefined;
       this._versionOperator = undefined;
+      this._locations.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -744,6 +951,7 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._activeThreats = value.activeThreats;
       this._certificateId = value.certificateId;
       this._checkDisks = value.checkDisks;
+      this._checkPrivateKey = value.checkPrivateKey;
       this._cn = value.cn;
       this._complianceStatus = value.complianceStatus;
       this._connectionId = value.connectionId;
@@ -752,6 +960,7 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._eidLastSeen = value.eidLastSeen;
       this._enabled = value.enabled;
       this._exists = value.exists;
+      this._extendedKeyUsage = value.extendedKeyUsage;
       this._id = value.id;
       this._infected = value.infected;
       this._isActive = value.isActive;
@@ -775,6 +984,7 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
       this._totalScore = value.totalScore;
       this._version = value.version;
       this._versionOperator = value.versionOperator;
+      this._locations.internalValue = value.locations;
     }
   }
 
@@ -824,6 +1034,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get checkDisksInput() {
     return this._checkDisks;
+  }
+
+  // check_private_key - computed: false, optional: true, required: false
+  private _checkPrivateKey?: boolean | cdktf.IResolvable; 
+  public get checkPrivateKey() {
+    return this.getBooleanAttribute('check_private_key');
+  }
+  public set checkPrivateKey(value: boolean | cdktf.IResolvable) {
+    this._checkPrivateKey = value;
+  }
+  public resetCheckPrivateKey() {
+    this._checkPrivateKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkPrivateKeyInput() {
+    return this._checkPrivateKey;
   }
 
   // cn - computed: false, optional: true, required: false
@@ -952,6 +1178,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get existsInput() {
     return this._exists;
+  }
+
+  // extended_key_usage - computed: false, optional: true, required: false
+  private _extendedKeyUsage?: string[]; 
+  public get extendedKeyUsage() {
+    return cdktf.Fn.tolist(this.getListAttribute('extended_key_usage'));
+  }
+  public set extendedKeyUsage(value: string[]) {
+    this._extendedKeyUsage = value;
+  }
+  public resetExtendedKeyUsage() {
+    this._extendedKeyUsage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extendedKeyUsageInput() {
+    return this._extendedKeyUsage;
   }
 
   // id - computed: false, optional: true, required: false
@@ -1321,6 +1563,22 @@ export class DevicePostureRuleInputOutputReference extends cdktf.ComplexObject {
   public get versionOperatorInput() {
     return this._versionOperator;
   }
+
+  // locations - computed: false, optional: true, required: false
+  private _locations = new DevicePostureRuleInputLocationsList(this, "locations", false);
+  public get locations() {
+    return this._locations;
+  }
+  public putLocations(value: DevicePostureRuleInputLocations[] | cdktf.IResolvable) {
+    this._locations.internalValue = value;
+  }
+  public resetLocations() {
+    this._locations.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationsInput() {
+    return this._locations.internalValue;
+  }
 }
 
 export class DevicePostureRuleInputList extends cdktf.ComplexList {
@@ -1346,7 +1604,7 @@ export interface DevicePostureRuleMatch {
   /**
   * The platform of the device. Available values: `windows`, `mac`, `linux`, `android`, `ios`, `chromeos`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#platform DevicePostureRule#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#platform DevicePostureRule#platform}
   */
   readonly platform?: string;
 }
@@ -1462,7 +1720,7 @@ export class DevicePostureRuleMatchList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}
 */
 export class DevicePostureRule extends cdktf.TerraformResource {
 
@@ -1478,7 +1736,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevicePostureRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevicePostureRule to import
-  * @param importFromId The id of the existing DevicePostureRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevicePostureRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevicePostureRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1490,7 +1748,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1501,7 +1759,7 @@ export class DevicePostureRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DevicePostureRule <a name="DevicePostureRule" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer"></a>
 
@@ -50,9 +50,9 @@ DevicePostureRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The device posture rule type. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#description DevicePostureRule#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#description DevicePostureRule#description}. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.expiration">expiration</a></code> | <code>java.lang.String</code> | Expire posture results after the specified amount of time. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.input">input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput">DevicePostureRuleInput</a>></code> | input block. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.match">match</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatch">DevicePostureRuleMatch</a>></code> | match block. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the device posture rule. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
 
 ---
 
@@ -136,9 +136,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The device posture rule type.
 
-Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
+Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `client_certificate_v2`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#type DevicePostureRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#type DevicePostureRule#type}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#description DevicePostureRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#description DevicePostureRule#description}.
 
 ---
 
@@ -158,7 +158,7 @@ Expire posture results after the specified amount of time.
 
 Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#expiration DevicePostureRule#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#expiration DevicePostureRule#expiration}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the device posture rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
 
 ---
 
@@ -211,7 +211,7 @@ Tells the client when to run the device posture check.
 
 Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
 
 ---
 
@@ -713,7 +713,7 @@ The construct id used in the generated config for the DevicePostureRule to impor
 
 The id of the existing DevicePostureRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1152,9 +1152,9 @@ DevicePostureRuleConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.type">type</a></code> | <code>java.lang.String</code> | The device posture rule type. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#description DevicePostureRule#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#description DevicePostureRule#description}. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.expiration">expiration</a></code> | <code>java.lang.String</code> | Expire posture results after the specified amount of time. |
-| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.input">input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput">DevicePostureRuleInput</a>></code> | input block. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.match">match</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatch">DevicePostureRuleMatch</a>></code> | match block. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the device posture rule. |
@@ -1242,7 +1242,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#account_id DevicePostureRule#account_id}
 
 ---
 
@@ -1256,9 +1256,9 @@ public java.lang.String getType();
 
 The device posture rule type.
 
-Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
+Available values: `serial_number`, `file`, `application`, `gateway`, `warp`, `domain_joined`, `os_version`, `disk_encryption`, `firewall`, `client_certificate`, `client_certificate_v2`, `workspace_one`, `unique_client_id`, `crowdstrike_s2s`, `sentinelone`, `kolide`, `tanium_s2s`, `intune`, `sentinelone_s2s`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#type DevicePostureRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#type DevicePostureRule#type}
 
 ---
 
@@ -1270,7 +1270,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#description DevicePostureRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#description DevicePostureRule#description}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Expire posture results after the specified amount of time.
 
 Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#expiration DevicePostureRule#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#expiration DevicePostureRule#expiration}
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1315,7 +1315,7 @@ public java.lang.Object getInput();
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#input DevicePostureRule#input}
 
 ---
 
@@ -1329,7 +1329,7 @@ public java.lang.Object getMatch();
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#match DevicePostureRule#match}
 
 ---
 
@@ -1343,7 +1343,7 @@ public java.lang.String getName();
 
 Name of the device posture rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#name DevicePostureRule#name}
 
 ---
 
@@ -1359,7 +1359,7 @@ Tells the client when to run the device posture check.
 
 Must be in the format `1h` or `30m`. Valid units are `h` and `m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#schedule DevicePostureRule#schedule}
 
 ---
 
@@ -1374,6 +1374,8 @@ DevicePostureRuleInput.builder()
 //  .activeThreats(java.lang.Number)
 //  .certificateId(java.lang.String)
 //  .checkDisks(java.util.List<java.lang.String>)
+//  .checkPrivateKey(java.lang.Boolean)
+//  .checkPrivateKey(IResolvable)
 //  .cn(java.lang.String)
 //  .complianceStatus(java.lang.String)
 //  .connectionId(java.lang.String)
@@ -1384,6 +1386,7 @@ DevicePostureRuleInput.builder()
 //  .enabled(IResolvable)
 //  .exists(java.lang.Boolean)
 //  .exists(IResolvable)
+//  .extendedKeyUsage(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .infected(java.lang.Boolean)
 //  .infected(IResolvable)
@@ -1391,6 +1394,8 @@ DevicePostureRuleInput.builder()
 //  .isActive(IResolvable)
 //  .issueCount(java.lang.String)
 //  .lastSeen(java.lang.String)
+//  .locations(IResolvable)
+//  .locations(java.util.List<DevicePostureRuleInputLocations>)
 //  .networkStatus(java.lang.String)
 //  .operator(java.lang.String)
 //  .os(java.lang.String)
@@ -1421,6 +1426,7 @@ DevicePostureRuleInput.builder()
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.activeThreats">activeThreats</a></code> | <code>java.lang.Number</code> | The number of active threats from SentinelOne. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.certificateId">certificateId</a></code> | <code>java.lang.String</code> | The UUID of a Cloudflare managed certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.checkDisks">checkDisks</a></code> | <code>java.util.List<java.lang.String></code> | Specific volume(s) to check for encryption. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.checkPrivateKey">checkPrivateKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Confirm the certificate was not imported from another device. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.cn">cn</a></code> | <code>java.lang.String</code> | The common name for a certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.complianceStatus">complianceStatus</a></code> | <code>java.lang.String</code> | The workspace one or intune device compliance status. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | The workspace one or intune connection id. |
@@ -1429,11 +1435,13 @@ DevicePostureRuleInput.builder()
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.eidLastSeen">eidLastSeen</a></code> | <code>java.lang.String</code> | The datetime a device last seen in RFC 3339 format from Tanium. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if the firewall must be enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.exists">exists</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Checks if the file should exist. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.extendedKeyUsage">extendedKeyUsage</a></code> | <code>java.util.List<java.lang.String></code> | List of values indicating purposes for which the certificate public key can be used. Available values: `clientAuth`, `emailProtection`. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.id">id</a></code> | <code>java.lang.String</code> | The Teams List id. Required for `serial_number` and `unique_client_id` rule types. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.infected">infected</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if SentinelOne device is infected. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.isActive">isActive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if SentinelOne device is active. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.issueCount">issueCount</a></code> | <code>java.lang.String</code> | The number of issues for kolide. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.lastSeen">lastSeen</a></code> | <code>java.lang.String</code> | The duration of time that the host was last seen from Crowdstrike. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.locations">locations</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>></code> | locations block. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.networkStatus">networkStatus</a></code> | <code>java.lang.String</code> | The network status from SentinelOne. Available values: `connected`, `disconnected`, `disconnecting`, `connecting`. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.operator">operator</a></code> | <code>java.lang.String</code> | The version comparison operator. Available values: `>`, `>=`, `<`, `<=`, `==`. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.os">os</a></code> | <code>java.lang.String</code> | OS signal score from Crowdstrike. Value must be between 1 and 100. |
@@ -1465,7 +1473,7 @@ public java.lang.Number getActiveThreats();
 
 The number of active threats from SentinelOne.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#active_threats DevicePostureRule#active_threats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#active_threats DevicePostureRule#active_threats}
 
 ---
 
@@ -1479,7 +1487,7 @@ public java.lang.String getCertificateId();
 
 The UUID of a Cloudflare managed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#certificate_id DevicePostureRule#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#certificate_id DevicePostureRule#certificate_id}
 
 ---
 
@@ -1493,7 +1501,21 @@ public java.util.List<java.lang.String> getCheckDisks();
 
 Specific volume(s) to check for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#check_disks DevicePostureRule#check_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#check_disks DevicePostureRule#check_disks}
+
+---
+
+##### `checkPrivateKey`<sup>Optional</sup> <a name="checkPrivateKey" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.checkPrivateKey"></a>
+
+```java
+public java.lang.Object getCheckPrivateKey();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Confirm the certificate was not imported from another device.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#check_private_key DevicePostureRule#check_private_key}
 
 ---
 
@@ -1507,7 +1529,7 @@ public java.lang.String getCn();
 
 The common name for a certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#cn DevicePostureRule#cn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#cn DevicePostureRule#cn}
 
 ---
 
@@ -1523,7 +1545,7 @@ The workspace one or intune device compliance status.
 
 `compliant` and `noncompliant` are values supported by both providers. `unknown`, `conflict`, `error`, `ingraceperiod` values are only supported by intune. Available values: `compliant`, `noncompliant`, `unknown`, `conflict`, `error`, `ingraceperiod`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#compliance_status DevicePostureRule#compliance_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#compliance_status DevicePostureRule#compliance_status}
 
 ---
 
@@ -1537,7 +1559,7 @@ public java.lang.String getConnectionId();
 
 The workspace one or intune connection id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#connection_id DevicePostureRule#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#connection_id DevicePostureRule#connection_id}
 
 ---
 
@@ -1551,7 +1573,7 @@ public java.lang.String getCountOperator();
 
 The count comparison operator for kolide. Available values: `>`, `>=`, `<`, `<=`, `==`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#count_operator DevicePostureRule#count_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#count_operator DevicePostureRule#count_operator}
 
 ---
 
@@ -1565,7 +1587,7 @@ public java.lang.String getDomain();
 
 The domain that the client must join.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#domain DevicePostureRule#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#domain DevicePostureRule#domain}
 
 ---
 
@@ -1579,7 +1601,7 @@ public java.lang.String getEidLastSeen();
 
 The datetime a device last seen in RFC 3339 format from Tanium.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#eid_last_seen DevicePostureRule#eid_last_seen}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#eid_last_seen DevicePostureRule#eid_last_seen}
 
 ---
 
@@ -1593,7 +1615,7 @@ public java.lang.Object getEnabled();
 
 True if the firewall must be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#enabled DevicePostureRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#enabled DevicePostureRule#enabled}
 
 ---
 
@@ -1607,7 +1629,21 @@ public java.lang.Object getExists();
 
 Checks if the file should exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#exists DevicePostureRule#exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#exists DevicePostureRule#exists}
+
+---
+
+##### `extendedKeyUsage`<sup>Optional</sup> <a name="extendedKeyUsage" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.extendedKeyUsage"></a>
+
+```java
+public java.util.List<java.lang.String> getExtendedKeyUsage();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of values indicating purposes for which the certificate public key can be used. Available values: `clientAuth`, `emailProtection`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#extended_key_usage DevicePostureRule#extended_key_usage}
 
 ---
 
@@ -1621,7 +1657,7 @@ public java.lang.String getId();
 
 The Teams List id. Required for `serial_number` and `unique_client_id` rule types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1638,7 +1674,7 @@ public java.lang.Object getInfected();
 
 True if SentinelOne device is infected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#infected DevicePostureRule#infected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#infected DevicePostureRule#infected}
 
 ---
 
@@ -1652,7 +1688,7 @@ public java.lang.Object getIsActive();
 
 True if SentinelOne device is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#is_active DevicePostureRule#is_active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#is_active DevicePostureRule#is_active}
 
 ---
 
@@ -1666,7 +1702,7 @@ public java.lang.String getIssueCount();
 
 The number of issues for kolide.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#issue_count DevicePostureRule#issue_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#issue_count DevicePostureRule#issue_count}
 
 ---
 
@@ -1682,7 +1718,21 @@ The duration of time that the host was last seen from Crowdstrike.
 
 Must be in the format `1h` or `30m`. Valid units are `d`, `h` and `m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#last_seen DevicePostureRule#last_seen}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#last_seen DevicePostureRule#last_seen}
+
+---
+
+##### `locations`<sup>Optional</sup> <a name="locations" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.property.locations"></a>
+
+```java
+public java.lang.Object getLocations();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>>
+
+locations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#locations DevicePostureRule#locations}
 
 ---
 
@@ -1696,7 +1746,7 @@ public java.lang.String getNetworkStatus();
 
 The network status from SentinelOne. Available values: `connected`, `disconnected`, `disconnecting`, `connecting`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#network_status DevicePostureRule#network_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#network_status DevicePostureRule#network_status}
 
 ---
 
@@ -1710,7 +1760,7 @@ public java.lang.String getOperator();
 
 The version comparison operator. Available values: `>`, `>=`, `<`, `<=`, `==`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#operator DevicePostureRule#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#operator DevicePostureRule#operator}
 
 ---
 
@@ -1724,7 +1774,7 @@ public java.lang.String getOs();
 
 OS signal score from Crowdstrike. Value must be between 1 and 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os DevicePostureRule#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os DevicePostureRule#os}
 
 ---
 
@@ -1738,7 +1788,7 @@ public java.lang.String getOsDistroName();
 
 The operating system excluding version information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os_distro_name DevicePostureRule#os_distro_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os_distro_name DevicePostureRule#os_distro_name}
 
 ---
 
@@ -1752,7 +1802,7 @@ public java.lang.String getOsDistroRevision();
 
 The operating system version excluding OS name information or release name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
 
 ---
 
@@ -1766,7 +1816,7 @@ public java.lang.String getOsVersionExtra();
 
 Extra version value following the operating system semantic version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#os_version_extra DevicePostureRule#os_version_extra}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#os_version_extra DevicePostureRule#os_version_extra}
 
 ---
 
@@ -1780,7 +1830,7 @@ public java.lang.String getOverall();
 
 Overall ZTA score from Crowdstrike. Value must be between 1 and 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#overall DevicePostureRule#overall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#overall DevicePostureRule#overall}
 
 ---
 
@@ -1794,7 +1844,7 @@ public java.lang.String getPath();
 
 The path to the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#path DevicePostureRule#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#path DevicePostureRule#path}
 
 ---
 
@@ -1808,7 +1858,7 @@ public java.lang.Object getRequireAll();
 
 True if all drives must be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#require_all DevicePostureRule#require_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#require_all DevicePostureRule#require_all}
 
 ---
 
@@ -1822,7 +1872,7 @@ public java.lang.String getRiskLevel();
 
 The risk level from Tanium. Available values: `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#risk_level DevicePostureRule#risk_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#risk_level DevicePostureRule#risk_level}
 
 ---
 
@@ -1836,7 +1886,7 @@ public java.lang.Object getRunning();
 
 Checks if the application should be running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#running DevicePostureRule#running}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#running DevicePostureRule#running}
 
 ---
 
@@ -1850,7 +1900,7 @@ public java.lang.String getSensorConfig();
 
 Sensor signal score from Crowdstrike. Value must be between 1 and 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#sensor_config DevicePostureRule#sensor_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#sensor_config DevicePostureRule#sensor_config}
 
 ---
 
@@ -1864,7 +1914,7 @@ public java.lang.String getSha256();
 
 The sha256 hash of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#sha256 DevicePostureRule#sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#sha256 DevicePostureRule#sha256}
 
 ---
 
@@ -1878,7 +1928,7 @@ public java.lang.String getState();
 
 The host’s current online status from Crowdstrike. Available values: `online`, `offline`, `unknown`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#state DevicePostureRule#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#state DevicePostureRule#state}
 
 ---
 
@@ -1892,7 +1942,7 @@ public java.lang.String getThumbprint();
 
 The thumbprint of the file certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#thumbprint DevicePostureRule#thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#thumbprint DevicePostureRule#thumbprint}
 
 ---
 
@@ -1906,7 +1956,7 @@ public java.lang.Number getTotalScore();
 
 The total score from Tanium.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#total_score DevicePostureRule#total_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#total_score DevicePostureRule#total_score}
 
 ---
 
@@ -1920,7 +1970,7 @@ public java.lang.String getVersion();
 
 The operating system semantic version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#version DevicePostureRule#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#version DevicePostureRule#version}
 
 ---
 
@@ -1934,7 +1984,57 @@ public java.lang.String getVersionOperator();
 
 The version comparison operator for crowdstrike. Available values: `>`, `>=`, `<`, `<=`, `==`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#version_operator DevicePostureRule#version_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#version_operator DevicePostureRule#version_operator}
+
+---
+
+### DevicePostureRuleInputLocations <a name="DevicePostureRuleInputLocations" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.device_posture_rule.DevicePostureRuleInputLocations;
+
+DevicePostureRuleInputLocations.builder()
+//  .paths(java.util.List<java.lang.String>)
+//  .trustStores(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to check for client certificate rule. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations.property.trustStores">trustStores</a></code> | <code>java.util.List<java.lang.String></code> | List of trust stores to check for client certificate rule. Available values: `system`, `user`. |
+
+---
+
+##### `paths`<sup>Optional</sup> <a name="paths" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations.property.paths"></a>
+
+```java
+public java.util.List<java.lang.String> getPaths();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of paths to check for client certificate rule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#paths DevicePostureRule#paths}
+
+---
+
+##### `trustStores`<sup>Optional</sup> <a name="trustStores" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations.property.trustStores"></a>
+
+```java
+public java.util.List<java.lang.String> getTrustStores();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of trust stores to check for client certificate rule. Available values: `system`, `user`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#trust_stores DevicePostureRule#trust_stores}
 
 ---
 
@@ -1968,7 +2068,7 @@ public java.lang.String getPlatform();
 
 The platform of the device. Available values: `windows`, `mac`, `linux`, `android`, `ios`, `chromeos`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_posture_rule#platform DevicePostureRule#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_posture_rule#platform DevicePostureRule#platform}
 
 ---
 
@@ -2134,6 +2234,491 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### DevicePostureRuleInputLocationsList <a name="DevicePostureRuleInputLocationsList" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.device_posture_rule.DevicePostureRuleInputLocationsList;
+
+new DevicePostureRuleInputLocationsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.get"></a>
+
+```java
+public DevicePostureRuleInputLocationsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>>
+
+---
+
+
+### DevicePostureRuleInputLocationsOutputReference <a name="DevicePostureRuleInputLocationsOutputReference" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.device_posture_rule.DevicePostureRuleInputLocationsOutputReference;
+
+new DevicePostureRuleInputLocationsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resetPaths">resetPaths</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resetTrustStores">resetTrustStores</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPaths` <a name="resetPaths" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resetPaths"></a>
+
+```java
+public void resetPaths()
+```
+
+##### `resetTrustStores` <a name="resetTrustStores" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.resetTrustStores"></a>
+
+```java
+public void resetTrustStores()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.pathsInput">pathsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.trustStoresInput">trustStoresInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.trustStores">trustStores</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `pathsInput`<sup>Optional</sup> <a name="pathsInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.pathsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getPathsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `trustStoresInput`<sup>Optional</sup> <a name="trustStoresInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.trustStoresInput"></a>
+
+```java
+public java.util.List<java.lang.String> getTrustStoresInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `paths`<sup>Required</sup> <a name="paths" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.paths"></a>
+
+```java
+public java.util.List<java.lang.String> getPaths();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `trustStores`<sup>Required</sup> <a name="trustStores" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.trustStores"></a>
+
+```java
+public java.util.List<java.lang.String> getTrustStores();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>
+
+---
+
+
 ### DevicePostureRuleInputOutputReference <a name="DevicePostureRuleInputOutputReference" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.Initializer"></a>
@@ -2202,9 +2787,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.putLocations">putLocations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetActiveThreats">resetActiveThreats</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetCertificateId">resetCertificateId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetCheckDisks">resetCheckDisks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetCheckPrivateKey">resetCheckPrivateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetCn">resetCn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetComplianceStatus">resetComplianceStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetConnectionId">resetConnectionId</a></code> | *No description.* |
@@ -2213,11 +2800,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetEidLastSeen">resetEidLastSeen</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetExists">resetExists</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetExtendedKeyUsage">resetExtendedKeyUsage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetInfected">resetInfected</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetIsActive">resetIsActive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetIssueCount">resetIssueCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetLastSeen">resetLastSeen</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetLocations">resetLocations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetNetworkStatus">resetNetworkStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetOperator">resetOperator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetOs">resetOs</a></code> | *No description.* |
@@ -2389,6 +2978,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putLocations` <a name="putLocations" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.putLocations"></a>
+
+```java
+public void putLocations(IResolvable OR java.util.List<DevicePostureRuleInputLocations> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.putLocations.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>>
+
+---
+
 ##### `resetActiveThreats` <a name="resetActiveThreats" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetActiveThreats"></a>
 
 ```java
@@ -2405,6 +3006,12 @@ public void resetCertificateId()
 
 ```java
 public void resetCheckDisks()
+```
+
+##### `resetCheckPrivateKey` <a name="resetCheckPrivateKey" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetCheckPrivateKey"></a>
+
+```java
+public void resetCheckPrivateKey()
 ```
 
 ##### `resetCn` <a name="resetCn" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetCn"></a>
@@ -2455,6 +3062,12 @@ public void resetEnabled()
 public void resetExists()
 ```
 
+##### `resetExtendedKeyUsage` <a name="resetExtendedKeyUsage" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetExtendedKeyUsage"></a>
+
+```java
+public void resetExtendedKeyUsage()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetId"></a>
 
 ```java
@@ -2483,6 +3096,12 @@ public void resetIssueCount()
 
 ```java
 public void resetLastSeen()
+```
+
+##### `resetLocations` <a name="resetLocations" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetLocations"></a>
+
+```java
+public void resetLocations()
 ```
 
 ##### `resetNetworkStatus` <a name="resetNetworkStatus" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.resetNetworkStatus"></a>
@@ -2600,9 +3219,11 @@ public void resetVersionOperator()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.locations">locations</a></code> | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList">DevicePostureRuleInputLocationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.activeThreatsInput">activeThreatsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.certificateIdInput">certificateIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.checkDisksInput">checkDisksInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.checkPrivateKeyInput">checkPrivateKeyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.cnInput">cnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.complianceStatusInput">complianceStatusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.connectionIdInput">connectionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -2611,11 +3232,13 @@ public void resetVersionOperator()
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.eidLastSeenInput">eidLastSeenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.existsInput">existsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.extendedKeyUsageInput">extendedKeyUsageInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.infectedInput">infectedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.isActiveInput">isActiveInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.issueCountInput">issueCountInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.lastSeenInput">lastSeenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.locationsInput">locationsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.networkStatusInput">networkStatusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.operatorInput">operatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.osDistroNameInput">osDistroNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -2637,6 +3260,7 @@ public void resetVersionOperator()
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.activeThreats">activeThreats</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.certificateId">certificateId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.checkDisks">checkDisks</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.checkPrivateKey">checkPrivateKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.cn">cn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.complianceStatus">complianceStatus</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -2645,6 +3269,7 @@ public void resetVersionOperator()
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.eidLastSeen">eidLastSeen</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.exists">exists</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.extendedKeyUsage">extendedKeyUsage</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.infected">infected</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.isActive">isActive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -2696,6 +3321,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.locations"></a>
+
+```java
+public DevicePostureRuleInputLocationsList getLocations();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList">DevicePostureRuleInputLocationsList</a>
+
+---
+
 ##### `activeThreatsInput`<sup>Optional</sup> <a name="activeThreatsInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.activeThreatsInput"></a>
 
 ```java
@@ -2723,6 +3358,16 @@ public java.util.List<java.lang.String> getCheckDisksInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `checkPrivateKeyInput`<sup>Optional</sup> <a name="checkPrivateKeyInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.checkPrivateKeyInput"></a>
+
+```java
+public java.lang.Object getCheckPrivateKeyInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2806,6 +3451,16 @@ public java.lang.Object getExistsInput();
 
 ---
 
+##### `extendedKeyUsageInput`<sup>Optional</sup> <a name="extendedKeyUsageInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.extendedKeyUsageInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExtendedKeyUsageInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.idInput"></a>
 
 ```java
@@ -2853,6 +3508,16 @@ public java.lang.String getLastSeenInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `locationsInput`<sup>Optional</sup> <a name="locationsInput" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.locationsInput"></a>
+
+```java
+public java.lang.Object getLocationsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations">DevicePostureRuleInputLocations</a>>
 
 ---
 
@@ -3066,6 +3731,16 @@ public java.util.List<java.lang.String> getCheckDisks();
 
 ---
 
+##### `checkPrivateKey`<sup>Required</sup> <a name="checkPrivateKey" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.checkPrivateKey"></a>
+
+```java
+public java.lang.Object getCheckPrivateKey();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `cn`<sup>Required</sup> <a name="cn" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.cn"></a>
 
 ```java
@@ -3143,6 +3818,16 @@ public java.lang.Object getExists();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `extendedKeyUsage`<sup>Required</sup> <a name="extendedKeyUsage" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.property.extendedKeyUsage"></a>
+
+```java
+public java.util.List<java.lang.String> getExtendedKeyUsage();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 

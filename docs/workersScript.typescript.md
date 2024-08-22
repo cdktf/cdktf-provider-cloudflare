@@ -4,7 +4,7 @@
 
 ### WorkersScript <a name="WorkersScript" id="@cdktf/provider-cloudflare.workersScript.WorkersScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script cloudflare_workers_script}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script cloudflare_workers_script}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer"></a>
 
@@ -716,7 +716,7 @@ The construct id used in the generated config for the WorkersScript to import.
 
 The id of the existing WorkersScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly dataset: string;
 
 The name of the Analytics Engine dataset to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#dataset WorkersScript#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#dataset WorkersScript#dataset}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -1427,7 +1427,7 @@ const workersScriptConfig: workersScript.WorkersScriptConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | Compatibility flags used for Worker Scripts. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.d1DatabaseBinding">d1DatabaseBinding</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptD1DatabaseBinding">WorkersScriptD1DatabaseBinding</a>[]</code> | d1_database_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.dispatchNamespace">dispatchNamespace</a></code> | <code>string</code> | Name of the Workers for Platforms dispatch namespace. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#id WorkersScript#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#id WorkersScript#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.kvNamespaceBinding">kvNamespaceBinding</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptKvNamespaceBinding">WorkersScriptKvNamespaceBinding</a>[]</code> | kv_namespace_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.logpush">logpush</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enabling allows Worker events to be sent to a defined Logpush destination. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.module">module</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to upload Worker as a module. |
@@ -1437,7 +1437,7 @@ const workersScriptConfig: workersScript.WorkersScriptConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.r2BucketBinding">r2BucketBinding</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptR2BucketBinding">WorkersScriptR2BucketBinding</a>[]</code> | r2_bucket_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.secretTextBinding">secretTextBinding</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptSecretTextBinding">WorkersScriptSecretTextBinding</a>[]</code> | secret_text_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.serviceBinding">serviceBinding</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptServiceBinding">WorkersScriptServiceBinding</a>[]</code> | service_binding block. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#tags WorkersScript#tags}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#tags WorkersScript#tags}. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.webassemblyBinding">webassemblyBinding</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptWebassemblyBinding">WorkersScriptWebassemblyBinding</a>[]</code> | webassembly_binding block. |
 
 ---
@@ -1522,7 +1522,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#account_id WorkersScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#account_id WorkersScript#account_id}
 
 ---
 
@@ -1536,7 +1536,7 @@ public readonly content: string;
 
 The script content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#content WorkersScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#content WorkersScript#content}
 
 ---
 
@@ -1550,7 +1550,7 @@ public readonly name: string;
 
 The name for the script. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -1564,7 +1564,7 @@ public readonly analyticsEngineBinding: IResolvable | WorkersScriptAnalyticsEngi
 
 analytics_engine_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#analytics_engine_binding WorkersScript#analytics_engine_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#analytics_engine_binding WorkersScript#analytics_engine_binding}
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly compatibilityDate: string;
 
 The date to use for the compatibility flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly compatibilityFlags: string[];
 
 Compatibility flags used for Worker Scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
 
 ---
 
@@ -1606,7 +1606,7 @@ public readonly d1DatabaseBinding: IResolvable | WorkersScriptD1DatabaseBinding[
 
 d1_database_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#d1_database_binding WorkersScript#d1_database_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#d1_database_binding WorkersScript#d1_database_binding}
 
 ---
 
@@ -1620,7 +1620,7 @@ public readonly dispatchNamespace: string;
 
 Name of the Workers for Platforms dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#dispatch_namespace WorkersScript#dispatch_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#dispatch_namespace WorkersScript#dispatch_namespace}
 
 ---
 
@@ -1632,7 +1632,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#id WorkersScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#id WorkersScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1649,7 +1649,7 @@ public readonly kvNamespaceBinding: IResolvable | WorkersScriptKvNamespaceBindin
 
 kv_namespace_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#kv_namespace_binding WorkersScript#kv_namespace_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#kv_namespace_binding WorkersScript#kv_namespace_binding}
 
 ---
 
@@ -1663,7 +1663,7 @@ public readonly logpush: boolean | IResolvable;
 
 Enabling allows Worker events to be sent to a defined Logpush destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#logpush WorkersScript#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#logpush WorkersScript#logpush}
 
 ---
 
@@ -1677,7 +1677,7 @@ public readonly module: boolean | IResolvable;
 
 Whether to upload Worker as a module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#module WorkersScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#module WorkersScript#module}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly placement: IResolvable | WorkersScriptPlacement[];
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#placement WorkersScript#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#placement WorkersScript#placement}
 
 ---
 
@@ -1705,7 +1705,7 @@ public readonly plainTextBinding: IResolvable | WorkersScriptPlainTextBinding[];
 
 plain_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#plain_text_binding WorkersScript#plain_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#plain_text_binding WorkersScript#plain_text_binding}
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly queueBinding: IResolvable | WorkersScriptQueueBinding[];
 
 queue_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#queue_binding WorkersScript#queue_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#queue_binding WorkersScript#queue_binding}
 
 ---
 
@@ -1733,7 +1733,7 @@ public readonly r2BucketBinding: IResolvable | WorkersScriptR2BucketBinding[];
 
 r2_bucket_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#r2_bucket_binding WorkersScript#r2_bucket_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#r2_bucket_binding WorkersScript#r2_bucket_binding}
 
 ---
 
@@ -1747,7 +1747,7 @@ public readonly secretTextBinding: IResolvable | WorkersScriptSecretTextBinding[
 
 secret_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#secret_text_binding WorkersScript#secret_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#secret_text_binding WorkersScript#secret_text_binding}
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly serviceBinding: IResolvable | WorkersScriptServiceBinding[];
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#service_binding WorkersScript#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#service_binding WorkersScript#service_binding}
 
 ---
 
@@ -1773,7 +1773,7 @@ public readonly tags: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#tags WorkersScript#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#tags WorkersScript#tags}.
 
 ---
 
@@ -1787,7 +1787,7 @@ public readonly webassemblyBinding: IResolvable | WorkersScriptWebassemblyBindin
 
 webassembly_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#webassembly_binding WorkersScript#webassembly_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#webassembly_binding WorkersScript#webassembly_binding}
 
 ---
 
@@ -1820,7 +1820,7 @@ public readonly databaseId: string;
 
 Database ID of D1 database to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#database_id WorkersScript#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#database_id WorkersScript#database_id}
 
 ---
 
@@ -1834,7 +1834,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -1867,7 +1867,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -1881,7 +1881,7 @@ public readonly namespaceId: string;
 
 ID of the KV namespace you want to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
 
 ---
 
@@ -1913,7 +1913,7 @@ public readonly mode: string;
 
 The placement mode for the Worker. Available values: `smart`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#mode WorkersScript#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#mode WorkersScript#mode}
 
 ---
 
@@ -1946,7 +1946,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -1960,7 +1960,7 @@ public readonly text: string;
 
 The plain text you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#text WorkersScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#text WorkersScript#text}
 
 ---
 
@@ -1993,7 +1993,7 @@ public readonly binding: string;
 
 The name of the global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#binding WorkersScript#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#binding WorkersScript#binding}
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly queue: string;
 
 Name of the queue you want to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#queue WorkersScript#queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#queue WorkersScript#queue}
 
 ---
 
@@ -2040,7 +2040,7 @@ public readonly bucketName: string;
 
 The name of the Bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
 
 ---
 
@@ -2054,7 +2054,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -2087,7 +2087,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -2101,7 +2101,7 @@ public readonly text: string;
 
 The secret text you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#text WorkersScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#text WorkersScript#text}
 
 ---
 
@@ -2135,7 +2135,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -2149,7 +2149,7 @@ public readonly service: string;
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#service WorkersScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#service WorkersScript#service}
 
 ---
 
@@ -2163,7 +2163,7 @@ public readonly environment: string;
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#environment WorkersScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#environment WorkersScript#environment}
 
 ---
 
@@ -2196,7 +2196,7 @@ public readonly module: string;
 
 The base64 encoded wasm module you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#module WorkersScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#module WorkersScript#module}
 
 ---
 
@@ -2210,7 +2210,7 @@ public readonly name: string;
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
