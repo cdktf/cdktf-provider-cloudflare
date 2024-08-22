@@ -4,12 +4,12 @@
 
 ### AuthenticatedOriginPulls <a name="AuthenticatedOriginPulls" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticatedoriginpulls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/authenticatedoriginpulls"
 
 authenticatedoriginpulls.NewAuthenticatedOriginPulls(scope Construct, id *string, config AuthenticatedOriginPullsConfig) AuthenticatedOriginPulls
 ```
@@ -399,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticatedoriginpulls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticatedoriginpulls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticatedoriginpulls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticatedoriginpulls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the AuthenticatedOriginPulls t
 
 The id of the existing AuthenticatedOriginPulls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticatedoriginpulls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/authenticatedoriginpulls"
 
 &authenticatedoriginpulls.AuthenticatedOriginPullsConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/authenticat
 | <code><a href="#@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.property.authenticatedOriginPullsCertificate">AuthenticatedOriginPullsCertificate</a></code> | <code>*string</code> | The ID of an uploaded Authenticated Origin Pulls certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.property.hostname">Hostname</a></code> | <code>*string</code> | Specify a hostname to enable Per-Hostname Authenticated Origin Pulls on, using the provided certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#id AuthenticatedOriginPulls#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#id AuthenticatedOriginPulls#id}. |
 
 ---
 
@@ -915,7 +915,7 @@ Enabled interface{}
 
 Whether to enable Authenticated Origin Pulls on the given zone or hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#enabled AuthenticatedOriginPulls#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#enabled AuthenticatedOriginPulls#enabled}
 
 ---
 
@@ -929,7 +929,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#zone_id AuthenticatedOriginPulls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#zone_id AuthenticatedOriginPulls#zone_id}
 
 ---
 
@@ -945,7 +945,7 @@ The ID of an uploaded Authenticated Origin Pulls certificate.
 
 If no hostname is provided, this certificate will be used zone wide as Per-Zone Authenticated Origin Pulls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#authenticated_origin_pulls_certificate AuthenticatedOriginPulls#authenticated_origin_pulls_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#authenticated_origin_pulls_certificate AuthenticatedOriginPulls#authenticated_origin_pulls_certificate}
 
 ---
 
@@ -959,7 +959,7 @@ Hostname *string
 
 Specify a hostname to enable Per-Hostname Authenticated Origin Pulls on, using the provided certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#hostname AuthenticatedOriginPulls#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#hostname AuthenticatedOriginPulls#hostname}
 
 ---
 
@@ -971,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/authenticated_origin_pulls#id AuthenticatedOriginPulls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/authenticated_origin_pulls#id AuthenticatedOriginPulls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### RiskBehavior <a name="RiskBehavior" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior cloudflare_risk_behavior}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior cloudflare_risk_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the RiskBehavior to import.
 
 The id of the existing RiskBehavior that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Whether this risk behavior type is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#enabled RiskBehavior#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#enabled RiskBehavior#enabled}
 
 ---
 
@@ -900,7 +900,7 @@ name: str
 
 Name of this risk behavior type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#name RiskBehavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#name RiskBehavior#name}
 
 ---
 
@@ -914,7 +914,7 @@ risk_level: str
 
 Risk level. Available values: `low`, `medium`, `high`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#risk_level RiskBehavior#risk_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#risk_level RiskBehavior#risk_level}
 
 ---
 
@@ -1034,7 +1034,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
 
 ---
 
@@ -1048,7 +1048,7 @@ behavior: typing.Union[IResolvable, typing.List[RiskBehaviorBehavior]]
 
 behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
 
 ---
 
