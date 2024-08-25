@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.greTunnel.GreTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/gretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/gretunnel"
 
 gretunnel.NewGreTunnel(scope Construct, id *string, config GreTunnelConfig) GreTunnel
 ```
@@ -434,7 +434,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.greTunnel.GreTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/gretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/gretunnel"
 
 gretunnel.GreTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.greTunnel.GreTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/gretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/gretunnel"
 
 gretunnel.GreTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ gretunnel.GreTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.greTunnel.GreTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/gretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/gretunnel"
 
 gretunnel.GreTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ gretunnel.GreTunnel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.greTunnel.GreTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/gretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/gretunnel"
 
 gretunnel.GreTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -987,7 +987,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.greTunnel.GreTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/gretunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/gretunnel"
 
 &gretunnel.GreTunnelConfig {
 	Connection: interface{},

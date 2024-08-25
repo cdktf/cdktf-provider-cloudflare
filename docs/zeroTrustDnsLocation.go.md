@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.NewZeroTrustDnsLocation(scope Construct, id *string, config ZeroTrustDnsLocationConfig) ZeroTrustDnsLocation
 ```
@@ -419,7 +419,7 @@ func ResetNetworks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.ZeroTrustDnsLocation_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.ZeroTrustDnsLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zerotrustdnslocation.ZeroTrustDnsLocation_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.ZeroTrustDnsLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ zerotrustdnslocation.ZeroTrustDnsLocation_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.ZeroTrustDnsLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 &zerotrustdnslocation.ZeroTrustDnsLocationConfig {
 	Connection: interface{},
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 &zerotrustdnslocation.ZeroTrustDnsLocationNetworks {
 	Network: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.NewZeroTrustDnsLocationNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDnsLocationNetworksList
 ```
@@ -1290,7 +1290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdnslocation"
 
 zerotrustdnslocation.NewZeroTrustDnsLocationNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDnsLocationNetworksOutputReference
 ```
