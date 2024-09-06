@@ -4,7 +4,7 @@
 
 ### ZeroTrustTunnelRoute <a name="ZeroTrustTunnelRoute" id="@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer"></a>
 
@@ -45,7 +45,7 @@ zeroTrustTunnelRoute.ZeroTrustTunnelRoute(
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer.parameter.network">network</a></code> | <code>str</code> | The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer.parameter.tunnelId">tunnel_id</a></code> | <code>str</code> | The ID of the tunnel that will service the tunnel route. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Description of the tunnel route. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer.parameter.virtualNetworkId">virtual_network_id</a></code> | <code>str</code> | The ID of the virtual network for which this route is being added; |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The ID of the tunnel that will service the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Description of the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ The ID of the virtual network for which this route is being added;
 
 uses the default virtual network of the account if none is provided. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
 
 ---
 
@@ -663,7 +663,7 @@ The construct id used in the generated config for the ZeroTrustTunnelRoute to im
 
 The id of the existing ZeroTrustTunnelRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,7 +1029,7 @@ zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig(
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.network">network</a></code> | <code>str</code> | The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.tunnelId">tunnel_id</a></code> | <code>str</code> | The ID of the tunnel that will service the tunnel route. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.comment">comment</a></code> | <code>str</code> | Description of the tunnel route. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.virtualNetworkId">virtual_network_id</a></code> | <code>str</code> | The ID of the virtual network for which this route is being added; |
 
 ---
@@ -1114,7 +1114,7 @@ account_id: str
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
 
 ---
 
@@ -1128,7 +1128,7 @@ network: str
 
 The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
 
 ---
 
@@ -1142,7 +1142,7 @@ tunnel_id: str
 
 The ID of the tunnel that will service the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
 
 ---
 
@@ -1156,7 +1156,7 @@ comment: str
 
 Description of the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
 
 ---
 
@@ -1168,7 +1168,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1187,7 +1187,7 @@ The ID of the virtual network for which this route is being added;
 
 uses the default virtual network of the account if none is provided. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
 
 ---
 

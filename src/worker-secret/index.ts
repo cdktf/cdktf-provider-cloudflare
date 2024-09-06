@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface WorkerSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret#account_id WorkerSecret#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret#account_id WorkerSecret#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret#id WorkerSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret#id WorkerSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface WorkerSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret#name WorkerSecret#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret#name WorkerSecret#name}
   */
   readonly name: string;
   /**
   * The name of the Worker script to associate the secret with. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret#script_name WorkerSecret#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret#script_name WorkerSecret#script_name}
   */
   readonly scriptName: string;
   /**
   * The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret#secret_text WorkerSecret#secret_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret#secret_text WorkerSecret#secret_text}
   */
   readonly secretText: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret cloudflare_worker_secret}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret cloudflare_worker_secret}
 */
 export class WorkerSecret extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class WorkerSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkerSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkerSecret to import
-  * @param importFromId The id of the existing WorkerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkerSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class WorkerSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/worker_secret cloudflare_worker_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_secret cloudflare_worker_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class WorkerSecret extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_secret',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.40.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

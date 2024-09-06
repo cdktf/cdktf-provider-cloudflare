@@ -32,6 +32,7 @@ export * as authenticatedOriginPullsCertificate from './authenticated-origin-pul
 export * as botManagement from './bot-management';
 export * as byoIpPrefix from './byo-ip-prefix';
 export * as certificatePack from './certificate-pack';
+export * as cloudConnectorRules from './cloud-connector-rules';
 export * as customHostname from './custom-hostname';
 export * as customHostnameFallbackOrigin from './custom-hostname-fallback-origin';
 export * as customPages from './custom-pages';
@@ -169,6 +170,7 @@ export * as dataCloudflareAccessIdentityProvider from './data-cloudflare-access-
 export * as dataCloudflareAccountRoles from './data-cloudflare-account-roles';
 export * as dataCloudflareAccounts from './data-cloudflare-accounts';
 export * as dataCloudflareApiTokenPermissionGroups from './data-cloudflare-api-token-permission-groups';
+export * as dataCloudflareDcvDelegation from './data-cloudflare-dcv-delegation';
 export * as dataCloudflareDevicePostureRules from './data-cloudflare-device-posture-rules';
 export * as dataCloudflareDevices from './data-cloudflare-devices';
 export * as dataCloudflareDlpDatasets from './data-cloudflare-dlp-datasets';

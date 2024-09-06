@@ -32,6 +32,7 @@ Object.defineProperty(exports, 'authenticatedOriginPullsCertificate', { get: fun
 Object.defineProperty(exports, 'botManagement', { get: function () { return require('./bot-management'); } });
 Object.defineProperty(exports, 'byoIpPrefix', { get: function () { return require('./byo-ip-prefix'); } });
 Object.defineProperty(exports, 'certificatePack', { get: function () { return require('./certificate-pack'); } });
+Object.defineProperty(exports, 'cloudConnectorRules', { get: function () { return require('./cloud-connector-rules'); } });
 Object.defineProperty(exports, 'customHostname', { get: function () { return require('./custom-hostname'); } });
 Object.defineProperty(exports, 'customHostnameFallbackOrigin', { get: function () { return require('./custom-hostname-fallback-origin'); } });
 Object.defineProperty(exports, 'customPages', { get: function () { return require('./custom-pages'); } });
@@ -169,6 +170,7 @@ Object.defineProperty(exports, 'dataCloudflareAccessIdentityProvider', { get: fu
 Object.defineProperty(exports, 'dataCloudflareAccountRoles', { get: function () { return require('./data-cloudflare-account-roles'); } });
 Object.defineProperty(exports, 'dataCloudflareAccounts', { get: function () { return require('./data-cloudflare-accounts'); } });
 Object.defineProperty(exports, 'dataCloudflareApiTokenPermissionGroups', { get: function () { return require('./data-cloudflare-api-token-permission-groups'); } });
+Object.defineProperty(exports, 'dataCloudflareDcvDelegation', { get: function () { return require('./data-cloudflare-dcv-delegation'); } });
 Object.defineProperty(exports, 'dataCloudflareDevicePostureRules', { get: function () { return require('./data-cloudflare-device-posture-rules'); } });
 Object.defineProperty(exports, 'dataCloudflareDevices', { get: function () { return require('./data-cloudflare-devices'); } });
 Object.defineProperty(exports, 'dataCloudflareDlpDatasets', { get: function () { return require('./data-cloudflare-dlp-datasets'); } });
