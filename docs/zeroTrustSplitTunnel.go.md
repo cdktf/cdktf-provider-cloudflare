@@ -4,12 +4,12 @@
 
 ### ZeroTrustSplitTunnel <a name="ZeroTrustSplitTunnel" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.NewZeroTrustSplitTunnel(scope Construct, id *string, config ZeroTrustSplitTunnelConfig) ZeroTrustSplitTunnel
 ```
@@ -405,7 +405,7 @@ func ResetPolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ZeroTrustSplitTunnel to im
 
 The id of the existing ZeroTrustSplitTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 &zerotrustsplittunnel.ZeroTrustSplitTunnelConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsp
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.property.mode">Mode</a></code> | <code>*string</code> | The mode of the split tunnel policy. Available values: `include`, `exclude`. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.property.tunnels">Tunnels</a></code> | <code>interface{}</code> | tunnels block. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#id ZeroTrustSplitTunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#id ZeroTrustSplitTunnel#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | The settings policy for which to configure this split tunnel policy. |
 
 ---
@@ -921,7 +921,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#account_id ZeroTrustSplitTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#account_id ZeroTrustSplitTunnel#account_id}
 
 ---
 
@@ -935,7 +935,7 @@ Mode *string
 
 The mode of the split tunnel policy. Available values: `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#mode ZeroTrustSplitTunnel#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#mode ZeroTrustSplitTunnel#mode}
 
 ---
 
@@ -949,7 +949,7 @@ Tunnels interface{}
 
 tunnels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#tunnels ZeroTrustSplitTunnel#tunnels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#tunnels ZeroTrustSplitTunnel#tunnels}
 
 ---
 
@@ -961,7 +961,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#id ZeroTrustSplitTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#id ZeroTrustSplitTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ PolicyId *string
 
 The settings policy for which to configure this split tunnel policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#policy_id ZeroTrustSplitTunnel#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#policy_id ZeroTrustSplitTunnel#policy_id}
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelTunnels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 &zerotrustsplittunnel.ZeroTrustSplitTunnelTunnels {
 	Address: *string,
@@ -1016,7 +1016,7 @@ Address *string
 
 The address for the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#address ZeroTrustSplitTunnel#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#address ZeroTrustSplitTunnel#address}
 
 ---
 
@@ -1030,7 +1030,7 @@ Description *string
 
 A description for the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#description ZeroTrustSplitTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#description ZeroTrustSplitTunnel#description}
 
 ---
 
@@ -1044,7 +1044,7 @@ Host *string
 
 The domain name for the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/zero_trust_split_tunnel#host ZeroTrustSplitTunnel#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_split_tunnel#host ZeroTrustSplitTunnel#host}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelTunnelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.NewZeroTrustSplitTunnelTunnelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustSplitTunnelTunnelsList
 ```
@@ -1215,7 +1215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelTunnelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
 
 zerotrustsplittunnel.NewZeroTrustSplitTunnelTunnelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustSplitTunnelTunnelsOutputReference
 ```

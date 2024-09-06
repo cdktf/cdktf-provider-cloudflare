@@ -1,3 +1,3 @@
 # `cloudflare_teams_rule`
 
-Refer to the Terraform Registry for docs: [`cloudflare_teams_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/teams_rule).
+Refer to the Terraform Registry for docs: [`cloudflare_teams_rule`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/teams_rule).

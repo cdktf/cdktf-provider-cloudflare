@@ -4,12 +4,12 @@
 
 ### TieredCache <a name="TieredCache" id="@cdktf/provider-cloudflare.tieredCache.TieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.NewTieredCache(scope Construct, id *string, config TieredCacheConfig) TieredCache
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ tieredcache.TieredCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ tieredcache.TieredCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 tieredcache.TieredCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the TieredCache to import.
 
 The id of the existing TieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tieredcache"
 
 &tieredcache.TieredCacheConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.cacheType">CacheType</a></code> | <code>*string</code> | The typed of tiered cache to utilize on the zone. Available values: `generic`, `smart`, `off`. |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/tiered_cache#id TieredCache#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/tiered_cache#id TieredCache#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ CacheType *string
 
 The typed of tiered cache to utilize on the zone. Available values: `generic`, `smart`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/tiered_cache#cache_type TieredCache#cache_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/tiered_cache#cache_type TieredCache#cache_type}
 
 ---
 
@@ -867,7 +867,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/tiered_cache#id TieredCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/tiered_cache#id TieredCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

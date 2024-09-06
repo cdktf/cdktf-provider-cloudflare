@@ -4,12 +4,12 @@
 
 ### DataCloudflareGatewayAppTypes <a name="DataCloudflareGatewayAppTypes" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.NewDataCloudflareGatewayAppTypes(scope Construct, id *string, config DataCloudflareGatewayAppTypesConfig) DataCloudflareGatewayAppTypes
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypes_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypes_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypes_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareGatewayAppTy
 
 The id of the existing DataCloudflareGatewayAppTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/data-sources/gateway_app_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/data-sources/gateway_app_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypesAppTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 &datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypesAppTypes {
 
@@ -589,7 +589,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 &datacloudflaregatewayapptypes.DataCloudflareGatewayAppTypesConfig {
 	Connection: interface{},
@@ -698,7 +698,7 @@ AccountId *string
 
 The account ID to fetch Gateway App Types from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
 
 ---
 
@@ -709,7 +709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypesAppTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.NewDataCloudflareGatewayAppTypesAppTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareGatewayAppTypesAppTypesList
 ```
@@ -858,7 +858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypesAppTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewayapptypes"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewayapptypes"
 
 datacloudflaregatewayapptypes.NewDataCloudflareGatewayAppTypesAppTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareGatewayAppTypesAppTypesOutputReference
 ```

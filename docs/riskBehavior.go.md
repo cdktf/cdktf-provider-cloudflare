@@ -4,12 +4,12 @@
 
 ### RiskBehavior <a name="RiskBehavior" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior cloudflare_risk_behavior}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior cloudflare_risk_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.NewRiskBehavior(scope Construct, id *string, config RiskBehaviorConfig) RiskBehavior
 ```
@@ -398,7 +398,7 @@ func ResetBehavior()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.RiskBehavior_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.RiskBehavior_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ riskbehavior.RiskBehavior_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.RiskBehavior_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ riskbehavior.RiskBehavior_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehavior.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.RiskBehavior_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the RiskBehavior to import.
 
 The id of the existing RiskBehavior that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehaviorBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 &riskbehavior.RiskBehaviorBehavior {
 	Enabled: interface{},
@@ -760,7 +760,7 @@ Enabled interface{}
 
 Whether this risk behavior type is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#enabled RiskBehavior#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior#enabled RiskBehavior#enabled}
 
 ---
 
@@ -774,7 +774,7 @@ Name *string
 
 Name of this risk behavior type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#name RiskBehavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior#name RiskBehavior#name}
 
 ---
 
@@ -788,7 +788,7 @@ RiskLevel *string
 
 Risk level. Available values: `low`, `medium`, `high`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#risk_level RiskBehavior#risk_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior#risk_level RiskBehavior#risk_level}
 
 ---
 
@@ -797,7 +797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehaviorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 &riskbehavior.RiskBehaviorConfig {
 	Connection: interface{},
@@ -908,7 +908,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
 
 ---
 
@@ -922,7 +922,7 @@ Behavior interface{}
 
 behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
 
 ---
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehaviorBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.NewRiskBehaviorBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RiskBehaviorBehaviorList
 ```
@@ -1093,7 +1093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.riskBehavior.RiskBehaviorBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/riskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/riskbehavior"
 
 riskbehavior.NewRiskBehaviorBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RiskBehaviorBehaviorOutputReference
 ```

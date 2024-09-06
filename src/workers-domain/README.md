@@ -1,3 +1,3 @@
 # `cloudflare_workers_domain`
 
-Refer to the Terraform Registry for docs: [`cloudflare_workers_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_domain).
+Refer to the Terraform Registry for docs: [`cloudflare_workers_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_domain).

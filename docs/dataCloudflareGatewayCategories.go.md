@@ -4,12 +4,12 @@
 
 ### DataCloudflareGatewayCategories <a name="DataCloudflareGatewayCategories" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.NewDataCloudflareGatewayCategories(scope Construct, id *string, config DataCloudflareGatewayCategoriesConfig) DataCloudflareGatewayCategories
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.DataCloudflareGatewayCategories_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.DataCloudflareGatewayCategories_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaregatewaycategories.DataCloudflareGatewayCategories_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.DataCloudflareGatewayCategories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaregatewaycategories.DataCloudflareGatewayCategories_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.DataCloudflareGatewayCategories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareGatewayCateg
 
 The id of the existing DataCloudflareGatewayCategories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/data-sources/gateway_categories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/data-sources/gateway_categories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 &datacloudflaregatewaycategories.DataCloudflareGatewayCategoriesCategories {
 
@@ -589,7 +589,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesCategoriesSubcategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 &datacloudflaregatewaycategories.DataCloudflareGatewayCategoriesCategoriesSubcategories {
 
@@ -602,7 +602,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 &datacloudflaregatewaycategories.DataCloudflareGatewayCategoriesConfig {
 	Connection: interface{},
@@ -711,7 +711,7 @@ AccountId *string
 
 The account ID to fetch Gateway Categories from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
 
 ---
 
@@ -722,7 +722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesCategoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.NewDataCloudflareGatewayCategoriesCategoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareGatewayCategoriesCategoriesList
 ```
@@ -871,7 +871,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesCategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.NewDataCloudflareGatewayCategoriesCategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareGatewayCategoriesCategoriesOutputReference
 ```
@@ -1204,7 +1204,7 @@ func InternalValue() DataCloudflareGatewayCategoriesCategories
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesCategoriesSubcategoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.NewDataCloudflareGatewayCategoriesCategoriesSubcategoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareGatewayCategoriesCategoriesSubcategoriesList
 ```
@@ -1353,7 +1353,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategoriesCategoriesSubcategoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaregatewaycategories"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaregatewaycategories"
 
 datacloudflaregatewaycategories.NewDataCloudflareGatewayCategoriesCategoriesSubcategoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareGatewayCategoriesCategoriesSubcategoriesOutputReference
 ```
