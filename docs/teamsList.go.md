@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.NewTeamsList(scope Construct, id *string, config TeamsListConfig) TeamsList
 ```
@@ -419,7 +419,7 @@ func ResetItemsWithDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.teamsList.TeamsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.TeamsList_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.teamsList.TeamsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.TeamsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ teamslist.TeamsList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.teamsList.TeamsList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.TeamsList_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ teamslist.TeamsList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.teamsList.TeamsList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.TeamsList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsList.TeamsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 &teamslist.TeamsListConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 &teamslist.TeamsListItemsWithDescription {
 	Description: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.NewTeamsListItemsWithDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsListItemsWithDescriptionList
 ```
@@ -1285,7 +1285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslist"
 
 teamslist.NewTeamsListItemsWithDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsListItemsWithDescriptionOutputReference
 ```
