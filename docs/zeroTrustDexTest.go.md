@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 zerotrustdextest.NewZeroTrustDexTest(scope Construct, id *string, config ZeroTrustDexTestConfig) ZeroTrustDexTest
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 zerotrustdextest.ZeroTrustDexTest_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 zerotrustdextest.ZeroTrustDexTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ zerotrustdextest.ZeroTrustDexTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 zerotrustdextest.ZeroTrustDexTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ zerotrustdextest.ZeroTrustDexTest_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 zerotrustdextest.ZeroTrustDexTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 &zerotrustdextest.ZeroTrustDexTestConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustde
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustDexTest.ZeroTrustDexTestData,
+	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustDexTest.ZeroTrustDexTestData,
 	Description: *string,
 	Enabled: interface{},
 	Interval: *string,
@@ -1078,7 +1078,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 &zerotrustdextest.ZeroTrustDexTestData {
 	Host: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdextest"
 
 zerotrustdextest.NewZeroTrustDexTestDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDexTestDataOutputReference
 ```
