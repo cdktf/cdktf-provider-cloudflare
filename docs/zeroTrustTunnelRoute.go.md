@@ -4,7 +4,7 @@
 
 ### ZeroTrustTunnelRoute <a name="ZeroTrustTunnelRoute" id="@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRoute.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ZeroTrustTunnelRoute to im
 
 The id of the existing ZeroTrustTunnelRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrusttu
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.network">Network</a></code> | <code>*string</code> | The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.tunnelId">TunnelId</a></code> | <code>*string</code> | The ID of the tunnel that will service the tunnel route. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.comment">Comment</a></code> | <code>*string</code> | Description of the tunnel route. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelRoute.ZeroTrustTunnelRouteConfig.property.virtualNetworkId">VirtualNetworkId</a></code> | <code>*string</code> | The ID of the virtual network for which this route is being added; |
 
 ---
@@ -939,7 +939,7 @@ AccountId *string
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
 
 ---
 
@@ -953,7 +953,7 @@ Network *string
 
 The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
 
 ---
 
@@ -967,7 +967,7 @@ TunnelId *string
 
 The ID of the tunnel that will service the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
 
 ---
 
@@ -981,7 +981,7 @@ Comment *string
 
 Description of the tunnel route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
 
 ---
 
@@ -993,7 +993,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1012,7 +1012,7 @@ The ID of the virtual network for which this route is being added;
 
 uses the default virtual network of the account if none is provided. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
 
 ---
 

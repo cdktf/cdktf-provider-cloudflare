@@ -145,6 +145,7 @@ export * as zeroTrustDeviceProfiles from './zero-trust-device-profiles';
 export * as zeroTrustDexTest from './zero-trust-dex-test';
 export * as zeroTrustDlpProfile from './zero-trust-dlp-profile';
 export * as zeroTrustDnsLocation from './zero-trust-dns-location';
+export * as zeroTrustGatewayCertificate from './zero-trust-gateway-certificate';
 export * as zeroTrustGatewayPolicy from './zero-trust-gateway-policy';
 export * as zeroTrustGatewayProxyEndpoint from './zero-trust-gateway-proxy-endpoint';
 export * as zeroTrustGatewaySettings from './zero-trust-gateway-settings';

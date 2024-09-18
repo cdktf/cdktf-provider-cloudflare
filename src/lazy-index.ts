@@ -145,6 +145,7 @@ Object.defineProperty(exports, 'zeroTrustDeviceProfiles', { get: function () { r
 Object.defineProperty(exports, 'zeroTrustDexTest', { get: function () { return require('./zero-trust-dex-test'); } });
 Object.defineProperty(exports, 'zeroTrustDlpProfile', { get: function () { return require('./zero-trust-dlp-profile'); } });
 Object.defineProperty(exports, 'zeroTrustDnsLocation', { get: function () { return require('./zero-trust-dns-location'); } });
+Object.defineProperty(exports, 'zeroTrustGatewayCertificate', { get: function () { return require('./zero-trust-gateway-certificate'); } });
 Object.defineProperty(exports, 'zeroTrustGatewayPolicy', { get: function () { return require('./zero-trust-gateway-policy'); } });
 Object.defineProperty(exports, 'zeroTrustGatewayProxyEndpoint', { get: function () { return require('./zero-trust-gateway-proxy-endpoint'); } });
 Object.defineProperty(exports, 'zeroTrustGatewaySettings', { get: function () { return require('./zero-trust-gateway-settings'); } });

@@ -176,6 +176,7 @@ The following submodules are available:
 - [zeroTrustDexTest](./zeroTrustDexTest.typescript.md)
 - [zeroTrustDlpProfile](./zeroTrustDlpProfile.typescript.md)
 - [zeroTrustDnsLocation](./zeroTrustDnsLocation.typescript.md)
+- [zeroTrustGatewayCertificate](./zeroTrustGatewayCertificate.typescript.md)
 - [zeroTrustGatewayPolicy](./zeroTrustGatewayPolicy.typescript.md)
 - [zeroTrustGatewayProxyEndpoint](./zeroTrustGatewayProxyEndpoint.typescript.md)
 - [zeroTrustGatewaySettings](./zeroTrustGatewaySettings.typescript.md)
