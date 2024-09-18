@@ -176,6 +176,7 @@ The following submodules are available:
 - [zeroTrustDexTest](./zeroTrustDexTest.java.md)
 - [zeroTrustDlpProfile](./zeroTrustDlpProfile.java.md)
 - [zeroTrustDnsLocation](./zeroTrustDnsLocation.java.md)
+- [zeroTrustGatewayCertificate](./zeroTrustGatewayCertificate.java.md)
 - [zeroTrustGatewayPolicy](./zeroTrustGatewayPolicy.java.md)
 - [zeroTrustGatewayProxyEndpoint](./zeroTrustGatewayProxyEndpoint.java.md)
 - [zeroTrustGatewaySettings](./zeroTrustGatewaySettings.java.md)

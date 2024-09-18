@@ -4,12 +4,12 @@
 
 ### WorkersSecret <a name="WorkersSecret" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret cloudflare_workers_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret cloudflare_workers_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerssecret"
 
 workerssecret.NewWorkersSecret(scope Construct, id *string, config WorkersSecretConfig) WorkersSecret
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerssecret"
 
 workerssecret.WorkersSecret_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerssecret"
 
 workerssecret.WorkersSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ workerssecret.WorkersSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerssecret"
 
 workerssecret.WorkersSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ workerssecret.WorkersSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerssecret"
 
 workerssecret.WorkersSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WorkersSecret to import.
 
 The id of the existing WorkersSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerssecret"
 
 &workerssecret.WorkersSecretConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecr
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | The name of the Worker script to associate the secret with. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.secretText">SecretText</a></code> | <code>*string</code> | The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#id WorkersSecret#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#id WorkersSecret#id}. |
 
 ---
 
@@ -901,7 +901,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
 
 ---
 
@@ -915,7 +915,7 @@ Name *string
 
 The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#name WorkersSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#name WorkersSecret#name}
 
 ---
 
@@ -931,7 +931,7 @@ The name of the Worker script to associate the secret with.
 
 **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
 
 ---
 
@@ -945,7 +945,7 @@ SecretText *string
 
 The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#secret_text WorkersSecret#secret_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#secret_text WorkersSecret#secret_text}
 
 ---
 
@@ -957,7 +957,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_secret#id WorkersSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_secret#id WorkersSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

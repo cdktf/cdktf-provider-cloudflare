@@ -176,6 +176,7 @@ The following submodules are available:
 - [zeroTrustDexTest](./zeroTrustDexTest.python.md)
 - [zeroTrustDlpProfile](./zeroTrustDlpProfile.python.md)
 - [zeroTrustDnsLocation](./zeroTrustDnsLocation.python.md)
+- [zeroTrustGatewayCertificate](./zeroTrustGatewayCertificate.python.md)
 - [zeroTrustGatewayPolicy](./zeroTrustGatewayPolicy.python.md)
 - [zeroTrustGatewayProxyEndpoint](./zeroTrustGatewayProxyEndpoint.python.md)
 - [zeroTrustGatewaySettings](./zeroTrustGatewaySettings.python.md)

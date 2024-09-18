@@ -4,7 +4,7 @@
 
 ### WorkerScript <a name="WorkerScript" id="@cdktf/provider-cloudflare.workerScript.WorkerScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script cloudflare_worker_script}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script cloudflare_worker_script}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer"></a>
 
@@ -29,6 +29,7 @@ workerScript.WorkerScript(
   compatibility_flags: typing.List[str] = None,
   d1_database_binding: typing.Union[IResolvable, typing.List[WorkerScriptD1DatabaseBinding]] = None,
   dispatch_namespace: str = None,
+  hyperdrive_config_binding: typing.Union[IResolvable, typing.List[WorkerScriptHyperdriveConfigBinding]] = None,
   id: str = None,
   kv_namespace_binding: typing.Union[IResolvable, typing.List[WorkerScriptKvNamespaceBinding]] = None,
   logpush: typing.Union[bool, IResolvable] = None,
@@ -63,7 +64,8 @@ workerScript.WorkerScript(
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | Compatibility flags used for Worker Scripts. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.d1DatabaseBinding">d1_database_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBinding">WorkerScriptD1DatabaseBinding</a>]]</code> | d1_database_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | Name of the Workers for Platforms dispatch namespace. |
-| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#id WorkerScript#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.hyperdriveConfigBinding">hyperdrive_config_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]</code> | hyperdrive_config_binding block. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#id WorkerScript#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.kvNamespaceBinding">kv_namespace_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding">WorkerScriptKvNamespaceBinding</a>]]</code> | kv_namespace_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.logpush">logpush</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling allows Worker events to be sent to a defined Logpush destination. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.module">module</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to upload Worker as a module. |
@@ -73,7 +75,7 @@ workerScript.WorkerScript(
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.r2BucketBinding">r2_bucket_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBinding">WorkerScriptR2BucketBinding</a>]]</code> | r2_bucket_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.secretTextBinding">secret_text_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBinding">WorkerScriptSecretTextBinding</a>]]</code> | secret_text_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.serviceBinding">service_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBinding">WorkerScriptServiceBinding</a>]]</code> | service_binding block. |
-| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#tags WorkerScript#tags}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#tags WorkerScript#tags}. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.webassemblyBinding">webassembly_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBinding">WorkerScriptWebassemblyBinding</a>]]</code> | webassembly_binding block. |
 
 ---
@@ -144,7 +146,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#account_id WorkerScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#account_id WorkerScript#account_id}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The script content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#content WorkerScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#content WorkerScript#content}
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name for the script. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 analytics_engine_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
 
 ---
 
@@ -184,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The date to use for the compatibility flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
 
 ---
 
@@ -194,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Compatibility flags used for Worker Scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
 
 ---
 
@@ -204,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 d1_database_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#d1_database_binding WorkerScript#d1_database_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#d1_database_binding WorkerScript#d1_database_binding}
 
 ---
 
@@ -214,7 +216,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the Workers for Platforms dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#dispatch_namespace WorkerScript#dispatch_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#dispatch_namespace WorkerScript#dispatch_namespace}
+
+---
+
+##### `hyperdrive_config_binding`<sup>Optional</sup> <a name="hyperdrive_config_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.Initializer.parameter.hyperdriveConfigBinding"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]
+
+hyperdrive_config_binding block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#hyperdrive_config_binding WorkerScript#hyperdrive_config_binding}
 
 ---
 
@@ -222,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#id WorkerScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#id WorkerScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -235,7 +247,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 kv_namespace_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
 
 ---
 
@@ -245,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Enabling allows Worker events to be sent to a defined Logpush destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#logpush WorkerScript#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#logpush WorkerScript#logpush}
 
 ---
 
@@ -255,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to upload Worker as a module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#module WorkerScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#module WorkerScript#module}
 
 ---
 
@@ -265,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#placement WorkerScript#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#placement WorkerScript#placement}
 
 ---
 
@@ -275,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 plain_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
 
 ---
 
@@ -285,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 queue_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
 
 ---
 
@@ -295,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 r2_bucket_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
 
 ---
 
@@ -305,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 secret_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
 
 ---
 
@@ -315,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
 
 ---
 
@@ -323,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#tags WorkerScript#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#tags WorkerScript#tags}.
 
 ---
 
@@ -333,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 webassembly_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
 
 ---
 
@@ -366,6 +378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putAnalyticsEngineBinding">put_analytics_engine_binding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putD1DatabaseBinding">put_d1_database_binding</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putHyperdriveConfigBinding">put_hyperdrive_config_binding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putKvNamespaceBinding">put_kv_namespace_binding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putPlacement">put_placement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.putPlainTextBinding">put_plain_text_binding</a></code> | *No description.* |
@@ -379,6 +392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetCompatibilityFlags">reset_compatibility_flags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetD1DatabaseBinding">reset_d1_database_binding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetDispatchNamespace">reset_dispatch_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetHyperdriveConfigBinding">reset_hyperdrive_config_binding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetKvNamespaceBinding">reset_kv_namespace_binding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.resetLogpush">reset_logpush</a></code> | *No description.* |
@@ -747,6 +761,20 @@ def put_d1_database_binding(
 
 ---
 
+##### `put_hyperdrive_config_binding` <a name="put_hyperdrive_config_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.putHyperdriveConfigBinding"></a>
+
+```python
+def put_hyperdrive_config_binding(
+  value: typing.Union[IResolvable, typing.List[WorkerScriptHyperdriveConfigBinding]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.putHyperdriveConfigBinding.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]
+
+---
+
 ##### `put_kv_namespace_binding` <a name="put_kv_namespace_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.putKvNamespaceBinding"></a>
 
 ```python
@@ -887,6 +915,12 @@ def reset_d1_database_binding() -> None
 
 ```python
 def reset_dispatch_namespace() -> None
+```
+
+##### `reset_hyperdrive_config_binding` <a name="reset_hyperdrive_config_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.resetHyperdriveConfigBinding"></a>
+
+```python
+def reset_hyperdrive_config_binding() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.resetId"></a>
@@ -1075,7 +1109,7 @@ The construct id used in the generated config for the WorkerScript to import.
 
 The id of the existing WorkerScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,6 +1141,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.analyticsEngineBinding">analytics_engine_binding</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingList">WorkerScriptAnalyticsEngineBindingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.d1DatabaseBinding">d1_database_binding</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBindingList">WorkerScriptD1DatabaseBindingList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.hyperdriveConfigBinding">hyperdrive_config_binding</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList">WorkerScriptHyperdriveConfigBindingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.kvNamespaceBinding">kv_namespace_binding</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList">WorkerScriptKvNamespaceBindingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptPlacementList">WorkerScriptPlacementList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.plainTextBinding">plain_text_binding</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList">WorkerScriptPlainTextBindingList</a></code> | *No description.* |
@@ -1122,6 +1157,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.d1DatabaseBindingInput">d1_database_binding_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBinding">WorkerScriptD1DatabaseBinding</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.dispatchNamespaceInput">dispatch_namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.hyperdriveConfigBindingInput">hyperdrive_config_binding_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.kvNamespaceBindingInput">kv_namespace_binding_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding">WorkerScriptKvNamespaceBinding</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScript.property.logpushInput">logpush_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1310,6 +1346,16 @@ d1_database_binding: WorkerScriptD1DatabaseBindingList
 
 ---
 
+##### `hyperdrive_config_binding`<sup>Required</sup> <a name="hyperdrive_config_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.hyperdriveConfigBinding"></a>
+
+```python
+hyperdrive_config_binding: WorkerScriptHyperdriveConfigBindingList
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList">WorkerScriptHyperdriveConfigBindingList</a>
+
+---
+
 ##### `kv_namespace_binding`<sup>Required</sup> <a name="kv_namespace_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.kvNamespaceBinding"></a>
 
 ```python
@@ -1457,6 +1503,16 @@ dispatch_namespace_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `hyperdrive_config_binding_input`<sup>Optional</sup> <a name="hyperdrive_config_binding_input" id="@cdktf/provider-cloudflare.workerScript.WorkerScript.property.hyperdriveConfigBindingInput"></a>
+
+```python
+hyperdrive_config_binding_input: typing.Union[IResolvable, typing.List[WorkerScriptHyperdriveConfigBinding]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]
 
 ---
 
@@ -1742,7 +1798,7 @@ dataset: str
 
 The name of the Analytics Engine dataset to write to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#dataset WorkerScript#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#dataset WorkerScript#dataset}
 
 ---
 
@@ -1756,7 +1812,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1783,6 +1839,7 @@ workerScript.WorkerScriptConfig(
   compatibility_flags: typing.List[str] = None,
   d1_database_binding: typing.Union[IResolvable, typing.List[WorkerScriptD1DatabaseBinding]] = None,
   dispatch_namespace: str = None,
+  hyperdrive_config_binding: typing.Union[IResolvable, typing.List[WorkerScriptHyperdriveConfigBinding]] = None,
   id: str = None,
   kv_namespace_binding: typing.Union[IResolvable, typing.List[WorkerScriptKvNamespaceBinding]] = None,
   logpush: typing.Union[bool, IResolvable] = None,
@@ -1817,7 +1874,8 @@ workerScript.WorkerScriptConfig(
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | Compatibility flags used for Worker Scripts. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.d1DatabaseBinding">d1_database_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBinding">WorkerScriptD1DatabaseBinding</a>]]</code> | d1_database_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | Name of the Workers for Platforms dispatch namespace. |
-| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#id WorkerScript#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.hyperdriveConfigBinding">hyperdrive_config_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]</code> | hyperdrive_config_binding block. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#id WorkerScript#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.kvNamespaceBinding">kv_namespace_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding">WorkerScriptKvNamespaceBinding</a>]]</code> | kv_namespace_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.logpush">logpush</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling allows Worker events to be sent to a defined Logpush destination. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.module">module</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to upload Worker as a module. |
@@ -1827,7 +1885,7 @@ workerScript.WorkerScriptConfig(
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.r2BucketBinding">r2_bucket_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBinding">WorkerScriptR2BucketBinding</a>]]</code> | r2_bucket_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.secretTextBinding">secret_text_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBinding">WorkerScriptSecretTextBinding</a>]]</code> | secret_text_binding block. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.serviceBinding">service_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBinding">WorkerScriptServiceBinding</a>]]</code> | service_binding block. |
-| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#tags WorkerScript#tags}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#tags WorkerScript#tags}. |
 | <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.webassemblyBinding">webassembly_binding</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBinding">WorkerScriptWebassemblyBinding</a>]]</code> | webassembly_binding block. |
 
 ---
@@ -1912,7 +1970,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#account_id WorkerScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#account_id WorkerScript#account_id}
 
 ---
 
@@ -1926,7 +1984,7 @@ content: str
 
 The script content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#content WorkerScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#content WorkerScript#content}
 
 ---
 
@@ -1940,7 +1998,7 @@ name: str
 
 The name for the script. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -1954,7 +2012,7 @@ analytics_engine_binding: typing.Union[IResolvable, typing.List[WorkerScriptAnal
 
 analytics_engine_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}
 
 ---
 
@@ -1968,7 +2026,7 @@ compatibility_date: str
 
 The date to use for the compatibility flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#compatibility_date WorkerScript#compatibility_date}
 
 ---
 
@@ -1982,7 +2040,7 @@ compatibility_flags: typing.List[str]
 
 Compatibility flags used for Worker Scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#compatibility_flags WorkerScript#compatibility_flags}
 
 ---
 
@@ -1996,7 +2054,7 @@ d1_database_binding: typing.Union[IResolvable, typing.List[WorkerScriptD1Databas
 
 d1_database_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#d1_database_binding WorkerScript#d1_database_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#d1_database_binding WorkerScript#d1_database_binding}
 
 ---
 
@@ -2010,7 +2068,21 @@ dispatch_namespace: str
 
 Name of the Workers for Platforms dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#dispatch_namespace WorkerScript#dispatch_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#dispatch_namespace WorkerScript#dispatch_namespace}
+
+---
+
+##### `hyperdrive_config_binding`<sup>Optional</sup> <a name="hyperdrive_config_binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig.property.hyperdriveConfigBinding"></a>
+
+```python
+hyperdrive_config_binding: typing.Union[IResolvable, typing.List[WorkerScriptHyperdriveConfigBinding]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]
+
+hyperdrive_config_binding block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#hyperdrive_config_binding WorkerScript#hyperdrive_config_binding}
 
 ---
 
@@ -2022,7 +2094,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#id WorkerScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#id WorkerScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2039,7 +2111,7 @@ kv_namespace_binding: typing.Union[IResolvable, typing.List[WorkerScriptKvNamesp
 
 kv_namespace_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#kv_namespace_binding WorkerScript#kv_namespace_binding}
 
 ---
 
@@ -2053,7 +2125,7 @@ logpush: typing.Union[bool, IResolvable]
 
 Enabling allows Worker events to be sent to a defined Logpush destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#logpush WorkerScript#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#logpush WorkerScript#logpush}
 
 ---
 
@@ -2067,7 +2139,7 @@ module: typing.Union[bool, IResolvable]
 
 Whether to upload Worker as a module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#module WorkerScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#module WorkerScript#module}
 
 ---
 
@@ -2081,7 +2153,7 @@ placement: typing.Union[IResolvable, typing.List[WorkerScriptPlacement]]
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#placement WorkerScript#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#placement WorkerScript#placement}
 
 ---
 
@@ -2095,7 +2167,7 @@ plain_text_binding: typing.Union[IResolvable, typing.List[WorkerScriptPlainTextB
 
 plain_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#plain_text_binding WorkerScript#plain_text_binding}
 
 ---
 
@@ -2109,7 +2181,7 @@ queue_binding: typing.Union[IResolvable, typing.List[WorkerScriptQueueBinding]]
 
 queue_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#queue_binding WorkerScript#queue_binding}
 
 ---
 
@@ -2123,7 +2195,7 @@ r2_bucket_binding: typing.Union[IResolvable, typing.List[WorkerScriptR2BucketBin
 
 r2_bucket_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}
 
 ---
 
@@ -2137,7 +2209,7 @@ secret_text_binding: typing.Union[IResolvable, typing.List[WorkerScriptSecretTex
 
 secret_text_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#secret_text_binding WorkerScript#secret_text_binding}
 
 ---
 
@@ -2151,7 +2223,7 @@ service_binding: typing.Union[IResolvable, typing.List[WorkerScriptServiceBindin
 
 service_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#service_binding WorkerScript#service_binding}
 
 ---
 
@@ -2163,7 +2235,7 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#tags WorkerScript#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#tags WorkerScript#tags}.
 
 ---
 
@@ -2177,7 +2249,7 @@ webassembly_binding: typing.Union[IResolvable, typing.List[WorkerScriptWebassemb
 
 webassembly_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#webassembly_binding WorkerScript#webassembly_binding}
 
 ---
 
@@ -2213,7 +2285,7 @@ database_id: str
 
 Database ID of D1 database to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#database_id WorkerScript#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#database_id WorkerScript#database_id}
 
 ---
 
@@ -2227,7 +2299,60 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
+
+---
+
+### WorkerScriptHyperdriveConfigBinding <a name="WorkerScriptHyperdriveConfigBinding" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import worker_script
+
+workerScript.WorkerScriptHyperdriveConfigBinding(
+  binding: str,
+  id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding.property.binding">binding</a></code> | <code>str</code> | The global variable for the binding in your Worker code. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding.property.id">id</a></code> | <code>str</code> | The ID of the Hyperdrive config to use. |
+
+---
+
+##### `binding`<sup>Required</sup> <a name="binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding.property.binding"></a>
+
+```python
+binding: str
+```
+
+- *Type:* str
+
+The global variable for the binding in your Worker code.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#binding WorkerScript#binding}
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+The ID of the Hyperdrive config to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#id WorkerScript#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -2263,7 +2388,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -2277,7 +2402,7 @@ namespace_id: str
 
 ID of the KV namespace you want to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#namespace_id WorkerScript#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#namespace_id WorkerScript#namespace_id}
 
 ---
 
@@ -2311,7 +2436,7 @@ mode: str
 
 The placement mode for the Worker. Available values: `smart`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#mode WorkerScript#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#mode WorkerScript#mode}
 
 ---
 
@@ -2347,7 +2472,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -2361,7 +2486,7 @@ text: str
 
 The plain text you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#text WorkerScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#text WorkerScript#text}
 
 ---
 
@@ -2397,7 +2522,7 @@ binding: str
 
 The name of the global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#binding WorkerScript#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#binding WorkerScript#binding}
 
 ---
 
@@ -2411,7 +2536,7 @@ queue: str
 
 Name of the queue you want to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#queue WorkerScript#queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#queue WorkerScript#queue}
 
 ---
 
@@ -2447,7 +2572,7 @@ bucket_name: str
 
 The name of the Bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#bucket_name WorkerScript#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#bucket_name WorkerScript#bucket_name}
 
 ---
 
@@ -2461,7 +2586,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -2497,7 +2622,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -2511,7 +2636,7 @@ text: str
 
 The secret text you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#text WorkerScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#text WorkerScript#text}
 
 ---
 
@@ -2549,7 +2674,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -2563,7 +2688,7 @@ service: str
 
 The name of the Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#service WorkerScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#service WorkerScript#service}
 
 ---
 
@@ -2577,7 +2702,7 @@ environment: str
 
 The name of the Worker environment to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#environment WorkerScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#environment WorkerScript#environment}
 
 ---
 
@@ -2613,7 +2738,7 @@ module: str
 
 The base64 encoded wasm module you want to store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#module WorkerScript#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#module WorkerScript#module}
 
 ---
 
@@ -2627,7 +2752,7 @@ name: str
 
 The global variable for the binding in your Worker code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/worker_script#name WorkerScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/worker_script#name WorkerScript#name}
 
 ---
 
@@ -3645,6 +3770,514 @@ internal_value: typing.Union[IResolvable, WorkerScriptD1DatabaseBinding]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptD1DatabaseBinding">WorkerScriptD1DatabaseBinding</a>]
+
+---
+
+
+### WorkerScriptHyperdriveConfigBindingList <a name="WorkerScriptHyperdriveConfigBindingList" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import worker_script
+
+workerScript.WorkerScriptHyperdriveConfigBindingList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> WorkerScriptHyperdriveConfigBindingOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[WorkerScriptHyperdriveConfigBinding]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]]
+
+---
+
+
+### WorkerScriptHyperdriveConfigBindingOutputReference <a name="WorkerScriptHyperdriveConfigBindingOutputReference" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import worker_script
+
+workerScript.WorkerScriptHyperdriveConfigBindingOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.bindingInput">binding_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.binding">binding</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `binding_input`<sup>Optional</sup> <a name="binding_input" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.bindingInput"></a>
+
+```python
+binding_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `binding`<sup>Required</sup> <a name="binding" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.binding"></a>
+
+```python
+binding: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBindingOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, WorkerScriptHyperdriveConfigBinding]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workerScript.WorkerScriptHyperdriveConfigBinding">WorkerScriptHyperdriveConfigBinding</a>]
 
 ---
 

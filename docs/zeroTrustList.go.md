@@ -4,12 +4,12 @@
 
 ### ZeroTrustList <a name="ZeroTrustList" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.NewZeroTrustList(scope Construct, id *string, config ZeroTrustListConfig) ZeroTrustList
 ```
@@ -419,7 +419,7 @@ func ResetItemsWithDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zerotrustlist.ZeroTrustList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ zerotrustlist.ZeroTrustList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ZeroTrustList to import.
 
 The id of the existing ZeroTrustList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 &zerotrustlist.ZeroTrustListConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustli
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.name">Name</a></code> | <code>*string</code> | Name of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.type">Type</a></code> | <code>*string</code> | The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.description">Description</a></code> | <code>*string</code> | The description of the teams list. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#id ZeroTrustList#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#id ZeroTrustList#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.items">Items</a></code> | <code>*[]*string</code> | The items of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.itemsWithDescription">ItemsWithDescription</a></code> | <code>interface{}</code> | The items of the teams list that has explicit description. |
 
@@ -983,7 +983,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}
 
 ---
 
@@ -997,7 +997,7 @@ Name *string
 
 Name of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
 
 ---
 
@@ -1011,7 +1011,7 @@ Type *string
 
 The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
 
 ---
 
@@ -1025,7 +1025,7 @@ Description *string
 
 The description of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 
 ---
 
@@ -1037,7 +1037,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#id ZeroTrustList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#id ZeroTrustList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ Items *[]*string
 
 The items of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
 
 ---
 
@@ -1068,7 +1068,7 @@ ItemsWithDescription interface{}
 
 The items of the teams list that has explicit description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#items_with_description ZeroTrustList#items_with_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#items_with_description ZeroTrustList#items_with_description}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 &zerotrustlist.ZeroTrustListItemsWithDescription {
 	Description: *string,
@@ -1089,8 +1089,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescription.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#description ZeroTrustList#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#value ZeroTrustList#value}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescription.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#description ZeroTrustList#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#value ZeroTrustList#value}. |
 
 ---
 
@@ -1102,7 +1102,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#description ZeroTrustList#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#description ZeroTrustList#description}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_list#value ZeroTrustList#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_list#value ZeroTrustList#value}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.NewZeroTrustListItemsWithDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustListItemsWithDescriptionList
 ```
@@ -1285,7 +1285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
 
 zerotrustlist.NewZeroTrustListItemsWithDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustListItemsWithDescriptionOutputReference
 ```

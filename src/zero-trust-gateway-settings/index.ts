@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ZeroTrustGatewaySettingsConfig extends cdktf.TerraformMetaArgum
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#account_id ZeroTrustGatewaySettings#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#account_id ZeroTrustGatewaySettings#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to enable the activity log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#activity_log_enabled ZeroTrustGatewaySettings#activity_log_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#activity_log_enabled ZeroTrustGatewaySettings#activity_log_enabled}
   */
   readonly activityLogEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,85 +29,91 @@ export interface ZeroTrustGatewaySettingsConfig extends cdktf.TerraformMetaArgum
   /**
   * Enable non-identity onramp for Browser Isolation. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#non_identity_browser_isolation_enabled ZeroTrustGatewaySettings#non_identity_browser_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#non_identity_browser_isolation_enabled ZeroTrustGatewaySettings#non_identity_browser_isolation_enabled}
   */
   readonly nonIdentityBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Indicator that protocol detection is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#protocol_detection_enabled ZeroTrustGatewaySettings#protocol_detection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#protocol_detection_enabled ZeroTrustGatewaySettings#protocol_detection_enabled}
   */
   readonly protocolDetectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Indicator that decryption of TLS traffic is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#tls_decrypt_enabled ZeroTrustGatewaySettings#tls_decrypt_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#tls_decrypt_enabled ZeroTrustGatewaySettings#tls_decrypt_enabled}
   */
   readonly tlsDecryptEnabled?: boolean | cdktf.IResolvable;
   /**
   * Safely browse websites in Browser Isolation through a URL. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#url_browser_isolation_enabled ZeroTrustGatewaySettings#url_browser_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#url_browser_isolation_enabled ZeroTrustGatewaySettings#url_browser_isolation_enabled}
   */
   readonly urlBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
   /**
   * antivirus block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
   */
   readonly antivirus?: ZeroTrustGatewaySettingsAntivirus;
   /**
   * block_page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
   */
   readonly blockPage?: ZeroTrustGatewaySettingsBlockPage;
   /**
   * body_scanning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
   */
   readonly bodyScanning?: ZeroTrustGatewaySettingsBodyScanning;
   /**
+  * certificate block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
+  */
+  readonly certificate?: ZeroTrustGatewaySettingsCertificate;
+  /**
   * custom_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
   */
   readonly customCertificate?: ZeroTrustGatewaySettingsCustomCertificate;
   /**
   * extended_email_matching block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
   */
   readonly extendedEmailMatching?: ZeroTrustGatewaySettingsExtendedEmailMatching;
   /**
   * fips block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
   */
   readonly fips?: ZeroTrustGatewaySettingsFips;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#logging ZeroTrustGatewaySettings#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#logging ZeroTrustGatewaySettings#logging}
   */
   readonly logging?: ZeroTrustGatewaySettingsLogging;
   /**
   * payload_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#payload_log ZeroTrustGatewaySettings#payload_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#payload_log ZeroTrustGatewaySettings#payload_log}
   */
   readonly payloadLog?: ZeroTrustGatewaySettingsPayloadLog;
   /**
   * proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#proxy ZeroTrustGatewaySettings#proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#proxy ZeroTrustGatewaySettings#proxy}
   */
   readonly proxy?: ZeroTrustGatewaySettingsProxy;
   /**
   * ssh_session_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#ssh_session_log ZeroTrustGatewaySettings#ssh_session_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#ssh_session_log ZeroTrustGatewaySettings#ssh_session_log}
   */
   readonly sshSessionLog?: ZeroTrustGatewaySettingsSshSessionLog;
 }
@@ -120,19 +121,19 @@ export interface ZeroTrustGatewaySettingsAntivirusNotificationSettings {
   /**
   * Enable notification settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Notification content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#message ZeroTrustGatewaySettings#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#message ZeroTrustGatewaySettings#message}
   */
   readonly message?: string;
   /**
   * Support URL to show in the notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#support_url ZeroTrustGatewaySettings#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#support_url ZeroTrustGatewaySettings#support_url}
   */
   readonly supportUrl?: string;
 }
@@ -276,25 +277,25 @@ export interface ZeroTrustGatewaySettingsAntivirus {
   /**
   * Scan on file download.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#enabled_download_phase ZeroTrustGatewaySettings#enabled_download_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#enabled_download_phase ZeroTrustGatewaySettings#enabled_download_phase}
   */
   readonly enabledDownloadPhase: boolean | cdktf.IResolvable;
   /**
   * Scan on file upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#enabled_upload_phase ZeroTrustGatewaySettings#enabled_upload_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#enabled_upload_phase ZeroTrustGatewaySettings#enabled_upload_phase}
   */
   readonly enabledUploadPhase: boolean | cdktf.IResolvable;
   /**
   * Block requests for files that cannot be scanned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#fail_closed ZeroTrustGatewaySettings#fail_closed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#fail_closed ZeroTrustGatewaySettings#fail_closed}
   */
   readonly failClosed: boolean | cdktf.IResolvable;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#notification_settings ZeroTrustGatewaySettings#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#notification_settings ZeroTrustGatewaySettings#notification_settings}
   */
   readonly notificationSettings?: ZeroTrustGatewaySettingsAntivirusNotificationSettings;
 }
@@ -458,49 +459,49 @@ export interface ZeroTrustGatewaySettingsBlockPage {
   /**
   * Hex code of block page background color.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * Indicator of enablement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Block page footer text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
   */
   readonly footerText?: string;
   /**
   * Block page header text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
   */
   readonly headerText?: string;
   /**
   * URL of block page logo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
   */
   readonly logoPath?: string;
   /**
   * Admin email for users to contact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
   */
   readonly mailtoAddress?: string;
   /**
   * Subject line for emails created from block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
   */
   readonly mailtoSubject?: string;
   /**
   * Name of block page configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
   */
   readonly name?: string;
 }
@@ -789,7 +790,7 @@ export interface ZeroTrustGatewaySettingsBodyScanning {
   /**
   * Body scanning inspection mode. Available values: `deep`, `shallow`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#inspection_mode ZeroTrustGatewaySettings#inspection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#inspection_mode ZeroTrustGatewaySettings#inspection_mode}
   */
   readonly inspectionMode: string;
 }
@@ -868,17 +869,103 @@ export class ZeroTrustGatewaySettingsBodyScanningOutputReference extends cdktf.C
     return this._inspectionMode;
   }
 }
+export interface ZeroTrustGatewaySettingsCertificate {
+  /**
+  * ID of certificate for TLS interception.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustGatewaySettingsCertificateToTerraform(struct?: ZeroTrustGatewaySettingsCertificateOutputReference | ZeroTrustGatewaySettingsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustGatewaySettingsCertificateToHclTerraform(struct?: ZeroTrustGatewaySettingsCertificateOutputReference | ZeroTrustGatewaySettingsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustGatewaySettingsCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ZeroTrustGatewaySettingsCertificate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustGatewaySettingsCertificate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._id = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
 export interface ZeroTrustGatewaySettingsCustomCertificate {
   /**
   * Whether TLS encryption should use a custom certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * ID of custom certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -998,7 +1085,7 @@ export interface ZeroTrustGatewaySettingsExtendedEmailMatching {
   /**
   * Whether e-mails should be matched on all variants of user emails (with + or . modifiers) in Firewall policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1081,7 +1168,7 @@ export interface ZeroTrustGatewaySettingsFips {
   /**
   * Only allow FIPS-compliant TLS configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
 }
@@ -1167,11 +1254,11 @@ export interface ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns {
   /**
   * Whether to log all activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -1280,11 +1367,11 @@ export interface ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp {
   /**
   * Whether to log all activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -1393,11 +1480,11 @@ export interface ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4 {
   /**
   * Whether to log all activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
   */
   readonly logAll: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}
   */
   readonly logBlocks: boolean | cdktf.IResolvable;
 }
@@ -1506,19 +1593,19 @@ export interface ZeroTrustGatewaySettingsLoggingSettingsByRuleType {
   /**
   * dns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#dns ZeroTrustGatewaySettings#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#dns ZeroTrustGatewaySettings#dns}
   */
   readonly dns: ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns;
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#http ZeroTrustGatewaySettings#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#http ZeroTrustGatewaySettings#http}
   */
   readonly http: ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp;
   /**
   * l4 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#l4 ZeroTrustGatewaySettings#l4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#l4 ZeroTrustGatewaySettings#l4}
   */
   readonly l4: ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4;
 }
@@ -1653,13 +1740,13 @@ export interface ZeroTrustGatewaySettingsLogging {
   /**
   * Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#redact_pii ZeroTrustGatewaySettings#redact_pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#redact_pii ZeroTrustGatewaySettings#redact_pii}
   */
   readonly redactPii: boolean | cdktf.IResolvable;
   /**
   * settings_by_rule_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#settings_by_rule_type ZeroTrustGatewaySettings#settings_by_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#settings_by_rule_type ZeroTrustGatewaySettings#settings_by_rule_type}
   */
   readonly settingsByRuleType: ZeroTrustGatewaySettingsLoggingSettingsByRuleType;
 }
@@ -1768,7 +1855,7 @@ export interface ZeroTrustGatewaySettingsPayloadLog {
   /**
   * Public key used to encrypt matched payloads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
   */
   readonly publicKey: string;
 }
@@ -1851,31 +1938,31 @@ export interface ZeroTrustGatewaySettingsProxy {
   /**
   * Sets the time limit in seconds that a user can use an override code to bypass WARP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#disable_for_time ZeroTrustGatewaySettings#disable_for_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#disable_for_time ZeroTrustGatewaySettings#disable_for_time}
   */
   readonly disableForTime: number;
   /**
   * Whether root ca is enabled account wide for ZT clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#root_ca ZeroTrustGatewaySettings#root_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#root_ca ZeroTrustGatewaySettings#root_ca}
   */
   readonly rootCa: boolean | cdktf.IResolvable;
   /**
   * Whether gateway proxy is enabled on gateway devices for TCP traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#tcp ZeroTrustGatewaySettings#tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#tcp ZeroTrustGatewaySettings#tcp}
   */
   readonly tcp: boolean | cdktf.IResolvable;
   /**
   * Whether gateway proxy is enabled on gateway devices for UDP traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#udp ZeroTrustGatewaySettings#udp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#udp ZeroTrustGatewaySettings#udp}
   */
   readonly udp: boolean | cdktf.IResolvable;
   /**
   * Whether virtual IP (CGNAT) is enabled account wide and will override existing local interface IP for ZT clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#virtual_ip ZeroTrustGatewaySettings#virtual_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#virtual_ip ZeroTrustGatewaySettings#virtual_ip}
   */
   readonly virtualIp: boolean | cdktf.IResolvable;
 }
@@ -2062,7 +2149,7 @@ export interface ZeroTrustGatewaySettingsSshSessionLog {
   /**
   * Public key used to encrypt ssh session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
   */
   readonly publicKey: string;
 }
@@ -2143,7 +2230,7 @@ export class ZeroTrustGatewaySettingsSshSessionLogOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}
 */
 export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
 
@@ -2159,7 +2246,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustGatewaySettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewaySettings to import
-  * @param importFromId The id of the existing ZeroTrustGatewaySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewaySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewaySettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2171,7 +2258,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2182,7 +2269,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -2203,6 +2290,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
     this._antivirus.internalValue = config.antivirus;
     this._blockPage.internalValue = config.blockPage;
     this._bodyScanning.internalValue = config.bodyScanning;
+    this._certificate.internalValue = config.certificate;
     this._customCertificate.internalValue = config.customCertificate;
     this._extendedEmailMatching.internalValue = config.extendedEmailMatching;
     this._fips.internalValue = config.fips;
@@ -2373,6 +2461,22 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
     return this._bodyScanning.internalValue;
   }
 
+  // certificate - computed: false, optional: true, required: false
+  private _certificate = new ZeroTrustGatewaySettingsCertificateOutputReference(this, "certificate");
+  public get certificate() {
+    return this._certificate;
+  }
+  public putCertificate(value: ZeroTrustGatewaySettingsCertificate) {
+    this._certificate.internalValue = value;
+  }
+  public resetCertificate() {
+    this._certificate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate.internalValue;
+  }
+
   // custom_certificate - computed: false, optional: true, required: false
   private _customCertificate = new ZeroTrustGatewaySettingsCustomCertificateOutputReference(this, "custom_certificate");
   public get customCertificate() {
@@ -2501,6 +2605,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
       antivirus: zeroTrustGatewaySettingsAntivirusToTerraform(this._antivirus.internalValue),
       block_page: zeroTrustGatewaySettingsBlockPageToTerraform(this._blockPage.internalValue),
       body_scanning: zeroTrustGatewaySettingsBodyScanningToTerraform(this._bodyScanning.internalValue),
+      certificate: zeroTrustGatewaySettingsCertificateToTerraform(this._certificate.internalValue),
       custom_certificate: zeroTrustGatewaySettingsCustomCertificateToTerraform(this._customCertificate.internalValue),
       extended_email_matching: zeroTrustGatewaySettingsExtendedEmailMatchingToTerraform(this._extendedEmailMatching.internalValue),
       fips: zeroTrustGatewaySettingsFipsToTerraform(this._fips.internalValue),
@@ -2572,6 +2677,12 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustGatewaySettingsBodyScanningList",
+      },
+      certificate: {
+        value: zeroTrustGatewaySettingsCertificateToHclTerraform(this._certificate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZeroTrustGatewaySettingsCertificateList",
       },
       custom_certificate: {
         value: zeroTrustGatewaySettingsCustomCertificateToHclTerraform(this._customCertificate.internalValue),

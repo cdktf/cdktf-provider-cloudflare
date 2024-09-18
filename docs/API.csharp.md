@@ -176,6 +176,7 @@ The following submodules are available:
 - [zeroTrustDexTest](./zeroTrustDexTest.csharp.md)
 - [zeroTrustDlpProfile](./zeroTrustDlpProfile.csharp.md)
 - [zeroTrustDnsLocation](./zeroTrustDnsLocation.csharp.md)
+- [zeroTrustGatewayCertificate](./zeroTrustGatewayCertificate.csharp.md)
 - [zeroTrustGatewayPolicy](./zeroTrustGatewayPolicy.csharp.md)
 - [zeroTrustGatewayProxyEndpoint](./zeroTrustGatewayProxyEndpoint.csharp.md)
 - [zeroTrustGatewaySettings](./zeroTrustGatewaySettings.csharp.md)

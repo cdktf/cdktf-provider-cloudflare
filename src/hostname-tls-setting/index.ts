@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface HostnameTlsSettingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Hostname that belongs to this zone name. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting#id HostnameTlsSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting#id HostnameTlsSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface HostnameTlsSettingConfig extends cdktf.TerraformMetaArguments {
   /**
   * TLS setting name. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting#setting HostnameTlsSetting#setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting#setting HostnameTlsSetting#setting}
   */
   readonly setting: string;
   /**
   * TLS setting value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
   */
   readonly value: string;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}
 */
 export class HostnameTlsSetting extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a HostnameTlsSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HostnameTlsSetting to import
-  * @param importFromId The id of the existing HostnameTlsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HostnameTlsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HostnameTlsSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_hostname_tls_setting',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
