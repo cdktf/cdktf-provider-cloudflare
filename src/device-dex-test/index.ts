@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/device_dex_test
 // generated from terraform resource schema
 
