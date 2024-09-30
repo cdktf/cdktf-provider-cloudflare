@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +15,27 @@ export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. Conflicts with `zone_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#account_id AccessPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#account_id AccessPolicy#account_id}
   */
   readonly accountId?: string;
   /**
   * The ID of the application the policy is associated with. Required when using `precedence`. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#application_id AccessPolicy#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#application_id AccessPolicy#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#approval_required AccessPolicy#approval_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#approval_required AccessPolicy#approval_required}
   */
   readonly approvalRequired?: boolean | cdktf.IResolvable;
   /**
   * Defines the action Access will take if the policy matches the user. Available values: `allow`, `deny`, `non_identity`, `bypass`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#decision AccessPolicy#decision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#decision AccessPolicy#decision}
   */
   readonly decision: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,67 +44,73 @@ export interface AccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Require this application to be served in an isolated browser for users matching this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#isolation_required AccessPolicy#isolation_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#isolation_required AccessPolicy#isolation_required}
   */
   readonly isolationRequired?: boolean | cdktf.IResolvable;
   /**
   * Friendly name of the Access Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name: string;
   /**
   * The unique precedence for policies on a single application. Required when using `application_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#precedence AccessPolicy#precedence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#precedence AccessPolicy#precedence}
   */
   readonly precedence?: number;
   /**
   * The prompt to display to the user for a justification for accessing the resource. Required when using `purpose_justification_required`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#purpose_justification_prompt AccessPolicy#purpose_justification_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#purpose_justification_prompt AccessPolicy#purpose_justification_prompt}
   */
   readonly purposeJustificationPrompt?: string;
   /**
   * Whether to prompt the user for a justification for accessing the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#purpose_justification_required AccessPolicy#purpose_justification_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#purpose_justification_required AccessPolicy#purpose_justification_required}
   */
   readonly purposeJustificationRequired?: boolean | cdktf.IResolvable;
   /**
   * How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#session_duration AccessPolicy#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#session_duration AccessPolicy#session_duration}
   */
   readonly sessionDuration?: string;
   /**
   * The zone identifier to target for the resource. Conflicts with `account_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#zone_id AccessPolicy#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#zone_id AccessPolicy#zone_id}
   */
   readonly zoneId?: string;
   /**
   * approval_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#approval_group AccessPolicy#approval_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#approval_group AccessPolicy#approval_group}
   */
   readonly approvalGroup?: AccessPolicyApprovalGroup[] | cdktf.IResolvable;
   /**
+  * connection_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#connection_rules AccessPolicy#connection_rules}
+  */
+  readonly connectionRules?: AccessPolicyConnectionRules;
+  /**
   * exclude block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#exclude AccessPolicy#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#exclude AccessPolicy#exclude}
   */
   readonly exclude?: AccessPolicyExclude[] | cdktf.IResolvable;
   /**
   * include block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#include AccessPolicy#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#include AccessPolicy#include}
   */
   readonly include: AccessPolicyInclude[] | cdktf.IResolvable;
   /**
   * require block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#require AccessPolicy#require}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#require AccessPolicy#require}
   */
   readonly require?: AccessPolicyRequire[] | cdktf.IResolvable;
 }
@@ -112,17 +118,17 @@ export interface AccessPolicyApprovalGroup {
   /**
   * Number of approvals needed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#approvals_needed AccessPolicy#approvals_needed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#approvals_needed AccessPolicy#approvals_needed}
   */
   readonly approvalsNeeded: number;
   /**
   * List of emails to request approval from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_addresses AccessPolicy#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_addresses AccessPolicy#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_list_uuid AccessPolicy#email_list_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_list_uuid AccessPolicy#email_list_uuid}
   */
   readonly emailListUuid?: string;
 }
@@ -291,17 +297,183 @@ export class AccessPolicyApprovalGroupList extends cdktf.ComplexList {
     return new AccessPolicyApprovalGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessPolicyConnectionRulesSsh {
+  /**
+  * Contains the Unix usernames that may be used when connecting over SSH.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#usernames AccessPolicy#usernames}
+  */
+  readonly usernames: string[];
+}
+
+export function accessPolicyConnectionRulesSshToTerraform(struct?: AccessPolicyConnectionRulesSshOutputReference | AccessPolicyConnectionRulesSsh): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    usernames: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.usernames),
+  }
+}
+
+
+export function accessPolicyConnectionRulesSshToHclTerraform(struct?: AccessPolicyConnectionRulesSshOutputReference | AccessPolicyConnectionRulesSsh): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    usernames: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.usernames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessPolicyConnectionRulesSshOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessPolicyConnectionRulesSsh | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._usernames !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usernames = this._usernames;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessPolicyConnectionRulesSsh | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._usernames = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._usernames = value.usernames;
+    }
+  }
+
+  // usernames - computed: false, optional: false, required: true
+  private _usernames?: string[]; 
+  public get usernames() {
+    return this.getListAttribute('usernames');
+  }
+  public set usernames(value: string[]) {
+    this._usernames = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernamesInput() {
+    return this._usernames;
+  }
+}
+export interface AccessPolicyConnectionRules {
+  /**
+  * ssh block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ssh AccessPolicy#ssh}
+  */
+  readonly ssh: AccessPolicyConnectionRulesSsh;
+}
+
+export function accessPolicyConnectionRulesToTerraform(struct?: AccessPolicyConnectionRulesOutputReference | AccessPolicyConnectionRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ssh: accessPolicyConnectionRulesSshToTerraform(struct!.ssh),
+  }
+}
+
+
+export function accessPolicyConnectionRulesToHclTerraform(struct?: AccessPolicyConnectionRulesOutputReference | AccessPolicyConnectionRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ssh: {
+      value: accessPolicyConnectionRulesSshToHclTerraform(struct!.ssh),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessPolicyConnectionRulesSshList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessPolicyConnectionRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessPolicyConnectionRules | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ssh?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ssh = this._ssh?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessPolicyConnectionRules | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ssh.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ssh.internalValue = value.ssh;
+    }
+  }
+
+  // ssh - computed: false, optional: false, required: true
+  private _ssh = new AccessPolicyConnectionRulesSshOutputReference(this, "ssh");
+  public get ssh() {
+    return this._ssh;
+  }
+  public putSsh(value: AccessPolicyConnectionRulesSsh) {
+    this._ssh.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshInput() {
+    return this._ssh.internalValue;
+  }
+}
 export interface AccessPolicyExcludeAuthContext {
   /**
   * The ACID of the Authentication Context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ac_id AccessPolicy#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ac_id AccessPolicy#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of the Authentication Context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -310,7 +482,7 @@ export interface AccessPolicyExcludeAuthContext {
   /**
   * The ID of the Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -477,7 +649,7 @@ export interface AccessPolicyExcludeAzure {
   /**
   * The ID of the Azure group or user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -486,7 +658,7 @@ export interface AccessPolicyExcludeAzure {
   /**
   * The ID of the Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -633,13 +805,13 @@ export interface AccessPolicyExcludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#evaluate_url AccessPolicy#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#evaluate_url AccessPolicy#evaluate_url}
   */
   readonly evaluateUrl?: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#keys_url AccessPolicy#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#keys_url AccessPolicy#keys_url}
   */
   readonly keysUrl?: string;
 }
@@ -786,19 +958,19 @@ export interface AccessPolicyExcludeGithub {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name?: string;
   /**
   * The teams that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#teams AccessPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#teams AccessPolicy#teams}
   */
   readonly teams?: string[];
 }
@@ -974,13 +1146,13 @@ export interface AccessPolicyExcludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email AccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email AccessPolicy#email}
   */
   readonly email?: string[];
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -1127,13 +1299,13 @@ export interface AccessPolicyExcludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
   /**
   * The name of the Okta Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name?: string[];
 }
@@ -1280,19 +1452,19 @@ export interface AccessPolicyExcludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#attribute_name AccessPolicy#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#attribute_name AccessPolicy#attribute_name}
   */
   readonly attributeName?: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#attribute_value AccessPolicy#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#attribute_value AccessPolicy#attribute_value}
   */
   readonly attributeValue?: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -1468,139 +1640,139 @@ export interface AccessPolicyExclude {
   /**
   * Matches any valid Access service token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#any_valid_service_token AccessPolicy#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#any_valid_service_token AccessPolicy#any_valid_service_token}
   */
   readonly anyValidServiceToken?: boolean | cdktf.IResolvable;
   /**
   * The type of authentication method. Refer to https://datatracker.ietf.org/doc/html/rfc8176#section-2 for possible types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#auth_method AccessPolicy#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#auth_method AccessPolicy#auth_method}
   */
   readonly authMethod?: string;
   /**
   * Matches any valid client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#certificate AccessPolicy#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#certificate AccessPolicy#certificate}
   */
   readonly certificate?: boolean | cdktf.IResolvable;
   /**
   * Matches a valid client certificate common name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#common_name AccessPolicy#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#common_name AccessPolicy#common_name}
   */
   readonly commonName?: string;
   /**
   * Overflow field if you need to have multiple common_name rules in a single policy.  Use in place of the singular common_name field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#common_names AccessPolicy#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#common_names AccessPolicy#common_names}
   */
   readonly commonNames?: string[];
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#device_posture AccessPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#device_posture AccessPolicy#device_posture}
   */
   readonly devicePosture?: string[];
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email AccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email AccessPolicy#email}
   */
   readonly email?: string[];
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_domain AccessPolicy#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_domain AccessPolicy#email_domain}
   */
   readonly emailDomain?: string[];
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_list AccessPolicy#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_list AccessPolicy#email_list}
   */
   readonly emailList?: string[];
   /**
   * Matches everyone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#everyone AccessPolicy#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#everyone AccessPolicy#everyone}
   */
   readonly everyone?: boolean | cdktf.IResolvable;
   /**
   * Matches a specific country.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#geo AccessPolicy#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#geo AccessPolicy#geo}
   */
   readonly geo?: string[];
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#group AccessPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#group AccessPolicy#group}
   */
   readonly group?: string[];
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ip AccessPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ip AccessPolicy#ip}
   */
   readonly ip?: string[];
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ip_list AccessPolicy#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ip_list AccessPolicy#ip_list}
   */
   readonly ipList?: string[];
   /**
   * The ID of a configured identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#login_method AccessPolicy#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#login_method AccessPolicy#login_method}
   */
   readonly loginMethod?: string[];
   /**
   * The ID of an Access service token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#service_token AccessPolicy#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#service_token AccessPolicy#service_token}
   */
   readonly serviceToken?: string[];
   /**
   * auth_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#auth_context AccessPolicy#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#auth_context AccessPolicy#auth_context}
   */
   readonly authContext?: AccessPolicyExcludeAuthContext[] | cdktf.IResolvable;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#azure AccessPolicy#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#azure AccessPolicy#azure}
   */
   readonly azure?: AccessPolicyExcludeAzure[] | cdktf.IResolvable;
   /**
   * external_evaluation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#external_evaluation AccessPolicy#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#external_evaluation AccessPolicy#external_evaluation}
   */
   readonly externalEvaluation?: AccessPolicyExcludeExternalEvaluation[] | cdktf.IResolvable;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#github AccessPolicy#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#github AccessPolicy#github}
   */
   readonly github?: AccessPolicyExcludeGithub[] | cdktf.IResolvable;
   /**
   * gsuite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#gsuite AccessPolicy#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#gsuite AccessPolicy#gsuite}
   */
   readonly gsuite?: AccessPolicyExcludeGsuite[] | cdktf.IResolvable;
   /**
   * okta block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#okta AccessPolicy#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#okta AccessPolicy#okta}
   */
   readonly okta?: AccessPolicyExcludeOkta[] | cdktf.IResolvable;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#saml AccessPolicy#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#saml AccessPolicy#saml}
   */
   readonly saml?: AccessPolicyExcludeSaml[] | cdktf.IResolvable;
 }
@@ -2356,13 +2528,13 @@ export interface AccessPolicyIncludeAuthContext {
   /**
   * The ACID of the Authentication Context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ac_id AccessPolicy#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ac_id AccessPolicy#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of the Authentication Context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2371,7 +2543,7 @@ export interface AccessPolicyIncludeAuthContext {
   /**
   * The ID of the Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -2538,7 +2710,7 @@ export interface AccessPolicyIncludeAzure {
   /**
   * The ID of the Azure group or user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2547,7 +2719,7 @@ export interface AccessPolicyIncludeAzure {
   /**
   * The ID of the Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -2694,13 +2866,13 @@ export interface AccessPolicyIncludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#evaluate_url AccessPolicy#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#evaluate_url AccessPolicy#evaluate_url}
   */
   readonly evaluateUrl?: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#keys_url AccessPolicy#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#keys_url AccessPolicy#keys_url}
   */
   readonly keysUrl?: string;
 }
@@ -2847,19 +3019,19 @@ export interface AccessPolicyIncludeGithub {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name?: string;
   /**
   * The teams that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#teams AccessPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#teams AccessPolicy#teams}
   */
   readonly teams?: string[];
 }
@@ -3035,13 +3207,13 @@ export interface AccessPolicyIncludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email AccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email AccessPolicy#email}
   */
   readonly email?: string[];
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -3188,13 +3360,13 @@ export interface AccessPolicyIncludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
   /**
   * The name of the Okta Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name?: string[];
 }
@@ -3341,19 +3513,19 @@ export interface AccessPolicyIncludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#attribute_name AccessPolicy#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#attribute_name AccessPolicy#attribute_name}
   */
   readonly attributeName?: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#attribute_value AccessPolicy#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#attribute_value AccessPolicy#attribute_value}
   */
   readonly attributeValue?: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -3529,139 +3701,139 @@ export interface AccessPolicyInclude {
   /**
   * Matches any valid Access service token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#any_valid_service_token AccessPolicy#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#any_valid_service_token AccessPolicy#any_valid_service_token}
   */
   readonly anyValidServiceToken?: boolean | cdktf.IResolvable;
   /**
   * The type of authentication method. Refer to https://datatracker.ietf.org/doc/html/rfc8176#section-2 for possible types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#auth_method AccessPolicy#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#auth_method AccessPolicy#auth_method}
   */
   readonly authMethod?: string;
   /**
   * Matches any valid client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#certificate AccessPolicy#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#certificate AccessPolicy#certificate}
   */
   readonly certificate?: boolean | cdktf.IResolvable;
   /**
   * Matches a valid client certificate common name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#common_name AccessPolicy#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#common_name AccessPolicy#common_name}
   */
   readonly commonName?: string;
   /**
   * Overflow field if you need to have multiple common_name rules in a single policy.  Use in place of the singular common_name field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#common_names AccessPolicy#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#common_names AccessPolicy#common_names}
   */
   readonly commonNames?: string[];
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#device_posture AccessPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#device_posture AccessPolicy#device_posture}
   */
   readonly devicePosture?: string[];
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email AccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email AccessPolicy#email}
   */
   readonly email?: string[];
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_domain AccessPolicy#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_domain AccessPolicy#email_domain}
   */
   readonly emailDomain?: string[];
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_list AccessPolicy#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_list AccessPolicy#email_list}
   */
   readonly emailList?: string[];
   /**
   * Matches everyone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#everyone AccessPolicy#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#everyone AccessPolicy#everyone}
   */
   readonly everyone?: boolean | cdktf.IResolvable;
   /**
   * Matches a specific country.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#geo AccessPolicy#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#geo AccessPolicy#geo}
   */
   readonly geo?: string[];
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#group AccessPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#group AccessPolicy#group}
   */
   readonly group?: string[];
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ip AccessPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ip AccessPolicy#ip}
   */
   readonly ip?: string[];
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ip_list AccessPolicy#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ip_list AccessPolicy#ip_list}
   */
   readonly ipList?: string[];
   /**
   * The ID of a configured identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#login_method AccessPolicy#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#login_method AccessPolicy#login_method}
   */
   readonly loginMethod?: string[];
   /**
   * The ID of an Access service token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#service_token AccessPolicy#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#service_token AccessPolicy#service_token}
   */
   readonly serviceToken?: string[];
   /**
   * auth_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#auth_context AccessPolicy#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#auth_context AccessPolicy#auth_context}
   */
   readonly authContext?: AccessPolicyIncludeAuthContext[] | cdktf.IResolvable;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#azure AccessPolicy#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#azure AccessPolicy#azure}
   */
   readonly azure?: AccessPolicyIncludeAzure[] | cdktf.IResolvable;
   /**
   * external_evaluation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#external_evaluation AccessPolicy#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#external_evaluation AccessPolicy#external_evaluation}
   */
   readonly externalEvaluation?: AccessPolicyIncludeExternalEvaluation[] | cdktf.IResolvable;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#github AccessPolicy#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#github AccessPolicy#github}
   */
   readonly github?: AccessPolicyIncludeGithub[] | cdktf.IResolvable;
   /**
   * gsuite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#gsuite AccessPolicy#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#gsuite AccessPolicy#gsuite}
   */
   readonly gsuite?: AccessPolicyIncludeGsuite[] | cdktf.IResolvable;
   /**
   * okta block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#okta AccessPolicy#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#okta AccessPolicy#okta}
   */
   readonly okta?: AccessPolicyIncludeOkta[] | cdktf.IResolvable;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#saml AccessPolicy#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#saml AccessPolicy#saml}
   */
   readonly saml?: AccessPolicyIncludeSaml[] | cdktf.IResolvable;
 }
@@ -4417,13 +4589,13 @@ export interface AccessPolicyRequireAuthContext {
   /**
   * The ACID of the Authentication Context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ac_id AccessPolicy#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ac_id AccessPolicy#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of the Authentication Context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4432,7 +4604,7 @@ export interface AccessPolicyRequireAuthContext {
   /**
   * The ID of the Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -4599,7 +4771,7 @@ export interface AccessPolicyRequireAzure {
   /**
   * The ID of the Azure group or user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#id AccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#id AccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4608,7 +4780,7 @@ export interface AccessPolicyRequireAzure {
   /**
   * The ID of the Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -4755,13 +4927,13 @@ export interface AccessPolicyRequireExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#evaluate_url AccessPolicy#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#evaluate_url AccessPolicy#evaluate_url}
   */
   readonly evaluateUrl?: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#keys_url AccessPolicy#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#keys_url AccessPolicy#keys_url}
   */
   readonly keysUrl?: string;
 }
@@ -4908,19 +5080,19 @@ export interface AccessPolicyRequireGithub {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name?: string;
   /**
   * The teams that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#teams AccessPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#teams AccessPolicy#teams}
   */
   readonly teams?: string[];
 }
@@ -5096,13 +5268,13 @@ export interface AccessPolicyRequireGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email AccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email AccessPolicy#email}
   */
   readonly email?: string[];
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -5249,13 +5421,13 @@ export interface AccessPolicyRequireOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
   /**
   * The name of the Okta Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#name AccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#name AccessPolicy#name}
   */
   readonly name?: string[];
 }
@@ -5402,19 +5574,19 @@ export interface AccessPolicyRequireSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#attribute_name AccessPolicy#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#attribute_name AccessPolicy#attribute_name}
   */
   readonly attributeName?: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#attribute_value AccessPolicy#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#attribute_value AccessPolicy#attribute_value}
   */
   readonly attributeValue?: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
   */
   readonly identityProviderId?: string;
 }
@@ -5590,139 +5762,139 @@ export interface AccessPolicyRequire {
   /**
   * Matches any valid Access service token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#any_valid_service_token AccessPolicy#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#any_valid_service_token AccessPolicy#any_valid_service_token}
   */
   readonly anyValidServiceToken?: boolean | cdktf.IResolvable;
   /**
   * The type of authentication method. Refer to https://datatracker.ietf.org/doc/html/rfc8176#section-2 for possible types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#auth_method AccessPolicy#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#auth_method AccessPolicy#auth_method}
   */
   readonly authMethod?: string;
   /**
   * Matches any valid client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#certificate AccessPolicy#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#certificate AccessPolicy#certificate}
   */
   readonly certificate?: boolean | cdktf.IResolvable;
   /**
   * Matches a valid client certificate common name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#common_name AccessPolicy#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#common_name AccessPolicy#common_name}
   */
   readonly commonName?: string;
   /**
   * Overflow field if you need to have multiple common_name rules in a single policy.  Use in place of the singular common_name field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#common_names AccessPolicy#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#common_names AccessPolicy#common_names}
   */
   readonly commonNames?: string[];
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#device_posture AccessPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#device_posture AccessPolicy#device_posture}
   */
   readonly devicePosture?: string[];
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email AccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email AccessPolicy#email}
   */
   readonly email?: string[];
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_domain AccessPolicy#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_domain AccessPolicy#email_domain}
   */
   readonly emailDomain?: string[];
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#email_list AccessPolicy#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#email_list AccessPolicy#email_list}
   */
   readonly emailList?: string[];
   /**
   * Matches everyone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#everyone AccessPolicy#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#everyone AccessPolicy#everyone}
   */
   readonly everyone?: boolean | cdktf.IResolvable;
   /**
   * Matches a specific country.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#geo AccessPolicy#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#geo AccessPolicy#geo}
   */
   readonly geo?: string[];
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#group AccessPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#group AccessPolicy#group}
   */
   readonly group?: string[];
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ip AccessPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ip AccessPolicy#ip}
   */
   readonly ip?: string[];
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#ip_list AccessPolicy#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#ip_list AccessPolicy#ip_list}
   */
   readonly ipList?: string[];
   /**
   * The ID of a configured identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#login_method AccessPolicy#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#login_method AccessPolicy#login_method}
   */
   readonly loginMethod?: string[];
   /**
   * The ID of an Access service token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#service_token AccessPolicy#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#service_token AccessPolicy#service_token}
   */
   readonly serviceToken?: string[];
   /**
   * auth_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#auth_context AccessPolicy#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#auth_context AccessPolicy#auth_context}
   */
   readonly authContext?: AccessPolicyRequireAuthContext[] | cdktf.IResolvable;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#azure AccessPolicy#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#azure AccessPolicy#azure}
   */
   readonly azure?: AccessPolicyRequireAzure[] | cdktf.IResolvable;
   /**
   * external_evaluation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#external_evaluation AccessPolicy#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#external_evaluation AccessPolicy#external_evaluation}
   */
   readonly externalEvaluation?: AccessPolicyRequireExternalEvaluation[] | cdktf.IResolvable;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#github AccessPolicy#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#github AccessPolicy#github}
   */
   readonly github?: AccessPolicyRequireGithub[] | cdktf.IResolvable;
   /**
   * gsuite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#gsuite AccessPolicy#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#gsuite AccessPolicy#gsuite}
   */
   readonly gsuite?: AccessPolicyRequireGsuite[] | cdktf.IResolvable;
   /**
   * okta block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#okta AccessPolicy#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#okta AccessPolicy#okta}
   */
   readonly okta?: AccessPolicyRequireOkta[] | cdktf.IResolvable;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#saml AccessPolicy#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#saml AccessPolicy#saml}
   */
   readonly saml?: AccessPolicyRequireSaml[] | cdktf.IResolvable;
 }
@@ -6476,7 +6648,7 @@ export class AccessPolicyRequireList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy cloudflare_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy cloudflare_access_policy}
 */
 export class AccessPolicy extends cdktf.TerraformResource {
 
@@ -6492,7 +6664,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccessPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessPolicy to import
-  * @param importFromId The id of the existing AccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6504,7 +6676,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy cloudflare_access_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy cloudflare_access_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6515,7 +6687,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -6539,6 +6711,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
     this._sessionDuration = config.sessionDuration;
     this._zoneId = config.zoneId;
     this._approvalGroup.internalValue = config.approvalGroup;
+    this._connectionRules.internalValue = config.connectionRules;
     this._exclude.internalValue = config.exclude;
     this._include.internalValue = config.include;
     this._require.internalValue = config.require;
@@ -6750,6 +6923,22 @@ export class AccessPolicy extends cdktf.TerraformResource {
     return this._approvalGroup.internalValue;
   }
 
+  // connection_rules - computed: false, optional: true, required: false
+  private _connectionRules = new AccessPolicyConnectionRulesOutputReference(this, "connection_rules");
+  public get connectionRules() {
+    return this._connectionRules;
+  }
+  public putConnectionRules(value: AccessPolicyConnectionRules) {
+    this._connectionRules.internalValue = value;
+  }
+  public resetConnectionRules() {
+    this._connectionRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionRulesInput() {
+    return this._connectionRules.internalValue;
+  }
+
   // exclude - computed: false, optional: true, required: false
   private _exclude = new AccessPolicyExcludeList(this, "exclude", false);
   public get exclude() {
@@ -6814,6 +7003,7 @@ export class AccessPolicy extends cdktf.TerraformResource {
       session_duration: cdktf.stringToTerraform(this._sessionDuration),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       approval_group: cdktf.listMapper(accessPolicyApprovalGroupToTerraform, true)(this._approvalGroup.internalValue),
+      connection_rules: accessPolicyConnectionRulesToTerraform(this._connectionRules.internalValue),
       exclude: cdktf.listMapper(accessPolicyExcludeToTerraform, true)(this._exclude.internalValue),
       include: cdktf.listMapper(accessPolicyIncludeToTerraform, true)(this._include.internalValue),
       require: cdktf.listMapper(accessPolicyRequireToTerraform, true)(this._require.internalValue),
@@ -6899,6 +7089,12 @@ export class AccessPolicy extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "AccessPolicyApprovalGroupList",
+      },
+      connection_rules: {
+        value: accessPolicyConnectionRulesToHclTerraform(this._connectionRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AccessPolicyConnectionRulesList",
       },
       exclude: {
         value: cdktf.listMapperHcl(accessPolicyExcludeToHclTerraform, true)(this._exclude.internalValue),

@@ -57,6 +57,7 @@ Object.defineProperty(exports, 'healthcheck', { get: function () { return requir
 Object.defineProperty(exports, 'hostnameTlsSetting', { get: function () { return require('./hostname-tls-setting'); } });
 Object.defineProperty(exports, 'hostnameTlsSettingCiphers', { get: function () { return require('./hostname-tls-setting-ciphers'); } });
 Object.defineProperty(exports, 'hyperdriveConfig', { get: function () { return require('./hyperdrive-config'); } });
+Object.defineProperty(exports, 'infrastructureAccessTarget', { get: function () { return require('./infrastructure-access-target'); } });
 Object.defineProperty(exports, 'ipsecTunnel', { get: function () { return require('./ipsec-tunnel'); } });
 Object.defineProperty(exports, 'keylessCertificate', { get: function () { return require('./keyless-certificate'); } });
 Object.defineProperty(exports, 'list', { get: function () { return require('./list'); } });
@@ -177,6 +178,7 @@ Object.defineProperty(exports, 'dataCloudflareDevices', { get: function () { ret
 Object.defineProperty(exports, 'dataCloudflareDlpDatasets', { get: function () { return require('./data-cloudflare-dlp-datasets'); } });
 Object.defineProperty(exports, 'dataCloudflareGatewayAppTypes', { get: function () { return require('./data-cloudflare-gateway-app-types'); } });
 Object.defineProperty(exports, 'dataCloudflareGatewayCategories', { get: function () { return require('./data-cloudflare-gateway-categories'); } });
+Object.defineProperty(exports, 'dataCloudflareInfrastructureAccessTargets', { get: function () { return require('./data-cloudflare-infrastructure-access-targets'); } });
 Object.defineProperty(exports, 'dataCloudflareIpRanges', { get: function () { return require('./data-cloudflare-ip-ranges'); } });
 Object.defineProperty(exports, 'dataCloudflareList', { get: function () { return require('./data-cloudflare-list'); } });
 Object.defineProperty(exports, 'dataCloudflareLists', { get: function () { return require('./data-cloudflare-lists'); } });

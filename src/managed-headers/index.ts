@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ManagedHeadersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#id ManagedHeaders#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#id ManagedHeaders#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface ManagedHeadersConfig extends cdktf.TerraformMetaArguments {
   /**
   * The zone identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#zone_id ManagedHeaders#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#zone_id ManagedHeaders#zone_id}
   */
   readonly zoneId: string;
   /**
   * managed_request_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#managed_request_headers ManagedHeaders#managed_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#managed_request_headers ManagedHeaders#managed_request_headers}
   */
   readonly managedRequestHeaders?: ManagedHeadersManagedRequestHeaders[] | cdktf.IResolvable;
   /**
   * managed_response_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#managed_response_headers ManagedHeaders#managed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#managed_response_headers ManagedHeaders#managed_response_headers}
   */
   readonly managedResponseHeaders?: ManagedHeadersManagedResponseHeaders[] | cdktf.IResolvable;
 }
@@ -42,13 +42,13 @@ export interface ManagedHeadersManagedRequestHeaders {
   /**
   * Whether the headers rule is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#enabled ManagedHeaders#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#enabled ManagedHeaders#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Unique headers rule identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#id ManagedHeaders#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#id ManagedHeaders#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -192,13 +192,13 @@ export interface ManagedHeadersManagedResponseHeaders {
   /**
   * Whether the headers rule is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#enabled ManagedHeaders#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#enabled ManagedHeaders#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Unique headers rule identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#id ManagedHeaders#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#id ManagedHeaders#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -340,7 +340,7 @@ export class ManagedHeadersManagedResponseHeadersList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers cloudflare_managed_headers}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers cloudflare_managed_headers}
 */
 export class ManagedHeaders extends cdktf.TerraformResource {
 
@@ -356,7 +356,7 @@ export class ManagedHeaders extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedHeaders resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedHeaders to import
-  * @param importFromId The id of the existing ManagedHeaders that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedHeaders that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedHeaders to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -368,7 +368,7 @@ export class ManagedHeaders extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/managed_headers cloudflare_managed_headers} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/managed_headers cloudflare_managed_headers} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -379,7 +379,7 @@ export class ManagedHeaders extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_managed_headers',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
