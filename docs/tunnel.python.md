@@ -4,7 +4,7 @@
 
 ### Tunnel <a name="Tunnel" id="@cdktf/provider-cloudflare.tunnel.Tunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel cloudflare_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel cloudflare_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer"></a>
 
@@ -44,7 +44,7 @@ tunnel.Tunnel(
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer.parameter.name">name</a></code> | <code>str</code> | A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer.parameter.secret">secret</a></code> | <code>str</code> | 32 or more bytes, encoded as a base64 string. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer.parameter.configSrc">config_src</a></code> | <code>str</code> | Indicates if this is a locally or remotely configured tunnel. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#id Tunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.Tunnel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#id Tunnel#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#account_id Tunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#account_id Tunnel#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#name Tunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#name Tunnel#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Create Argo Tunnel endpoint sets this as the tunnel's password. Anyone wishing to run the tunnel needs this password. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#secret Tunnel#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#secret Tunnel#secret}
 
 ---
 
@@ -148,7 +148,7 @@ Indicates if this is a locally or remotely configured tunnel.
 
 If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard or using tunnel_config, tunnel_route or tunnel_virtual_network resources. Available values: `local`, `cloudflare`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#config_src Tunnel#config_src}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#config_src Tunnel#config_src}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#id Tunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#id Tunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -646,7 +646,7 @@ The construct id used in the generated config for the Tunnel to import.
 
 The id of the existing Tunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1011,7 +1011,7 @@ tunnel.TunnelConfig(
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.name">name</a></code> | <code>str</code> | A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.secret">secret</a></code> | <code>str</code> | 32 or more bytes, encoded as a base64 string. |
 | <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.configSrc">config_src</a></code> | <code>str</code> | Indicates if this is a locally or remotely configured tunnel. |
-| <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#id Tunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tunnel.TunnelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#id Tunnel#id}. |
 
 ---
 
@@ -1095,7 +1095,7 @@ account_id: str
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#account_id Tunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#account_id Tunnel#account_id}
 
 ---
 
@@ -1109,7 +1109,7 @@ name: str
 
 A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#name Tunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#name Tunnel#name}
 
 ---
 
@@ -1125,7 +1125,7 @@ secret: str
 
 The Create Argo Tunnel endpoint sets this as the tunnel's password. Anyone wishing to run the tunnel needs this password. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#secret Tunnel#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#secret Tunnel#secret}
 
 ---
 
@@ -1141,7 +1141,7 @@ Indicates if this is a locally or remotely configured tunnel.
 
 If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard or using tunnel_config, tunnel_route or tunnel_virtual_network resources. Available values: `local`, `cloudflare`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#config_src Tunnel#config_src}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#config_src Tunnel#config_src}
 
 ---
 
@@ -1153,7 +1153,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/tunnel#id Tunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/tunnel#id Tunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

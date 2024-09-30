@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface ZeroTrustRiskBehaviorConfig extends cdktf.TerraformMetaArgument
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior#account_id ZeroTrustRiskBehavior#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior#account_id ZeroTrustRiskBehavior#account_id}
   */
   readonly accountId: string;
   /**
   * behavior block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior#behavior ZeroTrustRiskBehavior#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior#behavior ZeroTrustRiskBehavior#behavior}
   */
   readonly behavior?: ZeroTrustRiskBehaviorBehavior[] | cdktf.IResolvable;
 }
@@ -29,19 +24,19 @@ export interface ZeroTrustRiskBehaviorBehavior {
   /**
   * Whether this risk behavior type is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior#enabled ZeroTrustRiskBehavior#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior#enabled ZeroTrustRiskBehavior#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Name of this risk behavior type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior#name ZeroTrustRiskBehavior#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior#name ZeroTrustRiskBehavior#name}
   */
   readonly name: string;
   /**
   * Risk level. Available values: `low`, `medium`, `high`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior#risk_level ZeroTrustRiskBehavior#risk_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior#risk_level ZeroTrustRiskBehavior#risk_level}
   */
   readonly riskLevel: string;
 }
@@ -206,7 +201,7 @@ export class ZeroTrustRiskBehaviorBehaviorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}
 */
 export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
 
@@ -222,7 +217,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustRiskBehavior resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustRiskBehavior to import
-  * @param importFromId The id of the existing ZeroTrustRiskBehavior that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustRiskBehavior that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustRiskBehavior to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -234,7 +229,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +240,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_risk_behavior',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

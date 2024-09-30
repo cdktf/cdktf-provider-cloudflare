@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_app_types
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_app_types
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataCloudflareGatewayAppTypesConfig extends cdktf.TerraformMeta
   /**
   * The account ID to fetch Gateway App Types from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
   */
   readonly accountId: string;
 }
@@ -111,7 +106,7 @@ export class DataCloudflareGatewayAppTypesAppTypesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}
 */
 export class DataCloudflareGatewayAppTypes extends cdktf.TerraformDataSource {
 
@@ -127,7 +122,7 @@ export class DataCloudflareGatewayAppTypes extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareGatewayAppTypes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareGatewayAppTypes to import
-  * @param importFromId The id of the existing DataCloudflareGatewayAppTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_app_types#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareGatewayAppTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_app_types#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareGatewayAppTypes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -139,7 +134,7 @@ export class DataCloudflareGatewayAppTypes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -150,7 +145,7 @@ export class DataCloudflareGatewayAppTypes extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_gateway_app_types',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
