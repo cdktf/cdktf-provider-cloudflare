@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccessidentityprovider"
 
 datacloudflareaccessidentityprovider.NewDataCloudflareAccessIdentityProvider(scope Construct, id *string, config DataCloudflareAccessIdentityProviderConfig) DataCloudflareAccessIdentityProvider
 ```
@@ -297,7 +297,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccessidentityprovider"
 
 datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccessidentityprovider"
 
 datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProvider_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccessidentityprovider"
 
 datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProvider_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProvider_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccessidentityprovider"
 
 datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccessidentityprovider"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccessidentityprovider"
 
 &datacloudflareaccessidentityprovider.DataCloudflareAccessIdentityProviderConfig {
 	Connection: interface{},
