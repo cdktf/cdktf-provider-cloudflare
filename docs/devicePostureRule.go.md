@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRule(scope Construct, id *string, config DevicePostureRuleConfig) DevicePostureRule
 ```
@@ -453,7 +453,7 @@ func ResetSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.DevicePostureRule_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.DevicePostureRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ deviceposturerule.DevicePostureRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.DevicePostureRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ deviceposturerule.DevicePostureRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.DevicePostureRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 &deviceposturerule.DevicePostureRuleConfig {
 	Connection: interface{},
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 &deviceposturerule.DevicePostureRuleInput {
 	ActiveThreats: *f64,
@@ -1826,7 +1826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 &deviceposturerule.DevicePostureRuleInputLocations {
 	Paths: *[]*string,
@@ -1876,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 &deviceposturerule.DevicePostureRuleMatch {
 	Platform: *string,
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRuleInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevicePostureRuleInputList
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRuleInputLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevicePostureRuleInputLocationsList
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRuleInputLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevicePostureRuleInputLocationsOutputReference
 ```
@@ -2557,7 +2557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRuleInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevicePostureRuleInputOutputReference
 ```
@@ -3939,7 +3939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRuleMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevicePostureRuleMatchList
 ```
@@ -4099,7 +4099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/deviceposturerule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/deviceposturerule"
 
 deviceposturerule.NewDevicePostureRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevicePostureRuleMatchOutputReference
 ```
