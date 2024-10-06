@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.NewApiShieldOperationSchemaValidationSettings(scope Construct, id *string, config ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings
 ```
@@ -392,7 +392,7 @@ func ResetMitigationAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSet
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSet
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperationschemavalidationsettings"
 
 apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperationSchemaValidationSettings.ApiShieldOperationSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperationschemavalidationsettings"
 
 &apishieldoperationschemavalidationsettings.ApiShieldOperationSchemaValidationSettingsConfig {
 	Connection: interface{},
