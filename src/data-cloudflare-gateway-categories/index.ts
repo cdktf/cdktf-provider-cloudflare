@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/gateway_categories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareGatewayCategoriesConfig extends cdktf.TerraformMe
   /**
   * The account ID to fetch Gateway Categories from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
   */
   readonly accountId: string;
 }
@@ -217,7 +217,7 @@ export class DataCloudflareGatewayCategoriesCategoriesList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}
 */
 export class DataCloudflareGatewayCategories extends cdktf.TerraformDataSource {
 
@@ -233,7 +233,7 @@ export class DataCloudflareGatewayCategories extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareGatewayCategories resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareGatewayCategories to import
-  * @param importFromId The id of the existing DataCloudflareGatewayCategories that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareGatewayCategories that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/gateway_categories#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareGatewayCategories to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -245,7 +245,7 @@ export class DataCloudflareGatewayCategories extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories cloudflare_gateway_categories} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/gateway_categories cloudflare_gateway_categories} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,7 +256,7 @@ export class DataCloudflareGatewayCategories extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_gateway_categories',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface MagicWanStaticRouteConfig extends cdktf.TerraformMetaArguments 
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
   */
   readonly accountId?: string;
   /**
   * List of Cloudflare colocation regions for this static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
   */
   readonly coloNames?: string[];
   /**
   * List of Cloudflare colocation names for this static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
   */
   readonly coloRegions?: string[];
   /**
   * Description of the static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#id MagicWanStaticRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#id MagicWanStaticRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface MagicWanStaticRouteConfig extends cdktf.TerraformMetaArguments 
   /**
   * The nexthop IP address where traffic will be routed to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
   */
   readonly nexthop: string;
   /**
   * Your network prefix using CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
   */
   readonly prefix: string;
   /**
   * The priority for the static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
   */
   readonly priority: number;
   /**
   * The optional weight for ECMP routes. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
   */
   readonly weight?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}
 */
 export class MagicWanStaticRoute extends cdktf.TerraformResource {
 
@@ -86,7 +86,7 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MagicWanStaticRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicWanStaticRoute to import
-  * @param importFromId The id of the existing MagicWanStaticRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicWanStaticRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicWanStaticRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +98,7 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_wan_static_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `cloudflare_fallback_domain`
 
-Refer to the Terraform Registry for docs: [`cloudflare_fallback_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/fallback_domain).
+Refer to the Terraform Registry for docs: [`cloudflare_fallback_domain`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/fallback_domain).
