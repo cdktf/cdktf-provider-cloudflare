@@ -4,12 +4,12 @@
 
 ### ZeroTrustLocalFallbackDomain <a name="ZeroTrustLocalFallbackDomain" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.NewZeroTrustLocalFallbackDomain(scope Construct, id *string, config ZeroTrustLocalFallbackDomainConfig) ZeroTrustLocalFallbackDomain
 ```
@@ -405,7 +405,7 @@ func ResetPolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomain_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomain_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomain_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ZeroTrustLocalFallbackDoma
 
 The id of the existing ZeroTrustLocalFallbackDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 &zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomainConfig {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlo
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.domains">Domains</a></code> | <code>interface{}</code> | domains block. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | The settings policy for which to configure this fallback domain policy. |
 
 ---
@@ -897,7 +897,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#account_id ZeroTrustLocalFallbackDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#account_id ZeroTrustLocalFallbackDomain#account_id}
 
 ---
 
@@ -911,7 +911,7 @@ Domains interface{}
 
 domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#domains ZeroTrustLocalFallbackDomain#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#domains ZeroTrustLocalFallbackDomain#domains}
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ PolicyId *string
 
 The settings policy for which to configure this fallback domain policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#policy_id ZeroTrustLocalFallbackDomain#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#policy_id ZeroTrustLocalFallbackDomain#policy_id}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 &zerotrustlocalfallbackdomain.ZeroTrustLocalFallbackDomainDomains {
 	Description: *string,
@@ -978,7 +978,7 @@ Description *string
 
 A description of the fallback domain, displayed in the client UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#description ZeroTrustLocalFallbackDomain#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#description ZeroTrustLocalFallbackDomain#description}
 
 ---
 
@@ -992,7 +992,7 @@ DnsServer *[]*string
 
 A list of IP addresses to handle domain resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#dns_server ZeroTrustLocalFallbackDomain#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#dns_server ZeroTrustLocalFallbackDomain#dns_server}
 
 ---
 
@@ -1006,7 +1006,7 @@ Suffix *string
 
 The domain suffix to match when resolving locally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain#suffix ZeroTrustLocalFallbackDomain#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_local_fallback_domain#suffix ZeroTrustLocalFallbackDomain#suffix}
 
 ---
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.NewZeroTrustLocalFallbackDomainDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustLocalFallbackDomainDomainsList
 ```
@@ -1177,7 +1177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlocalfallbackdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlocalfallbackdomain"
 
 zerotrustlocalfallbackdomain.NewZeroTrustLocalFallbackDomainDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustLocalFallbackDomainDomainsOutputReference
 ```

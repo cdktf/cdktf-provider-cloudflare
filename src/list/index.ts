@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +10,31 @@ export interface ListConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#account_id List#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#account_id List#account_id}
   */
   readonly accountId: string;
   /**
   * An optional description of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#description List#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#description List#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#id List#id}
+  * The type of items the list will contain. Must provide only one of: `ip`, `redirect`, `hostname`, `asn`..
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The type of items the list will contain. Available values: `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#kind List#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#kind List#kind}
   */
   readonly kind: string;
   /**
-  * The name of the list. **Modifying this attribute will force creation of a new resource.**
+  * The name of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#name List#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#name List#name}
   */
   readonly name: string;
   /**
   * item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#item List#item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#item List#item}
   */
   readonly item?: ListItem[] | cdktf.IResolvable;
 }
@@ -54,7 +42,7 @@ export interface ListItemValueHostname {
   /**
   * The FQDN to match on. Wildcard sub-domain matching is allowed. Eg. *.abc.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#url_hostname List#url_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#url_hostname List#url_hostname}
   */
   readonly urlHostname: string;
 }
@@ -169,43 +157,43 @@ export interface ListItemValueRedirect {
   /**
   * Whether the redirect also matches subdomains of the source url. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#include_subdomains List#include_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#include_subdomains List#include_subdomains}
   */
   readonly includeSubdomains?: string;
   /**
   * Whether to preserve the path suffix when doing subpath matching. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}
   */
   readonly preservePathSuffix?: string;
   /**
   * Whether the redirect target url should keep the query string of the request's url. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#preserve_query_string List#preserve_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#preserve_query_string List#preserve_query_string}
   */
   readonly preserveQueryString?: string;
   /**
   * The source url of the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#source_url List#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#source_url List#source_url}
   */
   readonly sourceUrl: string;
   /**
   * The status code to be used when redirecting a request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#status_code List#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#status_code List#status_code}
   */
   readonly statusCode?: number;
   /**
   * Whether the redirect also matches subpaths of the source url. Available values: `disabled`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#subpath_matching List#subpath_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#subpath_matching List#subpath_matching}
   */
   readonly subpathMatching?: string;
   /**
   * The target url of the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#target_url List#target_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#target_url List#target_url}
   */
   readonly targetUrl: string;
 }
@@ -489,28 +477,28 @@ export class ListItemValueRedirectList extends cdktf.ComplexList {
 }
 export interface ListItemValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#asn List#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#asn List#asn}
   */
   readonly asn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#ip List#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#ip List#ip}
   */
   readonly ip?: string;
   /**
   * hostname block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#hostname List#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#hostname List#hostname}
   */
   readonly hostname?: ListItemValueHostname[] | cdktf.IResolvable;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#redirect List#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#redirect List#redirect}
   */
   readonly redirect?: ListItemValueRedirect[] | cdktf.IResolvable;
 }
 
-export function listItemValueToTerraform(struct?: ListItemValueOutputReference | ListItemValue): any {
+export function listItemValueToTerraform(struct?: ListItemValue | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -524,7 +512,7 @@ export function listItemValueToTerraform(struct?: ListItemValueOutputReference |
 }
 
 
-export function listItemValueToHclTerraform(struct?: ListItemValueOutputReference | ListItemValue): any {
+export function listItemValueToHclTerraform(struct?: ListItemValue | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -562,16 +550,22 @@ export function listItemValueToHclTerraform(struct?: ListItemValueOutputReferenc
 
 export class ListItemValueOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ListItemValue | undefined {
+  public get internalValue(): ListItemValue | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._asn !== undefined) {
@@ -593,16 +587,22 @@ export class ListItemValueOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ListItemValue | undefined) {
+  public set internalValue(value: ListItemValue | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._asn = undefined;
       this._ip = undefined;
       this._hostname.internalValue = undefined;
       this._redirect.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._asn = value.asn;
       this._ip = value.ip;
       this._hostname.internalValue = value.hostname;
@@ -674,19 +674,39 @@ export class ListItemValueOutputReference extends cdktf.ComplexObject {
     return this._redirect.internalValue;
   }
 }
+
+export class ListItemValueList extends cdktf.ComplexList {
+  public internalValue? : ListItemValue[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ListItemValueOutputReference {
+    return new ListItemValueOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ListItem {
   /**
   * An optional comment for the item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#comment List#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#comment List#comment}
   */
   readonly comment?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#value List#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#value List#value}
   */
-  readonly value: ListItemValue;
+  readonly value?: ListItemValue[] | cdktf.IResolvable;
 }
 
 export function listItemToTerraform(struct?: ListItem | cdktf.IResolvable): any {
@@ -696,7 +716,7 @@ export function listItemToTerraform(struct?: ListItem | cdktf.IResolvable): any 
   }
   return {
     comment: cdktf.stringToTerraform(struct!.comment),
-    value: listItemValueToTerraform(struct!.value),
+    value: cdktf.listMapper(listItemValueToTerraform, true)(struct!.value),
   }
 }
 
@@ -714,7 +734,7 @@ export function listItemToHclTerraform(struct?: ListItem | cdktf.IResolvable): a
       storageClassType: "string",
     },
     value: {
-      value: listItemValueToHclTerraform(struct!.value),
+      value: cdktf.listMapperHcl(listItemValueToHclTerraform, true)(struct!.value),
       isBlock: true,
       type: "list",
       storageClassType: "ListItemValueList",
@@ -791,13 +811,16 @@ export class ListItemOutputReference extends cdktf.ComplexObject {
     return this._comment;
   }
 
-  // value - computed: false, optional: false, required: true
-  private _value = new ListItemValueOutputReference(this, "value");
+  // value - computed: false, optional: true, required: false
+  private _value = new ListItemValueList(this, "value", false);
   public get value() {
     return this._value;
   }
-  public putValue(value: ListItemValue) {
+  public putValue(value: ListItemValue[] | cdktf.IResolvable) {
     this._value.internalValue = value;
+  }
+  public resetValue() {
+    this._value.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -826,7 +849,7 @@ export class ListItemList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list cloudflare_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list cloudflare_list}
 */
 export class List extends cdktf.TerraformResource {
 
@@ -842,7 +865,7 @@ export class List extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a List resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the List to import
-  * @param importFromId The id of the existing List that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing List that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the List to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -854,7 +877,7 @@ export class List extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list cloudflare_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list cloudflare_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -865,7 +888,7 @@ export class List extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
@@ -878,7 +901,6 @@ export class List extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._description = config.description;
-    this._id = config.id;
     this._kind = config.kind;
     this._name = config.name;
     this._item.internalValue = config.item;
@@ -917,20 +939,9 @@ export class List extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // kind - computed: false, optional: false, required: true
@@ -983,7 +994,6 @@ export class List extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
       kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
       item: cdktf.listMapper(listItemToTerraform, true)(this._item.internalValue),
@@ -1000,12 +1010,6 @@ export class List extends cdktf.TerraformResource {
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

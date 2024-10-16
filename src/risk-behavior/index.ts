@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface RiskBehaviorConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
   */
   readonly accountId: string;
   /**
   * behavior block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
   */
   readonly behavior?: RiskBehaviorBehavior[] | cdktf.IResolvable;
 }
@@ -29,19 +24,19 @@ export interface RiskBehaviorBehavior {
   /**
   * Whether this risk behavior type is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior#enabled RiskBehavior#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior#enabled RiskBehavior#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Name of this risk behavior type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior#name RiskBehavior#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior#name RiskBehavior#name}
   */
   readonly name: string;
   /**
   * Risk level. Available values: `low`, `medium`, `high`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior#risk_level RiskBehavior#risk_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior#risk_level RiskBehavior#risk_level}
   */
   readonly riskLevel: string;
 }
@@ -206,7 +201,7 @@ export class RiskBehaviorBehaviorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior cloudflare_risk_behavior}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior cloudflare_risk_behavior}
 */
 export class RiskBehavior extends cdktf.TerraformResource {
 
@@ -222,7 +217,7 @@ export class RiskBehavior extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RiskBehavior resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RiskBehavior to import
-  * @param importFromId The id of the existing RiskBehavior that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RiskBehavior that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RiskBehavior to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -234,7 +229,7 @@ export class RiskBehavior extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/risk_behavior cloudflare_risk_behavior} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/risk_behavior cloudflare_risk_behavior} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +240,7 @@ export class RiskBehavior extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_risk_behavior',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
