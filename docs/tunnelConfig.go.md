@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigA(scope Construct, id *string, config TunnelConfigAConfig) TunnelConfigA
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.TunnelConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.TunnelConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ tunnelconfig.TunnelConfigA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.TunnelConfigA_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ tunnelconfig.TunnelConfigA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.TunnelConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigAConfig {
 	Connection: interface{},
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfi
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.tunnelConfig.TunnelConfigConfig,
+	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.tunnelConfig.TunnelConfigConfig,
 	TunnelId: *string,
 	Id: *string,
 }
@@ -942,12 +942,12 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfig {
 	IngressRule: interface{},
-	OriginRequest: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.tunnelConfig.TunnelConfigConfigOriginRequest,
-	WarpRouting: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.tunnelConfig.TunnelConfigConfigWarpRouting,
+	OriginRequest: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest,
+	WarpRouting: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting,
 }
 ```
 
@@ -1008,12 +1008,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigIngressRule {
 	Service: *string,
 	Hostname: *string,
-	OriginRequest: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequest,
+	OriginRequest: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequest,
 	Path: *string,
 }
 ```
@@ -1090,10 +1090,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigIngressRuleOriginRequest {
-	Access: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestAccess,
+	Access: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestAccess,
 	BastionMode: interface{},
 	CaPool: *string,
 	ConnectTimeout: *string,
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigIngressRuleOriginRequestAccess {
 	AudTag: *[]*string,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestIpRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigIngressRuleOriginRequestIpRules {
 	Allow: interface{},
@@ -1548,10 +1548,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigOriginRequest {
-	Access: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.tunnelConfig.TunnelConfigConfigOriginRequestAccess,
+	Access: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestAccess,
 	BastionMode: interface{},
 	CaPool: *string,
 	ConnectTimeout: *string,
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigOriginRequestAccess {
 	AudTag: *[]*string,
@@ -1940,7 +1940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigOriginRequestIpRules {
 	Allow: interface{},
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 &tunnelconfig.TunnelConfigConfigWarpRouting {
 	Enabled: interface{},
@@ -2042,7 +2042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigIngressRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TunnelConfigConfigIngressRuleList
 ```
@@ -2202,7 +2202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigIngressRuleOriginRequestAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigIngressRuleOriginRequestAccessOutputReference
 ```
@@ -2538,7 +2538,7 @@ func InternalValue() TunnelConfigConfigIngressRuleOriginRequestAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestIpRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigIngressRuleOriginRequestIpRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TunnelConfigConfigIngressRuleOriginRequestIpRulesList
 ```
@@ -2698,7 +2698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestIpRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigIngressRuleOriginRequestIpRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TunnelConfigConfigIngressRuleOriginRequestIpRulesOutputReference
 ```
@@ -3052,7 +3052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOriginRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigIngressRuleOriginRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigIngressRuleOriginRequestOutputReference
 ```
@@ -3849,7 +3849,7 @@ func InternalValue() TunnelConfigConfigIngressRuleOriginRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigIngressRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TunnelConfigConfigIngressRuleOutputReference
 ```
@@ -4238,7 +4238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigOriginRequestAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigOriginRequestAccessOutputReference
 ```
@@ -4574,7 +4574,7 @@ func InternalValue() TunnelConfigConfigOriginRequestAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigOriginRequestIpRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TunnelConfigConfigOriginRequestIpRulesList
 ```
@@ -4734,7 +4734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigOriginRequestIpRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TunnelConfigConfigOriginRequestIpRulesOutputReference
 ```
@@ -5088,7 +5088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigOriginRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigOriginRequestOutputReference
 ```
@@ -5885,7 +5885,7 @@ func InternalValue() TunnelConfigConfigOriginRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigOutputReference
 ```
@@ -6253,7 +6253,7 @@ func InternalValue() TunnelConfigConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tunnelconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/tunnelconfig"
 
 tunnelconfig.NewTunnelConfigConfigWarpRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigWarpRoutingOutputReference
 ```
