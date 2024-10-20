@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/zero_trust_tunnel_cloudflared
 // generated from terraform resource schema
 
