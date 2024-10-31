@@ -4,7 +4,7 @@
 
 ### DeviceManagedNetworks <a name="DeviceManagedNetworks" id="@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DeviceManagedNetworks to i
 
 The id of the existing DeviceManagedNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ new DeviceManagedNetworksConfig {
 | <code><a href="#@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig.property.config">Config</a></code> | <code><a href="#@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigA">DeviceManagedNetworksConfigA</a></code> | config block. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig.property.name">Name</a></code> | <code>string</code> | The name of the Device Managed Network. Must be unique. |
 | <code><a href="#@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig.property.type">Type</a></code> | <code>string</code> | The type of Device Managed Network. Available values: `tls`. |
-| <code><a href="#@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#id DeviceManagedNetworks#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#id DeviceManagedNetworks#id}. |
 
 ---
 
@@ -914,7 +914,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#account_id DeviceManagedNetworks#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#account_id DeviceManagedNetworks#account_id}
 
 ---
 
@@ -928,7 +928,7 @@ public DeviceManagedNetworksConfigA Config { get; set; }
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#config DeviceManagedNetworks#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#config DeviceManagedNetworks#config}
 
 ---
 
@@ -942,7 +942,7 @@ public string Name { get; set; }
 
 The name of the Device Managed Network. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#name DeviceManagedNetworks#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#name DeviceManagedNetworks#name}
 
 ---
 
@@ -956,7 +956,7 @@ public string Type { get; set; }
 
 The type of Device Managed Network. Available values: `tls`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#type DeviceManagedNetworks#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#type DeviceManagedNetworks#type}
 
 ---
 
@@ -968,7 +968,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#id DeviceManagedNetworks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#id DeviceManagedNetworks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ The SHA-256 hash of the TLS certificate presented by the host found at tls_socka
 
 If absent, regular certificate verification (trusted roots, valid timestamp, etc) will be used to validate the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#sha256 DeviceManagedNetworks#sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#sha256 DeviceManagedNetworks#sha256}
 
 ---
 
@@ -1023,7 +1023,7 @@ public string TlsSockaddr { get; set; }
 
 A network address of the form "host:port" that the WARP client will use to detect the presence of a TLS host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/device_managed_networks#tls_sockaddr DeviceManagedNetworks#tls_sockaddr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/device_managed_networks#tls_sockaddr DeviceManagedNetworks#tls_sockaddr}
 
 ---
 

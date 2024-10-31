@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ZeroTrustTunnelRouteConfig extends cdktf.TerraformMetaArguments
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#account_id ZeroTrustTunnelRoute#account_id}
   */
   readonly accountId: string;
   /**
   * Description of the tunnel route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#comment ZeroTrustTunnelRoute#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#id ZeroTrustTunnelRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +29,25 @@ export interface ZeroTrustTunnelRouteConfig extends cdktf.TerraformMetaArguments
   /**
   * The IPv4 or IPv6 network that should use this tunnel route, in CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#network ZeroTrustTunnelRoute#network}
   */
   readonly network: string;
   /**
   * The ID of the tunnel that will service the tunnel route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#tunnel_id ZeroTrustTunnelRoute#tunnel_id}
   */
   readonly tunnelId: string;
   /**
   * The ID of the virtual network for which this route is being added; uses the default virtual network of the account if none is provided. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#virtual_network_id ZeroTrustTunnelRoute#virtual_network_id}
   */
   readonly virtualNetworkId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route}
 */
 export class ZeroTrustTunnelRoute extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class ZeroTrustTunnelRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustTunnelRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustTunnelRoute to import
-  * @param importFromId The id of the existing ZeroTrustTunnelRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustTunnelRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustTunnelRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class ZeroTrustTunnelRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/zero_trust_tunnel_route cloudflare_zero_trust_tunnel_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class ZeroTrustTunnelRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_tunnel_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
