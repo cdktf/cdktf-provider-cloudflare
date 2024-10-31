@@ -150,6 +150,7 @@ export * as zeroTrustGatewayCertificate from './zero-trust-gateway-certificate';
 export * as zeroTrustGatewayPolicy from './zero-trust-gateway-policy';
 export * as zeroTrustGatewayProxyEndpoint from './zero-trust-gateway-proxy-endpoint';
 export * as zeroTrustGatewaySettings from './zero-trust-gateway-settings';
+export * as zeroTrustInfrastructureAccessTarget from './zero-trust-infrastructure-access-target';
 export * as zeroTrustKeyAccessKeyConfiguration from './zero-trust-key-access-key-configuration';
 export * as zeroTrustList from './zero-trust-list';
 export * as zeroTrustLocalFallbackDomain from './zero-trust-local-fallback-domain';
@@ -192,6 +193,7 @@ export * as dataCloudflareTunnelVirtualNetwork from './data-cloudflare-tunnel-vi
 export * as dataCloudflareUser from './data-cloudflare-user';
 export * as dataCloudflareZeroTrustAccessApplication from './data-cloudflare-zero-trust-access-application';
 export * as dataCloudflareZeroTrustAccessIdentityProvider from './data-cloudflare-zero-trust-access-identity-provider';
+export * as dataCloudflareZeroTrustInfrastructureAccessTargets from './data-cloudflare-zero-trust-infrastructure-access-targets';
 export * as dataCloudflareZeroTrustTunnelCloudflared from './data-cloudflare-zero-trust-tunnel-cloudflared';
 export * as dataCloudflareZeroTrustTunnelVirtualNetwork from './data-cloudflare-zero-trust-tunnel-virtual-network';
 export * as dataCloudflareZone from './data-cloudflare-zone';

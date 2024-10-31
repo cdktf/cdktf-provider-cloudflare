@@ -150,6 +150,7 @@ Object.defineProperty(exports, 'zeroTrustGatewayCertificate', { get: function ()
 Object.defineProperty(exports, 'zeroTrustGatewayPolicy', { get: function () { return require('./zero-trust-gateway-policy'); } });
 Object.defineProperty(exports, 'zeroTrustGatewayProxyEndpoint', { get: function () { return require('./zero-trust-gateway-proxy-endpoint'); } });
 Object.defineProperty(exports, 'zeroTrustGatewaySettings', { get: function () { return require('./zero-trust-gateway-settings'); } });
+Object.defineProperty(exports, 'zeroTrustInfrastructureAccessTarget', { get: function () { return require('./zero-trust-infrastructure-access-target'); } });
 Object.defineProperty(exports, 'zeroTrustKeyAccessKeyConfiguration', { get: function () { return require('./zero-trust-key-access-key-configuration'); } });
 Object.defineProperty(exports, 'zeroTrustList', { get: function () { return require('./zero-trust-list'); } });
 Object.defineProperty(exports, 'zeroTrustLocalFallbackDomain', { get: function () { return require('./zero-trust-local-fallback-domain'); } });
@@ -192,6 +193,7 @@ Object.defineProperty(exports, 'dataCloudflareTunnelVirtualNetwork', { get: func
 Object.defineProperty(exports, 'dataCloudflareUser', { get: function () { return require('./data-cloudflare-user'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessApplication', { get: function () { return require('./data-cloudflare-zero-trust-access-application'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessIdentityProvider', { get: function () { return require('./data-cloudflare-zero-trust-access-identity-provider'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustInfrastructureAccessTargets', { get: function () { return require('./data-cloudflare-zero-trust-infrastructure-access-targets'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustTunnelCloudflared', { get: function () { return require('./data-cloudflare-zero-trust-tunnel-cloudflared'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustTunnelVirtualNetwork', { get: function () { return require('./data-cloudflare-zero-trust-tunnel-virtual-network'); } });
 Object.defineProperty(exports, 'dataCloudflareZone', { get: function () { return require('./data-cloudflare-zone'); } });

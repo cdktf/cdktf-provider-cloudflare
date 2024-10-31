@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface WorkersKvNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace#id WorkersKvNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace#id WorkersKvNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface WorkersKvNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Title value of the Worker KV Namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}
 */
 export class WorkersKvNamespace extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class WorkersKvNamespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersKvNamespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersKvNamespace to import
-  * @param importFromId The id of the existing WorkersKvNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersKvNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersKvNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class WorkersKvNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class WorkersKvNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv_namespace',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

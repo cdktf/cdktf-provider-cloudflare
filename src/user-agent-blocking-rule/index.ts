@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface UserAgentBlockingRuleConfig extends cdktf.TerraformMetaArgument
   /**
   * An informative summary of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface UserAgentBlockingRuleConfig extends cdktf.TerraformMetaArgument
   /**
   * The action to apply to a matched request. Available values: `block`, `challenge`, `js_challenge`, `managed_challenge`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
   */
   readonly mode: string;
   /**
   * When true, indicates that the rule is currently paused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
   */
   readonly paused: boolean | cdktf.IResolvable;
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
   */
   readonly zoneId: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
   */
   readonly configuration: UserAgentBlockingRuleConfiguration;
 }
@@ -54,13 +54,13 @@ export interface UserAgentBlockingRuleConfiguration {
   /**
   * The configuration target for this rule. You must set the target to ua for User Agent Blocking rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
   */
   readonly target: string;
   /**
   * The exact user agent string to match. This value will be compared to the received User-Agent HTTP header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
   */
   readonly value: string;
 }
@@ -167,7 +167,7 @@ export class UserAgentBlockingRuleConfigurationOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
 */
 export class UserAgentBlockingRule extends cdktf.TerraformResource {
 
@@ -183,7 +183,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserAgentBlockingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserAgentBlockingRule to import
-  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserAgentBlockingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -195,7 +195,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_user_agent_blocking_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
