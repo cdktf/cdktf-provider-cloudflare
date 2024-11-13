@@ -4,7 +4,7 @@
 
 ### DataCloudflareGatewayAppTypes <a name="DataCloudflareGatewayAppTypes" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayAppTypes.DataCloudflareGatewayAppTypes.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The account ID to fetch Gateway App Types from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataCloudflareGatewayAppTy
 
 The id of the existing DataCloudflareGatewayAppTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/data-sources/gateway_app_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/data-sources/gateway_app_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ account_id: str
 
 The account ID to fetch Gateway App Types from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TeamsList <a name="TeamsList" id="@cdktf/provider-cloudflare.teamsList.TeamsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list cloudflare_teams_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list cloudflare_teams_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsList.TeamsList.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the TeamsList to import.
 
 The id of the existing TeamsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.name">Name</a></code> | <code>*string</code> | Name of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.type">Type</a></code> | <code>*string</code> | The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.description">Description</a></code> | <code>*string</code> | The description of the teams list. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#id TeamsList#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#id TeamsList#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.items">Items</a></code> | <code>*[]*string</code> | The items of the teams list. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListConfig.property.itemsWithDescription">ItemsWithDescription</a></code> | <code>interface{}</code> | The items of the teams list that has explicit description. |
 
@@ -983,7 +983,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#account_id TeamsList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#account_id TeamsList#account_id}
 
 ---
 
@@ -997,7 +997,7 @@ Name *string
 
 Name of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#name TeamsList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#name TeamsList#name}
 
 ---
 
@@ -1011,7 +1011,7 @@ Type *string
 
 The teams list type. Available values: `IP`, `SERIAL`, `URL`, `DOMAIN`, `EMAIL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#type TeamsList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#type TeamsList#type}
 
 ---
 
@@ -1025,7 +1025,7 @@ Description *string
 
 The description of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#description TeamsList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#description TeamsList#description}
 
 ---
 
@@ -1037,7 +1037,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#id TeamsList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#id TeamsList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ Items *[]*string
 
 The items of the teams list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#items TeamsList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#items TeamsList#items}
 
 ---
 
@@ -1068,7 +1068,7 @@ ItemsWithDescription interface{}
 
 The items of the teams list that has explicit description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#items_with_description TeamsList#items_with_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#items_with_description TeamsList#items_with_description}
 
 ---
 
@@ -1089,8 +1089,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslist"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#description TeamsList#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#value TeamsList#value}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#description TeamsList#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsList.TeamsListItemsWithDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#value TeamsList#value}. |
 
 ---
 
@@ -1102,7 +1102,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#description TeamsList#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#description TeamsList#description}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/teams_list#value TeamsList#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/teams_list#value TeamsList#value}.
 
 ---
 
