@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.NewDataCloudflareInfrastructureAccessTargets(scope Construct, id *string, config DataCloudflareInfrastructureAccessTargetsConfig) DataCloudflareInfrastructureAccessTargets
 ```
@@ -325,7 +325,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargets_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargets_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTarg
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTarg
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 &datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargetsConfig {
 	Connection: interface{},
@@ -1009,10 +1009,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 &datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargetsTargets {
-	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIp,
+	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIp,
 }
 ```
 
@@ -1043,11 +1043,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 &datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargetsTargetsIp {
-	Ipv4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv4,
-	Ipv6: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv6,
+	Ipv4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv4,
+	Ipv6: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv6,
 }
 ```
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 &datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv4 {
 	IpAddr: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 &datacloudflareinfrastructureaccesstargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv6 {
 	IpAddr: *string,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.NewDataCloudflareInfrastructureAccessTargetsTargetsIpIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareInfrastructureAccessTargetsTargetsIpIpv4OutputReference
 ```
@@ -1488,7 +1488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.NewDataCloudflareInfrastructureAccessTargetsTargetsIpIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareInfrastructureAccessTargetsTargetsIpIpv6OutputReference
 ```
@@ -1781,7 +1781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.NewDataCloudflareInfrastructureAccessTargetsTargetsIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareInfrastructureAccessTargetsTargetsIpOutputReference
 ```
@@ -2114,7 +2114,7 @@ func InternalValue() DataCloudflareInfrastructureAccessTargetsTargetsIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.NewDataCloudflareInfrastructureAccessTargetsTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareInfrastructureAccessTargetsTargetsList
 ```
@@ -2274,7 +2274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareInfrastructureAccessTargets.DataCloudflareInfrastructureAccessTargetsTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareinfrastructureaccesstargets"
 
 datacloudflareinfrastructureaccesstargets.NewDataCloudflareInfrastructureAccessTargetsTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareInfrastructureAccessTargetsTargetsOutputReference
 ```
