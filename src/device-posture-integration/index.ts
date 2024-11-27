@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,42 +15,42 @@ export interface DevicePostureIntegrationConfig extends cdktf.TerraformMetaArgum
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#account_id DevicePostureIntegration#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#account_id DevicePostureIntegration#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#id DevicePostureIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#identifier DevicePostureIntegration#identifier}
   */
   readonly identifier?: string;
   /**
   * Indicates the frequency with which to poll the third-party API. Must be in the format `1h` or `30m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#interval DevicePostureIntegration#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#interval DevicePostureIntegration#interval}
   */
   readonly interval?: string;
   /**
   * Name of the device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#name DevicePostureIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#name DevicePostureIntegration#name}
   */
   readonly name: string;
   /**
   * The device posture integration type. Available values: `workspace_one`, `uptycs`, `crowdstrike_s2s`, `intune`, `kolide`, `sentinelone_s2s`, `tanium_s2s`, `custom_s2s`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#type DevicePostureIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#type DevicePostureIntegration#type}
   */
   readonly type: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#config DevicePostureIntegration#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#config DevicePostureIntegration#config}
   */
   readonly config?: DevicePostureIntegrationConfigA[] | cdktf.IResolvable;
 }
@@ -58,49 +58,49 @@ export interface DevicePostureIntegrationConfigA {
   /**
   * The Access client ID to be used as the `Cf-Access-Client-ID` header when making a request to the `api_url`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#access_client_id DevicePostureIntegration#access_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#access_client_id DevicePostureIntegration#access_client_id}
   */
   readonly accessClientId?: string;
   /**
   * The Access client secret to be used as the `Cf-Access-Client-Secret` header when making a request to the `api_url`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#access_client_secret DevicePostureIntegration#access_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#access_client_secret DevicePostureIntegration#access_client_secret}
   */
   readonly accessClientSecret?: string;
   /**
   * The third-party API's URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#api_url DevicePostureIntegration#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#api_url DevicePostureIntegration#api_url}
   */
   readonly apiUrl?: string;
   /**
   * The third-party authorization API URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#auth_url DevicePostureIntegration#auth_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#auth_url DevicePostureIntegration#auth_url}
   */
   readonly authUrl?: string;
   /**
   * The client identifier for authenticating API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#client_id DevicePostureIntegration#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#client_id DevicePostureIntegration#client_id}
   */
   readonly clientId?: string;
   /**
   * The client key for authenticating API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#client_key DevicePostureIntegration#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#client_key DevicePostureIntegration#client_key}
   */
   readonly clientKey?: string;
   /**
   * The client secret for authenticating API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#client_secret DevicePostureIntegration#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#client_secret DevicePostureIntegration#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The customer identifier for authenticating API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#customer_id DevicePostureIntegration#customer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#customer_id DevicePostureIntegration#customer_id}
   */
   readonly customerId?: string;
 }
@@ -419,7 +419,7 @@ export class DevicePostureIntegrationConfigAList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}
 */
 export class DevicePostureIntegration extends cdktf.TerraformResource {
 
@@ -435,7 +435,7 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevicePostureIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevicePostureIntegration to import
-  * @param importFromId The id of the existing DevicePostureIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevicePostureIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevicePostureIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -447,7 +447,7 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -458,7 +458,7 @@ export class DevicePostureIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_device_posture_integration',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

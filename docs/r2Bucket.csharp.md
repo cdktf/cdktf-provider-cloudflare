@@ -4,7 +4,7 @@
 
 ### R2Bucket <a name="R2Bucket" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the R2Bucket to import.
 
 The id of the existing R2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ new R2BucketConfig {
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">AccountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">Name</a></code> | <code>string</code> | The name of the R2 bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">Location</a></code> | <code>string</code> | The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">Location</a></code> | <code>string</code> | The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`. |
 
 ---
 
@@ -864,7 +864,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -878,7 +878,7 @@ public string Name { get; set; }
 
 The name of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/r2_bucket#name R2Bucket#name}
 
 ---
 
@@ -890,9 +890,9 @@ public string Location { get; set; }
 
 - *Type:* string
 
-The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`.
+The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/r2_bucket#location R2Bucket#location}
 
 ---
 

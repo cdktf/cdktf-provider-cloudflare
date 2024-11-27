@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface SplitTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#account_id SplitTunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#account_id SplitTunnel#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#id SplitTunnel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#id SplitTunnel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface SplitTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mode of the split tunnel policy. Available values: `include`, `exclude`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#mode SplitTunnel#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#mode SplitTunnel#mode}
   */
   readonly mode: string;
   /**
   * The settings policy for which to configure this split tunnel policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#policy_id SplitTunnel#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#policy_id SplitTunnel#policy_id}
   */
   readonly policyId?: string;
   /**
   * tunnels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#tunnels SplitTunnel#tunnels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#tunnels SplitTunnel#tunnels}
   */
   readonly tunnels: SplitTunnelTunnels[] | cdktf.IResolvable;
 }
@@ -48,19 +48,19 @@ export interface SplitTunnelTunnels {
   /**
   * The address for the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#address SplitTunnel#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#address SplitTunnel#address}
   */
   readonly address?: string;
   /**
   * A description for the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#description SplitTunnel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#description SplitTunnel#description}
   */
   readonly description?: string;
   /**
   * The domain name for the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#host SplitTunnel#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#host SplitTunnel#host}
   */
   readonly host?: string;
 }
@@ -234,7 +234,7 @@ export class SplitTunnelTunnelsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel cloudflare_split_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel cloudflare_split_tunnel}
 */
 export class SplitTunnel extends cdktf.TerraformResource {
 
@@ -250,7 +250,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SplitTunnel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SplitTunnel to import
-  * @param importFromId The id of the existing SplitTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SplitTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SplitTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +262,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +273,7 @@ export class SplitTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_split_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
