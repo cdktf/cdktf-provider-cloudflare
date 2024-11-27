@@ -4,7 +4,7 @@
 
 ### AccessKeysConfiguration <a name="AccessKeysConfiguration" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration cloudflare_access_keys_configuration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration cloudflare_access_keys_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer"></a>
 
@@ -39,7 +39,7 @@ accessKeysConfiguration.AccessKeysConfiguration(
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration.Initializer.parameter.keyRotationIntervalDays">key_rotation_interval_days</a></code> | <code>typing.Union[int, float]</code> | Number of days to trigger a rotation of the keys. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Number of days to trigger a rotation of the keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
 
 ---
 
@@ -618,7 +618,7 @@ The construct id used in the generated config for the AccessKeysConfiguration to
 
 The id of the existing AccessKeysConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ accessKeysConfiguration.AccessKeysConfigurationConfig(
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfigurationConfig.property.keyRotationIntervalDays">key_rotation_interval_days</a></code> | <code>typing.Union[int, float]</code> | Number of days to trigger a rotation of the keys. |
 
 ---
@@ -997,7 +997,7 @@ account_id: str
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#account_id AccessKeysConfiguration#account_id}
 
 ---
 
@@ -1009,7 +1009,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#id AccessKeysConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ key_rotation_interval_days: typing.Union[int, float]
 
 Number of days to trigger a rotation of the keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_keys_configuration#key_rotation_interval_days AccessKeysConfiguration#key_rotation_interval_days}
 
 ---
 
