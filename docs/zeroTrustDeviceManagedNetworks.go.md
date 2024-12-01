@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.NewZeroTrustDeviceManagedNetworks(scope Construct, id *string, config ZeroTrustDeviceManagedNetworksConfig) ZeroTrustDeviceManagedNetworks
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 &zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworksConfig {
 	Connection: interface{},
@@ -808,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustde
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA,
+	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA,
 	Name: *string,
 	Type: *string,
 	Id: *string,
@@ -980,7 +980,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 &zerotrustdevicemanagednetworks.ZeroTrustDeviceManagedNetworksConfigA {
 	Sha256: *string,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworksConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicemanagednetworks"
 
 zerotrustdevicemanagednetworks.NewZeroTrustDeviceManagedNetworksConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDeviceManagedNetworksConfigAOutputReference
 ```
