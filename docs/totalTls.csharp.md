@@ -4,7 +4,7 @@
 
 ### TotalTls <a name="TotalTls" id="@cdktf/provider-cloudflare.totalTls.TotalTls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls cloudflare_total_tls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls cloudflare_total_tls}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.totalTls.TotalTls.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the TotalTls to import.
 
 The id of the existing TotalTls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ new TotalTlsConfig {
 | <code><a href="#@cdktf/provider-cloudflare.totalTls.TotalTlsConfig.property.enabled">Enabled</a></code> | <code>object</code> | Enable Total TLS for the zone. |
 | <code><a href="#@cdktf/provider-cloudflare.totalTls.TotalTlsConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.totalTls.TotalTlsConfig.property.certificateAuthority">CertificateAuthority</a></code> | <code>string</code> | The Certificate Authority that Total TLS certificates will be issued through. Available values: `google`, `lets_encrypt`. |
-| <code><a href="#@cdktf/provider-cloudflare.totalTls.TotalTlsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls#id TotalTls#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.totalTls.TotalTlsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls#id TotalTls#id}. |
 
 ---
 
@@ -884,7 +884,7 @@ public object Enabled { get; set; }
 
 Enable Total TLS for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls#enabled TotalTls#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls#enabled TotalTls#enabled}
 
 ---
 
@@ -898,7 +898,7 @@ public string ZoneId { get; set; }
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
 
 ---
 
@@ -912,7 +912,7 @@ public string CertificateAuthority { get; set; }
 
 The Certificate Authority that Total TLS certificates will be issued through. Available values: `google`, `lets_encrypt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
 
 ---
 
@@ -924,7 +924,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/total_tls#id TotalTls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/total_tls#id TotalTls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### CustomHostname <a name="CustomHostname" id="@cdktf/provider-cloudflare.customHostname.CustomHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer"></a>
 
@@ -48,7 +48,7 @@ customHostname.CustomHostname(
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.customMetadata">custom_metadata</a></code> | <code>typing.Mapping[str]</code> | Custom metadata associated with custom hostname. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.customOriginServer">custom_origin_server</a></code> | <code>str</code> | The custom origin server used for certificates. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.customOriginSni">custom_origin_sni</a></code> | <code>str</code> | The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#id CustomHostname#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#id CustomHostname#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.ssl">ssl</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl">CustomHostnameSsl</a>]]</code> | ssl block. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer.parameter.waitForSslPendingValidation">wait_for_ssl_pending_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
 
 ---
 
@@ -142,7 +142,7 @@ Custom metadata associated with custom hostname.
 
 Only supports primitive string values, all other values are accessible via the API directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The custom origin server used for certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#id CustomHostname#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#id CustomHostname#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ssl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
 
 ---
 
@@ -723,7 +723,7 @@ The construct id used in the generated config for the CustomHostname to import.
 
 The id of the existing CustomHostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1169,7 +1169,7 @@ customHostname.CustomHostnameConfig(
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.customMetadata">custom_metadata</a></code> | <code>typing.Mapping[str]</code> | Custom metadata associated with custom hostname. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.customOriginServer">custom_origin_server</a></code> | <code>str</code> | The custom origin server used for certificates. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.customOriginSni">custom_origin_sni</a></code> | <code>str</code> | The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#id CustomHostname#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#id CustomHostname#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.ssl">ssl</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl">CustomHostnameSsl</a>]]</code> | ssl block. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.property.waitForSslPendingValidation">wait_for_ssl_pending_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`. |
 
@@ -1255,7 +1255,7 @@ hostname: str
 
 Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
 
 ---
 
@@ -1269,7 +1269,7 @@ zone_id: str
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
 
 ---
 
@@ -1285,7 +1285,7 @@ Custom metadata associated with custom hostname.
 
 Only supports primitive string values, all other values are accessible via the API directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
 
 ---
 
@@ -1299,7 +1299,7 @@ custom_origin_server: str
 
 The custom origin server used for certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
 
 ---
 
@@ -1313,7 +1313,7 @@ custom_origin_sni: str
 
 The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
 
 ---
 
@@ -1325,7 +1325,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#id CustomHostname#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#id CustomHostname#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1342,7 +1342,7 @@ ssl: typing.Union[IResolvable, typing.List[CustomHostnameSsl]]
 
 ssl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
 
 ---
 
@@ -1356,7 +1356,7 @@ wait_for_ssl_pending_validation: typing.Union[bool, IResolvable]
 
 Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
 
 ---
 
@@ -1384,7 +1384,7 @@ customHostname.CustomHostnameSsl(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.bundleMethod">bundle_method</a></code> | <code>str</code> | A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.customCertificate">custom_certificate</a></code> | <code>str</code> | If a custom uploaded certificate is used. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.customKey">custom_key</a></code> | <code>str</code> | The key for a custom uploaded certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.method">method</a></code> | <code>str</code> | Domain control validation (DCV) method used for this hostname. Available values: `http`, `txt`, `email`. |
@@ -1406,7 +1406,7 @@ A ubiquitous bundle has the highest probability of being verified everywhere, ev
 
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it. Available values: `ubiquitous`, `optimal`, `force`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
 
 ---
 
@@ -1418,7 +1418,7 @@ certificate_authority: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}.
 
 ---
 
@@ -1432,7 +1432,7 @@ custom_certificate: str
 
 If a custom uploaded certificate is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
 
 ---
 
@@ -1446,7 +1446,7 @@ custom_key: str
 
 The key for a custom uploaded certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
 
 ---
 
@@ -1460,7 +1460,7 @@ method: str
 
 Domain control validation (DCV) method used for this hostname. Available values: `http`, `txt`, `email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#method CustomHostname#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#method CustomHostname#method}
 
 ---
 
@@ -1474,7 +1474,7 @@ settings: typing.Union[IResolvable, typing.List[CustomHostnameSslSettings]]
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#settings CustomHostname#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#settings CustomHostname#settings}
 
 ---
 
@@ -1488,7 +1488,7 @@ type: str
 
 Level of validation to be used for this hostname. Available values: `dv`. Defaults to `dv`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#type CustomHostname#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#type CustomHostname#type}
 
 ---
 
@@ -1502,7 +1502,7 @@ wildcard: typing.Union[bool, IResolvable]
 
 Indicates whether the certificate covers a wildcard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
 
 ---
 
@@ -1544,7 +1544,7 @@ ciphers: typing.List[str]
 
 List of SSL/TLS ciphers to associate with this certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
 
 ---
 
@@ -1558,7 +1558,7 @@ early_hints: str
 
 Whether early hints should be supported. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
 
 ---
 
@@ -1572,7 +1572,7 @@ http2: str
 
 Whether HTTP2 should be supported. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
 
 ---
 
@@ -1586,7 +1586,7 @@ min_tls_version: str
 
 Lowest version of TLS this certificate should support. Available values: `1.0`, `1.1`, `1.2`, `1.3`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
 
 ---
 
@@ -1600,7 +1600,7 @@ tls13: str
 
 Whether TLSv1.3 should be supported. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/custom_hostname#tls13 CustomHostname#tls13}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/custom_hostname#tls13 CustomHostname#tls13}
 
 ---
 

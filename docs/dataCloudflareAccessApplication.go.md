@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccessApplication <a name="DataCloudflareAccessApplication" id="@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application cloudflare_access_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application cloudflare_access_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplication.Initializer"></a>
 
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataCloudflareAccessApplic
 
 The id of the existing DataCloudflareAccessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,7 +730,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. Must provide only one of `zone_id`, `account_id`. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.domain">Domain</a></code> | <code>*string</code> | The primary hostname and path that Access will secure. Must provide only one of `name`, `domain`. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#id DataCloudflareAccessApplication#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#id DataCloudflareAccessApplication#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Friendly name of the Access Application. Must provide only one of `name`, `domain`. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplicationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. Must provide only one of `zone_id`, `account_id`. |
 
@@ -816,7 +816,7 @@ AccountId *string
 
 The account identifier to target for the resource. Must provide only one of `zone_id`, `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#account_id DataCloudflareAccessApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#account_id DataCloudflareAccessApplication#account_id}
 
 ---
 
@@ -830,7 +830,7 @@ Domain *string
 
 The primary hostname and path that Access will secure. Must provide only one of `name`, `domain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#domain DataCloudflareAccessApplication#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#domain DataCloudflareAccessApplication#domain}
 
 ---
 
@@ -842,7 +842,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#id DataCloudflareAccessApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#id DataCloudflareAccessApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -859,7 +859,7 @@ Name *string
 
 Friendly name of the Access Application. Must provide only one of `name`, `domain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#name DataCloudflareAccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#name DataCloudflareAccessApplication#name}
 
 ---
 
@@ -873,7 +873,7 @@ ZoneId *string
 
 The zone identifier to target for the resource. Must provide only one of `zone_id`, `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/data-sources/access_application#zone_id DataCloudflareAccessApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/access_application#zone_id DataCloudflareAccessApplication#zone_id}
 
 ---
 
