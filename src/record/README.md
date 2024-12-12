@@ -1,3 +1,3 @@
 # `cloudflare_record`
 
-Refer to the Terraform Registry for docs: [`cloudflare_record`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/record).
+Refer to the Terraform Registry for docs: [`cloudflare_record`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/record).
