@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.NewAccessMutualTlsHostnameSettings(scope Construct, id *string, config AccessMutualTlsHostnameSettingsConfig) AccessMutualTlsHostnameSettings
 ```
@@ -412,7 +412,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettings_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettings_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettings_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 &accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettingsConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 &accessmutualtlshostnamesettings.AccessMutualTlsHostnameSettingsSettings {
 	Hostname: *string,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettingsSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.NewAccessMutualTlsHostnameSettingsSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessMutualTlsHostnameSettingsSettingsList
 ```
@@ -1147,7 +1147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessMutualTlsHostnameSettings.AccessMutualTlsHostnameSettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessmutualtlshostnamesettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessmutualtlshostnamesettings"
 
 accessmutualtlshostnamesettings.NewAccessMutualTlsHostnameSettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessMutualTlsHostnameSettingsSettingsOutputReference
 ```
