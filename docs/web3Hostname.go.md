@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/web3hostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/web3hostname"
 
 web3hostname.NewWeb3Hostname(scope Construct, id *string, config Web3HostnameConfig) Web3Hostname
 ```
@@ -399,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/web3hostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/web3hostname"
 
 web3hostname.Web3Hostname_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/web3hostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/web3hostname"
 
 web3hostname.Web3Hostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ web3hostname.Web3Hostname_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/web3hostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/web3hostname"
 
 web3hostname.Web3Hostname_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ web3hostname.Web3Hostname_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/web3hostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/web3hostname"
 
 web3hostname.Web3Hostname_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/web3hostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/web3hostname"
 
 &web3hostname.Web3HostnameConfig {
 	Connection: interface{},
