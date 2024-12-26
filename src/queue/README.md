@@ -1,3 +1,3 @@
 # `cloudflare_queue`
 
-Refer to the Terraform Registry for docs: [`cloudflare_queue`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/queue).
+Refer to the Terraform Registry for docs: [`cloudflare_queue`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/queue).

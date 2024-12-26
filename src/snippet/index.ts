@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface SnippetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Main module file name of the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#main_module Snippet#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#main_module Snippet#main_module}
   */
   readonly mainModule: string;
   /**
   * Name of the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#name Snippet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#name Snippet#name}
   */
   readonly name: string;
   /**
   * The zone identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#zone_id Snippet#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#zone_id Snippet#zone_id}
   */
   readonly zoneId: string;
   /**
   * files block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#files Snippet#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#files Snippet#files}
   */
   readonly files?: SnippetFiles[] | cdktf.IResolvable;
 }
@@ -41,13 +36,13 @@ export interface SnippetFiles {
   /**
   * Content of the snippet file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#content Snippet#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#content Snippet#content}
   */
   readonly content?: string;
   /**
   * Name of the snippet file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#name Snippet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#name Snippet#name}
   */
   readonly name: string;
 }
@@ -189,7 +184,7 @@ export class SnippetFilesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet cloudflare_snippet}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet cloudflare_snippet}
 */
 export class Snippet extends cdktf.TerraformResource {
 
@@ -205,7 +200,7 @@ export class Snippet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Snippet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Snippet to import
-  * @param importFromId The id of the existing Snippet that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Snippet that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Snippet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -217,7 +212,7 @@ export class Snippet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/snippet cloudflare_snippet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet cloudflare_snippet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +223,7 @@ export class Snippet extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_snippet',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

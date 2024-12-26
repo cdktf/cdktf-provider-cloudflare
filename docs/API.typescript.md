@@ -33,6 +33,7 @@ The following submodules are available:
 - [byoIpPrefix](./byoIpPrefix.typescript.md)
 - [certificatePack](./certificatePack.typescript.md)
 - [cloudConnectorRules](./cloudConnectorRules.typescript.md)
+- [contentScanningExpression](./contentScanningExpression.typescript.md)
 - [customHostname](./customHostname.typescript.md)
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.typescript.md)
 - [customPages](./customPages.typescript.md)
