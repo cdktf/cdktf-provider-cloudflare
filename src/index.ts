@@ -33,6 +33,7 @@ export * as botManagement from './bot-management';
 export * as byoIpPrefix from './byo-ip-prefix';
 export * as certificatePack from './certificate-pack';
 export * as cloudConnectorRules from './cloud-connector-rules';
+export * as contentScanningExpression from './content-scanning-expression';
 export * as customHostname from './custom-hostname';
 export * as customHostnameFallbackOrigin from './custom-hostname-fallback-origin';
 export * as customPages from './custom-pages';

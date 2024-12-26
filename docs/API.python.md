@@ -33,6 +33,7 @@ The following submodules are available:
 - [byoIpPrefix](./byoIpPrefix.python.md)
 - [certificatePack](./certificatePack.python.md)
 - [cloudConnectorRules](./cloudConnectorRules.python.md)
+- [contentScanningExpression](./contentScanningExpression.python.md)
 - [customHostname](./customHostname.python.md)
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.python.md)
 - [customPages](./customPages.python.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/dlp_datasets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/dlp_datasets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareDlpDatasetsConfig extends cdktf.TerraformMetaArgu
   /**
   * The account ID to fetch DLP Datasets from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
   */
   readonly accountId: string;
 }
@@ -116,7 +116,7 @@ export class DataCloudflareDlpDatasetsDatasetsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}
 */
 export class DataCloudflareDlpDatasets extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataCloudflareDlpDatasets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareDlpDatasets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDlpDatasets to import
-  * @param importFromId The id of the existing DataCloudflareDlpDatasets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/dlp_datasets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDlpDatasets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/dlp_datasets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDlpDatasets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +144,7 @@ export class DataCloudflareDlpDatasets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class DataCloudflareDlpDatasets extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_dlp_datasets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

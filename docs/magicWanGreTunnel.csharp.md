@@ -4,7 +4,7 @@
 
 ### MagicWanGreTunnel <a name="MagicWanGreTunnel" id="@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the MagicWanGreTunnel to impor
 
 The id of the existing MagicWanGreTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,7 +1032,7 @@ new MagicWanGreTunnelConfig {
 | <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheckEnabled">HealthCheckEnabled</a></code> | <code>object</code> | Specifies if ICMP tunnel health checks are enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheckTarget">HealthCheckTarget</a></code> | <code>string</code> | The IP address of the customer endpoint that will receive tunnel health checks. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.healthCheckType">HealthCheckType</a></code> | <code>string</code> | Specifies the ICMP echo type for the health check. Available values: `request`, `reply`. |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#id MagicWanGreTunnel#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#id MagicWanGreTunnel#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.mtu">Mtu</a></code> | <code>double</code> | Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig.property.ttl">Ttl</a></code> | <code>double</code> | Time To Live (TTL) in number of hops of the GRE tunnel. |
 
@@ -1118,7 +1118,7 @@ public string CloudflareGreEndpoint { get; set; }
 
 The IP address assigned to the Cloudflare side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
 
 ---
 
@@ -1132,7 +1132,7 @@ public string CustomerGreEndpoint { get; set; }
 
 The IP address assigned to the customer side of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
 
 ---
 
@@ -1146,7 +1146,7 @@ public string InterfaceAddress { get; set; }
 
 31-bit prefix (/31 in CIDR notation) supporting 2 hosts, one for each side of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
 
 ---
 
@@ -1160,7 +1160,7 @@ public string Name { get; set; }
 
 Name of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
 
 ---
 
@@ -1174,7 +1174,7 @@ public string AccountId { get; set; }
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
 
 ---
 
@@ -1188,7 +1188,7 @@ public string Description { get; set; }
 
 Description of the GRE tunnel intent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
 
 ---
 
@@ -1202,7 +1202,7 @@ public object HealthCheckEnabled { get; set; }
 
 Specifies if ICMP tunnel health checks are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#health_check_enabled MagicWanGreTunnel#health_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#health_check_enabled MagicWanGreTunnel#health_check_enabled}
 
 ---
 
@@ -1216,7 +1216,7 @@ public string HealthCheckTarget { get; set; }
 
 The IP address of the customer endpoint that will receive tunnel health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#health_check_target MagicWanGreTunnel#health_check_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#health_check_target MagicWanGreTunnel#health_check_target}
 
 ---
 
@@ -1230,7 +1230,7 @@ public string HealthCheckType { get; set; }
 
 Specifies the ICMP echo type for the health check. Available values: `request`, `reply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#health_check_type MagicWanGreTunnel#health_check_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#health_check_type MagicWanGreTunnel#health_check_type}
 
 ---
 
@@ -1242,7 +1242,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#id MagicWanGreTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#id MagicWanGreTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1259,7 +1259,7 @@ public double Mtu { get; set; }
 
 Maximum Transmission Unit (MTU) in bytes for the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
 
 ---
 
@@ -1273,7 +1273,7 @@ public double Ttl { get; set; }
 
 Time To Live (TTL) in number of hops of the GRE tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
 
 ---
 
