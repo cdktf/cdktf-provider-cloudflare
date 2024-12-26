@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.NewZeroTrustSplitTunnel(scope Construct, id *string, config ZeroTrustSplitTunnelConfig) ZeroTrustSplitTunnel
 ```
@@ -405,7 +405,7 @@ func ResetPolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zerotrustsplittunnel.ZeroTrustSplitTunnel_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.ZeroTrustSplitTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 &zerotrustsplittunnel.ZeroTrustSplitTunnelConfig {
 	Connection: interface{},
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelTunnels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 &zerotrustsplittunnel.ZeroTrustSplitTunnelTunnels {
 	Address: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelTunnelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.NewZeroTrustSplitTunnelTunnelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustSplitTunnelTunnelsList
 ```
@@ -1215,7 +1215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustSplitTunnel.ZeroTrustSplitTunnelTunnelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustsplittunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustsplittunnel"
 
 zerotrustsplittunnel.NewZeroTrustSplitTunnelTunnelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustSplitTunnelTunnelsOutputReference
 ```
