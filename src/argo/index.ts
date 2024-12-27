@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ArgoConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#id Argo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#id Argo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface ArgoConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether smart routing is enabled. Available values: `on`, `off`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#smart_routing Argo#smart_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#smart_routing Argo#smart_routing}
   */
   readonly smartRouting?: string;
   /**
   * Whether tiered caching is enabled. Available values: `on`, `off`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#tiered_caching Argo#tiered_caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#tiered_caching Argo#tiered_caching}
   */
   readonly tieredCaching?: string;
   /**
   * The zone identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#zone_id Argo#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#zone_id Argo#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo cloudflare_argo}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo cloudflare_argo}
 */
 export class Argo extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class Argo extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Argo resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Argo to import
-  * @param importFromId The id of the existing Argo that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Argo that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Argo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class Argo extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo cloudflare_argo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo cloudflare_argo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class Argo extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_argo',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.49.0',
+        providerVersion: '4.49.1',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

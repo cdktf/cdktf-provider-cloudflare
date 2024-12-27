@@ -4,7 +4,7 @@
 
 ### WorkersForPlatformsNamespace <a name="WorkersForPlatformsNamespace" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the Workers for Platforms namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
 
 ---
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the WorkersForPlatformsNamespa
 
 The id of the existing WorkersForPlatformsNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/workers_for_platforms_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_for_platforms_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
 
 ---
 
@@ -931,7 +931,7 @@ public java.lang.String getName();
 
 The name of the Workers for Platforms namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
 
 ---
 

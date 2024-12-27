@@ -4,7 +4,7 @@
 
 ### Argo <a name="Argo" id="@cdktf/provider-cloudflare.argo.Argo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo cloudflare_argo}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo cloudflare_argo}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argo.Argo.Initializer"></a>
 
@@ -42,7 +42,7 @@ Argo.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#id Argo#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#id Argo#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.smartRouting">smartRouting</a></code> | <code>java.lang.String</code> | Whether smart routing is enabled. Available values: `on`, `off`. |
 | <code><a href="#@cdktf/provider-cloudflare.argo.Argo.Initializer.parameter.tieredCaching">tieredCaching</a></code> | <code>java.lang.String</code> | Whether tiered caching is enabled. Available values: `on`, `off`. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#zone_id Argo#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#zone_id Argo#zone_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#id Argo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#id Argo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether smart routing is enabled. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#smart_routing Argo#smart_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#smart_routing Argo#smart_routing}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether tiered caching is enabled. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#tiered_caching Argo#tiered_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#tiered_caching Argo#tiered_caching}
 
 ---
 
@@ -593,7 +593,7 @@ The construct id used in the generated config for the Argo to import.
 
 The id of the existing Argo that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,7 +914,7 @@ ArgoConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#id Argo#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#id Argo#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.smartRouting">smartRouting</a></code> | <code>java.lang.String</code> | Whether smart routing is enabled. Available values: `on`, `off`. |
 | <code><a href="#@cdktf/provider-cloudflare.argo.ArgoConfig.property.tieredCaching">tieredCaching</a></code> | <code>java.lang.String</code> | Whether tiered caching is enabled. Available values: `on`, `off`. |
 
@@ -1000,7 +1000,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#zone_id Argo#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#zone_id Argo#zone_id}
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#id Argo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#id Argo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1029,7 @@ public java.lang.String getSmartRouting();
 
 Whether smart routing is enabled. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#smart_routing Argo#smart_routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#smart_routing Argo#smart_routing}
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getTieredCaching();
 
 Whether tiered caching is enabled. Available values: `on`, `off`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/argo#tiered_caching Argo#tiered_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/argo#tiered_caching Argo#tiered_caching}
 
 ---
 

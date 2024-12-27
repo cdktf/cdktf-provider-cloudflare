@@ -4,7 +4,7 @@
 
 ### DataCloudflareGatewayCategories <a name="DataCloudflareGatewayCategories" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/gateway_categories cloudflare_gateway_categories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareGatewayCategories.DataCloudflareGatewayCategories.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The account ID to fetch Gateway Categories from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataCloudflareGatewayCateg
 
 The id of the existing DataCloudflareGatewayCategories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/gateway_categories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/gateway_categories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ account_id: str
 
 The account ID to fetch Gateway Categories from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/gateway_categories#account_id DataCloudflareGatewayCategories#account_id}
 
 ---
 

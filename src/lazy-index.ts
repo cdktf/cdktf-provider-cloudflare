@@ -33,6 +33,7 @@ Object.defineProperty(exports, 'botManagement', { get: function () { return requ
 Object.defineProperty(exports, 'byoIpPrefix', { get: function () { return require('./byo-ip-prefix'); } });
 Object.defineProperty(exports, 'certificatePack', { get: function () { return require('./certificate-pack'); } });
 Object.defineProperty(exports, 'cloudConnectorRules', { get: function () { return require('./cloud-connector-rules'); } });
+Object.defineProperty(exports, 'contentScanning', { get: function () { return require('./content-scanning'); } });
 Object.defineProperty(exports, 'contentScanningExpression', { get: function () { return require('./content-scanning-expression'); } });
 Object.defineProperty(exports, 'customHostname', { get: function () { return require('./custom-hostname'); } });
 Object.defineProperty(exports, 'customHostnameFallbackOrigin', { get: function () { return require('./custom-hostname-fallback-origin'); } });

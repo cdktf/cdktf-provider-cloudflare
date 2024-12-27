@@ -4,7 +4,7 @@
 
 ### ZeroTrustDnsLocation <a name="ZeroTrustDnsLocation" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ZeroTrustDnsLocation to im
 
 The id of the existing ZeroTrustDnsLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -918,7 +918,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdn
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.name">Name</a></code> | <code>*string</code> | Name of the teams location. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.clientDefault">ClientDefault</a></code> | <code>interface{}</code> | Indicator that this is the default location. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.ecsSupport">EcsSupport</a></code> | <code>interface{}</code> | Indicator that this location needs to resolve EDNS queries. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#id ZeroTrustDnsLocation#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#id ZeroTrustDnsLocation#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.networks">Networks</a></code> | <code>interface{}</code> | networks block. |
 
 ---
@@ -1003,7 +1003,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
 
 ---
 
@@ -1017,7 +1017,7 @@ Name *string
 
 Name of the teams location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
 
 ---
 
@@ -1031,7 +1031,7 @@ ClientDefault interface{}
 
 Indicator that this is the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
 
 ---
 
@@ -1045,7 +1045,7 @@ EcsSupport interface{}
 
 Indicator that this location needs to resolve EDNS queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
 
 ---
 
@@ -1057,7 +1057,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#id ZeroTrustDnsLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#id ZeroTrustDnsLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1074,7 @@ Networks interface{}
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1108,7 +1108,7 @@ Network *string
 
 CIDR notation representation of the network IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 

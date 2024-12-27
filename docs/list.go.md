@@ -4,7 +4,7 @@
 
 ### List <a name="List" id="@cdktf/provider-cloudflare.list.List"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.list.List.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the List to import.
 
 The id of the existing List that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#account_id List#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#account_id List#account_id}
 
 ---
 
@@ -946,7 +946,7 @@ Kind *string
 
 The type of items the list will contain. Must provide only one of: `ip`, `redirect`, `hostname`, `asn`..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#kind List#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#kind List#kind}
 
 ---
 
@@ -960,7 +960,7 @@ Name *string
 
 The name of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#name List#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#name List#name}
 
 ---
 
@@ -974,7 +974,7 @@ Description *string
 
 An optional description of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#description List#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#description List#description}
 
 ---
 
@@ -988,7 +988,7 @@ Item interface{}
 
 item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#item List#item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#item List#item}
 
 ---
 
@@ -1024,7 +1024,7 @@ Comment *string
 
 An optional comment for the item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#comment List#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#comment List#comment}
 
 ---
 
@@ -1038,7 +1038,7 @@ Value interface{}
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#value List#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#value List#value}
 
 ---
 
@@ -1061,9 +1061,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/list"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.asn">Asn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#asn List#asn}. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.asn">Asn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#asn List#asn}. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.hostname">Hostname</a></code> | <code>interface{}</code> | hostname block. |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.ip">Ip</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#ip List#ip}. |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.ip">Ip</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#ip List#ip}. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListItemValue.property.redirect">Redirect</a></code> | <code>interface{}</code> | redirect block. |
 
 ---
@@ -1076,7 +1076,7 @@ Asn *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#asn List#asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#asn List#asn}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Hostname interface{}
 
 hostname block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#hostname List#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#hostname List#hostname}
 
 ---
 
@@ -1102,7 +1102,7 @@ Ip *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#ip List#ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#ip List#ip}.
 
 ---
 
@@ -1116,7 +1116,7 @@ Redirect interface{}
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#redirect List#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#redirect List#redirect}
 
 ---
 
@@ -1150,7 +1150,7 @@ UrlHostname *string
 
 The FQDN to match on. Wildcard sub-domain matching is allowed. Eg. *.abc.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#url_hostname List#url_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#url_hostname List#url_hostname}
 
 ---
 
@@ -1196,7 +1196,7 @@ SourceUrl *string
 
 The source url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#source_url List#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#source_url List#source_url}
 
 ---
 
@@ -1210,7 +1210,7 @@ TargetUrl *string
 
 The target url of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#target_url List#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#target_url List#target_url}
 
 ---
 
@@ -1224,7 +1224,7 @@ IncludeSubdomains *string
 
 Whether the redirect also matches subdomains of the source url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#include_subdomains List#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#include_subdomains List#include_subdomains}
 
 ---
 
@@ -1238,7 +1238,7 @@ PreservePathSuffix *string
 
 Whether to preserve the path suffix when doing subpath matching. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}
 
 ---
 
@@ -1252,7 +1252,7 @@ PreserveQueryString *string
 
 Whether the redirect target url should keep the query string of the request's url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#preserve_query_string List#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#preserve_query_string List#preserve_query_string}
 
 ---
 
@@ -1266,7 +1266,7 @@ StatusCode *f64
 
 The status code to be used when redirecting a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#status_code List#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#status_code List#status_code}
 
 ---
 
@@ -1280,7 +1280,7 @@ SubpathMatching *string
 
 Whether the redirect also matches subpaths of the source url. Available values: `disabled`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/list#subpath_matching List#subpath_matching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/list#subpath_matching List#subpath_matching}
 
 ---
 

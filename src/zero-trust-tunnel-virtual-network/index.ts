@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ZeroTrustTunnelVirtualNetworkConfig extends cdktf.TerraformMeta
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network#account_id ZeroTrustTunnelVirtualNetwork#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#account_id ZeroTrustTunnelVirtualNetwork#account_id}
   */
   readonly accountId: string;
   /**
   * Description of the tunnel virtual network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network#comment ZeroTrustTunnelVirtualNetwork#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#comment ZeroTrustTunnelVirtualNetwork#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network#id ZeroTrustTunnelVirtualNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#id ZeroTrustTunnelVirtualNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface ZeroTrustTunnelVirtualNetworkConfig extends cdktf.TerraformMeta
   /**
   * Whether this virtual network is the default one for the account. This means IP Routes belong to this virtual network and Teams Clients in the account route through this virtual network, unless specified otherwise for each case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network#is_default_network ZeroTrustTunnelVirtualNetwork#is_default_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#is_default_network ZeroTrustTunnelVirtualNetwork#is_default_network}
   */
   readonly isDefaultNetwork?: boolean | cdktf.IResolvable;
   /**
   * A user-friendly name chosen when the virtual network is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network#name ZeroTrustTunnelVirtualNetwork#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#name ZeroTrustTunnelVirtualNetwork#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}
 */
 export class ZeroTrustTunnelVirtualNetwork extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class ZeroTrustTunnelVirtualNetwork extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustTunnelVirtualNetwork resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustTunnelVirtualNetwork to import
-  * @param importFromId The id of the existing ZeroTrustTunnelVirtualNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustTunnelVirtualNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustTunnelVirtualNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class ZeroTrustTunnelVirtualNetwork extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class ZeroTrustTunnelVirtualNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_tunnel_virtual_network',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.49.0',
+        providerVersion: '4.49.1',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

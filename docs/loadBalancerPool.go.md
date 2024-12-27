@@ -4,7 +4,7 @@
 
 ### LoadBalancerPool <a name="LoadBalancerPool" id="@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool.Initializer"></a>
 
@@ -583,7 +583,7 @@ The construct id used in the generated config for the LoadBalancerPool to import
 
 The id of the existing LoadBalancerPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1157,7 +1157,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalance
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.checkRegions">CheckRegions</a></code> | <code>*[]*string</code> | A list of regions (specified by region code) from which to run health checks. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.description">Description</a></code> | <code>*string</code> | Free text description. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether to enable (the default) this pool. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#id LoadBalancerPool#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#id LoadBalancerPool#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.latitude">Latitude</a></code> | <code>*f64</code> | The latitude this pool is physically located at; used for proximity steering. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.loadShedding">LoadShedding</a></code> | <code>interface{}</code> | load_shedding block. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig.property.longitude">Longitude</a></code> | <code>*f64</code> | The longitude this pool is physically located at; used for proximity steering. |
@@ -1248,7 +1248,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#account_id LoadBalancerPool#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#account_id LoadBalancerPool#account_id}
 
 ---
 
@@ -1262,7 +1262,7 @@ Name *string
 
 A short name (tag) for the pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#name LoadBalancerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#name LoadBalancerPool#name}
 
 ---
 
@@ -1276,7 +1276,7 @@ Origins interface{}
 
 origins block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#origins LoadBalancerPool#origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#origins LoadBalancerPool#origins}
 
 ---
 
@@ -1292,7 +1292,7 @@ A list of regions (specified by region code) from which to run health checks.
 
 Empty means every Cloudflare data center (the default), but requires an Enterprise plan. Region codes can be found [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#check_regions LoadBalancerPool#check_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#check_regions LoadBalancerPool#check_regions}
 
 ---
 
@@ -1306,7 +1306,7 @@ Description *string
 
 Free text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#description LoadBalancerPool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#description LoadBalancerPool#description}
 
 ---
 
@@ -1322,7 +1322,7 @@ Whether to enable (the default) this pool.
 
 Disabled pools will not receive traffic and are excluded from health checks. Disabling a pool will cause any load balancers using it to failover to the next pool (if any). Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
 
 ---
 
@@ -1334,7 +1334,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#id LoadBalancerPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#id LoadBalancerPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1351,7 +1351,7 @@ Latitude *f64
 
 The latitude this pool is physically located at; used for proximity steering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#latitude LoadBalancerPool#latitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#latitude LoadBalancerPool#latitude}
 
 ---
 
@@ -1365,7 +1365,7 @@ LoadShedding interface{}
 
 load_shedding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#load_shedding LoadBalancerPool#load_shedding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#load_shedding LoadBalancerPool#load_shedding}
 
 ---
 
@@ -1379,7 +1379,7 @@ Longitude *f64
 
 The longitude this pool is physically located at; used for proximity steering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#longitude LoadBalancerPool#longitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#longitude LoadBalancerPool#longitude}
 
 ---
 
@@ -1395,7 +1395,7 @@ The minimum number of origins that must be healthy for this pool to serve traffi
 
 If the number of healthy origins falls below this number, the pool will be marked unhealthy and we will failover to the next available pool. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#minimum_origins LoadBalancerPool#minimum_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#minimum_origins LoadBalancerPool#minimum_origins}
 
 ---
 
@@ -1409,7 +1409,7 @@ Monitor *string
 
 The ID of the Monitor to use for health checking origins within this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#monitor LoadBalancerPool#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#monitor LoadBalancerPool#monitor}
 
 ---
 
@@ -1425,7 +1425,7 @@ The email address to send health status notifications to.
 
 This can be an individual mailbox or a mailing list. Multiple emails can be supplied as a comma delimited list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#notification_email LoadBalancerPool#notification_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#notification_email LoadBalancerPool#notification_email}
 
 ---
 
@@ -1439,7 +1439,7 @@ OriginSteering interface{}
 
 origin_steering block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#origin_steering LoadBalancerPool#origin_steering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#origin_steering LoadBalancerPool#origin_steering}
 
 ---
 
@@ -1479,7 +1479,7 @@ DefaultPercent *f64
 
 Percent of traffic to shed 0 - 100. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#default_percent LoadBalancerPool#default_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#default_percent LoadBalancerPool#default_percent}
 
 ---
 
@@ -1493,7 +1493,7 @@ DefaultPolicy *string
 
 Method of shedding traffic. Available values: `""`, `hash`, `random`. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#default_policy LoadBalancerPool#default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#default_policy LoadBalancerPool#default_policy}
 
 ---
 
@@ -1507,7 +1507,7 @@ SessionPercent *f64
 
 Percent of session traffic to shed 0 - 100. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#session_percent LoadBalancerPool#session_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#session_percent LoadBalancerPool#session_percent}
 
 ---
 
@@ -1521,7 +1521,7 @@ SessionPolicy *string
 
 Method of shedding traffic. Available values: `""`, `hash`. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#session_policy LoadBalancerPool#session_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#session_policy LoadBalancerPool#session_policy}
 
 ---
 
@@ -1565,7 +1565,7 @@ Address *string
 
 The IP address (IPv4 or IPv6) of the origin, or the publicly addressable hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#address LoadBalancerPool#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#address LoadBalancerPool#address}
 
 ---
 
@@ -1579,7 +1579,7 @@ Name *string
 
 A human-identifiable name for the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#name LoadBalancerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#name LoadBalancerPool#name}
 
 ---
 
@@ -1595,7 +1595,7 @@ Whether this origin is enabled.
 
 Disabled origins will not receive traffic and are excluded from health checks. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
 
 ---
 
@@ -1609,7 +1609,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
 
 ---
 
@@ -1623,7 +1623,7 @@ VirtualNetworkId *string
 
 The virtual network subnet ID the origin belongs in. Virtual network must also belong to the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#virtual_network_id LoadBalancerPool#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#virtual_network_id LoadBalancerPool#virtual_network_id}
 
 ---
 
@@ -1637,7 +1637,7 @@ Weight *f64
 
 The weight (0.01 - 1.00) of this origin, relative to other origins in the pool. Equal values mean equal weighting. A weight of 0 means traffic will not be sent to this origin, but health is still checked. When [`origin_steering.policy="least_outstanding_requests"`](#policy), weight is used to scale the origin's outstanding requests. When [`origin_steering.policy="least_connections"`](#policy), weight is used to scale the origin's open connections. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#weight LoadBalancerPool#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#weight LoadBalancerPool#weight}
 
 ---
 
@@ -1673,7 +1673,7 @@ Header *string
 
 HTTP Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
 
 ---
 
@@ -1687,7 +1687,7 @@ Values *[]*string
 
 Values for the HTTP headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#values LoadBalancerPool#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#values LoadBalancerPool#values}
 
 ---
 
@@ -1723,7 +1723,7 @@ Origin steering policy to be used.
 
 Value `random` selects an origin randomly. Value `hash` selects an origin by computing a hash over the CF-Connecting-IP address. Value `least_outstanding_requests` selects an origin by taking into consideration origin weights, as well as each origin's number of outstanding requests. Origins with more pending requests are weighted proportionately less relative to others. Value `least_connections` selects an origin by taking into consideration origin weights, as well as each origin's number of open connections. Origins with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections. Available values: `""`, `hash`, `random`, `least_outstanding_requests`, `least_connections`. Defaults to `random`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/load_balancer_pool#policy LoadBalancerPool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/load_balancer_pool#policy LoadBalancerPool#policy}
 
 ---
 

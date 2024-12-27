@@ -33,6 +33,7 @@ The following submodules are available:
 - [byoIpPrefix](./byoIpPrefix.java.md)
 - [certificatePack](./certificatePack.java.md)
 - [cloudConnectorRules](./cloudConnectorRules.java.md)
+- [contentScanning](./contentScanning.java.md)
 - [contentScanningExpression](./contentScanningExpression.java.md)
 - [customHostname](./customHostname.java.md)
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.java.md)
