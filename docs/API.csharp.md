@@ -33,6 +33,7 @@ The following submodules are available:
 - [byoIpPrefix](./byoIpPrefix.csharp.md)
 - [certificatePack](./certificatePack.csharp.md)
 - [cloudConnectorRules](./cloudConnectorRules.csharp.md)
+- [contentScanning](./contentScanning.csharp.md)
 - [contentScanningExpression](./contentScanningExpression.csharp.md)
 - [customHostname](./customHostname.csharp.md)
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.csharp.md)

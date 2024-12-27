@@ -4,7 +4,7 @@
 
 ### LeakedCredentialCheck <a name="LeakedCredentialCheck" id="@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.Initializer"></a>
 
@@ -111,7 +111,7 @@ Must be unique amongst siblings in the same scope
 
 State of the Leaked Credential Check detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
 
 ---
 
@@ -121,7 +121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
 
 ---
 
@@ -548,7 +548,7 @@ The construct id used in the generated config for the LeakedCredentialCheck to i
 
 The id of the existing LeakedCredentialCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ public java.lang.Object getEnabled();
 
 State of the Leaked Credential Check detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
 
 ---
 
@@ -922,7 +922,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
 
 ---
 

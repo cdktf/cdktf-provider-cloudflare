@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface InfrastructureAccessTargetConfig extends cdktf.TerraformMetaArg
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
   */
   readonly accountId: string;
   /**
   * A non-unique field that refers to a target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
   */
   readonly hostname: string;
   /**
   * The IPv4/IPv6 address that identifies where to reach a target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
   */
   readonly ip: InfrastructureAccessTargetIp;
 }
@@ -35,13 +30,13 @@ export interface InfrastructureAccessTargetIpIpv4 {
   /**
   * The IP address of the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
   */
   readonly ipAddr: string;
   /**
   * The private virtual network identifier for the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
   */
   readonly virtualNetworkId: string;
 }
@@ -160,13 +155,13 @@ export interface InfrastructureAccessTargetIpIpv6 {
   /**
   * The IP address of the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
   */
   readonly ipAddr: string;
   /**
   * The private virtual network identifier for the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
   */
   readonly virtualNetworkId: string;
 }
@@ -285,13 +280,13 @@ export interface InfrastructureAccessTargetIp {
   /**
   * The target's IPv4 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#ipv4 InfrastructureAccessTarget#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ipv4 InfrastructureAccessTarget#ipv4}
   */
   readonly ipv4?: InfrastructureAccessTargetIpIpv4;
   /**
   * The target's IPv6 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#ipv6 InfrastructureAccessTarget#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ipv6 InfrastructureAccessTarget#ipv6}
   */
   readonly ipv6?: InfrastructureAccessTargetIpIpv6;
 }
@@ -414,7 +409,7 @@ export class InfrastructureAccessTargetIpOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target}
 */
 export class InfrastructureAccessTarget extends cdktf.TerraformResource {
 
@@ -430,7 +425,7 @@ export class InfrastructureAccessTarget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InfrastructureAccessTarget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InfrastructureAccessTarget to import
-  * @param importFromId The id of the existing InfrastructureAccessTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InfrastructureAccessTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InfrastructureAccessTarget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -442,7 +437,7 @@ export class InfrastructureAccessTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -453,7 +448,7 @@ export class InfrastructureAccessTarget extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_infrastructure_access_target',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.49.0',
+        providerVersion: '4.49.1',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

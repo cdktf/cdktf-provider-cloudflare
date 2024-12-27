@@ -4,12 +4,12 @@
 
 ### ZeroTrustGatewaySettings <a name="ZeroTrustGatewaySettings" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettings(scope Construct, id *string, config ZeroTrustGatewaySettingsConfig) ZeroTrustGatewaySettings
 ```
@@ -640,7 +640,7 @@ func ResetUrlBrowserIsolationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsConstruct(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ zerotrustgatewaysettings.ZeroTrustGatewaySettings_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.ZeroTrustGatewaySettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ The construct id used in the generated config for the ZeroTrustGatewaySettings t
 
 The id of the existing ZeroTrustGatewaySettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1325,13 +1325,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsAntivirus {
 	EnabledDownloadPhase: interface{},
 	EnabledUploadPhase: interface{},
 	FailClosed: interface{},
-	NotificationSettings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirusNotificationSettings,
+	NotificationSettings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirusNotificationSettings,
 }
 ```
 
@@ -1356,7 +1356,7 @@ EnabledDownloadPhase interface{}
 
 Scan on file download.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#enabled_download_phase ZeroTrustGatewaySettings#enabled_download_phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#enabled_download_phase ZeroTrustGatewaySettings#enabled_download_phase}
 
 ---
 
@@ -1370,7 +1370,7 @@ EnabledUploadPhase interface{}
 
 Scan on file upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#enabled_upload_phase ZeroTrustGatewaySettings#enabled_upload_phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#enabled_upload_phase ZeroTrustGatewaySettings#enabled_upload_phase}
 
 ---
 
@@ -1384,7 +1384,7 @@ FailClosed interface{}
 
 Block requests for files that cannot be scanned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#fail_closed ZeroTrustGatewaySettings#fail_closed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#fail_closed ZeroTrustGatewaySettings#fail_closed}
 
 ---
 
@@ -1398,7 +1398,7 @@ NotificationSettings ZeroTrustGatewaySettingsAntivirusNotificationSettings
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#notification_settings ZeroTrustGatewaySettings#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#notification_settings ZeroTrustGatewaySettings#notification_settings}
 
 ---
 
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirusNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsAntivirusNotificationSettings {
 	Enabled: interface{},
@@ -1436,7 +1436,7 @@ Enabled interface{}
 
 Enable notification settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
 
 ---
 
@@ -1450,7 +1450,7 @@ Message *string
 
 Notification content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#message ZeroTrustGatewaySettings#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#message ZeroTrustGatewaySettings#message}
 
 ---
 
@@ -1464,7 +1464,7 @@ SupportUrl *string
 
 Support URL to show in the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#support_url ZeroTrustGatewaySettings#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#support_url ZeroTrustGatewaySettings#support_url}
 
 ---
 
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBlockPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsBlockPage {
 	BackgroundColor: *string,
@@ -1512,7 +1512,7 @@ BackgroundColor *string
 
 Hex code of block page background color.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
 
 ---
 
@@ -1526,7 +1526,7 @@ Enabled interface{}
 
 Indicator of enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
 
 ---
 
@@ -1540,7 +1540,7 @@ FooterText *string
 
 Block page footer text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
 
 ---
 
@@ -1554,7 +1554,7 @@ HeaderText *string
 
 Block page header text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
 
 ---
 
@@ -1568,7 +1568,7 @@ LogoPath *string
 
 URL of block page logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
 
 ---
 
@@ -1582,7 +1582,7 @@ MailtoAddress *string
 
 Admin email for users to contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
 
 ---
 
@@ -1596,7 +1596,7 @@ MailtoSubject *string
 
 Subject line for emails created from block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
 
 ---
 
@@ -1610,7 +1610,7 @@ Name *string
 
 Name of block page configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
 
 ---
 
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBodyScanning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsBodyScanning {
 	InspectionMode: *string,
@@ -1644,7 +1644,7 @@ InspectionMode *string
 
 Body scanning inspection mode. Available values: `deep`, `shallow`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#inspection_mode ZeroTrustGatewaySettings#inspection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#inspection_mode ZeroTrustGatewaySettings#inspection_mode}
 
 ---
 
@@ -1653,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsCertificate {
 	Id: *string,
@@ -1678,7 +1678,7 @@ Id *string
 
 ID of certificate for TLS interception.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1690,7 +1690,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsConfig {
 	Connection: interface{},
@@ -1702,20 +1702,20 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustga
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	ActivityLogEnabled: interface{},
-	Antivirus: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirus,
-	BlockPage: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBlockPage,
-	BodyScanning: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBodyScanning,
-	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCertificate,
-	CustomCertificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCustomCertificate,
-	ExtendedEmailMatching: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsExtendedEmailMatching,
-	Fips: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsFips,
+	Antivirus: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirus,
+	BlockPage: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBlockPage,
+	BodyScanning: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBodyScanning,
+	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCertificate,
+	CustomCertificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCustomCertificate,
+	ExtendedEmailMatching: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsExtendedEmailMatching,
+	Fips: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsFips,
 	Id: *string,
-	Logging: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLogging,
+	Logging: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLogging,
 	NonIdentityBrowserIsolationEnabled: interface{},
-	PayloadLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsPayloadLog,
+	PayloadLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsPayloadLog,
 	ProtocolDetectionEnabled: interface{},
-	Proxy: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsProxy,
-	SshSessionLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSshSessionLog,
+	Proxy: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsProxy,
+	SshSessionLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSshSessionLog,
 	TlsDecryptEnabled: interface{},
 	UrlBrowserIsolationEnabled: interface{},
 }
@@ -1741,7 +1741,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustga
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.customCertificate">CustomCertificate</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCustomCertificate">ZeroTrustGatewaySettingsCustomCertificate</a></code> | custom_certificate block. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.extendedEmailMatching">ExtendedEmailMatching</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsExtendedEmailMatching">ZeroTrustGatewaySettingsExtendedEmailMatching</a></code> | extended_email_matching block. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.fips">Fips</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsFips">ZeroTrustGatewaySettingsFips</a></code> | fips block. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.logging">Logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLogging">ZeroTrustGatewaySettingsLogging</a></code> | logging block. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.nonIdentityBrowserIsolationEnabled">NonIdentityBrowserIsolationEnabled</a></code> | <code>interface{}</code> | Enable non-identity onramp for Browser Isolation. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsConfig.property.payloadLog">PayloadLog</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsPayloadLog">ZeroTrustGatewaySettingsPayloadLog</a></code> | payload_log block. |
@@ -1833,7 +1833,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#account_id ZeroTrustGatewaySettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#account_id ZeroTrustGatewaySettings#account_id}
 
 ---
 
@@ -1847,7 +1847,7 @@ ActivityLogEnabled interface{}
 
 Whether to enable the activity log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#activity_log_enabled ZeroTrustGatewaySettings#activity_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#activity_log_enabled ZeroTrustGatewaySettings#activity_log_enabled}
 
 ---
 
@@ -1861,7 +1861,7 @@ Antivirus ZeroTrustGatewaySettingsAntivirus
 
 antivirus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
 
 ---
 
@@ -1875,7 +1875,7 @@ BlockPage ZeroTrustGatewaySettingsBlockPage
 
 block_page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
 
 ---
 
@@ -1889,7 +1889,7 @@ BodyScanning ZeroTrustGatewaySettingsBodyScanning
 
 body_scanning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
 
 ---
 
@@ -1903,7 +1903,7 @@ Certificate ZeroTrustGatewaySettingsCertificate
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
 
 ---
 
@@ -1917,7 +1917,7 @@ CustomCertificate ZeroTrustGatewaySettingsCustomCertificate
 
 custom_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
 
 ---
 
@@ -1931,7 +1931,7 @@ ExtendedEmailMatching ZeroTrustGatewaySettingsExtendedEmailMatching
 
 extended_email_matching block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
 
 ---
 
@@ -1945,7 +1945,7 @@ Fips ZeroTrustGatewaySettingsFips
 
 fips block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
 
 ---
 
@@ -1957,7 +1957,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1974,7 +1974,7 @@ Logging ZeroTrustGatewaySettingsLogging
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#logging ZeroTrustGatewaySettings#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#logging ZeroTrustGatewaySettings#logging}
 
 ---
 
@@ -1988,7 +1988,7 @@ NonIdentityBrowserIsolationEnabled interface{}
 
 Enable non-identity onramp for Browser Isolation. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#non_identity_browser_isolation_enabled ZeroTrustGatewaySettings#non_identity_browser_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#non_identity_browser_isolation_enabled ZeroTrustGatewaySettings#non_identity_browser_isolation_enabled}
 
 ---
 
@@ -2002,7 +2002,7 @@ PayloadLog ZeroTrustGatewaySettingsPayloadLog
 
 payload_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#payload_log ZeroTrustGatewaySettings#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#payload_log ZeroTrustGatewaySettings#payload_log}
 
 ---
 
@@ -2016,7 +2016,7 @@ ProtocolDetectionEnabled interface{}
 
 Indicator that protocol detection is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#protocol_detection_enabled ZeroTrustGatewaySettings#protocol_detection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#protocol_detection_enabled ZeroTrustGatewaySettings#protocol_detection_enabled}
 
 ---
 
@@ -2030,7 +2030,7 @@ Proxy ZeroTrustGatewaySettingsProxy
 
 proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#proxy ZeroTrustGatewaySettings#proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#proxy ZeroTrustGatewaySettings#proxy}
 
 ---
 
@@ -2044,7 +2044,7 @@ SshSessionLog ZeroTrustGatewaySettingsSshSessionLog
 
 ssh_session_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#ssh_session_log ZeroTrustGatewaySettings#ssh_session_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#ssh_session_log ZeroTrustGatewaySettings#ssh_session_log}
 
 ---
 
@@ -2058,7 +2058,7 @@ TlsDecryptEnabled interface{}
 
 Indicator that decryption of TLS traffic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#tls_decrypt_enabled ZeroTrustGatewaySettings#tls_decrypt_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#tls_decrypt_enabled ZeroTrustGatewaySettings#tls_decrypt_enabled}
 
 ---
 
@@ -2072,7 +2072,7 @@ UrlBrowserIsolationEnabled interface{}
 
 Safely browse websites in Browser Isolation through a URL. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#url_browser_isolation_enabled ZeroTrustGatewaySettings#url_browser_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#url_browser_isolation_enabled ZeroTrustGatewaySettings#url_browser_isolation_enabled}
 
 ---
 
@@ -2081,7 +2081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCustomCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsCustomCertificate {
 	Enabled: interface{},
@@ -2108,7 +2108,7 @@ Enabled interface{}
 
 Whether TLS encryption should use a custom certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
 
 ---
 
@@ -2122,7 +2122,7 @@ Id *string
 
 ID of custom certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2134,7 +2134,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsExtendedEmailMatching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsExtendedEmailMatching {
 	Enabled: interface{},
@@ -2159,7 +2159,7 @@ Enabled interface{}
 
 Whether e-mails should be matched on all variants of user emails (with + or . modifiers) in Firewall policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
 
 ---
 
@@ -2168,7 +2168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsFips.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsFips {
 	Tls: interface{},
@@ -2193,7 +2193,7 @@ Tls interface{}
 
 Only allow FIPS-compliant TLS configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
 
 ---
 
@@ -2202,11 +2202,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsLogging {
 	RedactPii: interface{},
-	SettingsByRuleType: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleType,
+	SettingsByRuleType: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleType,
 }
 ```
 
@@ -2229,7 +2229,7 @@ RedactPii interface{}
 
 Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#redact_pii ZeroTrustGatewaySettings#redact_pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#redact_pii ZeroTrustGatewaySettings#redact_pii}
 
 ---
 
@@ -2243,7 +2243,7 @@ SettingsByRuleType ZeroTrustGatewaySettingsLoggingSettingsByRuleType
 
 settings_by_rule_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#settings_by_rule_type ZeroTrustGatewaySettings#settings_by_rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#settings_by_rule_type ZeroTrustGatewaySettings#settings_by_rule_type}
 
 ---
 
@@ -2252,12 +2252,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleType {
-	Dns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns,
-	Http: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp,
-	L4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4,
+	Dns: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns,
+	Http: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp,
+	L4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4,
 }
 ```
 
@@ -2281,7 +2281,7 @@ Dns ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#dns ZeroTrustGatewaySettings#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#dns ZeroTrustGatewaySettings#dns}
 
 ---
 
@@ -2295,7 +2295,7 @@ Http ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#http ZeroTrustGatewaySettings#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#http ZeroTrustGatewaySettings#http}
 
 ---
 
@@ -2309,7 +2309,7 @@ L4 ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4
 
 l4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#l4 ZeroTrustGatewaySettings#l4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#l4 ZeroTrustGatewaySettings#l4}
 
 ---
 
@@ -2318,7 +2318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns {
 	LogAll: interface{},
@@ -2331,7 +2331,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustga
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns.property.logAll">LogAll</a></code> | <code>interface{}</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}. |
 
 ---
 
@@ -2345,7 +2345,7 @@ LogAll interface{}
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
 
 ---
 
@@ -2357,7 +2357,7 @@ LogBlocks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}.
 
 ---
 
@@ -2366,7 +2366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp {
 	LogAll: interface{},
@@ -2379,7 +2379,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustga
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp.property.logAll">LogAll</a></code> | <code>interface{}</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}. |
 
 ---
 
@@ -2393,7 +2393,7 @@ LogAll interface{}
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
 
 ---
 
@@ -2405,7 +2405,7 @@ LogBlocks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}.
 
 ---
 
@@ -2414,7 +2414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4 {
 	LogAll: interface{},
@@ -2427,7 +2427,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustga
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4.property.logAll">LogAll</a></code> | <code>interface{}</code> | Whether to log all activity. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4.property.logBlocks">LogBlocks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}. |
 
 ---
 
@@ -2441,7 +2441,7 @@ LogAll interface{}
 
 Whether to log all activity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_all ZeroTrustGatewaySettings#log_all}
 
 ---
 
@@ -2453,7 +2453,7 @@ LogBlocks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#log_blocks ZeroTrustGatewaySettings#log_blocks}.
 
 ---
 
@@ -2462,7 +2462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsPayloadLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsPayloadLog {
 	PublicKey: *string,
@@ -2487,7 +2487,7 @@ PublicKey *string
 
 Public key used to encrypt matched payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
 
 ---
 
@@ -2496,7 +2496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsProxy {
 	DisableForTime: *f64,
@@ -2529,7 +2529,7 @@ DisableForTime *f64
 
 Sets the time limit in seconds that a user can use an override code to bypass WARP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#disable_for_time ZeroTrustGatewaySettings#disable_for_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#disable_for_time ZeroTrustGatewaySettings#disable_for_time}
 
 ---
 
@@ -2543,7 +2543,7 @@ RootCa interface{}
 
 Whether root ca is enabled account wide for ZT clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#root_ca ZeroTrustGatewaySettings#root_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#root_ca ZeroTrustGatewaySettings#root_ca}
 
 ---
 
@@ -2557,7 +2557,7 @@ Tcp interface{}
 
 Whether gateway proxy is enabled on gateway devices for TCP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#tcp ZeroTrustGatewaySettings#tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#tcp ZeroTrustGatewaySettings#tcp}
 
 ---
 
@@ -2571,7 +2571,7 @@ Udp interface{}
 
 Whether gateway proxy is enabled on gateway devices for UDP traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#udp ZeroTrustGatewaySettings#udp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#udp ZeroTrustGatewaySettings#udp}
 
 ---
 
@@ -2585,7 +2585,7 @@ VirtualIp interface{}
 
 Whether virtual IP (CGNAT) is enabled account wide and will override existing local interface IP for ZT clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#virtual_ip ZeroTrustGatewaySettings#virtual_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#virtual_ip ZeroTrustGatewaySettings#virtual_ip}
 
 ---
 
@@ -2594,7 +2594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSshSessionLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 &zerotrustgatewaysettings.ZeroTrustGatewaySettingsSshSessionLog {
 	PublicKey: *string,
@@ -2619,7 +2619,7 @@ PublicKey *string
 
 Public key used to encrypt ssh session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_settings#public_key ZeroTrustGatewaySettings#public_key}
 
 ---
 
@@ -2630,7 +2630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirusNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsAntivirusNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsAntivirusNotificationSettingsOutputReference
 ```
@@ -2966,7 +2966,7 @@ func InternalValue() ZeroTrustGatewaySettingsAntivirusNotificationSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsAntivirusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsAntivirusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsAntivirusOutputReference
 ```
@@ -3323,7 +3323,7 @@ func InternalValue() ZeroTrustGatewaySettingsAntivirus
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBlockPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsBlockPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsBlockPageOutputReference
 ```
@@ -3804,7 +3804,7 @@ func InternalValue() ZeroTrustGatewaySettingsBlockPage
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsBodyScanningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsBodyScanningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsBodyScanningOutputReference
 ```
@@ -4075,7 +4075,7 @@ func InternalValue() ZeroTrustGatewaySettingsBodyScanning
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsCertificateOutputReference
 ```
@@ -4346,7 +4346,7 @@ func InternalValue() ZeroTrustGatewaySettingsCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsCustomCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsCustomCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsCustomCertificateOutputReference
 ```
@@ -4657,7 +4657,7 @@ func InternalValue() ZeroTrustGatewaySettingsCustomCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsExtendedEmailMatchingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsExtendedEmailMatchingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsExtendedEmailMatchingOutputReference
 ```
@@ -4928,7 +4928,7 @@ func InternalValue() ZeroTrustGatewaySettingsExtendedEmailMatching
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsFipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsFipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsFipsOutputReference
 ```
@@ -5206,7 +5206,7 @@ func InternalValue() ZeroTrustGatewaySettingsFips
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsLoggingOutputReference
 ```
@@ -5512,7 +5512,7 @@ func InternalValue() ZeroTrustGatewaySettingsLogging
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDnsOutputReference
 ```
@@ -5805,7 +5805,7 @@ func InternalValue() ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttpOutputReference
 ```
@@ -6098,7 +6098,7 @@ func InternalValue() ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4OutputReference
 ```
@@ -6391,7 +6391,7 @@ func InternalValue() ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeL4
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsLoggingSettingsByRuleTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsLoggingSettingsByRuleTypeOutputReference
 ```
@@ -6745,7 +6745,7 @@ func InternalValue() ZeroTrustGatewaySettingsLoggingSettingsByRuleType
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsPayloadLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsPayloadLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsPayloadLogOutputReference
 ```
@@ -7016,7 +7016,7 @@ func InternalValue() ZeroTrustGatewaySettingsPayloadLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsProxyOutputReference
 ```
@@ -7375,7 +7375,7 @@ func InternalValue() ZeroTrustGatewaySettingsProxy
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSshSessionLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaysettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaysettings"
 
 zerotrustgatewaysettings.NewZeroTrustGatewaySettingsSshSessionLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSshSessionLogOutputReference
 ```

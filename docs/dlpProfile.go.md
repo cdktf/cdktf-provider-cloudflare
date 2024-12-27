@@ -4,12 +4,12 @@
 
 ### DlpProfile <a name="DlpProfile" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile cloudflare_dlp_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfile(scope Construct, id *string, config DlpProfileConfig) DlpProfile
 ```
@@ -432,7 +432,7 @@ func ResetOcrEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ dlpprofile.DlpProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ dlpprofile.DlpProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.DlpProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DlpProfile to import.
 
 The id of the existing DlpProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
 	Entry: interface{},
 	Name: *string,
 	Type: *string,
-	ContextAwareness: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dlpProfile.DlpProfileContextAwareness,
+	ContextAwareness: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dlpProfile.DlpProfileContextAwareness,
 	Description: *string,
 	Id: *string,
 	OcrEnabled: interface{},
@@ -959,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.type">Type</a></code> | <code>*string</code> | The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.contextAwareness">ContextAwareness</a></code> | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileContextAwareness">DlpProfileContextAwareness</a></code> | context_awareness block. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.description">Description</a></code> | <code>*string</code> | Brief summary of the profile and its intended use. |
-| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#id DlpProfile#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#id DlpProfile#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig.property.ocrEnabled">OcrEnabled</a></code> | <code>interface{}</code> | If true, scan images via OCR to determine if any text present matches filters. |
 
 ---
@@ -1044,7 +1044,7 @@ AccountId *string
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#account_id DlpProfile#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#account_id DlpProfile#account_id}
 
 ---
 
@@ -1058,7 +1058,7 @@ AllowedMatchCount *f64
 
 Related DLP policies will trigger when the match count exceeds the number set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#allowed_match_count DlpProfile#allowed_match_count}
 
 ---
 
@@ -1072,7 +1072,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#entry DlpProfile#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#entry DlpProfile#entry}
 
 ---
 
@@ -1086,7 +1086,7 @@ Name *string
 
 Name of the profile. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#name DlpProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#name DlpProfile#name}
 
 ---
 
@@ -1100,7 +1100,7 @@ Type *string
 
 The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#type DlpProfile#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#type DlpProfile#type}
 
 ---
 
@@ -1114,7 +1114,7 @@ ContextAwareness DlpProfileContextAwareness
 
 context_awareness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#context_awareness DlpProfile#context_awareness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#context_awareness DlpProfile#context_awareness}
 
 ---
 
@@ -1128,7 +1128,7 @@ Description *string
 
 Brief summary of the profile and its intended use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#description DlpProfile#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#description DlpProfile#description}
 
 ---
 
@@ -1140,7 +1140,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#id DlpProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#id DlpProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1157,7 @@ OcrEnabled interface{}
 
 If true, scan images via OCR to determine if any text present matches filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#ocr_enabled DlpProfile#ocr_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#ocr_enabled DlpProfile#ocr_enabled}
 
 ---
 
@@ -1166,11 +1166,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileContextAwareness.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileContextAwareness {
 	Enabled: interface{},
-	Skip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dlpProfile.DlpProfileContextAwarenessSkip,
+	Skip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dlpProfile.DlpProfileContextAwarenessSkip,
 }
 ```
 
@@ -1193,7 +1193,7 @@ Enabled interface{}
 
 Scan the context of predefined entries to only return matches surrounded by keywords.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#enabled DlpProfile#enabled}
 
 ---
 
@@ -1207,7 +1207,7 @@ Skip DlpProfileContextAwarenessSkip
 
 skip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#skip DlpProfile#skip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#skip DlpProfile#skip}
 
 ---
 
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileContextAwarenessSkip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileContextAwarenessSkip {
 	Files: interface{},
@@ -1241,7 +1241,7 @@ Files interface{}
 
 Return all matches, regardless of context analysis result, if the data is a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#files DlpProfile#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#files DlpProfile#files}
 
 ---
 
@@ -1250,13 +1250,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileEntry {
 	Name: *string,
 	Enabled: interface{},
 	Id: *string,
-	Pattern: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dlpProfile.DlpProfileEntryPattern,
+	Pattern: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dlpProfile.DlpProfileEntryPattern,
 }
 ```
 
@@ -1281,7 +1281,7 @@ Name *string
 
 Name of the entry to deploy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#name DlpProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#name DlpProfile#name}
 
 ---
 
@@ -1295,7 +1295,7 @@ Enabled interface{}
 
 Whether the entry is active. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#enabled DlpProfile#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#enabled DlpProfile#enabled}
 
 ---
 
@@ -1309,7 +1309,7 @@ Id *string
 
 Unique entry identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#id DlpProfile#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#id DlpProfile#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1326,7 +1326,7 @@ Pattern DlpProfileEntryPattern
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#pattern DlpProfile#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#pattern DlpProfile#pattern}
 
 ---
 
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 &dlpprofile.DlpProfileEntryPattern {
 	Regex: *string,
@@ -1362,7 +1362,7 @@ Regex *string
 
 The regex that defines the pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#regex DlpProfile#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#regex DlpProfile#regex}
 
 ---
 
@@ -1376,7 +1376,7 @@ Validation *string
 
 The validation algorithm to apply with this pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/dlp_profile#validation DlpProfile#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/dlp_profile#validation DlpProfile#validation}
 
 ---
 
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileContextAwarenessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileContextAwarenessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlpProfileContextAwarenessOutputReference
 ```
@@ -1693,7 +1693,7 @@ func InternalValue() DlpProfileContextAwareness
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileContextAwarenessSkipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileContextAwarenessSkipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlpProfileContextAwarenessSkipOutputReference
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() DlpProfileContextAwarenessSkip
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DlpProfileEntryList
 ```
@@ -2124,7 +2124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DlpProfileEntryOutputReference
 ```
@@ -2513,7 +2513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/dlpprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dlpprofile"
 
 dlpprofile.NewDlpProfileEntryPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DlpProfileEntryPatternOutputReference
 ```

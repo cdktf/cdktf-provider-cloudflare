@@ -33,6 +33,7 @@ The following submodules are available:
 - [byoIpPrefix](./byoIpPrefix.go.md)
 - [certificatePack](./certificatePack.go.md)
 - [cloudConnectorRules](./cloudConnectorRules.go.md)
+- [contentScanning](./contentScanning.go.md)
 - [contentScanningExpression](./contentScanningExpression.go.md)
 - [customHostname](./customHostname.go.md)
 - [customHostnameFallbackOrigin](./customHostnameFallbackOrigin.go.md)
