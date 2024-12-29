@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/magic_firewall_ruleset
 // generated from terraform resource schema
 
