@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.NewZeroTrustAccessOrganization(scope Construct, id *string, config ZeroTrustAccessOrganizationConfig) ZeroTrustAccessOrganization
 ```
@@ -488,7 +488,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.ZeroTrustAccessOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.ZeroTrustAccessOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ zerotrustaccessorganization.ZeroTrustAccessOrganization_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.ZeroTrustAccessOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ zerotrustaccessorganization.ZeroTrustAccessOrganization_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.ZeroTrustAccessOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1085,7 +1085,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 &zerotrustaccessorganization.ZeroTrustAccessOrganizationConfig {
 	Connection: interface{},
@@ -1418,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationCustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 &zerotrustaccessorganization.ZeroTrustAccessOrganizationCustomPages {
 	Forbidden: *string,
@@ -1468,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationLoginDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 &zerotrustaccessorganization.ZeroTrustAccessOrganizationLoginDesign {
 	BackgroundColor: *string,
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationCustomPagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.NewZeroTrustAccessOrganizationCustomPagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessOrganizationCustomPagesList
 ```
@@ -1728,7 +1728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationCustomPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.NewZeroTrustAccessOrganizationCustomPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessOrganizationCustomPagesOutputReference
 ```
@@ -2053,7 +2053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationLoginDesignList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.NewZeroTrustAccessOrganizationLoginDesignList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessOrganizationLoginDesignList
 ```
@@ -2213,7 +2213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessOrganization.ZeroTrustAccessOrganizationLoginDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessorganization"
 
 zerotrustaccessorganization.NewZeroTrustAccessOrganizationLoginDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessOrganizationLoginDesignOutputReference
 ```
