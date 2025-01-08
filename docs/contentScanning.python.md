@@ -4,7 +4,7 @@
 
 ### ContentScanning <a name="ContentScanning" id="@cdktf/provider-cloudflare.contentScanning.ContentScanning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning cloudflare_content_scanning}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning cloudflare_content_scanning}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanning.ContentScanning.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 State of the Content Scanning feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#enabled ContentScanning#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#enabled ContentScanning#enabled}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the ContentScanning to import.
 
 The id of the existing ContentScanning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ enabled: typing.Union[bool, IResolvable]
 
 State of the Content Scanning feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#enabled ContentScanning#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#enabled ContentScanning#enabled}
 
 ---
 
@@ -960,7 +960,7 @@ zone_id: str
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 

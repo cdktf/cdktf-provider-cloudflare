@@ -4,7 +4,7 @@
 
 ### InfrastructureAccessTarget <a name="InfrastructureAccessTarget" id="@cdktf/provider-cloudflare.infrastructureAccessTarget.InfrastructureAccessTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.infrastructureAccessTarget.InfrastructureAccessTarget.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A non-unique field that refers to a target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The IPv4/IPv6 address that identifies where to reach a target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
 
 ---
 
@@ -572,7 +572,7 @@ The construct id used in the generated config for the InfrastructureAccessTarget
 
 The id of the existing InfrastructureAccessTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,7 +988,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
 
 ---
 
@@ -1002,7 +1002,7 @@ public java.lang.String getHostname();
 
 A non-unique field that refers to a target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
 
 ---
 
@@ -1016,7 +1016,7 @@ public InfrastructureAccessTargetIp getIp();
 
 The IPv4/IPv6 address that identifies where to reach a target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
 
 ---
 
@@ -1052,7 +1052,7 @@ public InfrastructureAccessTargetIpIpv4 getIpv4();
 
 The target's IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ipv4 InfrastructureAccessTarget#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#ipv4 InfrastructureAccessTarget#ipv4}
 
 ---
 
@@ -1066,7 +1066,7 @@ public InfrastructureAccessTargetIpIpv6 getIpv6();
 
 The target's IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ipv6 InfrastructureAccessTarget#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#ipv6 InfrastructureAccessTarget#ipv6}
 
 ---
 
@@ -1102,7 +1102,7 @@ public java.lang.String getIpAddr();
 
 The IP address of the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.String getVirtualNetworkId();
 
 The private virtual network identifier for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
 
 ---
 
@@ -1152,7 +1152,7 @@ public java.lang.String getIpAddr();
 
 The IP address of the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#ip_addr InfrastructureAccessTarget#ip_addr}
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.lang.String getVirtualNetworkId();
 
 The private virtual network identifier for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target#virtual_network_id InfrastructureAccessTarget#virtual_network_id}
 
 ---
 

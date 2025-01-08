@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ContentScanningConfig extends cdktf.TerraformMetaArguments {
   /**
   * State of the Content Scanning feature
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#enabled ContentScanning#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#enabled ContentScanning#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The zone identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning cloudflare_content_scanning}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning cloudflare_content_scanning}
 */
 export class ContentScanning extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ContentScanning extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ContentScanning resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContentScanning to import
-  * @param importFromId The id of the existing ContentScanning that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContentScanning that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContentScanning to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ContentScanning extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/content_scanning cloudflare_content_scanning} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/content_scanning cloudflare_content_scanning} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ContentScanning extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_content_scanning',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.49.1',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,
