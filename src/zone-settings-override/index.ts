@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneSettingsOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#id ZoneSettingsOverride#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#id ZoneSettingsOverride#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,15 +17,95 @@ export interface ZoneSettingsOverrideConfig extends cdktf.TerraformMetaArguments
   /**
   * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#zone_id ZoneSettingsOverride#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#zone_id ZoneSettingsOverride#zone_id}
   */
   readonly zoneId: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#settings ZoneSettingsOverride#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#settings ZoneSettingsOverride#settings}
   */
   readonly settings?: ZoneSettingsOverrideSettings;
+}
+export interface ZoneSettingsOverrideInitialSettingsAegis {
+}
+
+export function zoneSettingsOverrideInitialSettingsAegisToTerraform(struct?: ZoneSettingsOverrideInitialSettingsAegis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zoneSettingsOverrideInitialSettingsAegisToHclTerraform(struct?: ZoneSettingsOverrideInitialSettingsAegis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZoneSettingsOverrideInitialSettingsAegisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ZoneSettingsOverrideInitialSettingsAegis | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneSettingsOverrideInitialSettingsAegis | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // pool_id - computed: true, optional: false, required: false
+  public get poolId() {
+    return this.getStringAttribute('pool_id');
+  }
+}
+
+export class ZoneSettingsOverrideInitialSettingsAegisList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ZoneSettingsOverrideInitialSettingsAegisOutputReference {
+    return new ZoneSettingsOverrideInitialSettingsAegisOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ZoneSettingsOverrideInitialSettingsMinify {
 }
@@ -423,6 +498,12 @@ export class ZoneSettingsOverrideInitialSettingsOutputReference extends cdktf.Co
     }
   }
 
+  // aegis - computed: true, optional: false, required: false
+  private _aegis = new ZoneSettingsOverrideInitialSettingsAegisList(this, "aegis", false);
+  public get aegis() {
+    return this._aegis;
+  }
+
   // always_online - computed: true, optional: false, required: false
   public get alwaysOnline() {
     return this.getStringAttribute('always_online');
@@ -672,6 +753,11 @@ export class ZoneSettingsOverrideInitialSettingsOutputReference extends cdktf.Co
     return this.getStringAttribute('ssl');
   }
 
+  // ssl_automatic_mode - computed: true, optional: false, required: false
+  public get sslAutomaticMode() {
+    return this.getStringAttribute('ssl_automatic_mode');
+  }
+
   // tls_1_2_only - computed: true, optional: false, required: false
   public get tls12Only() {
     return this.getStringAttribute('tls_1_2_only');
@@ -741,17 +827,138 @@ export class ZoneSettingsOverrideInitialSettingsList extends cdktf.ComplexList {
     return new ZoneSettingsOverrideInitialSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ZoneSettingsOverrideSettingsAegis {
+  /**
+  * Whether Aegis zone setting is enabled. Defaults to `true`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#enabled ZoneSettingsOverride#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Egress pool id which refers to a grouping of dedicated egress IPs through which Cloudflare will connect to origin.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#pool_id ZoneSettingsOverride#pool_id}
+  */
+  readonly poolId?: string;
+}
+
+export function zoneSettingsOverrideSettingsAegisToTerraform(struct?: ZoneSettingsOverrideSettingsAegisOutputReference | ZoneSettingsOverrideSettingsAegis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    pool_id: cdktf.stringToTerraform(struct!.poolId),
+  }
+}
+
+
+export function zoneSettingsOverrideSettingsAegisToHclTerraform(struct?: ZoneSettingsOverrideSettingsAegisOutputReference | ZoneSettingsOverrideSettingsAegis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.poolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZoneSettingsOverrideSettingsAegisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ZoneSettingsOverrideSettingsAegis | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._poolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolId = this._poolId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneSettingsOverrideSettingsAegis | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._poolId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._poolId = value.poolId;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // pool_id - computed: false, optional: true, required: false
+  private _poolId?: string; 
+  public get poolId() {
+    return this.getStringAttribute('pool_id');
+  }
+  public set poolId(value: string) {
+    this._poolId = value;
+  }
+  public resetPoolId() {
+    this._poolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdInput() {
+    return this._poolId;
+  }
+}
 export interface ZoneSettingsOverrideSettingsMinify {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#css ZoneSettingsOverride#css}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#css ZoneSettingsOverride#css}
   */
   readonly css: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#html ZoneSettingsOverride#html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#html ZoneSettingsOverride#html}
   */
   readonly html: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#js ZoneSettingsOverride#js}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#js ZoneSettingsOverride#js}
   */
   readonly js: string;
 }
@@ -884,15 +1091,15 @@ export class ZoneSettingsOverrideSettingsMinifyOutputReference extends cdktf.Com
 }
 export interface ZoneSettingsOverrideSettingsMobileRedirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#mobile_subdomain ZoneSettingsOverride#mobile_subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#mobile_subdomain ZoneSettingsOverride#mobile_subdomain}
   */
   readonly mobileSubdomain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#status ZoneSettingsOverride#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#status ZoneSettingsOverride#status}
   */
   readonly status: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#strip_uri ZoneSettingsOverride#strip_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#strip_uri ZoneSettingsOverride#strip_uri}
   */
   readonly stripUri: boolean | cdktf.IResolvable;
 }
@@ -1025,7 +1232,7 @@ export class ZoneSettingsOverrideSettingsMobileRedirectOutputReference extends c
 }
 export interface ZoneSettingsOverrideSettingsNel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#enabled ZoneSettingsOverride#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#enabled ZoneSettingsOverride#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1106,23 +1313,23 @@ export class ZoneSettingsOverrideSettingsNelOutputReference extends cdktf.Comple
 }
 export interface ZoneSettingsOverrideSettingsSecurityHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#enabled ZoneSettingsOverride#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#enabled ZoneSettingsOverride#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#include_subdomains ZoneSettingsOverride#include_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#include_subdomains ZoneSettingsOverride#include_subdomains}
   */
   readonly includeSubdomains?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#max_age ZoneSettingsOverride#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#max_age ZoneSettingsOverride#max_age}
   */
   readonly maxAge?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#nosniff ZoneSettingsOverride#nosniff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#nosniff ZoneSettingsOverride#nosniff}
   */
   readonly nosniff?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#preload ZoneSettingsOverride#preload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#preload ZoneSettingsOverride#preload}
   */
   readonly preload?: boolean | cdktf.IResolvable;
 }
@@ -1322,247 +1529,257 @@ export class ZoneSettingsOverrideSettingsSecurityHeaderOutputReference extends c
 }
 export interface ZoneSettingsOverrideSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#always_online ZoneSettingsOverride#always_online}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#always_online ZoneSettingsOverride#always_online}
   */
   readonly alwaysOnline?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#always_use_https ZoneSettingsOverride#always_use_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#always_use_https ZoneSettingsOverride#always_use_https}
   */
   readonly alwaysUseHttps?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#automatic_https_rewrites ZoneSettingsOverride#automatic_https_rewrites}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#automatic_https_rewrites ZoneSettingsOverride#automatic_https_rewrites}
   */
   readonly automaticHttpsRewrites?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#binary_ast ZoneSettingsOverride#binary_ast}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#binary_ast ZoneSettingsOverride#binary_ast}
   */
   readonly binaryAst?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#brotli ZoneSettingsOverride#brotli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#brotli ZoneSettingsOverride#brotli}
   */
   readonly brotli?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#browser_cache_ttl ZoneSettingsOverride#browser_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#browser_cache_ttl ZoneSettingsOverride#browser_cache_ttl}
   */
   readonly browserCacheTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#browser_check ZoneSettingsOverride#browser_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#browser_check ZoneSettingsOverride#browser_check}
   */
   readonly browserCheck?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#cache_level ZoneSettingsOverride#cache_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#cache_level ZoneSettingsOverride#cache_level}
   */
   readonly cacheLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#challenge_ttl ZoneSettingsOverride#challenge_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#challenge_ttl ZoneSettingsOverride#challenge_ttl}
   */
   readonly challengeTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#ciphers ZoneSettingsOverride#ciphers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#ciphers ZoneSettingsOverride#ciphers}
   */
   readonly ciphers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#cname_flattening ZoneSettingsOverride#cname_flattening}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#cname_flattening ZoneSettingsOverride#cname_flattening}
   */
   readonly cnameFlattening?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#development_mode ZoneSettingsOverride#development_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#development_mode ZoneSettingsOverride#development_mode}
   */
   readonly developmentMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#early_hints ZoneSettingsOverride#early_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#early_hints ZoneSettingsOverride#early_hints}
   */
   readonly earlyHints?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#email_obfuscation ZoneSettingsOverride#email_obfuscation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#email_obfuscation ZoneSettingsOverride#email_obfuscation}
   */
   readonly emailObfuscation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#filter_logs_to_cloudflare ZoneSettingsOverride#filter_logs_to_cloudflare}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#filter_logs_to_cloudflare ZoneSettingsOverride#filter_logs_to_cloudflare}
   */
   readonly filterLogsToCloudflare?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#fonts ZoneSettingsOverride#fonts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#fonts ZoneSettingsOverride#fonts}
   */
   readonly fonts?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#h2_prioritization ZoneSettingsOverride#h2_prioritization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#h2_prioritization ZoneSettingsOverride#h2_prioritization}
   */
   readonly h2Prioritization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#hotlink_protection ZoneSettingsOverride#hotlink_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#hotlink_protection ZoneSettingsOverride#hotlink_protection}
   */
   readonly hotlinkProtection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#http2 ZoneSettingsOverride#http2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#http2 ZoneSettingsOverride#http2}
   */
   readonly http2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#http3 ZoneSettingsOverride#http3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#http3 ZoneSettingsOverride#http3}
   */
   readonly http3?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#image_resizing ZoneSettingsOverride#image_resizing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#image_resizing ZoneSettingsOverride#image_resizing}
   */
   readonly imageResizing?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#ip_geolocation ZoneSettingsOverride#ip_geolocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#ip_geolocation ZoneSettingsOverride#ip_geolocation}
   */
   readonly ipGeolocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#ipv6 ZoneSettingsOverride#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#ipv6 ZoneSettingsOverride#ipv6}
   */
   readonly ipv6?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#log_to_cloudflare ZoneSettingsOverride#log_to_cloudflare}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#log_to_cloudflare ZoneSettingsOverride#log_to_cloudflare}
   */
   readonly logToCloudflare?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#max_upload ZoneSettingsOverride#max_upload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#max_upload ZoneSettingsOverride#max_upload}
   */
   readonly maxUpload?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#min_tls_version ZoneSettingsOverride#min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#min_tls_version ZoneSettingsOverride#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#mirage ZoneSettingsOverride#mirage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#mirage ZoneSettingsOverride#mirage}
   */
   readonly mirage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#opportunistic_encryption ZoneSettingsOverride#opportunistic_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#opportunistic_encryption ZoneSettingsOverride#opportunistic_encryption}
   */
   readonly opportunisticEncryption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#opportunistic_onion ZoneSettingsOverride#opportunistic_onion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#opportunistic_onion ZoneSettingsOverride#opportunistic_onion}
   */
   readonly opportunisticOnion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#orange_to_orange ZoneSettingsOverride#orange_to_orange}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#orange_to_orange ZoneSettingsOverride#orange_to_orange}
   */
   readonly orangeToOrange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#origin_error_page_pass_thru ZoneSettingsOverride#origin_error_page_pass_thru}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#origin_error_page_pass_thru ZoneSettingsOverride#origin_error_page_pass_thru}
   */
   readonly originErrorPagePassThru?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#origin_max_http_version ZoneSettingsOverride#origin_max_http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#origin_max_http_version ZoneSettingsOverride#origin_max_http_version}
   */
   readonly originMaxHttpVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#polish ZoneSettingsOverride#polish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#polish ZoneSettingsOverride#polish}
   */
   readonly polish?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#prefetch_preload ZoneSettingsOverride#prefetch_preload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#prefetch_preload ZoneSettingsOverride#prefetch_preload}
   */
   readonly prefetchPreload?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#privacy_pass ZoneSettingsOverride#privacy_pass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#privacy_pass ZoneSettingsOverride#privacy_pass}
   */
   readonly privacyPass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#proxy_read_timeout ZoneSettingsOverride#proxy_read_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#proxy_read_timeout ZoneSettingsOverride#proxy_read_timeout}
   */
   readonly proxyReadTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#pseudo_ipv4 ZoneSettingsOverride#pseudo_ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#pseudo_ipv4 ZoneSettingsOverride#pseudo_ipv4}
   */
   readonly pseudoIpv4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#replace_insecure_js ZoneSettingsOverride#replace_insecure_js}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#replace_insecure_js ZoneSettingsOverride#replace_insecure_js}
   */
   readonly replaceInsecureJs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#response_buffering ZoneSettingsOverride#response_buffering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#response_buffering ZoneSettingsOverride#response_buffering}
   */
   readonly responseBuffering?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#rocket_loader ZoneSettingsOverride#rocket_loader}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#rocket_loader ZoneSettingsOverride#rocket_loader}
   */
   readonly rocketLoader?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#security_level ZoneSettingsOverride#security_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#security_level ZoneSettingsOverride#security_level}
   */
   readonly securityLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#server_side_exclude ZoneSettingsOverride#server_side_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#server_side_exclude ZoneSettingsOverride#server_side_exclude}
   */
   readonly serverSideExclude?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#sort_query_string_for_cache ZoneSettingsOverride#sort_query_string_for_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#sort_query_string_for_cache ZoneSettingsOverride#sort_query_string_for_cache}
   */
   readonly sortQueryStringForCache?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#speed_brain ZoneSettingsOverride#speed_brain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#speed_brain ZoneSettingsOverride#speed_brain}
   */
   readonly speedBrain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#ssl ZoneSettingsOverride#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#ssl ZoneSettingsOverride#ssl}
   */
   readonly ssl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#tls_1_2_only ZoneSettingsOverride#tls_1_2_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#ssl_automatic_mode ZoneSettingsOverride#ssl_automatic_mode}
+  */
+  readonly sslAutomaticMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#tls_1_2_only ZoneSettingsOverride#tls_1_2_only}
   */
   readonly tls12Only?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#tls_1_3 ZoneSettingsOverride#tls_1_3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#tls_1_3 ZoneSettingsOverride#tls_1_3}
   */
   readonly tls13?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#tls_client_auth ZoneSettingsOverride#tls_client_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#tls_client_auth ZoneSettingsOverride#tls_client_auth}
   */
   readonly tlsClientAuth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#true_client_ip_header ZoneSettingsOverride#true_client_ip_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#true_client_ip_header ZoneSettingsOverride#true_client_ip_header}
   */
   readonly trueClientIpHeader?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#universal_ssl ZoneSettingsOverride#universal_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#universal_ssl ZoneSettingsOverride#universal_ssl}
   */
   readonly universalSsl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#visitor_ip ZoneSettingsOverride#visitor_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#visitor_ip ZoneSettingsOverride#visitor_ip}
   */
   readonly visitorIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#waf ZoneSettingsOverride#waf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#waf ZoneSettingsOverride#waf}
   */
   readonly waf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#webp ZoneSettingsOverride#webp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#webp ZoneSettingsOverride#webp}
   */
   readonly webp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#websockets ZoneSettingsOverride#websockets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#websockets ZoneSettingsOverride#websockets}
   */
   readonly websockets?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#zero_rtt ZoneSettingsOverride#zero_rtt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#zero_rtt ZoneSettingsOverride#zero_rtt}
   */
   readonly zeroRtt?: string;
   /**
+  * aegis block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#aegis ZoneSettingsOverride#aegis}
+  */
+  readonly aegis?: ZoneSettingsOverrideSettingsAegis;
+  /**
   * minify block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#minify ZoneSettingsOverride#minify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#minify ZoneSettingsOverride#minify}
   */
   readonly minify?: ZoneSettingsOverrideSettingsMinify;
   /**
   * mobile_redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#mobile_redirect ZoneSettingsOverride#mobile_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#mobile_redirect ZoneSettingsOverride#mobile_redirect}
   */
   readonly mobileRedirect?: ZoneSettingsOverrideSettingsMobileRedirect;
   /**
   * nel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#nel ZoneSettingsOverride#nel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#nel ZoneSettingsOverride#nel}
   */
   readonly nel?: ZoneSettingsOverrideSettingsNel;
   /**
   * security_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#security_header ZoneSettingsOverride#security_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#security_header ZoneSettingsOverride#security_header}
   */
   readonly securityHeader?: ZoneSettingsOverrideSettingsSecurityHeader;
 }
@@ -1618,6 +1835,7 @@ export function zoneSettingsOverrideSettingsToTerraform(struct?: ZoneSettingsOve
     sort_query_string_for_cache: cdktf.stringToTerraform(struct!.sortQueryStringForCache),
     speed_brain: cdktf.stringToTerraform(struct!.speedBrain),
     ssl: cdktf.stringToTerraform(struct!.ssl),
+    ssl_automatic_mode: cdktf.stringToTerraform(struct!.sslAutomaticMode),
     tls_1_2_only: cdktf.stringToTerraform(struct!.tls12Only),
     tls_1_3: cdktf.stringToTerraform(struct!.tls13),
     tls_client_auth: cdktf.stringToTerraform(struct!.tlsClientAuth),
@@ -1628,6 +1846,7 @@ export function zoneSettingsOverrideSettingsToTerraform(struct?: ZoneSettingsOve
     webp: cdktf.stringToTerraform(struct!.webp),
     websockets: cdktf.stringToTerraform(struct!.websockets),
     zero_rtt: cdktf.stringToTerraform(struct!.zeroRtt),
+    aegis: zoneSettingsOverrideSettingsAegisToTerraform(struct!.aegis),
     minify: zoneSettingsOverrideSettingsMinifyToTerraform(struct!.minify),
     mobile_redirect: zoneSettingsOverrideSettingsMobileRedirectToTerraform(struct!.mobileRedirect),
     nel: zoneSettingsOverrideSettingsNelToTerraform(struct!.nel),
@@ -1912,6 +2131,12 @@ export function zoneSettingsOverrideSettingsToHclTerraform(struct?: ZoneSettings
       type: "simple",
       storageClassType: "string",
     },
+    ssl_automatic_mode: {
+      value: cdktf.stringToHclTerraform(struct!.sslAutomaticMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     tls_1_2_only: {
       value: cdktf.stringToHclTerraform(struct!.tls12Only),
       isBlock: false,
@@ -1971,6 +2196,12 @@ export function zoneSettingsOverrideSettingsToHclTerraform(struct?: ZoneSettings
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    aegis: {
+      value: zoneSettingsOverrideSettingsAegisToHclTerraform(struct!.aegis),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ZoneSettingsOverrideSettingsAegisList",
     },
     minify: {
       value: zoneSettingsOverrideSettingsMinifyToHclTerraform(struct!.minify),
@@ -2196,6 +2427,10 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.ssl = this._ssl;
     }
+    if (this._sslAutomaticMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslAutomaticMode = this._sslAutomaticMode;
+    }
     if (this._tls12Only !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls12Only = this._tls12Only;
@@ -2235,6 +2470,10 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
     if (this._zeroRtt !== undefined) {
       hasAnyValues = true;
       internalValueResult.zeroRtt = this._zeroRtt;
+    }
+    if (this._aegis?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aegis = this._aegis?.internalValue;
     }
     if (this._minify?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2303,6 +2542,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       this._sortQueryStringForCache = undefined;
       this._speedBrain = undefined;
       this._ssl = undefined;
+      this._sslAutomaticMode = undefined;
       this._tls12Only = undefined;
       this._tls13 = undefined;
       this._tlsClientAuth = undefined;
@@ -2313,6 +2553,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       this._webp = undefined;
       this._websockets = undefined;
       this._zeroRtt = undefined;
+      this._aegis.internalValue = undefined;
       this._minify.internalValue = undefined;
       this._mobileRedirect.internalValue = undefined;
       this._nel.internalValue = undefined;
@@ -2365,6 +2606,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       this._sortQueryStringForCache = value.sortQueryStringForCache;
       this._speedBrain = value.speedBrain;
       this._ssl = value.ssl;
+      this._sslAutomaticMode = value.sslAutomaticMode;
       this._tls12Only = value.tls12Only;
       this._tls13 = value.tls13;
       this._tlsClientAuth = value.tlsClientAuth;
@@ -2375,6 +2617,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
       this._webp = value.webp;
       this._websockets = value.websockets;
       this._zeroRtt = value.zeroRtt;
+      this._aegis.internalValue = value.aegis;
       this._minify.internalValue = value.minify;
       this._mobileRedirect.internalValue = value.mobileRedirect;
       this._nel.internalValue = value.nel;
@@ -3102,6 +3345,22 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
     return this._ssl;
   }
 
+  // ssl_automatic_mode - computed: true, optional: true, required: false
+  private _sslAutomaticMode?: string; 
+  public get sslAutomaticMode() {
+    return this.getStringAttribute('ssl_automatic_mode');
+  }
+  public set sslAutomaticMode(value: string) {
+    this._sslAutomaticMode = value;
+  }
+  public resetSslAutomaticMode() {
+    this._sslAutomaticMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslAutomaticModeInput() {
+    return this._sslAutomaticMode;
+  }
+
   // tls_1_2_only - computed: true, optional: true, required: false
   private _tls12Only?: string; 
   public get tls12Only() {
@@ -3262,6 +3521,22 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
     return this._zeroRtt;
   }
 
+  // aegis - computed: false, optional: true, required: false
+  private _aegis = new ZoneSettingsOverrideSettingsAegisOutputReference(this, "aegis");
+  public get aegis() {
+    return this._aegis;
+  }
+  public putAegis(value: ZoneSettingsOverrideSettingsAegis) {
+    this._aegis.internalValue = value;
+  }
+  public resetAegis() {
+    this._aegis.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aegisInput() {
+    return this._aegis.internalValue;
+  }
+
   // minify - computed: false, optional: true, required: false
   private _minify = new ZoneSettingsOverrideSettingsMinifyOutputReference(this, "minify");
   public get minify() {
@@ -3328,7 +3603,7 @@ export class ZoneSettingsOverrideSettingsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override cloudflare_zone_settings_override}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override cloudflare_zone_settings_override}
 */
 export class ZoneSettingsOverride extends cdktf.TerraformResource {
 
@@ -3344,7 +3619,7 @@ export class ZoneSettingsOverride extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneSettingsOverride resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneSettingsOverride to import
-  * @param importFromId The id of the existing ZoneSettingsOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneSettingsOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneSettingsOverride to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3356,7 +3631,7 @@ export class ZoneSettingsOverride extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3367,7 +3642,7 @@ export class ZoneSettingsOverride extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_settings_override',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.49.1',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

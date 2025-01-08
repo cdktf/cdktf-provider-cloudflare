@@ -4,7 +4,7 @@
 
 ### WorkerSecret <a name="WorkerSecret" id="@cdktf/provider-cloudflare.workerSecret.WorkerSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret cloudflare_worker_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret cloudflare_worker_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerSecret.WorkerSecret.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WorkerSecret to import.
 
 The id of the existing WorkerSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ const workerSecretConfig: workerSecret.WorkerSecretConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.workerSecret.WorkerSecretConfig.property.name">name</a></code> | <code>string</code> | The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.workerSecret.WorkerSecretConfig.property.scriptName">scriptName</a></code> | <code>string</code> | The name of the Worker script to associate the secret with. |
 | <code><a href="#@cdktf/provider-cloudflare.workerSecret.WorkerSecretConfig.property.secretText">secretText</a></code> | <code>string</code> | The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workerSecret.WorkerSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#id WorkerSecret#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerSecret.WorkerSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#id WorkerSecret#id}. |
 
 ---
 
@@ -888,7 +888,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#account_id WorkerSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#account_id WorkerSecret#account_id}
 
 ---
 
@@ -902,7 +902,7 @@ public readonly name: string;
 
 The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#name WorkerSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#name WorkerSecret#name}
 
 ---
 
@@ -918,7 +918,7 @@ The name of the Worker script to associate the secret with.
 
 **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#script_name WorkerSecret#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#script_name WorkerSecret#script_name}
 
 ---
 
@@ -932,7 +932,7 @@ public readonly secretText: string;
 
 The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#secret_text WorkerSecret#secret_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#secret_text WorkerSecret#secret_text}
 
 ---
 
@@ -944,7 +944,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/worker_secret#id WorkerSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_secret#id WorkerSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

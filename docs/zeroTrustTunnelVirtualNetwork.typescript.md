@@ -4,7 +4,7 @@
 
 ### ZeroTrustTunnelVirtualNetwork <a name="ZeroTrustTunnelVirtualNetwork" id="@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetwork.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ZeroTrustTunnelVirtualNetw
 
 The id of the existing ZeroTrustTunnelVirtualNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ const zeroTrustTunnelVirtualNetworkConfig: zeroTrustTunnelVirtualNetwork.ZeroTru
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetworkConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetworkConfig.property.name">name</a></code> | <code>string</code> | A user-friendly name chosen when the virtual network is created. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetworkConfig.property.comment">comment</a></code> | <code>string</code> | Description of the tunnel virtual network. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#id ZeroTrustTunnelVirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#id ZeroTrustTunnelVirtualNetwork#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustTunnelVirtualNetwork.ZeroTrustTunnelVirtualNetworkConfig.property.isDefaultNetwork">isDefaultNetwork</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this virtual network is the default one for the account. |
 
 ---
@@ -902,7 +902,7 @@ public readonly accountId: string;
 
 The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#account_id ZeroTrustTunnelVirtualNetwork#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#account_id ZeroTrustTunnelVirtualNetwork#account_id}
 
 ---
 
@@ -916,7 +916,7 @@ public readonly name: string;
 
 A user-friendly name chosen when the virtual network is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#name ZeroTrustTunnelVirtualNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#name ZeroTrustTunnelVirtualNetwork#name}
 
 ---
 
@@ -930,7 +930,7 @@ public readonly comment: string;
 
 Description of the tunnel virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#comment ZeroTrustTunnelVirtualNetwork#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#comment ZeroTrustTunnelVirtualNetwork#comment}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#id ZeroTrustTunnelVirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#id ZeroTrustTunnelVirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ Whether this virtual network is the default one for the account.
 
 This means IP Routes belong to this virtual network and Teams Clients in the account route through this virtual network, unless specified otherwise for each case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_tunnel_virtual_network#is_default_network ZeroTrustTunnelVirtualNetwork#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network#is_default_network ZeroTrustTunnelVirtualNetwork#is_default_network}
 
 ---
 
