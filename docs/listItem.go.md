@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemA(scope Construct, id *string, config ListItemAConfig) ListItemA
 ```
@@ -439,7 +439,7 @@ func ResetRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.listItem.ListItemA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.listItem.ListItemA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ listitem.ListItemA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.listItem.ListItemA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ listitem.ListItemA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.listItem.ListItemA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.ListItemA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 &listitem.ListItemAConfig {
 	Connection: interface{},
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 &listitem.ListItemHostname {
 	UrlHostname: *string,
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.listItem.ListItemRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 &listitem.ListItemRedirect {
 	SourceUrl: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListItemHostnameList
 ```
@@ -1433,7 +1433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ListItemHostnameOutputReference
 ```
@@ -1722,7 +1722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListItemRedirectList
 ```
@@ -1882,7 +1882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/listitem"
 
 listitem.NewListItemRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ListItemRedirectOutputReference
 ```
