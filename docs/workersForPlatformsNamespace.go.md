@@ -4,12 +4,12 @@
 
 ### WorkersForPlatformsNamespace <a name="WorkersForPlatformsNamespace" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersforplatformsnamespace"
 
 workersforplatformsnamespace.NewWorkersForPlatformsNamespace(scope Construct, id *string, config WorkersForPlatformsNamespaceConfig) WorkersForPlatformsNamespace
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersforplatformsnamespace"
 
 workersforplatformsnamespace.WorkersForPlatformsNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersforplatformsnamespace"
 
 workersforplatformsnamespace.WorkersForPlatformsNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ workersforplatformsnamespace.WorkersForPlatformsNamespace_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersforplatformsnamespace"
 
 workersforplatformsnamespace.WorkersForPlatformsNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ workersforplatformsnamespace.WorkersForPlatformsNamespace_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersforplatformsnamespace"
 
 workersforplatformsnamespace.WorkersForPlatformsNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the WorkersForPlatformsNamespa
 
 The id of the existing WorkersForPlatformsNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_for_platforms_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersForPlatformsNamespace.WorkersForPlatformsNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsnamespace"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersforplatformsnamespace"
 
 &workersforplatformsnamespace.WorkersForPlatformsNamespaceConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_for_platforms_namespace#account_id WorkersForPlatformsNamespace#account_id}
 
 ---
 
@@ -847,7 +847,7 @@ Name *string
 
 The name of the Workers for Platforms namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_for_platforms_namespace#name WorkersForPlatformsNamespace#name}
 
 ---
 

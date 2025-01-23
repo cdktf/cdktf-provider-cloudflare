@@ -4,12 +4,12 @@
 
 ### TeamsProxyEndpoint <a name="TeamsProxyEndpoint" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxyendpoint"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsproxyendpoint"
 
 teamsproxyendpoint.NewTeamsProxyEndpoint(scope Construct, id *string, config TeamsProxyEndpointConfig) TeamsProxyEndpoint
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxyendpoint"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsproxyendpoint"
 
 teamsproxyendpoint.TeamsProxyEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxyendpoint"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsproxyendpoint"
 
 teamsproxyendpoint.TeamsProxyEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ teamsproxyendpoint.TeamsProxyEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxyendpoint"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsproxyendpoint"
 
 teamsproxyendpoint.TeamsProxyEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ teamsproxyendpoint.TeamsProxyEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxyendpoint"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsproxyendpoint"
 
 teamsproxyendpoint.TeamsProxyEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the TeamsProxyEndpoint to impo
 
 The id of the existing TeamsProxyEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxyendpoint"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsproxyendpoint"
 
 &teamsproxyendpoint.TeamsProxyEndpointConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsproxye
 | <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.ips">Ips</a></code> | <code>*[]*string</code> | The networks CIDRs that will be allowed to initiate proxy connections. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.name">Name</a></code> | <code>*string</code> | Name of the teams proxy endpoint. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}. |
 
 ---
 
@@ -888,7 +888,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
 
 ---
 
@@ -902,7 +902,7 @@ Ips *[]*string
 
 The networks CIDRs that will be allowed to initiate proxy connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
 
 ---
 
@@ -916,7 +916,7 @@ Name *string
 
 Name of the teams proxy endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

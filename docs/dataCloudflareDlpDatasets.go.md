@@ -4,12 +4,12 @@
 
 ### DataCloudflareDlpDatasets <a name="DataCloudflareDlpDatasets" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.NewDataCloudflareDlpDatasets(scope Construct, id *string, config DataCloudflareDlpDatasetsConfig) DataCloudflareDlpDatasets
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.DataCloudflareDlpDatasets_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.DataCloudflareDlpDatasets_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaredlpdatasets.DataCloudflareDlpDatasets_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.DataCloudflareDlpDatasets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaredlpdatasets.DataCloudflareDlpDatasets_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.DataCloudflareDlpDatasets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareDlpDatasets 
 
 The id of the existing DataCloudflareDlpDatasets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/dlp_datasets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/dlp_datasets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 &datacloudflaredlpdatasets.DataCloudflareDlpDatasetsConfig {
 	Connection: interface{},
@@ -685,7 +685,7 @@ AccountId *string
 
 The account ID to fetch DLP Datasets from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
 
 ---
 
@@ -694,7 +694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasetsDatasets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 &datacloudflaredlpdatasets.DataCloudflareDlpDatasetsDatasets {
 
@@ -709,7 +709,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasetsDatasetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.NewDataCloudflareDlpDatasetsDatasetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareDlpDatasetsDatasetsList
 ```
@@ -858,7 +858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDlpDatasets.DataCloudflareDlpDatasetsDatasetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflaredlpdatasets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredlpdatasets"
 
 datacloudflaredlpdatasets.NewDataCloudflareDlpDatasetsDatasetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareDlpDatasetsDatasetsOutputReference
 ```
