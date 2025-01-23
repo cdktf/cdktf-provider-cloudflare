@@ -4,7 +4,7 @@
 
 ### WorkersRoute <a name="WorkersRoute" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route cloudflare_workers_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route cloudflare_workers_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer"></a>
 
@@ -43,7 +43,7 @@ WorkersRoute.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | The [route pattern](https://developers.cloudflare.com/workers/about/routes/) to associate the Worker with. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#id WorkersRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#id WorkersRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer.parameter.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Worker script name to invoke for requests that match the route pattern. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The [route pattern](https://developers.cloudflare.com/workers/about/routes/) to associate the Worker with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#id WorkersRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#id WorkersRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Worker script name to invoke for requests that match the route pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#script_name WorkersRoute#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#script_name WorkersRoute#script_name}
 
 ---
 
@@ -586,7 +586,7 @@ The construct id used in the generated config for the WorkersRoute to import.
 
 The id of the existing WorkersRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ WorkersRouteConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | The [route pattern](https://developers.cloudflare.com/workers/about/routes/) to associate the Worker with. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#id WorkersRoute#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#id WorkersRoute#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Worker script name to invoke for requests that match the route pattern. |
 
 ---
@@ -993,7 +993,7 @@ public java.lang.String getPattern();
 
 The [route pattern](https://developers.cloudflare.com/workers/about/routes/) to associate the Worker with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
 
 ---
 
@@ -1007,7 +1007,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#id WorkersRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#id WorkersRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ public java.lang.String getScriptName();
 
 Worker script name to invoke for requests that match the route pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_route#script_name WorkersRoute#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/workers_route#script_name WorkersRoute#script_name}
 
 ---
 

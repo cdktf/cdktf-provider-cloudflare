@@ -4,7 +4,7 @@
 
 ### ApiShieldOperation <a name="ApiShieldOperation" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +467,7 @@ The construct id used in the generated config for the ApiShieldOperation to impo
 
 The id of the existing ApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,14 +497,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpointInput">EndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.methodInput">MethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.host">Host</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.method">Method</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
@@ -659,6 +651,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EndpointInput`<sup>Optional</sup> <a name="EndpointInput" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.endpointInput"></a>
 
 ```go
@@ -673,16 +675,6 @@ func EndpointInput() *string
 
 ```go
 func HostInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -723,16 +715,6 @@ func Endpoint() *string
 
 ```go
 func Host() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -798,7 +780,6 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldop
 	Host: *string,
 	Method: *string,
 	ZoneId: *string,
-	Id: *string,
 }
 ```
 
@@ -814,10 +795,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldop
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | The endpoint which can contain path parameter templates in curly braces, each will be replaced from left to right with `{varN}`, starting with `{var1}`. |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.host">Host</a></code> | <code>*string</code> | RFC3986-compliant host. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.method">Method</a></code> | <code>*string</code> | The HTTP method used to access the endpoint. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#id ApiShieldOperation#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.host">Host</a></code> | <code>*string</code> | RFC3986-compliant host. |
+| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.method">Method</a></code> | <code>*string</code> | The HTTP method used to access the endpoint. |
+| <code><a href="#@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. |
 
 ---
 
@@ -901,9 +881,9 @@ Endpoint *string
 
 The endpoint which can contain path parameter templates in curly braces, each will be replaced from left to right with `{varN}`, starting with `{var1}`.
 
-This will then be [Cloudflare-normalized](https://developers.cloudflare.com/rules/normalization/how-it-works/). **Modifying this attribute will force creation of a new resource.**
+This will then be [Cloudflare-normalized](https://developers.cloudflare.com/rules/normalization/how-it-works/)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -915,9 +895,9 @@ Host *string
 
 - *Type:* *string
 
-RFC3986-compliant host. **Modifying this attribute will force creation of a new resource.**.
+RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -929,9 +909,9 @@ Method *string
 
 - *Type:* *string
 
-The HTTP method used to access the endpoint. **Modifying this attribute will force creation of a new resource.**.
+The HTTP method used to access the endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
@@ -943,24 +923,9 @@ ZoneId *string
 
 - *Type:* *string
 
-The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation#id ApiShieldOperation#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 

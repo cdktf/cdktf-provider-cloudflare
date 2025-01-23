@@ -4,7 +4,7 @@
 
 ### ZeroTrustGatewayCertificate <a name="ZeroTrustGatewayCertificate" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.Initializer"></a>
 
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}
 
 ---
 
@@ -133,7 +133,7 @@ Whether or not to activate a certificate.
 
 A certificate must be activated to use in Gateway certificate settings. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of certificate (custom or Gateway-managed). Must provide only one of `custom`, `gateway_managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#custom ZeroTrustGatewayCertificate#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#custom ZeroTrustGatewayCertificate#custom}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of certificate (custom or Gateway-managed). Must provide only one of `custom`, `gateway_managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#gateway_managed ZeroTrustGatewayCertificate#gateway_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#gateway_managed ZeroTrustGatewayCertificate#gateway_managed}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Certificate UUID. Computed for Gateway-managed certificates. Required when using `custom`. Conflicts with `gateway_managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#id ZeroTrustGatewayCertificate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#id ZeroTrustGatewayCertificate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -178,7 +178,7 @@ Number of days the generated certificate will be valid, minimum 1 day and maximu
 
 Defaults to 5 years. Defaults to `1826`. Required when using `gateway_managed`. Conflicts with `custom`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the ZeroTrustGatewayCertificat
 
 The id of the existing ZeroTrustGatewayCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}
 
 ---
 
@@ -1180,7 +1180,7 @@ Whether or not to activate a certificate.
 
 A certificate must be activated to use in Gateway certificate settings. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
 
 ---
 
@@ -1194,7 +1194,7 @@ public java.lang.Object getCustom();
 
 The type of certificate (custom or Gateway-managed). Must provide only one of `custom`, `gateway_managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#custom ZeroTrustGatewayCertificate#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#custom ZeroTrustGatewayCertificate#custom}
 
 ---
 
@@ -1208,7 +1208,7 @@ public java.lang.Object getGatewayManaged();
 
 The type of certificate (custom or Gateway-managed). Must provide only one of `custom`, `gateway_managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#gateway_managed ZeroTrustGatewayCertificate#gateway_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#gateway_managed ZeroTrustGatewayCertificate#gateway_managed}
 
 ---
 
@@ -1222,7 +1222,7 @@ public java.lang.String getId();
 
 Certificate UUID. Computed for Gateway-managed certificates. Required when using `custom`. Conflicts with `gateway_managed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#id ZeroTrustGatewayCertificate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#id ZeroTrustGatewayCertificate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1241,7 +1241,7 @@ Number of days the generated certificate will be valid, minimum 1 day and maximu
 
 Defaults to 5 years. Defaults to `1826`. Required when using `gateway_managed`. Conflicts with `custom`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
 
 ---
 

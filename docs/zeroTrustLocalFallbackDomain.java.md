@@ -4,7 +4,7 @@
 
 ### ZeroTrustLocalFallbackDomain <a name="ZeroTrustLocalFallbackDomain" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer"></a>
 
@@ -44,7 +44,7 @@ ZeroTrustLocalFallbackDomain.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer.parameter.domains">domains</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainDomains">ZeroTrustLocalFallbackDomainDomains</a>></code> | domains block. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomain.Initializer.parameter.policyId">policyId</a></code> | <code>java.lang.String</code> | The settings policy for which to configure this fallback domain policy. |
 
 ---
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#account_id ZeroTrustLocalFallbackDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#account_id ZeroTrustLocalFallbackDomain#account_id}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#domains ZeroTrustLocalFallbackDomain#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#domains ZeroTrustLocalFallbackDomain#domains}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -146,7 +146,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The settings policy for which to configure this fallback domain policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#policy_id ZeroTrustLocalFallbackDomain#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#policy_id ZeroTrustLocalFallbackDomain#policy_id}
 
 ---
 
@@ -600,7 +600,7 @@ The construct id used in the generated config for the ZeroTrustLocalFallbackDoma
 
 The id of the existing ZeroTrustLocalFallbackDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,7 +923,7 @@ ZeroTrustLocalFallbackDomainConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.domains">domains</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainDomains">ZeroTrustLocalFallbackDomainDomains</a>></code> | domains block. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustLocalFallbackDomain.ZeroTrustLocalFallbackDomainConfig.property.policyId">policyId</a></code> | <code>java.lang.String</code> | The settings policy for which to configure this fallback domain policy. |
 
 ---
@@ -1008,7 +1008,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#account_id ZeroTrustLocalFallbackDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#account_id ZeroTrustLocalFallbackDomain#account_id}
 
 ---
 
@@ -1022,7 +1022,7 @@ public java.lang.Object getDomains();
 
 domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#domains ZeroTrustLocalFallbackDomain#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#domains ZeroTrustLocalFallbackDomain#domains}
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#id ZeroTrustLocalFallbackDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ public java.lang.String getPolicyId();
 
 The settings policy for which to configure this fallback domain policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#policy_id ZeroTrustLocalFallbackDomain#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#policy_id ZeroTrustLocalFallbackDomain#policy_id}
 
 ---
 
@@ -1089,7 +1089,7 @@ public java.lang.String getDescription();
 
 A description of the fallback domain, displayed in the client UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#description ZeroTrustLocalFallbackDomain#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#description ZeroTrustLocalFallbackDomain#description}
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.util.List<java.lang.String> getDnsServer();
 
 A list of IP addresses to handle domain resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#dns_server ZeroTrustLocalFallbackDomain#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#dns_server ZeroTrustLocalFallbackDomain#dns_server}
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getSuffix();
 
 The domain suffix to match when resolving locally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_local_fallback_domain#suffix ZeroTrustLocalFallbackDomain#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_local_fallback_domain#suffix ZeroTrustLocalFallbackDomain#suffix}
 
 ---
 
