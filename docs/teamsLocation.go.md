@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocation(scope Construct, id *string, config TeamsLocationConfig) TeamsLocation
 ```
@@ -453,7 +453,7 @@ func ResetNetworks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ teamslocation.TeamsLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ teamslocation.TeamsLocation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.TeamsLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationConfig {
 	Connection: interface{},
@@ -1011,7 +1011,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocati
 	DnsDestinationIpsId: *string,
 	DnsDestinationIpv6BlockId: *string,
 	EcsSupport: interface{},
-	Endpoints: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsLocation.TeamsLocationEndpoints,
+	Endpoints: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsLocation.TeamsLocationEndpoints,
 	Id: *string,
 	Networks: interface{},
 }
@@ -1242,13 +1242,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpoints {
-	Doh: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsLocation.TeamsLocationEndpointsDoh,
-	Dot: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsLocation.TeamsLocationEndpointsDot,
-	Ipv4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsLocation.TeamsLocationEndpointsIpv4,
-	Ipv6: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsLocation.TeamsLocationEndpointsIpv6,
+	Doh: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsLocation.TeamsLocationEndpointsDoh,
+	Dot: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsLocation.TeamsLocationEndpointsDot,
+	Ipv4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsLocation.TeamsLocationEndpointsIpv4,
+	Ipv6: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsLocation.TeamsLocationEndpointsIpv6,
 }
 ```
 
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDoh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsDoh {
 	Enabled: interface{},
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDohNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsDohNetworks {
 	Network: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsDot {
 	Enabled: interface{},
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDotNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsDotNetworks {
 	Network: *string,
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsIpv4 {
 	Enabled: interface{},
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsIpv6 {
 	Enabled: interface{},
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv6Networks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationEndpointsIpv6Networks {
 	Network: *string,
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 &teamslocation.TeamsLocationNetworks {
 	Network: *string,
@@ -1624,7 +1624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDohNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsDohNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsLocationEndpointsDohNetworksList
 ```
@@ -1784,7 +1784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDohNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsDohNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsLocationEndpointsDohNetworksOutputReference
 ```
@@ -2080,7 +2080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDohOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsDohOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsLocationEndpointsDohOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() TeamsLocationEndpointsDoh
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDotNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsDotNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsLocationEndpointsDotNetworksList
 ```
@@ -2575,7 +2575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDotNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsDotNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsLocationEndpointsDotNetworksOutputReference
 ```
@@ -2871,7 +2871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsDotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsDotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsLocationEndpointsDotOutputReference
 ```
@@ -3206,7 +3206,7 @@ func InternalValue() TeamsLocationEndpointsDot
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsLocationEndpointsIpv4OutputReference
 ```
@@ -3488,7 +3488,7 @@ func InternalValue() TeamsLocationEndpointsIpv4
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv6NetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsIpv6NetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsLocationEndpointsIpv6NetworksList
 ```
@@ -3648,7 +3648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv6NetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsIpv6NetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsLocationEndpointsIpv6NetworksOutputReference
 ```
@@ -3944,7 +3944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsLocationEndpointsIpv6OutputReference
 ```
@@ -4268,7 +4268,7 @@ func InternalValue() TeamsLocationEndpointsIpv6
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsLocationEndpointsOutputReference
 ```
@@ -4685,7 +4685,7 @@ func InternalValue() TeamsLocationEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsLocationNetworksList
 ```
@@ -4845,7 +4845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamslocation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamslocation"
 
 teamslocation.NewTeamsLocationNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsLocationNetworksOutputReference
 ```
