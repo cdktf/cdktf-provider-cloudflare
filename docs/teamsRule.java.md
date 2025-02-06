@@ -4,7 +4,7 @@
 
 ### TeamsRule <a name="TeamsRule" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule cloudflare_teams_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule cloudflare_teams_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer"></a>
 
@@ -58,7 +58,7 @@ TeamsRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.devicePosture">devicePosture</a></code> | <code>java.lang.String</code> | The wirefilter expression to be used for device_posture check matching. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicator of rule enablement. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.filters">filters</a></code> | <code>java.util.List<java.lang.String></code> | The protocol or layer to evaluate the traffic and identity expressions. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#id TeamsRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#id TeamsRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.identity">identity</a></code> | <code>java.lang.String</code> | The wirefilter expression to be used for identity matching. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.ruleSettings">ruleSettings</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettings">TeamsRuleRuleSettings</a></code> | rule_settings block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer.parameter.traffic">traffic</a></code> | <code>java.lang.String</code> | The wirefilter expression to be used for traffic matching. |
@@ -131,7 +131,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
 
 ---
 
@@ -143,7 +143,7 @@ The action executed by matched teams rule.
 
 Available values: `allow`, `block`, `safesearch`, `ytrestricted`, `on`, `off`, `scan`, `noscan`, `isolate`, `noisolate`, `override`, `l4_override`, `egress`, `audit_ssh`, `resolve`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#action TeamsRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#action TeamsRule#action}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The description of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#description TeamsRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#description TeamsRule#description}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#name TeamsRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#name TeamsRule#name}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The evaluation precedence of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The wirefilter expression to be used for device_posture check matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicator of rule enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The protocol or layer to evaluate the traffic and identity expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#filters TeamsRule#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#filters TeamsRule#filters}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#id TeamsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#id TeamsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -224,7 +224,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The wirefilter expression to be used for identity matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#identity TeamsRule#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#identity TeamsRule#identity}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 rule_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The wirefilter expression to be used for traffic matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
 
 ---
 
@@ -733,7 +733,7 @@ The construct id used in the generated config for the TeamsRule to import.
 
 The id of the existing TeamsRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1257,7 +1257,7 @@ TeamsRuleConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.devicePosture">devicePosture</a></code> | <code>java.lang.String</code> | The wirefilter expression to be used for device_posture check matching. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicator of rule enablement. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.filters">filters</a></code> | <code>java.util.List<java.lang.String></code> | The protocol or layer to evaluate the traffic and identity expressions. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#id TeamsRule#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#id TeamsRule#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.identity">identity</a></code> | <code>java.lang.String</code> | The wirefilter expression to be used for identity matching. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.ruleSettings">ruleSettings</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettings">TeamsRuleRuleSettings</a></code> | rule_settings block. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.property.traffic">traffic</a></code> | <code>java.lang.String</code> | The wirefilter expression to be used for traffic matching. |
@@ -1344,7 +1344,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
 
 ---
 
@@ -1360,7 +1360,7 @@ The action executed by matched teams rule.
 
 Available values: `allow`, `block`, `safesearch`, `ytrestricted`, `on`, `off`, `scan`, `noscan`, `isolate`, `noisolate`, `override`, `l4_override`, `egress`, `audit_ssh`, `resolve`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#action TeamsRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#action TeamsRule#action}
 
 ---
 
@@ -1374,7 +1374,7 @@ public java.lang.String getDescription();
 
 The description of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#description TeamsRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#description TeamsRule#description}
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getName();
 
 The name of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#name TeamsRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#name TeamsRule#name}
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.Number getPrecedence();
 
 The evaluation precedence of the teams rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
 
 ---
 
@@ -1416,7 +1416,7 @@ public java.lang.String getDevicePosture();
 
 The wirefilter expression to be used for device_posture check matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
 
 ---
 
@@ -1430,7 +1430,7 @@ public java.lang.Object getEnabled();
 
 Indicator of rule enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -1444,7 +1444,7 @@ public java.util.List<java.lang.String> getFilters();
 
 The protocol or layer to evaluate the traffic and identity expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#filters TeamsRule#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#filters TeamsRule#filters}
 
 ---
 
@@ -1456,7 +1456,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#id TeamsRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#id TeamsRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1473,7 +1473,7 @@ public java.lang.String getIdentity();
 
 The wirefilter expression to be used for identity matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#identity TeamsRule#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#identity TeamsRule#identity}
 
 ---
 
@@ -1487,7 +1487,7 @@ public TeamsRuleRuleSettings getRuleSettings();
 
 rule_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
 
 ---
 
@@ -1501,7 +1501,7 @@ public java.lang.String getTraffic();
 
 The wirefilter expression to be used for traffic matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
 
 ---
 
@@ -1582,7 +1582,7 @@ public java.util.Map<java.lang.String, java.lang.String> getAddHeaders();
 
 Add custom headers to allowed requests in the form of key-value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#add_headers TeamsRule#add_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#add_headers TeamsRule#add_headers}
 
 ---
 
@@ -1596,7 +1596,7 @@ public java.lang.Object getAllowChildBypass();
 
 Allow parent MSP accounts to enable bypass their children's rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
 
 ---
 
@@ -1610,7 +1610,7 @@ public TeamsRuleRuleSettingsAuditSsh getAuditSsh();
 
 audit_ssh block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
 
 ---
 
@@ -1624,7 +1624,7 @@ public TeamsRuleRuleSettingsBisoAdminControls getBisoAdminControls();
 
 biso_admin_controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#biso_admin_controls TeamsRule#biso_admin_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#biso_admin_controls TeamsRule#biso_admin_controls}
 
 ---
 
@@ -1638,7 +1638,7 @@ public java.lang.Object getBlockPageEnabled();
 
 Indicator of block page enablement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
 
 ---
 
@@ -1652,7 +1652,7 @@ public java.lang.String getBlockPageReason();
 
 The displayed reason for a user being blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
 
 ---
 
@@ -1666,7 +1666,7 @@ public java.lang.Object getBypassParentRule();
 
 Allow child MSP accounts to bypass their parent's rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
 
 ---
 
@@ -1680,7 +1680,7 @@ public TeamsRuleRuleSettingsCheckSession getCheckSession();
 
 check_session block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
 
 ---
 
@@ -1694,7 +1694,7 @@ public TeamsRuleRuleSettingsDnsResolvers getDnsResolvers();
 
 dns_resolvers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#dns_resolvers TeamsRule#dns_resolvers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#dns_resolvers TeamsRule#dns_resolvers}
 
 ---
 
@@ -1708,7 +1708,7 @@ public TeamsRuleRuleSettingsEgress getEgress();
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#egress TeamsRule#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#egress TeamsRule#egress}
 
 ---
 
@@ -1722,7 +1722,7 @@ public java.lang.Object getIgnoreCnameCategoryMatches();
 
 Set to true, to ignore the category matches at CNAME domains in a response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ignore_cname_category_matches TeamsRule#ignore_cname_category_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ignore_cname_category_matches TeamsRule#ignore_cname_category_matches}
 
 ---
 
@@ -1736,7 +1736,7 @@ public java.lang.Object getInsecureDisableDnssecValidation();
 
 Disable DNSSEC validation (must be Allow rule).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
 
 ---
 
@@ -1750,7 +1750,7 @@ public java.lang.Object getIpCategories();
 
 Turns on IP category based filter on dns if the rule contains dns category checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
 
 ---
 
@@ -1764,7 +1764,7 @@ public TeamsRuleRuleSettingsL4Override getL4Override();
 
 l4override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
 
 ---
 
@@ -1778,7 +1778,7 @@ public TeamsRuleRuleSettingsNotificationSettings getNotificationSettings();
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#notification_settings TeamsRule#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#notification_settings TeamsRule#notification_settings}
 
 ---
 
@@ -1792,7 +1792,7 @@ public java.lang.String getOverrideHost();
 
 The host to override matching DNS queries with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#override_host TeamsRule#override_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#override_host TeamsRule#override_host}
 
 ---
 
@@ -1806,7 +1806,7 @@ public java.util.List<java.lang.String> getOverrideIps();
 
 The IPs to override matching DNS queries with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#override_ips TeamsRule#override_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#override_ips TeamsRule#override_ips}
 
 ---
 
@@ -1820,7 +1820,7 @@ public TeamsRuleRuleSettingsPayloadLog getPayloadLog();
 
 payload_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#payload_log TeamsRule#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#payload_log TeamsRule#payload_log}
 
 ---
 
@@ -1834,7 +1834,7 @@ public TeamsRuleRuleSettingsResolveDnsInternally getResolveDnsInternally();
 
 resolve_dns_internally block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#resolve_dns_internally TeamsRule#resolve_dns_internally}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#resolve_dns_internally TeamsRule#resolve_dns_internally}
 
 ---
 
@@ -1848,7 +1848,7 @@ public java.lang.Object getResolveDnsThroughCloudflare();
 
 Enable sending queries that match the resolver policy to Cloudflare's default 1.1.1.1 DNS resolver. Cannot be set when `dns_resolvers` are specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#resolve_dns_through_cloudflare TeamsRule#resolve_dns_through_cloudflare}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#resolve_dns_through_cloudflare TeamsRule#resolve_dns_through_cloudflare}
 
 ---
 
@@ -1862,7 +1862,7 @@ public TeamsRuleRuleSettingsUntrustedCert getUntrustedCert();
 
 untrusted_cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
 
 ---
 
@@ -1897,7 +1897,7 @@ public java.lang.Object getCommandLogging();
 
 Log all SSH commands.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#command_logging TeamsRule#command_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#command_logging TeamsRule#command_logging}
 
 ---
 
@@ -1909,6 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.teams_rule.TeamsRuleRuleSettingsBisoAdminControls;
 
 TeamsRuleRuleSettingsBisoAdminControls.builder()
+//  .copy(java.lang.String)
 //  .disableClipboardRedirection(java.lang.Boolean)
 //  .disableClipboardRedirection(IResolvable)
 //  .disableCopyPaste(java.lang.Boolean)
@@ -1921,6 +1922,12 @@ TeamsRuleRuleSettingsBisoAdminControls.builder()
 //  .disablePrinting(IResolvable)
 //  .disableUpload(java.lang.Boolean)
 //  .disableUpload(IResolvable)
+//  .download(java.lang.String)
+//  .keyboard(java.lang.String)
+//  .paste(java.lang.String)
+//  .printing(java.lang.String)
+//  .upload(java.lang.String)
+//  .version(java.lang.String)
     .build();
 ```
 
@@ -1928,12 +1935,35 @@ TeamsRuleRuleSettingsBisoAdminControls.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableClipboardRedirection">disableClipboardRedirection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable clipboard redirection. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableCopyPaste">disableCopyPaste</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable copy-paste. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableDownload">disableDownload</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable download. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableKeyboard">disableKeyboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable keyboard usage. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disablePrinting">disablePrinting</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable printing. |
-| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableUpload">disableUpload</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable upload. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.copy">copy</a></code> | <code>java.lang.String</code> | Configure whether copy is enabled or not. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableClipboardRedirection">disableClipboardRedirection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable clipboard redirection. Only applies when version == v1. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableCopyPaste">disableCopyPaste</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable copy-paste. Only applies when version == v1. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableDownload">disableDownload</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable download. Only applies when version == v1. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableKeyboard">disableKeyboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable keyboard usage. Only applies when version == v1. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disablePrinting">disablePrinting</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable printing. Only applies when version == v1. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.disableUpload">disableUpload</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable upload. Only applies when version == v1. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.download">download</a></code> | <code>java.lang.String</code> | Configure whether downloading enabled or not. When absent, downloading is enabled. Only applies when version == v2. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.keyboard">keyboard</a></code> | <code>java.lang.String</code> | Configure whether keyboard usage is enabled or not. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.paste">paste</a></code> | <code>java.lang.String</code> | Configure whether pasting is enabled or not. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.printing">printing</a></code> | <code>java.lang.String</code> | Configure whether printing is enabled or not. When absent, printing is enabled. Only applies when version == v2. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.upload">upload</a></code> | <code>java.lang.String</code> | Configure whether uploading is enabled or not. When absent, uploading is enabled. Only applies when version == v2. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.version">version</a></code> | <code>java.lang.String</code> | Indicates which version (v1 or v2) of the browser isolation controls should apply. Defaults to `v1`. |
+
+---
+
+##### `copy`<sup>Optional</sup> <a name="copy" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.copy"></a>
+
+```java
+public java.lang.String getCopy();
+```
+
+- *Type:* java.lang.String
+
+Configure whether copy is enabled or not.
+
+When set with 'remote_only', copying isolated content from the remote browser to the user's local clipboard is disabled. When absent, copy is enabled. Only applies when version == v2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#copy TeamsRule#copy}
 
 ---
 
@@ -1945,9 +1975,9 @@ public java.lang.Object getDisableClipboardRedirection();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Disable clipboard redirection.
+Disable clipboard redirection. Only applies when version == v1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_clipboard_redirection TeamsRule#disable_clipboard_redirection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_clipboard_redirection TeamsRule#disable_clipboard_redirection}
 
 ---
 
@@ -1959,9 +1989,9 @@ public java.lang.Object getDisableCopyPaste();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Disable copy-paste.
+Disable copy-paste. Only applies when version == v1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
 
 ---
 
@@ -1973,9 +2003,9 @@ public java.lang.Object getDisableDownload();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Disable download.
+Disable download. Only applies when version == v1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_download TeamsRule#disable_download}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_download TeamsRule#disable_download}
 
 ---
 
@@ -1987,9 +2017,9 @@ public java.lang.Object getDisableKeyboard();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Disable keyboard usage.
+Disable keyboard usage. Only applies when version == v1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
 
 ---
 
@@ -2001,9 +2031,9 @@ public java.lang.Object getDisablePrinting();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Disable printing.
+Disable printing. Only applies when version == v1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_printing TeamsRule#disable_printing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_printing TeamsRule#disable_printing}
 
 ---
 
@@ -2015,9 +2045,97 @@ public java.lang.Object getDisableUpload();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Disable upload.
+Disable upload. Only applies when version == v1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_upload TeamsRule#disable_upload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_upload TeamsRule#disable_upload}
+
+---
+
+##### `download`<sup>Optional</sup> <a name="download" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.download"></a>
+
+```java
+public java.lang.String getDownload();
+```
+
+- *Type:* java.lang.String
+
+Configure whether downloading enabled or not. When absent, downloading is enabled. Only applies when version == v2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#download TeamsRule#download}
+
+---
+
+##### `keyboard`<sup>Optional</sup> <a name="keyboard" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.keyboard"></a>
+
+```java
+public java.lang.String getKeyboard();
+```
+
+- *Type:* java.lang.String
+
+Configure whether keyboard usage is enabled or not.
+
+When absent, keyboard usage is enabled. Only applies when version == v2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#keyboard TeamsRule#keyboard}
+
+---
+
+##### `paste`<sup>Optional</sup> <a name="paste" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.paste"></a>
+
+```java
+public java.lang.String getPaste();
+```
+
+- *Type:* java.lang.String
+
+Configure whether pasting is enabled or not.
+
+When set with 'remote_only', pasting content from the user's local clipboard into isolated pages is disabled. When absent, paste is enabled. Only applies when version == v2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#paste TeamsRule#paste}
+
+---
+
+##### `printing`<sup>Optional</sup> <a name="printing" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.printing"></a>
+
+```java
+public java.lang.String getPrinting();
+```
+
+- *Type:* java.lang.String
+
+Configure whether printing is enabled or not. When absent, printing is enabled. Only applies when version == v2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#printing TeamsRule#printing}
+
+---
+
+##### `upload`<sup>Optional</sup> <a name="upload" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.upload"></a>
+
+```java
+public java.lang.String getUpload();
+```
+
+- *Type:* java.lang.String
+
+Configure whether uploading is enabled or not. When absent, uploading is enabled. Only applies when version == v2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#upload TeamsRule#upload}
+
+---
+
+##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.property.version"></a>
+
+```java
+public java.lang.String getVersion();
+```
+
+- *Type:* java.lang.String
+
+Indicates which version (v1 or v2) of the browser isolation controls should apply. Defaults to `v1`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#version TeamsRule#version}
 
 ---
 
@@ -2054,7 +2172,7 @@ public java.lang.String getDuration();
 
 Configure how fresh the session needs to be to be considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#duration TeamsRule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#duration TeamsRule#duration}
 
 ---
 
@@ -2068,7 +2186,7 @@ public java.lang.Object getEnforce();
 
 Enable session enforcement for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
 
 ---
 
@@ -2106,7 +2224,7 @@ public java.lang.Object getIpv4();
 
 ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
 
 ---
 
@@ -2120,7 +2238,7 @@ public java.lang.Object getIpv6();
 
 ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
 
 ---
 
@@ -2161,7 +2279,7 @@ public java.lang.String getIp();
 
 The IPv4 or IPv6 address of the upstream resolver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip TeamsRule#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip TeamsRule#ip}
 
 ---
 
@@ -2175,7 +2293,7 @@ public java.lang.Number getPort();
 
 A port number to use for the upstream resolver. Defaults to `53`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#port TeamsRule#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#port TeamsRule#port}
 
 ---
 
@@ -2189,7 +2307,7 @@ public java.lang.Object getRouteThroughPrivateNetwork();
 
 Whether to connect to this resolver over a private network. Must be set when `vnet_id` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
 
 ---
 
@@ -2203,7 +2321,7 @@ public java.lang.String getVnetId();
 
 specify a virtual network for this resolver. Uses default virtual network id if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
 
 ---
 
@@ -2244,7 +2362,7 @@ public java.lang.String getIp();
 
 The IPv4 or IPv6 address of the upstream resolver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip TeamsRule#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip TeamsRule#ip}
 
 ---
 
@@ -2258,7 +2376,7 @@ public java.lang.Number getPort();
 
 A port number to use for the upstream resolver. Defaults to `53`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#port TeamsRule#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#port TeamsRule#port}
 
 ---
 
@@ -2272,7 +2390,7 @@ public java.lang.Object getRouteThroughPrivateNetwork();
 
 Whether to connect to this resolver over a private network. Must be set when `vnet_id` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
 
 ---
 
@@ -2286,7 +2404,7 @@ public java.lang.String getVnetId();
 
 specify a virtual network for this resolver. Uses default virtual network id if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
 
 ---
 
@@ -2324,7 +2442,7 @@ public java.lang.String getIpv4();
 
 The IPv4 address to be used for egress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
 
 ---
 
@@ -2338,7 +2456,7 @@ public java.lang.String getIpv6();
 
 The IPv6 range to be used for egress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
 
 ---
 
@@ -2354,7 +2472,7 @@ The IPv4 address to be used for egress in the event of an error egressing with t
 
 Can be '0.0.0.0' to indicate local egreass via Warp IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
 
 ---
 
@@ -2390,7 +2508,7 @@ public java.lang.String getIp();
 
 Override IP to forward traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip TeamsRule#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip TeamsRule#ip}
 
 ---
 
@@ -2404,7 +2522,7 @@ public java.lang.Number getPort();
 
 Override Port to forward traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#port TeamsRule#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#port TeamsRule#port}
 
 ---
 
@@ -2443,7 +2561,7 @@ public java.lang.Object getEnabled();
 
 Enable notification settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -2457,7 +2575,7 @@ public java.lang.String getMessage();
 
 Notification content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#message TeamsRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#message TeamsRule#message}
 
 ---
 
@@ -2471,7 +2589,7 @@ public java.lang.String getSupportUrl();
 
 Support URL to show in the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#support_url TeamsRule#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#support_url TeamsRule#support_url}
 
 ---
 
@@ -2506,7 +2624,7 @@ public java.lang.Object getEnabled();
 
 Enable or disable DLP Payload Logging for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
 
 ---
 
@@ -2542,7 +2660,7 @@ public java.lang.String getFallback();
 
 The fallback behavior to apply when the internal DNS response code is different from 'NOERROR' or when the response data only contains CNAME records for 'A' or 'AAAA' queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#fallback TeamsRule#fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#fallback TeamsRule#fallback}
 
 ---
 
@@ -2556,7 +2674,7 @@ public java.lang.String getViewId();
 
 The internal DNS view identifier that's passed to the internal DNS service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#view_id TeamsRule#view_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#view_id TeamsRule#view_id}
 
 ---
 
@@ -2590,7 +2708,7 @@ public java.lang.String getAction();
 
 Action to be taken when the SSL certificate of upstream is invalid. Available values: `pass_through`, `block`, `error`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#action TeamsRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#action TeamsRule#action}
 
 ---
 
@@ -2917,12 +3035,19 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetCopy">resetCopy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisableClipboardRedirection">resetDisableClipboardRedirection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisableCopyPaste">resetDisableCopyPaste</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisableDownload">resetDisableDownload</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisableKeyboard">resetDisableKeyboard</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisablePrinting">resetDisablePrinting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisableUpload">resetDisableUpload</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDownload">resetDownload</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetKeyboard">resetKeyboard</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetPaste">resetPaste</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetPrinting">resetPrinting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetUpload">resetUpload</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetVersion">resetVersion</a></code> | *No description.* |
 
 ---
 
@@ -3076,6 +3201,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetCopy` <a name="resetCopy" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetCopy"></a>
+
+```java
+public void resetCopy()
+```
+
 ##### `resetDisableClipboardRedirection` <a name="resetDisableClipboardRedirection" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDisableClipboardRedirection"></a>
 
 ```java
@@ -3112,6 +3243,42 @@ public void resetDisablePrinting()
 public void resetDisableUpload()
 ```
 
+##### `resetDownload` <a name="resetDownload" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetDownload"></a>
+
+```java
+public void resetDownload()
+```
+
+##### `resetKeyboard` <a name="resetKeyboard" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetKeyboard"></a>
+
+```java
+public void resetKeyboard()
+```
+
+##### `resetPaste` <a name="resetPaste" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetPaste"></a>
+
+```java
+public void resetPaste()
+```
+
+##### `resetPrinting` <a name="resetPrinting" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetPrinting"></a>
+
+```java
+public void resetPrinting()
+```
+
+##### `resetUpload` <a name="resetUpload" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetUpload"></a>
+
+```java
+public void resetUpload()
+```
+
+##### `resetVersion` <a name="resetVersion" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.resetVersion"></a>
+
+```java
+public void resetVersion()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3119,18 +3286,32 @@ public void resetDisableUpload()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.copyInput">copyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableClipboardRedirectionInput">disableClipboardRedirectionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableCopyPasteInput">disableCopyPasteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableDownloadInput">disableDownloadInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableKeyboardInput">disableKeyboardInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disablePrintingInput">disablePrintingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableUploadInput">disableUploadInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.downloadInput">downloadInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.keyboardInput">keyboardInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.pasteInput">pasteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.printingInput">printingInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.uploadInput">uploadInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.copy">copy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableClipboardRedirection">disableClipboardRedirection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableCopyPaste">disableCopyPaste</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableDownload">disableDownload</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableKeyboard">disableKeyboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disablePrinting">disablePrinting</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableUpload">disableUpload</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.download">download</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.keyboard">keyboard</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.paste">paste</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.printing">printing</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.upload">upload</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls">TeamsRuleRuleSettingsBisoAdminControls</a></code> | *No description.* |
 
 ---
@@ -3153,6 +3334,16 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `copyInput`<sup>Optional</sup> <a name="copyInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.copyInput"></a>
+
+```java
+public java.lang.String getCopyInput();
 ```
 
 - *Type:* java.lang.String
@@ -3219,6 +3410,76 @@ public java.lang.Object getDisableUploadInput();
 
 ---
 
+##### `downloadInput`<sup>Optional</sup> <a name="downloadInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.downloadInput"></a>
+
+```java
+public java.lang.String getDownloadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `keyboardInput`<sup>Optional</sup> <a name="keyboardInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.keyboardInput"></a>
+
+```java
+public java.lang.String getKeyboardInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `pasteInput`<sup>Optional</sup> <a name="pasteInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.pasteInput"></a>
+
+```java
+public java.lang.String getPasteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `printingInput`<sup>Optional</sup> <a name="printingInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.printingInput"></a>
+
+```java
+public java.lang.String getPrintingInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `uploadInput`<sup>Optional</sup> <a name="uploadInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.uploadInput"></a>
+
+```java
+public java.lang.String getUploadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `versionInput`<sup>Optional</sup> <a name="versionInput" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.versionInput"></a>
+
+```java
+public java.lang.String getVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `copy`<sup>Required</sup> <a name="copy" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.copy"></a>
+
+```java
+public java.lang.String getCopy();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `disableClipboardRedirection`<sup>Required</sup> <a name="disableClipboardRedirection" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.disableClipboardRedirection"></a>
 
 ```java
@@ -3276,6 +3537,66 @@ public java.lang.Object getDisableUpload();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `download`<sup>Required</sup> <a name="download" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.download"></a>
+
+```java
+public java.lang.String getDownload();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `keyboard`<sup>Required</sup> <a name="keyboard" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.keyboard"></a>
+
+```java
+public java.lang.String getKeyboard();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `paste`<sup>Required</sup> <a name="paste" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.paste"></a>
+
+```java
+public java.lang.String getPaste();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `printing`<sup>Required</sup> <a name="printing" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.printing"></a>
+
+```java
+public java.lang.String getPrinting();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `upload`<sup>Required</sup> <a name="upload" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.upload"></a>
+
+```java
+public java.lang.String getUpload();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.property.version"></a>
+
+```java
+public java.lang.String getVersion();
+```
+
+- *Type:* java.lang.String
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface ZeroTrustDexTestConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}
   */
   readonly accountId: string;
   /**
   * Additional details about the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
   */
   readonly description: string;
   /**
   * Determines whether or not the test is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +35,19 @@ export interface ZeroTrustDexTestConfig extends cdktf.TerraformMetaArguments {
   /**
   * How often the test will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
   */
   readonly interval: string;
   /**
   * The name of the Device Dex Test. Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
   */
   readonly name: string;
   /**
   * data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
   */
   readonly data: ZeroTrustDexTestData;
 }
@@ -60,19 +55,19 @@ export interface ZeroTrustDexTestData {
   /**
   * The host URL for `http` test `kind`. For `traceroute`, it must be a valid hostname or IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
   */
   readonly host: string;
   /**
   * The type of Device Dex Test. Available values: `http`, `traceroute`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
   */
   readonly kind: string;
   /**
   * The http request method. Available values: `GET`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
   */
   readonly method?: string;
 }
@@ -208,7 +203,7 @@ export class ZeroTrustDexTestDataOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}
 */
 export class ZeroTrustDexTest extends cdktf.TerraformResource {
 
@@ -224,7 +219,7 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDexTest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDexTest to import
-  * @param importFromId The id of the existing ZeroTrustDexTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDexTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDexTest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -236,7 +231,7 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -247,7 +242,7 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dex_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

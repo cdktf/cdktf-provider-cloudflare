@@ -4,7 +4,7 @@
 
 ### ContentScanning <a name="ContentScanning" id="@cdktf/provider-cloudflare.contentScanning.ContentScanning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/content_scanning cloudflare_content_scanning}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning cloudflare_content_scanning}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanning.ContentScanning.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ContentScanning to import.
 
 The id of the existing ContentScanning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -812,7 +812,7 @@ public readonly enabled: boolean | IResolvable;
 
 State of the Content Scanning feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/content_scanning#enabled ContentScanning#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning#enabled ContentScanning#enabled}
 
 ---
 
@@ -826,7 +826,7 @@ public readonly zoneId: string;
 
 The zone identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 

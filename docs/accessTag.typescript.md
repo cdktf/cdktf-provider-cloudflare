@@ -4,7 +4,7 @@
 
 ### AccessTag <a name="AccessTag" id="@cdktf/provider-cloudflare.accessTag.AccessTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag cloudflare_access_tag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag cloudflare_access_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessTag.AccessTag.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the AccessTag to import.
 
 The id of the existing AccessTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ const accessTagConfig: accessTag.AccessTagConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.accessTag.AccessTagConfig.property.name">name</a></code> | <code>string</code> | Friendly name of the Access Tag. |
 | <code><a href="#@cdktf/provider-cloudflare.accessTag.AccessTagConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier to target for the resource. |
 | <code><a href="#@cdktf/provider-cloudflare.accessTag.AccessTagConfig.property.appCount">appCount</a></code> | <code>number</code> | Number of apps associated with the tag. |
-| <code><a href="#@cdktf/provider-cloudflare.accessTag.AccessTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#id AccessTag#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessTag.AccessTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#id AccessTag#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessTag.AccessTagConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The zone identifier to target for the resource. |
 
 ---
@@ -909,7 +909,7 @@ public readonly name: string;
 
 Friendly name of the Access Tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#name AccessTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#name AccessTag#name}
 
 ---
 
@@ -925,7 +925,7 @@ The account identifier to target for the resource.
 
 Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#account_id AccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#account_id AccessTag#account_id}
 
 ---
 
@@ -939,7 +939,7 @@ public readonly appCount: number;
 
 Number of apps associated with the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#app_count AccessTag#app_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#app_count AccessTag#app_count}
 
 ---
 
@@ -951,7 +951,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#id AccessTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#id AccessTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,7 +970,7 @@ The zone identifier to target for the resource.
 
 Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_tag#zone_id AccessTag#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_tag#zone_id AccessTag#zone_id}
 
 ---
 

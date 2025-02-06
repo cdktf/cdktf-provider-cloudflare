@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +10,41 @@ export interface TeamsRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#account_id TeamsRule#account_id}
   */
   readonly accountId: string;
   /**
   * The action executed by matched teams rule. Available values: `allow`, `block`, `safesearch`, `ytrestricted`, `on`, `off`, `scan`, `noscan`, `isolate`, `noisolate`, `override`, `l4_override`, `egress`, `audit_ssh`, `resolve`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#action TeamsRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#action TeamsRule#action}
   */
   readonly action: string;
   /**
   * The description of the teams rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#description TeamsRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#description TeamsRule#description}
   */
   readonly description: string;
   /**
   * The wirefilter expression to be used for device_posture check matching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#device_posture TeamsRule#device_posture}
   */
   readonly devicePosture?: string;
   /**
   * Indicator of rule enablement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The protocol or layer to evaluate the traffic and identity expressions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#filters TeamsRule#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#filters TeamsRule#filters}
   */
   readonly filters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#id TeamsRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#id TeamsRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,31 +53,31 @@ export interface TeamsRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The wirefilter expression to be used for identity matching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#identity TeamsRule#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#identity TeamsRule#identity}
   */
   readonly identity?: string;
   /**
   * The name of the teams rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#name TeamsRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#name TeamsRule#name}
   */
   readonly name: string;
   /**
   * The evaluation precedence of the teams rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#precedence TeamsRule#precedence}
   */
   readonly precedence: number;
   /**
   * The wirefilter expression to be used for traffic matching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#traffic TeamsRule#traffic}
   */
   readonly traffic?: string;
   /**
   * rule_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#rule_settings TeamsRule#rule_settings}
   */
   readonly ruleSettings?: TeamsRuleRuleSettings;
 }
@@ -90,7 +85,7 @@ export interface TeamsRuleRuleSettingsAuditSsh {
   /**
   * Log all SSH commands.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#command_logging TeamsRule#command_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#command_logging TeamsRule#command_logging}
   */
   readonly commandLogging: boolean | cdktf.IResolvable;
 }
@@ -171,41 +166,83 @@ export class TeamsRuleRuleSettingsAuditSshOutputReference extends cdktf.ComplexO
 }
 export interface TeamsRuleRuleSettingsBisoAdminControls {
   /**
-  * Disable clipboard redirection.
+  * Configure whether copy is enabled or not. When set with 'remote_only', copying isolated content from the remote browser to the user's local clipboard is disabled. When absent, copy is enabled. Only applies when version == v2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_clipboard_redirection TeamsRule#disable_clipboard_redirection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#copy TeamsRule#copy}
+  */
+  readonly copy?: string;
+  /**
+  * Disable clipboard redirection. Only applies when version == v1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_clipboard_redirection TeamsRule#disable_clipboard_redirection}
   */
   readonly disableClipboardRedirection?: boolean | cdktf.IResolvable;
   /**
-  * Disable copy-paste.
+  * Disable copy-paste. Only applies when version == v1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_copy_paste TeamsRule#disable_copy_paste}
   */
   readonly disableCopyPaste?: boolean | cdktf.IResolvable;
   /**
-  * Disable download.
+  * Disable download. Only applies when version == v1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_download TeamsRule#disable_download}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_download TeamsRule#disable_download}
   */
   readonly disableDownload?: boolean | cdktf.IResolvable;
   /**
-  * Disable keyboard usage.
+  * Disable keyboard usage. Only applies when version == v1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_keyboard TeamsRule#disable_keyboard}
   */
   readonly disableKeyboard?: boolean | cdktf.IResolvable;
   /**
-  * Disable printing.
+  * Disable printing. Only applies when version == v1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_printing TeamsRule#disable_printing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_printing TeamsRule#disable_printing}
   */
   readonly disablePrinting?: boolean | cdktf.IResolvable;
   /**
-  * Disable upload.
+  * Disable upload. Only applies when version == v1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#disable_upload TeamsRule#disable_upload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#disable_upload TeamsRule#disable_upload}
   */
   readonly disableUpload?: boolean | cdktf.IResolvable;
+  /**
+  * Configure whether downloading enabled or not. When absent, downloading is enabled. Only applies when version == v2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#download TeamsRule#download}
+  */
+  readonly download?: string;
+  /**
+  * Configure whether keyboard usage is enabled or not. When absent, keyboard usage is enabled. Only applies when version == v2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#keyboard TeamsRule#keyboard}
+  */
+  readonly keyboard?: string;
+  /**
+  * Configure whether pasting is enabled or not. When set with 'remote_only', pasting content from the user's local clipboard into isolated pages is disabled. When absent, paste is enabled. Only applies when version == v2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#paste TeamsRule#paste}
+  */
+  readonly paste?: string;
+  /**
+  * Configure whether printing is enabled or not. When absent, printing is enabled. Only applies when version == v2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#printing TeamsRule#printing}
+  */
+  readonly printing?: string;
+  /**
+  * Configure whether uploading is enabled or not. When absent, uploading is enabled. Only applies when version == v2.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#upload TeamsRule#upload}
+  */
+  readonly upload?: string;
+  /**
+  * Indicates which version (v1 or v2) of the browser isolation controls should apply. Defaults to `v1`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#version TeamsRule#version}
+  */
+  readonly version?: string;
 }
 
 export function teamsRuleRuleSettingsBisoAdminControlsToTerraform(struct?: TeamsRuleRuleSettingsBisoAdminControlsOutputReference | TeamsRuleRuleSettingsBisoAdminControls): any {
@@ -214,12 +251,19 @@ export function teamsRuleRuleSettingsBisoAdminControlsToTerraform(struct?: Teams
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    copy: cdktf.stringToTerraform(struct!.copy),
     disable_clipboard_redirection: cdktf.booleanToTerraform(struct!.disableClipboardRedirection),
     disable_copy_paste: cdktf.booleanToTerraform(struct!.disableCopyPaste),
     disable_download: cdktf.booleanToTerraform(struct!.disableDownload),
     disable_keyboard: cdktf.booleanToTerraform(struct!.disableKeyboard),
     disable_printing: cdktf.booleanToTerraform(struct!.disablePrinting),
     disable_upload: cdktf.booleanToTerraform(struct!.disableUpload),
+    download: cdktf.stringToTerraform(struct!.download),
+    keyboard: cdktf.stringToTerraform(struct!.keyboard),
+    paste: cdktf.stringToTerraform(struct!.paste),
+    printing: cdktf.stringToTerraform(struct!.printing),
+    upload: cdktf.stringToTerraform(struct!.upload),
+    version: cdktf.stringToTerraform(struct!.version),
   }
 }
 
@@ -230,6 +274,12 @@ export function teamsRuleRuleSettingsBisoAdminControlsToHclTerraform(struct?: Te
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    copy: {
+      value: cdktf.stringToHclTerraform(struct!.copy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     disable_clipboard_redirection: {
       value: cdktf.booleanToHclTerraform(struct!.disableClipboardRedirection),
       isBlock: false,
@@ -266,6 +316,42 @@ export function teamsRuleRuleSettingsBisoAdminControlsToHclTerraform(struct?: Te
       type: "simple",
       storageClassType: "boolean",
     },
+    download: {
+      value: cdktf.stringToHclTerraform(struct!.download),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    keyboard: {
+      value: cdktf.stringToHclTerraform(struct!.keyboard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    paste: {
+      value: cdktf.stringToHclTerraform(struct!.paste),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    printing: {
+      value: cdktf.stringToHclTerraform(struct!.printing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    upload: {
+      value: cdktf.stringToHclTerraform(struct!.upload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
   };
 
   // remove undefined attributes
@@ -286,6 +372,10 @@ export class TeamsRuleRuleSettingsBisoAdminControlsOutputReference extends cdktf
   public get internalValue(): TeamsRuleRuleSettingsBisoAdminControls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._copy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.copy = this._copy;
+    }
     if (this._disableClipboardRedirection !== undefined) {
       hasAnyValues = true;
       internalValueResult.disableClipboardRedirection = this._disableClipboardRedirection;
@@ -310,28 +400,82 @@ export class TeamsRuleRuleSettingsBisoAdminControlsOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.disableUpload = this._disableUpload;
     }
+    if (this._download !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.download = this._download;
+    }
+    if (this._keyboard !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyboard = this._keyboard;
+    }
+    if (this._paste !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.paste = this._paste;
+    }
+    if (this._printing !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.printing = this._printing;
+    }
+    if (this._upload !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upload = this._upload;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: TeamsRuleRuleSettingsBisoAdminControls | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._copy = undefined;
       this._disableClipboardRedirection = undefined;
       this._disableCopyPaste = undefined;
       this._disableDownload = undefined;
       this._disableKeyboard = undefined;
       this._disablePrinting = undefined;
       this._disableUpload = undefined;
+      this._download = undefined;
+      this._keyboard = undefined;
+      this._paste = undefined;
+      this._printing = undefined;
+      this._upload = undefined;
+      this._version = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._copy = value.copy;
       this._disableClipboardRedirection = value.disableClipboardRedirection;
       this._disableCopyPaste = value.disableCopyPaste;
       this._disableDownload = value.disableDownload;
       this._disableKeyboard = value.disableKeyboard;
       this._disablePrinting = value.disablePrinting;
       this._disableUpload = value.disableUpload;
+      this._download = value.download;
+      this._keyboard = value.keyboard;
+      this._paste = value.paste;
+      this._printing = value.printing;
+      this._upload = value.upload;
+      this._version = value.version;
     }
+  }
+
+  // copy - computed: false, optional: true, required: false
+  private _copy?: string; 
+  public get copy() {
+    return this.getStringAttribute('copy');
+  }
+  public set copy(value: string) {
+    this._copy = value;
+  }
+  public resetCopy() {
+    this._copy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyInput() {
+    return this._copy;
   }
 
   // disable_clipboard_redirection - computed: false, optional: true, required: false
@@ -429,18 +573,114 @@ export class TeamsRuleRuleSettingsBisoAdminControlsOutputReference extends cdktf
   public get disableUploadInput() {
     return this._disableUpload;
   }
+
+  // download - computed: false, optional: true, required: false
+  private _download?: string; 
+  public get download() {
+    return this.getStringAttribute('download');
+  }
+  public set download(value: string) {
+    this._download = value;
+  }
+  public resetDownload() {
+    this._download = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get downloadInput() {
+    return this._download;
+  }
+
+  // keyboard - computed: false, optional: true, required: false
+  private _keyboard?: string; 
+  public get keyboard() {
+    return this.getStringAttribute('keyboard');
+  }
+  public set keyboard(value: string) {
+    this._keyboard = value;
+  }
+  public resetKeyboard() {
+    this._keyboard = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyboardInput() {
+    return this._keyboard;
+  }
+
+  // paste - computed: false, optional: true, required: false
+  private _paste?: string; 
+  public get paste() {
+    return this.getStringAttribute('paste');
+  }
+  public set paste(value: string) {
+    this._paste = value;
+  }
+  public resetPaste() {
+    this._paste = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pasteInput() {
+    return this._paste;
+  }
+
+  // printing - computed: false, optional: true, required: false
+  private _printing?: string; 
+  public get printing() {
+    return this.getStringAttribute('printing');
+  }
+  public set printing(value: string) {
+    this._printing = value;
+  }
+  public resetPrinting() {
+    this._printing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get printingInput() {
+    return this._printing;
+  }
+
+  // upload - computed: false, optional: true, required: false
+  private _upload?: string; 
+  public get upload() {
+    return this.getStringAttribute('upload');
+  }
+  public set upload(value: string) {
+    this._upload = value;
+  }
+  public resetUpload() {
+    this._upload = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uploadInput() {
+    return this._upload;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
 }
 export interface TeamsRuleRuleSettingsCheckSession {
   /**
   * Configure how fresh the session needs to be to be considered valid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#duration TeamsRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#duration TeamsRule#duration}
   */
   readonly duration: string;
   /**
   * Enable session enforcement for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
   */
   readonly enforce: boolean | cdktf.IResolvable;
 }
@@ -549,25 +789,25 @@ export interface TeamsRuleRuleSettingsDnsResolversIpv4 {
   /**
   * The IPv4 or IPv6 address of the upstream resolver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip TeamsRule#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip TeamsRule#ip}
   */
   readonly ip: string;
   /**
   * A port number to use for the upstream resolver. Defaults to `53`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#port TeamsRule#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#port TeamsRule#port}
   */
   readonly port?: number;
   /**
   * Whether to connect to this resolver over a private network. Must be set when `vnet_id` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
   */
   readonly routeThroughPrivateNetwork?: boolean | cdktf.IResolvable;
   /**
   * specify a virtual network for this resolver. Uses default virtual network id if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
   */
   readonly vnetId?: string;
 }
@@ -769,25 +1009,25 @@ export interface TeamsRuleRuleSettingsDnsResolversIpv6 {
   /**
   * The IPv4 or IPv6 address of the upstream resolver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip TeamsRule#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip TeamsRule#ip}
   */
   readonly ip: string;
   /**
   * A port number to use for the upstream resolver. Defaults to `53`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#port TeamsRule#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#port TeamsRule#port}
   */
   readonly port?: number;
   /**
   * Whether to connect to this resolver over a private network. Must be set when `vnet_id` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#route_through_private_network TeamsRule#route_through_private_network}
   */
   readonly routeThroughPrivateNetwork?: boolean | cdktf.IResolvable;
   /**
   * specify a virtual network for this resolver. Uses default virtual network id if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#vnet_id TeamsRule#vnet_id}
   */
   readonly vnetId?: string;
 }
@@ -989,13 +1229,13 @@ export interface TeamsRuleRuleSettingsDnsResolvers {
   /**
   * ipv4 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
   */
   readonly ipv4?: TeamsRuleRuleSettingsDnsResolversIpv4[] | cdktf.IResolvable;
   /**
   * ipv6 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
   */
   readonly ipv6?: TeamsRuleRuleSettingsDnsResolversIpv6[] | cdktf.IResolvable;
 }
@@ -1110,19 +1350,19 @@ export interface TeamsRuleRuleSettingsEgress {
   /**
   * The IPv4 address to be used for egress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv4 TeamsRule#ipv4}
   */
   readonly ipv4: string;
   /**
   * The IPv4 address to be used for egress in the event of an error egressing with the primary IPv4. Can be '0.0.0.0' to indicate local egreass via Warp IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv4_fallback TeamsRule#ipv4_fallback}
   */
   readonly ipv4Fallback?: string;
   /**
   * The IPv6 range to be used for egress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ipv6 TeamsRule#ipv6}
   */
   readonly ipv6: string;
 }
@@ -1260,13 +1500,13 @@ export interface TeamsRuleRuleSettingsL4Override {
   /**
   * Override IP to forward traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip TeamsRule#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip TeamsRule#ip}
   */
   readonly ip: string;
   /**
   * Override Port to forward traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#port TeamsRule#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#port TeamsRule#port}
   */
   readonly port: number;
 }
@@ -1375,19 +1615,19 @@ export interface TeamsRuleRuleSettingsNotificationSettings {
   /**
   * Enable notification settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Notification content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#message TeamsRule#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#message TeamsRule#message}
   */
   readonly message?: string;
   /**
   * Support URL to show in the notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#support_url TeamsRule#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#support_url TeamsRule#support_url}
   */
   readonly supportUrl?: string;
 }
@@ -1531,7 +1771,7 @@ export interface TeamsRuleRuleSettingsPayloadLog {
   /**
   * Enable or disable DLP Payload Logging for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#enabled TeamsRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1614,13 +1854,13 @@ export interface TeamsRuleRuleSettingsResolveDnsInternally {
   /**
   * The fallback behavior to apply when the internal DNS response code is different from 'NOERROR' or when the response data only contains CNAME records for 'A' or 'AAAA' queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#fallback TeamsRule#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#fallback TeamsRule#fallback}
   */
   readonly fallback?: string;
   /**
   * The internal DNS view identifier that's passed to the internal DNS service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#view_id TeamsRule#view_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#view_id TeamsRule#view_id}
   */
   readonly viewId?: string;
 }
@@ -1735,7 +1975,7 @@ export interface TeamsRuleRuleSettingsUntrustedCert {
   /**
   * Action to be taken when the SSL certificate of upstream is invalid. Available values: `pass_through`, `block`, `error`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#action TeamsRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#action TeamsRule#action}
   */
   readonly action?: string;
 }
@@ -1821,127 +2061,127 @@ export interface TeamsRuleRuleSettings {
   /**
   * Add custom headers to allowed requests in the form of key-value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#add_headers TeamsRule#add_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#add_headers TeamsRule#add_headers}
   */
   readonly addHeaders?: { [key: string]: string };
   /**
   * Allow parent MSP accounts to enable bypass their children's rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
   */
   readonly allowChildBypass?: boolean | cdktf.IResolvable;
   /**
   * Indicator of block page enablement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
   */
   readonly blockPageEnabled?: boolean | cdktf.IResolvable;
   /**
   * The displayed reason for a user being blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
   */
   readonly blockPageReason?: string;
   /**
   * Allow child MSP accounts to bypass their parent's rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
   */
   readonly bypassParentRule?: boolean | cdktf.IResolvable;
   /**
   * Set to true, to ignore the category matches at CNAME domains in a response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ignore_cname_category_matches TeamsRule#ignore_cname_category_matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ignore_cname_category_matches TeamsRule#ignore_cname_category_matches}
   */
   readonly ignoreCnameCategoryMatches?: boolean | cdktf.IResolvable;
   /**
   * Disable DNSSEC validation (must be Allow rule).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
   */
   readonly insecureDisableDnssecValidation?: boolean | cdktf.IResolvable;
   /**
   * Turns on IP category based filter on dns if the rule contains dns category checks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
   */
   readonly ipCategories?: boolean | cdktf.IResolvable;
   /**
   * The host to override matching DNS queries with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#override_host TeamsRule#override_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#override_host TeamsRule#override_host}
   */
   readonly overrideHost?: string;
   /**
   * The IPs to override matching DNS queries with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#override_ips TeamsRule#override_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#override_ips TeamsRule#override_ips}
   */
   readonly overrideIps?: string[];
   /**
   * Enable sending queries that match the resolver policy to Cloudflare's default 1.1.1.1 DNS resolver. Cannot be set when `dns_resolvers` are specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#resolve_dns_through_cloudflare TeamsRule#resolve_dns_through_cloudflare}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#resolve_dns_through_cloudflare TeamsRule#resolve_dns_through_cloudflare}
   */
   readonly resolveDnsThroughCloudflare?: boolean | cdktf.IResolvable;
   /**
   * audit_ssh block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
   */
   readonly auditSsh?: TeamsRuleRuleSettingsAuditSsh;
   /**
   * biso_admin_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#biso_admin_controls TeamsRule#biso_admin_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#biso_admin_controls TeamsRule#biso_admin_controls}
   */
   readonly bisoAdminControls?: TeamsRuleRuleSettingsBisoAdminControls;
   /**
   * check_session block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
   */
   readonly checkSession?: TeamsRuleRuleSettingsCheckSession;
   /**
   * dns_resolvers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#dns_resolvers TeamsRule#dns_resolvers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#dns_resolvers TeamsRule#dns_resolvers}
   */
   readonly dnsResolvers?: TeamsRuleRuleSettingsDnsResolvers;
   /**
   * egress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#egress TeamsRule#egress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#egress TeamsRule#egress}
   */
   readonly egress?: TeamsRuleRuleSettingsEgress;
   /**
   * l4override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
   */
   readonly l4Override?: TeamsRuleRuleSettingsL4Override;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#notification_settings TeamsRule#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#notification_settings TeamsRule#notification_settings}
   */
   readonly notificationSettings?: TeamsRuleRuleSettingsNotificationSettings;
   /**
   * payload_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#payload_log TeamsRule#payload_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#payload_log TeamsRule#payload_log}
   */
   readonly payloadLog?: TeamsRuleRuleSettingsPayloadLog;
   /**
   * resolve_dns_internally block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#resolve_dns_internally TeamsRule#resolve_dns_internally}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#resolve_dns_internally TeamsRule#resolve_dns_internally}
   */
   readonly resolveDnsInternally?: TeamsRuleRuleSettingsResolveDnsInternally;
   /**
   * untrusted_cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
   */
   readonly untrustedCert?: TeamsRuleRuleSettingsUntrustedCert;
 }
@@ -2605,7 +2845,7 @@ export class TeamsRuleRuleSettingsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule cloudflare_teams_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule cloudflare_teams_rule}
 */
 export class TeamsRule extends cdktf.TerraformResource {
 
@@ -2621,7 +2861,7 @@ export class TeamsRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamsRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamsRule to import
-  * @param importFromId The id of the existing TeamsRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamsRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamsRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2633,7 +2873,7 @@ export class TeamsRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/teams_rule cloudflare_teams_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_rule cloudflare_teams_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2644,7 +2884,7 @@ export class TeamsRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_teams_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

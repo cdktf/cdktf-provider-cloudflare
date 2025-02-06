@@ -4,12 +4,12 @@
 
 ### DataCloudflareZeroTrustInfrastructureAccessTargets <a name="DataCloudflareZeroTrustInfrastructureAccessTargets" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets cloudflare_zero_trust_infrastructure_access_targets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets cloudflare_zero_trust_infrastructure_access_targets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.NewDataCloudflareZeroTrustInfrastructureAccessTargets(scope Construct, id *string, config DataCloudflareZeroTrustInfrastructureAccessTargetsConfig) DataCloudflareZeroTrustInfrastructureAccessTargets
 ```
@@ -325,7 +325,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargets_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargets_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfras
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfras
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustInf
 
 The id of the existing DataCloudflareZeroTrustInfrastructureAccessTargets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 &datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargetsConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ AccountId *string
 
 The account identifier to target for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#account_id DataCloudflareZeroTrustInfrastructureAccessTargets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#account_id DataCloudflareZeroTrustInfrastructureAccessTargets#account_id}
 
 ---
 
@@ -916,7 +916,7 @@ CreatedAfter *string
 
 A date and time after a target was created to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#created_after DataCloudflareZeroTrustInfrastructureAccessTargets#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#created_after DataCloudflareZeroTrustInfrastructureAccessTargets#created_after}
 
 ---
 
@@ -930,7 +930,7 @@ Hostname *string
 
 The hostname of the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#hostname DataCloudflareZeroTrustInfrastructureAccessTargets#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#hostname DataCloudflareZeroTrustInfrastructureAccessTargets#hostname}
 
 ---
 
@@ -944,7 +944,7 @@ HostnameContains *string
 
 Partial match to the hostname of a target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#hostname_contains DataCloudflareZeroTrustInfrastructureAccessTargets#hostname_contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#hostname_contains DataCloudflareZeroTrustInfrastructureAccessTargets#hostname_contains}
 
 ---
 
@@ -958,7 +958,7 @@ Ipv4 *string
 
 The target's IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv4 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv4 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv4}
 
 ---
 
@@ -972,7 +972,7 @@ Ipv6 *string
 
 The target's IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv6 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv6 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv6}
 
 ---
 
@@ -986,7 +986,7 @@ ModifiedAfter *string
 
 A date and time after a target was modified to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#modified_after DataCloudflareZeroTrustInfrastructureAccessTargets#modified_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#modified_after DataCloudflareZeroTrustInfrastructureAccessTargets#modified_after}
 
 ---
 
@@ -1000,7 +1000,7 @@ VirtualNetworkId *string
 
 The private virtual network identifier for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#virtual_network_id DataCloudflareZeroTrustInfrastructureAccessTargets#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#virtual_network_id DataCloudflareZeroTrustInfrastructureAccessTargets#virtual_network_id}
 
 ---
 
@@ -1009,10 +1009,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 &datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargets {
-	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp,
+	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp,
 }
 ```
 
@@ -1034,7 +1034,7 @@ Ip DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp
 
 The IPv4/IPv6 address that identifies where to reach a target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ip DataCloudflareZeroTrustInfrastructureAccessTargets#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ip DataCloudflareZeroTrustInfrastructureAccessTargets#ip}
 
 ---
 
@@ -1043,11 +1043,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 &datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp {
-	Ipv4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4,
-	Ipv6: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6,
+	Ipv4: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4,
+	Ipv6: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6,
 }
 ```
 
@@ -1070,7 +1070,7 @@ Ipv4 DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4
 
 The target's IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv4 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv4 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv4}
 
 ---
 
@@ -1084,7 +1084,7 @@ Ipv6 DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6
 
 The target's IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv6 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv6 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv6}
 
 ---
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 &datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4 {
 	IpAddr: *string,
@@ -1120,7 +1120,7 @@ IpAddr *string
 
 The IP address of the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ip_addr DataCloudflareZeroTrustInfrastructureAccessTargets#ip_addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ip_addr DataCloudflareZeroTrustInfrastructureAccessTargets#ip_addr}
 
 ---
 
@@ -1134,7 +1134,7 @@ VirtualNetworkId *string
 
 The private virtual network identifier for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#virtual_network_id DataCloudflareZeroTrustInfrastructureAccessTargets#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#virtual_network_id DataCloudflareZeroTrustInfrastructureAccessTargets#virtual_network_id}
 
 ---
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 &datacloudflarezerotrustinfrastructureaccesstargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6 {
 	IpAddr: *string,
@@ -1170,7 +1170,7 @@ IpAddr *string
 
 The IP address of the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ip_addr DataCloudflareZeroTrustInfrastructureAccessTargets#ip_addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ip_addr DataCloudflareZeroTrustInfrastructureAccessTargets#ip_addr}
 
 ---
 
@@ -1184,7 +1184,7 @@ VirtualNetworkId *string
 
 The private virtual network identifier for the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#virtual_network_id DataCloudflareZeroTrustInfrastructureAccessTargets#virtual_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#virtual_network_id DataCloudflareZeroTrustInfrastructureAccessTargets#virtual_network_id}
 
 ---
 
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.NewDataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4OutputReference
 ```
@@ -1488,7 +1488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.NewDataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6OutputReference
 ```
@@ -1781,7 +1781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.NewDataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpOutputReference
 ```
@@ -2114,7 +2114,7 @@ func InternalValue() DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.NewDataCloudflareZeroTrustInfrastructureAccessTargetsTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsList
 ```
@@ -2274,7 +2274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustInfrastructureAccessTargets.DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustinfrastructureaccesstargets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustinfrastructureaccesstargets"
 
 datacloudflarezerotrustinfrastructureaccesstargets.NewDataCloudflareZeroTrustInfrastructureAccessTargetsTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsOutputReference
 ```

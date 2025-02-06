@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location
+// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +10,35 @@ export interface ZeroTrustDnsLocationConfig extends cdktf.TerraformMetaArguments
   /**
   * The account identifier to target for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
   */
   readonly accountId: string;
   /**
   * Indicator that this is the default location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
   */
   readonly clientDefault?: boolean | cdktf.IResolvable;
   /**
   * IPv4 binding assigned to this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
   */
   readonly dnsDestinationIpsId?: string;
   /**
   * IPv6 block binding assigned to this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#dns_destination_ipv6_block_id ZeroTrustDnsLocation#dns_destination_ipv6_block_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#dns_destination_ipv6_block_id ZeroTrustDnsLocation#dns_destination_ipv6_block_id}
   */
   readonly dnsDestinationIpv6BlockId?: string;
   /**
   * Indicator that this location needs to resolve EDNS queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
   */
   readonly ecsSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#id ZeroTrustDnsLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#id ZeroTrustDnsLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,25 +47,25 @@ export interface ZeroTrustDnsLocationConfig extends cdktf.TerraformMetaArguments
   /**
   * Name of the teams location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
   */
   readonly name: string;
   /**
   * The networks CIDRs that comprise the location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
   readonly networks?: ZeroTrustDnsLocationNetworks[] | cdktf.IResolvable;
   /**
   * endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
   */
   readonly endpoints?: ZeroTrustDnsLocationEndpoints;
 }
 export interface ZeroTrustDnsLocationNetworks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network?: string;
 }
@@ -186,7 +181,7 @@ export class ZeroTrustDnsLocationNetworksList extends cdktf.ComplexList {
 }
 export interface ZeroTrustDnsLocationEndpointsDohNetworks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network?: string;
 }
@@ -302,11 +297,11 @@ export class ZeroTrustDnsLocationEndpointsDohNetworksList extends cdktf.ComplexL
 }
 export interface ZeroTrustDnsLocationEndpointsDoh {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
   readonly networks?: ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktf.IResolvable;
 }
@@ -426,7 +421,7 @@ export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.Compl
 }
 export interface ZeroTrustDnsLocationEndpointsDotNetworks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network?: string;
 }
@@ -542,11 +537,11 @@ export class ZeroTrustDnsLocationEndpointsDotNetworksList extends cdktf.ComplexL
 }
 export interface ZeroTrustDnsLocationEndpointsDot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
   readonly networks?: ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktf.IResolvable;
 }
@@ -666,7 +661,7 @@ export class ZeroTrustDnsLocationEndpointsDotOutputReference extends cdktf.Compl
 }
 export interface ZeroTrustDnsLocationEndpointsIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -752,7 +747,7 @@ export class ZeroTrustDnsLocationEndpointsIpv4OutputReference extends cdktf.Comp
 }
 export interface ZeroTrustDnsLocationEndpointsIpv6Networks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network?: string;
 }
@@ -868,11 +863,11 @@ export class ZeroTrustDnsLocationEndpointsIpv6NetworksList extends cdktf.Complex
 }
 export interface ZeroTrustDnsLocationEndpointsIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
   readonly networks?: ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktf.IResolvable;
 }
@@ -989,25 +984,25 @@ export interface ZeroTrustDnsLocationEndpoints {
   /**
   * doh block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}
   */
   readonly doh?: ZeroTrustDnsLocationEndpointsDoh;
   /**
   * dot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}
   */
   readonly dot?: ZeroTrustDnsLocationEndpointsDot;
   /**
   * ipv4 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}
   */
   readonly ipv4?: ZeroTrustDnsLocationEndpointsIpv4;
   /**
   * ipv6 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}
   */
   readonly ipv6?: ZeroTrustDnsLocationEndpointsIpv6;
 }
@@ -1178,7 +1173,7 @@ export class ZeroTrustDnsLocationEndpointsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
 */
 export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
 
@@ -1194,7 +1189,7 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDnsLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDnsLocation to import
-  * @param importFromId The id of the existing ZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDnsLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1206,7 +1201,7 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1217,7 +1212,7 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dns_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.3'
       },
       provider: config.provider,

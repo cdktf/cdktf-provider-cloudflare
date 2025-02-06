@@ -4,7 +4,7 @@
 
 ### AccessApplication <a name="AccessApplication" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application cloudflare_access_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application cloudflare_access_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer"></a>
 
@@ -106,7 +106,7 @@ AccessApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.footerLinks">footerLinks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinks">AccessApplicationFooterLinks</a>></code> | footer_links block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.headerBgColor">headerBgColor</a></code> | <code>java.lang.String</code> | The background color of the header bar in the app launcher. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.httpOnlyCookieAttribute">httpOnlyCookieAttribute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Option to add the `HttpOnly` cookie flag to access tokens. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#id AccessApplication#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#id AccessApplication#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.landingPageDesign">landingPageDesign</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesign">AccessApplicationLandingPageDesign</a></code> | landing_page_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.logoUrl">logoUrl</a></code> | <code>java.lang.String</code> | Image URL for the logo shown in the app launcher dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Friendly name of the Access Application. |
@@ -193,7 +193,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#account_id AccessApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#account_id AccessApplication#account_id}
 
 ---
 
@@ -205,7 +205,7 @@ When set to true, users can authenticate to this application using their WARP se
 
 When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The identity providers selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The logo URL of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option to show/hide applications in App Launcher. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The background color of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 cors_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option that returns a custom error message when a user is denied access to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
 
 ---
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option that redirects to a custom URL when a user is denied access to the application via identity based rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
 
 ---
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option that redirects to a custom URL when a user is denied access to the application via non identity rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
 
 ---
 
@@ -305,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The custom pages selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
 
 ---
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#destinations AccessApplication#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#destinations AccessApplication#destinations}
 
 ---
 
@@ -327,7 +327,7 @@ The primary hostname and path that Access will secure.
 
 If the app is visible in the App Launcher dashboard, this is the domain that will be displayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#domain AccessApplication#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#domain AccessApplication#domain}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of the primary domain. Available values: `public`, `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#domain_type AccessApplication#domain_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#domain_type AccessApplication#domain_type}
 
 ---
 
@@ -349,7 +349,7 @@ Option to provide increased security against compromised authorization tokens an
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
 
 ---
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 footer_links block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
 
 ---
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The background color of the header bar in the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
 
 ---
 
@@ -379,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option to add the `HttpOnly` cookie flag to access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
 
 ---
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#id AccessApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#id AccessApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -400,7 +400,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 landing_page_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
 
 ---
 
@@ -410,7 +410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Image URL for the logo shown in the app launcher dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
 
 ---
 
@@ -420,7 +420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Friendly name of the Access Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -432,7 +432,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 Cannot turn on if cors_headers is set. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#options_preflight_bypass AccessApplication#options_preflight_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#options_preflight_bypass AccessApplication#options_preflight_bypass}
 
 ---
 
@@ -444,7 +444,7 @@ The policies associated with the application, in ascending order of precedence.
 
 Warning: Do not use this field while you still have this application ID referenced as `application_id` in any `cloudflare_access_policy` resource, as it can result in an inconsistent state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#policies AccessApplication#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#policies AccessApplication#policies}
 
 ---
 
@@ -454,7 +454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 saas_app block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
 
 ---
 
@@ -464,7 +464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
 
 ---
 
@@ -474,7 +474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 scim_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#scim_config AccessApplication#scim_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#scim_config AccessApplication#scim_config}
 
 ---
 
@@ -486,7 +486,7 @@ List of public domains secured by Access.
 
 Only present for self_hosted, vnc, and ssh applications. Always includes the value set as `domain`. Deprecated in favor of `destinations` and will be removed in the next major version. Conflicts with `destinations`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
 
 ---
 
@@ -496,7 +496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
 
 ---
 
@@ -508,7 +508,7 @@ How often a user will be forced to re-authorise.
 
 Must be in the format `48h` or `2h45m`. Defaults to `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
 
 ---
 
@@ -518,7 +518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option to skip the App Launcher landing page. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#skip_app_launcher_login_page AccessApplication#skip_app_launcher_login_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#skip_app_launcher_login_page AccessApplication#skip_app_launcher_login_page}
 
 ---
 
@@ -528,7 +528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
 
 ---
 
@@ -538,7 +538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The itags associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#tags AccessApplication#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#tags AccessApplication#tags}
 
 ---
 
@@ -548,7 +548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 target_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#target_criteria AccessApplication#target_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#target_criteria AccessApplication#target_criteria}
 
 ---
 
@@ -558,7 +558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`, `infrastructure`. Defaults to `self_hosted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#type AccessApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#type AccessApplication#type}
 
 ---
 
@@ -568,7 +568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
 
 ---
 
@@ -1345,7 +1345,7 @@ The construct id used in the generated config for the AccessApplication to impor
 
 The id of the existing AccessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2467,7 +2467,7 @@ AccessApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.footerLinks">footerLinks</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationFooterLinks">AccessApplicationFooterLinks</a>></code> | footer_links block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.headerBgColor">headerBgColor</a></code> | <code>java.lang.String</code> | The background color of the header bar in the app launcher. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.httpOnlyCookieAttribute">httpOnlyCookieAttribute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Option to add the `HttpOnly` cookie flag to access tokens. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#id AccessApplication#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#id AccessApplication#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.landingPageDesign">landingPageDesign</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationLandingPageDesign">AccessApplicationLandingPageDesign</a></code> | landing_page_design block. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.logoUrl">logoUrl</a></code> | <code>java.lang.String</code> | Image URL for the logo shown in the app launcher dashboard. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Friendly name of the Access Application. |
@@ -2568,7 +2568,7 @@ public java.lang.String getAccountId();
 
 The account identifier to target for the resource. Conflicts with `zone_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#account_id AccessApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#account_id AccessApplication#account_id}
 
 ---
 
@@ -2584,7 +2584,7 @@ When set to true, users can authenticate to this application using their WARP se
 
 When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_authenticate_via_warp AccessApplication#allow_authenticate_via_warp}
 
 ---
 
@@ -2598,7 +2598,7 @@ public java.util.List<java.lang.String> getAllowedIdps();
 
 The identity providers selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allowed_idps AccessApplication#allowed_idps}
 
 ---
 
@@ -2612,7 +2612,7 @@ public java.lang.String getAppLauncherLogoUrl();
 
 The logo URL of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#app_launcher_logo_url AccessApplication#app_launcher_logo_url}
 
 ---
 
@@ -2626,7 +2626,7 @@ public java.lang.Object getAppLauncherVisible();
 
 Option to show/hide applications in App Launcher. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
 
 ---
 
@@ -2640,7 +2640,7 @@ public java.lang.Object getAutoRedirectToIdentity();
 
 Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
 
 ---
 
@@ -2654,7 +2654,7 @@ public java.lang.String getBgColor();
 
 The background color of the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#bg_color AccessApplication#bg_color}
 
 ---
 
@@ -2668,7 +2668,7 @@ public java.lang.Object getCorsHeaders();
 
 cors_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
 
 ---
 
@@ -2682,7 +2682,7 @@ public java.lang.String getCustomDenyMessage();
 
 Option that returns a custom error message when a user is denied access to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
 
 ---
 
@@ -2696,7 +2696,7 @@ public java.lang.String getCustomDenyUrl();
 
 Option that redirects to a custom URL when a user is denied access to the application via identity based rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_deny_url AccessApplication#custom_deny_url}
 
 ---
 
@@ -2710,7 +2710,7 @@ public java.lang.String getCustomNonIdentityDenyUrl();
 
 Option that redirects to a custom URL when a user is denied access to the application via non identity rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_non_identity_deny_url AccessApplication#custom_non_identity_deny_url}
 
 ---
 
@@ -2724,7 +2724,7 @@ public java.util.List<java.lang.String> getCustomPages();
 
 The custom pages selected for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_pages AccessApplication#custom_pages}
 
 ---
 
@@ -2738,7 +2738,7 @@ public java.lang.Object getDestinations();
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#destinations AccessApplication#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#destinations AccessApplication#destinations}
 
 ---
 
@@ -2754,7 +2754,7 @@ The primary hostname and path that Access will secure.
 
 If the app is visible in the App Launcher dashboard, this is the domain that will be displayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#domain AccessApplication#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#domain AccessApplication#domain}
 
 ---
 
@@ -2768,7 +2768,7 @@ public java.lang.String getDomainType();
 
 The type of the primary domain. Available values: `public`, `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#domain_type AccessApplication#domain_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#domain_type AccessApplication#domain_type}
 
 ---
 
@@ -2784,7 +2784,7 @@ Option to provide increased security against compromised authorization tokens an
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
 
 ---
 
@@ -2798,7 +2798,7 @@ public java.lang.Object getFooterLinks();
 
 footer_links block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#footer_links AccessApplication#footer_links}
 
 ---
 
@@ -2812,7 +2812,7 @@ public java.lang.String getHeaderBgColor();
 
 The background color of the header bar in the app launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#header_bg_color AccessApplication#header_bg_color}
 
 ---
 
@@ -2826,7 +2826,7 @@ public java.lang.Object getHttpOnlyCookieAttribute();
 
 Option to add the `HttpOnly` cookie flag to access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
 
 ---
 
@@ -2838,7 +2838,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#id AccessApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#id AccessApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2855,7 +2855,7 @@ public AccessApplicationLandingPageDesign getLandingPageDesign();
 
 landing_page_design block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#landing_page_design AccessApplication#landing_page_design}
 
 ---
 
@@ -2869,7 +2869,7 @@ public java.lang.String getLogoUrl();
 
 Image URL for the logo shown in the app launcher dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#logo_url AccessApplication#logo_url}
 
 ---
 
@@ -2883,7 +2883,7 @@ public java.lang.String getName();
 
 Friendly name of the Access Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -2899,7 +2899,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 Cannot turn on if cors_headers is set. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#options_preflight_bypass AccessApplication#options_preflight_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#options_preflight_bypass AccessApplication#options_preflight_bypass}
 
 ---
 
@@ -2915,7 +2915,7 @@ The policies associated with the application, in ascending order of precedence.
 
 Warning: Do not use this field while you still have this application ID referenced as `application_id` in any `cloudflare_access_policy` resource, as it can result in an inconsistent state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#policies AccessApplication#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#policies AccessApplication#policies}
 
 ---
 
@@ -2929,7 +2929,7 @@ public AccessApplicationSaasApp getSaasApp();
 
 saas_app block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#saas_app AccessApplication#saas_app}
 
 ---
 
@@ -2943,7 +2943,7 @@ public java.lang.String getSameSiteCookieAttribute();
 
 Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#same_site_cookie_attribute AccessApplication#same_site_cookie_attribute}
 
 ---
 
@@ -2957,7 +2957,7 @@ public AccessApplicationScimConfig getScimConfig();
 
 scim_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#scim_config AccessApplication#scim_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#scim_config AccessApplication#scim_config}
 
 ---
 
@@ -2973,7 +2973,7 @@ List of public domains secured by Access.
 
 Only present for self_hosted, vnc, and ssh applications. Always includes the value set as `domain`. Deprecated in favor of `destinations` and will be removed in the next major version. Conflicts with `destinations`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#self_hosted_domains AccessApplication#self_hosted_domains}
 
 ---
 
@@ -2987,7 +2987,7 @@ public java.lang.Object getServiceAuth401Redirect();
 
 Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
 
 ---
 
@@ -3003,7 +3003,7 @@ How often a user will be forced to re-authorise.
 
 Must be in the format `48h` or `2h45m`. Defaults to `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#session_duration AccessApplication#session_duration}
 
 ---
 
@@ -3017,7 +3017,7 @@ public java.lang.Object getSkipAppLauncherLoginPage();
 
 Option to skip the App Launcher landing page. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#skip_app_launcher_login_page AccessApplication#skip_app_launcher_login_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#skip_app_launcher_login_page AccessApplication#skip_app_launcher_login_page}
 
 ---
 
@@ -3031,7 +3031,7 @@ public java.lang.Object getSkipInterstitial();
 
 Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
 
 ---
 
@@ -3045,7 +3045,7 @@ public java.util.List<java.lang.String> getTags();
 
 The itags associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#tags AccessApplication#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#tags AccessApplication#tags}
 
 ---
 
@@ -3059,7 +3059,7 @@ public java.lang.Object getTargetCriteria();
 
 target_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#target_criteria AccessApplication#target_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#target_criteria AccessApplication#target_criteria}
 
 ---
 
@@ -3073,7 +3073,7 @@ public java.lang.String getType();
 
 The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`, `infrastructure`. Defaults to `self_hosted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#type AccessApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#type AccessApplication#type}
 
 ---
 
@@ -3087,7 +3087,7 @@ public java.lang.String getZoneId();
 
 The zone identifier to target for the resource. Conflicts with `account_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
 
 ---
 
@@ -3139,7 +3139,7 @@ public java.lang.Object getAllowAllHeaders();
 
 Value to determine whether all HTTP headers are exposed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_all_headers AccessApplication#allow_all_headers}
 
 ---
 
@@ -3153,7 +3153,7 @@ public java.lang.Object getAllowAllMethods();
 
 Value to determine whether all methods are exposed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_all_methods AccessApplication#allow_all_methods}
 
 ---
 
@@ -3167,7 +3167,7 @@ public java.lang.Object getAllowAllOrigins();
 
 Value to determine whether all origins are permitted to make CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_all_origins AccessApplication#allow_all_origins}
 
 ---
 
@@ -3181,7 +3181,7 @@ public java.lang.Object getAllowCredentials();
 
 Value to determine if credentials (cookies, authorization headers, or TLS client certificates) are included with requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_credentials AccessApplication#allow_credentials}
 
 ---
 
@@ -3195,7 +3195,7 @@ public java.util.List<java.lang.String> getAllowedHeaders();
 
 List of HTTP headers to expose via CORS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allowed_headers AccessApplication#allowed_headers}
 
 ---
 
@@ -3209,7 +3209,7 @@ public java.util.List<java.lang.String> getAllowedMethods();
 
 List of methods to expose via CORS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allowed_methods AccessApplication#allowed_methods}
 
 ---
 
@@ -3223,7 +3223,7 @@ public java.util.List<java.lang.String> getAllowedOrigins();
 
 List of origins permitted to make CORS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allowed_origins AccessApplication#allowed_origins}
 
 ---
 
@@ -3237,7 +3237,7 @@ public java.lang.Number getMaxAge();
 
 The maximum time a preflight request will be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#max_age AccessApplication#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#max_age AccessApplication#max_age}
 
 ---
 
@@ -3285,7 +3285,7 @@ The private CIDR of the destination.
 
 Only valid when type=private. IPs are computed as /32 cidr. Private destinations are an early access feature and gated behind a feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#cidr AccessApplication#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#cidr AccessApplication#cidr}
 
 ---
 
@@ -3301,7 +3301,7 @@ The private hostname of the destination.
 
 Only valid when type=private. Private hostnames currently match only Server Name Indications (SNI). Private destinations are an early access feature and gated behind a feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#hostname AccessApplication#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#hostname AccessApplication#hostname}
 
 ---
 
@@ -3317,7 +3317,7 @@ The l4 protocol that matches this destination.
 
 Only valid when type=private. Private destinations are an early access feature and gated behind a feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#l4_protocol AccessApplication#l4_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#l4_protocol AccessApplication#l4_protocol}
 
 ---
 
@@ -3333,7 +3333,7 @@ The port range of the destination.
 
 Only valid when type=private. Single ports are supported. Private destinations are an early access feature and gated behind a feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#port_range AccessApplication#port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#port_range AccessApplication#port_range}
 
 ---
 
@@ -3347,7 +3347,7 @@ public java.lang.String getType();
 
 The destination type. Available values: `public`, `private`. Defaults to `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#type AccessApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#type AccessApplication#type}
 
 ---
 
@@ -3361,7 +3361,7 @@ public java.lang.String getUri();
 
 The public URI of the destination. Can include a domain and path with wildcards. Only valid when type=public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#uri AccessApplication#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#uri AccessApplication#uri}
 
 ---
 
@@ -3377,7 +3377,7 @@ The VNet ID of the destination.
 
 Only valid when type=private. Private destinations are an early access feature and gated behind a feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#vnet_id AccessApplication#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#vnet_id AccessApplication#vnet_id}
 
 ---
 
@@ -3413,7 +3413,7 @@ public java.lang.String getName();
 
 The name of the footer link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -3427,7 +3427,7 @@ public java.lang.String getUrl();
 
 The URL of the footer link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#url AccessApplication#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#url AccessApplication#url}
 
 ---
 
@@ -3469,7 +3469,7 @@ public java.lang.String getButtonColor();
 
 The button color of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#button_color AccessApplication#button_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#button_color AccessApplication#button_color}
 
 ---
 
@@ -3483,7 +3483,7 @@ public java.lang.String getButtonTextColor();
 
 The button text color of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#button_text_color AccessApplication#button_text_color}
 
 ---
 
@@ -3497,7 +3497,7 @@ public java.lang.String getImageUrl();
 
 The URL of the image to be displayed in the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#image_url AccessApplication#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#image_url AccessApplication#image_url}
 
 ---
 
@@ -3511,7 +3511,7 @@ public java.lang.String getMessage();
 
 The message of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#message AccessApplication#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#message AccessApplication#message}
 
 ---
 
@@ -3525,7 +3525,7 @@ public java.lang.String getTitle();
 
 The title of the landing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#title AccessApplication#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#title AccessApplication#title}
 
 ---
 
@@ -3599,7 +3599,7 @@ The lifetime of the Access Token after creation.
 
 Valid units are `m` and `h`. Must be greater than or equal to 1m and less than or equal to 24h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#access_token_lifetime AccessApplication#access_token_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#access_token_lifetime AccessApplication#access_token_lifetime}
 
 ---
 
@@ -3613,7 +3613,7 @@ public java.lang.Object getAllowPkceWithoutClientSecret();
 
 Allow PKCE flow without a client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#allow_pkce_without_client_secret AccessApplication#allow_pkce_without_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#allow_pkce_without_client_secret AccessApplication#allow_pkce_without_client_secret}
 
 ---
 
@@ -3627,7 +3627,7 @@ public java.lang.String getAppLauncherUrl();
 
 The URL where this applications tile redirects users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#app_launcher_url AccessApplication#app_launcher_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#app_launcher_url AccessApplication#app_launcher_url}
 
 ---
 
@@ -3641,7 +3641,7 @@ public java.lang.String getAuthType();
 
 **Modifying this attribute will force creation of a new resource.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#auth_type AccessApplication#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#auth_type AccessApplication#auth_type}
 
 ---
 
@@ -3655,7 +3655,7 @@ public java.lang.String getConsumerServiceUrl();
 
 The service provider's endpoint that is responsible for receiving and parsing a SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#consumer_service_url AccessApplication#consumer_service_url}
 
 ---
 
@@ -3669,7 +3669,7 @@ public java.lang.Object getCustomAttribute();
 
 custom_attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_attribute AccessApplication#custom_attribute}
 
 ---
 
@@ -3683,7 +3683,7 @@ public java.lang.Object getCustomClaim();
 
 custom_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#custom_claim AccessApplication#custom_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#custom_claim AccessApplication#custom_claim}
 
 ---
 
@@ -3697,7 +3697,7 @@ public java.lang.String getDefaultRelayState();
 
 The relay state used if not provided by the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#default_relay_state AccessApplication#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#default_relay_state AccessApplication#default_relay_state}
 
 ---
 
@@ -3711,7 +3711,7 @@ public java.util.List<java.lang.String> getGrantTypes();
 
 The OIDC flows supported by this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#grant_types AccessApplication#grant_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#grant_types AccessApplication#grant_types}
 
 ---
 
@@ -3725,7 +3725,7 @@ public java.lang.String getGroupFilterRegex();
 
 A regex to filter Cloudflare groups returned in ID token and userinfo endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#group_filter_regex AccessApplication#group_filter_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#group_filter_regex AccessApplication#group_filter_regex}
 
 ---
 
@@ -3739,7 +3739,7 @@ public AccessApplicationSaasAppHybridAndImplicitOptions getHybridAndImplicitOpti
 
 hybrid_and_implicit_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#hybrid_and_implicit_options AccessApplication#hybrid_and_implicit_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#hybrid_and_implicit_options AccessApplication#hybrid_and_implicit_options}
 
 ---
 
@@ -3753,7 +3753,7 @@ public java.lang.String getNameIdFormat();
 
 The format of the name identifier sent to the SaaS application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name_id_format AccessApplication#name_id_format}
 
 ---
 
@@ -3767,7 +3767,7 @@ public java.lang.String getNameIdTransformJsonata();
 
 A [JSONata](https://jsonata.org/) expression that transforms an application's user identities into a NameID value for its SAML assertion. This expression should evaluate to a singular string. The output of this expression can override the `name_id_format` setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name_id_transform_jsonata AccessApplication#name_id_transform_jsonata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name_id_transform_jsonata AccessApplication#name_id_transform_jsonata}
 
 ---
 
@@ -3781,7 +3781,7 @@ public java.util.List<java.lang.String> getRedirectUris();
 
 The permitted URL's for Cloudflare to return Authorization codes and Access/ID tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#redirect_uris AccessApplication#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#redirect_uris AccessApplication#redirect_uris}
 
 ---
 
@@ -3795,7 +3795,7 @@ public java.lang.Object getRefreshTokenOptions();
 
 refresh_token_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#refresh_token_options AccessApplication#refresh_token_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#refresh_token_options AccessApplication#refresh_token_options}
 
 ---
 
@@ -3809,7 +3809,7 @@ public java.lang.String getSamlAttributeTransformJsonata();
 
 A [JSONata](https://jsonata.org/) expression that transforms an application's user identities into attribute assertions in the SAML response. The expression can transform id, email, name, and groups values. It can also transform fields listed in the saml_attributes or oidc_fields of the identity provider used to authenticate. The output of this expression must be a JSON object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#saml_attribute_transform_jsonata AccessApplication#saml_attribute_transform_jsonata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#saml_attribute_transform_jsonata AccessApplication#saml_attribute_transform_jsonata}
 
 ---
 
@@ -3823,7 +3823,7 @@ public java.util.List<java.lang.String> getScopes();
 
 Define the user information shared with access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#scopes AccessApplication#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#scopes AccessApplication#scopes}
 
 ---
 
@@ -3837,7 +3837,7 @@ public java.lang.String getSpEntityId();
 
 A globally unique name for an identity or service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#sp_entity_id AccessApplication#sp_entity_id}
 
 ---
 
@@ -3880,7 +3880,7 @@ public AccessApplicationSaasAppCustomAttributeSource getSource();
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#source AccessApplication#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#source AccessApplication#source}
 
 ---
 
@@ -3894,7 +3894,7 @@ public java.lang.String getFriendlyName();
 
 A friendly name for the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#friendly_name AccessApplication#friendly_name}
 
 ---
 
@@ -3908,7 +3908,7 @@ public java.lang.String getName();
 
 The name of the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -3922,7 +3922,7 @@ public java.lang.String getNameFormat();
 
 A globally unique name for an identity or service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name_format AccessApplication#name_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name_format AccessApplication#name_format}
 
 ---
 
@@ -3936,7 +3936,7 @@ public java.lang.Object getRequired();
 
 True if the attribute must be always present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#required AccessApplication#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#required AccessApplication#required}
 
 ---
 
@@ -3972,7 +3972,7 @@ public java.lang.String getName();
 
 The name of the attribute as provided by the IDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -3986,7 +3986,7 @@ public java.util.Map<java.lang.String, java.lang.String> getNameByIdp();
 
 A mapping from IdP ID to claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
 
 ---
 
@@ -4027,7 +4027,7 @@ public AccessApplicationSaasAppCustomClaimSource getSource();
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#source AccessApplication#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#source AccessApplication#source}
 
 ---
 
@@ -4041,7 +4041,7 @@ public java.lang.String getName();
 
 The name of the attribute as provided to the SaaS app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -4055,7 +4055,7 @@ public java.lang.Object getRequired();
 
 True if the attribute must be always present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#required AccessApplication#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#required AccessApplication#required}
 
 ---
 
@@ -4069,7 +4069,7 @@ public java.lang.String getScope();
 
 The scope of the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#scope AccessApplication#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#scope AccessApplication#scope}
 
 ---
 
@@ -4105,7 +4105,7 @@ public java.lang.String getName();
 
 The name of the attribute as provided by the IDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -4119,7 +4119,7 @@ public java.util.Map<java.lang.String, java.lang.String> getNameByIdp();
 
 A mapping from IdP ID to claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name_by_idp AccessApplication#name_by_idp}
 
 ---
 
@@ -4157,7 +4157,7 @@ public java.lang.Object getReturnAccessTokenFromAuthorizationEndpoint();
 
 If true, the authorization endpoint will return an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#return_access_token_from_authorization_endpoint AccessApplication#return_access_token_from_authorization_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#return_access_token_from_authorization_endpoint AccessApplication#return_access_token_from_authorization_endpoint}
 
 ---
 
@@ -4171,7 +4171,7 @@ public java.lang.Object getReturnIdTokenFromAuthorizationEndpoint();
 
 If true, the authorization endpoint will return an id token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#return_id_token_from_authorization_endpoint AccessApplication#return_id_token_from_authorization_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#return_id_token_from_authorization_endpoint AccessApplication#return_id_token_from_authorization_endpoint}
 
 ---
 
@@ -4207,7 +4207,7 @@ How long a refresh token will be valid for after creation.
 
 Valid units are `m`, `h` and `d`. Must be longer than 1m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#lifetime AccessApplication#lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#lifetime AccessApplication#lifetime}
 
 ---
 
@@ -4255,7 +4255,7 @@ public java.lang.String getIdpUid();
 
 The UIDs of the IdP to use as the source for SCIM resources to provision to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#idp_uid AccessApplication#idp_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#idp_uid AccessApplication#idp_uid}
 
 ---
 
@@ -4269,7 +4269,7 @@ public java.lang.String getRemoteUri();
 
 The base URI for the application's SCIM-compatible API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#remote_uri AccessApplication#remote_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#remote_uri AccessApplication#remote_uri}
 
 ---
 
@@ -4283,7 +4283,7 @@ public java.lang.Object getAuthentication();
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#authentication AccessApplication#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#authentication AccessApplication#authentication}
 
 ---
 
@@ -4299,7 +4299,7 @@ If false, propagates DELETE requests to the target application for SCIM resource
 
 If true, sets 'active' to false on the SCIM resource. Note: Some targets do not support DELETE operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#deactivate_on_delete AccessApplication#deactivate_on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#deactivate_on_delete AccessApplication#deactivate_on_delete}
 
 ---
 
@@ -4313,7 +4313,7 @@ public java.lang.Object getEnabled();
 
 Whether SCIM provisioning is turned on for this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#enabled AccessApplication#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#enabled AccessApplication#enabled}
 
 ---
 
@@ -4327,7 +4327,7 @@ public java.lang.Object getMappings();
 
 mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#mappings AccessApplication#mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#mappings AccessApplication#mappings}
 
 ---
 
@@ -4359,7 +4359,7 @@ AccessApplicationScimConfigAuthentication.builder()
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.authorizationUrl">authorizationUrl</a></code> | <code>java.lang.String</code> | URL used to generate the auth code used during token generation. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.clientId">clientId</a></code> | <code>java.lang.String</code> | Client ID used to authenticate when generating a token for authenticating with the remote SCIM service. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Secret used to authenticate when generating a token for authenticating with the remove SCIM service. |
-| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#password AccessApplication#password}. |
+| <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#password AccessApplication#password}. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The authorization scopes to request when generating the token used to authenticate with the remove SCIM service. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.token">token</a></code> | <code>java.lang.String</code> | Token used to authenticate with the remote SCIM service. |
 | <code><a href="#@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthentication.property.tokenUrl">tokenUrl</a></code> | <code>java.lang.String</code> | URL used to generate the token used to authenticate with the remote SCIM service. |
@@ -4377,7 +4377,7 @@ public java.lang.String getScheme();
 
 The authentication scheme to use when making SCIM requests to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#scheme AccessApplication#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#scheme AccessApplication#scheme}
 
 ---
 
@@ -4391,7 +4391,7 @@ public java.lang.String getAuthorizationUrl();
 
 URL used to generate the auth code used during token generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#authorization_url AccessApplication#authorization_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#authorization_url AccessApplication#authorization_url}
 
 ---
 
@@ -4405,7 +4405,7 @@ public java.lang.String getClientId();
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#client_id AccessApplication#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#client_id AccessApplication#client_id}
 
 ---
 
@@ -4419,7 +4419,7 @@ public java.lang.String getClientSecret();
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#client_secret AccessApplication#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#client_secret AccessApplication#client_secret}
 
 ---
 
@@ -4431,7 +4431,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#password AccessApplication#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#password AccessApplication#password}.
 
 ---
 
@@ -4445,7 +4445,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#scopes AccessApplication#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#scopes AccessApplication#scopes}
 
 ---
 
@@ -4459,7 +4459,7 @@ public java.lang.String getToken();
 
 Token used to authenticate with the remote SCIM service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#token AccessApplication#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#token AccessApplication#token}
 
 ---
 
@@ -4473,7 +4473,7 @@ public java.lang.String getTokenUrl();
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#token_url AccessApplication#token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#token_url AccessApplication#token_url}
 
 ---
 
@@ -4487,7 +4487,7 @@ public java.lang.String getUser();
 
 User name used to authenticate with the remote SCIM service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#user AccessApplication#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#user AccessApplication#user}
 
 ---
 
@@ -4532,7 +4532,7 @@ public java.lang.String getSchema();
 
 Which SCIM resource type this mapping applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#schema AccessApplication#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#schema AccessApplication#schema}
 
 ---
 
@@ -4546,7 +4546,7 @@ public java.lang.Object getEnabled();
 
 Whether or not this mapping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#enabled AccessApplication#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#enabled AccessApplication#enabled}
 
 ---
 
@@ -4560,7 +4560,7 @@ public java.lang.String getFilter();
 
 A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#filter AccessApplication#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#filter AccessApplication#filter}
 
 ---
 
@@ -4574,7 +4574,7 @@ public AccessApplicationScimConfigMappingsOperations getOperations();
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#operations AccessApplication#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#operations AccessApplication#operations}
 
 ---
 
@@ -4590,7 +4590,7 @@ How strictly to adhere to outbound resource schemas when provisioning to this ma
 
 "strict" will remove unknown values when provisioning, while "passthrough" will pass unknown values to the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#strictness AccessApplication#strictness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#strictness AccessApplication#strictness}
 
 ---
 
@@ -4604,7 +4604,7 @@ public java.lang.String getTransformJsonata();
 
 A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#transform_jsonata AccessApplication#transform_jsonata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#transform_jsonata AccessApplication#transform_jsonata}
 
 ---
 
@@ -4645,7 +4645,7 @@ public java.lang.Object getCreate();
 
 Whether or not this mapping applies to create (POST) operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#create AccessApplication#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#create AccessApplication#create}
 
 ---
 
@@ -4659,7 +4659,7 @@ public java.lang.Object getDelete();
 
 Whether or not this mapping applies to DELETE operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#delete AccessApplication#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#delete AccessApplication#delete}
 
 ---
 
@@ -4673,7 +4673,7 @@ public java.lang.Object getUpdate();
 
 Whether or not this mapping applies to update (PATCH/PUT) operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#update AccessApplication#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#update AccessApplication#update}
 
 ---
 
@@ -4712,7 +4712,7 @@ public java.lang.Number getPort();
 
 The port that the targets use for the chosen communication protocol. A port cannot be assigned to multiple protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#port AccessApplication#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#port AccessApplication#port}
 
 ---
 
@@ -4726,7 +4726,7 @@ public java.lang.String getProtocol();
 
 The communication protocol your application secures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#protocol AccessApplication#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#protocol AccessApplication#protocol}
 
 ---
 
@@ -4740,7 +4740,7 @@ public java.lang.Object getTargetAttributes();
 
 target_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#target_attributes AccessApplication#target_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#target_attributes AccessApplication#target_attributes}
 
 ---
 
@@ -4776,7 +4776,7 @@ public java.lang.String getName();
 
 The key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#name AccessApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#name AccessApplication#name}
 
 ---
 
@@ -4790,7 +4790,7 @@ public java.util.List<java.lang.String> getValues();
 
 The values of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/access_application#values AccessApplication#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_application#values AccessApplication#values}
 
 ---
 
