@@ -1,3 +1,3 @@
 # `cloudflare_bot_management`
 
-Refer to the Terraform Registry for docs: [`cloudflare_bot_management`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/bot_management).
+Refer to the Terraform Registry for docs: [`cloudflare_bot_management`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/bot_management).
