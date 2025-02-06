@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRule(scope Construct, id *string, config TeamsRuleConfig) TeamsRule
 ```
@@ -440,7 +440,7 @@ func ResetTraffic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.TeamsRule_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.TeamsRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ teamsrule.TeamsRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.TeamsRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ teamsrule.TeamsRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.teamsRule.TeamsRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.TeamsRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
 	Filters: *[]*string,
 	Id: *string,
 	Identity: *string,
-	RuleSettings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettings,
+	RuleSettings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettings,
 	Traffic: *string,
 }
 ```
@@ -1301,30 +1301,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettings {
 	AddHeaders: *map[string]*string,
 	AllowChildBypass: interface{},
-	AuditSsh: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh,
-	BisoAdminControls: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls,
+	AuditSsh: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsAuditSsh,
+	BisoAdminControls: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsBisoAdminControls,
 	BlockPageEnabled: interface{},
 	BlockPageReason: *string,
 	BypassParentRule: interface{},
-	CheckSession: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSession,
-	DnsResolvers: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolvers,
-	Egress: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsEgress,
+	CheckSession: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsCheckSession,
+	DnsResolvers: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsDnsResolvers,
+	Egress: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsEgress,
 	IgnoreCnameCategoryMatches: interface{},
 	InsecureDisableDnssecValidation: interface{},
 	IpCategories: interface{},
-	L4Override: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override,
-	NotificationSettings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsNotificationSettings,
+	L4Override: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsL4Override,
+	NotificationSettings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsNotificationSettings,
 	OverrideHost: *string,
 	OverrideIps: *[]*string,
-	PayloadLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog,
-	ResolveDnsInternally: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsResolveDnsInternally,
+	PayloadLog: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsPayloadLog,
+	ResolveDnsInternally: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsResolveDnsInternally,
 	ResolveDnsThroughCloudflare: interface{},
-	UntrustedCert: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert,
+	UntrustedCert: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11.teamsRule.TeamsRuleRuleSettingsUntrustedCert,
 }
 ```
 
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsAuditSsh {
 	CommandLogging: interface{},
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsBisoAdminControls {
 	Copy: *string,
@@ -1921,7 +1921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSession.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsCheckSession {
 	Duration: *string,
@@ -1971,7 +1971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolvers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsDnsResolvers {
 	Ipv4: interface{},
@@ -2021,7 +2021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsDnsResolversIpv4 {
 	Ip: *string,
@@ -2103,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsDnsResolversIpv6 {
 	Ip: *string,
@@ -2185,7 +2185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsEgress {
 	Ipv4: *string,
@@ -2253,7 +2253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsL4Override {
 	Ip: *string,
@@ -2303,7 +2303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsNotificationSettings {
 	Enabled: interface{},
@@ -2369,7 +2369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsPayloadLog {
 	Enabled: interface{},
@@ -2403,7 +2403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsResolveDnsInternally.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsResolveDnsInternally {
 	Fallback: *string,
@@ -2453,7 +2453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 &teamsrule.TeamsRuleRuleSettingsUntrustedCert {
 	Action: *string,
@@ -2489,7 +2489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsAuditSshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsAuditSshOutputReference
 ```
@@ -2760,7 +2760,7 @@ func InternalValue() TeamsRuleRuleSettingsAuditSsh
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsBisoAdminControlsOutputReference
 ```
@@ -3386,7 +3386,7 @@ func InternalValue() TeamsRuleRuleSettingsBisoAdminControls
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsCheckSessionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsCheckSessionOutputReference
 ```
@@ -3679,7 +3679,7 @@ func InternalValue() TeamsRuleRuleSettingsCheckSession
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversIpv4List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsDnsResolversIpv4List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsRuleRuleSettingsDnsResolversIpv4List
 ```
@@ -3839,7 +3839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsDnsResolversIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsRuleRuleSettingsDnsResolversIpv4OutputReference
 ```
@@ -4215,7 +4215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversIpv6List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsDnsResolversIpv6List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamsRuleRuleSettingsDnsResolversIpv6List
 ```
@@ -4375,7 +4375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsDnsResolversIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamsRuleRuleSettingsDnsResolversIpv6OutputReference
 ```
@@ -4751,7 +4751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsDnsResolversOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsDnsResolversOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsDnsResolversOutputReference
 ```
@@ -5084,7 +5084,7 @@ func InternalValue() TeamsRuleRuleSettingsDnsResolvers
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsEgressOutputReference
 ```
@@ -5406,7 +5406,7 @@ func InternalValue() TeamsRuleRuleSettingsEgress
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsL4OverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsL4OverrideOutputReference
 ```
@@ -5699,7 +5699,7 @@ func InternalValue() TeamsRuleRuleSettingsL4Override
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsNotificationSettingsOutputReference
 ```
@@ -6035,7 +6035,7 @@ func InternalValue() TeamsRuleRuleSettingsNotificationSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsOutputReference
 ```
@@ -7023,7 +7023,7 @@ func InternalValue() TeamsRuleRuleSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsPayloadLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsPayloadLogOutputReference
 ```
@@ -7294,7 +7294,7 @@ func InternalValue() TeamsRuleRuleSettingsPayloadLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsResolveDnsInternallyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsResolveDnsInternallyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsResolveDnsInternallyOutputReference
 ```
@@ -7601,7 +7601,7 @@ func InternalValue() TeamsRuleRuleSettingsResolveDnsInternally
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/teamsrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/teamsrule"
 
 teamsrule.NewTeamsRuleRuleSettingsUntrustedCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsUntrustedCertOutputReference
 ```

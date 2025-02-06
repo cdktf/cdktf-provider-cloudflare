@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.NewZeroTrustList(scope Construct, id *string, config ZeroTrustListConfig) ZeroTrustList
 ```
@@ -419,7 +419,7 @@ func ResetItemsWithDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zerotrustlist.ZeroTrustList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ zerotrustlist.ZeroTrustList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.ZeroTrustList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 &zerotrustlist.ZeroTrustListConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 &zerotrustlist.ZeroTrustListItemsWithDescription {
 	Description: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.NewZeroTrustListItemsWithDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustListItemsWithDescriptionList
 ```
@@ -1285,7 +1285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustList.ZeroTrustListItemsWithDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist"
 
 zerotrustlist.NewZeroTrustListItemsWithDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustListItemsWithDescriptionOutputReference
 ```
