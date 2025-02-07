@@ -4,7 +4,7 @@
 
 ### R2Bucket <a name="R2Bucket" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
@@ -25,7 +25,9 @@ R2Bucket.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
+//  .jurisdiction(java.lang.String)
 //  .location(java.lang.String)
+//  .storageClass(java.lang.String)
     .build();
 ```
 
@@ -40,9 +42,11 @@ R2Bucket.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the R2 bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Location of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.storageClass">storageClass</a></code> | <code>java.lang.String</code> | Storage class for newly uploaded objects, unless specified otherwise. |
 
 ---
 
@@ -110,9 +114,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-The account identifier to target for the resource.
+Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -120,9 +124,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The name of the R2 bucket.
+Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#name R2Bucket#name}
+
+---
+
+##### `jurisdiction`<sup>Optional</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.jurisdiction"></a>
+
+- *Type:* java.lang.String
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
 
 ---
 
@@ -130,9 +144,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`.
+Location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#location R2Bucket#location}
+
+---
+
+##### `storageClass`<sup>Optional</sup> <a name="storageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.storageClass"></a>
+
+- *Type:* java.lang.String
+
+Storage class for newly uploaded objects, unless specified otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
 
 ---
 
@@ -163,7 +187,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetLocation">resetLocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetStorageClass">resetStorageClass</a></code> | *No description.* |
 
 ---
 
@@ -457,10 +483,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetJurisdiction` <a name="resetJurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetJurisdiction"></a>
+
+```java
+public void resetJurisdiction()
+```
+
 ##### `resetLocation` <a name="resetLocation" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetLocation"></a>
 
 ```java
 public void resetLocation()
+```
+
+##### `resetStorageClass` <a name="resetStorageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetStorageClass"></a>
+
+```java
+public void resetStorageClass()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -566,7 +604,7 @@ The construct id used in the generated config for the R2Bucket to import.
 
 The id of the existing R2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,13 +634,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.creationDate">creationDate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdictionInput">jurisdictionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClassInput">storageClassInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClass">storageClass</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -748,6 +791,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `creationDate`<sup>Required</sup> <a name="creationDate" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.creationDate"></a>
+
+```java
+public java.lang.String getCreationDate();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.id"></a>
 
 ```java
@@ -762,6 +815,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getAccountIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `jurisdictionInput`<sup>Optional</sup> <a name="jurisdictionInput" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdictionInput"></a>
+
+```java
+public java.lang.String getJurisdictionInput();
 ```
 
 - *Type:* java.lang.String
@@ -788,10 +851,30 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `storageClassInput`<sup>Optional</sup> <a name="storageClassInput" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClassInput"></a>
+
+```java
+public java.lang.String getStorageClassInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.accountId"></a>
 
 ```java
 public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `jurisdiction`<sup>Required</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdiction"></a>
+
+```java
+public java.lang.String getJurisdiction();
 ```
 
 - *Type:* java.lang.String
@@ -812,6 +895,16 @@ public java.lang.String getLocation();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `storageClass`<sup>Required</sup> <a name="storageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClass"></a>
+
+```java
+public java.lang.String getStorageClass();
 ```
 
 - *Type:* java.lang.String
@@ -859,7 +952,9 @@ R2BucketConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
+//  .jurisdiction(java.lang.String)
 //  .location(java.lang.String)
+//  .storageClass(java.lang.String)
     .build();
 ```
 
@@ -874,9 +969,11 @@ R2BucketConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the R2 bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">location</a></code> | <code>java.lang.String</code> | Location of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass">storageClass</a></code> | <code>java.lang.String</code> | Storage class for newly uploaded objects, unless specified otherwise. |
 
 ---
 
@@ -958,9 +1055,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-The account identifier to target for the resource.
+Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -972,9 +1069,23 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the R2 bucket.
+Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#name R2Bucket#name}
+
+---
+
+##### `jurisdiction`<sup>Optional</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.jurisdiction"></a>
+
+```java
+public java.lang.String getJurisdiction();
+```
+
+- *Type:* java.lang.String
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
 
 ---
 
@@ -986,9 +1097,23 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`.
+Location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#location R2Bucket#location}
+
+---
+
+##### `storageClass`<sup>Optional</sup> <a name="storageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass"></a>
+
+```java
+public java.lang.String getStorageClass();
+```
+
+- *Type:* java.lang.String
+
+Storage class for newly uploaded objects, unless specified otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
 
 ---
 

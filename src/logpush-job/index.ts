@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,180 +13,166 @@ import * as cdktf from 'cdktf';
 
 export interface LogpushJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
+  * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
   */
   readonly accountId?: string;
   /**
-  * The kind of the dataset to use with the logpush job. Available values: `access_requests`, `casb_findings`, `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`, `workers_trace_events`, `device_posture_results`, `zero_trust_network_sessions`, `magic_ids_detections`, `page_shield_events`, `dlp_forensic_copies`.
+  * Name of the dataset. A list of supported datasets can be found on the [Developer Docs](https://developers.cloudflare.com/logs/reference/log-fields/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
   */
-  readonly dataset: string;
+  readonly dataset?: string;
   /**
-  * Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination).
+  * Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. Additional configuration parameters supported by the destination may be included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
   */
   readonly destinationConf: string;
   /**
-  * Whether to enable the job.
+  * Flag that indicates if the job is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/).
+  * This field is deprecated. Please use `max_upload_*` parameters instead. The frequency at which Cloudflare sends batches of logs to your destination. Setting frequency to high sends your logs in larger quantities of smaller files. Setting frequency to low sends logs in smaller quantities of larger files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#filter LogpushJob#filter}
-  */
-  readonly filter?: string;
-  /**
-  * A higher frequency will result in logs being pushed on faster with smaller files. `low` frequency will push logs less often with larger files. Available values: `high`, `low`. Defaults to `high`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#id LogpushJob#id}
+  * The kind parameter (optional) is used to differentiate between Logpush and Edge Log Delivery jobs. Currently, Edge Log Delivery is only supported for the `http_requests` dataset.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#kind LogpushJob#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#kind LogpushJob#kind}
   */
   readonly kind?: string;
   /**
-  * Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
+  * This field is deprecated. Use `output_options` instead. Configuration string. It specifies things like requested fields and timestamp formats. If migrating from the logpull api, copy the url (full url or just the query string) of your call here, and logpush will keep on making this call for you, setting start and end times appropriately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
   */
   readonly logpullOptions?: string;
   /**
-  * The maximum uncompressed file size of a batch of logs. Value must be between 5MB and 1GB.
+  * The maximum uncompressed file size of a batch of logs. This setting value must be between `5 MB` and `1 GB`, or `0` to disable it. Note that you cannot set a minimum file size; this means that log files may be much smaller than this batch size. This parameter is not available for jobs with `edge` as its kind.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
   */
   readonly maxUploadBytes?: number;
   /**
-  * The maximum interval in seconds for log batches. Value must be between 30 and 300.
+  * The maximum interval in seconds for log batches. This setting must be between 30 and 300 seconds (5 minutes), or `0` to disable it. Note that you cannot specify a minimum interval for log batches; this means that log files may be sent in shorter intervals than this. This parameter is only used for jobs with `edge` as its kind.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
   */
   readonly maxUploadIntervalSeconds?: number;
   /**
-  * The maximum number of log lines per batch. Value must be between 1000 and 1,000,000.
+  * The maximum number of log lines per batch. This setting must be between 1000 and 1,000,000 lines, or `0` to disable it. Note that you cannot specify a minimum number of log lines per batch; this means that log files may contain many fewer lines than this. This parameter is not available for jobs with `edge` as its kind.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
   */
   readonly maxUploadRecords?: number;
   /**
-  * The name of the logpush job to create.
+  * Optional human readable job name. Not unique. Cloudflare suggests that you set this to a meaningful string, like the domain name, to make it easier to identify your job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#name LogpushJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#name LogpushJob#name}
   */
   readonly name?: string;
   /**
-  * Ownership challenge token to prove destination ownership, required when destination is Amazon S3, Google Cloud Storage, Microsoft Azure or Sumo Logic. See [Developer documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#usage).
+  * The structured replacement for `logpull_options`. When including this field, the `logpull_option` field will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
+  */
+  readonly outputOptions?: LogpushJobOutputOptions;
+  /**
+  * Ownership challenge token to prove destination ownership.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
   */
   readonly ownershipChallenge?: string;
   /**
-  * The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
+  * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
   */
   readonly zoneId?: string;
-  /**
-  * output_options block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
-  */
-  readonly outputOptions?: LogpushJobOutputOptions;
 }
 export interface LogpushJobOutputOptions {
   /**
   * String to be prepended before each batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#batch_prefix LogpushJob#batch_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#batch_prefix LogpushJob#batch_prefix}
   */
   readonly batchPrefix?: string;
   /**
   * String to be appended after each batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#batch_suffix LogpushJob#batch_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#batch_suffix LogpushJob#batch_suffix}
   */
   readonly batchSuffix?: string;
   /**
-  * Mitigation for CVE-2021-44228. If set to true, will cause all occurrences of ${ in the generated files to be replaced with x{. Defaults to `false`.
+  * If set to true, will cause all occurrences of `${` in the generated files to be replaced with `x{`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#cve20214428 LogpushJob#cve20214428}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#cve_2021_4428 LogpushJob#cve_2021_4428}
   */
   readonly cve20214428?: boolean | cdktf.IResolvable;
   /**
-  * String to join fields. This field be ignored when record_template is set. Defaults to `,`.
+  * String to join fields. This field be ignored when `record_template` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
   */
   readonly fieldDelimiter?: string;
   /**
-  * List of field names to be included in the Logpush output.
+  * List of field names to be included in the Logpush output. For the moment, there is no option to add all fields at once, so you must specify all the fields names you are interested in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#field_names LogpushJob#field_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#field_names LogpushJob#field_names}
   */
   readonly fieldNames?: string[];
   /**
-  * Specifies the output type. Available values: `ndjson`, `csv`. Defaults to `ndjson`.
+  * Specifies the output type, such as `ndjson` or `csv`. This sets default values for the rest of the settings, depending on the chosen output type. Some formatting rules, like string quoting, are different between output types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#output_type LogpushJob#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#output_type LogpushJob#output_type}
   */
   readonly outputType?: string;
   /**
   * String to be inserted in-between the records as separator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#record_delimiter LogpushJob#record_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_delimiter LogpushJob#record_delimiter}
   */
   readonly recordDelimiter?: string;
   /**
-  * String to be prepended before each record. Defaults to `{`.
+  * String to be prepended before each record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#record_prefix LogpushJob#record_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_prefix LogpushJob#record_prefix}
   */
   readonly recordPrefix?: string;
   /**
-  * String to be appended after each record. Defaults to `}
-  * `.
+  * String to be appended after each record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#record_suffix LogpushJob#record_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_suffix LogpushJob#record_suffix}
   */
   readonly recordSuffix?: string;
   /**
-  * String to use as template for each record instead of the default comma-separated list.
+  * String to use as template for each record instead of the default comma-separated list. All fields used in the template must be present in `field_names` as well, otherwise they will end up as null. Format as a Go `text/template` without any standard functions, like conditionals, loops, sub-templates, etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#record_template LogpushJob#record_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_template LogpushJob#record_template}
   */
   readonly recordTemplate?: string;
   /**
-  * Specifies the sampling rate. Defaults to `1`.
+  * Floating number to specify sampling rate. Sampling is applied on top of filtering, and regardless of the current `sample_interval` of the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#sample_rate LogpushJob#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#sample_rate LogpushJob#sample_rate}
   */
   readonly sampleRate?: number;
   /**
-  * Specifies the format for timestamps. Available values: `unixnano`, `unix`, `rfc3339`. Defaults to `unixnano`.
+  * String to specify the format for timestamps, such as `unixnano`, `unix`, or `rfc3339`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
   */
   readonly timestampFormat?: string;
 }
 
-export function logpushJobOutputOptionsToTerraform(struct?: LogpushJobOutputOptionsOutputReference | LogpushJobOutputOptions): any {
+export function logpushJobOutputOptionsToTerraform(struct?: LogpushJobOutputOptions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -194,7 +180,7 @@ export function logpushJobOutputOptionsToTerraform(struct?: LogpushJobOutputOpti
   return {
     batch_prefix: cdktf.stringToTerraform(struct!.batchPrefix),
     batch_suffix: cdktf.stringToTerraform(struct!.batchSuffix),
-    cve20214428: cdktf.booleanToTerraform(struct!.cve20214428),
+    cve_2021_4428: cdktf.booleanToTerraform(struct!.cve20214428),
     field_delimiter: cdktf.stringToTerraform(struct!.fieldDelimiter),
     field_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fieldNames),
     output_type: cdktf.stringToTerraform(struct!.outputType),
@@ -208,7 +194,7 @@ export function logpushJobOutputOptionsToTerraform(struct?: LogpushJobOutputOpti
 }
 
 
-export function logpushJobOutputOptionsToHclTerraform(struct?: LogpushJobOutputOptionsOutputReference | LogpushJobOutputOptions): any {
+export function logpushJobOutputOptionsToHclTerraform(struct?: LogpushJobOutputOptions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -226,7 +212,7 @@ export function logpushJobOutputOptionsToHclTerraform(struct?: LogpushJobOutputO
       type: "simple",
       storageClassType: "string",
     },
-    cve20214428: {
+    cve_2021_4428: {
       value: cdktf.booleanToHclTerraform(struct!.cve20214428),
       isBlock: false,
       type: "simple",
@@ -294,16 +280,20 @@ export function logpushJobOutputOptionsToHclTerraform(struct?: LogpushJobOutputO
 
 export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogpushJobOutputOptions | undefined {
+  public get internalValue(): LogpushJobOutputOptions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._batchPrefix !== undefined) {
@@ -357,9 +347,10 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogpushJobOutputOptions | undefined) {
+  public set internalValue(value: LogpushJobOutputOptions | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._batchPrefix = undefined;
       this._batchSuffix = undefined;
       this._cve20214428 = undefined;
@@ -373,8 +364,13 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
       this._sampleRate = undefined;
       this._timestampFormat = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._batchPrefix = value.batchPrefix;
       this._batchSuffix = value.batchSuffix;
       this._cve20214428 = value.cve20214428;
@@ -390,7 +386,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     }
   }
 
-  // batch_prefix - computed: false, optional: true, required: false
+  // batch_prefix - computed: true, optional: true, required: false
   private _batchPrefix?: string; 
   public get batchPrefix() {
     return this.getStringAttribute('batch_prefix');
@@ -406,7 +402,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._batchPrefix;
   }
 
-  // batch_suffix - computed: false, optional: true, required: false
+  // batch_suffix - computed: true, optional: true, required: false
   private _batchSuffix?: string; 
   public get batchSuffix() {
     return this.getStringAttribute('batch_suffix');
@@ -422,10 +418,10 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._batchSuffix;
   }
 
-  // cve20214428 - computed: false, optional: true, required: false
+  // cve_2021_4428 - computed: true, optional: true, required: false
   private _cve20214428?: boolean | cdktf.IResolvable; 
   public get cve20214428() {
-    return this.getBooleanAttribute('cve20214428');
+    return this.getBooleanAttribute('cve_2021_4428');
   }
   public set cve20214428(value: boolean | cdktf.IResolvable) {
     this._cve20214428 = value;
@@ -438,7 +434,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._cve20214428;
   }
 
-  // field_delimiter - computed: false, optional: true, required: false
+  // field_delimiter - computed: true, optional: true, required: false
   private _fieldDelimiter?: string; 
   public get fieldDelimiter() {
     return this.getStringAttribute('field_delimiter');
@@ -454,7 +450,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._fieldDelimiter;
   }
 
-  // field_names - computed: false, optional: true, required: false
+  // field_names - computed: true, optional: true, required: false
   private _fieldNames?: string[]; 
   public get fieldNames() {
     return this.getListAttribute('field_names');
@@ -470,7 +466,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._fieldNames;
   }
 
-  // output_type - computed: false, optional: true, required: false
+  // output_type - computed: true, optional: true, required: false
   private _outputType?: string; 
   public get outputType() {
     return this.getStringAttribute('output_type');
@@ -486,7 +482,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._outputType;
   }
 
-  // record_delimiter - computed: false, optional: true, required: false
+  // record_delimiter - computed: true, optional: true, required: false
   private _recordDelimiter?: string; 
   public get recordDelimiter() {
     return this.getStringAttribute('record_delimiter');
@@ -502,7 +498,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._recordDelimiter;
   }
 
-  // record_prefix - computed: false, optional: true, required: false
+  // record_prefix - computed: true, optional: true, required: false
   private _recordPrefix?: string; 
   public get recordPrefix() {
     return this.getStringAttribute('record_prefix');
@@ -518,7 +514,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._recordPrefix;
   }
 
-  // record_suffix - computed: false, optional: true, required: false
+  // record_suffix - computed: true, optional: true, required: false
   private _recordSuffix?: string; 
   public get recordSuffix() {
     return this.getStringAttribute('record_suffix');
@@ -534,7 +530,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._recordSuffix;
   }
 
-  // record_template - computed: false, optional: true, required: false
+  // record_template - computed: true, optional: true, required: false
   private _recordTemplate?: string; 
   public get recordTemplate() {
     return this.getStringAttribute('record_template');
@@ -550,7 +546,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._recordTemplate;
   }
 
-  // sample_rate - computed: false, optional: true, required: false
+  // sample_rate - computed: true, optional: true, required: false
   private _sampleRate?: number; 
   public get sampleRate() {
     return this.getNumberAttribute('sample_rate');
@@ -566,7 +562,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
     return this._sampleRate;
   }
 
-  // timestamp_format - computed: false, optional: true, required: false
+  // timestamp_format - computed: true, optional: true, required: false
   private _timestampFormat?: string; 
   public get timestampFormat() {
     return this.getStringAttribute('timestamp_format');
@@ -584,7 +580,7 @@ export class LogpushJobOutputOptionsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job cloudflare_logpush_job}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job cloudflare_logpush_job}
 */
 export class LogpushJob extends cdktf.TerraformResource {
 
@@ -600,7 +596,7 @@ export class LogpushJob extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogpushJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogpushJob to import
-  * @param importFromId The id of the existing LogpushJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogpushJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogpushJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -612,7 +608,7 @@ export class LogpushJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job cloudflare_logpush_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job cloudflare_logpush_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -623,8 +619,8 @@ export class LogpushJob extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_job',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -638,18 +634,16 @@ export class LogpushJob extends cdktf.TerraformResource {
     this._dataset = config.dataset;
     this._destinationConf = config.destinationConf;
     this._enabled = config.enabled;
-    this._filter = config.filter;
     this._frequency = config.frequency;
-    this._id = config.id;
     this._kind = config.kind;
     this._logpullOptions = config.logpullOptions;
     this._maxUploadBytes = config.maxUploadBytes;
     this._maxUploadIntervalSeconds = config.maxUploadIntervalSeconds;
     this._maxUploadRecords = config.maxUploadRecords;
     this._name = config.name;
+    this._outputOptions.internalValue = config.outputOptions;
     this._ownershipChallenge = config.ownershipChallenge;
     this._zoneId = config.zoneId;
-    this._outputOptions.internalValue = config.outputOptions;
   }
 
   // ==========
@@ -672,13 +666,16 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // dataset - computed: false, optional: false, required: true
+  // dataset - computed: false, optional: true, required: false
   private _dataset?: string; 
   public get dataset() {
     return this.getStringAttribute('dataset');
   }
   public set dataset(value: string) {
     this._dataset = value;
+  }
+  public resetDataset() {
+    this._dataset = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get datasetInput() {
@@ -714,23 +711,12 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // filter - computed: false, optional: true, required: false
-  private _filter?: string; 
-  public get filter() {
-    return this.getStringAttribute('filter');
-  }
-  public set filter(value: string) {
-    this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter;
+  // error_message - computed: true, optional: false, required: false
+  public get errorMessage() {
+    return this.getStringAttribute('error_message');
   }
 
-  // frequency - computed: false, optional: true, required: false
+  // frequency - computed: true, optional: true, required: false
   private _frequency?: string; 
   public get frequency() {
     return this.getStringAttribute('frequency');
@@ -746,20 +732,9 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._frequency;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+    return this.getNumberAttribute('id');
   }
 
   // kind - computed: false, optional: true, required: false
@@ -776,6 +751,16 @@ export class LogpushJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get kindInput() {
     return this._kind;
+  }
+
+  // last_complete - computed: true, optional: false, required: false
+  public get lastComplete() {
+    return this.getStringAttribute('last_complete');
+  }
+
+  // last_error - computed: true, optional: false, required: false
+  public get lastError() {
+    return this.getStringAttribute('last_error');
   }
 
   // logpull_options - computed: false, optional: true, required: false
@@ -810,7 +795,7 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._maxUploadBytes;
   }
 
-  // max_upload_interval_seconds - computed: false, optional: true, required: false
+  // max_upload_interval_seconds - computed: true, optional: true, required: false
   private _maxUploadIntervalSeconds?: number; 
   public get maxUploadIntervalSeconds() {
     return this.getNumberAttribute('max_upload_interval_seconds');
@@ -826,7 +811,7 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._maxUploadIntervalSeconds;
   }
 
-  // max_upload_records - computed: false, optional: true, required: false
+  // max_upload_records - computed: true, optional: true, required: false
   private _maxUploadRecords?: number; 
   public get maxUploadRecords() {
     return this.getNumberAttribute('max_upload_records');
@@ -856,6 +841,22 @@ export class LogpushJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // output_options - computed: true, optional: true, required: false
+  private _outputOptions = new LogpushJobOutputOptionsOutputReference(this, "output_options");
+  public get outputOptions() {
+    return this._outputOptions;
+  }
+  public putOutputOptions(value: LogpushJobOutputOptions) {
+    this._outputOptions.internalValue = value;
+  }
+  public resetOutputOptions() {
+    this._outputOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputOptionsInput() {
+    return this._outputOptions.internalValue;
   }
 
   // ownership_challenge - computed: false, optional: true, required: false
@@ -890,22 +891,6 @@ export class LogpushJob extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // output_options - computed: false, optional: true, required: false
-  private _outputOptions = new LogpushJobOutputOptionsOutputReference(this, "output_options");
-  public get outputOptions() {
-    return this._outputOptions;
-  }
-  public putOutputOptions(value: LogpushJobOutputOptions) {
-    this._outputOptions.internalValue = value;
-  }
-  public resetOutputOptions() {
-    this._outputOptions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get outputOptionsInput() {
-    return this._outputOptions.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -916,18 +901,16 @@ export class LogpushJob extends cdktf.TerraformResource {
       dataset: cdktf.stringToTerraform(this._dataset),
       destination_conf: cdktf.stringToTerraform(this._destinationConf),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      filter: cdktf.stringToTerraform(this._filter),
       frequency: cdktf.stringToTerraform(this._frequency),
-      id: cdktf.stringToTerraform(this._id),
       kind: cdktf.stringToTerraform(this._kind),
       logpull_options: cdktf.stringToTerraform(this._logpullOptions),
       max_upload_bytes: cdktf.numberToTerraform(this._maxUploadBytes),
       max_upload_interval_seconds: cdktf.numberToTerraform(this._maxUploadIntervalSeconds),
       max_upload_records: cdktf.numberToTerraform(this._maxUploadRecords),
       name: cdktf.stringToTerraform(this._name),
+      output_options: logpushJobOutputOptionsToTerraform(this._outputOptions.internalValue),
       ownership_challenge: cdktf.stringToTerraform(this._ownershipChallenge),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      output_options: logpushJobOutputOptionsToTerraform(this._outputOptions.internalValue),
     };
   }
 
@@ -957,20 +940,8 @@ export class LogpushJob extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       frequency: {
         value: cdktf.stringToHclTerraform(this._frequency),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1011,6 +982,12 @@ export class LogpushJob extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      output_options: {
+        value: logpushJobOutputOptionsToHclTerraform(this._outputOptions.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LogpushJobOutputOptions",
+      },
       ownership_challenge: {
         value: cdktf.stringToHclTerraform(this._ownershipChallenge),
         isBlock: false,
@@ -1022,12 +999,6 @@ export class LogpushJob extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      output_options: {
-        value: logpushJobOutputOptionsToHclTerraform(this._outputOptions.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "LogpushJobOutputOptionsList",
       },
     };
 

@@ -4,12 +4,12 @@
 
 ### Filter <a name="Filter" id="@cdktf/provider-cloudflare.filter.Filter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter cloudflare_filter}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.filter.Filter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter"
 
 filter.NewFilter(scope Construct, id *string, config FilterConfig) Filter
 ```
@@ -73,10 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetPaused">ResetPaused</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetRef">ResetRef</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetFilterId">ResetFilterId</a></code> | *No description.* |
 
 ---
 
@@ -368,28 +365,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-cloudflare.filter.Filter.resetDescription"></a>
+##### `ResetFilterId` <a name="ResetFilterId" id="@cdktf/provider-cloudflare.filter.Filter.resetFilterId"></a>
 
 ```go
-func ResetDescription()
-```
-
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.filter.Filter.resetId"></a>
-
-```go
-func ResetId()
-```
-
-##### `ResetPaused` <a name="ResetPaused" id="@cdktf/provider-cloudflare.filter.Filter.resetPaused"></a>
-
-```go
-func ResetPaused()
-```
-
-##### `ResetRef` <a name="ResetRef" id="@cdktf/provider-cloudflare.filter.Filter.resetRef"></a>
-
-```go
-func ResetRef()
+func ResetFilterId()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -406,7 +385,7 @@ func ResetRef()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.filter.Filter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter"
 
 filter.Filter_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.filter.Filter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter"
 
 filter.Filter_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +431,7 @@ filter.Filter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.filter.Filter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter"
 
 filter.Filter_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +445,7 @@ filter.Filter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.filter.Filter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter"
 
 filter.Filter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +474,7 @@ The construct id used in the generated config for the Filter to import.
 
 The id of the existing Filter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,17 +504,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.expressionInput">ExpressionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.pausedInput">PausedInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.refInput">RefInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.expression">Expression</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.paused">Paused</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.paused">Paused</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.ref">Ref</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.expressionInput">ExpressionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.filterIdInput">FilterIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.expression">Expression</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.filterId">FilterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -682,80 +659,10 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-cloudflare.filter.Filter.property.descriptionInput"></a>
-
-```go
-func DescriptionInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ExpressionInput`<sup>Optional</sup> <a name="ExpressionInput" id="@cdktf/provider-cloudflare.filter.Filter.property.expressionInput"></a>
-
-```go
-func ExpressionInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.filter.Filter.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `PausedInput`<sup>Optional</sup> <a name="PausedInput" id="@cdktf/provider-cloudflare.filter.Filter.property.pausedInput"></a>
-
-```go
-func PausedInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RefInput`<sup>Optional</sup> <a name="RefInput" id="@cdktf/provider-cloudflare.filter.Filter.property.refInput"></a>
-
-```go
-func RefInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktf/provider-cloudflare.filter.Filter.property.zoneIdInput"></a>
-
-```go
-func ZoneIdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.filter.Filter.property.description"></a>
 
 ```go
 func Description() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-cloudflare.filter.Filter.property.expression"></a>
-
-```go
-func Expression() *string
 ```
 
 - *Type:* *string
@@ -775,10 +682,10 @@ func Id() *string
 ##### `Paused`<sup>Required</sup> <a name="Paused" id="@cdktf/provider-cloudflare.filter.Filter.property.paused"></a>
 
 ```go
-func Paused() interface{}
+func Paused() IResolvable
 ```
 
-- *Type:* interface{}
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
 
 ---
 
@@ -786,6 +693,56 @@ func Paused() interface{}
 
 ```go
 func Ref() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ExpressionInput`<sup>Optional</sup> <a name="ExpressionInput" id="@cdktf/provider-cloudflare.filter.Filter.property.expressionInput"></a>
+
+```go
+func ExpressionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FilterIdInput`<sup>Optional</sup> <a name="FilterIdInput" id="@cdktf/provider-cloudflare.filter.Filter.property.filterIdInput"></a>
+
+```go
+func FilterIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktf/provider-cloudflare.filter.Filter.property.zoneIdInput"></a>
+
+```go
+func ZoneIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-cloudflare.filter.Filter.property.expression"></a>
+
+```go
+func Expression() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FilterId`<sup>Required</sup> <a name="FilterId" id="@cdktf/provider-cloudflare.filter.Filter.property.filterId"></a>
+
+```go
+func FilterId() *string
 ```
 
 - *Type:* *string
@@ -827,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.filter.FilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter"
 
 &filter.FilterConfig {
 	Connection: interface{},
@@ -839,10 +796,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
 	Provisioners: *[]interface{},
 	Expression: *string,
 	ZoneId: *string,
-	Description: *string,
-	Id: *string,
-	Paused: interface{},
-	Ref: *string,
+	FilterId: *string,
 }
 ```
 
@@ -857,12 +811,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter"
 | <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.expression">Expression</a></code> | <code>*string</code> | The filter expression to be used. |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.description">Description</a></code> | <code>*string</code> | A note that you can use to describe the purpose of the filter. |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#id Filter#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.paused">Paused</a></code> | <code>interface{}</code> | Whether this filter is currently paused. |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.ref">Ref</a></code> | <code>*string</code> | Short reference tag to quickly select related rules. |
+| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.expression">Expression</a></code> | <code>*string</code> | The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/). |
+| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.filterId">FilterId</a></code> | <code>*string</code> | The unique identifier of the filter. |
 
 ---
 
@@ -944,9 +895,9 @@ Expression *string
 
 - *Type:* *string
 
-The filter expression to be used.
+The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#expression Filter#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#expression Filter#expression}
 
 ---
 
@@ -958,66 +909,23 @@ ZoneId *string
 
 - *Type:* *string
 
-The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#zone_id Filter#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#zone_id Filter#zone_id}
 
 ---
 
-##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-cloudflare.filter.FilterConfig.property.description"></a>
+##### `FilterId`<sup>Optional</sup> <a name="FilterId" id="@cdktf/provider-cloudflare.filter.FilterConfig.property.filterId"></a>
 
 ```go
-Description *string
+FilterId *string
 ```
 
 - *Type:* *string
 
-A note that you can use to describe the purpose of the filter.
+The unique identifier of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#description Filter#description}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.filter.FilterConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#id Filter#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Paused`<sup>Optional</sup> <a name="Paused" id="@cdktf/provider-cloudflare.filter.FilterConfig.property.paused"></a>
-
-```go
-Paused interface{}
-```
-
-- *Type:* interface{}
-
-Whether this filter is currently paused.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#paused Filter#paused}
-
----
-
-##### `Ref`<sup>Optional</sup> <a name="Ref" id="@cdktf/provider-cloudflare.filter.FilterConfig.property.ref"></a>
-
-```go
-Ref *string
-```
-
-- *Type:* *string
-
-Short reference tag to quickly select related rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter#ref Filter#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#filter_id Filter#filter_id}
 
 ---
 

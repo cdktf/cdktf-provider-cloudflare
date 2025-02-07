@@ -4,12 +4,12 @@
 
 ### LogpullRetention <a name="LogpullRetention" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullretention"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpullretention"
 
 logpullretention.NewLogpullRetention(scope Construct, id *string, config LogpullRetentionConfig) LogpullRetention
 ```
@@ -73,7 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.resetFlag">ResetFlag</a></code> | *No description.* |
 
 ---
 
@@ -365,10 +365,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.resetId"></a>
+##### `ResetFlag` <a name="ResetFlag" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.resetFlag"></a>
 
 ```go
-func ResetId()
+func ResetFlag()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullretention"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpullretention"
 
 logpullretention.LogpullRetention_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullretention"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpullretention"
 
 logpullretention.LogpullRetention_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ logpullretention.LogpullRetention_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullretention"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpullretention"
 
 logpullretention.LogpullRetention_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ logpullretention.LogpullRetention_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullretention"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpullretention"
 
 logpullretention.LogpullRetention_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LogpullRetention to import
 
 The id of the existing LogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,11 +504,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.flagInput">FlagInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.flag">Flag</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -655,23 +653,13 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.enabledInput"></a>
+##### `FlagInput`<sup>Optional</sup> <a name="FlagInput" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.flagInput"></a>
 
 ```go
-func EnabledInput() interface{}
+func FlagInput() interface{}
 ```
 
 - *Type:* interface{}
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -685,23 +673,13 @@ func ZoneIdInput() *string
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.enabled"></a>
+##### `Flag`<sup>Required</sup> <a name="Flag" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.flag"></a>
 
 ```go
-func Enabled() interface{}
+func Flag() interface{}
 ```
 
 - *Type:* interface{}
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -740,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullretention"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpullretention"
 
 &logpullretention.LogpullRetentionConfig {
 	Connection: interface{},
@@ -750,9 +728,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullrete
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Enabled: interface{},
 	ZoneId: *string,
-	Id: *string,
+	Flag: interface{},
 }
 ```
 
@@ -767,9 +744,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpullrete
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether you wish to retain logs or not. |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention#id LogpullRetention#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.flag">Flag</a></code> | <code>interface{}</code> | The log retention flag for Logpull API. |
 
 ---
 
@@ -843,20 +819,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.enabled"></a>
-
-```go
-Enabled interface{}
-```
-
-- *Type:* interface{}
-
-Whether you wish to retain logs or not.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention#enabled LogpullRetention#enabled}
-
----
-
 ##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.zoneId"></a>
 
 ```go
@@ -865,24 +827,23 @@ ZoneId *string
 
 - *Type:* *string
 
-The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.id"></a>
+##### `Flag`<sup>Optional</sup> <a name="Flag" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig.property.flag"></a>
 
 ```go
-Id *string
+Flag interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention#id LogpullRetention#id}.
+The log retention flag for Logpull API.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpull_retention#flag LogpullRetention#flag}
 
 ---
 

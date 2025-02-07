@@ -4,12 +4,12 @@
 
 ### R2Bucket <a name="R2Bucket" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucket"
 
 r2bucket.NewR2Bucket(scope Construct, id *string, config R2BucketConfig) R2Bucket
 ```
@@ -73,7 +73,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetJurisdiction">ResetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetLocation">ResetLocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetStorageClass">ResetStorageClass</a></code> | *No description.* |
 
 ---
 
@@ -365,10 +367,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetJurisdiction` <a name="ResetJurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetJurisdiction"></a>
+
+```go
+func ResetJurisdiction()
+```
+
 ##### `ResetLocation` <a name="ResetLocation" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetLocation"></a>
 
 ```go
 func ResetLocation()
+```
+
+##### `ResetStorageClass` <a name="ResetStorageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.resetStorageClass"></a>
+
+```go
+func ResetStorageClass()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -385,7 +399,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucket"
 
 r2bucket.R2Bucket_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucket"
 
 r2bucket.R2Bucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +445,7 @@ r2bucket.R2Bucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucket"
 
 r2bucket.R2Bucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +459,7 @@ r2bucket.R2Bucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucket"
 
 r2bucket.R2Bucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +488,7 @@ The construct id used in the generated config for the R2Bucket to import.
 
 The id of the existing R2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,13 +518,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.creationDate">CreationDate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdictionInput">JurisdictionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClassInput">StorageClassInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClass">StorageClass</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -656,6 +675,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `CreationDate`<sup>Required</sup> <a name="CreationDate" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.creationDate"></a>
+
+```go
+func CreationDate() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.id"></a>
 
 ```go
@@ -670,6 +699,16 @@ func Id() *string
 
 ```go
 func AccountIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `JurisdictionInput`<sup>Optional</sup> <a name="JurisdictionInput" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdictionInput"></a>
+
+```go
+func JurisdictionInput() *string
 ```
 
 - *Type:* *string
@@ -696,10 +735,30 @@ func NameInput() *string
 
 ---
 
+##### `StorageClassInput`<sup>Optional</sup> <a name="StorageClassInput" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClassInput"></a>
+
+```go
+func StorageClassInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.accountId"></a>
 
 ```go
 func AccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Jurisdiction`<sup>Required</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.jurisdiction"></a>
+
+```go
+func Jurisdiction() *string
 ```
 
 - *Type:* *string
@@ -720,6 +779,16 @@ func Location() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageClass`<sup>Required</sup> <a name="StorageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.property.storageClass"></a>
+
+```go
+func StorageClass() *string
 ```
 
 - *Type:* *string
@@ -751,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucket"
 
 &r2bucket.R2BucketConfig {
 	Connection: interface{},
@@ -763,7 +832,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Name: *string,
+	Jurisdiction: *string,
 	Location: *string,
+	StorageClass: *string,
 }
 ```
 
@@ -778,9 +849,11 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/r2bucket"
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">Name</a></code> | <code>*string</code> | The name of the R2 bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">Location</a></code> | <code>*string</code> | The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account ID. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">Name</a></code> | <code>*string</code> | Name of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | Jurisdiction of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">Location</a></code> | <code>*string</code> | Location of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass">StorageClass</a></code> | <code>*string</code> | Storage class for newly uploaded objects, unless specified otherwise. |
 
 ---
 
@@ -862,9 +935,9 @@ AccountId *string
 
 - *Type:* *string
 
-The account identifier to target for the resource.
+Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -876,9 +949,23 @@ Name *string
 
 - *Type:* *string
 
-The name of the R2 bucket.
+Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#name R2Bucket#name}
+
+---
+
+##### `Jurisdiction`<sup>Optional</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.jurisdiction"></a>
+
+```go
+Jurisdiction *string
+```
+
+- *Type:* *string
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
 
 ---
 
@@ -890,9 +977,23 @@ Location *string
 
 - *Type:* *string
 
-The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`.
+Location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#location R2Bucket#location}
+
+---
+
+##### `StorageClass`<sup>Optional</sup> <a name="StorageClass" id="@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass"></a>
+
+```go
+StorageClass *string
+```
+
+- *Type:* *string
+
+Storage class for newly uploaded objects, unless specified otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
 
 ---
 

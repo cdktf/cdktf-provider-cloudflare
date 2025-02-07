@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface EmailRoutingCatchAllConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List actions for the catch-all routing rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+  */
+  readonly actions: EmailRoutingCatchAllActions[] | cdktf.IResolvable;
+  /**
   * Routing rule status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#id EmailRoutingCatchAll#id}
+  * List of matchers for the catch-all routing rule.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
   */
-  readonly id?: string;
+  readonly matchers: EmailRoutingCatchAllMatchers[] | cdktf.IResolvable;
   /**
   * Routing rule name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
-  * The zone identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
   */
   readonly zoneId: string;
-  /**
-  * action block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#action EmailRoutingCatchAll#action}
-  */
-  readonly action: EmailRoutingCatchAllAction[] | cdktf.IResolvable;
-  /**
-  * matcher block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#matcher EmailRoutingCatchAll#matcher}
-  */
-  readonly matcher: EmailRoutingCatchAllMatcher[] | cdktf.IResolvable;
 }
-export interface EmailRoutingCatchAllAction {
+export interface EmailRoutingCatchAllActions {
   /**
-  * Type of supported action. Available values: `drop`, `forward`, `worker`.
+  * Type of action for catch-all rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
   */
   readonly type: string;
   /**
-  * A list with items in the following form.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}
   */
-  readonly value: string[];
+  readonly value?: string[];
 }
 
-export function emailRoutingCatchAllActionToTerraform(struct?: EmailRoutingCatchAllAction | cdktf.IResolvable): any {
+export function emailRoutingCatchAllActionsToTerraform(struct?: EmailRoutingCatchAllActions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -77,7 +68,7 @@ export function emailRoutingCatchAllActionToTerraform(struct?: EmailRoutingCatch
 }
 
 
-export function emailRoutingCatchAllActionToHclTerraform(struct?: EmailRoutingCatchAllAction | cdktf.IResolvable): any {
+export function emailRoutingCatchAllActionsToHclTerraform(struct?: EmailRoutingCatchAllActions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -101,7 +92,7 @@ export function emailRoutingCatchAllActionToHclTerraform(struct?: EmailRoutingCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmailRoutingCatchAllActionOutputReference extends cdktf.ComplexObject {
+export class EmailRoutingCatchAllActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -115,7 +106,7 @@ export class EmailRoutingCatchAllActionOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmailRoutingCatchAllAction | cdktf.IResolvable | undefined {
+  public get internalValue(): EmailRoutingCatchAllActions | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,7 +123,7 @@ export class EmailRoutingCatchAllActionOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmailRoutingCatchAllAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmailRoutingCatchAllActions | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -164,7 +155,7 @@ export class EmailRoutingCatchAllActionOutputReference extends cdktf.ComplexObje
     return this._type;
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string[]; 
   public get value() {
     return this.getListAttribute('value');
@@ -172,14 +163,17 @@ export class EmailRoutingCatchAllActionOutputReference extends cdktf.ComplexObje
   public set value(value: string[]) {
     this._value = value;
   }
+  public resetValue() {
+    this._value = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
   }
 }
 
-export class EmailRoutingCatchAllActionList extends cdktf.ComplexList {
-  public internalValue? : EmailRoutingCatchAllAction[] | cdktf.IResolvable
+export class EmailRoutingCatchAllActionsList extends cdktf.ComplexList {
+  public internalValue? : EmailRoutingCatchAllActions[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -193,20 +187,20 @@ export class EmailRoutingCatchAllActionList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): EmailRoutingCatchAllActionOutputReference {
-    return new EmailRoutingCatchAllActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): EmailRoutingCatchAllActionsOutputReference {
+    return new EmailRoutingCatchAllActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface EmailRoutingCatchAllMatcher {
+export interface EmailRoutingCatchAllMatchers {
   /**
-  * Type of matcher. Available values: `all`.
+  * Type of matcher. Default is 'all'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
   */
   readonly type: string;
 }
 
-export function emailRoutingCatchAllMatcherToTerraform(struct?: EmailRoutingCatchAllMatcher | cdktf.IResolvable): any {
+export function emailRoutingCatchAllMatchersToTerraform(struct?: EmailRoutingCatchAllMatchers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -217,7 +211,7 @@ export function emailRoutingCatchAllMatcherToTerraform(struct?: EmailRoutingCatc
 }
 
 
-export function emailRoutingCatchAllMatcherToHclTerraform(struct?: EmailRoutingCatchAllMatcher | cdktf.IResolvable): any {
+export function emailRoutingCatchAllMatchersToHclTerraform(struct?: EmailRoutingCatchAllMatchers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -235,7 +229,7 @@ export function emailRoutingCatchAllMatcherToHclTerraform(struct?: EmailRoutingC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmailRoutingCatchAllMatcherOutputReference extends cdktf.ComplexObject {
+export class EmailRoutingCatchAllMatchersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -249,7 +243,7 @@ export class EmailRoutingCatchAllMatcherOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmailRoutingCatchAllMatcher | cdktf.IResolvable | undefined {
+  public get internalValue(): EmailRoutingCatchAllMatchers | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,7 +256,7 @@ export class EmailRoutingCatchAllMatcherOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmailRoutingCatchAllMatcher | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmailRoutingCatchAllMatchers | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -293,8 +287,8 @@ export class EmailRoutingCatchAllMatcherOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class EmailRoutingCatchAllMatcherList extends cdktf.ComplexList {
-  public internalValue? : EmailRoutingCatchAllMatcher[] | cdktf.IResolvable
+export class EmailRoutingCatchAllMatchersList extends cdktf.ComplexList {
+  public internalValue? : EmailRoutingCatchAllMatchers[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -308,13 +302,13 @@ export class EmailRoutingCatchAllMatcherList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): EmailRoutingCatchAllMatcherOutputReference {
-    return new EmailRoutingCatchAllMatcherOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): EmailRoutingCatchAllMatchersOutputReference {
+    return new EmailRoutingCatchAllMatchersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}
 */
 export class EmailRoutingCatchAll extends cdktf.TerraformResource {
 
@@ -330,7 +324,7 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailRoutingCatchAll resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailRoutingCatchAll to import
-  * @param importFromId The id of the existing EmailRoutingCatchAll that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailRoutingCatchAll that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailRoutingCatchAll to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -342,7 +336,7 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,8 +347,8 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_catch_all',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -364,19 +358,31 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._actions.internalValue = config.actions;
     this._enabled = config.enabled;
-    this._id = config.id;
+    this._matchers.internalValue = config.matchers;
     this._name = config.name;
     this._zoneId = config.zoneId;
-    this._action.internalValue = config.action;
-    this._matcher.internalValue = config.matcher;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // enabled - computed: false, optional: true, required: false
+  // actions - computed: false, optional: false, required: true
+  private _actions = new EmailRoutingCatchAllActionsList(this, "actions", false);
+  public get actions() {
+    return this._actions;
+  }
+  public putActions(value: EmailRoutingCatchAllActions[] | cdktf.IResolvable) {
+    this._actions.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionsInput() {
+    return this._actions.internalValue;
+  }
+
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -392,29 +398,34 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // matchers - computed: false, optional: false, required: true
+  private _matchers = new EmailRoutingCatchAllMatchersList(this, "matchers", false);
+  public get matchers() {
+    return this._matchers;
   }
-  public resetId() {
-    this._id = undefined;
+  public putMatchers(value: EmailRoutingCatchAllMatchers[] | cdktf.IResolvable) {
+    this._matchers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get matchersInput() {
+    return this._matchers.internalValue;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -439,60 +450,39 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // action - computed: false, optional: false, required: true
-  private _action = new EmailRoutingCatchAllActionList(this, "action", true);
-  public get action() {
-    return this._action;
-  }
-  public putAction(value: EmailRoutingCatchAllAction[] | cdktf.IResolvable) {
-    this._action.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get actionInput() {
-    return this._action.internalValue;
-  }
-
-  // matcher - computed: false, optional: false, required: true
-  private _matcher = new EmailRoutingCatchAllMatcherList(this, "matcher", true);
-  public get matcher() {
-    return this._matcher;
-  }
-  public putMatcher(value: EmailRoutingCatchAllMatcher[] | cdktf.IResolvable) {
-    this._matcher.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matcherInput() {
-    return this._matcher.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      actions: cdktf.listMapper(emailRoutingCatchAllActionsToTerraform, false)(this._actions.internalValue),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
+      matchers: cdktf.listMapper(emailRoutingCatchAllMatchersToTerraform, false)(this._matchers.internalValue),
       name: cdktf.stringToTerraform(this._name),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      action: cdktf.listMapper(emailRoutingCatchAllActionToTerraform, true)(this._action.internalValue),
-      matcher: cdktf.listMapper(emailRoutingCatchAllMatcherToTerraform, true)(this._matcher.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      actions: {
+        value: cdktf.listMapperHcl(emailRoutingCatchAllActionsToHclTerraform, false)(this._actions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmailRoutingCatchAllActionsList",
+      },
       enabled: {
         value: cdktf.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+      matchers: {
+        value: cdktf.listMapperHcl(emailRoutingCatchAllMatchersToHclTerraform, false)(this._matchers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmailRoutingCatchAllMatchersList",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
@@ -505,18 +495,6 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      action: {
-        value: cdktf.listMapperHcl(emailRoutingCatchAllActionToHclTerraform, true)(this._action.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "EmailRoutingCatchAllActionList",
-      },
-      matcher: {
-        value: cdktf.listMapperHcl(emailRoutingCatchAllMatcherToHclTerraform, true)(this._matcher.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "EmailRoutingCatchAllMatcherList",
       },
     };
 

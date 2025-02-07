@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,281 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Account ID to manage the zone resource in.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#account_id Zone#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone#account Zone#account}
   */
-  readonly accountId: string;
+  readonly account: ZoneAccount;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#id Zone#id}
+  * The domain name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone#name Zone#name}
+  */
+  readonly name: string;
+  /**
+  * A full zone implies that DNS is hosted with Cloudflare. A partial zone is
+  * typically a partner-hosted zone or a CNAME setup.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone#type Zone#type}
+  */
+  readonly type?: string;
+  /**
+  * An array of domains used for custom name servers. This is only
+  * available for Business and Enterprise plans.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
+  */
+  readonly vanityNameServers?: string[];
+}
+export interface ZoneAccount {
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone#id Zone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+}
+
+export function zoneAccountToTerraform(struct?: ZoneAccount | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zoneAccountToHclTerraform(struct?: ZoneAccount | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZoneAccountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
   /**
-  * Whether to scan for DNS records on creation. Ignored after zone is created.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#jump_start Zone#jump_start}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  readonly jumpStart?: boolean | cdktf.IResolvable;
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZoneAccount | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneAccount | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+export interface ZoneMeta {
+}
+
+export function zoneMetaToTerraform(struct?: ZoneMeta): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zoneMetaToHclTerraform(struct?: ZoneMeta): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZoneMetaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
-  * Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#paused Zone#paused}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  readonly paused?: boolean | cdktf.IResolvable;
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZoneMeta | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneMeta | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cdn_only - computed: true, optional: false, required: false
+  public get cdnOnly() {
+    return this.getBooleanAttribute('cdn_only');
+  }
+
+  // custom_certificate_quota - computed: true, optional: false, required: false
+  public get customCertificateQuota() {
+    return this.getNumberAttribute('custom_certificate_quota');
+  }
+
+  // dns_only - computed: true, optional: false, required: false
+  public get dnsOnly() {
+    return this.getBooleanAttribute('dns_only');
+  }
+
+  // foundation_dns - computed: true, optional: false, required: false
+  public get foundationDns() {
+    return this.getBooleanAttribute('foundation_dns');
+  }
+
+  // page_rule_quota - computed: true, optional: false, required: false
+  public get pageRuleQuota() {
+    return this.getNumberAttribute('page_rule_quota');
+  }
+
+  // phishing_detected - computed: true, optional: false, required: false
+  public get phishingDetected() {
+    return this.getBooleanAttribute('phishing_detected');
+  }
+
+  // step - computed: true, optional: false, required: false
+  public get step() {
+    return this.getNumberAttribute('step');
+  }
+}
+export interface ZoneOwner {
+}
+
+export function zoneOwnerToTerraform(struct?: ZoneOwner): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zoneOwnerToHclTerraform(struct?: ZoneOwner): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZoneOwnerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
-  * The name of the commercial plan to apply to the zone. Available values: `free`, `lite`, `pro`, `pro_plus`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#plan Zone#plan}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  readonly plan?: string;
-  /**
-  * A full zone implies that DNS is hosted with Cloudflare. A partial zone is typically a partner-hosted zone or a CNAME setup. Available values: `full`, `partial`, `secondary`. Defaults to `full`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#type Zone#type}
-  */
-  readonly type?: string;
-  /**
-  * List of Vanity Nameservers (if set).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
-  */
-  readonly vanityNameServers?: string[];
-  /**
-  * The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#zone Zone#zone}
-  */
-  readonly zone: string;
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZoneOwner | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneOwner | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone cloudflare_zone}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone cloudflare_zone}
 */
 export class Zone extends cdktf.TerraformResource {
 
@@ -80,7 +303,7 @@ export class Zone extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Zone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Zone to import
-  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Zone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +315,7 @@ export class Zone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone cloudflare_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone cloudflare_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,8 +326,8 @@ export class Zone extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -114,69 +337,71 @@ export class Zone extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountId = config.accountId;
-    this._id = config.id;
-    this._jumpStart = config.jumpStart;
-    this._paused = config.paused;
-    this._plan = config.plan;
+    this._account.internalValue = config.account;
+    this._name = config.name;
     this._type = config.type;
     this._vanityNameServers = config.vanityNameServers;
-    this._zone = config.zone;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
-  private _accountId?: string; 
-  public get accountId() {
-    return this.getStringAttribute('account_id');
+  // account - computed: false, optional: false, required: true
+  private _account = new ZoneAccountOutputReference(this, "account");
+  public get account() {
+    return this._account;
   }
-  public set accountId(value: string) {
-    this._accountId = value;
+  public putAccount(value: ZoneAccount) {
+    this._account.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId;
+  public get accountInput() {
+    return this._account.internalValue;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // activated_on - computed: true, optional: false, required: false
+  public get activatedOn() {
+    return this.getStringAttribute('activated_on');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // development_mode - computed: true, optional: false, required: false
+  public get developmentMode() {
+    return this.getNumberAttribute('development_mode');
+  }
+
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-
-  // jump_start - computed: false, optional: true, required: false
-  private _jumpStart?: boolean | cdktf.IResolvable; 
-  public get jumpStart() {
-    return this.getBooleanAttribute('jump_start');
-  }
-  public set jumpStart(value: boolean | cdktf.IResolvable) {
-    this._jumpStart = value;
-  }
-  public resetJumpStart() {
-    this._jumpStart = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jumpStartInput() {
-    return this._jumpStart;
-  }
 
   // meta - computed: true, optional: false, required: false
-  private _meta = new cdktf.BooleanMap(this, "meta");
+  private _meta = new ZoneMetaOutputReference(this, "meta");
   public get meta() {
     return this._meta;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 
   // name_servers - computed: true, optional: false, required: false
@@ -184,36 +409,30 @@ export class Zone extends cdktf.TerraformResource {
     return this.getListAttribute('name_servers');
   }
 
-  // paused - computed: false, optional: true, required: false
-  private _paused?: boolean | cdktf.IResolvable; 
-  public get paused() {
-    return this.getBooleanAttribute('paused');
-  }
-  public set paused(value: boolean | cdktf.IResolvable) {
-    this._paused = value;
-  }
-  public resetPaused() {
-    this._paused = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pausedInput() {
-    return this._paused;
+  // original_dnshost - computed: true, optional: false, required: false
+  public get originalDnshost() {
+    return this.getStringAttribute('original_dnshost');
   }
 
-  // plan - computed: true, optional: true, required: false
-  private _plan?: string; 
-  public get plan() {
-    return this.getStringAttribute('plan');
+  // original_name_servers - computed: true, optional: false, required: false
+  public get originalNameServers() {
+    return this.getListAttribute('original_name_servers');
   }
-  public set plan(value: string) {
-    this._plan = value;
+
+  // original_registrar - computed: true, optional: false, required: false
+  public get originalRegistrar() {
+    return this.getStringAttribute('original_registrar');
   }
-  public resetPlan() {
-    this._plan = undefined;
+
+  // owner - computed: true, optional: false, required: false
+  private _owner = new ZoneOwnerOutputReference(this, "owner");
+  public get owner() {
+    return this._owner;
   }
-  // Temporarily expose input value. Use with caution.
-  public get planInput() {
-    return this._plan;
+
+  // paused - computed: true, optional: false, required: false
+  public get paused() {
+    return this.getBooleanAttribute('paused');
   }
 
   // status - computed: true, optional: false, required: false
@@ -221,7 +440,7 @@ export class Zone extends cdktf.TerraformResource {
     return this.getStringAttribute('status');
   }
 
-  // type - computed: false, optional: true, required: false
+  // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -237,7 +456,7 @@ export class Zone extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // vanity_name_servers - computed: true, optional: true, required: false
+  // vanity_name_servers - computed: false, optional: true, required: false
   private _vanityNameServers?: string[]; 
   public get vanityNameServers() {
     return this.getListAttribute('vanity_name_servers');
@@ -253,69 +472,29 @@ export class Zone extends cdktf.TerraformResource {
     return this._vanityNameServers;
   }
 
-  // verification_key - computed: true, optional: false, required: false
-  public get verificationKey() {
-    return this.getStringAttribute('verification_key');
-  }
-
-  // zone - computed: false, optional: false, required: true
-  private _zone?: string; 
-  public get zone() {
-    return this.getStringAttribute('zone');
-  }
-  public set zone(value: string) {
-    this._zone = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneInput() {
-    return this._zone;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      jump_start: cdktf.booleanToTerraform(this._jumpStart),
-      paused: cdktf.booleanToTerraform(this._paused),
-      plan: cdktf.stringToTerraform(this._plan),
+      account: zoneAccountToTerraform(this._account.internalValue),
+      name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
       vanity_name_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vanityNameServers),
-      zone: cdktf.stringToTerraform(this._zone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+      account: {
+        value: zoneAccountToHclTerraform(this._account.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ZoneAccount",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      jump_start: {
-        value: cdktf.booleanToHclTerraform(this._jumpStart),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      paused: {
-        value: cdktf.booleanToHclTerraform(this._paused),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      plan: {
-        value: cdktf.stringToHclTerraform(this._plan),
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -331,12 +510,6 @@ export class Zone extends cdktf.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
-      },
-      zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
     };
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list#id DataCloudflareList#id}
+  * The unique ID of the list.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
   */
-  readonly id?: string;
-  /**
-  * The list name to target for the resource.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list#name DataCloudflareList#name}
-  */
-  readonly name: string;
+  readonly listId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list cloudflare_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list cloudflare_list}
 */
 export class DataCloudflareList extends cdktf.TerraformDataSource {
 
@@ -50,7 +43,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareList to import
-  * @param importFromId The id of the existing DataCloudflareList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +55,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list cloudflare_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list cloudflare_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +66,8 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -85,8 +78,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._id = config.id;
-    this._name = config.name;
+    this._listId = config.listId;
   }
 
   // ==========
@@ -106,25 +98,19 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
     return this._accountId;
   }
 
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // kind - computed: true, optional: false, required: false
@@ -132,22 +118,40 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
     return this.getStringAttribute('kind');
   }
 
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
+  // list_id - computed: false, optional: true, required: false
+  private _listId?: string; 
+  public get listId() {
+    return this.getStringAttribute('list_id');
+  }
+  public set listId(value: string) {
+    this._listId = value;
+  }
+  public resetListId() {
+    this._listId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listIdInput() {
+    return this._listId;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
+  }
+
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
+
+  // num_items - computed: true, optional: false, required: false
+  public get numItems() {
+    return this.getNumberAttribute('num_items');
   }
 
-  // numitems - computed: true, optional: false, required: false
-  public get numitems() {
-    return this.getNumberAttribute('numitems');
+  // num_referencing_filters - computed: true, optional: false, required: false
+  public get numReferencingFilters() {
+    return this.getNumberAttribute('num_referencing_filters');
   }
 
   // =========
@@ -157,8 +161,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      list_id: cdktf.stringToTerraform(this._listId),
     };
   }
 
@@ -170,14 +173,8 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      name: {
-        value: cdktf.stringToHclTerraform(this._name),
+      list_id: {
+        value: cdktf.stringToHclTerraform(this._listId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

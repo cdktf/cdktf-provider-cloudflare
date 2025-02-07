@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface LogpushOwnershipChallengeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
+  * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge#account_id LogpushOwnershipChallenge#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge#account_id LogpushOwnershipChallenge#account_id}
   */
   readonly accountId?: string;
   /**
-  * Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#destination). **Modifying this attribute will force creation of a new resource.**
+  * Uniquely identifies a resource (such as an s3 bucket) where data will be pushed. Additional configuration parameters supported by the destination may be included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}
   */
   readonly destinationConf: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge#id LogpushOwnershipChallenge#id}
+  * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge#zone_id LogpushOwnershipChallenge#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge#zone_id LogpushOwnershipChallenge#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}
 */
 export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
 
@@ -56,7 +49,7 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogpushOwnershipChallenge resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogpushOwnershipChallenge to import
-  * @param importFromId The id of the existing LogpushOwnershipChallenge that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogpushOwnershipChallenge that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogpushOwnershipChallenge to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +61,7 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,8 +72,8 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_logpush_ownership_challenge',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -92,7 +85,6 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._destinationConf = config.destinationConf;
-    this._id = config.id;
     this._zoneId = config.zoneId;
   }
 
@@ -129,25 +121,19 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
     return this._destinationConf;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  // filename - computed: true, optional: false, required: false
+  public get filename() {
+    return this.getStringAttribute('filename');
   }
 
-  // ownership_challenge_filename - computed: true, optional: false, required: false
-  public get ownershipChallengeFilename() {
-    return this.getStringAttribute('ownership_challenge_filename');
+  // message - computed: true, optional: false, required: false
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+
+  // valid - computed: true, optional: false, required: false
+  public get valid() {
+    return this.getBooleanAttribute('valid');
   }
 
   // zone_id - computed: false, optional: true, required: false
@@ -174,7 +160,6 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       destination_conf: cdktf.stringToTerraform(this._destinationConf),
-      id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
@@ -189,12 +174,6 @@ export class LogpushOwnershipChallenge extends cdktf.TerraformResource {
       },
       destination_conf: {
         value: cdktf.stringToHclTerraform(this._destinationConf),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

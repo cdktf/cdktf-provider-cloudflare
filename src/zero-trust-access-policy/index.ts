@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,127 +13,100 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustAccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#account_id ZeroTrustAccessPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#account_id ZeroTrustAccessPolicy#account_id}
   */
-  readonly accountId?: string;
+  readonly accountId: string;
   /**
-  * The ID of the application the policy is associated with. Required when using `precedence`. **Modifying this attribute will force creation of a new resource.**
+  * Administrators who can approve a temporary authentication request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#application_id ZeroTrustAccessPolicy#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#approval_groups ZeroTrustAccessPolicy#approval_groups}
   */
-  readonly applicationId?: string;
+  readonly approvalGroups?: ZeroTrustAccessPolicyApprovalGroups[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#approval_required ZeroTrustAccessPolicy#approval_required}
+  * Requires the user to request access from an administrator at the start of each session.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#approval_required ZeroTrustAccessPolicy#approval_required}
   */
   readonly approvalRequired?: boolean | cdktf.IResolvable;
   /**
-  * Defines the action Access will take if the policy matches the user. Available values: `allow`, `deny`, `non_identity`, `bypass`.
+  * The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#decision ZeroTrustAccessPolicy#decision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#decision ZeroTrustAccessPolicy#decision}
   */
   readonly decision: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  * Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Require this application to be served in an isolated browser for users matching this policy.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#isolation_required ZeroTrustAccessPolicy#isolation_required}
-  */
-  readonly isolationRequired?: boolean | cdktf.IResolvable;
-  /**
-  * Friendly name of the Access Policy.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
-  */
-  readonly name: string;
-  /**
-  * The unique precedence for policies on a single application. Required when using `application_id`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#precedence ZeroTrustAccessPolicy#precedence}
-  */
-  readonly precedence?: number;
-  /**
-  * The prompt to display to the user for a justification for accessing the resource. Required when using `purpose_justification_required`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#purpose_justification_prompt ZeroTrustAccessPolicy#purpose_justification_prompt}
-  */
-  readonly purposeJustificationPrompt?: string;
-  /**
-  * Whether to prompt the user for a justification for accessing the resource.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#purpose_justification_required ZeroTrustAccessPolicy#purpose_justification_required}
-  */
-  readonly purposeJustificationRequired?: boolean | cdktf.IResolvable;
-  /**
-  * How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#session_duration ZeroTrustAccessPolicy#session_duration}
-  */
-  readonly sessionDuration?: string;
-  /**
-  * The zone identifier to target for the resource. Conflicts with `account_id`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#zone_id ZeroTrustAccessPolicy#zone_id}
-  */
-  readonly zoneId?: string;
-  /**
-  * approval_group block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#approval_group ZeroTrustAccessPolicy#approval_group}
-  */
-  readonly approvalGroup?: ZeroTrustAccessPolicyApprovalGroup[] | cdktf.IResolvable;
-  /**
-  * connection_rules block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#connection_rules ZeroTrustAccessPolicy#connection_rules}
-  */
-  readonly connectionRules?: ZeroTrustAccessPolicyConnectionRules;
-  /**
-  * exclude block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#exclude ZeroTrustAccessPolicy#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#exclude ZeroTrustAccessPolicy#exclude}
   */
   readonly exclude?: ZeroTrustAccessPolicyExclude[] | cdktf.IResolvable;
   /**
-  * include block
+  * Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#include ZeroTrustAccessPolicy#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#include ZeroTrustAccessPolicy#include}
   */
   readonly include: ZeroTrustAccessPolicyInclude[] | cdktf.IResolvable;
   /**
-  * require block
+  * Require this application to be served in an isolated browser for users matching this policy. 'Client Web Isolation' must be on for the account in order to use this feature.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#require ZeroTrustAccessPolicy#require}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#isolation_required ZeroTrustAccessPolicy#isolation_required}
+  */
+  readonly isolationRequired?: boolean | cdktf.IResolvable;
+  /**
+  * The name of the Access policy.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  */
+  readonly name: string;
+  /**
+  * A custom message that will appear on the purpose justification screen.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#purpose_justification_prompt ZeroTrustAccessPolicy#purpose_justification_prompt}
+  */
+  readonly purposeJustificationPrompt?: string;
+  /**
+  * Require users to enter a justification when they log in to the application.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#purpose_justification_required ZeroTrustAccessPolicy#purpose_justification_required}
+  */
+  readonly purposeJustificationRequired?: boolean | cdktf.IResolvable;
+  /**
+  * Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#require ZeroTrustAccessPolicy#require}
   */
   readonly require?: ZeroTrustAccessPolicyRequire[] | cdktf.IResolvable;
-}
-export interface ZeroTrustAccessPolicyApprovalGroup {
   /**
-  * Number of approvals needed.
+  * The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#approvals_needed ZeroTrustAccessPolicy#approvals_needed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#session_duration ZeroTrustAccessPolicy#session_duration}
+  */
+  readonly sessionDuration?: string;
+}
+export interface ZeroTrustAccessPolicyApprovalGroups {
+  /**
+  * The number of approvals needed to obtain access.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#approvals_needed ZeroTrustAccessPolicy#approvals_needed}
   */
   readonly approvalsNeeded: number;
   /**
-  * List of emails to request approval from.
+  * A list of emails that can approve the access request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_addresses ZeroTrustAccessPolicy#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_addresses ZeroTrustAccessPolicy#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_list_uuid ZeroTrustAccessPolicy#email_list_uuid}
+  * The UUID of an re-usable email list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_list_uuid ZeroTrustAccessPolicy#email_list_uuid}
   */
   readonly emailListUuid?: string;
 }
 
-export function zeroTrustAccessPolicyApprovalGroupToTerraform(struct?: ZeroTrustAccessPolicyApprovalGroup | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyApprovalGroupsToTerraform(struct?: ZeroTrustAccessPolicyApprovalGroups | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -146,7 +119,7 @@ export function zeroTrustAccessPolicyApprovalGroupToTerraform(struct?: ZeroTrust
 }
 
 
-export function zeroTrustAccessPolicyApprovalGroupToHclTerraform(struct?: ZeroTrustAccessPolicyApprovalGroup | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyApprovalGroupsToHclTerraform(struct?: ZeroTrustAccessPolicyApprovalGroups | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -176,7 +149,7 @@ export function zeroTrustAccessPolicyApprovalGroupToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyApprovalGroupsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -190,7 +163,7 @@ export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyApprovalGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyApprovalGroups | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -211,7 +184,7 @@ export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyApprovalGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyApprovalGroups | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -232,7 +205,7 @@ export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.Com
     }
   }
 
-  // approvals_needed - computed: false, optional: false, required: true
+  // approvals_needed - computed: true, optional: false, required: true
   private _approvalsNeeded?: number; 
   public get approvalsNeeded() {
     return this.getNumberAttribute('approvals_needed');
@@ -245,7 +218,7 @@ export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.Com
     return this._approvalsNeeded;
   }
 
-  // email_addresses - computed: false, optional: true, required: false
+  // email_addresses - computed: true, optional: true, required: false
   private _emailAddresses?: string[]; 
   public get emailAddresses() {
     return this.getListAttribute('email_addresses');
@@ -261,7 +234,7 @@ export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.Com
     return this._emailAddresses;
   }
 
-  // email_list_uuid - computed: false, optional: true, required: false
+  // email_list_uuid - computed: true, optional: true, required: false
   private _emailListUuid?: string; 
   public get emailListUuid() {
     return this.getStringAttribute('email_list_uuid');
@@ -278,8 +251,8 @@ export class ZeroTrustAccessPolicyApprovalGroupOutputReference extends cdktf.Com
   }
 }
 
-export class ZeroTrustAccessPolicyApprovalGroupList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyApprovalGroup[] | cdktf.IResolvable
+export class ZeroTrustAccessPolicyApprovalGroupsList extends cdktf.ComplexList {
+  public internalValue? : ZeroTrustAccessPolicyApprovalGroups[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -293,231 +266,89 @@ export class ZeroTrustAccessPolicyApprovalGroupList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): ZeroTrustAccessPolicyApprovalGroupOutputReference {
-    return new ZeroTrustAccessPolicyApprovalGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): ZeroTrustAccessPolicyApprovalGroupsOutputReference {
+    return new ZeroTrustAccessPolicyApprovalGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ZeroTrustAccessPolicyConnectionRulesSsh {
-  /**
-  * Allows connecting to Unix username that matches the authenticating email prefix.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#allow_email_alias ZeroTrustAccessPolicy#allow_email_alias}
-  */
-  readonly allowEmailAlias?: boolean | cdktf.IResolvable;
-  /**
-  * Contains the Unix usernames that may be used when connecting over SSH.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#usernames ZeroTrustAccessPolicy#usernames}
-  */
-  readonly usernames: string[];
+export interface ZeroTrustAccessPolicyExcludeAnyValidServiceToken {
 }
 
-export function zeroTrustAccessPolicyConnectionRulesSshToTerraform(struct?: ZeroTrustAccessPolicyConnectionRulesSshOutputReference | ZeroTrustAccessPolicyConnectionRulesSsh): any {
+export function zeroTrustAccessPolicyExcludeAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessPolicyExcludeAnyValidServiceToken | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_email_alias: cdktf.booleanToTerraform(struct!.allowEmailAlias),
-    usernames: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.usernames),
   }
 }
 
 
-export function zeroTrustAccessPolicyConnectionRulesSshToHclTerraform(struct?: ZeroTrustAccessPolicyConnectionRulesSshOutputReference | ZeroTrustAccessPolicyConnectionRulesSsh): any {
+export function zeroTrustAccessPolicyExcludeAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeAnyValidServiceToken | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    allow_email_alias: {
-      value: cdktf.booleanToHclTerraform(struct!.allowEmailAlias),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    usernames: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.usernames),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
-export class ZeroTrustAccessPolicyConnectionRulesSshOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyExcludeAnyValidServiceTokenOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyConnectionRulesSsh | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyExcludeAnyValidServiceToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowEmailAlias !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowEmailAlias = this._allowEmailAlias;
-    }
-    if (this._usernames !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.usernames = this._usernames;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyConnectionRulesSsh | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeAnyValidServiceToken | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._allowEmailAlias = undefined;
-      this._usernames = undefined;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._allowEmailAlias = value.allowEmailAlias;
-      this._usernames = value.usernames;
+      this.resolvableValue = undefined;
     }
-  }
-
-  // allow_email_alias - computed: false, optional: true, required: false
-  private _allowEmailAlias?: boolean | cdktf.IResolvable; 
-  public get allowEmailAlias() {
-    return this.getBooleanAttribute('allow_email_alias');
-  }
-  public set allowEmailAlias(value: boolean | cdktf.IResolvable) {
-    this._allowEmailAlias = value;
-  }
-  public resetAllowEmailAlias() {
-    this._allowEmailAlias = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowEmailAliasInput() {
-    return this._allowEmailAlias;
-  }
-
-  // usernames - computed: false, optional: false, required: true
-  private _usernames?: string[]; 
-  public get usernames() {
-    return this.getListAttribute('usernames');
-  }
-  public set usernames(value: string[]) {
-    this._usernames = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernamesInput() {
-    return this._usernames;
-  }
-}
-export interface ZeroTrustAccessPolicyConnectionRules {
-  /**
-  * ssh block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ssh ZeroTrustAccessPolicy#ssh}
-  */
-  readonly ssh: ZeroTrustAccessPolicyConnectionRulesSsh;
-}
-
-export function zeroTrustAccessPolicyConnectionRulesToTerraform(struct?: ZeroTrustAccessPolicyConnectionRulesOutputReference | ZeroTrustAccessPolicyConnectionRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    ssh: zeroTrustAccessPolicyConnectionRulesSshToTerraform(struct!.ssh),
-  }
-}
-
-
-export function zeroTrustAccessPolicyConnectionRulesToHclTerraform(struct?: ZeroTrustAccessPolicyConnectionRulesOutputReference | ZeroTrustAccessPolicyConnectionRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    ssh: {
-      value: zeroTrustAccessPolicyConnectionRulesSshToHclTerraform(struct!.ssh),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyConnectionRulesSshList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ZeroTrustAccessPolicyConnectionRulesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ZeroTrustAccessPolicyConnectionRules | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._ssh?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ssh = this._ssh?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ZeroTrustAccessPolicyConnectionRules | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._ssh.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._ssh.internalValue = value.ssh;
-    }
-  }
-
-  // ssh - computed: false, optional: false, required: true
-  private _ssh = new ZeroTrustAccessPolicyConnectionRulesSshOutputReference(this, "ssh");
-  public get ssh() {
-    return this._ssh;
-  }
-  public putSsh(value: ZeroTrustAccessPolicyConnectionRulesSsh) {
-    this._ssh.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshInput() {
-    return this._ssh.internalValue;
   }
 }
 export interface ZeroTrustAccessPolicyExcludeAuthContext {
   /**
-  * The ACID of the Authentication Context.
+  * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ac_id ZeroTrustAccessPolicy#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ac_id ZeroTrustAccessPolicy#ac_id}
   */
   readonly acId: string;
   /**
-  * The ID of the Authentication Context.
+  * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * The ID of the Azure identity provider.
+  * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -572,11 +403,9 @@ export class ZeroTrustAccessPolicyExcludeAuthContextOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyExcludeAuthContext | cdktf.IResolvable | undefined {
@@ -621,7 +450,7 @@ export class ZeroTrustAccessPolicyExcludeAuthContextOutputReference extends cdkt
     }
   }
 
-  // ac_id - computed: false, optional: false, required: true
+  // ac_id - computed: true, optional: false, required: true
   private _acId?: string; 
   public get acId() {
     return this.getStringAttribute('ac_id');
@@ -634,7 +463,7 @@ export class ZeroTrustAccessPolicyExcludeAuthContextOutputReference extends cdkt
     return this._acId;
   }
 
-  // id - computed: false, optional: false, required: true
+  // id - computed: true, optional: false, required: true
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -647,7 +476,7 @@ export class ZeroTrustAccessPolicyExcludeAuthContextOutputReference extends cdkt
     return this._id;
   }
 
-  // identity_provider_id - computed: false, optional: false, required: true
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -660,67 +489,140 @@ export class ZeroTrustAccessPolicyExcludeAuthContextOutputReference extends cdkt
     return this._identityProviderId;
   }
 }
-
-export class ZeroTrustAccessPolicyExcludeAuthContextList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeAuthContext[] | cdktf.IResolvable
-
+export interface ZeroTrustAccessPolicyExcludeAuthMethod {
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyExcludeAuthContextOutputReference {
-    return new ZeroTrustAccessPolicyExcludeAuthContextOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ZeroTrustAccessPolicyExcludeAzure {
-  /**
-  * The ID of the Azure group or user.
+  * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
   */
-  readonly id?: string[];
-  /**
-  * The ID of the Azure identity provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
-  */
-  readonly identityProviderId?: string;
+  readonly authMethod: string;
 }
 
-export function zeroTrustAccessPolicyExcludeAzureToTerraform(struct?: ZeroTrustAccessPolicyExcludeAzure | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyExcludeAuthMethodToTerraform(struct?: ZeroTrustAccessPolicyExcludeAuthMethod | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
+    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeAuthMethodToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeAuthMethod | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_method: {
+      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeAuthMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeAuthMethod | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authMethod = this._authMethod;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeAuthMethod | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._authMethod = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._authMethod = value.authMethod;
+    }
+  }
+
+  // auth_method - computed: true, optional: false, required: true
+  private _authMethod?: string; 
+  public get authMethod() {
+    return this.getStringAttribute('auth_method');
+  }
+  public set authMethod(value: string) {
+    this._authMethod = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodInput() {
+    return this._authMethod;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeAzureAd {
+  /**
+  * The ID of an Azure group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * The ID of your Azure identity provider.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  */
+  readonly identityProviderId: string;
+}
+
+export function zeroTrustAccessPolicyExcludeAzureAdToTerraform(struct?: ZeroTrustAccessPolicyExcludeAzureAd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessPolicyExcludeAzureToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeAzure | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyExcludeAzureAdToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeAzureAd | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.id),
+      value: cdktf.stringToHclTerraform(struct!.id),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
     identity_provider_id: {
       value: cdktf.stringToHclTerraform(struct!.identityProviderId),
@@ -734,21 +636,19 @@ export function zeroTrustAccessPolicyExcludeAzureToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyExcludeAzureOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyExcludeAzureAdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyExcludeAzure | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyExcludeAzureAd | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -765,7 +665,7 @@ export class ZeroTrustAccessPolicyExcludeAzureOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyExcludeAzure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeAzureAd | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -784,23 +684,20 @@ export class ZeroTrustAccessPolicyExcludeAzureOutputReference extends cdktf.Comp
     }
   }
 
-  // id - computed: false, optional: true, required: false
-  private _id?: string[]; 
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
   public get id() {
-    return this.getListAttribute('id');
+    return this.getStringAttribute('id');
   }
-  public set id(value: string[]) {
+  public set id(value: string) {
     this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -808,47 +705,610 @@ export class ZeroTrustAccessPolicyExcludeAzureOutputReference extends cdktf.Comp
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyExcludeCertificate {
+}
 
-export class ZeroTrustAccessPolicyExcludeAzureList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeAzure[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyExcludeCertificateToTerraform(struct?: ZeroTrustAccessPolicyExcludeCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeCertificateToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyExcludeCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
+  public get internalValue(): ZeroTrustAccessPolicyExcludeCertificate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeCertificate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeCommonName {
   /**
-  * @param index the index of the item to return
+  * The common name to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
   */
-  public get(index: number): ZeroTrustAccessPolicyExcludeAzureOutputReference {
-    return new ZeroTrustAccessPolicyExcludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  readonly commonName: string;
+}
+
+export function zeroTrustAccessPolicyExcludeCommonNameToTerraform(struct?: ZeroTrustAccessPolicyExcludeCommonName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    common_name: cdktf.stringToTerraform(struct!.commonName),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeCommonNameToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeCommonName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    common_name: {
+      value: cdktf.stringToHclTerraform(struct!.commonName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeCommonNameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeCommonName | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commonName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeCommonName | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._commonName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._commonName = value.commonName;
+    }
+  }
+
+  // common_name - computed: true, optional: false, required: true
+  private _commonName?: string; 
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+  public set commonName(value: string) {
+    this._commonName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeDevicePosture {
+  /**
+  * The ID of a device posture integration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#integration_uid ZeroTrustAccessPolicy#integration_uid}
+  */
+  readonly integrationUid: string;
+}
+
+export function zeroTrustAccessPolicyExcludeDevicePostureToTerraform(struct?: ZeroTrustAccessPolicyExcludeDevicePosture | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    integration_uid: cdktf.stringToTerraform(struct!.integrationUid),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeDevicePostureToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeDevicePosture | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    integration_uid: {
+      value: cdktf.stringToHclTerraform(struct!.integrationUid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeDevicePostureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeDevicePosture | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._integrationUid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrationUid = this._integrationUid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeDevicePosture | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._integrationUid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._integrationUid = value.integrationUid;
+    }
+  }
+
+  // integration_uid - computed: true, optional: false, required: true
+  private _integrationUid?: string; 
+  public get integrationUid() {
+    return this.getStringAttribute('integration_uid');
+  }
+  public set integrationUid(value: string) {
+    this._integrationUid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrationUidInput() {
+    return this._integrationUid;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeEmail {
+  /**
+  * The email of the user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  */
+  readonly email: string;
+}
+
+export function zeroTrustAccessPolicyExcludeEmailToTerraform(struct?: ZeroTrustAccessPolicyExcludeEmail | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktf.stringToTerraform(struct!.email),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeEmailToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeEmail | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeEmailOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeEmail | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeEmail | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+    }
+  }
+
+  // email - computed: true, optional: false, required: true
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeEmailDomain {
+  /**
+  * The email domain to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#domain ZeroTrustAccessPolicy#domain}
+  */
+  readonly domain: string;
+}
+
+export function zeroTrustAccessPolicyExcludeEmailDomainToTerraform(struct?: ZeroTrustAccessPolicyExcludeEmailDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeEmailDomainToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeEmailDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeEmailDomainOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeEmailDomain | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeEmailDomain | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domain = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domain = value.domain;
+    }
+  }
+
+  // domain - computed: true, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeEmailListStruct {
+  /**
+  * The ID of a previously created email list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyExcludeEmailListStructToTerraform(struct?: ZeroTrustAccessPolicyExcludeEmailListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeEmailListStructToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeEmailListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeEmailListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeEmailListStruct | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeEmailListStruct | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeEveryone {
+}
+
+export function zeroTrustAccessPolicyExcludeEveryoneToTerraform(struct?: ZeroTrustAccessPolicyExcludeEveryone | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeEveryoneToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeEveryone | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyExcludeEveryoneOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeEveryone | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeEveryone | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
   }
 }
 export interface ZeroTrustAccessPolicyExcludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#evaluate_url ZeroTrustAccessPolicy#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#evaluate_url ZeroTrustAccessPolicy#evaluate_url}
   */
-  readonly evaluateUrl?: string;
+  readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#keys_url ZeroTrustAccessPolicy#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#keys_url ZeroTrustAccessPolicy#keys_url}
   */
-  readonly keysUrl?: string;
+  readonly keysUrl: string;
 }
 
 export function zeroTrustAccessPolicyExcludeExternalEvaluationToTerraform(struct?: ZeroTrustAccessPolicyExcludeExternalEvaluation | cdktf.IResolvable): any {
@@ -894,11 +1354,9 @@ export class ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyExcludeExternalEvaluation | cdktf.IResolvable | undefined {
@@ -937,7 +1395,7 @@ export class ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference exten
     }
   }
 
-  // evaluate_url - computed: false, optional: true, required: false
+  // evaluate_url - computed: true, optional: false, required: true
   private _evaluateUrl?: string; 
   public get evaluateUrl() {
     return this.getStringAttribute('evaluate_url');
@@ -945,15 +1403,12 @@ export class ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference exten
   public set evaluateUrl(value: string) {
     this._evaluateUrl = value;
   }
-  public resetEvaluateUrl() {
-    this._evaluateUrl = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get evaluateUrlInput() {
     return this._evaluateUrl;
   }
 
-  // keys_url - computed: false, optional: true, required: false
+  // keys_url - computed: true, optional: false, required: true
   private _keysUrl?: string; 
   public get keysUrl() {
     return this.getStringAttribute('keys_url');
@@ -961,56 +1416,126 @@ export class ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference exten
   public set keysUrl(value: string) {
     this._keysUrl = value;
   }
-  public resetKeysUrl() {
-    this._keysUrl = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get keysUrlInput() {
     return this._keysUrl;
   }
 }
+export interface ZeroTrustAccessPolicyExcludeGeo {
+  /**
+  * The country code that should be matched.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#country_code ZeroTrustAccessPolicy#country_code}
+  */
+  readonly countryCode: string;
+}
 
-export class ZeroTrustAccessPolicyExcludeExternalEvaluationList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeExternalEvaluation[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyExcludeGeoToTerraform(struct?: ZeroTrustAccessPolicyExcludeGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    country_code: cdktf.stringToTerraform(struct!.countryCode),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeGeoToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeGeoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference {
-    return new ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyExcludeGeo | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._countryCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countryCode = this._countryCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeGeo | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._countryCode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._countryCode = value.countryCode;
+    }
+  }
+
+  // country_code - computed: true, optional: false, required: true
+  private _countryCode?: string; 
+  public get countryCode() {
+    return this.getStringAttribute('country_code');
+  }
+  public set countryCode(value: string) {
+    this._countryCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryCodeInput() {
+    return this._countryCode;
   }
 }
-export interface ZeroTrustAccessPolicyExcludeGithub {
+export interface ZeroTrustAccessPolicyExcludeGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
   */
-  readonly name?: string;
+  readonly name: string;
   /**
-  * The teams that should be matched.
+  * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#teams ZeroTrustAccessPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#team ZeroTrustAccessPolicy#team}
   */
-  readonly teams?: string[];
+  readonly team?: string;
 }
 
-export function zeroTrustAccessPolicyExcludeGithubToTerraform(struct?: ZeroTrustAccessPolicyExcludeGithub | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyExcludeGithubOrganizationToTerraform(struct?: ZeroTrustAccessPolicyExcludeGithubOrganization | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1018,12 +1543,12 @@ export function zeroTrustAccessPolicyExcludeGithubToTerraform(struct?: ZeroTrust
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
+    team: cdktf.stringToTerraform(struct!.team),
   }
 }
 
 
-export function zeroTrustAccessPolicyExcludeGithubToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeGithub | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyExcludeGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeGithubOrganization | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1041,11 +1566,11 @@ export function zeroTrustAccessPolicyExcludeGithubToHclTerraform(struct?: ZeroTr
       type: "simple",
       storageClassType: "string",
     },
-    teams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.teams),
+    team: {
+      value: cdktf.stringToHclTerraform(struct!.team),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -1053,21 +1578,19 @@ export function zeroTrustAccessPolicyExcludeGithubToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyExcludeGithubOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyExcludeGithubOrganizationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyExcludeGithub | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyExcludeGithubOrganization | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1081,20 +1604,20 @@ export class ZeroTrustAccessPolicyExcludeGithubOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._teams !== undefined) {
+    if (this._team !== undefined) {
       hasAnyValues = true;
-      internalValueResult.teams = this._teams;
+      internalValueResult.team = this._team;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyExcludeGithub | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeGithubOrganization | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityProviderId = undefined;
       this._name = undefined;
-      this._teams = undefined;
+      this._team = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1105,11 +1628,11 @@ export class ZeroTrustAccessPolicyExcludeGithubOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._identityProviderId = value.identityProviderId;
       this._name = value.name;
-      this._teams = value.teams;
+      this._team = value.team;
     }
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -1117,15 +1640,12 @@ export class ZeroTrustAccessPolicyExcludeGithubOutputReference extends cdktf.Com
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -1133,61 +1653,134 @@ export class ZeroTrustAccessPolicyExcludeGithubOutputReference extends cdktf.Com
   public set name(value: string) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // teams - computed: false, optional: true, required: false
-  private _teams?: string[]; 
-  public get teams() {
-    return this.getListAttribute('teams');
+  // team - computed: true, optional: true, required: false
+  private _team?: string; 
+  public get team() {
+    return this.getStringAttribute('team');
   }
-  public set teams(value: string[]) {
-    this._teams = value;
+  public set team(value: string) {
+    this._team = value;
   }
-  public resetTeams() {
-    this._teams = undefined;
+  public resetTeam() {
+    this._team = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get teamsInput() {
-    return this._teams;
+  public get teamInput() {
+    return this._team;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeGroup {
+  /**
+  * The ID of a previously created Access group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyExcludeGroupToTerraform(struct?: ZeroTrustAccessPolicyExcludeGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
   }
 }
 
-export class ZeroTrustAccessPolicyExcludeGithubList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeGithub[] | cdktf.IResolvable
+
+export function zeroTrustAccessPolicyExcludeGroupToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyExcludeGithubOutputReference {
-    return new ZeroTrustAccessPolicyExcludeGithubOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyExcludeGroup | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeGroup | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 }
 export interface ZeroTrustAccessPolicyExcludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
   */
-  readonly email: string[];
+  readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -1198,7 +1791,7 @@ export function zeroTrustAccessPolicyExcludeGsuiteToTerraform(struct?: ZeroTrust
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email: cdktf.stringToTerraform(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -1211,10 +1804,10 @@ export function zeroTrustAccessPolicyExcludeGsuiteToHclTerraform(struct?: ZeroTr
   }
   const attrs = {
     email: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
+      value: cdktf.stringToHclTerraform(struct!.email),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
     identity_provider_id: {
       value: cdktf.stringToHclTerraform(struct!.identityProviderId),
@@ -1235,11 +1828,9 @@ export class ZeroTrustAccessPolicyExcludeGsuiteOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyExcludeGsuite | cdktf.IResolvable | undefined {
@@ -1278,12 +1869,12 @@ export class ZeroTrustAccessPolicyExcludeGsuiteOutputReference extends cdktf.Com
     }
   }
 
-  // email - computed: false, optional: false, required: true
-  private _email?: string[]; 
+  // email - computed: true, optional: false, required: true
+  private _email?: string; 
   public get email() {
-    return this.getListAttribute('email');
+    return this.getStringAttribute('email');
   }
-  public set email(value: string[]) {
+  public set email(value: string) {
     this._email = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1291,7 +1882,7 @@ export class ZeroTrustAccessPolicyExcludeGsuiteOutputReference extends cdktf.Com
     return this._email;
   }
 
-  // identity_provider_id - computed: false, optional: false, required: true
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -1304,39 +1895,208 @@ export class ZeroTrustAccessPolicyExcludeGsuiteOutputReference extends cdktf.Com
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyExcludeIp {
+  /**
+  * An IPv4 or IPv6 CIDR block.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+  */
+  readonly ip: string;
+}
 
-export class ZeroTrustAccessPolicyExcludeGsuiteList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeGsuite[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyExcludeIpToTerraform(struct?: ZeroTrustAccessPolicyExcludeIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip: cdktf.stringToTerraform(struct!.ip),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeIpToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
+  public get internalValue(): ZeroTrustAccessPolicyExcludeIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ip = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ip = value.ip;
+    }
+  }
+
+  // ip - computed: true, optional: false, required: true
+  private _ip?: string; 
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+  public set ip(value: string) {
+    this._ip = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+}
+export interface ZeroTrustAccessPolicyExcludeIpListStruct {
   /**
-  * @param index the index of the item to return
+  * The ID of a previously created IP list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  public get(index: number): ZeroTrustAccessPolicyExcludeGsuiteOutputReference {
-    return new ZeroTrustAccessPolicyExcludeGsuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyExcludeIpListStructToTerraform(struct?: ZeroTrustAccessPolicyExcludeIpListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeIpListStructToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeIpListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeIpListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyExcludeIpListStruct | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeIpListStruct | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 }
 export interface ZeroTrustAccessPolicyExcludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
   /**
-  * The name of the Okta Group.
+  * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
   */
-  readonly name?: string[];
+  readonly name: string;
 }
 
 export function zeroTrustAccessPolicyExcludeOktaToTerraform(struct?: ZeroTrustAccessPolicyExcludeOkta | cdktf.IResolvable): any {
@@ -1346,7 +2106,7 @@ export function zeroTrustAccessPolicyExcludeOktaToTerraform(struct?: ZeroTrustAc
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
+    name: cdktf.stringToTerraform(struct!.name),
   }
 }
 
@@ -1364,10 +2124,10 @@ export function zeroTrustAccessPolicyExcludeOktaToHclTerraform(struct?: ZeroTrus
       storageClassType: "string",
     },
     name: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.name),
+      value: cdktf.stringToHclTerraform(struct!.name),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -1382,11 +2142,9 @@ export class ZeroTrustAccessPolicyExcludeOktaOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyExcludeOkta | cdktf.IResolvable | undefined {
@@ -1425,7 +2183,7 @@ export class ZeroTrustAccessPolicyExcludeOktaOutputReference extends cdktf.Compl
     }
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -1433,69 +2191,43 @@ export class ZeroTrustAccessPolicyExcludeOktaOutputReference extends cdktf.Compl
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string[]; 
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
   public get name() {
-    return this.getListAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string[]) {
+  public set name(value: string) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 }
-
-export class ZeroTrustAccessPolicyExcludeOktaList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeOkta[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyExcludeOktaOutputReference {
-    return new ZeroTrustAccessPolicyExcludeOktaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface ZeroTrustAccessPolicyExcludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#attribute_name ZeroTrustAccessPolicy#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#attribute_name ZeroTrustAccessPolicy#attribute_name}
   */
-  readonly attributeName?: string;
+  readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#attribute_value ZeroTrustAccessPolicy#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#attribute_value ZeroTrustAccessPolicy#attribute_value}
   */
-  readonly attributeValue?: string;
+  readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
 }
 
 export function zeroTrustAccessPolicyExcludeSamlToTerraform(struct?: ZeroTrustAccessPolicyExcludeSaml | cdktf.IResolvable): any {
@@ -1548,11 +2280,9 @@ export class ZeroTrustAccessPolicyExcludeSamlOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyExcludeSaml | cdktf.IResolvable | undefined {
@@ -1597,7 +2327,7 @@ export class ZeroTrustAccessPolicyExcludeSamlOutputReference extends cdktf.Compl
     }
   }
 
-  // attribute_name - computed: false, optional: true, required: false
+  // attribute_name - computed: true, optional: false, required: true
   private _attributeName?: string; 
   public get attributeName() {
     return this.getStringAttribute('attribute_name');
@@ -1605,15 +2335,12 @@ export class ZeroTrustAccessPolicyExcludeSamlOutputReference extends cdktf.Compl
   public set attributeName(value: string) {
     this._attributeName = value;
   }
-  public resetAttributeName() {
-    this._attributeName = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get attributeNameInput() {
     return this._attributeName;
   }
 
-  // attribute_value - computed: false, optional: true, required: false
+  // attribute_value - computed: true, optional: false, required: true
   private _attributeValue?: string; 
   public get attributeValue() {
     return this.getStringAttribute('attribute_value');
@@ -1621,15 +2348,12 @@ export class ZeroTrustAccessPolicyExcludeSamlOutputReference extends cdktf.Compl
   public set attributeValue(value: string) {
     this._attributeValue = value;
   }
-  public resetAttributeValue() {
-    this._attributeValue = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get attributeValueInput() {
     return this._attributeValue;
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -1637,173 +2361,193 @@ export class ZeroTrustAccessPolicyExcludeSamlOutputReference extends cdktf.Compl
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyExcludeServiceToken {
+  /**
+  * The ID of a Service Token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#token_id ZeroTrustAccessPolicy#token_id}
+  */
+  readonly tokenId: string;
+}
 
-export class ZeroTrustAccessPolicyExcludeSamlList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyExcludeSaml[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyExcludeServiceTokenToTerraform(struct?: ZeroTrustAccessPolicyExcludeServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    token_id: cdktf.stringToTerraform(struct!.tokenId),
+  }
+}
+
+
+export function zeroTrustAccessPolicyExcludeServiceTokenToHclTerraform(struct?: ZeroTrustAccessPolicyExcludeServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    token_id: {
+      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyExcludeServiceTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyExcludeSamlOutputReference {
-    return new ZeroTrustAccessPolicyExcludeSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyExcludeServiceToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tokenId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenId = this._tokenId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyExcludeServiceToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tokenId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tokenId = value.tokenId;
+    }
+  }
+
+  // token_id - computed: true, optional: false, required: true
+  private _tokenId?: string; 
+  public get tokenId() {
+    return this.getStringAttribute('token_id');
+  }
+  public set tokenId(value: string) {
+    this._tokenId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenIdInput() {
+    return this._tokenId;
   }
 }
 export interface ZeroTrustAccessPolicyExclude {
   /**
-  * Matches any valid Access service token.
+  * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#any_valid_service_token ZeroTrustAccessPolicy#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#any_valid_service_token ZeroTrustAccessPolicy#any_valid_service_token}
   */
-  readonly anyValidServiceToken?: boolean | cdktf.IResolvable;
+  readonly anyValidServiceToken?: ZeroTrustAccessPolicyExcludeAnyValidServiceToken;
   /**
-  * The type of authentication method. Refer to https://datatracker.ietf.org/doc/html/rfc8176#section-2 for possible types.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_context ZeroTrustAccessPolicy#auth_context}
   */
-  readonly authMethod?: string;
+  readonly authContext?: ZeroTrustAccessPolicyExcludeAuthContext;
   /**
-  * Matches any valid client certificate.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#certificate ZeroTrustAccessPolicy#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
   */
-  readonly certificate?: boolean | cdktf.IResolvable;
+  readonly authMethod?: ZeroTrustAccessPolicyExcludeAuthMethod;
   /**
-  * Matches a valid client certificate common name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#azure_ad ZeroTrustAccessPolicy#azure_ad}
   */
-  readonly commonName?: string;
+  readonly azureAd?: ZeroTrustAccessPolicyExcludeAzureAd;
   /**
-  * Overflow field if you need to have multiple common_name rules in a single policy.  Use in place of the singular common_name field.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#common_names ZeroTrustAccessPolicy#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#certificate ZeroTrustAccessPolicy#certificate}
   */
-  readonly commonNames?: string[];
+  readonly certificate?: ZeroTrustAccessPolicyExcludeCertificate;
   /**
-  * The ID of a device posture integration.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#device_posture ZeroTrustAccessPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
   */
-  readonly devicePosture?: string[];
+  readonly commonName?: ZeroTrustAccessPolicyExcludeCommonName;
   /**
-  * The email of the user.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#device_posture ZeroTrustAccessPolicy#device_posture}
   */
-  readonly email?: string[];
+  readonly devicePosture?: ZeroTrustAccessPolicyExcludeDevicePosture;
   /**
-  * The email domain to match.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_domain ZeroTrustAccessPolicy#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
   */
-  readonly emailDomain?: string[];
+  readonly email?: ZeroTrustAccessPolicyExcludeEmail;
   /**
-  * The ID of a previously created email list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_list ZeroTrustAccessPolicy#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_domain ZeroTrustAccessPolicy#email_domain}
   */
-  readonly emailList?: string[];
+  readonly emailDomain?: ZeroTrustAccessPolicyExcludeEmailDomain;
   /**
-  * Matches everyone.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#everyone ZeroTrustAccessPolicy#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_list ZeroTrustAccessPolicy#email_list}
   */
-  readonly everyone?: boolean | cdktf.IResolvable;
+  readonly emailList?: ZeroTrustAccessPolicyExcludeEmailListStruct;
   /**
-  * Matches a specific country.
+  * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#geo ZeroTrustAccessPolicy#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#everyone ZeroTrustAccessPolicy#everyone}
   */
-  readonly geo?: string[];
+  readonly everyone?: ZeroTrustAccessPolicyExcludeEveryone;
   /**
-  * The ID of a previously created Access group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#group ZeroTrustAccessPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#external_evaluation ZeroTrustAccessPolicy#external_evaluation}
   */
-  readonly group?: string[];
+  readonly externalEvaluation?: ZeroTrustAccessPolicyExcludeExternalEvaluation;
   /**
-  * An IPv4 or IPv6 CIDR block.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#geo ZeroTrustAccessPolicy#geo}
   */
-  readonly ip?: string[];
+  readonly geo?: ZeroTrustAccessPolicyExcludeGeo;
   /**
-  * The ID of a previously created IP list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ip_list ZeroTrustAccessPolicy#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#github_organization ZeroTrustAccessPolicy#github_organization}
   */
-  readonly ipList?: string[];
+  readonly githubOrganization?: ZeroTrustAccessPolicyExcludeGithubOrganization;
   /**
-  * The ID of a configured identity provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#login_method ZeroTrustAccessPolicy#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#group ZeroTrustAccessPolicy#group}
   */
-  readonly loginMethod?: string[];
+  readonly group?: ZeroTrustAccessPolicyExcludeGroup;
   /**
-  * The ID of an Access service token.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#service_token ZeroTrustAccessPolicy#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#gsuite ZeroTrustAccessPolicy#gsuite}
   */
-  readonly serviceToken?: string[];
+  readonly gsuite?: ZeroTrustAccessPolicyExcludeGsuite;
   /**
-  * auth_context block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#auth_context ZeroTrustAccessPolicy#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
   */
-  readonly authContext?: ZeroTrustAccessPolicyExcludeAuthContext[] | cdktf.IResolvable;
+  readonly ip?: ZeroTrustAccessPolicyExcludeIp;
   /**
-  * azure block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#azure ZeroTrustAccessPolicy#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip_list ZeroTrustAccessPolicy#ip_list}
   */
-  readonly azure?: ZeroTrustAccessPolicyExcludeAzure[] | cdktf.IResolvable;
+  readonly ipList?: ZeroTrustAccessPolicyExcludeIpListStruct;
   /**
-  * external_evaluation block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#external_evaluation ZeroTrustAccessPolicy#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#okta ZeroTrustAccessPolicy#okta}
   */
-  readonly externalEvaluation?: ZeroTrustAccessPolicyExcludeExternalEvaluation[] | cdktf.IResolvable;
+  readonly okta?: ZeroTrustAccessPolicyExcludeOkta;
   /**
-  * github block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#github ZeroTrustAccessPolicy#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#saml ZeroTrustAccessPolicy#saml}
   */
-  readonly github?: ZeroTrustAccessPolicyExcludeGithub[] | cdktf.IResolvable;
+  readonly saml?: ZeroTrustAccessPolicyExcludeSaml;
   /**
-  * gsuite block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#gsuite ZeroTrustAccessPolicy#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#service_token ZeroTrustAccessPolicy#service_token}
   */
-  readonly gsuite?: ZeroTrustAccessPolicyExcludeGsuite[] | cdktf.IResolvable;
-  /**
-  * okta block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#okta ZeroTrustAccessPolicy#okta}
-  */
-  readonly okta?: ZeroTrustAccessPolicyExcludeOkta[] | cdktf.IResolvable;
-  /**
-  * saml block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#saml ZeroTrustAccessPolicy#saml}
-  */
-  readonly saml?: ZeroTrustAccessPolicyExcludeSaml[] | cdktf.IResolvable;
+  readonly serviceToken?: ZeroTrustAccessPolicyExcludeServiceToken;
 }
 
 export function zeroTrustAccessPolicyExcludeToTerraform(struct?: ZeroTrustAccessPolicyExclude | cdktf.IResolvable): any {
@@ -1812,29 +2556,27 @@ export function zeroTrustAccessPolicyExcludeToTerraform(struct?: ZeroTrustAccess
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    any_valid_service_token: cdktf.booleanToTerraform(struct!.anyValidServiceToken),
-    auth_method: cdktf.stringToTerraform(struct!.authMethod),
-    certificate: cdktf.booleanToTerraform(struct!.certificate),
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    common_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commonNames),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
-    email_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailList),
-    everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
-    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
-    auth_context: cdktf.listMapper(zeroTrustAccessPolicyExcludeAuthContextToTerraform, true)(struct!.authContext),
-    azure: cdktf.listMapper(zeroTrustAccessPolicyExcludeAzureToTerraform, true)(struct!.azure),
-    external_evaluation: cdktf.listMapper(zeroTrustAccessPolicyExcludeExternalEvaluationToTerraform, true)(struct!.externalEvaluation),
-    github: cdktf.listMapper(zeroTrustAccessPolicyExcludeGithubToTerraform, true)(struct!.github),
-    gsuite: cdktf.listMapper(zeroTrustAccessPolicyExcludeGsuiteToTerraform, true)(struct!.gsuite),
-    okta: cdktf.listMapper(zeroTrustAccessPolicyExcludeOktaToTerraform, true)(struct!.okta),
-    saml: cdktf.listMapper(zeroTrustAccessPolicyExcludeSamlToTerraform, true)(struct!.saml),
+    any_valid_service_token: zeroTrustAccessPolicyExcludeAnyValidServiceTokenToTerraform(struct!.anyValidServiceToken),
+    auth_context: zeroTrustAccessPolicyExcludeAuthContextToTerraform(struct!.authContext),
+    auth_method: zeroTrustAccessPolicyExcludeAuthMethodToTerraform(struct!.authMethod),
+    azure_ad: zeroTrustAccessPolicyExcludeAzureAdToTerraform(struct!.azureAd),
+    certificate: zeroTrustAccessPolicyExcludeCertificateToTerraform(struct!.certificate),
+    common_name: zeroTrustAccessPolicyExcludeCommonNameToTerraform(struct!.commonName),
+    device_posture: zeroTrustAccessPolicyExcludeDevicePostureToTerraform(struct!.devicePosture),
+    email: zeroTrustAccessPolicyExcludeEmailToTerraform(struct!.email),
+    email_domain: zeroTrustAccessPolicyExcludeEmailDomainToTerraform(struct!.emailDomain),
+    email_list: zeroTrustAccessPolicyExcludeEmailListStructToTerraform(struct!.emailList),
+    everyone: zeroTrustAccessPolicyExcludeEveryoneToTerraform(struct!.everyone),
+    external_evaluation: zeroTrustAccessPolicyExcludeExternalEvaluationToTerraform(struct!.externalEvaluation),
+    geo: zeroTrustAccessPolicyExcludeGeoToTerraform(struct!.geo),
+    github_organization: zeroTrustAccessPolicyExcludeGithubOrganizationToTerraform(struct!.githubOrganization),
+    group: zeroTrustAccessPolicyExcludeGroupToTerraform(struct!.group),
+    gsuite: zeroTrustAccessPolicyExcludeGsuiteToTerraform(struct!.gsuite),
+    ip: zeroTrustAccessPolicyExcludeIpToTerraform(struct!.ip),
+    ip_list: zeroTrustAccessPolicyExcludeIpListStructToTerraform(struct!.ipList),
+    okta: zeroTrustAccessPolicyExcludeOktaToTerraform(struct!.okta),
+    saml: zeroTrustAccessPolicyExcludeSamlToTerraform(struct!.saml),
+    service_token: zeroTrustAccessPolicyExcludeServiceTokenToTerraform(struct!.serviceToken),
   }
 }
 
@@ -1846,142 +2588,130 @@ export function zeroTrustAccessPolicyExcludeToHclTerraform(struct?: ZeroTrustAcc
   }
   const attrs = {
     any_valid_service_token: {
-      value: cdktf.booleanToHclTerraform(struct!.anyValidServiceToken),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    auth_method: {
-      value: cdktf.stringToHclTerraform(struct!.authMethod),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.certificate),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    common_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commonNames),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    device_posture: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.devicePosture),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email_domain: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailDomain),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailList),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    everyone: {
-      value: cdktf.booleanToHclTerraform(struct!.everyone),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    geo: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.geo),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    group: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.group),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    ip: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ip),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    ip_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipList),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    login_method: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginMethod),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    service_token: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.serviceToken),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      value: zeroTrustAccessPolicyExcludeAnyValidServiceTokenToHclTerraform(struct!.anyValidServiceToken),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeAnyValidServiceToken",
     },
     auth_context: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeAuthContextToHclTerraform, true)(struct!.authContext),
+      value: zeroTrustAccessPolicyExcludeAuthContextToHclTerraform(struct!.authContext),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeAuthContextList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeAuthContext",
     },
-    azure: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeAzureToHclTerraform, true)(struct!.azure),
+    auth_method: {
+      value: zeroTrustAccessPolicyExcludeAuthMethodToHclTerraform(struct!.authMethod),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeAzureList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeAuthMethod",
+    },
+    azure_ad: {
+      value: zeroTrustAccessPolicyExcludeAzureAdToHclTerraform(struct!.azureAd),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeAzureAd",
+    },
+    certificate: {
+      value: zeroTrustAccessPolicyExcludeCertificateToHclTerraform(struct!.certificate),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeCertificate",
+    },
+    common_name: {
+      value: zeroTrustAccessPolicyExcludeCommonNameToHclTerraform(struct!.commonName),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeCommonName",
+    },
+    device_posture: {
+      value: zeroTrustAccessPolicyExcludeDevicePostureToHclTerraform(struct!.devicePosture),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeDevicePosture",
+    },
+    email: {
+      value: zeroTrustAccessPolicyExcludeEmailToHclTerraform(struct!.email),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeEmail",
+    },
+    email_domain: {
+      value: zeroTrustAccessPolicyExcludeEmailDomainToHclTerraform(struct!.emailDomain),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeEmailDomain",
+    },
+    email_list: {
+      value: zeroTrustAccessPolicyExcludeEmailListStructToHclTerraform(struct!.emailList),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeEmailListStruct",
+    },
+    everyone: {
+      value: zeroTrustAccessPolicyExcludeEveryoneToHclTerraform(struct!.everyone),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeEveryone",
     },
     external_evaluation: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeExternalEvaluationToHclTerraform, true)(struct!.externalEvaluation),
+      value: zeroTrustAccessPolicyExcludeExternalEvaluationToHclTerraform(struct!.externalEvaluation),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeExternalEvaluationList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeExternalEvaluation",
     },
-    github: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeGithubToHclTerraform, true)(struct!.github),
+    geo: {
+      value: zeroTrustAccessPolicyExcludeGeoToHclTerraform(struct!.geo),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeGithubList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeGeo",
+    },
+    github_organization: {
+      value: zeroTrustAccessPolicyExcludeGithubOrganizationToHclTerraform(struct!.githubOrganization),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeGithubOrganization",
+    },
+    group: {
+      value: zeroTrustAccessPolicyExcludeGroupToHclTerraform(struct!.group),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeGroup",
     },
     gsuite: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeGsuiteToHclTerraform, true)(struct!.gsuite),
+      value: zeroTrustAccessPolicyExcludeGsuiteToHclTerraform(struct!.gsuite),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeGsuiteList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeGsuite",
+    },
+    ip: {
+      value: zeroTrustAccessPolicyExcludeIpToHclTerraform(struct!.ip),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeIp",
+    },
+    ip_list: {
+      value: zeroTrustAccessPolicyExcludeIpListStructToHclTerraform(struct!.ipList),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeIpListStruct",
     },
     okta: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeOktaToHclTerraform, true)(struct!.okta),
+      value: zeroTrustAccessPolicyExcludeOktaToHclTerraform(struct!.okta),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeOktaList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeOkta",
     },
     saml: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeSamlToHclTerraform, true)(struct!.saml),
+      value: zeroTrustAccessPolicyExcludeSamlToHclTerraform(struct!.saml),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyExcludeSamlList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeSaml",
+    },
+    service_token: {
+      value: zeroTrustAccessPolicyExcludeServiceTokenToHclTerraform(struct!.serviceToken),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyExcludeServiceToken",
     },
   };
 
@@ -2009,89 +2739,77 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._anyValidServiceToken !== undefined) {
+    if (this._anyValidServiceToken?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.anyValidServiceToken = this._anyValidServiceToken;
-    }
-    if (this._authMethod !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.authMethod = this._authMethod;
-    }
-    if (this._certificate !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.certificate = this._certificate;
-    }
-    if (this._commonName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commonName = this._commonName;
-    }
-    if (this._commonNames !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commonNames = this._commonNames;
-    }
-    if (this._devicePosture !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.devicePosture = this._devicePosture;
-    }
-    if (this._email !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.email = this._email;
-    }
-    if (this._emailDomain !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.emailDomain = this._emailDomain;
-    }
-    if (this._emailList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.emailList = this._emailList;
-    }
-    if (this._everyone !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.everyone = this._everyone;
-    }
-    if (this._geo !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.geo = this._geo;
-    }
-    if (this._group !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.group = this._group;
-    }
-    if (this._ip !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ip = this._ip;
-    }
-    if (this._ipList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ipList = this._ipList;
-    }
-    if (this._loginMethod !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.loginMethod = this._loginMethod;
-    }
-    if (this._serviceToken !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serviceToken = this._serviceToken;
+      internalValueResult.anyValidServiceToken = this._anyValidServiceToken?.internalValue;
     }
     if (this._authContext?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authContext = this._authContext?.internalValue;
     }
-    if (this._azure?.internalValue !== undefined) {
+    if (this._authMethod?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.azure = this._azure?.internalValue;
+      internalValueResult.authMethod = this._authMethod?.internalValue;
+    }
+    if (this._azureAd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureAd = this._azureAd?.internalValue;
+    }
+    if (this._certificate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificate = this._certificate?.internalValue;
+    }
+    if (this._commonName?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName?.internalValue;
+    }
+    if (this._devicePosture?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.devicePosture = this._devicePosture?.internalValue;
+    }
+    if (this._email?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email?.internalValue;
+    }
+    if (this._emailDomain?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailDomain = this._emailDomain?.internalValue;
+    }
+    if (this._emailList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailList = this._emailList?.internalValue;
+    }
+    if (this._everyone?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.everyone = this._everyone?.internalValue;
     }
     if (this._externalEvaluation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
     }
-    if (this._github?.internalValue !== undefined) {
+    if (this._geo?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.github = this._github?.internalValue;
+      internalValueResult.geo = this._geo?.internalValue;
+    }
+    if (this._githubOrganization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubOrganization = this._githubOrganization?.internalValue;
+    }
+    if (this._group?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.group = this._group?.internalValue;
     }
     if (this._gsuite?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gsuite = this._gsuite?.internalValue;
+    }
+    if (this._ip?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip?.internalValue;
+    }
+    if (this._ipList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList?.internalValue;
     }
     if (this._okta?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2101,6 +2819,10 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.saml = this._saml?.internalValue;
     }
+    if (this._serviceToken?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceToken = this._serviceToken?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2108,29 +2830,27 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._anyValidServiceToken = undefined;
-      this._authMethod = undefined;
-      this._certificate = undefined;
-      this._commonName = undefined;
-      this._commonNames = undefined;
-      this._devicePosture = undefined;
-      this._email = undefined;
-      this._emailDomain = undefined;
-      this._emailList = undefined;
-      this._everyone = undefined;
-      this._geo = undefined;
-      this._group = undefined;
-      this._ip = undefined;
-      this._ipList = undefined;
-      this._loginMethod = undefined;
-      this._serviceToken = undefined;
+      this._anyValidServiceToken.internalValue = undefined;
       this._authContext.internalValue = undefined;
-      this._azure.internalValue = undefined;
+      this._authMethod.internalValue = undefined;
+      this._azureAd.internalValue = undefined;
+      this._certificate.internalValue = undefined;
+      this._commonName.internalValue = undefined;
+      this._devicePosture.internalValue = undefined;
+      this._email.internalValue = undefined;
+      this._emailDomain.internalValue = undefined;
+      this._emailList.internalValue = undefined;
+      this._everyone.internalValue = undefined;
       this._externalEvaluation.internalValue = undefined;
-      this._github.internalValue = undefined;
+      this._geo.internalValue = undefined;
+      this._githubOrganization.internalValue = undefined;
+      this._group.internalValue = undefined;
       this._gsuite.internalValue = undefined;
+      this._ip.internalValue = undefined;
+      this._ipList.internalValue = undefined;
       this._okta.internalValue = undefined;
       this._saml.internalValue = undefined;
+      this._serviceToken.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2139,294 +2859,52 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._anyValidServiceToken = value.anyValidServiceToken;
-      this._authMethod = value.authMethod;
-      this._certificate = value.certificate;
-      this._commonName = value.commonName;
-      this._commonNames = value.commonNames;
-      this._devicePosture = value.devicePosture;
-      this._email = value.email;
-      this._emailDomain = value.emailDomain;
-      this._emailList = value.emailList;
-      this._everyone = value.everyone;
-      this._geo = value.geo;
-      this._group = value.group;
-      this._ip = value.ip;
-      this._ipList = value.ipList;
-      this._loginMethod = value.loginMethod;
-      this._serviceToken = value.serviceToken;
+      this._anyValidServiceToken.internalValue = value.anyValidServiceToken;
       this._authContext.internalValue = value.authContext;
-      this._azure.internalValue = value.azure;
+      this._authMethod.internalValue = value.authMethod;
+      this._azureAd.internalValue = value.azureAd;
+      this._certificate.internalValue = value.certificate;
+      this._commonName.internalValue = value.commonName;
+      this._devicePosture.internalValue = value.devicePosture;
+      this._email.internalValue = value.email;
+      this._emailDomain.internalValue = value.emailDomain;
+      this._emailList.internalValue = value.emailList;
+      this._everyone.internalValue = value.everyone;
       this._externalEvaluation.internalValue = value.externalEvaluation;
-      this._github.internalValue = value.github;
+      this._geo.internalValue = value.geo;
+      this._githubOrganization.internalValue = value.githubOrganization;
+      this._group.internalValue = value.group;
       this._gsuite.internalValue = value.gsuite;
+      this._ip.internalValue = value.ip;
+      this._ipList.internalValue = value.ipList;
       this._okta.internalValue = value.okta;
       this._saml.internalValue = value.saml;
+      this._serviceToken.internalValue = value.serviceToken;
     }
   }
 
-  // any_valid_service_token - computed: false, optional: true, required: false
-  private _anyValidServiceToken?: boolean | cdktf.IResolvable; 
+  // any_valid_service_token - computed: true, optional: true, required: false
+  private _anyValidServiceToken = new ZeroTrustAccessPolicyExcludeAnyValidServiceTokenOutputReference(this, "any_valid_service_token");
   public get anyValidServiceToken() {
-    return this.getBooleanAttribute('any_valid_service_token');
+    return this._anyValidServiceToken;
   }
-  public set anyValidServiceToken(value: boolean | cdktf.IResolvable) {
-    this._anyValidServiceToken = value;
+  public putAnyValidServiceToken(value: ZeroTrustAccessPolicyExcludeAnyValidServiceToken) {
+    this._anyValidServiceToken.internalValue = value;
   }
   public resetAnyValidServiceToken() {
-    this._anyValidServiceToken = undefined;
+    this._anyValidServiceToken.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get anyValidServiceTokenInput() {
-    return this._anyValidServiceToken;
+    return this._anyValidServiceToken.internalValue;
   }
 
-  // auth_method - computed: false, optional: true, required: false
-  private _authMethod?: string; 
-  public get authMethod() {
-    return this.getStringAttribute('auth_method');
-  }
-  public set authMethod(value: string) {
-    this._authMethod = value;
-  }
-  public resetAuthMethod() {
-    this._authMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authMethodInput() {
-    return this._authMethod;
-  }
-
-  // certificate - computed: false, optional: true, required: false
-  private _certificate?: boolean | cdktf.IResolvable; 
-  public get certificate() {
-    return this.getBooleanAttribute('certificate');
-  }
-  public set certificate(value: boolean | cdktf.IResolvable) {
-    this._certificate = value;
-  }
-  public resetCertificate() {
-    this._certificate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateInput() {
-    return this._certificate;
-  }
-
-  // common_name - computed: false, optional: true, required: false
-  private _commonName?: string; 
-  public get commonName() {
-    return this.getStringAttribute('common_name');
-  }
-  public set commonName(value: string) {
-    this._commonName = value;
-  }
-  public resetCommonName() {
-    this._commonName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commonNameInput() {
-    return this._commonName;
-  }
-
-  // common_names - computed: false, optional: true, required: false
-  private _commonNames?: string[]; 
-  public get commonNames() {
-    return this.getListAttribute('common_names');
-  }
-  public set commonNames(value: string[]) {
-    this._commonNames = value;
-  }
-  public resetCommonNames() {
-    this._commonNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commonNamesInput() {
-    return this._commonNames;
-  }
-
-  // device_posture - computed: false, optional: true, required: false
-  private _devicePosture?: string[]; 
-  public get devicePosture() {
-    return this.getListAttribute('device_posture');
-  }
-  public set devicePosture(value: string[]) {
-    this._devicePosture = value;
-  }
-  public resetDevicePosture() {
-    this._devicePosture = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get devicePostureInput() {
-    return this._devicePosture;
-  }
-
-  // email - computed: false, optional: true, required: false
-  private _email?: string[]; 
-  public get email() {
-    return this.getListAttribute('email');
-  }
-  public set email(value: string[]) {
-    this._email = value;
-  }
-  public resetEmail() {
-    this._email = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
-  }
-
-  // email_domain - computed: false, optional: true, required: false
-  private _emailDomain?: string[]; 
-  public get emailDomain() {
-    return this.getListAttribute('email_domain');
-  }
-  public set emailDomain(value: string[]) {
-    this._emailDomain = value;
-  }
-  public resetEmailDomain() {
-    this._emailDomain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailDomainInput() {
-    return this._emailDomain;
-  }
-
-  // email_list - computed: false, optional: true, required: false
-  private _emailList?: string[]; 
-  public get emailList() {
-    return this.getListAttribute('email_list');
-  }
-  public set emailList(value: string[]) {
-    this._emailList = value;
-  }
-  public resetEmailList() {
-    this._emailList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailListInput() {
-    return this._emailList;
-  }
-
-  // everyone - computed: false, optional: true, required: false
-  private _everyone?: boolean | cdktf.IResolvable; 
-  public get everyone() {
-    return this.getBooleanAttribute('everyone');
-  }
-  public set everyone(value: boolean | cdktf.IResolvable) {
-    this._everyone = value;
-  }
-  public resetEveryone() {
-    this._everyone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get everyoneInput() {
-    return this._everyone;
-  }
-
-  // geo - computed: false, optional: true, required: false
-  private _geo?: string[]; 
-  public get geo() {
-    return this.getListAttribute('geo');
-  }
-  public set geo(value: string[]) {
-    this._geo = value;
-  }
-  public resetGeo() {
-    this._geo = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get geoInput() {
-    return this._geo;
-  }
-
-  // group - computed: false, optional: true, required: false
-  private _group?: string[]; 
-  public get group() {
-    return this.getListAttribute('group');
-  }
-  public set group(value: string[]) {
-    this._group = value;
-  }
-  public resetGroup() {
-    this._group = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupInput() {
-    return this._group;
-  }
-
-  // ip - computed: false, optional: true, required: false
-  private _ip?: string[]; 
-  public get ip() {
-    return this.getListAttribute('ip');
-  }
-  public set ip(value: string[]) {
-    this._ip = value;
-  }
-  public resetIp() {
-    this._ip = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipInput() {
-    return this._ip;
-  }
-
-  // ip_list - computed: false, optional: true, required: false
-  private _ipList?: string[]; 
-  public get ipList() {
-    return this.getListAttribute('ip_list');
-  }
-  public set ipList(value: string[]) {
-    this._ipList = value;
-  }
-  public resetIpList() {
-    this._ipList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipListInput() {
-    return this._ipList;
-  }
-
-  // login_method - computed: false, optional: true, required: false
-  private _loginMethod?: string[]; 
-  public get loginMethod() {
-    return this.getListAttribute('login_method');
-  }
-  public set loginMethod(value: string[]) {
-    this._loginMethod = value;
-  }
-  public resetLoginMethod() {
-    this._loginMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loginMethodInput() {
-    return this._loginMethod;
-  }
-
-  // service_token - computed: false, optional: true, required: false
-  private _serviceToken?: string[]; 
-  public get serviceToken() {
-    return this.getListAttribute('service_token');
-  }
-  public set serviceToken(value: string[]) {
-    this._serviceToken = value;
-  }
-  public resetServiceToken() {
-    this._serviceToken = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceTokenInput() {
-    return this._serviceToken;
-  }
-
-  // auth_context - computed: false, optional: true, required: false
-  private _authContext = new ZeroTrustAccessPolicyExcludeAuthContextList(this, "auth_context", false);
+  // auth_context - computed: true, optional: true, required: false
+  private _authContext = new ZeroTrustAccessPolicyExcludeAuthContextOutputReference(this, "auth_context");
   public get authContext() {
     return this._authContext;
   }
-  public putAuthContext(value: ZeroTrustAccessPolicyExcludeAuthContext[] | cdktf.IResolvable) {
+  public putAuthContext(value: ZeroTrustAccessPolicyExcludeAuthContext) {
     this._authContext.internalValue = value;
   }
   public resetAuthContext() {
@@ -2437,28 +2915,156 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     return this._authContext.internalValue;
   }
 
-  // azure - computed: false, optional: true, required: false
-  private _azure = new ZeroTrustAccessPolicyExcludeAzureList(this, "azure", false);
-  public get azure() {
-    return this._azure;
+  // auth_method - computed: true, optional: true, required: false
+  private _authMethod = new ZeroTrustAccessPolicyExcludeAuthMethodOutputReference(this, "auth_method");
+  public get authMethod() {
+    return this._authMethod;
   }
-  public putAzure(value: ZeroTrustAccessPolicyExcludeAzure[] | cdktf.IResolvable) {
-    this._azure.internalValue = value;
+  public putAuthMethod(value: ZeroTrustAccessPolicyExcludeAuthMethod) {
+    this._authMethod.internalValue = value;
   }
-  public resetAzure() {
-    this._azure.internalValue = undefined;
+  public resetAuthMethod() {
+    this._authMethod.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get azureInput() {
-    return this._azure.internalValue;
+  public get authMethodInput() {
+    return this._authMethod.internalValue;
   }
 
-  // external_evaluation - computed: false, optional: true, required: false
-  private _externalEvaluation = new ZeroTrustAccessPolicyExcludeExternalEvaluationList(this, "external_evaluation", false);
+  // azure_ad - computed: true, optional: true, required: false
+  private _azureAd = new ZeroTrustAccessPolicyExcludeAzureAdOutputReference(this, "azure_ad");
+  public get azureAd() {
+    return this._azureAd;
+  }
+  public putAzureAd(value: ZeroTrustAccessPolicyExcludeAzureAd) {
+    this._azureAd.internalValue = value;
+  }
+  public resetAzureAd() {
+    this._azureAd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureAdInput() {
+    return this._azureAd.internalValue;
+  }
+
+  // certificate - computed: true, optional: true, required: false
+  private _certificate = new ZeroTrustAccessPolicyExcludeCertificateOutputReference(this, "certificate");
+  public get certificate() {
+    return this._certificate;
+  }
+  public putCertificate(value: ZeroTrustAccessPolicyExcludeCertificate) {
+    this._certificate.internalValue = value;
+  }
+  public resetCertificate() {
+    this._certificate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate.internalValue;
+  }
+
+  // common_name - computed: true, optional: true, required: false
+  private _commonName = new ZeroTrustAccessPolicyExcludeCommonNameOutputReference(this, "common_name");
+  public get commonName() {
+    return this._commonName;
+  }
+  public putCommonName(value: ZeroTrustAccessPolicyExcludeCommonName) {
+    this._commonName.internalValue = value;
+  }
+  public resetCommonName() {
+    this._commonName.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName.internalValue;
+  }
+
+  // device_posture - computed: true, optional: true, required: false
+  private _devicePosture = new ZeroTrustAccessPolicyExcludeDevicePostureOutputReference(this, "device_posture");
+  public get devicePosture() {
+    return this._devicePosture;
+  }
+  public putDevicePosture(value: ZeroTrustAccessPolicyExcludeDevicePosture) {
+    this._devicePosture.internalValue = value;
+  }
+  public resetDevicePosture() {
+    this._devicePosture.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicePostureInput() {
+    return this._devicePosture.internalValue;
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email = new ZeroTrustAccessPolicyExcludeEmailOutputReference(this, "email");
+  public get email() {
+    return this._email;
+  }
+  public putEmail(value: ZeroTrustAccessPolicyExcludeEmail) {
+    this._email.internalValue = value;
+  }
+  public resetEmail() {
+    this._email.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email.internalValue;
+  }
+
+  // email_domain - computed: true, optional: true, required: false
+  private _emailDomain = new ZeroTrustAccessPolicyExcludeEmailDomainOutputReference(this, "email_domain");
+  public get emailDomain() {
+    return this._emailDomain;
+  }
+  public putEmailDomain(value: ZeroTrustAccessPolicyExcludeEmailDomain) {
+    this._emailDomain.internalValue = value;
+  }
+  public resetEmailDomain() {
+    this._emailDomain.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainInput() {
+    return this._emailDomain.internalValue;
+  }
+
+  // email_list - computed: true, optional: true, required: false
+  private _emailList = new ZeroTrustAccessPolicyExcludeEmailListStructOutputReference(this, "email_list");
+  public get emailList() {
+    return this._emailList;
+  }
+  public putEmailList(value: ZeroTrustAccessPolicyExcludeEmailListStruct) {
+    this._emailList.internalValue = value;
+  }
+  public resetEmailList() {
+    this._emailList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailListInput() {
+    return this._emailList.internalValue;
+  }
+
+  // everyone - computed: true, optional: true, required: false
+  private _everyone = new ZeroTrustAccessPolicyExcludeEveryoneOutputReference(this, "everyone");
+  public get everyone() {
+    return this._everyone;
+  }
+  public putEveryone(value: ZeroTrustAccessPolicyExcludeEveryone) {
+    this._everyone.internalValue = value;
+  }
+  public resetEveryone() {
+    this._everyone.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get everyoneInput() {
+    return this._everyone.internalValue;
+  }
+
+  // external_evaluation - computed: true, optional: true, required: false
+  private _externalEvaluation = new ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference(this, "external_evaluation");
   public get externalEvaluation() {
     return this._externalEvaluation;
   }
-  public putExternalEvaluation(value: ZeroTrustAccessPolicyExcludeExternalEvaluation[] | cdktf.IResolvable) {
+  public putExternalEvaluation(value: ZeroTrustAccessPolicyExcludeExternalEvaluation) {
     this._externalEvaluation.internalValue = value;
   }
   public resetExternalEvaluation() {
@@ -2469,28 +3075,60 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     return this._externalEvaluation.internalValue;
   }
 
-  // github - computed: false, optional: true, required: false
-  private _github = new ZeroTrustAccessPolicyExcludeGithubList(this, "github", false);
-  public get github() {
-    return this._github;
+  // geo - computed: true, optional: true, required: false
+  private _geo = new ZeroTrustAccessPolicyExcludeGeoOutputReference(this, "geo");
+  public get geo() {
+    return this._geo;
   }
-  public putGithub(value: ZeroTrustAccessPolicyExcludeGithub[] | cdktf.IResolvable) {
-    this._github.internalValue = value;
+  public putGeo(value: ZeroTrustAccessPolicyExcludeGeo) {
+    this._geo.internalValue = value;
   }
-  public resetGithub() {
-    this._github.internalValue = undefined;
+  public resetGeo() {
+    this._geo.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get githubInput() {
-    return this._github.internalValue;
+  public get geoInput() {
+    return this._geo.internalValue;
   }
 
-  // gsuite - computed: false, optional: true, required: false
-  private _gsuite = new ZeroTrustAccessPolicyExcludeGsuiteList(this, "gsuite", false);
+  // github_organization - computed: true, optional: true, required: false
+  private _githubOrganization = new ZeroTrustAccessPolicyExcludeGithubOrganizationOutputReference(this, "github_organization");
+  public get githubOrganization() {
+    return this._githubOrganization;
+  }
+  public putGithubOrganization(value: ZeroTrustAccessPolicyExcludeGithubOrganization) {
+    this._githubOrganization.internalValue = value;
+  }
+  public resetGithubOrganization() {
+    this._githubOrganization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubOrganizationInput() {
+    return this._githubOrganization.internalValue;
+  }
+
+  // group - computed: true, optional: true, required: false
+  private _group = new ZeroTrustAccessPolicyExcludeGroupOutputReference(this, "group");
+  public get group() {
+    return this._group;
+  }
+  public putGroup(value: ZeroTrustAccessPolicyExcludeGroup) {
+    this._group.internalValue = value;
+  }
+  public resetGroup() {
+    this._group.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group.internalValue;
+  }
+
+  // gsuite - computed: true, optional: true, required: false
+  private _gsuite = new ZeroTrustAccessPolicyExcludeGsuiteOutputReference(this, "gsuite");
   public get gsuite() {
     return this._gsuite;
   }
-  public putGsuite(value: ZeroTrustAccessPolicyExcludeGsuite[] | cdktf.IResolvable) {
+  public putGsuite(value: ZeroTrustAccessPolicyExcludeGsuite) {
     this._gsuite.internalValue = value;
   }
   public resetGsuite() {
@@ -2501,12 +3139,44 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     return this._gsuite.internalValue;
   }
 
-  // okta - computed: false, optional: true, required: false
-  private _okta = new ZeroTrustAccessPolicyExcludeOktaList(this, "okta", false);
+  // ip - computed: true, optional: true, required: false
+  private _ip = new ZeroTrustAccessPolicyExcludeIpOutputReference(this, "ip");
+  public get ip() {
+    return this._ip;
+  }
+  public putIp(value: ZeroTrustAccessPolicyExcludeIp) {
+    this._ip.internalValue = value;
+  }
+  public resetIp() {
+    this._ip.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip.internalValue;
+  }
+
+  // ip_list - computed: true, optional: true, required: false
+  private _ipList = new ZeroTrustAccessPolicyExcludeIpListStructOutputReference(this, "ip_list");
+  public get ipList() {
+    return this._ipList;
+  }
+  public putIpList(value: ZeroTrustAccessPolicyExcludeIpListStruct) {
+    this._ipList.internalValue = value;
+  }
+  public resetIpList() {
+    this._ipList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList.internalValue;
+  }
+
+  // okta - computed: true, optional: true, required: false
+  private _okta = new ZeroTrustAccessPolicyExcludeOktaOutputReference(this, "okta");
   public get okta() {
     return this._okta;
   }
-  public putOkta(value: ZeroTrustAccessPolicyExcludeOkta[] | cdktf.IResolvable) {
+  public putOkta(value: ZeroTrustAccessPolicyExcludeOkta) {
     this._okta.internalValue = value;
   }
   public resetOkta() {
@@ -2517,12 +3187,12 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
     return this._okta.internalValue;
   }
 
-  // saml - computed: false, optional: true, required: false
-  private _saml = new ZeroTrustAccessPolicyExcludeSamlList(this, "saml", false);
+  // saml - computed: true, optional: true, required: false
+  private _saml = new ZeroTrustAccessPolicyExcludeSamlOutputReference(this, "saml");
   public get saml() {
     return this._saml;
   }
-  public putSaml(value: ZeroTrustAccessPolicyExcludeSaml[] | cdktf.IResolvable) {
+  public putSaml(value: ZeroTrustAccessPolicyExcludeSaml) {
     this._saml.internalValue = value;
   }
   public resetSaml() {
@@ -2531,6 +3201,22 @@ export class ZeroTrustAccessPolicyExcludeOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get samlInput() {
     return this._saml.internalValue;
+  }
+
+  // service_token - computed: true, optional: true, required: false
+  private _serviceToken = new ZeroTrustAccessPolicyExcludeServiceTokenOutputReference(this, "service_token");
+  public get serviceToken() {
+    return this._serviceToken;
+  }
+  public putServiceToken(value: ZeroTrustAccessPolicyExcludeServiceToken) {
+    this._serviceToken.internalValue = value;
+  }
+  public resetServiceToken() {
+    this._serviceToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTokenInput() {
+    return this._serviceToken.internalValue;
   }
 }
 
@@ -2553,26 +3239,85 @@ export class ZeroTrustAccessPolicyExcludeList extends cdktf.ComplexList {
     return new ZeroTrustAccessPolicyExcludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ZeroTrustAccessPolicyIncludeAnyValidServiceToken {
+}
+
+export function zeroTrustAccessPolicyIncludeAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessPolicyIncludeAnyValidServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeAnyValidServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyIncludeAnyValidServiceTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeAnyValidServiceToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeAnyValidServiceToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
 export interface ZeroTrustAccessPolicyIncludeAuthContext {
   /**
-  * The ACID of the Authentication Context.
+  * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ac_id ZeroTrustAccessPolicy#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ac_id ZeroTrustAccessPolicy#ac_id}
   */
   readonly acId: string;
   /**
-  * The ID of the Authentication Context.
+  * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * The ID of the Azure identity provider.
+  * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -2627,11 +3372,9 @@ export class ZeroTrustAccessPolicyIncludeAuthContextOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyIncludeAuthContext | cdktf.IResolvable | undefined {
@@ -2715,67 +3458,140 @@ export class ZeroTrustAccessPolicyIncludeAuthContextOutputReference extends cdkt
     return this._identityProviderId;
   }
 }
-
-export class ZeroTrustAccessPolicyIncludeAuthContextList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeAuthContext[] | cdktf.IResolvable
-
+export interface ZeroTrustAccessPolicyIncludeAuthMethod {
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyIncludeAuthContextOutputReference {
-    return new ZeroTrustAccessPolicyIncludeAuthContextOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ZeroTrustAccessPolicyIncludeAzure {
-  /**
-  * The ID of the Azure group or user.
+  * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
   */
-  readonly id?: string[];
-  /**
-  * The ID of the Azure identity provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
-  */
-  readonly identityProviderId?: string;
+  readonly authMethod: string;
 }
 
-export function zeroTrustAccessPolicyIncludeAzureToTerraform(struct?: ZeroTrustAccessPolicyIncludeAzure | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyIncludeAuthMethodToTerraform(struct?: ZeroTrustAccessPolicyIncludeAuthMethod | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
+    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeAuthMethodToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeAuthMethod | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_method: {
+      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeAuthMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeAuthMethod | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authMethod = this._authMethod;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeAuthMethod | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._authMethod = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._authMethod = value.authMethod;
+    }
+  }
+
+  // auth_method - computed: false, optional: false, required: true
+  private _authMethod?: string; 
+  public get authMethod() {
+    return this.getStringAttribute('auth_method');
+  }
+  public set authMethod(value: string) {
+    this._authMethod = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodInput() {
+    return this._authMethod;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeAzureAd {
+  /**
+  * The ID of an Azure group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * The ID of your Azure identity provider.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  */
+  readonly identityProviderId: string;
+}
+
+export function zeroTrustAccessPolicyIncludeAzureAdToTerraform(struct?: ZeroTrustAccessPolicyIncludeAzureAd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessPolicyIncludeAzureToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeAzure | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyIncludeAzureAdToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeAzureAd | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.id),
+      value: cdktf.stringToHclTerraform(struct!.id),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
     identity_provider_id: {
       value: cdktf.stringToHclTerraform(struct!.identityProviderId),
@@ -2789,21 +3605,19 @@ export function zeroTrustAccessPolicyIncludeAzureToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyIncludeAzureOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyIncludeAzureAdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyIncludeAzure | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyIncludeAzureAd | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2820,7 +3634,7 @@ export class ZeroTrustAccessPolicyIncludeAzureOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyIncludeAzure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeAzureAd | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2839,23 +3653,20 @@ export class ZeroTrustAccessPolicyIncludeAzureOutputReference extends cdktf.Comp
     }
   }
 
-  // id - computed: false, optional: true, required: false
-  private _id?: string[]; 
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
   public get id() {
-    return this.getListAttribute('id');
+    return this.getStringAttribute('id');
   }
-  public set id(value: string[]) {
+  public set id(value: string) {
     this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: false, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -2863,47 +3674,610 @@ export class ZeroTrustAccessPolicyIncludeAzureOutputReference extends cdktf.Comp
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyIncludeCertificate {
+}
 
-export class ZeroTrustAccessPolicyIncludeAzureList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeAzure[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyIncludeCertificateToTerraform(struct?: ZeroTrustAccessPolicyIncludeCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeCertificateToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyIncludeCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
+  public get internalValue(): ZeroTrustAccessPolicyIncludeCertificate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeCertificate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeCommonName {
   /**
-  * @param index the index of the item to return
+  * The common name to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
   */
-  public get(index: number): ZeroTrustAccessPolicyIncludeAzureOutputReference {
-    return new ZeroTrustAccessPolicyIncludeAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  readonly commonName: string;
+}
+
+export function zeroTrustAccessPolicyIncludeCommonNameToTerraform(struct?: ZeroTrustAccessPolicyIncludeCommonName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    common_name: cdktf.stringToTerraform(struct!.commonName),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeCommonNameToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeCommonName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    common_name: {
+      value: cdktf.stringToHclTerraform(struct!.commonName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeCommonNameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeCommonName | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commonName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeCommonName | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._commonName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._commonName = value.commonName;
+    }
+  }
+
+  // common_name - computed: false, optional: false, required: true
+  private _commonName?: string; 
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+  public set commonName(value: string) {
+    this._commonName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeDevicePosture {
+  /**
+  * The ID of a device posture integration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#integration_uid ZeroTrustAccessPolicy#integration_uid}
+  */
+  readonly integrationUid: string;
+}
+
+export function zeroTrustAccessPolicyIncludeDevicePostureToTerraform(struct?: ZeroTrustAccessPolicyIncludeDevicePosture | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    integration_uid: cdktf.stringToTerraform(struct!.integrationUid),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeDevicePostureToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeDevicePosture | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    integration_uid: {
+      value: cdktf.stringToHclTerraform(struct!.integrationUid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeDevicePostureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeDevicePosture | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._integrationUid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrationUid = this._integrationUid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeDevicePosture | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._integrationUid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._integrationUid = value.integrationUid;
+    }
+  }
+
+  // integration_uid - computed: false, optional: false, required: true
+  private _integrationUid?: string; 
+  public get integrationUid() {
+    return this.getStringAttribute('integration_uid');
+  }
+  public set integrationUid(value: string) {
+    this._integrationUid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrationUidInput() {
+    return this._integrationUid;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeEmail {
+  /**
+  * The email of the user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  */
+  readonly email: string;
+}
+
+export function zeroTrustAccessPolicyIncludeEmailToTerraform(struct?: ZeroTrustAccessPolicyIncludeEmail | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktf.stringToTerraform(struct!.email),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeEmailToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeEmail | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeEmailOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeEmail | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeEmail | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+    }
+  }
+
+  // email - computed: false, optional: false, required: true
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeEmailDomain {
+  /**
+  * The email domain to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#domain ZeroTrustAccessPolicy#domain}
+  */
+  readonly domain: string;
+}
+
+export function zeroTrustAccessPolicyIncludeEmailDomainToTerraform(struct?: ZeroTrustAccessPolicyIncludeEmailDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeEmailDomainToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeEmailDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeEmailDomainOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeEmailDomain | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeEmailDomain | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domain = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domain = value.domain;
+    }
+  }
+
+  // domain - computed: false, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeEmailListStruct {
+  /**
+  * The ID of a previously created email list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyIncludeEmailListStructToTerraform(struct?: ZeroTrustAccessPolicyIncludeEmailListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeEmailListStructToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeEmailListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeEmailListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeEmailListStruct | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeEmailListStruct | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeEveryone {
+}
+
+export function zeroTrustAccessPolicyIncludeEveryoneToTerraform(struct?: ZeroTrustAccessPolicyIncludeEveryone | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeEveryoneToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeEveryone | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyIncludeEveryoneOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeEveryone | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeEveryone | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
   }
 }
 export interface ZeroTrustAccessPolicyIncludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#evaluate_url ZeroTrustAccessPolicy#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#evaluate_url ZeroTrustAccessPolicy#evaluate_url}
   */
-  readonly evaluateUrl?: string;
+  readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#keys_url ZeroTrustAccessPolicy#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#keys_url ZeroTrustAccessPolicy#keys_url}
   */
-  readonly keysUrl?: string;
+  readonly keysUrl: string;
 }
 
 export function zeroTrustAccessPolicyIncludeExternalEvaluationToTerraform(struct?: ZeroTrustAccessPolicyIncludeExternalEvaluation | cdktf.IResolvable): any {
@@ -2949,11 +4323,9 @@ export class ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyIncludeExternalEvaluation | cdktf.IResolvable | undefined {
@@ -2992,7 +4364,7 @@ export class ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference exten
     }
   }
 
-  // evaluate_url - computed: false, optional: true, required: false
+  // evaluate_url - computed: false, optional: false, required: true
   private _evaluateUrl?: string; 
   public get evaluateUrl() {
     return this.getStringAttribute('evaluate_url');
@@ -3000,15 +4372,12 @@ export class ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference exten
   public set evaluateUrl(value: string) {
     this._evaluateUrl = value;
   }
-  public resetEvaluateUrl() {
-    this._evaluateUrl = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get evaluateUrlInput() {
     return this._evaluateUrl;
   }
 
-  // keys_url - computed: false, optional: true, required: false
+  // keys_url - computed: false, optional: false, required: true
   private _keysUrl?: string; 
   public get keysUrl() {
     return this.getStringAttribute('keys_url');
@@ -3016,56 +4385,126 @@ export class ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference exten
   public set keysUrl(value: string) {
     this._keysUrl = value;
   }
-  public resetKeysUrl() {
-    this._keysUrl = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get keysUrlInput() {
     return this._keysUrl;
   }
 }
+export interface ZeroTrustAccessPolicyIncludeGeo {
+  /**
+  * The country code that should be matched.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#country_code ZeroTrustAccessPolicy#country_code}
+  */
+  readonly countryCode: string;
+}
 
-export class ZeroTrustAccessPolicyIncludeExternalEvaluationList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeExternalEvaluation[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyIncludeGeoToTerraform(struct?: ZeroTrustAccessPolicyIncludeGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    country_code: cdktf.stringToTerraform(struct!.countryCode),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeGeoToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeGeoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference {
-    return new ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyIncludeGeo | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._countryCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countryCode = this._countryCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeGeo | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._countryCode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._countryCode = value.countryCode;
+    }
+  }
+
+  // country_code - computed: false, optional: false, required: true
+  private _countryCode?: string; 
+  public get countryCode() {
+    return this.getStringAttribute('country_code');
+  }
+  public set countryCode(value: string) {
+    this._countryCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryCodeInput() {
+    return this._countryCode;
   }
 }
-export interface ZeroTrustAccessPolicyIncludeGithub {
+export interface ZeroTrustAccessPolicyIncludeGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
   */
-  readonly name?: string;
+  readonly name: string;
   /**
-  * The teams that should be matched.
+  * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#teams ZeroTrustAccessPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#team ZeroTrustAccessPolicy#team}
   */
-  readonly teams?: string[];
+  readonly team?: string;
 }
 
-export function zeroTrustAccessPolicyIncludeGithubToTerraform(struct?: ZeroTrustAccessPolicyIncludeGithub | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyIncludeGithubOrganizationToTerraform(struct?: ZeroTrustAccessPolicyIncludeGithubOrganization | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3073,12 +4512,12 @@ export function zeroTrustAccessPolicyIncludeGithubToTerraform(struct?: ZeroTrust
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
+    team: cdktf.stringToTerraform(struct!.team),
   }
 }
 
 
-export function zeroTrustAccessPolicyIncludeGithubToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeGithub | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyIncludeGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeGithubOrganization | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3096,11 +4535,11 @@ export function zeroTrustAccessPolicyIncludeGithubToHclTerraform(struct?: ZeroTr
       type: "simple",
       storageClassType: "string",
     },
-    teams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.teams),
+    team: {
+      value: cdktf.stringToHclTerraform(struct!.team),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -3108,21 +4547,19 @@ export function zeroTrustAccessPolicyIncludeGithubToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyIncludeGithubOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyIncludeGithubOrganizationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyIncludeGithub | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyIncludeGithubOrganization | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3136,20 +4573,20 @@ export class ZeroTrustAccessPolicyIncludeGithubOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._teams !== undefined) {
+    if (this._team !== undefined) {
       hasAnyValues = true;
-      internalValueResult.teams = this._teams;
+      internalValueResult.team = this._team;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyIncludeGithub | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeGithubOrganization | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityProviderId = undefined;
       this._name = undefined;
-      this._teams = undefined;
+      this._team = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -3160,11 +4597,11 @@ export class ZeroTrustAccessPolicyIncludeGithubOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._identityProviderId = value.identityProviderId;
       this._name = value.name;
-      this._teams = value.teams;
+      this._team = value.team;
     }
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: false, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -3172,15 +4609,12 @@ export class ZeroTrustAccessPolicyIncludeGithubOutputReference extends cdktf.Com
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -3188,61 +4622,134 @@ export class ZeroTrustAccessPolicyIncludeGithubOutputReference extends cdktf.Com
   public set name(value: string) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // teams - computed: false, optional: true, required: false
-  private _teams?: string[]; 
-  public get teams() {
-    return this.getListAttribute('teams');
+  // team - computed: false, optional: true, required: false
+  private _team?: string; 
+  public get team() {
+    return this.getStringAttribute('team');
   }
-  public set teams(value: string[]) {
-    this._teams = value;
+  public set team(value: string) {
+    this._team = value;
   }
-  public resetTeams() {
-    this._teams = undefined;
+  public resetTeam() {
+    this._team = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get teamsInput() {
-    return this._teams;
+  public get teamInput() {
+    return this._team;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeGroup {
+  /**
+  * The ID of a previously created Access group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyIncludeGroupToTerraform(struct?: ZeroTrustAccessPolicyIncludeGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
   }
 }
 
-export class ZeroTrustAccessPolicyIncludeGithubList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeGithub[] | cdktf.IResolvable
+
+export function zeroTrustAccessPolicyIncludeGroupToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyIncludeGithubOutputReference {
-    return new ZeroTrustAccessPolicyIncludeGithubOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyIncludeGroup | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeGroup | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 }
 export interface ZeroTrustAccessPolicyIncludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
   */
-  readonly email: string[];
+  readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -3253,7 +4760,7 @@ export function zeroTrustAccessPolicyIncludeGsuiteToTerraform(struct?: ZeroTrust
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email: cdktf.stringToTerraform(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -3266,10 +4773,10 @@ export function zeroTrustAccessPolicyIncludeGsuiteToHclTerraform(struct?: ZeroTr
   }
   const attrs = {
     email: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
+      value: cdktf.stringToHclTerraform(struct!.email),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
     identity_provider_id: {
       value: cdktf.stringToHclTerraform(struct!.identityProviderId),
@@ -3290,11 +4797,9 @@ export class ZeroTrustAccessPolicyIncludeGsuiteOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyIncludeGsuite | cdktf.IResolvable | undefined {
@@ -3334,11 +4839,11 @@ export class ZeroTrustAccessPolicyIncludeGsuiteOutputReference extends cdktf.Com
   }
 
   // email - computed: false, optional: false, required: true
-  private _email?: string[]; 
+  private _email?: string; 
   public get email() {
-    return this.getListAttribute('email');
+    return this.getStringAttribute('email');
   }
-  public set email(value: string[]) {
+  public set email(value: string) {
     this._email = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3359,39 +4864,208 @@ export class ZeroTrustAccessPolicyIncludeGsuiteOutputReference extends cdktf.Com
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyIncludeIp {
+  /**
+  * An IPv4 or IPv6 CIDR block.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+  */
+  readonly ip: string;
+}
 
-export class ZeroTrustAccessPolicyIncludeGsuiteList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeGsuite[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyIncludeIpToTerraform(struct?: ZeroTrustAccessPolicyIncludeIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip: cdktf.stringToTerraform(struct!.ip),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeIpToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
+  public get internalValue(): ZeroTrustAccessPolicyIncludeIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ip = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ip = value.ip;
+    }
+  }
+
+  // ip - computed: false, optional: false, required: true
+  private _ip?: string; 
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+  public set ip(value: string) {
+    this._ip = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+}
+export interface ZeroTrustAccessPolicyIncludeIpListStruct {
   /**
-  * @param index the index of the item to return
+  * The ID of a previously created IP list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  public get(index: number): ZeroTrustAccessPolicyIncludeGsuiteOutputReference {
-    return new ZeroTrustAccessPolicyIncludeGsuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyIncludeIpListStructToTerraform(struct?: ZeroTrustAccessPolicyIncludeIpListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeIpListStructToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeIpListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeIpListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyIncludeIpListStruct | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeIpListStruct | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 }
 export interface ZeroTrustAccessPolicyIncludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
   /**
-  * The name of the Okta Group.
+  * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
   */
-  readonly name?: string[];
+  readonly name: string;
 }
 
 export function zeroTrustAccessPolicyIncludeOktaToTerraform(struct?: ZeroTrustAccessPolicyIncludeOkta | cdktf.IResolvable): any {
@@ -3401,7 +5075,7 @@ export function zeroTrustAccessPolicyIncludeOktaToTerraform(struct?: ZeroTrustAc
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
+    name: cdktf.stringToTerraform(struct!.name),
   }
 }
 
@@ -3419,10 +5093,10 @@ export function zeroTrustAccessPolicyIncludeOktaToHclTerraform(struct?: ZeroTrus
       storageClassType: "string",
     },
     name: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.name),
+      value: cdktf.stringToHclTerraform(struct!.name),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -3437,11 +5111,9 @@ export class ZeroTrustAccessPolicyIncludeOktaOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyIncludeOkta | cdktf.IResolvable | undefined {
@@ -3480,7 +5152,7 @@ export class ZeroTrustAccessPolicyIncludeOktaOutputReference extends cdktf.Compl
     }
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: false, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -3488,69 +5160,43 @@ export class ZeroTrustAccessPolicyIncludeOktaOutputReference extends cdktf.Compl
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string[]; 
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
   public get name() {
-    return this.getListAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string[]) {
+  public set name(value: string) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 }
-
-export class ZeroTrustAccessPolicyIncludeOktaList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeOkta[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyIncludeOktaOutputReference {
-    return new ZeroTrustAccessPolicyIncludeOktaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface ZeroTrustAccessPolicyIncludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#attribute_name ZeroTrustAccessPolicy#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#attribute_name ZeroTrustAccessPolicy#attribute_name}
   */
-  readonly attributeName?: string;
+  readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#attribute_value ZeroTrustAccessPolicy#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#attribute_value ZeroTrustAccessPolicy#attribute_value}
   */
-  readonly attributeValue?: string;
+  readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
 }
 
 export function zeroTrustAccessPolicyIncludeSamlToTerraform(struct?: ZeroTrustAccessPolicyIncludeSaml | cdktf.IResolvable): any {
@@ -3603,11 +5249,9 @@ export class ZeroTrustAccessPolicyIncludeSamlOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyIncludeSaml | cdktf.IResolvable | undefined {
@@ -3652,7 +5296,7 @@ export class ZeroTrustAccessPolicyIncludeSamlOutputReference extends cdktf.Compl
     }
   }
 
-  // attribute_name - computed: false, optional: true, required: false
+  // attribute_name - computed: false, optional: false, required: true
   private _attributeName?: string; 
   public get attributeName() {
     return this.getStringAttribute('attribute_name');
@@ -3660,15 +5304,12 @@ export class ZeroTrustAccessPolicyIncludeSamlOutputReference extends cdktf.Compl
   public set attributeName(value: string) {
     this._attributeName = value;
   }
-  public resetAttributeName() {
-    this._attributeName = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get attributeNameInput() {
     return this._attributeName;
   }
 
-  // attribute_value - computed: false, optional: true, required: false
+  // attribute_value - computed: false, optional: false, required: true
   private _attributeValue?: string; 
   public get attributeValue() {
     return this.getStringAttribute('attribute_value');
@@ -3676,15 +5317,12 @@ export class ZeroTrustAccessPolicyIncludeSamlOutputReference extends cdktf.Compl
   public set attributeValue(value: string) {
     this._attributeValue = value;
   }
-  public resetAttributeValue() {
-    this._attributeValue = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get attributeValueInput() {
     return this._attributeValue;
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: false, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -3692,173 +5330,193 @@ export class ZeroTrustAccessPolicyIncludeSamlOutputReference extends cdktf.Compl
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyIncludeServiceToken {
+  /**
+  * The ID of a Service Token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#token_id ZeroTrustAccessPolicy#token_id}
+  */
+  readonly tokenId: string;
+}
 
-export class ZeroTrustAccessPolicyIncludeSamlList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyIncludeSaml[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyIncludeServiceTokenToTerraform(struct?: ZeroTrustAccessPolicyIncludeServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    token_id: cdktf.stringToTerraform(struct!.tokenId),
+  }
+}
+
+
+export function zeroTrustAccessPolicyIncludeServiceTokenToHclTerraform(struct?: ZeroTrustAccessPolicyIncludeServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    token_id: {
+      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyIncludeServiceTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyIncludeSamlOutputReference {
-    return new ZeroTrustAccessPolicyIncludeSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyIncludeServiceToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tokenId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenId = this._tokenId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyIncludeServiceToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tokenId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tokenId = value.tokenId;
+    }
+  }
+
+  // token_id - computed: false, optional: false, required: true
+  private _tokenId?: string; 
+  public get tokenId() {
+    return this.getStringAttribute('token_id');
+  }
+  public set tokenId(value: string) {
+    this._tokenId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenIdInput() {
+    return this._tokenId;
   }
 }
 export interface ZeroTrustAccessPolicyInclude {
   /**
-  * Matches any valid Access service token.
+  * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#any_valid_service_token ZeroTrustAccessPolicy#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#any_valid_service_token ZeroTrustAccessPolicy#any_valid_service_token}
   */
-  readonly anyValidServiceToken?: boolean | cdktf.IResolvable;
+  readonly anyValidServiceToken?: ZeroTrustAccessPolicyIncludeAnyValidServiceToken;
   /**
-  * The type of authentication method. Refer to https://datatracker.ietf.org/doc/html/rfc8176#section-2 for possible types.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_context ZeroTrustAccessPolicy#auth_context}
   */
-  readonly authMethod?: string;
+  readonly authContext?: ZeroTrustAccessPolicyIncludeAuthContext;
   /**
-  * Matches any valid client certificate.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#certificate ZeroTrustAccessPolicy#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
   */
-  readonly certificate?: boolean | cdktf.IResolvable;
+  readonly authMethod?: ZeroTrustAccessPolicyIncludeAuthMethod;
   /**
-  * Matches a valid client certificate common name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#azure_ad ZeroTrustAccessPolicy#azure_ad}
   */
-  readonly commonName?: string;
+  readonly azureAd?: ZeroTrustAccessPolicyIncludeAzureAd;
   /**
-  * Overflow field if you need to have multiple common_name rules in a single policy.  Use in place of the singular common_name field.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#common_names ZeroTrustAccessPolicy#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#certificate ZeroTrustAccessPolicy#certificate}
   */
-  readonly commonNames?: string[];
+  readonly certificate?: ZeroTrustAccessPolicyIncludeCertificate;
   /**
-  * The ID of a device posture integration.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#device_posture ZeroTrustAccessPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
   */
-  readonly devicePosture?: string[];
+  readonly commonName?: ZeroTrustAccessPolicyIncludeCommonName;
   /**
-  * The email of the user.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#device_posture ZeroTrustAccessPolicy#device_posture}
   */
-  readonly email?: string[];
+  readonly devicePosture?: ZeroTrustAccessPolicyIncludeDevicePosture;
   /**
-  * The email domain to match.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_domain ZeroTrustAccessPolicy#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
   */
-  readonly emailDomain?: string[];
+  readonly email?: ZeroTrustAccessPolicyIncludeEmail;
   /**
-  * The ID of a previously created email list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_list ZeroTrustAccessPolicy#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_domain ZeroTrustAccessPolicy#email_domain}
   */
-  readonly emailList?: string[];
+  readonly emailDomain?: ZeroTrustAccessPolicyIncludeEmailDomain;
   /**
-  * Matches everyone.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#everyone ZeroTrustAccessPolicy#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_list ZeroTrustAccessPolicy#email_list}
   */
-  readonly everyone?: boolean | cdktf.IResolvable;
+  readonly emailList?: ZeroTrustAccessPolicyIncludeEmailListStruct;
   /**
-  * Matches a specific country.
+  * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#geo ZeroTrustAccessPolicy#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#everyone ZeroTrustAccessPolicy#everyone}
   */
-  readonly geo?: string[];
+  readonly everyone?: ZeroTrustAccessPolicyIncludeEveryone;
   /**
-  * The ID of a previously created Access group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#group ZeroTrustAccessPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#external_evaluation ZeroTrustAccessPolicy#external_evaluation}
   */
-  readonly group?: string[];
+  readonly externalEvaluation?: ZeroTrustAccessPolicyIncludeExternalEvaluation;
   /**
-  * An IPv4 or IPv6 CIDR block.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#geo ZeroTrustAccessPolicy#geo}
   */
-  readonly ip?: string[];
+  readonly geo?: ZeroTrustAccessPolicyIncludeGeo;
   /**
-  * The ID of a previously created IP list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ip_list ZeroTrustAccessPolicy#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#github_organization ZeroTrustAccessPolicy#github_organization}
   */
-  readonly ipList?: string[];
+  readonly githubOrganization?: ZeroTrustAccessPolicyIncludeGithubOrganization;
   /**
-  * The ID of a configured identity provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#login_method ZeroTrustAccessPolicy#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#group ZeroTrustAccessPolicy#group}
   */
-  readonly loginMethod?: string[];
+  readonly group?: ZeroTrustAccessPolicyIncludeGroup;
   /**
-  * The ID of an Access service token.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#service_token ZeroTrustAccessPolicy#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#gsuite ZeroTrustAccessPolicy#gsuite}
   */
-  readonly serviceToken?: string[];
+  readonly gsuite?: ZeroTrustAccessPolicyIncludeGsuite;
   /**
-  * auth_context block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#auth_context ZeroTrustAccessPolicy#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
   */
-  readonly authContext?: ZeroTrustAccessPolicyIncludeAuthContext[] | cdktf.IResolvable;
+  readonly ip?: ZeroTrustAccessPolicyIncludeIp;
   /**
-  * azure block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#azure ZeroTrustAccessPolicy#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip_list ZeroTrustAccessPolicy#ip_list}
   */
-  readonly azure?: ZeroTrustAccessPolicyIncludeAzure[] | cdktf.IResolvable;
+  readonly ipList?: ZeroTrustAccessPolicyIncludeIpListStruct;
   /**
-  * external_evaluation block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#external_evaluation ZeroTrustAccessPolicy#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#okta ZeroTrustAccessPolicy#okta}
   */
-  readonly externalEvaluation?: ZeroTrustAccessPolicyIncludeExternalEvaluation[] | cdktf.IResolvable;
+  readonly okta?: ZeroTrustAccessPolicyIncludeOkta;
   /**
-  * github block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#github ZeroTrustAccessPolicy#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#saml ZeroTrustAccessPolicy#saml}
   */
-  readonly github?: ZeroTrustAccessPolicyIncludeGithub[] | cdktf.IResolvable;
+  readonly saml?: ZeroTrustAccessPolicyIncludeSaml;
   /**
-  * gsuite block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#gsuite ZeroTrustAccessPolicy#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#service_token ZeroTrustAccessPolicy#service_token}
   */
-  readonly gsuite?: ZeroTrustAccessPolicyIncludeGsuite[] | cdktf.IResolvable;
-  /**
-  * okta block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#okta ZeroTrustAccessPolicy#okta}
-  */
-  readonly okta?: ZeroTrustAccessPolicyIncludeOkta[] | cdktf.IResolvable;
-  /**
-  * saml block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#saml ZeroTrustAccessPolicy#saml}
-  */
-  readonly saml?: ZeroTrustAccessPolicyIncludeSaml[] | cdktf.IResolvable;
+  readonly serviceToken?: ZeroTrustAccessPolicyIncludeServiceToken;
 }
 
 export function zeroTrustAccessPolicyIncludeToTerraform(struct?: ZeroTrustAccessPolicyInclude | cdktf.IResolvable): any {
@@ -3867,29 +5525,27 @@ export function zeroTrustAccessPolicyIncludeToTerraform(struct?: ZeroTrustAccess
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    any_valid_service_token: cdktf.booleanToTerraform(struct!.anyValidServiceToken),
-    auth_method: cdktf.stringToTerraform(struct!.authMethod),
-    certificate: cdktf.booleanToTerraform(struct!.certificate),
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    common_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commonNames),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
-    email_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailList),
-    everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
-    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
-    auth_context: cdktf.listMapper(zeroTrustAccessPolicyIncludeAuthContextToTerraform, true)(struct!.authContext),
-    azure: cdktf.listMapper(zeroTrustAccessPolicyIncludeAzureToTerraform, true)(struct!.azure),
-    external_evaluation: cdktf.listMapper(zeroTrustAccessPolicyIncludeExternalEvaluationToTerraform, true)(struct!.externalEvaluation),
-    github: cdktf.listMapper(zeroTrustAccessPolicyIncludeGithubToTerraform, true)(struct!.github),
-    gsuite: cdktf.listMapper(zeroTrustAccessPolicyIncludeGsuiteToTerraform, true)(struct!.gsuite),
-    okta: cdktf.listMapper(zeroTrustAccessPolicyIncludeOktaToTerraform, true)(struct!.okta),
-    saml: cdktf.listMapper(zeroTrustAccessPolicyIncludeSamlToTerraform, true)(struct!.saml),
+    any_valid_service_token: zeroTrustAccessPolicyIncludeAnyValidServiceTokenToTerraform(struct!.anyValidServiceToken),
+    auth_context: zeroTrustAccessPolicyIncludeAuthContextToTerraform(struct!.authContext),
+    auth_method: zeroTrustAccessPolicyIncludeAuthMethodToTerraform(struct!.authMethod),
+    azure_ad: zeroTrustAccessPolicyIncludeAzureAdToTerraform(struct!.azureAd),
+    certificate: zeroTrustAccessPolicyIncludeCertificateToTerraform(struct!.certificate),
+    common_name: zeroTrustAccessPolicyIncludeCommonNameToTerraform(struct!.commonName),
+    device_posture: zeroTrustAccessPolicyIncludeDevicePostureToTerraform(struct!.devicePosture),
+    email: zeroTrustAccessPolicyIncludeEmailToTerraform(struct!.email),
+    email_domain: zeroTrustAccessPolicyIncludeEmailDomainToTerraform(struct!.emailDomain),
+    email_list: zeroTrustAccessPolicyIncludeEmailListStructToTerraform(struct!.emailList),
+    everyone: zeroTrustAccessPolicyIncludeEveryoneToTerraform(struct!.everyone),
+    external_evaluation: zeroTrustAccessPolicyIncludeExternalEvaluationToTerraform(struct!.externalEvaluation),
+    geo: zeroTrustAccessPolicyIncludeGeoToTerraform(struct!.geo),
+    github_organization: zeroTrustAccessPolicyIncludeGithubOrganizationToTerraform(struct!.githubOrganization),
+    group: zeroTrustAccessPolicyIncludeGroupToTerraform(struct!.group),
+    gsuite: zeroTrustAccessPolicyIncludeGsuiteToTerraform(struct!.gsuite),
+    ip: zeroTrustAccessPolicyIncludeIpToTerraform(struct!.ip),
+    ip_list: zeroTrustAccessPolicyIncludeIpListStructToTerraform(struct!.ipList),
+    okta: zeroTrustAccessPolicyIncludeOktaToTerraform(struct!.okta),
+    saml: zeroTrustAccessPolicyIncludeSamlToTerraform(struct!.saml),
+    service_token: zeroTrustAccessPolicyIncludeServiceTokenToTerraform(struct!.serviceToken),
   }
 }
 
@@ -3901,142 +5557,130 @@ export function zeroTrustAccessPolicyIncludeToHclTerraform(struct?: ZeroTrustAcc
   }
   const attrs = {
     any_valid_service_token: {
-      value: cdktf.booleanToHclTerraform(struct!.anyValidServiceToken),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    auth_method: {
-      value: cdktf.stringToHclTerraform(struct!.authMethod),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.certificate),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    common_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commonNames),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    device_posture: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.devicePosture),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email_domain: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailDomain),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailList),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    everyone: {
-      value: cdktf.booleanToHclTerraform(struct!.everyone),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    geo: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.geo),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    group: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.group),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    ip: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ip),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    ip_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipList),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    login_method: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginMethod),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    service_token: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.serviceToken),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      value: zeroTrustAccessPolicyIncludeAnyValidServiceTokenToHclTerraform(struct!.anyValidServiceToken),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeAnyValidServiceToken",
     },
     auth_context: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeAuthContextToHclTerraform, true)(struct!.authContext),
+      value: zeroTrustAccessPolicyIncludeAuthContextToHclTerraform(struct!.authContext),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeAuthContextList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeAuthContext",
     },
-    azure: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeAzureToHclTerraform, true)(struct!.azure),
+    auth_method: {
+      value: zeroTrustAccessPolicyIncludeAuthMethodToHclTerraform(struct!.authMethod),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeAzureList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeAuthMethod",
+    },
+    azure_ad: {
+      value: zeroTrustAccessPolicyIncludeAzureAdToHclTerraform(struct!.azureAd),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeAzureAd",
+    },
+    certificate: {
+      value: zeroTrustAccessPolicyIncludeCertificateToHclTerraform(struct!.certificate),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeCertificate",
+    },
+    common_name: {
+      value: zeroTrustAccessPolicyIncludeCommonNameToHclTerraform(struct!.commonName),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeCommonName",
+    },
+    device_posture: {
+      value: zeroTrustAccessPolicyIncludeDevicePostureToHclTerraform(struct!.devicePosture),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeDevicePosture",
+    },
+    email: {
+      value: zeroTrustAccessPolicyIncludeEmailToHclTerraform(struct!.email),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeEmail",
+    },
+    email_domain: {
+      value: zeroTrustAccessPolicyIncludeEmailDomainToHclTerraform(struct!.emailDomain),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeEmailDomain",
+    },
+    email_list: {
+      value: zeroTrustAccessPolicyIncludeEmailListStructToHclTerraform(struct!.emailList),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeEmailListStruct",
+    },
+    everyone: {
+      value: zeroTrustAccessPolicyIncludeEveryoneToHclTerraform(struct!.everyone),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeEveryone",
     },
     external_evaluation: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeExternalEvaluationToHclTerraform, true)(struct!.externalEvaluation),
+      value: zeroTrustAccessPolicyIncludeExternalEvaluationToHclTerraform(struct!.externalEvaluation),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeExternalEvaluationList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeExternalEvaluation",
     },
-    github: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeGithubToHclTerraform, true)(struct!.github),
+    geo: {
+      value: zeroTrustAccessPolicyIncludeGeoToHclTerraform(struct!.geo),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeGithubList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeGeo",
+    },
+    github_organization: {
+      value: zeroTrustAccessPolicyIncludeGithubOrganizationToHclTerraform(struct!.githubOrganization),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeGithubOrganization",
+    },
+    group: {
+      value: zeroTrustAccessPolicyIncludeGroupToHclTerraform(struct!.group),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeGroup",
     },
     gsuite: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeGsuiteToHclTerraform, true)(struct!.gsuite),
+      value: zeroTrustAccessPolicyIncludeGsuiteToHclTerraform(struct!.gsuite),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeGsuiteList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeGsuite",
+    },
+    ip: {
+      value: zeroTrustAccessPolicyIncludeIpToHclTerraform(struct!.ip),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeIp",
+    },
+    ip_list: {
+      value: zeroTrustAccessPolicyIncludeIpListStructToHclTerraform(struct!.ipList),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeIpListStruct",
     },
     okta: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeOktaToHclTerraform, true)(struct!.okta),
+      value: zeroTrustAccessPolicyIncludeOktaToHclTerraform(struct!.okta),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeOktaList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeOkta",
     },
     saml: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeSamlToHclTerraform, true)(struct!.saml),
+      value: zeroTrustAccessPolicyIncludeSamlToHclTerraform(struct!.saml),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyIncludeSamlList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeSaml",
+    },
+    service_token: {
+      value: zeroTrustAccessPolicyIncludeServiceTokenToHclTerraform(struct!.serviceToken),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyIncludeServiceToken",
     },
   };
 
@@ -4064,89 +5708,77 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._anyValidServiceToken !== undefined) {
+    if (this._anyValidServiceToken?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.anyValidServiceToken = this._anyValidServiceToken;
-    }
-    if (this._authMethod !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.authMethod = this._authMethod;
-    }
-    if (this._certificate !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.certificate = this._certificate;
-    }
-    if (this._commonName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commonName = this._commonName;
-    }
-    if (this._commonNames !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commonNames = this._commonNames;
-    }
-    if (this._devicePosture !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.devicePosture = this._devicePosture;
-    }
-    if (this._email !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.email = this._email;
-    }
-    if (this._emailDomain !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.emailDomain = this._emailDomain;
-    }
-    if (this._emailList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.emailList = this._emailList;
-    }
-    if (this._everyone !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.everyone = this._everyone;
-    }
-    if (this._geo !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.geo = this._geo;
-    }
-    if (this._group !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.group = this._group;
-    }
-    if (this._ip !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ip = this._ip;
-    }
-    if (this._ipList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ipList = this._ipList;
-    }
-    if (this._loginMethod !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.loginMethod = this._loginMethod;
-    }
-    if (this._serviceToken !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serviceToken = this._serviceToken;
+      internalValueResult.anyValidServiceToken = this._anyValidServiceToken?.internalValue;
     }
     if (this._authContext?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authContext = this._authContext?.internalValue;
     }
-    if (this._azure?.internalValue !== undefined) {
+    if (this._authMethod?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.azure = this._azure?.internalValue;
+      internalValueResult.authMethod = this._authMethod?.internalValue;
+    }
+    if (this._azureAd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureAd = this._azureAd?.internalValue;
+    }
+    if (this._certificate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificate = this._certificate?.internalValue;
+    }
+    if (this._commonName?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName?.internalValue;
+    }
+    if (this._devicePosture?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.devicePosture = this._devicePosture?.internalValue;
+    }
+    if (this._email?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email?.internalValue;
+    }
+    if (this._emailDomain?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailDomain = this._emailDomain?.internalValue;
+    }
+    if (this._emailList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailList = this._emailList?.internalValue;
+    }
+    if (this._everyone?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.everyone = this._everyone?.internalValue;
     }
     if (this._externalEvaluation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
     }
-    if (this._github?.internalValue !== undefined) {
+    if (this._geo?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.github = this._github?.internalValue;
+      internalValueResult.geo = this._geo?.internalValue;
+    }
+    if (this._githubOrganization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubOrganization = this._githubOrganization?.internalValue;
+    }
+    if (this._group?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.group = this._group?.internalValue;
     }
     if (this._gsuite?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gsuite = this._gsuite?.internalValue;
+    }
+    if (this._ip?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip?.internalValue;
+    }
+    if (this._ipList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList?.internalValue;
     }
     if (this._okta?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -4156,6 +5788,10 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.saml = this._saml?.internalValue;
     }
+    if (this._serviceToken?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceToken = this._serviceToken?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4163,29 +5799,27 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._anyValidServiceToken = undefined;
-      this._authMethod = undefined;
-      this._certificate = undefined;
-      this._commonName = undefined;
-      this._commonNames = undefined;
-      this._devicePosture = undefined;
-      this._email = undefined;
-      this._emailDomain = undefined;
-      this._emailList = undefined;
-      this._everyone = undefined;
-      this._geo = undefined;
-      this._group = undefined;
-      this._ip = undefined;
-      this._ipList = undefined;
-      this._loginMethod = undefined;
-      this._serviceToken = undefined;
+      this._anyValidServiceToken.internalValue = undefined;
       this._authContext.internalValue = undefined;
-      this._azure.internalValue = undefined;
+      this._authMethod.internalValue = undefined;
+      this._azureAd.internalValue = undefined;
+      this._certificate.internalValue = undefined;
+      this._commonName.internalValue = undefined;
+      this._devicePosture.internalValue = undefined;
+      this._email.internalValue = undefined;
+      this._emailDomain.internalValue = undefined;
+      this._emailList.internalValue = undefined;
+      this._everyone.internalValue = undefined;
       this._externalEvaluation.internalValue = undefined;
-      this._github.internalValue = undefined;
+      this._geo.internalValue = undefined;
+      this._githubOrganization.internalValue = undefined;
+      this._group.internalValue = undefined;
       this._gsuite.internalValue = undefined;
+      this._ip.internalValue = undefined;
+      this._ipList.internalValue = undefined;
       this._okta.internalValue = undefined;
       this._saml.internalValue = undefined;
+      this._serviceToken.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -4194,294 +5828,52 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._anyValidServiceToken = value.anyValidServiceToken;
-      this._authMethod = value.authMethod;
-      this._certificate = value.certificate;
-      this._commonName = value.commonName;
-      this._commonNames = value.commonNames;
-      this._devicePosture = value.devicePosture;
-      this._email = value.email;
-      this._emailDomain = value.emailDomain;
-      this._emailList = value.emailList;
-      this._everyone = value.everyone;
-      this._geo = value.geo;
-      this._group = value.group;
-      this._ip = value.ip;
-      this._ipList = value.ipList;
-      this._loginMethod = value.loginMethod;
-      this._serviceToken = value.serviceToken;
+      this._anyValidServiceToken.internalValue = value.anyValidServiceToken;
       this._authContext.internalValue = value.authContext;
-      this._azure.internalValue = value.azure;
+      this._authMethod.internalValue = value.authMethod;
+      this._azureAd.internalValue = value.azureAd;
+      this._certificate.internalValue = value.certificate;
+      this._commonName.internalValue = value.commonName;
+      this._devicePosture.internalValue = value.devicePosture;
+      this._email.internalValue = value.email;
+      this._emailDomain.internalValue = value.emailDomain;
+      this._emailList.internalValue = value.emailList;
+      this._everyone.internalValue = value.everyone;
       this._externalEvaluation.internalValue = value.externalEvaluation;
-      this._github.internalValue = value.github;
+      this._geo.internalValue = value.geo;
+      this._githubOrganization.internalValue = value.githubOrganization;
+      this._group.internalValue = value.group;
       this._gsuite.internalValue = value.gsuite;
+      this._ip.internalValue = value.ip;
+      this._ipList.internalValue = value.ipList;
       this._okta.internalValue = value.okta;
       this._saml.internalValue = value.saml;
+      this._serviceToken.internalValue = value.serviceToken;
     }
   }
 
   // any_valid_service_token - computed: false, optional: true, required: false
-  private _anyValidServiceToken?: boolean | cdktf.IResolvable; 
+  private _anyValidServiceToken = new ZeroTrustAccessPolicyIncludeAnyValidServiceTokenOutputReference(this, "any_valid_service_token");
   public get anyValidServiceToken() {
-    return this.getBooleanAttribute('any_valid_service_token');
+    return this._anyValidServiceToken;
   }
-  public set anyValidServiceToken(value: boolean | cdktf.IResolvable) {
-    this._anyValidServiceToken = value;
+  public putAnyValidServiceToken(value: ZeroTrustAccessPolicyIncludeAnyValidServiceToken) {
+    this._anyValidServiceToken.internalValue = value;
   }
   public resetAnyValidServiceToken() {
-    this._anyValidServiceToken = undefined;
+    this._anyValidServiceToken.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get anyValidServiceTokenInput() {
-    return this._anyValidServiceToken;
-  }
-
-  // auth_method - computed: false, optional: true, required: false
-  private _authMethod?: string; 
-  public get authMethod() {
-    return this.getStringAttribute('auth_method');
-  }
-  public set authMethod(value: string) {
-    this._authMethod = value;
-  }
-  public resetAuthMethod() {
-    this._authMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authMethodInput() {
-    return this._authMethod;
-  }
-
-  // certificate - computed: false, optional: true, required: false
-  private _certificate?: boolean | cdktf.IResolvable; 
-  public get certificate() {
-    return this.getBooleanAttribute('certificate');
-  }
-  public set certificate(value: boolean | cdktf.IResolvable) {
-    this._certificate = value;
-  }
-  public resetCertificate() {
-    this._certificate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateInput() {
-    return this._certificate;
-  }
-
-  // common_name - computed: false, optional: true, required: false
-  private _commonName?: string; 
-  public get commonName() {
-    return this.getStringAttribute('common_name');
-  }
-  public set commonName(value: string) {
-    this._commonName = value;
-  }
-  public resetCommonName() {
-    this._commonName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commonNameInput() {
-    return this._commonName;
-  }
-
-  // common_names - computed: false, optional: true, required: false
-  private _commonNames?: string[]; 
-  public get commonNames() {
-    return this.getListAttribute('common_names');
-  }
-  public set commonNames(value: string[]) {
-    this._commonNames = value;
-  }
-  public resetCommonNames() {
-    this._commonNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commonNamesInput() {
-    return this._commonNames;
-  }
-
-  // device_posture - computed: false, optional: true, required: false
-  private _devicePosture?: string[]; 
-  public get devicePosture() {
-    return this.getListAttribute('device_posture');
-  }
-  public set devicePosture(value: string[]) {
-    this._devicePosture = value;
-  }
-  public resetDevicePosture() {
-    this._devicePosture = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get devicePostureInput() {
-    return this._devicePosture;
-  }
-
-  // email - computed: false, optional: true, required: false
-  private _email?: string[]; 
-  public get email() {
-    return this.getListAttribute('email');
-  }
-  public set email(value: string[]) {
-    this._email = value;
-  }
-  public resetEmail() {
-    this._email = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
-  }
-
-  // email_domain - computed: false, optional: true, required: false
-  private _emailDomain?: string[]; 
-  public get emailDomain() {
-    return this.getListAttribute('email_domain');
-  }
-  public set emailDomain(value: string[]) {
-    this._emailDomain = value;
-  }
-  public resetEmailDomain() {
-    this._emailDomain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailDomainInput() {
-    return this._emailDomain;
-  }
-
-  // email_list - computed: false, optional: true, required: false
-  private _emailList?: string[]; 
-  public get emailList() {
-    return this.getListAttribute('email_list');
-  }
-  public set emailList(value: string[]) {
-    this._emailList = value;
-  }
-  public resetEmailList() {
-    this._emailList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailListInput() {
-    return this._emailList;
-  }
-
-  // everyone - computed: false, optional: true, required: false
-  private _everyone?: boolean | cdktf.IResolvable; 
-  public get everyone() {
-    return this.getBooleanAttribute('everyone');
-  }
-  public set everyone(value: boolean | cdktf.IResolvable) {
-    this._everyone = value;
-  }
-  public resetEveryone() {
-    this._everyone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get everyoneInput() {
-    return this._everyone;
-  }
-
-  // geo - computed: false, optional: true, required: false
-  private _geo?: string[]; 
-  public get geo() {
-    return this.getListAttribute('geo');
-  }
-  public set geo(value: string[]) {
-    this._geo = value;
-  }
-  public resetGeo() {
-    this._geo = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get geoInput() {
-    return this._geo;
-  }
-
-  // group - computed: false, optional: true, required: false
-  private _group?: string[]; 
-  public get group() {
-    return this.getListAttribute('group');
-  }
-  public set group(value: string[]) {
-    this._group = value;
-  }
-  public resetGroup() {
-    this._group = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupInput() {
-    return this._group;
-  }
-
-  // ip - computed: false, optional: true, required: false
-  private _ip?: string[]; 
-  public get ip() {
-    return this.getListAttribute('ip');
-  }
-  public set ip(value: string[]) {
-    this._ip = value;
-  }
-  public resetIp() {
-    this._ip = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipInput() {
-    return this._ip;
-  }
-
-  // ip_list - computed: false, optional: true, required: false
-  private _ipList?: string[]; 
-  public get ipList() {
-    return this.getListAttribute('ip_list');
-  }
-  public set ipList(value: string[]) {
-    this._ipList = value;
-  }
-  public resetIpList() {
-    this._ipList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipListInput() {
-    return this._ipList;
-  }
-
-  // login_method - computed: false, optional: true, required: false
-  private _loginMethod?: string[]; 
-  public get loginMethod() {
-    return this.getListAttribute('login_method');
-  }
-  public set loginMethod(value: string[]) {
-    this._loginMethod = value;
-  }
-  public resetLoginMethod() {
-    this._loginMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loginMethodInput() {
-    return this._loginMethod;
-  }
-
-  // service_token - computed: false, optional: true, required: false
-  private _serviceToken?: string[]; 
-  public get serviceToken() {
-    return this.getListAttribute('service_token');
-  }
-  public set serviceToken(value: string[]) {
-    this._serviceToken = value;
-  }
-  public resetServiceToken() {
-    this._serviceToken = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceTokenInput() {
-    return this._serviceToken;
+    return this._anyValidServiceToken.internalValue;
   }
 
   // auth_context - computed: false, optional: true, required: false
-  private _authContext = new ZeroTrustAccessPolicyIncludeAuthContextList(this, "auth_context", false);
+  private _authContext = new ZeroTrustAccessPolicyIncludeAuthContextOutputReference(this, "auth_context");
   public get authContext() {
     return this._authContext;
   }
-  public putAuthContext(value: ZeroTrustAccessPolicyIncludeAuthContext[] | cdktf.IResolvable) {
+  public putAuthContext(value: ZeroTrustAccessPolicyIncludeAuthContext) {
     this._authContext.internalValue = value;
   }
   public resetAuthContext() {
@@ -4492,28 +5884,156 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
     return this._authContext.internalValue;
   }
 
-  // azure - computed: false, optional: true, required: false
-  private _azure = new ZeroTrustAccessPolicyIncludeAzureList(this, "azure", false);
-  public get azure() {
-    return this._azure;
+  // auth_method - computed: false, optional: true, required: false
+  private _authMethod = new ZeroTrustAccessPolicyIncludeAuthMethodOutputReference(this, "auth_method");
+  public get authMethod() {
+    return this._authMethod;
   }
-  public putAzure(value: ZeroTrustAccessPolicyIncludeAzure[] | cdktf.IResolvable) {
-    this._azure.internalValue = value;
+  public putAuthMethod(value: ZeroTrustAccessPolicyIncludeAuthMethod) {
+    this._authMethod.internalValue = value;
   }
-  public resetAzure() {
-    this._azure.internalValue = undefined;
+  public resetAuthMethod() {
+    this._authMethod.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get azureInput() {
-    return this._azure.internalValue;
+  public get authMethodInput() {
+    return this._authMethod.internalValue;
+  }
+
+  // azure_ad - computed: false, optional: true, required: false
+  private _azureAd = new ZeroTrustAccessPolicyIncludeAzureAdOutputReference(this, "azure_ad");
+  public get azureAd() {
+    return this._azureAd;
+  }
+  public putAzureAd(value: ZeroTrustAccessPolicyIncludeAzureAd) {
+    this._azureAd.internalValue = value;
+  }
+  public resetAzureAd() {
+    this._azureAd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureAdInput() {
+    return this._azureAd.internalValue;
+  }
+
+  // certificate - computed: false, optional: true, required: false
+  private _certificate = new ZeroTrustAccessPolicyIncludeCertificateOutputReference(this, "certificate");
+  public get certificate() {
+    return this._certificate;
+  }
+  public putCertificate(value: ZeroTrustAccessPolicyIncludeCertificate) {
+    this._certificate.internalValue = value;
+  }
+  public resetCertificate() {
+    this._certificate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate.internalValue;
+  }
+
+  // common_name - computed: false, optional: true, required: false
+  private _commonName = new ZeroTrustAccessPolicyIncludeCommonNameOutputReference(this, "common_name");
+  public get commonName() {
+    return this._commonName;
+  }
+  public putCommonName(value: ZeroTrustAccessPolicyIncludeCommonName) {
+    this._commonName.internalValue = value;
+  }
+  public resetCommonName() {
+    this._commonName.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName.internalValue;
+  }
+
+  // device_posture - computed: false, optional: true, required: false
+  private _devicePosture = new ZeroTrustAccessPolicyIncludeDevicePostureOutputReference(this, "device_posture");
+  public get devicePosture() {
+    return this._devicePosture;
+  }
+  public putDevicePosture(value: ZeroTrustAccessPolicyIncludeDevicePosture) {
+    this._devicePosture.internalValue = value;
+  }
+  public resetDevicePosture() {
+    this._devicePosture.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicePostureInput() {
+    return this._devicePosture.internalValue;
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email = new ZeroTrustAccessPolicyIncludeEmailOutputReference(this, "email");
+  public get email() {
+    return this._email;
+  }
+  public putEmail(value: ZeroTrustAccessPolicyIncludeEmail) {
+    this._email.internalValue = value;
+  }
+  public resetEmail() {
+    this._email.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email.internalValue;
+  }
+
+  // email_domain - computed: false, optional: true, required: false
+  private _emailDomain = new ZeroTrustAccessPolicyIncludeEmailDomainOutputReference(this, "email_domain");
+  public get emailDomain() {
+    return this._emailDomain;
+  }
+  public putEmailDomain(value: ZeroTrustAccessPolicyIncludeEmailDomain) {
+    this._emailDomain.internalValue = value;
+  }
+  public resetEmailDomain() {
+    this._emailDomain.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainInput() {
+    return this._emailDomain.internalValue;
+  }
+
+  // email_list - computed: false, optional: true, required: false
+  private _emailList = new ZeroTrustAccessPolicyIncludeEmailListStructOutputReference(this, "email_list");
+  public get emailList() {
+    return this._emailList;
+  }
+  public putEmailList(value: ZeroTrustAccessPolicyIncludeEmailListStruct) {
+    this._emailList.internalValue = value;
+  }
+  public resetEmailList() {
+    this._emailList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailListInput() {
+    return this._emailList.internalValue;
+  }
+
+  // everyone - computed: false, optional: true, required: false
+  private _everyone = new ZeroTrustAccessPolicyIncludeEveryoneOutputReference(this, "everyone");
+  public get everyone() {
+    return this._everyone;
+  }
+  public putEveryone(value: ZeroTrustAccessPolicyIncludeEveryone) {
+    this._everyone.internalValue = value;
+  }
+  public resetEveryone() {
+    this._everyone.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get everyoneInput() {
+    return this._everyone.internalValue;
   }
 
   // external_evaluation - computed: false, optional: true, required: false
-  private _externalEvaluation = new ZeroTrustAccessPolicyIncludeExternalEvaluationList(this, "external_evaluation", false);
+  private _externalEvaluation = new ZeroTrustAccessPolicyIncludeExternalEvaluationOutputReference(this, "external_evaluation");
   public get externalEvaluation() {
     return this._externalEvaluation;
   }
-  public putExternalEvaluation(value: ZeroTrustAccessPolicyIncludeExternalEvaluation[] | cdktf.IResolvable) {
+  public putExternalEvaluation(value: ZeroTrustAccessPolicyIncludeExternalEvaluation) {
     this._externalEvaluation.internalValue = value;
   }
   public resetExternalEvaluation() {
@@ -4524,28 +6044,60 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
     return this._externalEvaluation.internalValue;
   }
 
-  // github - computed: false, optional: true, required: false
-  private _github = new ZeroTrustAccessPolicyIncludeGithubList(this, "github", false);
-  public get github() {
-    return this._github;
+  // geo - computed: false, optional: true, required: false
+  private _geo = new ZeroTrustAccessPolicyIncludeGeoOutputReference(this, "geo");
+  public get geo() {
+    return this._geo;
   }
-  public putGithub(value: ZeroTrustAccessPolicyIncludeGithub[] | cdktf.IResolvable) {
-    this._github.internalValue = value;
+  public putGeo(value: ZeroTrustAccessPolicyIncludeGeo) {
+    this._geo.internalValue = value;
   }
-  public resetGithub() {
-    this._github.internalValue = undefined;
+  public resetGeo() {
+    this._geo.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get githubInput() {
-    return this._github.internalValue;
+  public get geoInput() {
+    return this._geo.internalValue;
+  }
+
+  // github_organization - computed: false, optional: true, required: false
+  private _githubOrganization = new ZeroTrustAccessPolicyIncludeGithubOrganizationOutputReference(this, "github_organization");
+  public get githubOrganization() {
+    return this._githubOrganization;
+  }
+  public putGithubOrganization(value: ZeroTrustAccessPolicyIncludeGithubOrganization) {
+    this._githubOrganization.internalValue = value;
+  }
+  public resetGithubOrganization() {
+    this._githubOrganization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubOrganizationInput() {
+    return this._githubOrganization.internalValue;
+  }
+
+  // group - computed: false, optional: true, required: false
+  private _group = new ZeroTrustAccessPolicyIncludeGroupOutputReference(this, "group");
+  public get group() {
+    return this._group;
+  }
+  public putGroup(value: ZeroTrustAccessPolicyIncludeGroup) {
+    this._group.internalValue = value;
+  }
+  public resetGroup() {
+    this._group.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group.internalValue;
   }
 
   // gsuite - computed: false, optional: true, required: false
-  private _gsuite = new ZeroTrustAccessPolicyIncludeGsuiteList(this, "gsuite", false);
+  private _gsuite = new ZeroTrustAccessPolicyIncludeGsuiteOutputReference(this, "gsuite");
   public get gsuite() {
     return this._gsuite;
   }
-  public putGsuite(value: ZeroTrustAccessPolicyIncludeGsuite[] | cdktf.IResolvable) {
+  public putGsuite(value: ZeroTrustAccessPolicyIncludeGsuite) {
     this._gsuite.internalValue = value;
   }
   public resetGsuite() {
@@ -4556,12 +6108,44 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
     return this._gsuite.internalValue;
   }
 
+  // ip - computed: false, optional: true, required: false
+  private _ip = new ZeroTrustAccessPolicyIncludeIpOutputReference(this, "ip");
+  public get ip() {
+    return this._ip;
+  }
+  public putIp(value: ZeroTrustAccessPolicyIncludeIp) {
+    this._ip.internalValue = value;
+  }
+  public resetIp() {
+    this._ip.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip.internalValue;
+  }
+
+  // ip_list - computed: false, optional: true, required: false
+  private _ipList = new ZeroTrustAccessPolicyIncludeIpListStructOutputReference(this, "ip_list");
+  public get ipList() {
+    return this._ipList;
+  }
+  public putIpList(value: ZeroTrustAccessPolicyIncludeIpListStruct) {
+    this._ipList.internalValue = value;
+  }
+  public resetIpList() {
+    this._ipList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList.internalValue;
+  }
+
   // okta - computed: false, optional: true, required: false
-  private _okta = new ZeroTrustAccessPolicyIncludeOktaList(this, "okta", false);
+  private _okta = new ZeroTrustAccessPolicyIncludeOktaOutputReference(this, "okta");
   public get okta() {
     return this._okta;
   }
-  public putOkta(value: ZeroTrustAccessPolicyIncludeOkta[] | cdktf.IResolvable) {
+  public putOkta(value: ZeroTrustAccessPolicyIncludeOkta) {
     this._okta.internalValue = value;
   }
   public resetOkta() {
@@ -4573,11 +6157,11 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
   }
 
   // saml - computed: false, optional: true, required: false
-  private _saml = new ZeroTrustAccessPolicyIncludeSamlList(this, "saml", false);
+  private _saml = new ZeroTrustAccessPolicyIncludeSamlOutputReference(this, "saml");
   public get saml() {
     return this._saml;
   }
-  public putSaml(value: ZeroTrustAccessPolicyIncludeSaml[] | cdktf.IResolvable) {
+  public putSaml(value: ZeroTrustAccessPolicyIncludeSaml) {
     this._saml.internalValue = value;
   }
   public resetSaml() {
@@ -4586,6 +6170,22 @@ export class ZeroTrustAccessPolicyIncludeOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get samlInput() {
     return this._saml.internalValue;
+  }
+
+  // service_token - computed: false, optional: true, required: false
+  private _serviceToken = new ZeroTrustAccessPolicyIncludeServiceTokenOutputReference(this, "service_token");
+  public get serviceToken() {
+    return this._serviceToken;
+  }
+  public putServiceToken(value: ZeroTrustAccessPolicyIncludeServiceToken) {
+    this._serviceToken.internalValue = value;
+  }
+  public resetServiceToken() {
+    this._serviceToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTokenInput() {
+    return this._serviceToken.internalValue;
   }
 }
 
@@ -4608,26 +6208,85 @@ export class ZeroTrustAccessPolicyIncludeList extends cdktf.ComplexList {
     return new ZeroTrustAccessPolicyIncludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ZeroTrustAccessPolicyRequireAnyValidServiceToken {
+}
+
+export function zeroTrustAccessPolicyRequireAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessPolicyRequireAnyValidServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessPolicyRequireAnyValidServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyRequireAnyValidServiceTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireAnyValidServiceToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireAnyValidServiceToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
 export interface ZeroTrustAccessPolicyRequireAuthContext {
   /**
-  * The ACID of the Authentication Context.
+  * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ac_id ZeroTrustAccessPolicy#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ac_id ZeroTrustAccessPolicy#ac_id}
   */
   readonly acId: string;
   /**
-  * The ID of the Authentication Context.
+  * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * The ID of the Azure identity provider.
+  * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -4682,11 +6341,9 @@ export class ZeroTrustAccessPolicyRequireAuthContextOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyRequireAuthContext | cdktf.IResolvable | undefined {
@@ -4731,7 +6388,7 @@ export class ZeroTrustAccessPolicyRequireAuthContextOutputReference extends cdkt
     }
   }
 
-  // ac_id - computed: false, optional: false, required: true
+  // ac_id - computed: true, optional: false, required: true
   private _acId?: string; 
   public get acId() {
     return this.getStringAttribute('ac_id');
@@ -4744,7 +6401,7 @@ export class ZeroTrustAccessPolicyRequireAuthContextOutputReference extends cdkt
     return this._acId;
   }
 
-  // id - computed: false, optional: false, required: true
+  // id - computed: true, optional: false, required: true
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -4757,7 +6414,7 @@ export class ZeroTrustAccessPolicyRequireAuthContextOutputReference extends cdkt
     return this._id;
   }
 
-  // identity_provider_id - computed: false, optional: false, required: true
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -4770,67 +6427,140 @@ export class ZeroTrustAccessPolicyRequireAuthContextOutputReference extends cdkt
     return this._identityProviderId;
   }
 }
-
-export class ZeroTrustAccessPolicyRequireAuthContextList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireAuthContext[] | cdktf.IResolvable
-
+export interface ZeroTrustAccessPolicyRequireAuthMethod {
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyRequireAuthContextOutputReference {
-    return new ZeroTrustAccessPolicyRequireAuthContextOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ZeroTrustAccessPolicyRequireAzure {
-  /**
-  * The ID of the Azure group or user.
+  * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
   */
-  readonly id?: string[];
-  /**
-  * The ID of the Azure identity provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
-  */
-  readonly identityProviderId?: string;
+  readonly authMethod: string;
 }
 
-export function zeroTrustAccessPolicyRequireAzureToTerraform(struct?: ZeroTrustAccessPolicyRequireAzure | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyRequireAuthMethodToTerraform(struct?: ZeroTrustAccessPolicyRequireAuthMethod | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.id),
+    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireAuthMethodToHclTerraform(struct?: ZeroTrustAccessPolicyRequireAuthMethod | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_method: {
+      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireAuthMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireAuthMethod | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authMethod = this._authMethod;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireAuthMethod | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._authMethod = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._authMethod = value.authMethod;
+    }
+  }
+
+  // auth_method - computed: true, optional: false, required: true
+  private _authMethod?: string; 
+  public get authMethod() {
+    return this.getStringAttribute('auth_method');
+  }
+  public set authMethod(value: string) {
+    this._authMethod = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodInput() {
+    return this._authMethod;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireAzureAd {
+  /**
+  * The ID of an Azure group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * The ID of your Azure identity provider.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  */
+  readonly identityProviderId: string;
+}
+
+export function zeroTrustAccessPolicyRequireAzureAdToTerraform(struct?: ZeroTrustAccessPolicyRequireAzureAd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessPolicyRequireAzureToHclTerraform(struct?: ZeroTrustAccessPolicyRequireAzure | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyRequireAzureAdToHclTerraform(struct?: ZeroTrustAccessPolicyRequireAzureAd | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.id),
+      value: cdktf.stringToHclTerraform(struct!.id),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
     identity_provider_id: {
       value: cdktf.stringToHclTerraform(struct!.identityProviderId),
@@ -4844,21 +6574,19 @@ export function zeroTrustAccessPolicyRequireAzureToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyRequireAzureOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyRequireAzureAdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyRequireAzure | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyRequireAzureAd | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4875,7 +6603,7 @@ export class ZeroTrustAccessPolicyRequireAzureOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyRequireAzure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyRequireAzureAd | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4894,23 +6622,20 @@ export class ZeroTrustAccessPolicyRequireAzureOutputReference extends cdktf.Comp
     }
   }
 
-  // id - computed: false, optional: true, required: false
-  private _id?: string[]; 
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
   public get id() {
-    return this.getListAttribute('id');
+    return this.getStringAttribute('id');
   }
-  public set id(value: string[]) {
+  public set id(value: string) {
     this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -4918,47 +6643,610 @@ export class ZeroTrustAccessPolicyRequireAzureOutputReference extends cdktf.Comp
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyRequireCertificate {
+}
 
-export class ZeroTrustAccessPolicyRequireAzureList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireAzure[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyRequireCertificateToTerraform(struct?: ZeroTrustAccessPolicyRequireCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireCertificateToHclTerraform(struct?: ZeroTrustAccessPolicyRequireCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyRequireCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
+  public get internalValue(): ZeroTrustAccessPolicyRequireCertificate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireCertificate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
+export interface ZeroTrustAccessPolicyRequireCommonName {
   /**
-  * @param index the index of the item to return
+  * The common name to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
   */
-  public get(index: number): ZeroTrustAccessPolicyRequireAzureOutputReference {
-    return new ZeroTrustAccessPolicyRequireAzureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  readonly commonName: string;
+}
+
+export function zeroTrustAccessPolicyRequireCommonNameToTerraform(struct?: ZeroTrustAccessPolicyRequireCommonName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    common_name: cdktf.stringToTerraform(struct!.commonName),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireCommonNameToHclTerraform(struct?: ZeroTrustAccessPolicyRequireCommonName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    common_name: {
+      value: cdktf.stringToHclTerraform(struct!.commonName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireCommonNameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireCommonName | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commonName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireCommonName | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._commonName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._commonName = value.commonName;
+    }
+  }
+
+  // common_name - computed: true, optional: false, required: true
+  private _commonName?: string; 
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+  public set commonName(value: string) {
+    this._commonName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireDevicePosture {
+  /**
+  * The ID of a device posture integration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#integration_uid ZeroTrustAccessPolicy#integration_uid}
+  */
+  readonly integrationUid: string;
+}
+
+export function zeroTrustAccessPolicyRequireDevicePostureToTerraform(struct?: ZeroTrustAccessPolicyRequireDevicePosture | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    integration_uid: cdktf.stringToTerraform(struct!.integrationUid),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireDevicePostureToHclTerraform(struct?: ZeroTrustAccessPolicyRequireDevicePosture | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    integration_uid: {
+      value: cdktf.stringToHclTerraform(struct!.integrationUid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireDevicePostureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireDevicePosture | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._integrationUid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrationUid = this._integrationUid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireDevicePosture | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._integrationUid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._integrationUid = value.integrationUid;
+    }
+  }
+
+  // integration_uid - computed: true, optional: false, required: true
+  private _integrationUid?: string; 
+  public get integrationUid() {
+    return this.getStringAttribute('integration_uid');
+  }
+  public set integrationUid(value: string) {
+    this._integrationUid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrationUidInput() {
+    return this._integrationUid;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireEmail {
+  /**
+  * The email of the user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  */
+  readonly email: string;
+}
+
+export function zeroTrustAccessPolicyRequireEmailToTerraform(struct?: ZeroTrustAccessPolicyRequireEmail | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktf.stringToTerraform(struct!.email),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireEmailToHclTerraform(struct?: ZeroTrustAccessPolicyRequireEmail | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireEmailOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireEmail | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireEmail | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+    }
+  }
+
+  // email - computed: true, optional: false, required: true
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireEmailDomain {
+  /**
+  * The email domain to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#domain ZeroTrustAccessPolicy#domain}
+  */
+  readonly domain: string;
+}
+
+export function zeroTrustAccessPolicyRequireEmailDomainToTerraform(struct?: ZeroTrustAccessPolicyRequireEmailDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireEmailDomainToHclTerraform(struct?: ZeroTrustAccessPolicyRequireEmailDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireEmailDomainOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireEmailDomain | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireEmailDomain | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domain = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domain = value.domain;
+    }
+  }
+
+  // domain - computed: true, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireEmailListStruct {
+  /**
+  * The ID of a previously created email list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyRequireEmailListStructToTerraform(struct?: ZeroTrustAccessPolicyRequireEmailListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireEmailListStructToHclTerraform(struct?: ZeroTrustAccessPolicyRequireEmailListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireEmailListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireEmailListStruct | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireEmailListStruct | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireEveryone {
+}
+
+export function zeroTrustAccessPolicyRequireEveryoneToTerraform(struct?: ZeroTrustAccessPolicyRequireEveryone | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireEveryoneToHclTerraform(struct?: ZeroTrustAccessPolicyRequireEveryone | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustAccessPolicyRequireEveryoneOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireEveryone | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireEveryone | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
   }
 }
 export interface ZeroTrustAccessPolicyRequireExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#evaluate_url ZeroTrustAccessPolicy#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#evaluate_url ZeroTrustAccessPolicy#evaluate_url}
   */
-  readonly evaluateUrl?: string;
+  readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#keys_url ZeroTrustAccessPolicy#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#keys_url ZeroTrustAccessPolicy#keys_url}
   */
-  readonly keysUrl?: string;
+  readonly keysUrl: string;
 }
 
 export function zeroTrustAccessPolicyRequireExternalEvaluationToTerraform(struct?: ZeroTrustAccessPolicyRequireExternalEvaluation | cdktf.IResolvable): any {
@@ -5004,11 +7292,9 @@ export class ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyRequireExternalEvaluation | cdktf.IResolvable | undefined {
@@ -5047,7 +7333,7 @@ export class ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference exten
     }
   }
 
-  // evaluate_url - computed: false, optional: true, required: false
+  // evaluate_url - computed: true, optional: false, required: true
   private _evaluateUrl?: string; 
   public get evaluateUrl() {
     return this.getStringAttribute('evaluate_url');
@@ -5055,15 +7341,12 @@ export class ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference exten
   public set evaluateUrl(value: string) {
     this._evaluateUrl = value;
   }
-  public resetEvaluateUrl() {
-    this._evaluateUrl = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get evaluateUrlInput() {
     return this._evaluateUrl;
   }
 
-  // keys_url - computed: false, optional: true, required: false
+  // keys_url - computed: true, optional: false, required: true
   private _keysUrl?: string; 
   public get keysUrl() {
     return this.getStringAttribute('keys_url');
@@ -5071,56 +7354,126 @@ export class ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference exten
   public set keysUrl(value: string) {
     this._keysUrl = value;
   }
-  public resetKeysUrl() {
-    this._keysUrl = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get keysUrlInput() {
     return this._keysUrl;
   }
 }
+export interface ZeroTrustAccessPolicyRequireGeo {
+  /**
+  * The country code that should be matched.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#country_code ZeroTrustAccessPolicy#country_code}
+  */
+  readonly countryCode: string;
+}
 
-export class ZeroTrustAccessPolicyRequireExternalEvaluationList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireExternalEvaluation[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyRequireGeoToTerraform(struct?: ZeroTrustAccessPolicyRequireGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    country_code: cdktf.stringToTerraform(struct!.countryCode),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireGeoToHclTerraform(struct?: ZeroTrustAccessPolicyRequireGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireGeoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference {
-    return new ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyRequireGeo | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._countryCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countryCode = this._countryCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireGeo | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._countryCode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._countryCode = value.countryCode;
+    }
+  }
+
+  // country_code - computed: true, optional: false, required: true
+  private _countryCode?: string; 
+  public get countryCode() {
+    return this.getStringAttribute('country_code');
+  }
+  public set countryCode(value: string) {
+    this._countryCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryCodeInput() {
+    return this._countryCode;
   }
 }
-export interface ZeroTrustAccessPolicyRequireGithub {
+export interface ZeroTrustAccessPolicyRequireGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
   */
-  readonly name?: string;
+  readonly name: string;
   /**
-  * The teams that should be matched.
+  * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#teams ZeroTrustAccessPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#team ZeroTrustAccessPolicy#team}
   */
-  readonly teams?: string[];
+  readonly team?: string;
 }
 
-export function zeroTrustAccessPolicyRequireGithubToTerraform(struct?: ZeroTrustAccessPolicyRequireGithub | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyRequireGithubOrganizationToTerraform(struct?: ZeroTrustAccessPolicyRequireGithubOrganization | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5128,12 +7481,12 @@ export function zeroTrustAccessPolicyRequireGithubToTerraform(struct?: ZeroTrust
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
     name: cdktf.stringToTerraform(struct!.name),
-    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
+    team: cdktf.stringToTerraform(struct!.team),
   }
 }
 
 
-export function zeroTrustAccessPolicyRequireGithubToHclTerraform(struct?: ZeroTrustAccessPolicyRequireGithub | cdktf.IResolvable): any {
+export function zeroTrustAccessPolicyRequireGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessPolicyRequireGithubOrganization | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5151,11 +7504,11 @@ export function zeroTrustAccessPolicyRequireGithubToHclTerraform(struct?: ZeroTr
       type: "simple",
       storageClassType: "string",
     },
-    teams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.teams),
+    team: {
+      value: cdktf.stringToHclTerraform(struct!.team),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -5163,21 +7516,19 @@ export function zeroTrustAccessPolicyRequireGithubToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessPolicyRequireGithubOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessPolicyRequireGithubOrganizationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessPolicyRequireGithub | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessPolicyRequireGithubOrganization | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5191,20 +7542,20 @@ export class ZeroTrustAccessPolicyRequireGithubOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._teams !== undefined) {
+    if (this._team !== undefined) {
       hasAnyValues = true;
-      internalValueResult.teams = this._teams;
+      internalValueResult.team = this._team;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessPolicyRequireGithub | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessPolicyRequireGithubOrganization | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityProviderId = undefined;
       this._name = undefined;
-      this._teams = undefined;
+      this._team = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -5215,11 +7566,11 @@ export class ZeroTrustAccessPolicyRequireGithubOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._identityProviderId = value.identityProviderId;
       this._name = value.name;
-      this._teams = value.teams;
+      this._team = value.team;
     }
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -5227,15 +7578,12 @@ export class ZeroTrustAccessPolicyRequireGithubOutputReference extends cdktf.Com
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -5243,61 +7591,134 @@ export class ZeroTrustAccessPolicyRequireGithubOutputReference extends cdktf.Com
   public set name(value: string) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // teams - computed: false, optional: true, required: false
-  private _teams?: string[]; 
-  public get teams() {
-    return this.getListAttribute('teams');
+  // team - computed: true, optional: true, required: false
+  private _team?: string; 
+  public get team() {
+    return this.getStringAttribute('team');
   }
-  public set teams(value: string[]) {
-    this._teams = value;
+  public set team(value: string) {
+    this._team = value;
   }
-  public resetTeams() {
-    this._teams = undefined;
+  public resetTeam() {
+    this._team = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get teamsInput() {
-    return this._teams;
+  public get teamInput() {
+    return this._team;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireGroup {
+  /**
+  * The ID of a previously created Access group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyRequireGroupToTerraform(struct?: ZeroTrustAccessPolicyRequireGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
   }
 }
 
-export class ZeroTrustAccessPolicyRequireGithubList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireGithub[] | cdktf.IResolvable
+
+export function zeroTrustAccessPolicyRequireGroupToHclTerraform(struct?: ZeroTrustAccessPolicyRequireGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyRequireGithubOutputReference {
-    return new ZeroTrustAccessPolicyRequireGithubOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyRequireGroup | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireGroup | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 }
 export interface ZeroTrustAccessPolicyRequireGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
   */
-  readonly email: string[];
+  readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -5308,7 +7729,7 @@ export function zeroTrustAccessPolicyRequireGsuiteToTerraform(struct?: ZeroTrust
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
+    email: cdktf.stringToTerraform(struct!.email),
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
   }
 }
@@ -5321,10 +7742,10 @@ export function zeroTrustAccessPolicyRequireGsuiteToHclTerraform(struct?: ZeroTr
   }
   const attrs = {
     email: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
+      value: cdktf.stringToHclTerraform(struct!.email),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
     identity_provider_id: {
       value: cdktf.stringToHclTerraform(struct!.identityProviderId),
@@ -5345,11 +7766,9 @@ export class ZeroTrustAccessPolicyRequireGsuiteOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyRequireGsuite | cdktf.IResolvable | undefined {
@@ -5388,12 +7807,12 @@ export class ZeroTrustAccessPolicyRequireGsuiteOutputReference extends cdktf.Com
     }
   }
 
-  // email - computed: false, optional: false, required: true
-  private _email?: string[]; 
+  // email - computed: true, optional: false, required: true
+  private _email?: string; 
   public get email() {
-    return this.getListAttribute('email');
+    return this.getStringAttribute('email');
   }
-  public set email(value: string[]) {
+  public set email(value: string) {
     this._email = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5401,7 +7820,7 @@ export class ZeroTrustAccessPolicyRequireGsuiteOutputReference extends cdktf.Com
     return this._email;
   }
 
-  // identity_provider_id - computed: false, optional: false, required: true
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -5414,39 +7833,208 @@ export class ZeroTrustAccessPolicyRequireGsuiteOutputReference extends cdktf.Com
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyRequireIp {
+  /**
+  * An IPv4 or IPv6 CIDR block.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+  */
+  readonly ip: string;
+}
 
-export class ZeroTrustAccessPolicyRequireGsuiteList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireGsuite[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyRequireIpToTerraform(struct?: ZeroTrustAccessPolicyRequireIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip: cdktf.stringToTerraform(struct!.ip),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireIpToHclTerraform(struct?: ZeroTrustAccessPolicyRequireIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
+  public get internalValue(): ZeroTrustAccessPolicyRequireIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ip = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ip = value.ip;
+    }
+  }
+
+  // ip - computed: true, optional: false, required: true
+  private _ip?: string; 
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+  public set ip(value: string) {
+    this._ip = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+}
+export interface ZeroTrustAccessPolicyRequireIpListStruct {
   /**
-  * @param index the index of the item to return
+  * The ID of a previously created IP list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  public get(index: number): ZeroTrustAccessPolicyRequireGsuiteOutputReference {
-    return new ZeroTrustAccessPolicyRequireGsuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  readonly id: string;
+}
+
+export function zeroTrustAccessPolicyRequireIpListStructToTerraform(struct?: ZeroTrustAccessPolicyRequireIpListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireIpListStructToHclTerraform(struct?: ZeroTrustAccessPolicyRequireIpListStruct | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireIpListStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZeroTrustAccessPolicyRequireIpListStruct | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireIpListStruct | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: true, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 }
 export interface ZeroTrustAccessPolicyRequireOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
   /**
-  * The name of the Okta Group.
+  * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
   */
-  readonly name?: string[];
+  readonly name: string;
 }
 
 export function zeroTrustAccessPolicyRequireOktaToTerraform(struct?: ZeroTrustAccessPolicyRequireOkta | cdktf.IResolvable): any {
@@ -5456,7 +8044,7 @@ export function zeroTrustAccessPolicyRequireOktaToTerraform(struct?: ZeroTrustAc
   }
   return {
     identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.name),
+    name: cdktf.stringToTerraform(struct!.name),
   }
 }
 
@@ -5474,10 +8062,10 @@ export function zeroTrustAccessPolicyRequireOktaToHclTerraform(struct?: ZeroTrus
       storageClassType: "string",
     },
     name: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.name),
+      value: cdktf.stringToHclTerraform(struct!.name),
       isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -5492,11 +8080,9 @@ export class ZeroTrustAccessPolicyRequireOktaOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyRequireOkta | cdktf.IResolvable | undefined {
@@ -5535,7 +8121,7 @@ export class ZeroTrustAccessPolicyRequireOktaOutputReference extends cdktf.Compl
     }
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -5543,69 +8129,43 @@ export class ZeroTrustAccessPolicyRequireOktaOutputReference extends cdktf.Compl
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string[]; 
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
   public get name() {
-    return this.getListAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string[]) {
+  public set name(value: string) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 }
-
-export class ZeroTrustAccessPolicyRequireOktaList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireOkta[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyRequireOktaOutputReference {
-    return new ZeroTrustAccessPolicyRequireOktaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface ZeroTrustAccessPolicyRequireSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#attribute_name ZeroTrustAccessPolicy#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#attribute_name ZeroTrustAccessPolicy#attribute_name}
   */
-  readonly attributeName?: string;
+  readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#attribute_value ZeroTrustAccessPolicy#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#attribute_value ZeroTrustAccessPolicy#attribute_value}
   */
-  readonly attributeValue?: string;
+  readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#identity_provider_id ZeroTrustAccessPolicy#identity_provider_id}
   */
-  readonly identityProviderId?: string;
+  readonly identityProviderId: string;
 }
 
 export function zeroTrustAccessPolicyRequireSamlToTerraform(struct?: ZeroTrustAccessPolicyRequireSaml | cdktf.IResolvable): any {
@@ -5658,11 +8218,9 @@ export class ZeroTrustAccessPolicyRequireSamlOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ZeroTrustAccessPolicyRequireSaml | cdktf.IResolvable | undefined {
@@ -5707,7 +8265,7 @@ export class ZeroTrustAccessPolicyRequireSamlOutputReference extends cdktf.Compl
     }
   }
 
-  // attribute_name - computed: false, optional: true, required: false
+  // attribute_name - computed: true, optional: false, required: true
   private _attributeName?: string; 
   public get attributeName() {
     return this.getStringAttribute('attribute_name');
@@ -5715,15 +8273,12 @@ export class ZeroTrustAccessPolicyRequireSamlOutputReference extends cdktf.Compl
   public set attributeName(value: string) {
     this._attributeName = value;
   }
-  public resetAttributeName() {
-    this._attributeName = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get attributeNameInput() {
     return this._attributeName;
   }
 
-  // attribute_value - computed: false, optional: true, required: false
+  // attribute_value - computed: true, optional: false, required: true
   private _attributeValue?: string; 
   public get attributeValue() {
     return this.getStringAttribute('attribute_value');
@@ -5731,15 +8286,12 @@ export class ZeroTrustAccessPolicyRequireSamlOutputReference extends cdktf.Compl
   public set attributeValue(value: string) {
     this._attributeValue = value;
   }
-  public resetAttributeValue() {
-    this._attributeValue = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get attributeValueInput() {
     return this._attributeValue;
   }
 
-  // identity_provider_id - computed: false, optional: true, required: false
+  // identity_provider_id - computed: true, optional: false, required: true
   private _identityProviderId?: string; 
   public get identityProviderId() {
     return this.getStringAttribute('identity_provider_id');
@@ -5747,173 +8299,193 @@ export class ZeroTrustAccessPolicyRequireSamlOutputReference extends cdktf.Compl
   public set identityProviderId(value: string) {
     this._identityProviderId = value;
   }
-  public resetIdentityProviderId() {
-    this._identityProviderId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get identityProviderIdInput() {
     return this._identityProviderId;
   }
 }
+export interface ZeroTrustAccessPolicyRequireServiceToken {
+  /**
+  * The ID of a Service Token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#token_id ZeroTrustAccessPolicy#token_id}
+  */
+  readonly tokenId: string;
+}
 
-export class ZeroTrustAccessPolicyRequireSamlList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessPolicyRequireSaml[] | cdktf.IResolvable
+export function zeroTrustAccessPolicyRequireServiceTokenToTerraform(struct?: ZeroTrustAccessPolicyRequireServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    token_id: cdktf.stringToTerraform(struct!.tokenId),
+  }
+}
+
+
+export function zeroTrustAccessPolicyRequireServiceTokenToHclTerraform(struct?: ZeroTrustAccessPolicyRequireServiceToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    token_id: {
+      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ZeroTrustAccessPolicyRequireServiceTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ZeroTrustAccessPolicyRequireSamlOutputReference {
-    return new ZeroTrustAccessPolicyRequireSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): ZeroTrustAccessPolicyRequireServiceToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tokenId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenId = this._tokenId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustAccessPolicyRequireServiceToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tokenId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tokenId = value.tokenId;
+    }
+  }
+
+  // token_id - computed: true, optional: false, required: true
+  private _tokenId?: string; 
+  public get tokenId() {
+    return this.getStringAttribute('token_id');
+  }
+  public set tokenId(value: string) {
+    this._tokenId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenIdInput() {
+    return this._tokenId;
   }
 }
 export interface ZeroTrustAccessPolicyRequire {
   /**
-  * Matches any valid Access service token.
+  * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#any_valid_service_token ZeroTrustAccessPolicy#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#any_valid_service_token ZeroTrustAccessPolicy#any_valid_service_token}
   */
-  readonly anyValidServiceToken?: boolean | cdktf.IResolvable;
+  readonly anyValidServiceToken?: ZeroTrustAccessPolicyRequireAnyValidServiceToken;
   /**
-  * The type of authentication method. Refer to https://datatracker.ietf.org/doc/html/rfc8176#section-2 for possible types.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_context ZeroTrustAccessPolicy#auth_context}
   */
-  readonly authMethod?: string;
+  readonly authContext?: ZeroTrustAccessPolicyRequireAuthContext;
   /**
-  * Matches any valid client certificate.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#certificate ZeroTrustAccessPolicy#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
   */
-  readonly certificate?: boolean | cdktf.IResolvable;
+  readonly authMethod?: ZeroTrustAccessPolicyRequireAuthMethod;
   /**
-  * Matches a valid client certificate common name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#azure_ad ZeroTrustAccessPolicy#azure_ad}
   */
-  readonly commonName?: string;
+  readonly azureAd?: ZeroTrustAccessPolicyRequireAzureAd;
   /**
-  * Overflow field if you need to have multiple common_name rules in a single policy.  Use in place of the singular common_name field.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#common_names ZeroTrustAccessPolicy#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#certificate ZeroTrustAccessPolicy#certificate}
   */
-  readonly commonNames?: string[];
+  readonly certificate?: ZeroTrustAccessPolicyRequireCertificate;
   /**
-  * The ID of a device posture integration.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#device_posture ZeroTrustAccessPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#common_name ZeroTrustAccessPolicy#common_name}
   */
-  readonly devicePosture?: string[];
+  readonly commonName?: ZeroTrustAccessPolicyRequireCommonName;
   /**
-  * The email of the user.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#device_posture ZeroTrustAccessPolicy#device_posture}
   */
-  readonly email?: string[];
+  readonly devicePosture?: ZeroTrustAccessPolicyRequireDevicePosture;
   /**
-  * The email domain to match.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_domain ZeroTrustAccessPolicy#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email ZeroTrustAccessPolicy#email}
   */
-  readonly emailDomain?: string[];
+  readonly email?: ZeroTrustAccessPolicyRequireEmail;
   /**
-  * The ID of a previously created email list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#email_list ZeroTrustAccessPolicy#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_domain ZeroTrustAccessPolicy#email_domain}
   */
-  readonly emailList?: string[];
+  readonly emailDomain?: ZeroTrustAccessPolicyRequireEmailDomain;
   /**
-  * Matches everyone.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#everyone ZeroTrustAccessPolicy#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#email_list ZeroTrustAccessPolicy#email_list}
   */
-  readonly everyone?: boolean | cdktf.IResolvable;
+  readonly emailList?: ZeroTrustAccessPolicyRequireEmailListStruct;
   /**
-  * Matches a specific country.
+  * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#geo ZeroTrustAccessPolicy#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#everyone ZeroTrustAccessPolicy#everyone}
   */
-  readonly geo?: string[];
+  readonly everyone?: ZeroTrustAccessPolicyRequireEveryone;
   /**
-  * The ID of a previously created Access group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#group ZeroTrustAccessPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#external_evaluation ZeroTrustAccessPolicy#external_evaluation}
   */
-  readonly group?: string[];
+  readonly externalEvaluation?: ZeroTrustAccessPolicyRequireExternalEvaluation;
   /**
-  * An IPv4 or IPv6 CIDR block.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#geo ZeroTrustAccessPolicy#geo}
   */
-  readonly ip?: string[];
+  readonly geo?: ZeroTrustAccessPolicyRequireGeo;
   /**
-  * The ID of a previously created IP list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#ip_list ZeroTrustAccessPolicy#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#github_organization ZeroTrustAccessPolicy#github_organization}
   */
-  readonly ipList?: string[];
+  readonly githubOrganization?: ZeroTrustAccessPolicyRequireGithubOrganization;
   /**
-  * The ID of a configured identity provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#login_method ZeroTrustAccessPolicy#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#group ZeroTrustAccessPolicy#group}
   */
-  readonly loginMethod?: string[];
+  readonly group?: ZeroTrustAccessPolicyRequireGroup;
   /**
-  * The ID of an Access service token.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#service_token ZeroTrustAccessPolicy#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#gsuite ZeroTrustAccessPolicy#gsuite}
   */
-  readonly serviceToken?: string[];
+  readonly gsuite?: ZeroTrustAccessPolicyRequireGsuite;
   /**
-  * auth_context block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#auth_context ZeroTrustAccessPolicy#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
   */
-  readonly authContext?: ZeroTrustAccessPolicyRequireAuthContext[] | cdktf.IResolvable;
+  readonly ip?: ZeroTrustAccessPolicyRequireIp;
   /**
-  * azure block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#azure ZeroTrustAccessPolicy#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#ip_list ZeroTrustAccessPolicy#ip_list}
   */
-  readonly azure?: ZeroTrustAccessPolicyRequireAzure[] | cdktf.IResolvable;
+  readonly ipList?: ZeroTrustAccessPolicyRequireIpListStruct;
   /**
-  * external_evaluation block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#external_evaluation ZeroTrustAccessPolicy#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#okta ZeroTrustAccessPolicy#okta}
   */
-  readonly externalEvaluation?: ZeroTrustAccessPolicyRequireExternalEvaluation[] | cdktf.IResolvable;
+  readonly okta?: ZeroTrustAccessPolicyRequireOkta;
   /**
-  * github block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#github ZeroTrustAccessPolicy#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#saml ZeroTrustAccessPolicy#saml}
   */
-  readonly github?: ZeroTrustAccessPolicyRequireGithub[] | cdktf.IResolvable;
+  readonly saml?: ZeroTrustAccessPolicyRequireSaml;
   /**
-  * gsuite block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#gsuite ZeroTrustAccessPolicy#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#service_token ZeroTrustAccessPolicy#service_token}
   */
-  readonly gsuite?: ZeroTrustAccessPolicyRequireGsuite[] | cdktf.IResolvable;
-  /**
-  * okta block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#okta ZeroTrustAccessPolicy#okta}
-  */
-  readonly okta?: ZeroTrustAccessPolicyRequireOkta[] | cdktf.IResolvable;
-  /**
-  * saml block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#saml ZeroTrustAccessPolicy#saml}
-  */
-  readonly saml?: ZeroTrustAccessPolicyRequireSaml[] | cdktf.IResolvable;
+  readonly serviceToken?: ZeroTrustAccessPolicyRequireServiceToken;
 }
 
 export function zeroTrustAccessPolicyRequireToTerraform(struct?: ZeroTrustAccessPolicyRequire | cdktf.IResolvable): any {
@@ -5922,29 +8494,27 @@ export function zeroTrustAccessPolicyRequireToTerraform(struct?: ZeroTrustAccess
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    any_valid_service_token: cdktf.booleanToTerraform(struct!.anyValidServiceToken),
-    auth_method: cdktf.stringToTerraform(struct!.authMethod),
-    certificate: cdktf.booleanToTerraform(struct!.certificate),
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    common_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commonNames),
-    device_posture: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.devicePosture),
-    email: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.email),
-    email_domain: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailDomain),
-    email_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailList),
-    everyone: cdktf.booleanToTerraform(struct!.everyone),
-    geo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.geo),
-    group: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.group),
-    ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ip),
-    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
-    login_method: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginMethod),
-    service_token: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceToken),
-    auth_context: cdktf.listMapper(zeroTrustAccessPolicyRequireAuthContextToTerraform, true)(struct!.authContext),
-    azure: cdktf.listMapper(zeroTrustAccessPolicyRequireAzureToTerraform, true)(struct!.azure),
-    external_evaluation: cdktf.listMapper(zeroTrustAccessPolicyRequireExternalEvaluationToTerraform, true)(struct!.externalEvaluation),
-    github: cdktf.listMapper(zeroTrustAccessPolicyRequireGithubToTerraform, true)(struct!.github),
-    gsuite: cdktf.listMapper(zeroTrustAccessPolicyRequireGsuiteToTerraform, true)(struct!.gsuite),
-    okta: cdktf.listMapper(zeroTrustAccessPolicyRequireOktaToTerraform, true)(struct!.okta),
-    saml: cdktf.listMapper(zeroTrustAccessPolicyRequireSamlToTerraform, true)(struct!.saml),
+    any_valid_service_token: zeroTrustAccessPolicyRequireAnyValidServiceTokenToTerraform(struct!.anyValidServiceToken),
+    auth_context: zeroTrustAccessPolicyRequireAuthContextToTerraform(struct!.authContext),
+    auth_method: zeroTrustAccessPolicyRequireAuthMethodToTerraform(struct!.authMethod),
+    azure_ad: zeroTrustAccessPolicyRequireAzureAdToTerraform(struct!.azureAd),
+    certificate: zeroTrustAccessPolicyRequireCertificateToTerraform(struct!.certificate),
+    common_name: zeroTrustAccessPolicyRequireCommonNameToTerraform(struct!.commonName),
+    device_posture: zeroTrustAccessPolicyRequireDevicePostureToTerraform(struct!.devicePosture),
+    email: zeroTrustAccessPolicyRequireEmailToTerraform(struct!.email),
+    email_domain: zeroTrustAccessPolicyRequireEmailDomainToTerraform(struct!.emailDomain),
+    email_list: zeroTrustAccessPolicyRequireEmailListStructToTerraform(struct!.emailList),
+    everyone: zeroTrustAccessPolicyRequireEveryoneToTerraform(struct!.everyone),
+    external_evaluation: zeroTrustAccessPolicyRequireExternalEvaluationToTerraform(struct!.externalEvaluation),
+    geo: zeroTrustAccessPolicyRequireGeoToTerraform(struct!.geo),
+    github_organization: zeroTrustAccessPolicyRequireGithubOrganizationToTerraform(struct!.githubOrganization),
+    group: zeroTrustAccessPolicyRequireGroupToTerraform(struct!.group),
+    gsuite: zeroTrustAccessPolicyRequireGsuiteToTerraform(struct!.gsuite),
+    ip: zeroTrustAccessPolicyRequireIpToTerraform(struct!.ip),
+    ip_list: zeroTrustAccessPolicyRequireIpListStructToTerraform(struct!.ipList),
+    okta: zeroTrustAccessPolicyRequireOktaToTerraform(struct!.okta),
+    saml: zeroTrustAccessPolicyRequireSamlToTerraform(struct!.saml),
+    service_token: zeroTrustAccessPolicyRequireServiceTokenToTerraform(struct!.serviceToken),
   }
 }
 
@@ -5956,142 +8526,130 @@ export function zeroTrustAccessPolicyRequireToHclTerraform(struct?: ZeroTrustAcc
   }
   const attrs = {
     any_valid_service_token: {
-      value: cdktf.booleanToHclTerraform(struct!.anyValidServiceToken),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    auth_method: {
-      value: cdktf.stringToHclTerraform(struct!.authMethod),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.certificate),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    common_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commonNames),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    device_posture: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.devicePosture),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.email),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email_domain: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailDomain),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    email_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailList),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    everyone: {
-      value: cdktf.booleanToHclTerraform(struct!.everyone),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    geo: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.geo),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    group: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.group),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    ip: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ip),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    ip_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipList),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    login_method: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginMethod),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    service_token: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.serviceToken),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
+      value: zeroTrustAccessPolicyRequireAnyValidServiceTokenToHclTerraform(struct!.anyValidServiceToken),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireAnyValidServiceToken",
     },
     auth_context: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireAuthContextToHclTerraform, true)(struct!.authContext),
+      value: zeroTrustAccessPolicyRequireAuthContextToHclTerraform(struct!.authContext),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireAuthContextList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireAuthContext",
     },
-    azure: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireAzureToHclTerraform, true)(struct!.azure),
+    auth_method: {
+      value: zeroTrustAccessPolicyRequireAuthMethodToHclTerraform(struct!.authMethod),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireAzureList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireAuthMethod",
+    },
+    azure_ad: {
+      value: zeroTrustAccessPolicyRequireAzureAdToHclTerraform(struct!.azureAd),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireAzureAd",
+    },
+    certificate: {
+      value: zeroTrustAccessPolicyRequireCertificateToHclTerraform(struct!.certificate),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireCertificate",
+    },
+    common_name: {
+      value: zeroTrustAccessPolicyRequireCommonNameToHclTerraform(struct!.commonName),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireCommonName",
+    },
+    device_posture: {
+      value: zeroTrustAccessPolicyRequireDevicePostureToHclTerraform(struct!.devicePosture),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireDevicePosture",
+    },
+    email: {
+      value: zeroTrustAccessPolicyRequireEmailToHclTerraform(struct!.email),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireEmail",
+    },
+    email_domain: {
+      value: zeroTrustAccessPolicyRequireEmailDomainToHclTerraform(struct!.emailDomain),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireEmailDomain",
+    },
+    email_list: {
+      value: zeroTrustAccessPolicyRequireEmailListStructToHclTerraform(struct!.emailList),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireEmailListStruct",
+    },
+    everyone: {
+      value: zeroTrustAccessPolicyRequireEveryoneToHclTerraform(struct!.everyone),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireEveryone",
     },
     external_evaluation: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireExternalEvaluationToHclTerraform, true)(struct!.externalEvaluation),
+      value: zeroTrustAccessPolicyRequireExternalEvaluationToHclTerraform(struct!.externalEvaluation),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireExternalEvaluationList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireExternalEvaluation",
     },
-    github: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireGithubToHclTerraform, true)(struct!.github),
+    geo: {
+      value: zeroTrustAccessPolicyRequireGeoToHclTerraform(struct!.geo),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireGithubList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireGeo",
+    },
+    github_organization: {
+      value: zeroTrustAccessPolicyRequireGithubOrganizationToHclTerraform(struct!.githubOrganization),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireGithubOrganization",
+    },
+    group: {
+      value: zeroTrustAccessPolicyRequireGroupToHclTerraform(struct!.group),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireGroup",
     },
     gsuite: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireGsuiteToHclTerraform, true)(struct!.gsuite),
+      value: zeroTrustAccessPolicyRequireGsuiteToHclTerraform(struct!.gsuite),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireGsuiteList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireGsuite",
+    },
+    ip: {
+      value: zeroTrustAccessPolicyRequireIpToHclTerraform(struct!.ip),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireIp",
+    },
+    ip_list: {
+      value: zeroTrustAccessPolicyRequireIpListStructToHclTerraform(struct!.ipList),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireIpListStruct",
     },
     okta: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireOktaToHclTerraform, true)(struct!.okta),
+      value: zeroTrustAccessPolicyRequireOktaToHclTerraform(struct!.okta),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireOktaList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireOkta",
     },
     saml: {
-      value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireSamlToHclTerraform, true)(struct!.saml),
+      value: zeroTrustAccessPolicyRequireSamlToHclTerraform(struct!.saml),
       isBlock: true,
-      type: "list",
-      storageClassType: "ZeroTrustAccessPolicyRequireSamlList",
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireSaml",
+    },
+    service_token: {
+      value: zeroTrustAccessPolicyRequireServiceTokenToHclTerraform(struct!.serviceToken),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "ZeroTrustAccessPolicyRequireServiceToken",
     },
   };
 
@@ -6119,89 +8677,77 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._anyValidServiceToken !== undefined) {
+    if (this._anyValidServiceToken?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.anyValidServiceToken = this._anyValidServiceToken;
-    }
-    if (this._authMethod !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.authMethod = this._authMethod;
-    }
-    if (this._certificate !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.certificate = this._certificate;
-    }
-    if (this._commonName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commonName = this._commonName;
-    }
-    if (this._commonNames !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.commonNames = this._commonNames;
-    }
-    if (this._devicePosture !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.devicePosture = this._devicePosture;
-    }
-    if (this._email !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.email = this._email;
-    }
-    if (this._emailDomain !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.emailDomain = this._emailDomain;
-    }
-    if (this._emailList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.emailList = this._emailList;
-    }
-    if (this._everyone !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.everyone = this._everyone;
-    }
-    if (this._geo !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.geo = this._geo;
-    }
-    if (this._group !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.group = this._group;
-    }
-    if (this._ip !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ip = this._ip;
-    }
-    if (this._ipList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ipList = this._ipList;
-    }
-    if (this._loginMethod !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.loginMethod = this._loginMethod;
-    }
-    if (this._serviceToken !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serviceToken = this._serviceToken;
+      internalValueResult.anyValidServiceToken = this._anyValidServiceToken?.internalValue;
     }
     if (this._authContext?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authContext = this._authContext?.internalValue;
     }
-    if (this._azure?.internalValue !== undefined) {
+    if (this._authMethod?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.azure = this._azure?.internalValue;
+      internalValueResult.authMethod = this._authMethod?.internalValue;
+    }
+    if (this._azureAd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureAd = this._azureAd?.internalValue;
+    }
+    if (this._certificate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificate = this._certificate?.internalValue;
+    }
+    if (this._commonName?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonName = this._commonName?.internalValue;
+    }
+    if (this._devicePosture?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.devicePosture = this._devicePosture?.internalValue;
+    }
+    if (this._email?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email?.internalValue;
+    }
+    if (this._emailDomain?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailDomain = this._emailDomain?.internalValue;
+    }
+    if (this._emailList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.emailList = this._emailList?.internalValue;
+    }
+    if (this._everyone?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.everyone = this._everyone?.internalValue;
     }
     if (this._externalEvaluation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.externalEvaluation = this._externalEvaluation?.internalValue;
     }
-    if (this._github?.internalValue !== undefined) {
+    if (this._geo?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.github = this._github?.internalValue;
+      internalValueResult.geo = this._geo?.internalValue;
+    }
+    if (this._githubOrganization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubOrganization = this._githubOrganization?.internalValue;
+    }
+    if (this._group?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.group = this._group?.internalValue;
     }
     if (this._gsuite?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gsuite = this._gsuite?.internalValue;
+    }
+    if (this._ip?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip?.internalValue;
+    }
+    if (this._ipList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList?.internalValue;
     }
     if (this._okta?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -6211,6 +8757,10 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.saml = this._saml?.internalValue;
     }
+    if (this._serviceToken?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceToken = this._serviceToken?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6218,29 +8768,27 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._anyValidServiceToken = undefined;
-      this._authMethod = undefined;
-      this._certificate = undefined;
-      this._commonName = undefined;
-      this._commonNames = undefined;
-      this._devicePosture = undefined;
-      this._email = undefined;
-      this._emailDomain = undefined;
-      this._emailList = undefined;
-      this._everyone = undefined;
-      this._geo = undefined;
-      this._group = undefined;
-      this._ip = undefined;
-      this._ipList = undefined;
-      this._loginMethod = undefined;
-      this._serviceToken = undefined;
+      this._anyValidServiceToken.internalValue = undefined;
       this._authContext.internalValue = undefined;
-      this._azure.internalValue = undefined;
+      this._authMethod.internalValue = undefined;
+      this._azureAd.internalValue = undefined;
+      this._certificate.internalValue = undefined;
+      this._commonName.internalValue = undefined;
+      this._devicePosture.internalValue = undefined;
+      this._email.internalValue = undefined;
+      this._emailDomain.internalValue = undefined;
+      this._emailList.internalValue = undefined;
+      this._everyone.internalValue = undefined;
       this._externalEvaluation.internalValue = undefined;
-      this._github.internalValue = undefined;
+      this._geo.internalValue = undefined;
+      this._githubOrganization.internalValue = undefined;
+      this._group.internalValue = undefined;
       this._gsuite.internalValue = undefined;
+      this._ip.internalValue = undefined;
+      this._ipList.internalValue = undefined;
       this._okta.internalValue = undefined;
       this._saml.internalValue = undefined;
+      this._serviceToken.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -6249,294 +8797,52 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._anyValidServiceToken = value.anyValidServiceToken;
-      this._authMethod = value.authMethod;
-      this._certificate = value.certificate;
-      this._commonName = value.commonName;
-      this._commonNames = value.commonNames;
-      this._devicePosture = value.devicePosture;
-      this._email = value.email;
-      this._emailDomain = value.emailDomain;
-      this._emailList = value.emailList;
-      this._everyone = value.everyone;
-      this._geo = value.geo;
-      this._group = value.group;
-      this._ip = value.ip;
-      this._ipList = value.ipList;
-      this._loginMethod = value.loginMethod;
-      this._serviceToken = value.serviceToken;
+      this._anyValidServiceToken.internalValue = value.anyValidServiceToken;
       this._authContext.internalValue = value.authContext;
-      this._azure.internalValue = value.azure;
+      this._authMethod.internalValue = value.authMethod;
+      this._azureAd.internalValue = value.azureAd;
+      this._certificate.internalValue = value.certificate;
+      this._commonName.internalValue = value.commonName;
+      this._devicePosture.internalValue = value.devicePosture;
+      this._email.internalValue = value.email;
+      this._emailDomain.internalValue = value.emailDomain;
+      this._emailList.internalValue = value.emailList;
+      this._everyone.internalValue = value.everyone;
       this._externalEvaluation.internalValue = value.externalEvaluation;
-      this._github.internalValue = value.github;
+      this._geo.internalValue = value.geo;
+      this._githubOrganization.internalValue = value.githubOrganization;
+      this._group.internalValue = value.group;
       this._gsuite.internalValue = value.gsuite;
+      this._ip.internalValue = value.ip;
+      this._ipList.internalValue = value.ipList;
       this._okta.internalValue = value.okta;
       this._saml.internalValue = value.saml;
+      this._serviceToken.internalValue = value.serviceToken;
     }
   }
 
-  // any_valid_service_token - computed: false, optional: true, required: false
-  private _anyValidServiceToken?: boolean | cdktf.IResolvable; 
+  // any_valid_service_token - computed: true, optional: true, required: false
+  private _anyValidServiceToken = new ZeroTrustAccessPolicyRequireAnyValidServiceTokenOutputReference(this, "any_valid_service_token");
   public get anyValidServiceToken() {
-    return this.getBooleanAttribute('any_valid_service_token');
+    return this._anyValidServiceToken;
   }
-  public set anyValidServiceToken(value: boolean | cdktf.IResolvable) {
-    this._anyValidServiceToken = value;
+  public putAnyValidServiceToken(value: ZeroTrustAccessPolicyRequireAnyValidServiceToken) {
+    this._anyValidServiceToken.internalValue = value;
   }
   public resetAnyValidServiceToken() {
-    this._anyValidServiceToken = undefined;
+    this._anyValidServiceToken.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get anyValidServiceTokenInput() {
-    return this._anyValidServiceToken;
+    return this._anyValidServiceToken.internalValue;
   }
 
-  // auth_method - computed: false, optional: true, required: false
-  private _authMethod?: string; 
-  public get authMethod() {
-    return this.getStringAttribute('auth_method');
-  }
-  public set authMethod(value: string) {
-    this._authMethod = value;
-  }
-  public resetAuthMethod() {
-    this._authMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authMethodInput() {
-    return this._authMethod;
-  }
-
-  // certificate - computed: false, optional: true, required: false
-  private _certificate?: boolean | cdktf.IResolvable; 
-  public get certificate() {
-    return this.getBooleanAttribute('certificate');
-  }
-  public set certificate(value: boolean | cdktf.IResolvable) {
-    this._certificate = value;
-  }
-  public resetCertificate() {
-    this._certificate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateInput() {
-    return this._certificate;
-  }
-
-  // common_name - computed: false, optional: true, required: false
-  private _commonName?: string; 
-  public get commonName() {
-    return this.getStringAttribute('common_name');
-  }
-  public set commonName(value: string) {
-    this._commonName = value;
-  }
-  public resetCommonName() {
-    this._commonName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commonNameInput() {
-    return this._commonName;
-  }
-
-  // common_names - computed: false, optional: true, required: false
-  private _commonNames?: string[]; 
-  public get commonNames() {
-    return this.getListAttribute('common_names');
-  }
-  public set commonNames(value: string[]) {
-    this._commonNames = value;
-  }
-  public resetCommonNames() {
-    this._commonNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commonNamesInput() {
-    return this._commonNames;
-  }
-
-  // device_posture - computed: false, optional: true, required: false
-  private _devicePosture?: string[]; 
-  public get devicePosture() {
-    return this.getListAttribute('device_posture');
-  }
-  public set devicePosture(value: string[]) {
-    this._devicePosture = value;
-  }
-  public resetDevicePosture() {
-    this._devicePosture = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get devicePostureInput() {
-    return this._devicePosture;
-  }
-
-  // email - computed: false, optional: true, required: false
-  private _email?: string[]; 
-  public get email() {
-    return this.getListAttribute('email');
-  }
-  public set email(value: string[]) {
-    this._email = value;
-  }
-  public resetEmail() {
-    this._email = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
-  }
-
-  // email_domain - computed: false, optional: true, required: false
-  private _emailDomain?: string[]; 
-  public get emailDomain() {
-    return this.getListAttribute('email_domain');
-  }
-  public set emailDomain(value: string[]) {
-    this._emailDomain = value;
-  }
-  public resetEmailDomain() {
-    this._emailDomain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailDomainInput() {
-    return this._emailDomain;
-  }
-
-  // email_list - computed: false, optional: true, required: false
-  private _emailList?: string[]; 
-  public get emailList() {
-    return this.getListAttribute('email_list');
-  }
-  public set emailList(value: string[]) {
-    this._emailList = value;
-  }
-  public resetEmailList() {
-    this._emailList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailListInput() {
-    return this._emailList;
-  }
-
-  // everyone - computed: false, optional: true, required: false
-  private _everyone?: boolean | cdktf.IResolvable; 
-  public get everyone() {
-    return this.getBooleanAttribute('everyone');
-  }
-  public set everyone(value: boolean | cdktf.IResolvable) {
-    this._everyone = value;
-  }
-  public resetEveryone() {
-    this._everyone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get everyoneInput() {
-    return this._everyone;
-  }
-
-  // geo - computed: false, optional: true, required: false
-  private _geo?: string[]; 
-  public get geo() {
-    return this.getListAttribute('geo');
-  }
-  public set geo(value: string[]) {
-    this._geo = value;
-  }
-  public resetGeo() {
-    this._geo = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get geoInput() {
-    return this._geo;
-  }
-
-  // group - computed: false, optional: true, required: false
-  private _group?: string[]; 
-  public get group() {
-    return this.getListAttribute('group');
-  }
-  public set group(value: string[]) {
-    this._group = value;
-  }
-  public resetGroup() {
-    this._group = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupInput() {
-    return this._group;
-  }
-
-  // ip - computed: false, optional: true, required: false
-  private _ip?: string[]; 
-  public get ip() {
-    return this.getListAttribute('ip');
-  }
-  public set ip(value: string[]) {
-    this._ip = value;
-  }
-  public resetIp() {
-    this._ip = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipInput() {
-    return this._ip;
-  }
-
-  // ip_list - computed: false, optional: true, required: false
-  private _ipList?: string[]; 
-  public get ipList() {
-    return this.getListAttribute('ip_list');
-  }
-  public set ipList(value: string[]) {
-    this._ipList = value;
-  }
-  public resetIpList() {
-    this._ipList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipListInput() {
-    return this._ipList;
-  }
-
-  // login_method - computed: false, optional: true, required: false
-  private _loginMethod?: string[]; 
-  public get loginMethod() {
-    return this.getListAttribute('login_method');
-  }
-  public set loginMethod(value: string[]) {
-    this._loginMethod = value;
-  }
-  public resetLoginMethod() {
-    this._loginMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loginMethodInput() {
-    return this._loginMethod;
-  }
-
-  // service_token - computed: false, optional: true, required: false
-  private _serviceToken?: string[]; 
-  public get serviceToken() {
-    return this.getListAttribute('service_token');
-  }
-  public set serviceToken(value: string[]) {
-    this._serviceToken = value;
-  }
-  public resetServiceToken() {
-    this._serviceToken = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceTokenInput() {
-    return this._serviceToken;
-  }
-
-  // auth_context - computed: false, optional: true, required: false
-  private _authContext = new ZeroTrustAccessPolicyRequireAuthContextList(this, "auth_context", false);
+  // auth_context - computed: true, optional: true, required: false
+  private _authContext = new ZeroTrustAccessPolicyRequireAuthContextOutputReference(this, "auth_context");
   public get authContext() {
     return this._authContext;
   }
-  public putAuthContext(value: ZeroTrustAccessPolicyRequireAuthContext[] | cdktf.IResolvable) {
+  public putAuthContext(value: ZeroTrustAccessPolicyRequireAuthContext) {
     this._authContext.internalValue = value;
   }
   public resetAuthContext() {
@@ -6547,28 +8853,156 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     return this._authContext.internalValue;
   }
 
-  // azure - computed: false, optional: true, required: false
-  private _azure = new ZeroTrustAccessPolicyRequireAzureList(this, "azure", false);
-  public get azure() {
-    return this._azure;
+  // auth_method - computed: true, optional: true, required: false
+  private _authMethod = new ZeroTrustAccessPolicyRequireAuthMethodOutputReference(this, "auth_method");
+  public get authMethod() {
+    return this._authMethod;
   }
-  public putAzure(value: ZeroTrustAccessPolicyRequireAzure[] | cdktf.IResolvable) {
-    this._azure.internalValue = value;
+  public putAuthMethod(value: ZeroTrustAccessPolicyRequireAuthMethod) {
+    this._authMethod.internalValue = value;
   }
-  public resetAzure() {
-    this._azure.internalValue = undefined;
+  public resetAuthMethod() {
+    this._authMethod.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get azureInput() {
-    return this._azure.internalValue;
+  public get authMethodInput() {
+    return this._authMethod.internalValue;
   }
 
-  // external_evaluation - computed: false, optional: true, required: false
-  private _externalEvaluation = new ZeroTrustAccessPolicyRequireExternalEvaluationList(this, "external_evaluation", false);
+  // azure_ad - computed: true, optional: true, required: false
+  private _azureAd = new ZeroTrustAccessPolicyRequireAzureAdOutputReference(this, "azure_ad");
+  public get azureAd() {
+    return this._azureAd;
+  }
+  public putAzureAd(value: ZeroTrustAccessPolicyRequireAzureAd) {
+    this._azureAd.internalValue = value;
+  }
+  public resetAzureAd() {
+    this._azureAd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureAdInput() {
+    return this._azureAd.internalValue;
+  }
+
+  // certificate - computed: true, optional: true, required: false
+  private _certificate = new ZeroTrustAccessPolicyRequireCertificateOutputReference(this, "certificate");
+  public get certificate() {
+    return this._certificate;
+  }
+  public putCertificate(value: ZeroTrustAccessPolicyRequireCertificate) {
+    this._certificate.internalValue = value;
+  }
+  public resetCertificate() {
+    this._certificate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate.internalValue;
+  }
+
+  // common_name - computed: true, optional: true, required: false
+  private _commonName = new ZeroTrustAccessPolicyRequireCommonNameOutputReference(this, "common_name");
+  public get commonName() {
+    return this._commonName;
+  }
+  public putCommonName(value: ZeroTrustAccessPolicyRequireCommonName) {
+    this._commonName.internalValue = value;
+  }
+  public resetCommonName() {
+    this._commonName.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonNameInput() {
+    return this._commonName.internalValue;
+  }
+
+  // device_posture - computed: true, optional: true, required: false
+  private _devicePosture = new ZeroTrustAccessPolicyRequireDevicePostureOutputReference(this, "device_posture");
+  public get devicePosture() {
+    return this._devicePosture;
+  }
+  public putDevicePosture(value: ZeroTrustAccessPolicyRequireDevicePosture) {
+    this._devicePosture.internalValue = value;
+  }
+  public resetDevicePosture() {
+    this._devicePosture.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicePostureInput() {
+    return this._devicePosture.internalValue;
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email = new ZeroTrustAccessPolicyRequireEmailOutputReference(this, "email");
+  public get email() {
+    return this._email;
+  }
+  public putEmail(value: ZeroTrustAccessPolicyRequireEmail) {
+    this._email.internalValue = value;
+  }
+  public resetEmail() {
+    this._email.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email.internalValue;
+  }
+
+  // email_domain - computed: true, optional: true, required: false
+  private _emailDomain = new ZeroTrustAccessPolicyRequireEmailDomainOutputReference(this, "email_domain");
+  public get emailDomain() {
+    return this._emailDomain;
+  }
+  public putEmailDomain(value: ZeroTrustAccessPolicyRequireEmailDomain) {
+    this._emailDomain.internalValue = value;
+  }
+  public resetEmailDomain() {
+    this._emailDomain.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainInput() {
+    return this._emailDomain.internalValue;
+  }
+
+  // email_list - computed: true, optional: true, required: false
+  private _emailList = new ZeroTrustAccessPolicyRequireEmailListStructOutputReference(this, "email_list");
+  public get emailList() {
+    return this._emailList;
+  }
+  public putEmailList(value: ZeroTrustAccessPolicyRequireEmailListStruct) {
+    this._emailList.internalValue = value;
+  }
+  public resetEmailList() {
+    this._emailList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailListInput() {
+    return this._emailList.internalValue;
+  }
+
+  // everyone - computed: true, optional: true, required: false
+  private _everyone = new ZeroTrustAccessPolicyRequireEveryoneOutputReference(this, "everyone");
+  public get everyone() {
+    return this._everyone;
+  }
+  public putEveryone(value: ZeroTrustAccessPolicyRequireEveryone) {
+    this._everyone.internalValue = value;
+  }
+  public resetEveryone() {
+    this._everyone.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get everyoneInput() {
+    return this._everyone.internalValue;
+  }
+
+  // external_evaluation - computed: true, optional: true, required: false
+  private _externalEvaluation = new ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference(this, "external_evaluation");
   public get externalEvaluation() {
     return this._externalEvaluation;
   }
-  public putExternalEvaluation(value: ZeroTrustAccessPolicyRequireExternalEvaluation[] | cdktf.IResolvable) {
+  public putExternalEvaluation(value: ZeroTrustAccessPolicyRequireExternalEvaluation) {
     this._externalEvaluation.internalValue = value;
   }
   public resetExternalEvaluation() {
@@ -6579,28 +9013,60 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     return this._externalEvaluation.internalValue;
   }
 
-  // github - computed: false, optional: true, required: false
-  private _github = new ZeroTrustAccessPolicyRequireGithubList(this, "github", false);
-  public get github() {
-    return this._github;
+  // geo - computed: true, optional: true, required: false
+  private _geo = new ZeroTrustAccessPolicyRequireGeoOutputReference(this, "geo");
+  public get geo() {
+    return this._geo;
   }
-  public putGithub(value: ZeroTrustAccessPolicyRequireGithub[] | cdktf.IResolvable) {
-    this._github.internalValue = value;
+  public putGeo(value: ZeroTrustAccessPolicyRequireGeo) {
+    this._geo.internalValue = value;
   }
-  public resetGithub() {
-    this._github.internalValue = undefined;
+  public resetGeo() {
+    this._geo.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get githubInput() {
-    return this._github.internalValue;
+  public get geoInput() {
+    return this._geo.internalValue;
   }
 
-  // gsuite - computed: false, optional: true, required: false
-  private _gsuite = new ZeroTrustAccessPolicyRequireGsuiteList(this, "gsuite", false);
+  // github_organization - computed: true, optional: true, required: false
+  private _githubOrganization = new ZeroTrustAccessPolicyRequireGithubOrganizationOutputReference(this, "github_organization");
+  public get githubOrganization() {
+    return this._githubOrganization;
+  }
+  public putGithubOrganization(value: ZeroTrustAccessPolicyRequireGithubOrganization) {
+    this._githubOrganization.internalValue = value;
+  }
+  public resetGithubOrganization() {
+    this._githubOrganization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubOrganizationInput() {
+    return this._githubOrganization.internalValue;
+  }
+
+  // group - computed: true, optional: true, required: false
+  private _group = new ZeroTrustAccessPolicyRequireGroupOutputReference(this, "group");
+  public get group() {
+    return this._group;
+  }
+  public putGroup(value: ZeroTrustAccessPolicyRequireGroup) {
+    this._group.internalValue = value;
+  }
+  public resetGroup() {
+    this._group.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group.internalValue;
+  }
+
+  // gsuite - computed: true, optional: true, required: false
+  private _gsuite = new ZeroTrustAccessPolicyRequireGsuiteOutputReference(this, "gsuite");
   public get gsuite() {
     return this._gsuite;
   }
-  public putGsuite(value: ZeroTrustAccessPolicyRequireGsuite[] | cdktf.IResolvable) {
+  public putGsuite(value: ZeroTrustAccessPolicyRequireGsuite) {
     this._gsuite.internalValue = value;
   }
   public resetGsuite() {
@@ -6611,12 +9077,44 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     return this._gsuite.internalValue;
   }
 
-  // okta - computed: false, optional: true, required: false
-  private _okta = new ZeroTrustAccessPolicyRequireOktaList(this, "okta", false);
+  // ip - computed: true, optional: true, required: false
+  private _ip = new ZeroTrustAccessPolicyRequireIpOutputReference(this, "ip");
+  public get ip() {
+    return this._ip;
+  }
+  public putIp(value: ZeroTrustAccessPolicyRequireIp) {
+    this._ip.internalValue = value;
+  }
+  public resetIp() {
+    this._ip.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip.internalValue;
+  }
+
+  // ip_list - computed: true, optional: true, required: false
+  private _ipList = new ZeroTrustAccessPolicyRequireIpListStructOutputReference(this, "ip_list");
+  public get ipList() {
+    return this._ipList;
+  }
+  public putIpList(value: ZeroTrustAccessPolicyRequireIpListStruct) {
+    this._ipList.internalValue = value;
+  }
+  public resetIpList() {
+    this._ipList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList.internalValue;
+  }
+
+  // okta - computed: true, optional: true, required: false
+  private _okta = new ZeroTrustAccessPolicyRequireOktaOutputReference(this, "okta");
   public get okta() {
     return this._okta;
   }
-  public putOkta(value: ZeroTrustAccessPolicyRequireOkta[] | cdktf.IResolvable) {
+  public putOkta(value: ZeroTrustAccessPolicyRequireOkta) {
     this._okta.internalValue = value;
   }
   public resetOkta() {
@@ -6627,12 +9125,12 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
     return this._okta.internalValue;
   }
 
-  // saml - computed: false, optional: true, required: false
-  private _saml = new ZeroTrustAccessPolicyRequireSamlList(this, "saml", false);
+  // saml - computed: true, optional: true, required: false
+  private _saml = new ZeroTrustAccessPolicyRequireSamlOutputReference(this, "saml");
   public get saml() {
     return this._saml;
   }
-  public putSaml(value: ZeroTrustAccessPolicyRequireSaml[] | cdktf.IResolvable) {
+  public putSaml(value: ZeroTrustAccessPolicyRequireSaml) {
     this._saml.internalValue = value;
   }
   public resetSaml() {
@@ -6641,6 +9139,22 @@ export class ZeroTrustAccessPolicyRequireOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get samlInput() {
     return this._saml.internalValue;
+  }
+
+  // service_token - computed: true, optional: true, required: false
+  private _serviceToken = new ZeroTrustAccessPolicyRequireServiceTokenOutputReference(this, "service_token");
+  public get serviceToken() {
+    return this._serviceToken;
+  }
+  public putServiceToken(value: ZeroTrustAccessPolicyRequireServiceToken) {
+    this._serviceToken.internalValue = value;
+  }
+  public resetServiceToken() {
+    this._serviceToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTokenInput() {
+    return this._serviceToken.internalValue;
   }
 }
 
@@ -6665,7 +9179,7 @@ export class ZeroTrustAccessPolicyRequireList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}
 */
 export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
 
@@ -6681,7 +9195,7 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustAccessPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessPolicy to import
-  * @param importFromId The id of the existing ZeroTrustAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6693,7 +9207,7 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6704,8 +9218,8 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -6716,29 +9230,24 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._applicationId = config.applicationId;
+    this._approvalGroups.internalValue = config.approvalGroups;
     this._approvalRequired = config.approvalRequired;
     this._decision = config.decision;
-    this._id = config.id;
-    this._isolationRequired = config.isolationRequired;
-    this._name = config.name;
-    this._precedence = config.precedence;
-    this._purposeJustificationPrompt = config.purposeJustificationPrompt;
-    this._purposeJustificationRequired = config.purposeJustificationRequired;
-    this._sessionDuration = config.sessionDuration;
-    this._zoneId = config.zoneId;
-    this._approvalGroup.internalValue = config.approvalGroup;
-    this._connectionRules.internalValue = config.connectionRules;
     this._exclude.internalValue = config.exclude;
     this._include.internalValue = config.include;
+    this._isolationRequired = config.isolationRequired;
+    this._name = config.name;
+    this._purposeJustificationPrompt = config.purposeJustificationPrompt;
+    this._purposeJustificationRequired = config.purposeJustificationRequired;
     this._require.internalValue = config.require;
+    this._sessionDuration = config.sessionDuration;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
+  // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
@@ -6746,31 +9255,33 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
   public set accountId(value: string) {
     this._accountId = value;
   }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
   }
 
-  // application_id - computed: false, optional: true, required: false
-  private _applicationId?: string; 
-  public get applicationId() {
-    return this.getStringAttribute('application_id');
-  }
-  public set applicationId(value: string) {
-    this._applicationId = value;
-  }
-  public resetApplicationId() {
-    this._applicationId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applicationIdInput() {
-    return this._applicationId;
+  // app_count - computed: true, optional: false, required: false
+  public get appCount() {
+    return this.getNumberAttribute('app_count');
   }
 
-  // approval_required - computed: false, optional: true, required: false
+  // approval_groups - computed: true, optional: true, required: false
+  private _approvalGroups = new ZeroTrustAccessPolicyApprovalGroupsList(this, "approval_groups", false);
+  public get approvalGroups() {
+    return this._approvalGroups;
+  }
+  public putApprovalGroups(value: ZeroTrustAccessPolicyApprovalGroups[] | cdktf.IResolvable) {
+    this._approvalGroups.internalValue = value;
+  }
+  public resetApprovalGroups() {
+    this._approvalGroups.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get approvalGroupsInput() {
+    return this._approvalGroups.internalValue;
+  }
+
+  // approval_required - computed: true, optional: true, required: false
   private _approvalRequired?: boolean | cdktf.IResolvable; 
   public get approvalRequired() {
     return this.getBooleanAttribute('approval_required');
@@ -6786,6 +9297,11 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
     return this._approvalRequired;
   }
 
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
   // decision - computed: false, optional: false, required: true
   private _decision?: string; 
   public get decision() {
@@ -6799,23 +9315,41 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
     return this._decision;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // exclude - computed: true, optional: true, required: false
+  private _exclude = new ZeroTrustAccessPolicyExcludeList(this, "exclude", false);
+  public get exclude() {
+    return this._exclude;
+  }
+  public putExclude(value: ZeroTrustAccessPolicyExclude[] | cdktf.IResolvable) {
+    this._exclude.internalValue = value;
+  }
+  public resetExclude() {
+    this._exclude.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeInput() {
+    return this._exclude.internalValue;
+  }
+
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // include - computed: false, optional: false, required: true
+  private _include = new ZeroTrustAccessPolicyIncludeList(this, "include", false);
+  public get include() {
+    return this._include;
   }
-  public resetId() {
-    this._id = undefined;
+  public putInclude(value: ZeroTrustAccessPolicyInclude[] | cdktf.IResolvable) {
+    this._include.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get includeInput() {
+    return this._include.internalValue;
   }
 
-  // isolation_required - computed: false, optional: true, required: false
+  // isolation_required - computed: true, optional: true, required: false
   private _isolationRequired?: boolean | cdktf.IResolvable; 
   public get isolationRequired() {
     return this.getBooleanAttribute('isolation_required');
@@ -6844,22 +9378,6 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // precedence - computed: false, optional: true, required: false
-  private _precedence?: number; 
-  public get precedence() {
-    return this.getNumberAttribute('precedence');
-  }
-  public set precedence(value: number) {
-    this._precedence = value;
-  }
-  public resetPrecedence() {
-    this._precedence = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get precedenceInput() {
-    return this._precedence;
-  }
-
   // purpose_justification_prompt - computed: false, optional: true, required: false
   private _purposeJustificationPrompt?: string; 
   public get purposeJustificationPrompt() {
@@ -6876,7 +9394,7 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
     return this._purposeJustificationPrompt;
   }
 
-  // purpose_justification_required - computed: false, optional: true, required: false
+  // purpose_justification_required - computed: true, optional: true, required: false
   private _purposeJustificationRequired?: boolean | cdktf.IResolvable; 
   public get purposeJustificationRequired() {
     return this.getBooleanAttribute('purpose_justification_required');
@@ -6892,100 +9410,7 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
     return this._purposeJustificationRequired;
   }
 
-  // session_duration - computed: false, optional: true, required: false
-  private _sessionDuration?: string; 
-  public get sessionDuration() {
-    return this.getStringAttribute('session_duration');
-  }
-  public set sessionDuration(value: string) {
-    this._sessionDuration = value;
-  }
-  public resetSessionDuration() {
-    this._sessionDuration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionDurationInput() {
-    return this._sessionDuration;
-  }
-
-  // zone_id - computed: false, optional: true, required: false
-  private _zoneId?: string; 
-  public get zoneId() {
-    return this.getStringAttribute('zone_id');
-  }
-  public set zoneId(value: string) {
-    this._zoneId = value;
-  }
-  public resetZoneId() {
-    this._zoneId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneIdInput() {
-    return this._zoneId;
-  }
-
-  // approval_group - computed: false, optional: true, required: false
-  private _approvalGroup = new ZeroTrustAccessPolicyApprovalGroupList(this, "approval_group", false);
-  public get approvalGroup() {
-    return this._approvalGroup;
-  }
-  public putApprovalGroup(value: ZeroTrustAccessPolicyApprovalGroup[] | cdktf.IResolvable) {
-    this._approvalGroup.internalValue = value;
-  }
-  public resetApprovalGroup() {
-    this._approvalGroup.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get approvalGroupInput() {
-    return this._approvalGroup.internalValue;
-  }
-
-  // connection_rules - computed: false, optional: true, required: false
-  private _connectionRules = new ZeroTrustAccessPolicyConnectionRulesOutputReference(this, "connection_rules");
-  public get connectionRules() {
-    return this._connectionRules;
-  }
-  public putConnectionRules(value: ZeroTrustAccessPolicyConnectionRules) {
-    this._connectionRules.internalValue = value;
-  }
-  public resetConnectionRules() {
-    this._connectionRules.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionRulesInput() {
-    return this._connectionRules.internalValue;
-  }
-
-  // exclude - computed: false, optional: true, required: false
-  private _exclude = new ZeroTrustAccessPolicyExcludeList(this, "exclude", false);
-  public get exclude() {
-    return this._exclude;
-  }
-  public putExclude(value: ZeroTrustAccessPolicyExclude[] | cdktf.IResolvable) {
-    this._exclude.internalValue = value;
-  }
-  public resetExclude() {
-    this._exclude.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get excludeInput() {
-    return this._exclude.internalValue;
-  }
-
-  // include - computed: false, optional: false, required: true
-  private _include = new ZeroTrustAccessPolicyIncludeList(this, "include", false);
-  public get include() {
-    return this._include;
-  }
-  public putInclude(value: ZeroTrustAccessPolicyInclude[] | cdktf.IResolvable) {
-    this._include.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeInput() {
-    return this._include.internalValue;
-  }
-
-  // require - computed: false, optional: true, required: false
+  // require - computed: true, optional: true, required: false
   private _require = new ZeroTrustAccessPolicyRequireList(this, "require", false);
   public get require() {
     return this._require;
@@ -7001,6 +9426,32 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
     return this._require.internalValue;
   }
 
+  // reusable - computed: true, optional: false, required: false
+  public get reusable() {
+    return this.getBooleanAttribute('reusable');
+  }
+
+  // session_duration - computed: true, optional: true, required: false
+  private _sessionDuration?: string; 
+  public get sessionDuration() {
+    return this.getStringAttribute('session_duration');
+  }
+  public set sessionDuration(value: string) {
+    this._sessionDuration = value;
+  }
+  public resetSessionDuration() {
+    this._sessionDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionDurationInput() {
+    return this._sessionDuration;
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -7008,22 +9459,17 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      application_id: cdktf.stringToTerraform(this._applicationId),
+      approval_groups: cdktf.listMapper(zeroTrustAccessPolicyApprovalGroupsToTerraform, false)(this._approvalGroups.internalValue),
       approval_required: cdktf.booleanToTerraform(this._approvalRequired),
       decision: cdktf.stringToTerraform(this._decision),
-      id: cdktf.stringToTerraform(this._id),
+      exclude: cdktf.listMapper(zeroTrustAccessPolicyExcludeToTerraform, false)(this._exclude.internalValue),
+      include: cdktf.listMapper(zeroTrustAccessPolicyIncludeToTerraform, false)(this._include.internalValue),
       isolation_required: cdktf.booleanToTerraform(this._isolationRequired),
       name: cdktf.stringToTerraform(this._name),
-      precedence: cdktf.numberToTerraform(this._precedence),
       purpose_justification_prompt: cdktf.stringToTerraform(this._purposeJustificationPrompt),
       purpose_justification_required: cdktf.booleanToTerraform(this._purposeJustificationRequired),
+      require: cdktf.listMapper(zeroTrustAccessPolicyRequireToTerraform, false)(this._require.internalValue),
       session_duration: cdktf.stringToTerraform(this._sessionDuration),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
-      approval_group: cdktf.listMapper(zeroTrustAccessPolicyApprovalGroupToTerraform, true)(this._approvalGroup.internalValue),
-      connection_rules: zeroTrustAccessPolicyConnectionRulesToTerraform(this._connectionRules.internalValue),
-      exclude: cdktf.listMapper(zeroTrustAccessPolicyExcludeToTerraform, true)(this._exclude.internalValue),
-      include: cdktf.listMapper(zeroTrustAccessPolicyIncludeToTerraform, true)(this._include.internalValue),
-      require: cdktf.listMapper(zeroTrustAccessPolicyRequireToTerraform, true)(this._require.internalValue),
     };
   }
 
@@ -7035,11 +9481,11 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+      approval_groups: {
+        value: cdktf.listMapperHcl(zeroTrustAccessPolicyApprovalGroupsToHclTerraform, false)(this._approvalGroups.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZeroTrustAccessPolicyApprovalGroupsList",
       },
       approval_required: {
         value: cdktf.booleanToHclTerraform(this._approvalRequired),
@@ -7053,11 +9499,17 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+      exclude: {
+        value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeToHclTerraform, false)(this._exclude.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZeroTrustAccessPolicyExcludeList",
+      },
+      include: {
+        value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeToHclTerraform, false)(this._include.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZeroTrustAccessPolicyIncludeList",
       },
       isolation_required: {
         value: cdktf.booleanToHclTerraform(this._isolationRequired),
@@ -7071,12 +9523,6 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      precedence: {
-        value: cdktf.numberToHclTerraform(this._precedence),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
       purpose_justification_prompt: {
         value: cdktf.stringToHclTerraform(this._purposeJustificationPrompt),
         isBlock: false,
@@ -7089,47 +9535,17 @@ export class ZeroTrustAccessPolicy extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      require: {
+        value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireToHclTerraform, false)(this._require.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZeroTrustAccessPolicyRequireList",
+      },
       session_duration: {
         value: cdktf.stringToHclTerraform(this._sessionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      approval_group: {
-        value: cdktf.listMapperHcl(zeroTrustAccessPolicyApprovalGroupToHclTerraform, true)(this._approvalGroup.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ZeroTrustAccessPolicyApprovalGroupList",
-      },
-      connection_rules: {
-        value: zeroTrustAccessPolicyConnectionRulesToHclTerraform(this._connectionRules.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ZeroTrustAccessPolicyConnectionRulesList",
-      },
-      exclude: {
-        value: cdktf.listMapperHcl(zeroTrustAccessPolicyExcludeToHclTerraform, true)(this._exclude.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ZeroTrustAccessPolicyExcludeList",
-      },
-      include: {
-        value: cdktf.listMapperHcl(zeroTrustAccessPolicyIncludeToHclTerraform, true)(this._include.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ZeroTrustAccessPolicyIncludeList",
-      },
-      require: {
-        value: cdktf.listMapperHcl(zeroTrustAccessPolicyRequireToHclTerraform, true)(this._require.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ZeroTrustAccessPolicyRequireList",
       },
     };
 

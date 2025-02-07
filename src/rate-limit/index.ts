@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,81 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface RateLimitConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#bypass_url_patterns RateLimit#bypass_url_patterns}
-  */
-  readonly bypassUrlPatterns?: string[];
-  /**
-  * A note that you can use to describe the reason for a rate limit. This value is sanitized and all tags are removed.
+  * The action to perform when the threshold of matched traffic within the configured period is exceeded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#description RateLimit#description}
-  */
-  readonly description?: string;
-  /**
-  * Whether this ratelimit is currently disabled. Defaults to `false`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#disabled RateLimit#disabled}
-  */
-  readonly disabled?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#id RateLimit#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The time in seconds to count matching traffic. If the count exceeds threshold within this period the action will be performed.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#period RateLimit#period}
-  */
-  readonly period: number;
-  /**
-  * The threshold that triggers the rate limit mitigations, combine with period.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#threshold RateLimit#threshold}
-  */
-  readonly threshold: number;
-  /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
-  */
-  readonly zoneId: string;
-  /**
-  * action block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#action RateLimit#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#action RateLimit#action}
   */
   readonly action: RateLimitAction;
   /**
-  * correlate block
+  * Determines which traffic the rate limit counts towards the threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#correlate RateLimit#correlate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#match RateLimit#match}
   */
-  readonly correlate?: RateLimitCorrelate;
+  readonly match: RateLimitMatch;
   /**
-  * match block
+  * The time in seconds (an integer value) to count matching traffic. If the count exceeds the configured threshold within this period, Cloudflare will perform the configured action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#match RateLimit#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#period RateLimit#period}
   */
-  readonly match?: RateLimitMatch;
+  readonly period: number;
+  /**
+  * The threshold that will trigger the configured mitigation action. Configure this value along with the `period` property to establish a threshold per period.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#threshold RateLimit#threshold}
+  */
+  readonly threshold: number;
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+  */
+  readonly zoneId: string;
 }
 export interface RateLimitActionResponse {
   /**
-  * The body to return, the content here should conform to the `content_type`.
+  * The response body to return. The value must conform to the configured content type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#body RateLimit#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#body RateLimit#body}
   */
-  readonly body: string;
+  readonly body?: string;
   /**
-  * The content-type of the body. Available values: `text/plain`, `text/xml`, `application/json`.
+  * The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#content_type RateLimit#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#content_type RateLimit#content_type}
   */
-  readonly contentType: string;
+  readonly contentType?: string;
 }
 
-export function rateLimitActionResponseToTerraform(struct?: RateLimitActionResponseOutputReference | RateLimitActionResponse): any {
+export function rateLimitActionResponseToTerraform(struct?: RateLimitActionResponse | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -99,7 +70,7 @@ export function rateLimitActionResponseToTerraform(struct?: RateLimitActionRespo
 }
 
 
-export function rateLimitActionResponseToHclTerraform(struct?: RateLimitActionResponseOutputReference | RateLimitActionResponse): any {
+export function rateLimitActionResponseToHclTerraform(struct?: RateLimitActionResponse | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -125,16 +96,20 @@ export function rateLimitActionResponseToHclTerraform(struct?: RateLimitActionRe
 
 export class RateLimitActionResponseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RateLimitActionResponse | undefined {
+  public get internalValue(): RateLimitActionResponse | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._body !== undefined) {
@@ -148,20 +123,26 @@ export class RateLimitActionResponseOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RateLimitActionResponse | undefined) {
+  public set internalValue(value: RateLimitActionResponse | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._body = undefined;
       this._contentType = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._body = value.body;
       this._contentType = value.contentType;
     }
   }
 
-  // body - computed: false, optional: false, required: true
+  // body - computed: false, optional: true, required: false
   private _body?: string; 
   public get body() {
     return this.getStringAttribute('body');
@@ -169,18 +150,24 @@ export class RateLimitActionResponseOutputReference extends cdktf.ComplexObject 
   public set body(value: string) {
     this._body = value;
   }
+  public resetBody() {
+    this._body = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
     return this._body;
   }
 
-  // content_type - computed: false, optional: false, required: true
+  // content_type - computed: false, optional: true, required: false
   private _contentType?: string; 
   public get contentType() {
     return this.getStringAttribute('content_type');
   }
   public set contentType(value: string) {
     this._contentType = value;
+  }
+  public resetContentType() {
+    this._contentType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get contentTypeInput() {
@@ -189,39 +176,41 @@ export class RateLimitActionResponseOutputReference extends cdktf.ComplexObject 
 }
 export interface RateLimitAction {
   /**
-  * The type of action to perform. Available values: `simulate`, `ban`, `challenge`, `js_challenge`, `managed_challenge`.
+  * The action to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#mode RateLimit#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#mode RateLimit#mode}
   */
-  readonly mode: string;
+  readonly mode?: string;
   /**
-  * The time in seconds as an integer to perform the mitigation action. This field is required if the `mode` is either `simulate` or `ban`. Must be the same or greater than the period.
+  * A custom content type and reponse to return when the threshold is exceeded. The custom response configured in this object will override the custom error for the zone. This object is optional.
+  * Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#timeout RateLimit#timeout}
-  */
-  readonly timeout?: number;
-  /**
-  * response block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#response RateLimit#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#response RateLimit#response}
   */
   readonly response?: RateLimitActionResponse;
+  /**
+  * The time in seconds during which Cloudflare will perform the mitigation action. Must be an integer value greater than or equal to the period.
+  * Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#timeout RateLimit#timeout}
+  */
+  readonly timeout?: number;
 }
 
-export function rateLimitActionToTerraform(struct?: RateLimitActionOutputReference | RateLimitAction): any {
+export function rateLimitActionToTerraform(struct?: RateLimitAction | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     mode: cdktf.stringToTerraform(struct!.mode),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
     response: rateLimitActionResponseToTerraform(struct!.response),
+    timeout: cdktf.numberToTerraform(struct!.timeout),
   }
 }
 
 
-export function rateLimitActionToHclTerraform(struct?: RateLimitActionOutputReference | RateLimitAction): any {
+export function rateLimitActionToHclTerraform(struct?: RateLimitAction | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -233,17 +222,17 @@ export function rateLimitActionToHclTerraform(struct?: RateLimitActionOutputRefe
       type: "simple",
       storageClassType: "string",
     },
+    response: {
+      value: rateLimitActionResponseToHclTerraform(struct!.response),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "RateLimitActionResponse",
+    },
     timeout: {
       value: cdktf.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
-    },
-    response: {
-      value: rateLimitActionResponseToHclTerraform(struct!.response),
-      isBlock: true,
-      type: "list",
-      storageClassType: "RateLimitActionResponseList",
     },
   };
 
@@ -253,49 +242,59 @@ export function rateLimitActionToHclTerraform(struct?: RateLimitActionOutputRefe
 
 export class RateLimitActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RateLimitAction | undefined {
+  public get internalValue(): RateLimitAction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._timeout !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeout = this._timeout;
-    }
     if (this._response?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.response = this._response?.internalValue;
     }
+    if (this._timeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RateLimitAction | undefined) {
+  public set internalValue(value: RateLimitAction | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._mode = undefined;
-      this._timeout = undefined;
       this._response.internalValue = undefined;
+      this._timeout = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._mode = value.mode;
-      this._timeout = value.timeout;
       this._response.internalValue = value.response;
+      this._timeout = value.timeout;
     }
   }
 
-  // mode - computed: false, optional: false, required: true
+  // mode - computed: false, optional: true, required: false
   private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
@@ -303,25 +302,12 @@ export class RateLimitActionOutputReference extends cdktf.ComplexObject {
   public set mode(value: string) {
     this._mode = value;
   }
+  public resetMode() {
+    this._mode = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get modeInput() {
     return this._mode;
-  }
-
-  // timeout - computed: false, optional: true, required: false
-  private _timeout?: number; 
-  public get timeout() {
-    return this.getNumberAttribute('timeout');
-  }
-  public set timeout(value: number) {
-    this._timeout = value;
-  }
-  public resetTimeout() {
-    this._timeout = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutInput() {
-    return this._timeout;
   }
 
   // response - computed: false, optional: true, required: false
@@ -339,35 +325,157 @@ export class RateLimitActionOutputReference extends cdktf.ComplexObject {
   public get responseInput() {
     return this._response.internalValue;
   }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: number; 
+  public get timeout() {
+    return this.getNumberAttribute('timeout');
+  }
+  public set timeout(value: number) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout;
+  }
 }
-export interface RateLimitCorrelate {
-  /**
-  * If set to 'nat', NAT support will be enabled for rate limiting. Available values: `nat`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#by RateLimit#by}
-  */
-  readonly by?: string;
+export interface RateLimitBypass {
 }
 
-export function rateLimitCorrelateToTerraform(struct?: RateLimitCorrelateOutputReference | RateLimitCorrelate): any {
+export function rateLimitBypassToTerraform(struct?: RateLimitBypass): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    by: cdktf.stringToTerraform(struct!.by),
   }
 }
 
 
-export function rateLimitCorrelateToHclTerraform(struct?: RateLimitCorrelateOutputReference | RateLimitCorrelate): any {
+export function rateLimitBypassToHclTerraform(struct?: RateLimitBypass): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    by: {
-      value: cdktf.stringToHclTerraform(struct!.by),
+  };
+  return attrs;
+}
+
+export class RateLimitBypassOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RateLimitBypass | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RateLimitBypass | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class RateLimitBypassList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RateLimitBypassOutputReference {
+    return new RateLimitBypassOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface RateLimitMatchHeaders {
+  /**
+  * The name of the response header to match.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#name RateLimit#name}
+  */
+  readonly name?: string;
+  /**
+  * The operator used when matching: `eq` means "equal" and `ne` means "not equal".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#op RateLimit#op}
+  */
+  readonly op?: string;
+  /**
+  * The value of the response header, which must match exactly.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#value RateLimit#value}
+  */
+  readonly value?: string;
+}
+
+export function rateLimitMatchHeadersToTerraform(struct?: RateLimitMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    op: cdktf.stringToTerraform(struct!.op),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function rateLimitMatchHeadersToHclTerraform(struct?: RateLimitMatchHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    op: {
+      value: cdktf.stringToHclTerraform(struct!.op),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -378,76 +486,152 @@ export function rateLimitCorrelateToHclTerraform(struct?: RateLimitCorrelateOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RateLimitCorrelateOutputReference extends cdktf.ComplexObject {
+export class RateLimitMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RateLimitCorrelate | undefined {
+  public get internalValue(): RateLimitMatchHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._by !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.by = this._by;
+      internalValueResult.name = this._name;
+    }
+    if (this._op !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.op = this._op;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RateLimitCorrelate | undefined) {
+  public set internalValue(value: RateLimitMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._by = undefined;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._op = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._by = value.by;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._op = value.op;
+      this._value = value.value;
     }
   }
 
-  // by - computed: false, optional: true, required: false
-  private _by?: string; 
-  public get by() {
-    return this.getStringAttribute('by');
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set by(value: string) {
-    this._by = value;
+  public set name(value: string) {
+    this._name = value;
   }
-  public resetBy() {
-    this._by = undefined;
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get byInput() {
-    return this._by;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // op - computed: false, optional: true, required: false
+  private _op?: string; 
+  public get op() {
+    return this.getStringAttribute('op');
+  }
+  public set op(value: string) {
+    this._op = value;
+  }
+  public resetOp() {
+    this._op = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opInput() {
+    return this._op;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class RateLimitMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : RateLimitMatchHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RateLimitMatchHeadersOutputReference {
+    return new RateLimitMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface RateLimitMatchRequest {
   /**
-  * HTTP Methods to match traffic on. Available values: `GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`, `_ALL_`.
+  * The HTTP methods to match. You can specify a subset (for example, `['POST','PUT']`) or all methods (`['_ALL_']`). This field is optional when creating a rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#methods RateLimit#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#methods RateLimit#methods}
   */
   readonly methods?: string[];
   /**
-  * HTTP schemes to match traffic on. Available values: `HTTP`, `HTTPS`, `_ALL_`.
+  * The HTTP schemes to match. You can specify one scheme (`['HTTPS']`), both schemes (`['HTTP','HTTPS']`), or all schemes (`['_ALL_']`). This field is optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#schemes RateLimit#schemes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#schemes RateLimit#schemes}
   */
   readonly schemes?: string[];
   /**
-  * The URL pattern to match comprised of the host and path, i.e. example.org/path. Wildcard are expanded to match applicable traffic, query strings are not matched. Use _ for all traffic to your zone.
+  * The URL pattern to match, composed of a host and a path such as `example.org/path*`. Normalization is applied before the pattern is matched. `*` wildcards are expanded to match applicable traffic. Query strings are not matched. Set the value to `*` to match all traffic to your zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#url_pattern RateLimit#url_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#url RateLimit#url}
   */
-  readonly urlPattern?: string;
+  readonly url?: string;
 }
 
-export function rateLimitMatchRequestToTerraform(struct?: RateLimitMatchRequestOutputReference | RateLimitMatchRequest): any {
+export function rateLimitMatchRequestToTerraform(struct?: RateLimitMatchRequest | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -455,12 +639,12 @@ export function rateLimitMatchRequestToTerraform(struct?: RateLimitMatchRequestO
   return {
     methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.methods),
     schemes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.schemes),
-    url_pattern: cdktf.stringToTerraform(struct!.urlPattern),
+    url: cdktf.stringToTerraform(struct!.url),
   }
 }
 
 
-export function rateLimitMatchRequestToHclTerraform(struct?: RateLimitMatchRequestOutputReference | RateLimitMatchRequest): any {
+export function rateLimitMatchRequestToHclTerraform(struct?: RateLimitMatchRequest | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -469,17 +653,17 @@ export function rateLimitMatchRequestToHclTerraform(struct?: RateLimitMatchReque
     methods: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.methods),
       isBlock: false,
-      type: "set",
+      type: "list",
       storageClassType: "stringList",
     },
     schemes: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.schemes),
       isBlock: false,
-      type: "set",
+      type: "list",
       storageClassType: "stringList",
     },
-    url_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.urlPattern),
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -492,16 +676,20 @@ export function rateLimitMatchRequestToHclTerraform(struct?: RateLimitMatchReque
 
 export class RateLimitMatchRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RateLimitMatchRequest | undefined {
+  public get internalValue(): RateLimitMatchRequest | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._methods !== undefined) {
@@ -512,32 +700,38 @@ export class RateLimitMatchRequestOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.schemes = this._schemes;
     }
-    if (this._urlPattern !== undefined) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlPattern = this._urlPattern;
+      internalValueResult.url = this._url;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RateLimitMatchRequest | undefined) {
+  public set internalValue(value: RateLimitMatchRequest | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._methods = undefined;
       this._schemes = undefined;
-      this._urlPattern = undefined;
+      this._url = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._methods = value.methods;
       this._schemes = value.schemes;
-      this._urlPattern = value.urlPattern;
+      this._url = value.url;
     }
   }
 
-  // methods - computed: true, optional: true, required: false
+  // methods - computed: false, optional: true, required: false
   private _methods?: string[]; 
   public get methods() {
-    return cdktf.Fn.tolist(this.getListAttribute('methods'));
+    return this.getListAttribute('methods');
   }
   public set methods(value: string[]) {
     this._methods = value;
@@ -550,10 +744,10 @@ export class RateLimitMatchRequestOutputReference extends cdktf.ComplexObject {
     return this._methods;
   }
 
-  // schemes - computed: true, optional: true, required: false
+  // schemes - computed: false, optional: true, required: false
   private _schemes?: string[]; 
   public get schemes() {
-    return cdktf.Fn.tolist(this.getListAttribute('schemes'));
+    return this.getListAttribute('schemes');
   }
   public set schemes(value: string[]) {
     this._schemes = value;
@@ -566,79 +760,54 @@ export class RateLimitMatchRequestOutputReference extends cdktf.ComplexObject {
     return this._schemes;
   }
 
-  // url_pattern - computed: true, optional: true, required: false
-  private _urlPattern?: string; 
-  public get urlPattern() {
-    return this.getStringAttribute('url_pattern');
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
   }
-  public set urlPattern(value: string) {
-    this._urlPattern = value;
+  public set url(value: string) {
+    this._url = value;
   }
-  public resetUrlPattern() {
-    this._urlPattern = undefined;
+  public resetUrl() {
+    this._url = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get urlPatternInput() {
-    return this._urlPattern;
+  public get urlInput() {
+    return this._url;
   }
 }
 export interface RateLimitMatchResponse {
   /**
-  * List of HTTP headers maps to match the origin response on.
+  * When true, only the uncached traffic served from your origin servers will count towards rate limiting. In this case, any cached traffic served by Cloudflare will not count towards rate limiting. This field is optional.
+  * Notes: This field is deprecated. Instead, use response headers and set "origin_traffic" to "false" to avoid legacy behaviour interacting with the "response_headers" property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#headers RateLimit#headers}
-  */
-  readonly headers?: { [key: string]: string }[] | cdktf.IResolvable;
-  /**
-  * Only count traffic that has come from your origin servers. If true, cached items that Cloudflare serve will not count towards rate limiting.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#origin_traffic RateLimit#origin_traffic}
   */
   readonly originTraffic?: boolean | cdktf.IResolvable;
-  /**
-  * HTTP Status codes, can be one, many or indicate all by not providing this value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#statuses RateLimit#statuses}
-  */
-  readonly statuses?: number[];
 }
 
-export function rateLimitMatchResponseToTerraform(struct?: RateLimitMatchResponseOutputReference | RateLimitMatchResponse): any {
+export function rateLimitMatchResponseToTerraform(struct?: RateLimitMatchResponse | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    headers: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(struct!.headers),
     origin_traffic: cdktf.booleanToTerraform(struct!.originTraffic),
-    statuses: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.statuses),
   }
 }
 
 
-export function rateLimitMatchResponseToHclTerraform(struct?: RateLimitMatchResponseOutputReference | RateLimitMatchResponse): any {
+export function rateLimitMatchResponseToHclTerraform(struct?: RateLimitMatchResponse | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    headers: {
-      value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(struct!.headers),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringMapList",
-    },
     origin_traffic: {
       value: cdktf.booleanToHclTerraform(struct!.originTraffic),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
-    },
-    statuses: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.statuses),
-      isBlock: false,
-      type: "set",
-      storageClassType: "numberList",
     },
   };
 
@@ -648,65 +817,47 @@ export function rateLimitMatchResponseToHclTerraform(struct?: RateLimitMatchResp
 
 export class RateLimitMatchResponseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RateLimitMatchResponse | undefined {
+  public get internalValue(): RateLimitMatchResponse | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._headers !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.headers = this._headers;
-    }
     if (this._originTraffic !== undefined) {
       hasAnyValues = true;
       internalValueResult.originTraffic = this._originTraffic;
     }
-    if (this._statuses !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.statuses = this._statuses;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RateLimitMatchResponse | undefined) {
+  public set internalValue(value: RateLimitMatchResponse | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._headers = undefined;
+      this.resolvableValue = undefined;
       this._originTraffic = undefined;
-      this._statuses = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._headers = value.headers;
+      this.resolvableValue = undefined;
       this._originTraffic = value.originTraffic;
-      this._statuses = value.statuses;
     }
   }
 
-  // headers - computed: false, optional: true, required: false
-  private _headers?: { [key: string]: string }[] | cdktf.IResolvable; 
-  public get headers() {
-    return this.interpolationForAttribute('headers');
-  }
-  public set headers(value: { [key: string]: string }[] | cdktf.IResolvable) {
-    this._headers = value;
-  }
-  public resetHeaders() {
-    this._headers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get headersInput() {
-    return this._headers;
-  }
-
-  // origin_traffic - computed: true, optional: true, required: false
+  // origin_traffic - computed: false, optional: true, required: false
   private _originTraffic?: boolean | cdktf.IResolvable; 
   public get originTraffic() {
     return this.getBooleanAttribute('origin_traffic');
@@ -721,67 +872,58 @@ export class RateLimitMatchResponseOutputReference extends cdktf.ComplexObject {
   public get originTrafficInput() {
     return this._originTraffic;
   }
-
-  // statuses - computed: true, optional: true, required: false
-  private _statuses?: number[]; 
-  public get statuses() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('statuses')));
-  }
-  public set statuses(value: number[]) {
-    this._statuses = value;
-  }
-  public resetStatuses() {
-    this._statuses = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusesInput() {
-    return this._statuses;
-  }
 }
 export interface RateLimitMatch {
   /**
-  * request block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#request RateLimit#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#headers RateLimit#headers}
+  */
+  readonly headers?: RateLimitMatchHeaders[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#request RateLimit#request}
   */
   readonly request?: RateLimitMatchRequest;
   /**
-  * response block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#response RateLimit#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#response RateLimit#response}
   */
   readonly response?: RateLimitMatchResponse;
 }
 
-export function rateLimitMatchToTerraform(struct?: RateLimitMatchOutputReference | RateLimitMatch): any {
+export function rateLimitMatchToTerraform(struct?: RateLimitMatch | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    headers: cdktf.listMapper(rateLimitMatchHeadersToTerraform, false)(struct!.headers),
     request: rateLimitMatchRequestToTerraform(struct!.request),
     response: rateLimitMatchResponseToTerraform(struct!.response),
   }
 }
 
 
-export function rateLimitMatchToHclTerraform(struct?: RateLimitMatchOutputReference | RateLimitMatch): any {
+export function rateLimitMatchToHclTerraform(struct?: RateLimitMatch | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    headers: {
+      value: cdktf.listMapperHcl(rateLimitMatchHeadersToHclTerraform, false)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RateLimitMatchHeadersList",
+    },
     request: {
       value: rateLimitMatchRequestToHclTerraform(struct!.request),
       isBlock: true,
-      type: "list",
-      storageClassType: "RateLimitMatchRequestList",
+      type: "struct",
+      storageClassType: "RateLimitMatchRequest",
     },
     response: {
       value: rateLimitMatchResponseToHclTerraform(struct!.response),
       isBlock: true,
-      type: "list",
-      storageClassType: "RateLimitMatchResponseList",
+      type: "struct",
+      storageClassType: "RateLimitMatchResponse",
     },
   };
 
@@ -791,18 +933,26 @@ export function rateLimitMatchToHclTerraform(struct?: RateLimitMatchOutputRefere
 
 export class RateLimitMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RateLimitMatch | undefined {
+  public get internalValue(): RateLimitMatch | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._headers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headers = this._headers?.internalValue;
+    }
     if (this._request?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request?.internalValue;
@@ -814,17 +964,41 @@ export class RateLimitMatchOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RateLimitMatch | undefined) {
+  public set internalValue(value: RateLimitMatch | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headers.internalValue = undefined;
       this._request.internalValue = undefined;
       this._response.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headers.internalValue = value.headers;
       this._request.internalValue = value.request;
       this._response.internalValue = value.response;
     }
+  }
+
+  // headers - computed: false, optional: true, required: false
+  private _headers = new RateLimitMatchHeadersList(this, "headers", false);
+  public get headers() {
+    return this._headers;
+  }
+  public putHeaders(value: RateLimitMatchHeaders[] | cdktf.IResolvable) {
+    this._headers.internalValue = value;
+  }
+  public resetHeaders() {
+    this._headers.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headersInput() {
+    return this._headers.internalValue;
   }
 
   // request - computed: false, optional: true, required: false
@@ -861,7 +1035,7 @@ export class RateLimitMatchOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit cloudflare_rate_limit}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit cloudflare_rate_limit}
 */
 export class RateLimit extends cdktf.TerraformResource {
 
@@ -877,7 +1051,7 @@ export class RateLimit extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RateLimit resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RateLimit to import
-  * @param importFromId The id of the existing RateLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RateLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RateLimit to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -889,7 +1063,7 @@ export class RateLimit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit cloudflare_rate_limit} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit cloudflare_rate_limit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -900,8 +1074,8 @@ export class RateLimit extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_rate_limit',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -911,84 +1085,62 @@ export class RateLimit extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._bypassUrlPatterns = config.bypassUrlPatterns;
-    this._description = config.description;
-    this._disabled = config.disabled;
-    this._id = config.id;
+    this._action.internalValue = config.action;
+    this._match.internalValue = config.match;
     this._period = config.period;
     this._threshold = config.threshold;
     this._zoneId = config.zoneId;
-    this._action.internalValue = config.action;
-    this._correlate.internalValue = config.correlate;
-    this._match.internalValue = config.match;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // bypass_url_patterns - computed: false, optional: true, required: false
-  private _bypassUrlPatterns?: string[]; 
-  public get bypassUrlPatterns() {
-    return cdktf.Fn.tolist(this.getListAttribute('bypass_url_patterns'));
+  // action - computed: false, optional: false, required: true
+  private _action = new RateLimitActionOutputReference(this, "action");
+  public get action() {
+    return this._action;
   }
-  public set bypassUrlPatterns(value: string[]) {
-    this._bypassUrlPatterns = value;
-  }
-  public resetBypassUrlPatterns() {
-    this._bypassUrlPatterns = undefined;
+  public putAction(value: RateLimitAction) {
+    this._action.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get bypassUrlPatternsInput() {
-    return this._bypassUrlPatterns;
+  public get actionInput() {
+    return this._action.internalValue;
   }
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
+  // bypass - computed: true, optional: false, required: false
+  private _bypass = new RateLimitBypassList(this, "bypass", false);
+  public get bypass() {
+    return this._bypass;
+  }
+
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
-  }
 
-  // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
-    this._disabled = value;
-  }
-  public resetDisabled() {
-    this._disabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get disabledInput() {
-    return this._disabled;
-  }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // match - computed: false, optional: false, required: true
+  private _match = new RateLimitMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
   }
-  public resetId() {
-    this._id = undefined;
+  public putMatch(value: RateLimitMatch) {
+    this._match.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get matchInput() {
+    return this._match.internalValue;
   }
 
   // period - computed: false, optional: false, required: true
@@ -1030,95 +1182,33 @@ export class RateLimit extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // action - computed: false, optional: false, required: true
-  private _action = new RateLimitActionOutputReference(this, "action");
-  public get action() {
-    return this._action;
-  }
-  public putAction(value: RateLimitAction) {
-    this._action.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get actionInput() {
-    return this._action.internalValue;
-  }
-
-  // correlate - computed: false, optional: true, required: false
-  private _correlate = new RateLimitCorrelateOutputReference(this, "correlate");
-  public get correlate() {
-    return this._correlate;
-  }
-  public putCorrelate(value: RateLimitCorrelate) {
-    this._correlate.internalValue = value;
-  }
-  public resetCorrelate() {
-    this._correlate.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get correlateInput() {
-    return this._correlate.internalValue;
-  }
-
-  // match - computed: false, optional: true, required: false
-  private _match = new RateLimitMatchOutputReference(this, "match");
-  public get match() {
-    return this._match;
-  }
-  public putMatch(value: RateLimitMatch) {
-    this._match.internalValue = value;
-  }
-  public resetMatch() {
-    this._match.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchInput() {
-    return this._match.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bypass_url_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._bypassUrlPatterns),
-      description: cdktf.stringToTerraform(this._description),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      id: cdktf.stringToTerraform(this._id),
+      action: rateLimitActionToTerraform(this._action.internalValue),
+      match: rateLimitMatchToTerraform(this._match.internalValue),
       period: cdktf.numberToTerraform(this._period),
       threshold: cdktf.numberToTerraform(this._threshold),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      action: rateLimitActionToTerraform(this._action.internalValue),
-      correlate: rateLimitCorrelateToTerraform(this._correlate.internalValue),
-      match: rateLimitMatchToTerraform(this._match.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      bypass_url_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._bypassUrlPatterns),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
+      action: {
+        value: rateLimitActionToHclTerraform(this._action.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RateLimitAction",
       },
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+      match: {
+        value: rateLimitMatchToHclTerraform(this._match.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RateLimitMatch",
       },
       period: {
         value: cdktf.numberToHclTerraform(this._period),
@@ -1137,24 +1227,6 @@ export class RateLimit extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      action: {
-        value: rateLimitActionToHclTerraform(this._action.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "RateLimitActionList",
-      },
-      correlate: {
-        value: rateLimitCorrelateToHclTerraform(this._correlate.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "RateLimitCorrelateList",
-      },
-      match: {
-        value: rateLimitMatchToHclTerraform(this._match.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "RateLimitMatchList",
       },
     };
 

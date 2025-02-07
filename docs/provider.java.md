@@ -4,7 +4,7 @@
 
 ### CloudflareProvider <a name="CloudflareProvider" id="@cdktf/provider-cloudflare.provider.CloudflareProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs cloudflare}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs cloudflare}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer"></a>
 
@@ -13,18 +13,11 @@ import com.hashicorp.cdktf.providers.cloudflare.provider.CloudflareProvider;
 
 CloudflareProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
-//  .apiBasePath(java.lang.String)
-//  .apiClientLogging(java.lang.Boolean)
-//  .apiClientLogging(IResolvable)
-//  .apiHostname(java.lang.String)
 //  .apiKey(java.lang.String)
 //  .apiToken(java.lang.String)
 //  .apiUserServiceKey(java.lang.String)
+//  .baseUrl(java.lang.String)
 //  .email(java.lang.String)
-//  .maxBackoff(java.lang.Number)
-//  .minBackoff(java.lang.Number)
-//  .retries(java.lang.Number)
-//  .rps(java.lang.Number)
 //  .userAgentOperatorSuffix(java.lang.String)
     .build();
 ```
@@ -34,17 +27,11 @@ CloudflareProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiBasePath">apiBasePath</a></code> | <code>java.lang.String</code> | Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiClientLogging">apiClientLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to print logs from the API client (using the default log library logger). |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiHostname">apiHostname</a></code> | <code>java.lang.String</code> | Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiKey">apiKey</a></code> | <code>java.lang.String</code> | The API key for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiToken">apiToken</a></code> | <code>java.lang.String</code> | The API Token for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiUserServiceKey">apiUserServiceKey</a></code> | <code>java.lang.String</code> | A special Cloudflare API key good for a restricted set of endpoints. |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | A registered Cloudflare email address. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.maxBackoff">maxBackoff</a></code> | <code>java.lang.Number</code> | Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.minBackoff">minBackoff</a></code> | <code>java.lang.Number</code> | Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.retries">retries</a></code> | <code>java.lang.Number</code> | Maximum number of retries to perform when an API request fails. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.rps">rps</a></code> | <code>java.lang.Number</code> | RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.userAgentOperatorSuffix">userAgentOperatorSuffix</a></code> | <code>java.lang.String</code> | A value to append to the HTTP User Agent for all API calls. |
 
 ---
@@ -73,39 +60,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#alias CloudflareProvider#alias}
-
----
-
-##### `apiBasePath`<sup>Optional</sup> <a name="apiBasePath" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiBasePath"></a>
-
-- *Type:* java.lang.String
-
-Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_base_path CloudflareProvider#api_base_path}
-
----
-
-##### `apiClientLogging`<sup>Optional</sup> <a name="apiClientLogging" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiClientLogging"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Whether to print logs from the API client (using the default log library logger).
-
-Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_client_logging CloudflareProvider#api_client_logging}
-
----
-
-##### `apiHostname`<sup>Optional</sup> <a name="apiHostname" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiHostname"></a>
-
-- *Type:* java.lang.String
-
-Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_hostname CloudflareProvider#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#alias CloudflareProvider#alias}
 
 ---
 
@@ -117,7 +72,7 @@ The API key for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/fundamentals/api/get-started/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_key CloudflareProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_key CloudflareProvider#api_key}
 
 ---
 
@@ -129,7 +84,7 @@ The API Token for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_token CloudflareProvider#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_token CloudflareProvider#api_token}
 
 ---
 
@@ -141,7 +96,17 @@ A special Cloudflare API key good for a restricted set of endpoints.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+
+---
+
+##### `baseUrl`<sup>Optional</sup> <a name="baseUrl" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.baseUrl"></a>
+
+- *Type:* java.lang.String
+
+Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#base_url CloudflareProvider#base_url}
 
 ---
 
@@ -153,49 +118,7 @@ A registered Cloudflare email address.
 
 Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#email CloudflareProvider#email}
-
----
-
-##### `maxBackoff`<sup>Optional</sup> <a name="maxBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.maxBackoff"></a>
-
-- *Type:* java.lang.Number
-
-Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#max_backoff CloudflareProvider#max_backoff}
-
----
-
-##### `minBackoff`<sup>Optional</sup> <a name="minBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.minBackoff"></a>
-
-- *Type:* java.lang.Number
-
-Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#min_backoff CloudflareProvider#min_backoff}
-
----
-
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.retries"></a>
-
-- *Type:* java.lang.Number
-
-Maximum number of retries to perform when an API request fails.
-
-Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#retries CloudflareProvider#retries}
-
----
-
-##### `rps`<sup>Optional</sup> <a name="rps" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.rps"></a>
-
-- *Type:* java.lang.Number
-
-RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#rps CloudflareProvider#rps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#email CloudflareProvider#email}
 
 ---
 
@@ -207,7 +130,7 @@ A value to append to the HTTP User Agent for all API calls.
 
 This value is not something most users need to modify however, if you are using a non-standard provider or operator configuration, this is recommended to assist in uniquely identifying your traffic. **Setting this value will remove the Terraform version from the HTTP User Agent string and may have unintended consequences**. Alternatively, can be configured using the `CLOUDFLARE_USER_AGENT_OPERATOR_SUFFIX` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
 
 ---
 
@@ -223,17 +146,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetAlias">resetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiBasePath">resetApiBasePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiClientLogging">resetApiClientLogging</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiHostname">resetApiHostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiKey">resetApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiToken">resetApiToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiUserServiceKey">resetApiUserServiceKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetBaseUrl">resetBaseUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetEmail">resetEmail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMaxBackoff">resetMaxBackoff</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMinBackoff">resetMinBackoff</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRetries">resetRetries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRps">resetRps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetUserAgentOperatorSuffix">resetUserAgentOperatorSuffix</a></code> | *No description.* |
 
 ---
@@ -314,24 +231,6 @@ Adds this resource to the terraform JSON output.
 public void resetAlias()
 ```
 
-##### `resetApiBasePath` <a name="resetApiBasePath" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiBasePath"></a>
-
-```java
-public void resetApiBasePath()
-```
-
-##### `resetApiClientLogging` <a name="resetApiClientLogging" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiClientLogging"></a>
-
-```java
-public void resetApiClientLogging()
-```
-
-##### `resetApiHostname` <a name="resetApiHostname" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiHostname"></a>
-
-```java
-public void resetApiHostname()
-```
-
 ##### `resetApiKey` <a name="resetApiKey" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiKey"></a>
 
 ```java
@@ -350,34 +249,16 @@ public void resetApiToken()
 public void resetApiUserServiceKey()
 ```
 
+##### `resetBaseUrl` <a name="resetBaseUrl" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetBaseUrl"></a>
+
+```java
+public void resetBaseUrl()
+```
+
 ##### `resetEmail` <a name="resetEmail" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetEmail"></a>
 
 ```java
 public void resetEmail()
-```
-
-##### `resetMaxBackoff` <a name="resetMaxBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMaxBackoff"></a>
-
-```java
-public void resetMaxBackoff()
-```
-
-##### `resetMinBackoff` <a name="resetMinBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMinBackoff"></a>
-
-```java
-public void resetMinBackoff()
-```
-
-##### `resetRetries` <a name="resetRetries" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRetries"></a>
-
-```java
-public void resetRetries()
-```
-
-##### `resetRps` <a name="resetRps" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRps"></a>
-
-```java
-public void resetRps()
 ```
 
 ##### `resetUserAgentOperatorSuffix` <a name="resetUserAgentOperatorSuffix" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetUserAgentOperatorSuffix"></a>
@@ -489,7 +370,7 @@ The construct id used in the generated config for the CloudflareProvider to impo
 
 The id of the existing CloudflareProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,29 +396,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePathInput">apiBasePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLoggingInput">apiClientLoggingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostnameInput">apiHostnameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiUserServiceKeyInput">apiUserServiceKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrlInput">baseUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoffInput">maxBackoffInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoffInput">minBackoffInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retriesInput">retriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rpsInput">rpsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.userAgentOperatorSuffixInput">userAgentOperatorSuffixInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePath">apiBasePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLogging">apiClientLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostname">apiHostname</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiUserServiceKey">apiUserServiceKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoff">maxBackoff</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoff">minBackoff</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retries">retries</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rps">rps</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.userAgentOperatorSuffix">userAgentOperatorSuffix</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -644,36 +513,6 @@ public java.lang.String getAliasInput();
 
 ---
 
-##### `apiBasePathInput`<sup>Optional</sup> <a name="apiBasePathInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePathInput"></a>
-
-```java
-public java.lang.String getApiBasePathInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `apiClientLoggingInput`<sup>Optional</sup> <a name="apiClientLoggingInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLoggingInput"></a>
-
-```java
-public java.lang.Object getApiClientLoggingInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `apiHostnameInput`<sup>Optional</sup> <a name="apiHostnameInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostnameInput"></a>
-
-```java
-public java.lang.String getApiHostnameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiKeyInput"></a>
 
 ```java
@@ -704,6 +543,16 @@ public java.lang.String getApiUserServiceKeyInput();
 
 ---
 
+##### `baseUrlInput`<sup>Optional</sup> <a name="baseUrlInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrlInput"></a>
+
+```java
+public java.lang.String getBaseUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.emailInput"></a>
 
 ```java
@@ -714,80 +563,10 @@ public java.lang.String getEmailInput();
 
 ---
 
-##### `maxBackoffInput`<sup>Optional</sup> <a name="maxBackoffInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoffInput"></a>
-
-```java
-public java.lang.Number getMaxBackoffInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `minBackoffInput`<sup>Optional</sup> <a name="minBackoffInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoffInput"></a>
-
-```java
-public java.lang.Number getMinBackoffInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `retriesInput`<sup>Optional</sup> <a name="retriesInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retriesInput"></a>
-
-```java
-public java.lang.Number getRetriesInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `rpsInput`<sup>Optional</sup> <a name="rpsInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rpsInput"></a>
-
-```java
-public java.lang.Number getRpsInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
 ##### `userAgentOperatorSuffixInput`<sup>Optional</sup> <a name="userAgentOperatorSuffixInput" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.userAgentOperatorSuffixInput"></a>
 
 ```java
 public java.lang.String getUserAgentOperatorSuffixInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `apiBasePath`<sup>Optional</sup> <a name="apiBasePath" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePath"></a>
-
-```java
-public java.lang.String getApiBasePath();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `apiClientLogging`<sup>Optional</sup> <a name="apiClientLogging" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLogging"></a>
-
-```java
-public java.lang.Object getApiClientLogging();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `apiHostname`<sup>Optional</sup> <a name="apiHostname" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostname"></a>
-
-```java
-public java.lang.String getApiHostname();
 ```
 
 - *Type:* java.lang.String
@@ -824,6 +603,16 @@ public java.lang.String getApiUserServiceKey();
 
 ---
 
+##### `baseUrl`<sup>Optional</sup> <a name="baseUrl" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrl"></a>
+
+```java
+public java.lang.String getBaseUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.email"></a>
 
 ```java
@@ -831,46 +620,6 @@ public java.lang.String getEmail();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `maxBackoff`<sup>Optional</sup> <a name="maxBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoff"></a>
-
-```java
-public java.lang.Number getMaxBackoff();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `minBackoff`<sup>Optional</sup> <a name="minBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoff"></a>
-
-```java
-public java.lang.Number getMinBackoff();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retries"></a>
-
-```java
-public java.lang.Number getRetries();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `rps`<sup>Optional</sup> <a name="rps" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rps"></a>
-
-```java
-public java.lang.Number getRps();
-```
-
-- *Type:* java.lang.Number
 
 ---
 
@@ -913,18 +662,11 @@ import com.hashicorp.cdktf.providers.cloudflare.provider.CloudflareProviderConfi
 
 CloudflareProviderConfig.builder()
 //  .alias(java.lang.String)
-//  .apiBasePath(java.lang.String)
-//  .apiClientLogging(java.lang.Boolean)
-//  .apiClientLogging(IResolvable)
-//  .apiHostname(java.lang.String)
 //  .apiKey(java.lang.String)
 //  .apiToken(java.lang.String)
 //  .apiUserServiceKey(java.lang.String)
+//  .baseUrl(java.lang.String)
 //  .email(java.lang.String)
-//  .maxBackoff(java.lang.Number)
-//  .minBackoff(java.lang.Number)
-//  .retries(java.lang.Number)
-//  .rps(java.lang.Number)
 //  .userAgentOperatorSuffix(java.lang.String)
     .build();
 ```
@@ -934,17 +676,11 @@ CloudflareProviderConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiBasePath">apiBasePath</a></code> | <code>java.lang.String</code> | Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiClientLogging">apiClientLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to print logs from the API client (using the default log library logger). |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiHostname">apiHostname</a></code> | <code>java.lang.String</code> | Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | The API key for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | The API Token for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiUserServiceKey">apiUserServiceKey</a></code> | <code>java.lang.String</code> | A special Cloudflare API key good for a restricted set of endpoints. |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.email">email</a></code> | <code>java.lang.String</code> | A registered Cloudflare email address. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.maxBackoff">maxBackoff</a></code> | <code>java.lang.Number</code> | Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.minBackoff">minBackoff</a></code> | <code>java.lang.Number</code> | Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.retries">retries</a></code> | <code>java.lang.Number</code> | Maximum number of retries to perform when an API request fails. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.rps">rps</a></code> | <code>java.lang.Number</code> | RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.userAgentOperatorSuffix">userAgentOperatorSuffix</a></code> | <code>java.lang.String</code> | A value to append to the HTTP User Agent for all API calls. |
 
 ---
@@ -959,51 +695,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#alias CloudflareProvider#alias}
-
----
-
-##### `apiBasePath`<sup>Optional</sup> <a name="apiBasePath" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiBasePath"></a>
-
-```java
-public java.lang.String getApiBasePath();
-```
-
-- *Type:* java.lang.String
-
-Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_base_path CloudflareProvider#api_base_path}
-
----
-
-##### `apiClientLogging`<sup>Optional</sup> <a name="apiClientLogging" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiClientLogging"></a>
-
-```java
-public java.lang.Object getApiClientLogging();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Whether to print logs from the API client (using the default log library logger).
-
-Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_client_logging CloudflareProvider#api_client_logging}
-
----
-
-##### `apiHostname`<sup>Optional</sup> <a name="apiHostname" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiHostname"></a>
-
-```java
-public java.lang.String getApiHostname();
-```
-
-- *Type:* java.lang.String
-
-Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_hostname CloudflareProvider#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#alias CloudflareProvider#alias}
 
 ---
 
@@ -1019,7 +711,7 @@ The API key for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/fundamentals/api/get-started/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_key CloudflareProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_key CloudflareProvider#api_key}
 
 ---
 
@@ -1035,7 +727,7 @@ The API Token for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_token CloudflareProvider#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_token CloudflareProvider#api_token}
 
 ---
 
@@ -1051,7 +743,21 @@ A special Cloudflare API key good for a restricted set of endpoints.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+
+---
+
+##### `baseUrl`<sup>Optional</sup> <a name="baseUrl" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.baseUrl"></a>
+
+```java
+public java.lang.String getBaseUrl();
+```
+
+- *Type:* java.lang.String
+
+Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#base_url CloudflareProvider#base_url}
 
 ---
 
@@ -1067,65 +773,7 @@ A registered Cloudflare email address.
 
 Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#email CloudflareProvider#email}
-
----
-
-##### `maxBackoff`<sup>Optional</sup> <a name="maxBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.maxBackoff"></a>
-
-```java
-public java.lang.Number getMaxBackoff();
-```
-
-- *Type:* java.lang.Number
-
-Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#max_backoff CloudflareProvider#max_backoff}
-
----
-
-##### `minBackoff`<sup>Optional</sup> <a name="minBackoff" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.minBackoff"></a>
-
-```java
-public java.lang.Number getMinBackoff();
-```
-
-- *Type:* java.lang.Number
-
-Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#min_backoff CloudflareProvider#min_backoff}
-
----
-
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.retries"></a>
-
-```java
-public java.lang.Number getRetries();
-```
-
-- *Type:* java.lang.Number
-
-Maximum number of retries to perform when an API request fails.
-
-Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#retries CloudflareProvider#retries}
-
----
-
-##### `rps`<sup>Optional</sup> <a name="rps" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.rps"></a>
-
-```java
-public java.lang.Number getRps();
-```
-
-- *Type:* java.lang.Number
-
-RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#rps CloudflareProvider#rps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#email CloudflareProvider#email}
 
 ---
 
@@ -1141,7 +789,7 @@ A value to append to the HTTP User Agent for all API calls.
 
 This value is not something most users need to modify however, if you are using a non-standard provider or operator configuration, this is recommended to assist in uniquely identifying your traffic. **Setting this value will remove the Terraform version from the HTTP User Agent string and may have unintended consequences**. Alternatively, can be configured using the `CLOUDFLARE_USER_AGENT_OPERATOR_SUFFIX` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
 
 ---
 

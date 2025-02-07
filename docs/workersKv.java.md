@@ -4,7 +4,7 @@
 
 ### WorkersKv <a name="WorkersKv" id="@cdktf/provider-cloudflare.workersKv.WorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer"></a>
 
@@ -24,10 +24,10 @@ WorkersKv.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
-    .key(java.lang.String)
+    .keyName(java.lang.String)
     .namespaceId(java.lang.String)
     .value(java.lang.String)
-//  .id(java.lang.String)
+//  .metadata(java.lang.String)
     .build();
 ```
 
@@ -42,11 +42,11 @@ WorkersKv.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Name of the KV pair. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | The ID of the Workers KV namespace in which you want to create the KV pair. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Value of the KV pair. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#id WorkersKv#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.keyName">keyName</a></code> | <code>java.lang.String</code> | A key's name. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Namespace identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | A byte sequence to be stored, up to 25 MiB in length. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.String</code> | Arbitrary JSON to be associated with a key/value pair. |
 
 ---
 
@@ -114,19 +114,21 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-The account identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.key"></a>
+##### `keyName`<sup>Required</sup> <a name="keyName" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.keyName"></a>
 
 - *Type:* java.lang.String
 
-Name of the KV pair. **Modifying this attribute will force creation of a new resource.**.
+A key's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#key WorkersKv#key}
+The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -134,11 +136,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The ID of the Workers KV namespace in which you want to create the KV pair.
+Namespace identifier tag.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -146,20 +146,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Value of the KV pair.
+A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#value WorkersKv#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#value WorkersKv#value}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.id"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer.parameter.metadata"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#id WorkersKv#id}.
+Arbitrary JSON to be associated with a key/value pair.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 
@@ -190,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.resetMetadata">resetMetadata</a></code> | *No description.* |
 
 ---
 
@@ -484,10 +483,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.resetId"></a>
+##### `resetMetadata` <a name="resetMetadata" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.resetMetadata"></a>
 
 ```java
-public void resetId()
+public void resetMetadata()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -593,7 +592,7 @@ The construct id used in the generated config for the WorkersKv to import.
 
 The id of the existing WorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,14 +622,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.keyNameInput">keyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.metadataInput">metadataInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.namespaceIdInput">namespaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.keyName">keyName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.metadata">metadata</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKv.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -778,6 +778,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.accountIdInput"></a>
 
 ```java
@@ -788,20 +798,20 @@ public java.lang.String getAccountIdInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.idInput"></a>
+##### `keyNameInput`<sup>Optional</sup> <a name="keyNameInput" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.keyNameInput"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.String getKeyNameInput();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.keyInput"></a>
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.metadataInput"></a>
 
 ```java
-public java.lang.String getKeyInput();
+public java.lang.String getMetadataInput();
 ```
 
 - *Type:* java.lang.String
@@ -838,20 +848,20 @@ public java.lang.String getAccountId();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.id"></a>
+##### `keyName`<sup>Required</sup> <a name="keyName" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.keyName"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.String getKeyName();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.key"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.property.metadata"></a>
 
 ```java
-public java.lang.String getKey();
+public java.lang.String getMetadata();
 ```
 
 - *Type:* java.lang.String
@@ -918,10 +928,10 @@ WorkersKvConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
-    .key(java.lang.String)
+    .keyName(java.lang.String)
     .namespaceId(java.lang.String)
     .value(java.lang.String)
-//  .id(java.lang.String)
+//  .metadata(java.lang.String)
     .build();
 ```
 
@@ -936,11 +946,11 @@ WorkersKvConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.key">key</a></code> | <code>java.lang.String</code> | Name of the KV pair. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | The ID of the Workers KV namespace in which you want to create the KV pair. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.value">value</a></code> | <code>java.lang.String</code> | Value of the KV pair. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#id WorkersKv#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName">keyName</a></code> | <code>java.lang.String</code> | A key's name. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Namespace identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.value">value</a></code> | <code>java.lang.String</code> | A byte sequence to be stored, up to 25 MiB in length. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.metadata">metadata</a></code> | <code>java.lang.String</code> | Arbitrary JSON to be associated with a key/value pair. |
 
 ---
 
@@ -1022,23 +1032,25 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-The account identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.key"></a>
+##### `keyName`<sup>Required</sup> <a name="keyName" id="@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName"></a>
 
 ```java
-public java.lang.String getKey();
+public java.lang.String getKeyName();
 ```
 
 - *Type:* java.lang.String
 
-Name of the KV pair. **Modifying this attribute will force creation of a new resource.**.
+A key's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#key WorkersKv#key}
+The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -1050,11 +1062,9 @@ public java.lang.String getNamespaceId();
 
 - *Type:* java.lang.String
 
-The ID of the Workers KV namespace in which you want to create the KV pair.
+Namespace identifier tag.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -1066,24 +1076,23 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Value of the KV pair.
+A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#value WorkersKv#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#value WorkersKv#value}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.id"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.metadata"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.String getMetadata();
 ```
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#id WorkersKv#id}.
+Arbitrary JSON to be associated with a key/value pair.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 

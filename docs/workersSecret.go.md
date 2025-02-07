@@ -4,12 +4,12 @@
 
 ### WorkersSecret <a name="WorkersSecret" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret"
 
 workerssecret.NewWorkersSecret(scope Construct, id *string, config WorkersSecretConfig) WorkersSecret
 ```
@@ -73,7 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetText">ResetText</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetType">ResetType</a></code> | *No description.* |
 
 ---
 
@@ -365,10 +366,16 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetId"></a>
+##### `ResetText` <a name="ResetText" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetText"></a>
 
 ```go
-func ResetId()
+func ResetText()
+```
+
+##### `ResetType` <a name="ResetType" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetType"></a>
+
+```go
+func ResetType()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret"
 
 workerssecret.WorkersSecret_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret"
 
 workerssecret.WorkersSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ workerssecret.WorkersSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret"
 
 workerssecret.WorkersSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ workerssecret.WorkersSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret"
 
 workerssecret.WorkersSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the WorkersSecret to import.
 
 The id of the existing WorkersSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,16 +511,19 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespaceInput">DispatchNamespaceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.scriptNameInput">ScriptNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretTextInput">SecretTextInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.textInput">TextInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespace">DispatchNamespace</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.scriptName">ScriptName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretText">SecretText</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.text">Text</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -659,6 +669,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.accountIdInput"></a>
 
 ```go
@@ -669,10 +689,10 @@ func AccountIdInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.idInput"></a>
+##### `DispatchNamespaceInput`<sup>Optional</sup> <a name="DispatchNamespaceInput" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespaceInput"></a>
 
 ```go
-func IdInput() *string
+func DispatchNamespaceInput() *string
 ```
 
 - *Type:* *string
@@ -699,10 +719,20 @@ func ScriptNameInput() *string
 
 ---
 
-##### `SecretTextInput`<sup>Optional</sup> <a name="SecretTextInput" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretTextInput"></a>
+##### `TextInput`<sup>Optional</sup> <a name="TextInput" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.textInput"></a>
 
 ```go
-func SecretTextInput() *string
+func TextInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.typeInput"></a>
+
+```go
+func TypeInput() *string
 ```
 
 - *Type:* *string
@@ -719,10 +749,10 @@ func AccountId() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id"></a>
+##### `DispatchNamespace`<sup>Required</sup> <a name="DispatchNamespace" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespace"></a>
 
 ```go
-func Id() *string
+func DispatchNamespace() *string
 ```
 
 - *Type:* *string
@@ -749,10 +779,20 @@ func ScriptName() *string
 
 ---
 
-##### `SecretText`<sup>Required</sup> <a name="SecretText" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretText"></a>
+##### `Text`<sup>Required</sup> <a name="Text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.text"></a>
 
 ```go
-func SecretText() *string
+func Text() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.type"></a>
+
+```go
+func Type() *string
 ```
 
 - *Type:* *string
@@ -784,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret"
 
 &workerssecret.WorkersSecretConfig {
 	Connection: interface{},
@@ -795,10 +835,11 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecr
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
+	DispatchNamespace: *string,
 	Name: *string,
 	ScriptName: *string,
-	SecretText: *string,
-	Id: *string,
+	Text: *string,
+	Type: *string,
 }
 ```
 
@@ -813,11 +854,12 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecr
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | The name of the Worker script to associate the secret with. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.secretText">SecretText</a></code> | <code>*string</code> | The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.dispatchNamespace">DispatchNamespace</a></code> | <code>*string</code> | Name of the Workers for Platforms dispatch namespace. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.name">Name</a></code> | <code>*string</code> | The name of this secret, this is what will be used to access it inside the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Name of the script, used in URLs and route configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.text">Text</a></code> | <code>*string</code> | The value of the secret. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.type">Type</a></code> | <code>*string</code> | The type of secret to put. |
 
 ---
 
@@ -899,9 +941,23 @@ AccountId *string
 
 - *Type:* *string
 
-The account identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+
+---
+
+##### `DispatchNamespace`<sup>Required</sup> <a name="DispatchNamespace" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.dispatchNamespace"></a>
+
+```go
+DispatchNamespace *string
+```
+
+- *Type:* *string
+
+Name of the Workers for Platforms dispatch namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#dispatch_namespace WorkersSecret#dispatch_namespace}
 
 ---
 
@@ -913,9 +969,9 @@ Name *string
 
 - *Type:* *string
 
-The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
+The name of this secret, this is what will be used to access it inside the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#name WorkersSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#name WorkersSecret#name}
 
 ---
 
@@ -927,40 +983,37 @@ ScriptName *string
 
 - *Type:* *string
 
-The name of the Worker script to associate the secret with.
+Name of the script, used in URLs and route configuration.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
 
 ---
 
-##### `SecretText`<sup>Required</sup> <a name="SecretText" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.secretText"></a>
+##### `Text`<sup>Optional</sup> <a name="Text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.text"></a>
 
 ```go
-SecretText *string
+Text *string
 ```
 
 - *Type:* *string
 
-The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
+The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#secret_text WorkersSecret#secret_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#text WorkersSecret#text}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.id"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.type"></a>
 
 ```go
-Id *string
+Type *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}.
+The type of secret to put.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#type WorkersSecret#type}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface TieredCacheConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The typed of tiered cache to utilize on the zone. Available values: `generic`, `smart`, `off`.
+  * Enable or disable the Smart Tiered Cache
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#cache_type TieredCache#cache_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache#value TieredCache#value}
   */
-  readonly cacheType: string;
+  readonly value: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#id TieredCache#id}
+  * Identifier
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache cloudflare_tiered_cache}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache cloudflare_tiered_cache}
 */
 export class TieredCache extends cdktf.TerraformResource {
 
@@ -50,7 +43,7 @@ export class TieredCache extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TieredCache resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TieredCache to import
-  * @param importFromId The id of the existing TieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TieredCache to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +55,7 @@ export class TieredCache extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +66,8 @@ export class TieredCache extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tiered_cache',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -84,8 +77,7 @@ export class TieredCache extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._cacheType = config.cacheType;
-    this._id = config.id;
+    this._value = config.value;
     this._zoneId = config.zoneId;
   }
 
@@ -93,33 +85,32 @@ export class TieredCache extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // cache_type - computed: false, optional: false, required: true
-  private _cacheType?: string; 
-  public get cacheType() {
-    return this.getStringAttribute('cache_type');
-  }
-  public set cacheType(value: string) {
-    this._cacheType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cacheTypeInput() {
-    return this._cacheType;
+  // editable - computed: true, optional: false, required: false
+  public get editable() {
+    return this.getBooleanAttribute('editable');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
-  public resetId() {
-    this._id = undefined;
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get valueInput() {
+    return this._value;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -141,22 +132,15 @@ export class TieredCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_type: cdktf.stringToTerraform(this._cacheType),
-      id: cdktf.stringToTerraform(this._id),
+      value: cdktf.stringToTerraform(this._value),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      cache_type: {
-        value: cdktf.stringToHclTerraform(this._cacheType),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

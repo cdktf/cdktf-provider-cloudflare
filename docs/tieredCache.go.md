@@ -4,12 +4,12 @@
 
 ### TieredCache <a name="TieredCache" id="@cdktf/provider-cloudflare.tieredCache.TieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache"
 
 tieredcache.NewTieredCache(scope Construct, id *string, config TieredCacheConfig) TieredCache
 ```
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache"
 
 tieredcache.TieredCache_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache"
 
 tieredcache.TieredCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +424,7 @@ tieredcache.TieredCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache"
 
 tieredcache.TieredCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +438,7 @@ tieredcache.TieredCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache"
 
 tieredcache.TieredCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +467,7 @@ The construct id used in the generated config for the TieredCache to import.
 
 The id of the existing TieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,11 +497,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.cacheTypeInput">CacheTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.cacheType">CacheType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.editable">Editable</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCache.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -655,20 +649,40 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CacheTypeInput`<sup>Optional</sup> <a name="CacheTypeInput" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.cacheTypeInput"></a>
+##### `Editable`<sup>Required</sup> <a name="Editable" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.editable"></a>
 
 ```go
-func CacheTypeInput() *string
+func Editable() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.id"></a>
+
+```go
+func Id() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.idInput"></a>
+##### `ModifiedOn`<sup>Required</sup> <a name="ModifiedOn" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.modifiedOn"></a>
 
 ```go
-func IdInput() *string
+func ModifiedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.valueInput"></a>
+
+```go
+func ValueInput() *string
 ```
 
 - *Type:* *string
@@ -685,20 +699,10 @@ func ZoneIdInput() *string
 
 ---
 
-##### `CacheType`<sup>Required</sup> <a name="CacheType" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.cacheType"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.value"></a>
 
 ```go
-func CacheType() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.property.id"></a>
-
-```go
-func Id() *string
+func Value() *string
 ```
 
 - *Type:* *string
@@ -740,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache"
 
 &tieredcache.TieredCacheConfig {
 	Connection: interface{},
@@ -750,9 +754,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CacheType: *string,
+	Value: *string,
 	ZoneId: *string,
-	Id: *string,
 }
 ```
 
@@ -767,9 +770,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.cacheType">CacheType</a></code> | <code>*string</code> | The typed of tiered cache to utilize on the zone. Available values: `generic`, `smart`, `off`. |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#id TieredCache#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.value">Value</a></code> | <code>*string</code> | Enable or disable the Smart Tiered Cache. |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 
 ---
 
@@ -843,17 +845,17 @@ Provisioners *[]interface{}
 
 ---
 
-##### `CacheType`<sup>Required</sup> <a name="CacheType" id="@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.cacheType"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.value"></a>
 
 ```go
-CacheType *string
+Value *string
 ```
 
 - *Type:* *string
 
-The typed of tiered cache to utilize on the zone. Available values: `generic`, `smart`, `off`.
+Enable or disable the Smart Tiered Cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#cache_type TieredCache#cache_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache#value TieredCache#value}
 
 ---
 
@@ -865,24 +867,9 @@ ZoneId *string
 
 - *Type:* *string
 
-The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache#id TieredCache#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
 
 ---
 

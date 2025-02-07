@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface ByoIpPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier of a Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
   */
   readonly accountId: string;
   /**
-  * Whether or not the prefix shall be announced. A prefix can be activated or deactivated once every 15 minutes (attempting more regular updates will trigger rate limiting). Available values: `on`, `off`.
+  * Autonomous System Number (ASN) the prefix will be advertised under.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#advertisement ByoIpPrefix#advertisement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
   */
-  readonly advertisement?: string;
+  readonly asn: number;
   /**
-  * Description of the BYO IP prefix.
+  * IP Prefix in Classless Inter-Domain Routing format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
+  */
+  readonly cidr: string;
+  /**
+  * Description of the prefix.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#id ByoIpPrefix#id}
+  * Identifier for the uploaded LOA document.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
   */
-  readonly id?: string;
-  /**
-  * The assigned Bring-Your-Own-IP prefix ID. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#prefix_id ByoIpPrefix#prefix_id}
-  */
-  readonly prefixId: string;
+  readonly loaDocumentId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}
 */
 export class ByoIpPrefix extends cdktf.TerraformResource {
 
@@ -62,7 +61,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ByoIpPrefix resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ByoIpPrefix to import
-  * @param importFromId The id of the existing ByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ByoIpPrefix to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +73,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,8 +84,8 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -97,10 +96,10 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._advertisement = config.advertisement;
+    this._asn = config.asn;
+    this._cidr = config.cidr;
     this._description = config.description;
-    this._id = config.id;
-    this._prefixId = config.prefixId;
+    this._loaDocumentId = config.loaDocumentId;
   }
 
   // ==========
@@ -120,23 +119,53 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // advertisement - computed: true, optional: true, required: false
-  private _advertisement?: string; 
-  public get advertisement() {
-    return this.getStringAttribute('advertisement');
-  }
-  public set advertisement(value: string) {
-    this._advertisement = value;
-  }
-  public resetAdvertisement() {
-    this._advertisement = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get advertisementInput() {
-    return this._advertisement;
+  // advertised - computed: true, optional: false, required: false
+  public get advertised() {
+    return this.getBooleanAttribute('advertised');
   }
 
-  // description - computed: true, optional: true, required: false
+  // advertised_modified_at - computed: true, optional: false, required: false
+  public get advertisedModifiedAt() {
+    return this.getStringAttribute('advertised_modified_at');
+  }
+
+  // approved - computed: true, optional: false, required: false
+  public get approved() {
+    return this.getStringAttribute('approved');
+  }
+
+  // asn - computed: false, optional: false, required: true
+  private _asn?: number; 
+  public get asn() {
+    return this.getNumberAttribute('asn');
+  }
+  public set asn(value: number) {
+    this._asn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get asnInput() {
+    return this._asn;
+  }
+
+  // cidr - computed: false, optional: false, required: true
+  private _cidr?: string; 
+  public get cidr() {
+    return this.getStringAttribute('cidr');
+  }
+  public set cidr(value: string) {
+    this._cidr = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrInput() {
+    return this._cidr;
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -152,33 +181,37 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // loa_document_id - computed: false, optional: false, required: true
+  private _loaDocumentId?: string; 
+  public get loaDocumentId() {
+    return this.getStringAttribute('loa_document_id');
   }
-  public resetId() {
-    this._id = undefined;
+  public set loaDocumentId(value: string) {
+    this._loaDocumentId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get loaDocumentIdInput() {
+    return this._loaDocumentId;
   }
 
-  // prefix_id - computed: false, optional: false, required: true
-  private _prefixId?: string; 
-  public get prefixId() {
-    return this.getStringAttribute('prefix_id');
+  // modified_at - computed: true, optional: false, required: false
+  public get modifiedAt() {
+    return this.getStringAttribute('modified_at');
   }
-  public set prefixId(value: string) {
-    this._prefixId = value;
+
+  // on_demand_enabled - computed: true, optional: false, required: false
+  public get onDemandEnabled() {
+    return this.getBooleanAttribute('on_demand_enabled');
   }
-  // Temporarily expose input value. Use with caution.
-  public get prefixIdInput() {
-    return this._prefixId;
+
+  // on_demand_locked - computed: true, optional: false, required: false
+  public get onDemandLocked() {
+    return this.getBooleanAttribute('on_demand_locked');
   }
 
   // =========
@@ -188,10 +221,10 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      advertisement: cdktf.stringToTerraform(this._advertisement),
+      asn: cdktf.numberToTerraform(this._asn),
+      cidr: cdktf.stringToTerraform(this._cidr),
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      prefix_id: cdktf.stringToTerraform(this._prefixId),
+      loa_document_id: cdktf.stringToTerraform(this._loaDocumentId),
     };
   }
 
@@ -203,8 +236,14 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      advertisement: {
-        value: cdktf.stringToHclTerraform(this._advertisement),
+      asn: {
+        value: cdktf.numberToHclTerraform(this._asn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cidr: {
+        value: cdktf.stringToHclTerraform(this._cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -215,14 +254,8 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      prefix_id: {
-        value: cdktf.stringToHclTerraform(this._prefixId),
+      loa_document_id: {
+        value: cdktf.stringToHclTerraform(this._loaDocumentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

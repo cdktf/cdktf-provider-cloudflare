@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface EmailRoutingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Whether the email routing rule is enabled.
+  * List actions patterns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
+  */
+  readonly actions: EmailRoutingRuleActions[] | cdktf.IResolvable;
+  /**
+  * Routing rule status.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Matching patterns to forward to your actions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
+  */
+  readonly matchers: EmailRoutingRuleMatchers[] | cdktf.IResolvable;
+  /**
   * Routing rule name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
-  * The priority of the email routing rule.
+  * Priority of the routing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
   */
   readonly priority?: number;
   /**
-  * The zone identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
   */
   readonly zoneId: string;
-  /**
-  * action block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#action EmailRoutingRule#action}
-  */
-  readonly action?: EmailRoutingRuleAction[] | cdktf.IResolvable;
-  /**
-  * matcher block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#matcher EmailRoutingRule#matcher}
-  */
-  readonly matcher?: EmailRoutingRuleMatcher[] | cdktf.IResolvable;
 }
-export interface EmailRoutingRuleAction {
+export interface EmailRoutingRuleActions {
   /**
-  * Type of action. Available values: `forward`, `worker`, `drop`
+  * Type of supported action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
   */
   readonly type: string;
   /**
-  * Value to match on. Required for `type` of `literal`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
   */
-  readonly value?: string[];
+  readonly value: string[];
 }
 
-export function emailRoutingRuleActionToTerraform(struct?: EmailRoutingRuleAction | cdktf.IResolvable): any {
+export function emailRoutingRuleActionsToTerraform(struct?: EmailRoutingRuleActions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -76,7 +74,7 @@ export function emailRoutingRuleActionToTerraform(struct?: EmailRoutingRuleActio
 }
 
 
-export function emailRoutingRuleActionToHclTerraform(struct?: EmailRoutingRuleAction | cdktf.IResolvable): any {
+export function emailRoutingRuleActionsToHclTerraform(struct?: EmailRoutingRuleActions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -91,7 +89,7 @@ export function emailRoutingRuleActionToHclTerraform(struct?: EmailRoutingRuleAc
     value: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
       isBlock: false,
-      type: "set",
+      type: "list",
       storageClassType: "stringList",
     },
   };
@@ -100,7 +98,7 @@ export function emailRoutingRuleActionToHclTerraform(struct?: EmailRoutingRuleAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmailRoutingRuleActionOutputReference extends cdktf.ComplexObject {
+export class EmailRoutingRuleActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -114,7 +112,7 @@ export class EmailRoutingRuleActionOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmailRoutingRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): EmailRoutingRuleActions | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,7 +129,7 @@ export class EmailRoutingRuleActionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmailRoutingRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmailRoutingRuleActions | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -163,16 +161,13 @@ export class EmailRoutingRuleActionOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: false, optional: false, required: true
   private _value?: string[]; 
   public get value() {
-    return cdktf.Fn.tolist(this.getListAttribute('value'));
+    return this.getListAttribute('value');
   }
   public set value(value: string[]) {
     this._value = value;
-  }
-  public resetValue() {
-    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -180,8 +175,8 @@ export class EmailRoutingRuleActionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class EmailRoutingRuleActionList extends cdktf.ComplexList {
-  public internalValue? : EmailRoutingRuleAction[] | cdktf.IResolvable
+export class EmailRoutingRuleActionsList extends cdktf.ComplexList {
+  public internalValue? : EmailRoutingRuleActions[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -195,32 +190,32 @@ export class EmailRoutingRuleActionList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): EmailRoutingRuleActionOutputReference {
-    return new EmailRoutingRuleActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): EmailRoutingRuleActionsOutputReference {
+    return new EmailRoutingRuleActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface EmailRoutingRuleMatcher {
+export interface EmailRoutingRuleMatchers {
   /**
-  * Field to match on. Required for `type` of `literal`.
+  * Field for type matcher.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
   */
-  readonly field?: string;
+  readonly field: string;
   /**
-  * Type of matcher. Available values: `literal`, `all`
+  * Type of matcher.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
   */
   readonly type: string;
   /**
-  * Value to match on. Required for `type` of `literal`.
+  * Value for matcher.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
   */
-  readonly value?: string;
+  readonly value: string;
 }
 
-export function emailRoutingRuleMatcherToTerraform(struct?: EmailRoutingRuleMatcher | cdktf.IResolvable): any {
+export function emailRoutingRuleMatchersToTerraform(struct?: EmailRoutingRuleMatchers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -233,7 +228,7 @@ export function emailRoutingRuleMatcherToTerraform(struct?: EmailRoutingRuleMatc
 }
 
 
-export function emailRoutingRuleMatcherToHclTerraform(struct?: EmailRoutingRuleMatcher | cdktf.IResolvable): any {
+export function emailRoutingRuleMatchersToHclTerraform(struct?: EmailRoutingRuleMatchers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -263,7 +258,7 @@ export function emailRoutingRuleMatcherToHclTerraform(struct?: EmailRoutingRuleM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmailRoutingRuleMatcherOutputReference extends cdktf.ComplexObject {
+export class EmailRoutingRuleMatchersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -277,7 +272,7 @@ export class EmailRoutingRuleMatcherOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmailRoutingRuleMatcher | cdktf.IResolvable | undefined {
+  public get internalValue(): EmailRoutingRuleMatchers | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -298,7 +293,7 @@ export class EmailRoutingRuleMatcherOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmailRoutingRuleMatcher | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmailRoutingRuleMatchers | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -319,16 +314,13 @@ export class EmailRoutingRuleMatcherOutputReference extends cdktf.ComplexObject 
     }
   }
 
-  // field - computed: false, optional: true, required: false
+  // field - computed: false, optional: false, required: true
   private _field?: string; 
   public get field() {
     return this.getStringAttribute('field');
   }
   public set field(value: string) {
     this._field = value;
-  }
-  public resetField() {
-    this._field = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get fieldInput() {
@@ -348,7 +340,7 @@ export class EmailRoutingRuleMatcherOutputReference extends cdktf.ComplexObject 
     return this._type;
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: false, optional: false, required: true
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -356,17 +348,14 @@ export class EmailRoutingRuleMatcherOutputReference extends cdktf.ComplexObject 
   public set value(value: string) {
     this._value = value;
   }
-  public resetValue() {
-    this._value = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
   }
 }
 
-export class EmailRoutingRuleMatcherList extends cdktf.ComplexList {
-  public internalValue? : EmailRoutingRuleMatcher[] | cdktf.IResolvable
+export class EmailRoutingRuleMatchersList extends cdktf.ComplexList {
+  public internalValue? : EmailRoutingRuleMatchers[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -380,13 +369,13 @@ export class EmailRoutingRuleMatcherList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): EmailRoutingRuleMatcherOutputReference {
-    return new EmailRoutingRuleMatcherOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): EmailRoutingRuleMatchersOutputReference {
+    return new EmailRoutingRuleMatchersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}
 */
 export class EmailRoutingRule extends cdktf.TerraformResource {
 
@@ -402,7 +391,7 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailRoutingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailRoutingRule to import
-  * @param importFromId The id of the existing EmailRoutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailRoutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailRoutingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -414,7 +403,7 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -425,8 +414,8 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -436,19 +425,32 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._actions.internalValue = config.actions;
     this._enabled = config.enabled;
+    this._matchers.internalValue = config.matchers;
     this._name = config.name;
     this._priority = config.priority;
     this._zoneId = config.zoneId;
-    this._action.internalValue = config.action;
-    this._matcher.internalValue = config.matcher;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // enabled - computed: false, optional: true, required: false
+  // actions - computed: false, optional: false, required: true
+  private _actions = new EmailRoutingRuleActionsList(this, "actions", false);
+  public get actions() {
+    return this._actions;
+  }
+  public putActions(value: EmailRoutingRuleActions[] | cdktf.IResolvable) {
+    this._actions.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionsInput() {
+    return this._actions.internalValue;
+  }
+
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -469,13 +471,29 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: false, optional: false, required: true
+  // matchers - computed: false, optional: false, required: true
+  private _matchers = new EmailRoutingRuleMatchersList(this, "matchers", false);
+  public get matchers() {
+    return this._matchers;
+  }
+  public putMatchers(value: EmailRoutingRuleMatchers[] | cdktf.IResolvable) {
+    this._matchers.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchersInput() {
+    return this._matchers.internalValue;
+  }
+
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -516,60 +534,40 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // action - computed: false, optional: true, required: false
-  private _action = new EmailRoutingRuleActionList(this, "action", true);
-  public get action() {
-    return this._action;
-  }
-  public putAction(value: EmailRoutingRuleAction[] | cdktf.IResolvable) {
-    this._action.internalValue = value;
-  }
-  public resetAction() {
-    this._action.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get actionInput() {
-    return this._action.internalValue;
-  }
-
-  // matcher - computed: false, optional: true, required: false
-  private _matcher = new EmailRoutingRuleMatcherList(this, "matcher", true);
-  public get matcher() {
-    return this._matcher;
-  }
-  public putMatcher(value: EmailRoutingRuleMatcher[] | cdktf.IResolvable) {
-    this._matcher.internalValue = value;
-  }
-  public resetMatcher() {
-    this._matcher.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matcherInput() {
-    return this._matcher.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      actions: cdktf.listMapper(emailRoutingRuleActionsToTerraform, false)(this._actions.internalValue),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      matchers: cdktf.listMapper(emailRoutingRuleMatchersToTerraform, false)(this._matchers.internalValue),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      action: cdktf.listMapper(emailRoutingRuleActionToTerraform, true)(this._action.internalValue),
-      matcher: cdktf.listMapper(emailRoutingRuleMatcherToTerraform, true)(this._matcher.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      actions: {
+        value: cdktf.listMapperHcl(emailRoutingRuleActionsToHclTerraform, false)(this._actions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmailRoutingRuleActionsList",
+      },
       enabled: {
         value: cdktf.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      matchers: {
+        value: cdktf.listMapperHcl(emailRoutingRuleMatchersToHclTerraform, false)(this._matchers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmailRoutingRuleMatchersList",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
@@ -588,18 +586,6 @@ export class EmailRoutingRule extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      action: {
-        value: cdktf.listMapperHcl(emailRoutingRuleActionToHclTerraform, true)(this._action.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "EmailRoutingRuleActionList",
-      },
-      matcher: {
-        value: cdktf.listMapperHcl(emailRoutingRuleMatcherToHclTerraform, true)(this._matcher.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "EmailRoutingRuleMatcherList",
       },
     };
 

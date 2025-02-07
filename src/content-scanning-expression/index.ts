@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,140 @@ import * as cdktf from 'cdktf';
 
 export interface ContentScanningExpressionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Custom scan expression to tell the content scanner where to find the content objects.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}
   */
-  readonly payload: string;
+  readonly body: ContentScanningExpressionBody[] | cdktf.IResolvable;
   /**
-  * The zone identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#expression_id ContentScanningExpression#expression_id}
+  */
+  readonly expressionId?: string;
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
   */
   readonly zoneId: string;
 }
+export interface ContentScanningExpressionBody {
+  /**
+  * Ruleset expression to use in matching content objects
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+  */
+  readonly payload: string;
+}
+
+export function contentScanningExpressionBodyToTerraform(struct?: ContentScanningExpressionBody | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    payload: cdktf.stringToTerraform(struct!.payload),
+  }
+}
+
+
+export function contentScanningExpressionBodyToHclTerraform(struct?: ContentScanningExpressionBody | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    payload: {
+      value: cdktf.stringToHclTerraform(struct!.payload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ContentScanningExpressionBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ContentScanningExpressionBody | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._payload !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.payload = this._payload;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ContentScanningExpressionBody | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._payload = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._payload = value.payload;
+    }
+  }
+
+  // payload - computed: false, optional: false, required: true
+  private _payload?: string; 
+  public get payload() {
+    return this.getStringAttribute('payload');
+  }
+  public set payload(value: string) {
+    this._payload = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get payloadInput() {
+    return this._payload;
+  }
+}
+
+export class ContentScanningExpressionBodyList extends cdktf.ComplexList {
+  public internalValue? : ContentScanningExpressionBody[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ContentScanningExpressionBodyOutputReference {
+    return new ContentScanningExpressionBodyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}
 */
 export class ContentScanningExpression extends cdktf.TerraformResource {
 
@@ -43,7 +162,7 @@ export class ContentScanningExpression extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ContentScanningExpression resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContentScanningExpression to import
-  * @param importFromId The id of the existing ContentScanningExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContentScanningExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContentScanningExpression to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +174,7 @@ export class ContentScanningExpression extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +185,8 @@ export class ContentScanningExpression extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_content_scanning_expression',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -77,7 +196,8 @@ export class ContentScanningExpression extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._payload = config.payload;
+    this._body.internalValue = config.body;
+    this._expressionId = config.expressionId;
     this._zoneId = config.zoneId;
   }
 
@@ -85,22 +205,33 @@ export class ContentScanningExpression extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
+  // body - computed: false, optional: false, required: true
+  private _body = new ContentScanningExpressionBodyList(this, "body", false);
+  public get body() {
+    return this._body;
   }
-
-  // payload - computed: false, optional: false, required: true
-  private _payload?: string; 
-  public get payload() {
-    return this.getStringAttribute('payload');
-  }
-  public set payload(value: string) {
-    this._payload = value;
+  public putBody(value: ContentScanningExpressionBody[] | cdktf.IResolvable) {
+    this._body.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get payloadInput() {
-    return this._payload;
+  public get bodyInput() {
+    return this._body.internalValue;
+  }
+
+  // expression_id - computed: false, optional: true, required: false
+  private _expressionId?: string; 
+  public get expressionId() {
+    return this.getStringAttribute('expression_id');
+  }
+  public set expressionId(value: string) {
+    this._expressionId = value;
+  }
+  public resetExpressionId() {
+    this._expressionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionIdInput() {
+    return this._expressionId;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -122,15 +253,22 @@ export class ContentScanningExpression extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      payload: cdktf.stringToTerraform(this._payload),
+      body: cdktf.listMapper(contentScanningExpressionBodyToTerraform, false)(this._body.internalValue),
+      expression_id: cdktf.stringToTerraform(this._expressionId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      payload: {
-        value: cdktf.stringToHclTerraform(this._payload),
+      body: {
+        value: cdktf.listMapperHcl(contentScanningExpressionBodyToHclTerraform, false)(this._body.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ContentScanningExpressionBodyList",
+      },
+      expression_id: {
+        value: cdktf.stringToHclTerraform(this._expressionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

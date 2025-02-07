@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,70 @@ import * as cdktf from 'cdktf';
 
 export interface TurnstileWidgetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
   */
   readonly accountId: string;
   /**
-  * If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only).
+  * If bot_fight_mode is set to `true`, Cloudflare issues computationally
+  * expensive challenges in response to malicious bots (ENT only).
+  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
   */
   readonly botFightMode?: boolean | cdktf.IResolvable;
   /**
-  * Domains where the widget is deployed
+  * If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance,
+  * this setting can determine the clearance level to be set
+  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+  */
+  readonly clearanceLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
   */
   readonly domains: string[];
   /**
-  * The identifier of this resource. This is the site key value.
+  * Return the Ephemeral ID in /siteverify (ENT only).
+  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
   */
-  readonly id?: string;
+  readonly ephemeralId?: boolean | cdktf.IResolvable;
   /**
-  * Widget Mode. Available values: `non-interactive`, `invisible`, `managed`
+  * Widget Mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
   */
   readonly mode: string;
   /**
-  * Human readable widget name.
+  * Human readable widget name. Not unique. Cloudflare suggests that you
+  * set this to a meaningful string to make it easier to identify your
+  * widget, and where it is used.
+  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
   */
   readonly name: string;
   /**
-  * Do not show any Cloudflare branding on the widget (Enterprise only).
+  * Do not show any Cloudflare branding on the widget (ENT only).
+  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
   */
   readonly offlabel?: boolean | cdktf.IResolvable;
   /**
   * Region where this widget can be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}
 */
 export class TurnstileWidget extends cdktf.TerraformResource {
 
@@ -82,7 +92,7 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TurnstileWidget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TurnstileWidget to import
-  * @param importFromId The id of the existing TurnstileWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TurnstileWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TurnstileWidget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -94,7 +104,7 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,8 +115,8 @@ export class TurnstileWidget extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_turnstile_widget',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -118,8 +128,9 @@ export class TurnstileWidget extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._botFightMode = config.botFightMode;
+    this._clearanceLevel = config.clearanceLevel;
     this._domains = config.domains;
-    this._id = config.id;
+    this._ephemeralId = config.ephemeralId;
     this._mode = config.mode;
     this._name = config.name;
     this._offlabel = config.offlabel;
@@ -159,10 +170,31 @@ export class TurnstileWidget extends cdktf.TerraformResource {
     return this._botFightMode;
   }
 
+  // clearance_level - computed: false, optional: true, required: false
+  private _clearanceLevel?: string; 
+  public get clearanceLevel() {
+    return this.getStringAttribute('clearance_level');
+  }
+  public set clearanceLevel(value: string) {
+    this._clearanceLevel = value;
+  }
+  public resetClearanceLevel() {
+    this._clearanceLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clearanceLevelInput() {
+    return this._clearanceLevel;
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
   // domains - computed: false, optional: false, required: true
   private _domains?: string[]; 
   public get domains() {
-    return cdktf.Fn.tolist(this.getListAttribute('domains'));
+    return this.getListAttribute('domains');
   }
   public set domains(value: string[]) {
     this._domains = value;
@@ -172,20 +204,25 @@ export class TurnstileWidget extends cdktf.TerraformResource {
     return this._domains;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
+  // ephemeral_id - computed: false, optional: true, required: false
+  private _ephemeralId?: boolean | cdktf.IResolvable; 
+  public get ephemeralId() {
+    return this.getBooleanAttribute('ephemeral_id');
   }
-  public set id(value: string) {
-    this._id = value;
+  public set ephemeralId(value: boolean | cdktf.IResolvable) {
+    this._ephemeralId = value;
   }
-  public resetId() {
-    this._id = undefined;
+  public resetEphemeralId() {
+    this._ephemeralId = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get ephemeralIdInput() {
+    return this._ephemeralId;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // mode - computed: false, optional: false, required: true
@@ -199,6 +236,11 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get modeInput() {
     return this._mode;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
 
   // name - computed: false, optional: false, required: true
@@ -251,6 +293,11 @@ export class TurnstileWidget extends cdktf.TerraformResource {
     return this.getStringAttribute('secret');
   }
 
+  // sitekey - computed: true, optional: false, required: false
+  public get sitekey() {
+    return this.getStringAttribute('sitekey');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -259,8 +306,9 @@ export class TurnstileWidget extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       bot_fight_mode: cdktf.booleanToTerraform(this._botFightMode),
+      clearance_level: cdktf.stringToTerraform(this._clearanceLevel),
       domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
-      id: cdktf.stringToTerraform(this._id),
+      ephemeral_id: cdktf.booleanToTerraform(this._ephemeralId),
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       offlabel: cdktf.booleanToTerraform(this._offlabel),
@@ -282,17 +330,23 @@ export class TurnstileWidget extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      clearance_level: {
+        value: cdktf.stringToHclTerraform(this._clearanceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      domains: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ephemeral_id: {
+        value: cdktf.booleanToHclTerraform(this._ephemeralId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       mode: {
         value: cdktf.stringToHclTerraform(this._mode),

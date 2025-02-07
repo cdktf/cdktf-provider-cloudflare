@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for cloudflare/cloudflare provider version 4.52.0
+# CDKTF prebuilt bindings for cloudflare/cloudflare provider version 5.0.0
 
-This repo builds and publishes the [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -58,12 +58,12 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform cloudflare provider version 1:1. In fact, it always tracks `latest` of `~> 4.3` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform cloudflare provider version 1:1. In fact, it always tracks `latest` of `~> 5.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0)
+- [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

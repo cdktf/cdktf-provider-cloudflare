@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneCacheReserveConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Whether to enable or disable Cache Reserve support for a given zone.
+  * Value of the Cache Reserve zone setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve#enabled ZoneCacheReserve#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}
+  * Identifier
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}
 */
 export class ZoneCacheReserve extends cdktf.TerraformResource {
 
@@ -50,7 +43,7 @@ export class ZoneCacheReserve extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneCacheReserve resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneCacheReserve to import
-  * @param importFromId The id of the existing ZoneCacheReserve that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneCacheReserve that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneCacheReserve to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +55,7 @@ export class ZoneCacheReserve extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +66,8 @@ export class ZoneCacheReserve extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_cache_reserve',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -84,8 +77,7 @@ export class ZoneCacheReserve extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._enabled = config.enabled;
-    this._id = config.id;
+    this._value = config.value;
     this._zoneId = config.zoneId;
   }
 
@@ -93,33 +85,35 @@ export class ZoneCacheReserve extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktf.IResolvable) {
-    this._enabled = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
+  // editable - computed: true, optional: false, required: false
+  public get editable() {
+    return this.getBooleanAttribute('editable');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
-  public resetId() {
-    this._id = undefined;
+
+  // value - computed: true, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get valueInput() {
+    return this._value;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -135,28 +129,26 @@ export class ZoneCacheReserve extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
+  // zone_setting_id - computed: true, optional: false, required: false
+  public get zoneSettingId() {
+    return this.getStringAttribute('zone_setting_id');
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
+      value: cdktf.stringToTerraform(this._value),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

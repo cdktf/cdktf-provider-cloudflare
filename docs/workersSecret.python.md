@@ -4,7 +4,7 @@
 
 ### WorkersSecret <a name="WorkersSecret" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer"></a>
 
@@ -22,10 +22,11 @@ workersSecret.WorkersSecret(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
+  dispatch_namespace: str,
   name: str,
   script_name: str,
-  secret_text: str,
-  id: str = None
+  text: str = None,
+  type: str = None
 )
 ```
 
@@ -40,11 +41,12 @@ workersSecret.WorkersSecret(
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | The name of the Worker script to associate the secret with. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.secretText">secret_text</a></code> | <code>str</code> | The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | Name of the Workers for Platforms dispatch namespace. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of this secret, this is what will be used to access it inside the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.text">text</a></code> | <code>str</code> | The value of the secret. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of secret to put. |
 
 ---
 
@@ -112,9 +114,19 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The account identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+
+---
+
+##### `dispatch_namespace`<sup>Required</sup> <a name="dispatch_namespace" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.dispatchNamespace"></a>
+
+- *Type:* str
+
+Name of the Workers for Platforms dispatch namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#dispatch_namespace WorkersSecret#dispatch_namespace}
 
 ---
 
@@ -122,9 +134,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
+The name of this secret, this is what will be used to access it inside the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#name WorkersSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#name WorkersSecret#name}
 
 ---
 
@@ -132,32 +144,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The name of the Worker script to associate the secret with.
+Name of the script, used in URLs and route configuration.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
 
 ---
 
-##### `secret_text`<sup>Required</sup> <a name="secret_text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.secretText"></a>
+##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.text"></a>
 
 - *Type:* str
 
-The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
+The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#secret_text WorkersSecret#secret_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#text WorkersSecret#text}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.id"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer.parameter.type"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}.
+The type of secret to put.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#type WorkersSecret#type}
 
 ---
 
@@ -188,7 +197,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetText">reset_text</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetType">reset_type</a></code> | *No description.* |
 
 ---
 
@@ -517,10 +527,16 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetId"></a>
+##### `reset_text` <a name="reset_text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetText"></a>
 
 ```python
-def reset_id() -> None
+def reset_text() -> None
+```
+
+##### `reset_type` <a name="reset_type" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.resetType"></a>
+
+```python
+def reset_type() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -637,7 +653,7 @@ The construct id used in the generated config for the WorkersSecret to import.
 
 The id of the existing WorkersSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,16 +683,19 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespaceInput">dispatch_namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.scriptNameInput">script_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretTextInput">secret_text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.scriptName">script_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretText">secret_text</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.text">text</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.type">type</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -822,6 +841,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.accountIdInput"></a>
 
 ```python
@@ -832,10 +861,10 @@ account_id_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.idInput"></a>
+##### `dispatch_namespace_input`<sup>Optional</sup> <a name="dispatch_namespace_input" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespaceInput"></a>
 
 ```python
-id_input: str
+dispatch_namespace_input: str
 ```
 
 - *Type:* str
@@ -862,10 +891,20 @@ script_name_input: str
 
 ---
 
-##### `secret_text_input`<sup>Optional</sup> <a name="secret_text_input" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretTextInput"></a>
+##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.textInput"></a>
 
 ```python
-secret_text_input: str
+text_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.typeInput"></a>
+
+```python
+type_input: str
 ```
 
 - *Type:* str
@@ -882,10 +921,10 @@ account_id: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.id"></a>
+##### `dispatch_namespace`<sup>Required</sup> <a name="dispatch_namespace" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.dispatchNamespace"></a>
 
 ```python
-id: str
+dispatch_namespace: str
 ```
 
 - *Type:* str
@@ -912,10 +951,20 @@ script_name: str
 
 ---
 
-##### `secret_text`<sup>Required</sup> <a name="secret_text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.secretText"></a>
+##### `text`<sup>Required</sup> <a name="text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.text"></a>
 
 ```python
-secret_text: str
+text: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.property.type"></a>
+
+```python
+type: str
 ```
 
 - *Type:* str
@@ -958,10 +1007,11 @@ workersSecret.WorkersSecretConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
+  dispatch_namespace: str,
   name: str,
   script_name: str,
-  secret_text: str,
-  id: str = None
+  text: str = None,
+  type: str = None
 )
 ```
 
@@ -976,11 +1026,12 @@ workersSecret.WorkersSecretConfig(
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.name">name</a></code> | <code>str</code> | The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.scriptName">script_name</a></code> | <code>str</code> | The name of the Worker script to associate the secret with. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.secretText">secret_text</a></code> | <code>str</code> | The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | Name of the Workers for Platforms dispatch namespace. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.name">name</a></code> | <code>str</code> | The name of this secret, this is what will be used to access it inside the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.text">text</a></code> | <code>str</code> | The value of the secret. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.type">type</a></code> | <code>str</code> | The type of secret to put. |
 
 ---
 
@@ -1062,9 +1113,23 @@ account_id: str
 
 - *Type:* str
 
-The account identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+
+---
+
+##### `dispatch_namespace`<sup>Required</sup> <a name="dispatch_namespace" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.dispatchNamespace"></a>
+
+```python
+dispatch_namespace: str
+```
+
+- *Type:* str
+
+Name of the Workers for Platforms dispatch namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#dispatch_namespace WorkersSecret#dispatch_namespace}
 
 ---
 
@@ -1076,9 +1141,9 @@ name: str
 
 - *Type:* str
 
-The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
+The name of this secret, this is what will be used to access it inside the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#name WorkersSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#name WorkersSecret#name}
 
 ---
 
@@ -1090,40 +1155,37 @@ script_name: str
 
 - *Type:* str
 
-The name of the Worker script to associate the secret with.
+Name of the script, used in URLs and route configuration.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
 
 ---
 
-##### `secret_text`<sup>Required</sup> <a name="secret_text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.secretText"></a>
+##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.text"></a>
 
 ```python
-secret_text: str
+text: str
 ```
 
 - *Type:* str
 
-The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
+The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#secret_text WorkersSecret#secret_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#text WorkersSecret#text}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.id"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.type"></a>
 
 ```python
-id: str
+type: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}.
+The type of secret to put.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#type WorkersSecret#type}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustAccessServiceTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. Conflicts with `zone_id`.
+  * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#account_id ZeroTrustAccessServiceToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token#account_id ZeroTrustAccessServiceToken#account_id}
   */
   readonly accountId?: string;
   /**
-  * Length of time the service token is valid for. Available values: `8760h`, `17520h`, `43800h`, `87600h`, `forever`.
+  * The duration for how long the service token will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. The default is 1 year in hours (8760h).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#duration ZeroTrustAccessServiceToken#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token#duration ZeroTrustAccessServiceToken#duration}
   */
   readonly duration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#id ZeroTrustAccessServiceToken#id}
+  * The name of the service token.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#min_days_for_renewal ZeroTrustAccessServiceToken#min_days_for_renewal}
-  */
-  readonly minDaysForRenewal?: number;
-  /**
-  * Friendly name of the token's intent.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#name ZeroTrustAccessServiceToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token#name ZeroTrustAccessServiceToken#name}
   */
   readonly name: string;
   /**
-  * The zone identifier to target for the resource. Conflicts with `account_id`.
+  * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#zone_id ZeroTrustAccessServiceToken#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token#zone_id ZeroTrustAccessServiceToken#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}
 */
 export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
 
@@ -68,7 +55,7 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustAccessServiceToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessServiceToken to import
-  * @param importFromId The id of the existing ZeroTrustAccessServiceToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessServiceToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessServiceToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +67,7 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,8 +78,8 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_access_service_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -104,8 +91,6 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._duration = config.duration;
-    this._id = config.id;
-    this._minDaysForRenewal = config.minDaysForRenewal;
     this._name = config.name;
     this._zoneId = config.zoneId;
   }
@@ -140,6 +125,11 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
     return this.getStringAttribute('client_secret');
   }
 
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
   // duration - computed: true, optional: true, required: false
   private _duration?: string; 
   public get duration() {
@@ -161,36 +151,14 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
     return this.getStringAttribute('expires_at');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // min_days_for_renewal - computed: false, optional: true, required: false
-  private _minDaysForRenewal?: number; 
-  public get minDaysForRenewal() {
-    return this.getNumberAttribute('min_days_for_renewal');
-  }
-  public set minDaysForRenewal(value: number) {
-    this._minDaysForRenewal = value;
-  }
-  public resetMinDaysForRenewal() {
-    this._minDaysForRenewal = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minDaysForRenewalInput() {
-    return this._minDaysForRenewal;
+  // last_seen_at - computed: true, optional: false, required: false
+  public get lastSeenAt() {
+    return this.getStringAttribute('last_seen_at');
   }
 
   // name - computed: false, optional: false, required: true
@@ -204,6 +172,11 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
   }
 
   // zone_id - computed: false, optional: true, required: false
@@ -230,8 +203,6 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       duration: cdktf.stringToTerraform(this._duration),
-      id: cdktf.stringToTerraform(this._id),
-      min_days_for_renewal: cdktf.numberToTerraform(this._minDaysForRenewal),
       name: cdktf.stringToTerraform(this._name),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
@@ -250,18 +221,6 @@ export class ZeroTrustAccessServiceToken extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      min_days_for_renewal: {
-        value: cdktf.numberToHclTerraform(this._minDaysForRenewal),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),

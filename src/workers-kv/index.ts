@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface WorkersKvConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#id WorkersKv#id}
+  * A key's name. The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
   */
-  readonly id?: string;
+  readonly keyName: string;
   /**
-  * Name of the KV pair. **Modifying this attribute will force creation of a new resource.**
+  * Arbitrary JSON to be associated with a key/value pair.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#key WorkersKv#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
   */
-  readonly key: string;
+  readonly metadata?: string;
   /**
-  * The ID of the Workers KV namespace in which you want to create the KV pair. **Modifying this attribute will force creation of a new resource.**
+  * Namespace identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
   */
   readonly namespaceId: string;
   /**
-  * Value of the KV pair.
+  * A byte sequence to be stored, up to 25 MiB in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#value WorkersKv#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#value WorkersKv#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv}
 */
 export class WorkersKv extends cdktf.TerraformResource {
 
@@ -62,7 +61,7 @@ export class WorkersKv extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersKv resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersKv to import
-  * @param importFromId The id of the existing WorkersKv that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersKv that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersKv to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +73,7 @@ export class WorkersKv extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,8 +84,8 @@ export class WorkersKv extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -97,8 +96,8 @@ export class WorkersKv extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._id = config.id;
-    this._key = config.key;
+    this._keyName = config.keyName;
+    this._metadata = config.metadata;
     this._namespaceId = config.namespaceId;
     this._value = config.value;
   }
@@ -120,33 +119,38 @@ export class WorkersKv extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // key_name - computed: false, optional: false, required: true
+  private _keyName?: string; 
+  public get keyName() {
+    return this.getStringAttribute('key_name');
   }
-  public resetId() {
-    this._id = undefined;
+  public set keyName(value: string) {
+    this._keyName = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get keyNameInput() {
+    return this._keyName;
   }
 
-  // key - computed: false, optional: false, required: true
-  private _key?: string; 
-  public get key() {
-    return this.getStringAttribute('key');
+  // metadata - computed: false, optional: true, required: false
+  private _metadata?: string; 
+  public get metadata() {
+    return this.getStringAttribute('metadata');
   }
-  public set key(value: string) {
-    this._key = value;
+  public set metadata(value: string) {
+    this._metadata = value;
+  }
+  public resetMetadata() {
+    this._metadata = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key;
+  public get metadataInput() {
+    return this._metadata;
   }
 
   // namespace_id - computed: false, optional: false, required: true
@@ -182,8 +186,8 @@ export class WorkersKv extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
+      key_name: cdktf.stringToTerraform(this._keyName),
+      metadata: cdktf.stringToTerraform(this._metadata),
       namespace_id: cdktf.stringToTerraform(this._namespaceId),
       value: cdktf.stringToTerraform(this._value),
     };
@@ -197,14 +201,14 @@ export class WorkersKv extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      key_name: {
+        value: cdktf.stringToHclTerraform(this._keyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      key: {
-        value: cdktf.stringToHclTerraform(this._key),
+      metadata: {
+        value: cdktf.stringToHclTerraform(this._metadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

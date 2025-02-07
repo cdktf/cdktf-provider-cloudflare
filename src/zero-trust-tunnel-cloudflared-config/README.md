@@ -1,3 +1,3 @@
 # `cloudflare_zero_trust_tunnel_cloudflared_config`
 
-Refer to the Terraform Registry for docs: [`cloudflare_zero_trust_tunnel_cloudflared_config`](https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config).
+Refer to the Terraform Registry for docs: [`cloudflare_zero_trust_tunnel_cloudflared_config`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config).

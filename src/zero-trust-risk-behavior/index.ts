@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustRiskBehaviorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior#account_id ZeroTrustRiskBehavior#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior#account_id ZeroTrustRiskBehavior#account_id}
   */
   readonly accountId: string;
   /**
-  * behavior block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior#behavior ZeroTrustRiskBehavior#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior#behaviors ZeroTrustRiskBehavior#behaviors}
   */
-  readonly behavior?: ZeroTrustRiskBehaviorBehavior[] | cdktf.IResolvable;
+  readonly behaviors: { [key: string]: ZeroTrustRiskBehaviorBehaviors } | cdktf.IResolvable;
 }
-export interface ZeroTrustRiskBehaviorBehavior {
+export interface ZeroTrustRiskBehaviorBehaviors {
   /**
-  * Whether this risk behavior type is enabled.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior#enabled ZeroTrustRiskBehavior#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior#enabled ZeroTrustRiskBehavior#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Name of this risk behavior type
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior#name ZeroTrustRiskBehavior#name}
-  */
-  readonly name: string;
-  /**
-  * Risk level. Available values: `low`, `medium`, `high`
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior#risk_level ZeroTrustRiskBehavior#risk_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior#risk_level ZeroTrustRiskBehavior#risk_level}
   */
   readonly riskLevel: string;
 }
 
-export function zeroTrustRiskBehaviorBehaviorToTerraform(struct?: ZeroTrustRiskBehaviorBehavior | cdktf.IResolvable): any {
+export function zeroTrustRiskBehaviorBehaviorsToTerraform(struct?: ZeroTrustRiskBehaviorBehaviors | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    name: cdktf.stringToTerraform(struct!.name),
     risk_level: cdktf.stringToTerraform(struct!.riskLevel),
   }
 }
 
 
-export function zeroTrustRiskBehaviorBehaviorToHclTerraform(struct?: ZeroTrustRiskBehaviorBehavior | cdktf.IResolvable): any {
+export function zeroTrustRiskBehaviorBehaviorsToHclTerraform(struct?: ZeroTrustRiskBehaviorBehaviors | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -70,12 +55,6 @@ export function zeroTrustRiskBehaviorBehaviorToHclTerraform(struct?: ZeroTrustRi
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
-    },
-    name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
     },
     risk_level: {
       value: cdktf.stringToHclTerraform(struct!.riskLevel),
@@ -89,21 +68,20 @@ export function zeroTrustRiskBehaviorBehaviorToHclTerraform(struct?: ZeroTrustRi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustRiskBehaviorBehaviorOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustRiskBehaviorBehaviorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+    super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): ZeroTrustRiskBehaviorBehavior | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustRiskBehaviorBehaviors | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -113,10 +91,6 @@ export class ZeroTrustRiskBehaviorBehaviorOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
     if (this._riskLevel !== undefined) {
       hasAnyValues = true;
       internalValueResult.riskLevel = this._riskLevel;
@@ -124,12 +98,11 @@ export class ZeroTrustRiskBehaviorBehaviorOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustRiskBehaviorBehavior | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustRiskBehaviorBehaviors | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
-      this._name = undefined;
       this._riskLevel = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -140,7 +113,6 @@ export class ZeroTrustRiskBehaviorBehaviorOutputReference extends cdktf.ComplexO
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._enabled = value.enabled;
-      this._name = value.name;
       this._riskLevel = value.riskLevel;
     }
   }
@@ -158,19 +130,6 @@ export class ZeroTrustRiskBehaviorBehaviorOutputReference extends cdktf.ComplexO
     return this._enabled;
   }
 
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
   // risk_level - computed: false, optional: false, required: true
   private _riskLevel?: string; 
   public get riskLevel() {
@@ -185,28 +144,27 @@ export class ZeroTrustRiskBehaviorBehaviorOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ZeroTrustRiskBehaviorBehaviorList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustRiskBehaviorBehavior[] | cdktf.IResolvable
+export class ZeroTrustRiskBehaviorBehaviorsMap extends cdktf.ComplexMap {
+  public internalValue? : { [key: string]: ZeroTrustRiskBehaviorBehaviors } | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+    super(terraformResource, terraformAttribute)
   }
 
   /**
-  * @param index the index of the item to return
+  * @param key the key of the item to return
   */
-  public get(index: number): ZeroTrustRiskBehaviorBehaviorOutputReference {
-    return new ZeroTrustRiskBehaviorBehaviorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(key: string): ZeroTrustRiskBehaviorBehaviorsOutputReference {
+    return new ZeroTrustRiskBehaviorBehaviorsOutputReference(this.terraformResource, this.terraformAttribute, key);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}
 */
 export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
 
@@ -222,7 +180,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustRiskBehavior resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustRiskBehavior to import
-  * @param importFromId The id of the existing ZeroTrustRiskBehavior that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustRiskBehavior that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustRiskBehavior to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -234,7 +192,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,8 +203,8 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_risk_behavior',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -257,7 +215,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._behavior.internalValue = config.behavior;
+    this._behaviors.internalValue = config.behaviors;
   }
 
   // ==========
@@ -277,20 +235,17 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // behavior - computed: false, optional: true, required: false
-  private _behavior = new ZeroTrustRiskBehaviorBehaviorList(this, "behavior", true);
-  public get behavior() {
-    return this._behavior;
+  // behaviors - computed: false, optional: false, required: true
+  private _behaviors = new ZeroTrustRiskBehaviorBehaviorsMap(this, "behaviors");
+  public get behaviors() {
+    return this._behaviors;
   }
-  public putBehavior(value: ZeroTrustRiskBehaviorBehavior[] | cdktf.IResolvable) {
-    this._behavior.internalValue = value;
-  }
-  public resetBehavior() {
-    this._behavior.internalValue = undefined;
+  public putBehaviors(value: { [key: string]: ZeroTrustRiskBehaviorBehaviors } | cdktf.IResolvable) {
+    this._behaviors.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get behaviorInput() {
-    return this._behavior.internalValue;
+  public get behaviorsInput() {
+    return this._behaviors.internalValue;
   }
 
   // =========
@@ -300,7 +255,7 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      behavior: cdktf.listMapper(zeroTrustRiskBehaviorBehaviorToTerraform, true)(this._behavior.internalValue),
+      behaviors: cdktf.hashMapper(zeroTrustRiskBehaviorBehaviorsToTerraform)(this._behaviors.internalValue),
     };
   }
 
@@ -312,11 +267,11 @@ export class ZeroTrustRiskBehavior extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      behavior: {
-        value: cdktf.listMapperHcl(zeroTrustRiskBehaviorBehaviorToHclTerraform, true)(this._behavior.internalValue),
+      behaviors: {
+        value: cdktf.hashMapperHcl(zeroTrustRiskBehaviorBehaviorsToHclTerraform)(this._behaviors.internalValue),
         isBlock: true,
-        type: "set",
-        storageClassType: "ZeroTrustRiskBehaviorBehaviorList",
+        type: "map",
+        storageClassType: "ZeroTrustRiskBehaviorBehaviorsMap",
       },
     };
 

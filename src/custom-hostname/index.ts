@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface CustomHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Custom metadata associated with custom hostname. Only supports primitive string values, all other values are accessible via the API directly.
+  * Unique key/value metadata for this hostname. These are per-hostname (customer) settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
   */
   readonly customMetadata?: { [key: string]: string };
   /**
-  * The custom origin server used for certificates.
+  * a valid hostname that’s been added to your DNS zone as an A, AAAA, or CNAME record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
   */
   readonly customOriginServer?: string;
   /**
-  * The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates.
+  * A hostname that will be sent to your custom origin server as SNI for TLS handshake. This can be a valid subdomain of the zone or custom origin server name or the string ':request_host_header:' which will cause the host header in the request to be used as SNI. Not configurable with default/fallback origin server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
   */
   readonly customOriginSni?: string;
   /**
-  * Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**
+  * The custom hostname that will point to your hostname via CNAME.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#id CustomHostname#id}
+  * SSL properties used when creating the custom hostname.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
   */
-  readonly id?: string;
+  readonly ssl: CustomHostnameSsl;
   /**
-  * Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
-  */
-  readonly waitForSslPendingValidation?: boolean | cdktf.IResolvable;
-  /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
   */
   readonly zoneId: string;
-  /**
-  * ssl block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
-  */
-  readonly ssl?: CustomHostnameSsl[] | cdktf.IResolvable;
 }
-export interface CustomHostnameSslValidationErrors {
+export interface CustomHostnameOwnershipVerification {
 }
 
-export function customHostnameSslValidationErrorsToTerraform(struct?: CustomHostnameSslValidationErrors): any {
+export function customHostnameOwnershipVerificationToTerraform(struct?: CustomHostnameOwnershipVerification): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -75,7 +62,7 @@ export function customHostnameSslValidationErrorsToTerraform(struct?: CustomHost
 }
 
 
-export function customHostnameSslValidationErrorsToHclTerraform(struct?: CustomHostnameSslValidationErrors): any {
+export function customHostnameOwnershipVerificationToHclTerraform(struct?: CustomHostnameOwnershipVerification): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -85,26 +72,24 @@ export function customHostnameSslValidationErrorsToHclTerraform(struct?: CustomH
   return attrs;
 }
 
-export class CustomHostnameSslValidationErrorsOutputReference extends cdktf.ComplexObject {
+export class CustomHostnameOwnershipVerificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomHostnameSslValidationErrors | undefined {
+  public get internalValue(): CustomHostnameOwnershipVerification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomHostnameSslValidationErrors | undefined) {
+  public set internalValue(value: CustomHostnameOwnershipVerification | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -113,34 +98,25 @@ export class CustomHostnameSslValidationErrorsOutputReference extends cdktf.Comp
     }
   }
 
-  // message - computed: true, optional: false, required: false
-  public get message() {
-    return this.getStringAttribute('message');
-  }
-}
-
-export class CustomHostnameSslValidationErrorsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CustomHostnameSslValidationErrorsOutputReference {
-    return new CustomHostnameSslValidationErrorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
   }
 }
-export interface CustomHostnameSslValidationRecords {
+export interface CustomHostnameOwnershipVerificationHttp {
 }
 
-export function customHostnameSslValidationRecordsToTerraform(struct?: CustomHostnameSslValidationRecords): any {
+export function customHostnameOwnershipVerificationHttpToTerraform(struct?: CustomHostnameOwnershipVerificationHttp): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -150,7 +126,7 @@ export function customHostnameSslValidationRecordsToTerraform(struct?: CustomHos
 }
 
 
-export function customHostnameSslValidationRecordsToHclTerraform(struct?: CustomHostnameSslValidationRecords): any {
+export function customHostnameOwnershipVerificationHttpToHclTerraform(struct?: CustomHostnameOwnershipVerificationHttp): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -160,47 +136,30 @@ export function customHostnameSslValidationRecordsToHclTerraform(struct?: Custom
   return attrs;
 }
 
-export class CustomHostnameSslValidationRecordsOutputReference extends cdktf.ComplexObject {
+export class CustomHostnameOwnershipVerificationHttpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomHostnameSslValidationRecords | undefined {
+  public get internalValue(): CustomHostnameOwnershipVerificationHttp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomHostnameSslValidationRecords | undefined) {
+  public set internalValue(value: CustomHostnameOwnershipVerificationHttp | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
-  }
-
-  // cname_name - computed: true, optional: false, required: false
-  public get cnameName() {
-    return this.getStringAttribute('cname_name');
-  }
-
-  // cname_target - computed: true, optional: false, required: false
-  public get cnameTarget() {
-    return this.getStringAttribute('cname_target');
-  }
-
-  // emails - computed: true, optional: false, required: false
-  public get emails() {
-    return this.getListAttribute('emails');
   }
 
   // http_body - computed: true, optional: false, required: false
@@ -212,65 +171,36 @@ export class CustomHostnameSslValidationRecordsOutputReference extends cdktf.Com
   public get httpUrl() {
     return this.getStringAttribute('http_url');
   }
-
-  // txt_name - computed: true, optional: false, required: false
-  public get txtName() {
-    return this.getStringAttribute('txt_name');
-  }
-
-  // txt_value - computed: true, optional: false, required: false
-  public get txtValue() {
-    return this.getStringAttribute('txt_value');
-  }
-}
-
-export class CustomHostnameSslValidationRecordsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CustomHostnameSslValidationRecordsOutputReference {
-    return new CustomHostnameSslValidationRecordsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface CustomHostnameSslSettings {
   /**
-  * List of SSL/TLS ciphers to associate with this certificate.
+  * An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
   */
   readonly ciphers?: string[];
   /**
-  * Whether early hints should be supported. Available values: `on`, `off`.
+  * Whether or not Early Hints is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
   */
   readonly earlyHints?: string;
   /**
-  * Whether HTTP2 should be supported. Available values: `on`, `off`.
+  * Whether or not HTTP2 is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
   */
   readonly http2?: string;
   /**
-  * Lowest version of TLS this certificate should support. Available values: `1.0`, `1.1`, `1.2`, `1.3`.
+  * The minimum TLS version supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
-  * Whether TLSv1.3 should be supported. Available values: `on`, `off`.
+  * Whether or not TLS 1.3 is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#tls13 CustomHostname#tls13}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#tls_1_3 CustomHostname#tls_1_3}
   */
   readonly tls13?: string;
 }
@@ -285,7 +215,7 @@ export function customHostnameSslSettingsToTerraform(struct?: CustomHostnameSslS
     early_hints: cdktf.stringToTerraform(struct!.earlyHints),
     http2: cdktf.stringToTerraform(struct!.http2),
     min_tls_version: cdktf.stringToTerraform(struct!.minTlsVersion),
-    tls13: cdktf.stringToTerraform(struct!.tls13),
+    tls_1_3: cdktf.stringToTerraform(struct!.tls13),
   }
 }
 
@@ -299,7 +229,7 @@ export function customHostnameSslSettingsToHclTerraform(struct?: CustomHostnameS
     ciphers: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ciphers),
       isBlock: false,
-      type: "set",
+      type: "list",
       storageClassType: "stringList",
     },
     early_hints: {
@@ -320,7 +250,7 @@ export function customHostnameSslSettingsToHclTerraform(struct?: CustomHostnameS
       type: "simple",
       storageClassType: "string",
     },
-    tls13: {
+    tls_1_3: {
       value: cdktf.stringToHclTerraform(struct!.tls13),
       isBlock: false,
       type: "simple",
@@ -339,11 +269,9 @@ export class CustomHostnameSslSettingsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): CustomHostnameSslSettings | cdktf.IResolvable | undefined {
@@ -403,7 +331,7 @@ export class CustomHostnameSslSettingsOutputReference extends cdktf.ComplexObjec
   // ciphers - computed: false, optional: true, required: false
   private _ciphers?: string[]; 
   public get ciphers() {
-    return cdktf.Fn.tolist(this.getListAttribute('ciphers'));
+    return this.getListAttribute('ciphers');
   }
   public set ciphers(value: string[]) {
     this._ciphers = value;
@@ -464,10 +392,10 @@ export class CustomHostnameSslSettingsOutputReference extends cdktf.ComplexObjec
     return this._minTlsVersion;
   }
 
-  // tls13 - computed: false, optional: true, required: false
+  // tls_1_3 - computed: false, optional: true, required: false
   private _tls13?: string; 
   public get tls13() {
-    return this.getStringAttribute('tls13');
+    return this.getStringAttribute('tls_1_3');
   }
   public set tls13(value: string) {
     this._tls13 = value;
@@ -480,73 +408,61 @@ export class CustomHostnameSslSettingsOutputReference extends cdktf.ComplexObjec
     return this._tls13;
   }
 }
-
-export class CustomHostnameSslSettingsList extends cdktf.ComplexList {
-  public internalValue? : CustomHostnameSslSettings[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CustomHostnameSslSettingsOutputReference {
-    return new CustomHostnameSslSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface CustomHostnameSsl {
   /**
-  * A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it. Available values: `ubiquitous`, `optimal`, `force`.
+  * A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
   */
   readonly bundleMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}
+  * The Certificate Authority that will issue the certificate
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}
   */
   readonly certificateAuthority?: string;
   /**
+  * Whether or not to add Cloudflare Branding for the order.  This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#cloudflare_branding CustomHostname#cloudflare_branding}
+  */
+  readonly cloudflareBranding?: boolean | cdktf.IResolvable;
+  /**
   * If a custom uploaded certificate is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
   */
   readonly customCertificate?: string;
   /**
   * The key for a custom uploaded certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
   */
   readonly customKey?: string;
   /**
-  * Domain control validation (DCV) method used for this hostname. Available values: `http`, `txt`, `email`.
+  * Domain control validation (DCV) method used for this hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#method CustomHostname#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#method CustomHostname#method}
   */
   readonly method?: string;
   /**
-  * Level of validation to be used for this hostname. Available values: `dv`. Defaults to `dv`.
+  * SSL specific settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#type CustomHostname#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#settings CustomHostname#settings}
+  */
+  readonly settings?: CustomHostnameSslSettings;
+  /**
+  * Level of validation to be used for this hostname. Domain validation (dv) must be used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#type CustomHostname#type}
   */
   readonly type?: string;
   /**
   * Indicates whether the certificate covers a wildcard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
-  /**
-  * settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#settings CustomHostname#settings}
-  */
-  readonly settings?: CustomHostnameSslSettings[] | cdktf.IResolvable;
 }
 
 export function customHostnameSslToTerraform(struct?: CustomHostnameSsl | cdktf.IResolvable): any {
@@ -557,12 +473,13 @@ export function customHostnameSslToTerraform(struct?: CustomHostnameSsl | cdktf.
   return {
     bundle_method: cdktf.stringToTerraform(struct!.bundleMethod),
     certificate_authority: cdktf.stringToTerraform(struct!.certificateAuthority),
+    cloudflare_branding: cdktf.booleanToTerraform(struct!.cloudflareBranding),
     custom_certificate: cdktf.stringToTerraform(struct!.customCertificate),
     custom_key: cdktf.stringToTerraform(struct!.customKey),
     method: cdktf.stringToTerraform(struct!.method),
+    settings: customHostnameSslSettingsToTerraform(struct!.settings),
     type: cdktf.stringToTerraform(struct!.type),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
-    settings: cdktf.listMapper(customHostnameSslSettingsToTerraform, true)(struct!.settings),
   }
 }
 
@@ -585,6 +502,12 @@ export function customHostnameSslToHclTerraform(struct?: CustomHostnameSsl | cdk
       type: "simple",
       storageClassType: "string",
     },
+    cloudflare_branding: {
+      value: cdktf.booleanToHclTerraform(struct!.cloudflareBranding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     custom_certificate: {
       value: cdktf.stringToHclTerraform(struct!.customCertificate),
       isBlock: false,
@@ -603,6 +526,12 @@ export function customHostnameSslToHclTerraform(struct?: CustomHostnameSsl | cdk
       type: "simple",
       storageClassType: "string",
     },
+    settings: {
+      value: customHostnameSslSettingsToHclTerraform(struct!.settings),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "CustomHostnameSslSettings",
+    },
     type: {
       value: cdktf.stringToHclTerraform(struct!.type),
       isBlock: false,
@@ -614,12 +543,6 @@ export function customHostnameSslToHclTerraform(struct?: CustomHostnameSsl | cdk
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
-    },
-    settings: {
-      value: cdktf.listMapperHcl(customHostnameSslSettingsToHclTerraform, true)(struct!.settings),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CustomHostnameSslSettingsList",
     },
   };
 
@@ -634,11 +557,9 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): CustomHostnameSsl | cdktf.IResolvable | undefined {
@@ -655,6 +576,10 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.certificateAuthority = this._certificateAuthority;
     }
+    if (this._cloudflareBranding !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudflareBranding = this._cloudflareBranding;
+    }
     if (this._customCertificate !== undefined) {
       hasAnyValues = true;
       internalValueResult.customCertificate = this._customCertificate;
@@ -667,6 +592,10 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
+    if (this._settings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.settings = this._settings?.internalValue;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -674,10 +603,6 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
     if (this._wildcard !== undefined) {
       hasAnyValues = true;
       internalValueResult.wildcard = this._wildcard;
-    }
-    if (this._settings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.settings = this._settings?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -688,12 +613,13 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._bundleMethod = undefined;
       this._certificateAuthority = undefined;
+      this._cloudflareBranding = undefined;
       this._customCertificate = undefined;
       this._customKey = undefined;
       this._method = undefined;
+      this._settings.internalValue = undefined;
       this._type = undefined;
       this._wildcard = undefined;
-      this._settings.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -704,16 +630,17 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._bundleMethod = value.bundleMethod;
       this._certificateAuthority = value.certificateAuthority;
+      this._cloudflareBranding = value.cloudflareBranding;
       this._customCertificate = value.customCertificate;
       this._customKey = value.customKey;
       this._method = value.method;
+      this._settings.internalValue = value.settings;
       this._type = value.type;
       this._wildcard = value.wildcard;
-      this._settings.internalValue = value.settings;
     }
   }
 
-  // bundle_method - computed: false, optional: true, required: false
+  // bundle_method - computed: true, optional: true, required: false
   private _bundleMethod?: string; 
   public get bundleMethod() {
     return this.getStringAttribute('bundle_method');
@@ -743,6 +670,22 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get certificateAuthorityInput() {
     return this._certificateAuthority;
+  }
+
+  // cloudflare_branding - computed: false, optional: true, required: false
+  private _cloudflareBranding?: boolean | cdktf.IResolvable; 
+  public get cloudflareBranding() {
+    return this.getBooleanAttribute('cloudflare_branding');
+  }
+  public set cloudflareBranding(value: boolean | cdktf.IResolvable) {
+    this._cloudflareBranding = value;
+  }
+  public resetCloudflareBranding() {
+    this._cloudflareBranding = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudflareBrandingInput() {
+    return this._cloudflareBranding;
   }
 
   // custom_certificate - computed: false, optional: true, required: false
@@ -793,9 +736,20 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
     return this._method;
   }
 
-  // status - computed: true, optional: false, required: false
-  public get status() {
-    return this.getStringAttribute('status');
+  // settings - computed: false, optional: true, required: false
+  private _settings = new CustomHostnameSslSettingsOutputReference(this, "settings");
+  public get settings() {
+    return this._settings;
+  }
+  public putSettings(value: CustomHostnameSslSettings) {
+    this._settings.internalValue = value;
+  }
+  public resetSettings() {
+    this._settings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get settingsInput() {
+    return this._settings.internalValue;
   }
 
   // type - computed: false, optional: true, required: false
@@ -814,18 +768,6 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 
-  // validation_errors - computed: true, optional: false, required: false
-  private _validationErrors = new CustomHostnameSslValidationErrorsList(this, "validation_errors", false);
-  public get validationErrors() {
-    return this._validationErrors;
-  }
-
-  // validation_records - computed: true, optional: false, required: false
-  private _validationRecords = new CustomHostnameSslValidationRecordsList(this, "validation_records", false);
-  public get validationRecords() {
-    return this._validationRecords;
-  }
-
   // wildcard - computed: false, optional: true, required: false
   private _wildcard?: boolean | cdktf.IResolvable; 
   public get wildcard() {
@@ -841,46 +783,10 @@ export class CustomHostnameSslOutputReference extends cdktf.ComplexObject {
   public get wildcardInput() {
     return this._wildcard;
   }
-
-  // settings - computed: false, optional: true, required: false
-  private _settings = new CustomHostnameSslSettingsList(this, "settings", false);
-  public get settings() {
-    return this._settings;
-  }
-  public putSettings(value: CustomHostnameSslSettings[] | cdktf.IResolvable) {
-    this._settings.internalValue = value;
-  }
-  public resetSettings() {
-    this._settings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get settingsInput() {
-    return this._settings.internalValue;
-  }
-}
-
-export class CustomHostnameSslList extends cdktf.ComplexList {
-  public internalValue? : CustomHostnameSsl[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CustomHostnameSslOutputReference {
-    return new CustomHostnameSslOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname cloudflare_custom_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname cloudflare_custom_hostname}
 */
 export class CustomHostname extends cdktf.TerraformResource {
 
@@ -896,7 +802,7 @@ export class CustomHostname extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomHostname resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomHostname to import
-  * @param importFromId The id of the existing CustomHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomHostname to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -908,7 +814,7 @@ export class CustomHostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -919,8 +825,8 @@ export class CustomHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -934,15 +840,18 @@ export class CustomHostname extends cdktf.TerraformResource {
     this._customOriginServer = config.customOriginServer;
     this._customOriginSni = config.customOriginSni;
     this._hostname = config.hostname;
-    this._id = config.id;
-    this._waitForSslPendingValidation = config.waitForSslPendingValidation;
-    this._zoneId = config.zoneId;
     this._ssl.internalValue = config.ssl;
+    this._zoneId = config.zoneId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
 
   // custom_metadata - computed: false, optional: true, required: false
   private _customMetadata?: { [key: string]: string }; 
@@ -1005,32 +914,34 @@ export class CustomHostname extends cdktf.TerraformResource {
     return this._hostname;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
   // ownership_verification - computed: true, optional: false, required: false
-  private _ownershipVerification = new cdktf.StringMap(this, "ownership_verification");
+  private _ownershipVerification = new CustomHostnameOwnershipVerificationOutputReference(this, "ownership_verification");
   public get ownershipVerification() {
     return this._ownershipVerification;
   }
 
   // ownership_verification_http - computed: true, optional: false, required: false
-  private _ownershipVerificationHttp = new cdktf.StringMap(this, "ownership_verification_http");
+  private _ownershipVerificationHttp = new CustomHostnameOwnershipVerificationHttpOutputReference(this, "ownership_verification_http");
   public get ownershipVerificationHttp() {
     return this._ownershipVerificationHttp;
+  }
+
+  // ssl - computed: false, optional: false, required: true
+  private _ssl = new CustomHostnameSslOutputReference(this, "ssl");
+  public get ssl() {
+    return this._ssl;
+  }
+  public putSsl(value: CustomHostnameSsl) {
+    this._ssl.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslInput() {
+    return this._ssl.internalValue;
   }
 
   // status - computed: true, optional: false, required: false
@@ -1038,20 +949,9 @@ export class CustomHostname extends cdktf.TerraformResource {
     return this.getStringAttribute('status');
   }
 
-  // wait_for_ssl_pending_validation - computed: false, optional: true, required: false
-  private _waitForSslPendingValidation?: boolean | cdktf.IResolvable; 
-  public get waitForSslPendingValidation() {
-    return this.getBooleanAttribute('wait_for_ssl_pending_validation');
-  }
-  public set waitForSslPendingValidation(value: boolean | cdktf.IResolvable) {
-    this._waitForSslPendingValidation = value;
-  }
-  public resetWaitForSslPendingValidation() {
-    this._waitForSslPendingValidation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get waitForSslPendingValidationInput() {
-    return this._waitForSslPendingValidation;
+  // verification_errors - computed: true, optional: false, required: false
+  public get verificationErrors() {
+    return this.getListAttribute('verification_errors');
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -1067,22 +967,6 @@ export class CustomHostname extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // ssl - computed: false, optional: true, required: false
-  private _ssl = new CustomHostnameSslList(this, "ssl", false);
-  public get ssl() {
-    return this._ssl;
-  }
-  public putSsl(value: CustomHostnameSsl[] | cdktf.IResolvable) {
-    this._ssl.internalValue = value;
-  }
-  public resetSsl() {
-    this._ssl.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sslInput() {
-    return this._ssl.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -1093,10 +977,8 @@ export class CustomHostname extends cdktf.TerraformResource {
       custom_origin_server: cdktf.stringToTerraform(this._customOriginServer),
       custom_origin_sni: cdktf.stringToTerraform(this._customOriginSni),
       hostname: cdktf.stringToTerraform(this._hostname),
-      id: cdktf.stringToTerraform(this._id),
-      wait_for_ssl_pending_validation: cdktf.booleanToTerraform(this._waitForSslPendingValidation),
+      ssl: customHostnameSslToTerraform(this._ssl.internalValue),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      ssl: cdktf.listMapper(customHostnameSslToTerraform, true)(this._ssl.internalValue),
     };
   }
 
@@ -1126,29 +1008,17 @@ export class CustomHostname extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      wait_for_ssl_pending_validation: {
-        value: cdktf.booleanToHclTerraform(this._waitForSslPendingValidation),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
+      ssl: {
+        value: customHostnameSslToHclTerraform(this._ssl.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CustomHostnameSsl",
       },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      ssl: {
-        value: cdktf.listMapperHcl(customHostnameSslToHclTerraform, true)(this._ssl.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "CustomHostnameSslList",
       },
     };
 
