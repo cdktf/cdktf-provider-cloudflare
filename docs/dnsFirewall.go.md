@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 dnsfirewall.NewDnsFirewall(scope Construct, id *string, config DnsFirewallConfig) DnsFirewall
 ```
@@ -461,7 +461,7 @@ func ResetUpstreamIps()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 dnsfirewall.DnsFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 dnsfirewall.DnsFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ dnsfirewall.DnsFirewall_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 dnsfirewall.DnsFirewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ dnsfirewall.DnsFirewall_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 dnsfirewall.DnsFirewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 &dnsfirewall.DnsFirewallAttackMitigation {
 	Enabled: interface{},
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 &dnsfirewall.DnsFirewallConfig {
 	Connection: interface{},
@@ -1086,7 +1086,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	AttackMitigation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dnsFirewall.DnsFirewallAttackMitigation,
+	AttackMitigation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dnsFirewall.DnsFirewallAttackMitigation,
 	DeprecateAnyRequests: interface{},
 	EcsFallback: interface{},
 	MaximumCacheTtl: *f64,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsfirewall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsfirewall"
 
 dnsfirewall.NewDnsFirewallAttackMitigationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsFirewallAttackMitigationOutputReference
 ```

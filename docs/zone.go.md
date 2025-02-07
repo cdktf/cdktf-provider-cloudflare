@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zone.Zone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.NewZone(scope Construct, id *string, config ZoneConfig) Zone
 ```
@@ -405,7 +405,7 @@ func ResetVanityNameServers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zone.Zone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.Zone_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zone.Zone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.Zone_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zone.Zone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zone.Zone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.Zone_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ zone.Zone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zone.Zone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.Zone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zone.ZoneAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 &zone.ZoneAccount {
 	Id: *string,
@@ -962,7 +962,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zone.ZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 &zone.ZoneConfig {
 	Connection: interface{},
@@ -972,7 +972,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Account: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zone.ZoneAccount,
+	Account: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zone.ZoneAccount,
 	Name: *string,
 	Type: *string,
 	VanityNameServers: *[]*string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zone.ZoneMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 &zone.ZoneMeta {
 
@@ -1142,7 +1142,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zone.ZoneOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 &zone.ZoneOwner {
 
@@ -1157,7 +1157,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zone.ZoneAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.NewZoneAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneAccountOutputReference
 ```
@@ -1435,7 +1435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zone.ZoneMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.NewZoneMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneMetaOutputReference
 ```
@@ -1761,7 +1761,7 @@ func InternalValue() ZoneMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zone.ZoneOwnerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone"
 
 zone.NewZoneOwnerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneOwnerOutputReference
 ```

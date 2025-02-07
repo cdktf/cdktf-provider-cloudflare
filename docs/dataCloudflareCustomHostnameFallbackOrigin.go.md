@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnamefallbackorigin"
 
 datacloudflarecustomhostnamefallbackorigin.NewDataCloudflareCustomHostnameFallbackOrigin(scope Construct, id *string, config DataCloudflareCustomHostnameFallbackOriginConfig) DataCloudflareCustomHostnameFallbackOrigin
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnamefallbackorigin"
 
 datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackOrigin_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnamefallbackorigin"
 
 datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackOrigin_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackO
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnamefallbackorigin"
 
 datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackOrigin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackO
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnamefallbackorigin"
 
 datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackOrigin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnamefallbackorigin"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnamefallbackorigin"
 
 &datacloudflarecustomhostnamefallbackorigin.DataCloudflareCustomHostnameFallbackOriginConfig {
 	Connection: interface{},
