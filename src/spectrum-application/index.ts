@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,107 +8,106 @@ import * as cdktf from 'cdktf';
 
 export interface SpectrumApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Enables Argo Smart Routing.
+  * Enables Argo Smart Routing for this application.
+  * Notes: Only available for TCP applications with traffic_type set to "direct".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
   */
   readonly argoSmartRouting?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#id SpectrumApplication#id}
+  * The name and type of DNS record for the Spectrum application.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#dns SpectrumApplication#dns}
+  */
+  readonly dns: SpectrumApplicationDns;
+  /**
+  * The anycast edge IP configuration for the hostname of this application.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
+  */
+  readonly edgeIps?: SpectrumApplicationEdgeIps;
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#id SpectrumApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly id?: string;
+  readonly id: string;
   /**
-  * Enables the IP Firewall for this application.
+  * Enables IP Access Rules for this application.
+  * Notes: Only available for TCP applications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
   */
   readonly ipFirewall?: boolean | cdktf.IResolvable;
   /**
-  * A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+  * List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
   */
   readonly originDirect?: string[];
   /**
-  * Origin port to proxy traffice to. Conflicts with `origin_port_range`.
+  * The name and type of DNS record for the Spectrum application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_port SpectrumApplication#origin_port}
-  */
-  readonly originPort?: number;
-  /**
-  * The port configuration at Cloudflare's edge. e.g. `tcp/22`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#protocol SpectrumApplication#protocol}
-  */
-  readonly protocol: string;
-  /**
-  * Enables a proxy protocol to the origin. Available values: `off`, `v1`, `v2`, `simple`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
-  */
-  readonly proxyProtocol?: string;
-  /**
-  * TLS configuration option for Cloudflare to connect to your origin. Available values: `off`, `flexible`, `full`, `strict`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#tls SpectrumApplication#tls}
-  */
-  readonly tls?: string;
-  /**
-  * Sets application type. Available values: `direct`, `http`, `https`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
-  */
-  readonly trafficType?: string;
-  /**
-  * The zone identifier to target for the resource.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#zone_id SpectrumApplication#zone_id}
-  */
-  readonly zoneId: string;
-  /**
-  * dns block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#dns SpectrumApplication#dns}
-  */
-  readonly dns: SpectrumApplicationDns;
-  /**
-  * edge_ips block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
-  */
-  readonly edgeIps?: SpectrumApplicationEdgeIps;
-  /**
-  * origin_dns block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_dns SpectrumApplication#origin_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#origin_dns SpectrumApplication#origin_dns}
   */
   readonly originDns?: SpectrumApplicationOriginDns;
   /**
-  * origin_port_range block
+  * The destination port at the origin. Only specified in conjunction with origin_dns. May use an integer to specify a single origin port, for example `1000`, or a string to specify a range of origin ports, for example `"1000-2000"`.
+  * Notes: If specifying a port range, the number of ports in the range must match the number of ports specified in the "protocol" field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_port_range SpectrumApplication#origin_port_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#origin_port SpectrumApplication#origin_port}
   */
-  readonly originPortRange?: SpectrumApplicationOriginPortRange;
+  readonly originPort?: { [key: string]: any };
+  /**
+  * The port configuration at Cloudflare's edge. May specify a single port, for example `"tcp/1000"`, or a range of ports, for example `"tcp/1000-2000"`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#protocol SpectrumApplication#protocol}
+  */
+  readonly protocol: string;
+  /**
+  * Enables Proxy Protocol to the origin. Refer to [Enable Proxy protocol](https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/) for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
+  */
+  readonly proxyProtocol?: string;
+  /**
+  * The type of TLS termination associated with the application.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#tls SpectrumApplication#tls}
+  */
+  readonly tls?: string;
+  /**
+  * Determines how data travels from the edge to your origin. When set to "direct", Spectrum will send traffic directly to your origin, and the application's type is derived from the `protocol`. When set to "http" or "https", Spectrum will apply Cloudflare's HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
+  */
+  readonly trafficType?: string;
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#zone_id SpectrumApplication#zone_id}
+  */
+  readonly zoneId: string;
 }
 export interface SpectrumApplicationDns {
   /**
   * The name of the DNS record associated with the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#name SpectrumApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#name SpectrumApplication#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
   * The type of DNS record associated with the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#type SpectrumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#type SpectrumApplication#type}
   */
-  readonly type: string;
+  readonly type?: string;
 }
 
-export function spectrumApplicationDnsToTerraform(struct?: SpectrumApplicationDnsOutputReference | SpectrumApplicationDns): any {
+export function spectrumApplicationDnsToTerraform(struct?: SpectrumApplicationDns | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -125,7 +119,7 @@ export function spectrumApplicationDnsToTerraform(struct?: SpectrumApplicationDn
 }
 
 
-export function spectrumApplicationDnsToHclTerraform(struct?: SpectrumApplicationDnsOutputReference | SpectrumApplicationDns): any {
+export function spectrumApplicationDnsToHclTerraform(struct?: SpectrumApplicationDns | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -151,16 +145,20 @@ export function spectrumApplicationDnsToHclTerraform(struct?: SpectrumApplicatio
 
 export class SpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpectrumApplicationDns | undefined {
+  public get internalValue(): SpectrumApplicationDns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -174,20 +172,26 @@ export class SpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpectrumApplicationDns | undefined) {
+  public set internalValue(value: SpectrumApplicationDns | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._name = value.name;
       this._type = value.type;
     }
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -195,18 +199,24 @@ export class SpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // type - computed: false, optional: false, required: true
+  // type - computed: false, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
@@ -215,26 +225,26 @@ export class SpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
 }
 export interface SpectrumApplicationEdgeIps {
   /**
-  * The IP versions supported for inbound connections on Spectrum anycast IPs. Required when `type` is not `static`. Available values: `all`, `ipv4`, `ipv6`.
+  * The IP versions supported for inbound connections on Spectrum anycast IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#connectivity SpectrumApplication#connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#connectivity SpectrumApplication#connectivity}
   */
   readonly connectivity?: string;
   /**
-  * The collection of customer owned IPs to broadcast via anycast for this hostname and application. Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
+  * The array of customer owned IPs we broadcast via anycast for this hostname and application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#ips SpectrumApplication#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#ips SpectrumApplication#ips}
   */
   readonly ips?: string[];
   /**
-  * The type of edge IP configuration specified. Available values: `dynamic`, `static`.
+  * The type of edge IP configuration specified. Dynamically allocated edge IPs use Spectrum anycast IPs in accordance with the connectivity you specify. Only valid with CNAME DNS names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#type SpectrumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#type SpectrumApplication#type}
   */
-  readonly type: string;
+  readonly type?: string;
 }
 
-export function spectrumApplicationEdgeIpsToTerraform(struct?: SpectrumApplicationEdgeIpsOutputReference | SpectrumApplicationEdgeIps): any {
+export function spectrumApplicationEdgeIpsToTerraform(struct?: SpectrumApplicationEdgeIps | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -247,7 +257,7 @@ export function spectrumApplicationEdgeIpsToTerraform(struct?: SpectrumApplicati
 }
 
 
-export function spectrumApplicationEdgeIpsToHclTerraform(struct?: SpectrumApplicationEdgeIpsOutputReference | SpectrumApplicationEdgeIps): any {
+export function spectrumApplicationEdgeIpsToHclTerraform(struct?: SpectrumApplicationEdgeIps | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -262,7 +272,7 @@ export function spectrumApplicationEdgeIpsToHclTerraform(struct?: SpectrumApplic
     ips: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ips),
       isBlock: false,
-      type: "set",
+      type: "list",
       storageClassType: "stringList",
     },
     type: {
@@ -279,16 +289,20 @@ export function spectrumApplicationEdgeIpsToHclTerraform(struct?: SpectrumApplic
 
 export class SpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpectrumApplicationEdgeIps | undefined {
+  public get internalValue(): SpectrumApplicationEdgeIps | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._connectivity !== undefined) {
@@ -306,22 +320,28 @@ export class SpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpectrumApplicationEdgeIps | undefined) {
+  public set internalValue(value: SpectrumApplicationEdgeIps | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._connectivity = undefined;
       this._ips = undefined;
       this._type = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._connectivity = value.connectivity;
       this._ips = value.ips;
       this._type = value.type;
     }
   }
 
-  // connectivity - computed: false, optional: true, required: false
+  // connectivity - computed: true, optional: true, required: false
   private _connectivity?: string; 
   public get connectivity() {
     return this.getStringAttribute('connectivity');
@@ -337,10 +357,10 @@ export class SpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObje
     return this._connectivity;
   }
 
-  // ips - computed: false, optional: true, required: false
+  // ips - computed: true, optional: true, required: false
   private _ips?: string[]; 
   public get ips() {
-    return cdktf.Fn.tolist(this.getListAttribute('ips'));
+    return this.getListAttribute('ips');
   }
   public set ips(value: string[]) {
     this._ips = value;
@@ -353,13 +373,16 @@ export class SpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObje
     return this._ips;
   }
 
-  // type - computed: false, optional: false, required: true
+  // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
@@ -368,25 +391,39 @@ export class SpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObje
 }
 export interface SpectrumApplicationOriginDns {
   /**
-  * Fully qualified domain name of the origin.
+  * The name of the DNS record associated with the origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#name SpectrumApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#name SpectrumApplication#name}
   */
-  readonly name: string;
+  readonly name?: string;
+  /**
+  * The TTL of our resolution of your DNS record in seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#ttl SpectrumApplication#ttl}
+  */
+  readonly ttl?: number;
+  /**
+  * The type of DNS record associated with the origin. "" is used to specify a combination of A/AAAA records.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#type SpectrumApplication#type}
+  */
+  readonly type?: string;
 }
 
-export function spectrumApplicationOriginDnsToTerraform(struct?: SpectrumApplicationOriginDnsOutputReference | SpectrumApplicationOriginDns): any {
+export function spectrumApplicationOriginDnsToTerraform(struct?: SpectrumApplicationOriginDns | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
+    ttl: cdktf.numberToTerraform(struct!.ttl),
+    type: cdktf.stringToTerraform(struct!.type),
   }
 }
 
 
-export function spectrumApplicationOriginDnsToHclTerraform(struct?: SpectrumApplicationOriginDnsOutputReference | SpectrumApplicationOriginDns): any {
+export function spectrumApplicationOriginDnsToHclTerraform(struct?: SpectrumApplicationOriginDns | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -394,6 +431,18 @@ export function spectrumApplicationOriginDnsToHclTerraform(struct?: SpectrumAppl
   const attrs = {
     name: {
       value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ttl: {
+      value: cdktf.numberToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -406,37 +455,59 @@ export function spectrumApplicationOriginDnsToHclTerraform(struct?: SpectrumAppl
 
 export class SpectrumApplicationOriginDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpectrumApplicationOriginDns | undefined {
+  public get internalValue(): SpectrumApplicationOriginDns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._ttl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ttl = this._ttl;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpectrumApplicationOriginDns | undefined) {
+  public set internalValue(value: SpectrumApplicationOriginDns | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._name = undefined;
+      this._ttl = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._name = value.name;
+      this._ttl = value.ttl;
+      this._type = value.type;
     }
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -444,129 +515,49 @@ export class SpectrumApplicationOriginDnsOutputReference extends cdktf.ComplexOb
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
-}
-export interface SpectrumApplicationOriginPortRange {
-  /**
-  * Upper bound of the origin port range.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#end SpectrumApplication#end}
-  */
-  readonly end: number;
-  /**
-  * Lower bound of the origin port range.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#start SpectrumApplication#start}
-  */
-  readonly start: number;
-}
 
-export function spectrumApplicationOriginPortRangeToTerraform(struct?: SpectrumApplicationOriginPortRangeOutputReference | SpectrumApplicationOriginPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  // ttl - computed: true, optional: true, required: false
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
   }
-  return {
-    end: cdktf.numberToTerraform(struct!.end),
-    start: cdktf.numberToTerraform(struct!.start),
+  public set ttl(value: number) {
+    this._ttl = value;
   }
-}
-
-
-export function spectrumApplicationOriginPortRangeToHclTerraform(struct?: SpectrumApplicationOriginPortRangeOutputReference | SpectrumApplicationOriginPortRange): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    end: {
-      value: cdktf.numberToHclTerraform(struct!.end),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    start: {
-      value: cdktf.numberToHclTerraform(struct!.start),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class SpectrumApplicationOriginPortRangeOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): SpectrumApplicationOriginPortRange | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._end !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.end = this._end;
-    }
-    if (this._start !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.start = this._start;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: SpectrumApplicationOriginPortRange | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._end = undefined;
-      this._start = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._end = value.end;
-      this._start = value.start;
-    }
-  }
-
-  // end - computed: false, optional: false, required: true
-  private _end?: number; 
-  public get end() {
-    return this.getNumberAttribute('end');
-  }
-  public set end(value: number) {
-    this._end = value;
+  public resetTtl() {
+    this._ttl = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get endInput() {
-    return this._end;
+  public get ttlInput() {
+    return this._ttl;
   }
 
-  // start - computed: false, optional: false, required: true
-  private _start?: number; 
-  public get start() {
-    return this.getNumberAttribute('start');
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
   }
-  public set start(value: number) {
-    this._start = value;
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get startInput() {
-    return this._start;
+  public get typeInput() {
+    return this._type;
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application cloudflare_spectrum_application}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application cloudflare_spectrum_application}
 */
 export class SpectrumApplication extends cdktf.TerraformResource {
 
@@ -582,7 +573,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SpectrumApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpectrumApplication to import
-  * @param importFromId The id of the existing SpectrumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpectrumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpectrumApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -594,7 +585,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -605,8 +596,8 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_spectrum_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -617,19 +608,18 @@ export class SpectrumApplication extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._argoSmartRouting = config.argoSmartRouting;
+    this._dns.internalValue = config.dns;
+    this._edgeIps.internalValue = config.edgeIps;
     this._id = config.id;
     this._ipFirewall = config.ipFirewall;
     this._originDirect = config.originDirect;
+    this._originDns.internalValue = config.originDns;
     this._originPort = config.originPort;
     this._protocol = config.protocol;
     this._proxyProtocol = config.proxyProtocol;
     this._tls = config.tls;
     this._trafficType = config.trafficType;
     this._zoneId = config.zoneId;
-    this._dns.internalValue = config.dns;
-    this._edgeIps.internalValue = config.edgeIps;
-    this._originDns.internalValue = config.originDns;
-    this._originPortRange.internalValue = config.originPortRange;
   }
 
   // ==========
@@ -652,7 +642,41 @@ export class SpectrumApplication extends cdktf.TerraformResource {
     return this._argoSmartRouting;
   }
 
-  // id - computed: true, optional: true, required: false
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // dns - computed: false, optional: false, required: true
+  private _dns = new SpectrumApplicationDnsOutputReference(this, "dns");
+  public get dns() {
+    return this._dns;
+  }
+  public putDns(value: SpectrumApplicationDns) {
+    this._dns.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsInput() {
+    return this._dns.internalValue;
+  }
+
+  // edge_ips - computed: true, optional: true, required: false
+  private _edgeIps = new SpectrumApplicationEdgeIpsOutputReference(this, "edge_ips");
+  public get edgeIps() {
+    return this._edgeIps;
+  }
+  public putEdgeIps(value: SpectrumApplicationEdgeIps) {
+    this._edgeIps.internalValue = value;
+  }
+  public resetEdgeIps() {
+    this._edgeIps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get edgeIpsInput() {
+    return this._edgeIps.internalValue;
+  }
+
+  // id - computed: false, optional: false, required: true
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -660,15 +684,12 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   public set id(value: string) {
     this._id = value;
   }
-  public resetId() {
-    this._id = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
   }
 
-  // ip_firewall - computed: true, optional: true, required: false
+  // ip_firewall - computed: false, optional: true, required: false
   private _ipFirewall?: boolean | cdktf.IResolvable; 
   public get ipFirewall() {
     return this.getBooleanAttribute('ip_firewall');
@@ -682,6 +703,11 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ipFirewallInput() {
     return this._ipFirewall;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
 
   // origin_direct - computed: false, optional: true, required: false
@@ -700,12 +726,28 @@ export class SpectrumApplication extends cdktf.TerraformResource {
     return this._originDirect;
   }
 
-  // origin_port - computed: false, optional: true, required: false
-  private _originPort?: number; 
-  public get originPort() {
-    return this.getNumberAttribute('origin_port');
+  // origin_dns - computed: true, optional: true, required: false
+  private _originDns = new SpectrumApplicationOriginDnsOutputReference(this, "origin_dns");
+  public get originDns() {
+    return this._originDns;
   }
-  public set originPort(value: number) {
+  public putOriginDns(value: SpectrumApplicationOriginDns) {
+    this._originDns.internalValue = value;
+  }
+  public resetOriginDns() {
+    this._originDns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get originDnsInput() {
+    return this._originDns.internalValue;
+  }
+
+  // origin_port - computed: false, optional: true, required: false
+  private _originPort?: { [key: string]: any }; 
+  public get originPort() {
+    return this.getAnyMapAttribute('origin_port');
+  }
+  public set originPort(value: { [key: string]: any }) {
     this._originPort = value;
   }
   public resetOriginPort() {
@@ -745,7 +787,7 @@ export class SpectrumApplication extends cdktf.TerraformResource {
     return this._proxyProtocol;
   }
 
-  // tls - computed: true, optional: true, required: false
+  // tls - computed: false, optional: true, required: false
   private _tls?: string; 
   public get tls() {
     return this.getStringAttribute('tls');
@@ -790,67 +832,6 @@ export class SpectrumApplication extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // dns - computed: false, optional: false, required: true
-  private _dns = new SpectrumApplicationDnsOutputReference(this, "dns");
-  public get dns() {
-    return this._dns;
-  }
-  public putDns(value: SpectrumApplicationDns) {
-    this._dns.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dnsInput() {
-    return this._dns.internalValue;
-  }
-
-  // edge_ips - computed: false, optional: true, required: false
-  private _edgeIps = new SpectrumApplicationEdgeIpsOutputReference(this, "edge_ips");
-  public get edgeIps() {
-    return this._edgeIps;
-  }
-  public putEdgeIps(value: SpectrumApplicationEdgeIps) {
-    this._edgeIps.internalValue = value;
-  }
-  public resetEdgeIps() {
-    this._edgeIps.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get edgeIpsInput() {
-    return this._edgeIps.internalValue;
-  }
-
-  // origin_dns - computed: false, optional: true, required: false
-  private _originDns = new SpectrumApplicationOriginDnsOutputReference(this, "origin_dns");
-  public get originDns() {
-    return this._originDns;
-  }
-  public putOriginDns(value: SpectrumApplicationOriginDns) {
-    this._originDns.internalValue = value;
-  }
-  public resetOriginDns() {
-    this._originDns.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get originDnsInput() {
-    return this._originDns.internalValue;
-  }
-
-  // origin_port_range - computed: false, optional: true, required: false
-  private _originPortRange = new SpectrumApplicationOriginPortRangeOutputReference(this, "origin_port_range");
-  public get originPortRange() {
-    return this._originPortRange;
-  }
-  public putOriginPortRange(value: SpectrumApplicationOriginPortRange) {
-    this._originPortRange.internalValue = value;
-  }
-  public resetOriginPortRange() {
-    this._originPortRange.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get originPortRangeInput() {
-    return this._originPortRange.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -858,19 +839,18 @@ export class SpectrumApplication extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       argo_smart_routing: cdktf.booleanToTerraform(this._argoSmartRouting),
+      dns: spectrumApplicationDnsToTerraform(this._dns.internalValue),
+      edge_ips: spectrumApplicationEdgeIpsToTerraform(this._edgeIps.internalValue),
       id: cdktf.stringToTerraform(this._id),
       ip_firewall: cdktf.booleanToTerraform(this._ipFirewall),
       origin_direct: cdktf.listMapper(cdktf.stringToTerraform, false)(this._originDirect),
-      origin_port: cdktf.numberToTerraform(this._originPort),
+      origin_dns: spectrumApplicationOriginDnsToTerraform(this._originDns.internalValue),
+      origin_port: cdktf.hashMapper(cdktf.anyToTerraform)(this._originPort),
       protocol: cdktf.stringToTerraform(this._protocol),
       proxy_protocol: cdktf.stringToTerraform(this._proxyProtocol),
       tls: cdktf.stringToTerraform(this._tls),
       traffic_type: cdktf.stringToTerraform(this._trafficType),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      dns: spectrumApplicationDnsToTerraform(this._dns.internalValue),
-      edge_ips: spectrumApplicationEdgeIpsToTerraform(this._edgeIps.internalValue),
-      origin_dns: spectrumApplicationOriginDnsToTerraform(this._originDns.internalValue),
-      origin_port_range: spectrumApplicationOriginPortRangeToTerraform(this._originPortRange.internalValue),
     };
   }
 
@@ -881,6 +861,18 @@ export class SpectrumApplication extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      dns: {
+        value: spectrumApplicationDnsToHclTerraform(this._dns.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SpectrumApplicationDns",
+      },
+      edge_ips: {
+        value: spectrumApplicationEdgeIpsToHclTerraform(this._edgeIps.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SpectrumApplicationEdgeIps",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
@@ -900,11 +892,17 @@ export class SpectrumApplication extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "stringList",
       },
+      origin_dns: {
+        value: spectrumApplicationOriginDnsToHclTerraform(this._originDns.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SpectrumApplicationOriginDns",
+      },
       origin_port: {
-        value: cdktf.numberToHclTerraform(this._originPort),
+        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._originPort),
         isBlock: false,
-        type: "simple",
-        storageClassType: "number",
+        type: "map",
+        storageClassType: "anyMap",
       },
       protocol: {
         value: cdktf.stringToHclTerraform(this._protocol),
@@ -935,30 +933,6 @@ export class SpectrumApplication extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      dns: {
-        value: spectrumApplicationDnsToHclTerraform(this._dns.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "SpectrumApplicationDnsList",
-      },
-      edge_ips: {
-        value: spectrumApplicationEdgeIpsToHclTerraform(this._edgeIps.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "SpectrumApplicationEdgeIpsList",
-      },
-      origin_dns: {
-        value: spectrumApplicationOriginDnsToHclTerraform(this._originDns.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "SpectrumApplicationOriginDnsList",
-      },
-      origin_port_range: {
-        value: spectrumApplicationOriginPortRangeToHclTerraform(this._originPortRange.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "SpectrumApplicationOriginPortRangeList",
       },
     };
 

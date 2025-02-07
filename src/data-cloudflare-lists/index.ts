@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/lists
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/lists
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareListsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/lists#account_id DataCloudflareLists#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/lists#account_id DataCloudflareLists#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/lists#id DataCloudflareLists#id}
+  * Max items to fetch, default: 1000
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/lists#max_items DataCloudflareLists#max_items}
   */
-  readonly id?: string;
+  readonly maxItems?: number;
 }
-export interface DataCloudflareListsLists {
+export interface DataCloudflareListsResult {
 }
 
-export function dataCloudflareListsListsToTerraform(struct?: DataCloudflareListsLists): any {
+export function dataCloudflareListsResultToTerraform(struct?: DataCloudflareListsResult): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -39,7 +33,7 @@ export function dataCloudflareListsListsToTerraform(struct?: DataCloudflareLists
 }
 
 
-export function dataCloudflareListsListsToHclTerraform(struct?: DataCloudflareListsLists): any {
+export function dataCloudflareListsResultToHclTerraform(struct?: DataCloudflareListsResult): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -49,7 +43,7 @@ export function dataCloudflareListsListsToHclTerraform(struct?: DataCloudflareLi
   return attrs;
 }
 
-export class DataCloudflareListsListsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareListsResultOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,19 +56,24 @@ export class DataCloudflareListsListsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudflareListsLists | undefined {
+  public get internalValue(): DataCloudflareListsResult | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareListsLists | undefined) {
+  public set internalValue(value: DataCloudflareListsResult | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
   }
 
   // description - computed: true, optional: false, required: false
@@ -92,18 +91,28 @@ export class DataCloudflareListsListsOutputReference extends cdktf.ComplexObject
     return this.getStringAttribute('kind');
   }
 
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // numitems - computed: true, optional: false, required: false
-  public get numitems() {
-    return this.getNumberAttribute('numitems');
+  // num_items - computed: true, optional: false, required: false
+  public get numItems() {
+    return this.getNumberAttribute('num_items');
+  }
+
+  // num_referencing_filters - computed: true, optional: false, required: false
+  public get numReferencingFilters() {
+    return this.getNumberAttribute('num_referencing_filters');
   }
 }
 
-export class DataCloudflareListsListsList extends cdktf.ComplexList {
+export class DataCloudflareListsResultList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -117,13 +126,13 @@ export class DataCloudflareListsListsList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataCloudflareListsListsOutputReference {
-    return new DataCloudflareListsListsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataCloudflareListsResultOutputReference {
+    return new DataCloudflareListsResultOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/lists cloudflare_lists}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/lists cloudflare_lists}
 */
 export class DataCloudflareLists extends cdktf.TerraformDataSource {
 
@@ -139,7 +148,7 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareLists resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareLists to import
-  * @param importFromId The id of the existing DataCloudflareLists that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/lists#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareLists that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/lists#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareLists to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -151,7 +160,7 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/lists cloudflare_lists} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/lists cloudflare_lists} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,8 +171,8 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_lists',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -174,7 +183,7 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._id = config.id;
+    this._maxItems = config.maxItems;
   }
 
   // ==========
@@ -194,26 +203,26 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
     return this._accountId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
+  // max_items - computed: false, optional: true, required: false
+  private _maxItems?: number; 
+  public get maxItems() {
+    return this.getNumberAttribute('max_items');
   }
-  public set id(value: string) {
-    this._id = value;
+  public set maxItems(value: number) {
+    this._maxItems = value;
   }
-  public resetId() {
-    this._id = undefined;
+  public resetMaxItems() {
+    this._maxItems = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get maxItemsInput() {
+    return this._maxItems;
   }
 
-  // lists - computed: true, optional: false, required: false
-  private _lists = new DataCloudflareListsListsList(this, "lists", false);
-  public get lists() {
-    return this._lists;
+  // result - computed: true, optional: false, required: false
+  private _result = new DataCloudflareListsResultList(this, "result", false);
+  public get result() {
+    return this._result;
   }
 
   // =========
@@ -223,7 +232,7 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
+      max_items: cdktf.numberToTerraform(this._maxItems),
     };
   }
 
@@ -235,11 +244,11 @@ export class DataCloudflareLists extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      max_items: {
+        value: cdktf.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "number",
       },
     };
 

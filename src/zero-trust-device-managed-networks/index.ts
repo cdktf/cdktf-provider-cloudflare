@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustDeviceManagedNetworksConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#account_id ZeroTrustDeviceManagedNetworks#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#account_id ZeroTrustDeviceManagedNetworks#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#id ZeroTrustDeviceManagedNetworks#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#config ZeroTrustDeviceManagedNetworks#config}
   */
-  readonly id?: string;
+  readonly config: ZeroTrustDeviceManagedNetworksConfigA;
   /**
-  * The name of the Device Managed Network. Must be unique.
+  * The name of the device managed network. This name must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#name ZeroTrustDeviceManagedNetworks#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#name ZeroTrustDeviceManagedNetworks#name}
   */
   readonly name: string;
   /**
-  * The type of Device Managed Network. Available values: `tls`.
+  * The type of device managed network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#type ZeroTrustDeviceManagedNetworks#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#type ZeroTrustDeviceManagedNetworks#type}
   */
   readonly type: string;
-  /**
-  * config block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#config ZeroTrustDeviceManagedNetworks#config}
-  */
-  readonly config: ZeroTrustDeviceManagedNetworksConfigA;
 }
 export interface ZeroTrustDeviceManagedNetworksConfigA {
   /**
   * The SHA-256 hash of the TLS certificate presented by the host found at tls_sockaddr. If absent, regular certificate verification (trusted roots, valid timestamp, etc) will be used to validate the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#sha256 ZeroTrustDeviceManagedNetworks#sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#sha256 ZeroTrustDeviceManagedNetworks#sha256}
   */
-  readonly sha256: string;
+  readonly sha256?: string;
   /**
   * A network address of the form "host:port" that the WARP client will use to detect the presence of a TLS host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#tls_sockaddr ZeroTrustDeviceManagedNetworks#tls_sockaddr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#tls_sockaddr ZeroTrustDeviceManagedNetworks#tls_sockaddr}
   */
   readonly tlsSockaddr: string;
 }
 
-export function zeroTrustDeviceManagedNetworksConfigAToTerraform(struct?: ZeroTrustDeviceManagedNetworksConfigAOutputReference | ZeroTrustDeviceManagedNetworksConfigA): any {
+export function zeroTrustDeviceManagedNetworksConfigAToTerraform(struct?: ZeroTrustDeviceManagedNetworksConfigA | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -71,7 +55,7 @@ export function zeroTrustDeviceManagedNetworksConfigAToTerraform(struct?: ZeroTr
 }
 
 
-export function zeroTrustDeviceManagedNetworksConfigAToHclTerraform(struct?: ZeroTrustDeviceManagedNetworksConfigAOutputReference | ZeroTrustDeviceManagedNetworksConfigA): any {
+export function zeroTrustDeviceManagedNetworksConfigAToHclTerraform(struct?: ZeroTrustDeviceManagedNetworksConfigA | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -97,16 +81,20 @@ export function zeroTrustDeviceManagedNetworksConfigAToHclTerraform(struct?: Zer
 
 export class ZeroTrustDeviceManagedNetworksConfigAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDeviceManagedNetworksConfigA | undefined {
+  public get internalValue(): ZeroTrustDeviceManagedNetworksConfigA | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._sha256 !== undefined) {
@@ -120,26 +108,35 @@ export class ZeroTrustDeviceManagedNetworksConfigAOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDeviceManagedNetworksConfigA | undefined) {
+  public set internalValue(value: ZeroTrustDeviceManagedNetworksConfigA | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._sha256 = undefined;
       this._tlsSockaddr = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._sha256 = value.sha256;
       this._tlsSockaddr = value.tlsSockaddr;
     }
   }
 
-  // sha256 - computed: false, optional: false, required: true
+  // sha256 - computed: false, optional: true, required: false
   private _sha256?: string; 
   public get sha256() {
     return this.getStringAttribute('sha256');
   }
   public set sha256(value: string) {
     this._sha256 = value;
+  }
+  public resetSha256() {
+    this._sha256 = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sha256Input() {
@@ -161,7 +158,7 @@ export class ZeroTrustDeviceManagedNetworksConfigAOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}
 */
 export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
 
@@ -177,7 +174,7 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDeviceManagedNetworks resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDeviceManagedNetworks to import
-  * @param importFromId The id of the existing ZeroTrustDeviceManagedNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDeviceManagedNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDeviceManagedNetworks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -189,7 +186,7 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,8 +197,8 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_device_managed_networks',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -212,10 +209,9 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._id = config.id;
+    this._config.internalValue = config.config;
     this._name = config.name;
     this._type = config.type;
-    this._config.internalValue = config.config;
   }
 
   // ==========
@@ -235,20 +231,22 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
+  // config - computed: false, optional: false, required: true
+  private _config = new ZeroTrustDeviceManagedNetworksConfigAOutputReference(this, "config");
+  public get config() {
+    return this._config;
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
+  public putConfig(value: ZeroTrustDeviceManagedNetworksConfigA) {
+    this._config.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get configInput() {
+    return this._config.internalValue;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
@@ -264,6 +262,11 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // network_id - computed: true, optional: false, required: false
+  public get networkId() {
+    return this.getStringAttribute('network_id');
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -277,19 +280,6 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // config - computed: false, optional: false, required: true
-  private _config = new ZeroTrustDeviceManagedNetworksConfigAOutputReference(this, "config");
-  public get config() {
-    return this._config;
-  }
-  public putConfig(value: ZeroTrustDeviceManagedNetworksConfigA) {
-    this._config.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get configInput() {
-    return this._config.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -297,10 +287,9 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
+      config: zeroTrustDeviceManagedNetworksConfigAToTerraform(this._config.internalValue),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      config: zeroTrustDeviceManagedNetworksConfigAToTerraform(this._config.internalValue),
     };
   }
 
@@ -312,11 +301,11 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+      config: {
+        value: zeroTrustDeviceManagedNetworksConfigAToHclTerraform(this._config.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ZeroTrustDeviceManagedNetworksConfigA",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
@@ -329,12 +318,6 @@ export class ZeroTrustDeviceManagedNetworks extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      config: {
-        value: zeroTrustDeviceManagedNetworksConfigAToHclTerraform(this._config.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ZeroTrustDeviceManagedNetworksConfigAList",
       },
     };
 

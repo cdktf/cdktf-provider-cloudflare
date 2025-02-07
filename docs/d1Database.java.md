@@ -4,7 +4,7 @@
 
 ### D1Database <a name="D1Database" id="@cdktf/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
@@ -25,6 +25,7 @@ D1Database.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
+//  .primaryLocationHint(java.lang.String)
     .build();
 ```
 
@@ -39,8 +40,9 @@ D1Database.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the D1 Database. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | Specify the region to create the D1 primary, if available. |
 
 ---
 
@@ -108,9 +110,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-The account identifier to target for the resource.
+Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -118,9 +120,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The name of the D1 Database.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#name D1Database#name}
+---
+
+##### `primaryLocationHint`<sup>Optional</sup> <a name="primaryLocationHint" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.primaryLocationHint"></a>
+
+- *Type:* java.lang.String
+
+Specify the region to create the D1 primary, if available.
+
+If this option is omitted, the D1 will be created as close as possible to the current user.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 
@@ -151,6 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.resetPrimaryLocationHint">resetPrimaryLocationHint</a></code> | *No description.* |
 
 ---
 
@@ -444,6 +457,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetPrimaryLocationHint` <a name="resetPrimaryLocationHint" id="@cdktf/provider-cloudflare.d1Database.D1Database.resetPrimaryLocationHint"></a>
+
+```java
+public void resetPrimaryLocationHint()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -547,7 +566,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,12 +596,18 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.fileSize">fileSize</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.numTables">numTables</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.primaryLocationHintInput">primaryLocationHintInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.property.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -728,10 +753,50 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.createdAt"></a>
+
+```java
+public java.lang.String getCreatedAt();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `fileSize`<sup>Required</sup> <a name="fileSize" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.fileSize"></a>
+
+```java
+public java.lang.Number getFileSize();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.id"></a>
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `numTables`<sup>Required</sup> <a name="numTables" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.numTables"></a>
+
+```java
+public java.lang.Number getNumTables();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.uuid"></a>
+
+```java
+public java.lang.String getUuid();
 ```
 
 - *Type:* java.lang.String
@@ -768,6 +833,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `primaryLocationHintInput`<sup>Optional</sup> <a name="primaryLocationHintInput" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.primaryLocationHintInput"></a>
+
+```java
+public java.lang.String getPrimaryLocationHintInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.accountId"></a>
 
 ```java
@@ -782,6 +857,16 @@ public java.lang.String getAccountId();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `primaryLocationHint`<sup>Required</sup> <a name="primaryLocationHint" id="@cdktf/provider-cloudflare.d1Database.D1Database.property.primaryLocationHint"></a>
+
+```java
+public java.lang.String getPrimaryLocationHint();
 ```
 
 - *Type:* java.lang.String
@@ -829,6 +914,7 @@ D1DatabaseConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .name(java.lang.String)
+//  .primaryLocationHint(java.lang.String)
     .build();
 ```
 
@@ -843,8 +929,9 @@ D1DatabaseConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the D1 Database. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | Specify the region to create the D1 primary, if available. |
 
 ---
 
@@ -926,9 +1013,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-The account identifier to target for the resource.
+Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -940,9 +1027,23 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the D1 Database.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#name D1Database#name}
+---
+
+##### `primaryLocationHint`<sup>Optional</sup> <a name="primaryLocationHint" id="@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.primaryLocationHint"></a>
+
+```java
+public java.lang.String getPrimaryLocationHint();
+```
+
+- *Type:* java.lang.String
+
+Specify the region to create the D1 primary, if available.
+
+If this option is omitted, the D1 will be created as close as possible to the current user.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 

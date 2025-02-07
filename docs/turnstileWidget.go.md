@@ -4,12 +4,12 @@
 
 ### TurnstileWidget <a name="TurnstileWidget" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.NewTurnstileWidget(scope Construct, id *string, config TurnstileWidgetConfig) TurnstileWidget
 ```
@@ -74,7 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetBotFightMode">ResetBotFightMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetClearanceLevel">ResetClearanceLevel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetEphemeralId">ResetEphemeralId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOfflabel">ResetOfflabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetRegion">ResetRegion</a></code> | *No description.* |
 
@@ -374,10 +375,16 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetBotFightMode()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetId"></a>
+##### `ResetClearanceLevel` <a name="ResetClearanceLevel" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetClearanceLevel"></a>
 
 ```go
-func ResetId()
+func ResetClearanceLevel()
+```
+
+##### `ResetEphemeralId` <a name="ResetEphemeralId" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetEphemeralId"></a>
+
+```go
+func ResetEphemeralId()
 ```
 
 ##### `ResetOfflabel` <a name="ResetOfflabel" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.resetOfflabel"></a>
@@ -406,7 +413,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ turnstilewidget.TurnstileWidget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ turnstilewidget.TurnstileWidget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 turnstilewidget.TurnstileWidget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +502,7 @@ The construct id used in the generated config for the TurnstileWidget to import.
 
 The id of the existing TurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,19 +532,25 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.secret">Secret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.sitekey">Sitekey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.botFightModeInput">BotFightModeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.clearanceLevelInput">ClearanceLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domainsInput">DomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.ephemeralIdInput">EphemeralIdInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.modeInput">ModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.offlabelInput">OfflabelInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.botFightMode">BotFightMode</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.clearanceLevel">ClearanceLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domains">Domains</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.ephemeralId">EphemeralId</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.mode">Mode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.offlabel">Offlabel</a></code> | <code>interface{}</code> | *No description.* |
@@ -687,10 +700,50 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ModifiedOn`<sup>Required</sup> <a name="ModifiedOn" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.modifiedOn"></a>
+
+```go
+func ModifiedOn() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Secret`<sup>Required</sup> <a name="Secret" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.secret"></a>
 
 ```go
 func Secret() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Sitekey`<sup>Required</sup> <a name="Sitekey" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.sitekey"></a>
+
+```go
+func Sitekey() *string
 ```
 
 - *Type:* *string
@@ -717,6 +770,16 @@ func BotFightModeInput() interface{}
 
 ---
 
+##### `ClearanceLevelInput`<sup>Optional</sup> <a name="ClearanceLevelInput" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.clearanceLevelInput"></a>
+
+```go
+func ClearanceLevelInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DomainsInput`<sup>Optional</sup> <a name="DomainsInput" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domainsInput"></a>
 
 ```go
@@ -727,13 +790,13 @@ func DomainsInput() *[]*string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.idInput"></a>
+##### `EphemeralIdInput`<sup>Optional</sup> <a name="EphemeralIdInput" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.ephemeralIdInput"></a>
 
 ```go
-func IdInput() *string
+func EphemeralIdInput() interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
 ---
 
@@ -797,6 +860,16 @@ func BotFightMode() interface{}
 
 ---
 
+##### `ClearanceLevel`<sup>Required</sup> <a name="ClearanceLevel" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.clearanceLevel"></a>
+
+```go
+func ClearanceLevel() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Domains`<sup>Required</sup> <a name="Domains" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.domains"></a>
 
 ```go
@@ -807,13 +880,13 @@ func Domains() *[]*string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.id"></a>
+##### `EphemeralId`<sup>Required</sup> <a name="EphemeralId" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidget.property.ephemeralId"></a>
 
 ```go
-func Id() *string
+func EphemeralId() interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
 ---
 
@@ -882,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/turnstilewidget"
 
 &turnstilewidget.TurnstileWidgetConfig {
 	Connection: interface{},
@@ -897,7 +970,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewi
 	Mode: *string,
 	Name: *string,
 	BotFightMode: interface{},
-	Id: *string,
+	ClearanceLevel: *string,
+	EphemeralId: interface{},
 	Offlabel: interface{},
 	Region: *string,
 }
@@ -914,13 +988,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewi
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The account identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">Domains</a></code> | <code>*[]*string</code> | Domains where the widget is deployed. |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">Mode</a></code> | <code>*string</code> | Widget Mode. Available values: `non-interactive`, `invisible`, `managed`. |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">Mode</a></code> | <code>*string</code> | Widget Mode. |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.name">Name</a></code> | <code>*string</code> | Human readable widget name. |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.botFightMode">BotFightMode</a></code> | <code>interface{}</code> | If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only). |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.id">Id</a></code> | <code>*string</code> | The identifier of this resource. This is the site key value. |
-| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.offlabel">Offlabel</a></code> | <code>interface{}</code> | Do not show any Cloudflare branding on the widget (Enterprise only). |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.botFightMode">BotFightMode</a></code> | <code>interface{}</code> | If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only). |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.clearanceLevel">ClearanceLevel</a></code> | <code>*string</code> | If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set. |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.ephemeralId">EphemeralId</a></code> | <code>interface{}</code> | Return the Ephemeral ID in /siteverify (ENT only). |
+| <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.offlabel">Offlabel</a></code> | <code>interface{}</code> | Do not show any Cloudflare branding on the widget (ENT only). |
 | <code><a href="#@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this widget can be used. |
 
 ---
@@ -1003,9 +1078,9 @@ AccountId *string
 
 - *Type:* *string
 
-The account identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 
 ---
 
@@ -1017,9 +1092,7 @@ Domains *[]*string
 
 - *Type:* *[]*string
 
-Domains where the widget is deployed.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
 
 ---
 
@@ -1031,9 +1104,9 @@ Mode *string
 
 - *Type:* *string
 
-Widget Mode. Available values: `non-interactive`, `invisible`, `managed`.
+Widget Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1047,7 +1120,11 @@ Name *string
 
 Human readable widget name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+Not unique. Cloudflare suggests that you
+set this to a meaningful string to make it easier to identify your
+widget, and where it is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -1059,26 +1136,37 @@ BotFightMode interface{}
 
 - *Type:* interface{}
 
-If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only).
+If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.id"></a>
+##### `ClearanceLevel`<sup>Optional</sup> <a name="ClearanceLevel" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.clearanceLevel"></a>
 
 ```go
-Id *string
+ClearanceLevel *string
 ```
 
 - *Type:* *string
 
-The identifier of this resource. This is the site key value.
+If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+---
+
+##### `EphemeralId`<sup>Optional</sup> <a name="EphemeralId" id="@cdktf/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.ephemeralId"></a>
+
+```go
+EphemeralId interface{}
+```
+
+- *Type:* interface{}
+
+Return the Ephemeral ID in /siteverify (ENT only).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
 
 ---
 
@@ -1090,9 +1178,9 @@ Offlabel interface{}
 
 - *Type:* interface{}
 
-Do not show any Cloudflare branding on the widget (Enterprise only).
+Do not show any Cloudflare branding on the widget (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -1106,7 +1194,7 @@ Region *string
 
 Region where this widget can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 

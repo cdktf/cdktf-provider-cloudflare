@@ -4,12 +4,12 @@
 
 ### ZoneHold <a name="ZoneHold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonehold"
 
 zonehold.NewZoneHold(scope Construct, id *string, config ZoneHoldConfig) ZoneHold
 ```
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetHoldAfter">ResetHoldAfter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetIncludeSubdomains">ResetIncludeSubdomains</a></code> | *No description.* |
 
 ---
@@ -373,12 +372,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetHoldAfter()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetIncludeSubdomains` <a name="ResetIncludeSubdomains" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetIncludeSubdomains"></a>
 
 ```go
@@ -399,7 +392,7 @@ func ResetIncludeSubdomains()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonehold"
 
 zonehold.ZoneHold_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonehold"
 
 zonehold.ZoneHold_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +438,7 @@ zonehold.ZoneHold_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonehold"
 
 zonehold.ZoneHold_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +452,7 @@ zonehold.ZoneHold_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonehold"
 
 zonehold.ZoneHold_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +481,7 @@ The construct id used in the generated config for the ZoneHold to import.
 
 The id of the existing ZoneHold that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,14 +511,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold">Hold</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput">HoldAfterInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdInput">HoldInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.includeSubdomainsInput">IncludeSubdomainsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold">Hold</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfter">HoldAfter</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.includeSubdomains">IncludeSubdomains</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
@@ -673,30 +664,30 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `HoldAfterInput`<sup>Optional</sup> <a name="HoldAfterInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput"></a>
+##### `Hold`<sup>Required</sup> <a name="Hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold"></a>
 
 ```go
-func HoldAfterInput() *string
+func Hold() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id"></a>
+
+```go
+func Id() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `HoldInput`<sup>Optional</sup> <a name="HoldInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdInput"></a>
+##### `HoldAfterInput`<sup>Optional</sup> <a name="HoldAfterInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput"></a>
 
 ```go
-func HoldInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.idInput"></a>
-
-```go
-func IdInput() *string
+func HoldAfterInput() *string
 ```
 
 - *Type:* *string
@@ -723,30 +714,10 @@ func ZoneIdInput() *string
 
 ---
 
-##### `Hold`<sup>Required</sup> <a name="Hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold"></a>
-
-```go
-func Hold() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `HoldAfter`<sup>Required</sup> <a name="HoldAfter" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfter"></a>
 
 ```go
 func HoldAfter() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -798,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonehold"
 
 &zonehold.ZoneHoldConfig {
 	Connection: interface{},
@@ -808,10 +779,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Hold: interface{},
 	ZoneId: *string,
 	HoldAfter: *string,
-	Id: *string,
 	IncludeSubdomains: interface{},
 }
 ```
@@ -827,11 +796,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold"
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold">Hold</a></code> | <code>interface{}</code> | Enablement status of the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">HoldAfter</a></code> | <code>*string</code> | The RFC3339 compatible timestamp when to automatically re-enable the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">IncludeSubdomains</a></code> | <code>interface{}</code> | Whether to extend to block any subdomain of the given zone. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">HoldAfter</a></code> | <code>*string</code> | If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">IncludeSubdomains</a></code> | <code>interface{}</code> | If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames. |
 
 ---
 
@@ -905,20 +872,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Hold`<sup>Required</sup> <a name="Hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold"></a>
-
-```go
-Hold interface{}
-```
-
-- *Type:* interface{}
-
-Enablement status of the zone hold.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold ZoneHold#hold}
-
----
-
 ##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId"></a>
 
 ```go
@@ -927,9 +880,9 @@ ZoneId *string
 
 - *Type:* *string
 
-The zone identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -941,24 +894,13 @@ HoldAfter *string
 
 - *Type:* *string
 
-The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
+If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+A past-dated `hold_after` value will have
+no effect on an existing, enabled hold. Providing an empty string will set its value
+to the current time.
 
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -970,9 +912,13 @@ IncludeSubdomains interface{}
 
 - *Type:* interface{}
 
-Whether to extend to block any subdomain of the given zone.
+If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+For example, a zone hold on a zone with the hostname
+'example.com' and include_subdomains=true will block 'example.com',
+'staging.example.com', 'api.staging.example.com', etc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 

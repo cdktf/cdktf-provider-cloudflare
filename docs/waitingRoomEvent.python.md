@@ -4,7 +4,7 @@
 
 ### WaitingRoomEvent <a name="WaitingRoomEvent" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer"></a>
 
@@ -29,7 +29,6 @@ waitingRoomEvent.WaitingRoomEvent(
   custom_page_html: str = None,
   description: str = None,
   disable_session_renewal: typing.Union[bool, IResolvable] = None,
-  id: str = None,
   new_users_per_minute: typing.Union[int, float] = None,
   prequeue_start_time: str = None,
   queueing_method: str = None,
@@ -51,22 +50,21 @@ waitingRoomEvent.WaitingRoomEvent(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.eventEndTime">event_end_time</a></code> | <code>str</code> | ISO 8601 timestamp that marks the end of the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.eventStartTime">event_start_time</a></code> | <code>str</code> | ISO 8601 timestamp that marks the start of the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.name">name</a></code> | <code>str</code> | A unique name to identify the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | The Waiting Room ID the event should apply to. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.customPageHtml">custom_page_html</a></code> | <code>str</code> | This is a templated html file that will be rendered at the edge. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.description">description</a></code> | <code>str</code> | A description to let users add more details about the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables automatic renewal of session cookies. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#id WaitingRoomEvent#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.newUsersPerMinute">new_users_per_minute</a></code> | <code>typing.Union[int, float]</code> | The number of new users that will be let into the route every minute. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.prequeueStartTime">prequeue_start_time</a></code> | <code>str</code> | ISO 8601 timestamp that marks when to begin queueing all users before the event starts. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.queueingMethod">queueing_method</a></code> | <code>str</code> | The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.shuffleAtEventStart">shuffle_at_event_start</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users in the prequeue will be shuffled randomly at the `event_start_time`. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If suspended, the event is ignored and traffic will be handled based on the waiting room configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.totalActiveUsers">total_active_users</a></code> | <code>typing.Union[int, float]</code> | The total number of active user sessions on the route at a point in time. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.eventEndTime">event_end_time</a></code> | <code>str</code> | An ISO 8601 timestamp that marks the end of the event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.eventStartTime">event_start_time</a></code> | <code>str</code> | An ISO 8601 timestamp that marks the start of the event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.name">name</a></code> | <code>str</code> | A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.customPageHtml">custom_page_html</a></code> | <code>str</code> | If set, the event will override the waiting room's `custom_page_html` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.description">description</a></code> | <code>str</code> | A note that you can use to add more details about the event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, the event will override the waiting room's `disable_session_renewal` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.newUsersPerMinute">new_users_per_minute</a></code> | <code>typing.Union[int, float]</code> | If set, the event will override the waiting room's `new_users_per_minute` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.prequeueStartTime">prequeue_start_time</a></code> | <code>str</code> | An ISO 8601 timestamp that marks when to begin queueing all users before the event starts. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.queueingMethod">queueing_method</a></code> | <code>str</code> | If set, the event will override the waiting room's `queueing_method` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | If set, the event will override the waiting room's `session_duration` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.shuffleAtEventStart">shuffle_at_event_start</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Suspends or allows an event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.totalActiveUsers">total_active_users</a></code> | <code>typing.Union[int, float]</code> | If set, the event will override the waiting room's `total_active_users` property while it is active. |
 
 ---
 
@@ -134,11 +132,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-ISO 8601 timestamp that marks the end of the event.
+An ISO 8601 timestamp that marks the end of the event.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
 
 ---
 
@@ -146,11 +142,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-ISO 8601 timestamp that marks the start of the event.
+An ISO 8601 timestamp that marks the start of the event.
 
-Must occur at least 1 minute before `event_end_time`. **Modifying this attribute will force creation of a new resource.**
+At this time, queued users will be processed with the event's configuration. The start time must be at least one minute before `event_end_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
 
 ---
 
@@ -158,11 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-A unique name to identify the event.
+A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed.
 
-Only alphanumeric characters, hyphens, and underscores are allowed. **Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
 
 ---
 
@@ -170,9 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The Waiting Room ID the event should apply to. **Modifying this attribute will force creation of a new resource.**.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}.
 
 ---
 
@@ -180,9 +172,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
 
 ---
 
@@ -190,9 +182,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-This is a templated html file that will be rendered at the edge.
+If set, the event will override the waiting room's `custom_page_html` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
+If null, the event will inherit it.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
 
 ---
 
@@ -200,9 +194,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-A description to let users add more details about the event.
+A note that you can use to add more details about the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
 
 ---
 
@@ -210,20 +204,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Disables automatic renewal of session cookies.
+If set, the event will override the waiting room's `disable_session_renewal` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
+If null, the event will inherit it.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#id WaitingRoomEvent#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
 
 ---
 
@@ -231,9 +216,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-The number of new users that will be let into the route every minute.
+If set, the event will override the waiting room's `new_users_per_minute` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
+If null, the event will inherit it. This can only be set if the event's `total_active_users` property is also set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
 
 ---
 
@@ -241,11 +228,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-ISO 8601 timestamp that marks when to begin queueing all users before the event starts.
+An ISO 8601 timestamp that marks when to begin queueing all users before the event starts.
 
-Must occur at least 5 minutes before `event_start_time`.
+The prequeue must start at least five minutes before `event_start_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
 
 ---
 
@@ -253,9 +240,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`.
+If set, the event will override the waiting room's `queueing_method` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
+If null, the event will inherit it.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
 
 ---
 
@@ -263,9 +252,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin.
+If set, the event will override the waiting room's `session_duration` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
+If null, the event will inherit it.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
 
 ---
 
@@ -273,11 +264,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Users in the prequeue will be shuffled randomly at the `event_start_time`.
+If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`.
 
-Requires that `prequeue_start_time` is not null. Defaults to `false`.
+Requires that `prequeue_start_time` is not null. This is useful for situations when many users will join the event prequeue at the same time and you want to shuffle them to ensure fairness. Naturally, it makes the most sense to enable this feature when the `queueing_method` during the event respects ordering such as **fifo**, or else the shuffling may be unnecessary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
 
 ---
 
@@ -285,9 +276,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-If suspended, the event is ignored and traffic will be handled based on the waiting room configuration.
+Suspends or allows an event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
+If set to `true`, the event is ignored and traffic will be handled based on the waiting room configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
 
 ---
 
@@ -295,9 +288,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-The total number of active user sessions on the route at a point in time.
+If set, the event will override the waiting room's `total_active_users` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+If null, the event will inherit it. This can only be set if the event's `new_users_per_minute` property is also set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
 
 ---
 
@@ -331,7 +326,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetCustomPageHtml">reset_custom_page_html</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetDisableSessionRenewal">reset_disable_session_renewal</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetNewUsersPerMinute">reset_new_users_per_minute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetPrequeueStartTime">reset_prequeue_start_time</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetQueueingMethod">reset_queueing_method</a></code> | *No description.* |
@@ -685,12 +679,6 @@ def reset_description() -> None
 def reset_disable_session_renewal() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_new_users_per_minute` <a name="reset_new_users_per_minute" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetNewUsersPerMinute"></a>
 
 ```python
@@ -847,7 +835,7 @@ The construct id used in the generated config for the WaitingRoomEvent to import
 
 The id of the existing WaitingRoomEvent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,13 +866,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.customPageHtmlInput">custom_page_html_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.disableSessionRenewalInput">disable_session_renewal_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.eventEndTimeInput">event_end_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.eventStartTimeInput">event_start_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.newUsersPerMinuteInput">new_users_per_minute_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.prequeueStartTimeInput">prequeue_start_time_input</a></code> | <code>str</code> | *No description.* |
@@ -900,7 +888,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.eventEndTime">event_end_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.eventStartTime">event_start_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.newUsersPerMinute">new_users_per_minute</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.prequeueStartTime">prequeue_start_time</a></code> | <code>str</code> | *No description.* |
@@ -1066,6 +1053,16 @@ created_on: str
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `modified_on`<sup>Required</sup> <a name="modified_on" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.modifiedOn"></a>
 
 ```python
@@ -1120,16 +1117,6 @@ event_end_time_input: str
 
 ```python
 event_start_time_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.idInput"></a>
-
-```python
-id_input: str
 ```
 
 - *Type:* str
@@ -1286,16 +1273,6 @@ event_start_time: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.name"></a>
 
 ```python
@@ -1439,7 +1416,6 @@ waitingRoomEvent.WaitingRoomEventConfig(
   custom_page_html: str = None,
   description: str = None,
   disable_session_renewal: typing.Union[bool, IResolvable] = None,
-  id: str = None,
   new_users_per_minute: typing.Union[int, float] = None,
   prequeue_start_time: str = None,
   queueing_method: str = None,
@@ -1461,22 +1437,21 @@ waitingRoomEvent.WaitingRoomEventConfig(
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.eventEndTime">event_end_time</a></code> | <code>str</code> | ISO 8601 timestamp that marks the end of the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.eventStartTime">event_start_time</a></code> | <code>str</code> | ISO 8601 timestamp that marks the start of the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.name">name</a></code> | <code>str</code> | A unique name to identify the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | The Waiting Room ID the event should apply to. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.customPageHtml">custom_page_html</a></code> | <code>str</code> | This is a templated html file that will be rendered at the edge. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.description">description</a></code> | <code>str</code> | A description to let users add more details about the event. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables automatic renewal of session cookies. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#id WaitingRoomEvent#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.newUsersPerMinute">new_users_per_minute</a></code> | <code>typing.Union[int, float]</code> | The number of new users that will be let into the route every minute. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.prequeueStartTime">prequeue_start_time</a></code> | <code>str</code> | ISO 8601 timestamp that marks when to begin queueing all users before the event starts. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.queueingMethod">queueing_method</a></code> | <code>str</code> | The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.shuffleAtEventStart">shuffle_at_event_start</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users in the prequeue will be shuffled randomly at the `event_start_time`. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If suspended, the event is ignored and traffic will be handled based on the waiting room configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.totalActiveUsers">total_active_users</a></code> | <code>typing.Union[int, float]</code> | The total number of active user sessions on the route at a point in time. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.eventEndTime">event_end_time</a></code> | <code>str</code> | An ISO 8601 timestamp that marks the end of the event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.eventStartTime">event_start_time</a></code> | <code>str</code> | An ISO 8601 timestamp that marks the start of the event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.name">name</a></code> | <code>str</code> | A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.customPageHtml">custom_page_html</a></code> | <code>str</code> | If set, the event will override the waiting room's `custom_page_html` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.description">description</a></code> | <code>str</code> | A note that you can use to add more details about the event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.disableSessionRenewal">disable_session_renewal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, the event will override the waiting room's `disable_session_renewal` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.newUsersPerMinute">new_users_per_minute</a></code> | <code>typing.Union[int, float]</code> | If set, the event will override the waiting room's `new_users_per_minute` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.prequeueStartTime">prequeue_start_time</a></code> | <code>str</code> | An ISO 8601 timestamp that marks when to begin queueing all users before the event starts. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.queueingMethod">queueing_method</a></code> | <code>str</code> | If set, the event will override the waiting room's `queueing_method` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.sessionDuration">session_duration</a></code> | <code>typing.Union[int, float]</code> | If set, the event will override the waiting room's `session_duration` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.shuffleAtEventStart">shuffle_at_event_start</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.suspended">suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Suspends or allows an event. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.totalActiveUsers">total_active_users</a></code> | <code>typing.Union[int, float]</code> | If set, the event will override the waiting room's `total_active_users` property while it is active. |
 
 ---
 
@@ -1558,11 +1533,9 @@ event_end_time: str
 
 - *Type:* str
 
-ISO 8601 timestamp that marks the end of the event.
+An ISO 8601 timestamp that marks the end of the event.
 
-**Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
 
 ---
 
@@ -1574,11 +1547,11 @@ event_start_time: str
 
 - *Type:* str
 
-ISO 8601 timestamp that marks the start of the event.
+An ISO 8601 timestamp that marks the start of the event.
 
-Must occur at least 1 minute before `event_end_time`. **Modifying this attribute will force creation of a new resource.**
+At this time, queued users will be processed with the event's configuration. The start time must be at least one minute before `event_end_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
 
 ---
 
@@ -1590,11 +1563,9 @@ name: str
 
 - *Type:* str
 
-A unique name to identify the event.
+A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed.
 
-Only alphanumeric characters, hyphens, and underscores are allowed. **Modifying this attribute will force creation of a new resource.**
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
 
 ---
 
@@ -1606,9 +1577,7 @@ waiting_room_id: str
 
 - *Type:* str
 
-The Waiting Room ID the event should apply to. **Modifying this attribute will force creation of a new resource.**.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}.
 
 ---
 
@@ -1620,9 +1589,9 @@ zone_id: str
 
 - *Type:* str
 
-The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
 
 ---
 
@@ -1634,9 +1603,11 @@ custom_page_html: str
 
 - *Type:* str
 
-This is a templated html file that will be rendered at the edge.
+If set, the event will override the waiting room's `custom_page_html` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
+If null, the event will inherit it.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
 
 ---
 
@@ -1648,9 +1619,9 @@ description: str
 
 - *Type:* str
 
-A description to let users add more details about the event.
+A note that you can use to add more details about the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
 
 ---
 
@@ -1662,24 +1633,11 @@ disable_session_renewal: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Disables automatic renewal of session cookies.
+If set, the event will override the waiting room's `disable_session_renewal` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
+If null, the event will inherit it.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#id WaitingRoomEvent#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
 
 ---
 
@@ -1691,9 +1649,11 @@ new_users_per_minute: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The number of new users that will be let into the route every minute.
+If set, the event will override the waiting room's `new_users_per_minute` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
+If null, the event will inherit it. This can only be set if the event's `total_active_users` property is also set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
 
 ---
 
@@ -1705,11 +1665,11 @@ prequeue_start_time: str
 
 - *Type:* str
 
-ISO 8601 timestamp that marks when to begin queueing all users before the event starts.
+An ISO 8601 timestamp that marks when to begin queueing all users before the event starts.
 
-Must occur at least 5 minutes before `event_start_time`.
+The prequeue must start at least five minutes before `event_start_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
 
 ---
 
@@ -1721,9 +1681,11 @@ queueing_method: str
 
 - *Type:* str
 
-The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`.
+If set, the event will override the waiting room's `queueing_method` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
+If null, the event will inherit it.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
 
 ---
 
@@ -1735,9 +1697,11 @@ session_duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the origin.
+If set, the event will override the waiting room's `session_duration` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
+If null, the event will inherit it.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
 
 ---
 
@@ -1749,11 +1713,11 @@ shuffle_at_event_start: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Users in the prequeue will be shuffled randomly at the `event_start_time`.
+If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`.
 
-Requires that `prequeue_start_time` is not null. Defaults to `false`.
+Requires that `prequeue_start_time` is not null. This is useful for situations when many users will join the event prequeue at the same time and you want to shuffle them to ensure fairness. Naturally, it makes the most sense to enable this feature when the `queueing_method` during the event respects ordering such as **fifo**, or else the shuffling may be unnecessary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
 
 ---
 
@@ -1765,9 +1729,11 @@ suspended: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-If suspended, the event is ignored and traffic will be handled based on the waiting room configuration.
+Suspends or allows an event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
+If set to `true`, the event is ignored and traffic will be handled based on the waiting room configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
 
 ---
 
@@ -1779,9 +1745,11 @@ total_active_users: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The total number of active user sessions on the route at a point in time.
+If set, the event will override the waiting room's `total_active_users` property while it is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+If null, the event will inherit it. This can only be set if the event's `new_users_per_minute` property is also set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface D1DatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#account_id D1Database#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
   */
   readonly accountId: string;
   /**
-  * The name of the D1 Database.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#name D1Database#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}
   */
   readonly name: string;
+  /**
+  * Specify the region to create the D1 primary, if available. If this option is omitted, the D1 will be created as close as possible to the current user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+  */
+  readonly primaryLocationHint?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database}
 */
 export class D1Database extends cdktf.TerraformResource {
 
@@ -43,7 +42,7 @@ export class D1Database extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a D1Database resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the D1Database to import
-  * @param importFromId The id of the existing D1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing D1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the D1Database to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +54,7 @@ export class D1Database extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +65,8 @@ export class D1Database extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_d1_database',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -79,6 +78,7 @@ export class D1Database extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._name = config.name;
+    this._primaryLocationHint = config.primaryLocationHint;
   }
 
   // ==========
@@ -96,6 +96,16 @@ export class D1Database extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // file_size - computed: true, optional: false, required: false
+  public get fileSize() {
+    return this.getNumberAttribute('file_size');
   }
 
   // id - computed: true, optional: false, required: false
@@ -116,6 +126,32 @@ export class D1Database extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // num_tables - computed: true, optional: false, required: false
+  public get numTables() {
+    return this.getNumberAttribute('num_tables');
+  }
+
+  // primary_location_hint - computed: false, optional: true, required: false
+  private _primaryLocationHint?: string; 
+  public get primaryLocationHint() {
+    return this.getStringAttribute('primary_location_hint');
+  }
+  public set primaryLocationHint(value: string) {
+    this._primaryLocationHint = value;
+  }
+  public resetPrimaryLocationHint() {
+    this._primaryLocationHint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryLocationHintInput() {
+    return this._primaryLocationHint;
+  }
+
+  // uuid - computed: true, optional: false, required: false
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
@@ -129,6 +165,7 @@ export class D1Database extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       name: cdktf.stringToTerraform(this._name),
+      primary_location_hint: cdktf.stringToTerraform(this._primaryLocationHint),
     };
   }
 
@@ -142,6 +179,12 @@ export class D1Database extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_location_hint: {
+        value: cdktf.stringToHclTerraform(this._primaryLocationHint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

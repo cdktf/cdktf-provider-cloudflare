@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,177 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface AddressMapConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier of a Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#account_id AddressMap#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#account_id AddressMap#account_id}
   */
   readonly accountId: string;
   /**
-  * If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map.
+  * If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map. If Cloudflare receives a TLS handshake from a client without an SNI, it will respond with the default SNI on those IPs. The default SNI can be any valid zone or subdomain owned by the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#default_sni AddressMap#default_sni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#default_sni AddressMap#default_sni}
   */
   readonly defaultSni?: string;
   /**
-  * Description of the address map.
+  * An optional description field which may be used to describe the types of IPs or zones on the map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#description AddressMap#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#description AddressMap#description}
   */
   readonly description?: string;
   /**
-  * Whether the Address Map is enabled or not.
+  * Whether the Address Map is enabled or not. Cloudflare's DNS will not respond with IP addresses on an Address Map until the map is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#enabled AddressMap#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#enabled AddressMap#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#id AddressMap#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#ips AddressMap#ips}
   */
-  readonly id?: string;
+  readonly ips?: string[];
   /**
-  * ips block
+  * Zones and Accounts which will be assigned IPs on this Address Map. A zone membership will take priority over an account membership.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#ips AddressMap#ips}
-  */
-  readonly ips?: AddressMapIps[] | cdktf.IResolvable;
-  /**
-  * memberships block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#memberships AddressMap#memberships}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#memberships AddressMap#memberships}
   */
   readonly memberships?: AddressMapMemberships[] | cdktf.IResolvable;
 }
-export interface AddressMapIps {
-  /**
-  * An IPv4 or IPv6 address.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#ip AddressMap#ip}
-  */
-  readonly ip: string;
-}
-
-export function addressMapIpsToTerraform(struct?: AddressMapIps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    ip: cdktf.stringToTerraform(struct!.ip),
-  }
-}
-
-
-export function addressMapIpsToHclTerraform(struct?: AddressMapIps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class AddressMapIpsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): AddressMapIps | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._ip !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ip = this._ip;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AddressMapIps | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._ip = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._ip = value.ip;
-    }
-  }
-
-  // ip - computed: false, optional: false, required: true
-  private _ip?: string; 
-  public get ip() {
-    return this.getStringAttribute('ip');
-  }
-  public set ip(value: string) {
-    this._ip = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipInput() {
-    return this._ip;
-  }
-}
-
-export class AddressMapIpsList extends cdktf.ComplexList {
-  public internalValue? : AddressMapIps[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): AddressMapIpsOutputReference {
-    return new AddressMapIpsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface AddressMapMemberships {
   /**
-  * Identifier of the account or zone.
+  * The identifier for the membership (eg. a zone or account tag).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#identifier AddressMap#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#identifier AddressMap#identifier}
   */
-  readonly identifier: string;
+  readonly identifier?: string;
   /**
   * The type of the membership.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#kind AddressMap#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#kind AddressMap#kind}
   */
-  readonly kind: string;
+  readonly kind?: string;
 }
 
 export function addressMapMembershipsToTerraform(struct?: AddressMapMemberships | cdktf.IResolvable): any {
@@ -277,7 +148,12 @@ export class AddressMapMembershipsOutputReference extends cdktf.ComplexObject {
     return this.getBooleanAttribute('can_delete');
   }
 
-  // identifier - computed: false, optional: false, required: true
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // identifier - computed: true, optional: true, required: false
   private _identifier?: string; 
   public get identifier() {
     return this.getStringAttribute('identifier');
@@ -285,18 +161,24 @@ export class AddressMapMembershipsOutputReference extends cdktf.ComplexObject {
   public set identifier(value: string) {
     this._identifier = value;
   }
+  public resetIdentifier() {
+    this._identifier = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get identifierInput() {
     return this._identifier;
   }
 
-  // kind - computed: false, optional: false, required: true
+  // kind - computed: true, optional: true, required: false
   private _kind?: string; 
   public get kind() {
     return this.getStringAttribute('kind');
   }
   public set kind(value: string) {
     this._kind = value;
+  }
+  public resetKind() {
+    this._kind = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get kindInput() {
@@ -325,7 +207,7 @@ export class AddressMapMembershipsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map cloudflare_address_map}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map cloudflare_address_map}
 */
 export class AddressMap extends cdktf.TerraformResource {
 
@@ -341,7 +223,7 @@ export class AddressMap extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AddressMap resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AddressMap to import
-  * @param importFromId The id of the existing AddressMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AddressMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AddressMap to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -353,7 +235,7 @@ export class AddressMap extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map cloudflare_address_map} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map cloudflare_address_map} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,8 +246,8 @@ export class AddressMap extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_address_map',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -379,8 +261,7 @@ export class AddressMap extends cdktf.TerraformResource {
     this._defaultSni = config.defaultSni;
     this._description = config.description;
     this._enabled = config.enabled;
-    this._id = config.id;
-    this._ips.internalValue = config.ips;
+    this._ips = config.ips;
     this._memberships.internalValue = config.memberships;
   }
 
@@ -409,6 +290,11 @@ export class AddressMap extends cdktf.TerraformResource {
   // can_modify_ips - computed: true, optional: false, required: false
   public get canModifyIps() {
     return this.getBooleanAttribute('can_modify_ips');
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
   }
 
   // default_sni - computed: false, optional: true, required: false
@@ -443,7 +329,7 @@ export class AddressMap extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // enabled - computed: false, optional: false, required: true
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -451,45 +337,37 @@ export class AddressMap extends cdktf.TerraformResource {
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
   // ips - computed: false, optional: true, required: false
-  private _ips = new AddressMapIpsList(this, "ips", true);
+  private _ips?: string[]; 
   public get ips() {
-    return this._ips;
+    return this.getListAttribute('ips');
   }
-  public putIps(value: AddressMapIps[] | cdktf.IResolvable) {
-    this._ips.internalValue = value;
+  public set ips(value: string[]) {
+    this._ips = value;
   }
   public resetIps() {
-    this._ips.internalValue = undefined;
+    this._ips = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipsInput() {
-    return this._ips.internalValue;
+    return this._ips;
   }
 
-  // memberships - computed: false, optional: true, required: false
-  private _memberships = new AddressMapMembershipsList(this, "memberships", true);
+  // memberships - computed: true, optional: true, required: false
+  private _memberships = new AddressMapMembershipsList(this, "memberships", false);
   public get memberships() {
     return this._memberships;
   }
@@ -504,6 +382,11 @@ export class AddressMap extends cdktf.TerraformResource {
     return this._memberships.internalValue;
   }
 
+  // modified_at - computed: true, optional: false, required: false
+  public get modifiedAt() {
+    return this.getStringAttribute('modified_at');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -514,9 +397,8 @@ export class AddressMap extends cdktf.TerraformResource {
       default_sni: cdktf.stringToTerraform(this._defaultSni),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      ips: cdktf.listMapper(addressMapIpsToTerraform, true)(this._ips.internalValue),
-      memberships: cdktf.listMapper(addressMapMembershipsToTerraform, true)(this._memberships.internalValue),
+      ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
+      memberships: cdktf.listMapper(addressMapMembershipsToTerraform, false)(this._memberships.internalValue),
     };
   }
 
@@ -546,22 +428,16 @@ export class AddressMap extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       ips: {
-        value: cdktf.listMapperHcl(addressMapIpsToHclTerraform, true)(this._ips.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "AddressMapIpsList",
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ips),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       memberships: {
-        value: cdktf.listMapperHcl(addressMapMembershipsToHclTerraform, true)(this._memberships.internalValue),
+        value: cdktf.listMapperHcl(addressMapMembershipsToHclTerraform, false)(this._memberships.internalValue),
         isBlock: true,
-        type: "set",
+        type: "list",
         storageClassType: "AddressMapMembershipsList",
       },
     };

@@ -4,7 +4,7 @@
 
 ### ZoneHold <a name="ZoneHold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer"></a>
 
@@ -23,11 +23,8 @@ ZoneHold.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .hold(java.lang.Boolean)
-    .hold(IResolvable)
     .zoneId(java.lang.String)
 //  .holdAfter(java.lang.String)
-//  .id(java.lang.String)
 //  .includeSubdomains(java.lang.Boolean)
 //  .includeSubdomains(IResolvable)
     .build();
@@ -44,11 +41,9 @@ ZoneHold.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.hold">hold</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enablement status of the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.holdAfter">holdAfter</a></code> | <code>java.lang.String</code> | The RFC3339 compatible timestamp when to automatically re-enable the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.includeSubdomains">includeSubdomains</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to extend to block any subdomain of the given zone. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.holdAfter">holdAfter</a></code> | <code>java.lang.String</code> | If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.includeSubdomains">includeSubdomains</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames. |
 
 ---
 
@@ -112,23 +107,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.hold"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Enablement status of the zone hold.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold ZoneHold#hold}
-
----
-
 ##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.zoneId"></a>
 
 - *Type:* java.lang.String
 
-The zone identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -136,20 +121,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
+If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+A past-dated `hold_after` value will have
+no effect on an existing, enabled hold. Providing an empty string will set its value
+to the current time.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -157,9 +135,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether to extend to block any subdomain of the given zone.
+If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+For example, a zone hold on a zone with the hostname
+'example.com' and include_subdomains=true will block 'example.com',
+'staging.example.com', 'api.staging.example.com', etc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 
@@ -191,7 +173,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetHoldAfter">resetHoldAfter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetIncludeSubdomains">resetIncludeSubdomains</a></code> | *No description.* |
 
 ---
@@ -492,12 +473,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetHoldAfter()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetIncludeSubdomains` <a name="resetIncludeSubdomains" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetIncludeSubdomains"></a>
 
 ```java
@@ -607,7 +582,7 @@ The construct id used in the generated config for the ZoneHold to import.
 
 The id of the existing ZoneHold that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,14 +612,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold">hold</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput">holdAfterInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdInput">holdInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.includeSubdomainsInput">includeSubdomainsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold">hold</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfter">holdAfter</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.includeSubdomains">includeSubdomains</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -792,30 +765,30 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `holdAfterInput`<sup>Optional</sup> <a name="holdAfterInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput"></a>
+##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold"></a>
 
 ```java
-public java.lang.String getHoldAfterInput();
+public IResolvable getHold();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id"></a>
+
+```java
+public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `holdInput`<sup>Optional</sup> <a name="holdInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdInput"></a>
+##### `holdAfterInput`<sup>Optional</sup> <a name="holdAfterInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput"></a>
 
 ```java
-public java.lang.Object getHoldInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
+public java.lang.String getHoldAfterInput();
 ```
 
 - *Type:* java.lang.String
@@ -842,30 +815,10 @@ public java.lang.String getZoneIdInput();
 
 ---
 
-##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold"></a>
-
-```java
-public java.lang.Object getHold();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `holdAfter`<sup>Required</sup> <a name="holdAfter" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfter"></a>
 
 ```java
 public java.lang.String getHoldAfter();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -931,11 +884,8 @@ ZoneHoldConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .hold(java.lang.Boolean)
-    .hold(IResolvable)
     .zoneId(java.lang.String)
 //  .holdAfter(java.lang.String)
-//  .id(java.lang.String)
 //  .includeSubdomains(java.lang.Boolean)
 //  .includeSubdomains(IResolvable)
     .build();
@@ -952,11 +902,9 @@ ZoneHoldConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold">hold</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enablement status of the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">holdAfter</a></code> | <code>java.lang.String</code> | The RFC3339 compatible timestamp when to automatically re-enable the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">includeSubdomains</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to extend to block any subdomain of the given zone. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">holdAfter</a></code> | <code>java.lang.String</code> | If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">includeSubdomains</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames. |
 
 ---
 
@@ -1030,20 +978,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold"></a>
-
-```java
-public java.lang.Object getHold();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Enablement status of the zone hold.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold ZoneHold#hold}
-
----
-
 ##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId"></a>
 
 ```java
@@ -1052,9 +986,9 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-The zone identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -1066,24 +1000,13 @@ public java.lang.String getHoldAfter();
 
 - *Type:* java.lang.String
 
-The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
+If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+A past-dated `hold_after` value will have
+no effect on an existing, enabled hold. Providing an empty string will set its value
+to the current time.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -1095,9 +1018,13 @@ public java.lang.Object getIncludeSubdomains();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether to extend to block any subdomain of the given zone.
+If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+For example, a zone hold on a zone with the hostname
+'example.com' and include_subdomains=true will block 'example.com',
+'staging.example.com', 'api.staging.example.com', etc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 

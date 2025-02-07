@@ -4,7 +4,7 @@
 
 ### ZoneHold <a name="ZoneHold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer"></a>
 
@@ -21,10 +21,8 @@ zoneHold.ZoneHold(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  hold: typing.Union[bool, IResolvable],
   zone_id: str,
   hold_after: str = None,
-  id: str = None,
   include_subdomains: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -40,11 +38,9 @@ zoneHold.ZoneHold(
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.hold">hold</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enablement status of the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.holdAfter">hold_after</a></code> | <code>str</code> | The RFC3339 compatible timestamp when to automatically re-enable the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to extend to block any subdomain of the given zone. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.holdAfter">hold_after</a></code> | <code>str</code> | If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames. |
 
 ---
 
@@ -108,23 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.hold"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enablement status of the zone hold.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold ZoneHold#hold}
-
----
-
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
-The zone identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -132,20 +118,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
+If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+A past-dated `hold_after` value will have
+no effect on an existing, enabled hold. Providing an empty string will set its value
+to the current time.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -153,9 +132,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether to extend to block any subdomain of the given zone.
+If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+For example, a zone hold on a zone with the hostname
+'example.com' and include_subdomains=true will block 'example.com',
+'staging.example.com', 'api.staging.example.com', etc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 
@@ -187,7 +170,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetHoldAfter">reset_hold_after</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetIncludeSubdomains">reset_include_subdomains</a></code> | *No description.* |
 
 ---
@@ -523,12 +505,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_hold_after() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_include_subdomains` <a name="reset_include_subdomains" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.resetIncludeSubdomains"></a>
 
 ```python
@@ -649,7 +625,7 @@ The construct id used in the generated config for the ZoneHold to import.
 
 The id of the existing ZoneHold that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,14 +655,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold">hold</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput">hold_after_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdInput">hold_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.includeSubdomainsInput">include_subdomains_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold">hold</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfter">hold_after</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
@@ -834,30 +808,30 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `hold_after_input`<sup>Optional</sup> <a name="hold_after_input" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput"></a>
+##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold"></a>
 
 ```python
-hold_after_input: str
+hold: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id"></a>
+
+```python
+id: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `hold_input`<sup>Optional</sup> <a name="hold_input" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdInput"></a>
+##### `hold_after_input`<sup>Optional</sup> <a name="hold_after_input" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfterInput"></a>
 
 ```python
-hold_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.idInput"></a>
-
-```python
-id_input: str
+hold_after_input: str
 ```
 
 - *Type:* str
@@ -884,30 +858,10 @@ zone_id_input: str
 
 ---
 
-##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.hold"></a>
-
-```python
-hold: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
 ##### `hold_after`<sup>Required</sup> <a name="hold_after" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.holdAfter"></a>
 
 ```python
 hold_after: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -969,10 +923,8 @@ zoneHold.ZoneHoldConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  hold: typing.Union[bool, IResolvable],
   zone_id: str,
   hold_after: str = None,
-  id: str = None,
   include_subdomains: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -988,11 +940,9 @@ zoneHold.ZoneHoldConfig(
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold">hold</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enablement status of the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The zone identifier to target for the resource. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">hold_after</a></code> | <code>str</code> | The RFC3339 compatible timestamp when to automatically re-enable the zone hold. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to extend to block any subdomain of the given zone. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.holdAfter">hold_after</a></code> | <code>str</code> | If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames. |
 
 ---
 
@@ -1066,20 +1016,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `hold`<sup>Required</sup> <a name="hold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.hold"></a>
-
-```python
-hold: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enablement status of the zone hold.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold ZoneHold#hold}
-
----
-
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.zoneId"></a>
 
 ```python
@@ -1088,9 +1024,9 @@ zone_id: str
 
 - *Type:* str
 
-The zone identifier to target for the resource.
+Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -1102,24 +1038,13 @@ hold_after: str
 
 - *Type:* str
 
-The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
+If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+A past-dated `hold_after` value will have
+no effect on an existing, enabled hold. Providing an empty string will set its value
+to the current time.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneHold.ZoneHoldConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -1131,9 +1056,13 @@ include_subdomains: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether to extend to block any subdomain of the given zone.
+If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+For example, a zone hold on a zone with the hostname
+'example.com' and include_subdomains=true will block 'example.com',
+'staging.example.com', 'api.staging.example.com', etc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 

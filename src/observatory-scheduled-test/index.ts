@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/observatory_scheduled_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface ObservatoryScheduledTestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The frequency to run the test. Available values: `DAILY`, `WEEKLY`. **Modifying this attribute will force creation of a new resource.**
+  * A URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
-  */
-  readonly frequency: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#id ObservatoryScheduledTest#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The region to run the test in. Available values: `us-central1`, `us-east1`, `us-east4`, `us-south1`, `us-west1`, `southamerica-east1`, `europe-north1`, `europe-southwest1`, `europe-west1`, `europe-west2`, `europe-west3`, `europe-west4`, `europe-west8`, `europe-west9`, `asia-east1`, `asia-south1`, `asia-southeast1`, `me-west1`, `australia-southeast1`. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
-  */
-  readonly region: string;
-  /**
-  * The page to run the test on. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
   */
   readonly url: string;
   /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
   */
   readonly zoneId: string;
-  /**
-  * timeouts block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#timeouts ObservatoryScheduledTest#timeouts}
-  */
-  readonly timeouts?: ObservatoryScheduledTestTimeouts;
 }
-export interface ObservatoryScheduledTestTimeouts {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#create ObservatoryScheduledTest#create}
-  */
-  readonly create?: string;
+export interface ObservatoryScheduledTestSchedule {
 }
 
-export function observatoryScheduledTestTimeoutsToTerraform(struct?: ObservatoryScheduledTestTimeouts | cdktf.IResolvable): any {
+export function observatoryScheduledTestScheduleToTerraform(struct?: ObservatoryScheduledTestSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
   }
 }
 
 
-export function observatoryScheduledTestTimeoutsToHclTerraform(struct?: ObservatoryScheduledTestTimeouts | cdktf.IResolvable): any {
+export function observatoryScheduledTestScheduleToHclTerraform(struct?: ObservatoryScheduledTestSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
-export class ObservatoryScheduledTestTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -98,55 +54,533 @@ export class ObservatoryScheduledTestTimeoutsOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ObservatoryScheduledTestTimeouts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): ObservatoryScheduledTestSchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.create = this._create;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObservatoryScheduledTestTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObservatoryScheduledTestSchedule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._create = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._create = value.create;
     }
   }
 
-  // create - computed: false, optional: true, required: false
-  private _create?: string; 
-  public get create() {
-    return this.getStringAttribute('create');
+  // frequency - computed: true, optional: false, required: false
+  public get frequency() {
+    return this.getStringAttribute('frequency');
   }
-  public set create(value: string) {
-    this._create = value;
+
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
   }
-  public resetCreate() {
-    this._create = undefined;
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
   }
-  // Temporarily expose input value. Use with caution.
-  public get createInput() {
-    return this._create;
+}
+export interface ObservatoryScheduledTestTestDesktopReportError {
+}
+
+export function observatoryScheduledTestTestDesktopReportErrorToTerraform(struct?: ObservatoryScheduledTestTestDesktopReportError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function observatoryScheduledTestTestDesktopReportErrorToHclTerraform(struct?: ObservatoryScheduledTestTestDesktopReportError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservatoryScheduledTestTestDesktopReportErrorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ObservatoryScheduledTestTestDesktopReportError | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservatoryScheduledTestTestDesktopReportError | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // code - computed: true, optional: false, required: false
+  public get code() {
+    return this.getStringAttribute('code');
+  }
+
+  // detail - computed: true, optional: false, required: false
+  public get detail() {
+    return this.getStringAttribute('detail');
+  }
+
+  // final_displayed_url - computed: true, optional: false, required: false
+  public get finalDisplayedUrl() {
+    return this.getStringAttribute('final_displayed_url');
+  }
+}
+export interface ObservatoryScheduledTestTestDesktopReport {
+}
+
+export function observatoryScheduledTestTestDesktopReportToTerraform(struct?: ObservatoryScheduledTestTestDesktopReport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function observatoryScheduledTestTestDesktopReportToHclTerraform(struct?: ObservatoryScheduledTestTestDesktopReport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservatoryScheduledTestTestDesktopReportOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ObservatoryScheduledTestTestDesktopReport | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservatoryScheduledTestTestDesktopReport | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cls - computed: true, optional: false, required: false
+  public get cls() {
+    return this.getNumberAttribute('cls');
+  }
+
+  // device_type - computed: true, optional: false, required: false
+  public get deviceType() {
+    return this.getStringAttribute('device_type');
+  }
+
+  // error - computed: true, optional: false, required: false
+  private _error = new ObservatoryScheduledTestTestDesktopReportErrorOutputReference(this, "error");
+  public get error() {
+    return this._error;
+  }
+
+  // fcp - computed: true, optional: false, required: false
+  public get fcp() {
+    return this.getNumberAttribute('fcp');
+  }
+
+  // json_report_url - computed: true, optional: false, required: false
+  public get jsonReportUrl() {
+    return this.getStringAttribute('json_report_url');
+  }
+
+  // lcp - computed: true, optional: false, required: false
+  public get lcp() {
+    return this.getNumberAttribute('lcp');
+  }
+
+  // performance_score - computed: true, optional: false, required: false
+  public get performanceScore() {
+    return this.getNumberAttribute('performance_score');
+  }
+
+  // si - computed: true, optional: false, required: false
+  public get si() {
+    return this.getNumberAttribute('si');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // tbt - computed: true, optional: false, required: false
+  public get tbt() {
+    return this.getNumberAttribute('tbt');
+  }
+
+  // ttfb - computed: true, optional: false, required: false
+  public get ttfb() {
+    return this.getNumberAttribute('ttfb');
+  }
+
+  // tti - computed: true, optional: false, required: false
+  public get tti() {
+    return this.getNumberAttribute('tti');
+  }
+}
+export interface ObservatoryScheduledTestTestMobileReportError {
+}
+
+export function observatoryScheduledTestTestMobileReportErrorToTerraform(struct?: ObservatoryScheduledTestTestMobileReportError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function observatoryScheduledTestTestMobileReportErrorToHclTerraform(struct?: ObservatoryScheduledTestTestMobileReportError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservatoryScheduledTestTestMobileReportErrorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ObservatoryScheduledTestTestMobileReportError | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservatoryScheduledTestTestMobileReportError | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // code - computed: true, optional: false, required: false
+  public get code() {
+    return this.getStringAttribute('code');
+  }
+
+  // detail - computed: true, optional: false, required: false
+  public get detail() {
+    return this.getStringAttribute('detail');
+  }
+
+  // final_displayed_url - computed: true, optional: false, required: false
+  public get finalDisplayedUrl() {
+    return this.getStringAttribute('final_displayed_url');
+  }
+}
+export interface ObservatoryScheduledTestTestMobileReport {
+}
+
+export function observatoryScheduledTestTestMobileReportToTerraform(struct?: ObservatoryScheduledTestTestMobileReport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function observatoryScheduledTestTestMobileReportToHclTerraform(struct?: ObservatoryScheduledTestTestMobileReport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservatoryScheduledTestTestMobileReportOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ObservatoryScheduledTestTestMobileReport | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservatoryScheduledTestTestMobileReport | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cls - computed: true, optional: false, required: false
+  public get cls() {
+    return this.getNumberAttribute('cls');
+  }
+
+  // device_type - computed: true, optional: false, required: false
+  public get deviceType() {
+    return this.getStringAttribute('device_type');
+  }
+
+  // error - computed: true, optional: false, required: false
+  private _error = new ObservatoryScheduledTestTestMobileReportErrorOutputReference(this, "error");
+  public get error() {
+    return this._error;
+  }
+
+  // fcp - computed: true, optional: false, required: false
+  public get fcp() {
+    return this.getNumberAttribute('fcp');
+  }
+
+  // json_report_url - computed: true, optional: false, required: false
+  public get jsonReportUrl() {
+    return this.getStringAttribute('json_report_url');
+  }
+
+  // lcp - computed: true, optional: false, required: false
+  public get lcp() {
+    return this.getNumberAttribute('lcp');
+  }
+
+  // performance_score - computed: true, optional: false, required: false
+  public get performanceScore() {
+    return this.getNumberAttribute('performance_score');
+  }
+
+  // si - computed: true, optional: false, required: false
+  public get si() {
+    return this.getNumberAttribute('si');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // tbt - computed: true, optional: false, required: false
+  public get tbt() {
+    return this.getNumberAttribute('tbt');
+  }
+
+  // ttfb - computed: true, optional: false, required: false
+  public get ttfb() {
+    return this.getNumberAttribute('ttfb');
+  }
+
+  // tti - computed: true, optional: false, required: false
+  public get tti() {
+    return this.getNumberAttribute('tti');
+  }
+}
+export interface ObservatoryScheduledTestTestRegion {
+}
+
+export function observatoryScheduledTestTestRegionToTerraform(struct?: ObservatoryScheduledTestTestRegion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function observatoryScheduledTestTestRegionToHclTerraform(struct?: ObservatoryScheduledTestTestRegion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservatoryScheduledTestTestRegionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ObservatoryScheduledTestTestRegion | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservatoryScheduledTestTestRegion | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // label - computed: true, optional: false, required: false
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+export interface ObservatoryScheduledTestTest {
+}
+
+export function observatoryScheduledTestTestToTerraform(struct?: ObservatoryScheduledTestTest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function observatoryScheduledTestTestToHclTerraform(struct?: ObservatoryScheduledTestTest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ObservatoryScheduledTestTestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ObservatoryScheduledTestTest | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservatoryScheduledTestTest | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // date - computed: true, optional: false, required: false
+  public get date() {
+    return this.getStringAttribute('date');
+  }
+
+  // desktop_report - computed: true, optional: false, required: false
+  private _desktopReport = new ObservatoryScheduledTestTestDesktopReportOutputReference(this, "desktop_report");
+  public get desktopReport() {
+    return this._desktopReport;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // mobile_report - computed: true, optional: false, required: false
+  private _mobileReport = new ObservatoryScheduledTestTestMobileReportOutputReference(this, "mobile_report");
+  public get mobileReport() {
+    return this._mobileReport;
+  }
+
+  // region - computed: true, optional: false, required: false
+  private _region = new ObservatoryScheduledTestTestRegionOutputReference(this, "region");
+  public get region() {
+    return this._region;
+  }
+
+  // schedule_frequency - computed: true, optional: false, required: false
+  public get scheduleFrequency() {
+    return this.getStringAttribute('schedule_frequency');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
 */
 export class ObservatoryScheduledTest extends cdktf.TerraformResource {
 
@@ -162,7 +596,7 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObservatoryScheduledTest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservatoryScheduledTest to import
-  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservatoryScheduledTest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -174,7 +608,7 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,8 +619,8 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_observatory_scheduled_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -196,58 +630,39 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._frequency = config.frequency;
-    this._id = config.id;
-    this._region = config.region;
     this._url = config.url;
     this._zoneId = config.zoneId;
-    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // frequency - computed: false, optional: false, required: true
-  private _frequency?: string; 
+  // frequency - computed: true, optional: false, required: false
   public get frequency() {
     return this.getStringAttribute('frequency');
   }
-  public set frequency(value: string) {
-    this._frequency = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get frequencyInput() {
-    return this._frequency;
-  }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // region - computed: false, optional: false, required: true
-  private _region?: string; 
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string) {
-    this._region = value;
+
+  // schedule - computed: true, optional: false, required: false
+  private _schedule = new ObservatoryScheduledTestScheduleOutputReference(this, "schedule");
+  public get schedule() {
+    return this._schedule;
   }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region;
+
+  // test - computed: true, optional: false, required: false
+  private _test = new ObservatoryScheduledTestTestOutputReference(this, "test");
+  public get test() {
+    return this._test;
   }
 
   // url - computed: false, optional: false, required: true
@@ -276,57 +691,19 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ObservatoryScheduledTestTimeoutsOutputReference(this, "timeouts");
-  public get timeouts() {
-    return this._timeouts;
-  }
-  public putTimeouts(value: ObservatoryScheduledTestTimeouts) {
-    this._timeouts.internalValue = value;
-  }
-  public resetTimeouts() {
-    this._timeouts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      frequency: cdktf.stringToTerraform(this._frequency),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
       url: cdktf.stringToTerraform(this._url),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      timeouts: observatoryScheduledTestTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      region: {
-        value: cdktf.stringToHclTerraform(this._region),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       url: {
         value: cdktf.stringToHclTerraform(this._url),
         isBlock: false,
@@ -338,12 +715,6 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      timeouts: {
-        value: observatoryScheduledTestTimeoutsToHclTerraform(this._timeouts.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "ObservatoryScheduledTestTimeouts",
       },
     };
 

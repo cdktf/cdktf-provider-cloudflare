@@ -8,7 +8,7 @@ const { CdktfProviderProject } = require("@cdktf/provider-project");
 const typescriptVersion = "~5.4.0";
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
-  terraformProvider: "cloudflare/cloudflare@~> 4.3",
+  terraformProvider: "cloudflare/cloudflare@~> 5.0",
   cdktfVersion: "^0.20.0",
   constructsVersion: "^10.3.0",
   minNodeVersion: "18.12.0",

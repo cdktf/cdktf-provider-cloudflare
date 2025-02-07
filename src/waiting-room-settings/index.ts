@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface WaitingRoomSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings#id WaitingRoomSettings#id}
+  * Whether to allow verified search engine crawlers to bypass all waiting rooms on this zone.
+  * Verified search engine crawlers will not be tracked or counted by the waiting room system,
+  * and will not appear in waiting room analytics.
+  * 
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Whether to allow verified search engine crawlers to bypass all waiting rooms on this zone. Defaults to `false`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings#search_engine_crawler_bypass WaitingRoomSettings#search_engine_crawler_bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings#search_engine_crawler_bypass WaitingRoomSettings#search_engine_crawler_bypass}
   */
   readonly searchEngineCrawlerBypass?: boolean | cdktf.IResolvable;
   /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings#zone_id WaitingRoomSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings#zone_id WaitingRoomSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}
 */
 export class WaitingRoomSettings extends cdktf.TerraformResource {
 
@@ -50,7 +41,7 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaitingRoomSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoomSettings to import
-  * @param importFromId The id of the existing WaitingRoomSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoomSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoomSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +53,7 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +64,8 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -84,7 +75,6 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._searchEngineCrawlerBypass = config.searchEngineCrawlerBypass;
     this._zoneId = config.zoneId;
   }
@@ -93,23 +83,12 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // search_engine_crawler_bypass - computed: false, optional: true, required: false
+  // search_engine_crawler_bypass - computed: true, optional: true, required: false
   private _searchEngineCrawlerBypass?: boolean | cdktf.IResolvable; 
   public get searchEngineCrawlerBypass() {
     return this.getBooleanAttribute('search_engine_crawler_bypass');
@@ -144,7 +123,6 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       search_engine_crawler_bypass: cdktf.booleanToTerraform(this._searchEngineCrawlerBypass),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
@@ -152,12 +130,6 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       search_engine_crawler_bypass: {
         value: cdktf.booleanToHclTerraform(this._searchEngineCrawlerBypass),
         isBlock: false,

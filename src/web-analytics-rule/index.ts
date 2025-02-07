@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,152 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface WebAnalyticsRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
   */
   readonly accountId: string;
   /**
-  * The host to apply the rule to.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
   */
-  readonly host: string;
+  readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#id WebAnalyticsRule#id}
+  * Whether the rule includes or excludes traffic from being measured.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
   */
-  readonly id?: string;
-  /**
-  * Whether the rule includes or excludes the matched traffic from being measured in Web Analytics.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
-  */
-  readonly inclusive: boolean | cdktf.IResolvable;
+  readonly inclusive?: boolean | cdktf.IResolvable;
   /**
   * Whether the rule is paused or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
   */
-  readonly isPaused: boolean | cdktf.IResolvable;
+  readonly isPaused?: boolean | cdktf.IResolvable;
   /**
-  * A list of paths to apply the rule to.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
   */
-  readonly paths: string[];
+  readonly paths?: string[];
   /**
-  * The Web Analytics ruleset id. **Modifying this attribute will force creation of a new resource.**
+  * The Web Analytics ruleset identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
   */
   readonly rulesetId: string;
-  /**
-  * timeouts block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#timeouts WebAnalyticsRule#timeouts}
-  */
-  readonly timeouts?: WebAnalyticsRuleTimeouts;
-}
-export interface WebAnalyticsRuleTimeouts {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#create WebAnalyticsRule#create}
-  */
-  readonly create?: string;
-}
-
-export function webAnalyticsRuleTimeoutsToTerraform(struct?: WebAnalyticsRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-  }
-}
-
-
-export function webAnalyticsRuleTimeoutsToHclTerraform(struct?: WebAnalyticsRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class WebAnalyticsRuleTimeoutsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): WebAnalyticsRuleTimeouts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._create !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.create = this._create;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: WebAnalyticsRuleTimeouts | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._create = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._create = value.create;
-    }
-  }
-
-  // create - computed: false, optional: true, required: false
-  private _create?: string; 
-  public get create() {
-    return this.getStringAttribute('create');
-  }
-  public set create(value: string) {
-    this._create = value;
-  }
-  public resetCreate() {
-    this._create = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createInput() {
-    return this._create;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}
 */
 export class WebAnalyticsRule extends cdktf.TerraformResource {
 
@@ -174,7 +58,7 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WebAnalyticsRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebAnalyticsRule to import
-  * @param importFromId The id of the existing WebAnalyticsRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebAnalyticsRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebAnalyticsRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -186,7 +70,7 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,8 +81,8 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web_analytics_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -210,12 +94,10 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._host = config.host;
-    this._id = config.id;
     this._inclusive = config.inclusive;
     this._isPaused = config.isPaused;
     this._paths = config.paths;
     this._rulesetId = config.rulesetId;
-    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -235,7 +117,12 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // host - computed: false, optional: false, required: true
+  // created - computed: true, optional: false, required: false
+  public get created() {
+    return this.getStringAttribute('created');
+  }
+
+  // host - computed: false, optional: true, required: false
   private _host?: string; 
   public get host() {
     return this.getStringAttribute('host');
@@ -243,28 +130,20 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   public set host(value: string) {
     this._host = value;
   }
+  public resetHost() {
+    this._host = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get hostInput() {
     return this._host;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // inclusive - computed: false, optional: false, required: true
+  // inclusive - computed: false, optional: true, required: false
   private _inclusive?: boolean | cdktf.IResolvable; 
   public get inclusive() {
     return this.getBooleanAttribute('inclusive');
@@ -272,12 +151,15 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   public set inclusive(value: boolean | cdktf.IResolvable) {
     this._inclusive = value;
   }
+  public resetInclusive() {
+    this._inclusive = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get inclusiveInput() {
     return this._inclusive;
   }
 
-  // is_paused - computed: false, optional: false, required: true
+  // is_paused - computed: false, optional: true, required: false
   private _isPaused?: boolean | cdktf.IResolvable; 
   public get isPaused() {
     return this.getBooleanAttribute('is_paused');
@@ -285,12 +167,15 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   public set isPaused(value: boolean | cdktf.IResolvable) {
     this._isPaused = value;
   }
+  public resetIsPaused() {
+    this._isPaused = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get isPausedInput() {
     return this._isPaused;
   }
 
-  // paths - computed: false, optional: false, required: true
+  // paths - computed: false, optional: true, required: false
   private _paths?: string[]; 
   public get paths() {
     return this.getListAttribute('paths');
@@ -298,9 +183,17 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   public set paths(value: string[]) {
     this._paths = value;
   }
+  public resetPaths() {
+    this._paths = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get pathsInput() {
     return this._paths;
+  }
+
+  // priority - computed: true, optional: false, required: false
+  public get priority() {
+    return this.getNumberAttribute('priority');
   }
 
   // ruleset_id - computed: false, optional: false, required: true
@@ -316,22 +209,6 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
     return this._rulesetId;
   }
 
-  // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new WebAnalyticsRuleTimeoutsOutputReference(this, "timeouts");
-  public get timeouts() {
-    return this._timeouts;
-  }
-  public putTimeouts(value: WebAnalyticsRuleTimeouts) {
-    this._timeouts.internalValue = value;
-  }
-  public resetTimeouts() {
-    this._timeouts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -340,12 +217,10 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       host: cdktf.stringToTerraform(this._host),
-      id: cdktf.stringToTerraform(this._id),
       inclusive: cdktf.booleanToTerraform(this._inclusive),
       is_paused: cdktf.booleanToTerraform(this._isPaused),
       paths: cdktf.listMapper(cdktf.stringToTerraform, false)(this._paths),
       ruleset_id: cdktf.stringToTerraform(this._rulesetId),
-      timeouts: webAnalyticsRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -359,12 +234,6 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
       },
       host: {
         value: cdktf.stringToHclTerraform(this._host),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -392,12 +261,6 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      timeouts: {
-        value: webAnalyticsRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "WebAnalyticsRuleTimeouts",
       },
     };
 

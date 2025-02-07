@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,143 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustTunnelCloudflaredConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * Cloudflare account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared#account_id ZeroTrustTunnelCloudflared#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared#account_id ZeroTrustTunnelCloudflared#account_id}
   */
   readonly accountId: string;
   /**
-  * Indicates if this is a locally or remotely configured tunnel. If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard or using tunnel_config, tunnel_route or tunnel_virtual_network resources. Available values: `local`, `cloudflare`. **Modifying this attribute will force creation of a new resource.**
+  * Indicates if this is a locally or remotely configured tunnel. If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared#config_src ZeroTrustTunnelCloudflared#config_src}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared#config_src ZeroTrustTunnelCloudflared#config_src}
   */
   readonly configSrc?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared#id ZeroTrustTunnelCloudflared#id}
+  * A user-friendly name for a tunnel.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * A user-friendly name chosen when the tunnel is created. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared#name ZeroTrustTunnelCloudflared#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared#name ZeroTrustTunnelCloudflared#name}
   */
   readonly name: string;
   /**
-  * 32 or more bytes, encoded as a base64 string. The Create Argo Tunnel endpoint sets this as the tunnel's password. Anyone wishing to run the tunnel needs this password. **Modifying this attribute will force creation of a new resource.**
+  * Sets the password required to run a locally-managed tunnel. Must be at least 32 bytes and encoded as a base64 string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared#secret ZeroTrustTunnelCloudflared#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared#tunnel_secret ZeroTrustTunnelCloudflared#tunnel_secret}
   */
-  readonly secret: string;
+  readonly tunnelSecret?: string;
+}
+export interface ZeroTrustTunnelCloudflaredConnections {
+}
+
+export function zeroTrustTunnelCloudflaredConnectionsToTerraform(struct?: ZeroTrustTunnelCloudflaredConnections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zeroTrustTunnelCloudflaredConnectionsToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConnections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZeroTrustTunnelCloudflaredConnectionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ZeroTrustTunnelCloudflaredConnections | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConnections | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+
+  // client_version - computed: true, optional: false, required: false
+  public get clientVersion() {
+    return this.getStringAttribute('client_version');
+  }
+
+  // colo_name - computed: true, optional: false, required: false
+  public get coloName() {
+    return this.getStringAttribute('colo_name');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // is_pending_reconnect - computed: true, optional: false, required: false
+  public get isPendingReconnect() {
+    return this.getBooleanAttribute('is_pending_reconnect');
+  }
+
+  // opened_at - computed: true, optional: false, required: false
+  public get openedAt() {
+    return this.getStringAttribute('opened_at');
+  }
+
+  // origin_ip - computed: true, optional: false, required: false
+  public get originIp() {
+    return this.getStringAttribute('origin_ip');
+  }
+
+  // uuid - computed: true, optional: false, required: false
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
+}
+
+export class ZeroTrustTunnelCloudflaredConnectionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ZeroTrustTunnelCloudflaredConnectionsOutputReference {
+    return new ZeroTrustTunnelCloudflaredConnectionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}
 */
 export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
 
@@ -62,7 +160,7 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustTunnelCloudflared resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustTunnelCloudflared to import
-  * @param importFromId The id of the existing ZeroTrustTunnelCloudflared that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustTunnelCloudflared that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustTunnelCloudflared to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +172,7 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,8 +183,8 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_tunnel_cloudflared',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -98,9 +196,8 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._configSrc = config.configSrc;
-    this._id = config.id;
     this._name = config.name;
-    this._secret = config.secret;
+    this._tunnelSecret = config.tunnelSecret;
   }
 
   // ==========
@@ -120,12 +217,12 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // cname - computed: true, optional: false, required: false
-  public get cname() {
-    return this.getStringAttribute('cname');
+  // account_tag - computed: true, optional: false, required: false
+  public get accountTag() {
+    return this.getStringAttribute('account_tag');
   }
 
-  // config_src - computed: false, optional: true, required: false
+  // config_src - computed: true, optional: true, required: false
   private _configSrc?: string; 
   public get configSrc() {
     return this.getStringAttribute('config_src');
@@ -141,20 +238,40 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
     return this._configSrc;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // connections - computed: true, optional: false, required: false
+  private _connections = new ZeroTrustTunnelCloudflaredConnectionsList(this, "connections", false);
+  public get connections() {
+    return this._connections;
+  }
+
+  // conns_active_at - computed: true, optional: false, required: false
+  public get connsActiveAt() {
+    return this.getStringAttribute('conns_active_at');
+  }
+
+  // conns_inactive_at - computed: true, optional: false, required: false
+  public get connsInactiveAt() {
+    return this.getStringAttribute('conns_inactive_at');
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // deleted_at - computed: true, optional: false, required: false
+  public get deletedAt() {
+    return this.getStringAttribute('deleted_at');
+  }
+
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+
+  // metadata - computed: true, optional: false, required: false
+  public get metadata() {
+    return this.getStringAttribute('metadata');
   }
 
   // name - computed: false, optional: false, required: true
@@ -170,22 +287,35 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // secret - computed: false, optional: false, required: true
-  private _secret?: string; 
-  public get secret() {
-    return this.getStringAttribute('secret');
-  }
-  public set secret(value: string) {
-    this._secret = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secretInput() {
-    return this._secret;
+  // remote_config - computed: true, optional: false, required: false
+  public get remoteConfig() {
+    return this.getBooleanAttribute('remote_config');
   }
 
-  // tunnel_token - computed: true, optional: false, required: false
-  public get tunnelToken() {
-    return this.getStringAttribute('tunnel_token');
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // tun_type - computed: true, optional: false, required: false
+  public get tunType() {
+    return this.getStringAttribute('tun_type');
+  }
+
+  // tunnel_secret - computed: false, optional: true, required: false
+  private _tunnelSecret?: string; 
+  public get tunnelSecret() {
+    return this.getStringAttribute('tunnel_secret');
+  }
+  public set tunnelSecret(value: string) {
+    this._tunnelSecret = value;
+  }
+  public resetTunnelSecret() {
+    this._tunnelSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnelSecretInput() {
+    return this._tunnelSecret;
   }
 
   // =========
@@ -196,9 +326,8 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       config_src: cdktf.stringToTerraform(this._configSrc),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      secret: cdktf.stringToTerraform(this._secret),
+      tunnel_secret: cdktf.stringToTerraform(this._tunnelSecret),
     };
   }
 
@@ -216,20 +345,14 @@ export class ZeroTrustTunnelCloudflared extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      secret: {
-        value: cdktf.stringToHclTerraform(this._secret),
+      tunnel_secret: {
+        value: cdktf.stringToHclTerraform(this._tunnelSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

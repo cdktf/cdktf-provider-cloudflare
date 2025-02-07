@@ -4,7 +4,7 @@
 
 ### CloudflareProvider <a name="CloudflareProvider" id="@cdktf/provider-cloudflare.provider.CloudflareProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs cloudflare}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs cloudflare}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer"></a>
 
@@ -15,17 +15,11 @@ provider.CloudflareProvider(
   scope: Construct,
   id: str,
   alias: str = None,
-  api_base_path: str = None,
-  api_client_logging: typing.Union[bool, IResolvable] = None,
-  api_hostname: str = None,
   api_key: str = None,
   api_token: str = None,
   api_user_service_key: str = None,
+  base_url: str = None,
   email: str = None,
-  max_backoff: typing.Union[int, float] = None,
-  min_backoff: typing.Union[int, float] = None,
-  retries: typing.Union[int, float] = None,
-  rps: typing.Union[int, float] = None,
   user_agent_operator_suffix: str = None
 )
 ```
@@ -35,17 +29,11 @@ provider.CloudflareProvider(
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiBasePath">api_base_path</a></code> | <code>str</code> | Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiClientLogging">api_client_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to print logs from the API client (using the default log library logger). |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiHostname">api_hostname</a></code> | <code>str</code> | Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | The API key for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiToken">api_token</a></code> | <code>str</code> | The API Token for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiUserServiceKey">api_user_service_key</a></code> | <code>str</code> | A special Cloudflare API key good for a restricted set of endpoints. |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.baseUrl">base_url</a></code> | <code>str</code> | Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.email">email</a></code> | <code>str</code> | A registered Cloudflare email address. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.maxBackoff">max_backoff</a></code> | <code>typing.Union[int, float]</code> | Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.minBackoff">min_backoff</a></code> | <code>typing.Union[int, float]</code> | Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.retries">retries</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries to perform when an API request fails. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.rps">rps</a></code> | <code>typing.Union[int, float]</code> | RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.userAgentOperatorSuffix">user_agent_operator_suffix</a></code> | <code>str</code> | A value to append to the HTTP User Agent for all API calls. |
 
 ---
@@ -74,39 +62,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#alias CloudflareProvider#alias}
-
----
-
-##### `api_base_path`<sup>Optional</sup> <a name="api_base_path" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiBasePath"></a>
-
-- *Type:* str
-
-Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_base_path CloudflareProvider#api_base_path}
-
----
-
-##### `api_client_logging`<sup>Optional</sup> <a name="api_client_logging" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiClientLogging"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Whether to print logs from the API client (using the default log library logger).
-
-Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_client_logging CloudflareProvider#api_client_logging}
-
----
-
-##### `api_hostname`<sup>Optional</sup> <a name="api_hostname" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.apiHostname"></a>
-
-- *Type:* str
-
-Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_hostname CloudflareProvider#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#alias CloudflareProvider#alias}
 
 ---
 
@@ -118,7 +74,7 @@ The API key for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/fundamentals/api/get-started/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_key CloudflareProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_key CloudflareProvider#api_key}
 
 ---
 
@@ -130,7 +86,7 @@ The API Token for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_token CloudflareProvider#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_token CloudflareProvider#api_token}
 
 ---
 
@@ -142,7 +98,17 @@ A special Cloudflare API key good for a restricted set of endpoints.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+
+---
+
+##### `base_url`<sup>Optional</sup> <a name="base_url" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.baseUrl"></a>
+
+- *Type:* str
+
+Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#base_url CloudflareProvider#base_url}
 
 ---
 
@@ -154,49 +120,7 @@ A registered Cloudflare email address.
 
 Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#email CloudflareProvider#email}
-
----
-
-##### `max_backoff`<sup>Optional</sup> <a name="max_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.maxBackoff"></a>
-
-- *Type:* typing.Union[int, float]
-
-Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#max_backoff CloudflareProvider#max_backoff}
-
----
-
-##### `min_backoff`<sup>Optional</sup> <a name="min_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.minBackoff"></a>
-
-- *Type:* typing.Union[int, float]
-
-Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#min_backoff CloudflareProvider#min_backoff}
-
----
-
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.retries"></a>
-
-- *Type:* typing.Union[int, float]
-
-Maximum number of retries to perform when an API request fails.
-
-Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#retries CloudflareProvider#retries}
-
----
-
-##### `rps`<sup>Optional</sup> <a name="rps" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.Initializer.parameter.rps"></a>
-
-- *Type:* typing.Union[int, float]
-
-RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#rps CloudflareProvider#rps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#email CloudflareProvider#email}
 
 ---
 
@@ -208,7 +132,7 @@ A value to append to the HTTP User Agent for all API calls.
 
 This value is not something most users need to modify however, if you are using a non-standard provider or operator configuration, this is recommended to assist in uniquely identifying your traffic. **Setting this value will remove the Terraform version from the HTTP User Agent string and may have unintended consequences**. Alternatively, can be configured using the `CLOUDFLARE_USER_AGENT_OPERATOR_SUFFIX` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
 
 ---
 
@@ -224,17 +148,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetAlias">reset_alias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiBasePath">reset_api_base_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiClientLogging">reset_api_client_logging</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiHostname">reset_api_hostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiKey">reset_api_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiToken">reset_api_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiUserServiceKey">reset_api_user_service_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetBaseUrl">reset_base_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetEmail">reset_email</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMaxBackoff">reset_max_backoff</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMinBackoff">reset_min_backoff</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRetries">reset_retries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRps">reset_rps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.resetUserAgentOperatorSuffix">reset_user_agent_operator_suffix</a></code> | *No description.* |
 
 ---
@@ -320,24 +238,6 @@ Adds this resource to the terraform JSON output.
 def reset_alias() -> None
 ```
 
-##### `reset_api_base_path` <a name="reset_api_base_path" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiBasePath"></a>
-
-```python
-def reset_api_base_path() -> None
-```
-
-##### `reset_api_client_logging` <a name="reset_api_client_logging" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiClientLogging"></a>
-
-```python
-def reset_api_client_logging() -> None
-```
-
-##### `reset_api_hostname` <a name="reset_api_hostname" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiHostname"></a>
-
-```python
-def reset_api_hostname() -> None
-```
-
 ##### `reset_api_key` <a name="reset_api_key" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetApiKey"></a>
 
 ```python
@@ -356,34 +256,16 @@ def reset_api_token() -> None
 def reset_api_user_service_key() -> None
 ```
 
+##### `reset_base_url` <a name="reset_base_url" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetBaseUrl"></a>
+
+```python
+def reset_base_url() -> None
+```
+
 ##### `reset_email` <a name="reset_email" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetEmail"></a>
 
 ```python
 def reset_email() -> None
-```
-
-##### `reset_max_backoff` <a name="reset_max_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMaxBackoff"></a>
-
-```python
-def reset_max_backoff() -> None
-```
-
-##### `reset_min_backoff` <a name="reset_min_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetMinBackoff"></a>
-
-```python
-def reset_min_backoff() -> None
-```
-
-##### `reset_retries` <a name="reset_retries" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRetries"></a>
-
-```python
-def reset_retries() -> None
-```
-
-##### `reset_rps` <a name="reset_rps" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetRps"></a>
-
-```python
-def reset_rps() -> None
 ```
 
 ##### `reset_user_agent_operator_suffix` <a name="reset_user_agent_operator_suffix" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.resetUserAgentOperatorSuffix"></a>
@@ -506,7 +388,7 @@ The construct id used in the generated config for the CloudflareProvider to impo
 
 The id of the existing CloudflareProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,29 +414,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePathInput">api_base_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLoggingInput">api_client_logging_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostnameInput">api_hostname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiKeyInput">api_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiTokenInput">api_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiUserServiceKeyInput">api_user_service_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrlInput">base_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoffInput">max_backoff_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoffInput">min_backoff_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retriesInput">retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rpsInput">rps_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.userAgentOperatorSuffixInput">user_agent_operator_suffix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePath">api_base_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLogging">api_client_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostname">api_hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiToken">api_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiUserServiceKey">api_user_service_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrl">base_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoff">max_backoff</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoff">min_backoff</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retries">retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rps">rps</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProvider.property.userAgentOperatorSuffix">user_agent_operator_suffix</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -661,36 +531,6 @@ alias_input: str
 
 ---
 
-##### `api_base_path_input`<sup>Optional</sup> <a name="api_base_path_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePathInput"></a>
-
-```python
-api_base_path_input: str
-```
-
-- *Type:* str
-
----
-
-##### `api_client_logging_input`<sup>Optional</sup> <a name="api_client_logging_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLoggingInput"></a>
-
-```python
-api_client_logging_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `api_hostname_input`<sup>Optional</sup> <a name="api_hostname_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostnameInput"></a>
-
-```python
-api_hostname_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `api_key_input`<sup>Optional</sup> <a name="api_key_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiKeyInput"></a>
 
 ```python
@@ -721,6 +561,16 @@ api_user_service_key_input: str
 
 ---
 
+##### `base_url_input`<sup>Optional</sup> <a name="base_url_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrlInput"></a>
+
+```python
+base_url_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `email_input`<sup>Optional</sup> <a name="email_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.emailInput"></a>
 
 ```python
@@ -731,80 +581,10 @@ email_input: str
 
 ---
 
-##### `max_backoff_input`<sup>Optional</sup> <a name="max_backoff_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoffInput"></a>
-
-```python
-max_backoff_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `min_backoff_input`<sup>Optional</sup> <a name="min_backoff_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoffInput"></a>
-
-```python
-min_backoff_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `retries_input`<sup>Optional</sup> <a name="retries_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retriesInput"></a>
-
-```python
-retries_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `rps_input`<sup>Optional</sup> <a name="rps_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rpsInput"></a>
-
-```python
-rps_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `user_agent_operator_suffix_input`<sup>Optional</sup> <a name="user_agent_operator_suffix_input" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.userAgentOperatorSuffixInput"></a>
 
 ```python
 user_agent_operator_suffix_input: str
-```
-
-- *Type:* str
-
----
-
-##### `api_base_path`<sup>Optional</sup> <a name="api_base_path" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiBasePath"></a>
-
-```python
-api_base_path: str
-```
-
-- *Type:* str
-
----
-
-##### `api_client_logging`<sup>Optional</sup> <a name="api_client_logging" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiClientLogging"></a>
-
-```python
-api_client_logging: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `api_hostname`<sup>Optional</sup> <a name="api_hostname" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.apiHostname"></a>
-
-```python
-api_hostname: str
 ```
 
 - *Type:* str
@@ -841,6 +621,16 @@ api_user_service_key: str
 
 ---
 
+##### `base_url`<sup>Optional</sup> <a name="base_url" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.baseUrl"></a>
+
+```python
+base_url: str
+```
+
+- *Type:* str
+
+---
+
 ##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.email"></a>
 
 ```python
@@ -848,46 +638,6 @@ email: str
 ```
 
 - *Type:* str
-
----
-
-##### `max_backoff`<sup>Optional</sup> <a name="max_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.maxBackoff"></a>
-
-```python
-max_backoff: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `min_backoff`<sup>Optional</sup> <a name="min_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.minBackoff"></a>
-
-```python
-min_backoff: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.retries"></a>
-
-```python
-retries: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `rps`<sup>Optional</sup> <a name="rps" id="@cdktf/provider-cloudflare.provider.CloudflareProvider.property.rps"></a>
-
-```python
-rps: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
 
 ---
 
@@ -930,17 +680,11 @@ from cdktf_cdktf_provider_cloudflare import provider
 
 provider.CloudflareProviderConfig(
   alias: str = None,
-  api_base_path: str = None,
-  api_client_logging: typing.Union[bool, IResolvable] = None,
-  api_hostname: str = None,
   api_key: str = None,
   api_token: str = None,
   api_user_service_key: str = None,
+  base_url: str = None,
   email: str = None,
-  max_backoff: typing.Union[int, float] = None,
-  min_backoff: typing.Union[int, float] = None,
-  retries: typing.Union[int, float] = None,
-  rps: typing.Union[int, float] = None,
   user_agent_operator_suffix: str = None
 )
 ```
@@ -950,17 +694,11 @@ provider.CloudflareProviderConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiBasePath">api_base_path</a></code> | <code>str</code> | Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiClientLogging">api_client_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to print logs from the API client (using the default log library logger). |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiHostname">api_hostname</a></code> | <code>str</code> | Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiKey">api_key</a></code> | <code>str</code> | The API key for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiToken">api_token</a></code> | <code>str</code> | The API Token for operations. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiUserServiceKey">api_user_service_key</a></code> | <code>str</code> | A special Cloudflare API key good for a restricted set of endpoints. |
+| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.baseUrl">base_url</a></code> | <code>str</code> | Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.email">email</a></code> | <code>str</code> | A registered Cloudflare email address. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.maxBackoff">max_backoff</a></code> | <code>typing.Union[int, float]</code> | Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.minBackoff">min_backoff</a></code> | <code>typing.Union[int, float]</code> | Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.retries">retries</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries to perform when an API request fails. |
-| <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.rps">rps</a></code> | <code>typing.Union[int, float]</code> | RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable. |
 | <code><a href="#@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.userAgentOperatorSuffix">user_agent_operator_suffix</a></code> | <code>str</code> | A value to append to the HTTP User Agent for all API calls. |
 
 ---
@@ -975,51 +713,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#alias CloudflareProvider#alias}
-
----
-
-##### `api_base_path`<sup>Optional</sup> <a name="api_base_path" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiBasePath"></a>
-
-```python
-api_base_path: str
-```
-
-- *Type:* str
-
-Configure the base path used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_BASE_PATH` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_base_path CloudflareProvider#api_base_path}
-
----
-
-##### `api_client_logging`<sup>Optional</sup> <a name="api_client_logging" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiClientLogging"></a>
-
-```python
-api_client_logging: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Whether to print logs from the API client (using the default log library logger).
-
-Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_client_logging CloudflareProvider#api_client_logging}
-
----
-
-##### `api_hostname`<sup>Optional</sup> <a name="api_hostname" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.apiHostname"></a>
-
-```python
-api_hostname: str
-```
-
-- *Type:* str
-
-Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_hostname CloudflareProvider#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#alias CloudflareProvider#alias}
 
 ---
 
@@ -1035,7 +729,7 @@ The API key for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/fundamentals/api/get-started/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_key CloudflareProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_key CloudflareProvider#api_key}
 
 ---
 
@@ -1051,7 +745,7 @@ The API Token for operations.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_token CloudflareProvider#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_token CloudflareProvider#api_token}
 
 ---
 
@@ -1067,7 +761,21 @@ A special Cloudflare API key good for a restricted set of endpoints.
 
 Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#api_user_service_key CloudflareProvider#api_user_service_key}
+
+---
+
+##### `base_url`<sup>Optional</sup> <a name="base_url" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.baseUrl"></a>
+
+```python
+base_url: str
+```
+
+- *Type:* str
+
+Value to override the default HTTP client base URL. Alternatively, can be configured using the `base_url` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#base_url CloudflareProvider#base_url}
 
 ---
 
@@ -1083,65 +791,7 @@ A registered Cloudflare email address.
 
 Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#email CloudflareProvider#email}
-
----
-
-##### `max_backoff`<sup>Optional</sup> <a name="max_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.maxBackoff"></a>
-
-```python
-max_backoff: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Maximum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MAX_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#max_backoff CloudflareProvider#max_backoff}
-
----
-
-##### `min_backoff`<sup>Optional</sup> <a name="min_backoff" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.minBackoff"></a>
-
-```python
-min_backoff: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Minimum backoff period in seconds after failed API calls. Alternatively, can be configured using the `CLOUDFLARE_MIN_BACKOFF` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#min_backoff CloudflareProvider#min_backoff}
-
----
-
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.retries"></a>
-
-```python
-retries: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Maximum number of retries to perform when an API request fails.
-
-Alternatively, can be configured using the `CLOUDFLARE_RETRIES` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#retries CloudflareProvider#retries}
-
----
-
-##### `rps`<sup>Optional</sup> <a name="rps" id="@cdktf/provider-cloudflare.provider.CloudflareProviderConfig.property.rps"></a>
-
-```python
-rps: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-RPS limit to apply when making calls to the API. Alternatively, can be configured using the `CLOUDFLARE_RPS` environment variable.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#rps CloudflareProvider#rps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#email CloudflareProvider#email}
 
 ---
 
@@ -1157,7 +807,7 @@ A value to append to the HTTP User Agent for all API calls.
 
 This value is not something most users need to modify however, if you are using a non-standard provider or operator configuration, this is recommended to assist in uniquely identifying your traffic. **Setting this value will remove the Terraform version from the HTTP User Agent string and may have unintended consequences**. Alternatively, can be configured using the `CLOUDFLARE_USER_AGENT_OPERATOR_SUFFIX` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs#user_agent_operator_suffix CloudflareProvider#user_agent_operator_suffix}
 
 ---
 

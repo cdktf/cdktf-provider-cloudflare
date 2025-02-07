@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface WorkersSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The account identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#id WorkersSecret#id}
+  * Name of the Workers for Platforms dispatch namespace.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#dispatch_namespace WorkersSecret#dispatch_namespace}
   */
-  readonly id?: string;
+  readonly dispatchNamespace: string;
   /**
-  * The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**
+  * The name of this secret, this is what will be used to access it inside the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#name WorkersSecret#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#name WorkersSecret#name}
   */
   readonly name: string;
   /**
-  * The name of the Worker script to associate the secret with. **Modifying this attribute will force creation of a new resource.**
+  * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
   */
   readonly scriptName: string;
   /**
-  * The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**
+  * The value of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#secret_text WorkersSecret#secret_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#text WorkersSecret#text}
   */
-  readonly secretText: string;
+  readonly text?: string;
+  /**
+  * The type of secret to put.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#type WorkersSecret#type}
+  */
+  readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret}
 */
 export class WorkersSecret extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class WorkersSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersSecret to import
-  * @param importFromId The id of the existing WorkersSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class WorkersSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,8 +85,8 @@ export class WorkersSecret extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_secret',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -97,10 +97,11 @@ export class WorkersSecret extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._id = config.id;
+    this._dispatchNamespace = config.dispatchNamespace;
     this._name = config.name;
     this._scriptName = config.scriptName;
-    this._secretText = config.secretText;
+    this._text = config.text;
+    this._type = config.type;
   }
 
   // ==========
@@ -120,20 +121,22 @@ export class WorkersSecret extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
+  // dispatch_namespace - computed: false, optional: false, required: true
+  private _dispatchNamespace?: string; 
+  public get dispatchNamespace() {
+    return this.getStringAttribute('dispatch_namespace');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
+  public set dispatchNamespace(value: string) {
+    this._dispatchNamespace = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get dispatchNamespaceInput() {
+    return this._dispatchNamespace;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
@@ -162,17 +165,36 @@ export class WorkersSecret extends cdktf.TerraformResource {
     return this._scriptName;
   }
 
-  // secret_text - computed: false, optional: false, required: true
-  private _secretText?: string; 
-  public get secretText() {
-    return this.getStringAttribute('secret_text');
+  // text - computed: false, optional: true, required: false
+  private _text?: string; 
+  public get text() {
+    return this.getStringAttribute('text');
   }
-  public set secretText(value: string) {
-    this._secretText = value;
+  public set text(value: string) {
+    this._text = value;
+  }
+  public resetText() {
+    this._text = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get secretTextInput() {
-    return this._secretText;
+  public get textInput() {
+    return this._text;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
   }
 
   // =========
@@ -182,10 +204,11 @@ export class WorkersSecret extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
+      dispatch_namespace: cdktf.stringToTerraform(this._dispatchNamespace),
       name: cdktf.stringToTerraform(this._name),
       script_name: cdktf.stringToTerraform(this._scriptName),
-      secret_text: cdktf.stringToTerraform(this._secretText),
+      text: cdktf.stringToTerraform(this._text),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 
@@ -197,8 +220,8 @@ export class WorkersSecret extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      dispatch_namespace: {
+        value: cdktf.stringToHclTerraform(this._dispatchNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -215,8 +238,14 @@ export class WorkersSecret extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      secret_text: {
-        value: cdktf.stringToHclTerraform(this._secretText),
+      text: {
+        value: cdktf.stringToHclTerraform(this._text),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A description about the lockdown entry. Typically used as a reminder or explanation for the lockdown.
+  * A list of IP addresses or CIDR ranges that will be allowed to access the URLs specified in the Zone Lockdown rule. You can include any number of `ip` or `ip_range` configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#description ZoneLockdown#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
   */
-  readonly description?: string;
+  readonly configurations: ZoneLockdownConfigurations[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#id ZoneLockdown#id}
+  * The URLs to include in the current WAF override. You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Boolean of whether this zone lockdown is currently paused. Defaults to `false`.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
-  */
-  readonly paused?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}
-  */
-  readonly priority?: number;
-  /**
-  * A list of simple wildcard patterns to match requests against. The order of the urls is unimportant.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
   */
   readonly urls: string[];
   /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
   */
   readonly zoneId: string;
-  /**
-  * configurations block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
-  */
-  readonly configurations: ZoneLockdownConfigurations[] | cdktf.IResolvable;
 }
 export interface ZoneLockdownConfigurations {
   /**
-  * The request property to target. Available values: `ip`, `ip_range`.
+  * The configuration target. You must set the target to `ip` when specifying an IP address in the Zone Lockdown rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
   */
-  readonly target: string;
+  readonly target?: string;
   /**
-  * The value to target. Depends on target's type. IP addresses should just be standard IPv4/IPv6 notation i.e. `192.0.2.1` or `2001:db8::/32` and IP ranges in CIDR format i.e. `192.0.2.0/24`.
+  * The IP address to match. This address will be compared to the IP address of incoming requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
   */
-  readonly value: string;
+  readonly value?: string;
 }
 
 export function zoneLockdownConfigurationsToTerraform(struct?: ZoneLockdownConfigurations | cdktf.IResolvable): any {
@@ -155,7 +127,7 @@ export class ZoneLockdownConfigurationsOutputReference extends cdktf.ComplexObje
     }
   }
 
-  // target - computed: false, optional: false, required: true
+  // target - computed: false, optional: true, required: false
   private _target?: string; 
   public get target() {
     return this.getStringAttribute('target');
@@ -163,18 +135,24 @@ export class ZoneLockdownConfigurationsOutputReference extends cdktf.ComplexObje
   public set target(value: string) {
     this._target = value;
   }
+  public resetTarget() {
+    this._target = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
     return this._target;
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
   public set value(value: string) {
     this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -203,7 +181,7 @@ export class ZoneLockdownConfigurationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}
 */
 export class ZoneLockdown extends cdktf.TerraformResource {
 
@@ -219,7 +197,7 @@ export class ZoneLockdown extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneLockdown resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneLockdown to import
-  * @param importFromId The id of the existing ZoneLockdown that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneLockdown that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneLockdown to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -231,7 +209,7 @@ export class ZoneLockdown extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,8 +220,8 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_lockdown',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -253,87 +231,57 @@ export class ZoneLockdown extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._description = config.description;
-    this._id = config.id;
-    this._paused = config.paused;
-    this._priority = config.priority;
+    this._configurations.internalValue = config.configurations;
     this._urls = config.urls;
     this._zoneId = config.zoneId;
-    this._configurations.internalValue = config.configurations;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
+  // configurations - computed: false, optional: false, required: true
+  private _configurations = new ZoneLockdownConfigurationsList(this, "configurations", false);
+  public get configurations() {
+    return this._configurations;
+  }
+  public putConfigurations(value: ZoneLockdownConfigurations[] | cdktf.IResolvable) {
+    this._configurations.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationsInput() {
+    return this._configurations.internalValue;
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
-  }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
 
-  // paused - computed: false, optional: true, required: false
-  private _paused?: boolean | cdktf.IResolvable; 
+  // paused - computed: true, optional: false, required: false
   public get paused() {
     return this.getBooleanAttribute('paused');
-  }
-  public set paused(value: boolean | cdktf.IResolvable) {
-    this._paused = value;
-  }
-  public resetPaused() {
-    this._paused = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pausedInput() {
-    return this._paused;
-  }
-
-  // priority - computed: false, optional: true, required: false
-  private _priority?: number; 
-  public get priority() {
-    return this.getNumberAttribute('priority');
-  }
-  public set priority(value: number) {
-    this._priority = value;
-  }
-  public resetPriority() {
-    this._priority = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get priorityInput() {
-    return this._priority;
   }
 
   // urls - computed: false, optional: false, required: true
   private _urls?: string[]; 
   public get urls() {
-    return cdktf.Fn.tolist(this.getListAttribute('urls'));
+    return this.getListAttribute('urls');
   }
   public set urls(value: string[]) {
     this._urls = value;
@@ -356,65 +304,30 @@ export class ZoneLockdown extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // configurations - computed: false, optional: false, required: true
-  private _configurations = new ZoneLockdownConfigurationsList(this, "configurations", true);
-  public get configurations() {
-    return this._configurations;
-  }
-  public putConfigurations(value: ZoneLockdownConfigurations[] | cdktf.IResolvable) {
-    this._configurations.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get configurationsInput() {
-    return this._configurations.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      paused: cdktf.booleanToTerraform(this._paused),
-      priority: cdktf.numberToTerraform(this._priority),
+      configurations: cdktf.listMapper(zoneLockdownConfigurationsToTerraform, false)(this._configurations.internalValue),
       urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._urls),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      configurations: cdktf.listMapper(zoneLockdownConfigurationsToTerraform, true)(this._configurations.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      paused: {
-        value: cdktf.booleanToHclTerraform(this._paused),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
+      configurations: {
+        value: cdktf.listMapperHcl(zoneLockdownConfigurationsToHclTerraform, false)(this._configurations.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ZoneLockdownConfigurationsList",
       },
       urls: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._urls),
         isBlock: false,
-        type: "set",
+        type: "list",
         storageClassType: "stringList",
       },
       zone_id: {
@@ -422,12 +335,6 @@ export class ZoneLockdown extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      configurations: {
-        value: cdktf.listMapperHcl(zoneLockdownConfigurationsToHclTerraform, true)(this._configurations.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "ZoneLockdownConfigurationsList",
       },
     };
 

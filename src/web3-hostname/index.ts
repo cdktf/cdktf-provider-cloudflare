@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,44 +10,37 @@ export interface Web3HostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional description of the hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#description Web3Hostname#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname#description Web3Hostname#description}
   */
   readonly description?: string;
   /**
   * DNSLink value used if the target is ipfs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
   */
   readonly dnslink?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#id Web3Hostname#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The hostname that will point to the target gateway via CNAME.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#name Web3Hostname#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname#name Web3Hostname#name}
   */
   readonly name: string;
   /**
   * Target gateway of the hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#target Web3Hostname#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname#target Web3Hostname#target}
   */
   readonly target: string;
   /**
-  * The zone identifier to target for the resource.
+  * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname cloudflare_web3_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname cloudflare_web3_hostname}
 */
 export class Web3Hostname extends cdktf.TerraformResource {
 
@@ -68,7 +56,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Web3Hostname resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Web3Hostname to import
-  * @param importFromId The id of the existing Web3Hostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Web3Hostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Web3Hostname to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +68,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,8 +79,8 @@ export class Web3Hostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web3_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -104,7 +92,6 @@ export class Web3Hostname extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._dnslink = config.dnslink;
-    this._id = config.id;
     this._name = config.name;
     this._target = config.target;
     this._zoneId = config.zoneId;
@@ -151,20 +138,9 @@ export class Web3Hostname extends cdktf.TerraformResource {
     return this._dnslink;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // modified_on - computed: true, optional: false, required: false
@@ -224,7 +200,6 @@ export class Web3Hostname extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       dnslink: cdktf.stringToTerraform(this._dnslink),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       target: cdktf.stringToTerraform(this._target),
       zone_id: cdktf.stringToTerraform(this._zoneId),
@@ -241,12 +216,6 @@ export class Web3Hostname extends cdktf.TerraformResource {
       },
       dnslink: {
         value: cdktf.stringToHclTerraform(this._dnslink),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

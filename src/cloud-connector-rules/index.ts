@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface CloudConnectorRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The zone identifier to target for the resource.
+  * List of Cloud Connector rules
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
+  */
+  readonly rules: CloudConnectorRulesRules[] | cdktf.IResolvable;
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
   */
   readonly zoneId: string;
-  /**
-  * rules block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
-  */
-  readonly rules?: CloudConnectorRulesRules[] | cdktf.IResolvable;
 }
 export interface CloudConnectorRulesRulesParameters {
   /**
-  * Host parameter for cloud connector rule
+  * Host to perform Cloud Connection to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
   */
-  readonly host: string;
+  readonly host?: string;
 }
 
 export function cloudConnectorRulesRulesParametersToTerraform(struct?: CloudConnectorRulesRulesParameters | cdktf.IResolvable): any {
@@ -105,13 +100,16 @@ export class CloudConnectorRulesRulesParametersOutputReference extends cdktf.Com
     }
   }
 
-  // host - computed: false, optional: false, required: true
+  // host - computed: false, optional: true, required: false
   private _host?: string; 
   public get host() {
     return this.getStringAttribute('host');
   }
   public set host(value: string) {
     this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hostInput() {
@@ -120,35 +118,36 @@ export class CloudConnectorRulesRulesParametersOutputReference extends cdktf.Com
 }
 export interface CloudConnectorRulesRules {
   /**
-  * Brief summary of the cloud connector rule and its intended use.
+  * Cloud Provider type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#cloud_provider CloudConnectorRules#cloud_provider}
+  */
+  readonly cloudProvider?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}
   */
   readonly description?: string;
   /**
-  * Whether the headers rule is active.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Criteria for an HTTP request to trigger the cloud connector rule. Uses the Firewall Rules expression language based on Wireshark display filters.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}
   */
-  readonly expression: string;
+  readonly expression?: string;
   /**
-  * Type of provider. Available values: `aws_s3`, `cloudflare_r2`, `azure_storage`, `gcp_storage`
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#provider CloudConnectorRules#provider}
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly provider: string;
+  readonly id?: string;
   /**
-  * parameters block
+  * Parameters of Cloud Connector Rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
   */
-  readonly parameters: CloudConnectorRulesRulesParameters;
+  readonly parameters?: CloudConnectorRulesRulesParameters;
 }
 
 export function cloudConnectorRulesRulesToTerraform(struct?: CloudConnectorRulesRules | cdktf.IResolvable): any {
@@ -157,10 +156,11 @@ export function cloudConnectorRulesRulesToTerraform(struct?: CloudConnectorRules
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    cloud_provider: cdktf.stringToTerraform(struct!.cloudProvider),
     description: cdktf.stringToTerraform(struct!.description),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     expression: cdktf.stringToTerraform(struct!.expression),
-    provider: cdktf.stringToTerraform(struct!.provider),
+    id: cdktf.stringToTerraform(struct!.id),
     parameters: cloudConnectorRulesRulesParametersToTerraform(struct!.parameters),
   }
 }
@@ -172,6 +172,12 @@ export function cloudConnectorRulesRulesToHclTerraform(struct?: CloudConnectorRu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    cloud_provider: {
+      value: cdktf.stringToHclTerraform(struct!.cloudProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     description: {
       value: cdktf.stringToHclTerraform(struct!.description),
       isBlock: false,
@@ -190,8 +196,8 @@ export function cloudConnectorRulesRulesToHclTerraform(struct?: CloudConnectorRu
       type: "simple",
       storageClassType: "string",
     },
-    provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -228,6 +234,10 @@ export class CloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._cloudProvider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudProvider = this._cloudProvider;
+    }
     if (this._description !== undefined) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
@@ -240,9 +250,9 @@ export class CloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.expression = this._expression;
     }
-    if (this._provider !== undefined) {
+    if (this._id !== undefined) {
       hasAnyValues = true;
-      internalValueResult.provider = this._provider;
+      internalValueResult.id = this._id;
     }
     if (this._parameters?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -255,10 +265,11 @@ export class CloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._cloudProvider = undefined;
       this._description = undefined;
       this._enabled = undefined;
       this._expression = undefined;
-      this._provider = undefined;
+      this._id = undefined;
       this._parameters.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -268,12 +279,29 @@ export class CloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._cloudProvider = value.cloudProvider;
       this._description = value.description;
       this._enabled = value.enabled;
       this._expression = value.expression;
-      this._provider = value.provider;
+      this._id = value.id;
       this._parameters.internalValue = value.parameters;
     }
+  }
+
+  // cloud_provider - computed: false, optional: true, required: false
+  private _cloudProvider?: string; 
+  public get cloudProvider() {
+    return this.getStringAttribute('cloud_provider');
+  }
+  public set cloudProvider(value: string) {
+    this._cloudProvider = value;
+  }
+  public resetCloudProvider() {
+    this._cloudProvider = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudProviderInput() {
+    return this._cloudProvider;
   }
 
   // description - computed: false, optional: true, required: false
@@ -308,7 +336,7 @@ export class CloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject
     return this._enabled;
   }
 
-  // expression - computed: false, optional: false, required: true
+  // expression - computed: false, optional: true, required: false
   private _expression?: string; 
   public get expression() {
     return this.getStringAttribute('expression');
@@ -316,31 +344,40 @@ export class CloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject
   public set expression(value: string) {
     this._expression = value;
   }
+  public resetExpression() {
+    this._expression = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get expressionInput() {
     return this._expression;
   }
 
-  // provider - computed: false, optional: false, required: true
-  private _provider?: string; 
-  public get provider() {
-    return this.getStringAttribute('provider');
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
   }
-  public set provider(value: string) {
-    this._provider = value;
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get providerInput() {
-    return this._provider;
+  public get idInput() {
+    return this._id;
   }
 
-  // parameters - computed: false, optional: false, required: true
+  // parameters - computed: false, optional: true, required: false
   private _parameters = new CloudConnectorRulesRulesParametersOutputReference(this, "parameters");
   public get parameters() {
     return this._parameters;
   }
   public putParameters(value: CloudConnectorRulesRulesParameters) {
     this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parametersInput() {
@@ -369,7 +406,7 @@ export class CloudConnectorRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}
 */
 export class CloudConnectorRules extends cdktf.TerraformResource {
 
@@ -385,7 +422,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudConnectorRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudConnectorRules to import
-  * @param importFromId The id of the existing CloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudConnectorRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -397,7 +434,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -408,8 +445,8 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloud_connector_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -419,13 +456,26 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._zoneId = config.zoneId;
     this._rules.internalValue = config.rules;
+    this._zoneId = config.zoneId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // rules - computed: false, optional: false, required: true
+  private _rules = new CloudConnectorRulesRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
+  }
+  public putRules(value: CloudConnectorRulesRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules.internalValue;
+  }
 
   // zone_id - computed: false, optional: false, required: true
   private _zoneId?: string; 
@@ -440,46 +490,30 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
     return this._zoneId;
   }
 
-  // rules - computed: false, optional: true, required: false
-  private _rules = new CloudConnectorRulesRulesList(this, "rules", false);
-  public get rules() {
-    return this._rules;
-  }
-  public putRules(value: CloudConnectorRulesRules[] | cdktf.IResolvable) {
-    this._rules.internalValue = value;
-  }
-  public resetRules() {
-    this._rules.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rulesInput() {
-    return this._rules.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      rules: cdktf.listMapper(cloudConnectorRulesRulesToTerraform, false)(this._rules.internalValue),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      rules: cdktf.listMapper(cloudConnectorRulesRulesToTerraform, true)(this._rules.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      rules: {
+        value: cdktf.listMapperHcl(cloudConnectorRulesRulesToHclTerraform, false)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudConnectorRulesRulesList",
+      },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      rules: {
-        value: cdktf.listMapperHcl(cloudConnectorRulesRulesToHclTerraform, true)(this._rules.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "CloudConnectorRulesRulesList",
       },
     };
 

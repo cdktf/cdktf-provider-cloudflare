@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface TotalTlsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The Certificate Authority that Total TLS certificates will be issued through. Available values: `google`, `lets_encrypt`.
+  * The Certificate Authority that Total TLS certificates will be issued through.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
   */
   readonly certificateAuthority?: string;
   /**
-  * Enable Total TLS for the zone.
+  * If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls#enabled TotalTls#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls#enabled TotalTls#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls#id TotalTls#id}
+  * Identifier
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls cloudflare_total_tls}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls cloudflare_total_tls}
 */
 export class TotalTls extends cdktf.TerraformResource {
 
@@ -56,7 +44,7 @@ export class TotalTls extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TotalTls resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TotalTls to import
-  * @param importFromId The id of the existing TotalTls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TotalTls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TotalTls to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +56,7 @@ export class TotalTls extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls cloudflare_total_tls} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/total_tls cloudflare_total_tls} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,8 +67,8 @@ export class TotalTls extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_total_tls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '4.52.0',
-        providerVersionConstraint: '~> 4.3'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -92,7 +80,6 @@ export class TotalTls extends cdktf.TerraformResource {
     });
     this._certificateAuthority = config.certificateAuthority;
     this._enabled = config.enabled;
-    this._id = config.id;
     this._zoneId = config.zoneId;
   }
 
@@ -129,20 +116,14 @@ export class TotalTls extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+
+  // validity_period - computed: true, optional: false, required: false
+  public get validityPeriod() {
+    return this.getNumberAttribute('validity_period');
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -166,7 +147,6 @@ export class TotalTls extends cdktf.TerraformResource {
     return {
       certificate_authority: cdktf.stringToTerraform(this._certificateAuthority),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
@@ -184,12 +164,6 @@ export class TotalTls extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),
