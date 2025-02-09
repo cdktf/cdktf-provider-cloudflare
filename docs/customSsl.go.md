@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customSsl.CustomSsl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.NewCustomSsl(scope Construct, id *string, config CustomSslConfig) CustomSsl
 ```
@@ -419,7 +419,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.customSsl.CustomSsl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.CustomSsl_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.customSsl.CustomSsl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.CustomSsl_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ customssl.CustomSsl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.customSsl.CustomSsl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.CustomSsl_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ customssl.CustomSsl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.customSsl.CustomSsl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.CustomSsl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -972,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customSsl.CustomSslConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 &customssl.CustomSslConfig {
 	Connection: interface{},
@@ -986,7 +986,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
 	PrivateKey: *string,
 	ZoneId: *string,
 	BundleMethod: *string,
-	GeoRestrictions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.customSsl.CustomSslGeoRestrictions,
+	GeoRestrictions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.customSsl.CustomSslGeoRestrictions,
 	Policy: *string,
 	Type: *string,
 }
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customSsl.CustomSslGeoRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 &customssl.CustomSslGeoRestrictions {
 	Label: *string,
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 &customssl.CustomSslKeylessServer {
 
@@ -1237,7 +1237,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 &customssl.CustomSslKeylessServerTunnel {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customSsl.CustomSslGeoRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.NewCustomSslGeoRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomSslGeoRestrictionsOutputReference
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.NewCustomSslKeylessServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomSslKeylessServerOutputReference
 ```
@@ -1889,7 +1889,7 @@ func InternalValue() CustomSslKeylessServer
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerTunnelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customssl"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customssl"
 
 customssl.NewCustomSslKeylessServerTunnelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomSslKeylessServerTunnelOutputReference
 ```

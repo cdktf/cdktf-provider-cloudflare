@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 magictransitconnector.NewMagicTransitConnector(scope Construct, id *string, config MagicTransitConnectorConfig) MagicTransitConnector
 ```
@@ -413,7 +413,7 @@ func ResetTimezone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ magictransitconnector.MagicTransitConnector_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ magictransitconnector.MagicTransitConnector_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 &magictransitconnector.MagicTransitConnectorConfig {
 	Connection: interface{},
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 &magictransitconnector.MagicTransitConnectorDevice {
 
@@ -1128,7 +1128,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransi
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitconnector"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitconnector"
 
 magictransitconnector.NewMagicTransitConnectorDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicTransitConnectorDeviceOutputReference
 ```

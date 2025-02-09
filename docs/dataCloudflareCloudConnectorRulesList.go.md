@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.NewDataCloudflareCloudConnectorRulesList(scope Construct, id *string, config DataCloudflareCloudConnectorRulesListConfig) DataCloudflareCloudConnectorRulesList
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesList_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesList_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 &datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesListConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 &datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesListResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesListResultParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 &datacloudflarecloudconnectorruleslist.DataCloudflareCloudConnectorRulesListResultParameters {
 
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.NewDataCloudflareCloudConnectorRulesListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCloudConnectorRulesListResultList
 ```
@@ -916,7 +916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.NewDataCloudflareCloudConnectorRulesListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCloudConnectorRulesListResultOutputReference
 ```
@@ -1249,7 +1249,7 @@ func InternalValue() DataCloudflareCloudConnectorRulesListResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudConnectorRulesList.DataCloudflareCloudConnectorRulesListResultParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudconnectorruleslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudconnectorruleslist"
 
 datacloudflarecloudconnectorruleslist.NewDataCloudflareCloudConnectorRulesListResultParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCloudConnectorRulesListResultParametersOutputReference
 ```

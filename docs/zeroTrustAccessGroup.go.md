@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroup(scope Construct, id *string, config ZeroTrustAccessGroupConfig) ZeroTrustAccessGroup
 ```
@@ -452,7 +452,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.ZeroTrustAccessGroup_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.ZeroTrustAccessGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ zerotrustaccessgroup.ZeroTrustAccessGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.ZeroTrustAccessGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ zerotrustaccessgroup.ZeroTrustAccessGroup_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.ZeroTrustAccessGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupConfig {
 	Connection: interface{},
@@ -1146,30 +1146,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExclude {
-	AnyValidServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAnyValidServiceToken,
-	AuthContext: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext,
-	AuthMethod: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethod,
-	AzureAd: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAd,
-	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificate,
-	CommonName: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonName,
-	DevicePosture: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePosture,
-	Email: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmail,
-	EmailDomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomain,
-	EmailList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStruct,
-	Everyone: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEveryone,
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluation,
-	Geo: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeo,
-	GithubOrganization: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganization,
-	Group: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroup,
-	Gsuite: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuite,
-	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIp,
-	IpList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStruct,
-	Okta: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta,
-	Saml: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml,
-	ServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken,
+	AnyValidServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAnyValidServiceToken,
+	AuthContext: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext,
+	AuthMethod: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethod,
+	AzureAd: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAd,
+	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificate,
+	CommonName: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonName,
+	DevicePosture: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePosture,
+	Email: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmail,
+	EmailDomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomain,
+	EmailList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStruct,
+	Everyone: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEveryone,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluation,
+	Geo: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeo,
+	GithubOrganization: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganization,
+	Group: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroup,
+	Gsuite: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuite,
+	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIp,
+	IpList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStruct,
+	Okta: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta,
+	Saml: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml,
+	ServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken,
 }
 ```
 
@@ -1462,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeAnyValidServiceToken {
 
@@ -1475,7 +1475,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeAuthContext {
 	AcId: *string,
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeAuthMethod {
 	AuthMethod: *string,
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeAzureAd {
 	Id: *string,
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeCertificate {
 
@@ -1644,7 +1644,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeCommonName {
 	CommonName: *string,
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeDevicePosture {
 	IntegrationUid: *string,
@@ -1712,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeEmail {
 	Email: *string,
@@ -1746,7 +1746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeEmailDomain {
 	Domain: *string,
@@ -1780,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeEmailListStruct {
 	Id: *string,
@@ -1817,7 +1817,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeEveryone {
 
@@ -1830,7 +1830,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -1880,7 +1880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeGeo {
 	CountryCode: *string,
@@ -1914,7 +1914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeGithubOrganization {
 	IdentityProviderId: *string,
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeGroup {
 	Id: *string,
@@ -2017,7 +2017,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeGsuite {
 	Email: *string,
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeIp {
 	Ip: *string,
@@ -2101,7 +2101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeIpListStruct {
 	Id: *string,
@@ -2138,7 +2138,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeOkta {
 	IdentityProviderId: *string,
@@ -2188,7 +2188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeSaml {
 	AttributeName: *string,
@@ -2254,7 +2254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupExcludeServiceToken {
 	TokenId: *string,
@@ -2288,30 +2288,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupInclude {
-	AnyValidServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAnyValidServiceToken,
-	AuthContext: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext,
-	AuthMethod: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethod,
-	AzureAd: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAd,
-	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificate,
-	CommonName: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonName,
-	DevicePosture: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePosture,
-	Email: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmail,
-	EmailDomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomain,
-	EmailList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStruct,
-	Everyone: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEveryone,
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluation,
-	Geo: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeo,
-	GithubOrganization: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganization,
-	Group: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroup,
-	Gsuite: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuite,
-	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIp,
-	IpList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStruct,
-	Okta: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta,
-	Saml: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml,
-	ServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken,
+	AnyValidServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAnyValidServiceToken,
+	AuthContext: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext,
+	AuthMethod: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethod,
+	AzureAd: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAd,
+	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificate,
+	CommonName: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonName,
+	DevicePosture: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePosture,
+	Email: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmail,
+	EmailDomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomain,
+	EmailList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStruct,
+	Everyone: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEveryone,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluation,
+	Geo: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeo,
+	GithubOrganization: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganization,
+	Group: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroup,
+	Gsuite: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuite,
+	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIp,
+	IpList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStruct,
+	Okta: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta,
+	Saml: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml,
+	ServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken,
 }
 ```
 
@@ -2604,7 +2604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeAnyValidServiceToken {
 
@@ -2617,7 +2617,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeAuthContext {
 	AcId: *string,
@@ -2686,7 +2686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeAuthMethod {
 	AuthMethod: *string,
@@ -2720,7 +2720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeAzureAd {
 	Id: *string,
@@ -2773,7 +2773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeCertificate {
 
@@ -2786,7 +2786,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeCommonName {
 	CommonName: *string,
@@ -2820,7 +2820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeDevicePosture {
 	IntegrationUid: *string,
@@ -2854,7 +2854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeEmail {
 	Email: *string,
@@ -2888,7 +2888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeEmailDomain {
 	Domain: *string,
@@ -2922,7 +2922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeEmailListStruct {
 	Id: *string,
@@ -2959,7 +2959,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeEveryone {
 
@@ -2972,7 +2972,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -3022,7 +3022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeGeo {
 	CountryCode: *string,
@@ -3056,7 +3056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeGithubOrganization {
 	IdentityProviderId: *string,
@@ -3122,7 +3122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeGroup {
 	Id: *string,
@@ -3159,7 +3159,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeGsuite {
 	Email: *string,
@@ -3209,7 +3209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeIp {
 	Ip: *string,
@@ -3243,7 +3243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeIpListStruct {
 	Id: *string,
@@ -3280,7 +3280,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeOkta {
 	IdentityProviderId: *string,
@@ -3330,7 +3330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeSaml {
 	AttributeName: *string,
@@ -3396,7 +3396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupIncludeServiceToken {
 	TokenId: *string,
@@ -3430,30 +3430,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequire.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequire {
-	AnyValidServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAnyValidServiceToken,
-	AuthContext: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext,
-	AuthMethod: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethod,
-	AzureAd: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAd,
-	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificate,
-	CommonName: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonName,
-	DevicePosture: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePosture,
-	Email: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmail,
-	EmailDomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomain,
-	EmailList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStruct,
-	Everyone: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEveryone,
-	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluation,
-	Geo: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeo,
-	GithubOrganization: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganization,
-	Group: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroup,
-	Gsuite: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuite,
-	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIp,
-	IpList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStruct,
-	Okta: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta,
-	Saml: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml,
-	ServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken,
+	AnyValidServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAnyValidServiceToken,
+	AuthContext: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext,
+	AuthMethod: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethod,
+	AzureAd: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAd,
+	Certificate: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificate,
+	CommonName: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonName,
+	DevicePosture: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePosture,
+	Email: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmail,
+	EmailDomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomain,
+	EmailList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStruct,
+	Everyone: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEveryone,
+	ExternalEvaluation: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluation,
+	Geo: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeo,
+	GithubOrganization: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganization,
+	Group: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroup,
+	Gsuite: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuite,
+	Ip: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIp,
+	IpList: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStruct,
+	Okta: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta,
+	Saml: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml,
+	ServiceToken: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken,
 }
 ```
 
@@ -3746,7 +3746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireAnyValidServiceToken {
 
@@ -3759,7 +3759,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireAuthContext {
 	AcId: *string,
@@ -3828,7 +3828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireAuthMethod {
 	AuthMethod: *string,
@@ -3862,7 +3862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireAzureAd {
 	Id: *string,
@@ -3915,7 +3915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireCertificate {
 
@@ -3928,7 +3928,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireCommonName {
 	CommonName: *string,
@@ -3962,7 +3962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireDevicePosture {
 	IntegrationUid: *string,
@@ -3996,7 +3996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireEmail {
 	Email: *string,
@@ -4030,7 +4030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireEmailDomain {
 	Domain: *string,
@@ -4064,7 +4064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireEmailListStruct {
 	Id: *string,
@@ -4101,7 +4101,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireEveryone {
 
@@ -4114,7 +4114,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustac
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireExternalEvaluation {
 	EvaluateUrl: *string,
@@ -4164,7 +4164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireGeo {
 	CountryCode: *string,
@@ -4198,7 +4198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireGithubOrganization {
 	IdentityProviderId: *string,
@@ -4264,7 +4264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireGroup {
 	Id: *string,
@@ -4301,7 +4301,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireGsuite {
 	Email: *string,
@@ -4351,7 +4351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireIp {
 	Ip: *string,
@@ -4385,7 +4385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireIpListStruct {
 	Id: *string,
@@ -4422,7 +4422,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireOkta {
 	IdentityProviderId: *string,
@@ -4472,7 +4472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireSaml {
 	AttributeName: *string,
@@ -4538,7 +4538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 &zerotrustaccessgroup.ZeroTrustAccessGroupRequireServiceToken {
 	TokenId: *string,
@@ -4574,7 +4574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAnyValidServiceTokenOutputReference
 ```
@@ -4823,7 +4823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAuthContextOutputReference
 ```
@@ -5138,7 +5138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAuthMethodOutputReference
 ```
@@ -5409,7 +5409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAzureAdOutputReference
 ```
@@ -5702,7 +5702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeCertificateOutputReference
 ```
@@ -5951,7 +5951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeCommonNameOutputReference
 ```
@@ -6222,7 +6222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeDevicePostureOutputReference
 ```
@@ -6493,7 +6493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeEmailDomainOutputReference
 ```
@@ -6764,7 +6764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeEmailListStructOutputReference
 ```
@@ -7035,7 +7035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeEmailOutputReference
 ```
@@ -7306,7 +7306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeEveryoneOutputReference
 ```
@@ -7555,7 +7555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeExternalEvaluationOutputReference
 ```
@@ -7848,7 +7848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeGeoOutputReference
 ```
@@ -8119,7 +8119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference
 ```
@@ -8441,7 +8441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeGroupOutputReference
 ```
@@ -8712,7 +8712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeGsuiteOutputReference
 ```
@@ -9005,7 +9005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeIpListStructOutputReference
 ```
@@ -9276,7 +9276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeIpOutputReference
 ```
@@ -9547,7 +9547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessGroupExcludeList
 ```
@@ -9707,7 +9707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeOktaOutputReference
 ```
@@ -10000,7 +10000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessGroupExcludeOutputReference
 ```
@@ -11149,7 +11149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeSamlOutputReference
 ```
@@ -11464,7 +11464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupExcludeServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeServiceTokenOutputReference
 ```
@@ -11735,7 +11735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeAnyValidServiceTokenOutputReference
 ```
@@ -11984,7 +11984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeAuthContextOutputReference
 ```
@@ -12299,7 +12299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeAuthMethodOutputReference
 ```
@@ -12570,7 +12570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeAzureAdOutputReference
 ```
@@ -12863,7 +12863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeCertificateOutputReference
 ```
@@ -13112,7 +13112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeCommonNameOutputReference
 ```
@@ -13383,7 +13383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeDevicePostureOutputReference
 ```
@@ -13654,7 +13654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeEmailDomainOutputReference
 ```
@@ -13925,7 +13925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeEmailListStructOutputReference
 ```
@@ -14196,7 +14196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeEmailOutputReference
 ```
@@ -14467,7 +14467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeEveryoneOutputReference
 ```
@@ -14716,7 +14716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeExternalEvaluationOutputReference
 ```
@@ -15009,7 +15009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeGeoOutputReference
 ```
@@ -15280,7 +15280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeGithubOrganizationOutputReference
 ```
@@ -15602,7 +15602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeGroupOutputReference
 ```
@@ -15873,7 +15873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeGsuiteOutputReference
 ```
@@ -16166,7 +16166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeIpListStructOutputReference
 ```
@@ -16437,7 +16437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeIpOutputReference
 ```
@@ -16708,7 +16708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessGroupIncludeList
 ```
@@ -16868,7 +16868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeOktaOutputReference
 ```
@@ -17161,7 +17161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessGroupIncludeOutputReference
 ```
@@ -18310,7 +18310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeSamlOutputReference
 ```
@@ -18625,7 +18625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupIncludeServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupIncludeServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupIncludeServiceTokenOutputReference
 ```
@@ -18896,7 +18896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireAnyValidServiceTokenOutputReference
 ```
@@ -19145,7 +19145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireAuthContextOutputReference
 ```
@@ -19460,7 +19460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireAuthMethodOutputReference
 ```
@@ -19731,7 +19731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireAzureAdOutputReference
 ```
@@ -20024,7 +20024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireCertificateOutputReference
 ```
@@ -20273,7 +20273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireCommonNameOutputReference
 ```
@@ -20544,7 +20544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireDevicePostureOutputReference
 ```
@@ -20815,7 +20815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireEmailDomainOutputReference
 ```
@@ -21086,7 +21086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireEmailListStructOutputReference
 ```
@@ -21357,7 +21357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireEmailOutputReference
 ```
@@ -21628,7 +21628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireEveryoneOutputReference
 ```
@@ -21877,7 +21877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireExternalEvaluationOutputReference
 ```
@@ -22170,7 +22170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireGeoOutputReference
 ```
@@ -22441,7 +22441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireGithubOrganizationOutputReference
 ```
@@ -22763,7 +22763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireGroupOutputReference
 ```
@@ -23034,7 +23034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireGsuiteOutputReference
 ```
@@ -23327,7 +23327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireIpListStructOutputReference
 ```
@@ -23598,7 +23598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireIpOutputReference
 ```
@@ -23869,7 +23869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessGroupRequireList
 ```
@@ -24029,7 +24029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireOktaOutputReference
 ```
@@ -24322,7 +24322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessGroupRequireOutputReference
 ```
@@ -25471,7 +25471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireSamlOutputReference
 ```
@@ -25786,7 +25786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessgroup"
 
 zerotrustaccessgroup.NewZeroTrustAccessGroupRequireServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupRequireServiceTokenOutputReference
 ```
