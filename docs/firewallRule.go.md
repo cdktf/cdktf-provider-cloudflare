@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.NewFirewallRule(scope Construct, id *string, config FirewallRuleConfig) FirewallRule
 ```
@@ -411,7 +411,7 @@ func ResetRuleId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.FirewallRule_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.FirewallRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ firewallrule.FirewallRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.FirewallRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ firewallrule.FirewallRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.firewallRule.FirewallRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.FirewallRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,11 +854,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 &firewallrule.FirewallRuleAction {
 	Mode: *string,
-	Response: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.firewallRule.FirewallRuleActionResponse,
+	Response: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.firewallRule.FirewallRuleActionResponse,
 	Timeout: *f64,
 }
 ```
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 &firewallrule.FirewallRuleActionResponse {
 	Body: *string,
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 &firewallrule.FirewallRuleConfig {
 	Connection: interface{},
@@ -986,8 +986,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.firewallRule.FirewallRuleAction,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.firewallRule.FirewallRuleFilter,
+	Action: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.firewallRule.FirewallRuleAction,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.firewallRule.FirewallRuleFilter,
 	ZoneId: *string,
 	RuleId: *string,
 }
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 &firewallrule.FirewallRuleFilter {
 	Description: *string,
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.NewFirewallRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallRuleActionOutputReference
 ```
@@ -1573,7 +1573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.NewFirewallRuleActionResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallRuleActionResponseOutputReference
 ```
@@ -1880,7 +1880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.firewallRule.FirewallRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/firewallrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule"
 
 firewallrule.NewFirewallRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallRuleFilterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 accountsubscription.NewAccountSubscription(scope Construct, id *string, config AccountSubscriptionConfig) AccountSubscription
 ```
@@ -412,7 +412,7 @@ func ResetSubscriptionIdentifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 accountsubscription.AccountSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 accountsubscription.AccountSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accountsubscription.AccountSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 accountsubscription.AccountSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accountsubscription.AccountSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 accountsubscription.AccountSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 &accountsubscription.AccountSubscriptionConfig {
 	Connection: interface{},
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscrip
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Frequency: *string,
-	RatePlan: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accountSubscription.AccountSubscriptionRatePlan,
+	RatePlan: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.accountSubscription.AccountSubscriptionRatePlan,
 	SubscriptionIdentifier: *string,
 }
 ```
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 &accountsubscription.AccountSubscriptionRatePlan {
 	Currency: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
 
 accountsubscription.NewAccountSubscriptionRatePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountSubscriptionRatePlanOutputReference
 ```

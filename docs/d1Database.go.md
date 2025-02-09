@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 
 d1database.NewD1Database(scope Construct, id *string, config D1DatabaseConfig) D1Database
 ```
@@ -385,7 +385,7 @@ func ResetPrimaryLocationHint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.d1Database.D1Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 
 d1database.D1Database_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 
 d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 
 d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.d1Database.D1Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 
 d1database.D1Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 
 &d1database.D1DatabaseConfig {
 	Connection: interface{},
