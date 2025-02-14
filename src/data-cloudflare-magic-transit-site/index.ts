@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataCloudflareMagicTransitSiteConfig extends cdktf.TerraformMet
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site#account_id DataCloudflareMagicTransitSite#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site#account_id DataCloudflareMagicTransitSite#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site#filter DataCloudflareMagicTransitSite#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site#filter DataCloudflareMagicTransitSite#filter}
   */
   readonly filter?: DataCloudflareMagicTransitSiteFilter;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site#site_id DataCloudflareMagicTransitSite#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site#site_id DataCloudflareMagicTransitSite#site_id}
   */
   readonly siteId?: string;
 }
@@ -33,9 +33,9 @@ export interface DataCloudflareMagicTransitSiteFilter {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site#connector_identifier DataCloudflareMagicTransitSite#connector_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site#connectorid DataCloudflareMagicTransitSite#connectorid}
   */
-  readonly connectorIdentifier?: string;
+  readonly connectorid?: string;
 }
 
 export function dataCloudflareMagicTransitSiteFilterToTerraform(struct?: DataCloudflareMagicTransitSiteFilter | cdktf.IResolvable): any {
@@ -44,7 +44,7 @@ export function dataCloudflareMagicTransitSiteFilterToTerraform(struct?: DataClo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connector_identifier: cdktf.stringToTerraform(struct!.connectorIdentifier),
+    connectorid: cdktf.stringToTerraform(struct!.connectorid),
   }
 }
 
@@ -55,8 +55,8 @@ export function dataCloudflareMagicTransitSiteFilterToHclTerraform(struct?: Data
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    connector_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.connectorIdentifier),
+    connectorid: {
+      value: cdktf.stringToHclTerraform(struct!.connectorid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -85,9 +85,9 @@ export class DataCloudflareMagicTransitSiteFilterOutputReference extends cdktf.C
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectorIdentifier !== undefined) {
+    if (this._connectorid !== undefined) {
       hasAnyValues = true;
-      internalValueResult.connectorIdentifier = this._connectorIdentifier;
+      internalValueResult.connectorid = this._connectorid;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -96,7 +96,7 @@ export class DataCloudflareMagicTransitSiteFilterOutputReference extends cdktf.C
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._connectorIdentifier = undefined;
+      this._connectorid = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -105,24 +105,24 @@ export class DataCloudflareMagicTransitSiteFilterOutputReference extends cdktf.C
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._connectorIdentifier = value.connectorIdentifier;
+      this._connectorid = value.connectorid;
     }
   }
 
-  // connector_identifier - computed: false, optional: true, required: false
-  private _connectorIdentifier?: string; 
-  public get connectorIdentifier() {
-    return this.getStringAttribute('connector_identifier');
+  // connectorid - computed: false, optional: true, required: false
+  private _connectorid?: string; 
+  public get connectorid() {
+    return this.getStringAttribute('connectorid');
   }
-  public set connectorIdentifier(value: string) {
-    this._connectorIdentifier = value;
+  public set connectorid(value: string) {
+    this._connectorid = value;
   }
-  public resetConnectorIdentifier() {
-    this._connectorIdentifier = undefined;
+  public resetConnectorid() {
+    this._connectorid = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get connectorIdentifierInput() {
-    return this._connectorIdentifier;
+  public get connectoridInput() {
+    return this._connectorid;
   }
 }
 export interface DataCloudflareMagicTransitSiteLocation {
@@ -186,7 +186,7 @@ export class DataCloudflareMagicTransitSiteLocationOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site}
 */
 export class DataCloudflareMagicTransitSite extends cdktf.TerraformDataSource {
 
@@ -202,7 +202,7 @@ export class DataCloudflareMagicTransitSite extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareMagicTransitSite resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicTransitSite to import
-  * @param importFromId The id of the existing DataCloudflareMagicTransitSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicTransitSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicTransitSite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -214,7 +214,7 @@ export class DataCloudflareMagicTransitSite extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site cloudflare_magic_transit_site} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +225,7 @@ export class DataCloudflareMagicTransitSite extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_magic_transit_site',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

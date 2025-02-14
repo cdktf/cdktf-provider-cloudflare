@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface RegionalHostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * DNS hostname to be regionalized, must be a subdomain of the zone. Wildcards are supported for one level, e.g `*.example.com`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
   */
   readonly hostname: string;
   /**
   * Identifying key for the region
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
   */
   readonly regionKey: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname cloudflare_regional_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname cloudflare_regional_hostname}
 */
 export class RegionalHostname extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RegionalHostname resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegionalHostname to import
-  * @param importFromId The id of the existing RegionalHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegionalHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegionalHostname to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_regional_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

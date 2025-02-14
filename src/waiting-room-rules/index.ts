@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface WaitingRoomRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The ID of the rule.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#rule_id WaitingRoomRules#rule_id}
-  */
-  readonly ruleId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
   */
   readonly rules: WaitingRoomRulesRules[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -37,25 +31,25 @@ export interface WaitingRoomRulesRules {
   /**
   * The action to take when the expression matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
   */
   readonly action: string;
   /**
   * The description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
   */
   readonly description?: string;
   /**
   * When set to true, the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Criteria defining when there is a match for the current rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
   */
   readonly expression: string;
 }
@@ -252,7 +246,7 @@ export class WaitingRoomRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}
 */
 export class WaitingRoomRules extends cdktf.TerraformResource {
 
@@ -268,7 +262,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaitingRoomRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoomRules to import
-  * @param importFromId The id of the existing WaitingRoomRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoomRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoomRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -280,7 +274,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -291,7 +285,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -302,7 +296,6 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._ruleId = config.ruleId;
     this._rules.internalValue = config.rules;
     this._waitingRoomId = config.waitingRoomId;
     this._zoneId = config.zoneId;
@@ -312,20 +305,34 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // rule_id - computed: false, optional: true, required: false
-  private _ruleId?: string; 
-  public get ruleId() {
-    return this.getStringAttribute('rule_id');
+  // action - computed: true, optional: false, required: false
+  public get action() {
+    return this.getStringAttribute('action');
   }
-  public set ruleId(value: string) {
-    this._ruleId = value;
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
   }
-  public resetRuleId() {
-    this._ruleId = undefined;
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
   }
-  // Temporarily expose input value. Use with caution.
-  public get ruleIdInput() {
-    return this._ruleId;
+
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // last_updated - computed: true, optional: false, required: false
+  public get lastUpdated() {
+    return this.getStringAttribute('last_updated');
   }
 
   // rules - computed: false, optional: false, required: true
@@ -339,6 +346,11 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
     return this._rules.internalValue;
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
   }
 
   // waiting_room_id - computed: false, optional: false, required: true
@@ -373,7 +385,6 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rule_id: cdktf.stringToTerraform(this._ruleId),
       rules: cdktf.listMapper(waitingRoomRulesRulesToTerraform, false)(this._rules.internalValue),
       waiting_room_id: cdktf.stringToTerraform(this._waitingRoomId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
@@ -382,12 +393,6 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      rule_id: {
-        value: cdktf.stringToHclTerraform(this._ruleId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       rules: {
         value: cdktf.listMapperHcl(waitingRoomRulesRulesToHclTerraform, false)(this._rules.internalValue),
         isBlock: true,

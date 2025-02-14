@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,19 @@ export interface FilterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#expression Filter#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter#expression Filter#expression}
   */
   readonly expression: string;
   /**
-  * The unique identifier of the filter.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#filter_id Filter#filter_id}
-  */
-  readonly filterId?: string;
-  /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#zone_id Filter#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter#zone_id Filter#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter cloudflare_filter}
 */
 export class Filter extends cdktf.TerraformResource {
 
@@ -49,7 +43,7 @@ export class Filter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Filter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Filter to import
-  * @param importFromId The id of the existing Filter that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Filter that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Filter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +55,7 @@ export class Filter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter cloudflare_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +66,7 @@ export class Filter extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_filter',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -84,7 +78,6 @@ export class Filter extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._expression = config.expression;
-    this._filterId = config.filterId;
     this._zoneId = config.zoneId;
   }
 
@@ -108,22 +101,6 @@ export class Filter extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get expressionInput() {
     return this._expression;
-  }
-
-  // filter_id - computed: false, optional: true, required: false
-  private _filterId?: string; 
-  public get filterId() {
-    return this.getStringAttribute('filter_id');
-  }
-  public set filterId(value: string) {
-    this._filterId = value;
-  }
-  public resetFilterId() {
-    this._filterId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterIdInput() {
-    return this._filterId;
   }
 
   // id - computed: true, optional: false, required: false
@@ -161,7 +138,6 @@ export class Filter extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       expression: cdktf.stringToTerraform(this._expression),
-      filter_id: cdktf.stringToTerraform(this._filterId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
@@ -170,12 +146,6 @@ export class Filter extends cdktf.TerraformResource {
     const attrs = {
       expression: {
         value: cdktf.stringToHclTerraform(this._expression),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      filter_id: {
-        value: cdktf.stringToHclTerraform(this._filterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

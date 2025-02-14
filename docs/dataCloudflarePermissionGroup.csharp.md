@@ -4,7 +4,7 @@
 
 ### DataCloudflarePermissionGroup <a name="DataCloudflarePermissionGroup" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group cloudflare_permission_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group cloudflare_permission_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflarePermissionGr
 
 The id of the existing DataCloudflarePermissionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,7 +731,7 @@ public string AccountId { get; set; }
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#account_id DataCloudflarePermissionGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#account_id DataCloudflarePermissionGroup#account_id}
 
 ---
 
@@ -745,7 +745,7 @@ public string PermissionGroupId { get; set; }
 
 Permission Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#permission_group_id DataCloudflarePermissionGroup#permission_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#permission_group_id DataCloudflarePermissionGroup#permission_group_id}
 
 ---
 

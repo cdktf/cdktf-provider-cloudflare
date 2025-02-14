@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,75 @@ export interface CloudConnectorRulesConfig extends cdktf.TerraformMetaArguments 
   /**
   * List of Cloud Connector rules
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
   */
   readonly rules: CloudConnectorRulesRules[] | cdktf.IResolvable;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
   */
   readonly zoneId: string;
+}
+export interface CloudConnectorRulesParameters {
+}
+
+export function cloudConnectorRulesParametersToTerraform(struct?: CloudConnectorRulesParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function cloudConnectorRulesParametersToHclTerraform(struct?: CloudConnectorRulesParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CloudConnectorRulesParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): CloudConnectorRulesParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudConnectorRulesParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
+  }
 }
 export interface CloudConnectorRulesRulesParameters {
   /**
   * Host to perform Cloud Connection to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
   */
   readonly host?: string;
 }
@@ -125,23 +179,23 @@ export interface CloudConnectorRulesRules {
   /**
   * Cloud Provider type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#cloud_provider CloudConnectorRules#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#cloud_provider CloudConnectorRules#cloud_provider}
   */
   readonly cloudProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}
   */
   readonly expression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -150,7 +204,7 @@ export interface CloudConnectorRulesRules {
   /**
   * Parameters of Cloud Connector Rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
   */
   readonly parameters?: CloudConnectorRulesRulesParameters;
 }
@@ -411,7 +465,7 @@ export class CloudConnectorRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}
 */
 export class CloudConnectorRules extends cdktf.TerraformResource {
 
@@ -427,7 +481,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudConnectorRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudConnectorRules to import
-  * @param importFromId The id of the existing CloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudConnectorRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -439,7 +493,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -450,7 +504,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloud_connector_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -468,6 +522,37 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // cloud_provider - computed: true, optional: false, required: false
+  public get cloudProvider() {
+    return this.getStringAttribute('cloud_provider');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // parameters - computed: true, optional: false, required: false
+  private _parameters = new CloudConnectorRulesParametersOutputReference(this, "parameters");
+  public get parameters() {
+    return this._parameters;
+  }
 
   // rules - computed: false, optional: false, required: true
   private _rules = new CloudConnectorRulesRulesList(this, "rules", false);

@@ -4,7 +4,7 @@
 
 ### ZoneCacheReserve <a name="ZoneCacheReserve" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Value of the Cache Reserve zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
 
 ---
 
@@ -598,7 +598,7 @@ The construct id used in the generated config for the ZoneCacheReserve to import
 
 The id of the existing ZoneCacheReserve that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.editable">editable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.zoneSettingId">zone_setting_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.value">value</a></code> | <code>str</code> | *No description.* |
@@ -805,16 +804,6 @@ id: str
 
 ```python
 modified_on: str
-```
-
-- *Type:* str
-
----
-
-##### `zone_setting_id`<sup>Required</sup> <a name="zone_setting_id" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.zoneSettingId"></a>
-
-```python
-zone_setting_id: str
 ```
 
 - *Type:* str
@@ -997,7 +986,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -1011,7 +1000,7 @@ value: str
 
 Value of the Cache Reserve zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
 
 ---
 

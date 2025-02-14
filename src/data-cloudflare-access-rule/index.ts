@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataCloudflareAccessRuleConfig extends cdktf.TerraformMetaArgum
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#account_id DataCloudflareAccessRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#account_id DataCloudflareAccessRule#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#filter DataCloudflareAccessRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#filter DataCloudflareAccessRule#filter}
   */
   readonly filter?: DataCloudflareAccessRuleFilter;
   /**
   * Unique identifier for a rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#rule_id DataCloudflareAccessRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#rule_id DataCloudflareAccessRule#rule_id}
   */
   readonly ruleId?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#zone_id DataCloudflareAccessRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#zone_id DataCloudflareAccessRule#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -98,14 +98,14 @@ export interface DataCloudflareAccessRuleFilterConfiguration {
   /**
   * The target to search in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#target DataCloudflareAccessRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#target DataCloudflareAccessRule#target}
   */
   readonly target?: string;
   /**
   * The target value to search for in existing rules: an IP address, an IP address range, or a country code, depending on the provided `configuration.target`.
   * Notes: You can search for a single IPv4 address, an IP address range with a subnet of '/16' or '/24', or a two-letter ISO-3166-1 alpha-2 country code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#value DataCloudflareAccessRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#value DataCloudflareAccessRule#value}
   */
   readonly value?: string;
 }
@@ -228,38 +228,38 @@ export class DataCloudflareAccessRuleFilterConfigurationOutputReference extends 
 }
 export interface DataCloudflareAccessRuleFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#configuration DataCloudflareAccessRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#configuration DataCloudflareAccessRule#configuration}
   */
   readonly configuration?: DataCloudflareAccessRuleFilterConfiguration;
   /**
   * The direction used to sort returned rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#direction DataCloudflareAccessRule#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#direction DataCloudflareAccessRule#direction}
   */
   readonly direction?: string;
   /**
   * When set to `all`, all the search requirements must match. When set to `any`, only one of the search requirements has to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#match DataCloudflareAccessRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#match DataCloudflareAccessRule#match}
   */
   readonly match?: string;
   /**
   * The action to apply to a matched request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#mode DataCloudflareAccessRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#mode DataCloudflareAccessRule#mode}
   */
   readonly mode?: string;
   /**
   * The string to search for in the notes of existing IP Access rules.
   * Notes: For example, the string 'attack' would match IP Access rules with notes 'Attack 26/02' and 'Attack 27/02'. The search is case insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#notes DataCloudflareAccessRule#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#notes DataCloudflareAccessRule#notes}
   */
   readonly notes?: string;
   /**
   * The field used to sort returned rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#order DataCloudflareAccessRule#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#order DataCloudflareAccessRule#order}
   */
   readonly order?: string;
 }
@@ -562,7 +562,7 @@ export class DataCloudflareAccessRuleScopeOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule cloudflare_access_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule cloudflare_access_rule}
 */
 export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
 
@@ -578,7 +578,7 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareAccessRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccessRule to import
-  * @param importFromId The id of the existing DataCloudflareAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccessRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -590,7 +590,7 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule cloudflare_access_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/access_rule cloudflare_access_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -601,7 +601,7 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
