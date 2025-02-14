@@ -4,12 +4,12 @@
 
 ### DataCloudflareMagicTransitSites <a name="DataCloudflareMagicTransitSites" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.NewDataCloudflareMagicTransitSites(scope Construct, id *string, config DataCloudflareMagicTransitSitesConfig) DataCloudflareMagicTransitSites
 ```
@@ -67,7 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.resetConnectorIdentifier">ResetConnectorIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.resetConnectorid">ResetConnectorid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.resetMaxItems">ResetMaxItems</a></code> | *No description.* |
 
 ---
@@ -264,10 +264,10 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetConnectorIdentifier` <a name="ResetConnectorIdentifier" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.resetConnectorIdentifier"></a>
+##### `ResetConnectorid` <a name="ResetConnectorid" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.resetConnectorid"></a>
 
 ```go
-func ResetConnectorIdentifier()
+func ResetConnectorid()
 ```
 
 ##### `ResetMaxItems` <a name="ResetMaxItems" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.resetMaxItems"></a>
@@ -290,7 +290,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.DataCloudflareMagicTransitSites_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.DataCloudflareMagicTransitSites_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaremagictransitsites.DataCloudflareMagicTransitSites_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.DataCloudflareMagicTransitSites_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflaremagictransitsites.DataCloudflareMagicTransitSites_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.DataCloudflareMagicTransitSites_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareMagicTransit
 
 The id of the existing DataCloudflareMagicTransitSites that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -409,10 +409,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.result">Result</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesResultList">DataCloudflareMagicTransitSitesResultList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectorIdentifierInput">ConnectorIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectoridInput">ConnectoridInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.maxItemsInput">MaxItemsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectorIdentifier">ConnectorIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectorid">Connectorid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.maxItems">MaxItems</a></code> | <code>*f64</code> | *No description.* |
 
 ---
@@ -559,10 +559,10 @@ func AccountIdInput() *string
 
 ---
 
-##### `ConnectorIdentifierInput`<sup>Optional</sup> <a name="ConnectorIdentifierInput" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectorIdentifierInput"></a>
+##### `ConnectoridInput`<sup>Optional</sup> <a name="ConnectoridInput" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectoridInput"></a>
 
 ```go
-func ConnectorIdentifierInput() *string
+func ConnectoridInput() *string
 ```
 
 - *Type:* *string
@@ -589,10 +589,10 @@ func AccountId() *string
 
 ---
 
-##### `ConnectorIdentifier`<sup>Required</sup> <a name="ConnectorIdentifier" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectorIdentifier"></a>
+##### `Connectorid`<sup>Required</sup> <a name="Connectorid" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSites.property.connectorid"></a>
 
 ```go
-func ConnectorIdentifier() *string
+func Connectorid() *string
 ```
 
 - *Type:* *string
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 &datacloudflaremagictransitsites.DataCloudflareMagicTransitSitesConfig {
 	Connection: interface{},
@@ -645,7 +645,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	ConnectorIdentifier: *string,
+	Connectorid: *string,
 	MaxItems: *f64,
 }
 ```
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.connectorIdentifier">ConnectorIdentifier</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.connectorid">Connectorid</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -747,21 +747,21 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites#account_id DataCloudflareMagicTransitSites#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites#account_id DataCloudflareMagicTransitSites#account_id}
 
 ---
 
-##### `ConnectorIdentifier`<sup>Optional</sup> <a name="ConnectorIdentifier" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.connectorIdentifier"></a>
+##### `Connectorid`<sup>Optional</sup> <a name="Connectorid" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesConfig.property.connectorid"></a>
 
 ```go
-ConnectorIdentifier *string
+Connectorid *string
 ```
 
 - *Type:* *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites#connector_identifier DataCloudflareMagicTransitSites#connector_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites#connectorid DataCloudflareMagicTransitSites#connectorid}
 
 ---
 
@@ -775,7 +775,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites#max_items DataCloudflareMagicTransitSites#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites#max_items DataCloudflareMagicTransitSites#max_items}
 
 ---
 
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 &datacloudflaremagictransitsites.DataCloudflareMagicTransitSitesResult {
 
@@ -797,7 +797,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesResultLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 &datacloudflaremagictransitsites.DataCloudflareMagicTransitSitesResultLocation {
 
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.NewDataCloudflareMagicTransitSitesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareMagicTransitSitesResultList
 ```
@@ -961,7 +961,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesResultLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.NewDataCloudflareMagicTransitSitesResultLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicTransitSitesResultLocationOutputReference
 ```
@@ -1232,7 +1232,7 @@ func InternalValue() DataCloudflareMagicTransitSitesResultLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSites.DataCloudflareMagicTransitSitesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsites"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsites"
 
 datacloudflaremagictransitsites.NewDataCloudflareMagicTransitSitesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareMagicTransitSitesResultOutputReference
 ```

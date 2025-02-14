@@ -4,12 +4,12 @@
 
 ### DataCloudflareCloudforceOneRequestMessage <a name="DataCloudflareCloudforceOneRequestMessage" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequestmessage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequestmessage"
 
 datacloudflarecloudforceonerequestmessage.NewDataCloudflareCloudforceOneRequestMessage(scope Construct, id *string, config DataCloudflareCloudforceOneRequestMessageConfig) DataCloudflareCloudforceOneRequestMessage
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequestmessage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequestmessage"
 
 datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMessage_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequestmessage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequestmessage"
 
 datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMessage_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMess
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequestmessage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequestmessage"
 
 datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMessage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMess
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequestmessage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequestmessage"
 
 datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMessage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareCloudforceOn
 
 The id of the existing DataCloudflareCloudforceOneRequestMessage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,6 +393,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.author">Author</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.content">Content</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.created">Created</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.id">Id</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.isFollowOnRequest">IsFollowOnRequest</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.updated">Updated</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.accountIdentifierInput">AccountIdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.requestIdentifierInput">RequestIdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.accountIdentifier">AccountIdentifier</a></code> | <code>*string</code> | *No description.* |
@@ -522,6 +528,66 @@ func Provider() TerraformProvider
 
 ---
 
+##### `Author`<sup>Required</sup> <a name="Author" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.author"></a>
+
+```go
+func Author() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Content`<sup>Required</sup> <a name="Content" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.content"></a>
+
+```go
+func Content() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Created`<sup>Required</sup> <a name="Created" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.created"></a>
+
+```go
+func Created() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.id"></a>
+
+```go
+func Id() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `IsFollowOnRequest`<sup>Required</sup> <a name="IsFollowOnRequest" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.isFollowOnRequest"></a>
+
+```go
+func IsFollowOnRequest() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
+##### `Updated`<sup>Required</sup> <a name="Updated" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.updated"></a>
+
+```go
+func Updated() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AccountIdentifierInput`<sup>Optional</sup> <a name="AccountIdentifierInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessage.property.accountIdentifierInput"></a>
 
 ```go
@@ -587,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestMessage.DataCloudflareCloudforceOneRequestMessageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequestmessage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequestmessage"
 
 &datacloudflarecloudforceonerequestmessage.DataCloudflareCloudforceOneRequestMessageConfig {
 	Connection: interface{},
@@ -698,7 +764,7 @@ AccountIdentifier *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message#account_identifier DataCloudflareCloudforceOneRequestMessage#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message#account_identifier DataCloudflareCloudforceOneRequestMessage#account_identifier}
 
 ---
 
@@ -712,7 +778,7 @@ RequestIdentifier *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message#request_identifier DataCloudflareCloudforceOneRequestMessage#request_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message#request_identifier DataCloudflareCloudforceOneRequestMessage#request_identifier}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataCloudflareZeroTrustAccessGroups <a name="DataCloudflareZeroTrustAccessGroups" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups cloudflare_zero_trust_access_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups cloudflare_zero_trust_access_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroups(scope Construct, id *string, config DataCloudflareZeroTrustAccessGroupsConfig) DataCloudflareZeroTrustAccessGroups
 ```
@@ -311,7 +311,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroups_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroups_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroups_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,7 +699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups#account_id DataCloudflareZeroTrustAccessGroups#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups#account_id DataCloudflareZeroTrustAccessGroups#account_id}
 
 ---
 
@@ -830,7 +830,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups#max_items DataCloudflareZeroTrustAccessGroups#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups#max_items DataCloudflareZeroTrustAccessGroups#max_items}
 
 ---
 
@@ -844,7 +844,7 @@ Name *string
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups#name DataCloudflareZeroTrustAccessGroups#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups#name DataCloudflareZeroTrustAccessGroups#name}
 
 ---
 
@@ -858,7 +858,7 @@ Search *string
 
 Search for groups by other listed query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups#search DataCloudflareZeroTrustAccessGroups#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups#search DataCloudflareZeroTrustAccessGroups#search}
 
 ---
 
@@ -872,7 +872,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_groups#zone_id DataCloudflareZeroTrustAccessGroups#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_groups#zone_id DataCloudflareZeroTrustAccessGroups#zone_id}
 
 ---
 
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResult {
 
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExclude {
 
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAnyValidServiceToken {
 
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAuthContext {
 
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAuthMethod {
 
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAzureAd {
 
@@ -959,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeCertificate {
 
@@ -972,7 +972,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeCommonName {
 
@@ -985,7 +985,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeDevicePosture {
 
@@ -998,7 +998,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmail {
 
@@ -1011,7 +1011,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailDomain {
 
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailListStruct {
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEveryone {
 
@@ -1050,7 +1050,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeExternalEvaluation {
 
@@ -1063,7 +1063,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGeo {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGithubOrganization {
 
@@ -1089,7 +1089,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGroup {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGsuite {
 
@@ -1115,7 +1115,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIp {
 
@@ -1128,9 +1128,22 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStruct {
+
+}
+```
+
+
+### DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod <a name="DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+&datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod {
 
 }
 ```
@@ -1141,7 +1154,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOkta {
 
@@ -1154,7 +1167,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeSaml {
 
@@ -1167,7 +1180,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultExcludeServiceToken {
 
@@ -1180,7 +1193,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultInclude {
 
@@ -1193,7 +1206,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAnyValidServiceToken {
 
@@ -1206,7 +1219,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAuthContext {
 
@@ -1219,7 +1232,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAuthMethod {
 
@@ -1232,7 +1245,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAzureAd {
 
@@ -1245,7 +1258,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeCertificate {
 
@@ -1258,7 +1271,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeCommonName {
 
@@ -1271,7 +1284,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeDevicePosture {
 
@@ -1284,7 +1297,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmail {
 
@@ -1297,7 +1310,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomain {
 
@@ -1310,7 +1323,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailListStruct {
 
@@ -1323,7 +1336,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEveryone {
 
@@ -1336,7 +1349,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeExternalEvaluation {
 
@@ -1349,7 +1362,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGeo {
 
@@ -1362,7 +1375,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGithubOrganization {
 
@@ -1375,7 +1388,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGroup {
 
@@ -1388,7 +1401,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGsuite {
 
@@ -1401,7 +1414,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIp {
 
@@ -1414,9 +1427,22 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStruct {
+
+}
+```
+
+
+### DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod <a name="DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+&datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod {
 
 }
 ```
@@ -1427,7 +1453,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOkta {
 
@@ -1440,7 +1466,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeSaml {
 
@@ -1453,7 +1479,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIncludeServiceToken {
 
@@ -1466,7 +1492,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefault {
 
@@ -1479,7 +1505,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAnyValidServiceToken {
 
@@ -1492,7 +1518,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthContext {
 
@@ -1505,7 +1531,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthMethod {
 
@@ -1518,7 +1544,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAzureAd {
 
@@ -1531,7 +1557,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultCertificate {
 
@@ -1544,7 +1570,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultCommonName {
 
@@ -1557,7 +1583,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultDevicePosture {
 
@@ -1570,7 +1596,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmail {
 
@@ -1583,7 +1609,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailDomain {
 
@@ -1596,7 +1622,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailListStruct {
 
@@ -1609,7 +1635,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEveryone {
 
@@ -1622,7 +1648,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalEvaluation {
 
@@ -1635,7 +1661,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGeo {
 
@@ -1648,7 +1674,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGithubOrganization {
 
@@ -1661,7 +1687,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGroup {
 
@@ -1674,7 +1700,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuite {
 
@@ -1687,7 +1713,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIp {
 
@@ -1700,9 +1726,22 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStruct {
+
+}
+```
+
+
+### DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod <a name="DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+&datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod {
 
 }
 ```
@@ -1713,7 +1752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOkta {
 
@@ -1726,7 +1765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultSaml {
 
@@ -1739,7 +1778,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceToken {
 
@@ -1752,7 +1791,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequire.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequire {
 
@@ -1765,7 +1804,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireAnyValidServiceToken {
 
@@ -1778,7 +1817,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireAuthContext {
 
@@ -1791,7 +1830,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireAuthMethod {
 
@@ -1804,7 +1843,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireAzureAd {
 
@@ -1817,7 +1856,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireCertificate {
 
@@ -1830,7 +1869,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireCommonName {
 
@@ -1843,7 +1882,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireDevicePosture {
 
@@ -1856,7 +1895,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmail {
 
@@ -1869,7 +1908,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailDomain {
 
@@ -1882,7 +1921,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailListStruct {
 
@@ -1895,7 +1934,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireEveryone {
 
@@ -1908,7 +1947,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireExternalEvaluation {
 
@@ -1921,7 +1960,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireGeo {
 
@@ -1934,7 +1973,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireGithubOrganization {
 
@@ -1947,7 +1986,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireGroup {
 
@@ -1960,7 +1999,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireGsuite {
 
@@ -1973,7 +2012,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireIp {
 
@@ -1986,9 +2025,22 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireIpListStruct {
+
+}
+```
+
+
+### DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod <a name="DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+&datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod {
 
 }
 ```
@@ -1999,7 +2051,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireOkta {
 
@@ -2012,7 +2064,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireSaml {
 
@@ -2025,7 +2077,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 &datacloudflarezerotrustaccessgroups.DataCloudflareZeroTrustAccessGroupsResultRequireServiceToken {
 
@@ -2040,7 +2092,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeAnyValidServiceTokenOutputReference
 ```
@@ -2289,7 +2341,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeAnyValidSer
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeAuthContextOutputReference
 ```
@@ -2571,7 +2623,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeAuthContext
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeAuthMethodOutputReference
 ```
@@ -2831,7 +2883,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeAuthMethod
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeAzureAdOutputReference
 ```
@@ -3102,7 +3154,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeAzureAd
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeCertificateOutputReference
 ```
@@ -3351,7 +3403,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeCommonNameOutputReference
 ```
@@ -3611,7 +3663,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeCommonName
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeDevicePostureOutputReference
 ```
@@ -3871,7 +3923,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeDevicePostu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeEmailDomainOutputReference
 ```
@@ -4131,7 +4183,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeEmailDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeEmailListStructOutputReference
 ```
@@ -4391,7 +4443,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeEmailListSt
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeEmailOutputReference
 ```
@@ -4651,7 +4703,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeEmail
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeEveryoneOutputReference
 ```
@@ -4900,7 +4952,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeEveryone
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeExternalEvaluationOutputReference
 ```
@@ -5171,7 +5223,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeExternalEva
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeGeoOutputReference
 ```
@@ -5431,7 +5483,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeGeo
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeGithubOrganizationOutputReference
 ```
@@ -5713,7 +5765,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeGithubOrgan
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeGroupOutputReference
 ```
@@ -5973,7 +6025,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeGsuiteOutputReference
 ```
@@ -6244,7 +6296,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeGsuite
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStructOutputReference
 ```
@@ -6504,7 +6556,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStruc
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeIpOutputReference
 ```
@@ -6764,7 +6816,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustAccessGroupsResultExcludeList
 ```
@@ -6908,12 +6960,272 @@ func Fqn() *string
 ---
 
 
+### DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod">DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod">DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethod</a>
+
+---
+
+
 ### DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference
 ```
@@ -7184,7 +7496,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeOkta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference
 ```
@@ -7425,6 +7737,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.gsuite">Gsuite</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeGsuiteOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeGsuiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.ip">Ip</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIpOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeIpOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.ipList">IpList</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStructOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStructOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.loginMethod">LoginMethod</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.okta">Okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.saml">Saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeSamlOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.serviceToken">ServiceToken</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeServiceTokenOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeServiceTokenOutputReference</a></code> | *No description.* |
@@ -7636,6 +7949,16 @@ func IpList() DataCloudflareZeroTrustAccessGroupsResultExcludeIpListStructOutput
 
 ---
 
+##### `LoginMethod`<sup>Required</sup> <a name="LoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.loginMethod"></a>
+
+```go
+func LoginMethod() DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference</a>
+
+---
+
 ##### `Okta`<sup>Required</sup> <a name="Okta" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference.property.okta"></a>
 
 ```go
@@ -7682,7 +8005,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeSamlOutputReference
 ```
@@ -7964,7 +8287,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultExcludeServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultExcludeServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultExcludeServiceTokenOutputReference
 ```
@@ -8224,7 +8547,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultExcludeServiceToke
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeAnyValidServiceTokenOutputReference
 ```
@@ -8473,7 +8796,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeAnyValidSer
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeAuthContextOutputReference
 ```
@@ -8755,7 +9078,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeAuthContext
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeAuthMethodOutputReference
 ```
@@ -9015,7 +9338,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeAuthMethod
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeAzureAdOutputReference
 ```
@@ -9286,7 +9609,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeAzureAd
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeCertificateOutputReference
 ```
@@ -9535,7 +9858,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeCommonNameOutputReference
 ```
@@ -9795,7 +10118,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeCommonName
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeDevicePostureOutputReference
 ```
@@ -10055,7 +10378,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeDevicePostu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference
 ```
@@ -10315,7 +10638,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeEmailListStructOutputReference
 ```
@@ -10575,7 +10898,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeEmailListSt
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeEmailOutputReference
 ```
@@ -10835,7 +11158,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeEmail
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeEveryoneOutputReference
 ```
@@ -11084,7 +11407,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeEveryone
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeExternalEvaluationOutputReference
 ```
@@ -11355,7 +11678,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeExternalEva
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeGeoOutputReference
 ```
@@ -11615,7 +11938,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeGeo
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeGithubOrganizationOutputReference
 ```
@@ -11897,7 +12220,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeGithubOrgan
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeGroupOutputReference
 ```
@@ -12157,7 +12480,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeGsuiteOutputReference
 ```
@@ -12428,7 +12751,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeGsuite
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutputReference
 ```
@@ -12688,7 +13011,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStruc
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeIpOutputReference
 ```
@@ -12948,7 +13271,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustAccessGroupsResultIncludeList
 ```
@@ -13092,12 +13415,272 @@ func Fqn() *string
 ---
 
 
+### DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod">DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod">DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethod</a>
+
+---
+
+
 ### DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference
 ```
@@ -13368,7 +13951,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeOkta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference
 ```
@@ -13609,6 +14192,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.gsuite">Gsuite</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeGsuiteOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeGsuiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.ip">Ip</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIpOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeIpOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.ipList">IpList</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.loginMethod">LoginMethod</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.okta">Okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.saml">Saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeSamlOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.serviceToken">ServiceToken</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeServiceTokenOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeServiceTokenOutputReference</a></code> | *No description.* |
@@ -13820,6 +14404,16 @@ func IpList() DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutput
 
 ---
 
+##### `LoginMethod`<sup>Required</sup> <a name="LoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.loginMethod"></a>
+
+```go
+func LoginMethod() DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference</a>
+
+---
+
 ##### `Okta`<sup>Required</sup> <a name="Okta" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference.property.okta"></a>
 
 ```go
@@ -13866,7 +14460,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultInclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeSamlOutputReference
 ```
@@ -14148,7 +14742,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIncludeServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIncludeServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIncludeServiceTokenOutputReference
 ```
@@ -14408,7 +15002,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIncludeServiceToke
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultAnyValidServiceTokenOutputReference
 ```
@@ -14657,7 +15251,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultAnyValidS
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthContextOutputReference
 ```
@@ -14939,7 +15533,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthConte
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthMethodOutputReference
 ```
@@ -15199,7 +15793,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultAuthMetho
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultAzureAdOutputReference
 ```
@@ -15470,7 +16064,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultAzureAd
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultCertificateOutputReference
 ```
@@ -15719,7 +16313,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultCertifica
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultCommonNameOutputReference
 ```
@@ -15979,7 +16573,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultCommonNam
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultDevicePostureOutputReference
 ```
@@ -16239,7 +16833,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultDevicePos
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailDomainOutputReference
 ```
@@ -16499,7 +17093,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailDoma
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailListStructOutputReference
 ```
@@ -16759,7 +17353,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailList
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmailOutputReference
 ```
@@ -17019,7 +17613,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultEmail
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultEveryoneOutputReference
 ```
@@ -17268,7 +17862,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultEveryone
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalEvaluationOutputReference
 ```
@@ -17539,7 +18133,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalE
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultGeoOutputReference
 ```
@@ -17799,7 +18393,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultGeo
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultGithubOrganizationOutputReference
 ```
@@ -18081,7 +18675,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultGithubOrg
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultGroupOutputReference
 ```
@@ -18341,7 +18935,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuiteOutputReference
 ```
@@ -18612,7 +19206,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuite
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStructOutputReference
 ```
@@ -18872,7 +19466,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStr
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpOutputReference
 ```
@@ -19132,7 +19726,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustAccessGroupsResultIsDefaultList
 ```
@@ -19276,12 +19870,272 @@ func Fqn() *string
 ---
 
 
+### DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod">DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod">DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethod</a>
+
+---
+
+
 ### DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference
 ```
@@ -19552,7 +20406,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultOkta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference
 ```
@@ -19793,6 +20647,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.gsuite">Gsuite</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuiteOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultGsuiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.ip">Ip</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.ipList">IpList</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStructOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStructOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.loginMethod">LoginMethod</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.okta">Okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.saml">Saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultSamlOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.serviceToken">ServiceToken</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenOutputReference</a></code> | *No description.* |
@@ -20004,6 +20859,16 @@ func IpList() DataCloudflareZeroTrustAccessGroupsResultIsDefaultIpListStructOutp
 
 ---
 
+##### `LoginMethod`<sup>Required</sup> <a name="LoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.loginMethod"></a>
+
+```go
+func LoginMethod() DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference</a>
+
+---
+
 ##### `Okta`<sup>Required</sup> <a name="Okta" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference.property.okta"></a>
 
 ```go
@@ -20050,7 +20915,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefault
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultSamlOutputReference
 ```
@@ -20332,7 +21197,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenOutputReference
 ```
@@ -20592,7 +21457,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTo
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustAccessGroupsResultList
 ```
@@ -20741,7 +21606,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustAccessGroupsResultOutputReference
 ```
@@ -21096,7 +21961,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireAnyValidServiceTokenOutputReference
 ```
@@ -21345,7 +22210,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireAnyValidSer
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireAuthContextOutputReference
 ```
@@ -21627,7 +22492,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireAuthContext
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireAuthMethodOutputReference
 ```
@@ -21887,7 +22752,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireAuthMethod
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireAzureAdOutputReference
 ```
@@ -22158,7 +23023,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireAzureAd
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireCertificateOutputReference
 ```
@@ -22407,7 +23272,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireCommonNameOutputReference
 ```
@@ -22667,7 +23532,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireCommonName
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireDevicePostureOutputReference
 ```
@@ -22927,7 +23792,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireDevicePostu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireEmailDomainOutputReference
 ```
@@ -23187,7 +24052,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireEmailDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireEmailListStructOutputReference
 ```
@@ -23447,7 +24312,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireEmailListSt
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireEmailOutputReference
 ```
@@ -23707,7 +24572,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireEmail
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireEveryoneOutputReference
 ```
@@ -23956,7 +24821,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireEveryone
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireExternalEvaluationOutputReference
 ```
@@ -24227,7 +25092,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireExternalEva
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireGeoOutputReference
 ```
@@ -24487,7 +25352,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireGeo
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireGithubOrganizationOutputReference
 ```
@@ -24769,7 +25634,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireGithubOrgan
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireGroupOutputReference
 ```
@@ -25029,7 +25894,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireGsuiteOutputReference
 ```
@@ -25300,7 +26165,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireGsuite
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireIpListStructOutputReference
 ```
@@ -25560,7 +26425,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireIpListStruc
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireIpOutputReference
 ```
@@ -25820,7 +26685,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustAccessGroupsResultRequireList
 ```
@@ -25964,12 +26829,272 @@ func Fqn() *string
 ---
 
 
+### DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
+
+datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod">DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod">DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod</a>
+
+---
+
+
 ### DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference <a name="DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference
 ```
@@ -26240,7 +27365,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireOkta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference
 ```
@@ -26481,6 +27606,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.gsuite">Gsuite</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireGsuiteOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireGsuiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.ip">Ip</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireIpOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireIpOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.ipList">IpList</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireIpListStructOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireIpListStructOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.loginMethod">LoginMethod</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.okta">Okta</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.saml">Saml</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireSamlOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireSamlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.serviceToken">ServiceToken</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireServiceTokenOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireServiceTokenOutputReference</a></code> | *No description.* |
@@ -26692,6 +27818,16 @@ func IpList() DataCloudflareZeroTrustAccessGroupsResultRequireIpListStructOutput
 
 ---
 
+##### `LoginMethod`<sup>Required</sup> <a name="LoginMethod" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.loginMethod"></a>
+
+```go
+func LoginMethod() DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference">DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputReference</a>
+
+---
+
 ##### `Okta`<sup>Required</sup> <a name="Okta" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference.property.okta"></a>
 
 ```go
@@ -26738,7 +27874,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequire
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireSamlOutputReference
 ```
@@ -27020,7 +28156,7 @@ func InternalValue() DataCloudflareZeroTrustAccessGroupsResultRequireSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroups.DataCloudflareZeroTrustAccessGroupsResultRequireServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessgroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccessgroups"
 
 datacloudflarezerotrustaccessgroups.NewDataCloudflareZeroTrustAccessGroupsResultRequireServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessGroupsResultRequireServiceTokenOutputReference
 ```

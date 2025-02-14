@@ -4,12 +4,12 @@
 
 ### DataCloudflareZoneLockdowns <a name="DataCloudflareZoneLockdowns" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.NewDataCloudflareZoneLockdowns(scope Construct, id *string, config DataCloudflareZoneLockdownsConfig) DataCloudflareZoneLockdowns
 ```
@@ -346,7 +346,7 @@ func ResetUriSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.DataCloudflareZoneLockdowns_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.DataCloudflareZoneLockdowns_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datacloudflarezonelockdowns.DataCloudflareZoneLockdowns_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.DataCloudflareZoneLockdowns_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ datacloudflarezonelockdowns.DataCloudflareZoneLockdowns_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.DataCloudflareZoneLockdowns_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DataCloudflareZoneLockdown
 
 The id of the existing DataCloudflareZoneLockdowns that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 &datacloudflarezonelockdowns.DataCloudflareZoneLockdownsConfig {
 	Connection: interface{},
@@ -995,7 +995,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#zone_id DataCloudflareZoneLockdowns#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#zone_id DataCloudflareZoneLockdowns#zone_id}
 
 ---
 
@@ -1009,7 +1009,7 @@ CreatedOn *string
 
 The timestamp of when the rule was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#created_on DataCloudflareZoneLockdowns#created_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#created_on DataCloudflareZoneLockdowns#created_on}
 
 ---
 
@@ -1023,7 +1023,7 @@ Description *string
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#description DataCloudflareZoneLockdowns#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#description DataCloudflareZoneLockdowns#description}
 
 ---
 
@@ -1037,7 +1037,7 @@ DescriptionSearch *string
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#description_search DataCloudflareZoneLockdowns#description_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#description_search DataCloudflareZoneLockdowns#description_search}
 
 ---
 
@@ -1051,7 +1051,7 @@ Ip *string
 
 A single IP address to search for in existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#ip DataCloudflareZoneLockdowns#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#ip DataCloudflareZoneLockdowns#ip}
 
 ---
 
@@ -1065,7 +1065,7 @@ IpRangeSearch *string
 
 A single IP address range to search for in existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#ip_range_search DataCloudflareZoneLockdowns#ip_range_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#ip_range_search DataCloudflareZoneLockdowns#ip_range_search}
 
 ---
 
@@ -1079,7 +1079,7 @@ IpSearch *string
 
 A single IP address to search for in existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#ip_search DataCloudflareZoneLockdowns#ip_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#ip_search DataCloudflareZoneLockdowns#ip_search}
 
 ---
 
@@ -1093,7 +1093,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#max_items DataCloudflareZoneLockdowns#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#max_items DataCloudflareZoneLockdowns#max_items}
 
 ---
 
@@ -1107,7 +1107,7 @@ ModifiedOn *string
 
 The timestamp of when the rule was last modified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#modified_on DataCloudflareZoneLockdowns#modified_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#modified_on DataCloudflareZoneLockdowns#modified_on}
 
 ---
 
@@ -1123,7 +1123,7 @@ The priority of the rule to control the processing order.
 
 A lower number indicates higher priority. If not provided, any rules with a configured priority will be processed before rules without a priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#priority DataCloudflareZoneLockdowns#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#priority DataCloudflareZoneLockdowns#priority}
 
 ---
 
@@ -1137,7 +1137,7 @@ UriSearch *string
 
 A single URI to search for in the list of URLs of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_lockdowns#uri_search DataCloudflareZoneLockdowns#uri_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_lockdowns#uri_search DataCloudflareZoneLockdowns#uri_search}
 
 ---
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 &datacloudflarezonelockdowns.DataCloudflareZoneLockdownsResult {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsResultConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 &datacloudflarezonelockdowns.DataCloudflareZoneLockdownsResultConfigurations {
 
@@ -1174,7 +1174,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsResultConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.NewDataCloudflareZoneLockdownsResultConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZoneLockdownsResultConfigurationsList
 ```
@@ -1323,7 +1323,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsResultConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.NewDataCloudflareZoneLockdownsResultConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZoneLockdownsResultConfigurationsOutputReference
 ```
@@ -1612,7 +1612,7 @@ func InternalValue() DataCloudflareZoneLockdownsResultConfigurations
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.NewDataCloudflareZoneLockdownsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZoneLockdownsResultList
 ```
@@ -1761,7 +1761,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonelockdowns"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonelockdowns"
 
 datacloudflarezonelockdowns.NewDataCloudflareZoneLockdownsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZoneLockdownsResultOutputReference
 ```

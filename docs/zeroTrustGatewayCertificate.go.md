@@ -4,12 +4,12 @@
 
 ### ZeroTrustGatewayCertificate <a name="ZeroTrustGatewayCertificate" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaycertificate"
 
 zerotrustgatewaycertificate.NewZeroTrustGatewayCertificate(scope Construct, id *string, config ZeroTrustGatewayCertificateConfig) ZeroTrustGatewayCertificate
 ```
@@ -385,7 +385,7 @@ func ResetValidityPeriodDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaycertificate"
 
 zerotrustgatewaycertificate.ZeroTrustGatewayCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaycertificate"
 
 zerotrustgatewaycertificate.ZeroTrustGatewayCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ zerotrustgatewaycertificate.ZeroTrustGatewayCertificate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaycertificate"
 
 zerotrustgatewaycertificate.ZeroTrustGatewayCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ zerotrustgatewaycertificate.ZeroTrustGatewayCertificate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaycertificate"
 
 zerotrustgatewaycertificate.ZeroTrustGatewayCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ZeroTrustGatewayCertificat
 
 The id of the existing ZeroTrustGatewayCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustgatewaycertificate"
 
 &zerotrustgatewaycertificate.ZeroTrustGatewayCertificateConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustga
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.validityPeriodDays">ValidityPeriodDays</a></code> | <code>*f64</code> | Number of days the generated certificate will be valid, minimum 1 day and maximum 30 years. |
 
 ---
@@ -959,7 +959,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}.
 
 ---
 
@@ -975,7 +975,7 @@ Number of days the generated certificate will be valid, minimum 1 day and maximu
 
 Defaults to 5 years.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
 
 ---
 

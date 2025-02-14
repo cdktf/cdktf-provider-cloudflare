@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface UrlNormalizationSettingsConfig extends cdktf.TerraformMetaArgum
   /**
   * The scope of the URL normalization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
   */
   readonly scope: string;
   /**
   * The type of URL normalization performed by Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
   */
   readonly type: string;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}
 */
 export class UrlNormalizationSettings extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class UrlNormalizationSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UrlNormalizationSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UrlNormalizationSettings to import
-  * @param importFromId The id of the existing UrlNormalizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UrlNormalizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UrlNormalizationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class UrlNormalizationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class UrlNormalizationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_url_normalization_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

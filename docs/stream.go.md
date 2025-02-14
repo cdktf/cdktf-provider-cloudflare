@@ -4,12 +4,12 @@
 
 ### Stream <a name="Stream" id="@cdktf/provider-cloudflare.stream.Stream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream cloudflare_stream}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream cloudflare_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.stream.Stream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.NewStream(scope Construct, id *string, config StreamConfig) Stream
 ```
@@ -441,7 +441,7 @@ func ResetUploadExpiry()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.stream.Stream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.Stream_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.stream.Stream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.Stream_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ stream.Stream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.stream.Stream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.Stream_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ stream.Stream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.stream.Stream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.Stream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the Stream to import.
 
 The id of the existing Stream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1115,7 +1115,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.stream.StreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 &stream.StreamConfig {
 	Connection: interface{},
@@ -1242,7 +1242,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#account_id Stream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#account_id Stream#account_id}
 
 ---
 
@@ -1258,7 +1258,7 @@ Lists the origins allowed to display the video.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
 
 ---
 
@@ -1272,7 +1272,7 @@ Creator *string
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#creator Stream#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#creator Stream#creator}
 
 ---
 
@@ -1286,7 +1286,7 @@ Identifier *string
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#identifier Stream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#identifier Stream#identifier}
 
 ---
 
@@ -1302,7 +1302,7 @@ The maximum duration in seconds for a video upload.
 
 Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
 
 ---
 
@@ -1316,7 +1316,7 @@ Meta *string
 
 A user modifiable key-value store used to reference other systems of record for managing videos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#meta Stream#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#meta Stream#meta}
 
 ---
 
@@ -1332,7 +1332,7 @@ Indicates whether the video can be a accessed using the UID.
 
 When set to `true`, a signed token must be generated with a signing key to view the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
 
 ---
 
@@ -1348,7 +1348,7 @@ Indicates the date and time at which the video will be deleted.
 
 Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
 
 ---
 
@@ -1364,7 +1364,7 @@ The timestamp for a thumbnail image calculated as a percentage value of the vide
 
 To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
 
 ---
 
@@ -1378,7 +1378,7 @@ UploadExpiry *string
 
 The date and time when the video upload URL is no longer valid for direct user uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
 
 ---
 
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.stream.StreamInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 &stream.StreamInput {
 
@@ -1400,7 +1400,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.stream.StreamPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 &stream.StreamPlayback {
 
@@ -1413,7 +1413,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.stream.StreamStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 &stream.StreamStatus {
 
@@ -1426,7 +1426,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.stream.StreamWatermark.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 &stream.StreamWatermark {
 
@@ -1441,7 +1441,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.stream.StreamInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.NewStreamInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamInputOutputReference
 ```
@@ -1712,7 +1712,7 @@ func InternalValue() StreamInput
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.stream.StreamPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.NewStreamPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamPlaybackOutputReference
 ```
@@ -1983,7 +1983,7 @@ func InternalValue() StreamPlayback
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.stream.StreamStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.NewStreamStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamStatusOutputReference
 ```
@@ -2276,7 +2276,7 @@ func InternalValue() StreamStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.stream.StreamWatermarkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/stream"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/stream"
 
 stream.NewStreamWatermarkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamWatermarkOutputReference
 ```

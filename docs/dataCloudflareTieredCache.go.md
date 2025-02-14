@@ -4,12 +4,12 @@
 
 ### DataCloudflareTieredCache <a name="DataCloudflareTieredCache" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaretieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretieredcache"
 
 datacloudflaretieredcache.NewDataCloudflareTieredCache(scope Construct, id *string, config DataCloudflareTieredCacheConfig) DataCloudflareTieredCache
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaretieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretieredcache"
 
 datacloudflaretieredcache.DataCloudflareTieredCache_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaretieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretieredcache"
 
 datacloudflaretieredcache.DataCloudflareTieredCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaretieredcache.DataCloudflareTieredCache_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaretieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretieredcache"
 
 datacloudflaretieredcache.DataCloudflareTieredCache_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaretieredcache.DataCloudflareTieredCache_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaretieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretieredcache"
 
 datacloudflaretieredcache.DataCloudflareTieredCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareTieredCache 
 
 The id of the existing DataCloudflareTieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaretieredcache"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretieredcache"
 
 &datacloudflaretieredcache.DataCloudflareTieredCacheConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/tiered_cache#zone_id DataCloudflareTieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/tiered_cache#zone_id DataCloudflareTieredCache#zone_id}
 
 ---
 

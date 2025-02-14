@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersForPlatformsDispatchNamespaces <a name="DataCloudflareWorkersForPlatformsDispatchNamespaces" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.NewDataCloudflareWorkersForPlatformsDispatchNamespaces(scope Construct, id *string, config DataCloudflareWorkersForPlatformsDispatchNamespacesConfig) DataCloudflareWorkersForPlatformsDispatchNamespaces
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlatformsDispatchNamespaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWorkersForPl
 
 The id of the existing DataCloudflareWorkersForPlatformsDispatchNamespaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_for_platforms_dispatch_namespaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_for_platforms_dispatch_namespaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 &datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlatformsDispatchNamespacesConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_for_platforms_dispatch_namespaces#account_id DataCloudflareWorkersForPlatformsDispatchNamespaces#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_for_platforms_dispatch_namespaces#account_id DataCloudflareWorkersForPlatformsDispatchNamespaces#account_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_for_platforms_dispatch_namespaces#max_items DataCloudflareWorkersForPlatformsDispatchNamespaces#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_for_platforms_dispatch_namespaces#max_items DataCloudflareWorkersForPlatformsDispatchNamespaces#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespacesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 &datacloudflareworkersforplatformsdispatchnamespaces.DataCloudflareWorkersForPlatformsDispatchNamespacesResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespacesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.NewDataCloudflareWorkersForPlatformsDispatchNamespacesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersForPlatformsDispatchNamespacesResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersForPlatformsDispatchNamespaces.DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersforplatformsdispatchnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersforplatformsdispatchnamespaces"
 
 datacloudflareworkersforplatformsdispatchnamespaces.NewDataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference
 ```

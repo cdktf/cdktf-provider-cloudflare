@@ -4,12 +4,12 @@
 
 ### DataCloudflareLeakedCredentialCheck <a name="DataCloudflareLeakedCredentialCheck" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/leaked_credential_check cloudflare_leaked_credential_check}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/leaked_credential_check cloudflare_leaked_credential_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareleakedcredentialcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareleakedcredentialcheck"
 
 datacloudflareleakedcredentialcheck.NewDataCloudflareLeakedCredentialCheck(scope Construct, id *string, config DataCloudflareLeakedCredentialCheckConfig) DataCloudflareLeakedCredentialCheck
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareleakedcredentialcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareleakedcredentialcheck"
 
 datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheck_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareleakedcredentialcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareleakedcredentialcheck"
 
 datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheck_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheck.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareleakedcredentialcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareleakedcredentialcheck"
 
 datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheck_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheck_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareleakedcredentialcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareleakedcredentialcheck"
 
 datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareLeakedCreden
 
 The id of the existing DataCloudflareLeakedCredentialCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheck.DataCloudflareLeakedCredentialCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareleakedcredentialcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareleakedcredentialcheck"
 
 &datacloudflareleakedcredentialcheck.DataCloudflareLeakedCredentialCheckConfig {
 	Connection: interface{},
@@ -685,7 +685,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/leaked_credential_check#zone_id DataCloudflareLeakedCredentialCheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/leaked_credential_check#zone_id DataCloudflareLeakedCredentialCheck#zone_id}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataCloudflareMagicTransitSiteWan <a name="DataCloudflareMagicTransitSiteWan" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 datacloudflaremagictransitsitewan.NewDataCloudflareMagicTransitSiteWan(scope Construct, id *string, config DataCloudflareMagicTransitSiteWanConfig) DataCloudflareMagicTransitSiteWan
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.resetWanId">ResetWanId</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetWanId` <a name="ResetWanId" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.resetWanId"></a>
+
+```go
+func ResetWanId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWan_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWan_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWan_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWan_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareMagicTransit
 
 The id of the existing DataCloudflareMagicTransitSiteWan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 &datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWanConfig {
 	Connection: interface{},
@@ -786,11 +793,11 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site_wan#account_id DataCloudflareMagicTransitSiteWan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan#account_id DataCloudflareMagicTransitSiteWan#account_id}
 
 ---
 
-##### `WanId`<sup>Required</sup> <a name="WanId" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanConfig.property.wanId"></a>
+##### `WanId`<sup>Optional</sup> <a name="WanId" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanConfig.property.wanId"></a>
 
 ```go
 WanId *string
@@ -800,7 +807,7 @@ WanId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_site_wan#wan_id DataCloudflareMagicTransitSiteWan#wan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan#wan_id DataCloudflareMagicTransitSiteWan#wan_id}
 
 ---
 
@@ -809,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanStaticAddressing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 &datacloudflaremagictransitsitewan.DataCloudflareMagicTransitSiteWanStaticAddressing {
 
@@ -824,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteWan.DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagictransitsitewan"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagictransitsitewan"
 
 datacloudflaremagictransitsitewan.NewDataCloudflareMagicTransitSiteWanStaticAddressingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference
 ```

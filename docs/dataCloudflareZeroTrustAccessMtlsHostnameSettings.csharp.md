@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessMtlsHostnameSettings <a name="DataCloudflareZeroTrustAccessMtlsHostnameSettings" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessMtlsHostnameSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_mtls_hostname_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_mtls_hostname_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -407,6 +407,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.chinaNetwork">ChinaNetwork</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.clientCertificateForwarding">ClientCertificateForwarding</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.hostname">Hostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
@@ -533,6 +536,36 @@ public TerraformProvider Provider { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `ChinaNetwork`<sup>Required</sup> <a name="ChinaNetwork" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.chinaNetwork"></a>
+
+```csharp
+public IResolvable ChinaNetwork { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `ClientCertificateForwarding`<sup>Required</sup> <a name="ClientCertificateForwarding" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.clientCertificateForwarding"></a>
+
+```csharp
+public IResolvable ClientCertificateForwarding { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `Hostname`<sup>Required</sup> <a name="Hostname" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessMtlsHostnameSettings.DataCloudflareZeroTrustAccessMtlsHostnameSettings.property.hostname"></a>
+
+```csharp
+public string Hostname { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -712,7 +745,7 @@ public string AccountId { get; set; }
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_mtls_hostname_settings#account_id DataCloudflareZeroTrustAccessMtlsHostnameSettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_mtls_hostname_settings#account_id DataCloudflareZeroTrustAccessMtlsHostnameSettings#account_id}
 
 ---
 
@@ -726,7 +759,7 @@ public string ZoneId { get; set; }
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_mtls_hostname_settings#zone_id DataCloudflareZeroTrustAccessMtlsHostnameSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_mtls_hostname_settings#zone_id DataCloudflareZeroTrustAccessMtlsHostnameSettings#zone_id}
 
 ---
 

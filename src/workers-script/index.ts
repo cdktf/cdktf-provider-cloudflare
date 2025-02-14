@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,91 +10,91 @@ export interface WorkersScriptConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#account_id WorkersScript#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#account_id WorkersScript#account_id}
   */
   readonly accountId: string;
   /**
   * Configuration for assets within a Worker
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#assets WorkersScript#assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#assets WorkersScript#assets}
   */
   readonly assets?: WorkersScriptAssets;
   /**
   * List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#bindings WorkersScript#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#bindings WorkersScript#bindings}
   */
   readonly bindings?: WorkersScriptBindings[] | cdktf.IResolvable;
   /**
   * Name of the part in the multipart request that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#body_part WorkersScript#body_part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#body_part WorkersScript#body_part}
   */
   readonly bodyPart?: string;
   /**
   * Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * Module or Service Worker contents of the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#content WorkersScript#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#content WorkersScript#content}
   */
   readonly content: string;
   /**
   * Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
   */
   readonly keepAssets?: boolean | cdktf.IResolvable;
   /**
   * List of binding types to keep from previous_upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
   */
   readonly keepBindings?: string[];
   /**
   * Name of the part in the multipart request that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#main_module WorkersScript#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#main_module WorkersScript#main_module}
   */
   readonly mainModule?: string;
   /**
   * Migrations to apply for Durable Objects associated with this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#migrations WorkersScript#migrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#migrations WorkersScript#migrations}
   */
   readonly migrations?: WorkersScriptMigrations;
   /**
   * Observability settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#observability WorkersScript#observability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#observability WorkersScript#observability}
   */
   readonly observability?: WorkersScriptObservability;
   /**
   * Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#placement WorkersScript#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#placement WorkersScript#placement}
   */
   readonly placement?: WorkersScriptPlacement;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#script_name WorkersScript#script_name}
   */
   readonly scriptName: string;
   /**
   * List of Workers that will consume logs from the attached Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
   */
   readonly tailConsumers?: WorkersScriptTailConsumers[] | cdktf.IResolvable;
 }
@@ -107,25 +102,25 @@ export interface WorkersScriptAssetsConfig {
   /**
   * Determines the redirects and rewrites of requests for HTML content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
   */
   readonly htmlHandling?: string;
   /**
   * Determines the response when a request does not match a static asset, and there is no Worker script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
   */
   readonly notFoundHandling?: string;
   /**
   * When true, requests will always invoke the Worker script. Otherwise, attempt to serve an asset matching the request, falling back to the Worker script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
   */
   readonly runWorkerFirst?: boolean | cdktf.IResolvable;
   /**
   * When true and the incoming request matches an asset, that will be served instead of invoking the Worker script. When false, requests will always invoke the Worker script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
   */
   readonly serveDirectly?: boolean | cdktf.IResolvable;
 }
@@ -308,13 +303,13 @@ export interface WorkersScriptAssets {
   /**
   * Configuration for assets within a Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#config WorkersScript#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#config WorkersScript#config}
   */
   readonly config?: WorkersScriptAssetsConfig;
   /**
   * Token provided upon successful upload of all files from a registered manifest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#jwt WorkersScript#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#jwt WorkersScript#jwt}
   */
   readonly jwt?: string;
 }
@@ -439,13 +434,13 @@ export interface WorkersScriptBindingsOutboundWorker {
   /**
   * Environment of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Name of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service?: string;
 }
@@ -570,13 +565,13 @@ export interface WorkersScriptBindingsOutbound {
   /**
   * Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#params WorkersScript#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#params WorkersScript#params}
   */
   readonly params?: string[];
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#worker WorkersScript#worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#worker WorkersScript#worker}
   */
   readonly worker?: WorkersScriptBindingsOutboundWorker;
 }
@@ -701,37 +696,37 @@ export interface WorkersScriptBindings {
   /**
   * R2 bucket to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * Identifier of the certificate to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * The exported class name of the Durable Object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#class_name WorkersScript#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#class_name WorkersScript#class_name}
   */
   readonly className?: string;
   /**
   * The dataset name to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#dataset WorkersScript#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#dataset WorkersScript#dataset}
   */
   readonly dataset?: string;
   /**
   * The environment of the script_name to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Identifier of the D1 database to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#id WorkersScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#id WorkersScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -740,67 +735,67 @@ export interface WorkersScriptBindings {
   /**
   * Name of the Vectorize index to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#index_name WorkersScript#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#index_name WorkersScript#index_name}
   */
   readonly indexName?: string;
   /**
   * JSON data to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#json WorkersScript#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#json WorkersScript#json}
   */
   readonly json?: string;
   /**
   * A JavaScript variable name for the binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#name WorkersScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#name WorkersScript#name}
   */
   readonly name: string;
   /**
   * Namespace to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#namespace WorkersScript#namespace}
   */
   readonly namespace?: string;
   /**
   * Namespace identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
   */
   readonly namespaceId?: string;
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#outbound WorkersScript#outbound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#outbound WorkersScript#outbound}
   */
   readonly outbound?: WorkersScriptBindingsOutbound;
   /**
   * Name of the Queue to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
   */
   readonly queueName?: string;
   /**
   * The script where the Durable Object is defined, if it is external to this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#script_name WorkersScript#script_name}
   */
   readonly scriptName?: string;
   /**
   * Name of Worker to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service?: string;
   /**
   * The text value to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#text WorkersScript#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#text WorkersScript#text}
   */
   readonly text?: string;
   /**
   * The kind of resource that the binding provides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#type WorkersScript#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#type WorkersScript#type}
   */
   readonly type: string;
 }
@@ -1374,11 +1369,11 @@ export class WorkersScriptBindingsList extends cdktf.ComplexList {
 }
 export interface WorkersScriptMigrationsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -1523,11 +1518,11 @@ export class WorkersScriptMigrationsRenamedClassesList extends cdktf.ComplexList
 }
 export interface WorkersScriptMigrationsStepsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -1672,15 +1667,15 @@ export class WorkersScriptMigrationsStepsRenamedClassesList extends cdktf.Comple
 }
 export interface WorkersScriptMigrationsStepsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#from_script WorkersScript#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#from_script WorkersScript#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -1856,31 +1851,31 @@ export interface WorkersScriptMigrationsSteps {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
   */
   readonly renamedClasses?: WorkersScriptMigrationsStepsRenamedClasses[] | cdktf.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
   */
   readonly transferredClasses?: WorkersScriptMigrationsStepsTransferredClasses[] | cdktf.IResolvable;
 }
@@ -2112,15 +2107,15 @@ export class WorkersScriptMigrationsStepsList extends cdktf.ComplexList {
 }
 export interface WorkersScriptMigrationsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#from_script WorkersScript#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#from_script WorkersScript#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -2296,49 +2291,49 @@ export interface WorkersScriptMigrations {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * Tag to set as the latest migration tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
   */
   readonly newTag?: string;
   /**
   * Tag used to verify against the latest migration tag for this Worker. If they don't match, the upload is rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
   */
   readonly oldTag?: string;
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
   */
   readonly renamedClasses?: WorkersScriptMigrationsRenamedClasses[] | cdktf.IResolvable;
   /**
   * Migrations to apply in order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#steps WorkersScript#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#steps WorkersScript#steps}
   */
   readonly steps?: WorkersScriptMigrationsSteps[] | cdktf.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
   */
   readonly transferredClasses?: WorkersScriptMigrationsTransferredClasses[] | cdktf.IResolvable;
 }
@@ -2637,13 +2632,13 @@ export interface WorkersScriptObservability {
   /**
   * Whether observability is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#enabled WorkersScript#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
 }
@@ -2765,7 +2760,7 @@ export interface WorkersScriptPlacement {
   /**
   * Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#mode WorkersScript#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#mode WorkersScript#mode}
   */
   readonly mode?: string;
 }
@@ -2866,19 +2861,19 @@ export interface WorkersScriptTailConsumers {
   /**
   * Optional environment if the Worker utilizes one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Optional dispatch namespace the script belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#namespace WorkersScript#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of Worker that is to be the consumer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service: string;
 }
@@ -3049,7 +3044,7 @@ export class WorkersScriptTailConsumersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script cloudflare_workers_script}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script cloudflare_workers_script}
 */
 export class WorkersScript extends cdktf.TerraformResource {
 
@@ -3065,7 +3060,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersScript resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersScript to import
-  * @param importFromId The id of the existing WorkersScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3077,7 +3072,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script cloudflare_workers_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script cloudflare_workers_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3088,7 +3083,7 @@ export class WorkersScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

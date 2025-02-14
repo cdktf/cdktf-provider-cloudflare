@@ -4,12 +4,12 @@
 
 ### MagicWanStaticRoute <a name="MagicWanStaticRoute" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRoute(scope Construct, id *string, config MagicWanStaticRouteConfig) MagicWanStaticRoute
 ```
@@ -73,12 +73,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putRoute">PutRoute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putRoutes">PutRoutes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putScope">PutScope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetNexthop">ResetNexthop</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetPrefix">ResetPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetPriority">ResetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetRoute">ResetRoute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetRouteId">ResetRouteId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetRoutes">ResetRoutes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetScope">ResetScope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetWeight">ResetWeight</a></code> | *No description.* |
 
@@ -372,6 +376,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutRoute` <a name="PutRoute" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putRoute"></a>
+
+```go
+func PutRoute(value MagicWanStaticRouteRoute)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putRoute.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a>
+
+---
+
+##### `PutRoutes` <a name="PutRoutes" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putRoutes"></a>
+
+```go
+func PutRoutes(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putRoutes.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutScope` <a name="PutScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.putScope"></a>
 
 ```go
@@ -408,10 +436,22 @@ func ResetPrefix()
 func ResetPriority()
 ```
 
+##### `ResetRoute` <a name="ResetRoute" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetRoute"></a>
+
+```go
+func ResetRoute()
+```
+
 ##### `ResetRouteId` <a name="ResetRouteId" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetRouteId"></a>
 
 ```go
 func ResetRouteId()
+```
+
+##### `ResetRoutes` <a name="ResetRoutes" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetRoutes"></a>
+
+```go
+func ResetRoutes()
 ```
 
 ##### `ResetScope` <a name="ResetScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.resetScope"></a>
@@ -440,7 +480,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +526,7 @@ magicwanstaticroute.MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +540,7 @@ magicwanstaticroute.MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +569,7 @@ The construct id used in the generated config for the MagicWanStaticRoute to imp
 
 The id of the existing MagicWanStaticRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -570,6 +610,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.prefixInput">PrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.routeIdInput">RouteIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.routeInput">RouteInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.routesInput">RoutesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.scopeInput">ScopeInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
@@ -834,6 +876,26 @@ func RouteIdInput() *string
 
 ---
 
+##### `RouteInput`<sup>Optional</sup> <a name="RouteInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.routeInput"></a>
+
+```go
+func RouteInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RoutesInput`<sup>Optional</sup> <a name="RoutesInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.routesInput"></a>
+
+```go
+func RoutesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ScopeInput`<sup>Optional</sup> <a name="ScopeInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.property.scopeInput"></a>
 
 ```go
@@ -949,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteConfig {
 	Connection: interface{},
@@ -964,8 +1026,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 	Nexthop: *string,
 	Prefix: *string,
 	Priority: *f64,
+	Route: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute,
 	RouteId: *string,
-	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicWanStaticRoute.MagicWanStaticRouteScope,
+	Routes: interface{},
+	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope,
 	Weight: *f64,
 }
 ```
@@ -986,7 +1050,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.nexthop">Nexthop</a></code> | <code>*string</code> | The next-hop IP Address for the static route. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.prefix">Prefix</a></code> | <code>*string</code> | IP Prefix in Classless Inter-Domain Routing format. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.priority">Priority</a></code> | <code>*f64</code> | Priority of the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.route">Route</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#route MagicWanStaticRoute#route}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.routeId">RouteId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.routes">Routes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#routes MagicWanStaticRoute#routes}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope">MagicWanStaticRouteScope</a></code> | Used only for ECMP routes. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.weight">Weight</a></code> | <code>*f64</code> | Optional weight of the ECMP scope - if provided. |
 
@@ -1072,7 +1138,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
 
 ---
 
@@ -1086,7 +1152,7 @@ Description *string
 
 An optional human provided description of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
 
 ---
 
@@ -1100,7 +1166,7 @@ Nexthop *string
 
 The next-hop IP Address for the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
 
 ---
 
@@ -1114,7 +1180,7 @@ Prefix *string
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
 
 ---
 
@@ -1128,7 +1194,19 @@ Priority *f64
 
 Priority of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+
+---
+
+##### `Route`<sup>Optional</sup> <a name="Route" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.route"></a>
+
+```go
+Route MagicWanStaticRouteRoute
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#route MagicWanStaticRoute#route}.
 
 ---
 
@@ -1142,7 +1220,19 @@ RouteId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#route_id MagicWanStaticRoute#route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#route_id MagicWanStaticRoute#route_id}
+
+---
+
+##### `Routes`<sup>Optional</sup> <a name="Routes" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.routes"></a>
+
+```go
+Routes interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#routes MagicWanStaticRoute#routes}.
 
 ---
 
@@ -1156,7 +1246,7 @@ Scope MagicWanStaticRouteScope
 
 Used only for ECMP routes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
 
 ---
 
@@ -1170,7 +1260,7 @@ Weight *f64
 
 Optional weight of the ECMP scope - if provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
 
 ---
 
@@ -1179,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteModifiedRoute {
 
@@ -1192,7 +1282,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteModifiedRouteScope {
 
@@ -1205,59 +1295,335 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRoute {
-
+	Description: *string,
+	Nexthop: *string,
+	Prefix: *string,
+	Priority: *f64,
+	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope,
+	Weight: *f64,
 }
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.description">Description</a></code> | <code>*string</code> | An optional human provided description of the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.nexthop">Nexthop</a></code> | <code>*string</code> | The next-hop IP Address for the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.prefix">Prefix</a></code> | <code>*string</code> | IP Prefix in Classless Inter-Domain Routing format. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.priority">Priority</a></code> | <code>*f64</code> | Priority of the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope">MagicWanStaticRouteRouteScope</a></code> | Used only for ECMP routes. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.weight">Weight</a></code> | <code>*f64</code> | Optional weight of the ECMP scope - if provided. |
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+An optional human provided description of the static route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+
+---
+
+##### `Nexthop`<sup>Optional</sup> <a name="Nexthop" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.nexthop"></a>
+
+```go
+Nexthop *string
+```
+
+- *Type:* *string
+
+The next-hop IP Address for the static route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+
+---
+
+##### `Prefix`<sup>Optional</sup> <a name="Prefix" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.prefix"></a>
+
+```go
+Prefix *string
+```
+
+- *Type:* *string
+
+IP Prefix in Classless Inter-Domain Routing format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+
+---
+
+##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.priority"></a>
+
+```go
+Priority *f64
+```
+
+- *Type:* *f64
+
+Priority of the static route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+
+---
+
+##### `Scope`<sup>Optional</sup> <a name="Scope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.scope"></a>
+
+```go
+Scope MagicWanStaticRouteRouteScope
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope">MagicWanStaticRouteRouteScope</a>
+
+Used only for ECMP routes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+
+---
+
+##### `Weight`<sup>Optional</sup> <a name="Weight" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.property.weight"></a>
+
+```go
+Weight *f64
+```
+
+- *Type:* *f64
+
+Optional weight of the ECMP scope - if provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+
+---
 
 ### MagicWanStaticRouteRoutes <a name="MagicWanStaticRouteRoutes" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRoutes {
-
+	Description: *string,
+	Nexthop: *string,
+	Prefix: *string,
+	Priority: *f64,
+	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope,
+	Weight: *f64,
 }
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.description">Description</a></code> | <code>*string</code> | An optional human provided description of the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.nexthop">Nexthop</a></code> | <code>*string</code> | The next-hop IP Address for the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.prefix">Prefix</a></code> | <code>*string</code> | IP Prefix in Classless Inter-Domain Routing format. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.priority">Priority</a></code> | <code>*f64</code> | Priority of the static route. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope">MagicWanStaticRouteRoutesScope</a></code> | Used only for ECMP routes. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.weight">Weight</a></code> | <code>*f64</code> | Optional weight of the ECMP scope - if provided. |
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+An optional human provided description of the static route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+
+---
+
+##### `Nexthop`<sup>Optional</sup> <a name="Nexthop" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.nexthop"></a>
+
+```go
+Nexthop *string
+```
+
+- *Type:* *string
+
+The next-hop IP Address for the static route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+
+---
+
+##### `Prefix`<sup>Optional</sup> <a name="Prefix" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.prefix"></a>
+
+```go
+Prefix *string
+```
+
+- *Type:* *string
+
+IP Prefix in Classless Inter-Domain Routing format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+
+---
+
+##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.priority"></a>
+
+```go
+Priority *f64
+```
+
+- *Type:* *f64
+
+Priority of the static route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+
+---
+
+##### `Scope`<sup>Optional</sup> <a name="Scope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.scope"></a>
+
+```go
+Scope MagicWanStaticRouteRoutesScope
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope">MagicWanStaticRouteRoutesScope</a>
+
+Used only for ECMP routes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+
+---
+
+##### `Weight`<sup>Optional</sup> <a name="Weight" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.property.weight"></a>
+
+```go
+Weight *f64
+```
+
+- *Type:* *f64
+
+Optional weight of the ECMP scope - if provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+
+---
 
 ### MagicWanStaticRouteRouteScope <a name="MagicWanStaticRouteRouteScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRouteScope {
-
+	ColoNames: *[]*string,
+	ColoRegions: *[]*string,
 }
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope.property.coloNames">ColoNames</a></code> | <code>*[]*string</code> | List of colo names for the ECMP scope. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope.property.coloRegions">ColoRegions</a></code> | <code>*[]*string</code> | List of colo regions for the ECMP scope. |
+
+---
+
+##### `ColoNames`<sup>Optional</sup> <a name="ColoNames" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope.property.coloNames"></a>
+
+```go
+ColoNames *[]*string
+```
+
+- *Type:* *[]*string
+
+List of colo names for the ECMP scope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+
+---
+
+##### `ColoRegions`<sup>Optional</sup> <a name="ColoRegions" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope.property.coloRegions"></a>
+
+```go
+ColoRegions *[]*string
+```
+
+- *Type:* *[]*string
+
+List of colo regions for the ECMP scope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+
+---
 
 ### MagicWanStaticRouteRoutesScope <a name="MagicWanStaticRouteRoutesScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRoutesScope {
-
+	ColoNames: *[]*string,
+	ColoRegions: *[]*string,
 }
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope.property.coloNames">ColoNames</a></code> | <code>*[]*string</code> | List of colo names for the ECMP scope. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope.property.coloRegions">ColoRegions</a></code> | <code>*[]*string</code> | List of colo regions for the ECMP scope. |
+
+---
+
+##### `ColoNames`<sup>Optional</sup> <a name="ColoNames" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope.property.coloNames"></a>
+
+```go
+ColoNames *[]*string
+```
+
+- *Type:* *[]*string
+
+List of colo names for the ECMP scope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+
+---
+
+##### `ColoRegions`<sup>Optional</sup> <a name="ColoRegions" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope.property.coloRegions"></a>
+
+```go
+ColoRegions *[]*string
+```
+
+- *Type:* *[]*string
+
+List of colo regions for the ECMP scope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+
+---
 
 ### MagicWanStaticRouteScope <a name="MagicWanStaticRouteScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteScope {
 	ColoNames: *[]*string,
@@ -1284,7 +1650,7 @@ ColoNames *[]*string
 
 List of colo names for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
 
 ---
 
@@ -1298,7 +1664,7 @@ ColoRegions *[]*string
 
 List of colo regions for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
 
 ---
 
@@ -1309,7 +1675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteModifiedRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteModifiedRouteOutputReference
 ```
@@ -1657,7 +2023,7 @@ func InternalValue() MagicWanStaticRouteModifiedRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteModifiedRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteModifiedRouteScopeOutputReference
 ```
@@ -1928,7 +2294,7 @@ func InternalValue() MagicWanStaticRouteModifiedRouteScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteRouteOutputReference
 ```
@@ -1973,6 +2339,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.putScope">PutScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetNexthop">ResetNexthop</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetPrefix">ResetPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetPriority">ResetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetScope">ResetScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetWeight">ResetWeight</a></code> | *No description.* |
 
 ---
 
@@ -2126,6 +2499,54 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutScope` <a name="PutScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.putScope"></a>
+
+```go
+func PutScope(value MagicWanStaticRouteRouteScope)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.putScope.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope">MagicWanStaticRouteRouteScope</a>
+
+---
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
+##### `ResetNexthop` <a name="ResetNexthop" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetNexthop"></a>
+
+```go
+func ResetNexthop()
+```
+
+##### `ResetPrefix` <a name="ResetPrefix" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetPrefix"></a>
+
+```go
+func ResetPrefix()
+```
+
+##### `ResetPriority` <a name="ResetPriority" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetPriority"></a>
+
+```go
+func ResetPriority()
+```
+
+##### `ResetScope` <a name="ResetScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetScope"></a>
+
+```go
+func ResetScope()
+```
+
+##### `ResetWeight` <a name="ResetWeight" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.resetWeight"></a>
+
+```go
+func ResetWeight()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2134,15 +2555,21 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference">MagicWanStaticRouteRouteScopeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.nexthopInput">NexthopInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.prefixInput">PrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.scopeInput">ScopeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.nexthop">Nexthop</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.prefix">Prefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference">MagicWanStaticRouteRouteScopeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.weight">Weight</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2180,16 +2607,6 @@ func CreatedOn() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.description"></a>
-
-```go
-func Description() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.id"></a>
 
 ```go
@@ -2204,6 +2621,86 @@ func Id() *string
 
 ```go
 func ModifiedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.scope"></a>
+
+```go
+func Scope() MagicWanStaticRouteRouteScopeOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference">MagicWanStaticRouteRouteScopeOutputReference</a>
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NexthopInput`<sup>Optional</sup> <a name="NexthopInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.nexthopInput"></a>
+
+```go
+func NexthopInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrefixInput`<sup>Optional</sup> <a name="PrefixInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.prefixInput"></a>
+
+```go
+func PrefixInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.priorityInput"></a>
+
+```go
+func PriorityInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ScopeInput`<sup>Optional</sup> <a name="ScopeInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.scopeInput"></a>
+
+```go
+func ScopeInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WeightInput`<sup>Optional</sup> <a name="WeightInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.weightInput"></a>
+
+```go
+func WeightInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.description"></a>
+
+```go
+func Description() *string
 ```
 
 - *Type:* *string
@@ -2240,16 +2737,6 @@ func Priority() *f64
 
 ---
 
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.scope"></a>
-
-```go
-func Scope() MagicWanStaticRouteRouteScopeOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference">MagicWanStaticRouteRouteScopeOutputReference</a>
-
----
-
 ##### `Weight`<sup>Required</sup> <a name="Weight" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.weight"></a>
 
 ```go
@@ -2263,10 +2750,10 @@ func Weight() *f64
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() MagicWanStaticRouteRoute
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a>
+- *Type:* interface{}
 
 ---
 
@@ -2276,7 +2763,7 @@ func InternalValue() MagicWanStaticRouteRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteRouteScopeOutputReference
 ```
@@ -2321,6 +2808,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.resetColoNames">ResetColoNames</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.resetColoRegions">ResetColoRegions</a></code> | *No description.* |
 
 ---
 
@@ -2474,6 +2963,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetColoNames` <a name="ResetColoNames" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.resetColoNames"></a>
+
+```go
+func ResetColoNames()
+```
+
+##### `ResetColoRegions` <a name="ResetColoRegions" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.resetColoRegions"></a>
+
+```go
+func ResetColoRegions()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2481,9 +2982,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloNamesInput">ColoNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloRegionsInput">ColoRegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloNames">ColoNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloRegions">ColoRegions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope">MagicWanStaticRouteRouteScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2511,6 +3014,26 @@ func Fqn() *string
 
 ---
 
+##### `ColoNamesInput`<sup>Optional</sup> <a name="ColoNamesInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloNamesInput"></a>
+
+```go
+func ColoNamesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ColoRegionsInput`<sup>Optional</sup> <a name="ColoRegionsInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloRegionsInput"></a>
+
+```go
+func ColoRegionsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ColoNames`<sup>Required</sup> <a name="ColoNames" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.coloNames"></a>
 
 ```go
@@ -2534,10 +3057,10 @@ func ColoRegions() *[]*string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() MagicWanStaticRouteRouteScope
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope">MagicWanStaticRouteRouteScope</a>
+- *Type:* interface{}
 
 ---
 
@@ -2547,7 +3070,7 @@ func InternalValue() MagicWanStaticRouteRouteScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MagicWanStaticRouteRoutesList
 ```
@@ -2663,6 +3186,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2690,13 +3214,23 @@ func Fqn() *string
 
 ---
 
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### MagicWanStaticRouteRoutesOutputReference <a name="MagicWanStaticRouteRoutesOutputReference" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MagicWanStaticRouteRoutesOutputReference
 ```
@@ -2759,6 +3293,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.putScope">PutScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetNexthop">ResetNexthop</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetPrefix">ResetPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetPriority">ResetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetScope">ResetScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetWeight">ResetWeight</a></code> | *No description.* |
 
 ---
 
@@ -2912,6 +3453,54 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutScope` <a name="PutScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.putScope"></a>
+
+```go
+func PutScope(value MagicWanStaticRouteRoutesScope)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.putScope.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope">MagicWanStaticRouteRoutesScope</a>
+
+---
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
+##### `ResetNexthop` <a name="ResetNexthop" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetNexthop"></a>
+
+```go
+func ResetNexthop()
+```
+
+##### `ResetPrefix` <a name="ResetPrefix" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetPrefix"></a>
+
+```go
+func ResetPrefix()
+```
+
+##### `ResetPriority` <a name="ResetPriority" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetPriority"></a>
+
+```go
+func ResetPriority()
+```
+
+##### `ResetScope` <a name="ResetScope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetScope"></a>
+
+```go
+func ResetScope()
+```
+
+##### `ResetWeight` <a name="ResetWeight" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.resetWeight"></a>
+
+```go
+func ResetWeight()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2920,15 +3509,21 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference">MagicWanStaticRouteRoutesScopeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.nexthopInput">NexthopInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.prefixInput">PrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.scopeInput">ScopeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.nexthop">Nexthop</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.prefix">Prefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference">MagicWanStaticRouteRoutesScopeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.weight">Weight</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes">MagicWanStaticRouteRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2966,16 +3561,6 @@ func CreatedOn() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.description"></a>
-
-```go
-func Description() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.id"></a>
 
 ```go
@@ -2990,6 +3575,86 @@ func Id() *string
 
 ```go
 func ModifiedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.scope"></a>
+
+```go
+func Scope() MagicWanStaticRouteRoutesScopeOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference">MagicWanStaticRouteRoutesScopeOutputReference</a>
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NexthopInput`<sup>Optional</sup> <a name="NexthopInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.nexthopInput"></a>
+
+```go
+func NexthopInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrefixInput`<sup>Optional</sup> <a name="PrefixInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.prefixInput"></a>
+
+```go
+func PrefixInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.priorityInput"></a>
+
+```go
+func PriorityInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ScopeInput`<sup>Optional</sup> <a name="ScopeInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.scopeInput"></a>
+
+```go
+func ScopeInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WeightInput`<sup>Optional</sup> <a name="WeightInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.weightInput"></a>
+
+```go
+func WeightInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.description"></a>
+
+```go
+func Description() *string
 ```
 
 - *Type:* *string
@@ -3026,16 +3691,6 @@ func Priority() *f64
 
 ---
 
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.scope"></a>
-
-```go
-func Scope() MagicWanStaticRouteRoutesScopeOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference">MagicWanStaticRouteRoutesScopeOutputReference</a>
-
----
-
 ##### `Weight`<sup>Required</sup> <a name="Weight" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.weight"></a>
 
 ```go
@@ -3049,10 +3704,10 @@ func Weight() *f64
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() MagicWanStaticRouteRoutes
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes">MagicWanStaticRouteRoutes</a>
+- *Type:* interface{}
 
 ---
 
@@ -3062,7 +3717,7 @@ func InternalValue() MagicWanStaticRouteRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRoutesScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteRoutesScopeOutputReference
 ```
@@ -3107,6 +3762,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.resetColoNames">ResetColoNames</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.resetColoRegions">ResetColoRegions</a></code> | *No description.* |
 
 ---
 
@@ -3260,6 +3917,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetColoNames` <a name="ResetColoNames" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.resetColoNames"></a>
+
+```go
+func ResetColoNames()
+```
+
+##### `ResetColoRegions` <a name="ResetColoRegions" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.resetColoRegions"></a>
+
+```go
+func ResetColoRegions()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3267,9 +3936,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloNamesInput">ColoNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloRegionsInput">ColoRegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloNames">ColoNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloRegions">ColoRegions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope">MagicWanStaticRouteRoutesScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -3297,6 +3968,26 @@ func Fqn() *string
 
 ---
 
+##### `ColoNamesInput`<sup>Optional</sup> <a name="ColoNamesInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloNamesInput"></a>
+
+```go
+func ColoNamesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ColoRegionsInput`<sup>Optional</sup> <a name="ColoRegionsInput" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloRegionsInput"></a>
+
+```go
+func ColoRegionsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ColoNames`<sup>Required</sup> <a name="ColoNames" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.coloNames"></a>
 
 ```go
@@ -3320,10 +4011,10 @@ func ColoRegions() *[]*string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() MagicWanStaticRouteRoutesScope
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope">MagicWanStaticRouteRoutesScope</a>
+- *Type:* interface{}
 
 ---
 
@@ -3333,7 +4024,7 @@ func InternalValue() MagicWanStaticRouteRoutesScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteScopeOutputReference
 ```

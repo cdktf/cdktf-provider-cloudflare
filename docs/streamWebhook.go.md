@@ -4,12 +4,12 @@
 
 ### StreamWebhook <a name="StreamWebhook" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamwebhook"
 
 streamwebhook.NewStreamWebhook(scope Construct, id *string, config StreamWebhookConfig) StreamWebhook
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamwebhook"
 
 streamwebhook.StreamWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamwebhook"
 
 streamwebhook.StreamWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ streamwebhook.StreamWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamwebhook"
 
 streamwebhook.StreamWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ streamwebhook.StreamWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamwebhook"
 
 streamwebhook.StreamWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the StreamWebhook to import.
 
 The id of the existing StreamWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamWebhook.StreamWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamwebhook"
 
 &streamwebhook.StreamWebhookConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
 
 ---
 
@@ -836,7 +836,7 @@ NotificationUrl *string
 
 The URL where webhooks will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
 
 ---
 

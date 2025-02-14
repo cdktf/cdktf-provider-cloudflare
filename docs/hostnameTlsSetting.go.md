@@ -4,12 +4,12 @@
 
 ### HostnameTlsSetting <a name="HostnameTlsSetting" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssetting"
 
 hostnametlssetting.NewHostnameTlsSetting(scope Construct, id *string, config HostnameTlsSettingConfig) HostnameTlsSetting
 ```
@@ -385,7 +385,7 @@ func ResetHostname()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssetting"
 
 hostnametlssetting.HostnameTlsSetting_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssetting"
 
 hostnametlssetting.HostnameTlsSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ hostnametlssetting.HostnameTlsSetting_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssetting"
 
 hostnametlssetting.HostnameTlsSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ hostnametlssetting.HostnameTlsSetting_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssetting"
 
 hostnametlssetting.HostnameTlsSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the HostnameTlsSetting to impo
 
 The id of the existing HostnameTlsSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -510,11 +510,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.hostnameInput">HostnameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.settingIdInput">SettingIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.valueInput">ValueInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.valueInput">ValueInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.hostname">Hostname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.settingId">SettingId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.value">Value</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.value">Value</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -724,10 +724,10 @@ func SettingIdInput() *string
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.valueInput"></a>
 
 ```go
-func ValueInput() *f64
+func ValueInput() *map[string]interface{}
 ```
 
-- *Type:* *f64
+- *Type:* *map[string]interface{}
 
 ---
 
@@ -764,10 +764,10 @@ func SettingId() *string
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.property.value"></a>
 
 ```go
-func Value() *f64
+func Value() *map[string]interface{}
 ```
 
-- *Type:* *f64
+- *Type:* *map[string]interface{}
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/hostnametlssetting"
 
 &hostnametlssetting.HostnameTlsSettingConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametls
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	SettingId: *string,
-	Value: *f64,
+	Value: *map[string]interface{},
 	ZoneId: *string,
 	Hostname: *string,
 }
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametls
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.settingId">SettingId</a></code> | <code>*string</code> | The TLS Setting name. |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.value">Value</a></code> | <code>*f64</code> | The tls setting value. |
+| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.value">Value</a></code> | <code>*map[string]interface{}</code> | The tls setting value. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.hostname">Hostname</a></code> | <code>*string</code> | The hostname for which the tls settings are set. |
 
@@ -921,21 +921,21 @@ SettingId *string
 
 The TLS Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
 
 ---
 
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.value"></a>
 
 ```go
-Value *f64
+Value *map[string]interface{}
 ```
 
-- *Type:* *f64
+- *Type:* *map[string]interface{}
 
 The tls setting value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
 
 ---
 
@@ -949,7 +949,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
 
 ---
 
@@ -963,7 +963,7 @@ Hostname *string
 
 The hostname for which the tls settings are set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
 
 ---
 

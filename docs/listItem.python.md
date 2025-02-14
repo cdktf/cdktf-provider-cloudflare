@@ -4,7 +4,7 @@
 
 ### ListItem <a name="ListItem" id="@cdktf/provider-cloudflare.listItem.ListItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item cloudflare_list_item}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item cloudflare_list_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.listItem.ListItem.Initializer"></a>
 
@@ -24,6 +24,7 @@ listItem.ListItem(
   list_id: str,
   account_id: str = None,
   asn: typing.Union[int, float] = None,
+  comment: str = None,
   hostname: ListItemHostname = None,
   ip: str = None,
   redirect: ListItemRedirect = None
@@ -44,6 +45,7 @@ listItem.ListItem(
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.asn">asn</a></code> | <code>typing.Union[int, float]</code> | A non-negative 32 bit integer. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.comment">comment</a></code> | <code>str</code> | An informative summary of the list item. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.hostname">hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a></code> | Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (*), and the hyphen (-). |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.ip">ip</a></code> | <code>str</code> | An IPv4 address, an IPv4 CIDR, or an IPv6 CIDR. IPv6 CIDRs are limited to a maximum of /64. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect">ListItemRedirect</a></code> | The definition of the redirect. |
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#list_id ListItem#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#list_id ListItem#list_id}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#account_id ListItem#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#account_id ListItem#account_id}
 
 ---
 
@@ -136,7 +138,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#asn ListItem#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#asn ListItem#asn}
+
+---
+
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-cloudflare.listItem.ListItem.Initializer.parameter.comment"></a>
+
+- *Type:* str
+
+An informative summary of the list item.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#comment ListItem#comment}
 
 ---
 
@@ -146,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (*), and the hyphen (-).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#hostname ListItem#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#hostname ListItem#hostname}
 
 ---
 
@@ -156,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An IPv4 address, an IPv4 CIDR, or an IPv6 CIDR. IPv6 CIDRs are limited to a maximum of /64.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#ip ListItem#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#ip ListItem#ip}
 
 ---
 
@@ -166,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The definition of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#redirect ListItem#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#redirect ListItem#redirect}
 
 ---
 
@@ -201,6 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.putRedirect">put_redirect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.resetAsn">reset_asn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.resetHostname">reset_hostname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.resetIp">reset_ip</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.resetRedirect">reset_redirect</a></code> | *No description.* |
@@ -544,7 +557,7 @@ def put_hostname(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#url_hostname ListItem#url_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#url_hostname ListItem#url_hostname}.
 
 ---
 
@@ -566,7 +579,7 @@ def put_redirect(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#source_url ListItem#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#source_url ListItem#source_url}.
 
 ---
 
@@ -574,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#target_url ListItem#target_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#target_url ListItem#target_url}.
 
 ---
 
@@ -582,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}.
 
 ---
 
@@ -590,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}.
 
 ---
 
@@ -598,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}.
 
 ---
 
@@ -606,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#status_code ListItem#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#status_code ListItem#status_code}.
 
 ---
 
@@ -614,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}.
 
 ---
 
@@ -628,6 +641,12 @@ def reset_account_id() -> None
 
 ```python
 def reset_asn() -> None
+```
+
+##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-cloudflare.listItem.ListItem.resetComment"></a>
+
+```python
+def reset_comment() -> None
 ```
 
 ##### `reset_hostname` <a name="reset_hostname" id="@cdktf/provider-cloudflare.listItem.ListItem.resetHostname"></a>
@@ -762,7 +781,7 @@ The construct id used in the generated config for the ListItem to import.
 
 The id of the existing ListItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,22 +811,22 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.hostname">hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference">ListItemHostnameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.itemId">item_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.operationId">operation_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference">ListItemRedirectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.asnInput">asn_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.hostnameInput">hostname_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.ipInput">ip_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.listIdInput">list_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.redirectInput">redirect_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect">ListItemRedirect</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.asn">asn</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.ip">ip</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItem.property.listId">list_id</a></code> | <code>str</code> | *No description.* |
 
@@ -955,16 +974,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-cloudflare.listItem.ListItem.property.comment"></a>
-
-```python
-comment: str
-```
-
-- *Type:* str
-
----
-
 ##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-cloudflare.listItem.ListItem.property.createdOn"></a>
 
 ```python
@@ -989,16 +998,6 @@ hostname: ListItemHostnameOutputReference
 
 ```python
 id: str
-```
-
-- *Type:* str
-
----
-
-##### `item_id`<sup>Required</sup> <a name="item_id" id="@cdktf/provider-cloudflare.listItem.ListItem.property.itemId"></a>
-
-```python
-item_id: str
 ```
 
 - *Type:* str
@@ -1052,6 +1051,16 @@ asn_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-cloudflare.listItem.ListItem.property.commentInput"></a>
+
+```python
+comment_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1115,6 +1124,16 @@ asn: typing.Union[int, float]
 
 ---
 
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-cloudflare.listItem.ListItem.property.comment"></a>
+
+```python
+comment: str
+```
+
+- *Type:* str
+
+---
+
 ##### `ip`<sup>Required</sup> <a name="ip" id="@cdktf/provider-cloudflare.listItem.ListItem.property.ip"></a>
 
 ```python
@@ -1173,6 +1192,7 @@ listItem.ListItemConfig(
   list_id: str,
   account_id: str = None,
   asn: typing.Union[int, float] = None,
+  comment: str = None,
   hostname: ListItemHostname = None,
   ip: str = None,
   redirect: ListItemRedirect = None
@@ -1193,6 +1213,7 @@ listItem.ListItemConfig(
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.asn">asn</a></code> | <code>typing.Union[int, float]</code> | A non-negative 32 bit integer. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.comment">comment</a></code> | <code>str</code> | An informative summary of the list item. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.hostname">hostname</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname">ListItemHostname</a></code> | Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (*), and the hyphen (-). |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.ip">ip</a></code> | <code>str</code> | An IPv4 address, an IPv4 CIDR, or an IPv6 CIDR. IPv6 CIDRs are limited to a maximum of /64. |
 | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemConfig.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect">ListItemRedirect</a></code> | The definition of the redirect. |
@@ -1279,7 +1300,7 @@ list_id: str
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#list_id ListItem#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#list_id ListItem#list_id}
 
 ---
 
@@ -1293,7 +1314,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#account_id ListItem#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#account_id ListItem#account_id}
 
 ---
 
@@ -1307,7 +1328,21 @@ asn: typing.Union[int, float]
 
 A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#asn ListItem#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#asn ListItem#asn}
+
+---
+
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-cloudflare.listItem.ListItemConfig.property.comment"></a>
+
+```python
+comment: str
+```
+
+- *Type:* str
+
+An informative summary of the list item.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#comment ListItem#comment}
 
 ---
 
@@ -1321,7 +1356,7 @@ hostname: ListItemHostname
 
 Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (*), and the hyphen (-).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#hostname ListItem#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#hostname ListItem#hostname}
 
 ---
 
@@ -1335,7 +1370,7 @@ ip: str
 
 An IPv4 address, an IPv4 CIDR, or an IPv6 CIDR. IPv6 CIDRs are limited to a maximum of /64.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#ip ListItem#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#ip ListItem#ip}
 
 ---
 
@@ -1349,7 +1384,7 @@ redirect: ListItemRedirect
 
 The definition of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#redirect ListItem#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#redirect ListItem#redirect}
 
 ---
 
@@ -1369,7 +1404,7 @@ listItem.ListItemHostname(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname.property.urlHostname">url_hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#url_hostname ListItem#url_hostname}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemHostname.property.urlHostname">url_hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#url_hostname ListItem#url_hostname}. |
 
 ---
 
@@ -1381,7 +1416,7 @@ url_hostname: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#url_hostname ListItem#url_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#url_hostname ListItem#url_hostname}.
 
 ---
 
@@ -1407,13 +1442,13 @@ listItem.ListItemRedirect(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#source_url ListItem#source_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.targetUrl">target_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#target_url ListItem#target_url}. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.preservePathSuffix">preserve_path_suffix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.preserveQueryString">preserve_query_string</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#status_code ListItem#status_code}. |
-| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.subpathMatching">subpath_matching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#source_url ListItem#source_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.targetUrl">target_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#target_url ListItem#target_url}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.includeSubdomains">include_subdomains</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.preservePathSuffix">preserve_path_suffix</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.preserveQueryString">preserve_query_string</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#status_code ListItem#status_code}. |
+| <code><a href="#@cdktf/provider-cloudflare.listItem.ListItemRedirect.property.subpathMatching">subpath_matching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}. |
 
 ---
 
@@ -1425,7 +1460,7 @@ source_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#source_url ListItem#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#source_url ListItem#source_url}.
 
 ---
 
@@ -1437,7 +1472,7 @@ target_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#target_url ListItem#target_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#target_url ListItem#target_url}.
 
 ---
 
@@ -1449,7 +1484,7 @@ include_subdomains: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}.
 
 ---
 
@@ -1461,7 +1496,7 @@ preserve_path_suffix: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}.
 
 ---
 
@@ -1473,7 +1508,7 @@ preserve_query_string: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}.
 
 ---
 
@@ -1485,7 +1520,7 @@ status_code: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#status_code ListItem#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#status_code ListItem#status_code}.
 
 ---
 
@@ -1497,7 +1532,7 @@ subpath_matching: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}.
 
 ---
 

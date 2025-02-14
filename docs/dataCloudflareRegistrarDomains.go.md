@@ -4,12 +4,12 @@
 
 ### DataCloudflareRegistrarDomains <a name="DataCloudflareRegistrarDomains" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/registrar_domains cloudflare_registrar_domains}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/registrar_domains cloudflare_registrar_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.NewDataCloudflareRegistrarDomains(scope Construct, id *string, config DataCloudflareRegistrarDomainsConfig) DataCloudflareRegistrarDomains
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.DataCloudflareRegistrarDomains_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.DataCloudflareRegistrarDomains_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareregistrardomains.DataCloudflareRegistrarDomains_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.DataCloudflareRegistrarDomains_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareregistrardomains.DataCloudflareRegistrarDomains_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.DataCloudflareRegistrarDomains_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareRegistrarDom
 
 The id of the existing DataCloudflareRegistrarDomains that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/registrar_domains#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/registrar_domains#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 &datacloudflareregistrardomains.DataCloudflareRegistrarDomainsConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/registrar_domains#account_id DataCloudflareRegistrarDomains#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/registrar_domains#account_id DataCloudflareRegistrarDomains#account_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/registrar_domains#max_items DataCloudflareRegistrarDomains#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/registrar_domains#max_items DataCloudflareRegistrarDomains#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 &datacloudflareregistrardomains.DataCloudflareRegistrarDomainsResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultRegistrantContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 &datacloudflareregistrardomains.DataCloudflareRegistrarDomainsResultRegistrantContact {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultTransferIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 &datacloudflareregistrardomains.DataCloudflareRegistrarDomainsResultTransferIn {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.NewDataCloudflareRegistrarDomainsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRegistrarDomainsResultList
 ```
@@ -929,7 +929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.NewDataCloudflareRegistrarDomainsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRegistrarDomainsResultOutputReference
 ```
@@ -1328,7 +1328,7 @@ func InternalValue() DataCloudflareRegistrarDomainsResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.NewDataCloudflareRegistrarDomainsResultRegistrantContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference
 ```
@@ -1720,7 +1720,7 @@ func InternalValue() DataCloudflareRegistrarDomainsResultRegistrantContact
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultTransferInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareregistrardomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregistrardomains"
 
 datacloudflareregistrardomains.NewDataCloudflareRegistrarDomainsResultTransferInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareRegistrarDomainsResultTransferInOutputReference
 ```

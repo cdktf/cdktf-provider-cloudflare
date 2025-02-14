@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,134 @@ export interface DataCloudflareLogpushDatasetJobConfig extends cdktf.TerraformMe
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job#account_id DataCloudflareLogpushDatasetJob#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job#account_id DataCloudflareLogpushDatasetJob#account_id}
   */
   readonly accountId?: string;
   /**
   * Name of the dataset. A list of supported datasets can be found on the [Developer Docs](https://developers.cloudflare.com/logs/reference/log-fields/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job#dataset_id DataCloudflareLogpushDatasetJob#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job#dataset_id DataCloudflareLogpushDatasetJob#dataset_id}
   */
   readonly datasetId: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job#zone_id DataCloudflareLogpushDatasetJob#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job#zone_id DataCloudflareLogpushDatasetJob#zone_id}
   */
   readonly zoneId?: string;
 }
+export interface DataCloudflareLogpushDatasetJobOutputOptions {
+}
+
+export function dataCloudflareLogpushDatasetJobOutputOptionsToTerraform(struct?: DataCloudflareLogpushDatasetJobOutputOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareLogpushDatasetJobOutputOptionsToHclTerraform(struct?: DataCloudflareLogpushDatasetJobOutputOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareLogpushDatasetJobOutputOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareLogpushDatasetJobOutputOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareLogpushDatasetJobOutputOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // batch_prefix - computed: true, optional: false, required: false
+  public get batchPrefix() {
+    return this.getStringAttribute('batch_prefix');
+  }
+
+  // batch_suffix - computed: true, optional: false, required: false
+  public get batchSuffix() {
+    return this.getStringAttribute('batch_suffix');
+  }
+
+  // cve_2021_4428 - computed: true, optional: false, required: false
+  public get cve20214428() {
+    return this.getBooleanAttribute('cve_2021_4428');
+  }
+
+  // field_delimiter - computed: true, optional: false, required: false
+  public get fieldDelimiter() {
+    return this.getStringAttribute('field_delimiter');
+  }
+
+  // field_names - computed: true, optional: false, required: false
+  public get fieldNames() {
+    return this.getListAttribute('field_names');
+  }
+
+  // output_type - computed: true, optional: false, required: false
+  public get outputType() {
+    return this.getStringAttribute('output_type');
+  }
+
+  // record_delimiter - computed: true, optional: false, required: false
+  public get recordDelimiter() {
+    return this.getStringAttribute('record_delimiter');
+  }
+
+  // record_prefix - computed: true, optional: false, required: false
+  public get recordPrefix() {
+    return this.getStringAttribute('record_prefix');
+  }
+
+  // record_suffix - computed: true, optional: false, required: false
+  public get recordSuffix() {
+    return this.getStringAttribute('record_suffix');
+  }
+
+  // record_template - computed: true, optional: false, required: false
+  public get recordTemplate() {
+    return this.getStringAttribute('record_template');
+  }
+
+  // sample_rate - computed: true, optional: false, required: false
+  public get sampleRate() {
+    return this.getNumberAttribute('sample_rate');
+  }
+
+  // timestamp_format - computed: true, optional: false, required: false
+  public get timestampFormat() {
+    return this.getStringAttribute('timestamp_format');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job}
 */
 export class DataCloudflareLogpushDatasetJob extends cdktf.TerraformDataSource {
 
@@ -49,7 +153,7 @@ export class DataCloudflareLogpushDatasetJob extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareLogpushDatasetJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareLogpushDatasetJob to import
-  * @param importFromId The id of the existing DataCloudflareLogpushDatasetJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareLogpushDatasetJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareLogpushDatasetJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +165,7 @@ export class DataCloudflareLogpushDatasetJob extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +176,7 @@ export class DataCloudflareLogpushDatasetJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_logpush_dataset_job',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -108,6 +212,11 @@ export class DataCloudflareLogpushDatasetJob extends cdktf.TerraformDataSource {
     return this._accountId;
   }
 
+  // dataset - computed: true, optional: false, required: false
+  public get dataset() {
+    return this.getStringAttribute('dataset');
+  }
+
   // dataset_id - computed: false, optional: false, required: true
   private _datasetId?: string; 
   public get datasetId() {
@@ -119,6 +228,77 @@ export class DataCloudflareLogpushDatasetJob extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get datasetIdInput() {
     return this._datasetId;
+  }
+
+  // destination_conf - computed: true, optional: false, required: false
+  public get destinationConf() {
+    return this.getStringAttribute('destination_conf');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // error_message - computed: true, optional: false, required: false
+  public get errorMessage() {
+    return this.getStringAttribute('error_message');
+  }
+
+  // frequency - computed: true, optional: false, required: false
+  public get frequency() {
+    return this.getStringAttribute('frequency');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+
+  // kind - computed: true, optional: false, required: false
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+
+  // last_complete - computed: true, optional: false, required: false
+  public get lastComplete() {
+    return this.getStringAttribute('last_complete');
+  }
+
+  // last_error - computed: true, optional: false, required: false
+  public get lastError() {
+    return this.getStringAttribute('last_error');
+  }
+
+  // logpull_options - computed: true, optional: false, required: false
+  public get logpullOptions() {
+    return this.getStringAttribute('logpull_options');
+  }
+
+  // max_upload_bytes - computed: true, optional: false, required: false
+  public get maxUploadBytes() {
+    return this.getNumberAttribute('max_upload_bytes');
+  }
+
+  // max_upload_interval_seconds - computed: true, optional: false, required: false
+  public get maxUploadIntervalSeconds() {
+    return this.getNumberAttribute('max_upload_interval_seconds');
+  }
+
+  // max_upload_records - computed: true, optional: false, required: false
+  public get maxUploadRecords() {
+    return this.getNumberAttribute('max_upload_records');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // output_options - computed: true, optional: false, required: false
+  private _outputOptions = new DataCloudflareLogpushDatasetJobOutputOptionsOutputReference(this, "output_options");
+  public get outputOptions() {
+    return this._outputOptions;
   }
 
   // zone_id - computed: false, optional: true, required: false

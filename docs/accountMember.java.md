@@ -4,7 +4,7 @@
 
 ### AccountMember <a name="AccountMember" id="@cdktf/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
@@ -47,7 +47,7 @@ AccountMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.policies">policies</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies">AccountMemberPolicies</a>></code> | Array of policies associated with this member. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Array of roles associated with this member. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#status AccountMember#status}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#status AccountMember#status}. |
 
 ---
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#account_id AccountMember#account_id}
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#email AccountMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#status AccountMember#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#status AccountMember#status}.
 
 ---
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the AccountMember to import.
 
 The id of the existing AccountMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -986,7 +986,7 @@ AccountMemberConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.policies">policies</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies">AccountMemberPolicies</a>></code> | Array of policies associated with this member. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Array of roles associated with this member. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#status AccountMember#status}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#status AccountMember#status}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ public java.lang.String getAccountId();
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#account_id AccountMember#account_id}
 
 ---
 
@@ -1084,7 +1084,7 @@ public java.lang.String getEmail();
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#email AccountMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -1098,7 +1098,7 @@ public java.lang.Object getPolicies();
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -1112,7 +1112,7 @@ public java.util.List<java.lang.String> getRoles();
 
 Array of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -1124,7 +1124,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#status AccountMember#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#status AccountMember#status}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.String getAccess();
 
 Allow or deny operations against the resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#access AccountMember#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#access AccountMember#access}
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.lang.Object getPermissionGroups();
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
 
 ---
 
@@ -1192,7 +1192,7 @@ public java.lang.Object getResourceGroups();
 
 A list of resource groups that the policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.String getId();
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1263,7 +1263,7 @@ public java.lang.String getId();
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

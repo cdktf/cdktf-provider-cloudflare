@@ -4,12 +4,12 @@
 
 ### DataCloudflareTurnstileWidgets <a name="DataCloudflareTurnstileWidgets" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.NewDataCloudflareTurnstileWidgets(scope Construct, id *string, config DataCloudflareTurnstileWidgetsConfig) DataCloudflareTurnstileWidgets
 ```
@@ -297,7 +297,7 @@ func ResetOrder()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgets_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgets_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgets_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgets_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareTurnstileWid
 
 The id of the existing DataCloudflareTurnstileWidgets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/turnstile_widgets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widgets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 &datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgetsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/turnstile_widgets#account_id DataCloudflareTurnstileWidgets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widgets#account_id DataCloudflareTurnstileWidgets#account_id}
 
 ---
 
@@ -792,7 +792,7 @@ Direction *string
 
 Direction to order widgets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/turnstile_widgets#direction DataCloudflareTurnstileWidgets#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widgets#direction DataCloudflareTurnstileWidgets#direction}
 
 ---
 
@@ -806,7 +806,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/turnstile_widgets#max_items DataCloudflareTurnstileWidgets#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widgets#max_items DataCloudflareTurnstileWidgets#max_items}
 
 ---
 
@@ -820,7 +820,7 @@ Order *string
 
 Field to order widgets by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/turnstile_widgets#order DataCloudflareTurnstileWidgets#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widgets#order DataCloudflareTurnstileWidgets#order}
 
 ---
 
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 &datacloudflareturnstilewidgets.DataCloudflareTurnstileWidgetsResult {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.NewDataCloudflareTurnstileWidgetsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareTurnstileWidgetsResultList
 ```
@@ -993,7 +993,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidgets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidgets"
 
 datacloudflareturnstilewidgets.NewDataCloudflareTurnstileWidgetsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareTurnstileWidgetsResultOutputReference
 ```

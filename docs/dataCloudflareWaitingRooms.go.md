@@ -4,12 +4,12 @@
 
 ### DataCloudflareWaitingRooms <a name="DataCloudflareWaitingRooms" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.NewDataCloudflareWaitingRooms(scope Construct, id *string, config DataCloudflareWaitingRoomsConfig) DataCloudflareWaitingRooms
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.DataCloudflareWaitingRooms_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.DataCloudflareWaitingRooms_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarewaitingrooms.DataCloudflareWaitingRooms_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.DataCloudflareWaitingRooms_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarewaitingrooms.DataCloudflareWaitingRooms_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.DataCloudflareWaitingRooms_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWaitingRooms
 
 The id of the existing DataCloudflareWaitingRooms that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 &datacloudflarewaitingrooms.DataCloudflareWaitingRoomsConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 &datacloudflarewaitingrooms.DataCloudflareWaitingRoomsResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultAdditionalRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 &datacloudflarewaitingrooms.DataCloudflareWaitingRoomsResultAdditionalRoutes {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultCookieAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 &datacloudflarewaitingrooms.DataCloudflareWaitingRoomsResultCookieAttributes {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultAdditionalRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.NewDataCloudflareWaitingRoomsResultAdditionalRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWaitingRoomsResultAdditionalRoutesList
 ```
@@ -929,7 +929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultAdditionalRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.NewDataCloudflareWaitingRoomsResultAdditionalRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWaitingRoomsResultAdditionalRoutesOutputReference
 ```
@@ -1218,7 +1218,7 @@ func InternalValue() DataCloudflareWaitingRoomsResultAdditionalRoutes
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultCookieAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWaitingRoomsResultCookieAttributesOutputReference
 ```
@@ -1489,7 +1489,7 @@ func InternalValue() DataCloudflareWaitingRoomsResultCookieAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.NewDataCloudflareWaitingRoomsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWaitingRoomsResultList
 ```
@@ -1638,7 +1638,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarewaitingrooms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingrooms"
 
 datacloudflarewaitingrooms.NewDataCloudflareWaitingRoomsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWaitingRoomsResultOutputReference
 ```

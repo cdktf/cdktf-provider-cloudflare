@@ -4,12 +4,12 @@
 
 ### ByoIpPrefix <a name="ByoIpPrefix" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/byoipprefix"
 
 byoipprefix.NewByoIpPrefix(scope Construct, id *string, config ByoIpPrefixConfig) ByoIpPrefix
 ```
@@ -385,7 +385,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/byoipprefix"
 
 byoipprefix.ByoIpPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/byoipprefix"
 
 byoipprefix.ByoIpPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ byoipprefix.ByoIpPrefix_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/byoipprefix"
 
 byoipprefix.ByoIpPrefix_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ byoipprefix.ByoIpPrefix_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/byoipprefix"
 
 byoipprefix.ByoIpPrefix_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ByoIpPrefix to import.
 
 The id of the existing ByoIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/byoipprefix"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/byoipprefix"
 
 &byoipprefix.ByoIpPrefixConfig {
 	Connection: interface{},
@@ -989,7 +989,7 @@ AccountId *string
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
 
 ---
 
@@ -1003,7 +1003,7 @@ Asn *f64
 
 Autonomous System Number (ASN) the prefix will be advertised under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
 
 ---
 
@@ -1017,7 +1017,7 @@ Cidr *string
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
 
 ---
 
@@ -1031,7 +1031,7 @@ LoaDocumentId *string
 
 Identifier for the uploaded LOA document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
 
 ---
 
@@ -1045,7 +1045,7 @@ Description *string
 
 Description of the prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
 
 ---
 

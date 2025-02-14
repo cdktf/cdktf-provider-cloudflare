@@ -4,12 +4,12 @@
 
 ### DataCloudflarePagesDomains <a name="DataCloudflarePagesDomains" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/pages_domains cloudflare_pages_domains}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/pages_domains cloudflare_pages_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.NewDataCloudflarePagesDomains(scope Construct, id *string, config DataCloudflarePagesDomainsConfig) DataCloudflarePagesDomains
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.DataCloudflarePagesDomains_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.DataCloudflarePagesDomains_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarepagesdomains.DataCloudflarePagesDomains_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.DataCloudflarePagesDomains_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarepagesdomains.DataCloudflarePagesDomains_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomains.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.DataCloudflarePagesDomains_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflarePagesDomains
 
 The id of the existing DataCloudflarePagesDomains that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/pages_domains#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/pages_domains#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 &datacloudflarepagesdomains.DataCloudflarePagesDomainsConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/pages_domains#account_id DataCloudflarePagesDomains#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/pages_domains#account_id DataCloudflarePagesDomains#account_id}
 
 ---
 
@@ -754,7 +754,7 @@ ProjectName *string
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/pages_domains#project_name DataCloudflarePagesDomains#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/pages_domains#project_name DataCloudflarePagesDomains#project_name}
 
 ---
 
@@ -768,7 +768,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/pages_domains#max_items DataCloudflarePagesDomains#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/pages_domains#max_items DataCloudflarePagesDomains#max_items}
 
 ---
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 &datacloudflarepagesdomains.DataCloudflarePagesDomainsResult {
 
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResultValidationData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 &datacloudflarepagesdomains.DataCloudflarePagesDomainsResultValidationData {
 
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResultVerificationData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 &datacloudflarepagesdomains.DataCloudflarePagesDomainsResultVerificationData {
 
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.NewDataCloudflarePagesDomainsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflarePagesDomainsResultList
 ```
@@ -967,7 +967,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.NewDataCloudflarePagesDomainsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflarePagesDomainsResultOutputReference
 ```
@@ -1333,7 +1333,7 @@ func InternalValue() DataCloudflarePagesDomainsResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResultValidationDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.NewDataCloudflarePagesDomainsResultValidationDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesDomainsResultValidationDataOutputReference
 ```
@@ -1637,7 +1637,7 @@ func InternalValue() DataCloudflarePagesDomainsResultValidationData
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesDomains.DataCloudflarePagesDomainsResultVerificationDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepagesdomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesdomains"
 
 datacloudflarepagesdomains.NewDataCloudflarePagesDomainsResultVerificationDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesDomainsResultVerificationDataOutputReference
 ```

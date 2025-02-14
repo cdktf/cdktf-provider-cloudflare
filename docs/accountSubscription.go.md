@@ -4,12 +4,12 @@
 
 ### AccountSubscription <a name="AccountSubscription" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription cloudflare_account_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription cloudflare_account_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 accountsubscription.NewAccountSubscription(scope Construct, id *string, config AccountSubscriptionConfig) AccountSubscription
 ```
@@ -412,7 +412,7 @@ func ResetSubscriptionIdentifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 accountsubscription.AccountSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 accountsubscription.AccountSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accountsubscription.AccountSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 accountsubscription.AccountSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accountsubscription.AccountSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 accountsubscription.AccountSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AccountSubscription to imp
 
 The id of the existing AccountSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,7 +531,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.currency">Currency</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.currentPeriodEnd">CurrentPeriodEnd</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.currentPeriodStart">CurrentPeriodStart</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.price">Price</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.ratePlan">RatePlan</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference">AccountSubscriptionRatePlanOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.frequencyInput">FrequencyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.ratePlanInput">RatePlanInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -684,6 +690,56 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Currency`<sup>Required</sup> <a name="Currency" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.currency"></a>
+
+```go
+func Currency() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CurrentPeriodEnd`<sup>Required</sup> <a name="CurrentPeriodEnd" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.currentPeriodEnd"></a>
+
+```go
+func CurrentPeriodEnd() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CurrentPeriodStart`<sup>Required</sup> <a name="CurrentPeriodStart" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.currentPeriodStart"></a>
+
+```go
+func CurrentPeriodStart() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Price`<sup>Required</sup> <a name="Price" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.price"></a>
+
+```go
+func Price() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `RatePlan`<sup>Required</sup> <a name="RatePlan" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.ratePlan"></a>
 
 ```go
@@ -691,6 +747,16 @@ func RatePlan() AccountSubscriptionRatePlanOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference">AccountSubscriptionRatePlanOutputReference</a>
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.state"></a>
+
+```go
+func State() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -789,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 &accountsubscription.AccountSubscriptionConfig {
 	Connection: interface{},
@@ -801,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubs
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Frequency: *string,
-	RatePlan: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.accountSubscription.AccountSubscriptionRatePlan,
+	RatePlan: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accountSubscription.AccountSubscriptionRatePlan,
 	SubscriptionIdentifier: *string,
 }
 ```
@@ -904,7 +970,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
 
 ---
 
@@ -918,7 +984,7 @@ Frequency *string
 
 How often the subscription is renewed automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
 
 ---
 
@@ -932,7 +998,7 @@ RatePlan AccountSubscriptionRatePlan
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
 
 ---
 
@@ -946,7 +1012,7 @@ SubscriptionIdentifier *string
 
 Subscription identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#subscription_identifier AccountSubscription#subscription_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#subscription_identifier AccountSubscription#subscription_identifier}
 
 ---
 
@@ -955,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 &accountsubscription.AccountSubscriptionRatePlan {
 	Currency: *string,
@@ -992,7 +1058,7 @@ Currency *string
 
 The currency applied to the rate plan subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#currency AccountSubscription#currency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#currency AccountSubscription#currency}
 
 ---
 
@@ -1006,7 +1072,7 @@ ExternallyManaged interface{}
 
 Whether this rate plan is managed externally from Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
 
 ---
 
@@ -1020,7 +1086,7 @@ Id *string
 
 The ID of the rate plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#id AccountSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#id AccountSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1037,7 +1103,7 @@ IsContract interface{}
 
 Whether a rate plan is enterprise-based (or newly adopted term contract).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
 
 ---
 
@@ -1051,7 +1117,7 @@ PublicName *string
 
 The full name of the rate plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#public_name AccountSubscription#public_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#public_name AccountSubscription#public_name}
 
 ---
 
@@ -1065,7 +1131,7 @@ Scope *string
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#scope AccountSubscription#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#scope AccountSubscription#scope}
 
 ---
 
@@ -1079,7 +1145,7 @@ Sets *[]*string
 
 The list of sets this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription#sets AccountSubscription#sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription#sets AccountSubscription#sets}
 
 ---
 
@@ -1090,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountsubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountsubscription"
 
 accountsubscription.NewAccountSubscriptionRatePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountSubscriptionRatePlanOutputReference
 ```

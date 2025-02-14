@@ -4,12 +4,12 @@
 
 ### CallsTurnApp <a name="CallsTurnApp" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/callsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/callsturnapp"
 
 callsturnapp.NewCallsTurnApp(scope Construct, id *string, config CallsTurnAppConfig) CallsTurnApp
 ```
@@ -392,7 +392,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/callsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/callsturnapp"
 
 callsturnapp.CallsTurnApp_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/callsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/callsturnapp"
 
 callsturnapp.CallsTurnApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ callsturnapp.CallsTurnApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/callsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/callsturnapp"
 
 callsturnapp.CallsTurnApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ callsturnapp.CallsTurnApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/callsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/callsturnapp"
 
 callsturnapp.CallsTurnApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CallsTurnApp to import.
 
 The id of the existing CallsTurnApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.callsTurnApp.CallsTurnAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/callsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/callsturnapp"
 
 &callsturnapp.CallsTurnAppConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
 
 ---
 
@@ -918,7 +918,7 @@ KeyId *string
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
 
 ---
 
@@ -932,7 +932,7 @@ Name *string
 
 A short description of a TURN key, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
 
 ---
 

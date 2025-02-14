@@ -4,7 +4,7 @@
 
 ### DataCloudflareWaitingRoomRules <a name="DataCloudflareWaitingRoomRules" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer"></a>
 
@@ -37,7 +37,7 @@ dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer.parameter.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer.parameter.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#zone_id DataCloudflareWaitingRoomRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#zone_id DataCloudflareWaitingRoomRules#zone_id}
 
 ---
 
@@ -475,7 +475,7 @@ The construct id used in the generated config for the DataCloudflareWaitingRoomR
 
 The id of the existing DataCloudflareWaitingRoomRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -503,6 +503,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.action">action</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.lastUpdated">last_updated</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.version">version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.waitingRoomIdInput">waiting_room_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | *No description.* |
@@ -632,6 +639,76 @@ provider: TerraformProvider
 
 ---
 
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.action"></a>
+
+```python
+action: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.enabled"></a>
+
+```python
+enabled: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `last_updated`<sup>Required</sup> <a name="last_updated" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.lastUpdated"></a>
+
+```python
+last_updated: str
+```
+
+- *Type:* str
+
+---
+
+##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.version"></a>
+
+```python
+version: str
+```
+
+- *Type:* str
+
+---
+
 ##### `waiting_room_id_input`<sup>Optional</sup> <a name="waiting_room_id_input" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRules.property.waitingRoomIdInput"></a>
 
 ```python
@@ -723,7 +800,7 @@ dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig.property.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig.property.waitingRoomId">waiting_room_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWaitingRoomRules.DataCloudflareWaitingRoomRulesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
@@ -806,7 +883,7 @@ waiting_room_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#waiting_room_id DataCloudflareWaitingRoomRules#waiting_room_id}.
 
 ---
 
@@ -820,7 +897,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules#zone_id DataCloudflareWaitingRoomRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules#zone_id DataCloudflareWaitingRoomRules#zone_id}
 
 ---
 

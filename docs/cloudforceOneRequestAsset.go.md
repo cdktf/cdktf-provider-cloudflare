@@ -4,12 +4,12 @@
 
 ### CloudforceOneRequestAsset <a name="CloudforceOneRequestAsset" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestasset"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/cloudforceonerequestasset"
 
 cloudforceonerequestasset.NewCloudforceOneRequestAsset(scope Construct, id *string, config CloudforceOneRequestAssetConfig) CloudforceOneRequestAsset
 ```
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetAssetIdentifer">ResetAssetIdentifer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetSource">ResetSource</a></code> | *No description.* |
 
 ---
@@ -366,12 +365,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAssetIdentifer` <a name="ResetAssetIdentifer" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetAssetIdentifer"></a>
-
-```go
-func ResetAssetIdentifer()
-```
-
 ##### `ResetSource` <a name="ResetSource" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetSource"></a>
 
 ```go
@@ -392,7 +385,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestasset"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestasset"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +431,7 @@ cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestasset"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +445,7 @@ cloudforceonerequestasset.CloudforceOneRequestAsset_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestasset"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/cloudforceonerequestasset"
 
 cloudforceonerequestasset.CloudforceOneRequestAsset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +474,7 @@ The construct id used in the generated config for the CloudforceOneRequestAsset 
 
 The id of the existing CloudforceOneRequestAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,13 +510,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.id">Id</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.accountIdentifierInput">AccountIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.assetIdentiferInput">AssetIdentiferInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.pageInput">PageInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.perPageInput">PerPageInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.requestIdentifierInput">RequestIdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.sourceInput">SourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.accountIdentifier">AccountIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.assetIdentifer">AssetIdentifer</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.page">Page</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.perPage">PerPage</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.requestIdentifier">RequestIdentifier</a></code> | <code>*string</code> | *No description.* |
@@ -733,16 +724,6 @@ func AccountIdentifierInput() *string
 
 ---
 
-##### `AssetIdentiferInput`<sup>Optional</sup> <a name="AssetIdentiferInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.assetIdentiferInput"></a>
-
-```go
-func AssetIdentiferInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `PageInput`<sup>Optional</sup> <a name="PageInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.pageInput"></a>
 
 ```go
@@ -787,16 +768,6 @@ func SourceInput() *string
 
 ```go
 func AccountIdentifier() *string
-```
-
-- *Type:* *string
-
----
-
-##### `AssetIdentifer`<sup>Required</sup> <a name="AssetIdentifer" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.property.assetIdentifer"></a>
-
-```go
-func AssetIdentifer() *string
 ```
 
 - *Type:* *string
@@ -868,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestasset"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/cloudforceonerequestasset"
 
 &cloudforceonerequestasset.CloudforceOneRequestAssetConfig {
 	Connection: interface{},
@@ -882,7 +853,6 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceo
 	Page: *f64,
 	PerPage: *f64,
 	RequestIdentifier: *string,
-	AssetIdentifer: *string,
 	Source: *string,
 }
 ```
@@ -902,7 +872,6 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceo
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.page">Page</a></code> | <code>*f64</code> | Page number of results. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.perPage">PerPage</a></code> | <code>*f64</code> | Number of results per page. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.requestIdentifier">RequestIdentifier</a></code> | <code>*string</code> | UUID. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.assetIdentifer">AssetIdentifer</a></code> | <code>*string</code> | UUID. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.source">Source</a></code> | <code>*string</code> | Asset file to upload. |
 
 ---
@@ -987,7 +956,7 @@ AccountIdentifier *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#account_identifier CloudforceOneRequestAsset#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset#account_identifier CloudforceOneRequestAsset#account_identifier}
 
 ---
 
@@ -1001,7 +970,7 @@ Page *f64
 
 Page number of results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
 
 ---
 
@@ -1015,7 +984,7 @@ PerPage *f64
 
 Number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
 
 ---
 
@@ -1029,21 +998,7 @@ RequestIdentifier *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#request_identifier CloudforceOneRequestAsset#request_identifier}
-
----
-
-##### `AssetIdentifer`<sup>Optional</sup> <a name="AssetIdentifer" id="@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.assetIdentifer"></a>
-
-```go
-AssetIdentifer *string
-```
-
-- *Type:* *string
-
-UUID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#asset_identifer CloudforceOneRequestAsset#asset_identifer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset#request_identifier CloudforceOneRequestAsset#request_identifier}
 
 ---
 
@@ -1057,7 +1012,7 @@ Source *string
 
 Asset file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
 
 ---
 

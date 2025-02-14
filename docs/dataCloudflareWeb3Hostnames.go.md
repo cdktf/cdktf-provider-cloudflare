@@ -4,12 +4,12 @@
 
 ### DataCloudflareWeb3Hostnames <a name="DataCloudflareWeb3Hostnames" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3Hostnames"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/web3_hostnames cloudflare_web3_hostnames}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/web3_hostnames cloudflare_web3_hostnames}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3Hostnames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.NewDataCloudflareWeb3Hostnames(scope Construct, id *string, config DataCloudflareWeb3HostnamesConfig) DataCloudflareWeb3Hostnames
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3Hostnames.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.DataCloudflareWeb3Hostnames_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3Hostnames.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.DataCloudflareWeb3Hostnames_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareweb3hostnames.DataCloudflareWeb3Hostnames_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3Hostnames.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.DataCloudflareWeb3Hostnames_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareweb3hostnames.DataCloudflareWeb3Hostnames_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3Hostnames.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.DataCloudflareWeb3Hostnames_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWeb3Hostname
 
 The id of the existing DataCloudflareWeb3Hostnames that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/web3_hostnames#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/web3_hostnames#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3HostnamesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 &datacloudflareweb3hostnames.DataCloudflareWeb3HostnamesConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/web3_hostnames#zone_id DataCloudflareWeb3Hostnames#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/web3_hostnames#zone_id DataCloudflareWeb3Hostnames#zone_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/web3_hostnames#max_items DataCloudflareWeb3Hostnames#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/web3_hostnames#max_items DataCloudflareWeb3Hostnames#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3HostnamesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 &datacloudflareweb3hostnames.DataCloudflareWeb3HostnamesResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3HostnamesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.NewDataCloudflareWeb3HostnamesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWeb3HostnamesResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWeb3Hostnames.DataCloudflareWeb3HostnamesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareweb3hostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareweb3hostnames"
 
 datacloudflareweb3hostnames.NewDataCloudflareWeb3HostnamesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWeb3HostnamesResultOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersCronTrigger <a name="DataCloudflareWorkersCronTrigger" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.NewDataCloudflareWorkersCronTrigger(scope Construct, id *string, config DataCloudflareWorkersCronTriggerConfig) DataCloudflareWorkersCronTrigger
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTrigger_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTrigger.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTrigger_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTrigger_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareWorkersCronT
 
 The id of the existing DataCloudflareWorkersCronTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 &datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTriggerConfig {
 	Connection: interface{},
@@ -709,7 +709,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_cron_trigger#account_id DataCloudflareWorkersCronTrigger#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_cron_trigger#account_id DataCloudflareWorkersCronTrigger#account_id}
 
 ---
 
@@ -723,7 +723,7 @@ ScriptName *string
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_cron_trigger#script_name DataCloudflareWorkersCronTrigger#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_cron_trigger#script_name DataCloudflareWorkersCronTrigger#script_name}
 
 ---
 
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTriggerSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 &datacloudflareworkerscrontrigger.DataCloudflareWorkersCronTriggerSchedules {
 
@@ -747,7 +747,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTriggerSchedulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.NewDataCloudflareWorkersCronTriggerSchedulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersCronTriggerSchedulesList
 ```
@@ -896,7 +896,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCronTrigger.DataCloudflareWorkersCronTriggerSchedulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscrontrigger"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscrontrigger"
 
 datacloudflareworkerscrontrigger.NewDataCloudflareWorkersCronTriggerSchedulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersCronTriggerSchedulesOutputReference
 ```

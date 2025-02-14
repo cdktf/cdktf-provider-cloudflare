@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktf/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -144,7 +144,7 @@ information related to the tenant unit, and optionally, an id of the unit to cre
 
 see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -524,7 +524,7 @@ def put_settings(
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -543,7 +543,7 @@ for more information.
 
 Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#default_nameservers Account#default_nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#default_nameservers Account#default_nameservers}
 
 ---
 
@@ -553,7 +553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -565,7 +565,7 @@ Indicates whether new zones should use the account-level custom nameservers by d
 
 Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
 
 ---
 
@@ -583,7 +583,7 @@ def put_unit(
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -716,7 +716,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1141,7 +1141,7 @@ name: str
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1155,7 +1155,7 @@ type: str
 
 the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -1169,7 +1169,7 @@ settings: AccountSettings
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -1185,7 +1185,7 @@ information related to the tenant unit, and optionally, an id of the unit to cre
 
 see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -1225,7 +1225,7 @@ abuse_contact_email: str
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1248,7 +1248,7 @@ for more information.
 
 Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#default_nameservers Account#default_nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#default_nameservers Account#default_nameservers}
 
 ---
 
@@ -1262,7 +1262,7 @@ enforce_twofactor: typing.Union[bool, IResolvable]
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1278,7 +1278,7 @@ Indicates whether new zones should use the account-level custom nameservers by d
 
 Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
 
 ---
 
@@ -1312,7 +1312,7 @@ id: str
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

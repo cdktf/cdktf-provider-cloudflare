@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersCustomDomain <a name="DataCloudflareWorkersCustomDomain" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 datacloudflareworkerscustomdomain.NewDataCloudflareWorkersCustomDomain(scope Construct, id *string, config DataCloudflareWorkersCustomDomainConfig) DataCloudflareWorkersCustomDomain
 ```
@@ -303,7 +303,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomain_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomain_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataCloudflareWorkersCusto
 
 The id of the existing DataCloudflareWorkersCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 &datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomainConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	DomainId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilter,
 }
 ```
 
@@ -731,7 +731,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifer of the account. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainConfig.property.domainId">DomainId</a></code> | <code>*string</code> | Identifer of the Worker Domain. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilter">DataCloudflareWorkersCustomDomainFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#filter DataCloudflareWorkersCustomDomain#filter}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilter">DataCloudflareWorkersCustomDomainFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#filter DataCloudflareWorkersCustomDomain#filter}. |
 
 ---
 
@@ -815,7 +815,7 @@ AccountId *string
 
 Identifer of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#account_id DataCloudflareWorkersCustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#account_id DataCloudflareWorkersCustomDomain#account_id}
 
 ---
 
@@ -829,7 +829,7 @@ DomainId *string
 
 Identifer of the Worker Domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#domain_id DataCloudflareWorkersCustomDomain#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#domain_id DataCloudflareWorkersCustomDomain#domain_id}
 
 ---
 
@@ -841,7 +841,7 @@ Filter DataCloudflareWorkersCustomDomainFilter
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilter">DataCloudflareWorkersCustomDomainFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#filter DataCloudflareWorkersCustomDomain#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#filter DataCloudflareWorkersCustomDomain#filter}.
 
 ---
 
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 &datacloudflareworkerscustomdomain.DataCloudflareWorkersCustomDomainFilter {
 	Environment: *string,
@@ -883,7 +883,7 @@ Environment *string
 
 Worker environment associated with the zone and hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#environment DataCloudflareWorkersCustomDomain#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#environment DataCloudflareWorkersCustomDomain#environment}
 
 ---
 
@@ -897,7 +897,7 @@ Hostname *string
 
 Hostname of the Worker Domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#hostname DataCloudflareWorkersCustomDomain#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#hostname DataCloudflareWorkersCustomDomain#hostname}
 
 ---
 
@@ -911,7 +911,7 @@ Service *string
 
 Worker service associated with the zone and hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#service DataCloudflareWorkersCustomDomain#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#service DataCloudflareWorkersCustomDomain#service}
 
 ---
 
@@ -925,7 +925,7 @@ ZoneId *string
 
 Identifier of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#zone_id DataCloudflareWorkersCustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#zone_id DataCloudflareWorkersCustomDomain#zone_id}
 
 ---
 
@@ -939,7 +939,7 @@ ZoneName *string
 
 Name of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_custom_domain#zone_name DataCloudflareWorkersCustomDomain#zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_custom_domain#zone_name DataCloudflareWorkersCustomDomain#zone_name}
 
 ---
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersCustomDomain.DataCloudflareWorkersCustomDomainFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerscustomdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerscustomdomain"
 
 datacloudflareworkerscustomdomain.NewDataCloudflareWorkersCustomDomainFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkersCustomDomainFilterOutputReference
 ```

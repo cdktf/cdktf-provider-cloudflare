@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface DataCloudflareLoadBalancerConfig extends cdktf.TerraformMetaArg
   /**
   * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
   */
   readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}
   */
   readonly loadBalancerId?: string;
   /**
   * (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
   */
   readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
   */
   readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
@@ -39,7 +34,7 @@ export interface DataCloudflareLoadBalancerConfig extends cdktf.TerraformMetaArg
   * - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
   * - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
@@ -53,17 +48,17 @@ export interface DataCloudflareLoadBalancerConfig extends cdktf.TerraformMetaArg
   * - `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
   * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}
   */
   readonly zoneId: string;
 }
@@ -486,7 +481,7 @@ export interface DataCloudflareLoadBalancerRulesOverridesSessionAffinityAttribut
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
 }
@@ -597,19 +592,19 @@ export interface DataCloudflareLoadBalancerRulesOverrides {
   /**
   * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
   */
   readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
   */
   readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
   */
   readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
@@ -617,7 +612,7 @@ export interface DataCloudflareLoadBalancerRulesOverrides {
   * - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
   * - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
@@ -631,13 +626,13 @@ export interface DataCloudflareLoadBalancerRulesOverrides {
   * - `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
   * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
   */
   readonly ttl?: number;
 }
@@ -1014,7 +1009,7 @@ export interface DataCloudflareLoadBalancerSessionAffinityAttributes {
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
 }
@@ -1123,7 +1118,7 @@ export class DataCloudflareLoadBalancerSessionAffinityAttributesOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer cloudflare_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer cloudflare_load_balancer}
 */
 export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
 
@@ -1139,7 +1134,7 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareLoadBalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareLoadBalancer to import
-  * @param importFromId The id of the existing DataCloudflareLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareLoadBalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1151,7 +1146,7 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1162,7 +1157,7 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

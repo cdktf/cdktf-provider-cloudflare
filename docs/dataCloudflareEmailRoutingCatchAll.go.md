@@ -4,12 +4,12 @@
 
 ### DataCloudflareEmailRoutingCatchAll <a name="DataCloudflareEmailRoutingCatchAll" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAll"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.NewDataCloudflareEmailRoutingCatchAll(scope Construct, id *string, config DataCloudflareEmailRoutingCatchAllConfig) DataCloudflareEmailRoutingCatchAll
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAll.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAll_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAll.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAll_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAll_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAll.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAll_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAll_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAll.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAll_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingCatchAll that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 &datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAllActions {
 
@@ -644,7 +644,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 &datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAllConfig {
 	Connection: interface{},
@@ -753,7 +753,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/email_routing_catch_all#zone_id DataCloudflareEmailRoutingCatchAll#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_catch_all#zone_id DataCloudflareEmailRoutingCatchAll#zone_id}
 
 ---
 
@@ -762,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllMatchers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 &datacloudflareemailroutingcatchall.DataCloudflareEmailRoutingCatchAllMatchers {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.NewDataCloudflareEmailRoutingCatchAllActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingCatchAllActionsList
 ```
@@ -926,7 +926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.NewDataCloudflareEmailRoutingCatchAllActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingCatchAllActionsOutputReference
 ```
@@ -1215,7 +1215,7 @@ func InternalValue() DataCloudflareEmailRoutingCatchAllActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllMatchersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.NewDataCloudflareEmailRoutingCatchAllMatchersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingCatchAllMatchersList
 ```
@@ -1364,7 +1364,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingCatchAll.DataCloudflareEmailRoutingCatchAllMatchersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingcatchall"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingcatchall"
 
 datacloudflareemailroutingcatchall.NewDataCloudflareEmailRoutingCatchAllMatchersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingCatchAllMatchersOutputReference
 ```

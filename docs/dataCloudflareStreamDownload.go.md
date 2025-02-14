@@ -4,12 +4,12 @@
 
 ### DataCloudflareStreamDownload <a name="DataCloudflareStreamDownload" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_download cloudflare_stream_download}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_download cloudflare_stream_download}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamdownload"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamdownload"
 
 datacloudflarestreamdownload.NewDataCloudflareStreamDownload(scope Construct, id *string, config DataCloudflareStreamDownloadConfig) DataCloudflareStreamDownload
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamdownload"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamdownload"
 
 datacloudflarestreamdownload.DataCloudflareStreamDownload_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamdownload"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamdownload"
 
 datacloudflarestreamdownload.DataCloudflareStreamDownload_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarestreamdownload.DataCloudflareStreamDownload_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamdownload"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamdownload"
 
 datacloudflarestreamdownload.DataCloudflareStreamDownload_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarestreamdownload.DataCloudflareStreamDownload_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamdownload"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamdownload"
 
 datacloudflarestreamdownload.DataCloudflareStreamDownload_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareStreamDownlo
 
 The id of the existing DataCloudflareStreamDownload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_download#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_download#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamdownload"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamdownload"
 
 &datacloudflarestreamdownload.DataCloudflareStreamDownloadConfig {
 	Connection: interface{},
@@ -698,7 +698,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_download#account_id DataCloudflareStreamDownload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_download#account_id DataCloudflareStreamDownload#account_id}
 
 ---
 
@@ -712,7 +712,7 @@ Identifier *string
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_download#identifier DataCloudflareStreamDownload#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_download#identifier DataCloudflareStreamDownload#identifier}
 
 ---
 

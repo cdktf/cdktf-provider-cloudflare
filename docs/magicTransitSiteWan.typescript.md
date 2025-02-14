@@ -4,7 +4,7 @@
 
 ### MagicTransitSiteWan <a name="MagicTransitSiteWan" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetStaticAddressing">resetStaticAddressing</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetWanId">resetWanId</a></code> | *No description.* |
 
 ---
 
@@ -399,12 +398,6 @@ public resetPriority(): void
 public resetStaticAddressing(): void
 ```
 
-##### `resetWanId` <a name="resetWanId" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.resetWanId"></a>
-
-```typescript
-public resetWanId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -508,7 +501,7 @@ The construct id used in the generated config for the MagicTransitSiteWan to imp
 
 The id of the existing MagicTransitSiteWan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -548,14 +541,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.siteIdInput">siteIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.staticAddressingInput">staticAddressingInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressing">MagicTransitSiteWanStaticAddressing</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.vlanTagInput">vlanTagInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.wanIdInput">wanIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.physport">physport</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.siteId">siteId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.vlanTag">vlanTag</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.wanId">wanId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -801,16 +792,6 @@ public readonly vlanTagInput: number;
 
 ---
 
-##### `wanIdInput`<sup>Optional</sup> <a name="wanIdInput" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.wanIdInput"></a>
-
-```typescript
-public readonly wanIdInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.accountId"></a>
 
 ```typescript
@@ -871,16 +852,6 @@ public readonly vlanTag: number;
 
 ---
 
-##### `wanId`<sup>Required</sup> <a name="wanId" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan.property.wanId"></a>
-
-```typescript
-public readonly wanId: string;
-```
-
-- *Type:* string
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -923,13 +894,12 @@ const magicTransitSiteWanConfig: magicTransitSiteWan.MagicTransitSiteWanConfig =
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.physport">physport</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.physport">physport</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.siteId">siteId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.vlanTag">vlanTag</a></code> | <code>number</code> | VLAN port number. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.staticAddressing">staticAddressing</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressing">MagicTransitSiteWanStaticAddressing</a></code> | (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.wanId">wanId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -1013,7 +983,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
 
 ---
 
@@ -1025,7 +995,7 @@ public readonly physport: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}.
 
 ---
 
@@ -1039,7 +1009,7 @@ public readonly siteId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
 
 ---
 
@@ -1053,7 +1023,7 @@ public readonly vlanTag: number;
 
 VLAN port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
 
 ---
 
@@ -1065,7 +1035,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}.
 
 ---
 
@@ -1077,7 +1047,7 @@ public readonly priority: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}.
 
 ---
 
@@ -1091,21 +1061,7 @@ public readonly staticAddressing: MagicTransitSiteWanStaticAddressing;
 
 (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
-
----
-
-##### `wanId`<sup>Optional</sup> <a name="wanId" id="@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig.property.wanId"></a>
-
-```typescript
-public readonly wanId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#wan_id MagicTransitSiteWan#wan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
 
 ---
 
@@ -1139,7 +1095,7 @@ public readonly address: string;
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
 
 ---
 
@@ -1153,7 +1109,7 @@ public readonly gatewayAddress: string;
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
 
 ---
 
@@ -1167,7 +1123,7 @@ public readonly secondaryAddress: string;
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
 
 ---
 

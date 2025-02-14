@@ -4,12 +4,12 @@
 
 ### DataCloudflareCloudforceOneRequest <a name="DataCloudflareCloudforceOneRequest" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequest"
 
 datacloudflarecloudforceonerequest.NewDataCloudflareCloudforceOneRequest(scope Construct, id *string, config DataCloudflareCloudforceOneRequestConfig) DataCloudflareCloudforceOneRequest
 ```
@@ -283,7 +283,7 @@ func ResetRequestIdentifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequest"
 
 datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequest_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequest"
 
 datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequest_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequest"
 
 datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequest_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequest_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequest"
 
 datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareCloudforceOn
 
 The id of the existing DataCloudflareCloudforceOneRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequest.DataCloudflareCloudforceOneRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecloudforceonerequest"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecloudforceonerequest"
 
 &datacloudflarecloudforceonerequest.DataCloudflareCloudforceOneRequestConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ AccountIdentifier *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request#account_identifier DataCloudflareCloudforceOneRequest#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request#account_identifier DataCloudflareCloudforceOneRequest#account_identifier}
 
 ---
 
@@ -862,7 +862,7 @@ RequestIdentifier *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request#request_identifier DataCloudflareCloudforceOneRequest#request_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request#request_identifier DataCloudflareCloudforceOneRequest#request_identifier}
 
 ---
 

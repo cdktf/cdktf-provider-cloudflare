@@ -4,12 +4,12 @@
 
 ### ZeroTrustDeviceCustomProfile <a name="ZeroTrustDeviceCustomProfile" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfile(scope Construct, id *string, config ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile
 ```
@@ -496,7 +496,7 @@ func ResetTunnelProtocol()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ The construct id used in the generated config for the ZeroTrustDeviceCustomProfi
 
 The id of the existing ZeroTrustDeviceCustomProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1291,7 +1291,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileConfig {
 	Connection: interface{},
@@ -1316,7 +1316,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 	ExcludeOfficeIps: interface{},
 	LanAllowMinutes: *f64,
 	LanAllowSubnetSize: *f64,
-	ServiceModeV2: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2,
+	ServiceModeV2: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2,
 	SupportUrl: *string,
 	SwitchLocked: interface{},
 	TunnelProtocol: *string,
@@ -1334,7 +1334,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.match">Match</a></code> | <code>*string</code> | The wirefilter expression to match devices. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.name">Name</a></code> | <code>*string</code> | The name of the device settings profile. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.precedence">Precedence</a></code> | <code>*f64</code> | The precedence of the policy. |
@@ -1349,7 +1349,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.excludeOfficeIps">ExcludeOfficeIps</a></code> | <code>interface{}</code> | Whether to add Microsoft IPs to Split Tunnel exclusions. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.lanAllowMinutes">LanAllowMinutes</a></code> | <code>*f64</code> | The amount of time in minutes a user is allowed access to their LAN. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.lanAllowSubnetSize">LanAllowSubnetSize</a></code> | <code>*f64</code> | The size of the subnet for the local access network. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.serviceModeV2">ServiceModeV2</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2">ZeroTrustDeviceCustomProfileServiceModeV2</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.serviceModeV2">ServiceModeV2</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2">ZeroTrustDeviceCustomProfileServiceModeV2</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.supportUrl">SupportUrl</a></code> | <code>*string</code> | The URL to launch when the Send Feedback button is clicked. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.switchLocked">SwitchLocked</a></code> | <code>interface{}</code> | Whether to allow the user to turn off the WARP switch and disconnect the client. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileConfig.property.tunnelProtocol">TunnelProtocol</a></code> | <code>*string</code> | Determines which tunnel protocol to use. |
@@ -1434,7 +1434,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}.
 
 ---
 
@@ -1448,7 +1448,7 @@ Match *string
 
 The wirefilter expression to match devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#match ZeroTrustDeviceCustomProfile#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#match ZeroTrustDeviceCustomProfile#match}
 
 ---
 
@@ -1462,7 +1462,7 @@ Name *string
 
 The name of the device settings profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#name ZeroTrustDeviceCustomProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#name ZeroTrustDeviceCustomProfile#name}
 
 ---
 
@@ -1478,7 +1478,7 @@ The precedence of the policy.
 
 Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#precedence ZeroTrustDeviceCustomProfile#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#precedence ZeroTrustDeviceCustomProfile#precedence}
 
 ---
 
@@ -1492,7 +1492,7 @@ AllowedToLeave interface{}
 
 Whether to allow devices to leave the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#allowed_to_leave ZeroTrustDeviceCustomProfile#allowed_to_leave}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#allowed_to_leave ZeroTrustDeviceCustomProfile#allowed_to_leave}
 
 ---
 
@@ -1506,7 +1506,7 @@ AllowModeSwitch interface{}
 
 Whether to allow the user to switch WARP between modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#allow_mode_switch ZeroTrustDeviceCustomProfile#allow_mode_switch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#allow_mode_switch ZeroTrustDeviceCustomProfile#allow_mode_switch}
 
 ---
 
@@ -1520,7 +1520,7 @@ AllowUpdates interface{}
 
 Whether to receive update notifications when a new version of the client is available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#allow_updates ZeroTrustDeviceCustomProfile#allow_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#allow_updates ZeroTrustDeviceCustomProfile#allow_updates}
 
 ---
 
@@ -1534,7 +1534,7 @@ AutoConnect *f64
 
 The amount of time in seconds to reconnect after having been disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#auto_connect ZeroTrustDeviceCustomProfile#auto_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#auto_connect ZeroTrustDeviceCustomProfile#auto_connect}
 
 ---
 
@@ -1548,7 +1548,7 @@ CaptivePortal *f64
 
 Turn on the captive portal after the specified amount of time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#captive_portal ZeroTrustDeviceCustomProfile#captive_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#captive_portal ZeroTrustDeviceCustomProfile#captive_portal}
 
 ---
 
@@ -1562,7 +1562,7 @@ Description *string
 
 A description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
 
 ---
 
@@ -1576,7 +1576,7 @@ DisableAutoFallback interface{}
 
 If the `dns_server` field of a fallback domain is not present, the client will fall back to a best guess of the default/system DNS resolvers unless this policy option is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#disable_auto_fallback ZeroTrustDeviceCustomProfile#disable_auto_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#disable_auto_fallback ZeroTrustDeviceCustomProfile#disable_auto_fallback}
 
 ---
 
@@ -1590,7 +1590,7 @@ Enabled interface{}
 
 Whether the policy will be applied to matching devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#enabled ZeroTrustDeviceCustomProfile#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#enabled ZeroTrustDeviceCustomProfile#enabled}
 
 ---
 
@@ -1604,7 +1604,7 @@ ExcludeOfficeIps interface{}
 
 Whether to add Microsoft IPs to Split Tunnel exclusions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#exclude_office_ips ZeroTrustDeviceCustomProfile#exclude_office_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#exclude_office_ips ZeroTrustDeviceCustomProfile#exclude_office_ips}
 
 ---
 
@@ -1620,7 +1620,7 @@ The amount of time in minutes a user is allowed access to their LAN.
 
 A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#lan_allow_minutes ZeroTrustDeviceCustomProfile#lan_allow_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#lan_allow_minutes ZeroTrustDeviceCustomProfile#lan_allow_minutes}
 
 ---
 
@@ -1636,7 +1636,7 @@ The size of the subnet for the local access network.
 
 Note that this field is omitted from the response if null or unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#lan_allow_subnet_size ZeroTrustDeviceCustomProfile#lan_allow_subnet_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#lan_allow_subnet_size ZeroTrustDeviceCustomProfile#lan_allow_subnet_size}
 
 ---
 
@@ -1648,7 +1648,7 @@ ServiceModeV2 ZeroTrustDeviceCustomProfileServiceModeV2
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2">ZeroTrustDeviceCustomProfileServiceModeV2</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}.
 
 ---
 
@@ -1662,7 +1662,7 @@ SupportUrl *string
 
 The URL to launch when the Send Feedback button is clicked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#support_url ZeroTrustDeviceCustomProfile#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#support_url ZeroTrustDeviceCustomProfile#support_url}
 
 ---
 
@@ -1676,7 +1676,7 @@ SwitchLocked interface{}
 
 Whether to allow the user to turn off the WARP switch and disconnect the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#switch_locked ZeroTrustDeviceCustomProfile#switch_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#switch_locked ZeroTrustDeviceCustomProfile#switch_locked}
 
 ---
 
@@ -1690,7 +1690,7 @@ TunnelProtocol *string
 
 Determines which tunnel protocol to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#tunnel_protocol ZeroTrustDeviceCustomProfile#tunnel_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#tunnel_protocol ZeroTrustDeviceCustomProfile#tunnel_protocol}
 
 ---
 
@@ -1699,7 +1699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileExclude {
 
@@ -1712,7 +1712,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileFallbackDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileFallbackDomains {
 
@@ -1725,7 +1725,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileInclude {
 
@@ -1738,7 +1738,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileServiceModeV2 {
 	Mode: *string,
@@ -1765,7 +1765,7 @@ Mode *string
 
 The mode to run the WARP client under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#mode ZeroTrustDeviceCustomProfile#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#mode ZeroTrustDeviceCustomProfile#mode}
 
 ---
 
@@ -1779,7 +1779,7 @@ Port *f64
 
 The port number when used with proxy mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile#port ZeroTrustDeviceCustomProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile#port ZeroTrustDeviceCustomProfile#port}
 
 ---
 
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileTargetTests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 &zerotrustdevicecustomprofile.ZeroTrustDeviceCustomProfileTargetTests {
 
@@ -1803,7 +1803,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileExcludeList
 ```
@@ -1952,7 +1952,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileExcludeOutputReference
 ```
@@ -2252,7 +2252,7 @@ func InternalValue() ZeroTrustDeviceCustomProfileExclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileFallbackDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileFallbackDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileFallbackDomainsList
 ```
@@ -2401,7 +2401,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileFallbackDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference
 ```
@@ -2701,7 +2701,7 @@ func InternalValue() ZeroTrustDeviceCustomProfileFallbackDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileIncludeList
 ```
@@ -2850,7 +2850,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileIncludeOutputReference
 ```
@@ -3150,7 +3150,7 @@ func InternalValue() ZeroTrustDeviceCustomProfileInclude
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileServiceModeV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileServiceModeV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDeviceCustomProfileServiceModeV2OutputReference
 ```
@@ -3457,7 +3457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileTargetTestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileTargetTestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileTargetTestsList
 ```
@@ -3606,7 +3606,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileTargetTestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofile"
 
 zerotrustdevicecustomprofile.NewZeroTrustDeviceCustomProfileTargetTestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileTargetTestsOutputReference
 ```

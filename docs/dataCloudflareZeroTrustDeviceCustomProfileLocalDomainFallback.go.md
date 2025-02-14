@@ -4,12 +4,12 @@
 
 ### DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback <a name="DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.NewDataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback(scope Construct, id *string, config DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZero
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZero
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,6 +393,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.dnsServer">DnsServer</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.suffix">Suffix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.policyIdInput">PolicyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
@@ -522,6 +525,36 @@ func Provider() TerraformProvider
 
 ---
 
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DnsServer`<sup>Required</sup> <a name="DnsServer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.dnsServer"></a>
+
+```go
+func DnsServer() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Suffix`<sup>Required</sup> <a name="Suffix" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.suffix"></a>
+
+```go
+func Suffix() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.accountIdInput"></a>
 
 ```go
@@ -587,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicecustomprofilelocaldomainfallback"
 
 &datacloudflarezerotrustdevicecustomprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig {
 	Connection: interface{},
@@ -613,7 +646,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Device ID. |
 
 ---
@@ -696,7 +729,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}.
 
 ---
 
@@ -710,7 +743,7 @@ PolicyId *string
 
 Device ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#policy_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#policy_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#policy_id}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataCloudflareApiTokenPermissionsGroupsListConfig extends cdktf
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list#account_id DataCloudflareApiTokenPermissionsGroupsList#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list#account_id DataCloudflareApiTokenPermissionsGroupsList#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list#max_items DataCloudflareApiTokenPermissionsGroupsList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list#max_items DataCloudflareApiTokenPermissionsGroupsList#max_items}
   */
   readonly maxItems?: number;
 }
@@ -75,6 +70,21 @@ export class DataCloudflareApiTokenPermissionsGroupsListResultOutputReference ex
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // scopes - computed: true, optional: false, required: false
+  public get scopes() {
+    return this.getListAttribute('scopes');
+  }
 }
 
 export class DataCloudflareApiTokenPermissionsGroupsListResultList extends cdktf.ComplexList {
@@ -97,7 +107,7 @@ export class DataCloudflareApiTokenPermissionsGroupsListResultList extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list}
 */
 export class DataCloudflareApiTokenPermissionsGroupsList extends cdktf.TerraformDataSource {
 
@@ -113,7 +123,7 @@ export class DataCloudflareApiTokenPermissionsGroupsList extends cdktf.Terraform
   * Generates CDKTF code for importing a DataCloudflareApiTokenPermissionsGroupsList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiTokenPermissionsGroupsList to import
-  * @param importFromId The id of the existing DataCloudflareApiTokenPermissionsGroupsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiTokenPermissionsGroupsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiTokenPermissionsGroupsList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -125,7 +135,7 @@ export class DataCloudflareApiTokenPermissionsGroupsList extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -136,7 +146,7 @@ export class DataCloudflareApiTokenPermissionsGroupsList extends cdktf.Terraform
       terraformResourceType: 'cloudflare_api_token_permissions_groups_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

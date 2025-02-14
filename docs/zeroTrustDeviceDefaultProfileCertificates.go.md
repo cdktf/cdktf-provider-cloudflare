@@ -4,12 +4,12 @@
 
 ### ZeroTrustDeviceDefaultProfileCertificates <a name="ZeroTrustDeviceDefaultProfileCertificates" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.NewZeroTrustDeviceDefaultProfileCertificates(scope Construct, id *string, config ZeroTrustDeviceDefaultProfileCertificatesConfig) ZeroTrustDeviceDefaultProfileCertificates
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertifica
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertifica
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicedefaultprofilecertificates"
 
 zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ZeroTrustDeviceDefaultProf
 
 The id of the existing ZeroTrustDeviceDefaultProfileCertificates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_default_profile_certificates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_default_profile_certificates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicedefaultprofilecertificates"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicedefaultprofilecertificates"
 
 &zerotrustdevicedefaultprofilecertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustde
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | The current status of the device policy certificate provisioning feature for WARP clients. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}. |
 
 ---
 
@@ -822,7 +822,7 @@ Enabled interface{}
 
 The current status of the device policy certificate provisioning feature for WARP clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_default_profile_certificates#enabled ZeroTrustDeviceDefaultProfileCertificates#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_default_profile_certificates#enabled ZeroTrustDeviceDefaultProfileCertificates#enabled}
 
 ---
 
@@ -834,7 +834,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}.
 
 ---
 

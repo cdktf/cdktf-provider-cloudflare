@@ -4,7 +4,7 @@
 
 ### WaitingRoomRules <a name="WaitingRoomRules" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.putRules">putRules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.resetRuleId">resetRuleId</a></code> | *No description.* |
 
 ---
 
@@ -378,12 +377,6 @@ public putRules(value: IResolvable | WaitingRoomRulesRules[]): void
 
 ---
 
-##### `resetRuleId` <a name="resetRuleId" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.resetRuleId"></a>
-
-```typescript
-public resetRuleId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -487,7 +480,7 @@ The construct id used in the generated config for the WaitingRoomRules to import
 
 The id of the existing WaitingRoomRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,12 +510,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.action">action</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.expression">expression</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.lastUpdated">lastUpdated</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList">WaitingRoomRulesRulesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.ruleIdInput">ruleIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.version">version</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules">WaitingRoomRulesRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.waitingRoomIdInput">waitingRoomIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.ruleId">ruleId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.waitingRoomId">waitingRoomId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
@@ -670,6 +668,66 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.action"></a>
+
+```typescript
+public readonly action: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.enabled"></a>
+
+```typescript
+public readonly enabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.expression"></a>
+
+```typescript
+public readonly expression: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lastUpdated`<sup>Required</sup> <a name="lastUpdated" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.lastUpdated"></a>
+
+```typescript
+public readonly lastUpdated: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.rules"></a>
 
 ```typescript
@@ -680,10 +738,10 @@ public readonly rules: WaitingRoomRulesRulesList;
 
 ---
 
-##### `ruleIdInput`<sup>Optional</sup> <a name="ruleIdInput" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.ruleIdInput"></a>
+##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.version"></a>
 
 ```typescript
-public readonly ruleIdInput: string;
+public readonly version: string;
 ```
 
 - *Type:* string
@@ -714,16 +772,6 @@ public readonly waitingRoomIdInput: string;
 
 ```typescript
 public readonly zoneIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `ruleId`<sup>Required</sup> <a name="ruleId" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules.property.ruleId"></a>
-
-```typescript
-public readonly ruleId: string;
 ```
 
 - *Type:* string
@@ -791,10 +839,9 @@ const waitingRoomRulesConfig: waitingRoomRules.WaitingRoomRulesConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules">WaitingRoomRulesRules</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.waitingRoomId">waitingRoomId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules">WaitingRoomRulesRules</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.waitingRoomId">waitingRoomId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.ruleId">ruleId</a></code> | <code>string</code> | The ID of the rule. |
 
 ---
 
@@ -876,7 +923,7 @@ public readonly rules: IResolvable | WaitingRoomRulesRules[];
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules">WaitingRoomRulesRules</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}.
 
 ---
 
@@ -888,7 +935,7 @@ public readonly waitingRoomId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}.
 
 ---
 
@@ -902,21 +949,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
-
----
-
-##### `ruleId`<sup>Optional</sup> <a name="ruleId" id="@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig.property.ruleId"></a>
-
-```typescript
-public readonly ruleId: string;
-```
-
-- *Type:* string
-
-The ID of the rule.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#rule_id WaitingRoomRules#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
 
 ---
 
@@ -951,7 +984,7 @@ public readonly action: string;
 
 The action to take when the expression matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
 
 ---
 
@@ -965,7 +998,7 @@ public readonly expression: string;
 
 Criteria defining when there is a match for the current rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
 
 ---
 
@@ -979,7 +1012,7 @@ public readonly description: string;
 
 The description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
 
 ---
 
@@ -993,7 +1026,7 @@ public readonly enabled: boolean | IResolvable;
 
 When set to true, the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
 
 ---
 

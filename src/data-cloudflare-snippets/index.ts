@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/snippets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataCloudflareSnippetsConfig extends cdktf.TerraformMetaArgumen
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/snippets cloudflare_snippets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets cloudflare_snippets}
 */
 export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
 
@@ -37,7 +32,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareSnippets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSnippets to import
-  * @param importFromId The id of the existing DataCloudflareSnippets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSnippets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSnippets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/snippets cloudflare_snippets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets cloudflare_snippets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_snippets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

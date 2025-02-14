@@ -4,12 +4,12 @@
 
 ### DataCloudflareImages <a name="DataCloudflareImages" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/images cloudflare_images}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/images cloudflare_images}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.NewDataCloudflareImages(scope Construct, id *string, config DataCloudflareImagesConfig) DataCloudflareImages
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.DataCloudflareImages_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.DataCloudflareImages_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareimages.DataCloudflareImages_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.DataCloudflareImages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareimages.DataCloudflareImages_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.DataCloudflareImages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareImages to im
 
 The id of the existing DataCloudflareImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 &datacloudflareimages.DataCloudflareImagesConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/images#account_id DataCloudflareImages#account_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/images#max_items DataCloudflareImages#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/images#max_items DataCloudflareImages#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 &datacloudflareimages.DataCloudflareImagesResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 &datacloudflareimages.DataCloudflareImagesResultImages {
 
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.NewDataCloudflareImagesResultImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareImagesResultImagesList
 ```
@@ -916,7 +916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.NewDataCloudflareImagesResultImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareImagesResultImagesOutputReference
 ```
@@ -1249,7 +1249,7 @@ func InternalValue() DataCloudflareImagesResultImages
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.NewDataCloudflareImagesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareImagesResultList
 ```
@@ -1398,7 +1398,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimages"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimages"
 
 datacloudflareimages.NewDataCloudflareImagesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareImagesResultOutputReference
 ```

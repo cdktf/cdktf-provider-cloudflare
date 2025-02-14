@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersKv <a name="DataCloudflareWorkersKv" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKv.DataCloudflareWorkersKv.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareWorkersKv to
 
 The id of the existing DataCloudflareWorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv#account_id DataCloudflareWorkersKv#account_id}
 
 ---
 
@@ -727,7 +727,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv#key_name DataCloudflareWorkersKv#key_name}
 
 ---
 
@@ -741,7 +741,7 @@ public readonly namespaceId: string;
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv#namespace_id DataCloudflareWorkersKv#namespace_id}
 
 ---
 

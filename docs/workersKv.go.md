@@ -4,12 +4,12 @@
 
 ### WorkersKv <a name="WorkersKv" id="@cdktf/provider-cloudflare.workersKv.WorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskv"
 
 workerskv.NewWorkersKv(scope Construct, id *string, config WorkersKvConfig) WorkersKv
 ```
@@ -385,7 +385,7 @@ func ResetMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskv"
 
 workerskv.WorkersKv_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskv"
 
 workerskv.WorkersKv_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ workerskv.WorkersKv_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskv"
 
 workerskv.WorkersKv_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ workerskv.WorkersKv_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskv"
 
 workerskv.WorkersKv_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WorkersKv to import.
 
 The id of the existing WorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workerskv"
 
 &workerskv.WorkersKvConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
 
 ---
 
@@ -928,7 +928,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -942,7 +942,7 @@ NamespaceId *string
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -956,7 +956,7 @@ Value *string
 
 A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#value WorkersKv#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#value WorkersKv#value}
 
 ---
 
@@ -970,7 +970,7 @@ Metadata *string
 
 Arbitrary JSON to be associated with a key/value pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 

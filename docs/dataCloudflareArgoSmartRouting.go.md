@@ -4,12 +4,12 @@
 
 ### DataCloudflareArgoSmartRouting <a name="DataCloudflareArgoSmartRouting" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargosmartrouting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargosmartrouting"
 
 datacloudflareargosmartrouting.NewDataCloudflareArgoSmartRouting(scope Construct, id *string, config DataCloudflareArgoSmartRoutingConfig) DataCloudflareArgoSmartRouting
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargosmartrouting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargosmartrouting"
 
 datacloudflareargosmartrouting.DataCloudflareArgoSmartRouting_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargosmartrouting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargosmartrouting"
 
 datacloudflareargosmartrouting.DataCloudflareArgoSmartRouting_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareargosmartrouting.DataCloudflareArgoSmartRouting_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargosmartrouting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargosmartrouting"
 
 datacloudflareargosmartrouting.DataCloudflareArgoSmartRouting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareargosmartrouting.DataCloudflareArgoSmartRouting_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargosmartrouting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargosmartrouting"
 
 datacloudflareargosmartrouting.DataCloudflareArgoSmartRouting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareArgoSmartRou
 
 The id of the existing DataCloudflareArgoSmartRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargosmartrouting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargosmartrouting"
 
 &datacloudflareargosmartrouting.DataCloudflareArgoSmartRoutingConfig {
 	Connection: interface{},
@@ -674,7 +674,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/argo_smart_routing#zone_id DataCloudflareArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/argo_smart_routing#zone_id DataCloudflareArgoSmartRouting#zone_id}
 
 ---
 

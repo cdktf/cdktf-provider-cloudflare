@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreamKey <a name="DataCloudflareStreamKey" id="@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_key cloudflare_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_key cloudflare_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataCloudflareStreamKey to
 
 The id of the existing DataCloudflareStreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -493,6 +493,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.created">created</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 
@@ -617,6 +619,26 @@ provider: TerraformProvider
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `created`<sup>Required</sup> <a name="created" id="@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.created"></a>
+
+```python
+created: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -774,7 +796,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 
 ---
 

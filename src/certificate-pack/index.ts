@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +10,49 @@ export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
   /**
   * Certificate Authority selected for the order.  For information on any certificate authority specific details or restrictions [see this page for more details.](https://developers.cloudflare.com/ssl/reference/certificate-authorities)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
   */
   readonly certificateAuthority: string;
   /**
   * Whether or not to add Cloudflare Branding for the order.  This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
   */
   readonly cloudflareBranding?: boolean | cdktf.IResolvable;
   /**
   * Comma separated list of valid host names for the certificate packs. Must contain the zone apex, may not contain more than 50 hosts, and may not be empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
   */
   readonly hosts: string[];
   /**
   * Type of certificate pack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#type CertificatePack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#type CertificatePack#type}
   */
   readonly type: string;
   /**
   * Validation Method selected for the order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
   */
   readonly validationMethod: string;
   /**
   * Validity Days selected for the order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
   */
   readonly validityDays: number;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack cloudflare_certificate_pack}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack cloudflare_certificate_pack}
 */
 export class CertificatePack extends cdktf.TerraformResource {
 
@@ -73,7 +68,7 @@ export class CertificatePack extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CertificatePack resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificatePack to import
-  * @param importFromId The id of the existing CertificatePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CertificatePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificatePack to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +80,7 @@ export class CertificatePack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +91,7 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

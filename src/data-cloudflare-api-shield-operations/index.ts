@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +10,49 @@ export interface DataCloudflareApiShieldOperationsConfig extends cdktf.Terraform
   /**
   * Direction to order results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#direction DataCloudflareApiShieldOperations#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#direction DataCloudflareApiShieldOperations#direction}
   */
   readonly direction?: string;
   /**
   * Filter results to only include endpoints containing this pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#endpoint DataCloudflareApiShieldOperations#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#endpoint DataCloudflareApiShieldOperations#endpoint}
   */
   readonly endpoint?: string;
   /**
   * Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#feature DataCloudflareApiShieldOperations#feature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#feature DataCloudflareApiShieldOperations#feature}
   */
   readonly feature?: string[];
   /**
   * Filter results to only include the specified hosts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#host DataCloudflareApiShieldOperations#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#host DataCloudflareApiShieldOperations#host}
   */
   readonly host?: string[];
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#max_items DataCloudflareApiShieldOperations#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#max_items DataCloudflareApiShieldOperations#max_items}
   */
   readonly maxItems?: number;
   /**
   * Filter results to only include the specified HTTP methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#method DataCloudflareApiShieldOperations#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#method DataCloudflareApiShieldOperations#method}
   */
   readonly method?: string[];
   /**
   * Field to order by. When requesting a feature, the feature keys are available for ordering as well, e.g., `thresholds.suggested_threshold`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#order DataCloudflareApiShieldOperations#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#order DataCloudflareApiShieldOperations#order}
   */
   readonly order?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#zone_id DataCloudflareApiShieldOperations#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#zone_id DataCloudflareApiShieldOperations#zone_id}
   */
   readonly zoneId: string;
 }
@@ -1013,7 +1008,7 @@ export class DataCloudflareApiShieldOperationsResultList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations cloudflare_api_shield_operations}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations cloudflare_api_shield_operations}
 */
 export class DataCloudflareApiShieldOperations extends cdktf.TerraformDataSource {
 
@@ -1029,7 +1024,7 @@ export class DataCloudflareApiShieldOperations extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataCloudflareApiShieldOperations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiShieldOperations to import
-  * @param importFromId The id of the existing DataCloudflareApiShieldOperations that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiShieldOperations that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiShieldOperations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1041,7 +1036,7 @@ export class DataCloudflareApiShieldOperations extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_shield_operations cloudflare_api_shield_operations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_operations cloudflare_api_shield_operations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1052,7 +1047,7 @@ export class DataCloudflareApiShieldOperations extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_api_shield_operations',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

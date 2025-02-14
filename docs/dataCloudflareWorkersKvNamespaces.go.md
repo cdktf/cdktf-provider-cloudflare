@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersKvNamespaces <a name="DataCloudflareWorkersKvNamespaces" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.NewDataCloudflareWorkersKvNamespaces(scope Construct, id *string, config DataCloudflareWorkersKvNamespacesConfig) DataCloudflareWorkersKvNamespaces
 ```
@@ -297,7 +297,7 @@ func ResetOrder()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespaces_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespaces_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespaces_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareWorkersKvNam
 
 The id of the existing DataCloudflareWorkersKvNamespaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv_namespaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv_namespaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 &datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespacesConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv_namespaces#account_id DataCloudflareWorkersKvNamespaces#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv_namespaces#account_id DataCloudflareWorkersKvNamespaces#account_id}
 
 ---
 
@@ -792,7 +792,7 @@ Direction *string
 
 Direction to order namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv_namespaces#direction DataCloudflareWorkersKvNamespaces#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv_namespaces#direction DataCloudflareWorkersKvNamespaces#direction}
 
 ---
 
@@ -806,7 +806,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv_namespaces#max_items DataCloudflareWorkersKvNamespaces#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv_namespaces#max_items DataCloudflareWorkersKvNamespaces#max_items}
 
 ---
 
@@ -820,7 +820,7 @@ Order *string
 
 Field to order results by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_kv_namespaces#order DataCloudflareWorkersKvNamespaces#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_kv_namespaces#order DataCloudflareWorkersKvNamespaces#order}
 
 ---
 
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespacesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 &datacloudflareworkerskvnamespaces.DataCloudflareWorkersKvNamespacesResult {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespacesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.NewDataCloudflareWorkersKvNamespacesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersKvNamespacesResultList
 ```
@@ -993,7 +993,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersKvNamespaces.DataCloudflareWorkersKvNamespacesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerskvnamespaces"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerskvnamespaces"
 
 datacloudflareworkerskvnamespaces.NewDataCloudflareWorkersKvNamespacesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersKvNamespacesResultOutputReference
 ```

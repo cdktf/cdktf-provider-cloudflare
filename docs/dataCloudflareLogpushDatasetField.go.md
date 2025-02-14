@@ -4,12 +4,12 @@
 
 ### DataCloudflareLogpushDatasetField <a name="DataCloudflareLogpushDatasetField" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelogpushdatasetfield"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelogpushdatasetfield"
 
 datacloudflarelogpushdatasetfield.NewDataCloudflareLogpushDatasetField(scope Construct, id *string, config DataCloudflareLogpushDatasetFieldConfig) DataCloudflareLogpushDatasetField
 ```
@@ -290,7 +290,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetField.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelogpushdatasetfield"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelogpushdatasetfield"
 
 datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetField_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetField.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelogpushdatasetfield"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelogpushdatasetfield"
 
 datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetField_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetField_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetField.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelogpushdatasetfield"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelogpushdatasetfield"
 
 datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetField_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetField_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetField.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelogpushdatasetfield"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelogpushdatasetfield"
 
 datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetField_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareLogpushDatas
 
 The id of the existing DataCloudflareLogpushDatasetField that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_field#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_field#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetField.DataCloudflareLogpushDatasetFieldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelogpushdatasetfield"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelogpushdatasetfield"
 
 &datacloudflarelogpushdatasetfield.DataCloudflareLogpushDatasetFieldConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ DatasetId *string
 
 Name of the dataset. A list of supported datasets can be found on the [Developer Docs](https://developers.cloudflare.com/logs/reference/log-fields/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_field#dataset_id DataCloudflareLogpushDatasetField#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_field#dataset_id DataCloudflareLogpushDatasetField#dataset_id}
 
 ---
 
@@ -750,7 +750,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_field#account_id DataCloudflareLogpushDatasetField#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_field#account_id DataCloudflareLogpushDatasetField#account_id}
 
 ---
 
@@ -764,7 +764,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_field#zone_id DataCloudflareLogpushDatasetField#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_field#zone_id DataCloudflareLogpushDatasetField#zone_id}
 
 ---
 

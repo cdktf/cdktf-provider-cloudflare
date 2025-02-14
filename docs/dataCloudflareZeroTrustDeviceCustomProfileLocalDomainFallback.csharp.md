@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback <a name="DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,6 +393,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.dnsServer">DnsServer</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.suffix">Suffix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.policyIdInput">PolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
@@ -522,6 +525,36 @@ public TerraformProvider Provider { get; }
 
 ---
 
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DnsServer`<sup>Required</sup> <a name="DnsServer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.dnsServer"></a>
+
+```csharp
+public string[] DnsServer { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Suffix`<sup>Required</sup> <a name="Suffix" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.suffix"></a>
+
+```csharp
+public string Suffix { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.property.accountIdInput"></a>
 
 ```csharp
@@ -613,7 +646,7 @@ new DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig {
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.property.policyId">PolicyId</a></code> | <code>string</code> | Device ID. |
 
 ---
@@ -696,7 +729,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#account_id}.
 
 ---
 
@@ -710,7 +743,7 @@ public string PolicyId { get; set; }
 
 Device ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#policy_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_custom_profile_local_domain_fallback#policy_id DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback#policy_id}
 
 ---
 

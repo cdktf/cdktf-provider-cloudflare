@@ -4,7 +4,7 @@
 
 ### SnippetRules <a name="SnippetRules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the SnippetRules to import.
 
 The id of the existing SnippetRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,7 +517,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.expression">expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesList">SnippetRulesRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.snippetName">snippetName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
@@ -666,6 +670,36 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.enabled"></a>
+
+```typescript
+public readonly enabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.expression"></a>
+
+```typescript
+public readonly expression: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rules"></a>
 
 ```typescript
@@ -673,6 +707,16 @@ public readonly rules: SnippetRulesRulesList;
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesList">SnippetRulesRulesList</a>
+
+---
+
+##### `snippetName`<sup>Required</sup> <a name="snippetName" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.snippetName"></a>
+
+```typescript
+public readonly snippetName: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -832,7 +876,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 
 ---
 
@@ -846,7 +890,7 @@ public readonly rules: IResolvable | SnippetRulesRules[];
 
 List of snippet rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#rules SnippetRules#rules}
 
 ---
 
@@ -864,9 +908,9 @@ const snippetRulesRules: snippetRules.SnippetRulesRules = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#description SnippetRules#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#expression SnippetRules#expression}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#description SnippetRules#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#expression SnippetRules#expression}. |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName">snippetName</a></code> | <code>string</code> | Snippet identifying name. |
 
 ---
@@ -879,7 +923,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#description SnippetRules#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#description SnippetRules#description}.
 
 ---
 
@@ -891,7 +935,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}.
 
 ---
 
@@ -903,7 +947,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#expression SnippetRules#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#expression SnippetRules#expression}.
 
 ---
 
@@ -917,7 +961,7 @@ public readonly snippetName: string;
 
 Snippet identifying name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
 
 ---
 

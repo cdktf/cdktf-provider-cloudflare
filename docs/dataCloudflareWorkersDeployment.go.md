@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersDeployment <a name="DataCloudflareWorkersDeployment" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.NewDataCloudflareWorkersDeployment(scope Construct, id *string, config DataCloudflareWorkersDeploymentConfig) DataCloudflareWorkersDeployment
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.DataCloudflareWorkersDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.DataCloudflareWorkersDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareworkersdeployment.DataCloudflareWorkersDeployment_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeployment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.DataCloudflareWorkersDeployment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareworkersdeployment.DataCloudflareWorkersDeployment_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.DataCloudflareWorkersDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareWorkersDeplo
 
 The id of the existing DataCloudflareWorkersDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 &datacloudflareworkersdeployment.DataCloudflareWorkersDeploymentConfig {
 	Connection: interface{},
@@ -709,7 +709,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_deployment#account_id DataCloudflareWorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_deployment#account_id DataCloudflareWorkersDeployment#account_id}
 
 ---
 
@@ -723,7 +723,7 @@ ScriptName *string
 
 Name of the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_deployment#script_name DataCloudflareWorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_deployment#script_name DataCloudflareWorkersDeployment#script_name}
 
 ---
 
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeployments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 &datacloudflareworkersdeployment.DataCloudflareWorkersDeploymentDeployments {
 
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsAnnotations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 &datacloudflareworkersdeployment.DataCloudflareWorkersDeploymentDeploymentsAnnotations {
 
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 &datacloudflareworkersdeployment.DataCloudflareWorkersDeploymentDeploymentsVersions {
 
@@ -773,7 +773,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.NewDataCloudflareWorkersDeploymentDeploymentsAnnotationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkersDeploymentDeploymentsAnnotationsOutputReference
 ```
@@ -1033,7 +1033,7 @@ func InternalValue() DataCloudflareWorkersDeploymentDeploymentsAnnotations
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.NewDataCloudflareWorkersDeploymentDeploymentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersDeploymentDeploymentsList
 ```
@@ -1182,7 +1182,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.NewDataCloudflareWorkersDeploymentDeploymentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersDeploymentDeploymentsOutputReference
 ```
@@ -1526,7 +1526,7 @@ func InternalValue() DataCloudflareWorkersDeploymentDeployments
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.NewDataCloudflareWorkersDeploymentDeploymentsVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersDeploymentDeploymentsVersionsList
 ```
@@ -1675,7 +1675,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersDeployment.DataCloudflareWorkersDeploymentDeploymentsVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersdeployment"
 
 datacloudflareworkersdeployment.NewDataCloudflareWorkersDeploymentDeploymentsVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersDeploymentDeploymentsVersionsOutputReference
 ```

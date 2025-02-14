@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiTokenPermissionsGroupsList <a name="DataCloudflareApiTokenPermissionsGroupsList" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsList.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareApiTokenPerm
 
 The id of the existing DataCloudflareApiTokenPermissionsGroupsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,7 +706,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list#account_id DataCloudflareApiTokenPermissionsGroupsList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list#account_id DataCloudflareApiTokenPermissionsGroupsList#account_id}
 
 ---
 
@@ -720,7 +720,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list#max_items DataCloudflareApiTokenPermissionsGroupsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list#max_items DataCloudflareApiTokenPermissionsGroupsList#max_items}
 
 ---
 
@@ -1114,6 +1114,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResult">DataCloudflareApiTokenPermissionsGroupsListResult</a></code> | *No description.* |
 
 ---
@@ -1139,6 +1142,36 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionsGroupsList.DataCloudflareApiTokenPermissionsGroupsListResultOutputReference.property.scopes"></a>
+
+```typescript
+public readonly scopes: string[];
+```
+
+- *Type:* string[]
 
 ---
 

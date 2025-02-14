@@ -4,7 +4,7 @@
 
 ### ContentScanningExpression <a name="ContentScanningExpression" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer"></a>
 
@@ -26,7 +26,6 @@ ContentScanningExpression.Builder.create(Construct scope, java.lang.String id)
     .body(IResolvable)
     .body(java.util.List<ContentScanningExpressionBody>)
     .zoneId(java.lang.String)
-//  .expressionId(java.lang.String)
     .build();
 ```
 
@@ -41,9 +40,8 @@ ContentScanningExpression.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.body">body</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.body">body</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.expressionId">expressionId</a></code> | <code>java.lang.String</code> | Identifier. |
 
 ---
 
@@ -111,7 +109,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 
 ---
 
@@ -121,17 +119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
-
----
-
-##### `expressionId`<sup>Optional</sup> <a name="expressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.expressionId"></a>
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#expression_id ContentScanningExpression#expression_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 
 ---
 
@@ -163,7 +151,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.putBody">putBody</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.resetExpressionId">resetExpressionId</a></code> | *No description.* |
 
 ---
 
@@ -469,12 +456,6 @@ public void putBody(IResolvable OR java.util.List<ContentScanningExpressionBody>
 
 ---
 
-##### `resetExpressionId` <a name="resetExpressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.resetExpressionId"></a>
-
-```java
-public void resetExpressionId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -578,7 +559,7 @@ The construct id used in the generated config for the ContentScanningExpression 
 
 The id of the existing ContentScanningExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,10 +590,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.body">body</a></code> | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyList">ContentScanningExpressionBodyList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.payload">payload</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.bodyInput">bodyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionIdInput">expressionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionId">expressionId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -769,6 +750,26 @@ public ContentScanningExpressionBodyList getBody();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `payload`<sup>Required</sup> <a name="payload" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.payload"></a>
+
+```java
+public java.lang.String getPayload();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bodyInput`<sup>Optional</sup> <a name="bodyInput" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.bodyInput"></a>
 
 ```java
@@ -779,30 +780,10 @@ public java.lang.Object getBodyInput();
 
 ---
 
-##### `expressionIdInput`<sup>Optional</sup> <a name="expressionIdInput" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionIdInput"></a>
-
-```java
-public java.lang.String getExpressionIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.zoneIdInput"></a>
 
 ```java
 public java.lang.String getZoneIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `expressionId`<sup>Required</sup> <a name="expressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionId"></a>
-
-```java
-public java.lang.String getExpressionId();
 ```
 
 - *Type:* java.lang.String
@@ -869,7 +850,7 @@ public java.lang.String getPayload();
 
 Ruleset expression to use in matching content objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
 
 ---
 
@@ -895,7 +876,6 @@ ContentScanningExpressionConfig.builder()
     .body(IResolvable)
     .body(java.util.List<ContentScanningExpressionBody>)
     .zoneId(java.lang.String)
-//  .expressionId(java.lang.String)
     .build();
 ```
 
@@ -910,9 +890,8 @@ ContentScanningExpressionConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">body</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">body</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.expressionId">expressionId</a></code> | <code>java.lang.String</code> | Identifier. |
 
 ---
 
@@ -994,7 +973,7 @@ public java.lang.Object getBody();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 
 ---
 
@@ -1008,21 +987,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
-
----
-
-##### `expressionId`<sup>Optional</sup> <a name="expressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.expressionId"></a>
-
-```java
-public java.lang.String getExpressionId();
-```
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#expression_id ContentScanningExpression#expression_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 
 ---
 

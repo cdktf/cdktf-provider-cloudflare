@@ -4,12 +4,12 @@
 
 ### D1Database <a name="D1Database" id="@cdktf/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.NewD1Database(scope Construct, id *string, config D1DatabaseConfig) D1Database
 ```
@@ -385,7 +385,7 @@ func ResetPrimaryLocationHint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.d1Database.D1Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ d1database.D1Database_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.d1Database.D1Database.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ d1database.D1Database_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.d1Database.D1Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 d1database.D1Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/d1database"
 
 &d1database.D1DatabaseConfig {
 	Connection: interface{},
@@ -834,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database"
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">Name</a></code> | <code>*string</code> | D1 database name. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.primaryLocationHint">PrimaryLocationHint</a></code> | <code>*string</code> | Specify the region to create the D1 primary, if available. |
 
 ---
@@ -919,7 +919,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -931,7 +931,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}.
+D1 database name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -947,7 +949,7 @@ Specify the region to create the D1 primary, if available.
 
 If this option is omitted, the D1 will be created as close as possible to the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 

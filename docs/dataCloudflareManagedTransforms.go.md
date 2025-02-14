@@ -4,12 +4,12 @@
 
 ### DataCloudflareManagedTransforms <a name="DataCloudflareManagedTransforms" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.NewDataCloudflareManagedTransforms(scope Construct, id *string, config DataCloudflareManagedTransformsConfig) DataCloudflareManagedTransforms
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.DataCloudflareManagedTransforms_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.DataCloudflareManagedTransforms_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaremanagedtransforms.DataCloudflareManagedTransforms_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.DataCloudflareManagedTransforms_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaremanagedtransforms.DataCloudflareManagedTransforms_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.DataCloudflareManagedTransforms_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareManagedTrans
 
 The id of the existing DataCloudflareManagedTransforms that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/managed_transforms#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/managed_transforms#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 &datacloudflaremanagedtransforms.DataCloudflareManagedTransformsConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ ZoneId *string
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/managed_transforms#zone_id DataCloudflareManagedTransforms#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/managed_transforms#zone_id DataCloudflareManagedTransforms#zone_id}
 
 ---
 
@@ -705,7 +705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsManagedRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 &datacloudflaremanagedtransforms.DataCloudflareManagedTransformsManagedRequestHeaders {
 
@@ -718,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsManagedResponseHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 &datacloudflaremanagedtransforms.DataCloudflareManagedTransformsManagedResponseHeaders {
 
@@ -733,7 +733,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsManagedRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.NewDataCloudflareManagedTransformsManagedRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareManagedTransformsManagedRequestHeadersList
 ```
@@ -882,7 +882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsManagedRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.NewDataCloudflareManagedTransformsManagedRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareManagedTransformsManagedRequestHeadersOutputReference
 ```
@@ -1193,7 +1193,7 @@ func InternalValue() DataCloudflareManagedTransformsManagedRequestHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsManagedResponseHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.NewDataCloudflareManagedTransformsManagedResponseHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareManagedTransformsManagedResponseHeadersList
 ```
@@ -1342,7 +1342,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransformsManagedResponseHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremanagedtransforms"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremanagedtransforms"
 
 datacloudflaremanagedtransforms.NewDataCloudflareManagedTransformsManagedResponseHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareManagedTransformsManagedResponseHeadersOutputReference
 ```

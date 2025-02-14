@@ -4,12 +4,12 @@
 
 ### DataCloudflareListItems <a name="DataCloudflareListItems" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_items cloudflare_list_items}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_items cloudflare_list_items}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.NewDataCloudflareListItems(scope Construct, id *string, config DataCloudflareListItemsConfig) DataCloudflareListItems
 ```
@@ -290,7 +290,7 @@ func ResetSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.DataCloudflareListItems_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.DataCloudflareListItems_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarelistitems.DataCloudflareListItems_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.DataCloudflareListItems_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflarelistitems.DataCloudflareListItems_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.DataCloudflareListItems_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareListItems to
 
 The id of the existing DataCloudflareListItems that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 &datacloudflarelistitems.DataCloudflareListItemsConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_items#account_id DataCloudflareListItems#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_items#account_id DataCloudflareListItems#account_id}
 
 ---
 
@@ -785,7 +785,7 @@ ListId *string
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_items#list_id DataCloudflareListItems#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_items#list_id DataCloudflareListItems#list_id}
 
 ---
 
@@ -799,7 +799,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_items#max_items DataCloudflareListItems#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_items#max_items DataCloudflareListItems#max_items}
 
 ---
 
@@ -815,7 +815,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_items#search DataCloudflareListItems#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_items#search DataCloudflareListItems#search}
 
 ---
 
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 &datacloudflarelistitems.DataCloudflareListItemsResult {
 
@@ -837,7 +837,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 &datacloudflarelistitems.DataCloudflareListItemsResultHostname {
 
@@ -850,7 +850,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 &datacloudflarelistitems.DataCloudflareListItemsResultRedirect {
 
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.NewDataCloudflareListItemsResultHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareListItemsResultHostnameOutputReference
 ```
@@ -1125,7 +1125,7 @@ func InternalValue() DataCloudflareListItemsResultHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.NewDataCloudflareListItemsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareListItemsResultList
 ```
@@ -1274,7 +1274,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.NewDataCloudflareListItemsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareListItemsResultOutputReference
 ```
@@ -1629,7 +1629,7 @@ func InternalValue() DataCloudflareListItemsResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarelistitems"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarelistitems"
 
 datacloudflarelistitems.NewDataCloudflareListItemsResultRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareListItemsResultRedirectOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface UserAgentBlockingRuleConfig extends cdktf.TerraformMetaArgument
   /**
   * The rule configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
   */
   readonly configuration: UserAgentBlockingRuleConfiguration;
   /**
   * The action to apply to a matched request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
   */
   readonly mode: string;
   /**
   * The unique identifier of the User Agent Blocking rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#ua_rule_id UserAgentBlockingRule#ua_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#ua_rule_id UserAgentBlockingRule#ua_rule_id}
   */
   readonly uaRuleId?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
   */
   readonly zoneId: string;
 }
@@ -41,13 +36,13 @@ export interface UserAgentBlockingRuleConfiguration {
   /**
   * The configuration target. You must set the target to `ip` when specifying an IP address in the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
   */
   readonly target?: string;
   /**
   * The IP address to match. This address will be compared to the IP address of incoming requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
   */
   readonly value?: string;
 }
@@ -170,7 +165,7 @@ export class UserAgentBlockingRuleConfigurationOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
 */
 export class UserAgentBlockingRule extends cdktf.TerraformResource {
 
@@ -186,7 +181,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserAgentBlockingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserAgentBlockingRule to import
-  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserAgentBlockingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -198,7 +193,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -209,7 +204,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_user_agent_blocking_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

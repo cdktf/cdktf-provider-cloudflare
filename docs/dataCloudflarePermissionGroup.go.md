@@ -4,12 +4,12 @@
 
 ### DataCloudflarePermissionGroup <a name="DataCloudflarePermissionGroup" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group cloudflare_permission_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group cloudflare_permission_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 datacloudflarepermissiongroup.NewDataCloudflarePermissionGroup(scope Construct, id *string, config DataCloudflarePermissionGroupConfig) DataCloudflarePermissionGroup
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 datacloudflarepermissiongroup.DataCloudflarePermissionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 datacloudflarepermissiongroup.DataCloudflarePermissionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarepermissiongroup.DataCloudflarePermissionGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 datacloudflarepermissiongroup.DataCloudflarePermissionGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarepermissiongroup.DataCloudflarePermissionGroup_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 datacloudflarepermissiongroup.DataCloudflarePermissionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflarePermissionGr
 
 The id of the existing DataCloudflarePermissionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 &datacloudflarepermissiongroup.DataCloudflarePermissionGroupConfig {
 	Connection: interface{},
@@ -731,7 +731,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#account_id DataCloudflarePermissionGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#account_id DataCloudflarePermissionGroup#account_id}
 
 ---
 
@@ -745,7 +745,7 @@ PermissionGroupId *string
 
 Permission Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#permission_group_id DataCloudflarePermissionGroup#permission_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#permission_group_id DataCloudflarePermissionGroup#permission_group_id}
 
 ---
 
@@ -754,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroupMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 &datacloudflarepermissiongroup.DataCloudflarePermissionGroupMeta {
 
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePermissionGroup.DataCloudflarePermissionGroupMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepermissiongroup"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepermissiongroup"
 
 datacloudflarepermissiongroup.NewDataCloudflarePermissionGroupMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePermissionGroupMetaOutputReference
 ```

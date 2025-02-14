@@ -4,7 +4,7 @@
 
 ### ZoneCacheReserve <a name="ZoneCacheReserve" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ZoneCacheReserve to import
 
 The id of the existing ZoneCacheReserve that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,7 +507,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.editable">Editable</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.modifiedOn">ModifiedOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.zoneSettingId">ZoneSettingId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.value">Value</a></code> | <code>string</code> | *No description.* |
@@ -681,16 +680,6 @@ public string Id { get; }
 
 ```csharp
 public string ModifiedOn { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ZoneSettingId`<sup>Required</sup> <a name="ZoneSettingId" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.property.zoneSettingId"></a>
-
-```csharp
-public string ZoneSettingId { get; }
 ```
 
 - *Type:* string
@@ -873,7 +862,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -887,7 +876,7 @@ public string Value { get; set; }
 
 Value of the Cache Reserve zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
 
 ---
 

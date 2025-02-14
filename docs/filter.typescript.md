@@ -4,7 +4,7 @@
 
 ### Filter <a name="Filter" id="@cdktf/provider-cloudflare.filter.Filter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter cloudflare_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.filter.Filter.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.resetFilterId">resetFilterId</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetFilterId` <a name="resetFilterId" id="@cdktf/provider-cloudflare.filter.Filter.resetFilterId"></a>
-
-```typescript
-public resetFilterId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +467,7 @@ The construct id used in the generated config for the Filter to import.
 
 The id of the existing Filter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -509,10 +502,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.paused">paused</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.ref">ref</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.expressionInput">expressionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.filterIdInput">filterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.expression">expression</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.filterId">filterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.Filter.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -709,16 +700,6 @@ public readonly expressionInput: string;
 
 ---
 
-##### `filterIdInput`<sup>Optional</sup> <a name="filterIdInput" id="@cdktf/provider-cloudflare.filter.Filter.property.filterIdInput"></a>
-
-```typescript
-public readonly filterIdInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktf/provider-cloudflare.filter.Filter.property.zoneIdInput"></a>
 
 ```typescript
@@ -733,16 +714,6 @@ public readonly zoneIdInput: string;
 
 ```typescript
 public readonly expression: string;
-```
-
-- *Type:* string
-
----
-
-##### `filterId`<sup>Required</sup> <a name="filterId" id="@cdktf/provider-cloudflare.filter.Filter.property.filterId"></a>
-
-```typescript
-public readonly filterId: string;
 ```
 
 - *Type:* string
@@ -802,7 +773,6 @@ const filterConfig: filter.FilterConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.expression">expression</a></code> | <code>string</code> | The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/). |
 | <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.filter.FilterConfig.property.filterId">filterId</a></code> | <code>string</code> | The unique identifier of the filter. |
 
 ---
 
@@ -886,7 +856,7 @@ public readonly expression: string;
 
 The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#expression Filter#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter#expression Filter#expression}
 
 ---
 
@@ -900,21 +870,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#zone_id Filter#zone_id}
-
----
-
-##### `filterId`<sup>Optional</sup> <a name="filterId" id="@cdktf/provider-cloudflare.filter.FilterConfig.property.filterId"></a>
-
-```typescript
-public readonly filterId: string;
-```
-
-- *Type:* string
-
-The unique identifier of the filter.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter#filter_id Filter#filter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter#zone_id Filter#zone_id}
 
 ---
 

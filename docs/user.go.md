@@ -4,12 +4,12 @@
 
 ### User <a name="User" id="@cdktf/provider-cloudflare.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user cloudflare_user}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user cloudflare_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/user"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -413,7 +413,7 @@ func ResetZipcode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/user"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/user"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/user"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/user"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/user"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ Country *string
 
 The country in which the user lives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user#country User#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user#country User#country}
 
 ---
 
@@ -943,7 +943,7 @@ FirstName *string
 
 User's first name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user#first_name User#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user#first_name User#first_name}
 
 ---
 
@@ -957,7 +957,7 @@ LastName *string
 
 User's last name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user#last_name User#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user#last_name User#last_name}
 
 ---
 
@@ -971,7 +971,7 @@ Telephone *string
 
 User's telephone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user#telephone User#telephone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user#telephone User#telephone}
 
 ---
 
@@ -985,7 +985,7 @@ Zipcode *string
 
 The zipcode or postal code where the user lives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/user#zipcode User#zipcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/user#zipcode User#zipcode}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataCloudflareCustomSsls <a name="DataCloudflareCustomSsls" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.NewDataCloudflareCustomSsls(scope Construct, id *string, config DataCloudflareCustomSslsConfig) DataCloudflareCustomSsls
 ```
@@ -297,7 +297,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.DataCloudflareCustomSsls_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.DataCloudflareCustomSsls_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarecustomssls.DataCloudflareCustomSsls_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.DataCloudflareCustomSsls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflarecustomssls.DataCloudflareCustomSsls_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.DataCloudflareCustomSsls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareCustomSsls t
 
 The id of the existing DataCloudflareCustomSsls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 &datacloudflarecustomssls.DataCloudflareCustomSslsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
 
 ---
 
@@ -792,7 +792,7 @@ Match *string
 
 Whether to match all search requirements or at least one (any).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
 
 ---
 
@@ -806,7 +806,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
 
 ---
 
@@ -820,7 +820,7 @@ Status *string
 
 Status of the zone's custom SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
 
 ---
 
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 &datacloudflarecustomssls.DataCloudflareCustomSslsResult {
 
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultGeoRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 &datacloudflarecustomssls.DataCloudflareCustomSslsResultGeoRestrictions {
 
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 &datacloudflarecustomssls.DataCloudflareCustomSslsResultKeylessServer {
 
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServerTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 &datacloudflarecustomssls.DataCloudflareCustomSslsResultKeylessServerTunnel {
 
@@ -883,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultGeoRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.NewDataCloudflareCustomSslsResultGeoRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomSslsResultGeoRestrictionsOutputReference
 ```
@@ -1143,7 +1143,7 @@ func InternalValue() DataCloudflareCustomSslsResultGeoRestrictions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.NewDataCloudflareCustomSslsResultKeylessServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomSslsResultKeylessServerOutputReference
 ```
@@ -1502,7 +1502,7 @@ func InternalValue() DataCloudflareCustomSslsResultKeylessServer
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultKeylessServerTunnelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.NewDataCloudflareCustomSslsResultKeylessServerTunnelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomSslsResultKeylessServerTunnelOutputReference
 ```
@@ -1773,7 +1773,7 @@ func InternalValue() DataCloudflareCustomSslsResultKeylessServerTunnel
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.NewDataCloudflareCustomSslsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCustomSslsResultList
 ```
@@ -1922,7 +1922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomssls"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomssls"
 
 datacloudflarecustomssls.NewDataCloudflareCustomSslsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCustomSslsResultOutputReference
 ```

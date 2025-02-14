@@ -4,7 +4,7 @@
 
 ### DataCloudflareLoadBalancers <a name="DataCloudflareLoadBalancers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers cloudflare_load_balancers}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers cloudflare_load_balancers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer"></a>
 
@@ -37,7 +37,7 @@ dataCloudflareLoadBalancers.DataCloudflareLoadBalancers(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
 
 ---
 
@@ -482,7 +482,7 @@ The construct id used in the generated config for the DataCloudflareLoadBalancer
 
 The id of the existing DataCloudflareLoadBalancers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -741,7 +741,7 @@ dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -824,7 +824,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
 
 ---
 
@@ -838,7 +838,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
 
 ---
 
@@ -884,7 +884,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
 
 ---
 
@@ -900,7 +900,7 @@ pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
 
 ---
 
@@ -916,7 +916,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
 
 ---
 
@@ -935,7 +935,7 @@ Once the expiry time has been reached, subsequent requests may get sent to a dif
 * `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
 * `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#session_affinity_ttl DataCloudflareLoadBalancers#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#session_affinity_ttl DataCloudflareLoadBalancers#session_affinity_ttl}
 
 ---
 
@@ -958,7 +958,7 @@ Steering Policy for this load balancer.
 * `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
 * `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#steering_policy DataCloudflareLoadBalancers#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#steering_policy DataCloudflareLoadBalancers#steering_policy}
 
 ---
 
@@ -974,7 +974,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This only applies to gray-clouded (unproxied) load balancers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#ttl DataCloudflareLoadBalancers#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#ttl DataCloudflareLoadBalancers#ttl}
 
 ---
 
@@ -1075,7 +1075,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
 
 ---
 
@@ -1091,7 +1091,7 @@ pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
 
 ---
 
@@ -1107,7 +1107,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
 
 ---
 
@@ -1126,7 +1126,7 @@ Once the expiry time has been reached, subsequent requests may get sent to a dif
 * `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
 * `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#session_affinity_ttl DataCloudflareLoadBalancers#session_affinity_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#session_affinity_ttl DataCloudflareLoadBalancers#session_affinity_ttl}
 
 ---
 
@@ -1149,7 +1149,7 @@ Steering Policy for this load balancer.
 * `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
 * `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#steering_policy DataCloudflareLoadBalancers#steering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#steering_policy DataCloudflareLoadBalancers#steering_policy}
 
 ---
 
@@ -1165,7 +1165,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 This only applies to gray-clouded (unproxied) load balancers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#ttl DataCloudflareLoadBalancers#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#ttl DataCloudflareLoadBalancers#ttl}
 
 ---
 
@@ -1234,7 +1234,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
 
 ---
 
@@ -1270,7 +1270,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### WebAnalyticsSite <a name="WebAnalyticsSite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSite(scope Construct, id *string, config WebAnalyticsSiteConfig) WebAnalyticsSite
 ```
@@ -399,7 +399,7 @@ func ResetZoneTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ webanalyticssite.WebAnalyticsSite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ webanalyticssite.WebAnalyticsSite_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the WebAnalyticsSite to import
 
 The id of the existing WebAnalyticsSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 &webanalyticssite.WebAnalyticsSiteConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -982,7 +982,7 @@ AutoInstall interface{}
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
 
 ---
 
@@ -996,7 +996,7 @@ Host *string
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
 
 ---
 
@@ -1010,7 +1010,7 @@ ZoneTag *string
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 &webanalyticssite.WebAnalyticsSiteRules {
 
@@ -1032,7 +1032,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalytic
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 &webanalyticssite.WebAnalyticsSiteRuleset {
 
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalytic
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSiteRulesetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebAnalyticsSiteRulesetOutputReference
 ```
@@ -1340,7 +1340,7 @@ func InternalValue() WebAnalyticsSiteRuleset
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSiteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebAnalyticsSiteRulesList
 ```
@@ -1489,7 +1489,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSiteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebAnalyticsSiteRulesOutputReference
 ```

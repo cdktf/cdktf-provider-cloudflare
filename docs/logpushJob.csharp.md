@@ -4,7 +4,7 @@
 
 ### LogpushJob <a name="LogpushJob" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job cloudflare_logpush_job}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job cloudflare_logpush_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the LogpushJob to import.
 
 The id of the existing LogpushJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1260,7 +1260,7 @@ Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
 
 Additional configuration parameters supported by the destination may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
 
 ---
 
@@ -1274,7 +1274,7 @@ public string AccountId { get; set; }
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
 
 ---
 
@@ -1288,7 +1288,7 @@ public string Dataset { get; set; }
 
 Name of the dataset. A list of supported datasets can be found on the [Developer Docs](https://developers.cloudflare.com/logs/reference/log-fields/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
 
 ---
 
@@ -1302,7 +1302,7 @@ public object Enabled { get; set; }
 
 Flag that indicates if the job is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
 
 ---
 
@@ -1318,7 +1318,7 @@ This field is deprecated.
 
 Please use `max_upload_*` parameters instead. The frequency at which Cloudflare sends batches of logs to your destination. Setting frequency to high sends your logs in larger quantities of smaller files. Setting frequency to low sends logs in smaller quantities of larger files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
 
 ---
 
@@ -1334,7 +1334,7 @@ The kind parameter (optional) is used to differentiate between Logpush and Edge 
 
 Currently, Edge Log Delivery is only supported for the `http_requests` dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#kind LogpushJob#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#kind LogpushJob#kind}
 
 ---
 
@@ -1350,7 +1350,7 @@ This field is deprecated.
 
 Use `output_options` instead. Configuration string. It specifies things like requested fields and timestamp formats. If migrating from the logpull api, copy the url (full url or just the query string) of your call here, and logpush will keep on making this call for you, setting start and end times appropriately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
 
 ---
 
@@ -1366,7 +1366,7 @@ The maximum uncompressed file size of a batch of logs.
 
 This setting value must be between `5 MB` and `1 GB`, or `0` to disable it. Note that you cannot set a minimum file size; this means that log files may be much smaller than this batch size. This parameter is not available for jobs with `edge` as its kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
 
 ---
 
@@ -1382,7 +1382,7 @@ The maximum interval in seconds for log batches.
 
 This setting must be between 30 and 300 seconds (5 minutes), or `0` to disable it. Note that you cannot specify a minimum interval for log batches; this means that log files may be sent in shorter intervals than this. This parameter is only used for jobs with `edge` as its kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
 
 ---
 
@@ -1398,7 +1398,7 @@ The maximum number of log lines per batch.
 
 This setting must be between 1000 and 1,000,000 lines, or `0` to disable it. Note that you cannot specify a minimum number of log lines per batch; this means that log files may contain many fewer lines than this. This parameter is not available for jobs with `edge` as its kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
 
 ---
 
@@ -1414,7 +1414,7 @@ Optional human readable job name.
 
 Not unique. Cloudflare suggests that you set this to a meaningful string, like the domain name, to make it easier to identify your job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#name LogpushJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#name LogpushJob#name}
 
 ---
 
@@ -1428,7 +1428,7 @@ public LogpushJobOutputOptions OutputOptions { get; set; }
 
 The structured replacement for `logpull_options`. When including this field, the `logpull_option` field will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
 
 ---
 
@@ -1442,7 +1442,7 @@ public string OwnershipChallenge { get; set; }
 
 Ownership challenge token to prove destination ownership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
 
 ---
 
@@ -1456,7 +1456,7 @@ public string ZoneId { get; set; }
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
 
 ---
 
@@ -1512,7 +1512,7 @@ public string BatchPrefix { get; set; }
 
 String to be prepended before each batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#batch_prefix LogpushJob#batch_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#batch_prefix LogpushJob#batch_prefix}
 
 ---
 
@@ -1526,7 +1526,7 @@ public string BatchSuffix { get; set; }
 
 String to be appended after each batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#batch_suffix LogpushJob#batch_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#batch_suffix LogpushJob#batch_suffix}
 
 ---
 
@@ -1540,7 +1540,7 @@ public object Cve20214428 { get; set; }
 
 If set to true, will cause all occurrences of `${` in the generated files to be replaced with `x{`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#cve_2021_4428 LogpushJob#cve_2021_4428}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#cve_2021_4428 LogpushJob#cve_2021_4428}
 
 ---
 
@@ -1554,7 +1554,7 @@ public string FieldDelimiter { get; set; }
 
 String to join fields. This field be ignored when `record_template` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
 
 ---
 
@@ -1570,7 +1570,7 @@ List of field names to be included in the Logpush output.
 
 For the moment, there is no option to add all fields at once, so you must specify all the fields names you are interested in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#field_names LogpushJob#field_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#field_names LogpushJob#field_names}
 
 ---
 
@@ -1586,7 +1586,7 @@ Specifies the output type, such as `ndjson` or `csv`.
 
 This sets default values for the rest of the settings, depending on the chosen output type. Some formatting rules, like string quoting, are different between output types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#output_type LogpushJob#output_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#output_type LogpushJob#output_type}
 
 ---
 
@@ -1600,7 +1600,7 @@ public string RecordDelimiter { get; set; }
 
 String to be inserted in-between the records as separator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_delimiter LogpushJob#record_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_delimiter LogpushJob#record_delimiter}
 
 ---
 
@@ -1614,7 +1614,7 @@ public string RecordPrefix { get; set; }
 
 String to be prepended before each record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_prefix LogpushJob#record_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_prefix LogpushJob#record_prefix}
 
 ---
 
@@ -1628,7 +1628,7 @@ public string RecordSuffix { get; set; }
 
 String to be appended after each record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_suffix LogpushJob#record_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_suffix LogpushJob#record_suffix}
 
 ---
 
@@ -1644,7 +1644,7 @@ String to use as template for each record instead of the default comma-separated
 
 All fields used in the template must be present in `field_names` as well, otherwise they will end up as null. Format as a Go `text/template` without any standard functions, like conditionals, loops, sub-templates, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#record_template LogpushJob#record_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_template LogpushJob#record_template}
 
 ---
 
@@ -1660,7 +1660,7 @@ Floating number to specify sampling rate.
 
 Sampling is applied on top of filtering, and regardless of the current `sample_interval` of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#sample_rate LogpushJob#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#sample_rate LogpushJob#sample_rate}
 
 ---
 
@@ -1674,7 +1674,7 @@ public string TimestampFormat { get; set; }
 
 String to specify the format for timestamps, such as `unixnano`, `unix`, or `rfc3339`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
 
 ---
 

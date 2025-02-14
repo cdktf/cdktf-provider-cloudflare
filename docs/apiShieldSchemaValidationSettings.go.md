@@ -4,12 +4,12 @@
 
 ### ApiShieldSchemaValidationSettings <a name="ApiShieldSchemaValidationSettings" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.NewApiShieldSchemaValidationSettings(scope Construct, id *string, config ApiShieldSchemaValidationSettingsConfig) ApiShieldSchemaValidationSettings
 ```
@@ -385,7 +385,7 @@ func ResetValidationOverrideMitigationAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 apishieldschemavalidationsettings.ApiShieldSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ApiShieldSchemaValidationS
 
 The id of the existing ApiShieldSchemaValidationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_schema_validation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_shield_schema_validation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldSchemaValidationSettings.ApiShieldSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldschemavalidationsettings"
 
 &apishieldschemavalidationsettings.ApiShieldSchemaValidationSettingsConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ Mitigation actions are as follows:
 
 A special value of of `none` will skip running schema validation entirely for the request when there is no mitigation action defined on the operation
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_schema_validation_settings#validation_default_mitigation_action ApiShieldSchemaValidationSettings#validation_default_mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_shield_schema_validation_settings#validation_default_mitigation_action ApiShieldSchemaValidationSettings#validation_default_mitigation_action}
 
 ---
 
@@ -885,7 +885,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_schema_validation_settings#zone_id ApiShieldSchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_shield_schema_validation_settings#zone_id ApiShieldSchemaValidationSettings#zone_id}
 
 ---
 
@@ -905,7 +905,7 @@ When set, this overrides both zone level and operation level mitigation actions.
 
 To clear any override, use the special value `disable_override` or `null`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_schema_validation_settings#validation_override_mitigation_action ApiShieldSchemaValidationSettings#validation_override_mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_shield_schema_validation_settings#validation_override_mitigation_action ApiShieldSchemaValidationSettings#validation_override_mitigation_action}
 
 ---
 

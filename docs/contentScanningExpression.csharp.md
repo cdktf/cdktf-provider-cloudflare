@@ -4,7 +4,7 @@
 
 ### ContentScanningExpression <a name="ContentScanningExpression" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.putBody">PutBody</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.resetExpressionId">ResetExpressionId</a></code> | *No description.* |
 
 ---
 
@@ -378,12 +377,6 @@ private void PutBody(object Value)
 
 ---
 
-##### `ResetExpressionId` <a name="ResetExpressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.resetExpressionId"></a>
-
-```csharp
-private void ResetExpressionId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -487,7 +480,7 @@ The construct id used in the generated config for the ContentScanningExpression 
 
 The id of the existing ContentScanningExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,10 +511,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.body">Body</a></code> | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyList">ContentScanningExpressionBodyList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.payload">Payload</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.bodyInput">BodyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionIdInput">ExpressionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionId">ExpressionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -678,6 +671,26 @@ public ContentScanningExpressionBodyList Body { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Payload`<sup>Required</sup> <a name="Payload" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.payload"></a>
+
+```csharp
+public string Payload { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `BodyInput`<sup>Optional</sup> <a name="BodyInput" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.bodyInput"></a>
 
 ```csharp
@@ -688,30 +701,10 @@ public object BodyInput { get; }
 
 ---
 
-##### `ExpressionIdInput`<sup>Optional</sup> <a name="ExpressionIdInput" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionIdInput"></a>
-
-```csharp
-public string ExpressionIdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.zoneIdInput"></a>
 
 ```csharp
 public string ZoneIdInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ExpressionId`<sup>Required</sup> <a name="ExpressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.property.expressionId"></a>
-
-```csharp
-public string ExpressionId { get; }
 ```
 
 - *Type:* string
@@ -778,7 +771,7 @@ public string Payload { get; set; }
 
 Ruleset expression to use in matching content objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
 
 ---
 
@@ -798,8 +791,7 @@ new ContentScanningExpressionConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     object Body,
-    string ZoneId,
-    string ExpressionId = null
+    string ZoneId
 };
 ```
 
@@ -814,9 +806,8 @@ new ContentScanningExpressionConfig {
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">Body</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">Body</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.expressionId">ExpressionId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -898,7 +889,7 @@ public object Body { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 
 ---
 
@@ -912,21 +903,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
-
----
-
-##### `ExpressionId`<sup>Optional</sup> <a name="ExpressionId" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.expressionId"></a>
-
-```csharp
-public string ExpressionId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression#expression_id ContentScanningExpression#expression_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 
 ---
 

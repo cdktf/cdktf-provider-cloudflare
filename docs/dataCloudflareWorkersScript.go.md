@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersScript <a name="DataCloudflareWorkersScript" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_script cloudflare_workers_script}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_script cloudflare_workers_script}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscript"
 
 datacloudflareworkersscript.NewDataCloudflareWorkersScript(scope Construct, id *string, config DataCloudflareWorkersScriptConfig) DataCloudflareWorkersScript
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscript"
 
 datacloudflareworkersscript.DataCloudflareWorkersScript_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscript"
 
 datacloudflareworkersscript.DataCloudflareWorkersScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareworkersscript.DataCloudflareWorkersScript_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscript"
 
 datacloudflareworkersscript.DataCloudflareWorkersScript_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareworkersscript.DataCloudflareWorkersScript_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscript"
 
 datacloudflareworkersscript.DataCloudflareWorkersScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareWorkersScrip
 
 The id of the existing DataCloudflareWorkersScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscript"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscript"
 
 &datacloudflareworkersscript.DataCloudflareWorkersScriptConfig {
 	Connection: interface{},
@@ -698,7 +698,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_script#account_id DataCloudflareWorkersScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_script#account_id DataCloudflareWorkersScript#account_id}
 
 ---
 
@@ -712,7 +712,7 @@ ScriptName *string
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_script#script_name DataCloudflareWorkersScript#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_script#script_name DataCloudflareWorkersScript#script_name}
 
 ---
 

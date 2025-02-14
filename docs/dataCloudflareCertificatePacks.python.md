@@ -4,7 +4,7 @@
 
 ### DataCloudflareCertificatePacks <a name="DataCloudflareCertificatePacks" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Include Certificate Packs of all statuses, not just active ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 
 ---
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DataCloudflareCertificateP
 
 The id of the existing DataCloudflareCertificatePacks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 
 ---
 
@@ -885,7 +885,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 
 ---
 
@@ -899,7 +899,7 @@ status: str
 
 Include Certificate Packs of all statuses, not just active ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 
 ---
 

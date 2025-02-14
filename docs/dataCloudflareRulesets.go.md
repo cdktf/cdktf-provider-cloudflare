@@ -4,12 +4,12 @@
 
 ### DataCloudflareRulesets <a name="DataCloudflareRulesets" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/rulesets cloudflare_rulesets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rulesets cloudflare_rulesets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesets(scope Construct, id *string, config DataCloudflareRulesetsConfig) DataCloudflareRulesets
 ```
@@ -297,7 +297,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarerulesets.DataCloudflareRulesets_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflarerulesets.DataCloudflareRulesets_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.DataCloudflareRulesets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareRulesets to 
 
 The id of the existing DataCloudflareRulesets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsConfig {
 	Connection: interface{},
@@ -754,7 +754,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
 
 ---
 
@@ -768,7 +768,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
 
 ---
 
@@ -782,7 +782,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
 
 ---
 
@@ -791,7 +791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 &datacloudflarerulesets.DataCloudflareRulesetsResult {
 
@@ -806,7 +806,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareRulesetsResultList
 ```
@@ -955,7 +955,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarerulesets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarerulesets"
 
 datacloudflarerulesets.NewDataCloudflareRulesetsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareRulesetsResultOutputReference
 ```

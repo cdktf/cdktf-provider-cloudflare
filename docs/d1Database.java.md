@@ -4,7 +4,7 @@
 
 ### D1Database <a name="D1Database" id="@cdktf/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
@@ -41,7 +41,7 @@ D1Database.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | D1 database name. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1Database.Initializer.parameter.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | Specify the region to create the D1 primary, if available. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -120,7 +120,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}.
+D1 database name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -132,7 +134,7 @@ Specify the region to create the D1 primary, if available.
 
 If this option is omitted, the D1 will be created as close as possible to the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 
@@ -566,7 +568,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,7 +932,7 @@ D1DatabaseConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | D1 database name. |
 | <code><a href="#@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig.property.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | Specify the region to create the D1 primary, if available. |
 
 ---
@@ -1015,7 +1017,7 @@ public java.lang.String getAccountId();
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -1027,7 +1029,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}.
+D1 database name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -1043,7 +1047,7 @@ Specify the region to create the D1 primary, if available.
 
 If this option is omitted, the D1 will be created as close as possible to the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 

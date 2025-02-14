@@ -4,12 +4,12 @@
 
 ### DataCloudflareContentScanningExpressions <a name="DataCloudflareContentScanningExpressions" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.NewDataCloudflareContentScanningExpressions(scope Construct, id *string, config DataCloudflareContentScanningExpressionsConfig) DataCloudflareContentScanningExpressions
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpressions_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpressions_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpression
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpressions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpression
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpressions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareContentScann
 
 The id of the existing DataCloudflareContentScanningExpressions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/content_scanning_expressions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/content_scanning_expressions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 &datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpressionsConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/content_scanning_expressions#zone_id DataCloudflareContentScanningExpressions#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/content_scanning_expressions#zone_id DataCloudflareContentScanningExpressions#zone_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/content_scanning_expressions#max_items DataCloudflareContentScanningExpressions#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/content_scanning_expressions#max_items DataCloudflareContentScanningExpressions#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressionsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 &datacloudflarecontentscanningexpressions.DataCloudflareContentScanningExpressionsResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressionsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.NewDataCloudflareContentScanningExpressionsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareContentScanningExpressionsResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareContentScanningExpressions.DataCloudflareContentScanningExpressionsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecontentscanningexpressions"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecontentscanningexpressions"
 
 datacloudflarecontentscanningexpressions.NewDataCloudflareContentScanningExpressionsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareContentScanningExpressionsResultOutputReference
 ```

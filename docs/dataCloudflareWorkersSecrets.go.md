@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersSecrets <a name="DataCloudflareWorkersSecrets" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secrets cloudflare_workers_secrets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secrets cloudflare_workers_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.NewDataCloudflareWorkersSecrets(scope Construct, id *string, config DataCloudflareWorkersSecretsConfig) DataCloudflareWorkersSecrets
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.DataCloudflareWorkersSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.DataCloudflareWorkersSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareworkerssecrets.DataCloudflareWorkersSecrets_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.DataCloudflareWorkersSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareworkerssecrets.DataCloudflareWorkersSecrets_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecrets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.DataCloudflareWorkersSecrets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWorkersSecre
 
 The id of the existing DataCloudflareWorkersSecrets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secrets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secrets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 &datacloudflareworkerssecrets.DataCloudflareWorkersSecretsConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secrets#account_id DataCloudflareWorkersSecrets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secrets#account_id DataCloudflareWorkersSecrets#account_id}
 
 ---
 
@@ -778,7 +778,7 @@ DispatchNamespace *string
 
 Name of the Workers for Platforms dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secrets#dispatch_namespace DataCloudflareWorkersSecrets#dispatch_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secrets#dispatch_namespace DataCloudflareWorkersSecrets#dispatch_namespace}
 
 ---
 
@@ -792,7 +792,7 @@ ScriptName *string
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secrets#script_name DataCloudflareWorkersSecrets#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secrets#script_name DataCloudflareWorkersSecrets#script_name}
 
 ---
 
@@ -806,7 +806,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secrets#max_items DataCloudflareWorkersSecrets#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secrets#max_items DataCloudflareWorkersSecrets#max_items}
 
 ---
 
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecretsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 &datacloudflareworkerssecrets.DataCloudflareWorkersSecretsResult {
 
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecretsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.NewDataCloudflareWorkersSecretsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersSecretsResultList
 ```
@@ -979,7 +979,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersSecrets.DataCloudflareWorkersSecretsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkerssecrets"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkerssecrets"
 
 datacloudflareworkerssecrets.NewDataCloudflareWorkersSecretsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersSecretsResultOutputReference
 ```

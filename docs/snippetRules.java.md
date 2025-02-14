@@ -4,7 +4,7 @@
 
 ### SnippetRules <a name="SnippetRules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.Initializer"></a>
 
@@ -111,7 +111,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 
 ---
 
@@ -121,7 +121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of snippet rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#rules SnippetRules#rules}
 
 ---
 
@@ -568,7 +568,7 @@ The construct id used in the generated config for the SnippetRules to import.
 
 The id of the existing SnippetRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.enabled">enabled</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesList">SnippetRulesRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.snippetName">snippetName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rulesInput">rulesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -747,6 +751,36 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.enabled"></a>
+
+```java
+public IResolvable getEnabled();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rules"></a>
 
 ```java
@@ -754,6 +788,16 @@ public SnippetRulesRulesList getRules();
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesList">SnippetRulesRulesList</a>
+
+---
+
+##### `snippetName`<sup>Required</sup> <a name="snippetName" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.snippetName"></a>
+
+```java
+public java.lang.String getSnippetName();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -928,7 +972,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 
 ---
 
@@ -942,7 +986,7 @@ public java.lang.Object getRules();
 
 List of snippet rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#rules SnippetRules#rules}
 
 ---
 
@@ -966,9 +1010,9 @@ SnippetRulesRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#description SnippetRules#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#expression SnippetRules#expression}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#description SnippetRules#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#expression SnippetRules#expression}. |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName">snippetName</a></code> | <code>java.lang.String</code> | Snippet identifying name. |
 
 ---
@@ -981,7 +1025,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#description SnippetRules#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#description SnippetRules#description}.
 
 ---
 
@@ -993,7 +1037,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}.
 
 ---
 
@@ -1005,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#expression SnippetRules#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#expression SnippetRules#expression}.
 
 ---
 
@@ -1019,7 +1063,7 @@ public java.lang.String getSnippetName();
 
 Snippet identifying name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
 
 ---
 

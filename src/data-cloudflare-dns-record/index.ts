@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataCloudflareDnsRecordConfig extends cdktf.TerraformMetaArgume
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
   */
   readonly dnsRecordId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}
   */
   readonly filter?: DataCloudflareDnsRecordFilter;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
   */
   readonly zoneId: string;
 }
@@ -264,42 +259,42 @@ export interface DataCloudflareDnsRecordFilterComment {
   * If this parameter is present, only records *without* a comment are returned.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
   */
   readonly absent?: string;
   /**
   * Substring of the DNS record comment. Comment filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS record comment. Comment filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS record comment. Comment filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * If this parameter is present, only records *with* a comment are returned.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
   */
   readonly present?: string;
   /**
   * Prefix of the DNS record comment. Comment filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
@@ -541,28 +536,28 @@ export interface DataCloudflareDnsRecordFilterContent {
   * Substring of the DNS record content. Content filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS record content. Content filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS record content. Content filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * Prefix of the DNS record content. Content filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
@@ -746,28 +741,28 @@ export interface DataCloudflareDnsRecordFilterName {
   * Substring of the DNS record name. Name filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS record name. Name filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS record name. Name filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * Prefix of the DNS record name. Name filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
@@ -951,42 +946,42 @@ export interface DataCloudflareDnsRecordFilterTag {
   * Name of a tag which must *not* be present on the DNS record. Tag filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
   */
   readonly absent?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value contains `<tag-value>`. Tag filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value ends with `<tag-value>`. Tag filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value is `<tag-value>`. Tag filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * Name of a tag which must be present on the DNS record. Tag filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
   */
   readonly present?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value starts with `<tag-value>`. Tag filters are case-insensitive.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
@@ -1225,64 +1220,64 @@ export class DataCloudflareDnsRecordFilterTagOutputReference extends cdktf.Compl
 }
 export interface DataCloudflareDnsRecordFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}
   */
   readonly comment?: DataCloudflareDnsRecordFilterComment;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}
   */
   readonly content?: DataCloudflareDnsRecordFilterContent;
   /**
   * Direction to order DNS records in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#direction DataCloudflareDnsRecord#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#direction DataCloudflareDnsRecord#direction}
   */
   readonly direction?: string;
   /**
   * Whether to match all search requirements or at least one (any). If set to `all`, acts like a logical AND between filters. If set to `any`, acts like a logical OR instead. Note that the interaction between tag filters is controlled by the `tag-match` parameter instead.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#match DataCloudflareDnsRecord#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#match DataCloudflareDnsRecord#match}
   */
   readonly match?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}
   */
   readonly name?: DataCloudflareDnsRecordFilterName;
   /**
   * Field to order DNS records by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#order DataCloudflareDnsRecord#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#order DataCloudflareDnsRecord#order}
   */
   readonly order?: string;
   /**
   * Whether the record is receiving the performance and security benefits of Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
   */
   readonly proxied?: boolean | cdktf.IResolvable;
   /**
   * Allows searching in multiple properties of a DNS record simultaneously. This parameter is intended for human users, not automation. Its exact behavior is intentionally left unspecified and is subject to change in the future. This parameter works independently of the `match` setting. For automated searches, please use the other available parameters.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#search DataCloudflareDnsRecord#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#search DataCloudflareDnsRecord#search}
   */
   readonly search?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}
   */
   readonly tag?: DataCloudflareDnsRecordFilterTag;
   /**
   * Whether to match all tag search requirements or at least one (any). If set to `all`, acts like a logical AND between tag filters. If set to `any`, acts like a logical OR instead. Note that the regular `match` parameter is still used to combine the resulting condition with other filters that aren't related to tags.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#tag_match DataCloudflareDnsRecord#tag_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#tag_match DataCloudflareDnsRecord#tag_match}
   */
   readonly tagMatch?: string;
   /**
   * Record type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
   */
   readonly type?: string;
 }
@@ -1730,7 +1725,7 @@ export class DataCloudflareDnsRecordSettingsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record cloudflare_dns_record}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record cloudflare_dns_record}
 */
 export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
 
@@ -1746,7 +1741,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareDnsRecord resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDnsRecord to import
-  * @param importFromId The id of the existing DataCloudflareDnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDnsRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1758,7 +1753,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/dns_record cloudflare_dns_record} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/dns_record cloudflare_dns_record} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1769,7 +1764,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_dns_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
