@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessMtlsCertificate.ZeroTrustAccessMtlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessmtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate"
 
 zerotrustaccessmtlscertificate.NewZeroTrustAccessMtlsCertificate(scope Construct, id *string, config ZeroTrustAccessMtlsCertificateConfig) ZeroTrustAccessMtlsCertificate
 ```
@@ -399,7 +399,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustAccessMtlsCertificate.ZeroTrustAccessMtlsCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessmtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate"
 
 zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustAccessMtlsCertificate.ZeroTrustAccessMtlsCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessmtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate"
 
 zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificate_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustAccessMtlsCertificate.ZeroTrustAccessMtlsCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessmtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate"
 
 zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificate_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustAccessMtlsCertificate.ZeroTrustAccessMtlsCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessmtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate"
 
 zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessMtlsCertificate.ZeroTrustAccessMtlsCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessmtlscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate"
 
 &zerotrustaccessmtlscertificate.ZeroTrustAccessMtlsCertificateConfig {
 	Connection: interface{},

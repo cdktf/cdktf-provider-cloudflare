@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsSettingsInternalView.DnsSettingsInternalView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnssettingsinternalview"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnssettingsinternalview"
 
 dnssettingsinternalview.NewDnsSettingsInternalView(scope Construct, id *string, config DnsSettingsInternalViewConfig) DnsSettingsInternalView
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dnsSettingsInternalView.DnsSettingsInternalView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnssettingsinternalview"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnssettingsinternalview"
 
 dnssettingsinternalview.DnsSettingsInternalView_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dnsSettingsInternalView.DnsSettingsInternalView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnssettingsinternalview"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnssettingsinternalview"
 
 dnssettingsinternalview.DnsSettingsInternalView_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ dnssettingsinternalview.DnsSettingsInternalView_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dnsSettingsInternalView.DnsSettingsInternalView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnssettingsinternalview"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnssettingsinternalview"
 
 dnssettingsinternalview.DnsSettingsInternalView_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ dnssettingsinternalview.DnsSettingsInternalView_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dnsSettingsInternalView.DnsSettingsInternalView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnssettingsinternalview"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnssettingsinternalview"
 
 dnssettingsinternalview.DnsSettingsInternalView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsSettingsInternalView.DnsSettingsInternalViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnssettingsinternalview"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnssettingsinternalview"
 
 &dnssettingsinternalview.DnsSettingsInternalViewConfig {
 	Connection: interface{},
