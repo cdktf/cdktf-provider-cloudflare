@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZone(scope Construct, id *string, config DataCloudflareZoneConfig) DataCloudflareZone
 ```
@@ -303,7 +303,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflarezone.DataCloudflareZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflarezone.DataCloudflareZone_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.DataCloudflareZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneAccount {
 
@@ -825,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareZone.DataCloudflareZoneFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZone.DataCloudflareZoneFilter,
 	ZoneId: *string,
 }
 ```
@@ -957,10 +957,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneFilter {
-	Account: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareZone.DataCloudflareZoneFilterAccount,
+	Account: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZone.DataCloudflareZoneFilterAccount,
 	Direction: *string,
 	Match: *string,
 	Name: *string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneFilterAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneFilterAccount {
 	Id: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneMeta {
 
@@ -1157,7 +1157,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 &datacloudflarezone.DataCloudflareZoneOwner {
 
@@ -1172,7 +1172,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZoneAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneAccountOutputReference
 ```
@@ -1443,7 +1443,7 @@ func InternalValue() DataCloudflareZoneAccount
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneFilterAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZoneFilterAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneFilterAccountOutputReference
 ```
@@ -1750,7 +1750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZoneFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneFilterOutputReference
 ```
@@ -2186,7 +2186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZoneMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneMetaOutputReference
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() DataCloudflareZoneMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZoneOwnerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezone"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezone"
 
 datacloudflarezone.NewDataCloudflareZoneOwnerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneOwnerOutputReference
 ```
