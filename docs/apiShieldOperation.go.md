@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperation(scope Construct, id *string, config ApiShieldOperationConfig) ApiShieldOperation
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ apishieldoperation.ApiShieldOperation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ apishieldoperation.ApiShieldOperation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.ApiShieldOperation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationConfig {
 	Connection: interface{},
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeatures {
 
@@ -980,7 +980,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesApiRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesApiRouting {
 
@@ -993,7 +993,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesConfidenceIntervals {
 
@@ -1006,7 +1006,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThreshold {
 
@@ -1019,7 +1019,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervals {
 
@@ -1032,7 +1032,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90 {
 
@@ -1045,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95 {
 
@@ -1058,7 +1058,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99 {
 
@@ -1071,7 +1071,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesParameterSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesParameterSchemas {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesParameterSchemasParameterSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesParameterSchemasParameterSchemas {
 
@@ -1097,7 +1097,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesSchemaInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesSchemaInfo {
 
@@ -1110,7 +1110,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesSchemaInfoActiveSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesSchemaInfoActiveSchema {
 
@@ -1123,7 +1123,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 &apishieldoperation.ApiShieldOperationFeaturesThresholds {
 
@@ -1138,7 +1138,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperat
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesApiRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesApiRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesApiRoutingOutputReference
 ```
@@ -1409,7 +1409,7 @@ func InternalValue() ApiShieldOperationFeaturesApiRouting
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesConfidenceIntervalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesConfidenceIntervalsOutputReference
 ```
@@ -1680,7 +1680,7 @@ func InternalValue() ApiShieldOperationFeaturesConfidenceIntervals
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsOutputReference
 ```
@@ -1962,7 +1962,7 @@ func InternalValue() ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThres
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90OutputReference
 ```
@@ -2233,7 +2233,7 @@ func InternalValue() ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThres
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP95OutputReference
 ```
@@ -2504,7 +2504,7 @@ func InternalValue() ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThres
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99OutputReference
 ```
@@ -2775,7 +2775,7 @@ func InternalValue() ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThres
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdOutputReference
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThres
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesOutputReference
 ```
@@ -3350,7 +3350,7 @@ func InternalValue() ApiShieldOperationFeatures
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesParameterSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesParameterSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesParameterSchemasOutputReference
 ```
@@ -3621,7 +3621,7 @@ func InternalValue() ApiShieldOperationFeaturesParameterSchemas
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesParameterSchemasParameterSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesParameterSchemasParameterSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesParameterSchemasParameterSchemasOutputReference
 ```
@@ -3892,7 +3892,7 @@ func InternalValue() ApiShieldOperationFeaturesParameterSchemasParameterSchemas
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference
 ```
@@ -4185,7 +4185,7 @@ func InternalValue() ApiShieldOperationFeaturesSchemaInfoActiveSchema
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesSchemaInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesSchemaInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesSchemaInfoOutputReference
 ```
@@ -4467,7 +4467,7 @@ func InternalValue() ApiShieldOperationFeaturesSchemaInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShieldOperation.ApiShieldOperationFeaturesThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/apishieldoperation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation"
 
 apishieldoperation.NewApiShieldOperationFeaturesThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiShieldOperationFeaturesThresholdsOutputReference
 ```
