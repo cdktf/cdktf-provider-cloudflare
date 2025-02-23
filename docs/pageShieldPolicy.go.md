@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.NewPageShieldPolicy(scope Construct, id *string, config PageShieldPolicyConfig) PageShieldPolicy
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ pageshieldpolicy.PageShieldPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ pageshieldpolicy.PageShieldPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 &pageshieldpolicy.PageShieldPolicyConfig {
 	Connection: interface{},

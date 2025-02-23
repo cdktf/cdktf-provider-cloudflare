@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.NewDataCloudflareDnsSettings(scope Construct, id *string, config DataCloudflareDnsSettingsConfig) DataCloudflareDnsSettings
 ```
@@ -290,7 +290,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.DataCloudflareDnsSettings_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.DataCloudflareDnsSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarednssettings.DataCloudflareDnsSettings_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.DataCloudflareDnsSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflarednssettings.DataCloudflareDnsSettings_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.DataCloudflareDnsSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 &datacloudflarednssettings.DataCloudflareDnsSettingsConfig {
 	Connection: interface{},
@@ -746,7 +746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 &datacloudflarednssettings.DataCloudflareDnsSettingsZoneDefaults {
 
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsInternalDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 &datacloudflarednssettings.DataCloudflareDnsSettingsZoneDefaultsInternalDns {
 
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsNameservers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 &datacloudflarednssettings.DataCloudflareDnsSettingsZoneDefaultsNameservers {
 
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsSoa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 &datacloudflarednssettings.DataCloudflareDnsSettingsZoneDefaultsSoa {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsInternalDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.NewDataCloudflareDnsSettingsZoneDefaultsInternalDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsSettingsZoneDefaultsInternalDnsOutputReference
 ```
@@ -1060,7 +1060,7 @@ func InternalValue() DataCloudflareDnsSettingsZoneDefaultsInternalDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsNameserversOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.NewDataCloudflareDnsSettingsZoneDefaultsNameserversOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsSettingsZoneDefaultsNameserversOutputReference
 ```
@@ -1320,7 +1320,7 @@ func InternalValue() DataCloudflareDnsSettingsZoneDefaultsNameservers
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.NewDataCloudflareDnsSettingsZoneDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsSettingsZoneDefaultsOutputReference
 ```
@@ -1668,7 +1668,7 @@ func InternalValue() DataCloudflareDnsSettingsZoneDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsSettings.DataCloudflareDnsSettingsZoneDefaultsSoaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarednssettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednssettings"
 
 datacloudflarednssettings.NewDataCloudflareDnsSettingsZoneDefaultsSoaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsSettingsZoneDefaultsSoaOutputReference
 ```
