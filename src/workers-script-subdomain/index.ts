@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script_subdomain
 // generated from terraform resource schema
 

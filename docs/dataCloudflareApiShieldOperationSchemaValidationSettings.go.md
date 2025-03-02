@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope Construct, id *string, config DataCloudflareApiShieldOperationSchemaValidationSettingsConfig) DataCloudflareApiShieldOperationSchemaValidationSettings
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShield
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShield
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldoperationschemavalidationsettings"
 
 datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldoperationschemavalidationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldoperationschemavalidationsettings"
 
 &datacloudflareapishieldoperationschemavalidationsettings.DataCloudflareApiShieldOperationSchemaValidationSettingsConfig {
 	Connection: interface{},
