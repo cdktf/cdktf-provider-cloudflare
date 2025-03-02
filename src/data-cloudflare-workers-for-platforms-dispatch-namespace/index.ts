@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_for_platforms_dispatch_namespace
 // generated from terraform resource schema
 

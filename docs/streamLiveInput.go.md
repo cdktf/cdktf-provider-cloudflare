@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInput(scope Construct, id *string, config StreamLiveInputConfig) StreamLiveInput
 ```
@@ -426,7 +426,7 @@ func ResetRecording()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.StreamLiveInput_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.StreamLiveInput_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ streamliveinput.StreamLiveInput_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.StreamLiveInput_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ streamliveinput.StreamLiveInput_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.StreamLiveInput_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputConfig {
 	Connection: interface{},
@@ -972,7 +972,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 	DeleteRecordingAfterDays: *f64,
 	LiveInputIdentifier: *string,
 	Meta: *string,
-	Recording: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.streamLiveInput.StreamLiveInputRecording,
+	Recording: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.streamLiveInput.StreamLiveInputRecording,
 }
 ```
 
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecording.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputRecording {
 	AllowedOrigins: *[]*string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputRtmps {
 
@@ -1278,7 +1278,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputRtmpsPlayback {
 
@@ -1291,7 +1291,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputSrt {
 
@@ -1304,7 +1304,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputSrtPlayback {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputWebRtc {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 &streamliveinput.StreamLiveInputWebRtcPlayback {
 
@@ -1345,7 +1345,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamlivei
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputRecordingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputRecordingOutputReference
 ```
@@ -1739,7 +1739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputRtmpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputRtmpsOutputReference
 ```
@@ -2010,7 +2010,7 @@ func InternalValue() StreamLiveInputRtmps
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputRtmpsPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputRtmpsPlaybackOutputReference
 ```
@@ -2281,7 +2281,7 @@ func InternalValue() StreamLiveInputRtmpsPlayback
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputSrtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputSrtOutputReference
 ```
@@ -2563,7 +2563,7 @@ func InternalValue() StreamLiveInputSrt
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputSrtPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputSrtPlaybackOutputReference
 ```
@@ -2845,7 +2845,7 @@ func InternalValue() StreamLiveInputSrtPlayback
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputWebRtcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputWebRtcOutputReference
 ```
@@ -3105,7 +3105,7 @@ func InternalValue() StreamLiveInputWebRtc
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/streamliveinput"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/streamliveinput"
 
 streamliveinput.NewStreamLiveInputWebRtcPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamLiveInputWebRtcPlaybackOutputReference
 ```

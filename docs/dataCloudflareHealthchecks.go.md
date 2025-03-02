@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.NewDataCloudflareHealthchecks(scope Construct, id *string, config DataCloudflareHealthchecksConfig) DataCloudflareHealthchecks
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.DataCloudflareHealthchecks_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.DataCloudflareHealthchecks_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarehealthchecks.DataCloudflareHealthchecks_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.DataCloudflareHealthchecks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarehealthchecks.DataCloudflareHealthchecks_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.DataCloudflareHealthchecks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 &datacloudflarehealthchecks.DataCloudflareHealthchecksConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 &datacloudflarehealthchecks.DataCloudflareHealthchecksResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResultHttpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 &datacloudflarehealthchecks.DataCloudflareHealthchecksResultHttpConfig {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResultTcpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 &datacloudflarehealthchecks.DataCloudflareHealthchecksResultTcpConfig {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResultHttpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.NewDataCloudflareHealthchecksResultHttpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareHealthchecksResultHttpConfigOutputReference
 ```
@@ -1117,7 +1117,7 @@ func InternalValue() DataCloudflareHealthchecksResultHttpConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.NewDataCloudflareHealthchecksResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareHealthchecksResultList
 ```
@@ -1266,7 +1266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.NewDataCloudflareHealthchecksResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareHealthchecksResultOutputReference
 ```
@@ -1731,7 +1731,7 @@ func InternalValue() DataCloudflareHealthchecksResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHealthchecks.DataCloudflareHealthchecksResultTcpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehealthchecks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehealthchecks"
 
 datacloudflarehealthchecks.NewDataCloudflareHealthchecksResultTcpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareHealthchecksResultTcpConfigOutputReference
 ```

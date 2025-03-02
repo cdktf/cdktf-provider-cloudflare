@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope Construct, id *string, config ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) ZeroTrustDeviceCustomProfileLocalDomainFallback
 ```
@@ -391,7 +391,7 @@ func PutDomains(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLoca
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLoca
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLocalDomainFallback_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 &zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig {
 	Connection: interface{},
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallbackDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 &zerotrustdevicecustomprofilelocaldomainfallback.ZeroTrustDeviceCustomProfileLocalDomainFallbackDomains {
 	Suffix: *string,
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.NewZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList
 ```
@@ -1164,7 +1164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicecustomprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicecustomprofilelocaldomainfallback"
 
 zerotrustdevicecustomprofilelocaldomainfallback.NewZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsOutputReference
 ```
