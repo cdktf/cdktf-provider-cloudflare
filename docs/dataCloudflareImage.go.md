@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimage"
 
 datacloudflareimage.NewDataCloudflareImage(scope Construct, id *string, config DataCloudflareImageConfig) DataCloudflareImage
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimage"
 
 datacloudflareimage.DataCloudflareImage_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimage"
 
 datacloudflareimage.DataCloudflareImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareimage.DataCloudflareImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimage"
 
 datacloudflareimage.DataCloudflareImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareimage.DataCloudflareImage_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimage"
 
 datacloudflareimage.DataCloudflareImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareimage"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimage"
 
 &datacloudflareimage.DataCloudflareImageConfig {
 	Connection: interface{},
