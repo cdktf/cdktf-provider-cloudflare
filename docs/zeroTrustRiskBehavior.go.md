@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.NewZeroTrustRiskBehavior(scope Construct, id *string, config ZeroTrustRiskBehaviorConfig) ZeroTrustRiskBehavior
 ```
@@ -391,7 +391,7 @@ func PutBehaviors(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.ZeroTrustRiskBehavior_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.ZeroTrustRiskBehavior_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ zerotrustriskbehavior.ZeroTrustRiskBehavior_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.ZeroTrustRiskBehavior_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zerotrustriskbehavior.ZeroTrustRiskBehavior_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.ZeroTrustRiskBehavior_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 &zerotrustriskbehavior.ZeroTrustRiskBehaviorBehaviors {
 	Enabled: interface{},
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 &zerotrustriskbehavior.ZeroTrustRiskBehaviorConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviorsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.NewZeroTrustRiskBehaviorBehaviorsMap(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustRiskBehaviorBehaviorsMap
 ```
@@ -1049,7 +1049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskbehavior"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustriskbehavior"
 
 zerotrustriskbehavior.NewZeroTrustRiskBehaviorBehaviorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) ZeroTrustRiskBehaviorBehaviorsOutputReference
 ```
