@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.NewDataCloudflareZeroTrustDlpEntry(scope Construct, id *string, config DataCloudflareZeroTrustDlpEntryConfig) DataCloudflareZeroTrustDlpEntry
 ```
@@ -283,7 +283,7 @@ func ResetEntryId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntry_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntry_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntry_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntryConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 &datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntryConfidence {
 
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarez
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 &datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntryConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntryPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 &datacloudflarezerotrustdlpentry.DataCloudflareZeroTrustDlpEntryPattern {
 
@@ -873,7 +873,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarez
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntryConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.NewDataCloudflareZeroTrustDlpEntryConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustDlpEntryConfidenceOutputReference
 ```
@@ -1144,7 +1144,7 @@ func InternalValue() DataCloudflareZeroTrustDlpEntryConfidence
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpEntry.DataCloudflareZeroTrustDlpEntryPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdlpentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdlpentry"
 
 datacloudflarezerotrustdlpentry.NewDataCloudflareZeroTrustDlpEntryPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustDlpEntryPatternOutputReference
 ```

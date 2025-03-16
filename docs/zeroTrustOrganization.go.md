@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganization(scope Construct, id *string, config ZeroTrustOrganizationConfig) ZeroTrustOrganization
 ```
@@ -495,7 +495,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ zerotrustorganization.ZeroTrustOrganization_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ zerotrustorganization.ZeroTrustOrganization_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationConfig {
 	Connection: interface{},
@@ -1106,9 +1106,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorgani
 	AllowAuthenticateViaWarp: interface{},
 	AuthDomain: *string,
 	AutoRedirectToIdentity: interface{},
-	CustomPages: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages,
+	CustomPages: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustOrganization.ZeroTrustOrganizationCustomPages,
 	IsUiReadOnly: interface{},
-	LoginDesign: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign,
+	LoginDesign: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign,
 	Name: *string,
 	SessionDuration: *string,
 	UiReadOnlyToggleReason: *string,
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationCustomPages {
 	Forbidden: *string,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationLoginDesign {
 	BackgroundColor: *string,
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganizationCustomPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationCustomPagesOutputReference
 ```
@@ -1865,7 +1865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganizationLoginDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationLoginDesignOutputReference
 ```
