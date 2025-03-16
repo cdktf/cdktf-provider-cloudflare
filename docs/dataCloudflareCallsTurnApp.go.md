@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCallsTurnApp.DataCloudflareCallsTurnApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecallsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecallsturnapp"
 
 datacloudflarecallsturnapp.NewDataCloudflareCallsTurnApp(scope Construct, id *string, config DataCloudflareCallsTurnAppConfig) DataCloudflareCallsTurnApp
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCallsTurnApp.DataCloudflareCallsTurnApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecallsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecallsturnapp"
 
 datacloudflarecallsturnapp.DataCloudflareCallsTurnApp_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCallsTurnApp.DataCloudflareCallsTurnApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecallsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecallsturnapp"
 
 datacloudflarecallsturnapp.DataCloudflareCallsTurnApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarecallsturnapp.DataCloudflareCallsTurnApp_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCallsTurnApp.DataCloudflareCallsTurnApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecallsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecallsturnapp"
 
 datacloudflarecallsturnapp.DataCloudflareCallsTurnApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarecallsturnapp.DataCloudflareCallsTurnApp_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCallsTurnApp.DataCloudflareCallsTurnApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecallsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecallsturnapp"
 
 datacloudflarecallsturnapp.DataCloudflareCallsTurnApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCallsTurnApp.DataCloudflareCallsTurnAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecallsturnapp"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecallsturnapp"
 
 &datacloudflarecallsturnapp.DataCloudflareCallsTurnAppConfig {
 	Connection: interface{},
