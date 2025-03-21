@@ -4,7 +4,7 @@
 
 ### DataCloudflareSnippets <a name="DataCloudflareSnippets" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets cloudflare_snippets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets cloudflare_snippets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer"></a>
 
@@ -21,6 +21,7 @@ dataCloudflareSnippets.DataCloudflareSnippets(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  snippet_name: str,
   zone_id: str
 )
 ```
@@ -36,6 +37,7 @@ dataCloudflareSnippets.DataCloudflareSnippets(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.snippetName">snippet_name</a></code> | <code>str</code> | Snippet identifying name. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
@@ -100,13 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `snippet_name`<sup>Required</sup> <a name="snippet_name" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.snippetName"></a>
+
+- *Type:* str
+
+Snippet identifying name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+
+---
+
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
 
 ---
 
@@ -465,7 +477,7 @@ The construct id used in the generated config for the DataCloudflareSnippets to 
 
 The id of the existing DataCloudflareSnippets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -495,8 +507,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.snippetName">snippet_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.snippetNameInput">snippet_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.snippetName">snippet_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -643,10 +656,10 @@ modified_on: str
 
 ---
 
-##### `snippet_name`<sup>Required</sup> <a name="snippet_name" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.snippetName"></a>
+##### `snippet_name_input`<sup>Optional</sup> <a name="snippet_name_input" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.snippetNameInput"></a>
 
 ```python
-snippet_name: str
+snippet_name_input: str
 ```
 
 - *Type:* str
@@ -657,6 +670,16 @@ snippet_name: str
 
 ```python
 zone_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `snippet_name`<sup>Required</sup> <a name="snippet_name" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.property.snippetName"></a>
+
+```python
+snippet_name: str
 ```
 
 - *Type:* str
@@ -708,6 +731,7 @@ dataCloudflareSnippets.DataCloudflareSnippetsConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  snippet_name: str,
   zone_id: str
 )
 ```
@@ -723,6 +747,7 @@ dataCloudflareSnippets.DataCloudflareSnippetsConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.snippetName">snippet_name</a></code> | <code>str</code> | Snippet identifying name. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
@@ -797,6 +822,20 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `snippet_name`<sup>Required</sup> <a name="snippet_name" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.snippetName"></a>
+
+```python
+snippet_name: str
+```
+
+- *Type:* str
+
+Snippet identifying name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+
+---
+
 ##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.zoneId"></a>
 
 ```python
@@ -807,7 +846,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
 
 ---
 

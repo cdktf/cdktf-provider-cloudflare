@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,6 +12,18 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#account_id DataCloudflareZeroTrustTunnelCloudflaredConfigA#account_id}
+  */
+  readonly accountId: string;
+  /**
+  * UUID of the tunnel.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredConfigA#tunnel_id}
+  */
+  readonly tunnelId: string;
 }
 export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess {
 }
@@ -595,7 +607,7 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}
 */
 export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformDataSource {
 
@@ -611,7 +623,7 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktf.Terra
   * Generates CDKTF code for importing a DataCloudflareZeroTrustTunnelCloudflaredConfigA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustTunnelCloudflaredConfigA to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustTunnelCloudflaredConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustTunnelCloudflaredConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustTunnelCloudflaredConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -623,18 +635,18 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig = {}
+  * @param options DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_zero_trust_tunnel_cloudflared_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -645,15 +657,25 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktf.Terra
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
+    this._tunnelId = config.tunnelId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: true, optional: false, required: false
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
   }
 
   // config - computed: true, optional: false, required: false
@@ -672,9 +694,17 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktf.Terra
     return this.getStringAttribute('source');
   }
 
-  // tunnel_id - computed: true, optional: false, required: false
+  // tunnel_id - computed: false, optional: false, required: true
+  private _tunnelId?: string; 
   public get tunnelId() {
     return this.getStringAttribute('tunnel_id');
+  }
+  public set tunnelId(value: string) {
+    this._tunnelId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnelIdInput() {
+    return this._tunnelId;
   }
 
   // version - computed: true, optional: false, required: false
@@ -688,12 +718,28 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
+      tunnel_id: cdktf.stringToTerraform(this._tunnelId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tunnel_id: {
+        value: cdktf.stringToHclTerraform(this._tunnelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

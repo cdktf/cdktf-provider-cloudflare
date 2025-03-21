@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareRulesetConfig extends cdktf.TerraformMetaArgument
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
   */
   readonly accountId?: string;
   /**
   * The unique ID of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
   */
   readonly rulesetId?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1788,6 +1788,86 @@ export class DataCloudflareRulesetRulesActionParametersOverridesOutputReference 
     return this.getStringAttribute('sensitivity_level');
   }
 }
+export interface DataCloudflareRulesetRulesActionParametersRawResponseFields {
+}
+
+export function dataCloudflareRulesetRulesActionParametersRawResponseFieldsToTerraform(struct?: DataCloudflareRulesetRulesActionParametersRawResponseFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersRawResponseFieldsToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersRawResponseFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersRawResponseFieldsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersRawResponseFields | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersRawResponseFields | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // preserve_duplicates - computed: true, optional: false, required: false
+  public get preserveDuplicates() {
+    return this.getBooleanAttribute('preserve_duplicates');
+  }
+}
+
+export class DataCloudflareRulesetRulesActionParametersRawResponseFieldsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareRulesetRulesActionParametersRawResponseFieldsOutputReference {
+    return new DataCloudflareRulesetRulesActionParametersRawResponseFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataCloudflareRulesetRulesActionParametersRequestFields {
 }
 
@@ -1982,6 +2062,11 @@ export class DataCloudflareRulesetRulesActionParametersResponseFieldsOutputRefer
   public get name() {
     return this.getStringAttribute('name');
   }
+
+  // preserve_duplicates - computed: true, optional: false, required: false
+  public get preserveDuplicates() {
+    return this.getBooleanAttribute('preserve_duplicates');
+  }
 }
 
 export class DataCloudflareRulesetRulesActionParametersResponseFieldsList extends cdktf.ComplexList {
@@ -2108,6 +2193,81 @@ export class DataCloudflareRulesetRulesActionParametersSniOutputReference extend
   // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersTransformedRequestFields {
+}
+
+export function dataCloudflareRulesetRulesActionParametersTransformedRequestFieldsToTerraform(struct?: DataCloudflareRulesetRulesActionParametersTransformedRequestFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersTransformedRequestFieldsToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersTransformedRequestFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersTransformedRequestFields | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersTransformedRequestFields | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsOutputReference {
+    return new DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataCloudflareRulesetRulesActionParametersUriPath {
@@ -2526,6 +2686,12 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this.getListAttribute('products');
   }
 
+  // raw_response_fields - computed: true, optional: false, required: false
+  private _rawResponseFields = new DataCloudflareRulesetRulesActionParametersRawResponseFieldsList(this, "raw_response_fields", false);
+  public get rawResponseFields() {
+    return this._rawResponseFields;
+  }
+
   // read_timeout - computed: true, optional: false, required: false
   public get readTimeout() {
     return this.getNumberAttribute('read_timeout');
@@ -2610,6 +2776,12 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
   // sxg - computed: true, optional: false, required: false
   public get sxg() {
     return this.getBooleanAttribute('sxg');
+  }
+
+  // transformed_request_fields - computed: true, optional: false, required: false
+  private _transformedRequestFields = new DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList(this, "transformed_request_fields", false);
+  public get transformedRequestFields() {
+    return this._transformedRequestFields;
   }
 
   // uri - computed: true, optional: false, required: false
@@ -2913,6 +3085,11 @@ export class DataCloudflareRulesetRulesOutputReference extends cdktf.ComplexObje
     return this.getStringAttribute('id');
   }
 
+  // last_updated - computed: true, optional: false, required: false
+  public get lastUpdated() {
+    return this.getStringAttribute('last_updated');
+  }
+
   // logging - computed: true, optional: false, required: false
   private _logging = new DataCloudflareRulesetRulesLoggingOutputReference(this, "logging");
   public get logging() {
@@ -2928,6 +3105,11 @@ export class DataCloudflareRulesetRulesOutputReference extends cdktf.ComplexObje
   // ref - computed: true, optional: false, required: false
   public get ref() {
     return this.getStringAttribute('ref');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
   }
 }
 
@@ -2951,7 +3133,7 @@ export class DataCloudflareRulesetRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset cloudflare_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset cloudflare_ruleset}
 */
 export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
 
@@ -2967,7 +3149,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareRuleset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRuleset to import
-  * @param importFromId The id of the existing DataCloudflareRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2979,7 +3161,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2990,7 +3172,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -3039,6 +3221,11 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
   // kind - computed: true, optional: false, required: false
   public get kind() {
     return this.getStringAttribute('kind');
+  }
+
+  // last_updated - computed: true, optional: false, required: false
+  public get lastUpdated() {
+    return this.getStringAttribute('last_updated');
   }
 
   // name - computed: true, optional: false, required: false

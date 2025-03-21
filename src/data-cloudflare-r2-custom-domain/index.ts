@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,21 @@ export interface DataCloudflareR2CustomDomainConfig extends cdktf.TerraformMetaA
   /**
   * Account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain#account_id DataCloudflareR2CustomDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain#account_id DataCloudflareR2CustomDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain#bucket_name DataCloudflareR2CustomDomain#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain#bucket_name DataCloudflareR2CustomDomain#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Name of the custom domain
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain#domain_name DataCloudflareR2CustomDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain#domain DataCloudflareR2CustomDomain#domain}
   */
-  readonly domainName: string;
+  readonly domain: string;
 }
 export interface DataCloudflareR2CustomDomainStatus {
 }
@@ -92,7 +92,7 @@ export class DataCloudflareR2CustomDomainStatusOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}
 */
 export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
 
@@ -108,7 +108,7 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareR2CustomDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareR2CustomDomain to import
-  * @param importFromId The id of the existing DataCloudflareR2CustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareR2CustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareR2CustomDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -120,7 +120,7 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +131,7 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_r2_custom_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -144,7 +144,7 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
     });
     this._accountId = config.accountId;
     this._bucketName = config.bucketName;
-    this._domainName = config.domainName;
+    this._domain = config.domain;
   }
 
   // ==========
@@ -177,22 +177,17 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
     return this._bucketName;
   }
 
-  // domain - computed: true, optional: false, required: false
+  // domain - computed: false, optional: false, required: true
+  private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
   }
-
-  // domain_name - computed: false, optional: false, required: true
-  private _domainName?: string; 
-  public get domainName() {
-    return this.getStringAttribute('domain_name');
-  }
-  public set domainName(value: string) {
-    this._domainName = value;
+  public set domain(value: string) {
+    this._domain = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get domainNameInput() {
-    return this._domainName;
+  public get domainInput() {
+    return this._domain;
   }
 
   // enabled - computed: true, optional: false, required: false
@@ -229,7 +224,7 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       bucket_name: cdktf.stringToTerraform(this._bucketName),
-      domain_name: cdktf.stringToTerraform(this._domainName),
+      domain: cdktf.stringToTerraform(this._domain),
     };
   }
 
@@ -247,8 +242,8 @@ export class DataCloudflareR2CustomDomain extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

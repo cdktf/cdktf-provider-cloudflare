@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,39 @@ export interface R2BucketLockConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}
+  * Jurisdiction of the bucket
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
+  */
+  readonly jurisdiction?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}
   */
   readonly rules?: R2BucketLockRules[] | cdktf.IResolvable;
 }
 export interface R2BucketLockRulesCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}
   */
   readonly maxAgeSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
+  * Available values: "Age".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
   */
   readonly type: string;
 }
@@ -180,19 +188,19 @@ export interface R2BucketLockRules {
   /**
   * Condition to apply a lock rule to an object for how long in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#condition R2BucketLock#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#condition R2BucketLock#condition}
   */
   readonly condition: R2BucketLockRulesCondition;
   /**
   * Whether or not this rule is in effect
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Unique identifier for this rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#id R2BucketLock#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#id R2BucketLock#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -201,7 +209,7 @@ export interface R2BucketLockRules {
   /**
   * Rule will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
   */
   readonly prefix?: string;
 }
@@ -395,7 +403,7 @@ export class R2BucketLockRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}
 */
 export class R2BucketLock extends cdktf.TerraformResource {
 
@@ -411,7 +419,7 @@ export class R2BucketLock extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2BucketLock resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketLock to import
-  * @param importFromId The id of the existing R2BucketLock that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketLock that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketLock to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -423,7 +431,7 @@ export class R2BucketLock extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -434,7 +442,7 @@ export class R2BucketLock extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_lock',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -447,6 +455,7 @@ export class R2BucketLock extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._bucketName = config.bucketName;
+    this._jurisdiction = config.jurisdiction;
     this._rules.internalValue = config.rules;
   }
 
@@ -480,6 +489,22 @@ export class R2BucketLock extends cdktf.TerraformResource {
     return this._bucketName;
   }
 
+  // jurisdiction - computed: true, optional: true, required: false
+  private _jurisdiction?: string; 
+  public get jurisdiction() {
+    return this.getStringAttribute('jurisdiction');
+  }
+  public set jurisdiction(value: string) {
+    this._jurisdiction = value;
+  }
+  public resetJurisdiction() {
+    this._jurisdiction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jurisdictionInput() {
+    return this._jurisdiction;
+  }
+
   // rules - computed: true, optional: true, required: false
   private _rules = new R2BucketLockRulesList(this, "rules", false);
   public get rules() {
@@ -504,6 +529,7 @@ export class R2BucketLock extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       bucket_name: cdktf.stringToTerraform(this._bucketName),
+      jurisdiction: cdktf.stringToTerraform(this._jurisdiction),
       rules: cdktf.listMapper(r2BucketLockRulesToTerraform, false)(this._rules.internalValue),
     };
   }
@@ -518,6 +544,12 @@ export class R2BucketLock extends cdktf.TerraformResource {
       },
       bucket_name: {
         value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jurisdiction: {
+        value: cdktf.stringToHclTerraform(this._jurisdiction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,71 +14,81 @@ import * as cdktf from 'cdktf';
 export interface BotManagementConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable rule to block AI Scrapers and Crawlers.
+  * Available values: "block", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
   */
   readonly aiBotsProtection?: string;
   /**
   * Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
   */
   readonly autoUpdateModel?: boolean | cdktf.IResolvable;
   /**
+  * Enable rule to punish AI Scrapers and Crawlers via a link maze.
+  * Available values: "enabled", "disabled".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
+  */
+  readonly crawlerProtection?: string;
+  /**
   * Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
   */
   readonly enableJs?: boolean | cdktf.IResolvable;
   /**
   * Whether to enable Bot Fight Mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
   */
   readonly fightMode?: boolean | cdktf.IResolvable;
   /**
   * Whether to optimize Super Bot Fight Mode protections for Wordpress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
   */
   readonly optimizeWordpress?: boolean | cdktf.IResolvable;
   /**
   * Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
+  * Available values: "allow", "block", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
   */
   readonly sbfmDefinitelyAutomated?: string;
   /**
   * Super Bot Fight Mode (SBFM) action to take on likely automated requests.
+  * Available values: "allow", "block", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
   */
   readonly sbfmLikelyAutomated?: string;
   /**
   * Super Bot Fight Mode (SBFM) to enable static resource protection.
   * Enable if static resources on your application need bot protection.
   * Note: Static resource protection can also result in legitimate traffic being blocked.
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
   */
   readonly sbfmStaticResourceProtection?: boolean | cdktf.IResolvable;
   /**
   * Super Bot Fight Mode (SBFM) action to take on verified bots requests.
+  * Available values: "allow", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
   */
   readonly sbfmVerifiedBots?: string;
   /**
   * Whether to disable tracking the highest bot score for a session in the Bot Management cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
   */
   readonly suppressSessionScore?: boolean | cdktf.IResolvable;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
   */
   readonly zoneId: string;
 }
@@ -168,7 +178,7 @@ export class BotManagementStaleZoneConfigurationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management cloudflare_bot_management}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management cloudflare_bot_management}
 */
 export class BotManagement extends cdktf.TerraformResource {
 
@@ -184,7 +194,7 @@ export class BotManagement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BotManagement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotManagement to import
-  * @param importFromId The id of the existing BotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotManagement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -196,7 +206,7 @@ export class BotManagement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management cloudflare_bot_management} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management cloudflare_bot_management} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +217,7 @@ export class BotManagement extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_bot_management',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -220,6 +230,7 @@ export class BotManagement extends cdktf.TerraformResource {
     });
     this._aiBotsProtection = config.aiBotsProtection;
     this._autoUpdateModel = config.autoUpdateModel;
+    this._crawlerProtection = config.crawlerProtection;
     this._enableJs = config.enableJs;
     this._fightMode = config.fightMode;
     this._optimizeWordpress = config.optimizeWordpress;
@@ -265,6 +276,22 @@ export class BotManagement extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoUpdateModelInput() {
     return this._autoUpdateModel;
+  }
+
+  // crawler_protection - computed: false, optional: true, required: false
+  private _crawlerProtection?: string; 
+  public get crawlerProtection() {
+    return this.getStringAttribute('crawler_protection');
+  }
+  public set crawlerProtection(value: string) {
+    this._crawlerProtection = value;
+  }
+  public resetCrawlerProtection() {
+    this._crawlerProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crawlerProtectionInput() {
+    return this._crawlerProtection;
   }
 
   // enable_js - computed: false, optional: true, required: false
@@ -432,6 +459,7 @@ export class BotManagement extends cdktf.TerraformResource {
     return {
       ai_bots_protection: cdktf.stringToTerraform(this._aiBotsProtection),
       auto_update_model: cdktf.booleanToTerraform(this._autoUpdateModel),
+      crawler_protection: cdktf.stringToTerraform(this._crawlerProtection),
       enable_js: cdktf.booleanToTerraform(this._enableJs),
       fight_mode: cdktf.booleanToTerraform(this._fightMode),
       optimize_wordpress: cdktf.booleanToTerraform(this._optimizeWordpress),
@@ -457,6 +485,12 @@ export class BotManagement extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      crawler_protection: {
+        value: cdktf.stringToHclTerraform(this._crawlerProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       enable_js: {
         value: cdktf.booleanToHclTerraform(this._enableJs),

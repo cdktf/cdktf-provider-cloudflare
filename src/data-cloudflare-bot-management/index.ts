@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/bot_management
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/bot_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareBotManagementConfig extends cdktf.TerraformMetaAr
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/bot_management#zone_id DataCloudflareBotManagement#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/bot_management#zone_id DataCloudflareBotManagement#zone_id}
   */
   readonly zoneId: string;
 }
@@ -105,7 +105,7 @@ export class DataCloudflareBotManagementStaleZoneConfigurationOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/bot_management cloudflare_bot_management}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/bot_management cloudflare_bot_management}
 */
 export class DataCloudflareBotManagement extends cdktf.TerraformDataSource {
 
@@ -121,7 +121,7 @@ export class DataCloudflareBotManagement extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareBotManagement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareBotManagement to import
-  * @param importFromId The id of the existing DataCloudflareBotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/bot_management#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareBotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/bot_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareBotManagement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -133,7 +133,7 @@ export class DataCloudflareBotManagement extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +144,7 @@ export class DataCloudflareBotManagement extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_bot_management',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -170,6 +170,11 @@ export class DataCloudflareBotManagement extends cdktf.TerraformDataSource {
   // auto_update_model - computed: true, optional: false, required: false
   public get autoUpdateModel() {
     return this.getBooleanAttribute('auto_update_model');
+  }
+
+  // crawler_protection - computed: true, optional: false, required: false
+  public get crawlerProtection() {
+    return this.getStringAttribute('crawler_protection');
   }
 
   // enable_js - computed: true, optional: false, required: false

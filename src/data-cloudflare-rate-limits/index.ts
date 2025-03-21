@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rate_limits
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/rate_limits
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareRateLimitsConfig extends cdktf.TerraformMetaArgum
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rate_limits#max_items DataCloudflareRateLimits#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/rate_limits#max_items DataCloudflareRateLimits#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rate_limits#zone_id DataCloudflareRateLimits#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/rate_limits#zone_id DataCloudflareRateLimits#zone_id}
   */
   readonly zoneId: string;
 }
@@ -614,7 +614,7 @@ export class DataCloudflareRateLimitsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rate_limits cloudflare_rate_limits}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/rate_limits cloudflare_rate_limits}
 */
 export class DataCloudflareRateLimits extends cdktf.TerraformDataSource {
 
@@ -630,7 +630,7 @@ export class DataCloudflareRateLimits extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareRateLimits resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRateLimits to import
-  * @param importFromId The id of the existing DataCloudflareRateLimits that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rate_limits#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRateLimits that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/rate_limits#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRateLimits to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -642,7 +642,7 @@ export class DataCloudflareRateLimits extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -653,7 +653,7 @@ export class DataCloudflareRateLimits extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_rate_limits',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
